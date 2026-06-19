@@ -1,0 +1,41 @@
+{
+  "commit": {
+    "description": "Record changes to the repository",
+    "completeDescription": "The git commit command captures a snapshot of the project's currently staged changes. It allows you to save your work and create a history of changes in the repository.",
+    "nUsed": 1,
+    "subCommand": {
+      "-m": {
+        "required": "<commit-message>",
+        "description": "Specify the commit message",
+        "completeDescription": "Sets the commit message for the commit",
+        "nUsed": 0
+      },
+      "-a": {
+        "description": "Automatically stage files that have been modified",
+        "completeDescription": "Automatically stages all modified files before committing",
+        "nUsed": 0
+      },
+      "--amend": {
+        "description": "Replace the tip of the current branch by creating a new commit",
+        "completeDescription": "Allows you to modify the most recent commit",
+        "nUsed": 0
+      }
+    }
+  },
+  "checkout": {
+    "description": "Switch branches or restore working tree files",
+    "completeDescription": "Switches between branches or restores working tree files",
+    "nUsed": 0,
+    "subCommand": {
+      "-b": {
+        "description": "Create and checkout a new branch",
+        "completeDescription": "Creates a new branch and switches to it"
+      }
+    }
+  },
+  "push": {
+    "description": "Update remote refs along with associated objects",
+    "completeDescription": "Updates remote references with the local changes  ",
+    "subCommand": {}
+  }
+}
