@@ -1,4 +1,52 @@
 {
+  "init": {
+    "description": "Create an empty Git repository or reinitialize an existing one",
+    "completeDescription": "Initializes a new, empty Git repository in the current directory, creating a .git folder.",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "clone": {
+    "description": "Clone a repository into a new directory",
+    "completeDescription": "Downloads an existing Git repository from a remote source along with all its history and branches.",
+    "nUsed": 0,
+    "subCommand": {
+      "--depth": {
+        "required": "<depth>",
+        "description": "Create a shallow clone with a truncated history",
+        "completeDescription": "Clones the repository but limits the history to the specified number of commits, saving bandwidth.",
+        "nUsed": 0
+      }
+    }
+  },
+  "add": {
+    "description": "Add file contents to the index",
+    "completeDescription": "Stages modified or new files, preparing them to be included in the next commit.",
+    "nUsed": 0,
+    "subCommand": {
+      ".": {
+        "description": "Stage all changes in the current directory",
+        "completeDescription": "Stages all new, modified, and deleted files in the current directory and its subdirectories.",
+        "nUsed": 0
+      },
+      "-p": {
+        "description": "Interactives choose hunks of patch between the index and the work tree",
+        "completeDescription": "Allows you to interactively review and select specific changes within files to stage.",
+        "nUsed": 0
+      }
+    }
+  },
+  "status": {
+    "description": "Show the working tree status",
+    "completeDescription": "Displays the state of the working directory and the staging area, showing which changes have been staged, which haven't, and which files aren't being tracked.",
+    "nUsed": 0,
+    "subCommand": {
+      "-s": {
+        "description": "Give the output in the short-format",
+        "completeDescription": "Provides a highly condensed, short-format output of the repository status.",
+        "nUsed": 0
+      }
+    }
+  },
   "commit": {
     "description": "Record changes to the repository",
     "completeDescription": "The git commit command captures a snapshot of the project's currently staged changes. It allows you to save your work and create a history of changes in the repository.",
@@ -22,6 +70,23 @@
       }
     }
   },
+  "log": {
+    "description": "Show commit logs",
+    "completeDescription": "Displays the commit history of the current branch, showing commit hashes, authors, dates, and messages.",
+    "nUsed": 0,
+    "subCommand": {
+      "--oneline": {
+        "description": "Print each commit in a single line",
+        "completeDescription": "Condenses the commit history output, displaying only the short SHA-1 and the commit message line.",
+        "nUsed": 0
+      },
+      "--graph": {
+        "description": "Draw a text-based graphical representation of the commit history",
+        "completeDescription": "Draws an ASCII graph representing the branch and merge history.",
+        "nUsed": 0
+      }
+    }
+  },
   "checkout": {
     "description": "Switch branches or restore working tree files",
     "completeDescription": "Switches between branches or restores working tree files",
@@ -29,13 +94,114 @@
     "subCommand": {
       "-b": {
         "description": "Create and checkout a new branch",
-        "completeDescription": "Creates a new branch and switches to it"
+        "completeDescription": "Creates a new branch and switches to it",
+        "nUsed": 0
+      }
+    }
+  },
+  "branch": {
+    "description": "List, create, or delete branches",
+    "completeDescription": "Manages branches within your local repository. Without arguments, it lists all local branches.",
+    "nUsed": 0,
+    "subCommand": {
+      "-d": {
+        "required": "<branch-name>",
+        "description": "Delete a branch safely",
+        "completeDescription": "Deletes the specified branch only if it has already been fully merged into its upstream branch.",
+        "nUsed": 0
+      },
+      "-D": {
+        "required": "<branch-name>",
+        "description": "Force delete a branch",
+        "completeDescription": "Forces the deletion of a branch, even if it contains unmerged changes.",
+        "nUsed": 0
+      },
+      "-a": {
+        "description": "List both remote-tracking and local branches",
+        "completeDescription": "Shows a list of all local and remote branches available to your local Git environment.",
+        "nUsed": 0
+      }
+    }
+  },
+  "merge": {
+    "description": "Join two or more development histories together",
+    "completeDescription": "Integrates changes from another branch into your current active branch.",
+    "nUsed": 0,
+    "subCommand": {
+      "--no-ff": {
+        "description": "Create a merge commit even when a fast-forward is possible",
+        "completeDescription": "Forces Git to create a new merge commit instead of fast-forwarding, preserving the historical branch existence.",
+        "nUsed": 0
+      },
+      "--abort": {
+        "description": "Abort the current conflict resolution process",
+        "completeDescription": "Resets the merge process and tries to reconstruct the pre-merge state if a conflict occurs.",
+        "nUsed": 0
+      }
+    }
+  },
+  "pull": {
+    "description": "Fetch from and integrate with another repository or a local branch",
+    "completeDescription": "Incorporates changes from a remote repository into the current branch. It is a combination of 'git fetch' followed by 'git merge'.",
+    "nUsed": 0,
+    "subCommand": {
+      "--rebase": {
+        "description": "Rebase the current branch on top of the upstream branch after fetching",
+        "completeDescription": "Fetches the remote changes and replays your local commits on top of them, avoiding unnecessary merge commits.",
+        "nUsed": 0
       }
     }
   },
   "push": {
     "description": "Update remote refs along with associated objects",
-    "completeDescription": "Updates remote references with the local changes  ",
-    "subCommand": {}
+    "completeDescription": "Updates remote references with the local changes",
+    "nUsed": 0,
+    "subCommand": {
+      "-u": {
+        "required": "<remote> <branch>",
+        "description": "Upstream tracking",
+        "completeDescription": "Links your local branch to a remote branch, so you can use 'git push' or 'git pull' without specifying the destination in the future.",
+        "nUsed": 0
+      },
+      "--force": {
+        "description": "Force push changes to the remote repository",
+        "completeDescription": "Overrides the remote branch with your local history. Use with extreme caution as it can overwrite others' work.",
+        "nUsed": 0
+      }
+    }
+  },
+  "fetch": {
+    "description": "Download objects and refs from another repository",
+    "completeDescription": "Downloads metadata and commits from a remote repository, but does not integrate or merge them into your working files.",
+    "nUsed": 0,
+    "subCommand": {
+      "--all": {
+        "description": "Fetch all remotes",
+        "completeDescription": "Fetches tracking updates from all configured remote repositories.",
+        "nUsed": 0
+      }
+    }
+  },
+  "stash": {
+    "description": "Stash the changes in a dirty working directory away",
+    "completeDescription": "Temporarily shelves (stores) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later.",
+    "nUsed": 0,
+    "subCommand": {
+      "pop": {
+        "description": "Remove a single stashed state from the stash list and apply it",
+        "completeDescription": "Applies the most recently saved stash changes to your working directory and removes it from the stash list.",
+        "nUsed": 0
+      },
+      "list": {
+        "description": "List the stash entries that you currently have",
+        "completeDescription": "Displays all currently saved stashes in the repository.",
+        "nUsed": 0
+      },
+      "apply": {
+        "description": "Apply the stash without removing it from the list",
+        "completeDescription": "Applies the most recently saved stash changes but keeps the data stored in the stash list.",
+        "nUsed": 0
+      }
+    }
   }
 }

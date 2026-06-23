@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"strings"
 
-	"git-hint/engine/engine/parser"
-	"git-hint/engine/engine/ranking"
-	"git-hint/engine/engine/registry"
+	"git-hint/engine/parser"
+	"git-hint/engine/ranking"
+	"git-hint/engine/registry"
 )
 
-func Execute(input string) ([]parser.CommandMatch, error) {
+func Suggestions(input string) ([]parser.CommandMatch, error) {
 	parts := strings.Split(input, " ")
 	commandName := parts[0]
 	remainingInput := parts[1:]

@@ -3,8 +3,12 @@ package main
 import (
 	"fmt"
 	"os"
+	"strconv"
+	"strings"
 
-	"git-hint/engine/engine"
+	"git-hint/engine"
+	"git-hint/engine/keymap"
+	"git-hint/engine/render"
 )
 
 func main() {
@@ -12,13 +16,52 @@ func main() {
 		return
 	}
 
-	result, err := engine.Execute(os.Args[1])
+	mode := os.Args[1]
 
-	if err != nil {
-		return
-	}
+	switch mode {
+	case "list":
+		// Uso: githint list "<buffer>" <selected>
+		if len(os.Args) < 3 {
+			return
+		}
+		buffer := os.Args[2]
 
-	for _, item := range result {
-		fmt.Println(item.Name)
+		// Lê o índice selecionado (opcional, default -1)
+		selected := -1
+		if len(os.Args) >= 4 {
+			valStr := strings.TrimSpace(os.Args[3])
+			if val, err := strconv.Atoi(valStr); err == nil {
+				selected = val
+			}
+		}
+
+		matches, err := engine.Suggestions(buffer)
+		if err != nil {
+			return
+		}
+
+		fmt.Println(render.FormatList(matches, selected))
+
+	case "key":
+		// Uso: githint key <tecla> <selected>
+		if len(os.Args) < 4 {
+			return
+		}
+		key := os.Args[2]
+
+		// Limpa espaços/newlines para evitar erros de parse do Zsh
+		valStr := strings.TrimSpace(os.Args[3])
+		selected, err := strconv.Atoi(valStr)
+		if err != nil {
+			return
+		}
+
+		keymap.Selected = selected
+		widget, newSelected := keymap.KeyHandler(key)
+
+		// SAÍDA PURA: "widget|selected"
+		fmt.Printf("%s|%d\n", widget, newSelected)
+
+	default:
 	}
 }

@@ -9,7 +9,7 @@ func TestIntegration(t *testing.T) {
 	input := "git c"
 	fmt.Printf("🚀 User Input Test: \"%s\"\n", input)
 
-	sortedMatches, err := Execute(input)
+	sortedMatches, err := Suggestions(input)
 	if err != nil {
 		t.Fatalf("Erro: %s", err)
 	}

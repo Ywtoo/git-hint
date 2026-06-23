@@ -1,7 +1,7 @@
 package ranking
 
 import (
-	"git-hint/engine/engine/parser"
+	"git-hint/engine/parser"
 	"slices"
 )
 

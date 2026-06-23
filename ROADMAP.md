@@ -5,11 +5,9 @@
 # Visão do produto
 
 Plugin para terminal com:
-
 > sugestões contextuais + documentação em tempo real + memória de uso do usuário
 
 Sem substituir shell ou terminal.
-
 Atua apenas como camada inteligente sobre o prompt.
 
 ---
@@ -86,7 +84,7 @@ Render abaixo do prompt
 **Objetivo:** Ler o retorno da Engine Go e desenhar a listagem de forma discreta na tela.
 
 ## Implementar
-* [ ] Renderização abaixo do prompt
+* [ x ] Renderização abaixo do prompt
 * [ ] Desenho da listagem (JSON output)
 * [ ] Limite de sugestões
 * [ ] Timeout de engine
@@ -100,7 +98,7 @@ Render abaixo do prompt
 **Objetivo:** Fazer o avanço inteligente palavra por palavra (bloco lógico por bloco lógico).
 
 ## Implementar
-* [ ] Navegação ↑ ↓
+* [ x ] Navegação ↑ ↓
 * [ ] Injeção por blocos lógicos (ex: `git c` -> `git commit `)
 * [ ] Super Tab (Injeção de mensagens de commits passados no campo de mensagem)
 * [ ] Aceitação de sugestão via TAB
