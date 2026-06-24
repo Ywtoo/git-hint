@@ -20,13 +20,11 @@ func main() {
 
 	switch mode {
 	case "list":
-		// Uso: githint list "<buffer>" <selected>
 		if len(os.Args) < 3 {
 			return
 		}
 		buffer := os.Args[2]
 
-		// Lê o índice selecionado (opcional, default -1)
 		selected := -1
 		if len(os.Args) >= 4 {
 			valStr := strings.TrimSpace(os.Args[3])
@@ -43,24 +41,25 @@ func main() {
 		fmt.Println(render.FormatList(matches, selected))
 
 	case "key":
-		// Uso: githint key <tecla> <selected>
-		if len(os.Args) < 4 {
+		if len(os.Args) < 5 {
 			return
 		}
 		key := os.Args[2]
 
-		// Limpa espaços/newlines para evitar erros de parse do Zsh
 		valStr := strings.TrimSpace(os.Args[3])
+		buffer := strings.TrimSpace(os.Args[4])
+
 		selected, err := strconv.Atoi(valStr)
 		if err != nil {
 			return
 		}
 
 		keymap.Selected = selected
+		keymap.Buffer = buffer
 		widget, newSelected := keymap.KeyHandler(key)
 
-		// SAÍDA PURA: "widget|selected"
-		fmt.Printf("%s|%d\n", widget, newSelected)
+		// SAÍDA PURA: "widget|selected|buffer"
+		fmt.Printf("%s|%d|%s\n", widget, newSelected, keymap.Buffer)
 
 	default:
 	}
