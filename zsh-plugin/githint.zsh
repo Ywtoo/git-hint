@@ -103,5 +103,4 @@ _githint_nuclear_bind '^[OB' githint-arrow-down                # Application Mod
 _githint_nuclear_bind '^N' githint-arrow-down                  # Emacs Ctrl+N
 
 # TAB binding (override Zsh default autocomplete)
-bindkey -r '^I' 2>/dev/null
-bindkey '^I' githint-tab
+_githint_nuclear_bind '^I' githint-tab
