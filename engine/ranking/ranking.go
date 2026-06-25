@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"git-hint/engine/parser"
+	"io"
 	"os"
 	"path/filepath"
 	"slices"
@@ -22,13 +23,35 @@ func RankSuggestions(commandName string, suggestions []parser.CommandMatch) ([]p
 	}
 	defer arquive.Close()
 
-	history := bufio.NewScanner(arquive)
+	return RankSuggestionsWithReader(commandName, suggestions, arquive)
+}
+
+func RankSuggestionsWithReader(commandName string, suggestions []parser.CommandMatch, r io.Reader) ([]parser.CommandMatch, error) {
+	history := bufio.NewScanner(r)
 	usedCommands := make(map[string]int)
 
 	commandsFields := strings.Fields(commandName)
 	commandLen := len(commandsFields)
 	if commandLen < 1 {
 		return suggestions, nil
+	}
+
+	lastToken := commandsFields[commandLen-1]
+
+	// Decidimos se rankeamos a palavra atual (completando) ou a próxima (nova palavra)
+	targetIdx := commandLen // Default: próxima palavra
+
+	isCompleting := false
+	for _, s := range suggestions {
+		// Se o token é um prefixo da sugestão, mas não é a sugestão completa, estamos completando
+		if strings.HasPrefix(s.Name, lastToken) && s.Name != lastToken {
+			isCompleting = true
+			break
+		}
+	}
+
+	if isCompleting {
+		targetIdx = commandLen - 1
 	}
 
 	for history.Scan() {
@@ -38,21 +61,44 @@ func RankSuggestions(commandName string, suggestions []parser.CommandMatch) ([]p
 			continue
 		}
 
-		if strings.HasPrefix(parts[1], commandName) {
-			historyFields := strings.Fields(parts[1])
+		historyFields := strings.Fields(parts[1])
+		if len(historyFields) <= targetIdx {
+			continue
+		}
 
-			limit := commandLen - 1
-			if len(historyFields) < limit {
-				limit = len(historyFields)
+		// Validação do prefixo: rigoroso no passado, flexível no presente
+		matches := true
+		for i := 0; i < commandLen; i++ {
+			if i >= len(historyFields) {
+				matches = false
+				break
 			}
-
-			if len(historyFields) > limit {
-				word := historyFields[limit]
-				if word != "" {
-					usedCommands[word]++
+			if i < commandLen-1 {
+				// Palavras anteriores devem ser idênticas
+				if historyFields[i] != commandsFields[i] {
+					matches = false
+					break
+				}
+			} else {
+				// A última palavra deve ser um prefixo
+				if !strings.HasPrefix(historyFields[i], commandsFields[i]) {
+					matches = false
+					break
 				}
 			}
 		}
+
+		if !matches {
+			continue
+		}
+
+		word := historyFields[targetIdx]
+		if word != "" {
+			usedCommands[word]++
+		}
+	}
+	if err := history.Err(); err != nil {
+		return nil, fmt.Errorf("❌ Erro ao ler historico: %v", err)
 	}
 
 	for i := range suggestions {
