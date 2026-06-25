@@ -13,7 +13,9 @@ _githint_update() {
     local buffer="$BUFFER"
 
     if [[ "$buffer" != "$GITHINT_PREV_BUFFER" ]]; then
-        GITHINT_SELECTED=0
+        if [[ $GITHINT_SELECTED -ge 0 ]]; then
+            GITHINT_SELECTED=0
+        fi
         GITHINT_PREV_BUFFER="$buffer"
     fi
 
@@ -47,18 +49,30 @@ _githint_key_handler() {
     local resultado
     local widget
     local new_sel
+    local new_buffer
 
     # Pass current state to Go engine
-    resultado=$("$GITHINT_BIN" key "$tecla" "$GITHINT_SELECTED")
+    resultado=$("$GITHINT_BIN" key "$tecla" "$GITHINT_SELECTED" "$BUFFER")
 
     if [[ -n "$resultado" ]]; then
+        # Split "widget|selected|buffer"
         widget="${resultado%%|*}"
-        new_sel="${resultado#*|}"
+        local remainder="${resultado#*|}"
+        new_sel="${remainder%%|*}"
+        new_buffer="${remainder#*|}"
 
+        # Update global selection
         if [[ -n "$new_sel" ]]; then
             GITHINT_SELECTED=$new_sel
         fi
 
+        # Update the shell buffer
+        if [[ -n "$new_buffer" ]]; then
+            BUFFER="$new_buffer"
+            CURSOR=${#BUFFER}
+        fi
+
+        # Execute ZLE widget if available
         if [[ -n "$widget" && "$widget" != '""' ]]; then
             zle "$widget"
         fi

@@ -75,13 +75,13 @@ func FindCommands(input []string, commands map[string]parser.CommandMatch) (map[
 	}
 
 	// 2. Auto Jump
-	jumped := false // <--- Inicializa a variável aqui para o compilador não reclamar!
+	jumped := false
 	if len(input) >= 1 && len(newCommands) == 1 {
 		for name, cmd := range newCommands {
 			if name == input[0] {
 				subCommands := make(map[string]parser.CommandMatch)
 				for subname, subcmd := range cmd.SubCommand {
-					subcmd.Name = subname // <-- Consertou o bug do teste!
+					subcmd.Name = subname
 					subCommands[subname] = subcmd
 				}
 				newCommands = subCommands
@@ -90,11 +90,54 @@ func FindCommands(input []string, commands map[string]parser.CommandMatch) (map[
 		}
 	}
 
-	// Se você acabou de saltar para as subflags e o input do usuário terminou aqui,
-	// pare imediatamente e entregue as opções!
 	if jumped && len(input) == 1 {
 		return newCommands, nil
 	}
 
 	return FindCommands(input[1:], newCommands)
+}
+
+func CompleteBuffer(buffer string, selectedIndex int) string {
+	suggestions, err := Suggestions(buffer)
+	if err != nil || selectedIndex < 0 || selectedIndex >= len(suggestions) {
+		return buffer
+	}
+
+	selectedSuggestion := suggestions[selectedIndex].Name
+
+	// 1. Extract the last token from the buffer
+	var lastToken string
+	if !strings.HasSuffix(buffer, " ") {
+		parts := strings.Fields(buffer)
+		if len(parts) > 0 {
+			lastToken = parts[len(parts)-1]
+		}
+	}
+
+	// 2. Check if the last token is a prefix of any current suggestion
+	isPrefix := false
+	if lastToken != "" {
+		for _, s := range suggestions {
+			if strings.HasPrefix(s.Name, lastToken) {
+				isPrefix = true
+				break
+			}
+		}
+	}
+
+	// 3. Decide: Replace or Append
+	if isPrefix {
+		// Replace the last token with the selected suggestion
+		idx := strings.LastIndex(buffer, lastToken)
+		if idx == -1 {
+			return selectedSuggestion
+		}
+		return buffer[:idx] + selectedSuggestion
+	}
+
+	// Append the suggestion
+	if strings.HasSuffix(buffer, " ") {
+		return buffer + selectedSuggestion
+	}
+	return buffer + " " + selectedSuggestion
 }
