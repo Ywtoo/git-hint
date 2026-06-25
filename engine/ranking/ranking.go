@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"git-hint/engine/parser"
+	"io"
 	"os"
 	"path/filepath"
 	"slices"
@@ -22,13 +23,37 @@ func RankSuggestions(commandName string, suggestions []parser.CommandMatch) ([]p
 	}
 	defer arquive.Close()
 
-	history := bufio.NewScanner(arquive)
+	return RankSuggestionsWithReader(commandName, suggestions, arquive)
+}
+
+func RankSuggestionsWithReader(commandName string, suggestions []parser.CommandMatch, r io.Reader) ([]parser.CommandMatch, error) {
+	history := bufio.NewScanner(r)
 	usedCommands := make(map[string]int)
 
 	commandsFields := strings.Fields(commandName)
 	commandLen := len(commandsFields)
 	if commandLen < 1 {
 		return suggestions, nil
+	}
+
+	lastToken := commandsFields[commandLen-1]
+
+	// Decidimos o índice do histórico baseado no estado da última palavra
+	targetIdx := commandLen // Default: próxima palavra (ex: git commit -> flag)
+
+	isPartial := false
+	isComplete := false
+	for _, s := range suggestions {
+		if s.Name == lastToken {
+			isComplete = true
+		} else if strings.HasPrefix(s.Name, lastToken) {
+			isPartial = true
+		}
+	}
+
+	// Se é um prefixo mas NÃO é a palavra completa, estamos completando a palavra atual
+	if isPartial && !isComplete {
+		targetIdx = commandLen - 1
 	}
 
 	for history.Scan() {
@@ -38,20 +63,22 @@ func RankSuggestions(commandName string, suggestions []parser.CommandMatch) ([]p
 			continue
 		}
 
-		if strings.HasPrefix(parts[1], commandName) {
-			historyFields := strings.Fields(parts[1])
+		historyFields := strings.Fields(parts[1])
+		if len(historyFields) <= targetIdx {
+			continue
+		}
 
-			limit := commandLen - 1
-			if len(historyFields) < limit {
-				limit = len(historyFields)
+		// Verificação de segurança: se estamos buscando a próxima palavra,
+		// a palavra anterior no histórico deve bater com a última do buffer
+		if targetIdx >= commandLen {
+			if historyFields[commandLen-1] != lastToken {
+				continue
 			}
+		}
 
-			if len(historyFields) > limit {
-				word := historyFields[limit]
-				if word != "" {
-					usedCommands[word]++
-				}
-			}
+		word := historyFields[targetIdx]
+		if word != "" {
+			usedCommands[word]++
 		}
 	}
 
