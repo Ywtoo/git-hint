@@ -46,7 +46,7 @@ func Suggestions(input string) ([]parser.CommandMatch, error) {
 			list = append(list, cmd)
 		}
 
-		list, err := ranking.RankSuggestions(commandName, list)
+		list, err := ranking.RankSuggestions(input, list)
 		if err != nil {
 			return nil, fmt.Errorf("❌ Erro ao ordenar comandos: %v\n", err)
 		}

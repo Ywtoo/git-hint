@@ -38,21 +38,19 @@ func RankSuggestionsWithReader(commandName string, suggestions []parser.CommandM
 
 	lastToken := commandsFields[commandLen-1]
 
-	// Decidimos o índice do histórico baseado no estado da última palavra
-	targetIdx := commandLen // Default: próxima palavra (ex: git commit -> flag)
+	// Decidimos se rankeamos a palavra atual (completando) ou a próxima (nova palavra)
+	targetIdx := commandLen // Default: próxima palavra
 
-	isPartial := false
-	isComplete := false
+	isCompleting := false
 	for _, s := range suggestions {
-		if s.Name == lastToken {
-			isComplete = true
-		} else if strings.HasPrefix(s.Name, lastToken) {
-			isPartial = true
+		// Se o token é um prefixo da sugestão, mas não é a sugestão completa, estamos completando
+		if strings.HasPrefix(s.Name, lastToken) && s.Name != lastToken {
+			isCompleting = true
+			break
 		}
 	}
 
-	// Se é um prefixo mas NÃO é a palavra completa, estamos completando a palavra atual
-	if isPartial && !isComplete {
+	if isCompleting {
 		targetIdx = commandLen - 1
 	}
 
@@ -68,18 +66,39 @@ func RankSuggestionsWithReader(commandName string, suggestions []parser.CommandM
 			continue
 		}
 
-		// Verificação de segurança: se estamos buscando a próxima palavra,
-		// a palavra anterior no histórico deve bater com a última do buffer
-		if targetIdx >= commandLen {
-			if historyFields[commandLen-1] != lastToken {
-				continue
+		// Validação do prefixo: rigoroso no passado, flexível no presente
+		matches := true
+		for i := 0; i < commandLen; i++ {
+			if i >= len(historyFields) {
+				matches = false
+				break
 			}
+			if i < commandLen-1 {
+				// Palavras anteriores devem ser idênticas
+				if historyFields[i] != commandsFields[i] {
+					matches = false
+					break
+				}
+			} else {
+				// A última palavra deve ser um prefixo
+				if !strings.HasPrefix(historyFields[i], commandsFields[i]) {
+					matches = false
+					break
+				}
+			}
+		}
+
+		if !matches {
+			continue
 		}
 
 		word := historyFields[targetIdx]
 		if word != "" {
 			usedCommands[word]++
 		}
+	}
+	if err := history.Err(); err != nil {
+		return nil, fmt.Errorf("❌ Erro ao ler historico: %v", err)
 	}
 
 	for i := range suggestions {
