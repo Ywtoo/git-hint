@@ -2,8 +2,26 @@
 
 zmodload zsh/terminfo
 
+# Calcula a largura do prompt manualmente para Oh My Zsh
+_githint_calc_width() {
+    local folder_name=$(basename "$PWD")
+    local folder_len=${#folder_name}
+    local base_offset=1 # Ajustado de 4 para 1 (remover 3 espaços)
+
+    if git rev-parse --is-inside-work-tree &>/dev/null; then
+        local branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+        local branch_len=${#branch}
+        local git_deco_offset=10 # Tamanho de " git:() ✗ "
+        echo $(( base_offset + folder_len + git_deco_offset + branch_len ))
+    else
+        echo $(( base_offset + folder_len ))
+    fi
+}
+
 typeset -g GITHINT_SELECTED=0
 typeset -g GITHINT_PREV_BUFFER=""
+typeset -g GITHINT_PROMPT_COL=0
+typeset -g GITHINT_RENDER="ohmyzsh"
 
 #TODO: Path to githint binary
 GITHINT_BIN="/media/storage_fixed/Programming/git-hint/githint"
@@ -19,6 +37,9 @@ _githint_update() {
         GITHINT_PREV_BUFFER="$buffer"
     fi
 
+    # Cálculo manual da largura do prompt (específico para Oh My Zsh)
+    GITHINT_PROMPT_COL=$(_githint_calc_width)
+
     # Disable autosuggest immediately if command starts with 'git'
     if [[ "$buffer" =~ ^git ]]; then
         _zsh_autosuggest_disable
@@ -29,10 +50,10 @@ _githint_update() {
     fi
 
     local resultado
-    resultado=$("$GITHINT_BIN" list "$buffer" "$GITHINT_SELECTED")
+    resultado=$("$GITHINT_BIN" list "$buffer" "$GITHINT_SELECTED" "$GITHINT_PROMPT_COL" "$GITHINT_RENDER")
 
     if [[ -n "$resultado" ]]; then
-        POSTDISPLAY=$'\n'"$resultado"
+        POSTDISPLAY=$'\n'"${resultado}"
     else
         POSTDISPLAY=""
     fi
@@ -42,6 +63,45 @@ _githint_update() {
 
 zle-line-pre-redraw() { _githint_update}
 zle -N zle-line-pre-redraw
+
+# Captura a posição real do cursor via terminal (ESC[6n)
+get_cursor_col() {
+    # Só executa se estivermos em um terminal interativo
+    [[ -t 0 ]] || { echo "0"; return; }
+
+    local oldstty
+    oldstty=$(stty -g 2>/dev/null) || { echo "0"; return; }
+
+    stty raw -echo min 0 time 5 2>/dev/null
+    printf '\e[6n' > /dev/tty 2>/dev/null
+
+    local pos=""
+    while read -t 0.05 -k 1 ch 2>/dev/null; do
+        pos+="$ch"
+        [[ "$ch" == "R" ]] && break
+    done
+
+    stty "$oldstty" 2>/dev/null
+
+    # DEBUG: Log da resposta bruta do terminal
+    echo "RAW=[$pos]" >> /tmp/githint-debug.log
+
+    # Extrai a coluna de ESC[linha;colunaR
+    local col=$(echo "$pos" | sed -E 's/.*;([0-9]+)R/\1/')
+    echo "COLPARSED=[$col]" >> /tmp/githint-debug.log
+    echo "${col:-0}"
+}
+
+# Interceptador de Enter para capturar a largura do prompt
+githint-accept-line() {
+    local current_pos=$(get_cursor_col)
+    # Largura do Prompt = Posição do Cursor - Comprimento do Buffer
+    local prompt_width=$(( current_pos - ${#BUFFER} ))
+    [[ $prompt_width -lt 0 ]] && prompt_width=0
+    GITHINT_PROMPT_COL=$prompt_width
+    zle .accept-line
+}
+zle -N githint-accept-line
 
 # Navigation handler
 _githint_key_handler() {
@@ -81,6 +141,7 @@ _githint_key_handler() {
     _githint_update
 }
 
+# Navigation widgets
 githint-arrow-up() { _githint_key_handler "arrowUP"; }
 zle -N githint-arrow-up
 
@@ -118,3 +179,6 @@ _githint_nuclear_bind '^N' githint-arrow-down                  # Emacs Ctrl+N
 
 # TAB binding (override Zsh default autocomplete)
 _githint_nuclear_bind '^I' githint-tab
+
+# Enter binding (captures cursor position for prompt alignment)
+_githint_nuclear_bind '^M' githint-accept-line
