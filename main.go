@@ -20,7 +20,7 @@ func main() {
 
 	switch mode {
 	case "list":
-		if len(os.Args) < 3 {
+		if len(os.Args) < 4 {
 			return
 		}
 		buffer := os.Args[2]
@@ -33,12 +33,25 @@ func main() {
 			}
 		}
 
+		promptCol := 0
+		if len(os.Args) >= 5 {
+			valStr := strings.TrimSpace(os.Args[4])
+			if val, err := strconv.Atoi(valStr); err == nil {
+				promptCol = val
+			}
+		}
+
+		renderMode := "ohmyzsh"
+		if len(os.Args) >= 6 {
+			renderMode = strings.TrimSpace(os.Args[5])
+		}
+
 		matches, err := engine.Suggestions(buffer)
 		if err != nil {
 			return
 		}
 
-		fmt.Println(render.FormatList(matches, selected))
+		fmt.Print(render.FormatList(matches, selected, buffer, promptCol, renderMode))
 
 	case "key":
 		if len(os.Args) < 5 {
