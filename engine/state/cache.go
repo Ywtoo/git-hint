@@ -1,4 +1,4 @@
-package provider
+package state
 
 import (
 	"encoding/json"
@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-const cachePath = "/tmp/githint-session.json"
+var cachePath = "/tmp/githint-session.json"
 
 type SessionCache struct {
 	CurrentPlaceholder string                `json:"current_placeholder"`

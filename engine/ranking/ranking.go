@@ -1,13 +1,30 @@
 package ranking
 
 import (
+	"bufio"
 	"git-hint/engine/history"
 	"git-hint/engine/parser"
+	"io"
 	"slices"
 	"strings"
 )
 
 func RankSuggestions(commandName string, suggestions []parser.CommandMatch) ([]parser.CommandMatch, error) {
+	// To keep RankSuggestions compatible and simple, we fetch the history first.
+	// However, since FindHistoryCommands returns a slice, we can convert it to a reader
+	// or just refactor RankSuggestionsWithReader to take a slice.
+	// For the sake of the tests already written in ranking_test.go, we'll use a reader approach.
+
+	commandHistory, err := history.FindHistoryCommands(commandName)
+	if err != nil {
+		return nil, err
+	}
+
+	historyText := strings.Join(commandHistory, "\n")
+	return RankSuggestionsWithReader(commandName, suggestions, strings.NewReader(historyText))
+}
+
+func RankSuggestionsWithReader(commandName string, suggestions []parser.CommandMatch, reader io.Reader) ([]parser.CommandMatch, error) {
 	usedCommands := make(map[string]int)
 	commandsFields := strings.Fields(commandName)
 	commandLen := len(commandsFields)
@@ -31,13 +48,24 @@ func RankSuggestions(commandName string, suggestions []parser.CommandMatch) ([]p
 		targetIdx = commandLen - 1
 	}
 
-	commandHistory, err := history.FindHistoryCommands(commandName)
-	if err != nil {
-		return nil, err
-	}
+	scanner := bufio.NewScanner(reader)
+	for scanner.Scan() {
+		line := scanner.Text()
+		if line == "" {
+			continue
+		}
 
-	for i := range commandHistory {
-		historyFields := strings.Fields(commandHistory[i])
+		// The reader might receive raw .zsh_history lines (with timestamps)
+		// or already processed command strings. Handle both.
+		cmd := line
+		if strings.Contains(line, ";") {
+			parts := strings.SplitN(line, ";", 2)
+			if len(parts) >= 2 {
+				cmd = parts[1]
+			}
+		}
+
+		historyFields := strings.Fields(cmd)
 		if len(historyFields) <= targetIdx {
 			continue
 		}
@@ -72,6 +100,10 @@ func RankSuggestions(commandName string, suggestions []parser.CommandMatch) ([]p
 		if word != "" {
 			usedCommands[word]++
 		}
+	}
+
+	if err := scanner.Err(); err != nil {
+		return nil, err
 	}
 
 	for i := range suggestions {

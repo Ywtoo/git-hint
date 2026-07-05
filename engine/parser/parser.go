@@ -8,12 +8,14 @@ import (
 )
 
 type CommandMatch struct {
-	Name                string
-	Required            *string                 `json:"required"`
-	Description         string                  `json:"description"`
-	CompleteDescription string                  `json:"completeDescription"`
-	NUsed               int                     `json:"nUsed"`
-	SubCommand          map[string]CommandMatch `json:"subCommand"`
+	Name                 string
+	MatchKey             string                  `json:"-"`
+	ShowOnlyWhenSelected bool                    `json:"-"`
+	Required             *string                 `json:"required"`
+	Description          string                  `json:"description"`
+	CompleteDescription  string                  `json:"completeDescription"`
+	NUsed                int                     `json:"nUsed"`
+	SubCommand           map[string]CommandMatch `json:"subCommand"`
 }
 
 func ParseCommand(filePath string) (command map[string]CommandMatch, err error) {

@@ -8,116 +8,119 @@ import (
 	"git-hint/engine/provider"
 	"git-hint/engine/ranking"
 	"git-hint/engine/registry"
+	"git-hint/engine/tokenizer"
 )
 
-func Suggestions(input string) ([]parser.CommandMatch, error) {
-	parts := strings.Split(input, " ")
+var noDescriptionFlags = map[string]bool{
+	"msg": true,
+}
+
+var skipRankingFlags = map[string]bool{
+	"commit": true,
+	"msg":    true,
+}
+
+func Suggestions(input string) ([]parser.CommandMatch, string, error) {
+	parts := tokenizer.TokenizeBuffer(input)
+	if len(parts) == 0 {
+		return nil, "", nil
+	}
 	commandName := parts[0]
 	remainingInput := parts[1:]
 	var list []parser.CommandMatch
 
-	//TODO: SQLite
-	//File path resolve
 	filePath, err := registry.ResolveCommandPath(commandName)
 	if err != nil {
-		return nil, fmt.Errorf("❌ Erro ao encontrar o comando '%s': %v", commandName, err)
+		return nil, "", fmt.Errorf("❌ Erro ao encontrar o comando '%s': %v", commandName, err)
 	}
-
 	if filePath == "" {
-		return nil, nil
+		return nil, "", nil
 	}
 
-	//Find comands
 	commands, err := parser.ParseCommand(filePath)
 	if err != nil {
-		return nil, fmt.Errorf("❌ Erro ao ler o arquivo: %v\n", err)
+		return nil, "", fmt.Errorf("❌ Erro ao ler o arquivo: %v\n", err)
 	}
-
 	if commands == nil {
-		return nil, nil
+		return nil, "", nil
 	}
 
-	matches, err := FindCommands(remainingInput, commands)
+	matches, currentToken, err := FindCommands(remainingInput, commands)
 	if err != nil {
-		return nil, fmt.Errorf("❌ Erro ao encontrar comandos: %v\n", err)
+		return nil, "", fmt.Errorf("❌ Erro ao encontrar comandos: %v\n", err)
+	}
+	if matches == nil {
+		return nil, "", nil
 	}
 
-	if matches != nil {
-		var dynamicFlag string
-		for name := range matches {
-			if flag := provider.FlagCheck(name); flag != "" {
-				dynamicFlag = flag
-				break
-			}
-		}
+	var dynamicFlagSeen string // usado só pra decidir se pula o ranking
 
-		if dynamicFlag != "" {
-			expanded := provider.Provider(dynamicFlag)
-			parts := strings.Split(input, " ")
-			lastToken := parts[len(parts)-1]
+	for name, cmd := range matches {
+		if flag := provider.FlagCheck(name); flag != "" {
+			dynamicFlagSeen = flag
+			expanded := provider.Provider(flag)
 
-			var filtered []parser.CommandMatch
 			for _, s := range expanded {
-				if s.Name != "" && strings.HasPrefix(s.Name, lastToken) {
-					filtered = append(filtered, s)
+				if s.Name == "" || !strings.HasPrefix(s.Name, currentToken) {
+					continue
 				}
-			}
-			return filtered, nil
-		}
 
-		for _, cmd := range matches {
+				switch {
+				case noDescriptionFlags[flag]:
+					s.Description = "" // msg: sem comentário, o valor já é a info
+
+				case skipRankingFlags[flag]:
+					// commit: mantém a Description própria que o provider já montou
+					// (hash + assunto), sempre exibida — não herda do pai, não
+					// fica condicionada a "só quando selecionado".
+
+				default:
+					// branch, remote, tag, stash: descrição compartilhada do pai,
+					// exibida só na linha selecionada.
+					s.Description = cmd.Description
+					s.ShowOnlyWhenSelected = true
+				}
+
+				list = append(list, s)
+			}
+		} else {
+			// estático: Description já vem do próprio cmd, sempre exibida.
 			list = append(list, cmd)
 		}
-		list, err := ranking.RankSuggestions(input, list)
-		if err != nil {
-			return nil, fmt.Errorf("❌ Erro ao ordenar comandos: %v\n", err)
-		}
-		return list, nil
 	}
-	return nil, nil
+
+	if len(list) == 0 {
+		return nil, currentToken, nil
+	}
+
+	if !skipRankingFlags[dynamicFlagSeen] {
+		list, err = ranking.RankSuggestions(input, list)
+		if err != nil {
+			return nil, "", fmt.Errorf("❌ Erro ao ordenar comandos: %v\n", err)
+		}
+	}
+
+	return list, currentToken, nil
 }
 
-func CompleteBuffer(buffer string, selectedIndex int) string {
-	suggestions, err := Suggestions(buffer)
-	if err != nil || selectedIndex < 0 || selectedIndex >= len(suggestions) {
+func CompleteBuffer(buffer string, selectedIndex int, suggestions []parser.CommandMatch, currentToken string) string {
+	if selectedIndex < 0 || selectedIndex >= len(suggestions) {
 		return buffer
 	}
 
 	selectedSuggestion := suggestions[selectedIndex].Name
 
-	// 1. Extract the last token from the buffer
-	var lastToken string
-	if !strings.HasSuffix(buffer, " ") {
-		parts := strings.Fields(buffer)
-		if len(parts) > 0 {
-			lastToken = parts[len(parts)-1]
+	if currentToken == "" {
+		if strings.HasSuffix(buffer, " ") {
+			return buffer + selectedSuggestion
 		}
+		return buffer + " " + selectedSuggestion
 	}
 
-	// 2. Check if the last token is a prefix of any current suggestion
-	isPrefix := false
-	if lastToken != "" {
-		for _, s := range suggestions {
-			if strings.HasPrefix(s.Name, lastToken) {
-				isPrefix = true
-				break
-			}
-		}
-	}
-
-	// 3. Decide: Replace or Append
-	if isPrefix {
-		// Replace the last token with the selected suggestion
-		idx := strings.LastIndex(buffer, lastToken)
-		if idx == -1 {
-			return selectedSuggestion
-		}
+	if strings.HasSuffix(buffer, currentToken) {
+		idx := len(buffer) - len(currentToken)
 		return buffer[:idx] + selectedSuggestion
 	}
 
-	// Append the suggestion
-	if strings.HasSuffix(buffer, " ") {
-		return buffer + selectedSuggestion
-	}
 	return buffer + " " + selectedSuggestion
 }

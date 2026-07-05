@@ -6,8 +6,10 @@ import (
 	"strings"
 )
 
+var historyPathFunc = findHistory
+
 func FindHistoryCommands(commandName string) ([]string, error) {
-	path, err := findHistory()
+	path, err := historyPathFunc()
 	if err != nil {
 		return nil, err
 	}

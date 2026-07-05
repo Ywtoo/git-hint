@@ -1,13 +1,32 @@
 package parser
 
 import (
+	"os"
 	"testing"
 )
 
 func TestParseCommand(t *testing.T) {
-	filePath := "../../../data/git.json"
+	// Create a temporary JSON file to avoid relative path issues
+	content := `{
+		"test-cmd": {
+			"description": "test description",
+			"subCommand": {
+				"sub-1": { "description": "sub desc" }
+			}
+		}
+	}`
+	tmpFile, err := os.CreateTemp("", "git_test_*.json")
+	if err != nil {
+		t.Fatal(err)
+	}
+	defer os.Remove(tmpFile.Name())
 
-	cmd, err := ParseCommand(filePath)
+	if _, err := tmpFile.Write([]byte(content)); err != nil {
+		t.Fatal(err)
+	}
+	tmpFile.Close()
+
+	cmd, err := ParseCommand(tmpFile.Name())
 
 	if err != nil {
 		t.Fatalf("ParseCommand falhou inesperadamente: %v", err)
@@ -17,15 +36,12 @@ func TestParseCommand(t *testing.T) {
 		t.Fatal("ParseCommand retornou nil, mas deveria ter retornado um comando")
 	}
 
-	var commandTest CommandMatch
-	for _, v := range cmd {
-		commandTest = v
-		break
+	if _, ok := cmd["test-cmd"]; !ok {
+		t.Error("Esperava encontrar 'test-cmd' no mapa de comandos")
 	}
 
-	lenghtSubC := len(commandTest.SubCommand)
-	if lenghtSubC == 0 {
+	testCmd := cmd["test-cmd"]
+	if len(testCmd.SubCommand) == 0 {
 		t.Errorf("Esperava subcomandos, mas a lista estava vazia")
 	}
-
 }

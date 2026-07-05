@@ -9,6 +9,7 @@ import (
 	"git-hint/engine"
 	"git-hint/engine/keymap"
 	"git-hint/engine/render"
+	"git-hint/engine/state"
 )
 
 func main() {
@@ -24,6 +25,7 @@ func main() {
 			return
 		}
 		buffer := os.Args[2]
+		state.Buffer = buffer
 
 		selected := -1
 		if len(os.Args) >= 4 {
@@ -46,12 +48,12 @@ func main() {
 			renderMode = strings.TrimSpace(os.Args[5])
 		}
 
-		matches, err := engine.Suggestions(buffer)
+		matches, currentToken, err := engine.Suggestions(buffer)
 		if err != nil {
 			return
 		}
 
-		fmt.Print(render.FormatList(matches, selected, buffer, promptCol, renderMode))
+		fmt.Print(render.FormatList(matches, selected, buffer, currentToken, promptCol, renderMode))
 
 	case "key":
 		if len(os.Args) < 5 {
@@ -60,18 +62,18 @@ func main() {
 		key := os.Args[2]
 
 		valStr := strings.TrimSpace(os.Args[3])
-		buffer := os.Args[4] // 🔧 NÃO trimar — o espaço final é informação semântica
+		buffer := os.Args[4] // NÃO trimar — o espaço final é informação semântica
 
 		selected, err := strconv.Atoi(valStr)
 		if err != nil {
 			return
 		}
 
-		keymap.Selected = selected
-		keymap.Buffer = buffer
+		state.Selected = selected
+		state.Buffer = buffer
 		widget, newSelected := keymap.KeyHandler(key)
 
-		fmt.Printf("%s|%d|%s\n", widget, newSelected, keymap.Buffer)
+		fmt.Printf("%s|%d|%s\n", widget, newSelected, state.Buffer)
 
 	default:
 	}
