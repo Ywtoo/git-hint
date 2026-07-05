@@ -1,35 +1,14 @@
 package ranking
 
 import (
-	"bufio"
-	"fmt"
+	"git-hint/engine/history"
 	"git-hint/engine/parser"
-	"io"
-	"os"
-	"path/filepath"
 	"slices"
 	"strings"
 )
 
 func RankSuggestions(commandName string, suggestions []parser.CommandMatch) ([]parser.CommandMatch, error) {
-	path, err := findHistory()
-	if err != nil {
-		return nil, fmt.Errorf("❌ Erro ao encontrar home: %v", err)
-	}
-
-	arquive, err := os.Open(path)
-	if err != nil {
-		return nil, fmt.Errorf("❌ Erro ao abrir historico: %v", err)
-	}
-	defer arquive.Close()
-
-	return RankSuggestionsWithReader(commandName, suggestions, arquive)
-}
-
-func RankSuggestionsWithReader(commandName string, suggestions []parser.CommandMatch, r io.Reader) ([]parser.CommandMatch, error) {
-	history := bufio.NewScanner(r)
 	usedCommands := make(map[string]int)
-
 	commandsFields := strings.Fields(commandName)
 	commandLen := len(commandsFields)
 	if commandLen < 1 {
@@ -38,12 +17,10 @@ func RankSuggestionsWithReader(commandName string, suggestions []parser.CommandM
 
 	lastToken := commandsFields[commandLen-1]
 
-	// Decidimos se rankeamos a palavra atual (completando) ou a próxima (nova palavra)
-	targetIdx := commandLen // Default: próxima palavra
+	targetIdx := commandLen
 
 	isCompleting := false
 	for _, s := range suggestions {
-		// Se o token é um prefixo da sugestão, mas não é a sugestão completa, estamos completando
 		if strings.HasPrefix(s.Name, lastToken) && s.Name != lastToken {
 			isCompleting = true
 			break
@@ -54,14 +31,13 @@ func RankSuggestionsWithReader(commandName string, suggestions []parser.CommandM
 		targetIdx = commandLen - 1
 	}
 
-	for history.Scan() {
-		line := history.Text()
-		parts := strings.Split(line, ";")
-		if len(parts) < 2 {
-			continue
-		}
+	commandHistory, err := history.FindHistoryCommands(commandName)
+	if err != nil {
+		return nil, err
+	}
 
-		historyFields := strings.Fields(parts[1])
+	for i := range commandHistory {
+		historyFields := strings.Fields(commandHistory[i])
 		if len(historyFields) <= targetIdx {
 			continue
 		}
@@ -97,9 +73,6 @@ func RankSuggestionsWithReader(commandName string, suggestions []parser.CommandM
 			usedCommands[word]++
 		}
 	}
-	if err := history.Err(); err != nil {
-		return nil, fmt.Errorf("❌ Erro ao ler historico: %v", err)
-	}
 
 	for i := range suggestions {
 		if count, exists := usedCommands[suggestions[i].Name]; exists {
@@ -121,12 +94,4 @@ func RankSuggestionsWithReader(commandName string, suggestions []parser.CommandM
 	})
 
 	return suggestions, nil
-}
-
-func findHistory() (string, error) {
-	home, err := os.UserHomeDir()
-	if err != nil {
-		return "", err
-	}
-	return filepath.Join(home, ".zsh_history"), nil
 }

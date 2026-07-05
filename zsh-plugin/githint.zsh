@@ -61,7 +61,7 @@ _githint_update() {
     zle reset-prompt
 }
 
-zle-line-pre-redraw() { _githint_update}
+zle-line-pre-redraw() { _githint_update; }
 zle -N zle-line-pre-redraw
 
 # Captura a posição real do cursor via terminal (ESC[6n)
@@ -135,6 +135,11 @@ _githint_key_handler() {
         # Execute ZLE widget if available
         if [[ -n "$widget" && "$widget" != '""' ]]; then
             zle "$widget"
+        fi
+
+        # Special handling for TAB to prevent Zsh native completion fallback
+        if [[ "$tecla" == "TAB" ]]; then
+            zle reset-prompt
         fi
     fi
 

@@ -5,6 +5,7 @@ import (
 	"strings"
 
 	"git-hint/engine/parser"
+	"git-hint/engine/provider"
 	"git-hint/engine/ranking"
 	"git-hint/engine/registry"
 )
@@ -42,59 +43,38 @@ func Suggestions(input string) ([]parser.CommandMatch, error) {
 	}
 
 	if matches != nil {
+		var dynamicFlag string
+		for name := range matches {
+			if flag := provider.FlagCheck(name); flag != "" {
+				dynamicFlag = flag
+				break
+			}
+		}
+
+		if dynamicFlag != "" {
+			expanded := provider.Provider(dynamicFlag)
+			parts := strings.Split(input, " ")
+			lastToken := parts[len(parts)-1]
+
+			var filtered []parser.CommandMatch
+			for _, s := range expanded {
+				if s.Name != "" && strings.HasPrefix(s.Name, lastToken) {
+					filtered = append(filtered, s)
+				}
+			}
+			return filtered, nil
+		}
+
 		for _, cmd := range matches {
 			list = append(list, cmd)
 		}
-
 		list, err := ranking.RankSuggestions(input, list)
 		if err != nil {
 			return nil, fmt.Errorf("❌ Erro ao ordenar comandos: %v\n", err)
 		}
 		return list, nil
-	} else {
-		return nil, nil
 	}
-}
-
-func FindCommands(input []string, commands map[string]parser.CommandMatch) (map[string]parser.CommandMatch, error) {
-	newCommands := make(map[string]parser.CommandMatch)
-
-	// Case 1
-	if len(input) == 0 || input[0] == "" {
-		return commands, nil
-	}
-	if commands == nil {
-		return nil, fmt.Errorf("❌ Commands map is nil")
-	}
-
-	// 1. Filter
-	for name, cmd := range commands {
-		if strings.HasPrefix(name, input[0]) {
-			newCommands[name] = cmd
-		}
-	}
-
-	// 2. Auto Jump
-	jumped := false
-	if len(input) >= 1 && len(newCommands) == 1 {
-		for name, cmd := range newCommands {
-			if name == input[0] {
-				subCommands := make(map[string]parser.CommandMatch)
-				for subname, subcmd := range cmd.SubCommand {
-					subcmd.Name = subname
-					subCommands[subname] = subcmd
-				}
-				newCommands = subCommands
-				jumped = true
-			}
-		}
-	}
-
-	if jumped && len(input) == 1 {
-		return newCommands, nil
-	}
-
-	return FindCommands(input[1:], newCommands)
+	return nil, nil
 }
 
 func CompleteBuffer(buffer string, selectedIndex int) string {

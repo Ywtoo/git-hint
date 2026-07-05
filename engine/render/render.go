@@ -5,18 +5,17 @@ import (
 	"strings"
 )
 
-// calculateOffset determina a posição relativa dentro do buffer onde as sugestões devem começar.
 func calculateOffset(buffer string, matches []parser.CommandMatch) int {
-	// Limpa espaços no final para evitar que o menu "pule" ao digitar espaço
 	trimmedBuffer := strings.TrimRight(buffer, " ")
 
 	var lastToken string
-	parts := strings.Fields(trimmedBuffer)
-	if len(parts) > 0 {
-		lastToken = parts[len(parts)-1]
+	if !strings.HasSuffix(buffer, " ") {
+		parts := strings.Fields(trimmedBuffer)
+		if len(parts) > 0 {
+			lastToken = parts[len(parts)-1]
+		}
 	}
 
-	// 2. Check if the last token is a prefix of any current suggestion
 	isPrefix := false
 	if lastToken != "" {
 		for _, s := range matches {
@@ -27,9 +26,7 @@ func calculateOffset(buffer string, matches []parser.CommandMatch) int {
 		}
 	}
 
-	// 3. Decide: Replace or Append
 	if isPrefix {
-		// Replace the last token with the selected suggestion
 		idx := strings.LastIndex(trimmedBuffer, lastToken)
 		if idx == -1 {
 			return len(trimmedBuffer) + 1
@@ -82,25 +79,22 @@ func FormatList(matches []parser.CommandMatch, selected int, buffer string, prom
 
 	var formatted []string
 
-	// Itens da janela
 	for i := start; i < end; i++ {
 		m := matches[i]
 
-		prefix := "  "
-		if i == selected {
-			prefix = "> "
-		}
-
-		// Adiciona seta para cima no primeiro item se houver mais acima
+		arrow := " "
 		if i == start && start > 0 {
-			prefix = "↑" + prefix[1:] // substitui o primeiro espaço por ↑
-		}
-		// Adiciona seta para baixo no último item se houver mais abaixo
-		if i == end-1 && end < total {
-			prefix = "↓" + prefix[1:] // substitui o primeiro espaço por ↓
+			arrow = "↑"
+		} else if i == end-1 && end < total {
+			arrow = "↓"
 		}
 
-		formatted = append(formatted, indent+prefix+m.Name)
+		marker := " "
+		if i == selected {
+			marker = ">"
+		}
+
+		formatted = append(formatted, indent+arrow+marker+" "+m.Name)
 	}
 
 	return strings.Join(formatted, "\n")

@@ -53,10 +53,15 @@
     "nUsed": 1,
     "subCommand": {
       "-m": {
-        "required": "<commit-message>",
         "description": "Specify the commit message",
         "completeDescription": "Sets the commit message for the commit",
-        "nUsed": 0
+        "nUsed": 0,
+        "subCommand": {
+          "<msg>": {
+            "description": "Sugestões de mensagens baseadas no histórico",
+            "nUsed": 0
+          }
+        }
       },
       "-a": {
         "description": "Automatically stage files that have been modified",
@@ -92,10 +97,20 @@
     "completeDescription": "Switches between branches or restores working tree files",
     "nUsed": 0,
     "subCommand": {
+      "<branch>": {
+        "description": "Alternar para uma branch existente",
+        "nUsed": 0
+      },
       "-b": {
         "description": "Create and checkout a new branch",
         "completeDescription": "Creates a new branch and switches to it",
-        "nUsed": 0
+        "nUsed": 0,
+        "subCommand": {
+          "<branch>": {
+            "description": "Nome da nova branch",
+            "nUsed": 0
+          }
+        }
       }
     }
   },
@@ -105,16 +120,26 @@
     "nUsed": 0,
     "subCommand": {
       "-d": {
-        "required": "<branch-name>",
         "description": "Delete a branch safely",
         "completeDescription": "Deletes the specified branch only if it has already been fully merged into its upstream branch.",
-        "nUsed": 0
+        "nUsed": 0,
+        "subCommand": {
+          "<branch>": {
+            "description": "Selecione a branch para deletar",
+            "nUsed": 0
+          }
+        }
       },
       "-D": {
-        "required": "<branch-name>",
         "description": "Force delete a branch",
         "completeDescription": "Forces the deletion of a branch, even if it contains unmerged changes.",
-        "nUsed": 0
+        "nUsed": 0,
+        "subCommand": {
+          "<branch>": {
+            "description": "Selecione a branch para deletar forçadamente",
+            "nUsed": 0
+          }
+        }
       },
       "-a": {
         "description": "List both remote-tracking and local branches",
@@ -158,10 +183,21 @@
     "nUsed": 0,
     "subCommand": {
       "-u": {
-        "required": "<remote> <branch>",
         "description": "Upstream tracking",
         "completeDescription": "Links your local branch to a remote branch, so you can use 'git push' or 'git pull' without specifying the destination in the future.",
-        "nUsed": 0
+        "nUsed": 0,
+        "subCommand": {
+          "<remote>": {
+            "description": "Selecione o remote",
+            "nUsed": 0,
+            "subCommand": {
+              "<branch>": {
+                "description": "Selecione a branch de destino",
+                "nUsed": 0
+              }
+            }
+          }
+        }
       },
       "--force": {
         "description": "Force push changes to the remote repository",

@@ -60,7 +60,7 @@ func main() {
 		key := os.Args[2]
 
 		valStr := strings.TrimSpace(os.Args[3])
-		buffer := strings.TrimSpace(os.Args[4])
+		buffer := os.Args[4] // 🔧 NÃO trimar — o espaço final é informação semântica
 
 		selected, err := strconv.Atoi(valStr)
 		if err != nil {
@@ -71,7 +71,6 @@ func main() {
 		keymap.Buffer = buffer
 		widget, newSelected := keymap.KeyHandler(key)
 
-		// SAÍDA PURA: "widget|selected|buffer"
 		fmt.Printf("%s|%d|%s\n", widget, newSelected, keymap.Buffer)
 
 	default:
