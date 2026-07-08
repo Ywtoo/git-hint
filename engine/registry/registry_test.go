@@ -58,13 +58,13 @@ func TestResolveCommandPath(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			got, err := ResolveCommandPath(tt.input)
+			got, err := ResolveCommandData(tt.input)
 			if (err != nil) != tt.wantErr {
-				t.Errorf("ResolveCommandPath() error = %v, wantErr %v", err, tt.wantErr)
+				t.Errorf("ResolveCommandData() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
-			if got != tt.expected {
-				t.Errorf("ResolveCommandPath() = %v, want %v", got, tt.expected)
+			if err == nil && len(got) == 0 {
+				t.Errorf("ResolveCommandData() = %v, want non-empty data", got)
 			}
 		})
 	}

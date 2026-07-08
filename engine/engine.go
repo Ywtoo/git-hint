@@ -29,17 +29,17 @@ func Suggestions(input string) ([]parser.CommandMatch, string, error) {
 	remainingInput := parts[1:]
 	var list []parser.CommandMatch
 
-	filePath, err := registry.ResolveCommandPath(commandName)
+	data, err := registry.ResolveCommandData(commandName)
 	if err != nil {
-		return nil, "", fmt.Errorf("❌ Erro ao encontrar o comando '%s': %v", commandName, err)
+		return nil, "", fmt.Errorf("❌ Error finding command '%s': %v", commandName, err)
 	}
-	if filePath == "" {
+	if data == nil {
 		return nil, "", nil
 	}
 
-	commands, err := parser.ParseCommand(filePath)
+	commands, err := parser.ParseCommand(data)
 	if err != nil {
-		return nil, "", fmt.Errorf("❌ Erro ao ler o arquivo: %v\n", err)
+		return nil, "", fmt.Errorf("❌ Error reading file: %v\n", err)
 	}
 	if commands == nil {
 		return nil, "", nil
@@ -47,13 +47,13 @@ func Suggestions(input string) ([]parser.CommandMatch, string, error) {
 
 	matches, currentToken, err := FindCommands(remainingInput, commands)
 	if err != nil {
-		return nil, "", fmt.Errorf("❌ Erro ao encontrar comandos: %v\n", err)
+		return nil, "", fmt.Errorf("❌ Error finding commands: %v\n", err)
 	}
 	if matches == nil {
 		return nil, "", nil
 	}
 
-	var dynamicFlagSeen string // usado só pra decidir se pula o ranking
+	var dynamicFlagSeen string // used only to decide whether to skip ranking
 
 	for name, cmd := range matches {
 		if flag := provider.FlagCheck(name); flag != "" {
@@ -70,13 +70,13 @@ func Suggestions(input string) ([]parser.CommandMatch, string, error) {
 					s.Description = "" // msg: sem comentário, o valor já é a info
 
 				case skipRankingFlags[flag]:
-					// commit: mantém a Description própria que o provider já montou
-					// (hash + assunto), sempre exibida — não herda do pai, não
-					// fica condicionada a "só quando selecionado".
+					// commit: keep the specific Description that the provider already built
+					// (hash + subject), always displayed — does not inherit from parent,
+					// not conditioned to "only when selected".
 
 				default:
-					// branch, remote, tag, stash: descrição compartilhada do pai,
-					// exibida só na linha selecionada.
+					// branch, remote, tag, stash: shared description from parent,
+					// displayed only on the selected line.
 					s.Description = cmd.Description
 					s.ShowOnlyWhenSelected = true
 				}
@@ -84,7 +84,7 @@ func Suggestions(input string) ([]parser.CommandMatch, string, error) {
 				list = append(list, s)
 			}
 		} else {
-			// estático: Description já vem do próprio cmd, sempre exibida.
+			// static: Description already comes from the cmd itself, always displayed.
 			list = append(list, cmd)
 		}
 	}

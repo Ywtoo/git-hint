@@ -1,6 +1,7 @@
 package keymap
 
 import (
+	"git-hint/engine/state"
 	"testing"
 )
 
@@ -49,8 +50,8 @@ func TestKeyHandler(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			Selected = tt.selected
-			Buffer = tt.buffer
+			state.Selected = tt.selected
+			state.Buffer = tt.buffer
 			gotWidget, gotSelected := KeyHandler(tt.key)
 			if gotWidget != tt.wantWidget {
 				t.Errorf("KeyHandler() widget = %v, want %v", gotWidget, tt.wantWidget)

@@ -23,10 +23,7 @@ func calculateOffset(buffer string, currentToken string) int {
 	return len(buffer) + 1
 }
 
-// FormatList monta a lista de sugestões.
-// groupDescription: comentário herdado do placeholder pai (ex: "Selecione a branch"),
-// usado só quando a lista é dinâmica E não auto-descritiva — aparece só na linha selecionada.
-// Para listas estáticas ou auto-descritivas, groupDescription vem "" e cada item usa sua própria m.Description.
+// FormatList assembles the formatted suggestion list for the terminal.
 func FormatList(matches []parser.CommandMatch, selected int, buffer string, currentToken string, promptCol int, renderMode string) string {
 	total := len(matches)
 	if total == 0 {
@@ -62,7 +59,7 @@ func FormatList(matches []parser.CommandMatch, selected int, buffer string, curr
 		start = 0
 	}
 
-	// Largura máxima do nome, só dentro da janela visível, pra alinhar os comentários em coluna.
+	// Maximum name length within the visible window to align comments in a column.
 	maxNameLen := 0
 	for i := start; i < end; i++ {
 		n := len(displayName(matches[i].Name))

@@ -70,7 +70,7 @@ func RankSuggestionsWithReader(commandName string, suggestions []parser.CommandM
 			continue
 		}
 
-		// Validação do prefixo: rigoroso no passado, flexível no presente
+		// Prefix validation: strict for the past, flexible for the present
 		matches := true
 		for i := 0; i < commandLen; i++ {
 			if i >= len(historyFields) {
@@ -78,13 +78,13 @@ func RankSuggestionsWithReader(commandName string, suggestions []parser.CommandM
 				break
 			}
 			if i < commandLen-1 {
-				// Palavras anteriores devem ser idênticas
+				// Previous words must be identical
 				if historyFields[i] != commandsFields[i] {
 					matches = false
 					break
 				}
 			} else {
-				// A última palavra deve ser um prefixo
+				// The last word must be a prefix
 				if !strings.HasPrefix(historyFields[i], commandsFields[i]) {
 					matches = false
 					break

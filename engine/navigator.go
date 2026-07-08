@@ -30,13 +30,11 @@ func FindCommands(input []string, commands map[string]parser.CommandMatch) (map[
 
 	for name, cmd := range commands {
 		if flag := provider.FlagCheck(name); flag != "" {
-			completed := len(input) > 1
-			if !completed {
-				for _, e := range provider.Provider(flag) {
-					if e.Name == input[0] || (e.MatchKey != "" && e.MatchKey == input[0]) {
-						completed = true
-						break
-					}
+			completed := false
+			for _, e := range provider.Provider(flag) {
+				if e.Name == input[0] || (e.MatchKey != "" && e.MatchKey == input[0]) {
+					completed = true
+					break
 				}
 			}
 
@@ -48,7 +46,7 @@ func FindCommands(input []string, commands map[string]parser.CommandMatch) (map[
 						subCommands[subname] = subcmd
 					}
 					if len(input) == 1 {
-						return subCommands, "", nil // jump: nada digitado ainda no novo nível
+						return subCommands, "", nil // jump: valor bateu 100%, exibe sugestões do próximo nível
 					}
 					return FindCommands(input[1:], subCommands)
 				}
@@ -77,7 +75,9 @@ func FindCommands(input []string, commands map[string]parser.CommandMatch) (map[
 				subCommands[subname] = subcmd
 			}
 			if len(input) == 1 {
-				return subCommands, "", nil // jump
+				// Se o usuário digitou o nome exato do comando e o buffer termina com espaço,
+				// ou se já há um token posterior, pula direto para o subcomando!
+				return subCommands, "", nil
 			}
 			return FindCommands(input[1:], subCommands)
 		}

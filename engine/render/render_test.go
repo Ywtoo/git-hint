@@ -87,14 +87,15 @@ func TestFormatList(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			if tt.name == "Empty list" {
-				res := FormatList([]parser.CommandMatch{}, tt.selected, tt.buffer, tt.token, "", tt.promptCol, tt.renderMode)
+				res := FormatList([]parser.CommandMatch{}, tt.selected, tt.buffer, tt.token, tt.promptCol, tt.renderMode)
 				if res != "" {
 					t.Errorf("Expected empty string, got %q", res)
 				}
 				return
 			}
 
-			res := FormatList(matches, tt.selected, tt.buffer, tt.token, "", tt.promptCol, tt.renderMode)
+
+			res := FormatList(matches, tt.selected, tt.buffer, tt.token, tt.promptCol, tt.renderMode)
 			for _, s := range tt.contains {
 				if !strings.Contains(res, s) {
 					t.Errorf("Expected result to contain %q, got:\n%s", s, res)

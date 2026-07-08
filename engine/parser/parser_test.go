@@ -26,7 +26,7 @@ func TestParseCommand(t *testing.T) {
 	}
 	tmpFile.Close()
 
-	cmd, err := ParseCommand(tmpFile.Name())
+	cmd, err := ParseCommand([]byte(content))
 
 	if err != nil {
 		t.Fatalf("ParseCommand falhou inesperadamente: %v", err)

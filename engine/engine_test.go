@@ -22,7 +22,7 @@ func TestIntegration(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			fmt.Printf("🚀 User Input Test: \"%s\"\n", tt.input)
 
-			sortedMatches, currentToken, _, err := Suggestions(tt.input)
+			sortedMatches, currentToken, err := Suggestions(tt.input)
 			if err != nil {
 				t.Fatalf("Erro: %s", err)
 			}

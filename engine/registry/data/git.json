@@ -1,0 +1,1044 @@
+{
+  "add": {
+    "description": "Add file contents to the index",
+    "completeDescription": "Stages modified or new files, preparing them to be included in the next commit.",
+    "nUsed": 0,
+    "subCommand": {
+      "-A": {
+        "description": "Stage all changes in the entire working tree",
+        "completeDescription": "Stages all new, modified, and deleted files across the whole repository, regardless of the current directory.",
+        "nUsed": 0
+      },
+      "-p": {
+        "description": "Interactively choose hunks of patch between the index and the work tree",
+        "completeDescription": "Allows you to interactively review and select specific changes within files to stage.",
+        "nUsed": 0
+      },
+      "-u": {
+        "description": "Stage modifications and deletions, but not new files",
+        "completeDescription": "Updates the index for files already tracked, ignoring untracked files entirely.",
+        "nUsed": 0
+      },
+      ".": {
+        "description": "Stage all changes in the current directory",
+        "completeDescription": "Stages all new, modified, and deleted files in the current directory and its subdirectories.",
+        "nUsed": 0
+      }
+    }
+  },
+  "archive": {
+    "description": "Create an archive of files from a named tree",
+    "completeDescription": "Exports the contents of a commit, branch, or tag into a zip or tar archive without including the .git history.",
+    "nUsed": 0,
+    "subCommand": {
+      "--format": {
+        "description": "Specify the archive format",
+        "completeDescription": "Sets the output format for the archive, such as zip or tar.",
+        "nUsed": 0
+      },
+      "--output": {
+        "description": "Write the archive to a file",
+        "completeDescription": "Saves the generated archive directly to the specified file path instead of stdout.",
+        "nUsed": 0
+      },
+      "\u003ctree-ish\u003e": {
+        "description": "Select the branch, tag, or commit to archive",
+        "nUsed": 0
+      }
+    }
+  },
+  "bisect": {
+    "description": "Use binary search to find the commit that introduced a bug",
+    "completeDescription": "Helps locate the commit that introduced a regression by narrowing down a range of commits through repeated testing.",
+    "nUsed": 0,
+    "subCommand": {
+      "bad": {
+        "description": "Mark a commit as bad",
+        "completeDescription": "Flags the current or specified commit as containing the bug being searched for.",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccommit\u003e": {
+            "description": "Select the bad commit",
+            "nUsed": 0
+          }
+        }
+      },
+      "good": {
+        "description": "Mark a commit as good",
+        "completeDescription": "Flags the current or specified commit as being before the bug was introduced.",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccommit\u003e": {
+            "description": "Select the good commit",
+            "nUsed": 0
+          }
+        }
+      },
+      "reset": {
+        "description": "End the bisect session",
+        "completeDescription": "Stops the bisect process and returns the working directory to the branch you were on before starting.",
+        "nUsed": 0
+      },
+      "start": {
+        "description": "Start a bisect session",
+        "completeDescription": "Begins the binary search process for finding a bad commit.",
+        "nUsed": 0
+      }
+    }
+  },
+  "blame": {
+    "description": "Show what revision and author last modified each line of a file",
+    "completeDescription": "Annotates each line of a file with the commit and author responsible for its most recent change.",
+    "nUsed": 0
+  },
+  "branch": {
+    "description": "List, create, or delete branches",
+    "completeDescription": "Manages branches within your local repository. Without arguments, it lists all local branches.",
+    "nUsed": 0,
+    "subCommand": {
+      "--show-current": {
+        "description": "Print the current branch name",
+        "completeDescription": "Displays only the name of the branch you currently have checked out.",
+        "nUsed": 0
+      },
+      "-D": {
+        "description": "Force delete a branch",
+        "completeDescription": "Forces the deletion of a branch, even if it contains unmerged changes.",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbranch\u003e": {
+            "description": "Select the branch to force delete",
+            "nUsed": 0
+          }
+        }
+      },
+      "-a": {
+        "description": "List both remote-tracking and local branches",
+        "completeDescription": "Shows a list of all local and remote branches available to your local Git environment.",
+        "nUsed": 0
+      },
+      "-d": {
+        "description": "Delete a branch safely",
+        "completeDescription": "Deletes the specified branch only if it has already been fully merged into its upstream branch.",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbranch\u003e": {
+            "description": "Select the branch to delete",
+            "nUsed": 0
+          }
+        }
+      },
+      "-m": {
+        "description": "Rename a branch",
+        "completeDescription": "Renames the current branch, or a specified branch, to a new name.",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbranch\u003e": {
+            "description": "Select the branch to rename",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cname\u003e": {
+                "description": "Enter the name for the new branch",
+                "nUsed": 0
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "checkout": {
+    "description": "Switch branches or restore working tree files",
+    "completeDescription": "Switches between branches or restores working tree files",
+    "nUsed": 0,
+    "subCommand": {
+      "--": {
+        "description": "Discard changes in the working directory",
+        "completeDescription": "Restores a file to its last committed state, discarding any uncommitted local changes to it.",
+        "nUsed": 0
+      },
+      "-b": {
+        "description": "Create and checkout a new branch",
+        "completeDescription": "Creates a new branch and switches to it",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "description": "Enter the name for the new branch",
+            "nUsed": 0
+          }
+        }
+      },
+      "\u003cbranch\u003e": {
+        "description": "Select an existing branch to switch to",
+        "nUsed": 0
+      }
+    }
+  },
+  "cherry-pick": {
+    "description": "Apply the changes introduced by an existing commit",
+    "completeDescription": "Takes the changes from a specific commit on another branch and applies them as a new commit on your current branch.",
+    "nUsed": 0,
+    "subCommand": {
+      "--abort": {
+        "description": "Abort the cherry-pick operation",
+        "completeDescription": "Cancels the ongoing cherry-pick and restores the branch to its previous state.",
+        "nUsed": 0
+      },
+      "--continue": {
+        "description": "Continue the cherry-pick after resolving conflicts",
+        "completeDescription": "Resumes the cherry-pick process once you have manually resolved all conflicting files.",
+        "nUsed": 0
+      },
+      "\u003ccommit\u003e": {
+        "description": "Select the commit to apply",
+        "nUsed": 0
+      }
+    }
+  },
+  "clean": {
+    "description": "Remove untracked files from the working tree",
+    "completeDescription": "Deletes files that are not tracked by Git, useful for cleaning up build artifacts or stray files.",
+    "nUsed": 0,
+    "subCommand": {
+      "-d": {
+        "description": "Also remove untracked directories",
+        "completeDescription": "Extends the clean operation to include untracked directories, not just files.",
+        "nUsed": 0
+      },
+      "-f": {
+        "description": "Force the removal of untracked files",
+        "completeDescription": "Actually performs the deletion of untracked files, required since clean refuses to run without it by default.",
+        "nUsed": 0
+      },
+      "-n": {
+        "description": "Dry run, show what would be removed",
+        "completeDescription": "Shows which files would be deleted without actually removing them.",
+        "nUsed": 0
+      }
+    }
+  },
+  "clone": {
+    "description": "Clone a repository into a new directory",
+    "completeDescription": "Downloads an existing Git repository from a remote source along with all its history and branches.",
+    "nUsed": 0,
+    "subCommand": {
+      "--depth": {
+        "description": "Create a shallow clone with a truncated history",
+        "completeDescription": "Clones the repository but limits the history to the specified number of commits, saving bandwidth.",
+        "nUsed": 0
+      },
+      "--recurse-submodules": {
+        "description": "Clone submodules recursively",
+        "completeDescription": "After cloning, also initializes and clones every submodule found inside the repository.",
+        "nUsed": 0
+      }
+    }
+  },
+  "commit": {
+    "description": "Record changes to the repository",
+    "completeDescription": "The git commit command captures a snapshot of the project's currently staged changes. It allows you to save your work and create a history of changes in the repository.",
+    "nUsed": 1,
+    "subCommand": {
+      "--allow-empty": {
+        "description": "Allow creating a commit with no changes",
+        "completeDescription": "Creates a commit even if there is nothing staged, often used for triggering CI pipelines or marking milestones.",
+        "nUsed": 0
+      },
+      "--amend": {
+        "description": "Replace the tip of the current branch by creating a new commit",
+        "completeDescription": "Allows you to modify the most recent commit",
+        "nUsed": 0
+      },
+      "--no-verify": {
+        "description": "Skip pre-commit and commit-msg hooks",
+        "completeDescription": "Bypasses any pre-commit and commit-msg hooks configured in the repository, useful for quick or emergency commits.",
+        "nUsed": 0
+      },
+      "-a": {
+        "description": "Automatically stage files that have been modified",
+        "completeDescription": "Automatically stages all modified files before committing",
+        "nUsed": 0
+      },
+      "-m": {
+        "description": "Specify the commit message",
+        "completeDescription": "Sets the commit message for the commit",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmsg\u003e": {
+            "description": "Commit message suggestions based on history",
+            "nUsed": 0
+          }
+        }
+      }
+    }
+  },
+  "config": {
+    "description": "Get and set repository or global options",
+    "completeDescription": "Reads or writes configuration variables that control Git's behavior, either per-repository or globally for the user.",
+    "nUsed": 0,
+    "subCommand": {
+      "--global": {
+        "description": "Apply the configuration globally for the user",
+        "completeDescription": "Sets or reads the configuration value in the user's global config file, affecting all repositories.",
+        "nUsed": 0
+      },
+      "--list": {
+        "description": "List all configuration variables",
+        "completeDescription": "Displays every configuration value currently set, from all applicable config files.",
+        "nUsed": 0
+      }
+    }
+  },
+  "describe": {
+    "description": "Give an object a human readable name based on an available tag",
+    "completeDescription": "Finds the most recent tag reachable from a commit and produces a readable identifier combining the tag and commit distance.",
+    "nUsed": 0,
+    "subCommand": {
+      "--always": {
+        "description": "Fall back to the abbreviated commit hash if no tag is found",
+        "completeDescription": "Ensures a result is always produced, even when there are no tags reachable from the commit.",
+        "nUsed": 0
+      },
+      "--tags": {
+        "description": "Consider all tags, not just annotated ones",
+        "completeDescription": "Includes lightweight tags in the search for the nearest reachable tag.",
+        "nUsed": 0
+      }
+    }
+  },
+  "diff": {
+    "description": "Show changes between commits, commit and working tree, etc",
+    "completeDescription": "Displays the differences between the working directory, the staging area, and commits.",
+    "nUsed": 0,
+    "subCommand": {
+      "--staged": {
+        "description": "Show diff of staged changes",
+        "completeDescription": "Displays the changes that have been staged and will be included in the next commit.",
+        "nUsed": 0
+      },
+      "\u003ccommit\u003e": {
+        "description": "Select the commit to compare",
+        "nUsed": 0
+      }
+    }
+  },
+  "fetch": {
+    "description": "Download objects and refs from another repository",
+    "completeDescription": "Downloads metadata and commits from a remote repository, but does not integrate or merge them into your working files.",
+    "nUsed": 0,
+    "subCommand": {
+      "--all": {
+        "description": "Fetch all remotes",
+        "completeDescription": "Fetches tracking updates from all configured remote repositories.",
+        "nUsed": 0
+      },
+      "--prune": {
+        "description": "Remove remote-tracking references that no longer exist on the remote",
+        "completeDescription": "Cleans up local references to remote branches that have been deleted on the remote repository.",
+        "nUsed": 0
+      },
+      "\u003cremote\u003e": {
+        "description": "Select the remote",
+        "nUsed": 0
+      }
+    }
+  },
+  "gc": {
+    "description": "Cleanup unnecessary files and optimize the local repository",
+    "completeDescription": "Compresses file revisions, removes unreachable objects, and packs loose objects to keep the repository small and fast.",
+    "nUsed": 0,
+    "subCommand": {
+      "--aggressive": {
+        "description": "Optimize more thoroughly at the cost of speed",
+        "completeDescription": "Runs a more exhaustive optimization pass, taking longer but producing better compression.",
+        "nUsed": 0
+      },
+      "--prune": {
+        "description": "Remove unreachable objects older than a given date",
+        "completeDescription": "Deletes loose objects that are no longer reachable from any reference, freeing disk space.",
+        "nUsed": 0
+      }
+    }
+  },
+  "init": {
+    "description": "Create an empty Git repository or reinitialize an existing one",
+    "completeDescription": "Initializes a new, empty Git repository in the current directory, creating a .git folder.",
+    "nUsed": 0,
+    "subCommand": {
+      "--bare": {
+        "description": "Create a bare repository",
+        "completeDescription": "Initializes a repository without a working directory, typically used for shared/remote repositories.",
+        "nUsed": 0
+      }
+    }
+  },
+  "log": {
+    "description": "Show commit logs",
+    "completeDescription": "Displays the commit history of the current branch, showing commit hashes, authors, dates, and messages.",
+    "nUsed": 0,
+    "subCommand": {
+      "--graph": {
+        "description": "Draw a text-based graphical representation of the commit history",
+        "completeDescription": "Draws an ASCII graph representing the branch and merge history.",
+        "nUsed": 0
+      },
+      "--oneline": {
+        "description": "Print each commit in a single line",
+        "completeDescription": "Condenses the commit history output, displaying only the short SHA-1 and the commit message line.",
+        "nUsed": 0
+      },
+      "--stat": {
+        "description": "Show a summary of changed files per commit",
+        "completeDescription": "Shows the number of insertions and deletions per file for each commit in the log.",
+        "nUsed": 0
+      },
+      "-p": {
+        "description": "Show the full patch/diff for each commit",
+        "completeDescription": "Displays the actual changes introduced by each commit alongside its metadata.",
+        "nUsed": 0
+      }
+    }
+  },
+  "ls-files": {
+    "description": "Show information about files in the index and working tree",
+    "completeDescription": "Lists tracked files, useful for scripting or inspecting exactly what Git considers part of the repository.",
+    "nUsed": 0,
+    "subCommand": {
+      "--cached": {
+        "description": "Show cached (staged) files",
+        "completeDescription": "Lists files currently present in the index.",
+        "nUsed": 0
+      },
+      "--ignored": {
+        "description": "Show ignored files",
+        "completeDescription": "Lists files that match patterns in .gitignore.",
+        "nUsed": 0
+      },
+      "--others": {
+        "description": "Show untracked files",
+        "completeDescription": "Includes files that exist in the working directory but are not tracked by Git.",
+        "nUsed": 0
+      }
+    }
+  },
+  "merge": {
+    "description": "Join two or more development histories together",
+    "completeDescription": "Integrates changes from another branch into your current active branch.",
+    "nUsed": 0,
+    "subCommand": {
+      "--abort": {
+        "description": "Abort the current conflict resolution process",
+        "completeDescription": "Resets the merge process and tries to reconstruct the pre-merge state if a conflict occurs.",
+        "nUsed": 0
+      },
+      "--continue": {
+        "description": "Continue the merge after resolving conflicts",
+        "completeDescription": "Resumes the merge process once you have manually resolved all conflicting files.",
+        "nUsed": 0
+      },
+      "--no-ff": {
+        "description": "Create a merge commit even when a fast-forward is possible",
+        "completeDescription": "Forces Git to create a new merge commit instead of fast-forwarding, preserving the historical branch existence.",
+        "nUsed": 0
+      },
+      "\u003cbranch\u003e": {
+        "description": "Select the branch to merge",
+        "nUsed": 0
+      }
+    }
+  },
+  "mv": {
+    "description": "Move or rename a file, directory, or symlink",
+    "completeDescription": "Moves or renames a tracked file and automatically stages the change in a single step.",
+    "nUsed": 0
+  },
+  "pull": {
+    "description": "Fetch from and integrate with another repository or a local branch",
+    "completeDescription": "Incorporates changes from a remote repository into the current branch. It is a combination of 'git fetch' followed by 'git merge'.",
+    "nUsed": 0,
+    "subCommand": {
+      "--rebase": {
+        "description": "Rebase the current branch on top of the upstream branch after fetching",
+        "completeDescription": "Fetches the remote changes and replays your local commits on top of them, avoiding unnecessary merge commits.",
+        "nUsed": 0
+      },
+      "\u003cremote\u003e": {
+        "description": "Select the remote",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbranch\u003e": {
+            "description": "Select the remote branch",
+            "nUsed": 0
+          }
+        }
+      }
+    }
+  },
+  "push": {
+    "description": "Update remote refs along with associated objects",
+    "completeDescription": "Updates remote references with the local changes",
+    "nUsed": 0,
+    "subCommand": {
+      "--delete": {
+        "description": "Delete a branch on the remote repository",
+        "completeDescription": "Removes the specified branch from the remote repository without affecting your local copy.",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cremote\u003e": {
+            "description": "Select the remote",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cbranch\u003e": {
+                "description": "Select the remote branch to delete",
+                "nUsed": 0
+              }
+            }
+          }
+        }
+      },
+      "--force": {
+        "description": "Force push changes to the remote repository",
+        "completeDescription": "Overrides the remote branch with your local history. Use with extreme caution as it can overwrite others' work.",
+        "nUsed": 0
+      },
+      "--force-with-lease": {
+        "description": "Force push, but only if no one else has updated the remote branch",
+        "completeDescription": "A safer force push that fails if the remote branch has commits you haven't seen, preventing accidental overwrites of others' work.",
+        "nUsed": 0
+      },
+      "--tags": {
+        "description": "Push all local tags to the remote",
+        "completeDescription": "Sends every tag that exists in your local repository to the remote, in addition to any commits.",
+        "nUsed": 0
+      },
+      "-u": {
+        "description": "Upstream tracking",
+        "completeDescription": "Links your local branch to a remote branch, so you can use 'git push' or 'git pull' without specifying the destination in the future.",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cremote\u003e": {
+            "description": "Select the remote",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cbranch\u003e": {
+                "description": "Select the destination branch",
+                "nUsed": 0
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rebase": {
+    "description": "Reapply commits on top of another base tip",
+    "completeDescription": "Moves or combines a sequence of commits to a new base commit, creating a linear project history.",
+    "nUsed": 0,
+    "subCommand": {
+      "--abort": {
+        "description": "Abort the rebase and restore the original branch",
+        "completeDescription": "Cancels the ongoing rebase and returns the branch to the state it was in before the rebase started.",
+        "nUsed": 0
+      },
+      "--continue": {
+        "description": "Continue the rebase after resolving conflicts",
+        "completeDescription": "Resumes the rebase process once you have manually resolved all conflicting files.",
+        "nUsed": 0
+      },
+      "-i": {
+        "description": "Start an interactive rebase",
+        "completeDescription": "Opens an interactive editor allowing you to reorder, squash, edit, or drop commits before replaying them.",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccommit\u003e": {
+            "description": "Select the base commit for interactive rebase",
+            "nUsed": 0
+          }
+        }
+      },
+      "\u003cbranch\u003e": {
+        "description": "Select the base branch for rebase",
+        "nUsed": 0
+      }
+    }
+  },
+  "reflog": {
+    "description": "Manage reflog information",
+    "completeDescription": "Shows a log of where HEAD and branch references have pointed, useful for recovering lost commits after resets or rebases.",
+    "nUsed": 0,
+    "subCommand": {
+      "--all": {
+        "description": "Show reflogs for all references",
+        "completeDescription": "Displays the reflog history for every ref, not just HEAD.",
+        "nUsed": 0
+      },
+      "expire": {
+        "description": "Expire old reflog entries",
+        "completeDescription": "Removes reflog entries older than a configured time, freeing up repository space.",
+        "nUsed": 0
+      },
+      "show": {
+        "description": "Show the reflog for a reference",
+        "completeDescription": "Displays the history of updates to the given reference, defaulting to HEAD.",
+        "nUsed": 0
+      }
+    }
+  },
+  "remote": {
+    "description": "Manage the set of tracked repositories",
+    "completeDescription": "Manages the connections to other repositories, called remotes, that your local repository can push to or pull from.",
+    "nUsed": 0,
+    "subCommand": {
+      "-v": {
+        "description": "Show remote URLs after their name",
+        "completeDescription": "Lists all configured remotes along with their fetch and push URLs.",
+        "nUsed": 0
+      },
+      "add": {
+        "description": "Add a new remote",
+        "completeDescription": "Registers a new remote repository under a given name, so it can be fetched from or pushed to.",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "description": "Enter the name for the new remote",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003curl\u003e": {
+                "description": "Enter the URL of the remote repository",
+                "nUsed": 0
+              }
+            }
+          }
+        }
+      },
+      "remove": {
+        "description": "Remove a remote",
+        "completeDescription": "Removes the connection to the specified remote repository from your local configuration.",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cremote\u003e": {
+            "description": "Select the remote to remove",
+            "nUsed": 0
+          }
+        }
+      },
+      "show": {
+        "description": "Show detailed information about a remote",
+        "completeDescription": "Displays detailed information about a remote, including its URLs and tracked branches.",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cremote\u003e": {
+            "description": "Select the remote",
+            "nUsed": 0
+          }
+        }
+      }
+    }
+  },
+  "reset": {
+    "description": "Reset current HEAD to the specified state",
+    "completeDescription": "Moves the current branch pointer and optionally updates the staging area and working directory to match a given commit.",
+    "nUsed": 0,
+    "subCommand": {
+      "--hard": {
+        "description": "Move HEAD and discard all changes",
+        "completeDescription": "Moves HEAD to the given commit and discards all changes in the staging area and working directory. Destructive and irreversible.",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccommit\u003e": {
+            "description": "Select the commit",
+            "nUsed": 0
+          }
+        }
+      },
+      "--mixed": {
+        "description": "Move HEAD and reset the staging area (default)",
+        "completeDescription": "Moves HEAD and unstages changes, but keeps them in the working directory.",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccommit\u003e": {
+            "description": "Select the commit",
+            "nUsed": 0
+          }
+        }
+      },
+      "--soft": {
+        "description": "Move HEAD only, keep changes staged",
+        "completeDescription": "Moves HEAD to the given commit but leaves the staging area and working directory untouched.",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccommit\u003e": {
+            "description": "Select the commit",
+            "nUsed": 0
+          }
+        }
+      }
+    }
+  },
+  "restore": {
+    "description": "Restore working tree files",
+    "completeDescription": "Restores files in the working directory to a previous state, typically discarding local modifications.",
+    "nUsed": 0,
+    "subCommand": {
+      "--source": {
+        "description": "Restore files from a specific commit",
+        "completeDescription": "Restores the working directory files to their state at the given commit.",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccommit\u003e": {
+            "description": "Select the source commit",
+            "nUsed": 0
+          }
+        }
+      },
+      "--staged": {
+        "description": "Unstage a file, keeping its modifications",
+        "completeDescription": "Removes a file from the staging area without discarding the changes made to it.",
+        "nUsed": 0
+      }
+    }
+  },
+  "revert": {
+    "description": "Revert some existing commits",
+    "completeDescription": "Creates a new commit that undoes the changes introduced by a specified previous commit, preserving history.",
+    "nUsed": 0,
+    "subCommand": {
+      "--no-commit": {
+        "description": "Revert changes without creating a commit",
+        "completeDescription": "Applies the revert to the working directory and staging area without automatically creating a commit.",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccommit\u003e": {
+            "description": "Select the commit to revert",
+            "nUsed": 0
+          }
+        }
+      },
+      "\u003ccommit\u003e": {
+        "description": "Select the commit to revert",
+        "nUsed": 0
+      }
+    }
+  },
+  "rm": {
+    "description": "Remove files from the working tree and from the index",
+    "completeDescription": "Deletes files from both the working directory and the staging area, marking the removal for the next commit.",
+    "nUsed": 0,
+    "subCommand": {
+      "--cached": {
+        "description": "Remove only from the index, keep the local file",
+        "completeDescription": "Untracks the file from Git while leaving the physical file untouched in the working directory.",
+        "nUsed": 0
+      },
+      "-r": {
+        "description": "Recursively remove a directory",
+        "completeDescription": "Allows the removal of directories and their contents recursively.",
+        "nUsed": 0
+      }
+    }
+  },
+  "shortlog": {
+    "description": "Summarize commit history by author",
+    "completeDescription": "Groups and counts commits by author, producing a concise changelog-style summary.",
+    "nUsed": 0,
+    "subCommand": {
+      "-n": {
+        "description": "Sort output by number of commits",
+        "completeDescription": "Orders the authors by commit count instead of alphabetically.",
+        "nUsed": 0
+      },
+      "-s": {
+        "description": "Show only a count of commits per author",
+        "completeDescription": "Suppresses commit messages, showing just the number of commits for each author.",
+        "nUsed": 0
+      }
+    }
+  },
+  "show": {
+    "description": "Show various types of objects",
+    "completeDescription": "Displays information about a commit, such as its metadata and the changes it introduced.",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommit\u003e": {
+        "description": "Select the commit to view",
+        "nUsed": 0
+      }
+    }
+  },
+  "sparse-checkout": {
+    "description": "Reduce the working tree to a subset of tracked files",
+    "completeDescription": "Configures Git to check out only a portion of the repository's files, useful for very large repositories.",
+    "nUsed": 0,
+    "subCommand": {
+      "disable": {
+        "description": "Disable sparse-checkout",
+        "completeDescription": "Restores the full working tree, checking out every tracked file again.",
+        "nUsed": 0
+      },
+      "init": {
+        "description": "Enable sparse-checkout for the repository",
+        "completeDescription": "Turns on sparse-checkout mode and creates the initial cone-mode configuration.",
+        "nUsed": 0
+      },
+      "list": {
+        "description": "List the current sparse-checkout patterns",
+        "completeDescription": "Displays the paths currently included by the sparse-checkout configuration.",
+        "nUsed": 0
+      },
+      "set": {
+        "description": "Set the directories to include in the working tree",
+        "completeDescription": "Specifies which paths should be checked out, hiding everything else from the working directory.",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "description": "Enter the path to include",
+            "nUsed": 0
+          }
+        }
+      }
+    }
+  },
+  "stash": {
+    "description": "Stash the changes in a dirty working directory away",
+    "completeDescription": "Temporarily shelves (stores) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later.",
+    "nUsed": 0,
+    "subCommand": {
+      "apply": {
+        "description": "Apply the stash without removing it from the list",
+        "completeDescription": "Applies the most recently saved stash changes but keeps the data stored in the stash list.",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstash\u003e": {
+            "description": "Select the stash entry",
+            "nUsed": 0
+          }
+        }
+      },
+      "branch": {
+        "description": "Create a new branch from a stash",
+        "completeDescription": "Creates and checks out a new branch, then applies the stashed changes to it, removing the stash entry on success.",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "description": "Enter the name for the new branch",
+            "nUsed": 0
+          }
+        }
+      },
+      "drop": {
+        "description": "Remove a single stash entry without applying it",
+        "completeDescription": "Permanently deletes a stash entry from the stash list without applying its changes.",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstash\u003e": {
+            "description": "Select the stash entry to drop",
+            "nUsed": 0
+          }
+        }
+      },
+      "list": {
+        "description": "List the stash entries that you currently have",
+        "completeDescription": "Displays all currently saved stashes in the repository.",
+        "nUsed": 0
+      },
+      "pop": {
+        "description": "Remove a single stashed state from the stash list and apply it",
+        "completeDescription": "Applies the most recently saved stash changes to your working directory and removes it from the stash list.",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstash\u003e": {
+            "description": "Select the stash entry",
+            "nUsed": 0
+          }
+        }
+      },
+      "push": {
+        "description": "Save local modifications to a new stash",
+        "completeDescription": "Explicitly stashes the current changes, optionally with a custom message, and reverts the working directory to match HEAD.",
+        "nUsed": 0
+      },
+      "show": {
+        "description": "Show the changes recorded in a stash",
+        "completeDescription": "Displays a summary of the changes stored in a given stash entry.",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstash\u003e": {
+            "description": "Select the stash entry",
+            "nUsed": 0
+          }
+        }
+      }
+    }
+  },
+  "status": {
+    "description": "Show the working tree status",
+    "completeDescription": "Displays the state of the working directory and the staging area, showing which changes have been staged, which haven't, and which files aren't being tracked.",
+    "nUsed": 0,
+    "subCommand": {
+      "-b": {
+        "description": "Show the branch and tracking info",
+        "completeDescription": "Includes the current branch name and its relation to the upstream branch in the status output.",
+        "nUsed": 0
+      },
+      "-s": {
+        "description": "Give the output in the short-format",
+        "completeDescription": "Provides a highly condensed, short-format output of the repository status.",
+        "nUsed": 0
+      }
+    }
+  },
+  "submodule": {
+    "description": "Initialize, update or inspect submodules",
+    "completeDescription": "Manages nested Git repositories embedded inside the current repository as submodules.",
+    "nUsed": 0,
+    "subCommand": {
+      "add": {
+        "description": "Add a new submodule",
+        "completeDescription": "Registers an external repository as a submodule at the given path.",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003curl\u003e": {
+            "description": "Enter the URL of the submodule repository",
+            "nUsed": 0
+          }
+        }
+      },
+      "deinit": {
+        "description": "Unregister a submodule",
+        "completeDescription": "Removes the submodule's working directory and its entry from local configuration.",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "description": "Select the submodule path",
+            "nUsed": 0
+          }
+        }
+      },
+      "init": {
+        "description": "Initialize submodules recorded in .gitmodules",
+        "completeDescription": "Sets up the local configuration for submodules that already exist in the repository but have not been initialized.",
+        "nUsed": 0
+      },
+      "status": {
+        "description": "Show the status of submodules",
+        "completeDescription": "Displays the currently checked out commit for each submodule, and whether it differs from what's recorded.",
+        "nUsed": 0
+      },
+      "update": {
+        "description": "Update registered submodules",
+        "completeDescription": "Checks out the commits recorded for each submodule, fetching them if necessary.",
+        "nUsed": 0,
+        "subCommand": {
+          "--init": {
+            "description": "Initialize and update in one step",
+            "completeDescription": "Combines 'submodule init' and 'submodule update', commonly run right after cloning a repository with submodules.",
+            "nUsed": 0
+          },
+          "--recursive": {
+            "description": "Update nested submodules recursively",
+            "completeDescription": "Also updates submodules found inside other submodules.",
+            "nUsed": 0
+          }
+        }
+      }
+    }
+  },
+  "switch": {
+    "description": "Switch branches",
+    "completeDescription": "A modern, safer alternative to 'checkout' focused purely on switching between branches.",
+    "nUsed": 0,
+    "subCommand": {
+      "-": {
+        "description": "Switch to the previously checked out branch",
+        "completeDescription": "Toggles back to whichever branch you were on before the last switch.",
+        "nUsed": 0
+      },
+      "-c": {
+        "description": "Create and switch to a new branch",
+        "completeDescription": "Creates a new branch and switches to it, equivalent to 'checkout -b'.",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "description": "Enter the name for the new branch",
+            "nUsed": 0
+          }
+        }
+      },
+      "-d": {
+        "description": "Detach HEAD at the given commit",
+        "completeDescription": "Switches to a specific commit without attaching to any branch, useful for inspecting old states.",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccommit\u003e": {
+            "description": "Select the commit to detach at",
+            "nUsed": 0
+          }
+        }
+      },
+      "\u003cbranch\u003e": {
+        "description": "Select an existing branch to switch to",
+        "nUsed": 0
+      }
+    }
+  },
+  "tag": {
+    "description": "Create, list, delete or verify a tag object",
+    "completeDescription": "Manages tags, which are references that point to specific points in the repository's history, typically used to mark release versions.",
+    "nUsed": 0,
+    "subCommand": {
+      "-a": {
+        "description": "Create an annotated tag",
+        "completeDescription": "Creates a full tag object with its own message, author, and date, stored in the Git database.",
+        "nUsed": 0
+      },
+      "-d": {
+        "description": "Delete an existing tag",
+        "completeDescription": "Removes the specified tag from your local repository.",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctag\u003e": {
+            "description": "Select the tag to delete",
+            "nUsed": 0
+          }
+        }
+      },
+      "-l": {
+        "description": "List tags matching a pattern",
+        "completeDescription": "Lists existing tags, optionally filtered by a glob pattern.",
+        "nUsed": 0
+      },
+      "\u003ctag\u003e": {
+        "description": "Select the tag",
+        "nUsed": 0
+      }
+    }
+  },
+  "worktree": {
+    "description": "Manage multiple working trees",
+    "completeDescription": "Allows checking out multiple branches at once into separate directories, sharing the same repository history.",
+    "nUsed": 0,
+    "subCommand": {
+      "add": {
+        "description": "Create a new working tree",
+        "completeDescription": "Creates a new directory linked to the repository, checked out to a specific branch.",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbranch\u003e": {
+            "description": "Select the branch for the new worktree",
+            "nUsed": 0
+          }
+        }
+      },
+      "list": {
+        "description": "List all working trees",
+        "completeDescription": "Displays every working tree currently linked to this repository.",
+        "nUsed": 0
+      },
+      "remove": {
+        "description": "Remove a working tree",
+        "completeDescription": "Removes a linked working tree, provided it has no uncommitted changes.",
+        "nUsed": 0
+      }
+    }
+  }
+}

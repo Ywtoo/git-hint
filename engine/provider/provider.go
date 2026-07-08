@@ -10,6 +10,22 @@ import (
 	"strings"
 )
 
+// SupportedFlags é o conjunto de flags que têm um provider real implementado
+// no switch de Provider(). Qualquer placeholder não listado aqui cai em
+// default → nil (o usuário digita o valor manualmente).
+//
+// Mantenha esta variável sincronizada com os cases do switch em Provider().
+var SupportedFlags = map[string]bool{
+	"branch": true,
+	"commit": true,
+	"remote": true,
+	"msg":    true,
+	"name":   true,
+	"stash":  true,
+	"tag":    true,
+	"url":    true,
+}
+
 func FlagCheck(flag string) string {
 	if len(flag) >= 2 && flag[0] == '<' && flag[len(flag)-1] == '>' {
 		return flag[1 : len(flag)-1]
@@ -17,28 +33,13 @@ func FlagCheck(flag string) string {
 	return ""
 }
 
-// TODO: Implement specialized providers:
-// 1. BranchProvider: Improve logic to handle "last used" branch for better ranking.
-// 2. CommitProvider: Integrate with history ranking instead of just returning top 10.
-// 3. RemoteProvider: Expand to handle remote-tracking branches.
-// 4. MsgProvider: Extract common commit messages from .zsh_history.
-// 5. StashProvider: Implement logic to split 'stash@{n}' (Name) from the description (everything after ':').
-// 6. AuthorProvider: Run 'git log --format=%an' and deduplicate.
-// 7. ConfigProvider: Static list of common git config keys (user.name, core.editor, etc).
-// 8. FileProviders (Context-Aware):
-//   - <file-staged>: 'git diff --name-only --cached'
-//   - <file-modified>: 'git diff --name-only'
-//   - <file-untracked>: 'git ls-files --others --exclude-standard'
-//
-// 9. ConflictProvider: Parse 'git status --porcelain' for 'UU' markers.
 func Provider(flag string) []parser.CommandMatch {
 	cache := state.LoadCache()
 
 	cacheKey := flag
-	if flag == "msg" {
-		// msg depende do comando sendo completado (ex: "git commit"),
-		// não só do nome do placeholder. Sem isso, o cache trava no
-		// primeiro resultado (mesmo vazio) e nunca mais atualiza.
+	if flag == "msg" || flag == "name" || flag == "url" {
+		// These flags depend on the full command context (e.g. "git remote add"),
+		// not just the placeholder name — so we key the cache by context too.
 		parts := tokenizer.TokenizeBuffer(state.Buffer)
 		if len(parts) > 1 {
 			cacheKey = flag + "|" + strings.Join(parts[:len(parts)-1], " ")
@@ -59,6 +60,8 @@ func Provider(flag string) []parser.CommandMatch {
 		results = GittoList([]string{"remote"}, 0)
 	case "msg":
 		results = MsgProvider()
+	case "name", "url":
+		results = FreeTextProvider()
 	case "stash":
 		results = GittoList([]string{"stash", "list"}, 1)
 	case "tag":
@@ -125,6 +128,39 @@ func MsgProvider() []parser.CommandMatch {
 
 		matches = append(matches, parser.CommandMatch{
 			Name: msgOnly,
+		})
+	}
+	return matches
+}
+
+func FreeTextProvider() []parser.CommandMatch {
+	parts := tokenizer.TokenizeBuffer(state.Buffer)
+	if len(parts) <= 1 {
+		return nil
+	}
+	commandName := strings.Join(parts[:len(parts)-1], " ")
+
+	lines, err := history.FindHistoryCommands(commandName)
+	if err != nil {
+		return nil
+	}
+
+	seen := make(map[string]bool)
+	var matches []parser.CommandMatch
+	for _, line := range lines {
+		// Remove o prefixo conhecido e pega o próximo token.
+		rest := strings.TrimSpace(strings.TrimPrefix(line, commandName))
+		if rest == "" {
+			continue
+		}
+		// Pega apenas o próximo token (sem arrastar o resto da linha).
+		token := strings.Fields(rest)[0]
+		if token == "" || seen[token] {
+			continue
+		}
+		seen[token] = true
+		matches = append(matches, parser.CommandMatch{
+			Name: token,
 		})
 	}
 	return matches
