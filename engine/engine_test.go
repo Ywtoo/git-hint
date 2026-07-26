@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"git-hint/engine/parser"
+	"git-hint/core"
 )
 
 func TestIntegration(t *testing.T) {
@@ -42,18 +42,18 @@ func TestIntegration(t *testing.T) {
 
 func TestCompleteBuffer(t *testing.T) {
 	tests := []struct {
-		name       string
-		buffer     string
-		selIndex   int
-		suggestions []parser.CommandMatch
-		token      string
-		expected   string
+		name        string
+		buffer      string
+		selIndex    int
+		suggestions []core.CommandMatch
+		token       string
+		expected    string
 	}{
 		{
 			name:     "Append suggestion",
 			buffer:   "git ",
 			selIndex: 0,
-			suggestions: []parser.CommandMatch{
+			suggestions: []core.CommandMatch{
 				{Name: "commit"},
 			},
 			token:    "",
@@ -63,7 +63,7 @@ func TestCompleteBuffer(t *testing.T) {
 			name:     "Replace partial",
 			buffer:   "git com",
 			selIndex: 0,
-			suggestions: []parser.CommandMatch{
+			suggestions: []core.CommandMatch{
 				{Name: "commit"},
 			},
 			token:    "com",

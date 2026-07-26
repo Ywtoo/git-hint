@@ -2,14 +2,15 @@ package ranking
 
 import (
 	"bufio"
-	"git-hint/engine/history"
-	"git-hint/engine/parser"
 	"io"
 	"slices"
 	"strings"
+
+	"git-hint/core"
+	"git-hint/engine/history"
 )
 
-func RankSuggestions(commandName string, suggestions []parser.CommandMatch) ([]parser.CommandMatch, error) {
+func RankSuggestions(commandName string, suggestions []core.CommandMatch) ([]core.CommandMatch, error) {
 	// To keep RankSuggestions compatible and simple, we fetch the history first.
 	// However, since FindHistoryCommands returns a slice, we can convert it to a reader
 	// or just refactor RankSuggestionsWithReader to take a slice.
@@ -24,7 +25,7 @@ func RankSuggestions(commandName string, suggestions []parser.CommandMatch) ([]p
 	return RankSuggestionsWithReader(commandName, suggestions, strings.NewReader(historyText))
 }
 
-func RankSuggestionsWithReader(commandName string, suggestions []parser.CommandMatch, reader io.Reader) ([]parser.CommandMatch, error) {
+func RankSuggestionsWithReader(commandName string, suggestions []core.CommandMatch, reader io.Reader) ([]core.CommandMatch, error) {
 	usedCommands := make(map[string]int)
 	commandsFields := strings.Fields(commandName)
 	commandLen := len(commandsFields)
@@ -114,7 +115,7 @@ func RankSuggestionsWithReader(commandName string, suggestions []parser.CommandM
 		}
 	}
 
-	slices.SortFunc(suggestions, func(a parser.CommandMatch, b parser.CommandMatch) int {
+	slices.SortFunc(suggestions, func(a core.CommandMatch, b core.CommandMatch) int {
 		if a.NUsed > b.NUsed {
 			return -1
 		}

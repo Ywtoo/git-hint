@@ -1,8 +1,9 @@
 package keymap
 
 import (
-	"git-hint/engine/state"
 	"testing"
+
+	"git-hint/state"
 )
 
 func TestKeyHandler(t *testing.T) {

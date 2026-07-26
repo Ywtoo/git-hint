@@ -2,13 +2,14 @@ package engine
 
 import (
 	"fmt"
+	"sort"
 	"strings"
 
-	"git-hint/engine/parser"
+	"git-hint/core"
 	"git-hint/engine/provider"
 	"git-hint/engine/ranking"
-	"git-hint/engine/registry"
 	"git-hint/engine/tokenizer"
+	"git-hint/registry"
 )
 
 var noDescriptionFlags = map[string]bool{
@@ -20,14 +21,14 @@ var skipRankingFlags = map[string]bool{
 	"msg":    true,
 }
 
-func Suggestions(input string) ([]parser.CommandMatch, string, error) {
+func Suggestions(input string) ([]core.CommandMatch, string, error) {
 	parts := tokenizer.TokenizeBuffer(input)
 	if len(parts) == 0 {
 		return nil, "", nil
 	}
 	commandName := parts[0]
 	remainingInput := parts[1:]
-	var list []parser.CommandMatch
+	var list []core.CommandMatch
 
 	data, err := registry.ResolveCommandData(commandName)
 	if err != nil {
@@ -37,7 +38,7 @@ func Suggestions(input string) ([]parser.CommandMatch, string, error) {
 		return nil, "", nil
 	}
 
-	commands, err := parser.ParseCommand(data)
+	commands, err := registry.ParseCommand(data)
 	if err != nil {
 		return nil, "", fmt.Errorf("❌ Error reading file: %v\n", err)
 	}
@@ -57,6 +58,17 @@ func Suggestions(input string) ([]parser.CommandMatch, string, error) {
 
 	for name, cmd := range matches {
 		if flag := provider.FlagCheck(name); flag != "" {
+			groupPlaceholder := name // ex: "<msg>"
+			if cmd.Description != "" {
+				groupPlaceholder = name + "  " + cmd.Description // ex: "<msg>  mensagem do commit"
+			}
+
+			// Item placeholder principal (não selecionável na UI como comando estático, serve de cabeçalho do grupo)
+			placeholderItem := cmd
+			placeholderItem.Placeholder = groupPlaceholder
+			placeholderItem.Name = "" // Sem nome selecionável para a linha do cabeçalho
+			list = append(list, placeholderItem)
+
 			dynamicFlagSeen = flag
 			expanded := provider.Provider(flag)
 
@@ -64,6 +76,7 @@ func Suggestions(input string) ([]parser.CommandMatch, string, error) {
 				if s.Name == "" || !strings.HasPrefix(s.Name, currentToken) {
 					continue
 				}
+				s.Placeholder = groupPlaceholder
 
 				switch {
 				case noDescriptionFlags[flag]:
@@ -100,10 +113,16 @@ func Suggestions(input string) ([]parser.CommandMatch, string, error) {
 		}
 	}
 
+	// Reagrupa por placeholder mantendo a ordem de ranking dentro de cada grupo.
+	// Itens estáticos (Placeholder == "") ficam juntos no topo, antes dos dinâmicos.
+	sort.SliceStable(list, func(i, j int) bool {
+		return list[i].Placeholder < list[j].Placeholder
+	})
+
 	return list, currentToken, nil
 }
 
-func CompleteBuffer(buffer string, selectedIndex int, suggestions []parser.CommandMatch, currentToken string) string {
+func CompleteBuffer(buffer string, selectedIndex int, suggestions []core.CommandMatch, currentToken string) string {
 	if selectedIndex < 0 || selectedIndex >= len(suggestions) {
 		return buffer
 	}

@@ -2,7 +2,10 @@ package registry
 
 import (
 	"embed"
+	"encoding/json"
 	"fmt"
+
+	"git-hint/core"
 )
 
 //go:embed data/*.json
@@ -17,4 +20,18 @@ func ResolveCommandData(commandName string) ([]byte, error) {
 		return nil, fmt.Errorf("comando não encontrado: %s", commandName)
 	}
 	return data, nil
+}
+
+func ParseCommand(data []byte) (command map[string]core.CommandMatch, err error) {
+	err = json.Unmarshal(data, &command)
+	if err != nil {
+		return nil, fmt.Errorf("failed to unmarshal JSON: %w", err)
+	}
+
+	for name, cmd := range command {
+		cmd.Name = name
+		command[name] = cmd
+	}
+
+	return command, nil
 }

@@ -1,8 +1,9 @@
 package render
 
 import (
-	"git-hint/engine/parser"
 	"strings"
+
+	"git-hint/core"
 )
 
 const (
@@ -24,7 +25,7 @@ func calculateOffset(buffer string, currentToken string) int {
 }
 
 // FormatList assembles the formatted suggestion list for the terminal.
-func FormatList(matches []parser.CommandMatch, selected int, buffer string, currentToken string, promptCol int, renderMode string) string {
+func FormatList(matches []core.CommandMatch, selected int, buffer string, currentToken string, promptCol int, renderMode string) string {
 	total := len(matches)
 	if total == 0 {
 		return ""
@@ -69,11 +70,23 @@ func FormatList(matches []parser.CommandMatch, selected int, buffer string, curr
 	}
 
 	var formatted []string
+	lastPlaceholder := "" // controls when to display a new group header
 
 	for i := start; i < end; i++ {
 		m := matches[i]
+
+		// Group header: displayed when group placeholder changes. It is NOT a selectable item.
+		if m.Placeholder != "" && m.Placeholder != lastPlaceholder {
+			formatted = append(formatted, indent+"  "+colorGreenStart+m.Placeholder+colorGreenEnd)
+			lastPlaceholder = m.Placeholder
+		}
+
+		if m.Name == "" {
+			continue
+		}
+
 		name := displayName(m.Name)
-		isSelected := i == selected
+		isSelected := i == selected // selected index maps directly to matches slice
 
 		if !isSelected {
 			name = colorGrayStart + name + colorGrayEnd
@@ -105,9 +118,9 @@ func FormatList(matches []parser.CommandMatch, selected int, buffer string, curr
 	return strings.Join(formatted, "\n")
 }
 
-func resolveComment(m parser.CommandMatch, isSelected bool) string {
+func resolveComment(m core.CommandMatch, isSelected bool) string {
 	if m.Description == "" {
-		return "" // self-descriptive (msg) ou sem descrição mesmo
+		return ""
 	}
 	if m.ShowOnlyWhenSelected && !isSelected {
 		return ""

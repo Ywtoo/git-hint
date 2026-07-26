@@ -2,6 +2,7 @@ package registry_test
 
 import (
 	"encoding/json"
+	"fmt"
 	"os"
 	"regexp"
 	"sort"
@@ -124,12 +125,10 @@ func TestSubComandosTemDescription(t *testing.T) {
 // no JSON e cruza com provider.SupportedFlags (fonte de verdade real).
 //
 //   - ✅  tem provider → expande dinamicamente em runtime
-//   - 📝  sem provider → usuário digita o valor; se for intencional, tudo bem;
-//     se for uma feature planejada, aparece aqui como lembrete.
-//
-// O teste NÃO falha por placeholder sem provider — apenas reporta no log.
-// Ele FALHA se um flag listado em provider.SupportedFlags não aparecer em
-// nenhum lugar do JSON (provider implementado mas nunca usado nos dados).
+// Relatório exibido:
+//   - 🟢 Providers suportados e usados no JSON
+//   - ⚠️  Providers órfãos (implementados em Go, mas nunca usados no JSON)
+//   - 📝 Placeholders manuais (usados no JSON, mas sem provider Go)
 func TestPlaceholdersProvider(t *testing.T) {
 	root := loadJSON(t)
 
@@ -137,32 +136,67 @@ func TestPlaceholdersProvider(t *testing.T) {
 	found := make(map[string][]string) // flag → caminhos onde aparece
 	collectPlaceholders(root, "git", found)
 
-	var comProvider, semProvider []string
+	var comProvider []string
+	var semProvider []string
 
-	for flag, paths := range found {
+	for flag := range found {
 		if provider.SupportedFlags[flag] {
 			comProvider = append(comProvider, "<"+flag+">")
 		} else {
-			semProvider = append(semProvider, flag)
-			t.Logf("📝  <%s> sem provider (usuário digita manualmente)\n     aparece em: %s",
-				flag, strings.Join(paths, "\n               "))
+			semProvider = append(semProvider, "<"+flag+">")
 		}
 	}
 
 	sort.Strings(comProvider)
 	sort.Strings(semProvider)
 
-	t.Logf("✅  com provider (%d): %s", len(comProvider), strings.Join(comProvider, ", "))
-	if len(semProvider) > 0 {
-		t.Logf("📝  sem provider (%d): %s", len(semProvider), strings.Join(semProvider, ", "))
-	}
-
-	// Verifica o inverso: nenhum provider implementado deve ficar órfão
-	// (existe no código mas não está sendo referenciado em nenhum dado).
+	// Procura por providers órfãos (no Go, mas não no JSON)
+	var orfaos []string
 	for flag := range provider.SupportedFlags {
 		if _, ok := found[flag]; !ok {
-			t.Errorf("provider implementado para %q mas nenhum <%s> existe no JSON", flag, flag)
+			orfaos = append(orfaos, flag)
 		}
+	}
+	sort.Strings(orfaos)
+
+	// Montagem do Relatório Formatado
+	var sb strings.Builder
+	sb.WriteString("\n=======================================================\n")
+	sb.WriteString("            RELATÓRIO DE PLACEHOLDERS & PROVIDERS      \n")
+	sb.WriteString("=======================================================\n\n")
+
+	sb.WriteString(fmt.Sprintf("🟢 PROVIDERS SUPORTADOS E EM USO (%d):\n", len(comProvider)))
+	for _, p := range comProvider {
+		sb.WriteString(fmt.Sprintf("   - %s\n", p))
+	}
+	sb.WriteString("\n")
+
+	sb.WriteString(fmt.Sprintf("⚠️  PROVIDERS ÓRFÃOS (No Go, mas ausentes no git.json) (%d):\n", len(orfaos)))
+	if len(orfaos) == 0 {
+		sb.WriteString("   (Nenhum provider órfão encontrado!)\n")
+	} else {
+		for _, o := range orfaos {
+			sb.WriteString(fmt.Sprintf("   - <%s>  --> Provider existe em engine/provider, mas <%s> não é usado no JSON!\n", o, o))
+		}
+	}
+	sb.WriteString("\n")
+
+	sb.WriteString(fmt.Sprintf("📝 PLACEHOLDERS MANUAIS / SEM PROVIDER (%d):\n", len(semProvider)))
+	for _, flagWithBrackets := range semProvider {
+		flag := strings.Trim(flagWithBrackets, "<>")
+		paths := found[flag]
+		sb.WriteString(fmt.Sprintf("   • %s (%d ocorrência(s))\n", flagWithBrackets, len(paths)))
+		for _, p := range paths {
+			sb.WriteString(fmt.Sprintf("       └── %s\n", p))
+		}
+	}
+	sb.WriteString("=======================================================\n")
+
+	t.Log(sb.String())
+
+	// Falha caso haja algum provider órfão
+	for _, o := range orfaos {
+		t.Errorf("❌ Provider órfão detectado: %q está em provider.SupportedFlags mas nunca aparece como <%s> no JSON", o, o)
 	}
 }
 

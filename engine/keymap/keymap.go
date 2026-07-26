@@ -2,7 +2,7 @@ package keymap
 
 import (
 	"git-hint/engine"
-	"git-hint/engine/state"
+	"git-hint/state"
 )
 
 func KeyHandler(key string) (string, int) {

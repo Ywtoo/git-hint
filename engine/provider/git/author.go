@@ -1,6 +1,6 @@
 package provider
 
-import "git-hint/engine/parser"
+import "git-hint/core"
 
 // TODO: Implement AuthorProvider
 // This provider should suggest authors who have committed to the repository.
@@ -8,6 +8,6 @@ import "git-hint/engine/parser"
 // Logic:
 // 1. Get the list of all author names from the git log.
 // 2. Deduplicate the list to ensure unique entries.
-func AuthorProvider() []parser.CommandMatch {
+func AuthorProvider() []core.CommandMatch {
 	return nil
 }

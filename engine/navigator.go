@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"git-hint/engine/parser"
+	"git-hint/core"
 	"git-hint/engine/provider"
 )
 
@@ -12,7 +12,7 @@ import (
 // currentToken é o texto que ainda está "em aberto" no nível final retornado:
 // "" quando o usuário acabou de pular pra um novo nível (jump) ou digitou espaço;
 // o token cru quando ainda está filtrando dentro do MESMO nível.
-func FindCommands(input []string, commands map[string]parser.CommandMatch) (map[string]parser.CommandMatch, string, error) {
+func FindCommands(input []string, commands map[string]core.CommandMatch) (map[string]core.CommandMatch, string, error) {
 	// TODO: Handle quoted placeholders ("<...>")
 	// Logic: If a command name is wrapped in quotes, it should be treated as a literal string
 	// that still triggers dynamic expansion, but potentially avoids some of the
@@ -24,7 +24,7 @@ func FindCommands(input []string, commands map[string]parser.CommandMatch) (map[
 		return nil, "", fmt.Errorf("❌ Commands map is nil")
 	}
 
-	newCommands := make(map[string]parser.CommandMatch)
+	newCommands := make(map[string]core.CommandMatch)
 	var exactStaticName string
 	hasExactStatic := false
 
@@ -40,7 +40,7 @@ func FindCommands(input []string, commands map[string]parser.CommandMatch) (map[
 
 			if completed {
 				if cmd.SubCommand != nil {
-					subCommands := make(map[string]parser.CommandMatch, len(cmd.SubCommand))
+					subCommands := make(map[string]core.CommandMatch, len(cmd.SubCommand))
 					for subname, subcmd := range cmd.SubCommand {
 						subcmd.Name = subname
 						subCommands[subname] = subcmd
@@ -69,7 +69,7 @@ func FindCommands(input []string, commands map[string]parser.CommandMatch) (map[
 	if hasExactStatic {
 		cmd := newCommands[exactStaticName]
 		if cmd.SubCommand != nil {
-			subCommands := make(map[string]parser.CommandMatch, len(cmd.SubCommand))
+			subCommands := make(map[string]core.CommandMatch, len(cmd.SubCommand))
 			for subname, subcmd := range cmd.SubCommand {
 				subcmd.Name = subname
 				subCommands[subname] = subcmd

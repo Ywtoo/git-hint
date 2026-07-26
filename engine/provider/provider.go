@@ -2,12 +2,13 @@ package provider
 
 import (
 	"fmt"
-	"git-hint/engine/history"
-	"git-hint/engine/parser"
-	"git-hint/engine/state"
-	"git-hint/engine/tokenizer"
 	"os/exec"
 	"strings"
+
+	"git-hint/core"
+	"git-hint/engine/history"
+	"git-hint/engine/tokenizer"
+	"git-hint/state"
 )
 
 // SupportedFlags é o conjunto de flags que têm um provider real implementado
@@ -33,7 +34,7 @@ func FlagCheck(flag string) string {
 	return ""
 }
 
-func Provider(flag string) []parser.CommandMatch {
+func Provider(flag string) []core.CommandMatch {
 	cache := state.LoadCache()
 
 	cacheKey := flag
@@ -50,7 +51,7 @@ func Provider(flag string) []parser.CommandMatch {
 		return cache.ExpandedList
 	}
 
-	var results []parser.CommandMatch
+	var results []core.CommandMatch
 	switch flag {
 	case "branch":
 		results = GittoList([]string{"branch", "--format=%(refname:short)"}, 0)
@@ -77,7 +78,7 @@ func Provider(flag string) []parser.CommandMatch {
 	return results
 }
 
-func GittoList(command []string, mode int) []parser.CommandMatch {
+func GittoList(command []string, mode int) []core.CommandMatch {
 	output, err := exec.Command("git", command...).Output()
 	if err != nil {
 		return nil
@@ -96,17 +97,17 @@ func GittoList(command []string, mode int) []parser.CommandMatch {
 		list = strings.Fields(text)
 	}
 
-	var matches []parser.CommandMatch
+	var matches []core.CommandMatch
 
 	for _, name := range list {
-		matches = append(matches, parser.CommandMatch{
+		matches = append(matches, core.CommandMatch{
 			Name: name,
 		})
 	}
 	return matches
 }
 
-func MsgProvider() []parser.CommandMatch {
+func MsgProvider() []core.CommandMatch {
 	parts := tokenizer.TokenizeBuffer(state.Buffer)
 	if len(parts) <= 1 {
 		return nil
@@ -118,7 +119,7 @@ func MsgProvider() []parser.CommandMatch {
 		return nil
 	}
 
-	var matches []parser.CommandMatch
+	var matches []core.CommandMatch
 	for _, m := range messages {
 		idx := strings.Index(m, `"`)
 		if idx == -1 {
@@ -126,14 +127,14 @@ func MsgProvider() []parser.CommandMatch {
 		}
 		msgOnly := m[idx:]
 
-		matches = append(matches, parser.CommandMatch{
+		matches = append(matches, core.CommandMatch{
 			Name: msgOnly,
 		})
 	}
 	return matches
 }
 
-func FreeTextProvider() []parser.CommandMatch {
+func FreeTextProvider() []core.CommandMatch {
 	parts := tokenizer.TokenizeBuffer(state.Buffer)
 	if len(parts) <= 1 {
 		return nil
@@ -146,7 +147,7 @@ func FreeTextProvider() []parser.CommandMatch {
 	}
 
 	seen := make(map[string]bool)
-	var matches []parser.CommandMatch
+	var matches []core.CommandMatch
 	for _, line := range lines {
 		// Remove o prefixo conhecido e pega o próximo token.
 		rest := strings.TrimSpace(strings.TrimPrefix(line, commandName))
@@ -159,21 +160,21 @@ func FreeTextProvider() []parser.CommandMatch {
 			continue
 		}
 		seen[token] = true
-		matches = append(matches, parser.CommandMatch{
+		matches = append(matches, core.CommandMatch{
 			Name: token,
 		})
 	}
 	return matches
 }
 
-func CommitProvider() []parser.CommandMatch {
+func CommitProvider() []core.CommandMatch {
 	output, err := exec.Command("git", "log", "-n", "10", "--format=%h|%s").Output()
 	if err != nil {
 		return nil
 	}
 
 	lines := strings.Split(strings.TrimRight(string(output), "\n"), "\n")
-	var matches []parser.CommandMatch
+	var matches []core.CommandMatch
 
 	for i, line := range lines {
 		parts := strings.SplitN(line, "|", 2)
@@ -187,7 +188,7 @@ func CommitProvider() []parser.CommandMatch {
 			label = fmt.Sprintf("HEAD~%d", i)
 		}
 
-		matches = append(matches, parser.CommandMatch{
+		matches = append(matches, core.CommandMatch{
 			Name:        label,
 			MatchKey:    hash,
 			Description: fmt.Sprintf("(%s) %s", hash, subject),

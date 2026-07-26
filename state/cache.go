@@ -2,16 +2,17 @@ package state
 
 import (
 	"encoding/json"
-	"git-hint/engine/parser"
 	"os"
+
+	"git-hint/core"
 )
 
 var cachePath = "/tmp/githint-session.json"
 
 type SessionCache struct {
-	CurrentPlaceholder string                `json:"current_placeholder"`
-	ExpandedList       []parser.CommandMatch `json:"expanded_list"`
-	LastInput          string                `json:"last_input"`
+	CurrentPlaceholder string              `json:"current_placeholder"`
+	ExpandedList       []core.CommandMatch `json:"expanded_list"`
+	LastInput          string              `json:"last_input"`
 }
 
 func LoadCache() *SessionCache {

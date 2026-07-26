@@ -1,15 +1,9 @@
 package main
 
 import (
-	"fmt"
 	"os"
-	"strconv"
-	"strings"
 
-	"git-hint/engine"
-	"git-hint/engine/keymap"
-	"git-hint/engine/render"
-	"git-hint/engine/state"
+	"git-hint/app"
 )
 
 func main() {
@@ -21,59 +15,13 @@ func main() {
 
 	switch mode {
 	case "list":
-		if len(os.Args) < 4 {
-			return
-		}
-		buffer := os.Args[2]
-		state.Buffer = buffer
+		app.List(os.Args)
 
-		selected := -1
-		if len(os.Args) >= 4 {
-			valStr := strings.TrimSpace(os.Args[3])
-			if val, err := strconv.Atoi(valStr); err == nil {
-				selected = val
-			}
-		}
-
-		promptCol := 0
-		if len(os.Args) >= 5 {
-			valStr := strings.TrimSpace(os.Args[4])
-			if val, err := strconv.Atoi(valStr); err == nil {
-				promptCol = val
-			}
-		}
-
-		renderMode := "ohmyzsh"
-		if len(os.Args) >= 6 {
-			renderMode = strings.TrimSpace(os.Args[5])
-		}
-
-		matches, currentToken, err := engine.Suggestions(buffer)
-		if err != nil {
-			return
-		}
-
-		fmt.Print(render.FormatList(matches, selected, buffer, currentToken, promptCol, renderMode))
+	case "rebuild":
+		app.Rebuild(os.Args)
 
 	case "key":
-		if len(os.Args) < 5 {
-			return
-		}
-		key := os.Args[2]
-
-		valStr := strings.TrimSpace(os.Args[3])
-		buffer := os.Args[4] // NÃO trimar — o espaço final é informação semântica
-
-		selected, err := strconv.Atoi(valStr)
-		if err != nil {
-			return
-		}
-
-		state.Selected = selected
-		state.Buffer = buffer
-		widget, newSelected := keymap.KeyHandler(key)
-
-		fmt.Printf("%s|%d|%s\n", widget, newSelected, state.Buffer)
+		app.Key(os.Args)
 
 	default:
 	}
