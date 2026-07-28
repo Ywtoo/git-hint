@@ -1,12 +1,12 @@
 package provider
 
 import (
-	"fmt"
 	"os/exec"
 	"strings"
 
 	"git-hint/core"
 	"git-hint/engine/history"
+	"git-hint/engine/provider/git"
 	"git-hint/engine/tokenizer"
 	"git-hint/state"
 )
@@ -16,15 +16,58 @@ import (
 // default → nil (o usuário digita o valor manualmente).
 //
 // Mantenha esta variável sincronizada com os cases do switch em Provider().
-var SupportedFlags = map[string]bool{
-	"branch": true,
-	"commit": true,
-	"remote": true,
-	"msg":    true,
-	"name":   true,
-	"stash":  true,
-	"tag":    true,
-	"url":    true,
+// Providers maps placeholder names to completion providers.
+//
+// Only placeholders listed here have an implemented provider.
+// Any other placeholder falls back to the default behavior,
+// allowing the user to type the value manually.
+var Providers = map[string]func() []core.CommandMatch{
+
+	// ---------------------------------------------------------------------
+	// Git references
+	// ---------------------------------------------------------------------
+
+	"branch":     branchProvider,
+	"old-branch": branchProvider,
+
+	"commit":     commitProvider,
+	"commit-ish": commitProvider,
+	"tree-ish":   commitProvider,
+	"head":       commitProvider,
+
+	"ref":     refProvider,
+	"refname": refProvider,
+
+	"upstream": upstreamProvider,
+
+	"remote": remoteProvider,
+	"stash":  stashProvider,
+	"tag":    tagProvider,
+
+	// ---------------------------------------------------------------------
+	// Files
+	// ---------------------------------------------------------------------
+
+	"file": trackedFileProvider,
+	"path": trackedFileProvider,
+
+	// ---------------------------------------------------------------------
+	// Message
+	// ---------------------------------------------------------------------
+
+	// Free text with automatic quoting.
+	"msg":     MsgProvider,
+	"message": MsgProvider,
+
+	// ---------------------------------------------------------------------
+	// Free text
+	// ---------------------------------------------------------------------
+
+	"url":         freeTextProvider,
+	"name":        freeTextProvider,
+	"new-branch":  freeTextProvider,
+	"branch-name": freeTextProvider,
+	"author":      freeTextProvider,
 }
 
 func FlagCheck(flag string) string {
@@ -41,7 +84,7 @@ func Provider(flag string) []core.CommandMatch {
 	if flag == "msg" || flag == "name" || flag == "url" {
 		// These flags depend on the full command context (e.g. "git remote add"),
 		// not just the placeholder name — so we key the cache by context too.
-		parts := tokenizer.TokenizeBuffer(state.Buffer)
+		parts := tokenizer.TokenizeBuffer(state.GetBuffer())
 		if len(parts) > 1 {
 			cacheKey = flag + "|" + strings.Join(parts[:len(parts)-1], " ")
 		}
@@ -52,23 +95,10 @@ func Provider(flag string) []core.CommandMatch {
 	}
 
 	var results []core.CommandMatch
-	switch flag {
-	case "branch":
-		results = GittoList([]string{"branch", "--format=%(refname:short)"}, 0)
-	case "commit":
-		results = CommitProvider()
-	case "remote":
-		results = GittoList([]string{"remote"}, 0)
-	case "msg":
-		results = MsgProvider()
-	case "name", "url":
-		results = FreeTextProvider()
-	case "stash":
-		results = GittoList([]string{"stash", "list"}, 1)
-	case "tag":
-		results = GittoList([]string{"tag"}, 0)
-	default:
-		results = nil
+
+	fn, ok := Providers[flag]
+	if ok {
+		results = fn()
 	}
 
 	cache.CurrentPlaceholder = cacheKey
@@ -108,7 +138,7 @@ func GittoList(command []string, mode int) []core.CommandMatch {
 }
 
 func MsgProvider() []core.CommandMatch {
-	parts := tokenizer.TokenizeBuffer(state.Buffer)
+	parts := tokenizer.TokenizeBuffer(state.GetBuffer())
 	if len(parts) <= 1 {
 		return nil
 	}
@@ -135,7 +165,7 @@ func MsgProvider() []core.CommandMatch {
 }
 
 func FreeTextProvider() []core.CommandMatch {
-	parts := tokenizer.TokenizeBuffer(state.Buffer)
+	parts := tokenizer.TokenizeBuffer(state.GetBuffer())
 	if len(parts) <= 1 {
 		return nil
 	}
@@ -167,32 +197,38 @@ func FreeTextProvider() []core.CommandMatch {
 	return matches
 }
 
-func CommitProvider() []core.CommandMatch {
-	output, err := exec.Command("git", "log", "-n", "10", "--format=%h|%s").Output()
-	if err != nil {
-		return nil
-	}
+func branchProvider() []core.CommandMatch {
+	return GittoList([]string{"branch", "--format=%(refname:short)"}, 0)
+}
 
-	lines := strings.Split(strings.TrimRight(string(output), "\n"), "\n")
-	var matches []core.CommandMatch
+func commitProvider() []core.CommandMatch {
+	return git.CommitProvider()
+}
 
-	for i, line := range lines {
-		parts := strings.SplitN(line, "|", 2)
-		if len(parts) != 2 {
-			continue
-		}
-		hash, subject := parts[0], parts[1]
+func remoteProvider() []core.CommandMatch {
+	return GittoList([]string{"remote"}, 0)
+}
 
-		label := "HEAD"
-		if i > 0 {
-			label = fmt.Sprintf("HEAD~%d", i)
-		}
+func stashProvider() []core.CommandMatch {
+	return GittoList([]string{"stash", "list"}, 1)
+}
 
-		matches = append(matches, core.CommandMatch{
-			Name:        label,
-			MatchKey:    hash,
-			Description: fmt.Sprintf("(%s) %s", hash, subject),
-		})
-	}
-	return matches
+func tagProvider() []core.CommandMatch {
+	return GittoList([]string{"tag"}, 0)
+}
+
+func trackedFileProvider() []core.CommandMatch {
+	return GittoList([]string{"ls-files"}, 1)
+}
+
+func refProvider() []core.CommandMatch {
+	return GittoList([]string{"for-each-ref", "--format=%(refname:short)"}, 0)
+}
+
+func upstreamProvider() []core.CommandMatch {
+	return GittoList([]string{"for-each-ref", "--format=%(refname:short)", "refs/remotes"}, 0)
+}
+
+func freeTextProvider() []core.CommandMatch {
+	return FreeTextProvider()
 }

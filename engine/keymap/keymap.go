@@ -6,49 +6,53 @@ import (
 )
 
 func KeyHandler(key string) (string, int) {
-	matches, currentToken, _ := engine.Suggestions(state.Buffer)
+	buffer := state.GetBuffer()
+	selected := state.GetSelected()
+
+	matches, currentToken, _ := engine.Suggestions(buffer)
 	listSize := len(matches)
 
 	switch key {
 	case "arrowUP":
-		if state.Selected < 0 {
-			state.Selected--
-			return "up-line-or-history", state.Selected
+		if selected < 0 {
+			selected--
+			return "up-line-or-history", selected
 		}
-		state.Selected--
-		if state.Selected < 0 {
-			return "up-line-or-history", state.Selected
+		selected--
+		if selected < 0 {
+			return "up-line-or-history", selected
 		}
-		return "", state.Selected
+		return "", selected
 
 	case "arrowDOWN":
-		if state.Selected < 0 {
-			state.Selected++
-			return "down-line-or-history", state.Selected
+		if selected < 0 {
+			selected++
+			return "down-line-or-history", selected
 		}
-		state.Selected++
-		if state.Selected >= listSize {
-			state.Selected = listSize - 1
-			if state.Selected < 0 {
-				state.Selected = 0
+		selected++
+		if selected >= listSize {
+			selected = listSize - 1
+			if selected < 0 {
+				selected = 0
 			}
 			// When reaching the end of the list, we stop here and don't
 			// trigger the shell history to avoid jumping out of the list.
-			return "", state.Selected
+			return "", selected
 		}
-		return "", state.Selected
+		return "", selected
 
 	case "TAB":
-		if state.Selected < 0 || listSize == 0 {
-			return "expand-or-complete", state.Selected
+		if selected < 0 || listSize == 0 {
+			return "expand-or-complete", selected
 		}
-		if state.Selected >= 0 && state.Selected < listSize {
-			state.Buffer = engine.CompleteBuffer(state.Buffer, state.Selected, matches, currentToken)
-			return "", state.Selected
+		if selected >= 0 && selected < listSize {
+			buffer = engine.CompleteBuffer(buffer, selected, matches, currentToken)
+			state.SetBuffer(buffer)
+			return "", selected
 		}
-		return "expand-or-complete", state.Selected
+		return "expand-or-complete", selected
 
 	default:
-		return "", state.Selected
+		return "", selected
 	}
 }

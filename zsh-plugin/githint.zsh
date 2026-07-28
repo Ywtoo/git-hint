@@ -1,39 +1,33 @@
 #!/usr/bin/env zsh
 # ============================================================================
-# githint — autocomplete inteligente para comandos git no zsh
-# Inspirado no Fig (descontinuado), preenche o vácuo no Linux:
-# completação inline com descrição documental em tempo real, ranking por
-# histórico pessoal e placeholders dinâmicos (branches, commits, remotes...)
+# githint — smart autocomplete for git commands in zsh
 # ============================================================================
 
 zmodload zsh/terminfo
+zmodload zsh/net/socket
 
 # ----------------------------------------------------------------------------
-# Estado global do plugin
+# Global plugin state
 # ----------------------------------------------------------------------------
+typeset -g GITHINT_SOCK="/tmp/githint-${USER}.sock"
 typeset -g GITHINT_SELECTED=0
 typeset -g GITHINT_PREV_BUFFER=""
 typeset -g GITHINT_PROMPT_COL=0
 typeset -g GITHINT_RENDER="ohmyzsh"
 typeset -g GITHINT_ORIG_AUTOSUGGEST_STYLE=""
-typeset -g GITHINT_AUTOSUGGEST_STATE="on"   # "on" | "off" — controla transição única
+typeset -g GITHINT_AUTOSUGGEST_STATE="on"
 typeset -g __githint_clean=""
-typeset -ga GITHINT_OWN_HIGHLIGHTS           # rastreia só as nossas entradas em region_highlight
-typeset -gA GITHINT_ORIG_UP                  # widget original das setas — por keymap
+typeset -g __githint_socket_result=""
+typeset -ga GITHINT_OWN_HIGHLIGHTS
+typeset -gA GITHINT_ORIG_UP
 typeset -gA GITHINT_ORIG_DOWN
 
 # ----------------------------------------------------------------------------
-# Resolução do binário — calcula o caminho esperado uma vez (sem exigir que
-# o arquivo já exista), e cada chamada de _githint_update revalida antes de
-# usar. Isso evita precisar dar "source" de novo toda vez que você roda
-# `go build` durante o desenvolvimento — o caminho já está certo desde o
-# início, só o conteúdo do binário muda.
-#
-# Usamos %x (nome do ARQUIVO-FONTE atual) em vez de %N (que dentro de uma
-# função retorna o nome da FUNÇÃO, não do arquivo — testado e confirmado).
+# Binary resolution
 # ----------------------------------------------------------------------------
 _githint_resolve_bin_path() {
     local plugin_dir="${${(%):-%x}:A:h}"
+    local repo_root="${plugin_dir:h}"   # one level above zsh-plugin/
 
     if [[ -x "$plugin_dir/githint" ]]; then
         print -r -- "$plugin_dir/githint"
@@ -43,13 +37,15 @@ _githint_resolve_bin_path() {
         print -r -- "$plugin_dir/bin/githint"
         return
     fi
+    if [[ -x "$repo_root/githint" ]]; then
+        print -r -- "$repo_root/githint"
+        return
+    fi
     if command -v githint >/dev/null 2>&1; then
         command -v githint
         return
     fi
 
-    # Ainda não existe (ex: antes do primeiro `go build`) — aponta mesmo
-    # assim pro caminho mais provável; _githint_update revalida a cada uso.
     print -r -- "$plugin_dir/githint"
 }
 
@@ -57,39 +53,82 @@ GITHINT_BIN="$(_githint_resolve_bin_path)"
 typeset -g GITHINT_MISSING_WARNED=0
 
 # ----------------------------------------------------------------------------
-# Cálculo de largura do prompt (Oh My Zsh)
-# Mede o comprimento visual do prompt pra alinhar a lista de sugestões
-# exatamente abaixo do cursor — específico pro tema com decoração git.
+# Daemon client — talks over a Unix socket instead of forking per keystroke.
+# ----------------------------------------------------------------------------
+typeset -g GITHINT_DAEMON_STARTING=0
+
+_githint_ensure_daemon() {
+    [[ -S "$GITHINT_SOCK" ]] && return 0
+    (( GITHINT_DAEMON_STARTING )) && return 1
+    [[ -x "$GITHINT_BIN" ]] || return 1
+
+    GITHINT_DAEMON_STARTING=1
+    "$GITHINT_BIN" daemon &>/dev/null &!
+
+    # the next keystroke should already find the socket alive; reset the
+    # flag after a short delay so future attempts aren't blocked in case
+    # the daemon actually failed to start
+    ( sleep 1; GITHINT_DAEMON_STARTING=0 ) &!
+}
+
+_githint_socket_call() {
+    local request="$1"
+    local fd
+
+    [[ -S "$GITHINT_SOCK" ]] || return 1
+
+    zsocket "$GITHINT_SOCK" 2>/dev/null || return 1
+    fd=$REPLY
+
+    print -u $fd -- "$request" || { exec {fd}>&-; return 1; }
+
+    local size
+    read -r -u $fd size || { exec {fd}>&-; return 1; }
+
+    local response=""
+    if [[ "$size" == <-> ]] && (( size > 0 )); then
+        read -k $size -u $fd response
+    fi
+
+    exec {fd}>&-
+    __githint_socket_result="$response"
+    return 0
+}
+
+_githint_ensure_daemon
+
+# ----------------------------------------------------------------------------
+# Prompt width calculation (Oh My Zsh)
 # ----------------------------------------------------------------------------
 _githint_calc_width() {
     local folder=${PWD:t}
     local folder_len=${#folder}
-    local base_offset=2  # Ajustado para remover espaços excedentes
+    local base_offset=2
 
     if git rev-parse --is-inside-work-tree &>/dev/null; then
         local branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
         local branch_len=${#branch}
-        local git_deco_offset=9  # Ajustado para remover espaços excedentes
+        local git_deco_offset=9
         echo $(( base_offset + folder_len + git_deco_offset + branch_len ))
     else
         echo $(( base_offset + folder_len ))
     fi
 }
 
+typeset -g GITHINT_PROMPT_COL_CACHE=0
+typeset -g GITHINT_PROMPT_COL_DIR=""
+
+_githint_calc_width_cached() {
+    local cache_key="$PWD"
+    if [[ "$cache_key" != "$GITHINT_PROMPT_COL_DIR" ]]; then
+        GITHINT_PROMPT_COL_CACHE=$(_githint_calc_width)
+        GITHINT_PROMPT_COL_DIR="$cache_key"
+    fi
+    echo "$GITHINT_PROMPT_COL_CACHE"
+}
+
 # ----------------------------------------------------------------------------
-# Destaque de cor (sentinelas → region_highlight)
-#
-# ANSI cru (\x1b[...m) não funciona no POSTDISPLAY — o ZLE sanitiza qualquer
-# byte de controle e exibe como texto literal (ex: "^[[32m"). O único
-# mecanismo real é region_highlight: um array de "início fim especificação"
-# que o ZLE aplica na hora de desenhar as células do terminal.
-#
-# Protocolo de comunicação com o binário Go:
-#   \x01 ... \x02  → verde escuro fg=28  (comentário "# descrição")
-#   \x03 ... \x04  → cinza       fg=8   (nome do item não-selecionado)
-#
-# A função separa o texto limpo das posições coloridas, sem usar $() pra
-# evitar subshell — modificações em region_highlight morreriam na subshell.
+# Color highlighting (sentinels → region_highlight)
 # ----------------------------------------------------------------------------
 _githint_apply_highlight() {
     local raw="$1"
@@ -120,7 +159,7 @@ _githint_apply_highlight() {
             clean+="$content"
             pos=$(( pos + ${#content} ))
             ranges+=("$start $pos fg=$color")
-            (( i++ ))  # consome o marcador de fechamento
+            (( i++ ))
         else
             clean+="$char"
             (( pos++ ))
@@ -132,23 +171,19 @@ _githint_apply_highlight() {
     local entry
     for entry in "${ranges[@]}"; do
         region_highlight+=("$entry")
-        GITHINT_OWN_HIGHLIGHTS+=("$entry")  # registra como "nossa" pra remoção seletiva
+        GITHINT_OWN_HIGHLIGHTS+=("$entry")
     done
 }
 
-# Remove do region_highlight APENAS as entradas que o githint colocou,
-# preservando qualquer cor de outros plugins (ex: zsh-syntax-highlighting).
-# Usar region_highlight=() seria agressivo demais — apagaria a cor verde
-# do "git" digitado e qualquer outro destaque de terceiros.
 _githint_clear_own_highlights() {
     (( ${#GITHINT_OWN_HIGHLIGHTS} == 0 )) && return
 
     local -a kept
-    local entry own found
+    local entry own_entry found
     for entry in "${region_highlight[@]}"; do
         found=0
-        for own in "${GITHINT_OWN_HIGHLIGHTS[@]}"; do
-            if [[ "$entry" == "$own" ]]; then
+        for own_entry in "${GITHINT_OWN_HIGHLIGHTS[@]}"; do
+            if [[ "$entry" == "$own_entry" ]]; then
                 found=1
                 break
             fi
@@ -161,15 +196,7 @@ _githint_clear_own_highlights() {
 }
 
 # ----------------------------------------------------------------------------
-# Interop com zsh-autosuggestions
-#
-# O hook _zsh_autosuggest_highlight_apply (registrado em zle-line-pre-redraw)
-# pinta TODO o POSTDISPLAY com fg=8 (cinza), sobrescrevendo nosso destaque.
-# Solução: neutralizar o estilo enquanto o githint está ativo, restaurar ao sair.
-#
-# Otimização: só alternamos no momento da TRANSIÇÃO (git ↔ não-git), não a
-# cada tecla — evita chamar _zsh_autosuggest_disable repetidamente quando
-# você já está no meio de "git commit -m ...".
+# Interop with zsh-autosuggestions
 # ----------------------------------------------------------------------------
 _githint_autosuggest_off() {
     if [[ -z "$GITHINT_ORIG_AUTOSUGGEST_STYLE" ]]; then
@@ -185,77 +212,75 @@ _githint_autosuggest_on() {
 }
 
 # ----------------------------------------------------------------------------
-# Atualização da lista de sugestões — chamada a cada redraw do ZLE
+# Terminal synchronized output — hides the clear/redraw flicker
+# ----------------------------------------------------------------------------
+_githint_sync_start() {
+    print -n $'\e[?2026h' > /dev/tty 2>/dev/null
+}
+
+_githint_sync_end() {
+    print -n $'\e[?2026l' > /dev/tty 2>/dev/null
+}
+
+# ----------------------------------------------------------------------------
+# Suggestion list update — called on every ZLE redraw
 # ----------------------------------------------------------------------------
 _githint_update() {
     local buffer="$BUFFER"
 
-    # Reset de seleção só quando o buffer muda de fato.
-    # Se GITHINT_SELECTED < 0, estamos navegando no histórico; preservamos o
-    # estado pra que a seta pra baixo (↓) consiga retornar dessa navegação.
     if [[ "$buffer" != "$GITHINT_PREV_BUFFER" ]]; then
-        if (( GITHINT_SELECTED >= 0 )); then
-            GITHINT_SELECTED=0
-        fi
+        GITHINT_SELECTED=0
         GITHINT_PREV_BUFFER="$buffer"
     fi
 
-    GITHINT_PROMPT_COL=$(_githint_calc_width)
+    GITHINT_PROMPT_COL=$(_githint_calc_width_cached)
 
-    # Transição de contexto: git ↔ não-git (só na mudança, não em todo redraw)
-    if [[ "$buffer" =~ ^git ]]; then
-        if [[ "$GITHINT_AUTOSUGGEST_STATE" != "off" ]]; then
-            _githint_autosuggest_off
-            GITHINT_AUTOSUGGEST_STATE="off"
-        fi
-    else
-        if [[ "$GITHINT_AUTOSUGGEST_STATE" != "on" ]]; then
-            _githint_autosuggest_on
-            GITHINT_AUTOSUGGEST_STATE="on"
-        fi
-        _githint_clear_own_highlights
-        POSTDISPLAY=""
-        return
+    if [[ "$GITHINT_AUTOSUGGEST_STATE" != "off" ]]; then
+        _githint_autosuggest_off
+        GITHINT_AUTOSUGGEST_STATE="off"
     fi
 
     if [[ ! -x "$GITHINT_BIN" ]]; then
         if (( ! GITHINT_MISSING_WARNED )); then
             print -u2 ""
-            print -u2 "githint: binário não encontrado em '$GITHINT_BIN'."
-            print -u2 "         Rode 'go build -o \"$GITHINT_BIN\"' — não precisa dar source de novo depois."
+            print -u2 "githint: binary not found at '$GITHINT_BIN'."
+            print -u2 "         Run 'go build -o \"$GITHINT_BIN\"' — no need to source again afterwards."
             GITHINT_MISSING_WARNED=1
         fi
         return
     fi
     GITHINT_MISSING_WARNED=0
 
-    local resultado
-    resultado=$("$GITHINT_BIN" list "$buffer" "$GITHINT_SELECTED" "$GITHINT_PROMPT_COL" "$GITHINT_RENDER")
-
-    _githint_clear_own_highlights  # remove só o que é nosso — preserva outros plugins
-
-    if [[ -n "$resultado" ]]; then
-        local base=$(( ${#buffer} + 1 ))
-        _githint_apply_highlight "$resultado" "$base"
-        POSTDISPLAY=$'\n'"$__githint_clean"
+    local result
+    if _githint_socket_call $'list\t'"$buffer"$'\t'"$GITHINT_SELECTED"$'\t'"$GITHINT_PROMPT_COL"$'\t'"$GITHINT_RENDER"; then
+        result="$__githint_socket_result"
     else
-        POSTDISPLAY=""
+        result=$("$GITHINT_BIN" list "$buffer" "$GITHINT_SELECTED" "$GITHINT_PROMPT_COL" "$GITHINT_RENDER")
+        _githint_ensure_daemon
     fi
 
-    zle reset-prompt
+    typeset -g GITHINT_LAST_RESULT=""
+
+    _githint_clear_own_highlights
+
+    if [[ -n "$result" ]]; then
+        local base=$(( ${#buffer} + 1 ))
+        _githint_apply_highlight "$result" "$base"
+        local new_postdisplay=$'\n'"$__githint_clean"
+    else
+        local new_postdisplay=""
+    fi
+
+    if [[ "$new_postdisplay" != "$POSTDISPLAY" ]]; then
+        POSTDISPLAY="$new_postdisplay"
+        _githint_sync_start
+        zle reset-prompt
+        _githint_sync_end
+    fi
 }
 
 # ----------------------------------------------------------------------------
-# Registro do hook — usa add-zle-hook-widget, não "zle -N zle-line-pre-redraw"
-#
-# "zle -N zle-line-pre-redraw" puro SOBRESCREVE qualquer coisa já registrada
-# ali (testado e confirmado: apaga silenciosamente o hook de outros plugins
-# que já usam o sistema moderno, como o zsh-autosuggestions, dependendo da
-# ordem de carregamento). add-zle-hook-widget ADICIONA à cadeia em vez de
-# substituir — é a MESMA técnica que o autosuggestions usa, o "envelope" que
-# não atropela ninguém. Com isso, a posição do githint na lista de plugins
-# deixa de importar: funciona antes, depois, ou entre outros que também
-# usem esse mecanismo.
+# Hook registration
 # ----------------------------------------------------------------------------
 autoload -Uz add-zle-hook-widget
 _githint_pre_redraw_hook() { _githint_update; }
@@ -263,8 +288,7 @@ zle -N _githint_pre_redraw_hook
 add-zle-hook-widget zle-line-pre-redraw _githint_pre_redraw_hook
 
 # ----------------------------------------------------------------------------
-# Captura da posição real do cursor (ESC[6n)
-# Usada no Enter pra medir a largura exata do prompt e calibrar o alinhamento.
+# Real cursor position capture (ESC[6n)
 # ----------------------------------------------------------------------------
 _githint_get_cursor_col() {
     [[ -t 0 ]] || { echo "0"; return; }
@@ -295,33 +319,32 @@ githint-accept-line() {
 zle -N githint-accept-line
 
 # ----------------------------------------------------------------------------
-# Navegação (setas e TAB) — delega a decisão pro binário Go
-#
-# Fallback de seta: quando o Go sinaliza "modo histórico" (usuário saiu da
-# lista de sugestões), usamos o widget ORIGINAL que estava mapeado antes do
-# githint sobrescrever — preserva busca por prefixo (history-substring-search)
-# ou qualquer outro comportamento que o usuário tinha configurado.
+# Navigation (arrow keys and TAB)
 # ----------------------------------------------------------------------------
 _githint_key_handler() {
-    local tecla="$1"
+    local key="$1"
     local fallback_widget="$2"
-    local resultado widget new_sel new_buffer
+    local result widget new_selection new_buffer
 
-    resultado=$("$GITHINT_BIN" key "$tecla" "$GITHINT_SELECTED" "$BUFFER")
+    if _githint_socket_call $'key\t'"$key"$'\t'"$GITHINT_SELECTED"$'\t'"$BUFFER"; then
+        result="$__githint_socket_result"
+    else
+        result=$("$GITHINT_BIN" key "$key" "$GITHINT_SELECTED" "$BUFFER")
+        _githint_ensure_daemon
+    fi
 
-    if [[ -z "$resultado" ]]; then
-        # Binário não respondeu: executa o widget original sem interferência
+    if [[ -z "$result" ]]; then
         [[ -n "$fallback_widget" ]] && zle "$fallback_widget"
         _githint_update
         return
     fi
 
-    widget="${resultado%%|*}"
-    local remainder="${resultado#*|}"
-    new_sel="${remainder%%|*}"
+    widget="${result%%|*}"
+    local remainder="${result#*|}"
+    new_selection="${remainder%%|*}"
     new_buffer="${remainder#*|}"
 
-    [[ -n "$new_sel" ]] && GITHINT_SELECTED=$new_sel
+    [[ -n "$new_selection" ]] && GITHINT_SELECTED=$new_selection
 
     if [[ -n "$new_buffer" ]]; then
         BUFFER="$new_buffer"
@@ -329,8 +352,6 @@ _githint_key_handler() {
     fi
 
     if [[ -n "$widget" && "$widget" != '""' ]]; then
-        # Go sinalizou fallback pro histórico: usa o widget original capturado,
-        # não um valor fixo — preserva history-substring-search ou equivalente
         if [[ "$widget" == "up-line-or-history" || "$widget" == "down-line-or-history" ]]; then
             [[ -n "$fallback_widget" ]] && zle "$fallback_widget"
         else
@@ -338,8 +359,7 @@ _githint_key_handler() {
         fi
     fi
 
-    [[ "$tecla" == "TAB" ]] && zle reset-prompt
-    _githint_update
+    [[ "$key" == "TAB" ]] && { _githint_sync_start; zle reset-prompt; _githint_sync_end; }
 }
 
 githint-arrow-up()   { _githint_key_handler "arrowUP"   "${GITHINT_ORIG_UP[$KEYMAP]:-up-line-or-history}"; }
@@ -351,26 +371,22 @@ zle -N githint-arrow-down
 zle -N githint-tab
 
 # ----------------------------------------------------------------------------
-# Key bindings — captura widgets originais ANTES de sobrescrever
-#
-# Ordem importa: capturamos primeiro, depois sobrescrevemos.
-# Isso preserva history-substring-search, up-line-or-beginning-search,
-# ou qualquer outro widget de seta que o usuário tinha configurado.
+# Key bindings — capture original widgets BEFORE overwriting them
 # ----------------------------------------------------------------------------
 _githint_nuclear_bind() {
+    print -u2 -- "ENTER nuclear_bind"
     local key="$1" widget="$2" orig_array="$3"
     [[ -z "$key" ]] && return
 
     local m
     for m in main emacs viins vicmd; do
-        # Captura o widget atual ANTES de sobrescrever.
-        # Usamos eval para indireção (nameref/typeset -n não está disponível
-        # em todas as builds de zsh — eval funciona em qualquer versão).
         if [[ -n "$orig_array" ]]; then
-            local orig
-            orig=$(bindkey -M "$m" "$key" 2>/dev/null | awk '{print $2}' | tr -d "'")
-            if [[ -n "$orig" && "$orig" != "undefined-key" && "$orig" != "$widget" ]]; then
-                eval "${orig_array}[\$m]=\"\$orig\""
+            local original
+            bindkey -M "$m" "$key"
+            print -u2 -- "AFTER bindkey"
+            if [[ -n "$original" && "$original" != "undefined-key" && "$original" != "$widget" ]]; then
+                typeset -gA "$orig_array"
+:
             fi
         fi
 
@@ -379,18 +395,15 @@ _githint_nuclear_bind() {
     done
 }
 
-# Seta pra cima — captura widget original em GITHINT_ORIG_UP
 _githint_nuclear_bind "${terminfo[kcuu1]}" githint-arrow-up GITHINT_ORIG_UP
 _githint_nuclear_bind '^[[A'               githint-arrow-up GITHINT_ORIG_UP
 _githint_nuclear_bind '^[OA'               githint-arrow-up GITHINT_ORIG_UP
 _githint_nuclear_bind '^P'                 githint-arrow-up GITHINT_ORIG_UP
 
-# Seta pra baixo — captura widget original em GITHINT_ORIG_DOWN
 _githint_nuclear_bind "${terminfo[kcud1]}" githint-arrow-down GITHINT_ORIG_DOWN
 _githint_nuclear_bind '^[[B'               githint-arrow-down GITHINT_ORIG_DOWN
 _githint_nuclear_bind '^[OB'               githint-arrow-down GITHINT_ORIG_DOWN
 _githint_nuclear_bind '^N'                 githint-arrow-down GITHINT_ORIG_DOWN
 
-# TAB e Enter — sem fallback de captura (comportamento fixo)
 _githint_nuclear_bind '^I' githint-tab
 _githint_nuclear_bind '^M' githint-accept-line

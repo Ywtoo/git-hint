@@ -1,6 +1,7 @@
 package engine
 
 import (
+	"errors"
 	"fmt"
 	"sort"
 	"strings"
@@ -21,6 +22,8 @@ var skipRankingFlags = map[string]bool{
 	"msg":    true,
 }
 
+var ErrNotIndexed = errors.New("comando conhecido mas ainda não indexado")
+
 func Suggestions(input string) ([]core.CommandMatch, string, error) {
 	parts := tokenizer.TokenizeBuffer(input)
 	if len(parts) == 0 {
@@ -30,7 +33,19 @@ func Suggestions(input string) ([]core.CommandMatch, string, error) {
 	remainingInput := parts[1:]
 	var list []core.CommandMatch
 
+	status, err := registry.Status(commandName)
+	if err != nil {
+		return nil, "", fmt.Errorf("❌ Error checking command '%s': %v", commandName, err)
+	}
+	if !status.Known {
+		return nil, "", nil
+	}
+	if !status.Indexed {
+		return nil, "", ErrNotIndexed
+	}
+
 	data, err := registry.ResolveCommandData(commandName)
+
 	if err != nil {
 		return nil, "", fmt.Errorf("❌ Error finding command '%s': %v", commandName, err)
 	}
@@ -38,7 +53,7 @@ func Suggestions(input string) ([]core.CommandMatch, string, error) {
 		return nil, "", nil
 	}
 
-	commands, err := registry.ParseCommand(data)
+	commands, err := registry.ParseCommand(commandName, data)
 	if err != nil {
 		return nil, "", fmt.Errorf("❌ Error reading file: %v\n", err)
 	}

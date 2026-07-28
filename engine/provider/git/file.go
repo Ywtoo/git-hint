@@ -1,4 +1,4 @@
-package provider
+package git
 
 import "git-hint/core"
 

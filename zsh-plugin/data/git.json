@@ -104,6 +104,13 @@
         "nUsed": 0,
         "subCommand": {}
       },
+      "--no-all)": {
+        "Name": "",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
       "--no-chmod": {
         "Name": "",
         "description": "override the executable bit of the listed files",
@@ -445,12 +452,20 @@
           }
         }
       },
-      "--gpg-sign[=\u003ckey-id\u003e": {
+      "--gpg-sign": {
         "Name": "",
         "description": "GPG-sign commits",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ckey-id\u003e": {
+            "Name": "",
+            "description": "GPG-sign commits",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--ignore-date": {
         "Name": "",
@@ -567,12 +582,20 @@
           }
         }
       },
-      "--no-gpg-sign[=\u003ckey-id\u003e": {
+      "--no-gpg-sign": {
         "Name": "",
         "description": "GPG-sign commits",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ckey-id\u003e": {
+            "Name": "",
+            "description": "GPG-sign commits",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-ignore-date": {
         "Name": "",
@@ -810,12 +833,27 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--show-current-patch[=(diff|raw": {
+      "--show-current-patch": {
         "Name": "",
         "description": "show the patch being applied",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "diff": {
+            "Name": "",
+            "description": "show the patch being applied",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "raw": {
+            "Name": "",
+            "description": "show the patch being applied",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--signoff": {
         "Name": "",
@@ -887,7 +925,15 @@
         "description": "GPG-sign commits",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ckey-id\u003e": {
+            "Name": "",
+            "description": "GPG-sign commits",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "-b": {
         "Name": "",
@@ -1018,12 +1064,20 @@
           }
         }
       },
-      "--abbrev[=\u003cn\u003e": {
+      "--abbrev": {
         "Name": "",
         "description": "use \u003cn\u003e digits to display object names",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "use \u003cn\u003e digits to display object names",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--color-by-age": {
         "Name": "",
@@ -1105,12 +1159,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-abbrev[=\u003cn\u003e": {
+      "--no-abbrev": {
         "Name": "",
         "description": "use \u003cn\u003e digits to display object names",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "use \u003cn\u003e digits to display object names",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-color-by-age": {
         "Name": "",
@@ -1304,12 +1366,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "-C[\u003cscore\u003e": {
+      "-C": {
         "Name": "",
         "description": "find line copies within and across files",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cscore\u003e": {
+            "Name": "",
+            "description": "find line copies within and across files",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "-L": {
         "Name": "",
@@ -1326,12 +1396,20 @@
           }
         }
       },
-      "-M[\u003cscore\u003e": {
+      "-M": {
         "Name": "",
         "description": "find line movements within and across files",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cscore\u003e": {
+            "Name": "",
+            "description": "find line movements within and across files",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "-S": {
         "Name": "",
@@ -2408,12 +2486,20 @@
           }
         }
       },
-      "--abbrev[=\u003cn\u003e": {
+      "--abbrev": {
         "Name": "",
         "description": "use \u003cn\u003e digits to display object names",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "use \u003cn\u003e digits to display object names",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--color-by-age": {
         "Name": "",
@@ -2495,12 +2581,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-abbrev[=\u003cn\u003e": {
+      "--no-abbrev": {
         "Name": "",
         "description": "use \u003cn\u003e digits to display object names",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "use \u003cn\u003e digits to display object names",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-color-by-age": {
         "Name": "",
@@ -2694,12 +2788,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "-C[\u003cscore\u003e": {
+      "-C": {
         "Name": "",
         "description": "find line copies within and across files",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cscore\u003e": {
+            "Name": "",
+            "description": "find line copies within and across files",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "-L": {
         "Name": "",
@@ -2716,12 +2818,20 @@
           }
         }
       },
-      "-M[\u003cscore\u003e": {
+      "-M": {
         "Name": "",
         "description": "find line movements within and across files",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cscore\u003e": {
+            "Name": "",
+            "description": "find line movements within and across files",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "-S": {
         "Name": "",
@@ -2830,12 +2940,20 @@
     "completeDescription": "",
     "nUsed": 0,
     "subCommand": {
-      "--abbrev[=\u003cn\u003e": {
+      "--abbrev": {
         "Name": "",
         "description": "use \u003cn\u003e digits to display object names",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "use \u003cn\u003e digits to display object names",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--all": {
         "Name": "",
@@ -2844,19 +2962,35 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--color[=\u003cwhen\u003e": {
+      "--color": {
         "Name": "",
         "description": "",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cwhen\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
-      "--column[=\u003cstyle\u003e": {
+      "--column": {
         "Name": "",
         "description": "list branches in columns",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cstyle\u003e": {
+            "Name": "",
+            "description": "list branches in columns",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--contains": {
         "Name": "",
@@ -2959,26 +3093,50 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-abbrev[=\u003cn\u003e": {
+      "--no-abbrev": {
         "Name": "",
         "description": "use \u003cn\u003e digits to display object names",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "use \u003cn\u003e digits to display object names",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
-      "--no-color[=\u003cwhen\u003e": {
+      "--no-color": {
         "Name": "",
         "description": "",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cwhen\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
-      "--no-column[=\u003cstyle\u003e": {
+      "--no-column": {
         "Name": "",
         "description": "list branches in columns",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cstyle\u003e": {
+            "Name": "",
+            "description": "list branches in columns",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-contains": {
         "Name": "",
@@ -3154,12 +3312,27 @@
           }
         }
       },
-      "--no-track[=(direct|inherit": {
+      "--no-track": {
         "Name": "",
         "description": "set branch tracking configuration",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "direct": {
+            "Name": "",
+            "description": "set branch tracking configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "inherit": {
+            "Name": "",
+            "description": "set branch tracking configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-unset-upstream": {
         "Name": "",
@@ -3263,12 +3436,27 @@
           }
         }
       },
-      "--track[=(direct|inherit": {
+      "--track": {
         "Name": "",
         "description": "set branch tracking configuration",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "direct": {
+            "Name": "",
+            "description": "set branch tracking configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "inherit": {
+            "Name": "",
+            "description": "set branch tracking configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--unset-upstream": {
         "Name": "",
@@ -3405,7 +3593,22 @@
         "description": "set branch tracking configuration",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "direct": {
+            "Name": "",
+            "description": "set branch tracking configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "inherit": {
+            "Name": "",
+            "description": "set branch tracking configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "-u": {
         "Name": "",
@@ -3458,7 +3661,7 @@
     "completeDescription": "",
     "nUsed": 0,
     "subCommand": {
-      "--diagnose[=\u003cmode\u003e": {
+      "--diagnose": {
         "Name": "",
         "description": "create an additional zip archive of detailed diagnostics (default 'stats')",
         "completeDescription": "",
@@ -3473,12 +3676,20 @@
           }
         }
       },
-      "--no-diagnose[=\u003cmode\u003e": {
+      "--no-diagnose": {
         "Name": "",
         "description": "create an additional zip archive of detailed diagnostics (default 'stats')",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cmode\u003e": {
+            "Name": "",
+            "description": "create an additional zip archive of detailed diagnostics (default 'stats')",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-output-directory": {
         "Name": "",
@@ -3633,24 +3844,16 @@
             "completeDescription": "",
             "nUsed": 0,
             "subCommand": {
-              "\u003cn\u003e": {
-                "Name": "",
-                "description": "specify bundle format version",
-                "completeDescription": "",
-                "nUsed": 0,
-                "subCommand": {}
-              }
-            }
-          },
-          "--version=\u003cversion\u003e": {
-            "Name": "",
-            "description": "",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {
               "\u003cfile\u003e": {
                 "Name": "",
                 "description": "",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "\u003cn\u003e": {
+                "Name": "",
+                "description": "specify bundle format version",
                 "completeDescription": "",
                 "nUsed": 0,
                 "subCommand": {}
@@ -3801,10 +4004,18 @@
       },
       "--batch": {
         "Name": "",
-        "description": "",
+        "description": "show full \u003cobject\u003e or \u003crev\u003e contents",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "",
+            "description": "show full \u003cobject\u003e or \u003crev\u003e contents",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--batch-all-objects": {
         "Name": "",
@@ -3815,38 +4026,33 @@
       },
       "--batch-check": {
         "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
-      },
-      "--batch-check[=\u003cformat\u003e": {
-        "Name": "",
         "description": "like --batch, but don't emit \u003ccontents\u003e",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "",
+            "description": "like --batch, but don't emit \u003ccontents\u003e",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--batch-command": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
-      },
-      "--batch-command[=\u003cformat\u003e": {
         "Name": "",
         "description": "read commands from stdin",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
-      },
-      "--batch[=\u003cformat\u003e": {
-        "Name": "",
-        "description": "show full \u003cobject\u003e or \u003crev\u003e contents",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "",
+            "description": "read commands from stdin",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--buffer": {
         "Name": "",
@@ -3968,23 +4174,8 @@
             "completeDescription": "",
             "nUsed": 0,
             "subCommand": {}
-          }
-        }
-      },
-      "--path=\u003cpath": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
-      },
-      "--textconv": {
-        "Name": "",
-        "description": "run textconv on object's content",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {
-          "\u003cpath\u003e": {
+          },
+          "\u003crev\u003e": {
             "Name": "",
             "description": "",
             "completeDescription": "",
@@ -3992,6 +4183,13 @@
             "subCommand": {}
           }
         }
+      },
+      "--textconv": {
+        "Name": "",
+        "description": "run textconv on object's content",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
       },
       "--unordered": {
         "Name": "",
@@ -4046,13 +4244,6 @@
       "-t": {
         "Name": "",
         "description": "show object type (one of 'blob', 'tree', 'commit', 'tag', ...)",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
-      },
-      "\u003crev\u003e": {
-        "Name": "",
-        "description": "",
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {}
@@ -4597,19 +4788,42 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-recurse-submodules[=\u003ccheckout\u003e": {
+      "--no-recurse-submodules": {
         "Name": "",
         "description": "control recursive updating of submodules",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ccheckout\u003e": {
+            "Name": "",
+            "description": "control recursive updating of submodules",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
-      "--no-track[=(direct|inherit": {
+      "--no-track": {
         "Name": "",
         "description": "set branch tracking configuration",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "direct": {
+            "Name": "",
+            "description": "set branch tracking configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "inherit": {
+            "Name": "",
+            "description": "set branch tracking configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--orphan": {
         "Name": "",
@@ -4690,12 +4904,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--recurse-submodules[=\u003ccheckout\u003e": {
+      "--recurse-submodules": {
         "Name": "",
         "description": "control recursive updating of submodules",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ccheckout\u003e": {
+            "Name": "",
+            "description": "control recursive updating of submodules",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--theirs": {
         "Name": "",
@@ -4704,12 +4926,27 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--track[=(direct|inherit": {
+      "--track": {
         "Name": "",
         "description": "set branch tracking configuration",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "direct": {
+            "Name": "",
+            "description": "set branch tracking configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "inherit": {
+            "Name": "",
+            "description": "set branch tracking configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "-2": {
         "Name": "",
@@ -4802,7 +5039,22 @@
         "description": "set branch tracking configuration",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "direct": {
+            "Name": "",
+            "description": "set branch tracking configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "inherit": {
+            "Name": "",
+            "description": "set branch tracking configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "\u003coptions\u003e": {
         "Name": "",
@@ -5040,19 +5292,35 @@
     "completeDescription": "",
     "nUsed": 0,
     "subCommand": {
-      "--abbrev[=\u003cn\u003e": {
+      "--abbrev": {
         "Name": "",
         "description": "use \u003cn\u003e digits to display object names",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "use \u003cn\u003e digits to display object names",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
-      "--no-abbrev[=\u003cn\u003e": {
+      "--no-abbrev": {
         "Name": "",
         "description": "use \u003cn\u003e digits to display object names",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "use \u003cn\u003e digits to display object names",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-verbose": {
         "Name": "",
@@ -5169,12 +5437,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--gpg-sign[=\u003ckey-id\u003e": {
+      "--gpg-sign": {
         "Name": "",
         "description": "GPG sign commit",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ckey-id\u003e": {
+            "Name": "",
+            "description": "GPG sign commit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--keep-redundant-commits": {
         "Name": "",
@@ -5248,12 +5524,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-gpg-sign[=\u003ckey-id\u003e": {
+      "--no-gpg-sign": {
         "Name": "",
         "description": "GPG sign commit",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ckey-id\u003e": {
+            "Name": "",
+            "description": "GPG sign commit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-keep-redundant-commits": {
         "Name": "",
@@ -5384,17 +5668,17 @@
         "description": "GPG sign commit",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
-      },
-      "-S[\u003ckeyid\u003e": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
         "subCommand": {
           "\u003ccommit\u003e...": {
             "Name": "",
             "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003ckey-id\u003e": {
+            "Name": "",
+            "description": "GPG sign commit",
             "completeDescription": "",
             "nUsed": 0,
             "subCommand": {}
@@ -5718,7 +6002,7 @@
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
-          "\u003ckey=value\u003e": {
+          "\u003ckey": {
             "Name": "",
             "description": "set config inside the new repository",
             "completeDescription": "",
@@ -5871,7 +6155,7 @@
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
-          "\u003ckey=value\u003e": {
+          "\u003ckey": {
             "Name": "",
             "description": "set config inside the new repository",
             "completeDescription": "",
@@ -5982,19 +6266,35 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-recurse-submodules[=\u003cpathspec\u003e": {
+      "--no-recurse-submodules": {
         "Name": "",
         "description": "initialize submodules in the clone",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cpathspec\u003e": {
+            "Name": "",
+            "description": "initialize submodules in the clone",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
-      "--no-recursive[=\u003cpathspec\u003e": {
+      "--no-recursive": {
         "Name": "",
         "description": "alias of --recurse-submodules",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cpathspec\u003e": {
+            "Name": "",
+            "description": "alias of --recurse-submodules",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-reference": {
         "Name": "",
@@ -6201,19 +6501,35 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--recurse-submodules[=\u003cpathspec\u003e": {
+      "--recurse-submodules": {
         "Name": "",
         "description": "initialize submodules in the clone",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cpathspec\u003e": {
+            "Name": "",
+            "description": "initialize submodules in the clone",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
-      "--recursive[=\u003cpathspec\u003e": {
+      "--recursive": {
         "Name": "",
         "description": "alias of --recurse-submodules",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cpathspec\u003e": {
+            "Name": "",
+            "description": "alias of --recurse-submodules",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--reference": {
         "Name": "",
@@ -6426,7 +6742,7 @@
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
-          "\u003ckey=value\u003e": {
+          "\u003ckey": {
             "Name": "",
             "description": "set config inside the new repository",
             "completeDescription": "",
@@ -6567,12 +6883,20 @@
           }
         }
       },
-      "--mode[=\u003cstyle\u003e": {
+      "--mode": {
         "Name": "",
         "description": "",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cstyle\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--nl": {
         "Name": "",
@@ -6619,12 +6943,20 @@
           }
         }
       },
-      "--no-mode[=\u003cstyle\u003e": {
+      "--no-mode": {
         "Name": "",
         "description": "",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cstyle\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-nl": {
         "Name": "",
@@ -6855,12 +7187,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--gpg-sign[=\u003ckey-id\u003e": {
+      "--gpg-sign": {
         "Name": "",
         "description": "GPG sign commit",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ckey-id\u003e": {
+            "Name": "",
+            "description": "GPG sign commit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--include": {
         "Name": "",
@@ -7007,12 +7347,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-gpg-sign[=\u003ckey-id\u003e": {
+      "--no-gpg-sign": {
         "Name": "",
         "description": "GPG sign commit",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ckey-id\u003e": {
+            "Name": "",
+            "description": "GPG sign commit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-include": {
         "Name": "",
@@ -7202,12 +7550,20 @@
           }
         }
       },
-      "--no-untracked-files[=\u003cmode\u003e": {
+      "--no-untracked-files": {
         "Name": "",
         "description": "show untracked files, optional modes: all, normal, no. (Default: all)",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cmode\u003e": {
+            "Name": "",
+            "description": "show untracked files, optional modes: all, normal, no. (Default: all)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-verbose": {
         "Name": "",
@@ -7390,12 +7746,20 @@
           }
         }
       },
-      "--untracked-files[=\u003cmode\u003e": {
+      "--untracked-files": {
         "Name": "",
         "description": "show untracked files, optional modes: all, normal, no. (Default: all)",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cmode\u003e": {
+            "Name": "",
+            "description": "show untracked files, optional modes: all, normal, no. (Default: all)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--verbose": {
         "Name": "",
@@ -7446,7 +7810,15 @@
         "description": "GPG sign commit",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ckey-id\u003e": {
+            "Name": "",
+            "description": "GPG sign commit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "-a": {
         "Name": "",
@@ -7554,7 +7926,15 @@
         "description": "show untracked files, optional modes: all, normal, no. (Default: all)",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cmode\u003e": {
+            "Name": "",
+            "description": "show untracked files, optional modes: all, normal, no. (Default: all)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "-u\u003cmode\u003e": {
         "Name": "",
@@ -7700,12 +8080,20 @@
             "nUsed": 0,
             "subCommand": {}
           },
-          "--gpg-sign[=\u003ckey-id\u003e": {
+          "--gpg-sign": {
             "Name": "",
             "description": "GPG sign commit",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "\u003ckey-id\u003e": {
+                "Name": "",
+                "description": "GPG sign commit",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "--include": {
             "Name": "",
@@ -7852,12 +8240,20 @@
             "nUsed": 0,
             "subCommand": {}
           },
-          "--no-gpg-sign[=\u003ckey-id\u003e": {
+          "--no-gpg-sign": {
             "Name": "",
             "description": "GPG sign commit",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "\u003ckey-id\u003e": {
+                "Name": "",
+                "description": "GPG sign commit",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "--no-include": {
             "Name": "",
@@ -8047,12 +8443,20 @@
               }
             }
           },
-          "--no-untracked-files[=\u003cmode\u003e": {
+          "--no-untracked-files": {
             "Name": "",
             "description": "show untracked files, optional modes: all, normal, no. (Default: all)",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "\u003cmode\u003e": {
+                "Name": "",
+                "description": "show untracked files, optional modes: all, normal, no. (Default: all)",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "--no-verbose": {
             "Name": "",
@@ -8235,12 +8639,20 @@
               }
             }
           },
-          "--untracked-files[=\u003cmode\u003e": {
+          "--untracked-files": {
             "Name": "",
             "description": "show untracked files, optional modes: all, normal, no. (Default: all)",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "\u003cmode\u003e": {
+                "Name": "",
+                "description": "show untracked files, optional modes: all, normal, no. (Default: all)",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "--verbose": {
             "Name": "",
@@ -8291,7 +8703,15 @@
             "description": "GPG sign commit",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "\u003ckey-id\u003e": {
+                "Name": "",
+                "description": "GPG sign commit",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "-a": {
             "Name": "",
@@ -8399,7 +8819,15 @@
             "description": "show untracked files, optional modes: all, normal, no. (Default: all)",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "\u003cmode\u003e": {
+                "Name": "",
+                "description": "show untracked files, optional modes: all, normal, no. (Default: all)",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "-v": {
             "Name": "",
@@ -8461,13 +8889,6 @@
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
-          "--[no-]progress": {
-            "Name": "",
-            "description": "",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {}
-          },
           "--no-object-dir": {
             "Name": "",
             "description": "the object directory to store the graph",
@@ -8534,36 +8955,6 @@
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
-          "--[no-]max-new-filters": {
-            "Name": "",
-            "description": "",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {
-              "\u003cn\u003e": {
-                "Name": "",
-                "description": "",
-                "completeDescription": "",
-                "nUsed": 0,
-                "subCommand": {}
-              }
-            }
-          },
-          "--[no-]progress": {
-            "Name": "",
-            "description": "",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {
-              "\u003csplit": {
-                "Name": "",
-                "description": "",
-                "completeDescription": "",
-                "nUsed": 0,
-                "subCommand": {}
-              }
-            }
-          },
           "--append": {
             "Name": "",
             "description": "include all commits already in the commit-graph file",
@@ -8613,7 +9004,15 @@
             "description": "maximum number of changed-path Bloom filters to compute",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "\u003cn\u003e": {
+                "Name": "",
+                "description": "",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "--no-append": {
             "Name": "",
@@ -8664,7 +9063,15 @@
             "description": "maximum number of changed-path Bloom filters to compute",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "\u003cn\u003e": {
+                "Name": "",
+                "description": "",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "--no-object-dir": {
             "Name": "",
@@ -8686,7 +9093,15 @@
             "description": "force progress reporting",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "\u003csplit": {
+                "Name": "",
+                "description": "",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "--no-reachable": {
             "Name": "",
@@ -8744,7 +9159,15 @@
             "description": "force progress reporting",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "\u003csplit": {
+                "Name": "",
+                "description": "",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "--reachable": {
             "Name": "",
@@ -8768,16 +9191,9 @@
               }
             }
           },
-          "--split[=...": {
+          "--split": {
             "Name": "",
             "description": "allow writing an incremental commit-graph file",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {}
-          },
-          "--split[=\u003cstrategy\u003e": {
-            "Name": "",
-            "description": "",
             "completeDescription": "",
             "nUsed": 0,
             "subCommand": {
@@ -8814,19 +9230,35 @@
     "completeDescription": "",
     "nUsed": 0,
     "subCommand": {
-      "--gpg-sign[=\u003ckey-id\u003e": {
+      "--gpg-sign": {
         "Name": "",
         "description": "GPG sign commit",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ckey-id\u003e": {
+            "Name": "",
+            "description": "GPG sign commit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
-      "--no-gpg-sign[=\u003ckey-id\u003e": {
+      "--no-gpg-sign": {
         "Name": "",
         "description": "GPG sign commit",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ckey-id\u003e": {
+            "Name": "",
+            "description": "GPG sign commit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "-F": {
         "Name": "",
@@ -8855,14 +9287,14 @@
         "description": "GPG sign commit",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
-      },
-      "-S[\u003ckeyid\u003e": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
         "subCommand": {
+          "\u003ckey-id\u003e": {
+            "Name": "",
+            "description": "GPG sign commit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
           "\u003ckeyid\u003e": {
             "Name": "",
             "description": "",
@@ -9722,14 +10154,7 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--base-path-relaxed": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
-      },
-      "--base-path=\u003cpath\u003e": {
+      "--base-path": {
         "Name": "",
         "description": "",
         "completeDescription": "",
@@ -9743,6 +10168,13 @@
             "subCommand": {}
           }
         }
+      },
+      "--base-path-relaxed": {
+        "Name": "",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
       },
       "--export-all": {
         "Name": "",
@@ -9751,7 +10183,7 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--init-timeout=\u003cn\u003e": {
+      "--init-timeout": {
         "Name": "",
         "description": "",
         "completeDescription": "",
@@ -9766,7 +10198,7 @@
           }
         }
       },
-      "--interpolated-path=\u003cpath\u003e": {
+      "--interpolated-path": {
         "Name": "",
         "description": "",
         "completeDescription": "",
@@ -9781,7 +10213,7 @@
           }
         }
       },
-      "--max-connections=\u003cn\u003e": {
+      "--max-connections": {
         "Name": "",
         "description": "",
         "completeDescription": "",
@@ -9796,7 +10228,7 @@
           }
         }
       },
-      "--pid-file=\u003cfile\u003e": {
+      "--pid-file": {
         "Name": "",
         "description": "",
         "completeDescription": "",
@@ -9832,7 +10264,7 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--timeout=\u003cn\u003e": {
+      "--timeout": {
         "Name": "",
         "description": "",
         "completeDescription": "",
@@ -9848,13 +10280,6 @@
         }
       },
       "--user-path": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
-      },
-      "--user-path=\u003cpath\u003e": {
         "Name": "",
         "description": "",
         "completeDescription": "",
@@ -9891,9 +10316,9 @@
     "completeDescription": "",
     "nUsed": 0,
     "subCommand": {
-      "--abbrev=\u003cn\u003e": {
+      "--abbrev": {
         "Name": "",
-        "description": "",
+        "description": "use \u003cn\u003e digits to display object names",
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
@@ -9913,13 +10338,6 @@
           }
         }
       },
-      "--abbrev[=\u003cn\u003e": {
-        "Name": "",
-        "description": "use \u003cn\u003e digits to display object names",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
-      },
       "--all": {
         "Name": "",
         "description": "use any ref",
@@ -9934,12 +10352,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--broken[=\u003cmark\u003e": {
+      "--broken": {
         "Name": "",
         "description": "append \u003cmark\u003e on broken working tree (default: \"-broken\")",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cmark\u003e": {
+            "Name": "",
+            "description": "append \u003cmark\u003e on broken working tree (default: \"-broken\")",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--candidates": {
         "Name": "",
@@ -9970,7 +10396,7 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--dirty[=\u003cmark\u003e": {
+      "--dirty": {
         "Name": "",
         "description": "",
         "completeDescription": "",
@@ -10036,12 +10462,20 @@
           }
         }
       },
-      "--no-abbrev[=\u003cn\u003e": {
+      "--no-abbrev": {
         "Name": "",
         "description": "use \u003cn\u003e digits to display object names",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "use \u003cn\u003e digits to display object names",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-all": {
         "Name": "",
@@ -10057,12 +10491,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-broken[=\u003cmark\u003e": {
+      "--no-broken": {
         "Name": "",
         "description": "append \u003cmark\u003e on broken working tree (default: \"-broken\")",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cmark\u003e": {
+            "Name": "",
+            "description": "append \u003cmark\u003e on broken working tree (default: \"-broken\")",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-candidates": {
         "Name": "",
@@ -10093,7 +10535,7 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-dirty[=\u003cmark\u003e": {
+      "--no-dirty": {
         "Name": "",
         "description": "",
         "completeDescription": "",
@@ -10191,13 +10633,6 @@
       "--mode": {
         "Name": "",
         "description": "specify the content of the diagnostic archive",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
-      },
-      "--mode=\u003cmode\u003e": {
-        "Name": "",
-        "description": "",
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
@@ -10330,12 +10765,20 @@
           }
         }
       },
-      "--abbrev=\u003cn\u003e": {
+      "--abbrev": {
         "Name": "",
         "description": "abbreviate object names in diff-tree header and diff-raw.",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "abbreviate object names in diff-tree header and diff-raw.",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--cached": {
         "Name": "",
@@ -10542,12 +10985,20 @@
     "completeDescription": "",
     "nUsed": 0,
     "subCommand": {
-      "--abbrev=\u003cn\u003e": {
+      "--abbrev": {
         "Name": "",
         "description": "abbreviate object names in diff-tree header and diff-raw.",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "abbreviate object names in diff-tree header and diff-raw.",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--cc": {
         "Name": "",
@@ -10761,12 +11212,20 @@
     "completeDescription": "",
     "nUsed": 0,
     "subCommand": {
-      "--abbrev=\u003cn\u003e": {
+      "--abbrev": {
         "Name": "",
         "description": "abbreviate object names in diff-tree header and diff-raw.",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "abbreviate object names in diff-tree header and diff-raw.",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--cached": {
         "Name": "",
@@ -10959,12 +11418,20 @@
     "completeDescription": "",
     "nUsed": 0,
     "subCommand": {
-      "--abbrev=\u003cn\u003e": {
+      "--abbrev": {
         "Name": "",
         "description": "abbreviate object names in diff-tree header and diff-raw.",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "abbreviate object names in diff-tree header and diff-raw.",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--cc": {
         "Name": "",
@@ -11848,7 +12315,7 @@
     "completeDescription": "",
     "nUsed": 0,
     "subCommand": {
-      "--active-branches=\u003cn\u003e": {
+      "--active-branches": {
         "Name": "",
         "description": "",
         "completeDescription": "",
@@ -11863,7 +12330,7 @@
           }
         }
       },
-      "--big-file-threshold=\u003cn\u003e": {
+      "--big-file-threshold": {
         "Name": "",
         "description": "",
         "completeDescription": "",
@@ -11878,7 +12345,7 @@
           }
         }
       },
-      "--date-format=\u003cf\u003e": {
+      "--date-format": {
         "Name": "",
         "description": "",
         "completeDescription": "",
@@ -11893,7 +12360,7 @@
           }
         }
       },
-      "--depth=\u003cn\u003e": {
+      "--depth": {
         "Name": "",
         "description": "",
         "completeDescription": "",
@@ -11908,7 +12375,7 @@
           }
         }
       },
-      "--export-marks=\u003cmarks.file\u003e": {
+      "--export-marks": {
         "Name": "",
         "description": "",
         "completeDescription": "",
@@ -11923,7 +12390,7 @@
           }
         }
       },
-      "--max-pack-size=\u003cn\u003e": {
+      "--max-pack-size": {
         "Name": "",
         "description": "",
         "completeDescription": "",
@@ -12308,12 +12775,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-recurse-submodules[=\u003con-demand\u003e": {
+      "--no-recurse-submodules": {
         "Name": "",
         "description": "control recursive fetching of submodules",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003con-demand\u003e": {
+            "Name": "",
+            "description": "control recursive fetching of submodules",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-server-option": {
         "Name": "",
@@ -12480,12 +12955,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--recurse-submodules[=\u003con-demand\u003e": {
+      "--recurse-submodules": {
         "Name": "",
         "description": "control recursive fetching of submodules",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003con-demand\u003e": {
+            "Name": "",
+            "description": "control recursive fetching of submodules",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--refetch": {
         "Name": "",
@@ -12803,7 +13286,7 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--depth=\u003cn\u003e": {
+      "--depth": {
         "Name": "",
         "description": "",
         "completeDescription": "",
@@ -12867,7 +13350,7 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--upload-pack=\u003cgit-upload-pack\u003e": {
+      "--upload-pack": {
         "Name": "",
         "description": "",
         "completeDescription": "",
@@ -12963,7 +13446,7 @@
           }
         }
       },
-      "--log[=\u003cn\u003e": {
+      "--log": {
         "Name": "",
         "description": "populate log with at most \u003cn\u003e entries from shortlog",
         "completeDescription": "",
@@ -13025,17 +13508,18 @@
       },
       "--no-log": {
         "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
-      },
-      "--no-log[=\u003cn\u003e": {
-        "Name": "",
         "description": "populate log with at most \u003cn\u003e entries from shortlog",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "populate log with at most \u003cn\u003e entries from shortlog",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-message": {
         "Name": "",
@@ -13097,12 +13581,20 @@
     "completeDescription": "",
     "nUsed": 0,
     "subCommand": {
-      "--color[=\u003cwhen\u003e": {
+      "--color": {
         "Name": "",
         "description": "",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cwhen\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--contains": {
         "Name": "",
@@ -13186,12 +13678,20 @@
           }
         }
       },
-      "--no-color[=\u003cwhen\u003e": {
+      "--no-color": {
         "Name": "",
         "description": "",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cwhen\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-contains": {
         "Name": "",
@@ -13471,21 +13971,6 @@
         "subCommand": {
           "\u003cconfig\u003e": {
             "Name": "",
-            "description": "config key storing a list of repository paths",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {}
-          }
-        }
-      },
-      "--config=\u003cconfig\u003e": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {
-          "\u003cconfig\u003e": {
-            "Name": "",
             "description": "",
             "completeDescription": "",
             "nUsed": 0,
@@ -13566,12 +14051,20 @@
           }
         }
       },
-      "--attach[=\u003cboundary\u003e": {
+      "--attach": {
         "Name": "",
         "description": "attach the patch",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cboundary\u003e": {
+            "Name": "",
+            "description": "attach the patch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--base": {
         "Name": "",
@@ -13684,7 +14177,7 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--from[=\u003cident\u003e": {
+      "--from": {
         "Name": "",
         "description": "",
         "completeDescription": "",
@@ -13721,12 +14214,20 @@
           }
         }
       },
-      "--inline[=\u003cboundary\u003e": {
+      "--inline": {
         "Name": "",
         "description": "",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cboundary\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--interdiff": {
         "Name": "",
@@ -13765,12 +14266,20 @@
           }
         }
       },
-      "--no-attach[=\u003cboundary\u003e": {
+      "--no-attach": {
         "Name": "",
         "description": "attach the patch",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cboundary\u003e": {
+            "Name": "",
+            "description": "attach the patch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-base": {
         "Name": "",
@@ -13883,7 +14392,7 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-from[=\u003cident\u003e": {
+      "--no-from": {
         "Name": "",
         "description": "",
         "completeDescription": "",
@@ -14081,12 +14590,20 @@
           }
         }
       },
-      "--no-thread[=\u003cstyle\u003e": {
+      "--no-thread": {
         "Name": "",
         "description": "enable message threading, styles: shallow, deep",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cstyle\u003e": {
+            "Name": "",
+            "description": "enable message threading, styles: shallow, deep",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-to": {
         "Name": "",
@@ -14279,12 +14796,20 @@
           }
         }
       },
-      "--thread[=\u003cstyle\u003e": {
+      "--thread": {
         "Name": "",
         "description": "enable message threading, styles: shallow, deep",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cstyle\u003e": {
+            "Name": "",
+            "description": "enable message threading, styles: shallow, deep",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--to": {
         "Name": "",
@@ -14416,42 +14941,6 @@
     "completeDescription": "",
     "nUsed": 0,
     "subCommand": {
-      "--[no-]dangling": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
-      },
-      "--[no-]full": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
-      },
-      "--[no-]name-objects": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {
-          "\u003cobject\u003e...": {
-            "Name": "",
-            "description": "",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {}
-          }
-        }
-      },
-      "--[no-]progress": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
-      },
       "--cache": {
         "Name": "",
         "description": "make index objects head nodes",
@@ -14492,7 +14981,15 @@
         "description": "show verbose names for reachable objects",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cobject\u003e...": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-cache": {
         "Name": "",
@@ -14534,7 +15031,15 @@
         "description": "show verbose names for reachable objects",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cobject\u003e...": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-progress": {
         "Name": "",
@@ -14748,12 +15253,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-prune[=\u003cdate\u003e": {
+      "--no-prune": {
         "Name": "",
         "description": "",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cdate\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-quiet": {
         "Name": "",
@@ -14762,12 +15275,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--prune[=\u003cdate\u003e": {
+      "--prune": {
         "Name": "",
         "description": "",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cdate\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--quiet": {
         "Name": "",
@@ -14899,12 +15420,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--color[=\u003cwhen\u003e": {
+      "--color": {
         "Name": "",
         "description": "",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cwhen\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--column": {
         "Name": "",
@@ -15121,12 +15650,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-color[=\u003cwhen\u003e": {
+      "--no-color": {
         "Name": "",
         "description": "",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cwhen\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-column": {
         "Name": "",
@@ -15284,12 +15821,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-open-files-in-pager[=\u003cpager\u003e": {
+      "--no-open-files-in-pager": {
         "Name": "",
         "description": "show matching files in the pager",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cpager\u003e": {
+            "Name": "",
+            "description": "show matching files in the pager",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-perl-regexp": {
         "Name": "",
@@ -15390,12 +15935,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--open-files-in-pager[=\u003cpager\u003e": {
+      "--open-files-in-pager": {
         "Name": "",
         "description": "show matching files in the pager",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cpager\u003e": {
+            "Name": "",
+            "description": "show matching files in the pager",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--or": {
         "Name": "",
@@ -15581,7 +16134,15 @@
         "description": "show matching files in the pager",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cpager\u003e": {
+            "Name": "",
+            "description": "show matching files in the pager",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "-P": {
         "Name": "",
@@ -15842,21 +16403,6 @@
         "subCommand": {
           "\u003cfile\u003e": {
             "Name": "",
-            "description": "process file as it were from this path",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {}
-          }
-        }
-      },
-      "--path=\u003cfile\u003e": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {
-          "\u003cfile\u003e": {
-            "Name": "",
             "description": "",
             "completeDescription": "",
             "nUsed": 0,
@@ -15908,27 +16454,6 @@
     "completeDescription": "",
     "nUsed": 0,
     "subCommand": {
-      "--[no-]aliases": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
-      },
-      "--[no-]external-commands": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
-      },
-      "--[no-]verbose": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
-      },
       "--aliases": {
         "Name": "",
         "description": "show aliases in --all",
@@ -16199,21 +16724,6 @@
             "completeDescription": "",
             "nUsed": 0,
             "subCommand": {
-              "\u003cpath\u003e": {
-                "Name": "",
-                "description": "file to read into hooks' stdin",
-                "completeDescription": "",
-                "nUsed": 0,
-                "subCommand": {}
-              }
-            }
-          },
-          "--to-stdin=\u003cpath\u003e": {
-            "Name": "",
-            "description": "",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {
               "\u003chook-name\u003e": {
                 "Name": "",
                 "description": "",
@@ -16261,9 +16771,9 @@
     "completeDescription": "",
     "nUsed": 0,
     "subCommand": {
-      "--[no-]curl": {
+      "--curl": {
         "Name": "",
-        "description": "",
+        "description": "use libcurl to communicate with the IMAP server",
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
@@ -16276,19 +16786,20 @@
           }
         }
       },
-      "--curl": {
-        "Name": "",
-        "description": "use libcurl to communicate with the IMAP server",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
-      },
       "--no-curl": {
         "Name": "",
         "description": "use libcurl to communicate with the IMAP server",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003c": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-quiet": {
         "Name": "",
@@ -16347,13 +16858,6 @@
     "completeDescription": "",
     "nUsed": 0,
     "subCommand": {
-      "--[no-]rev-index": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
-      },
       "--fix-thin": {
         "Name": "",
         "description": "",
@@ -16374,13 +16878,6 @@
         "description": "",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
-      },
-      "--keep=\u003cmsg\u003e": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
         "subCommand": {
           "\u003cmsg\u003e": {
             "Name": "",
@@ -16390,6 +16887,20 @@
             "subCommand": {}
           }
         }
+      },
+      "--no-rev-index": {
+        "Name": "",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--rev-index": {
+        "Name": "",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
       },
       "--stdin": {
         "Name": "",
@@ -16463,24 +16974,16 @@
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
-          "\u003cname\u003e": {
-            "Name": "",
-            "description": "override the name of the initial branch",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {}
-          }
-        }
-      },
-      "--initial-branch=\u003cbranch-name\u003e": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {
           "\u003cbranch-name\u003e": {
             "Name": "",
             "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cname\u003e": {
+            "Name": "",
+            "description": "override the name of the initial branch",
             "completeDescription": "",
             "nUsed": 0,
             "subCommand": {}
@@ -16567,24 +17070,16 @@
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
-          "\u003chash\u003e": {
-            "Name": "",
-            "description": "specify the hash algorithm to use",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {}
-          }
-        }
-      },
-      "--object-format=\u003cformat\u003e": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {
           "\u003cformat\u003e": {
             "Name": "",
             "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003chash\u003e": {
+            "Name": "",
+            "description": "specify the hash algorithm to use",
             "completeDescription": "",
             "nUsed": 0,
             "subCommand": {}
@@ -16620,7 +17115,7 @@
           }
         }
       },
-      "--shared[=\u003cpermissions\u003e": {
+      "--shared": {
         "Name": "",
         "description": "specify that the git repository is to be shared amongst several users",
         "completeDescription": "",
@@ -16645,21 +17140,6 @@
       "--template": {
         "Name": "",
         "description": "directory from which templates will be used",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {
-          "\u003ctemplate-directory\u003e": {
-            "Name": "",
-            "description": "directory from which templates will be used",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {}
-          }
-        }
-      },
-      "--template=\u003ctemplate-directory\u003e": {
-        "Name": "",
-        "description": "",
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
@@ -17200,7 +17680,7 @@
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
-          "\u003ckey\u003e|\u003ckeyAlias\u003e)[(=|:)\u003cvalue\u003e])...": {
+          "\u003ckey\u003e|\u003ckeyAlias\u003e)": {
             "Name": "",
             "description": "",
             "completeDescription": "",
@@ -17289,6 +17769,13 @@
         "nUsed": 0,
         "subCommand": {}
       },
+      "--decorate": {
+        "Name": "",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
       "--decorate-refs": {
         "Name": "",
         "description": "only decorate refs that match \u003cpattern\u003e",
@@ -17319,16 +17806,16 @@
           }
         }
       },
-      "--decorate[=...": {
+      "--mailmap": {
         "Name": "",
-        "description": "",
+        "description": "alias of --use-mailmap",
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {}
       },
-      "--mailmap": {
+      "--no-decorate": {
         "Name": "",
-        "description": "alias of --use-mailmap",
+        "description": "",
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {}
@@ -17362,13 +17849,6 @@
             "subCommand": {}
           }
         }
-      },
-      "--no-decorate[=...": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
       },
       "--no-mailmap": {
         "Name": "",
@@ -17463,12 +17943,20 @@
     "completeDescription": "",
     "nUsed": 0,
     "subCommand": {
-      "--abbrev[=\u003cn\u003e": {
+      "--abbrev": {
         "Name": "",
         "description": "use \u003cn\u003e digits to display object names",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "use \u003cn\u003e digits to display object names",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--cached": {
         "Name": "",
@@ -17621,12 +18109,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-abbrev[=\u003cn\u003e": {
+      "--no-abbrev": {
         "Name": "",
         "description": "use \u003cn\u003e digits to display object names",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "use \u003cn\u003e digits to display object names",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-cached": {
         "Name": "",
@@ -18122,21 +18618,6 @@
         "subCommand": {
           "\u003ckey\u003e": {
             "Name": "",
-            "description": "field name to sort on",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {}
-          }
-        }
-      },
-      "--sort=\u003ckey\u003e": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {
-          "\u003ckey\u003e": {
-            "Name": "",
             "description": "",
             "completeDescription": "",
             "nUsed": 0,
@@ -18169,21 +18650,6 @@
       "--upload-pack": {
         "Name": "",
         "description": "path of git-upload-pack on the remote host",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {
-          "\u003cexec\u003e": {
-            "Name": "",
-            "description": "path of git-upload-pack on the remote host",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {}
-          }
-        }
-      },
-      "--upload-pack=\u003cexec\u003e": {
-        "Name": "",
-        "description": "",
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
@@ -18247,12 +18713,20 @@
     "completeDescription": "",
     "nUsed": 0,
     "subCommand": {
-      "--abbrev[=\u003cn\u003e": {
+      "--abbrev": {
         "Name": "",
         "description": "use \u003cn\u003e digits to display object names",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "use \u003cn\u003e digits to display object names",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--format": {
         "Name": "",
@@ -18304,12 +18778,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-abbrev[=\u003cn\u003e": {
+      "--no-abbrev": {
         "Name": "",
         "description": "use \u003cn\u003e digits to display object names",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "use \u003cn\u003e digits to display object names",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-full-name": {
         "Name": "",
@@ -18829,12 +19311,20 @@
           }
         }
       },
-      "--gpg-sign[=\u003ckey-id\u003e": {
+      "--gpg-sign": {
         "Name": "",
         "description": "GPG sign commit",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ckey-id\u003e": {
+            "Name": "",
+            "description": "GPG sign commit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--into-name": {
         "Name": "",
@@ -18851,12 +19341,20 @@
           }
         }
       },
-      "--log[=\u003cn\u003e": {
+      "--log": {
         "Name": "",
         "description": "add (at most \u003cn\u003e) entries from shortlog to merge commit message",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "add (at most \u003cn\u003e) entries from shortlog to merge commit message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--message": {
         "Name": "",
@@ -18937,12 +19435,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-gpg-sign[=\u003ckey-id\u003e": {
+      "--no-gpg-sign": {
         "Name": "",
         "description": "GPG sign commit",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ckey-id\u003e": {
+            "Name": "",
+            "description": "GPG sign commit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-into-name": {
         "Name": "",
@@ -18959,12 +19465,20 @@
           }
         }
       },
-      "--no-log[=\u003cn\u003e": {
+      "--no-log": {
         "Name": "",
         "description": "add (at most \u003cn\u003e) entries from shortlog to merge commit message",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "add (at most \u003cn\u003e) entries from shortlog to merge commit message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-message": {
         "Name": "",
@@ -19058,7 +19572,7 @@
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
-          "\u003coption=value\u003e": {
+          "\u003coption": {
             "Name": "",
             "description": "option for selected merge strategy",
             "completeDescription": "",
@@ -19172,7 +19686,7 @@
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
-          "\u003coption=value\u003e": {
+          "\u003coption": {
             "Name": "",
             "description": "option for selected merge strategy",
             "completeDescription": "",
@@ -19229,7 +19743,15 @@
         "description": "GPG sign commit",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ckey-id\u003e": {
+            "Name": "",
+            "description": "GPG sign commit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "-X": {
         "Name": "",
@@ -19237,7 +19759,7 @@
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
-          "\u003coption=value\u003e": {
+          "\u003coption": {
             "Name": "",
             "description": "option for selected merge strategy",
             "completeDescription": "",
@@ -19810,7 +20332,7 @@
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
-          "\u003coption=value\u003e": {
+          "\u003coption": {
             "Name": "",
             "description": "option for selected merge strategy",
             "completeDescription": "",
@@ -19832,7 +20354,7 @@
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
-          "\u003coption=value\u003e": {
+          "\u003coption": {
             "Name": "",
             "description": "option for selected merge strategy",
             "completeDescription": "",
@@ -19877,7 +20399,7 @@
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
-          "\u003coption=value\u003e": {
+          "\u003coption": {
             "Name": "",
             "description": "option for selected merge strategy",
             "completeDescription": "",
@@ -19943,14 +20465,14 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--tool-help": {
+      "--tool": {
         "Name": "",
         "description": "",
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {}
       },
-      "--tool=tool": {
+      "--tool-help": {
         "Name": "",
         "description": "",
         "completeDescription": "",
@@ -20802,12 +21324,20 @@
             "nUsed": 0,
             "subCommand": {}
           },
-          "--no-separator[=\u003cparagraph-break\u003e": {
+          "--no-separator": {
             "Name": "",
             "description": "insert \u003cparagraph-break\u003e between paragraphs",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "\u003cparagraph-break\u003e": {
+                "Name": "",
+                "description": "insert \u003cparagraph-break\u003e between paragraphs",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "--no-stripspace": {
             "Name": "",
@@ -20846,12 +21376,20 @@
               }
             }
           },
-          "--separator[=\u003cparagraph-break\u003e": {
+          "--separator": {
             "Name": "",
             "description": "insert \u003cparagraph-break\u003e between paragraphs",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "\u003cparagraph-break\u003e": {
+                "Name": "",
+                "description": "insert \u003cparagraph-break\u003e between paragraphs",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "--stripspace": {
             "Name": "",
@@ -20986,12 +21524,20 @@
             "nUsed": 0,
             "subCommand": {}
           },
-          "--no-separator[=\u003cparagraph-break\u003e": {
+          "--no-separator": {
             "Name": "",
             "description": "insert \u003cparagraph-break\u003e between paragraphs",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "\u003cparagraph-break\u003e": {
+                "Name": "",
+                "description": "insert \u003cparagraph-break\u003e between paragraphs",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "--no-stripspace": {
             "Name": "",
@@ -21030,12 +21576,20 @@
               }
             }
           },
-          "--separator[=\u003cparagraph-break\u003e": {
+          "--separator": {
             "Name": "",
             "description": "insert \u003cparagraph-break\u003e between paragraphs",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "\u003cparagraph-break\u003e": {
+                "Name": "",
+                "description": "insert \u003cparagraph-break\u003e between paragraphs",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "--stripspace": {
             "Name": "",
@@ -21265,12 +21819,20 @@
             "nUsed": 0,
             "subCommand": {}
           },
-          "--no-separator[=\u003cparagraph-break\u003e": {
+          "--no-separator": {
             "Name": "",
             "description": "insert \u003cparagraph-break\u003e between paragraphs",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "\u003cparagraph-break\u003e": {
+                "Name": "",
+                "description": "insert \u003cparagraph-break\u003e between paragraphs",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "--no-stripspace": {
             "Name": "",
@@ -21309,12 +21871,20 @@
               }
             }
           },
-          "--separator[=\u003cparagraph-break\u003e": {
+          "--separator": {
             "Name": "",
             "description": "insert \u003cparagraph-break\u003e between paragraphs",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "\u003cparagraph-break\u003e": {
+                "Name": "",
+                "description": "insert \u003cparagraph-break\u003e between paragraphs",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "--stripspace": {
             "Name": "",
@@ -21704,12 +22274,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--cruft-expiration[=\u003ctime\u003e": {
+      "--cruft-expiration": {
         "Name": "",
         "description": "expire cruft objects older than \u003ctime\u003e",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ctime\u003e": {
+            "Name": "",
+            "description": "expire cruft objects older than \u003ctime\u003e",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--delta-base-offset": {
         "Name": "",
@@ -21789,7 +22367,14 @@
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
-          "\u003coffset\u003e": {
+          "\u003coffset\u003e]": {
+            "Name": "",
+            "description": "write the pack index file in the specified idx format version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cversion\u003e": {
             "Name": "",
             "description": "write the pack index file in the specified idx format version",
             "completeDescription": "",
@@ -21907,12 +22492,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-cruft-expiration[=\u003ctime\u003e": {
+      "--no-cruft-expiration": {
         "Name": "",
         "description": "expire cruft objects older than \u003ctime\u003e",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ctime\u003e": {
+            "Name": "",
+            "description": "expire cruft objects older than \u003ctime\u003e",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-delta-base-offset": {
         "Name": "",
@@ -22121,12 +22714,20 @@
           }
         }
       },
-      "--no-unpack-unreachable[=\u003ctime\u003e": {
+      "--no-unpack-unreachable": {
         "Name": "",
         "description": "unpack unreachable objects newer than \u003ctime\u003e",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ctime\u003e": {
+            "Name": "",
+            "description": "unpack unreachable objects newer than \u003ctime\u003e",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-uri-protocol": {
         "Name": "",
@@ -22286,12 +22887,20 @@
           }
         }
       },
-      "--unpack-unreachable[=\u003ctime\u003e": {
+      "--unpack-unreachable": {
         "Name": "",
         "description": "unpack unreachable objects newer than \u003ctime\u003e",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ctime\u003e": {
+            "Name": "",
+            "description": "unpack unreachable objects newer than \u003ctime\u003e",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--unpacked": {
         "Name": "",
@@ -22900,12 +23509,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--gpg-sign[=\u003ckey-id\u003e": {
+      "--gpg-sign": {
         "Name": "",
         "description": "GPG sign commit",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ckey-id\u003e": {
+            "Name": "",
+            "description": "GPG sign commit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--ipv4": {
         "Name": "",
@@ -22921,12 +23538,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--jobs[=\u003cn\u003e": {
+      "--jobs": {
         "Name": "",
         "description": "",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--keep": {
         "Name": "",
@@ -22935,12 +23560,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--log[=\u003cn\u003e": {
+      "--log": {
         "Name": "",
         "description": "add (at most \u003cn\u003e) entries from shortlog to merge commit message",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "add (at most \u003cn\u003e) entries from shortlog to merge commit message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--negotiation-tip": {
         "Name": "",
@@ -23065,12 +23698,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-gpg-sign[=\u003ckey-id\u003e": {
+      "--no-gpg-sign": {
         "Name": "",
         "description": "GPG sign commit",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ckey-id\u003e": {
+            "Name": "",
+            "description": "GPG sign commit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-ipv4": {
         "Name": "",
@@ -23086,12 +23727,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-jobs[=\u003cn\u003e": {
+      "--no-jobs": {
         "Name": "",
         "description": "",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-keep": {
         "Name": "",
@@ -23100,12 +23749,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-log[=\u003cn\u003e": {
+      "--no-log": {
         "Name": "",
         "description": "add (at most \u003cn\u003e) entries from shortlog to merge commit message",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "add (at most \u003cn\u003e) entries from shortlog to merge commit message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-negotiation-tip": {
         "Name": "",
@@ -23143,19 +23800,56 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-rebase[=(false|true|merges|interactive": {
+      "--no-rebase": {
         "Name": "",
         "description": "incorporate changes by rebasing rather than merging",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "false": {
+            "Name": "",
+            "description": "incorporate changes by rebasing rather than merging",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "interactive": {
+            "Name": "",
+            "description": "incorporate changes by rebasing rather than merging",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "merges": {
+            "Name": "",
+            "description": "incorporate changes by rebasing rather than merging",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "true": {
+            "Name": "",
+            "description": "incorporate changes by rebasing rather than merging",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
-      "--no-recurse-submodules[=\u003con-demand\u003e": {
+      "--no-recurse-submodules": {
         "Name": "",
         "description": "control for recursive fetching of submodules",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003con-demand\u003e": {
+            "Name": "",
+            "description": "control for recursive fetching of submodules",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-server-option": {
         "Name": "",
@@ -23216,7 +23910,7 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-signoff[=...": {
+      "--no-signoff": {
         "Name": "",
         "description": "add a Signed-off-by trailer",
         "completeDescription": "",
@@ -23258,7 +23952,7 @@
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
-          "\u003coption=value\u003e": {
+          "\u003coption": {
             "Name": "",
             "description": "option for selected merge strategy",
             "completeDescription": "",
@@ -23338,19 +24032,56 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--rebase[=(false|true|merges|interactive": {
+      "--rebase": {
         "Name": "",
         "description": "incorporate changes by rebasing rather than merging",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "false": {
+            "Name": "",
+            "description": "incorporate changes by rebasing rather than merging",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "interactive": {
+            "Name": "",
+            "description": "incorporate changes by rebasing rather than merging",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "merges": {
+            "Name": "",
+            "description": "incorporate changes by rebasing rather than merging",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "true": {
+            "Name": "",
+            "description": "incorporate changes by rebasing rather than merging",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
-      "--recurse-submodules[=\u003con-demand\u003e": {
+      "--recurse-submodules": {
         "Name": "",
         "description": "control for recursive fetching of submodules",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003con-demand\u003e": {
+            "Name": "",
+            "description": "control for recursive fetching of submodules",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--refmap": {
         "Name": "",
@@ -23426,7 +24157,7 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--signoff[=...": {
+      "--signoff": {
         "Name": "",
         "description": "add a Signed-off-by trailer",
         "completeDescription": "",
@@ -23468,7 +24199,7 @@
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
-          "\u003coption=value\u003e": {
+          "\u003coption": {
             "Name": "",
             "description": "option for selected merge strategy",
             "completeDescription": "",
@@ -23553,7 +24284,15 @@
         "description": "GPG sign commit",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ckey-id\u003e": {
+            "Name": "",
+            "description": "GPG sign commit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "-X": {
         "Name": "",
@@ -23561,7 +24300,7 @@
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
-          "\u003coption=value\u003e": {
+          "\u003coption": {
             "Name": "",
             "description": "option for selected merge strategy",
             "completeDescription": "",
@@ -23589,7 +24328,15 @@
         "description": "",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "-k": {
         "Name": "",
@@ -23639,7 +24386,36 @@
         "description": "incorporate changes by rebasing rather than merging",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "false": {
+            "Name": "",
+            "description": "incorporate changes by rebasing rather than merging",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "interactive": {
+            "Name": "",
+            "description": "incorporate changes by rebasing rather than merging",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "merges": {
+            "Name": "",
+            "description": "incorporate changes by rebasing rather than merging",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "true": {
+            "Name": "",
+            "description": "incorporate changes by rebasing rather than merging",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "-s": {
         "Name": "",
@@ -23770,12 +24546,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--force-with-lease[=\u003crefname\u003e:\u003cexpect\u003e": {
+      "--force-with-lease": {
         "Name": "",
         "description": "require old value of ref to be at this value",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003crefname\u003e": {
+            "Name": "",
+            "description": "require old value of ref to be at this value",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--ipv4": {
         "Name": "",
@@ -23869,12 +24653,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-force-with-lease[=\u003crefname\u003e:\u003cexpect\u003e": {
+      "--no-force-with-lease": {
         "Name": "",
         "description": "require old value of ref to be at this value",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003crefname\u003e": {
+            "Name": "",
+            "description": "require old value of ref to be at this value",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-mirror": {
         "Name": "",
@@ -23970,12 +24762,34 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-signed[=(yes|no|if-asked": {
+      "--no-signed": {
         "Name": "",
         "description": "GPG sign the push",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "if-asked": {
+            "Name": "",
+            "description": "GPG sign the push",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "no": {
+            "Name": "",
+            "description": "GPG sign the push",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "yes": {
+            "Name": "",
+            "description": "GPG sign the push",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-tags": {
         "Name": "",
@@ -24092,12 +24906,34 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--signed[=(yes|no|if-asked": {
+      "--signed": {
         "Name": "",
         "description": "GPG sign the push",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "if-asked": {
+            "Name": "",
+            "description": "GPG sign the push",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "no": {
+            "Name": "",
+            "description": "GPG sign the push",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "yes": {
+            "Name": "",
+            "description": "GPG sign the push",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--tags": {
         "Name": "",
@@ -24404,12 +25240,20 @@
     "completeDescription": "",
     "nUsed": 0,
     "subCommand": {
-      "--abbrev[=\u003cn\u003e": {
+      "--abbrev": {
         "Name": "",
         "description": "use \u003cn\u003e digits to display object names",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "use \u003cn\u003e digits to display object names",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--anchored": {
         "Name": "",
@@ -24433,7 +25277,7 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--break-rewrites[=\u003cn\u003e[/\u003cm\u003e": {
+      "--break-rewrites": {
         "Name": "",
         "description": "break complete rewrite changes into pairs of delete and create",
         "completeDescription": "",
@@ -24446,6 +25290,36 @@
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {}
+      },
+      "--color": {
+        "Name": "",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cwhen\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "--color-moved": {
+        "Name": "",
+        "description": "moved lines of code are colored differently",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmode\u003e": {
+            "Name": "",
+            "description": "moved lines of code are colored differently",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--color-moved-ws": {
         "Name": "",
@@ -24462,26 +25336,20 @@
           }
         }
       },
-      "--color-moved[=\u003cmode\u003e": {
-        "Name": "",
-        "description": "moved lines of code are colored differently",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
-      },
-      "--color-words[=\u003cregex\u003e": {
+      "--color-words": {
         "Name": "",
         "description": "equivalent to --word-diff=color --word-diff-regex=\u003cregex\u003e",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
-      },
-      "--color[=\u003cwhen\u003e": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cregex\u003e": {
+            "Name": "",
+            "description": "equivalent to --word-diff=color --word-diff-regex=\u003cregex\u003e",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--compact-summary": {
         "Name": "",
@@ -24541,16 +25409,16 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--dirstat-by-file[=\u003cparam1": {
+      "--dirstat": {
         "Name": "",
-        "description": "synonym for --dirstat=files,param1,param2...",
+        "description": "output the distribution of relative amount of changes for each sub-directory",
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {}
       },
-      "--dirstat[=\u003cparam1": {
+      "--dirstat-by-file": {
         "Name": "",
-        "description": "output the distribution of relative amount of changes for each sub-directory",
+        "description": "synonym for --dirstat=files,param1,param2...",
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {}
@@ -24591,16 +25459,24 @@
         "nUsed": 0,
         "subCommand": {}
       },
+      "--find-copies": {
+        "Name": "",
+        "description": "detect copies",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "detect copies",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
       "--find-copies-harder": {
         "Name": "",
         "description": "use unmodified files as source to find copies",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
-      },
-      "--find-copies[=\u003cn\u003e": {
-        "Name": "",
-        "description": "detect copies",
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {}
@@ -24620,12 +25496,20 @@
           }
         }
       },
-      "--find-renames[=\u003cn\u003e": {
+      "--find-renames": {
         "Name": "",
         "description": "detect renames",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "detect renames",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--follow": {
         "Name": "",
@@ -24705,12 +25589,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--ignore-submodules[=\u003cwhen\u003e": {
+      "--ignore-submodules": {
         "Name": "",
         "description": "ignore changes to submodules in the diff generation",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cwhen\u003e": {
+            "Name": "",
+            "description": "ignore changes to submodules in the diff generation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--indent-heuristic": {
         "Name": "",
@@ -24798,12 +25690,50 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-abbrev[=\u003cn\u003e": {
+      "--no-abbrev": {
         "Name": "",
         "description": "use \u003cn\u003e digits to display object names",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "use \u003cn\u003e digits to display object names",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "--no-color": {
+        "Name": "",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cwhen\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "--no-color-moved": {
+        "Name": "",
+        "description": "moved lines of code are colored differently",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmode\u003e": {
+            "Name": "",
+            "description": "moved lines of code are colored differently",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-color-moved-ws": {
         "Name": "",
@@ -24819,20 +25749,6 @@
             "subCommand": {}
           }
         }
-      },
-      "--no-color-moved[=\u003cmode\u003e": {
-        "Name": "",
-        "description": "moved lines of code are colored differently",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
-      },
-      "--no-color[=\u003cwhen\u003e": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
       },
       "--no-compact-summary": {
         "Name": "",
@@ -24934,12 +25850,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-notes[=\u003cnotes\u003e": {
+      "--no-notes": {
         "Name": "",
         "description": "passed to 'git log'",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cnotes\u003e": {
+            "Name": "",
+            "description": "passed to 'git log'",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-patch": {
         "Name": "",
@@ -24962,12 +25886,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-relative[=\u003cprefix\u003e": {
+      "--no-relative": {
         "Name": "",
         "description": "when run from subdir, exclude changes outside and show relative paths",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cprefix\u003e": {
+            "Name": "",
+            "description": "when run from subdir, exclude changes outside and show relative paths",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-rename-empty": {
         "Name": "",
@@ -25004,12 +25936,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--notes[=\u003cnotes\u003e": {
+      "--notes": {
         "Name": "",
         "description": "passed to 'git log'",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cnotes\u003e": {
+            "Name": "",
+            "description": "passed to 'git log'",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--numstat": {
         "Name": "",
@@ -25134,12 +26074,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--relative[=\u003cprefix\u003e": {
+      "--relative": {
         "Name": "",
         "description": "when run from subdir, exclude changes outside and show relative paths",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cprefix\u003e": {
+            "Name": "",
+            "description": "when run from subdir, exclude changes outside and show relative paths",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--rename-empty": {
         "Name": "",
@@ -25207,6 +26155,28 @@
           }
         }
       },
+      "--stat": {
+        "Name": "",
+        "description": "generate diffstat",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccount\u003e]]]": {
+            "Name": "",
+            "description": "generate diffstat",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cname-width\u003e": {
+            "Name": "",
+            "description": "generate diffstat",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
       "--stat-count": {
         "Name": "",
         "description": "generate diffstat with limited lines",
@@ -25267,27 +26237,20 @@
           }
         }
       },
-      "--stat[=\u003cwidth\u003e": {
+      "--submodule": {
         "Name": "",
-        "description": "generate diffstat",
+        "description": "specify how differences in submodules are shown",
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
-          "\u003ccount\u003e": {
+          "\u003cformat\u003e": {
             "Name": "",
-            "description": "generate diffstat",
+            "description": "specify how differences in submodules are shown",
             "completeDescription": "",
             "nUsed": 0,
             "subCommand": {}
           }
         }
-      },
-      "--submodule[=\u003cformat\u003e": {
-        "Name": "",
-        "description": "specify how differences in submodules are shown",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
       },
       "--summary": {
         "Name": "",
@@ -25310,12 +26273,35 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--unified[=\u003cn\u003e": {
+      "--unified": {
         "Name": "",
         "description": "generate diffs with \u003cn\u003e lines context",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "generate diffs with \u003cn\u003e lines context",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "--word-diff": {
+        "Name": "",
+        "description": "show word diff, using \u003cmode\u003e to delimit changed words",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmode\u003e": {
+            "Name": "",
+            "description": "show word diff, using \u003cmode\u003e to delimit changed words",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--word-diff-regex": {
         "Name": "",
@@ -25331,13 +26317,6 @@
             "subCommand": {}
           }
         }
-      },
-      "--word-diff[=\u003cmode\u003e": {
-        "Name": "",
-        "description": "show word diff, using \u003cmode\u003e to delimit changed words",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
       },
       "--ws-error-highlight": {
         "Name": "",
@@ -25366,7 +26345,15 @@
         "description": "detect copies",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "detect copies",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "-D": {
         "Name": "",
@@ -25410,7 +26397,15 @@
         "description": "detect renames",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "detect renames",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "-O": {
         "Name": "",
@@ -25454,7 +26449,15 @@
         "description": "generate diffs with \u003cn\u003e lines context",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "generate diffs with \u003cn\u003e lines context",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "-W": {
         "Name": "",
@@ -25649,21 +26652,6 @@
           }
         }
       },
-      "--index-output=\u003cfile\u003e": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {
-          "\u003cfile\u003e": {
-            "Name": "",
-            "description": "",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {}
-          }
-        }
-      },
       "--no-aggressive": {
         "Name": "",
         "description": "3-way merge in presence of adds and removes",
@@ -25699,12 +26687,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-recurse-submodules[=\u003ccheckout\u003e": {
+      "--no-recurse-submodules": {
         "Name": "",
         "description": "control recursive updating of submodules",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ccheckout\u003e": {
+            "Name": "",
+            "description": "control recursive updating of submodules",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-reset": {
         "Name": "",
@@ -25740,24 +26736,16 @@
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
-          "\u003csubdirectory\u003e/": {
-            "Name": "",
-            "description": "read the tree into the index under \u003csubdirectory\u003e/",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {}
-          }
-        }
-      },
-      "--prefix=\u003cprefix\u003e": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {
           "\u003cprefix\u003e": {
             "Name": "",
             "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003csubdirectory\u003e/": {
+            "Name": "",
+            "description": "read the tree into the index under \u003csubdirectory\u003e/",
             "completeDescription": "",
             "nUsed": 0,
             "subCommand": {}
@@ -25771,12 +26759,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--recurse-submodules[=\u003ccheckout\u003e": {
+      "--recurse-submodules": {
         "Name": "",
         "description": "control recursive updating of submodules",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ccheckout\u003e": {
+            "Name": "",
+            "description": "control recursive updating of submodules",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--reset": {
         "Name": "",
@@ -25969,12 +26965,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--gpg-sign[=\u003ckey-id\u003e": {
+      "--gpg-sign": {
         "Name": "",
         "description": "GPG-sign commits",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ckey-id\u003e": {
+            "Name": "",
+            "description": "GPG-sign commits",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--ignore-whitespace": {
         "Name": "",
@@ -26061,12 +27065,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-gpg-sign[=\u003ckey-id\u003e": {
+      "--no-gpg-sign": {
         "Name": "",
         "description": "GPG-sign commits",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ckey-id\u003e": {
+            "Name": "",
+            "description": "GPG-sign commits",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-ignore-whitespace": {
         "Name": "",
@@ -26111,12 +27123,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-rebase-merges[=\u003cmode\u003e": {
+      "--no-rebase-merges": {
         "Name": "",
         "description": "try to rebase merges instead of skipping them",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cmode\u003e": {
+            "Name": "",
+            "description": "try to rebase merges instead of skipping them",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-rerere-autoupdate": {
         "Name": "",
@@ -26262,12 +27282,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--rebase-merges[=\u003cmode\u003e": {
+      "--rebase-merges": {
         "Name": "",
         "description": "try to rebase merges instead of skipping them",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cmode\u003e": {
+            "Name": "",
+            "description": "try to rebase merges instead of skipping them",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--rerere-autoupdate": {
         "Name": "",
@@ -26411,7 +27439,15 @@
         "description": "GPG-sign commits",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ckey-id\u003e": {
+            "Name": "",
+            "description": "GPG-sign commits",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "-X": {
         "Name": "",
@@ -26468,7 +27504,15 @@
         "description": "try to rebase merges instead of skipping them",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cmode\u003e": {
+            "Name": "",
+            "description": "try to rebase merges instead of skipping them",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "-s": {
         "Name": "",
@@ -26605,12 +27649,20 @@
             "nUsed": 0,
             "subCommand": {}
           },
-          "--gpg-sign[=\u003ckey-id\u003e": {
+          "--gpg-sign": {
             "Name": "",
             "description": "GPG-sign commits",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "\u003ckey-id\u003e": {
+                "Name": "",
+                "description": "GPG-sign commits",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "--ignore-whitespace": {
             "Name": "",
@@ -26697,12 +27749,20 @@
             "nUsed": 0,
             "subCommand": {}
           },
-          "--no-gpg-sign[=\u003ckey-id\u003e": {
+          "--no-gpg-sign": {
             "Name": "",
             "description": "GPG-sign commits",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "\u003ckey-id\u003e": {
+                "Name": "",
+                "description": "GPG-sign commits",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "--no-ignore-whitespace": {
             "Name": "",
@@ -26747,12 +27807,20 @@
             "nUsed": 0,
             "subCommand": {}
           },
-          "--no-rebase-merges[=\u003cmode\u003e": {
+          "--no-rebase-merges": {
             "Name": "",
             "description": "try to rebase merges instead of skipping them",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "\u003cmode\u003e": {
+                "Name": "",
+                "description": "try to rebase merges instead of skipping them",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "--no-rerere-autoupdate": {
             "Name": "",
@@ -26898,12 +27966,20 @@
             "nUsed": 0,
             "subCommand": {}
           },
-          "--rebase-merges[=\u003cmode\u003e": {
+          "--rebase-merges": {
             "Name": "",
             "description": "try to rebase merges instead of skipping them",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "\u003cmode\u003e": {
+                "Name": "",
+                "description": "try to rebase merges instead of skipping them",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "--rerere-autoupdate": {
             "Name": "",
@@ -27047,7 +28123,15 @@
             "description": "GPG-sign commits",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "\u003ckey-id\u003e": {
+                "Name": "",
+                "description": "GPG-sign commits",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "-X": {
             "Name": "",
@@ -27104,7 +28188,15 @@
             "description": "try to rebase merges instead of skipping them",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "\u003cmode\u003e": {
+                "Name": "",
+                "description": "try to rebase merges instead of skipping them",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "-s": {
             "Name": "",
@@ -27273,6 +28365,13 @@
             "completeDescription": "",
             "nUsed": 0,
             "subCommand": {
+              "\u003ctime\u003e": {
+                "Name": "",
+                "description": "",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
               "\u003ctimestamp\u003e": {
                 "Name": "",
                 "description": "prune entries older than the specified time",
@@ -27288,39 +28387,16 @@
             "completeDescription": "",
             "nUsed": 0,
             "subCommand": {
+              "\u003ctime\u003e": {
+                "Name": "",
+                "description": "",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
               "\u003ctimestamp\u003e": {
                 "Name": "",
                 "description": "prune entries older than \u003ctime\u003e that are not reachable from the current tip of the branch",
-                "completeDescription": "",
-                "nUsed": 0,
-                "subCommand": {}
-              }
-            }
-          },
-          "--expire-unreachable=\u003ctime\u003e": {
-            "Name": "",
-            "description": "",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {
-              "\u003ctime\u003e": {
-                "Name": "",
-                "description": "",
-                "completeDescription": "",
-                "nUsed": 0,
-                "subCommand": {}
-              }
-            }
-          },
-          "--expire=\u003ctime\u003e": {
-            "Name": "",
-            "description": "",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {
-              "\u003ctime\u003e": {
-                "Name": "",
-                "description": "",
                 "completeDescription": "",
                 "nUsed": 0,
                 "subCommand": {}
@@ -27491,12 +28567,27 @@
               }
             }
           },
-          "--mirror[=(push|fetch": {
+          "--mirror": {
             "Name": "",
             "description": "set up remote as a mirror to push to or fetch from",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "fetch": {
+                "Name": "",
+                "description": "set up remote as a mirror to push to or fetch from",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "push": {
+                "Name": "",
+                "description": "set up remote as a mirror to push to or fetch from",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "--no-fetch": {
             "Name": "",
@@ -27520,12 +28611,27 @@
               }
             }
           },
-          "--no-mirror[=(push|fetch": {
+          "--no-mirror": {
             "Name": "",
             "description": "set up remote as a mirror to push to or fetch from",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "fetch": {
+                "Name": "",
+                "description": "set up remote as a mirror to push to or fetch from",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "push": {
+                "Name": "",
+                "description": "set up remote as a mirror to push to or fetch from",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "--no-tags": {
             "Name": "",
@@ -27739,9 +28845,9 @@
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
-          "--[no-]progress": {
+          "--no-progress": {
             "Name": "",
-            "description": "",
+            "description": "force progress reporting",
             "completeDescription": "",
             "nUsed": 0,
             "subCommand": {
@@ -27754,19 +28860,20 @@
               }
             }
           },
-          "--no-progress": {
-            "Name": "",
-            "description": "force progress reporting",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {}
-          },
           "--progress": {
             "Name": "",
             "description": "force progress reporting",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "\u003cold\u003e": {
+                "Name": "",
+                "description": "",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "\u003cnew\u003e": {
             "Name": "",
@@ -28690,21 +29797,6 @@
         "subCommand": {
           "\u003cformat\u003e": {
             "Name": "",
-            "description": "use this format",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {}
-          }
-        }
-      },
-      "--format=\u003cformat\u003e": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {
-          "\u003cformat\u003e": {
-            "Name": "",
             "description": "",
             "completeDescription": "",
             "nUsed": 0,
@@ -29025,12 +30117,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-recurse-submodules[=\u003creset\u003e": {
+      "--no-recurse-submodules": {
         "Name": "",
         "description": "control recursive updating of submodules",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003creset\u003e": {
+            "Name": "",
+            "description": "control recursive updating of submodules",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-refresh": {
         "Name": "",
@@ -29091,12 +30191,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--recurse-submodules[=\u003creset\u003e": {
+      "--recurse-submodules": {
         "Name": "",
         "description": "control recursive updating of submodules",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003creset\u003e": {
+            "Name": "",
+            "description": "control recursive updating of submodules",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--refresh": {
         "Name": "",
@@ -29278,12 +30386,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-recurse-submodules[=\u003ccheckout\u003e": {
+      "--no-recurse-submodules": {
         "Name": "",
         "description": "control recursive updating of submodules",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ccheckout\u003e": {
+            "Name": "",
+            "description": "control recursive updating of submodules",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-source": {
         "Name": "",
@@ -29371,31 +30487,24 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--recurse-submodules[=\u003ccheckout\u003e": {
+      "--recurse-submodules": {
         "Name": "",
         "description": "control recursive updating of submodules",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
-      },
-      "--source": {
-        "Name": "",
-        "description": "which tree-ish to checkout from",
-        "completeDescription": "",
-        "nUsed": 0,
         "subCommand": {
-          "\u003ctree-ish\u003e": {
+          "\u003ccheckout\u003e": {
             "Name": "",
-            "description": "which tree-ish to checkout from",
+            "description": "control recursive updating of submodules",
             "completeDescription": "",
             "nUsed": 0,
             "subCommand": {}
           }
         }
       },
-      "--source=\u003cbranch\u003e": {
+      "--source": {
         "Name": "",
-        "description": "",
+        "description": "which tree-ish to checkout from",
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
@@ -29409,6 +30518,13 @@
           "\u003cfile\u003e...": {
             "Name": "",
             "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003ctree-ish\u003e": {
+            "Name": "",
+            "description": "which tree-ish to checkout from",
             "completeDescription": "",
             "nUsed": 0,
             "subCommand": {}
@@ -29530,14 +30646,22 @@
           }
         }
       },
-      "--abbrev-commit": {
+      "--abbrev": {
         "Name": "",
         "description": "",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
-      "--abbrev=\u003cn\u003e": {
+      "--abbrev-commit": {
         "Name": "",
         "description": "",
         "completeDescription": "",
@@ -29600,14 +30724,22 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--disk-usage[=human": {
+      "--disk-usage": {
         "Name": "",
         "description": "",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003chuman\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
-      "--exclude-hidden=[fetch|receive|uploadpack": {
+      "--exclude-hidden": {
         "Name": "",
         "description": "",
         "completeDescription": "",
@@ -29628,47 +30760,95 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--max-age=\u003cepoch\u003e": {
+      "--max-age": {
         "Name": "",
         "description": "",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cepoch\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
-      "--max-count=\u003cn\u003e": {
+      "--max-count": {
         "Name": "",
         "description": "",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
-      "--max-parents=\u003cn\u003e": {
+      "--max-parents": {
         "Name": "",
         "description": "",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
-      "--min-age=\u003cepoch\u003e": {
+      "--min-age": {
         "Name": "",
         "description": "",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cepoch\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
-      "--min-parents=\u003cn\u003e": {
+      "--min-parents": {
         "Name": "",
         "description": "",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-abbrev": {
         "Name": "",
         "description": "",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-max-parents": {
         "Name": "",
@@ -29885,13 +31065,6 @@
     "completeDescription": "",
     "nUsed": 0,
     "subCommand": {
-      "--[no-]edit": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
-      },
       "--abort": {
         "Name": "",
         "description": "cancel revert or cherry-pick sequence",
@@ -29935,12 +31108,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--gpg-sign[=\u003ckey-id\u003e": {
+      "--gpg-sign": {
         "Name": "",
         "description": "GPG sign commit",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ckey-id\u003e": {
+            "Name": "",
+            "description": "GPG sign commit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--mainline": {
         "Name": "",
@@ -29986,12 +31167,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-gpg-sign[=\u003ckey-id\u003e": {
+      "--no-gpg-sign": {
         "Name": "",
         "description": "GPG sign commit",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ckey-id\u003e": {
+            "Name": "",
+            "description": "GPG sign commit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-mainline": {
         "Name": "",
@@ -30129,17 +31318,17 @@
         "description": "GPG sign commit",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
-      },
-      "-S[\u003ckeyid\u003e": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
         "subCommand": {
           "\u003ccommit\u003e...": {
             "Name": "",
             "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003ckey-id\u003e": {
+            "Name": "",
+            "description": "GPG sign commit",
             "completeDescription": "",
             "nUsed": 0,
             "subCommand": {}
@@ -30341,21 +31530,6 @@
         "subCommand": {
           "\u003cfile\u003e": {
             "Name": "",
-            "description": "read pathspec from file",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {}
-          }
-        }
-      },
-      "--pathspec-from-file=\u003cfile\u003e": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {
-          "\u003cfile\u003e": {
-            "Name": "",
             "description": "",
             "completeDescription": "",
             "nUsed": 0,
@@ -30427,13 +31601,6 @@
     "completeDescription": "",
     "nUsed": 0,
     "subCommand": {
-      "--[no-]signed": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
-      },
       "--all": {
         "Name": "",
         "description": "push all refs",
@@ -30484,12 +31651,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--force-with-lease[=\u003crefname\u003e:\u003cexpect\u003e": {
+      "--force-with-lease": {
         "Name": "",
         "description": "require old value of ref to be at this value",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003crefname\u003e": {
+            "Name": "",
+            "description": "require old value of ref to be at this value",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--helper-status": {
         "Name": "",
@@ -30555,12 +31730,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-force-with-lease[=\u003crefname\u003e:\u003cexpect\u003e": {
+      "--no-force-with-lease": {
         "Name": "",
         "description": "require old value of ref to be at this value",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003crefname\u003e": {
+            "Name": "",
+            "description": "require old value of ref to be at this value",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-helper-status": {
         "Name": "",
@@ -30635,12 +31818,34 @@
           }
         }
       },
-      "--no-signed[=(yes|no|if-asked": {
+      "--no-signed": {
         "Name": "",
         "description": "GPG sign the push",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "if-asked": {
+            "Name": "",
+            "description": "GPG sign the push",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "no": {
+            "Name": "",
+            "description": "GPG sign the push",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "yes": {
+            "Name": "",
+            "description": "GPG sign the push",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-stateless-rpc": {
         "Name": "",
@@ -30705,24 +31910,16 @@
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
-          "\u003creceive-pack\u003e": {
-            "Name": "",
-            "description": "receive pack program",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {}
-          }
-        }
-      },
-      "--receive-pack=\u003cgit-receive-pack\u003e": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {
           "\u003cgit-receive-pack\u003e": {
             "Name": "",
             "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003creceive-pack\u003e": {
+            "Name": "",
+            "description": "receive pack program",
             "completeDescription": "",
             "nUsed": 0,
             "subCommand": {}
@@ -30744,19 +31941,41 @@
           }
         }
       },
-      "--signed=(true": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
-      },
-      "--signed[=(yes|no|if-asked": {
+      "--signed": {
         "Name": "",
         "description": "GPG sign the push",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ctrue\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "if-asked": {
+            "Name": "",
+            "description": "GPG sign the push",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "no": {
+            "Name": "",
+            "description": "GPG sign the push",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "yes": {
+            "Name": "",
+            "description": "GPG sign the push",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--stateless-rpc": {
         "Name": "",
@@ -30870,12 +32089,20 @@
             "nUsed": 0,
             "subCommand": {}
           },
-          "--force-with-lease[=\u003crefname\u003e:\u003cexpect\u003e": {
+          "--force-with-lease": {
             "Name": "",
             "description": "require old value of ref to be at this value",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "\u003crefname\u003e": {
+                "Name": "",
+                "description": "require old value of ref to be at this value",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "--helper-status": {
             "Name": "",
@@ -30941,12 +32168,20 @@
             "nUsed": 0,
             "subCommand": {}
           },
-          "--no-force-with-lease[=\u003crefname\u003e:\u003cexpect\u003e": {
+          "--no-force-with-lease": {
             "Name": "",
             "description": "require old value of ref to be at this value",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "\u003crefname\u003e": {
+                "Name": "",
+                "description": "require old value of ref to be at this value",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "--no-helper-status": {
             "Name": "",
@@ -31021,12 +32256,34 @@
               }
             }
           },
-          "--no-signed[=(yes|no|if-asked": {
+          "--no-signed": {
             "Name": "",
             "description": "GPG sign the push",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "if-asked": {
+                "Name": "",
+                "description": "GPG sign the push",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "no": {
+                "Name": "",
+                "description": "GPG sign the push",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "yes": {
+                "Name": "",
+                "description": "GPG sign the push",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "--no-stateless-rpc": {
             "Name": "",
@@ -31115,12 +32372,34 @@
               }
             }
           },
-          "--signed[=(yes|no|if-asked": {
+          "--signed": {
             "Name": "",
             "description": "GPG sign the push",
             "completeDescription": "",
             "nUsed": 0,
-            "subCommand": {}
+            "subCommand": {
+              "if-asked": {
+                "Name": "",
+                "description": "GPG sign the push",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "no": {
+                "Name": "",
+                "description": "GPG sign the push",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "yes": {
+                "Name": "",
+                "description": "GPG sign the push",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
           },
           "--stateless-rpc": {
             "Name": "",
@@ -31331,13 +32610,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "-w[\u003cw\u003e": {
+      "-w": {
         "Name": "",
         "description": "",
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
-          "\u003ci2\u003e": {
+          "\u003ci1\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003ci2\u003e]]]": {
             "Name": "",
             "description": "",
             "completeDescription": "",
@@ -31375,6 +32661,13 @@
         "nUsed": 0,
         "subCommand": {}
       },
+      "--decorate": {
+        "Name": "",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
       "--decorate-refs": {
         "Name": "",
         "description": "only decorate refs that match \u003cpattern\u003e",
@@ -31405,16 +32698,16 @@
           }
         }
       },
-      "--decorate[=...": {
+      "--mailmap": {
         "Name": "",
-        "description": "",
+        "description": "alias of --use-mailmap",
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {}
       },
-      "--mailmap": {
+      "--no-decorate": {
         "Name": "",
-        "description": "alias of --use-mailmap",
+        "description": "",
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {}
@@ -31448,13 +32741,6 @@
             "subCommand": {}
           }
         }
-      },
-      "--no-decorate[=...": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
       },
       "--no-mailmap": {
         "Name": "",
@@ -31556,7 +32842,7 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--color[=\u003cwhen\u003e": {
+      "--color": {
         "Name": "",
         "description": "",
         "completeDescription": "",
@@ -31614,9 +32900,9 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--more=\u003cn\u003e": {
+      "--more": {
         "Name": "",
-        "description": "",
+        "description": "show \u003cn\u003e more commits after the common ancestor",
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
@@ -31628,13 +32914,6 @@
             "subCommand": {}
           }
         }
-      },
-      "--more[=\u003cn\u003e": {
-        "Name": "",
-        "description": "show \u003cn\u003e more commits after the common ancestor",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
       },
       "--name": {
         "Name": "",
@@ -31655,14 +32934,15 @@
         "description": "",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
-      },
-      "--no-color[=\u003cwhen\u003e": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cwhen\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-current": {
         "Name": "",
@@ -31692,12 +32972,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-more[=\u003cn\u003e": {
+      "--no-more": {
         "Name": "",
         "description": "show \u003cn\u003e more commits after the common ancestor",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "show \u003cn\u003e more commits after the common ancestor",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-name": {
         "Name": "",
@@ -31734,7 +33022,22 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--reflog)[=\u003cn\u003e[,\u003cbase\u003e": {
+      "--reflog": {
+        "Name": "",
+        "description": "show \u003cn\u003e most recent ref-log entries starting at base",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbase\u003e]]": {
+            "Name": "",
+            "description": "show \u003cn\u003e most recent ref-log entries starting at base",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "--reflog)": {
         "Name": "",
         "description": "",
         "completeDescription": "",
@@ -31750,21 +33053,6 @@
           "\u003cn\u003e": {
             "Name": "",
             "description": "",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {}
-          }
-        }
-      },
-      "--reflog[=\u003cn\u003e": {
-        "Name": "",
-        "description": "show \u003cn\u003e most recent ref-log entries starting at base",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {
-          "\u003cbase\u003e": {
-            "Name": "",
-            "description": "show \u003cn\u003e most recent ref-log entries starting at base",
             "completeDescription": "",
             "nUsed": 0,
             "subCommand": {}
@@ -31827,7 +33115,7 @@
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
-          "\u003cbase\u003e": {
+          "\u003cbase\u003e]]": {
             "Name": "",
             "description": "show \u003cn\u003e most recent ref-log entries starting at base",
             "completeDescription": "",
@@ -31881,21 +33169,6 @@
         "subCommand": {
           "\u003chash-algorithm\u003e": {
             "Name": "",
-            "description": "specify the hash algorithm to use",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {}
-          }
-        }
-      },
-      "--object-format=\u003chash-algorithm\u003e": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {
-          "\u003chash-algorithm\u003e": {
-            "Name": "",
             "description": "",
             "completeDescription": "",
             "nUsed": 0,
@@ -31933,7 +33206,7 @@
           }
         }
       },
-      "--abbrev[=\u003cn\u003e": {
+      "--abbrev": {
         "Name": "",
         "description": "use \u003cn\u003e digits to display object names",
         "completeDescription": "",
@@ -31955,7 +33228,7 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--exclude-existing[=\u003cpattern\u003e": {
+      "--exclude-existing": {
         "Name": "",
         "description": "show refs from stdin that aren't in local repository",
         "completeDescription": "",
@@ -31985,7 +33258,7 @@
           }
         }
       },
-      "--hash[=\u003cn\u003e": {
+      "--hash": {
         "Name": "",
         "description": "",
         "completeDescription": "",
@@ -32014,12 +33287,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-abbrev[=\u003cn\u003e": {
+      "--no-abbrev": {
         "Name": "",
         "description": "use \u003cn\u003e digits to display object names",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "use \u003cn\u003e digits to display object names",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-dereference": {
         "Name": "",
@@ -32035,7 +33316,7 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-hash[=\u003cn\u003e": {
+      "--no-hash": {
         "Name": "",
         "description": "",
         "completeDescription": "",
@@ -32149,13 +33430,6 @@
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
-          "--[no-]sparse-index": {
-            "Name": "",
-            "description": "",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {}
-          },
           "--cone": {
             "Name": "",
             "description": "initialize the sparse-checkout in cone mode",
@@ -32613,13 +33887,6 @@
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
-          "--[no-]keep-index": {
-            "Name": "",
-            "description": "",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {}
-          },
           "--all": {
             "Name": "",
             "description": "include ignore files",
@@ -32971,33 +34238,65 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--column[=\u003cstyle\u003e": {
+      "--column": {
         "Name": "",
         "description": "list untracked files in columns",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cstyle\u003e": {
+            "Name": "",
+            "description": "list untracked files in columns",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
-      "--find-renames[=\u003cn\u003e": {
+      "--find-renames": {
         "Name": "",
         "description": "detect renames, optionally set similarity index",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "detect renames, optionally set similarity index",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
-      "--ignore-submodules[=\u003cwhen\u003e": {
+      "--ignore-submodules": {
         "Name": "",
         "description": "ignore changes to submodules, optional when: all, dirty, untracked. (Default: all)",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cwhen\u003e": {
+            "Name": "",
+            "description": "ignore changes to submodules, optional when: all, dirty, untracked. (Default: all)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
-      "--ignored[=\u003cmode\u003e": {
+      "--ignored": {
         "Name": "",
         "description": "show ignored files, optional modes: traditional, matching, no. (Default: traditional)",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cmode\u003e": {
+            "Name": "",
+            "description": "show ignored files, optional modes: traditional, matching, no. (Default: traditional)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--long": {
         "Name": "",
@@ -33020,26 +34319,50 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-column[=\u003cstyle\u003e": {
+      "--no-column": {
         "Name": "",
         "description": "list untracked files in columns",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cstyle\u003e": {
+            "Name": "",
+            "description": "list untracked files in columns",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
-      "--no-ignore-submodules[=\u003cwhen\u003e": {
+      "--no-ignore-submodules": {
         "Name": "",
         "description": "ignore changes to submodules, optional when: all, dirty, untracked. (Default: all)",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cwhen\u003e": {
+            "Name": "",
+            "description": "ignore changes to submodules, optional when: all, dirty, untracked. (Default: all)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
-      "--no-ignored[=\u003cmode\u003e": {
+      "--no-ignored": {
         "Name": "",
         "description": "show ignored files, optional modes: traditional, matching, no. (Default: traditional)",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cmode\u003e": {
+            "Name": "",
+            "description": "show ignored files, optional modes: traditional, matching, no. (Default: traditional)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-long": {
         "Name": "",
@@ -33055,12 +34378,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-porcelain[=\u003cversion\u003e": {
+      "--no-porcelain": {
         "Name": "",
         "description": "machine-readable output",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cversion\u003e": {
+            "Name": "",
+            "description": "machine-readable output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-renames": {
         "Name": "",
@@ -33083,12 +34414,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-untracked-files[=\u003cmode\u003e": {
+      "--no-untracked-files": {
         "Name": "",
         "description": "show untracked files, optional modes: all, normal, no. (Default: all)",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cmode\u003e": {
+            "Name": "",
+            "description": "show untracked files, optional modes: all, normal, no. (Default: all)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-verbose": {
         "Name": "",
@@ -33104,12 +34443,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--porcelain[=\u003cversion\u003e": {
+      "--porcelain": {
         "Name": "",
         "description": "machine-readable output",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cversion\u003e": {
+            "Name": "",
+            "description": "machine-readable output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--renames": {
         "Name": "",
@@ -33132,12 +34479,20 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--untracked-files[=\u003cmode\u003e": {
+      "--untracked-files": {
         "Name": "",
         "description": "show untracked files, optional modes: all, normal, no. (Default: all)",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cmode\u003e": {
+            "Name": "",
+            "description": "show untracked files, optional modes: all, normal, no. (Default: all)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--verbose": {
         "Name": "",
@@ -33151,7 +34506,15 @@
         "description": "detect renames, optionally set similarity index",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "detect renames, optionally set similarity index",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "-b": {
         "Name": "",
@@ -33172,7 +34535,15 @@
         "description": "show untracked files, optional modes: all, normal, no. (Default: all)",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cmode\u003e": {
+            "Name": "",
+            "description": "show untracked files, optional modes: all, normal, no. (Default: all)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "-v": {
         "Name": "",
@@ -33570,19 +34941,42 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--no-recurse-submodules[=\u003ccheckout\u003e": {
+      "--no-recurse-submodules": {
         "Name": "",
         "description": "control recursive updating of submodules",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ccheckout\u003e": {
+            "Name": "",
+            "description": "control recursive updating of submodules",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
-      "--no-track[=(direct|inherit": {
+      "--no-track": {
         "Name": "",
         "description": "set branch tracking configuration",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "direct": {
+            "Name": "",
+            "description": "set branch tracking configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "inherit": {
+            "Name": "",
+            "description": "set branch tracking configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--orphan": {
         "Name": "",
@@ -33620,19 +35014,42 @@
         "nUsed": 0,
         "subCommand": {}
       },
-      "--recurse-submodules[=\u003ccheckout\u003e": {
+      "--recurse-submodules": {
         "Name": "",
         "description": "control recursive updating of submodules",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003ccheckout\u003e": {
+            "Name": "",
+            "description": "control recursive updating of submodules",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
-      "--track[=(direct|inherit": {
+      "--track": {
         "Name": "",
         "description": "set branch tracking configuration",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "direct": {
+            "Name": "",
+            "description": "set branch tracking configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "inherit": {
+            "Name": "",
+            "description": "set branch tracking configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "-C": {
         "Name": "",
@@ -33697,7 +35114,22 @@
         "description": "set branch tracking configuration",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "direct": {
+            "Name": "",
+            "description": "set branch tracking configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "inherit": {
+            "Name": "",
+            "description": "set branch tracking configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "\u003coptions\u003e": {
         "Name": "",
@@ -33852,16 +35284,24 @@
           }
         }
       },
-      "--color[=\u003cwhen\u003e": {
+      "--color": {
         "Name": "",
         "description": "",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cwhen\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
-      "--column[=\u003coptions\u003e": {
+      "--column": {
         "Name": "",
-        "description": "",
+        "description": "show tag list in columns",
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
@@ -33871,15 +35311,15 @@
             "completeDescription": "",
             "nUsed": 0,
             "subCommand": {}
+          },
+          "\u003cstyle\u003e": {
+            "Name": "",
+            "description": "show tag list in columns",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
           }
         }
-      },
-      "--column[=\u003cstyle\u003e": {
-        "Name": "",
-        "description": "show tag list in columns",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
       },
       "--contains": {
         "Name": "",
@@ -33942,21 +35382,6 @@
       "--format": {
         "Name": "",
         "description": "format to use for the output",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {
-          "\u003cformat\u003e": {
-            "Name": "",
-            "description": "format to use for the output",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {}
-          }
-        }
-      },
-      "--format=\u003cformat\u003e": {
-        "Name": "",
-        "description": "",
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
@@ -34057,26 +35482,35 @@
           }
         }
       },
-      "--no-color[=\u003cwhen\u003e": {
+      "--no-color": {
         "Name": "",
         "description": "",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cwhen\u003e": {
+            "Name": "",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-column": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
-      },
-      "--no-column[=\u003cstyle\u003e": {
         "Name": "",
         "description": "show tag list in columns",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
+        "subCommand": {
+          "\u003cstyle\u003e": {
+            "Name": "",
+            "description": "show tag list in columns",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
       },
       "--no-contains": {
         "Name": "",
@@ -34262,21 +35696,6 @@
         "subCommand": {
           "\u003ckey\u003e": {
             "Name": "",
-            "description": "field name to sort on",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {}
-          }
-        }
-      },
-      "--sort=\u003ckey\u003e": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {
-          "\u003ckey\u003e": {
-            "Name": "",
             "description": "",
             "completeDescription": "",
             "nUsed": 0,
@@ -34386,19 +35805,19 @@
           }
         }
       },
-      "-n[\u003cn\u003e": {
+      "-n": {
         "Name": "",
         "description": "print \u003cn\u003e lines of each tag message",
         "completeDescription": "",
         "nUsed": 0,
-        "subCommand": {}
-      },
-      "-n[\u003cnum\u003e": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
         "subCommand": {
+          "\u003cn\u003e": {
+            "Name": "",
+            "description": "print \u003cn\u003e lines of each tag message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
           "\u003cnum\u003e": {
             "Name": "",
             "description": "",
@@ -34545,6 +35964,20 @@
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
+          "\u003cmode\u003e": {
+            "Name": "",
+            "description": "add the specified entry to the index",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cobject\u003e": {
+            "Name": "",
+            "description": "add the specified entry to the index",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
           "\u003cpath\u003e": {
             "Name": "",
             "description": "add the specified entry to the index",
@@ -35255,21 +36688,6 @@
         "subCommand": {
           "\u003cformat\u003e": {
             "Name": "",
-            "description": "format to use for the output",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {}
-          }
-        }
-      },
-      "--format=\u003cformat\u003e": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {
-          "\u003cformat\u003e": {
-            "Name": "",
             "description": "",
             "completeDescription": "",
             "nUsed": 0,
@@ -35372,6 +36790,13 @@
         "nUsed": 0,
         "subCommand": {}
       },
+      "--decorate": {
+        "Name": "",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
       "--decorate-refs": {
         "Name": "",
         "description": "only decorate refs that match \u003cpattern\u003e",
@@ -35402,16 +36827,16 @@
           }
         }
       },
-      "--decorate[=...": {
+      "--mailmap": {
         "Name": "",
-        "description": "",
+        "description": "alias of --use-mailmap",
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {}
       },
-      "--mailmap": {
+      "--no-decorate": {
         "Name": "",
-        "description": "alias of --use-mailmap",
+        "description": "",
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {}
@@ -35445,13 +36870,6 @@
             "subCommand": {}
           }
         }
-      },
-      "--no-decorate[=...": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {}
       },
       "--no-mailmap": {
         "Name": "",
@@ -36119,24 +37537,16 @@
         "completeDescription": "",
         "nUsed": 0,
         "subCommand": {
-          "\u003cprefix\u003e/": {
-            "Name": "",
-            "description": "write tree object for a subdirectory \u003cprefix\u003e",
-            "completeDescription": "",
-            "nUsed": 0,
-            "subCommand": {}
-          }
-        }
-      },
-      "--prefix=\u003cprefix\u003e/": {
-        "Name": "",
-        "description": "",
-        "completeDescription": "",
-        "nUsed": 0,
-        "subCommand": {
           "\u003cprefix\u003e": {
             "Name": "",
             "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cprefix\u003e/": {
+            "Name": "",
+            "description": "write tree object for a subdirectory \u003cprefix\u003e",
             "completeDescription": "",
             "nUsed": 0,
             "subCommand": {}

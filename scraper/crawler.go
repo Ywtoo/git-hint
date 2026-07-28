@@ -1,48 +1,17 @@
 package scraper
 
 import (
-	"context"
 	"fmt"
-	"os/exec"
+	"path/filepath"
+	"sort"
 	"strings"
+	"sync"
+	"sync/atomic"
 	"time"
 
 	"git-hint/core"
+	"git-hint/scraper/parser"
 )
-
-const helpTimeout = 5 * time.Second
-
-// executeHelp runs `<path...> -h` and returns its combined output.
-// We ignore the exec error itself (many CLIs exit non-zero on -h) and
-// only treat a timeout as a real failure.
-func executeHelp(path []string) (string, error) {
-	ctx, cancel := context.WithTimeout(context.Background(), helpTimeout)
-	defer cancel()
-
-	args := append(append([]string{}, path[1:]...), "-h")
-	cmd := exec.CommandContext(ctx, path[0], args...)
-	out, _ := cmd.CombinedOutput()
-
-	if ctx.Err() == context.DeadlineExceeded {
-		return "", fmt.Errorf("timeout running %s", strings.Join(path, " "))
-	}
-	return string(out), nil
-}
-
-// executeRootHelp tries `<binary> help -a` first (richer root listing on
-// some CLIs), falling back to plain `-h` if that produced nothing.
-func executeRootHelp(binary string) (string, error) {
-	ctx, cancel := context.WithTimeout(context.Background(), helpTimeout)
-	defer cancel()
-
-	cmd := exec.CommandContext(ctx, binary, "help", "-a")
-	out, err := cmd.CombinedOutput()
-	if err == nil || len(out) > 0 {
-		return string(out), nil
-	}
-
-	return executeHelp([]string{binary})
-}
 
 type ProgressState struct {
 	Total   int
@@ -50,26 +19,83 @@ type ProgressState struct {
 }
 
 type Options struct {
-	MaxDepth int
-	Verbose  bool
+	MaxDepth   int
+	Verbose    bool
 	OnProgress func(current, total int, cmd string)
-	Progress *ProgressState
+	Progress   *ProgressState
 }
 
-// isTerminalToken tells apart a real subcommand from a flag or a
-// placeholder, purely by how the parser named it: flags start with "-"
-// (e.g. "--branch") and placeholders start with "<" (e.g. "<refname>").
-// Neither has a "-h" of its own to run, so they're always leaves.
+// --- instrumentação temporária, só pra diagnóstico ---
+var (
+	execCount int64
+	slowMu    sync.Mutex
+	slowLog   []slowEntry
+)
+
+type slowEntry struct {
+	path     string
+	duration time.Duration
+}
+
+func recordDuration(path string, d time.Duration) {
+	atomic.AddInt64(&execCount, 1)
+	if d > 300*time.Millisecond {
+		slowMu.Lock()
+		slowLog = append(slowLog, slowEntry{path, d})
+		slowMu.Unlock()
+	}
+}
+
+func runWithTimeout(d time.Duration, fn func() (string, error)) (string, error, bool) {
+	type result struct {
+		output string
+		err    error
+	}
+	ch := make(chan result, 1)
+
+	go func() {
+		out, err := fn()
+		ch <- result{out, err}
+	}()
+
+	select {
+	case r := <-ch:
+		return r.output, r.err, false
+	case <-time.After(d):
+		return "", fmt.Errorf("timeout"), true
+	}
+}
+
+func PrintDiagnostics() {
+	fmt.Printf("\n=== DIAGNÓSTICO ===\n")
+	fmt.Printf("Total de exec.Command chamados: %d\n", atomic.LoadInt64(&execCount))
+
+	slowMu.Lock()
+	defer slowMu.Unlock()
+	sort.Slice(slowLog, func(i, j int) bool { return slowLog[i].duration > slowLog[j].duration })
+
+	limit := 30
+	if len(slowLog) < limit {
+		limit = len(slowLog)
+	}
+	fmt.Printf("Top %d mais lentos (>300ms):\n", limit)
+	for i := 0; i < limit; i++ {
+		fmt.Printf("  %v  %s\n", slowLog[i].duration, slowLog[i].path)
+	}
+}
+
+// --- fim instrumentação ---
+
+func CrawlOne(name, path string, opts Options) error {
+	visited := make(map[string]bool)
+	tree := crawlCommand([]string{path}, opts, visited)
+	return WriteCommand(name, tree.SubCommand)
+}
+
 func isTerminalToken(name string) bool {
 	return strings.HasPrefix(name, "-") || strings.HasPrefix(name, "<")
 }
 
-// crawlCommand walks the CLI's help tree depth-first, starting at path.
-// For each real subcommand it runs "-h", parses the output, and — if the
-// parser found more subcommands (i.e. it's not a leaf) — recurses into
-// each one. Recursion stops when a node is a leaf, when the last path
-// element is a flag/placeholder, when MaxDepth is reached, or when the
-// same path has already been visited (cycle guard).
 func crawlCommand(path []string, opts Options, visited map[string]bool) core.CommandMatch {
 	node := core.NewCommandMatch("", "")
 
@@ -80,25 +106,33 @@ func crawlCommand(path []string, opts Options, visited map[string]bool) core.Com
 	visited[key] = true
 
 	if isTerminalToken(path[len(path)-1]) {
-		return node // flag or placeholder: nothing to run "-h" against
+		return node
 	}
 
-	depth := len(path) - 1 // path[0] is the root binary, so depth 0 = root command
+	depth := len(path) - 1
 	if depth > opts.MaxDepth {
 		return node
 	}
 
-	if depth == 1 && opts.Progress != nil {
-		opts.Progress.Current++
-		if opts.OnProgress != nil {
-			opts.OnProgress(opts.Progress.Current, opts.Progress.Total, key)
-		}
-	} else if opts.Verbose {
-		fmt.Println("crawling:", key)
+	start := time.Now()
+	var output string
+	var err error
+	var timedOut bool
+	if depth == 0 {
+		output, err, timedOut = runWithTimeout(30*time.Second, func() (string, error) {
+			return executeRootHelp(path[0])
+		})
+	} else {
+		output, err, timedOut = runWithTimeout(30*time.Second, func() (string, error) {
+			return executeHelp(path)
+		})
 	}
+	recordDuration(key, time.Since(start))
 
-
-	output, err := executeHelp(path)
+	if timedOut {
+		fmt.Println("  TIMEOUT (30s):", key)
+		return node
+	}
 	if err != nil {
 		if opts.Verbose {
 			fmt.Println("  error:", err)
@@ -106,34 +140,54 @@ func crawlCommand(path []string, opts Options, visited map[string]bool) core.Com
 		return node
 	}
 
-	parsed := ParseCommand(output, path)
+	namePath := append([]string{filepath.Base(path[0])}, path[1:]...)
+	parsed := parser.ParseCommand(output, namePath)
 	if parsed.IsLeaf() {
 		return node
 	}
 
+	var (
+		mu  sync.Mutex
+		wg  sync.WaitGroup
+		sem = make(chan struct{}, 8)
+	)
+
 	for subName, pNode := range parsed.Nodes {
-		childPath := append(append([]string{}, path...), subName)
+		wg.Add(1)
+		sem <- struct{}{}
+		go func(subName string, pNode *parser.ParsedNode) {
+			defer wg.Done()
+			defer func() { <-sem }()
 
-		var child core.CommandMatch
-		if isTerminalToken(subName) {
-			// Flags and placeholders don't have their own -h to run.
-			// Build their node directly from the parsed info.
-			child = core.NewCommandMatch("", "")
-			child.Description = pNode.Description
-			// If this flag has placeholder children, add them.
-			for chName, chNode := range pNode.Children {
-				ph := core.NewCommandMatch("", "")
-				ph.Description = chNode.Description
-				child.SubCommand[chName] = ph
+			childPath := append(append([]string{}, path...), subName)
+
+			var child core.CommandMatch
+			if isTerminalToken(subName) {
+				child = core.NewCommandMatch("", "")
+				child.Description = pNode.Description
+				for chName, chNode := range pNode.Children {
+					ph := core.NewCommandMatch("", "")
+					ph.Description = chNode.Description
+					child.SubCommand[chName] = ph
+				}
+			} else {
+				mu.Lock()
+				localVisited := make(map[string]bool, len(visited))
+				for k, v := range visited {
+					localVisited[k] = v
+				}
+				mu.Unlock()
+
+				child = crawlCommand(childPath, opts, localVisited)
+				child.Description = pNode.Description
 			}
-		} else {
-			child = crawlCommand(childPath, opts, visited)
-			child.Description = pNode.Description
-		}
 
-		node.SubCommand[subName] = child
+			mu.Lock()
+			node.SubCommand[subName] = child
+			mu.Unlock()
+		}(subName, pNode)
 	}
+	wg.Wait()
 
 	return node
 }
-

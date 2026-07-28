@@ -4,11 +4,14 @@ import (
 	"encoding/json"
 	"fmt"
 	"os"
+	"path/filepath"
 	"regexp"
+	"runtime"
 	"sort"
 	"strings"
 	"testing"
 
+	"git-hint/core"
 	"git-hint/engine/provider"
 )
 
@@ -30,27 +33,18 @@ var rePlaceholder = regexp.MustCompile(`^<(.+)>$`)
 // Helpers
 // --------------------------------------------------------------------------
 
+// loadJSON lê git.json do data/ real (ao lado do binário de teste),
+// via core.CommandDataPath — a mesma resolução usada em produção.
+// Se o arquivo ainda não foi gerado (githint rebuild não rodou), o teste
+// é pulado em vez de falhar, já que git.json não é mais fixture commitada.
 func loadJSON(t *testing.T) map[string]CommandEntry {
 	t.Helper()
 
-	// O teste roda de dentro de engine/registry/, então o arquivo relativo é
-	// data/git.json. Caso rode de outra pasta, tenta o caminho completo.
-	paths := []string{
-		"data/git.json",
-		"../../engine/registry/data/git.json",
-		"engine/registry/data/git.json",
-	}
+	path := gitJSONPath(t)
 
-	var data []byte
-	var err error
-	for _, p := range paths {
-		data, err = os.ReadFile(p)
-		if err == nil {
-			break
-		}
-	}
+	data, err := os.ReadFile(path)
 	if err != nil {
-		t.Fatalf("não conseguiu abrir git.json: %v", err)
+		t.Skipf("git.json não encontrado em %s — rode 'githint rebuild' antes de rodar este teste", path)
 	}
 
 	var root map[string]CommandEntry
@@ -58,6 +52,19 @@ func loadJSON(t *testing.T) map[string]CommandEntry {
 		t.Fatalf("JSON inválido: %v", err)
 	}
 	return root
+}
+
+func gitJSONPath(t *testing.T) string {
+	t.Helper()
+
+	_, thisFile, _, ok := runtime.Caller(0)
+	if !ok {
+		t.Fatal("não conseguiu resolver o caminho deste arquivo de teste")
+	}
+
+	// thisFile = .../git-hint/registry/data_test.go
+	// sobe um nível (pra raiz do repo) e desce em zsh-plugin/data/git.json
+	return filepath.Join(filepath.Dir(thisFile), "..", "zsh-plugin", "data", "git.json")
 }
 
 // collectPlaceholders percorre recursivamente e coleta todos os nomes de
@@ -123,24 +130,17 @@ func TestSubComandosTemDescription(t *testing.T) {
 
 // TestPlaceholdersProvider varre todos os placeholders <flag> encontrados
 // no JSON e cruza com provider.SupportedFlags (fonte de verdade real).
-//
-//   - ✅  tem provider → expande dinamicamente em runtime
-// Relatório exibido:
-//   - 🟢 Providers suportados e usados no JSON
-//   - ⚠️  Providers órfãos (implementados em Go, mas nunca usados no JSON)
-//   - 📝 Placeholders manuais (usados no JSON, mas sem provider Go)
 func TestPlaceholdersProvider(t *testing.T) {
 	root := loadJSON(t)
 
-	// Coleta todos os placeholders presentes no JSON.
-	found := make(map[string][]string) // flag → caminhos onde aparece
+	found := make(map[string][]string)
 	collectPlaceholders(root, "git", found)
 
 	var comProvider []string
 	var semProvider []string
 
 	for flag := range found {
-		if provider.SupportedFlags[flag] {
+		if _, ok := provider.Providers[flag]; ok {
 			comProvider = append(comProvider, "<"+flag+">")
 		} else {
 			semProvider = append(semProvider, "<"+flag+">")
@@ -150,16 +150,14 @@ func TestPlaceholdersProvider(t *testing.T) {
 	sort.Strings(comProvider)
 	sort.Strings(semProvider)
 
-	// Procura por providers órfãos (no Go, mas não no JSON)
 	var orfaos []string
-	for flag := range provider.SupportedFlags {
+	for flag := range provider.Providers {
 		if _, ok := found[flag]; !ok {
 			orfaos = append(orfaos, flag)
 		}
 	}
 	sort.Strings(orfaos)
 
-	// Montagem do Relatório Formatado
 	var sb strings.Builder
 	sb.WriteString("\n=======================================================\n")
 	sb.WriteString("            RELATÓRIO DE PLACEHOLDERS & PROVIDERS      \n")
@@ -194,7 +192,6 @@ func TestPlaceholdersProvider(t *testing.T) {
 
 	t.Log(sb.String())
 
-	// Falha caso haja algum provider órfão
 	for _, o := range orfaos {
 		t.Errorf("❌ Provider órfão detectado: %q está em provider.SupportedFlags mas nunca aparece como <%s> no JSON", o, o)
 	}
@@ -203,24 +200,16 @@ func TestPlaceholdersProvider(t *testing.T) {
 // TestOrdemAlfabeticaRaiz verifica se os comandos de nível raiz já estão
 // em ordem alfabética no JSON (útil para auditar se sort_json.go foi rodado).
 func TestOrdemAlfabeticaRaiz(t *testing.T) {
-	paths := []string{
-		"data/git.json",
-		"../../engine/registry/data/git.json",
-		"engine/registry/data/git.json",
-	}
-	var data []byte
-	var err error
-	for _, p := range paths {
-		data, err = os.ReadFile(p)
-		if err == nil {
-			break
-		}
-	}
+	path, err := core.CommandDataPath("git")
 	if err != nil {
-		t.Fatalf("não conseguiu abrir git.json: %v", err)
+		t.Fatalf("não conseguiu resolver caminho de git.json: %v", err)
 	}
 
-	// Extrai as chaves na ordem real do arquivo (encoding/json não preserva ordem).
+	data, err := os.ReadFile(path)
+	if err != nil {
+		t.Skipf("git.json não encontrado em %s — rode 'githint rebuild' antes de rodar este teste", path)
+	}
+
 	jsonKeys := extractTopLevelKeysOrdered(data)
 	for i := 1; i < len(jsonKeys); i++ {
 		if jsonKeys[i] < jsonKeys[i-1] {

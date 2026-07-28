@@ -1,24 +1,20 @@
 package app
 
 import (
-	"encoding/json"
 	"fmt"
 	"os"
 
 	"git-hint/scraper"
 )
 
+// Rebuild discovers every command available on the system ($PATH binaries
+// + zsh builtins), crawls each one's help tree, and writes the full
+// registry to data/ next to the binary. No arguments needed — scraper
+// owns the entire discover -> crawl -> write cycle.
 func Rebuild(args []string) {
+	fmt.Println("descobrindo comandos disponíveis no sistema...")
 
-	if len(os.Args) < 3 {
-		fmt.Println("uso: githint rebuild <binario>")
-		return
-	}
-	binary := os.Args[2]
-
-	fmt.Printf("rastreando comandos de '%s'...\n", binary)
-
-	result, err := scraper.Rebuild(binary, scraper.Options{
+	err := scraper.Rebuild(scraper.Options{
 		MaxDepth: 4,
 		OnProgress: func(current, total int, cmd string) {
 			pct := float64(current) / float64(total) * 100.0
@@ -30,17 +26,5 @@ func Rebuild(args []string) {
 		os.Exit(1)
 	}
 
-	data, err := json.MarshalIndent(result, "", "  ")
-	if err != nil {
-		fmt.Println("erro ao gerar json:", err)
-		os.Exit(1)
-	}
-
-	path := "registry/data/" + binary + ".json"
-	if err := os.WriteFile(path, data, 0644); err != nil {
-		fmt.Println("erro ao salvar:", err)
-		os.Exit(1)
-	}
-
-	fmt.Printf("%d comandos salvos em %s\n", len(result), path)
+	fmt.Println("registro reconstruído com sucesso.")
 }

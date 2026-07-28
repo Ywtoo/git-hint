@@ -1,48 +1,73 @@
 package app
 
 import (
-	"fmt"
-	"os"
-	"strconv"
-	"strings"
+	"errors"
+	"sync"
 
 	"git-hint/engine"
 	"git-hint/engine/render"
+	"git-hint/engine/tokenizer"
+	"git-hint/registry"
+	"git-hint/scraper"
 	"git-hint/state"
 )
 
-func List(args []string) {
-	if len(os.Args) < 4 {
-		return
-	}
-	buffer := os.Args[2]
-	state.Buffer = buffer
+// crawling tracks commands currently being indexed on demand, so a burst
+// of keystrokes for the same command doesn't launch CrawlOne repeatedly
+// while the first one is still running.
+var (
+	crawlingMu sync.Mutex
+	crawling   = make(map[string]bool)
+)
 
-	selected := -1
-	if len(os.Args) >= 4 {
-		valStr := strings.TrimSpace(os.Args[3])
-		if val, err := strconv.Atoi(valStr); err == nil {
-			selected = val
-		}
-	}
-
-	promptCol := 0
-	if len(os.Args) >= 5 {
-		valStr := strings.TrimSpace(os.Args[4])
-		if val, err := strconv.Atoi(valStr); err == nil {
-			promptCol = val
-		}
-	}
-
-	renderMode := "ohmyzsh"
-	if len(os.Args) >= 6 {
-		renderMode = strings.TrimSpace(os.Args[5])
-	}
+func List(buffer string, selected int, promptCol int, renderMode string) string {
+	state.SetBuffer(buffer)
 
 	matches, currentToken, err := engine.Suggestions(buffer)
+	if errors.Is(err, engine.ErrNotIndexed) {
+		return ""
+	}
 	if err != nil {
-		return
+		return ""
 	}
 
-	fmt.Print(render.FormatList(matches, selected, buffer, currentToken, promptCol, renderMode))
+	return render.FormatList(matches, selected, buffer, currentToken, promptCol, renderMode)
+}
+
+// TODO:Fix this is not working at all
+// handleNotIndexed kicks off a one-time background crawl for a command
+// that's known to exist on the system but hasn't had its help tree
+// crawled yet, and returns an immediate response the zsh-plugin can show
+// while that happens. The crawl itself runs in a goroutine so it never
+// blocks the daemon's response to this keystroke.
+func handleNotIndexed(buffer string) string {
+	parts := tokenizer.TokenizeBuffer(buffer)
+	if len(parts) == 0 {
+		return ""
+	}
+	commandName := parts[0]
+
+	status, err := registry.Status(commandName)
+	if err != nil || !status.Known || status.BinPath == "" {
+		return "" // shouldn't happen if engine already said Known+!Indexed, but be safe
+	}
+
+	crawlingMu.Lock()
+	alreadyCrawling := crawling[commandName]
+	if !alreadyCrawling {
+		crawling[commandName] = true
+	}
+	crawlingMu.Unlock()
+
+	if !alreadyCrawling {
+		go func() {
+			_ = scraper.CrawlOne(commandName, status.BinPath, scraper.Options{MaxDepth: 4})
+
+			crawlingMu.Lock()
+			delete(crawling, commandName)
+			crawlingMu.Unlock()
+		}()
+	}
+
+	return "⏳ indexando " + commandName + "..."
 }

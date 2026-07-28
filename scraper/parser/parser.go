@@ -1,4 +1,4 @@
-package scraper
+package parser
 
 import (
 	"regexp"
@@ -7,9 +7,11 @@ import (
 
 // ParsedNode represents one token in the parsed help output with its children.
 // A flag like -m that takes a <message> will have <message> as a child node.
+// A flag with a fixed set of values (e.g. "--color[=WHEN]" where WHEN is
+// one of always/auto/never) has one child per literal value instead.
 type ParsedNode struct {
 	Description string
-	Children    map[string]*ParsedNode // for flags: their placeholder children
+	Children    map[string]*ParsedNode // for flags: their value/placeholder children
 }
 
 // ParsedHelp is the result of parsing one "-h" output.
@@ -27,6 +29,142 @@ var validNameRe = regexp.MustCompile(`^[a-zA-Z][a-zA-Z0-9-]*$`)
 
 // placeholderRe matches a single "<...>" placeholder.
 var placeholderRe = regexp.MustCompile(`<[^<>]+>`)
+
+// bareWordRe matches a single uppercase-ish word with no punctuation,
+// e.g. "WHEN", "CONTROL", "N" — used to recognize a flag's value spec
+// as a normalizable placeholder rather than an enum or garbage.
+var bareWordRe = regexp.MustCompile(`^[A-Za-z][A-Za-z0-9_]*$`)
+
+// ---------------------------------------------------------------------
+// Flag name / value-spec extraction
+//
+// Flag specs come in a few shapes:
+//   --format=WORD           value is required
+//   --color[=WHEN]          value is optional (flag works bare too)
+//   --no-track[=(direct|inherit)]   optional, with a fixed set of values
+//   --[no-]include-untracked        negatable flag, no value at all
+//   -m <message>            required, space-separated (handled elsewhere,
+//                           see collectTokens' second pass / parseFlagSpec)
+//
+// stripFlagValue isolates the bare flag name. Using strings.Trim on a
+// cutset (the old approach) only strips characters from the START/END of
+// the string, so it never touches an unclosed "[" sitting in the middle —
+// that's what let "--color[=WHEN]" through as the corrupted key
+// "--color[=WHEN" instead of the clean "--color". Cutting at the first
+// "[" or "=" instead handles every case uniformly, including nested
+// brackets like node's "--inspect-brk[=[host:]port]".
+//
+// IMPORTANT: the cut must skip over an embedded "[no-]" negation marker
+// first (see valueSpecIndex), otherwise "--[no-]include-untracked" gets
+// truncated at its own "[" down to a bare "--".
+// ---------------------------------------------------------------------
+
+// noPrefixMarker is the GNU convention for a flag with a negated form,
+// e.g. "--[no-]include-untracked". It must not be mistaken for a value
+// spec bracket like "--color[=WHEN]".
+const noPrefixMarker = "[no-]"
+
+// valueSpecIndex finds where a value spec ("[=WHEN]", "=FOO") begins,
+// skipping over an embedded "[no-]" negation marker first so it isn't
+// mistaken for the start of a value bracket. Returns -1 if there is no
+// value spec.
+func valueSpecIndex(tok string) int {
+	search := tok
+	offset := 0
+	if idx := strings.Index(tok, noPrefixMarker); idx != -1 {
+		offset = idx + len(noPrefixMarker)
+		search = tok[offset:]
+	}
+	idx := strings.IndexAny(search, "[=")
+	if idx == -1 {
+		return -1
+	}
+	return offset + idx
+}
+
+func stripFlagValue(tok string) string {
+	if idx := valueSpecIndex(tok); idx != -1 {
+		return tok[:idx]
+	}
+	return tok
+}
+
+// extractValueChildren pulls the value spec out of a raw flag token (the
+// part after the first real value-spec bracket/equals — see
+// valueSpecIndex, which skips over an embedded "[no-]" marker) and
+// classifies it into child nodes:
+//   - "(a|b|c)" or "a|b|c"  -> one literal child per option (enum)
+//   - "<name>"              -> that placeholder as-is
+//   - "WORD" (bare word)    -> normalized to "<word>", same convention
+//     used for GNU positional args
+//   - anything else (unclosed brackets, "...", empty) -> nil, no children
+//     rather than guessing and creating a corrupted placeholder.
+func extractValueChildren(tok, desc string) map[string]*ParsedNode {
+	idx := valueSpecIndex(tok)
+	if idx == -1 {
+		return nil
+	}
+	rest := tok[idx:]
+	rest = strings.TrimPrefix(rest, "[")
+	rest = strings.TrimPrefix(rest, "=")
+	rest = strings.TrimSuffix(rest, "]")
+	rest = strings.TrimSpace(rest)
+	rest = strings.Trim(rest, "()")
+
+	if rest == "" || rest == "..." {
+		return nil
+	}
+	// Leftover brackets mean we couldn't cleanly isolate the value
+	// (e.g. nested "[host:]port") — bail out instead of emitting garbage.
+	if strings.ContainsAny(rest, "[]") {
+		return nil
+	}
+
+	children := make(map[string]*ParsedNode)
+
+	if strings.Contains(rest, "|") {
+		for _, opt := range strings.Split(rest, "|") {
+			opt = strings.TrimSpace(strings.Trim(opt, "()"))
+			if opt == "" {
+				continue
+			}
+			children[opt] = &ParsedNode{Description: desc}
+		}
+		if len(children) == 0 {
+			return nil
+		}
+		return children
+	}
+
+	if m := placeholderRe.FindString(rest); m != "" {
+		children[m] = &ParsedNode{Description: desc}
+		return children
+	}
+
+	if bareWordRe.MatchString(rest) {
+		placeholder := "<" + strings.ToLower(rest) + ">"
+		children[placeholder] = &ParsedNode{Description: desc}
+		return children
+	}
+
+	return nil
+}
+
+// mergeChildren copies src into dst (creating dst if needed), keeping
+// whichever entry already exists on conflict.
+func mergeChildren(node *ParsedNode, src map[string]*ParsedNode) {
+	if len(src) == 0 {
+		return
+	}
+	if node.Children == nil {
+		node.Children = make(map[string]*ParsedNode)
+	}
+	for name, child := range src {
+		if _, exists := node.Children[name]; !exists {
+			node.Children[name] = child
+		}
+	}
+}
 
 // ---------------------------------------------------------------------
 // STRATEGY A: indented list with description (git root level: git -h / git help -a)
@@ -96,7 +234,6 @@ func collectUsageLines(output string) []string {
 			if flagWithDescRe.MatchString(nextLine) || flagOnlyRe.MatchString(nextLine) {
 				break
 			}
-			// Continuation line: indented or starts with bracket/flag/placeholder
 			if strings.HasPrefix(nextLine, " ") || strings.HasPrefix(nextLine, "\t") ||
 				strings.HasPrefix(trimmedNext, "[") || strings.HasPrefix(trimmedNext, "(") ||
 				strings.HasPrefix(trimmedNext, "-") || strings.HasPrefix(trimmedNext, "<") {
@@ -125,21 +262,24 @@ func pathMatches(fields []string, path []string) bool {
 	return true
 }
 
+// stripWrapping trims surrounding usage-line punctuation (brackets,
+// parens, pipes) and then isolates the flag name via stripFlagValue,
+// so a raw usage-line token like "[--color[=WHEN]]" collapses to
+// "--color" instead of leaving a dangling bracket in the key.
 func stripWrapping(tok string) string {
-	return strings.Trim(tok, "[]()|=")
+	return stripFlagValue(strings.Trim(tok, "[]()|="))
 }
 
 func isFlag(tok string) bool        { return strings.HasPrefix(tok, "-") }
 func isPlaceholder(tok string) bool { return strings.HasPrefix(tok, "<") }
 
 func expandNoPrefix(flag string) []string {
-	const marker = "[no-]"
-	idx := strings.Index(flag, marker)
+	idx := strings.Index(flag, noPrefixMarker)
 	if idx == -1 {
 		return []string{flag}
 	}
-	without := flag[:idx] + flag[idx+len(marker):]
-	with := flag[:idx] + "no-" + flag[idx+len(marker):]
+	without := flag[:idx] + flag[idx+len(noPrefixMarker):]
+	with := flag[:idx] + "no-" + flag[idx+len(noPrefixMarker):]
 	return []string{without, with}
 }
 
@@ -154,22 +294,23 @@ func getOrCreate(nodes map[string]*ParsedNode, key string) *ParsedNode {
 }
 
 // addFlagWithPlaceholder adds a flag entry; if the flag carries an inline
-// placeholder (e.g. "-u<mode>"), the placeholder becomes a child of the flag.
+// placeholder (e.g. "-u<mode>") or a bracketed value spec (e.g.
+// "--color[=WHEN]", "--no-track[=(direct|inherit)]"), that value becomes
+// one or more children of the flag.
 func addFlagWithPlaceholder(tok, desc string, nodes map[string]*ParsedNode) {
-	tok = strings.Trim(tok, "[]()|=")
-	if tok == "" {
+	original := tok
+	flagClean := stripFlagValue(tok)
+	if flagClean == "" {
 		return
 	}
 
-	// Collect any placeholders embedded in this token (e.g. "-u<mode>")
-	placeholders := placeholderRe.FindAllString(tok, -1)
+	// Placeholders glued directly onto the flag with no brackets, e.g. "-u<mode>".
+	placeholders := placeholderRe.FindAllString(flagClean, -1)
+	flagRaw := strings.Trim(placeholderRe.ReplaceAllString(flagClean, ""), "[]()|=")
 
-	// Strip placeholders to get the pure flag
-	flagRaw := strings.Trim(placeholderRe.ReplaceAllString(tok, ""), "[]()|=")
-
-	if isPlaceholder(tok) {
+	if isPlaceholder(flagClean) {
 		// Bare placeholder (no flag) — just register at this level
-		n := getOrCreate(nodes, tok)
+		n := getOrCreate(nodes, flagClean)
 		if n.Description == "" {
 			n.Description = desc
 		}
@@ -180,29 +321,31 @@ func addFlagWithPlaceholder(tok, desc string, nodes map[string]*ParsedNode) {
 		return
 	}
 
+	valueChildren := extractValueChildren(original, desc)
+
 	for _, f := range expandNoPrefix(flagRaw) {
 		flagNode := getOrCreate(nodes, f)
 		if flagNode.Description == "" {
 			flagNode.Description = desc
 		}
-		// Placeholders embedded in this flag become children of the flag node
 		for _, ph := range placeholders {
-			if flagNode.Children == nil {
-				flagNode.Children = make(map[string]*ParsedNode)
-			}
-			phNode := &ParsedNode{Description: desc}
-			if _, exists := flagNode.Children[ph]; !exists {
-				flagNode.Children[ph] = phNode
+			if _, exists := flagNode.Children[ph]; flagNode.Children == nil || !exists {
+				mergeChildren(flagNode, map[string]*ParsedNode{ph: {Description: desc}})
 			}
 		}
+		mergeChildren(flagNode, valueChildren)
 	}
 }
 
 // collectTokens walks usage-line tokens after the command path.
-// - Flags and placeholders are added to nodes.
-// - Flags followed immediately by a placeholder (next token) register the
-//   placeholder as a child of the flag.
-// - Real subcommand names stop the scan (the rest belongs to that subcommand).
+//   - Flags and placeholders are added to nodes.
+//   - Flags followed immediately by a placeholder (next token) register the
+//     placeholder as a child of the flag.
+//   - Flags carrying a bracketed value spec (enum or bare word) get that
+//     value expanded into children too.
+//   - Flags carrying a "[no-]" negation marker get expanded into both
+//     their positive and negative forms, same as Strategy C.
+//   - Real subcommand names stop the scan (the rest belongs to that subcommand).
 func collectTokens(fields []string, afterIndex int, nodes map[string]*ParsedNode) {
 	i := afterIndex
 	for i < len(fields) {
@@ -217,21 +360,14 @@ func collectTokens(fields []string, afterIndex int, nodes map[string]*ParsedNode
 
 			switch {
 			case isFlag(tok):
-				// Check if the NEXT field (after stripping) is a bare placeholder
-				// e.g. "-m <message>" or "--file <file>"
-				flagNode := getOrCreate(nodes, tok)
+				for _, expanded := range expandNoPrefix(tok) {
+					flagNode := getOrCreate(nodes, expanded)
 
-				// Look ahead for placeholder(s) glued onto this flag or as next token
-				inlinePhs := placeholderRe.FindAllString(tok, -1)
-				if len(inlinePhs) > 0 {
+					inlinePhs := placeholderRe.FindAllString(rawTok, -1)
 					for _, ph := range inlinePhs {
-						if flagNode.Children == nil {
-							flagNode.Children = make(map[string]*ParsedNode)
-						}
-						if _, exists := flagNode.Children[ph]; !exists {
-							flagNode.Children[ph] = &ParsedNode{}
-						}
+						mergeChildren(flagNode, map[string]*ParsedNode{ph: {}})
 					}
+					mergeChildren(flagNode, extractValueChildren(rawTok, ""))
 				}
 
 			case isPlaceholder(tok):
@@ -259,16 +395,13 @@ func collectTokens(fields []string, afterIndex int, nodes map[string]*ParsedNode
 		lastCur := curToks[len(curToks)-1]
 		firstNxt := nxtToks[0]
 		if isFlag(lastCur) && isPlaceholder(firstNxt) {
-			if flagNode, ok := nodes[lastCur]; ok {
-				if flagNode.Children == nil {
-					flagNode.Children = make(map[string]*ParsedNode)
+			for _, expanded := range expandNoPrefix(lastCur) {
+				if flagNode, ok := nodes[expanded]; ok {
+					mergeChildren(flagNode, map[string]*ParsedNode{firstNxt: {}})
 				}
-				if _, exists := flagNode.Children[firstNxt]; !exists {
-					flagNode.Children[firstNxt] = &ParsedNode{}
-				}
-				// Remove the placeholder from the top-level (it belongs under the flag)
-				delete(nodes, firstNxt)
 			}
+			// Remove the placeholder from the top-level (it belongs under the flag)
+			delete(nodes, firstNxt)
 		}
 	}
 }
@@ -297,10 +430,13 @@ func parseUsageLines(output string, path []string) ParsedHelp {
 //	-m, --message <message>    commit message
 //	-F, --file <file>
 //	                           read message from file
+//	--color[=WHEN]              colorize the output
+//	-u, --[no-]include-untracked  include untracked files in the stash
 //
 // Each flag spec may list a short alias and a long alias separated by ", ".
-// The placeholder (if any) is the LAST token in the flag spec and becomes
-// a child of every alias flag.
+// Any value spec (placeholder, bracketed optional, or enum) attaches as
+// children to every alias flag in the spec. A "[no-]" marker on any alias
+// expands that alias into its positive and negative forms.
 // ---------------------------------------------------------------------
 
 var (
@@ -313,36 +449,42 @@ var (
 )
 
 // parseFlagSpec parses a flag spec like "-m, --message <message>" or
-// "-F, --file <file>" and records each alias into nodes. The trailing
-// placeholder (if any) becomes a child of each flag alias node.
+// "--color[=WHEN]" or "-u, --[no-]include-untracked" and records each
+// alias into nodes. Any value spec (placeholder, enum, or normalized bare
+// word) becomes a child of each flag alias node. A "[no-]" marker expands
+// that alias into both its positive and negative forms.
 func parseFlagSpec(spec, desc string, nodes map[string]*ParsedNode) {
 	parts := strings.Split(spec, ",")
 
 	var flags []string
-	var placeholder string // last placeholder seen in the spec
+	valueChildren := make(map[string]*ParsedNode)
 
 	for _, part := range parts {
 		part = strings.TrimSpace(part)
 		toks := strings.Fields(part)
 		for _, tok := range toks {
-			clean := strings.Trim(tok, "[]()|=")
-			if isPlaceholder(clean) {
-				placeholder = clean
-			} else if isFlag(clean) {
+			clean := stripFlagValue(tok)
+			switch {
+			case isPlaceholder(clean):
+				valueChildren[clean] = &ParsedNode{Description: desc}
+			case isFlag(clean):
 				for _, expanded := range expandNoPrefix(clean) {
 					flags = append(flags, expanded)
 				}
-			} else if placeholderRe.MatchString(tok) {
+				for name, child := range extractValueChildren(tok, desc) {
+					valueChildren[name] = child
+				}
+			case placeholderRe.MatchString(tok):
 				// inline placeholder glued onto flag e.g. "-u<mode>"
 				phs := placeholderRe.FindAllString(tok, -1)
-				flagPart := strings.Trim(placeholderRe.ReplaceAllString(tok, ""), "[]()|=")
+				flagPart := stripFlagValue(placeholderRe.ReplaceAllString(tok, ""))
 				if isFlag(flagPart) {
 					for _, expanded := range expandNoPrefix(flagPart) {
 						flags = append(flags, expanded)
 					}
 				}
 				for _, ph := range phs {
-					placeholder = ph
+					valueChildren[ph] = &ParsedNode{Description: desc}
 				}
 			}
 		}
@@ -353,14 +495,7 @@ func parseFlagSpec(spec, desc string, nodes map[string]*ParsedNode) {
 		if flagNode.Description == "" {
 			flagNode.Description = desc
 		}
-		if placeholder != "" {
-			if flagNode.Children == nil {
-				flagNode.Children = make(map[string]*ParsedNode)
-			}
-			if _, exists := flagNode.Children[placeholder]; !exists {
-				flagNode.Children[placeholder] = &ParsedNode{Description: desc}
-			}
-		}
+		mergeChildren(flagNode, valueChildren)
 	}
 }
 
@@ -412,28 +547,17 @@ func ParseCommand(output string, path []string) ParsedHelp {
 	nodes := parseUsageLines(output, path).Nodes
 	for name, node := range parseFlagList(output) {
 		if existing, ok := nodes[name]; ok {
-			// Update description if richer
 			if existing.Description == "" && node.Description != "" {
 				existing.Description = node.Description
 			}
-			// Merge children (placeholders from flag list are authoritative)
 			if len(node.Children) > 0 {
-				if existing.Children == nil {
-					existing.Children = make(map[string]*ParsedNode)
-				}
-				for chName, chNode := range node.Children {
-					if _, exists := existing.Children[chName]; !exists {
-						existing.Children[chName] = chNode
-					}
-				}
-				// Remove top-level placeholder if it's now a child of a flag
+				mergeChildren(existing, node.Children)
 				for chName := range node.Children {
 					delete(nodes, chName)
 				}
 			}
 		} else {
 			nodes[name] = node
-			// Remove top-level placeholders that are children of this new flag
 			for chName := range node.Children {
 				delete(nodes, chName)
 			}
