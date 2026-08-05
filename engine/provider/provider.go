@@ -1,11 +1,10 @@
 package provider
 
 import (
-	"os/exec"
 	"strings"
 
 	"git-hint/core"
-	"git-hint/engine/history"
+	"git-hint/engine/provider/common"
 	"git-hint/engine/provider/git"
 	"git-hint/engine/tokenizer"
 	"git-hint/state"
@@ -27,47 +26,47 @@ var Providers = map[string]func() []core.CommandMatch{
 	// Git references
 	// ---------------------------------------------------------------------
 
-	"branch":     branchProvider,
-	"old-branch": branchProvider,
+	"branch":     git.BranchProvider,
+	"old-branch": git.BranchProvider,
 
-	"commit":     commitProvider,
-	"commit-ish": commitProvider,
-	"tree-ish":   commitProvider,
-	"head":       commitProvider,
+	"commit":     git.CommitProvider,
+	"commit-ish": git.CommitProvider,
+	"tree-ish":   git.CommitProvider,
+	"head":       git.CommitProvider,
 
-	"ref":     refProvider,
-	"refname": refProvider,
+	"ref":     git.RefProvider,
+	"refname": git.RefProvider,
 
-	"upstream": upstreamProvider,
+	"upstream": git.UpstreamProvider,
 
-	"remote": remoteProvider,
-	"stash":  stashProvider,
-	"tag":    tagProvider,
+	"remote": git.RemoteProvider,
+	"stash":  git.StashProvider,
+	"tag":    git.TagProvider,
 
 	// ---------------------------------------------------------------------
 	// Files
 	// ---------------------------------------------------------------------
 
-	"file": trackedFileProvider,
-	"path": trackedFileProvider,
+	"file": git.TrackedFileProvider,
+	"path": git.TrackedFileProvider,
 
 	// ---------------------------------------------------------------------
 	// Message
 	// ---------------------------------------------------------------------
 
 	// Free text with automatic quoting.
-	"msg":     MsgProvider,
-	"message": MsgProvider,
+	"msg":     common.MsgProvider,
+	"message": common.MsgProvider,
 
 	// ---------------------------------------------------------------------
 	// Free text
 	// ---------------------------------------------------------------------
 
-	"url":         freeTextProvider,
-	"name":        freeTextProvider,
-	"new-branch":  freeTextProvider,
-	"branch-name": freeTextProvider,
-	"author":      freeTextProvider,
+	"url":         common.FreeTextProvider,
+	"name":        common.FreeTextProvider,
+	"new-branch":  common.FreeTextProvider,
+	"branch-name": common.FreeTextProvider,
+	"author":      common.FreeTextProvider,
 }
 
 func FlagCheck(flag string) string {
@@ -106,129 +105,4 @@ func Provider(flag string) []core.CommandMatch {
 	state.SaveCache(cache)
 
 	return results
-}
-
-func GittoList(command []string, mode int) []core.CommandMatch {
-	output, err := exec.Command("git", command...).Output()
-	if err != nil {
-		return nil
-	}
-
-	var list []string
-	text := string(output)
-
-	switch mode {
-	case 1:
-		text = strings.TrimRight(text, "\n")
-		if text != "" {
-			list = strings.Split(text, "\n")
-		}
-	default:
-		list = strings.Fields(text)
-	}
-
-	var matches []core.CommandMatch
-
-	for _, name := range list {
-		matches = append(matches, core.CommandMatch{
-			Name: name,
-		})
-	}
-	return matches
-}
-
-func MsgProvider() []core.CommandMatch {
-	parts := tokenizer.TokenizeBuffer(state.GetBuffer())
-	if len(parts) <= 1 {
-		return nil
-	}
-	commandName := strings.Join(parts[:len(parts)-1], " ")
-
-	messages, err := history.FindHistoryCommands(commandName)
-	if err != nil {
-		return nil
-	}
-
-	var matches []core.CommandMatch
-	for _, m := range messages {
-		idx := strings.Index(m, `"`)
-		if idx == -1 {
-			continue
-		}
-		msgOnly := m[idx:]
-
-		matches = append(matches, core.CommandMatch{
-			Name: msgOnly,
-		})
-	}
-	return matches
-}
-
-func FreeTextProvider() []core.CommandMatch {
-	parts := tokenizer.TokenizeBuffer(state.GetBuffer())
-	if len(parts) <= 1 {
-		return nil
-	}
-	commandName := strings.Join(parts[:len(parts)-1], " ")
-
-	lines, err := history.FindHistoryCommands(commandName)
-	if err != nil {
-		return nil
-	}
-
-	seen := make(map[string]bool)
-	var matches []core.CommandMatch
-	for _, line := range lines {
-		// Remove o prefixo conhecido e pega o próximo token.
-		rest := strings.TrimSpace(strings.TrimPrefix(line, commandName))
-		if rest == "" {
-			continue
-		}
-		// Pega apenas o próximo token (sem arrastar o resto da linha).
-		token := strings.Fields(rest)[0]
-		if token == "" || seen[token] {
-			continue
-		}
-		seen[token] = true
-		matches = append(matches, core.CommandMatch{
-			Name: token,
-		})
-	}
-	return matches
-}
-
-func branchProvider() []core.CommandMatch {
-	return GittoList([]string{"branch", "--format=%(refname:short)"}, 0)
-}
-
-func commitProvider() []core.CommandMatch {
-	return git.CommitProvider()
-}
-
-func remoteProvider() []core.CommandMatch {
-	return GittoList([]string{"remote"}, 0)
-}
-
-func stashProvider() []core.CommandMatch {
-	return GittoList([]string{"stash", "list"}, 1)
-}
-
-func tagProvider() []core.CommandMatch {
-	return GittoList([]string{"tag"}, 0)
-}
-
-func trackedFileProvider() []core.CommandMatch {
-	return GittoList([]string{"ls-files"}, 1)
-}
-
-func refProvider() []core.CommandMatch {
-	return GittoList([]string{"for-each-ref", "--format=%(refname:short)"}, 0)
-}
-
-func upstreamProvider() []core.CommandMatch {
-	return GittoList([]string{"for-each-ref", "--format=%(refname:short)", "refs/remotes"}, 0)
-}
-
-func freeTextProvider() []core.CommandMatch {
-	return FreeTextProvider()
 }

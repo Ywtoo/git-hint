@@ -4,36 +4,55 @@ import (
 	"os"
 	"os/exec"
 	"path/filepath"
+	"runtime"
 	"strings"
 )
 
-// DiscoveredCommand is a command found on the system, not yet crawled.
 type DiscoveredCommand struct {
 	Name string
-	Path string // absolute path for $PATH binaries; empty for shell builtins
+	Path string
 }
 
-// DiscoverPathBinaries walks every directory in $PATH and collects every
-// executable name found, deduped by name (first match wins, same
-// precedence order as $PATH itself).
+// isForeignMount reports whether dir belongs to another OS's filesystem
+// mounted inside this one (e.g. /mnt/c under WSL). We skip these — a
+// Windows binary living under /mnt/c isn't a "real" Linux command, it's
+// Windows leaking into $PATH.
+func isForeignMount(dir string) bool {
+	if runtime.GOOS == "windows" {
+		return false // native Windows: nothing to skip
+	}
+	return strings.HasPrefix(dir, "/mnt/")
+}
+
+func isUnixExecutable(info os.FileInfo) bool {
+	return !info.IsDir() && info.Mode()&0111 != 0
+}
+
 func DiscoverPathBinaries() []DiscoveredCommand {
 	seen := make(map[string]bool)
 	var found []DiscoveredCommand
 
 	for _, dir := range filepath.SplitList(os.Getenv("PATH")) {
+		if isForeignMount(dir) {
+			continue
+		}
+
 		entries, err := os.ReadDir(dir)
 		if err != nil {
-			continue // unreadable dir (permissions, doesn't exist) — skip
+			continue
 		}
+
 		for _, e := range entries {
 			if e.IsDir() || seen[e.Name()] {
 				continue
 			}
 			full := filepath.Join(dir, e.Name())
-			if info, err := os.Stat(full); err == nil && info.Mode()&0111 != 0 {
-				seen[e.Name()] = true
-				found = append(found, DiscoveredCommand{Name: e.Name(), Path: full})
+			info, err := os.Stat(full)
+			if err != nil || !isUnixExecutable(info) {
+				continue
 			}
+			seen[e.Name()] = true
+			found = append(found, DiscoveredCommand{Name: e.Name(), Path: full})
 		}
 	}
 	return found
