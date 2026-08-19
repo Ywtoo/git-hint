@@ -14,20 +14,15 @@ func KeyHandler(key string) (string, int) {
 
 	switch key {
 	case "arrowUP":
-		if selected < 0 {
-			selected--
-			return "up-line-or-history", selected
+		if selected <= 0 {
+			return "up-line-or-history", -1
 		}
 		selected--
-		if selected < 0 {
-			return "up-line-or-history", selected
-		}
 		return "", selected
 
 	case "arrowDOWN":
 		if selected < 0 {
-			selected++
-			return "down-line-or-history", selected
+			return "down-line-or-history", -1
 		}
 		selected++
 		if selected >= listSize {
@@ -35,8 +30,6 @@ func KeyHandler(key string) (string, int) {
 			if selected < 0 {
 				selected = 0
 			}
-			// When reaching the end of the list, we stop here and don't
-			// trigger the shell history to avoid jumping out of the list.
 			return "", selected
 		}
 		return "", selected

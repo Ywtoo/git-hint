@@ -45,6 +45,7 @@ typeset -ga GITHINT_OWN_HIGHLIGHTS
 
 typeset -gA GITHINT_ORIG_UP
 typeset -gA GITHINT_ORIG_DOWN
+typeset -gA GITHINT_ORIG_TAB
 
 # ----------------------------------------------------------------------------
 # zsh-autosuggestions

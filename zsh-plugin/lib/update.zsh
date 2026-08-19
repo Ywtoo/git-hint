@@ -9,7 +9,10 @@ _githint_update() {
     local buffer="$BUFFER"
 
     if [[ "$buffer" != "$GITHINT_PREV_BUFFER" ]]; then
-        GITHINT_SELECTED=0
+        # Se a mudanca veio de digitacao/backspace (nao do historico), reseta para 0
+        if [[ ${HISTNO:-0} -eq ${HISTCMD:-0} ]]; then
+            GITHINT_SELECTED=0
+        fi
         GITHINT_PREV_BUFFER="$buffer"
     fi
 

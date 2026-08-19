@@ -1,0 +1,63 @@
+version: "2"
+
+run:
+  timeout: 5m
+  tests: true
+
+linters:
+  default: none
+  enable:
+    # Bugs & correctness
+    - errcheck        # unchecked error returns
+    - govet            # suspicious constructs (Printf args, etc.)
+    - staticcheck      # bugs, deprecated APIs, dead code (includes gosimple/stylecheck)
+    - ineffassign      # assignments never used
+    - unused           # unused funcs, vars, types, consts (dead code)
+
+    # Style & consistency
+    - revive           # configurable replacement for the deprecated golint
+
+    # Duplication
+    - dupl             # structurally duplicated code blocks
+
+    # Misc safety
+    - bodyclose        # HTTP response bodies not closed
+    - unconvert         # unnecessary type conversions
+    - unparam            # unused function parameters
+
+  settings:
+    dupl:
+      threshold: 100        # min token size before a duplicate block is flagged
+    revive:
+      severity: warning
+      confidence: 0.8
+    errcheck:
+      check-type-assertions: true
+      check-blank: true
+
+  exclusions:
+    paths:
+      - vendor
+      - third_party
+      - mocks
+    rules:
+      # Relax duplication/param checks in test files — test setup is often
+      # repetitive by nature and that's fine.
+      - path: _test\.go
+        linters:
+          - dupl
+          - unparam
+
+formatters:
+  enable:
+    - gofmt
+    - goimports
+  exclusions:
+    paths:
+      - vendor
+      - third_party
+      - mocks
+
+issues:
+  max-issues-per-linter: 0   # 0 = unlimited, report everything
+  max-same-issues: 0

@@ -53,8 +53,20 @@ _githint_key_handler() {
 
     if [[ -n "$widget" && "$widget" != '""' ]]; then
         case "$widget" in
-            up-line-or-history|down-line-or-history)
+            up-line-or-history)
+                GITHINT_SELECTED=-1
                 [[ -n "$fallback_widget" ]] && zle "$fallback_widget"
+                ;;
+            down-line-or-history)
+                local old_buf="$BUFFER"
+                [[ -n "$fallback_widget" ]] && zle "$fallback_widget"
+                
+                # Se o historico chegou ao fim (BUFFER nao mudou ao dar DOWN ou HISTNO voltou ao atual)
+                if [[ "$BUFFER" == "$old_buf" || ${HISTNO:-0} -eq ${HISTCMD:-0} ]]; then
+                    GITHINT_SELECTED=0
+                else
+                    GITHINT_SELECTED=-1
+                fi
                 ;;
             *)
                 zle "$widget"
@@ -78,5 +90,5 @@ githint-arrow-down() {
 }
 
 githint-tab() {
-    _githint_key_handler "TAB" "expand-or-complete"
+    _githint_key_handler "TAB" "${GITHINT_ORIG_TAB[$KEYMAP]:-expand-or-complete}"
 }

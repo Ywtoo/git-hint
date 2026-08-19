@@ -1,0 +1,20 @@
+#!/bin/bash
+# Pre-commit hook: format + lint Go code before allowing a commit.
+# No external framework required — just golangci-lint and goimports.
+
+set -e
+
+echo "🔧 Running goimports..."
+goimports -w .
+
+echo "🔍 Running golangci-lint..."
+if ! golangci-lint run --fix; then
+  echo ""
+  echo "❌ golangci-lint found issues. Fix them (or review the auto-fixes) and commit again."
+  exit 1
+fi
+
+# Re-stage any files goimports/golangci-lint may have modified
+git add -u
+
+exit 0
