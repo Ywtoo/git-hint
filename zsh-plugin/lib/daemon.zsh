@@ -93,6 +93,25 @@ githint-restart() {
     return 1
 }
 
+# githint-dev-reset: mata o daemon, apaga o data/ e reinicia do zero.
+# Útil pra testar o warmup de primeiro run durante desenvolvimento.
+githint-dev-reset() {
+    local bin="$(_githint_resolve_bin_path)"
+    local data_dir="${bin:h}/data"
+
+    print "githint-dev-reset: matando daemon..."
+    _githint_kill_daemon
+    # garante que o processo morreu antes de continuar
+    sleep 0.3
+
+    print "githint-dev-reset: limpando $data_dir ..."
+    rm -rf "$data_dir"
+    mkdir -p "$data_dir"
+
+    print "githint-dev-reset: reiniciando daemon..."
+    githint-restart
+}
+
 _githint_socket_call() {
     local request="$1"
     local fd

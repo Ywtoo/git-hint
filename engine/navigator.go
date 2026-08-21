@@ -8,18 +8,18 @@ import (
 	"git-hint/engine/provider"
 )
 
-// FindCommands retorna (matches, currentToken, error).
-// currentToken é o texto que ainda está "em aberto" no nível final retornado:
-// "" quando o usuário acabou de pular pra um novo nível (jump) ou digitou espaço;
-// o token cru quando ainda está filtrando dentro do MESMO nível.
+// FindCommands returns (matches, currentToken, error).
+// currentToken is the text that is still "open" at the final returned level:
+// "" when the user just jumped to a new level (jump) or typed a space;
+// the raw token when still filtering within the SAME level.
 func FindCommands(input []string, commands map[string]core.CommandMatch) (map[string]core.CommandMatch, string, error) {
-	// TODO: Handle quoted placeholders ("<...>")
 	// Logic: If a command name is wrapped in quotes, it should be treated as a literal string
 	// that still triggers dynamic expansion, but potentially avoids some of the
 	// "proactive jump" logic or standard prefix filtering.
 	if len(input) == 0 || input[0] == "" {
 		return commands, "", nil
 	}
+
 	if commands == nil {
 		return nil, "", fmt.Errorf("❌ Commands map is nil")
 	}
@@ -46,11 +46,11 @@ func FindCommands(input []string, commands map[string]core.CommandMatch) (map[st
 						subCommands[subname] = subcmd
 					}
 					if len(input) == 1 {
-						return subCommands, "", nil // jump: valor bateu 100%, exibe sugestões do próximo nível
+						return subCommands, "", nil // jump: 100% match, show next level suggestions
 					}
 					return FindCommands(input[1:], subCommands)
 				}
-				continue // placeholder terminal, já preenchido, nada mais a sugerir
+				continue // terminal placeholder, already filled, nothing more to suggest
 			}
 
 			newCommands[name] = cmd
@@ -75,8 +75,8 @@ func FindCommands(input []string, commands map[string]core.CommandMatch) (map[st
 				subCommands[subname] = subcmd
 			}
 			if len(input) == 1 {
-				// Se o usuário digitou o nome exato do comando e o buffer termina com espaço,
-				// ou se já há um token posterior, pula direto para o subcomando!
+				// If the user typed the exact command name and the buffer ends with a space,
+				// or if there is already a following token, jump directly to the subcommand!
 				return subCommands, "", nil
 			}
 			return FindCommands(input[1:], subCommands)
@@ -84,7 +84,7 @@ func FindCommands(input []string, commands map[string]core.CommandMatch) (map[st
 	}
 
 	if len(input) == 1 {
-		// Último token, sem jump: newCommands ainda está sendo filtrado por ele.
+		// Last token, no jump: newCommands is still being filtered by it.
 		return newCommands, input[0], nil
 	}
 	return FindCommands(input[1:], newCommands)

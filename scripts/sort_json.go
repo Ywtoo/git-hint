@@ -1,8 +1,8 @@
 //go:build ignore
 
-// sort_json.go – varre o git.json e reescreve tudo em ordem alfabética.
+// sort_json.go – scans git.json and rewrites everything in alphabetical order.
 //
-// Uso:
+// Usage:
 //
 //	go run scripts/sort_json.go
 //	go run scripts/sort_json.go -file engine/registry/data/git.json
@@ -18,24 +18,24 @@ import (
 )
 
 // --------------------------------------------------------------------------
-// Estrutura de dados
+// Data structure
 // --------------------------------------------------------------------------
 
-// RawCommand é a representação fiel de cada entrada do JSON.
-// Usamos map[string]json.RawMessage internamente para poder reconstruir
-// a ordem em qualquer nível sem perder campos desconhecidos.
+// RawCommand is the direct representation of each JSON entry.
+// We use map[string]*RawCommand for subCommand to reconstruct order
+// at any nesting level.
 type RawCommand struct {
-	Description         *string                     `json:"description,omitempty"`
-	CompleteDescription *string                     `json:"completeDescription,omitempty"`
-	NUsed               *int                        `json:"nUsed,omitempty"`
-	SubCommand          map[string]*RawCommand      `json:"subCommand,omitempty"`
+	Description         *string                `json:"description,omitempty"`
+	CompleteDescription *string                `json:"completeDescription,omitempty"`
+	NUsed               *int                   `json:"nUsed,omitempty"`
+	SubCommand          map[string]*RawCommand `json:"subCommand,omitempty"`
 }
 
 // --------------------------------------------------------------------------
-// Ordenação recursiva
+// Recursive sorting
 // --------------------------------------------------------------------------
 
-// sortedKeys retorna as chaves de um map em ordem alfabética.
+// sortedKeys returns map keys in alphabetical order.
 func sortedKeys[V any](m map[string]V) []string {
 	keys := make([]string, 0, len(m))
 	for k := range m {
@@ -45,13 +45,9 @@ func sortedKeys[V any](m map[string]V) []string {
 	return keys
 }
 
-// marshalOrdered serializa um RawCommand garantindo que o campo subCommand
-// esteja escrito em ordem alfabética (recursivamente).
+// marshalOrdered serializes a RawCommand ensuring that subCommand
+// is written in alphabetical order (recursively).
 func marshalOrdered(cmd *RawCommand, indent string) ([]byte, error) {
-	// Construímos o JSON manualmente apenas para o campo subCommand,
-	// que é a única parte que o encoder padrão não garante a ordem.
-	// Para os campos escalares, deixamos o encoder cuidar.
-
 	type cmdFlat struct {
 		Description         *string `json:"description,omitempty"`
 		CompleteDescription *string `json:"completeDescription,omitempty"`
@@ -73,12 +69,10 @@ func marshalOrdered(cmd *RawCommand, indent string) ([]byte, error) {
 		return flatBytes, nil
 	}
 
-	// Remove o "}" final para injetar subCommand.
-	// flatBytes termina com "}" ou "\n<indent>}"
+	// Strip closing "}" to inject subCommand.
 	closing := []byte("\n" + indent + "}")
 	flatBytes = flatBytes[:len(flatBytes)-len(closing)]
 
-	// Adiciona vírgula após o último campo e abre subCommand.
 	flatBytes = append(flatBytes, []byte(",\n"+indent+`  "subCommand": {`)...)
 
 	keys := sortedKeys(cmd.SubCommand)
@@ -87,7 +81,7 @@ func marshalOrdered(cmd *RawCommand, indent string) ([]byte, error) {
 		sub := cmd.SubCommand[k]
 		subBytes, err := marshalOrdered(sub, innerIndent)
 		if err != nil {
-			return nil, fmt.Errorf("erro ao serializar subcomando %q: %w", k, err)
+			return nil, fmt.Errorf("error serializing subcommand %q: %w", k, err)
 		}
 		keyJSON, _ := json.Marshal(k)
 		flatBytes = append(flatBytes, []byte("\n"+indent+`    `+string(keyJSON)+`: `)...)
@@ -108,30 +102,27 @@ func marshalOrdered(cmd *RawCommand, indent string) ([]byte, error) {
 // --------------------------------------------------------------------------
 
 func main() {
-	filePath := flag.String("file", "engine/registry/data/git.json", "Caminho para o arquivo JSON a ordenar")
+	filePath := flag.String("file", "engine/registry/data/git.json", "Path to JSON file to sort")
 	flag.Parse()
 
 	data, err := os.ReadFile(*filePath)
 	if err != nil {
-		log.Fatalf("Erro ao ler %s: %v", *filePath, err)
+		log.Fatalf("Error reading %s: %v", *filePath, err)
 	}
 
-	// Faz o unmarshal no mapa raiz (cada chave é um comando git).
 	var root map[string]*RawCommand
 	if err := json.Unmarshal(data, &root); err != nil {
-		log.Fatalf("Erro ao parsear JSON: %v", err)
+		log.Fatalf("Error parsing JSON: %v", err)
 	}
 
-	// Ordena as chaves de nível raiz.
 	keys := sortedKeys(root)
 
-	// Monta o JSON final manualmente para garantir a ordem em todos os níveis.
 	out := []byte("{\n")
 	for i, k := range keys {
 		cmd := root[k]
 		cmdBytes, err := marshalOrdered(cmd, "  ")
 		if err != nil {
-			log.Fatalf("Erro ao serializar comando %q: %v", k, err)
+			log.Fatalf("Error serializing command %q: %v", k, err)
 		}
 		keyJSON, _ := json.Marshal(k)
 		out = append(out, []byte("  "+string(keyJSON)+": ")...)
@@ -145,8 +136,8 @@ func main() {
 	out = append(out, '\n')
 
 	if err := os.WriteFile(*filePath, out, 0644); err != nil {
-		log.Fatalf("Erro ao escrever %s: %v", *filePath, err)
+		log.Fatalf("Error writing %s: %v", *filePath, err)
 	}
 
-	fmt.Printf("✅  %s reescrito com %d comandos em ordem alfabética.\n", *filePath, len(keys))
+	fmt.Printf("✅  %s rewritten with %d commands in alphabetical order.\n", *filePath, len(keys))
 }

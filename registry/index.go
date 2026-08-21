@@ -15,8 +15,19 @@ var (
 	indexCache   map[string]core.CommandMatch
 )
 
-// loadIndex reads and parses index.json once, caching the result in memory.
-func loadIndex() (map[string]core.CommandMatch, error) {
+// ResetCacheForTest clears the in-memory cache for tests.
+func ResetCacheForTest() {
+	indexCacheMu.Lock()
+	indexCache = nil
+	indexCacheMu.Unlock()
+
+	cacheMu.Lock()
+	cache = make(map[string]map[string]core.CommandMatch)
+	cacheMu.Unlock()
+}
+
+// LoadIndex reads and parses index.json once, caching the result in memory.
+func LoadIndex() (map[string]core.CommandMatch, error) {
 	indexCacheMu.RLock()
 	if indexCache != nil {
 		defer indexCacheMu.RUnlock()
@@ -31,12 +42,12 @@ func loadIndex() (map[string]core.CommandMatch, error) {
 
 	data, err := os.ReadFile(path)
 	if err != nil {
-		return nil, fmt.Errorf("index.json não encontrado: %w", err)
+		return nil, fmt.Errorf("index.json not found: %w", err)
 	}
 
 	var index map[string]core.CommandMatch
 	if err := json.Unmarshal(data, &index); err != nil {
-		return nil, fmt.Errorf("index.json inválido: %w", err)
+		return nil, fmt.Errorf("invalid index.json: %w", err)
 	}
 
 	indexCacheMu.Lock()
@@ -49,7 +60,7 @@ func loadIndex() (map[string]core.CommandMatch, error) {
 // SuggestFromIndex returns known top-level commands whose name starts
 // with prefix (level 0: git, docker, npm...).
 func SuggestFromIndex(prefix string) ([]core.CommandMatch, string, error) {
-	index, err := loadIndex()
+	index, err := LoadIndex()
 	if err != nil {
 		return nil, "", err
 	}

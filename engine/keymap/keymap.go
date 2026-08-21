@@ -9,7 +9,10 @@ func KeyHandler(key string) (string, int) {
 	buffer := state.GetBuffer()
 	selected := state.GetSelected()
 
-	matches, currentToken, _ := engine.Suggestions(buffer)
+	matches, currentToken, err := engine.Suggestions(buffer)
+	if err != nil {
+		return "", selected
+	}
 	listSize := len(matches)
 
 	switch key {

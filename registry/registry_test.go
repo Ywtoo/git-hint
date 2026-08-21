@@ -11,9 +11,9 @@ import (
 // (DataDir following the binary, symlinks, etc.) is core's responsibility
 // and is already covered in core/paths_test.go — no need to duplicate it.
 func TestResolveCommandData_NotFound(t *testing.T) {
-	_, err := ResolveCommandData("comando-que-nao-existe-com-certeza")
+	_, err := ResolveCommandData("command-that-definitely-does-not-exist")
 	if err == nil {
-		t.Fatal("esperava erro para comando inexistente")
+		t.Fatal("expected error for nonexistent command")
 	}
 }
 
@@ -29,18 +29,18 @@ func TestParseCommand(t *testing.T) {
 
 	cmd, err := ParseCommand("git_test", []byte(content))
 	if err != nil {
-		t.Fatalf("ParseCommand falhou inesperadamente: %v", err)
+		t.Fatalf("ParseCommand failed unexpectedly: %v", err)
 	}
 	if cmd == nil {
-		t.Fatal("ParseCommand retornou nil, mas deveria ter retornado um comando")
+		t.Fatal("ParseCommand returned nil, expected command map")
 	}
 	if _, ok := cmd["test-cmd"]; !ok {
-		t.Error("Esperava encontrar 'test-cmd' no mapa de comandos")
+		t.Error("Expected to find 'test-cmd' in commands map")
 	}
 
 	testCmd := cmd["test-cmd"]
 	if len(testCmd.SubCommand) == 0 {
-		t.Errorf("Esperava subcomandos, mas a lista estava vazia")
+		t.Errorf("Expected subcommands, but list was empty")
 	}
 }
 
@@ -56,27 +56,27 @@ func TestParseCommand_CachesResult(t *testing.T) {
 		t.Fatalf("first call failed: %v", err)
 	}
 
-	differentContent := `{"push":{"description":"isso não deveria aparecer"}}`
+	differentContent := `{"push":{"description":"this should not appear"}}`
 	second, err := ParseCommand("commit", []byte(differentContent))
 	if err != nil {
 		t.Fatalf("second call failed: %v", err)
 	}
 
 	if _, ok := second["commit"]; !ok {
-		t.Fatal("esperava resultado cacheado (commit), cache não funcionou")
+		t.Fatal("expected cached result (commit), cache did not work")
 	}
 	if _, ok := second["push"]; ok {
-		t.Fatal("cache não funcionou: reparseou o JSON novo em vez de usar o cache")
+		t.Fatal("cache did not work: reparsed new JSON instead of using cache")
 	}
 	if len(first) != len(second) {
-		t.Fatalf("first e second deveriam ser idênticos, tamanhos diferem: %d vs %d", len(first), len(second))
+		t.Fatalf("first and second should be identical, lengths differ: %d vs %d", len(first), len(second))
 	}
 
 	cacheMu.RLock()
 	_, cached := cache["commit"]
 	cacheMu.RUnlock()
 	if !cached {
-		t.Fatal("commit deveria estar na variável cache após ParseCommand")
+		t.Fatal("commit should be in cache variable after ParseCommand")
 	}
 }
 
@@ -98,10 +98,10 @@ func TestParseCommand_DifferentCommandNamesDontCollide(t *testing.T) {
 	}
 
 	if _, ok := commitResult["commit"]; !ok {
-		t.Fatal("commitResult deveria conter 'commit'")
+		t.Fatal("commitResult should contain 'commit'")
 	}
 	if _, ok := pushResult["push"]; !ok {
-		t.Fatal("pushResult deveria conter 'push'")
+		t.Fatal("pushResult should contain 'push'")
 	}
 }
 
@@ -110,15 +110,15 @@ func TestParseCommand_InvalidJSONNotCached(t *testing.T) {
 	cache = make(map[string]map[string]core.CommandMatch)
 	cacheMu.Unlock()
 
-	_, err := ParseCommand("broken", []byte("{isso não é json válido"))
+	_, err := ParseCommand("broken", []byte("{this is not valid json"))
 	if err == nil {
-		t.Fatal("esperava erro para JSON inválido, mas ParseCommand não retornou erro")
+		t.Fatal("expected error for invalid JSON, but ParseCommand returned no error")
 	}
 
 	cacheMu.RLock()
 	_, cached := cache["broken"]
 	cacheMu.RUnlock()
 	if cached {
-		t.Fatal("resultado com erro não deveria ter sido cacheado")
+		t.Fatal("error result should not have been cached")
 	}
 }

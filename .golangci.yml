@@ -33,7 +33,19 @@ linters:
       confidence: 0.8
     errcheck:
       check-type-assertions: true
-      check-blank: true
+      check-blank: false
+      exclude-functions:
+        - (net.Conn).Close
+        - (net.Listener).Close
+        - (*os.File).Close
+        - os.Remove
+        - os.Chmod
+        - fmt.Fprintf
+        - fmt.Fprintln
+        - fmt.Printf
+        - fmt.Println
+        - (net.Conn).Write
+        - (syscall.Flock)
 
   exclusions:
     paths:

@@ -21,13 +21,19 @@ func MsgProvider() []core.CommandMatch {
 		return nil
 	}
 
+	seen := make(map[string]bool)
 	var matches []core.CommandMatch
 	for _, m := range messages {
-		idx := strings.Index(m, `"`)
-		if idx == -1 {
+		rest := strings.TrimSpace(strings.TrimPrefix(m, commandName))
+		if rest == "" {
 			continue
 		}
-		msgOnly := ensureQuoted(m[idx:])
+
+		msgOnly := ensureQuoted(rest)
+		if seen[msgOnly] {
+			continue
+		}
+		seen[msgOnly] = true
 
 		matches = append(matches, core.CommandMatch{
 			Name: msgOnly,
@@ -51,12 +57,12 @@ func FreeTextProvider() []core.CommandMatch {
 	seen := make(map[string]bool)
 	var matches []core.CommandMatch
 	for _, line := range lines {
-		// Remove o prefixo conhecido e pega o próximo token.
+		// Strip known prefix and get the next token.
 		rest := strings.TrimSpace(strings.TrimPrefix(line, commandName))
 		if rest == "" {
 			continue
 		}
-		// Pega apenas o próximo token (sem arrastar o resto da linha).
+		// Extract only the next token (without dragging the rest of the line).
 		token := strings.Fields(rest)[0]
 		if token == "" || seen[token] {
 			continue
@@ -72,18 +78,15 @@ func FreeTextProvider() []core.CommandMatch {
 func ensureQuoted(s string) string {
 	s = strings.TrimSpace(s)
 	if s == "" {
-		return s
+		return `""`
 	}
 
-	hasStart := s[0] == '"'
-	hasEnd := s[len(s)-1] == '"'
-
-	if !hasStart {
-		s = `"` + s
-	}
-	if !hasEnd {
-		s = s + `"`
+	// If already enclosed in double or single quotes, strip them first
+	if len(s) >= 2 && ((s[0] == '"' && s[len(s)-1] == '"') || (s[0] == '\'' && s[len(s)-1] == '\'')) {
+		s = s[1 : len(s)-1]
+	} else {
+		s = strings.Trim(s, "\"'")
 	}
 
-	return s
+	return `"` + s + `"`
 }

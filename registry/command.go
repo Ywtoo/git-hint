@@ -21,7 +21,7 @@ func ResolveCommandData(commandName string) ([]byte, error) {
 	}
 	data, err := os.ReadFile(path)
 	if err != nil {
-		return nil, fmt.Errorf("comando não encontrado: %s", commandName)
+		return nil, fmt.Errorf("command not found: %s", commandName)
 	}
 	return data, nil
 }
@@ -58,7 +58,7 @@ type CommandStatus struct {
 }
 
 func Status(commandName string) (CommandStatus, error) {
-	index, err := loadIndex()
+	index, err := LoadIndex()
 	if err != nil {
 		return CommandStatus{}, err
 	}

@@ -1,12 +1,73 @@
 package keymap
 
 import (
+	"os"
+	"path/filepath"
 	"testing"
 
+	"git-hint/core"
+	"git-hint/registry"
 	"git-hint/state"
 )
 
+func setupTestEnvironment(t *testing.T) {
+	t.Helper()
+
+	tmpDir := t.TempDir()
+	dataDir := filepath.Join(tmpDir, "data")
+	if err := os.MkdirAll(dataDir, 0755); err != nil {
+		t.Fatal(err)
+	}
+
+	indexJSON := `{
+		"git": {
+			"name": "git",
+			"description": "the stupid content tracker",
+			"path": "/usr/bin/git"
+		}
+	}`
+	if err := os.WriteFile(filepath.Join(dataDir, "index.json"), []byte(indexJSON), 0644); err != nil {
+		t.Fatal(err)
+	}
+
+	gitJSON := `{
+		"commit": {
+			"name": "commit",
+			"description": "Record changes to the repository",
+			"subCommand": {
+				"-m": {
+					"name": "-m",
+					"description": "Use the given message as the commit message"
+				},
+				"-a": {
+					"name": "-a",
+					"description": "Automatically stage modified files"
+				}
+			}
+		}
+	}`
+	if err := os.WriteFile(filepath.Join(dataDir, "git.json"), []byte(gitJSON), 0644); err != nil {
+		t.Fatal(err)
+	}
+
+	fakeBinary := filepath.Join(tmpDir, "git-hint")
+	if err := os.WriteFile(fakeBinary, []byte{}, 0755); err != nil {
+		t.Fatal(err)
+	}
+
+	cleanupExe := core.SetExecutablePathForTest(func() (string, error) {
+		return fakeBinary, nil
+	})
+	registry.ResetCacheForTest()
+
+	t.Cleanup(func() {
+		cleanupExe()
+		registry.ResetCacheForTest()
+	})
+}
+
 func TestKeyHandler(t *testing.T) {
+	setupTestEnvironment(t)
 	tests := []struct {
 		name         string
 		key          string

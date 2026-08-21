@@ -25,7 +25,7 @@ type Options struct {
 	Progress   *ProgressState
 }
 
-// --- instrumentação temporária, só pra diagnóstico ---
+// --- temporary instrumentation for diagnostics ---
 var (
 	execCount int64
 	slowMu    sync.Mutex
@@ -67,8 +67,8 @@ func runWithTimeout(d time.Duration, fn func() (string, error)) (string, error, 
 }
 
 func PrintDiagnostics() {
-	fmt.Printf("\n=== DIAGNÓSTICO ===\n")
-	fmt.Printf("Total de exec.Command chamados: %d\n", atomic.LoadInt64(&execCount))
+	fmt.Printf("\n=== DIAGNOSTICS ===\n")
+	fmt.Printf("Total exec.Command calls: %d\n", atomic.LoadInt64(&execCount))
 
 	slowMu.Lock()
 	defer slowMu.Unlock()
@@ -78,13 +78,13 @@ func PrintDiagnostics() {
 	if len(slowLog) < limit {
 		limit = len(slowLog)
 	}
-	fmt.Printf("Top %d mais lentos (>300ms):\n", limit)
+	fmt.Printf("Top %d slowest (>300ms):\n", limit)
 	for i := 0; i < limit; i++ {
 		fmt.Printf("  %v  %s\n", slowLog[i].duration, slowLog[i].path)
 	}
 }
 
-// --- fim instrumentação ---
+// --- end instrumentation ---
 
 func CrawlOne(name, path string, opts Options) error {
 	visited := make(map[string]bool)

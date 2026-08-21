@@ -10,11 +10,6 @@ import (
 	"git-hint/state"
 )
 
-// SupportedFlags é o conjunto de flags que têm um provider real implementado
-// no switch de Provider(). Qualquer placeholder não listado aqui cai em
-// default → nil (o usuário digita o valor manualmente).
-//
-// Mantenha esta variável sincronizada com os cases do switch em Provider().
 // Providers maps placeholder names to completion providers.
 //
 // Only placeholders listed here have an implemented provider.

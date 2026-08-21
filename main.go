@@ -5,6 +5,7 @@ import (
 	"os"
 	"strconv"
 	"strings"
+	"time"
 
 	"git-hint/app"
 	"git-hint/daemon"
@@ -52,6 +53,24 @@ func main() {
 		fmt.Println(app.Key(os.Args[2], selected, os.Args[4]))
 
 	case "daemon":
+		if len(os.Args) > 2 {
+			switch os.Args[2] {
+			case "--kill":
+				if err := daemon.Kill(); err != nil {
+					fmt.Fprintln(os.Stderr, err)
+					os.Exit(1)
+				}
+				fmt.Println("githint: daemon killed")
+			case "--restart":
+				_ = daemon.Kill()
+				time.Sleep(200 * time.Millisecond)
+				daemon.Run()
+			default:
+				fmt.Fprintln(os.Stderr, "githint daemon: unknown flag:", os.Args[2])
+				os.Exit(1)
+			}
+			return
+		}
 		daemon.Run()
 
 	default:

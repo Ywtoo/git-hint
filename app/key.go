@@ -7,8 +7,8 @@ import (
 	"git-hint/state"
 )
 
-// Key também vira pura: recebe tecla, selected e buffer prontos,
-// devolve a string formatada em vez de imprimir.
+// Key handles a keystroke: receives key, selected index, and buffer,
+// and returns the formatted response string.
 func Key(key string, selected int, buffer string) string {
 	state.SetSelected(selected)
 	state.SetBuffer(buffer)

@@ -11,6 +11,14 @@ import (
 // DataDir at a temp directory instead of the real test binary location.
 var executablePath = os.Executable
 
+// SetExecutablePathForTest overrides executablePath for testing purposes
+// and returns a cleanup function to restore the original value.
+func SetExecutablePathForTest(fn func() (string, error)) func() {
+	original := executablePath
+	executablePath = fn
+	return func() { executablePath = original }
+}
+
 // DataDir returns the path to the data/ directory that sits next to the
 // running binary (e.g. /opt/git-hint/data). This is where scraper.Rebuild
 // writes json files and where registry reads them from — no embed, since

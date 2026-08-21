@@ -22,7 +22,7 @@ var skipRankingFlags = map[string]bool{
 	"msg":    true,
 }
 
-var ErrNotIndexed = errors.New("comando conhecido mas ainda não indexado")
+var ErrNotIndexed = errors.New("command known but not yet indexed")
 
 // Suggestions returns the list of suggestions for the current input buffer,
 // along with the current token being typed (used for cursor replacement)
@@ -47,7 +47,7 @@ func Suggestions(input string) ([]core.CommandMatch, string, error) {
 		}
 		list, err = ranking.RankSuggestions(commandName, list)
 		if err != nil {
-			return nil, "", fmt.Errorf("❌ Erro ao ordenar comandos: %v", err)
+			return nil, "", fmt.Errorf("❌ Failed to rank commands: %v", err)
 		}
 		return list, currentToken, nil
 	}
@@ -189,7 +189,7 @@ func rankAndGroup(input string, list []core.CommandMatch, dynamicFlagSeen string
 	if !skipRankingFlags[dynamicFlagSeen] {
 		ranked, err := ranking.RankSuggestions(input, list)
 		if err != nil {
-			return nil, fmt.Errorf("❌ Erro ao ordenar comandos: %v", err)
+			return nil, fmt.Errorf("❌ Failed to rank commands: %v", err)
 		}
 		list = ranked
 	}

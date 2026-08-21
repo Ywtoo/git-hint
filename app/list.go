@@ -25,7 +25,7 @@ func List(buffer string, selected int, promptCol int, renderMode string) string 
 
 	matches, currentToken, err := engine.Suggestions(buffer)
 	if errors.Is(err, engine.ErrNotIndexed) {
-		return ""
+		return handleNotIndexed(buffer)
 	}
 	if err != nil {
 		return ""
@@ -34,12 +34,11 @@ func List(buffer string, selected int, promptCol int, renderMode string) string 
 	return render.FormatList(matches, selected, buffer, currentToken, promptCol, renderMode)
 }
 
-// TODO:Fix this is not working at all
 // handleNotIndexed kicks off a one-time background crawl for a command
 // that's known to exist on the system but hasn't had its help tree
-// crawled yet, and returns an immediate response the zsh-plugin can show
-// while that happens. The crawl itself runs in a goroutine so it never
-// blocks the daemon's response to this keystroke.
+// crawled yet. Returns a placeholder immediately; the goroutine crawls
+// the complete tree (MaxDepth=999) so level 1 is available fast and
+// the rest finishes in background.
 func handleNotIndexed(buffer string) string {
 	parts := tokenizer.TokenizeBuffer(buffer)
 	if len(parts) == 0 {
@@ -49,25 +48,25 @@ func handleNotIndexed(buffer string) string {
 
 	status, err := registry.Status(commandName)
 	if err != nil || !status.Known || status.BinPath == "" {
-		return "" // shouldn't happen if engine already said Known+!Indexed, but be safe
+		return ""
 	}
 
 	crawlingMu.Lock()
-	alreadyCrawling := crawling[commandName]
-	if !alreadyCrawling {
-		crawling[commandName] = true
+	if crawling[commandName] {
+		crawlingMu.Unlock()
+		return "⏳ indexing " + commandName + "..."
 	}
+	crawling[commandName] = true
 	crawlingMu.Unlock()
 
-	if !alreadyCrawling {
-		go func() {
-			_ = scraper.CrawlOne(commandName, status.BinPath, scraper.Options{MaxDepth: 4})
+	go func() {
+		// Single call: level 1 returns quickly, continues until complete.
+		_ = scraper.CrawlOne(commandName, status.BinPath, scraper.Options{MaxDepth: 999})
 
-			crawlingMu.Lock()
-			delete(crawling, commandName)
-			crawlingMu.Unlock()
-		}()
-	}
+		crawlingMu.Lock()
+		delete(crawling, commandName)
+		crawlingMu.Unlock()
+	}()
 
-	return "⏳ indexando " + commandName + "..."
+	return "⏳ indexing " + commandName + "..."
 }

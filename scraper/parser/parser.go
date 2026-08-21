@@ -293,50 +293,6 @@ func getOrCreate(nodes map[string]*ParsedNode, key string) *ParsedNode {
 	return n
 }
 
-// addFlagWithPlaceholder adds a flag entry; if the flag carries an inline
-// placeholder (e.g. "-u<mode>") or a bracketed value spec (e.g.
-// "--color[=WHEN]", "--no-track[=(direct|inherit)]"), that value becomes
-// one or more children of the flag.
-func addFlagWithPlaceholder(tok, desc string, nodes map[string]*ParsedNode) {
-	original := tok
-	flagClean := stripFlagValue(tok)
-	if flagClean == "" {
-		return
-	}
-
-	// Placeholders glued directly onto the flag with no brackets, e.g. "-u<mode>".
-	placeholders := placeholderRe.FindAllString(flagClean, -1)
-	flagRaw := strings.Trim(placeholderRe.ReplaceAllString(flagClean, ""), "[]()|=")
-
-	if isPlaceholder(flagClean) {
-		// Bare placeholder (no flag) — just register at this level
-		n := getOrCreate(nodes, flagClean)
-		if n.Description == "" {
-			n.Description = desc
-		}
-		return
-	}
-
-	if !strings.HasPrefix(flagRaw, "-") {
-		return
-	}
-
-	valueChildren := extractValueChildren(original, desc)
-
-	for _, f := range expandNoPrefix(flagRaw) {
-		flagNode := getOrCreate(nodes, f)
-		if flagNode.Description == "" {
-			flagNode.Description = desc
-		}
-		for _, ph := range placeholders {
-			if _, exists := flagNode.Children[ph]; flagNode.Children == nil || !exists {
-				mergeChildren(flagNode, map[string]*ParsedNode{ph: {Description: desc}})
-			}
-		}
-		mergeChildren(flagNode, valueChildren)
-	}
-}
-
 // collectTokens walks usage-line tokens after the command path.
 //   - Flags and placeholders are added to nodes.
 //   - Flags followed immediately by a placeholder (next token) register the
@@ -468,9 +424,7 @@ func parseFlagSpec(spec, desc string, nodes map[string]*ParsedNode) {
 			case isPlaceholder(clean):
 				valueChildren[clean] = &ParsedNode{Description: desc}
 			case isFlag(clean):
-				for _, expanded := range expandNoPrefix(clean) {
-					flags = append(flags, expanded)
-				}
+				flags = append(flags, expandNoPrefix(clean)...)
 				for name, child := range extractValueChildren(tok, desc) {
 					valueChildren[name] = child
 				}
@@ -479,9 +433,7 @@ func parseFlagSpec(spec, desc string, nodes map[string]*ParsedNode) {
 				phs := placeholderRe.FindAllString(tok, -1)
 				flagPart := stripFlagValue(placeholderRe.ReplaceAllString(tok, ""))
 				if isFlag(flagPart) {
-					for _, expanded := range expandNoPrefix(flagPart) {
-						flags = append(flags, expanded)
-					}
+					flags = append(flags, expandNoPrefix(flagPart)...)
 				}
 				for _, ph := range phs {
 					valueChildren[ph] = &ParsedNode{Description: desc}
