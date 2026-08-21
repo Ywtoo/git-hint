@@ -58,6 +58,18 @@ func TestRankSuggestionsWithReader(t *testing.T) {
 			},
 			expectedOrder: []string{"add", "set-url", "remove"},
 		},
+		{
+			name:        "Root command frequency ranking when commandName is empty",
+			commandName: "",
+			history:     ": 1718540000:0;git status\n: 1718540001:0;docker ps\n: 1718540002:0;git commit\n: 1718540003:0;curl https://...\n",
+			suggestions: []core.CommandMatch{
+				{Name: "curl"},
+				{Name: "docker"},
+				{Name: "git"},
+				{Name: "kubectl"},
+			},
+			expectedOrder: []string{"git", "curl", "docker", "kubectl"},
+		},
 	}
 
 	for _, tt := range tests {

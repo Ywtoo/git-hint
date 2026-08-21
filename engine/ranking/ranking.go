@@ -29,24 +29,21 @@ func RankSuggestionsWithReader(commandName string, suggestions []core.CommandMat
 	usedCommands := make(map[string]int)
 	commandsFields := strings.Fields(commandName)
 	commandLen := len(commandsFields)
-	if commandLen < 1 {
-		return suggestions, nil
-	}
-
-	lastToken := commandsFields[commandLen-1]
-
 	targetIdx := commandLen
 
-	isCompleting := false
-	for _, s := range suggestions {
-		if strings.HasPrefix(s.Name, lastToken) && s.Name != lastToken {
-			isCompleting = true
-			break
+	if commandLen > 0 {
+		lastToken := commandsFields[commandLen-1]
+		isCompleting := false
+		for _, s := range suggestions {
+			if strings.HasPrefix(s.Name, lastToken) && s.Name != lastToken {
+				isCompleting = true
+				break
+			}
 		}
-	}
 
-	if isCompleting {
-		targetIdx = commandLen - 1
+		if isCompleting {
+			targetIdx = commandLen - 1
+		}
 	}
 
 	scanner := bufio.NewScanner(reader)

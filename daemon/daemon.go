@@ -20,7 +20,8 @@ import (
 
 	"git-hint/app"
 	"git-hint/core"
-	"git-hint/engine/history"
+	"git-hint/engine/ranking"
+	"git-hint/registry"
 	"git-hint/scraper"
 )
 
@@ -183,13 +184,36 @@ func warmTopCommandsIfFirstRun() {
 		return
 	}
 
-	commands, err := history.TopRootCommands(10)
+	index, err := registry.LoadIndex()
 	if err != nil {
-		fmt.Fprintln(os.Stderr, "githint warmup: could not read shell history:", err)
+		fmt.Fprintln(os.Stderr, "githint warmup: could not load registry index:", err)
 		return
 	}
+
+	var candidates []core.CommandMatch
+	for cmd := range index {
+		candidates = append(candidates, core.CommandMatch{Name: cmd})
+	}
+
+	ranked, err := ranking.RankSuggestions("", candidates)
+	if err != nil {
+		fmt.Fprintln(os.Stderr, "githint warmup: could not rank history commands:", err)
+		return
+	}
+
+	var commands []string
+	for _, m := range ranked {
+		if m.NUsed == 0 {
+			break
+		}
+		commands = append(commands, m.Name)
+		if len(commands) >= 10 {
+			break
+		}
+	}
+
 	if len(commands) == 0 {
-		fmt.Fprintln(os.Stderr, "githint warmup: no commands found in shell history, skipping")
+		fmt.Fprintln(os.Stderr, "githint warmup: no known commands found in shell history, skipping")
 		_ = os.WriteFile(sentinelPath, nil, 0600)
 		return
 	}

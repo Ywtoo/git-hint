@@ -3,10 +3,7 @@ package history
 import (
 	"os"
 	"path/filepath"
-	"sort"
 	"strings"
-
-	"git-hint/registry"
 )
 
 var historyPathFunc = findHistory
@@ -41,64 +38,6 @@ func FindHistoryCommands(commandName string) ([]string, error) {
 	}
 
 	return historyList, nil
-}
-
-// TopRootCommands reads shell history and returns the most frequently
-// used root commands (level 0: git, docker, kubectl, etc.) that are
-// known to the registry.
-func TopRootCommands(limit int) ([]string, error) {
-	path, err := historyPathFunc()
-	if err != nil {
-		return nil, err
-	}
-
-	commands, err := parseHistoryCommands(path)
-	if err != nil {
-		return nil, err
-	}
-
-	counts := make(map[string]int)
-	for _, cmd := range commands {
-		fields := strings.Fields(cmd)
-		if len(fields) == 0 {
-			continue
-		}
-		root := fields[0]
-		counts[root]++
-	}
-
-	// Load registry index to filter only known commands
-	index, err := registry.LoadIndex()
-	if err != nil {
-		return nil, err
-	}
-
-	// Convert to slice and sort by frequency
-	type commandCount struct {
-		command string
-		count   int
-	}
-	var commandCounts []commandCount
-	for cmd, count := range counts {
-		if _, known := index[cmd]; known {
-			commandCounts = append(commandCounts, commandCount{command: cmd, count: count})
-		}
-	}
-
-	sort.Slice(commandCounts, func(i, j int) bool {
-		return commandCounts[i].count > commandCounts[j].count
-	})
-
-	if len(commandCounts) > limit {
-		commandCounts = commandCounts[:limit]
-	}
-
-	result := make([]string, len(commandCounts))
-	for i, cc := range commandCounts {
-		result[i] = cc.command
-	}
-
-	return result, nil
 }
 
 // findHistory returns the path to the user's zsh history file.
