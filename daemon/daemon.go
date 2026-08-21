@@ -19,9 +19,6 @@ import (
 	"time"
 
 	"git-hint/app"
-	"git-hint/core"
-	"git-hint/engine/ranking"
-	"git-hint/registry"
 	"git-hint/scraper"
 )
 
@@ -71,9 +68,10 @@ func Run() {
 		os.Remove(path)
 	}()
 
-	// Warm up top commands from history in background.
-	// Only runs on first-ever execution (when data directory is empty).
-	go warmTopCommandsIfFirstRun()
+	// Warm up data directory if first run (writes index.json and crawls top 10).
+	go func() {
+		_ = scraper.Warmup(scraper.Options{MaxDepth: 999})
+	}()
 
 	// Idle shutdown: reset on every request. When it fires with no
 	// activity, it closes the listener, which makes Accept() below
@@ -166,79 +164,6 @@ func killBySocket() error {
 	// Last resort: just remove the stale socket so the next daemon start works.
 	os.Remove(sock)
 	return fmt.Errorf("githint: could not find daemon PID, removed stale socket")
-}
-
-// warmTopCommandsIfFirstRun crawls the complete help tree for the top 10 most
-// frequently used root commands from shell history. Only runs on the first
-// ever execution — detected via a sentinel file (.warmed) inside the data dir.
-func warmTopCommandsIfFirstRun() {
-	dataDir, err := core.DataDir()
-	if err != nil {
-		fmt.Fprintln(os.Stderr, "githint warmup: could not resolve data dir:", err)
-		return
-	}
-
-	sentinelPath := dataDir + "/.warmed"
-	if _, err := os.Stat(sentinelPath); err == nil {
-		// Sentinel exists — warmup already ran before.
-		return
-	}
-
-	index, err := registry.LoadIndex()
-	if err != nil {
-		fmt.Fprintln(os.Stderr, "githint warmup: could not load registry index:", err)
-		return
-	}
-
-	var candidates []core.CommandMatch
-	for cmd := range index {
-		candidates = append(candidates, core.CommandMatch{Name: cmd})
-	}
-
-	ranked, err := ranking.RankSuggestions("", candidates)
-	if err != nil {
-		fmt.Fprintln(os.Stderr, "githint warmup: could not rank history commands:", err)
-		return
-	}
-
-	var commands []string
-	for _, m := range ranked {
-		if m.NUsed == 0 {
-			break
-		}
-		commands = append(commands, m.Name)
-		if len(commands) >= 10 {
-			break
-		}
-	}
-
-	if len(commands) == 0 {
-		fmt.Fprintln(os.Stderr, "githint warmup: no known commands found in shell history, skipping")
-		_ = os.WriteFile(sentinelPath, nil, 0600)
-		return
-	}
-
-	fmt.Fprintf(os.Stderr, "githint warmup: indexing %d commands from history: %v\n", len(commands), commands)
-
-	for i, cmd := range commands {
-		binPath, err := exec.LookPath(cmd)
-		if err != nil {
-			fmt.Fprintf(os.Stderr, "githint warmup: [%d/%d] skipping %q (not found in PATH)\n", i+1, len(commands), cmd)
-			continue
-		}
-		fmt.Fprintf(os.Stderr, "githint warmup: [%d/%d] indexing %q...\n", i+1, len(commands), cmd)
-		if err := scraper.CrawlOne(cmd, binPath, scraper.Options{MaxDepth: 999}); err != nil {
-			fmt.Fprintf(os.Stderr, "githint warmup: [%d/%d] %q failed: %v\n", i+1, len(commands), cmd, err)
-		} else {
-			fmt.Fprintf(os.Stderr, "githint warmup: [%d/%d] %q done\n", i+1, len(commands), cmd)
-		}
-	}
-
-	// Write sentinel so we don't repeat warmup on the next daemon start.
-	if err := os.WriteFile(sentinelPath, nil, 0600); err != nil {
-		fmt.Fprintln(os.Stderr, "githint warmup: could not write sentinel file:", err)
-	}
-	fmt.Fprintln(os.Stderr, "githint warmup: complete")
 }
 
 // handleConn serves exactly one request per connection: read the request

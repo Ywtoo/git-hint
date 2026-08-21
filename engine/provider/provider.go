@@ -64,6 +64,28 @@ var Providers = map[string]func() []core.CommandMatch{
 	"author":      common.FreeTextProvider,
 }
 
+var noDescriptionFlags = map[string]bool{
+	"msg":     true,
+	"message": true,
+}
+
+var skipRankingFlags = map[string]bool{
+	"commit":     true,
+	"commit-ish": true,
+	"tree-ish":   true,
+	"head":       true,
+	"msg":        true,
+	"message":    true,
+}
+
+func ShouldSkipRanking(flag string) bool {
+	return skipRankingFlags[flag]
+}
+
+func HasNoDescription(flag string) bool {
+	return noDescriptionFlags[flag]
+}
+
 func FlagCheck(flag string) string {
 	if len(flag) >= 2 && flag[0] == '<' && flag[len(flag)-1] == '>' {
 		return flag[1 : len(flag)-1]
@@ -75,7 +97,7 @@ func Provider(flag string) []core.CommandMatch {
 	cache := state.LoadCache()
 
 	cacheKey := flag
-	if flag == "msg" || flag == "name" || flag == "url" {
+	if flag == "msg" || flag == "message" || flag == "name" || flag == "url" {
 		// These flags depend on the full command context (e.g. "git remote add"),
 		// not just the placeholder name — so we key the cache by context too.
 		parts := tokenizer.TokenizeBuffer(state.GetBuffer())

@@ -10,11 +10,10 @@ import (
 )
 
 func MsgProvider() []core.CommandMatch {
-	parts := tokenizer.TokenizeBuffer(state.GetBuffer())
-	if len(parts) <= 1 {
+	commandName := extractCommandPrefix(state.GetBuffer())
+	if commandName == "" {
 		return nil
 	}
-	commandName := strings.Join(parts[:len(parts)-1], " ")
 
 	messages, err := history.FindHistoryCommands(commandName)
 	if err != nil {
@@ -43,11 +42,10 @@ func MsgProvider() []core.CommandMatch {
 }
 
 func FreeTextProvider() []core.CommandMatch {
-	parts := tokenizer.TokenizeBuffer(state.GetBuffer())
-	if len(parts) <= 1 {
+	commandName := extractCommandPrefix(state.GetBuffer())
+	if commandName == "" {
 		return nil
 	}
-	commandName := strings.Join(parts[:len(parts)-1], " ")
 
 	lines, err := history.FindHistoryCommands(commandName)
 	if err != nil {
@@ -73,6 +71,24 @@ func FreeTextProvider() []core.CommandMatch {
 		})
 	}
 	return matches
+}
+
+func extractCommandPrefix(buf string) string {
+	parts := tokenizer.TokenizeBuffer(buf)
+	if len(parts) <= 1 {
+		return ""
+	}
+
+	last := parts[len(parts)-1]
+	if last == "" {
+		// e.g. "git commit -m "
+		return strings.TrimSpace(strings.Join(parts[:len(parts)-1], " "))
+	}
+	if strings.HasPrefix(last, "-") {
+		// e.g. "git commit -m"
+		return strings.TrimSpace(strings.Join(parts, " "))
+	}
+	return strings.TrimSpace(strings.Join(parts[:len(parts)-1], " "))
 }
 
 func ensureQuoted(s string) string {

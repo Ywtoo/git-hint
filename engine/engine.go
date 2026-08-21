@@ -13,15 +13,6 @@ import (
 	"git-hint/registry"
 )
 
-var noDescriptionFlags = map[string]bool{
-	"msg": true,
-}
-
-var skipRankingFlags = map[string]bool{
-	"commit": true,
-	"msg":    true,
-}
-
 var ErrNotIndexed = errors.New("command known but not yet indexed")
 
 // Suggestions returns the list of suggestions for the current input buffer,
@@ -165,11 +156,11 @@ func expandDynamicFlag(name, flag string, cmd core.CommandMatch, currentToken st
 // Description should be displayed, based on which flag generated it.
 func applyDescriptionRule(s *core.CommandMatch, flag, parentDescription string) {
 	switch {
-	case noDescriptionFlags[flag]:
-		// msg: no comment needed, the value itself is the info.
+	case provider.HasNoDescription(flag):
+		// msg, message: no comment needed, the value itself is the info.
 		s.Description = ""
 
-	case skipRankingFlags[flag]:
+	case provider.ShouldSkipRanking(flag):
 		// commit: keep the specific Description the provider already built
 		// (hash + subject), always displayed — does not inherit from parent,
 		// not conditioned to "only when selected".
@@ -186,7 +177,7 @@ func applyDescriptionRule(s *core.CommandMatch, flag, parentDescription string) 
 // the last dynamic flag seen opts out of ranking) and then groups items by
 // Placeholder, keeping ranking order stable within each group.
 func rankAndGroup(input string, list []core.CommandMatch, dynamicFlagSeen string) ([]core.CommandMatch, error) {
-	if !skipRankingFlags[dynamicFlagSeen] {
+	if !provider.ShouldSkipRanking(dynamicFlagSeen) {
 		ranked, err := ranking.RankSuggestions(input, list)
 		if err != nil {
 			return nil, fmt.Errorf("❌ Failed to rank commands: %v", err)
