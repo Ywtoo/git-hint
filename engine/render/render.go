@@ -63,7 +63,7 @@ func FormatList(matches []core.CommandMatch, selected int, buffer string, curren
 	// Maximum name length within the visible window to align comments in a column.
 	maxNameLen := 0
 	for i := start; i < end; i++ {
-		n := len(displayName(matches[i].Name))
+		n := len(matches[i].Name)
 		if n > maxNameLen {
 			maxNameLen = n
 		}
@@ -85,7 +85,7 @@ func FormatList(matches []core.CommandMatch, selected int, buffer string, curren
 			continue
 		}
 
-		name := displayName(m.Name)
+		name := m.Name
 		isSelected := i == selected // selected index maps directly to matches slice
 
 		if !isSelected {
@@ -107,7 +107,7 @@ func FormatList(matches []core.CommandMatch, selected int, buffer string, curren
 
 		line := indent + charA + charB + name
 		if comment != "" {
-			visualLen := len(displayName(m.Name))
+			visualLen := len(m.Name)
 			padding := strings.Repeat(" ", maxNameLen-visualLen+2)
 			line += padding + colorGreenStart + "# " + comment + colorGreenEnd
 		}
@@ -126,11 +126,4 @@ func resolveComment(m core.CommandMatch, isSelected bool) string {
 		return ""
 	}
 	return m.Description
-}
-
-func displayName(name string) string {
-	if len(name) >= 2 && strings.HasPrefix(name, `"`) && strings.HasSuffix(name, `"`) {
-		return name[1 : len(name)-1]
-	}
-	return name
 }
