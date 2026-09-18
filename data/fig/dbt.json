@@ -1,0 +1,4370 @@
+{
+  "--debug": {
+    "Name": "--debug",
+    "kind": "option",
+    "description": "Redirect debug logs to standard out",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--log-format": {
+    "Name": "--log-format",
+    "kind": "option",
+    "description": "Specify how dbt's logs should be formatted",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clog format\u003e": {
+        "Name": "\u003clog format\u003e",
+        "kind": "argument",
+        "description": "log format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clog format\u003e": {
+        "Name": "\u003clog format\u003e",
+        "kind": "argument",
+        "description": "log format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clog format\u003e"
+    ]
+  },
+  "--no-partial-parse": {
+    "Name": "--no-partial-parse",
+    "kind": "option",
+    "description": "Turn off partial parsing for your project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-use-colors": {
+    "Name": "--no-use-colors",
+    "kind": "option",
+    "description": "Disable log colorizing",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-write-json": {
+    "Name": "--no-write-json",
+    "kind": "option",
+    "description": "Prevent dbt from writing JSOn artifacts to the 'target/' directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--partial-parse": {
+    "Name": "--partial-parse",
+    "kind": "option",
+    "description": "Configure partial parsing for your project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--record-timing-info": {
+    "Name": "--record-timing-info",
+    "kind": "option",
+    "description": "Create a new file to record timing info",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile name\u003e": {
+        "Name": "\u003cfile name\u003e",
+        "kind": "argument",
+        "description": "file name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile name\u003e": {
+        "Name": "\u003cfile name\u003e",
+        "kind": "argument",
+        "description": "file name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile name\u003e"
+    ]
+  },
+  "--strict": {
+    "Name": "--strict",
+    "kind": "option",
+    "description": "Perform extra validation of dbt objects and internal consistency checks during compilation. Use only during development",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--use-colors": {
+    "Name": "--use-colors",
+    "kind": "option",
+    "description": "Default value -- colorize run logs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Currently installed version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--warn-error": {
+    "Name": "--warn-error",
+    "kind": "option",
+    "description": "Convert dbt warnings into errors",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-S": {
+    "Name": "-S",
+    "kind": "option",
+    "description": "Perform extra validation of dbt objects and internal consistency checks during compilation. Use only during development",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Redirect debug logs to standard out",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "Create a new file to record timing info",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile name\u003e": {
+        "Name": "\u003cfile name\u003e",
+        "kind": "argument",
+        "description": "file name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile name\u003e": {
+        "Name": "\u003cfile name\u003e",
+        "kind": "argument",
+        "description": "file name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile name\u003e"
+    ]
+  },
+  "build": {
+    "Name": "build",
+    "kind": "subcommand",
+    "description": "Run models, test tests, snapshot snapshots, and seed seeds",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--bypass-cache": {
+        "Name": "--bypass-cache",
+        "kind": "option",
+        "description": "Bypass the cache",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude subset of models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csubset\u003e"
+        ]
+      },
+      "--fail-fast": {
+        "Name": "--fail-fast",
+        "kind": "option",
+        "description": "Exit immediately if a single model fails to build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--full-refresh": {
+        "Name": "--full-refresh",
+        "kind": "option",
+        "description": "Treat incremental models as table models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--profile": {
+        "Name": "--profile",
+        "kind": "option",
+        "description": "Use the selected profile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "--profiles-dir": {
+        "Name": "--profiles-dir",
+        "kind": "option",
+        "description": "Set the profiles directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdirectory\u003e"
+        ]
+      },
+      "--select": {
+        "Name": "--select",
+        "kind": "option",
+        "description": "Select subset of models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csubset\u003e"
+        ]
+      },
+      "--target": {
+        "Name": "--target",
+        "kind": "option",
+        "description": "Target profile configuration i.e. prod/dev",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprofile\u003e": {
+            "Name": "\u003cprofile\u003e",
+            "kind": "argument",
+            "description": "profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprofile\u003e": {
+            "Name": "\u003cprofile\u003e",
+            "kind": "argument",
+            "description": "profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprofile\u003e"
+        ]
+      },
+      "--threads": {
+        "Name": "--threads",
+        "kind": "option",
+        "description": "Number of concurrent database jobs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTHREADS\u003e": {
+            "Name": "\u003cTHREADS\u003e",
+            "kind": "argument",
+            "description": "THREADS",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTHREADS\u003e": {
+            "Name": "\u003cTHREADS\u003e",
+            "kind": "argument",
+            "description": "THREADS",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTHREADS\u003e"
+        ]
+      },
+      "--vars": {
+        "Name": "--vars",
+        "kind": "option",
+        "description": "Variable values to override dbt_project.yml",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cvariables\u003e": {
+            "Name": "\u003cvariables\u003e",
+            "kind": "argument",
+            "description": "variables",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cvariables\u003e": {
+            "Name": "\u003cvariables\u003e",
+            "kind": "argument",
+            "description": "variables",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cvariables\u003e"
+        ]
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Select subset of models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csubset\u003e"
+        ]
+      },
+      "-x": {
+        "Name": "-x",
+        "kind": "option",
+        "description": "Exit immediately if a single model fails to build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--bypass-cache": {
+        "Name": "--bypass-cache",
+        "kind": "option",
+        "description": "Bypass the cache",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude subset of models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csubset\u003e"
+        ]
+      },
+      "--fail-fast": {
+        "Name": "--fail-fast",
+        "kind": "option",
+        "description": "Exit immediately if a single model fails to build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--full-refresh": {
+        "Name": "--full-refresh",
+        "kind": "option",
+        "description": "Treat incremental models as table models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--profile": {
+        "Name": "--profile",
+        "kind": "option",
+        "description": "Use the selected profile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "--profiles-dir": {
+        "Name": "--profiles-dir",
+        "kind": "option",
+        "description": "Set the profiles directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdirectory\u003e"
+        ]
+      },
+      "--select": {
+        "Name": "--select",
+        "kind": "option",
+        "description": "Select subset of models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csubset\u003e"
+        ]
+      },
+      "--target": {
+        "Name": "--target",
+        "kind": "option",
+        "description": "Target profile configuration i.e. prod/dev",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprofile\u003e": {
+            "Name": "\u003cprofile\u003e",
+            "kind": "argument",
+            "description": "profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprofile\u003e": {
+            "Name": "\u003cprofile\u003e",
+            "kind": "argument",
+            "description": "profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprofile\u003e"
+        ]
+      },
+      "--threads": {
+        "Name": "--threads",
+        "kind": "option",
+        "description": "Number of concurrent database jobs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTHREADS\u003e": {
+            "Name": "\u003cTHREADS\u003e",
+            "kind": "argument",
+            "description": "THREADS",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTHREADS\u003e": {
+            "Name": "\u003cTHREADS\u003e",
+            "kind": "argument",
+            "description": "THREADS",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTHREADS\u003e"
+        ]
+      },
+      "--vars": {
+        "Name": "--vars",
+        "kind": "option",
+        "description": "Variable values to override dbt_project.yml",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cvariables\u003e": {
+            "Name": "\u003cvariables\u003e",
+            "kind": "argument",
+            "description": "variables",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cvariables\u003e": {
+            "Name": "\u003cvariables\u003e",
+            "kind": "argument",
+            "description": "variables",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cvariables\u003e"
+        ]
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Select subset of models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csubset\u003e"
+        ]
+      },
+      "-x": {
+        "Name": "-x",
+        "kind": "option",
+        "description": "Exit immediately if a single model fails to build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "clean": {
+    "Name": "clean",
+    "kind": "subcommand",
+    "description": "Deletes artifacts present in the dbt project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "compile": {
+    "Name": "compile",
+    "kind": "subcommand",
+    "description": "Compiles (but does not run) the models in a project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--bypass-cache": {
+        "Name": "--bypass-cache",
+        "kind": "option",
+        "description": "Bypass the cache",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--defer": {
+        "Name": "--defer",
+        "kind": "option",
+        "description": "Defer",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude subset of models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cExclude subset\u003e": {
+            "Name": "\u003cExclude subset\u003e",
+            "kind": "argument",
+            "description": "Exclude subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cExclude subset\u003e": {
+            "Name": "\u003cExclude subset\u003e",
+            "kind": "argument",
+            "description": "Exclude subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cExclude subset\u003e"
+        ]
+      },
+      "--profile": {
+        "Name": "--profile",
+        "kind": "option",
+        "description": "Select the profile to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "--profiles-dir": {
+        "Name": "--profiles-dir",
+        "kind": "option",
+        "description": "Set the profiles directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdirectory\u003e"
+        ]
+      },
+      "--select": {
+        "Name": "--select",
+        "kind": "option",
+        "description": "Select subset of models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSelect subset\u003e": {
+            "Name": "\u003cSelect subset\u003e",
+            "kind": "argument",
+            "description": "Select subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSelect subset\u003e": {
+            "Name": "\u003cSelect subset\u003e",
+            "kind": "argument",
+            "description": "Select subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSelect subset\u003e"
+        ]
+      },
+      "--selector": {
+        "Name": "--selector",
+        "kind": "option",
+        "description": "This flag specifies one or more named selectors, defined in a \u003cselector name\u003e.yml file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cYAML selector file name\u003e": {
+            "Name": "\u003cYAML selector file name\u003e",
+            "kind": "argument",
+            "description": "YAML selector file name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cYAML selector file name\u003e": {
+            "Name": "\u003cYAML selector file name\u003e",
+            "kind": "argument",
+            "description": "YAML selector file name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cYAML selector file name\u003e"
+        ]
+      },
+      "--target": {
+        "Name": "--target",
+        "kind": "option",
+        "description": "The target profile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTarget profile\u003e": {
+            "Name": "\u003cTarget profile\u003e",
+            "kind": "argument",
+            "description": "Target profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTarget profile\u003e": {
+            "Name": "\u003cTarget profile\u003e",
+            "kind": "argument",
+            "description": "Target profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTarget profile\u003e"
+        ]
+      },
+      "--threads": {
+        "Name": "--threads",
+        "kind": "option",
+        "description": "Number of concurrent database jobs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTHREADS\u003e": {
+            "Name": "\u003cTHREADS\u003e",
+            "kind": "argument",
+            "description": "THREADS",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTHREADS\u003e": {
+            "Name": "\u003cTHREADS\u003e",
+            "kind": "argument",
+            "description": "THREADS",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTHREADS\u003e"
+        ]
+      },
+      "--vars": {
+        "Name": "--vars",
+        "kind": "option",
+        "description": "Variable values to override dbt_project.yml",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cVariable values\u003e": {
+            "Name": "\u003cVariable values\u003e",
+            "kind": "argument",
+            "description": "Variable values",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cVariable values\u003e": {
+            "Name": "\u003cVariable values\u003e",
+            "kind": "argument",
+            "description": "Variable values",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cVariable values\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--bypass-cache": {
+        "Name": "--bypass-cache",
+        "kind": "option",
+        "description": "Bypass the cache",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--defer": {
+        "Name": "--defer",
+        "kind": "option",
+        "description": "Defer",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude subset of models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cExclude subset\u003e": {
+            "Name": "\u003cExclude subset\u003e",
+            "kind": "argument",
+            "description": "Exclude subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cExclude subset\u003e": {
+            "Name": "\u003cExclude subset\u003e",
+            "kind": "argument",
+            "description": "Exclude subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cExclude subset\u003e"
+        ]
+      },
+      "--profile": {
+        "Name": "--profile",
+        "kind": "option",
+        "description": "Select the profile to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "--profiles-dir": {
+        "Name": "--profiles-dir",
+        "kind": "option",
+        "description": "Set the profiles directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdirectory\u003e"
+        ]
+      },
+      "--select": {
+        "Name": "--select",
+        "kind": "option",
+        "description": "Select subset of models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSelect subset\u003e": {
+            "Name": "\u003cSelect subset\u003e",
+            "kind": "argument",
+            "description": "Select subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSelect subset\u003e": {
+            "Name": "\u003cSelect subset\u003e",
+            "kind": "argument",
+            "description": "Select subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSelect subset\u003e"
+        ]
+      },
+      "--selector": {
+        "Name": "--selector",
+        "kind": "option",
+        "description": "This flag specifies one or more named selectors, defined in a \u003cselector name\u003e.yml file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cYAML selector file name\u003e": {
+            "Name": "\u003cYAML selector file name\u003e",
+            "kind": "argument",
+            "description": "YAML selector file name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cYAML selector file name\u003e": {
+            "Name": "\u003cYAML selector file name\u003e",
+            "kind": "argument",
+            "description": "YAML selector file name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cYAML selector file name\u003e"
+        ]
+      },
+      "--target": {
+        "Name": "--target",
+        "kind": "option",
+        "description": "The target profile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTarget profile\u003e": {
+            "Name": "\u003cTarget profile\u003e",
+            "kind": "argument",
+            "description": "Target profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTarget profile\u003e": {
+            "Name": "\u003cTarget profile\u003e",
+            "kind": "argument",
+            "description": "Target profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTarget profile\u003e"
+        ]
+      },
+      "--threads": {
+        "Name": "--threads",
+        "kind": "option",
+        "description": "Number of concurrent database jobs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTHREADS\u003e": {
+            "Name": "\u003cTHREADS\u003e",
+            "kind": "argument",
+            "description": "THREADS",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTHREADS\u003e": {
+            "Name": "\u003cTHREADS\u003e",
+            "kind": "argument",
+            "description": "THREADS",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTHREADS\u003e"
+        ]
+      },
+      "--vars": {
+        "Name": "--vars",
+        "kind": "option",
+        "description": "Variable values to override dbt_project.yml",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cVariable values\u003e": {
+            "Name": "\u003cVariable values\u003e",
+            "kind": "argument",
+            "description": "Variable values",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cVariable values\u003e": {
+            "Name": "\u003cVariable values\u003e",
+            "kind": "argument",
+            "description": "Variable values",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cVariable values\u003e"
+        ]
+      }
+    }
+  },
+  "debug": {
+    "Name": "debug",
+    "kind": "subcommand",
+    "description": "Debugs dbt connections and projects",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--config-dir": {
+        "Name": "--config-dir",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--config-dir": {
+        "Name": "--config-dir",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "deps": {
+    "Name": "deps",
+    "kind": "subcommand",
+    "description": "Downloads dependencies for a project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "docs": {
+    "Name": "docs",
+    "kind": "subcommand",
+    "description": "Generates documentation for a project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "generate": {
+        "Name": "generate",
+        "kind": "subcommand",
+        "description": "Generate your project's documentation website",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--no-compile": {
+            "Name": "--no-compile",
+            "kind": "option",
+            "description": "Skip re-compilation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--no-compile": {
+            "Name": "--no-compile",
+            "kind": "option",
+            "description": "Skip re-compilation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "serve": {
+        "Name": "serve",
+        "kind": "subcommand",
+        "description": "Serve your documentation on a local webserver (default prot 8000)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--port": {
+            "Name": "--port",
+            "kind": "option",
+            "description": "Choose a port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cport number\u003e": {
+                "Name": "\u003cport number\u003e",
+                "kind": "argument",
+                "description": "port number",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cport number\u003e": {
+                "Name": "\u003cport number\u003e",
+                "kind": "argument",
+                "description": "port number",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cport number\u003e"
+            ]
+          },
+          "--profile": {
+            "Name": "--profile",
+            "kind": "option",
+            "description": "Choose a profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cPROFILE NAME\u003e": {
+                "Name": "\u003cPROFILE NAME\u003e",
+                "kind": "argument",
+                "description": "PROFILE NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cPROFILE NAME\u003e": {
+                "Name": "\u003cPROFILE NAME\u003e",
+                "kind": "argument",
+                "description": "PROFILE NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cPROFILE NAME\u003e"
+            ]
+          },
+          "--profiles-dir": {
+            "Name": "--profiles-dir",
+            "kind": "option",
+            "description": "Skip re-compilation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cPROFILES_DIR\u003e": {
+                "Name": "\u003cPROFILES_DIR\u003e",
+                "kind": "argument",
+                "description": "PROFILES_DIR",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cPROFILES_DIR\u003e": {
+                "Name": "\u003cPROFILES_DIR\u003e",
+                "kind": "argument",
+                "description": "PROFILES_DIR",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cPROFILES_DIR\u003e"
+            ]
+          },
+          "--target": {
+            "Name": "--target",
+            "kind": "option",
+            "description": "The target profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTarget profile\u003e": {
+                "Name": "\u003cTarget profile\u003e",
+                "kind": "argument",
+                "description": "Target profile",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTarget profile\u003e": {
+                "Name": "\u003cTarget profile\u003e",
+                "kind": "argument",
+                "description": "Target profile",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTarget profile\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--port": {
+            "Name": "--port",
+            "kind": "option",
+            "description": "Choose a port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cport number\u003e": {
+                "Name": "\u003cport number\u003e",
+                "kind": "argument",
+                "description": "port number",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cport number\u003e": {
+                "Name": "\u003cport number\u003e",
+                "kind": "argument",
+                "description": "port number",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cport number\u003e"
+            ]
+          },
+          "--profile": {
+            "Name": "--profile",
+            "kind": "option",
+            "description": "Choose a profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cPROFILE NAME\u003e": {
+                "Name": "\u003cPROFILE NAME\u003e",
+                "kind": "argument",
+                "description": "PROFILE NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cPROFILE NAME\u003e": {
+                "Name": "\u003cPROFILE NAME\u003e",
+                "kind": "argument",
+                "description": "PROFILE NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cPROFILE NAME\u003e"
+            ]
+          },
+          "--profiles-dir": {
+            "Name": "--profiles-dir",
+            "kind": "option",
+            "description": "Skip re-compilation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cPROFILES_DIR\u003e": {
+                "Name": "\u003cPROFILES_DIR\u003e",
+                "kind": "argument",
+                "description": "PROFILES_DIR",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cPROFILES_DIR\u003e": {
+                "Name": "\u003cPROFILES_DIR\u003e",
+                "kind": "argument",
+                "description": "PROFILES_DIR",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cPROFILES_DIR\u003e"
+            ]
+          },
+          "--target": {
+            "Name": "--target",
+            "kind": "option",
+            "description": "The target profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTarget profile\u003e": {
+                "Name": "\u003cTarget profile\u003e",
+                "kind": "argument",
+                "description": "Target profile",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTarget profile\u003e": {
+                "Name": "\u003cTarget profile\u003e",
+                "kind": "argument",
+                "description": "Target profile",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTarget profile\u003e"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "init": {
+    "Name": "init",
+    "kind": "subcommand",
+    "description": "Initializes a new dbt project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--adapter": {
+        "Name": "--adapter",
+        "kind": "option",
+        "description": "Add an adapter",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cadapter\u003e": {
+            "Name": "\u003cadapter\u003e",
+            "kind": "argument",
+            "description": "adapter",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cadapter\u003e": {
+            "Name": "\u003cadapter\u003e",
+            "kind": "argument",
+            "description": "adapter",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cadapter\u003e"
+        ]
+      },
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--adapter": {
+        "Name": "--adapter",
+        "kind": "option",
+        "description": "Add an adapter",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cadapter\u003e": {
+            "Name": "\u003cadapter\u003e",
+            "kind": "argument",
+            "description": "adapter",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cadapter\u003e": {
+            "Name": "\u003cadapter\u003e",
+            "kind": "argument",
+            "description": "adapter",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cadapter\u003e"
+        ]
+      },
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "ls": {
+    "Name": "ls",
+    "kind": "subcommand",
+    "description": "Lists resources defined in a dbt project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Specify selectors that should be excluded from the list of returned nodes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSELECTOR\u003e": {
+            "Name": "\u003cSELECTOR\u003e",
+            "kind": "argument",
+            "description": "SELECTOR",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSELECTOR\u003e": {
+            "Name": "\u003cSELECTOR\u003e",
+            "kind": "argument",
+            "description": "SELECTOR",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSELECTOR\u003e"
+        ]
+      },
+      "--output": {
+        "Name": "--output",
+        "kind": "option",
+        "description": "This flag controls the format of output from the dbt ls command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput\u003e"
+        ]
+      },
+      "--resource-type": {
+        "Name": "--resource-type",
+        "kind": "option",
+        "description": "This flag limits the 'resource types' that dbt will return in the dbt ls command. By default, the following resources are included in the results of dbt ls: models, snapshots, seeds, tests, and sources",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cresource-type\u003e": {
+            "Name": "\u003cresource-type\u003e",
+            "kind": "argument",
+            "description": "resource-type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cresource-type\u003e": {
+            "Name": "\u003cresource-type\u003e",
+            "kind": "argument",
+            "description": "resource-type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cresource-type\u003e"
+        ]
+      },
+      "--select": {
+        "Name": "--select",
+        "kind": "option",
+        "description": "This flag specifies one or more selection-type arguments used to filter the nodes returned by the dbt ls command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSELECTION_ARG\u003e": {
+            "Name": "\u003cSELECTION_ARG\u003e",
+            "kind": "argument",
+            "description": "SELECTION_ARG",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSELECTION_ARG\u003e": {
+            "Name": "\u003cSELECTION_ARG\u003e",
+            "kind": "argument",
+            "description": "SELECTION_ARG",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSELECTION_ARG\u003e"
+        ]
+      },
+      "--selector": {
+        "Name": "--selector",
+        "kind": "option",
+        "description": "This flag specifies one or more named selectors, defined in a \u003cselector name\u003e.yml file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cYAML selector file name\u003e": {
+            "Name": "\u003cYAML selector file name\u003e",
+            "kind": "argument",
+            "description": "YAML selector file name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cYAML selector file name\u003e": {
+            "Name": "\u003cYAML selector file name\u003e",
+            "kind": "argument",
+            "description": "YAML selector file name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cYAML selector file name\u003e"
+        ]
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "This flag specifies one or more selection-type arguments used to filter the nodes returned by the dbt ls command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSELECTION_ARG\u003e": {
+            "Name": "\u003cSELECTION_ARG\u003e",
+            "kind": "argument",
+            "description": "SELECTION_ARG",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSELECTION_ARG\u003e": {
+            "Name": "\u003cSELECTION_ARG\u003e",
+            "kind": "argument",
+            "description": "SELECTION_ARG",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSELECTION_ARG\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Specify selectors that should be excluded from the list of returned nodes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSELECTOR\u003e": {
+            "Name": "\u003cSELECTOR\u003e",
+            "kind": "argument",
+            "description": "SELECTOR",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSELECTOR\u003e": {
+            "Name": "\u003cSELECTOR\u003e",
+            "kind": "argument",
+            "description": "SELECTOR",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSELECTOR\u003e"
+        ]
+      },
+      "--output": {
+        "Name": "--output",
+        "kind": "option",
+        "description": "This flag controls the format of output from the dbt ls command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput\u003e"
+        ]
+      },
+      "--resource-type": {
+        "Name": "--resource-type",
+        "kind": "option",
+        "description": "This flag limits the 'resource types' that dbt will return in the dbt ls command. By default, the following resources are included in the results of dbt ls: models, snapshots, seeds, tests, and sources",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cresource-type\u003e": {
+            "Name": "\u003cresource-type\u003e",
+            "kind": "argument",
+            "description": "resource-type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cresource-type\u003e": {
+            "Name": "\u003cresource-type\u003e",
+            "kind": "argument",
+            "description": "resource-type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cresource-type\u003e"
+        ]
+      },
+      "--select": {
+        "Name": "--select",
+        "kind": "option",
+        "description": "This flag specifies one or more selection-type arguments used to filter the nodes returned by the dbt ls command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSELECTION_ARG\u003e": {
+            "Name": "\u003cSELECTION_ARG\u003e",
+            "kind": "argument",
+            "description": "SELECTION_ARG",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSELECTION_ARG\u003e": {
+            "Name": "\u003cSELECTION_ARG\u003e",
+            "kind": "argument",
+            "description": "SELECTION_ARG",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSELECTION_ARG\u003e"
+        ]
+      },
+      "--selector": {
+        "Name": "--selector",
+        "kind": "option",
+        "description": "This flag specifies one or more named selectors, defined in a \u003cselector name\u003e.yml file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cYAML selector file name\u003e": {
+            "Name": "\u003cYAML selector file name\u003e",
+            "kind": "argument",
+            "description": "YAML selector file name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cYAML selector file name\u003e": {
+            "Name": "\u003cYAML selector file name\u003e",
+            "kind": "argument",
+            "description": "YAML selector file name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cYAML selector file name\u003e"
+        ]
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "This flag specifies one or more selection-type arguments used to filter the nodes returned by the dbt ls command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSELECTION_ARG\u003e": {
+            "Name": "\u003cSELECTION_ARG\u003e",
+            "kind": "argument",
+            "description": "SELECTION_ARG",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSELECTION_ARG\u003e": {
+            "Name": "\u003cSELECTION_ARG\u003e",
+            "kind": "argument",
+            "description": "SELECTION_ARG",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSELECTION_ARG\u003e"
+        ]
+      }
+    }
+  },
+  "parse": {
+    "Name": "parse",
+    "kind": "subcommand",
+    "description": "Parse dbt project and write detailed timing information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "rpc": {
+    "Name": "rpc",
+    "kind": "subcommand",
+    "description": "Runs an RPC server that clients can submit queries to",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--host": {
+        "Name": "--host",
+        "kind": "option",
+        "description": "Specify the host to listen on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cHOST\u003e": {
+            "Name": "\u003cHOST\u003e",
+            "kind": "argument",
+            "description": "HOST",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cHOST\u003e": {
+            "Name": "\u003cHOST\u003e",
+            "kind": "argument",
+            "description": "HOST",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cHOST\u003e"
+        ]
+      },
+      "--port": {
+        "Name": "--port",
+        "kind": "option",
+        "description": "The port to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cPORT\u003e": {
+            "Name": "\u003cPORT\u003e",
+            "kind": "argument",
+            "description": "PORT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cPORT\u003e": {
+            "Name": "\u003cPORT\u003e",
+            "kind": "argument",
+            "description": "PORT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cPORT\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--host": {
+        "Name": "--host",
+        "kind": "option",
+        "description": "Specify the host to listen on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cHOST\u003e": {
+            "Name": "\u003cHOST\u003e",
+            "kind": "argument",
+            "description": "HOST",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cHOST\u003e": {
+            "Name": "\u003cHOST\u003e",
+            "kind": "argument",
+            "description": "HOST",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cHOST\u003e"
+        ]
+      },
+      "--port": {
+        "Name": "--port",
+        "kind": "option",
+        "description": "The port to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cPORT\u003e": {
+            "Name": "\u003cPORT\u003e",
+            "kind": "argument",
+            "description": "PORT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cPORT\u003e": {
+            "Name": "\u003cPORT\u003e",
+            "kind": "argument",
+            "description": "PORT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cPORT\u003e"
+        ]
+      }
+    }
+  },
+  "run": {
+    "Name": "run",
+    "kind": "subcommand",
+    "description": "Runs the models in a project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--bypass-cache": {
+        "Name": "--bypass-cache",
+        "kind": "option",
+        "description": "Bypass the cache",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude subset of models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csubset\u003e"
+        ]
+      },
+      "--fail-fast": {
+        "Name": "--fail-fast",
+        "kind": "option",
+        "description": "Exit immediately if a single model fails to build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--full-refresh": {
+        "Name": "--full-refresh",
+        "kind": "option",
+        "description": "Treat incremental models as table models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-use-colors": {
+        "Name": "--no-use-colors",
+        "kind": "option",
+        "description": "Disable log colorizing",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--profile": {
+        "Name": "--profile",
+        "kind": "option",
+        "description": "Select the profile to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "--profiles-dir": {
+        "Name": "--profiles-dir",
+        "kind": "option",
+        "description": "Set the profiles directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdirectory\u003e"
+        ]
+      },
+      "--select": {
+        "Name": "--select",
+        "kind": "option",
+        "description": "Select subset of models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csubset\u003e"
+        ]
+      },
+      "--target": {
+        "Name": "--target",
+        "kind": "option",
+        "description": "The target profile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTarget profile\u003e": {
+            "Name": "\u003cTarget profile\u003e",
+            "kind": "argument",
+            "description": "Target profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTarget profile\u003e": {
+            "Name": "\u003cTarget profile\u003e",
+            "kind": "argument",
+            "description": "Target profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTarget profile\u003e"
+        ]
+      },
+      "--threads": {
+        "Name": "--threads",
+        "kind": "option",
+        "description": "Number of concurrent database jobs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cthreads\u003e": {
+            "Name": "\u003cthreads\u003e",
+            "kind": "argument",
+            "description": "threads",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cthreads\u003e": {
+            "Name": "\u003cthreads\u003e",
+            "kind": "argument",
+            "description": "threads",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cthreads\u003e"
+        ]
+      },
+      "--use-colors": {
+        "Name": "--use-colors",
+        "kind": "option",
+        "description": "Default value -- colorize run logs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--vars": {
+        "Name": "--vars",
+        "kind": "option",
+        "description": "Variable values to override dbt_project.yml",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cvariables\u003e": {
+            "Name": "\u003cvariables\u003e",
+            "kind": "argument",
+            "description": "variables",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cvariables\u003e": {
+            "Name": "\u003cvariables\u003e",
+            "kind": "argument",
+            "description": "variables",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cvariables\u003e"
+        ]
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Select subset of models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csubset\u003e"
+        ]
+      },
+      "-x": {
+        "Name": "-x",
+        "kind": "option",
+        "description": "Exit immediately if a single model fails to build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--bypass-cache": {
+        "Name": "--bypass-cache",
+        "kind": "option",
+        "description": "Bypass the cache",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude subset of models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csubset\u003e"
+        ]
+      },
+      "--fail-fast": {
+        "Name": "--fail-fast",
+        "kind": "option",
+        "description": "Exit immediately if a single model fails to build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--full-refresh": {
+        "Name": "--full-refresh",
+        "kind": "option",
+        "description": "Treat incremental models as table models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-use-colors": {
+        "Name": "--no-use-colors",
+        "kind": "option",
+        "description": "Disable log colorizing",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--profile": {
+        "Name": "--profile",
+        "kind": "option",
+        "description": "Select the profile to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "--profiles-dir": {
+        "Name": "--profiles-dir",
+        "kind": "option",
+        "description": "Set the profiles directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdirectory\u003e"
+        ]
+      },
+      "--select": {
+        "Name": "--select",
+        "kind": "option",
+        "description": "Select subset of models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csubset\u003e"
+        ]
+      },
+      "--target": {
+        "Name": "--target",
+        "kind": "option",
+        "description": "The target profile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTarget profile\u003e": {
+            "Name": "\u003cTarget profile\u003e",
+            "kind": "argument",
+            "description": "Target profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTarget profile\u003e": {
+            "Name": "\u003cTarget profile\u003e",
+            "kind": "argument",
+            "description": "Target profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTarget profile\u003e"
+        ]
+      },
+      "--threads": {
+        "Name": "--threads",
+        "kind": "option",
+        "description": "Number of concurrent database jobs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cthreads\u003e": {
+            "Name": "\u003cthreads\u003e",
+            "kind": "argument",
+            "description": "threads",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cthreads\u003e": {
+            "Name": "\u003cthreads\u003e",
+            "kind": "argument",
+            "description": "threads",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cthreads\u003e"
+        ]
+      },
+      "--use-colors": {
+        "Name": "--use-colors",
+        "kind": "option",
+        "description": "Default value -- colorize run logs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--vars": {
+        "Name": "--vars",
+        "kind": "option",
+        "description": "Variable values to override dbt_project.yml",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cvariables\u003e": {
+            "Name": "\u003cvariables\u003e",
+            "kind": "argument",
+            "description": "variables",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cvariables\u003e": {
+            "Name": "\u003cvariables\u003e",
+            "kind": "argument",
+            "description": "variables",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cvariables\u003e"
+        ]
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Select subset of models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csubset\u003e"
+        ]
+      },
+      "-x": {
+        "Name": "-x",
+        "kind": "option",
+        "description": "Exit immediately if a single model fails to build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "run-operation": {
+    "Name": "run-operation",
+    "kind": "subcommand",
+    "description": "Runs arbitrary maintenance SQL against the database",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--args": {
+        "Name": "--args",
+        "kind": "option",
+        "description": "Supply arguments to the macro",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cARGS\u003e": {
+            "Name": "\u003cARGS\u003e",
+            "kind": "argument",
+            "description": "ARGS",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cARGS\u003e": {
+            "Name": "\u003cARGS\u003e",
+            "kind": "argument",
+            "description": "ARGS",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cARGS\u003e"
+        ]
+      },
+      "\u003cMACRO\u003e": {
+        "Name": "\u003cMACRO\u003e",
+        "kind": "argument",
+        "description": "MACRO",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--args": {
+        "Name": "--args",
+        "kind": "option",
+        "description": "Supply arguments to the macro",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cARGS\u003e": {
+            "Name": "\u003cARGS\u003e",
+            "kind": "argument",
+            "description": "ARGS",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cARGS\u003e": {
+            "Name": "\u003cARGS\u003e",
+            "kind": "argument",
+            "description": "ARGS",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cARGS\u003e"
+        ]
+      },
+      "\u003cMACRO\u003e": {
+        "Name": "\u003cMACRO\u003e",
+        "kind": "argument",
+        "description": "MACRO",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cMACRO\u003e"
+    ]
+  },
+  "seed": {
+    "Name": "seed",
+    "kind": "subcommand",
+    "description": "Loads CSV files into the database",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--bypass-cache": {
+        "Name": "--bypass-cache",
+        "kind": "option",
+        "description": "Bypass the cache",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude subset of models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cExclude subset\u003e": {
+            "Name": "\u003cExclude subset\u003e",
+            "kind": "argument",
+            "description": "Exclude subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cExclude subset\u003e": {
+            "Name": "\u003cExclude subset\u003e",
+            "kind": "argument",
+            "description": "Exclude subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cExclude subset\u003e"
+        ]
+      },
+      "--fail-fast": {
+        "Name": "--fail-fast",
+        "kind": "option",
+        "description": "Exit immediately if a single model fails to build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--profile": {
+        "Name": "--profile",
+        "kind": "option",
+        "description": "Select the profile to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cProfile name\u003e": {
+            "Name": "\u003cProfile name\u003e",
+            "kind": "argument",
+            "description": "Profile name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cProfile name\u003e": {
+            "Name": "\u003cProfile name\u003e",
+            "kind": "argument",
+            "description": "Profile name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cProfile name\u003e"
+        ]
+      },
+      "--profiles-dir": {
+        "Name": "--profiles-dir",
+        "kind": "option",
+        "description": "Set the profiles directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprofiles directory\u003e": {
+            "Name": "\u003cprofiles directory\u003e",
+            "kind": "argument",
+            "description": "profiles directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprofiles directory\u003e": {
+            "Name": "\u003cprofiles directory\u003e",
+            "kind": "argument",
+            "description": "profiles directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprofiles directory\u003e"
+        ]
+      },
+      "--select": {
+        "Name": "--select",
+        "kind": "option",
+        "description": "Run specific seeds",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSelect subset\u003e": {
+            "Name": "\u003cSelect subset\u003e",
+            "kind": "argument",
+            "description": "Select subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSelect subset\u003e": {
+            "Name": "\u003cSelect subset\u003e",
+            "kind": "argument",
+            "description": "Select subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSelect subset\u003e"
+        ]
+      },
+      "--selector": {
+        "Name": "--selector",
+        "kind": "option",
+        "description": "This flag specifies one or more named selectors, defined in a \u003cselector name\u003e.yml file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cYAML selector file name\u003e": {
+            "Name": "\u003cYAML selector file name\u003e",
+            "kind": "argument",
+            "description": "YAML selector file name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cYAML selector file name\u003e": {
+            "Name": "\u003cYAML selector file name\u003e",
+            "kind": "argument",
+            "description": "YAML selector file name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cYAML selector file name\u003e"
+        ]
+      },
+      "-x": {
+        "Name": "-x",
+        "kind": "option",
+        "description": "Exit immediately if a single model fails to build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--bypass-cache": {
+        "Name": "--bypass-cache",
+        "kind": "option",
+        "description": "Bypass the cache",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude subset of models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cExclude subset\u003e": {
+            "Name": "\u003cExclude subset\u003e",
+            "kind": "argument",
+            "description": "Exclude subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cExclude subset\u003e": {
+            "Name": "\u003cExclude subset\u003e",
+            "kind": "argument",
+            "description": "Exclude subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cExclude subset\u003e"
+        ]
+      },
+      "--fail-fast": {
+        "Name": "--fail-fast",
+        "kind": "option",
+        "description": "Exit immediately if a single model fails to build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--profile": {
+        "Name": "--profile",
+        "kind": "option",
+        "description": "Select the profile to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cProfile name\u003e": {
+            "Name": "\u003cProfile name\u003e",
+            "kind": "argument",
+            "description": "Profile name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cProfile name\u003e": {
+            "Name": "\u003cProfile name\u003e",
+            "kind": "argument",
+            "description": "Profile name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cProfile name\u003e"
+        ]
+      },
+      "--profiles-dir": {
+        "Name": "--profiles-dir",
+        "kind": "option",
+        "description": "Set the profiles directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprofiles directory\u003e": {
+            "Name": "\u003cprofiles directory\u003e",
+            "kind": "argument",
+            "description": "profiles directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprofiles directory\u003e": {
+            "Name": "\u003cprofiles directory\u003e",
+            "kind": "argument",
+            "description": "profiles directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprofiles directory\u003e"
+        ]
+      },
+      "--select": {
+        "Name": "--select",
+        "kind": "option",
+        "description": "Run specific seeds",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSelect subset\u003e": {
+            "Name": "\u003cSelect subset\u003e",
+            "kind": "argument",
+            "description": "Select subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSelect subset\u003e": {
+            "Name": "\u003cSelect subset\u003e",
+            "kind": "argument",
+            "description": "Select subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSelect subset\u003e"
+        ]
+      },
+      "--selector": {
+        "Name": "--selector",
+        "kind": "option",
+        "description": "This flag specifies one or more named selectors, defined in a \u003cselector name\u003e.yml file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cYAML selector file name\u003e": {
+            "Name": "\u003cYAML selector file name\u003e",
+            "kind": "argument",
+            "description": "YAML selector file name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cYAML selector file name\u003e": {
+            "Name": "\u003cYAML selector file name\u003e",
+            "kind": "argument",
+            "description": "YAML selector file name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cYAML selector file name\u003e"
+        ]
+      },
+      "-x": {
+        "Name": "-x",
+        "kind": "option",
+        "description": "Exit immediately if a single model fails to build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "snapshot": {
+    "Name": "snapshot",
+    "kind": "subcommand",
+    "description": "Executes 'snapshot' jobs defined in a project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--bypass-cache": {
+        "Name": "--bypass-cache",
+        "kind": "option",
+        "description": "Bypass the cache",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude subset of models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cExclude subset\u003e": {
+            "Name": "\u003cExclude subset\u003e",
+            "kind": "argument",
+            "description": "Exclude subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cExclude subset\u003e": {
+            "Name": "\u003cExclude subset\u003e",
+            "kind": "argument",
+            "description": "Exclude subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cExclude subset\u003e"
+        ]
+      },
+      "--fail-fast": {
+        "Name": "--fail-fast",
+        "kind": "option",
+        "description": "Exit immediately if a single model fails to build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--profile": {
+        "Name": "--profile",
+        "kind": "option",
+        "description": "Select the profile to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cProfile name\u003e": {
+            "Name": "\u003cProfile name\u003e",
+            "kind": "argument",
+            "description": "Profile name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cProfile name\u003e": {
+            "Name": "\u003cProfile name\u003e",
+            "kind": "argument",
+            "description": "Profile name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cProfile name\u003e"
+        ]
+      },
+      "--profiles-dir": {
+        "Name": "--profiles-dir",
+        "kind": "option",
+        "description": "Set the profiles directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprofiles directory\u003e": {
+            "Name": "\u003cprofiles directory\u003e",
+            "kind": "argument",
+            "description": "profiles directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprofiles directory\u003e": {
+            "Name": "\u003cprofiles directory\u003e",
+            "kind": "argument",
+            "description": "profiles directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprofiles directory\u003e"
+        ]
+      },
+      "--select": {
+        "Name": "--select",
+        "kind": "option",
+        "description": "Select subset of models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csubset\u003e"
+        ]
+      },
+      "--target": {
+        "Name": "--target",
+        "kind": "option",
+        "description": "The target profile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTarget profile\u003e": {
+            "Name": "\u003cTarget profile\u003e",
+            "kind": "argument",
+            "description": "Target profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTarget profile\u003e": {
+            "Name": "\u003cTarget profile\u003e",
+            "kind": "argument",
+            "description": "Target profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTarget profile\u003e"
+        ]
+      },
+      "--threads": {
+        "Name": "--threads",
+        "kind": "option",
+        "description": "Number of concurrent database jobs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cthread\u003e": {
+            "Name": "\u003cthread\u003e",
+            "kind": "argument",
+            "description": "thread",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cthread\u003e": {
+            "Name": "\u003cthread\u003e",
+            "kind": "argument",
+            "description": "thread",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cthread\u003e"
+        ]
+      },
+      "--vars": {
+        "Name": "--vars",
+        "kind": "option",
+        "description": "Variable values to override dbt_project.yml",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cVariable values\u003e": {
+            "Name": "\u003cVariable values\u003e",
+            "kind": "argument",
+            "description": "Variable values",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cVariable values\u003e": {
+            "Name": "\u003cVariable values\u003e",
+            "kind": "argument",
+            "description": "Variable values",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cVariable values\u003e"
+        ]
+      },
+      "-x": {
+        "Name": "-x",
+        "kind": "option",
+        "description": "Exit immediately if a single model fails to build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--bypass-cache": {
+        "Name": "--bypass-cache",
+        "kind": "option",
+        "description": "Bypass the cache",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude subset of models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cExclude subset\u003e": {
+            "Name": "\u003cExclude subset\u003e",
+            "kind": "argument",
+            "description": "Exclude subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cExclude subset\u003e": {
+            "Name": "\u003cExclude subset\u003e",
+            "kind": "argument",
+            "description": "Exclude subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cExclude subset\u003e"
+        ]
+      },
+      "--fail-fast": {
+        "Name": "--fail-fast",
+        "kind": "option",
+        "description": "Exit immediately if a single model fails to build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--profile": {
+        "Name": "--profile",
+        "kind": "option",
+        "description": "Select the profile to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cProfile name\u003e": {
+            "Name": "\u003cProfile name\u003e",
+            "kind": "argument",
+            "description": "Profile name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cProfile name\u003e": {
+            "Name": "\u003cProfile name\u003e",
+            "kind": "argument",
+            "description": "Profile name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cProfile name\u003e"
+        ]
+      },
+      "--profiles-dir": {
+        "Name": "--profiles-dir",
+        "kind": "option",
+        "description": "Set the profiles directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprofiles directory\u003e": {
+            "Name": "\u003cprofiles directory\u003e",
+            "kind": "argument",
+            "description": "profiles directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprofiles directory\u003e": {
+            "Name": "\u003cprofiles directory\u003e",
+            "kind": "argument",
+            "description": "profiles directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprofiles directory\u003e"
+        ]
+      },
+      "--select": {
+        "Name": "--select",
+        "kind": "option",
+        "description": "Select subset of models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csubset\u003e"
+        ]
+      },
+      "--target": {
+        "Name": "--target",
+        "kind": "option",
+        "description": "The target profile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTarget profile\u003e": {
+            "Name": "\u003cTarget profile\u003e",
+            "kind": "argument",
+            "description": "Target profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTarget profile\u003e": {
+            "Name": "\u003cTarget profile\u003e",
+            "kind": "argument",
+            "description": "Target profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTarget profile\u003e"
+        ]
+      },
+      "--threads": {
+        "Name": "--threads",
+        "kind": "option",
+        "description": "Number of concurrent database jobs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cthread\u003e": {
+            "Name": "\u003cthread\u003e",
+            "kind": "argument",
+            "description": "thread",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cthread\u003e": {
+            "Name": "\u003cthread\u003e",
+            "kind": "argument",
+            "description": "thread",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cthread\u003e"
+        ]
+      },
+      "--vars": {
+        "Name": "--vars",
+        "kind": "option",
+        "description": "Variable values to override dbt_project.yml",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cVariable values\u003e": {
+            "Name": "\u003cVariable values\u003e",
+            "kind": "argument",
+            "description": "Variable values",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cVariable values\u003e": {
+            "Name": "\u003cVariable values\u003e",
+            "kind": "argument",
+            "description": "Variable values",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cVariable values\u003e"
+        ]
+      },
+      "-x": {
+        "Name": "-x",
+        "kind": "option",
+        "description": "Exit immediately if a single model fails to build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "source": {
+    "Name": "source",
+    "kind": "subcommand",
+    "description": "Provides tools for working with source data (including validating that sources are 'fresh')",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "snapshot-freshness": {
+        "Name": "snapshot-freshness",
+        "kind": "subcommand",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--output": {
+            "Name": "--output",
+            "kind": "option",
+            "description": "Override the destination for sources.json",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cFILEPATH\u003e": {
+                "Name": "\u003cFILEPATH\u003e",
+                "kind": "argument",
+                "description": "FILEPATH",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cFILEPATH\u003e": {
+                "Name": "\u003cFILEPATH\u003e",
+                "kind": "argument",
+                "description": "FILEPATH",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cFILEPATH\u003e"
+            ]
+          },
+          "--select": {
+            "Name": "--select",
+            "kind": "option",
+            "description": "This flag specifies one or more selection-type arguments used to filter the nodes returned by the dbt ls command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cSelect subset\u003e": {
+                "Name": "\u003cSelect subset\u003e",
+                "kind": "argument",
+                "description": "Select subset",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cSelect subset\u003e": {
+                "Name": "\u003cSelect subset\u003e",
+                "kind": "argument",
+                "description": "Select subset",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cSelect subset\u003e"
+            ]
+          },
+          "-o": {
+            "Name": "-o",
+            "kind": "option",
+            "description": "Override the destination for sources.json",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cFILEPATH\u003e": {
+                "Name": "\u003cFILEPATH\u003e",
+                "kind": "argument",
+                "description": "FILEPATH",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cFILEPATH\u003e": {
+                "Name": "\u003cFILEPATH\u003e",
+                "kind": "argument",
+                "description": "FILEPATH",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cFILEPATH\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--output": {
+            "Name": "--output",
+            "kind": "option",
+            "description": "Override the destination for sources.json",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cFILEPATH\u003e": {
+                "Name": "\u003cFILEPATH\u003e",
+                "kind": "argument",
+                "description": "FILEPATH",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cFILEPATH\u003e": {
+                "Name": "\u003cFILEPATH\u003e",
+                "kind": "argument",
+                "description": "FILEPATH",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cFILEPATH\u003e"
+            ]
+          },
+          "--select": {
+            "Name": "--select",
+            "kind": "option",
+            "description": "This flag specifies one or more selection-type arguments used to filter the nodes returned by the dbt ls command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cSelect subset\u003e": {
+                "Name": "\u003cSelect subset\u003e",
+                "kind": "argument",
+                "description": "Select subset",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cSelect subset\u003e": {
+                "Name": "\u003cSelect subset\u003e",
+                "kind": "argument",
+                "description": "Select subset",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cSelect subset\u003e"
+            ]
+          },
+          "-o": {
+            "Name": "-o",
+            "kind": "option",
+            "description": "Override the destination for sources.json",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cFILEPATH\u003e": {
+                "Name": "\u003cFILEPATH\u003e",
+                "kind": "argument",
+                "description": "FILEPATH",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cFILEPATH\u003e": {
+                "Name": "\u003cFILEPATH\u003e",
+                "kind": "argument",
+                "description": "FILEPATH",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cFILEPATH\u003e"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "test": {
+    "Name": "test",
+    "kind": "subcommand",
+    "description": "Executes tests defined in a project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--bypass-cache": {
+        "Name": "--bypass-cache",
+        "kind": "option",
+        "description": "Bypass the cache",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--data": {
+        "Name": "--data",
+        "kind": "option",
+        "description": "Run only custom data tests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--defer": {
+        "Name": "--defer",
+        "kind": "option",
+        "description": "Defer",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude subset of models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csubset\u003e"
+        ]
+      },
+      "--fail-fast": {
+        "Name": "--fail-fast",
+        "kind": "option",
+        "description": "Exit immediately if a single model fails to build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--profile": {
+        "Name": "--profile",
+        "kind": "option",
+        "description": "Select the profile to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "--profiles-dir": {
+        "Name": "--profiles-dir",
+        "kind": "option",
+        "description": "Set the profiles directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdirectory\u003e"
+        ]
+      },
+      "--schema": {
+        "Name": "--schema",
+        "kind": "option",
+        "description": "Run only schema tests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--select": {
+        "Name": "--select",
+        "kind": "option",
+        "description": "Select subset of models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csubset\u003e"
+        ]
+      },
+      "--selector": {
+        "Name": "--selector",
+        "kind": "option",
+        "description": "This flag specifies one or more named selectors, defined in a \u003cselector name\u003e.yml file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cYAML selector file name\u003e": {
+            "Name": "\u003cYAML selector file name\u003e",
+            "kind": "argument",
+            "description": "YAML selector file name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cYAML selector file name\u003e": {
+            "Name": "\u003cYAML selector file name\u003e",
+            "kind": "argument",
+            "description": "YAML selector file name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cYAML selector file name\u003e"
+        ]
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Select subset of models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csubset\u003e"
+        ]
+      },
+      "-x": {
+        "Name": "-x",
+        "kind": "option",
+        "description": "Exit immediately if a single model fails to build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--bypass-cache": {
+        "Name": "--bypass-cache",
+        "kind": "option",
+        "description": "Bypass the cache",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--data": {
+        "Name": "--data",
+        "kind": "option",
+        "description": "Run only custom data tests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--defer": {
+        "Name": "--defer",
+        "kind": "option",
+        "description": "Defer",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude subset of models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csubset\u003e"
+        ]
+      },
+      "--fail-fast": {
+        "Name": "--fail-fast",
+        "kind": "option",
+        "description": "Exit immediately if a single model fails to build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--profile": {
+        "Name": "--profile",
+        "kind": "option",
+        "description": "Select the profile to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "--profiles-dir": {
+        "Name": "--profiles-dir",
+        "kind": "option",
+        "description": "Set the profiles directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdirectory\u003e"
+        ]
+      },
+      "--schema": {
+        "Name": "--schema",
+        "kind": "option",
+        "description": "Run only schema tests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--select": {
+        "Name": "--select",
+        "kind": "option",
+        "description": "Select subset of models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csubset\u003e"
+        ]
+      },
+      "--selector": {
+        "Name": "--selector",
+        "kind": "option",
+        "description": "This flag specifies one or more named selectors, defined in a \u003cselector name\u003e.yml file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cYAML selector file name\u003e": {
+            "Name": "\u003cYAML selector file name\u003e",
+            "kind": "argument",
+            "description": "YAML selector file name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cYAML selector file name\u003e": {
+            "Name": "\u003cYAML selector file name\u003e",
+            "kind": "argument",
+            "description": "YAML selector file name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cYAML selector file name\u003e"
+        ]
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Select subset of models",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csubset\u003e": {
+            "Name": "\u003csubset\u003e",
+            "kind": "argument",
+            "description": "subset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csubset\u003e"
+        ]
+      },
+      "-x": {
+        "Name": "-x",
+        "kind": "option",
+        "description": "Exit immediately if a single model fails to build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  }
+}

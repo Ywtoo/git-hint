@@ -1,0 +1,1033 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Print a help message",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Print the version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "bin": {
+    "Name": "bin",
+    "kind": "subcommand",
+    "description": "Get the path to the turbo binary",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "link": {
+    "Name": "link",
+    "kind": "subcommand",
+    "description": "Link your local directory to a Vercel organization and enable remote caching",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--no-gitignore": {
+        "Name": "--no-gitignore",
+        "kind": "option",
+        "description": "Do not create or modify .gitignore",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--no-gitignore": {
+        "Name": "--no-gitignore",
+        "kind": "option",
+        "description": "Do not create or modify .gitignore",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "login": {
+    "Name": "login",
+    "kind": "subcommand",
+    "description": "Login to your Vercel account",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--sso-team": {
+        "Name": "--sso-team",
+        "kind": "option",
+        "description": "Attempt to authenticate to the specified team using SSO",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--sso-team": {
+        "Name": "--sso-team",
+        "kind": "option",
+        "description": "Attempt to authenticate to the specified team using SSO",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "logout": {
+    "Name": "logout",
+    "kind": "subcommand",
+    "description": "Logout of your Vercel account",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "prune": {
+    "Name": "prune",
+    "kind": "subcommand",
+    "description": "Prepare a subset of your monorepo",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--docker": {
+        "Name": "--docker",
+        "kind": "option",
+        "description": "Output pruned workspace into 'fill' and 'json' directories optimized for Docker layer caching",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--scope": {
+        "Name": "--scope",
+        "kind": "option",
+        "description": "Specify package to act as entry point for pruned monorepo",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpackage\u003e": {
+            "Name": "\u003cpackage\u003e",
+            "kind": "argument",
+            "description": "package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpackage\u003e": {
+            "Name": "\u003cpackage\u003e",
+            "kind": "argument",
+            "description": "package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpackage\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--docker": {
+        "Name": "--docker",
+        "kind": "option",
+        "description": "Output pruned workspace into 'fill' and 'json' directories optimized for Docker layer caching",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--scope": {
+        "Name": "--scope",
+        "kind": "option",
+        "description": "Specify package to act as entry point for pruned monorepo",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpackage\u003e": {
+            "Name": "\u003cpackage\u003e",
+            "kind": "argument",
+            "description": "package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpackage\u003e": {
+            "Name": "\u003cpackage\u003e",
+            "kind": "argument",
+            "description": "package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpackage\u003e"
+        ]
+      }
+    }
+  },
+  "run": {
+    "Name": "run",
+    "kind": "subcommand",
+    "description": "Run tasks in your monorepo",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--cache-dir": {
+        "Name": "--cache-dir",
+        "kind": "option",
+        "description": "Specify local filesystem cache directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdir\u003e": {
+            "Name": "\u003cdir\u003e",
+            "kind": "argument",
+            "description": "dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdir\u003e": {
+            "Name": "\u003cdir\u003e",
+            "kind": "argument",
+            "description": "dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdir\u003e"
+        ]
+      },
+      "--concurrency": {
+        "Name": "--concurrency",
+        "kind": "option",
+        "description": "Limit the concurrency of task execution (use `1` for serial)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003climit\u003e": {
+            "Name": "\u003climit\u003e",
+            "kind": "argument",
+            "description": "limit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003climit\u003e": {
+            "Name": "\u003climit\u003e",
+            "kind": "argument",
+            "description": "limit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003climit\u003e"
+        ]
+      },
+      "--continue": {
+        "Name": "--continue",
+        "kind": "option",
+        "description": "Continue execution even if a task exits with an error",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dry": {
+        "Name": "--dry",
+        "kind": "option",
+        "description": "List the packages in scope and the tasks that would be run",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--dry-run": {
+        "Name": "--dry-run",
+        "kind": "option",
+        "description": "List the packages in scope and the tasks that would be run",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Ignore the existing cache",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--global-deps": {
+        "Name": "--global-deps",
+        "kind": "option",
+        "description": "Specify glob of global filesystem dependencies to be hashed (useful for .env and files in the root directory)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cglob\u003e": {
+            "Name": "\u003cglob\u003e",
+            "kind": "argument",
+            "description": "glob",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cglob\u003e": {
+            "Name": "\u003cglob\u003e",
+            "kind": "argument",
+            "description": "glob",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cglob\u003e"
+        ]
+      },
+      "--graph": {
+        "Name": "--graph",
+        "kind": "option",
+        "description": "Generate a Dot graph of the task execution",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ignore": {
+        "Name": "--ignore",
+        "kind": "option",
+        "description": "Files to ignore when calculating changed files (supports globs)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfiles\u003e": {
+            "Name": "\u003cfiles\u003e",
+            "kind": "argument",
+            "description": "files",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfiles\u003e": {
+            "Name": "\u003cfiles\u003e",
+            "kind": "argument",
+            "description": "files",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfiles\u003e"
+        ]
+      },
+      "--include-dependencies": {
+        "Name": "--include-dependencies",
+        "kind": "option",
+        "description": "Include the dependencies of tasks in execution",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-cache": {
+        "Name": "--no-cache",
+        "kind": "option",
+        "description": "Avoid saving task results to the cache (useful for development/watch tasks)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-deps": {
+        "Name": "--no-deps",
+        "kind": "option",
+        "description": "Exclude dependent task consumers from execution",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output-logs": {
+        "Name": "--output-logs",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003clevel\u003e": {
+            "Name": "\u003clevel\u003e",
+            "kind": "argument",
+            "description": "level",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003clevel\u003e": {
+            "Name": "\u003clevel\u003e",
+            "kind": "argument",
+            "description": "level",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003clevel\u003e"
+        ]
+      },
+      "--parallel": {
+        "Name": "--parallel",
+        "kind": "option",
+        "description": "Execute all tasks in parallel",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--profile": {
+        "Name": "--profile",
+        "kind": "option",
+        "description": "File to write turbo's performance profile into",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "--scope": {
+        "Name": "--scope",
+        "kind": "option",
+        "description": "Specify packages to act as entry points for task execution",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpackage\u003e": {
+            "Name": "\u003cpackage\u003e",
+            "kind": "argument",
+            "description": "package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpackage\u003e": {
+            "Name": "\u003cpackage\u003e",
+            "kind": "argument",
+            "description": "package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpackage\u003e"
+        ]
+      },
+      "--since": {
+        "Name": "--since",
+        "kind": "option",
+        "description": "Limit/set scope to changed packages since a mergebase",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbranch\u003e": {
+            "Name": "\u003cbranch\u003e",
+            "kind": "argument",
+            "description": "branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cbranch\u003e": {
+            "Name": "\u003cbranch\u003e",
+            "kind": "argument",
+            "description": "branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cbranch\u003e"
+        ]
+      },
+      "--team": {
+        "Name": "--team",
+        "kind": "option",
+        "description": "The slug of a turborepo.com team",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cslug\u003e": {
+            "Name": "\u003cslug\u003e",
+            "kind": "argument",
+            "description": "slug",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cslug\u003e": {
+            "Name": "\u003cslug\u003e",
+            "kind": "argument",
+            "description": "slug",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cslug\u003e"
+        ]
+      },
+      "--token": {
+        "Name": "--token",
+        "kind": "option",
+        "description": "A turborepo.com access token",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctoken\u003e"
+        ]
+      },
+      "\u003ctasks\u003e": {
+        "Name": "\u003ctasks\u003e",
+        "kind": "argument",
+        "description": "tasks",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--cache-dir": {
+        "Name": "--cache-dir",
+        "kind": "option",
+        "description": "Specify local filesystem cache directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdir\u003e": {
+            "Name": "\u003cdir\u003e",
+            "kind": "argument",
+            "description": "dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdir\u003e": {
+            "Name": "\u003cdir\u003e",
+            "kind": "argument",
+            "description": "dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdir\u003e"
+        ]
+      },
+      "--concurrency": {
+        "Name": "--concurrency",
+        "kind": "option",
+        "description": "Limit the concurrency of task execution (use `1` for serial)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003climit\u003e": {
+            "Name": "\u003climit\u003e",
+            "kind": "argument",
+            "description": "limit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003climit\u003e": {
+            "Name": "\u003climit\u003e",
+            "kind": "argument",
+            "description": "limit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003climit\u003e"
+        ]
+      },
+      "--continue": {
+        "Name": "--continue",
+        "kind": "option",
+        "description": "Continue execution even if a task exits with an error",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dry": {
+        "Name": "--dry",
+        "kind": "option",
+        "description": "List the packages in scope and the tasks that would be run",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--dry-run": {
+        "Name": "--dry-run",
+        "kind": "option",
+        "description": "List the packages in scope and the tasks that would be run",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Ignore the existing cache",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--global-deps": {
+        "Name": "--global-deps",
+        "kind": "option",
+        "description": "Specify glob of global filesystem dependencies to be hashed (useful for .env and files in the root directory)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cglob\u003e": {
+            "Name": "\u003cglob\u003e",
+            "kind": "argument",
+            "description": "glob",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cglob\u003e": {
+            "Name": "\u003cglob\u003e",
+            "kind": "argument",
+            "description": "glob",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cglob\u003e"
+        ]
+      },
+      "--graph": {
+        "Name": "--graph",
+        "kind": "option",
+        "description": "Generate a Dot graph of the task execution",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ignore": {
+        "Name": "--ignore",
+        "kind": "option",
+        "description": "Files to ignore when calculating changed files (supports globs)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfiles\u003e": {
+            "Name": "\u003cfiles\u003e",
+            "kind": "argument",
+            "description": "files",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfiles\u003e": {
+            "Name": "\u003cfiles\u003e",
+            "kind": "argument",
+            "description": "files",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfiles\u003e"
+        ]
+      },
+      "--include-dependencies": {
+        "Name": "--include-dependencies",
+        "kind": "option",
+        "description": "Include the dependencies of tasks in execution",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-cache": {
+        "Name": "--no-cache",
+        "kind": "option",
+        "description": "Avoid saving task results to the cache (useful for development/watch tasks)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-deps": {
+        "Name": "--no-deps",
+        "kind": "option",
+        "description": "Exclude dependent task consumers from execution",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output-logs": {
+        "Name": "--output-logs",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003clevel\u003e": {
+            "Name": "\u003clevel\u003e",
+            "kind": "argument",
+            "description": "level",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003clevel\u003e": {
+            "Name": "\u003clevel\u003e",
+            "kind": "argument",
+            "description": "level",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003clevel\u003e"
+        ]
+      },
+      "--parallel": {
+        "Name": "--parallel",
+        "kind": "option",
+        "description": "Execute all tasks in parallel",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--profile": {
+        "Name": "--profile",
+        "kind": "option",
+        "description": "File to write turbo's performance profile into",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "--scope": {
+        "Name": "--scope",
+        "kind": "option",
+        "description": "Specify packages to act as entry points for task execution",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpackage\u003e": {
+            "Name": "\u003cpackage\u003e",
+            "kind": "argument",
+            "description": "package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpackage\u003e": {
+            "Name": "\u003cpackage\u003e",
+            "kind": "argument",
+            "description": "package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpackage\u003e"
+        ]
+      },
+      "--since": {
+        "Name": "--since",
+        "kind": "option",
+        "description": "Limit/set scope to changed packages since a mergebase",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbranch\u003e": {
+            "Name": "\u003cbranch\u003e",
+            "kind": "argument",
+            "description": "branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cbranch\u003e": {
+            "Name": "\u003cbranch\u003e",
+            "kind": "argument",
+            "description": "branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cbranch\u003e"
+        ]
+      },
+      "--team": {
+        "Name": "--team",
+        "kind": "option",
+        "description": "The slug of a turborepo.com team",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cslug\u003e": {
+            "Name": "\u003cslug\u003e",
+            "kind": "argument",
+            "description": "slug",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cslug\u003e": {
+            "Name": "\u003cslug\u003e",
+            "kind": "argument",
+            "description": "slug",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cslug\u003e"
+        ]
+      },
+      "--token": {
+        "Name": "--token",
+        "kind": "option",
+        "description": "A turborepo.com access token",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctoken\u003e"
+        ]
+      },
+      "\u003ctasks\u003e": {
+        "Name": "\u003ctasks\u003e",
+        "kind": "argument",
+        "description": "tasks",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctasks\u003e"
+    ]
+  },
+  "unlink": {
+    "Name": "unlink",
+    "kind": "subcommand",
+    "description": "Unlink the current directory from your Vercel organization and disable remote caching",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

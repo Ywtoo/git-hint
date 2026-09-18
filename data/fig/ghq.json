@@ -1,0 +1,736 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Print the version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Print the version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "create": {
+    "Name": "create",
+    "kind": "subcommand",
+    "description": "Create a new repository",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--vcs": {
+        "Name": "--vcs",
+        "kind": "option",
+        "description": "Specify vcs backend explicitly",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cvcs\u003e": {
+            "Name": "\u003cvcs\u003e",
+            "kind": "argument",
+            "description": "vcs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cvcs\u003e": {
+            "Name": "\u003cvcs\u003e",
+            "kind": "argument",
+            "description": "vcs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cvcs\u003e"
+        ]
+      },
+      "\u003cproject\u003e|\u003cuser\u003e/\u003cproject\u003e|\u003chost\u003e/\u003cuser\u003e/\u003cproject\u003e": {
+        "Name": "\u003cproject\u003e|\u003cuser\u003e/\u003cproject\u003e|\u003chost\u003e/\u003cuser\u003e/\u003cproject\u003e",
+        "kind": "argument",
+        "description": "\u003cproject\u003e|\u003cuser\u003e/\u003cproject\u003e|\u003chost\u003e/\u003cuser\u003e/\u003cproject\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--vcs": {
+        "Name": "--vcs",
+        "kind": "option",
+        "description": "Specify vcs backend explicitly",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cvcs\u003e": {
+            "Name": "\u003cvcs\u003e",
+            "kind": "argument",
+            "description": "vcs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cvcs\u003e": {
+            "Name": "\u003cvcs\u003e",
+            "kind": "argument",
+            "description": "vcs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cvcs\u003e"
+        ]
+      },
+      "\u003cproject\u003e|\u003cuser\u003e/\u003cproject\u003e|\u003chost\u003e/\u003cuser\u003e/\u003cproject\u003e": {
+        "Name": "\u003cproject\u003e|\u003cuser\u003e/\u003cproject\u003e|\u003chost\u003e/\u003cuser\u003e/\u003cproject\u003e",
+        "kind": "argument",
+        "description": "\u003cproject\u003e|\u003cuser\u003e/\u003cproject\u003e|\u003chost\u003e/\u003cuser\u003e/\u003cproject\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cproject\u003e|\u003cuser\u003e/\u003cproject\u003e|\u003chost\u003e/\u003cuser\u003e/\u003cproject\u003e"
+    ]
+  },
+  "get": {
+    "Name": "get",
+    "kind": "subcommand",
+    "description": "Clone/sync with a remote repository",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--bare": {
+        "Name": "--bare",
+        "kind": "option",
+        "description": "Do a bare clone (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--branch": {
+        "Name": "--branch",
+        "kind": "option",
+        "description": "Specify branch name. This flag implies --single-branch on Git",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbranch\u003e": {
+            "Name": "\u003cbranch\u003e",
+            "kind": "argument",
+            "description": "branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cbranch\u003e": {
+            "Name": "\u003cbranch\u003e",
+            "kind": "argument",
+            "description": "branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cbranch\u003e"
+        ]
+      },
+      "--look": {
+        "Name": "--look",
+        "kind": "option",
+        "description": "Look after get (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-recursive": {
+        "Name": "--no-recursive",
+        "kind": "option",
+        "description": "Prevent recursive fetching (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--parallel": {
+        "Name": "--parallel",
+        "kind": "option",
+        "description": "Import parallelly (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--shallow": {
+        "Name": "--shallow",
+        "kind": "option",
+        "description": "Do a shallow clone (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--silent": {
+        "Name": "--silent",
+        "kind": "option",
+        "description": "Clone or update silently (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--update": {
+        "Name": "--update",
+        "kind": "option",
+        "description": "Update local repository if cloned already (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--vcs": {
+        "Name": "--vcs",
+        "kind": "option",
+        "description": "Specify vcs backend for cloning",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cvcs\u003e": {
+            "Name": "\u003cvcs\u003e",
+            "kind": "argument",
+            "description": "vcs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cvcs\u003e": {
+            "Name": "\u003cvcs\u003e",
+            "kind": "argument",
+            "description": "vcs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cvcs\u003e"
+        ]
+      },
+      "-P": {
+        "Name": "-P",
+        "kind": "option",
+        "description": "Import parallelly (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-b": {
+        "Name": "-b",
+        "kind": "option",
+        "description": "Specify branch name. This flag implies --single-branch on Git",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbranch\u003e": {
+            "Name": "\u003cbranch\u003e",
+            "kind": "argument",
+            "description": "branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cbranch\u003e": {
+            "Name": "\u003cbranch\u003e",
+            "kind": "argument",
+            "description": "branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cbranch\u003e"
+        ]
+      },
+      "-l": {
+        "Name": "-l",
+        "kind": "option",
+        "description": "Look after get (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Clone with SSH (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Clone or update silently (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-u": {
+        "Name": "-u",
+        "kind": "option",
+        "description": "Update local repository if cloned already (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003crepository URL\u003e|\u003cproject\u003e|\u003cuser\u003e/\u003cproject\u003e|\u003chost\u003e/\u003cuser\u003e/\u003cproject\u003e": {
+        "Name": "\u003crepository URL\u003e|\u003cproject\u003e|\u003cuser\u003e/\u003cproject\u003e|\u003chost\u003e/\u003cuser\u003e/\u003cproject\u003e",
+        "kind": "argument",
+        "description": "\u003crepository URL\u003e|\u003cproject\u003e|\u003cuser\u003e/\u003cproject\u003e|\u003chost\u003e/\u003cuser\u003e/\u003cproject\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--bare": {
+        "Name": "--bare",
+        "kind": "option",
+        "description": "Do a bare clone (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--branch": {
+        "Name": "--branch",
+        "kind": "option",
+        "description": "Specify branch name. This flag implies --single-branch on Git",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbranch\u003e": {
+            "Name": "\u003cbranch\u003e",
+            "kind": "argument",
+            "description": "branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cbranch\u003e": {
+            "Name": "\u003cbranch\u003e",
+            "kind": "argument",
+            "description": "branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cbranch\u003e"
+        ]
+      },
+      "--look": {
+        "Name": "--look",
+        "kind": "option",
+        "description": "Look after get (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-recursive": {
+        "Name": "--no-recursive",
+        "kind": "option",
+        "description": "Prevent recursive fetching (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--parallel": {
+        "Name": "--parallel",
+        "kind": "option",
+        "description": "Import parallelly (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--shallow": {
+        "Name": "--shallow",
+        "kind": "option",
+        "description": "Do a shallow clone (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--silent": {
+        "Name": "--silent",
+        "kind": "option",
+        "description": "Clone or update silently (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--update": {
+        "Name": "--update",
+        "kind": "option",
+        "description": "Update local repository if cloned already (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--vcs": {
+        "Name": "--vcs",
+        "kind": "option",
+        "description": "Specify vcs backend for cloning",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cvcs\u003e": {
+            "Name": "\u003cvcs\u003e",
+            "kind": "argument",
+            "description": "vcs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cvcs\u003e": {
+            "Name": "\u003cvcs\u003e",
+            "kind": "argument",
+            "description": "vcs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cvcs\u003e"
+        ]
+      },
+      "-P": {
+        "Name": "-P",
+        "kind": "option",
+        "description": "Import parallelly (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-b": {
+        "Name": "-b",
+        "kind": "option",
+        "description": "Specify branch name. This flag implies --single-branch on Git",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbranch\u003e": {
+            "Name": "\u003cbranch\u003e",
+            "kind": "argument",
+            "description": "branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cbranch\u003e": {
+            "Name": "\u003cbranch\u003e",
+            "kind": "argument",
+            "description": "branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cbranch\u003e"
+        ]
+      },
+      "-l": {
+        "Name": "-l",
+        "kind": "option",
+        "description": "Look after get (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Clone with SSH (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Clone or update silently (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-u": {
+        "Name": "-u",
+        "kind": "option",
+        "description": "Update local repository if cloned already (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003crepository URL\u003e|\u003cproject\u003e|\u003cuser\u003e/\u003cproject\u003e|\u003chost\u003e/\u003cuser\u003e/\u003cproject\u003e": {
+        "Name": "\u003crepository URL\u003e|\u003cproject\u003e|\u003cuser\u003e/\u003cproject\u003e|\u003chost\u003e/\u003cuser\u003e/\u003cproject\u003e",
+        "kind": "argument",
+        "description": "\u003crepository URL\u003e|\u003cproject\u003e|\u003cuser\u003e/\u003cproject\u003e|\u003chost\u003e/\u003cuser\u003e/\u003cproject\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003crepository URL\u003e|\u003cproject\u003e|\u003cuser\u003e/\u003cproject\u003e|\u003chost\u003e/\u003cuser\u003e/\u003cproject\u003e"
+    ]
+  },
+  "h": {
+    "Name": "h",
+    "kind": "option",
+    "description": "Show help",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "help": {
+    "Name": "help",
+    "kind": "option",
+    "description": "Show help",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "list": {
+    "Name": "list",
+    "kind": "subcommand",
+    "description": "List local repositories",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--exact": {
+        "Name": "--exact",
+        "kind": "option",
+        "description": "Perform an exact match (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--full-path": {
+        "Name": "--full-path",
+        "kind": "option",
+        "description": "Print full paths (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--unique": {
+        "Name": "--unique",
+        "kind": "option",
+        "description": "Print unique subpaths (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--vcs": {
+        "Name": "--vcs",
+        "kind": "option",
+        "description": "Specify vcs backend for matching",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cvcs\u003e": {
+            "Name": "\u003cvcs\u003e",
+            "kind": "argument",
+            "description": "vcs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cvcs\u003e": {
+            "Name": "\u003cvcs\u003e",
+            "kind": "argument",
+            "description": "vcs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cvcs\u003e"
+        ]
+      },
+      "-e": {
+        "Name": "-e",
+        "kind": "option",
+        "description": "Perform an exact match (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Print full paths (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cquery\u003e": {
+        "Name": "\u003cquery\u003e",
+        "kind": "argument",
+        "description": "query",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--exact": {
+        "Name": "--exact",
+        "kind": "option",
+        "description": "Perform an exact match (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--full-path": {
+        "Name": "--full-path",
+        "kind": "option",
+        "description": "Print full paths (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--unique": {
+        "Name": "--unique",
+        "kind": "option",
+        "description": "Print unique subpaths (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--vcs": {
+        "Name": "--vcs",
+        "kind": "option",
+        "description": "Specify vcs backend for matching",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cvcs\u003e": {
+            "Name": "\u003cvcs\u003e",
+            "kind": "argument",
+            "description": "vcs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cvcs\u003e": {
+            "Name": "\u003cvcs\u003e",
+            "kind": "argument",
+            "description": "vcs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cvcs\u003e"
+        ]
+      },
+      "-e": {
+        "Name": "-e",
+        "kind": "option",
+        "description": "Perform an exact match (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Print full paths (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cquery\u003e": {
+        "Name": "\u003cquery\u003e",
+        "kind": "argument",
+        "description": "query",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "root": {
+    "Name": "root",
+    "kind": "subcommand",
+    "description": "Show repositories' root",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "Show all roots (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "Show all roots (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  }
+}

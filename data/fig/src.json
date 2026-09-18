@@ -1,0 +1,832 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for src",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help for src",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "api": {
+    "Name": "api",
+    "kind": "subcommand",
+    "description": "Sourcegraph API Access",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-dump-requests": {
+        "Name": "-dump-requests",
+        "kind": "option",
+        "description": "Log GraphQL requests and responses to stdout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-get-curl": {
+        "Name": "-get-curl",
+        "kind": "option",
+        "description": "Print the curl command for executing this query and exit (WARNING: includes printing your access token!)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-insecure-skip-verify": {
+        "Name": "-insecure-skip-verify",
+        "kind": "option",
+        "description": "Skip validation of TLS certificates against trusted chains",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-query": {
+        "Name": "-query",
+        "kind": "option",
+        "description": "GraphQL query to execute, e.g. ‘query { currentUser { username } }’ (stdin otherwise)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-trace": {
+        "Name": "-trace",
+        "kind": "option",
+        "description": "Log the trace ID for requests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-user-agent-telemetry": {
+        "Name": "-user-agent-telemetry",
+        "kind": "option",
+        "description": "Include the operating system and architecture in the User-Agent sent with requests to Sourcegraph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-vars": {
+        "Name": "-vars",
+        "kind": "option",
+        "description": "GraphQL query variables to include as JSON string, e.g. ‘{“var”: “val”, “var2”: “val2”}’",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "-dump-requests": {
+        "Name": "-dump-requests",
+        "kind": "option",
+        "description": "Log GraphQL requests and responses to stdout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-get-curl": {
+        "Name": "-get-curl",
+        "kind": "option",
+        "description": "Print the curl command for executing this query and exit (WARNING: includes printing your access token!)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-insecure-skip-verify": {
+        "Name": "-insecure-skip-verify",
+        "kind": "option",
+        "description": "Skip validation of TLS certificates against trusted chains",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-query": {
+        "Name": "-query",
+        "kind": "option",
+        "description": "GraphQL query to execute, e.g. ‘query { currentUser { username } }’ (stdin otherwise)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-trace": {
+        "Name": "-trace",
+        "kind": "option",
+        "description": "Log the trace ID for requests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-user-agent-telemetry": {
+        "Name": "-user-agent-telemetry",
+        "kind": "option",
+        "description": "Include the operating system and architecture in the User-Agent sent with requests to Sourcegraph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-vars": {
+        "Name": "-vars",
+        "kind": "option",
+        "description": "GraphQL query variables to include as JSON string, e.g. ‘{“var”: “val”, “var2”: “val2”}’",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "batch": {
+    "Name": "batch",
+    "kind": "subcommand",
+    "description": "'Batch gives you a declarative structure for finding and modifying code across all of your repositories",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "apply": {
+        "Name": "apply",
+        "kind": "subcommand",
+        "description": "Apply batch",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "exec": {
+        "Name": "exec",
+        "kind": "subcommand",
+        "description": "Execute batch",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "new": {
+        "Name": "new",
+        "kind": "subcommand",
+        "description": "New batch",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "preview": {
+        "Name": "preview",
+        "kind": "subcommand",
+        "description": "Preview batch",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "repositories": {
+        "Name": "repositories",
+        "kind": "subcommand",
+        "description": "Repositories to batch",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "validate": {
+        "Name": "validate",
+        "kind": "subcommand",
+        "description": "Validate batch",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "config": {
+    "Name": "config",
+    "kind": "subcommand",
+    "description": "'src config' helps you configure 'src'",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "edit": {
+        "Name": "edit",
+        "kind": "subcommand",
+        "description": "Edit config",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "get": {
+        "Name": "get",
+        "kind": "subcommand",
+        "description": "Get configs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List configs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "extsvc": {
+    "Name": "extsvc",
+    "kind": "subcommand",
+    "description": "Edit or view external service configuration on the Sourcegraph instance",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "edit": {
+        "Name": "edit",
+        "kind": "subcommand",
+        "description": "Edit external service configuration",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List external service configurations",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "login": {
+    "Name": "login",
+    "kind": "subcommand",
+    "description": "'src login' helps you authenticate 'src' to access a Sourcegraph instance with your user credentials",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-dump-requests": {
+        "Name": "-dump-requests",
+        "kind": "option",
+        "description": "Log GraphQL requests and responses to stdout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-get-curl": {
+        "Name": "-get-curl",
+        "kind": "option",
+        "description": "Print the curl command for executing this query and exit (WARNING: includes printing your access token!)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-insecure-skip-verify": {
+        "Name": "-insecure-skip-verify",
+        "kind": "option",
+        "description": "Skip validation of TLS certificates against trusted chains",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-trace": {
+        "Name": "-trace",
+        "kind": "option",
+        "description": "Log the trace ID for requests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-user-agent-telemetry": {
+        "Name": "-user-agent-telemetry",
+        "kind": "option",
+        "description": "Include the operating system and architecture in the User-Agent sent with requests to Sourcegraph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "-dump-requests": {
+        "Name": "-dump-requests",
+        "kind": "option",
+        "description": "Log GraphQL requests and responses to stdout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-get-curl": {
+        "Name": "-get-curl",
+        "kind": "option",
+        "description": "Print the curl command for executing this query and exit (WARNING: includes printing your access token!)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-insecure-skip-verify": {
+        "Name": "-insecure-skip-verify",
+        "kind": "option",
+        "description": "Skip validation of TLS certificates against trusted chains",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-trace": {
+        "Name": "-trace",
+        "kind": "option",
+        "description": "Log the trace ID for requests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-user-agent-telemetry": {
+        "Name": "-user-agent-telemetry",
+        "kind": "option",
+        "description": "Include the operating system and architecture in the User-Agent sent with requests to Sourcegraph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "lsif": {
+    "Name": "lsif",
+    "kind": "subcommand",
+    "description": "Upload an LSIF dumps",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "upload": {
+        "Name": "upload",
+        "kind": "subcommand",
+        "description": "Upload LSIF dump",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "orgs": {
+    "Name": "orgs",
+    "kind": "subcommand",
+    "description": "Create, edit, view, or delete organizations and members",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "create": {
+        "Name": "create",
+        "kind": "subcommand",
+        "description": "Create an organization",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "delete": {
+        "Name": "delete",
+        "kind": "subcommand",
+        "description": "Delete an organization",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "get": {
+        "Name": "get",
+        "kind": "subcommand",
+        "description": "Get an organization",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List organizations",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "members": {
+        "Name": "members",
+        "kind": "subcommand",
+        "description": "List organization members",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "repos": {
+    "Name": "repos",
+    "kind": "subcommand",
+    "description": "View or delete repositories",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "delete": {
+        "Name": "delete",
+        "kind": "subcommand",
+        "description": "Delete repository",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "get": {
+        "Name": "get",
+        "kind": "subcommand",
+        "description": "Get repository",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List repositories",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "search": {
+    "Name": "search",
+    "kind": "subcommand",
+    "description": "Run a code search",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-display": {
+        "Name": "-display",
+        "kind": "option",
+        "description": "Limit the number of results that are displayed. Only supported together with stream flag. Statistics continue to report all results",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-dump-requests": {
+        "Name": "-dump-requests",
+        "kind": "option",
+        "description": "Log GraphQL requests and responses to stdout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-explain-json": {
+        "Name": "-explain-json",
+        "kind": "option",
+        "description": "Explain the JSON output schema and exit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-get-curl": {
+        "Name": "-get-curl",
+        "kind": "option",
+        "description": "Print the curl command for executing this query and exit. (WARNING: Includes printing your access token!)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-insecure-skip-verify": {
+        "Name": "-insecure-skip-verify",
+        "kind": "option",
+        "description": "Skip validation of TLD certificates against trusted chains",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-json": {
+        "Name": "-json",
+        "kind": "option",
+        "description": "Whether or not to output results as JSON",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-less": {
+        "Name": "-less",
+        "kind": "option",
+        "description": "Pipe output to `less -R` (only if stdout is terminal, and not json flag)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-stream": {
+        "Name": "-stream",
+        "kind": "option",
+        "description": "Consume results as stream. Streaming search only supports a subset of flags and parameters: trace, insecure-skip-verify, display, json",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-trace": {
+        "Name": "-trace",
+        "kind": "option",
+        "description": "Log the trace ID for requests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-user-agent-telemetry": {
+        "Name": "-user-agent-telemetry",
+        "kind": "option",
+        "description": "Include the operating system and architecture in the User-Agent sent with requests to Sourcegraph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "-display": {
+        "Name": "-display",
+        "kind": "option",
+        "description": "Limit the number of results that are displayed. Only supported together with stream flag. Statistics continue to report all results",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-dump-requests": {
+        "Name": "-dump-requests",
+        "kind": "option",
+        "description": "Log GraphQL requests and responses to stdout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-explain-json": {
+        "Name": "-explain-json",
+        "kind": "option",
+        "description": "Explain the JSON output schema and exit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-get-curl": {
+        "Name": "-get-curl",
+        "kind": "option",
+        "description": "Print the curl command for executing this query and exit. (WARNING: Includes printing your access token!)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-insecure-skip-verify": {
+        "Name": "-insecure-skip-verify",
+        "kind": "option",
+        "description": "Skip validation of TLD certificates against trusted chains",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-json": {
+        "Name": "-json",
+        "kind": "option",
+        "description": "Whether or not to output results as JSON",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-less": {
+        "Name": "-less",
+        "kind": "option",
+        "description": "Pipe output to `less -R` (only if stdout is terminal, and not json flag)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-stream": {
+        "Name": "-stream",
+        "kind": "option",
+        "description": "Consume results as stream. Streaming search only supports a subset of flags and parameters: trace, insecure-skip-verify, display, json",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-trace": {
+        "Name": "-trace",
+        "kind": "option",
+        "description": "Log the trace ID for requests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-user-agent-telemetry": {
+        "Name": "-user-agent-telemetry",
+        "kind": "option",
+        "description": "Include the operating system and architecture in the User-Agent sent with requests to Sourcegraph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "serve-git": {
+    "Name": "serve-git",
+    "kind": "subcommand",
+    "description": "By default 'src serve-git' will recursively serve your current directory on the address ':3434'",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-addr": {
+        "Name": "-addr",
+        "kind": "option",
+        "description": "Address on which to server (end with : for unused port)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-list": {
+        "Name": "-list",
+        "kind": "option",
+        "description": "List found repository names",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "-addr": {
+        "Name": "-addr",
+        "kind": "option",
+        "description": "Address on which to server (end with : for unused port)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-list": {
+        "Name": "-list",
+        "kind": "option",
+        "description": "List found repository names",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "users": {
+    "Name": "users",
+    "kind": "subcommand",
+    "description": "Create, edit, view, tag, or delete users",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "create": {
+        "Name": "create",
+        "kind": "subcommand",
+        "description": "Create user",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "delete": {
+        "Name": "delete",
+        "kind": "subcommand",
+        "description": "Delete user",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "get": {
+        "Name": "get",
+        "kind": "subcommand",
+        "description": "Get user",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List users",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "tag": {
+        "Name": "tag",
+        "kind": "subcommand",
+        "description": "Tag user",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "validate": {
+    "Name": "validate",
+    "kind": "subcommand",
+    "description": "EXPERIMENTAL: Instance validation provides a quick way to check that a Sourcegraph instance functions properly after a fresh install or an update",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-context": {
+        "Name": "-context",
+        "kind": "option",
+        "description": "Comma-separated list of key=value pairs to add to the script execution context",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-dump-requests": {
+        "Name": "-dump-requests",
+        "kind": "option",
+        "description": "Log GraphQL requests and responses to stdout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-get-curl": {
+        "Name": "-get-curl",
+        "kind": "option",
+        "description": "Print the curl command for executing this query and exit (WARNING: includes printing your access token!)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-insecure-skip-verify": {
+        "Name": "-insecure-skip-verify",
+        "kind": "option",
+        "description": "Skip validation of TLS certificates against trusted chains",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-secrets": {
+        "Name": "-secrets",
+        "kind": "option",
+        "description": "Path to a file containing key=value lines. The key value pairs will be added to the script context",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-trace": {
+        "Name": "-trace",
+        "kind": "option",
+        "description": "Log the trace ID for requests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-user-agent-telemetry": {
+        "Name": "-user-agent-telemetry",
+        "kind": "option",
+        "description": "Include the operating system and architecture in the User-Agent sent with requests to Sourcegraph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "-context": {
+        "Name": "-context",
+        "kind": "option",
+        "description": "Comma-separated list of key=value pairs to add to the script execution context",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-dump-requests": {
+        "Name": "-dump-requests",
+        "kind": "option",
+        "description": "Log GraphQL requests and responses to stdout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-get-curl": {
+        "Name": "-get-curl",
+        "kind": "option",
+        "description": "Print the curl command for executing this query and exit (WARNING: includes printing your access token!)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-insecure-skip-verify": {
+        "Name": "-insecure-skip-verify",
+        "kind": "option",
+        "description": "Skip validation of TLS certificates against trusted chains",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-secrets": {
+        "Name": "-secrets",
+        "kind": "option",
+        "description": "Path to a file containing key=value lines. The key value pairs will be added to the script context",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-trace": {
+        "Name": "-trace",
+        "kind": "option",
+        "description": "Log the trace ID for requests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-user-agent-telemetry": {
+        "Name": "-user-agent-telemetry",
+        "kind": "option",
+        "description": "Include the operating system and architecture in the User-Agent sent with requests to Sourcegraph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  }
+}

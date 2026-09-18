@@ -1,0 +1,478 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for yalc",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-colors": {
+    "Name": "--no-colors",
+    "kind": "option",
+    "description": "Disable colors",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--quiet": {
+    "Name": "--quiet",
+    "kind": "option",
+    "description": "Fully disable output (except errors)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "add": {
+    "Name": "add",
+    "kind": "subcommand",
+    "description": "Copy the current version from the store to your project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--dev": {
+        "Name": "--dev",
+        "kind": "option",
+        "description": "Add yalc package to dev dependencies",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--link": {
+        "Name": "--link",
+        "kind": "option",
+        "description": "Add a 'link:' dependency instead of 'file:'",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pure": {
+        "Name": "--pure",
+        "kind": "option",
+        "description": "Do not touch 'package.json' or 'node_modules'",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--workspace": {
+        "Name": "--workspace",
+        "kind": "option",
+        "description": "Add dependency with 'workspace:' protocol",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-W": {
+        "Name": "-W",
+        "kind": "option",
+        "description": "Add dependency with 'workspace:' protocol",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpackage\u003e": {
+        "Name": "\u003cpackage\u003e",
+        "kind": "argument",
+        "description": "package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--dev": {
+        "Name": "--dev",
+        "kind": "option",
+        "description": "Add yalc package to dev dependencies",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--link": {
+        "Name": "--link",
+        "kind": "option",
+        "description": "Add a 'link:' dependency instead of 'file:'",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pure": {
+        "Name": "--pure",
+        "kind": "option",
+        "description": "Do not touch 'package.json' or 'node_modules'",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--workspace": {
+        "Name": "--workspace",
+        "kind": "option",
+        "description": "Add dependency with 'workspace:' protocol",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-W": {
+        "Name": "-W",
+        "kind": "option",
+        "description": "Add dependency with 'workspace:' protocol",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpackage\u003e": {
+        "Name": "\u003cpackage\u003e",
+        "kind": "argument",
+        "description": "package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpackage\u003e"
+    ]
+  },
+  "check": {
+    "Name": "check",
+    "kind": "subcommand",
+    "description": "Check 'package.json' for yalc packages",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "dir": {
+    "Name": "dir",
+    "kind": "subcommand",
+    "description": "Show yalc system directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "installations": {
+    "Name": "installations",
+    "kind": "subcommand",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "clean": {
+        "Name": "clean",
+        "kind": "subcommand",
+        "description": "Unpublish a package published with yalc publish",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpackage\u003e": {
+            "Name": "\u003cpackage\u003e",
+            "kind": "argument",
+            "description": "package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpackage\u003e": {
+            "Name": "\u003cpackage\u003e",
+            "kind": "argument",
+            "description": "package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpackage\u003e"
+        ]
+      },
+      "show": {
+        "Name": "show",
+        "kind": "subcommand",
+        "description": "Show all packages to which chosen package has been added",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpackage\u003e": {
+            "Name": "\u003cpackage\u003e",
+            "kind": "argument",
+            "description": "package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpackage\u003e": {
+            "Name": "\u003cpackage\u003e",
+            "kind": "argument",
+            "description": "package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpackage\u003e"
+        ]
+      }
+    }
+  },
+  "link": {
+    "Name": "link",
+    "kind": "subcommand",
+    "description": "Alterative to 'add', instead using local '.yalc' as symlink source",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "publish": {
+    "Name": "publish",
+    "kind": "subcommand",
+    "description": "Copy all the files that should be published in remote NPM registry",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--content": {
+        "Name": "--content",
+        "kind": "option",
+        "description": "Show included files in the published package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-scripts": {
+        "Name": "--no-scripts",
+        "kind": "option",
+        "description": "Publish without running scripts",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-sig": {
+        "Name": "--no-sig",
+        "kind": "option",
+        "description": "Disable adding hash signature of all files when copying package content",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-workspace-resolve": {
+        "Name": "--no-workspace-resolve",
+        "kind": "option",
+        "description": "Do not resolve 'workspace:' protocol in dependencies",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--private": {
+        "Name": "--private",
+        "kind": "option",
+        "description": "Force publishing of private package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--push": {
+        "Name": "--push",
+        "kind": "option",
+        "description": "Publish package to the store and propagate all changes to existing yalc package installations",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--content": {
+        "Name": "--content",
+        "kind": "option",
+        "description": "Show included files in the published package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-scripts": {
+        "Name": "--no-scripts",
+        "kind": "option",
+        "description": "Publish without running scripts",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-sig": {
+        "Name": "--no-sig",
+        "kind": "option",
+        "description": "Disable adding hash signature of all files when copying package content",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-workspace-resolve": {
+        "Name": "--no-workspace-resolve",
+        "kind": "option",
+        "description": "Do not resolve 'workspace:' protocol in dependencies",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--private": {
+        "Name": "--private",
+        "kind": "option",
+        "description": "Force publishing of private package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--push": {
+        "Name": "--push",
+        "kind": "option",
+        "description": "Publish package to the store and propagate all changes to existing yalc package installations",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "push": {
+    "Name": "push",
+    "kind": "subcommand",
+    "description": "Publish your package to the store and propagate all changes to existing yalc package installations",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "remove": {
+    "Name": "remove",
+    "kind": "subcommand",
+    "description": "Remove package info from 'package.json' \u0026 'yalc.lock'",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "Remove all packages from project",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpackage\u003e": {
+        "Name": "\u003cpackage\u003e",
+        "kind": "argument",
+        "description": "package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "Remove all packages from project",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpackage\u003e": {
+        "Name": "\u003cpackage\u003e",
+        "kind": "argument",
+        "description": "package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "restore": {
+    "Name": "restore",
+    "kind": "subcommand",
+    "description": "Restore retreated packages",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "retreat": {
+    "Name": "retreat",
+    "kind": "subcommand",
+    "description": "Remove packages from project, but leave in lock file (to be restored later)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "update": {
+    "Name": "update",
+    "kind": "subcommand",
+    "description": "Update package(s)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--up": {
+        "Name": "--up",
+        "kind": "option",
+        "description": "Run package manager's update command for packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--update": {
+        "Name": "--update",
+        "kind": "option",
+        "description": "Run package manager's update command for packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--upgrade": {
+        "Name": "--upgrade",
+        "kind": "option",
+        "description": "Run package manager's update command for packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpackage\u003e": {
+        "Name": "\u003cpackage\u003e",
+        "kind": "argument",
+        "description": "package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--up": {
+        "Name": "--up",
+        "kind": "option",
+        "description": "Run package manager's update command for packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--update": {
+        "Name": "--update",
+        "kind": "option",
+        "description": "Run package manager's update command for packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--upgrade": {
+        "Name": "--upgrade",
+        "kind": "option",
+        "description": "Run package manager's update command for packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpackage\u003e": {
+        "Name": "\u003cpackage\u003e",
+        "kind": "argument",
+        "description": "package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  }
+}

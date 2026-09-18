@@ -1,0 +1,946 @@
+{
+  "name": "rich",
+  "description": "Rich text and formatting in the terminal",
+  "args": [
+    {
+      "name": "path/text/url",
+      "suggestions": [
+        {
+          "name": "-",
+          "description": "Read from stdin",
+          "hidden": true
+        }
+      ],
+      "template": "filepaths"
+    }
+  ],
+  "options": [
+    {
+      "name": [
+        "-p",
+        "--print"
+      ],
+      "description": "Print console markup. See https://rich.readthedocs.io/en/latest/markup.html"
+    },
+    {
+      "name": [
+        "-u",
+        "--rule"
+      ],
+      "description": "Display a horizontal rule"
+    },
+    {
+      "name": [
+        "-j",
+        "--json"
+      ],
+      "description": "Display as JSON"
+    },
+    {
+      "name": [
+        "-m",
+        "--markdown"
+      ],
+      "description": "Display as markdown"
+    },
+    {
+      "name": "--rst",
+      "description": "Display restructured text"
+    },
+    {
+      "name": "--csv",
+      "description": "Display CSV as a table"
+    },
+    {
+      "name": "--ipynb",
+      "description": "Display Jupyter notebook"
+    },
+    {
+      "name": "--syntax",
+      "description": "Syntax highlighting"
+    },
+    {
+      "name": "--inspect",
+      "description": "Inspect a python object"
+    },
+    {
+      "name": [
+        "-h",
+        "--head"
+      ],
+      "args": {
+        "name": "lines"
+      },
+      "description": "Display first LINES of the file",
+      "dependsOn": [
+        "--syntax",
+        "--csv"
+      ]
+    },
+    {
+      "name": [
+        "-t",
+        "--tail"
+      ],
+      "args": {
+        "name": "lines"
+      },
+      "description": "Display last LINES of the file",
+      "dependsOn": [
+        "--syntax",
+        "--csv"
+      ]
+    },
+    {
+      "name": "--emoji",
+      "description": "Enable emoji code. e.g. :sparkle:"
+    },
+    {
+      "name": [
+        "-l",
+        "--left"
+      ],
+      "description": "Align to left"
+    },
+    {
+      "name": [
+        "-r",
+        "--right"
+      ],
+      "description": "Align to right"
+    },
+    {
+      "name": [
+        "-c",
+        "--center"
+      ],
+      "description": "Align to center"
+    },
+    {
+      "name": [
+        "-L",
+        "--text-left"
+      ],
+      "description": "Justify text to left"
+    },
+    {
+      "name": [
+        "-R",
+        "--text-right"
+      ],
+      "description": "Justify text to right"
+    },
+    {
+      "name": [
+        "-C",
+        "--text-center"
+      ],
+      "description": "Justify text to center"
+    },
+    {
+      "name": [
+        "-F",
+        "--text-full"
+      ],
+      "description": "Justify text to both left and right edges"
+    },
+    {
+      "name": "--soft",
+      "description": "Enable soft wrapping of text",
+      "dependsOn": [
+        "--print"
+      ]
+    },
+    {
+      "name": [
+        "-e",
+        "--expand"
+      ],
+      "description": "Expand to full width",
+      "dependsOn": [
+        "--panel"
+      ]
+    },
+    {
+      "name": [
+        "-w",
+        "--width"
+      ],
+      "args": {
+        "name": "size"
+      },
+      "description": "Fit output to SIZE characters"
+    },
+    {
+      "name": [
+        "-W",
+        "--max-width"
+      ],
+      "args": {
+        "name": "size"
+      },
+      "description": "Set maximum width to SIZE characters"
+    },
+    {
+      "name": [
+        "-s",
+        "--style"
+      ],
+      "args": {
+        "name": "style",
+        "filterStrategy": "fuzzy"
+      },
+      "description": "Set text style to STYLE"
+    },
+    {
+      "name": "--rule-style",
+      "args": {
+        "name": "style",
+        "filterStrategy": "fuzzy"
+      },
+      "description": "Set rule style to STYLE",
+      "dependsOn": [
+        "--rule"
+      ]
+    },
+    {
+      "name": "--rule-char",
+      "args": {
+        "name": "character"
+      },
+      "description": "Use CHARACTER to generate a line with --rule",
+      "dependsOn": [
+        "--rule"
+      ]
+    },
+    {
+      "name": [
+        "-d",
+        "--padding"
+      ],
+      "args": {
+        "name": "top,right,bottom,left"
+      },
+      "description": "Padding around output. 1, 2 or 4 comma separated integers, e.g. 2,4"
+    },
+    {
+      "name": [
+        "-a",
+        "--panel"
+      ],
+      "args": {
+        "name": "box",
+        "suggestions": [
+          "ascii",
+          "ascii2",
+          "double",
+          "heavy",
+          "none",
+          "rounded",
+          "square"
+        ]
+      },
+      "description": "Set panel type to BOX"
+    },
+    {
+      "name": [
+        "-S",
+        "--panel-style"
+      ],
+      "args": {
+        "name": "style",
+        "filterStrategy": "fuzzy"
+      },
+      "description": "Set the panel style to STYLE",
+      "dependsOn": [
+        "--panel"
+      ]
+    },
+    {
+      "name": "--theme",
+      "args": {
+        "name": "theme",
+        "filterStrategy": "fuzzy",
+        "suggestions": [
+          "default",
+          "bw",
+          "sas",
+          "staroffice",
+          "xcode",
+          "github-dark",
+          "rrt",
+          "abap",
+          "algol",
+          "algol_nu",
+          "arduino",
+          "autumn",
+          "borland",
+          "colorful",
+          "igor",
+          "lovelace",
+          "murphy",
+          "pastie",
+          "rainbow_dash",
+          "stata",
+          "stata-light",
+          "trac",
+          "vs",
+          "emacs",
+          "tango",
+          "solarized-light",
+          "manni",
+          "gruvbox-light",
+          "friendly",
+          "friendly_grayscale",
+          "perldoc",
+          "paraiso-light",
+          "zenburn",
+          "nord",
+          "material",
+          "one-dark",
+          "dracula",
+          "nord-darker",
+          "gruvbox-dark",
+          "monokai",
+          "stata-dark",
+          "paraiso-dark",
+          "solarized-dark",
+          "native",
+          "inkpot",
+          "fruity",
+          "vim"
+        ]
+      },
+      "description": "Set syntax theme to THEME. See https://pygments.org/styles/"
+    },
+    {
+      "name": [
+        "-n",
+        "--line-numbers"
+      ],
+      "description": "Enable line number in syntax"
+    },
+    {
+      "name": [
+        "-g",
+        "--guides"
+      ],
+      "description": "Enable indentation guides in syntax highlighting"
+    },
+    {
+      "name": [
+        "-x",
+        "--lexer"
+      ],
+      "args": {
+        "name": "lexer",
+        "filterStrategy": "fuzzy",
+        "suggestions": [
+          "ActionScript3",
+          "ActionScript",
+          "Mxml",
+          "Ada",
+          "BC",
+          "GAPConsole",
+          "GAP",
+          "Mathematica",
+          "MuPAD",
+          "AmbientTalk",
+          "AMDGPU",
+          "Ampl",
+          "apdlexer",
+          "APL",
+          "Adl",
+          "Cadl",
+          "Odin",
+          "Arrow",
+          "Asc",
+          "CObjdump",
+          "Ca65",
+          "CppObjdump",
+          "DObjdump",
+          "Dasm16",
+          "Gas",
+          "Hsail",
+          "Llvm",
+          "LlvmMirBody",
+          "LlvmMir",
+          "Nasm",
+          "NasmObjdump",
+          "Objdump",
+          "Tasm",
+          "AutoIt",
+          "Autohotkey",
+          "Bare",
+          "BBCBasic",
+          "BlitzBasic",
+          "BlitzMax",
+          "CbmBasicV2",
+          "Monkey",
+          "QBasic",
+          "VBScript",
+          "Bdd",
+          "Berry",
+          "BST",
+          "BibTeX",
+          "Boa",
+          "ABAP",
+          "CobolFreeformat",
+          "Cobol",
+          "GoodDataCL",
+          "Maql",
+          "OpenEdge",
+          "C",
+          "Cpp",
+          "Arduino",
+          "Charmci",
+          "Clay",
+          "Cuda",
+          "EC",
+          "Mql",
+          "NesC",
+          "OmgIdl",
+          "Pike",
+          "Swig",
+          "Vala",
+          "CapnProto",
+          "Cddl",
+          "Chapel",
+          "Clean",
+          "Comal80",
+          "ApacheConf",
+          "Augeas",
+          "Cfengine3",
+          "Docker",
+          "Ini",
+          "Kconfig",
+          "LighttpdConf",
+          "NestedText",
+          "NginxConf",
+          "PacmanConf",
+          "PkgConfig",
+          "Properties",
+          "Regedit",
+          "Singularity",
+          "SquidConf",
+          "TOML",
+          "Termcap",
+          "Terminfo",
+          "Terraform",
+          "UnixConfig",
+          "PyPyLog",
+          "VCTreeStatus",
+          "Cplint",
+          "Crystal",
+          "CsoundDocument",
+          "CsoundOrchestra",
+          "CsoundScore",
+          "Css",
+          "LessCss",
+          "Sass",
+          "Scss",
+          "Croc",
+          "D",
+          "MiniD",
+          "Smali",
+          "JsonBareObject",
+          "JsonLd",
+          "Json",
+          "Yaml",
+          "Devicetree",
+          "DarcsPatch",
+          "Diff",
+          "WDiff",
+          "Boo",
+          "CSharpAspx",
+          "CSharp",
+          "FSharp",
+          "Nemerle",
+          "VbNetAspx",
+          "VbNet",
+          "Alloy",
+          "Crmsh",
+          "Flatline",
+          "Mscgen",
+          "Pan",
+          "ProtoBuf",
+          "Puppet",
+          "Rsl",
+          "Snowball",
+          "Thrift",
+          "VGL",
+          "Zeek",
+          "DylanConsole",
+          "Dylan",
+          "DylanLid",
+          "ECL",
+          "Eiffel",
+          "Elm",
+          "Elpi",
+          "Email",
+          "ElixirConsole",
+          "Elixir",
+          "Erlang",
+          "ErlangShell",
+          "Aheui",
+          "Befunge",
+          "Brainfuck",
+          "CAmkES",
+          "CapDL",
+          "Redcode",
+          "Ezhil",
+          "Factor",
+          "Fantom",
+          "Felix",
+          "FloScript",
+          "Forth",
+          "FortranFixed",
+          "Fortran",
+          "FoxPro",
+          "FreeFem",
+          "Futhark",
+          "Gcode",
+          "GDScript",
+          "Go",
+          "Abnf",
+          "Bnf",
+          "Jsgf",
+          "Peg",
+          "Cypher",
+          "Asymptote",
+          "GLShader",
+          "Gnuplot",
+          "HLSLShader",
+          "PostScript",
+          "Povray",
+          "Graphviz",
+          "GSQL",
+          "Agda",
+          "Cryptol",
+          "Haskell",
+          "Hspec",
+          "Idris",
+          "Koka",
+          "LiterateAgda",
+          "LiterateCryptol",
+          "LiterateHaskell",
+          "LiterateIdris",
+          "Haxe",
+          "Hxml",
+          "SystemVerilog",
+          "Verilog",
+          "Vhdl",
+          "Hexdump",
+          "Dtd",
+          "Haml",
+          "Html",
+          "Pug",
+          "Scaml",
+          "Xml",
+          "Xslt",
+          "IDL",
+          "Igor",
+          "Limbo",
+          "DebianControl",
+          "NSIS",
+          "RPMSpec",
+          "SourcesList",
+          "Inform6",
+          "Inform6Template",
+          "Inform7",
+          "Tads3",
+          "Io",
+          "J",
+          "CoffeeScript",
+          "Dart",
+          "EarlGrey",
+          "Javascript",
+          "Juttle",
+          "Kal",
+          "Lasso",
+          "LiveScript",
+          "Mask",
+          "NodeConsole",
+          "ObjectiveJ",
+          "TypeScript",
+          "JMESPath",
+          "JSLT",
+          "JuliaConsole",
+          "Julia",
+          "AspectJ",
+          "Ceylon",
+          "Clojure",
+          "ClojureScript",
+          "Golo",
+          "Gosu",
+          "GosuTemplate",
+          "Groovy",
+          "Ioke",
+          "Jasmin",
+          "Java",
+          "Kotlin",
+          "Pig",
+          "Sarl",
+          "Scala",
+          "Xtend",
+          "Kuin",
+          "LilyPond",
+          "CPSA",
+          "CommonLisp",
+          "EmacsLisp",
+          "Fennel",
+          "Hy",
+          "NewLisp",
+          "Racket",
+          "Scheme",
+          "Shen",
+          "Xtlang",
+          "Macaulay2",
+          "BaseMakefile",
+          "CMake",
+          "Makefile",
+          "BBCode",
+          "Groff",
+          "Markdown",
+          "MoinWiki",
+          "MozPreprocCss",
+          "MozPreprocHash",
+          "MozPreprocJavascript",
+          "MozPreprocPercent",
+          "MozPreprocXul",
+          "Rst",
+          "Tex",
+          "TiddlyWiki5",
+          "Matlab",
+          "MatlabSession",
+          "Octave",
+          "Scilab",
+          "Maxima",
+          "MCFunction",
+          "SNBT",
+          "Meson",
+          "MIME",
+          "FStar",
+          "Ocaml",
+          "Opa",
+          "Reason",
+          "SML",
+          "Bugs",
+          "Jags",
+          "Modelica",
+          "Stan",
+          "Modula2",
+          "Monte",
+          "Mosel",
+          "NCL",
+          "Nimrod",
+          "Nit",
+          "Nix",
+          "ComponentPascal",
+          "Logos",
+          "ObjectiveC",
+          "ObjectiveCpp",
+          "Swift",
+          "Ooc",
+          "ParaSail",
+          "AntlrActionScript",
+          "AntlrCSharp",
+          "AntlrCpp",
+          "AntlrJava",
+          "Antlr",
+          "AntlrObjectiveC",
+          "AntlrPerl",
+          "AntlrPython",
+          "AntlrRuby",
+          "Ebnf",
+          "RagelC",
+          "RagelCpp",
+          "RagelD",
+          "RagelEmbedded",
+          "RagelJava",
+          "Ragel",
+          "RagelObjectiveC",
+          "RagelRuby",
+          "Treetop",
+          "Delphi",
+          "Pawn",
+          "SourcePawn",
+          "Perl6",
+          "Perl",
+          "Php",
+          "PsyshConsole",
+          "Zephir",
+          "Pointless",
+          "Pony",
+          "Praat",
+          "Procfile",
+          "Logtalk",
+          "Prolog",
+          "PromQL",
+          "Cython",
+          "Dg",
+          "NumPy",
+          "Python2",
+          "Python2Traceback",
+          "PythonConsole",
+          "Python",
+          "PythonTraceback",
+          "K",
+          "Q",
+          "Qlik",
+          "QVTo",
+          "RConsole",
+          "Rd",
+          "S",
+          "ShExC",
+          "Sparql",
+          "Turtle",
+          "Rebol",
+          "Red",
+          "Resource",
+          "Ride",
+          "Rita",
+          "RNCCompact",
+          "RoboconfGraph",
+          "RoboconfInstances",
+          "RobotFramework",
+          "Fancy",
+          "RubyConsole",
+          "Ruby",
+          "Rust",
+          "SAS",
+          "Savi",
+          "Scdoc",
+          "AppleScript",
+          "Chaiscript",
+          "Easytrieve",
+          "Hybris",
+          "Jcl",
+          "LSL",
+          "Lua",
+          "MOOCode",
+          "MiniScript",
+          "MoonScript",
+          "Rexx",
+          "SmartGameFormat",
+          "Bash",
+          "BashSession",
+          "Batch",
+          "Execline",
+          "FishShell",
+          "MSDOSSession",
+          "PowerShell",
+          "PowerShellSession",
+          "SlurmBash",
+          "Tcsh",
+          "TcshSession",
+          "Sieve",
+          "Slash",
+          "Newspeak",
+          "Smalltalk",
+          "Smithy",
+          "NuSMV",
+          "Snobol",
+          "Solidity",
+          "Sophia",
+          "Output",
+          "RawToken",
+          "Text",
+          "Spice",
+          "MySql",
+          "PlPgsql",
+          "PostgresConsole",
+          "Postgres",
+          "Rql",
+          "Sql",
+          "SqliteConsole",
+          "TransactSql",
+          "Srcinfo",
+          "Stata",
+          "SuperCollider",
+          "Tal",
+          "Tcl",
+          "Teal",
+          "Angular2Html",
+          "Angular2",
+          "CheetahHtml",
+          "CheetahJavascript",
+          "Cheetah",
+          "CheetahXml",
+          "ColdfusionCFC",
+          "ColdfusionHtml",
+          "Coldfusion",
+          "CssDjango",
+          "CssErb",
+          "CssGenshi",
+          "CssPhp",
+          "CssSmarty",
+          "Django",
+          "Erb",
+          "EvoqueHtml",
+          "Evoque",
+          "EvoqueXml",
+          "Genshi",
+          "GenshiText",
+          "HandlebarsHtml",
+          "Handlebars",
+          "HtmlDjango",
+          "HtmlGenshi",
+          "HtmlPhp",
+          "HtmlSmarty",
+          "JavascriptDjango",
+          "JavascriptErb",
+          "JavascriptGenshi",
+          "JavascriptPhp",
+          "JavascriptSmarty",
+          "Jsp",
+          "LassoCss",
+          "LassoHtml",
+          "LassoJavascript",
+          "LassoXml",
+          "Liquid",
+          "MakoCss",
+          "MakoHtml",
+          "MakoJavascript",
+          "Mako",
+          "MakoXml",
+          "Mason",
+          "MyghtyCss",
+          "MyghtyHtml",
+          "MyghtyJavascript",
+          "Myghty",
+          "MyghtyXml",
+          "Rhtml",
+          "Smarty",
+          "SqlJinja",
+          "Ssp",
+          "TeaTemplate",
+          "TwigHtml",
+          "Twig",
+          "VelocityHtml",
+          "Velocity",
+          "VelocityXml",
+          "XmlDjango",
+          "XmlErb",
+          "XmlPhp",
+          "XmlSmarty",
+          "YamlJinja",
+          "TeraTerm",
+          "Gherkin",
+          "TAP",
+          "Awk",
+          "Sed",
+          "Vim",
+          "Gettext",
+          "Http",
+          "IrcLogs",
+          "KernelLog",
+          "Notmuch",
+          "Todotxt",
+          "Coq",
+          "Isabelle",
+          "Lean",
+          "ThingsDB",
+          "TNT",
+          "Rts",
+          "TypoScriptCssData",
+          "TypoScriptHtmlData",
+          "TypoScript",
+          "CSSUL4",
+          "HTMLUL4",
+          "JavascriptUL4",
+          "PythonUL4",
+          "UL4",
+          "XMLUL4",
+          "Icon",
+          "Ucode",
+          "Unicon",
+          "Urbiscript",
+          "Usd",
+          "VCL",
+          "VCLSnippet",
+          "Boogie",
+          "Silver",
+          "Wat",
+          "WebIDL",
+          "Cirru",
+          "Duel",
+          "Qml",
+          "Slim",
+          "XQuery",
+          "Whiley",
+          "X10",
+          "Xorg",
+          "Yang",
+          "Zig"
+        ]
+      },
+      "description": "Use LEXER for syntax highlighting. See https://pygments.org/docs/lexers/"
+    },
+    {
+      "name": [
+        "-y",
+        "--hyperlinks"
+      ],
+      "description": "Render hyperlinks in markdown"
+    },
+    {
+      "name": "--no-wrap",
+      "description": "Don't word wrap syntax highlighted files"
+    },
+    {
+      "name": "--title",
+      "args": {
+        "name": "text"
+      },
+      "description": "Set panel title to TEXT"
+    },
+    {
+      "name": "--caption",
+      "args": {
+        "name": "text"
+      },
+      "description": "Set panel caption to TEXT"
+    },
+    {
+      "name": "--force-terminal",
+      "description": "Force terminal output when not writing to a terminal"
+    },
+    {
+      "name": [
+        "-o",
+        "--export-html"
+      ],
+      "args": {
+        "name": "path",
+        "template": "filepaths",
+        "suggestCurrentToken": true
+      },
+      "description": "Write HTML to PATH"
+    },
+    {
+      "name": "--export-svg",
+      "args": {
+        "name": "path",
+        "template": "filepaths",
+        "suggestCurrentToken": true
+      },
+      "description": "Write SVG to PATH"
+    },
+    {
+      "name": "--pager",
+      "description": "Display in an interactive pager"
+    },
+    {
+      "name": [
+        "-v",
+        "--version"
+      ],
+      "description": "Print version and exit"
+    },
+    {
+      "name": "--help",
+      "description": "Show this message and exit"
+    }
+  ]
+}

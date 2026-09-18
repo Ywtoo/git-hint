@@ -1,0 +1,1152 @@
+{
+  "--after-context": {
+    "Name": "--after-context",
+    "kind": "option",
+    "description": "Print num lines of trailing context after each match",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNUM\u003e": {
+        "Name": "\u003cNUM\u003e",
+        "kind": "argument",
+        "description": "NUM",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNUM\u003e": {
+        "Name": "\u003cNUM\u003e",
+        "kind": "argument",
+        "description": "NUM",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNUM\u003e"
+    ]
+  },
+  "--basic-regexp": {
+    "Name": "--basic-regexp",
+    "kind": "option",
+    "description": "Interpret PATTERN as a basic regular expression (BRE, see below). This is the default",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--before-context": {
+    "Name": "--before-context",
+    "kind": "option",
+    "description": "Print num lines of leading context before each match. See also the -A and -C options",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNUM\u003e": {
+        "Name": "\u003cNUM\u003e",
+        "kind": "argument",
+        "description": "NUM",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNUM\u003e": {
+        "Name": "\u003cNUM\u003e",
+        "kind": "argument",
+        "description": "NUM",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNUM\u003e"
+    ]
+  },
+  "--binary": {
+    "Name": "--binary",
+    "kind": "option",
+    "description": "Search binary files, but do not attempt to print them",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--binary-files": {
+    "Name": "--binary-files",
+    "kind": "option",
+    "description": "Controls searching and printing of binary files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cvalue\u003e"
+    ]
+  },
+  "--byte-offset": {
+    "Name": "--byte-offset",
+    "kind": "option",
+    "description": "Print the 0-based byte offset within the input file before each line of output. If -o (--only-matching) is specified, print the offset of the matching part itself",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--color": {
+    "Name": "--color",
+    "kind": "option",
+    "description": "Surround the matched (non-empty) strings, matching lines, context lines, file names, line numbers, byte offsets, and separators (for fields and groups of context lines) with escape sequences to display them in color on the terminal. The colors are defined by the environment variable GREP_COLORS. The deprecated environment variable GREP_COLOR is still supported, but its setting does not have priority",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cWHEN\u003e": {
+        "Name": "\u003cWHEN\u003e",
+        "kind": "argument",
+        "description": "WHEN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cWHEN\u003e": {
+        "Name": "\u003cWHEN\u003e",
+        "kind": "argument",
+        "description": "WHEN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cWHEN\u003e"
+    ]
+  },
+  "--context": {
+    "Name": "--context",
+    "kind": "option",
+    "description": "Print NUM lines of output context. Places a line containing a group separator (--) between contiguous groups of matches. With the -o or --only-matching option, this has no effect and a warning is given",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNUM\u003e": {
+        "Name": "\u003cNUM\u003e",
+        "kind": "argument",
+        "description": "NUM",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNUM\u003e": {
+        "Name": "\u003cNUM\u003e",
+        "kind": "argument",
+        "description": "NUM",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNUM\u003e"
+    ]
+  },
+  "--count": {
+    "Name": "--count",
+    "kind": "option",
+    "description": "Suppress normal output; instead print a count of matching lines for each input file. With the -v, --invert-match option, count non-matching lines. (-c is specified by POSIX.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--devices": {
+    "Name": "--devices",
+    "kind": "option",
+    "description": "Specify the demanded action for devices, FIFOs and sockets",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003caction\u003e": {
+        "Name": "\u003caction\u003e",
+        "kind": "argument",
+        "description": "action",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003caction\u003e": {
+        "Name": "\u003caction\u003e",
+        "kind": "argument",
+        "description": "action",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003caction\u003e"
+    ]
+  },
+  "--directories": {
+    "Name": "--directories",
+    "kind": "option",
+    "description": "Specify the demanded action for directories",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003caction\u003e": {
+        "Name": "\u003caction\u003e",
+        "kind": "argument",
+        "description": "action",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003caction\u003e": {
+        "Name": "\u003caction\u003e",
+        "kind": "argument",
+        "description": "action",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003caction\u003e"
+    ]
+  },
+  "--exclude": {
+    "Name": "--exclude",
+    "kind": "option",
+    "description": "Note that --exclude patterns take priority over --include patterns, and if no --include pattern is specified, all files are searched that are not excluded. Patterns are matched to the full path specified, not only to the filename component",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cGLOB\u003e": {
+        "Name": "\u003cGLOB\u003e",
+        "kind": "argument",
+        "description": "GLOB",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cGLOB\u003e": {
+        "Name": "\u003cGLOB\u003e",
+        "kind": "argument",
+        "description": "GLOB",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--exclude-dir": {
+    "Name": "--exclude-dir",
+    "kind": "option",
+    "description": "If -R is specified, only directories matching the given filename pattern are searched.  Note that --exclude-dir patterns take priority over --include-dir patterns",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdir\u003e": {
+        "Name": "\u003cdir\u003e",
+        "kind": "argument",
+        "description": "dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdir\u003e": {
+        "Name": "\u003cdir\u003e",
+        "kind": "argument",
+        "description": "dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--extended-regexp": {
+    "Name": "--extended-regexp",
+    "kind": "option",
+    "description": "Interpret PATTERN as an extended regular expression (-E is specified by POSIX.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--file": {
+    "Name": "--file",
+    "kind": "option",
+    "description": "Obtain patterns from FILE, one per line. The empty file contains zero patterns, and therefore matches nothing. (-f is specified by POSIX.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFILE\u003e"
+    ]
+  },
+  "--files-with-matches": {
+    "Name": "--files-with-matches",
+    "kind": "option",
+    "description": "Suppress normal output; instead print the name of each input file from which output would normally have been printed. The scanning will stop on the first match. (-l is specified by POSIX.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--files-without-match": {
+    "Name": "--files-without-match",
+    "kind": "option",
+    "description": "Suppress normal output; instead print the name of each input file from which no output would normally have been printed. The scanning will stop on the first match",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--fixed-string": {
+    "Name": "--fixed-string",
+    "kind": "option",
+    "description": "Interpret PATTERN as a list of fixed strings, separated by newlines, any of which is to be matched. (-F is specified by POSIX.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Print a usage message briefly summarizing these command-line options and the bug-reporting address, then exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--ignore-case": {
+    "Name": "--ignore-case",
+    "kind": "option",
+    "description": "Ignore case distinctions in both the PATTERN and the input files. (-i is specified by POSIX.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--include": {
+    "Name": "--include",
+    "kind": "option",
+    "description": "If specified, only files matching the given filename pattern are searched. Note that --exclude patterns take priority over --include patterns. Patterns are matched to the full path specified, not only to the filename component",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cGLOB\u003e": {
+        "Name": "\u003cGLOB\u003e",
+        "kind": "argument",
+        "description": "GLOB",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cGLOB\u003e": {
+        "Name": "\u003cGLOB\u003e",
+        "kind": "argument",
+        "description": "GLOB",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--include-dir": {
+    "Name": "--include-dir",
+    "kind": "option",
+    "description": "If -R is specified, only directories matching the given filename pattern are searched. Note that --exclude-dir patterns take priority over --include-dir patterns",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdir\u003e": {
+        "Name": "\u003cdir\u003e",
+        "kind": "argument",
+        "description": "dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdir\u003e": {
+        "Name": "\u003cdir\u003e",
+        "kind": "argument",
+        "description": "dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--initial-tab": {
+    "Name": "--initial-tab",
+    "kind": "option",
+    "description": "Make sure that the first character of actual line content lies on a tab stop, so that the alignment of tabs looks normal. This is useful with options that prefix their output to the actual content: -H,-n, and -b. In order to improve the probability that lines from a single file will all start at the same column, this also causes the line number and byte offset (if present) to be printed in a minimum size field width",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--invert-match": {
+    "Name": "--invert-match",
+    "kind": "option",
+    "description": "Invert the sense of matching, to select non-matching lines. (-v is specified by POSIX.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--label": {
+    "Name": "--label",
+    "kind": "option",
+    "description": "Display input actually coming from standard input as input coming from file LABEL. This is especially useful when implementing tools like zgrep, e.g., gzip -cd foo.gz | grep --label=foo -H something",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cLABEL\u003e": {
+        "Name": "\u003cLABEL\u003e",
+        "kind": "argument",
+        "description": "LABEL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cLABEL\u003e": {
+        "Name": "\u003cLABEL\u003e",
+        "kind": "argument",
+        "description": "LABEL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cLABEL\u003e"
+    ]
+  },
+  "--line-buffered": {
+    "Name": "--line-buffered",
+    "kind": "option",
+    "description": "Force output to be line buffered. By default, output is line buffered when standard output is a terminal and block buffered otherwise",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--line-number": {
+    "Name": "--line-number",
+    "kind": "option",
+    "description": "Prefix each line of output with the 1-based line number within its input file. (-n is specified by POSIX.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--line-regexp": {
+    "Name": "--line-regexp",
+    "kind": "option",
+    "description": "Select only those matches that exactly match the whole line. (-x is specified by POSIX.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--max-count": {
+    "Name": "--max-count",
+    "kind": "option",
+    "description": "Stop reading a file after NUM matching lines. If the input is standard input from a regular file, and NUM matching lines are output, grep ensures that the standard input is positioned to just after the last matching line before exiting, regardless of the presence of trailing context lines. This enables a calling process to resume a search. When grep stops after NUM matching lines, it outputs any trailing context lines. When the -c or --count option is also used, grep does not output a count greater than NUM. When the -v or --invert-match option is also used, grep stops after outputting NUM non-matching lines",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNUM\u003e": {
+        "Name": "\u003cNUM\u003e",
+        "kind": "argument",
+        "description": "NUM",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNUM\u003e": {
+        "Name": "\u003cNUM\u003e",
+        "kind": "argument",
+        "description": "NUM",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNUM\u003e"
+    ]
+  },
+  "--no-filename": {
+    "Name": "--no-filename",
+    "kind": "option",
+    "description": "Suppress the prefixing of file names on output. This is the default when there is only one file (or only standard input) to search",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-messages": {
+    "Name": "--no-messages",
+    "kind": "option",
+    "description": "Suppress error messages about nonexistent or unreadable files. Portability note: unlike GNU grep, 7th Edition Unix grep did not conform to POSIX, because it lacked -q and its -s option behaved like GNU grep's -q option. USG -style grep also lacked -q but its -s option behaved like GNU grep. Portable shell scripts should avoid both -q and -s and should redirect standard and error output to /dev/null instead. (-s is specified by POSIX.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--null": {
+    "Name": "--null",
+    "kind": "option",
+    "description": "Output a zero byte (the ASCII NUL character) instead of the character that normally follows a file name. For example, grep -lZ outputs a zero byte after each file name instead of the usual newline. This option makes the output unambiguous, even in the presence of file names containing unusual characters like newlines. This option can be used with commands like find -print0, perl -0, sort -z, and xargs -0 to process arbitrary file names, even those that contain newline characters",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--only-matching": {
+    "Name": "--only-matching",
+    "kind": "option",
+    "description": "Print only the matched (non-empty) parts of a matching line, with each such part on a separate output line",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--perl-regexp": {
+    "Name": "--perl-regexp",
+    "kind": "option",
+    "description": "Interpret pattern as a Perl regular expression",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--quiet": {
+    "Name": "--quiet",
+    "kind": "option",
+    "description": "Quiet; do not write anything to standard output. Exit immediately with zero status if any match is found, even if an error was detected. Also see the -s or --no-messages option. (-q is specified by POSIX.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--recursive": {
+    "Name": "--recursive",
+    "kind": "option",
+    "description": "Recursively search subdirectories listed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--regexp": {
+    "Name": "--regexp",
+    "kind": "option",
+    "description": "Use PATTERN as the pattern. This can be used to specify multiple search patterns, or to protect a pattern beginning with a hyphen (-). (-e is specified by POSIX.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpattern\u003e": {
+        "Name": "\u003cpattern\u003e",
+        "kind": "argument",
+        "description": "pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpattern\u003e": {
+        "Name": "\u003cpattern\u003e",
+        "kind": "argument",
+        "description": "pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpattern\u003e"
+    ]
+  },
+  "--silent": {
+    "Name": "--silent",
+    "kind": "option",
+    "description": "Quiet; do not write anything to standard output. Exit immediately with zero status if any match is found, even if an error was detected. Also see the -s or --no-messages option. (-q is specified by POSIX.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--text": {
+    "Name": "--text",
+    "kind": "option",
+    "description": "Treat all files as ASCII text. Normally grep will simply print ``Binary file ... matches'' if files contain binary characters. Use of this option forces grep to output lines matching the specified pattern",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--unix-byte-offsets": {
+    "Name": "--unix-byte-offsets",
+    "kind": "option",
+    "description": "Report Unix-style byte offsets. This switch causes grep to report byte offsets as if the file were a Unix-style text file, i.e., with CR characters stripped off. This will produce results identical to running grep on a Unix machine. This option has no effect unless -b option is also used; it has no effect on platforms other than MS-DOS and MS -Windows",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Print version number of grep to the standard output stream",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--with-filename": {
+    "Name": "--with-filename",
+    "kind": "option",
+    "description": "Print the file name for each match. This is the default when there is more than one file to search",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--word-regexp": {
+    "Name": "--word-regexp",
+    "kind": "option",
+    "description": "Select only those lines containing matches that form whole words. The test is that the matching substring must either be at the beginning of the line, or preceded by a non-word constituent character. Similarly, it must be either at the end of the line or followed by a non-word constituent character. Word-constituent characters are letters, digits, and the underscore",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-A": {
+    "Name": "-A",
+    "kind": "option",
+    "description": "Print num lines of trailing context after each match",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNUM\u003e": {
+        "Name": "\u003cNUM\u003e",
+        "kind": "argument",
+        "description": "NUM",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNUM\u003e": {
+        "Name": "\u003cNUM\u003e",
+        "kind": "argument",
+        "description": "NUM",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNUM\u003e"
+    ]
+  },
+  "-B": {
+    "Name": "-B",
+    "kind": "option",
+    "description": "Print num lines of leading context before each match. See also the -A and -C options",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNUM\u003e": {
+        "Name": "\u003cNUM\u003e",
+        "kind": "argument",
+        "description": "NUM",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNUM\u003e": {
+        "Name": "\u003cNUM\u003e",
+        "kind": "argument",
+        "description": "NUM",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNUM\u003e"
+    ]
+  },
+  "-C": {
+    "Name": "-C",
+    "kind": "option",
+    "description": "Print NUM lines of output context. Places a line containing a group separator (--) between contiguous groups of matches. With the -o or --only-matching option, this has no effect and a warning is given",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNUM\u003e": {
+        "Name": "\u003cNUM\u003e",
+        "kind": "argument",
+        "description": "NUM",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNUM\u003e": {
+        "Name": "\u003cNUM\u003e",
+        "kind": "argument",
+        "description": "NUM",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNUM\u003e"
+    ]
+  },
+  "-D": {
+    "Name": "-D",
+    "kind": "option",
+    "description": "Specify the demanded action for devices, FIFOs and sockets",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003caction\u003e": {
+        "Name": "\u003caction\u003e",
+        "kind": "argument",
+        "description": "action",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003caction\u003e": {
+        "Name": "\u003caction\u003e",
+        "kind": "argument",
+        "description": "action",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003caction\u003e"
+    ]
+  },
+  "-E": {
+    "Name": "-E",
+    "kind": "option",
+    "description": "Interpret PATTERN as an extended regular expression (-E is specified by POSIX.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-F": {
+    "Name": "-F",
+    "kind": "option",
+    "description": "Interpret PATTERN as a list of fixed strings, separated by newlines, any of which is to be matched. (-F is specified by POSIX.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-G": {
+    "Name": "-G",
+    "kind": "option",
+    "description": "Interpret PATTERN as a basic regular expression (BRE, see below). This is the default",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-H": {
+    "Name": "-H",
+    "kind": "option",
+    "description": "Print the file name for each match. This is the default when there is more than one file to search",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-I": {
+    "Name": "-I",
+    "kind": "option",
+    "description": "Ignore binary files. This option is equivalent to --binary-file=without-match option",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-J": {
+    "Name": "-J",
+    "kind": "option",
+    "description": "Decompress the bzip2(1) compressed file before looking for the text",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-L": {
+    "Name": "-L",
+    "kind": "option",
+    "description": "Suppress normal output; instead print the name of each input file from which no output would normally have been printed. The scanning will stop on the first match",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-P": {
+    "Name": "-P",
+    "kind": "option",
+    "description": "Interpret pattern as a Perl regular expression",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-R": {
+    "Name": "-R",
+    "kind": "option",
+    "description": "Recursively search subdirectories listed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-T": {
+    "Name": "-T",
+    "kind": "option",
+    "description": "Make sure that the first character of actual line content lies on a tab stop, so that the alignment of tabs looks normal. This is useful with options that prefix their output to the actual content: -H,-n, and -b. In order to improve the probability that lines from a single file will all start at the same column, this also causes the line number and byte offset (if present) to be printed in a minimum size field width",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-U": {
+    "Name": "-U",
+    "kind": "option",
+    "description": "Search binary files, but do not attempt to print them",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-V": {
+    "Name": "-V",
+    "kind": "option",
+    "description": "Print version number of grep to the standard output stream",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-a": {
+    "Name": "-a",
+    "kind": "option",
+    "description": "Treat all files as ASCII text. Normally grep will simply print ``Binary file ... matches'' if files contain binary characters. Use of this option forces grep to output lines matching the specified pattern",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-b": {
+    "Name": "-b",
+    "kind": "option",
+    "description": "Print the 0-based byte offset within the input file before each line of output. If -o (--only-matching) is specified, print the offset of the matching part itself",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-bz2decompress": {
+    "Name": "-bz2decompress",
+    "kind": "option",
+    "description": "Decompress the bzip2(1) compressed file before looking for the text",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Suppress normal output; instead print a count of matching lines for each input file. With the -v, --invert-match option, count non-matching lines. (-c is specified by POSIX.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Specify the demanded action for directories",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003caction\u003e": {
+        "Name": "\u003caction\u003e",
+        "kind": "argument",
+        "description": "action",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003caction\u003e": {
+        "Name": "\u003caction\u003e",
+        "kind": "argument",
+        "description": "action",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003caction\u003e"
+    ]
+  },
+  "-e": {
+    "Name": "-e",
+    "kind": "option",
+    "description": "Use PATTERN as the pattern. This can be used to specify multiple search patterns, or to protect a pattern beginning with a hyphen (-). (-e is specified by POSIX.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpattern\u003e": {
+        "Name": "\u003cpattern\u003e",
+        "kind": "argument",
+        "description": "pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpattern\u003e": {
+        "Name": "\u003cpattern\u003e",
+        "kind": "argument",
+        "description": "pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpattern\u003e"
+    ]
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Obtain patterns from FILE, one per line. The empty file contains zero patterns, and therefore matches nothing. (-f is specified by POSIX.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFILE\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Suppress the prefixing of file names on output. This is the default when there is only one file (or only standard input) to search",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Ignore case distinctions in both the PATTERN and the input files. (-i is specified by POSIX.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "option",
+    "description": "Suppress normal output; instead print the name of each input file from which output would normally have been printed. The scanning will stop on the first match. (-l is specified by POSIX.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-m": {
+    "Name": "-m",
+    "kind": "option",
+    "description": "Stop reading a file after NUM matching lines. If the input is standard input from a regular file, and NUM matching lines are output, grep ensures that the standard input is positioned to just after the last matching line before exiting, regardless of the presence of trailing context lines. This enables a calling process to resume a search. When grep stops after NUM matching lines, it outputs any trailing context lines. When the -c or --count option is also used, grep does not output a count greater than NUM. When the -v or --invert-match option is also used, grep stops after outputting NUM non-matching lines",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNUM\u003e": {
+        "Name": "\u003cNUM\u003e",
+        "kind": "argument",
+        "description": "NUM",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNUM\u003e": {
+        "Name": "\u003cNUM\u003e",
+        "kind": "argument",
+        "description": "NUM",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNUM\u003e"
+    ]
+  },
+  "-n": {
+    "Name": "-n",
+    "kind": "option",
+    "description": "Prefix each line of output with the 1-based line number within its input file. (-n is specified by POSIX.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-o": {
+    "Name": "-o",
+    "kind": "option",
+    "description": "Print only the matched (non-empty) parts of a matching line, with each such part on a separate output line",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-q": {
+    "Name": "-q",
+    "kind": "option",
+    "description": "Quiet; do not write anything to standard output. Exit immediately with zero status if any match is found, even if an error was detected. Also see the -s or --no-messages option. (-q is specified by POSIX.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "Recursively search subdirectories listed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Suppress error messages about nonexistent or unreadable files. Portability note: unlike GNU grep, 7th Edition Unix grep did not conform to POSIX, because it lacked -q and its -s option behaved like GNU grep's -q option. USG -style grep also lacked -q but its -s option behaved like GNU grep. Portable shell scripts should avoid both -q and -s and should redirect standard and error output to /dev/null instead. (-s is specified by POSIX.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-u": {
+    "Name": "-u",
+    "kind": "option",
+    "description": "Report Unix-style byte offsets. This switch causes grep to report byte offsets as if the file were a Unix-style text file, i.e., with CR characters stripped off. This will produce results identical to running grep on a Unix machine. This option has no effect unless -b option is also used; it has no effect on platforms other than MS-DOS and MS -Windows",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Invert the sense of matching, to select non-matching lines. (-v is specified by POSIX.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-w": {
+    "Name": "-w",
+    "kind": "option",
+    "description": "Select only those lines containing matches that form whole words. The test is that the matching substring must either be at the beginning of the line, or preceded by a non-word constituent character. Similarly, it must be either at the end of the line or followed by a non-word constituent character. Word-constituent characters are letters, digits, and the underscore",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-x": {
+    "Name": "-x",
+    "kind": "option",
+    "description": "Select only those matches that exactly match the whole line. (-x is specified by POSIX.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-y": {
+    "Name": "-y",
+    "kind": "option",
+    "description": "Ignore case distinctions in both the PATTERN and the input files. (-i is specified by POSIX.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003cfile\u003e": {
+    "Name": "\u003cfile\u003e",
+    "kind": "argument",
+    "description": "file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  },
+  "\u003csearch pattern\u003e": {
+    "Name": "\u003csearch pattern\u003e",
+    "kind": "argument",
+    "description": "search pattern",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

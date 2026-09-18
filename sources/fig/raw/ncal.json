@@ -1,0 +1,387 @@
+{
+  "name": "ncal",
+  "parserDirectives": {
+    "optionsMustPrecedeArguments": true
+  },
+  "description": "Displays a calendar and the date of Easter",
+  "options": [
+    {
+      "name": "-h",
+      "description": "Turns off highlighting of today"
+    },
+    {
+      "name": "-J",
+      "description": "Display Julian Calendar, if combined with the -e option, display date of Easter according to the Julian Calendar"
+    },
+    {
+      "name": "-e",
+      "description": "Display date of Easter (for western churches)"
+    },
+    {
+      "name": "-j",
+      "description": "Display Julian days (days one-based, numbered from January 1)"
+    },
+    {
+      "name": "-m",
+      "description": "Display the specified month.  If month is specified as a decimal number, it may be followed by the letter ‘f’ or ‘p’ to indicate the following or preceding month of that number, respectively",
+      "exclusiveOn": [
+        "-y",
+        "-p"
+      ],
+      "args": {
+        "name": "month",
+        "description": "Display the specified month.  If month is specified as a decimal number, it may be followed by the letter ‘f’ or ‘p’ to indicate the following or preceding month of that number, respectively",
+        "suggestions": [
+          {
+            "name": "january",
+            "icon": "🗓",
+            "type": "arg"
+          },
+          {
+            "name": "february",
+            "icon": "🗓",
+            "type": "arg"
+          },
+          {
+            "name": "march",
+            "icon": "🗓",
+            "type": "arg"
+          },
+          {
+            "name": "april",
+            "icon": "🗓",
+            "type": "arg"
+          },
+          {
+            "name": "may",
+            "icon": "🗓",
+            "type": "arg"
+          },
+          {
+            "name": "june",
+            "icon": "🗓",
+            "type": "arg"
+          },
+          {
+            "name": "july",
+            "icon": "🗓",
+            "type": "arg"
+          },
+          {
+            "name": "august",
+            "icon": "🗓",
+            "type": "arg"
+          },
+          {
+            "name": "september",
+            "icon": "🗓",
+            "type": "arg"
+          },
+          {
+            "name": "october",
+            "icon": "🗓",
+            "type": "arg"
+          },
+          {
+            "name": "november",
+            "icon": "🗓",
+            "type": "arg"
+          },
+          {
+            "name": "december",
+            "icon": "🗓",
+            "type": "arg"
+          }
+        ]
+      }
+    },
+    {
+      "name": "-y",
+      "description": "Display a calendar for the specified year",
+      "args": {
+        "name": "year"
+      }
+    },
+    {
+      "name": "-o",
+      "description": "Display date of Orthodox Easter (Greek and Russian Orthodox Churches)"
+    },
+    {
+      "name": "-p",
+      "description": "Print the country codes and switching days from Julian to Gregorian Calendar as they are assumed by ncal.  The country code as determined from the local environment is marked with an asterisk"
+    },
+    {
+      "name": "-s",
+      "description": "Assume the switch from Julian to Gregorian Calendar at the date associated with the country_code.  If not specified, ncal tries to guess the switch date from the local environment or falls back to September 2, 1752.  This was when Great Britain and her colonies switched to the Gregorian Calendar",
+      "args": {
+        "name": "country_code",
+        "suggestions": [
+          {
+            "name": "AL",
+            "description": "Albania",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "AT",
+            "description": "Austria",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "AU",
+            "description": "Australia",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "BE",
+            "description": "Belgium",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "BG",
+            "description": "Bulgaria",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "CA",
+            "description": "Canada",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "CH",
+            "description": "Switzerland",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "CN",
+            "description": "China",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "CZ",
+            "description": "Czech Republic",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "DE",
+            "description": "Germany",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "DK",
+            "description": "Denmark",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "ES",
+            "description": "Spain",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "FI",
+            "description": "Finland",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "FR",
+            "description": "France",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "GB",
+            "description": "United Kingdom",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "GR",
+            "description": "Greece",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "HU",
+            "description": "Hungary",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "IS",
+            "description": "Iceland",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "IT",
+            "description": "Italy",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "JP",
+            "description": "Japan",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "LI",
+            "description": "Lithuania",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "LN",
+            "description": "Latin",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "LU",
+            "description": "Luxembourg",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "LV",
+            "description": "Latvia",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "NL",
+            "description": "Netherlands",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "NO",
+            "description": "Norway",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "PL",
+            "description": "Poland",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "PT",
+            "description": "Portugal",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "RO",
+            "description": "Romania",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "RU",
+            "description": "Russia",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "SI",
+            "description": "Slovenia",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "SW",
+            "description": "Sweden",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "TR",
+            "description": "Turkey",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "US",
+            "description": "United States",
+            "icon": "🌎",
+            "type": "arg"
+          },
+          {
+            "name": "YU",
+            "description": "Yugoslavia",
+            "icon": "🌎",
+            "type": "arg"
+          }
+        ]
+      }
+    },
+    {
+      "name": "-w",
+      "description": "Print the number of the week below each week column"
+    },
+    {
+      "name": "-3",
+      "description": "Display the previous, current and next month surrounding today",
+      "exclusiveOn": [
+        "-y",
+        "-A",
+        "-B",
+        "-p"
+      ]
+    },
+    {
+      "name": "-A",
+      "description": "Display the number of months after the current month",
+      "args": {
+        "name": "number",
+        "description": "Number of months to display"
+      }
+    },
+    {
+      "name": "-B",
+      "description": "Display the number of months before the current month",
+      "args": {
+        "name": "number",
+        "description": "Number of months to display"
+      }
+    },
+    {
+      "name": "-C",
+      "description": "Switch to cal mode"
+    },
+    {
+      "name": "-N",
+      "description": "Switch to ncal mode"
+    },
+    {
+      "name": "-d",
+      "description": "Use yyyy-mm as the current date (for debugging of date selection)",
+      "args": {
+        "name": "yyyy-mm",
+        "description": "Date to use as the current date"
+      }
+    },
+    {
+      "name": "-H",
+      "description": "Use yyyy-mm-dd as the current date (for debugging of highlighting)",
+      "args": {
+        "name": "yyyy-mm-dd",
+        "description": "Date to use as the current date"
+      }
+    }
+  ]
+}

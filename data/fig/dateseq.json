@@ -1,0 +1,398 @@
+{
+  "--alt-inc": {
+    "Name": "--alt-inc",
+    "kind": "option",
+    "description": "Alternative increment to use when a date is hit that is skipped as per --skip. This increment will be applied until a non-skipped date is reached. The special case `0' (default) deactivates alternative incrementing.  A useful value could be `1d' for increasing sequences and `-1d' for decreasing sequences, so if a skipped date is encountered the next non-skipped date after/before will be used",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003calternative increment\u003e": {
+        "Name": "\u003calternative increment\u003e",
+        "kind": "argument",
+        "description": "alternative increment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003calternative increment\u003e": {
+        "Name": "\u003calternative increment\u003e",
+        "kind": "argument",
+        "description": "alternative increment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003calternative increment\u003e"
+    ]
+  },
+  "--backslash-escapes": {
+    "Name": "--backslash-escapes",
+    "kind": "option",
+    "description": "Enable interpretation of backslash escapes in the output and input format specifier strings",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--base": {
+    "Name": "--base",
+    "kind": "option",
+    "description": "For underspecified input use DT as a fallback to fill in missing fields. Also used for ambiguous format specifiers to position their range on the absolute time line. Must be a date/time in ISO8601 format. If omitted defaults to the current date/time",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cbase\u003e": {
+        "Name": "\u003cbase\u003e",
+        "kind": "argument",
+        "description": "base",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cbase\u003e": {
+        "Name": "\u003cbase\u003e",
+        "kind": "argument",
+        "description": "base",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cbase\u003e"
+    ]
+  },
+  "--compute-from-last": {
+    "Name": "--compute-from-last",
+    "kind": "option",
+    "description": "Compute a start value from LAST using INCREMENT. This option has an effect only when INCREMENT is not a divisor of the duration between FIRST and LAST. In such case, an alternative FIRST will be computed by consecutively subtracting INCREMENT from LAST until FIRST is hit or crossed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--format": {
+    "Name": "--format",
+    "kind": "option",
+    "description": "Output format. This can either be a specifier string (similar to strftime()'s FMT) or the name of a calendar",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Print help and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--input-format": {
+    "Name": "--input-format",
+    "kind": "option",
+    "description": "Input format, can be used multiple times. Each date/time will be passed to the input format parsers in the order they are given, if a date/time can be read successfully with a given input format specifier string, that value will be used",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cinput format\u003e": {
+        "Name": "\u003cinput format\u003e",
+        "kind": "argument",
+        "description": "input format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cinput format\u003e": {
+        "Name": "\u003cinput format\u003e",
+        "kind": "argument",
+        "description": "input format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cinput format\u003e"
+    ]
+  },
+  "--locale": {
+    "Name": "--locale",
+    "kind": "option",
+    "description": "Format results according to LOCALE, this would only affect month and weekday names",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clocale\u003e": {
+        "Name": "\u003clocale\u003e",
+        "kind": "argument",
+        "description": "locale",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clocale\u003e": {
+        "Name": "\u003clocale\u003e",
+        "kind": "argument",
+        "description": "locale",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clocale\u003e"
+    ]
+  },
+  "--quiet": {
+    "Name": "--quiet",
+    "kind": "option",
+    "description": "Suppress message about date/time and duration parse errors and fix-ups",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--skip": {
+    "Name": "--skip",
+    "kind": "option",
+    "description": "Skip weekdays specified by WEEKDAY. WEEKDAY can be a single weekday (Mon, Tue, etc.), and to skip several days the --skip option can be used multiple times. WEEKDAY can also be a comma-separated list of weekday names, or `ss' to skip weekends (sat+sun) altogether. WEEKDAY can also contain date ranges like `mo-we' for Monday to Wednesday",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cweekday\u003e": {
+        "Name": "\u003cweekday\u003e",
+        "kind": "argument",
+        "description": "weekday",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cweekday\u003e": {
+        "Name": "\u003cweekday\u003e",
+        "kind": "argument",
+        "description": "weekday",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cweekday\u003e"
+    ]
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Print version and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-V": {
+    "Name": "-V",
+    "kind": "option",
+    "description": "Print version and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-b": {
+    "Name": "-b",
+    "kind": "option",
+    "description": "For underspecified input use DT as a fallback to fill in missing fields. Also used for ambiguous format specifiers to position their range on the absolute time line. Must be a date/time in ISO8601 format. If omitted defaults to the current date/time",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cbase\u003e": {
+        "Name": "\u003cbase\u003e",
+        "kind": "argument",
+        "description": "base",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cbase\u003e": {
+        "Name": "\u003cbase\u003e",
+        "kind": "argument",
+        "description": "base",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cbase\u003e"
+    ]
+  },
+  "-e": {
+    "Name": "-e",
+    "kind": "option",
+    "description": "Enable interpretation of backslash escapes in the output and input format specifier strings",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Output format. This can either be a specifier string (similar to strftime()'s FMT) or the name of a calendar",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Print help and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Input format, can be used multiple times. Each date/time will be passed to the input format parsers in the order they are given, if a date/time can be read successfully with a given input format specifier string, that value will be used",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cinput format\u003e": {
+        "Name": "\u003cinput format\u003e",
+        "kind": "argument",
+        "description": "input format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cinput format\u003e": {
+        "Name": "\u003cinput format\u003e",
+        "kind": "argument",
+        "description": "input format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cinput format\u003e"
+    ]
+  },
+  "-q": {
+    "Name": "-q",
+    "kind": "option",
+    "description": "Suppress message about date/time and duration parse errors and fix-ups",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Skip weekdays specified by WEEKDAY. WEEKDAY can be a single weekday (Mon, Tue, etc.), and to skip several days the --skip option can be used multiple times. WEEKDAY can also be a comma-separated list of weekday names, or `ss' to skip weekends (sat+sun) altogether. WEEKDAY can also contain date ranges like `mo-we' for Monday to Wednesday",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cweekday\u003e": {
+        "Name": "\u003cweekday\u003e",
+        "kind": "argument",
+        "description": "weekday",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cweekday\u003e": {
+        "Name": "\u003cweekday\u003e",
+        "kind": "argument",
+        "description": "weekday",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cweekday\u003e"
+    ]
+  },
+  "\u003cFIRST\u003e": {
+    "Name": "\u003cFIRST\u003e",
+    "kind": "argument",
+    "description": "FIRST",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  },
+  "\u003cINCREMENT\u003e": {
+    "Name": "\u003cINCREMENT\u003e",
+    "kind": "argument",
+    "description": "INCREMENT",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  },
+  "\u003cLAST\u003e": {
+    "Name": "\u003cLAST\u003e",
+    "kind": "argument",
+    "description": "LAST",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

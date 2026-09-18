@@ -1,0 +1,436 @@
+{
+  "--ci": {
+    "Name": "--ci",
+    "kind": "option",
+    "description": "CI mode (skip interactive prompts, don't open browser)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--config-dir": {
+    "Name": "--config-dir",
+    "kind": "option",
+    "description": "Directory where to load Storybook configurations from",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdirectory\u003e"
+    ]
+  },
+  "--debug-webpack": {
+    "Name": "--debug-webpack",
+    "kind": "option",
+    "description": "Display final webpack configurations for debugging purposes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--docs": {
+    "Name": "--docs",
+    "kind": "option",
+    "description": "Starts Storybook in documentation mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Display usage information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--https": {
+    "Name": "--https",
+    "kind": "option",
+    "description": "Serve Storybook over HTTPS. Note: You must provide your own certificate information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--loglevel": {
+    "Name": "--loglevel",
+    "kind": "option",
+    "description": "Controls level of logging during build",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clevel\u003e"
+    ]
+  },
+  "--no-dll": {
+    "Name": "--no-dll",
+    "kind": "option",
+    "description": "Do not use dll reference (no-op)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-manager-cache": {
+    "Name": "--no-manager-cache",
+    "kind": "option",
+    "description": "Disables Storybook's manager caching mechanism. NOTE: this flag disables the internal caching of Storybook and can severely impact your Storybook loading time, so only use it when you need to refresh Storybook's UI, such as when editing themes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--output-dir": {
+    "Name": "--output-dir",
+    "kind": "option",
+    "description": "Directory where to store built files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdirectory\u003e"
+    ]
+  },
+  "--quiet": {
+    "Name": "--quiet",
+    "kind": "option",
+    "description": "Suppress verbose build output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--smoke-test": {
+    "Name": "--smoke-test",
+    "kind": "option",
+    "description": "Exit after successful start",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--ssl-ca": {
+    "Name": "--ssl-ca",
+    "kind": "option",
+    "description": "Provide an SSL certificate authority. (Optional with --https, required if using a self-signed certificate)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccertificate authority\u003e": {
+        "Name": "\u003ccertificate authority\u003e",
+        "kind": "argument",
+        "description": "certificate authority",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccertificate authority\u003e": {
+        "Name": "\u003ccertificate authority\u003e",
+        "kind": "argument",
+        "description": "certificate authority",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccertificate authority\u003e"
+    ]
+  },
+  "--ssl-cert": {
+    "Name": "--ssl-cert",
+    "kind": "option",
+    "description": "Provide an SSL certificate. (Required with --https)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccertificate\u003e": {
+        "Name": "\u003ccertificate\u003e",
+        "kind": "argument",
+        "description": "certificate",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccertificate\u003e": {
+        "Name": "\u003ccertificate\u003e",
+        "kind": "argument",
+        "description": "certificate",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccertificate\u003e"
+    ]
+  },
+  "--ssl-key": {
+    "Name": "--ssl-key",
+    "kind": "option",
+    "description": "Provide an SSL key. (Required with --https)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ckey\u003e"
+    ]
+  },
+  "--static-dir": {
+    "Name": "--static-dir",
+    "kind": "option",
+    "description": "Directory where to load static files from, comma-separated list",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdirectory\u003e"
+    ]
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Display the version number",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--watch": {
+    "Name": "--watch",
+    "kind": "option",
+    "description": "Enables watch mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--webpack-stats-json": {
+    "Name": "--webpack-stats-json",
+    "kind": "option",
+    "description": "Write Webpack Stats JSON to disk",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdirectory\u003e"
+    ]
+  },
+  "-V": {
+    "Name": "-V",
+    "kind": "option",
+    "description": "Display the version number",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Directory where to load Storybook configurations from",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdirectory\u003e"
+    ]
+  },
+  "-o": {
+    "Name": "-o",
+    "kind": "option",
+    "description": "Directory where to store built files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdirectory\u003e"
+    ]
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Directory where to load static files from, comma-separated list",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdirectory\u003e"
+    ]
+  },
+  "-w": {
+    "Name": "-w",
+    "kind": "option",
+    "description": "Enables watch mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

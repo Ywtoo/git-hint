@@ -1,0 +1,1052 @@
+{
+  "--auto-gen-config": {
+    "Name": "--auto-gen-config",
+    "kind": "option",
+    "description": "Generate a configuration file acting as a TODO list",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--auto-gen-only-exclude": {
+    "Name": "--auto-gen-only-exclude",
+    "kind": "option",
+    "description": "Generate only Exclude parameters and not Max when running --auto-gen-config, except if the number of files with offenses is bigger than exclude-limit. Default is false",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--auto-gen-timestamp": {
+    "Name": "--auto-gen-timestamp",
+    "kind": "option",
+    "description": "Include the date and time when the --auto-gen-config was run in the file it generates. Default is true",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--autocorrect": {
+    "Name": "--autocorrect",
+    "kind": "option",
+    "description": "Autocorrect offenses (only when it's safe)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--autocorrect-all": {
+    "Name": "--autocorrect-all",
+    "kind": "option",
+    "description": "Autocorrect offenses (safe and unsafe)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--cache": {
+    "Name": "--cache",
+    "kind": "option",
+    "description": "Use result caching (FLAG=true) or don't (FLAG=false), default determined by configuration parameter AllCops: UseCache",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFLAG\u003e": {
+        "Name": "\u003cFLAG\u003e",
+        "kind": "argument",
+        "description": "FLAG",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFLAG\u003e": {
+        "Name": "\u003cFLAG\u003e",
+        "kind": "argument",
+        "description": "FLAG",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFLAG\u003e"
+    ]
+  },
+  "--cache-root": {
+    "Name": "--cache-root",
+    "kind": "option",
+    "description": "Set the cache root directory. Takes precedence over the configuration parameter AllCops: CacheRootDirectory and the $RUBOCOP_CACHE_ROOT environment variable",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cDIR\u003e": {
+        "Name": "\u003cDIR\u003e",
+        "kind": "argument",
+        "description": "DIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cDIR\u003e": {
+        "Name": "\u003cDIR\u003e",
+        "kind": "argument",
+        "description": "DIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cDIR\u003e"
+    ]
+  },
+  "--color": {
+    "Name": "--color",
+    "kind": "option",
+    "description": "Force color output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--config": {
+    "Name": "--config",
+    "kind": "option",
+    "description": "Specify configuration file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile\u003e"
+    ]
+  },
+  "--debug": {
+    "Name": "--debug",
+    "kind": "option",
+    "description": "Display debug info",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--disable-pending-cops": {
+    "Name": "--disable-pending-cops",
+    "kind": "option",
+    "description": "Run without pending cops",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--disable-uncorrectable": {
+    "Name": "--disable-uncorrectable",
+    "kind": "option",
+    "description": "Annotates any offenses that do not support autocorrect with `rubocop:todo` comments",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--display-cop-names": {
+    "Name": "--display-cop-names",
+    "kind": "option",
+    "description": "Display cop names in offense messages.  Default is true",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--display-only-correctable": {
+    "Name": "--display-only-correctable",
+    "kind": "option",
+    "description": "Only output correctable offense messages",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--display-only-fail-level-offenses": {
+    "Name": "--display-only-fail-level-offenses",
+    "kind": "option",
+    "description": "Only output offense messages at the specified --fail-level or above",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--display-only-failed": {
+    "Name": "--display-only-failed",
+    "kind": "option",
+    "description": "Only output offense messages. Omit passing cops. Only valid for --format junit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--display-only-safe-correctable": {
+    "Name": "--display-only-safe-correctable",
+    "kind": "option",
+    "description": "Only output safe-correctable offense messages when combined with --display-only-correctable",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--display-style-guide": {
+    "Name": "--display-style-guide",
+    "kind": "option",
+    "description": "Display style guide URLs in offense messages",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--display-time": {
+    "Name": "--display-time",
+    "kind": "option",
+    "description": "Display elapsed time in seconds",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--enable-pending-cops": {
+    "Name": "--enable-pending-cops",
+    "kind": "option",
+    "description": "Run with pending cops",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--except": {
+    "Name": "--except",
+    "kind": "option",
+    "description": "Exclude the given cop(s)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cCOP\u003e": {
+        "Name": "\u003cCOP\u003e",
+        "kind": "argument",
+        "description": "COP",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cCOP\u003e": {
+        "Name": "\u003cCOP\u003e",
+        "kind": "argument",
+        "description": "COP",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cCOP\u003e"
+    ]
+  },
+  "--exclude-limit": {
+    "Name": "--exclude-limit",
+    "kind": "option",
+    "description": "Set the limit for how many files to explicitly exclude.  If there are more files than the limit, the cop will be disabled instead. Default is 15",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cCOUNT\u003e": {
+        "Name": "\u003cCOUNT\u003e",
+        "kind": "argument",
+        "description": "COUNT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cCOUNT\u003e": {
+        "Name": "\u003cCOUNT\u003e",
+        "kind": "argument",
+        "description": "COUNT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cCOUNT\u003e"
+    ]
+  },
+  "--extra-details": {
+    "Name": "--extra-details",
+    "kind": "option",
+    "description": "Display extra details in offense messages",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--fail-fast": {
+    "Name": "--fail-fast",
+    "kind": "option",
+    "description": "Inspect files in order of modification time and stop after the first file containing offenses",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--fail-level": {
+    "Name": "--fail-level",
+    "kind": "option",
+    "description": "Minimum severity for exit with error code",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSEVERITY\u003e": {
+        "Name": "\u003cSEVERITY\u003e",
+        "kind": "argument",
+        "description": "SEVERITY",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSEVERITY\u003e": {
+        "Name": "\u003cSEVERITY\u003e",
+        "kind": "argument",
+        "description": "SEVERITY",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSEVERITY\u003e"
+    ]
+  },
+  "--fix-layout": {
+    "Name": "--fix-layout",
+    "kind": "option",
+    "description": "Run only layout cops, with autocorrect on",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--force-default-config": {
+    "Name": "--force-default-config",
+    "kind": "option",
+    "description": "Use default configuration even if configuration files are present in the directory tree",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--force-exclusion": {
+    "Name": "--force-exclusion",
+    "kind": "option",
+    "description": "Any files excluded by `Exclude` in configuration files will be excluded, even if given explicitly as arguments",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--format": {
+    "Name": "--format",
+    "kind": "option",
+    "description": "Choose an output formatter. This option can be specified multiple times to enable multiple formatters at the same time",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFORMATTER\u003e": {
+        "Name": "\u003cFORMATTER\u003e",
+        "kind": "argument",
+        "description": "FORMATTER",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFORMATTER\u003e": {
+        "Name": "\u003cFORMATTER\u003e",
+        "kind": "argument",
+        "description": "FORMATTER",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFORMATTER\u003e"
+    ]
+  },
+  "--ignore-disable-comments": {
+    "Name": "--ignore-disable-comments",
+    "kind": "option",
+    "description": "Run cops even when they are disabled locally by a `rubocop:disable` directive",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--ignore-parent-exclusion": {
+    "Name": "--ignore-parent-exclusion",
+    "kind": "option",
+    "description": "Prevent from inheriting `AllCops/Exclude` from parent folders",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--ignore-unrecognized-cops": {
+    "Name": "--ignore-unrecognized-cops",
+    "kind": "option",
+    "description": "Ignore unrecognized cops or departments in the config",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--init": {
+    "Name": "--init",
+    "kind": "option",
+    "description": "Generate a .rubocop.yml file in the current directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--lint": {
+    "Name": "--lint",
+    "kind": "option",
+    "description": "Run only lint cops",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--list-target-files": {
+    "Name": "--list-target-files",
+    "kind": "option",
+    "description": "List all files RuboCop will inspect",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-color": {
+    "Name": "--no-color",
+    "kind": "option",
+    "description": "Disable color output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-display-cop-names": {
+    "Name": "--no-display-cop-names",
+    "kind": "option",
+    "description": "Disable displaying cop names in offense messages. Default false",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-parallel": {
+    "Name": "--no-parallel",
+    "kind": "option",
+    "description": "Disable parallel inspection (default: false)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-server": {
+    "Name": "--no-server",
+    "kind": "option",
+    "description": "Do not use server even if it's available",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--offense-counts": {
+    "Name": "--offense-counts",
+    "kind": "option",
+    "description": "Include offense counts in configuration file generated by --auto-gen-config.  Default is true",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--only": {
+    "Name": "--only",
+    "kind": "option",
+    "description": "Run only the given cop(s)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cCOP\u003e": {
+        "Name": "\u003cCOP\u003e",
+        "kind": "argument",
+        "description": "COP",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cCOP\u003e": {
+        "Name": "\u003cCOP\u003e",
+        "kind": "argument",
+        "description": "COP",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cCOP\u003e"
+    ]
+  },
+  "--only-guide-cops": {
+    "Name": "--only-guide-cops",
+    "kind": "option",
+    "description": "Run only cops for rules that link to a style guide",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--only-recognized-file-types": {
+    "Name": "--only-recognized-file-types",
+    "kind": "option",
+    "description": "Inspect files given on the command line only if they are listed in `AllCops/Include` parameters of user configuration or default configuration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--out": {
+    "Name": "--out",
+    "kind": "option",
+    "description": "Write output to a file instead of STDOUT.  This option applies to the previously specified --format, or the default format if no format is specified",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFILE\u003e"
+    ]
+  },
+  "--parallel": {
+    "Name": "--parallel",
+    "kind": "option",
+    "description": "Use available CPUs to execute inspection in parallel default true",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--regenerate-todo": {
+    "Name": "--regenerate-todo",
+    "kind": "option",
+    "description": "Regenerate the TODO configuration file using the last configuration. If there is no existing TODO file, acts like --auto-gen-config",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--require": {
+    "Name": "--require",
+    "kind": "option",
+    "description": "Require Ruby file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile\u003e"
+    ]
+  },
+  "--restart-server": {
+    "Name": "--restart-server",
+    "kind": "option",
+    "description": "Restart server process",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--safe": {
+    "Name": "--safe",
+    "kind": "option",
+    "description": "Run only safe cops",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--server": {
+    "Name": "--server",
+    "kind": "option",
+    "description": "If a server process has not been started yet, start the server process and execute inspection with server.  Default is true.  You can specify the server host and port with the $RUBOCOP_SERVER_HOST and the $RUBOCOP_SERVER_PORT environment variables",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--server-status": {
+    "Name": "--server-status",
+    "kind": "option",
+    "description": "Show server status",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--show-cops": {
+    "Name": "--show-cops",
+    "kind": "option",
+    "description": "Shows the given cops, or all cops by default, and their configurations for the current directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cCOP\u003e": {
+        "Name": "\u003cCOP\u003e",
+        "kind": "argument",
+        "description": "COP",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cCOP\u003e": {
+        "Name": "\u003cCOP\u003e",
+        "kind": "argument",
+        "description": "COP",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cCOP\u003e"
+    ]
+  },
+  "--show-docs-url": {
+    "Name": "--show-docs-url",
+    "kind": "option",
+    "description": "Display url to documentation for the given cops, or base url by default",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cCOP\u003e": {
+        "Name": "\u003cCOP\u003e",
+        "kind": "argument",
+        "description": "COP",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cCOP\u003e": {
+        "Name": "\u003cCOP\u003e",
+        "kind": "argument",
+        "description": "COP",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cCOP\u003e"
+    ]
+  },
+  "--start-server": {
+    "Name": "--start-server",
+    "kind": "option",
+    "description": "Start server process",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--stderr": {
+    "Name": "--stderr",
+    "kind": "option",
+    "description": "Write all output to stderr except for the autocorrected source. This is especially useful when combined with --autocorrect and --stdin",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--stdin": {
+    "Name": "--stdin",
+    "kind": "option",
+    "description": "Pipe source from STDIN, using FILE in offense reports. This is useful for editor integration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFILE\u003e"
+    ]
+  },
+  "--stop-server": {
+    "Name": "--stop-server",
+    "kind": "option",
+    "description": "Stop server process",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--verbose-version": {
+    "Name": "--verbose-version",
+    "kind": "option",
+    "description": "Display verbose version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Display version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-A": {
+    "Name": "-A",
+    "kind": "option",
+    "description": "Autocorrect offenses (safe and unsafe)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-C": {
+    "Name": "-C",
+    "kind": "option",
+    "description": "Use result caching (FLAG=true) or don't (FLAG=false), default determined by configuration parameter AllCops: UseCache",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFLAG\u003e": {
+        "Name": "\u003cFLAG\u003e",
+        "kind": "argument",
+        "description": "FLAG",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFLAG\u003e": {
+        "Name": "\u003cFLAG\u003e",
+        "kind": "argument",
+        "description": "FLAG",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFLAG\u003e"
+    ]
+  },
+  "-D": {
+    "Name": "-D",
+    "kind": "option",
+    "description": "Display cop names in offense messages.  Default is true",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-E": {
+    "Name": "-E",
+    "kind": "option",
+    "description": "Display extra details in offense messages",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-F": {
+    "Name": "-F",
+    "kind": "option",
+    "description": "Inspect files in order of modification time and stop after the first file containing offenses",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-L": {
+    "Name": "-L",
+    "kind": "option",
+    "description": "List all files RuboCop will inspect",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-P": {
+    "Name": "-P",
+    "kind": "option",
+    "description": "Use available CPUs to execute inspection in parallel default true",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-S": {
+    "Name": "-S",
+    "kind": "option",
+    "description": "Display style guide URLs in offense messages",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-V": {
+    "Name": "-V",
+    "kind": "option",
+    "description": "Display verbose version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-a": {
+    "Name": "-a",
+    "kind": "option",
+    "description": "Autocorrect offenses (only when it's safe)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Specify configuration file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile\u003e"
+    ]
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Display debug info",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Choose an output formatter. This option can be specified multiple times to enable multiple formatters at the same time",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFORMATTER\u003e": {
+        "Name": "\u003cFORMATTER\u003e",
+        "kind": "argument",
+        "description": "FORMATTER",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFORMATTER\u003e": {
+        "Name": "\u003cFORMATTER\u003e",
+        "kind": "argument",
+        "description": "FORMATTER",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFORMATTER\u003e"
+    ]
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "option",
+    "description": "Run only lint cops",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-o": {
+    "Name": "-o",
+    "kind": "option",
+    "description": "Write output to a file instead of STDOUT.  This option applies to the previously specified --format, or the default format if no format is specified",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFILE\u003e"
+    ]
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "Require Ruby file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile\u003e"
+    ]
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Pipe source from STDIN, using FILE in offense reports. This is useful for editor integration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFILE\u003e"
+    ]
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Display version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-x": {
+    "Name": "-x",
+    "kind": "option",
+    "description": "Run only layout cops, with autocorrect on",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003cfile\u003e": {
+    "Name": "\u003cfile\u003e",
+    "kind": "argument",
+    "description": "file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

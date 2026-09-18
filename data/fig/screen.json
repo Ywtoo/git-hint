@@ -1,0 +1,701 @@
+{
+  "-A": {
+    "Name": "-A",
+    "kind": "option",
+    "description": "Adapt all windows to the new display width \u0026 height",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-D": {
+    "Name": "-D",
+    "kind": "subcommand",
+    "description": "Does not start screen, but detaches the elsewhere running screen session",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-R": {
+        "Name": "-R",
+        "kind": "subcommand",
+        "description": "Attach here and now. In detail this means: If a session is running, then reattach. If necessary detach and logout remotely first",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cidentifier\u003e": {
+            "Name": "\u003cidentifier\u003e",
+            "kind": "argument",
+            "description": "identifier",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cidentifier\u003e": {
+            "Name": "\u003cidentifier\u003e",
+            "kind": "argument",
+            "description": "identifier",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cidentifier\u003e"
+        ]
+      },
+      "-RR": {
+        "Name": "-RR",
+        "kind": "subcommand",
+        "description": "Attach here and now. Whatever that means, just do it",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cidentifier\u003e": {
+            "Name": "\u003cidentifier\u003e",
+            "kind": "argument",
+            "description": "identifier",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cidentifier\u003e": {
+            "Name": "\u003cidentifier\u003e",
+            "kind": "argument",
+            "description": "identifier",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cidentifier\u003e"
+        ]
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "subcommand",
+        "description": "Reattach a session. If necessary detach and logout remotely first",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cidentifier\u003e": {
+            "Name": "\u003cidentifier\u003e",
+            "kind": "argument",
+            "description": "identifier",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cidentifier\u003e": {
+            "Name": "\u003cidentifier\u003e",
+            "kind": "argument",
+            "description": "identifier",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cidentifier\u003e"
+        ]
+      }
+    }
+  },
+  "-L": {
+    "Name": "-L",
+    "kind": "option",
+    "description": "Turn on output logging",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-O": {
+    "Name": "-O",
+    "kind": "option",
+    "description": "Choose optimal output rather than exact vt100 emulation",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-R": {
+    "Name": "-R",
+    "kind": "subcommand",
+    "description": "Attempts to resume the first detached screen session it finds",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cidentifier\u003e": {
+        "Name": "\u003cidentifier\u003e",
+        "kind": "argument",
+        "description": "identifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cidentifier\u003e": {
+        "Name": "\u003cidentifier\u003e",
+        "kind": "argument",
+        "description": "identifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cidentifier\u003e"
+    ]
+  },
+  "-S": {
+    "Name": "-S",
+    "kind": "option",
+    "description": "Name this session \u003cpid\u003e.sockname instead of \u003cpid\u003e.\u003ctty\u003e.\u003chost\u003e",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csockname\u003e": {
+        "Name": "\u003csockname\u003e",
+        "kind": "argument",
+        "description": "sockname",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csockname\u003e": {
+        "Name": "\u003csockname\u003e",
+        "kind": "argument",
+        "description": "sockname",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csockname\u003e"
+    ]
+  },
+  "-T": {
+    "Name": "-T",
+    "kind": "option",
+    "description": "Use term as $TERM for windows, rather than 'screen'",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cterm\u003e": {
+        "Name": "\u003cterm\u003e",
+        "kind": "argument",
+        "description": "term",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cterm\u003e": {
+        "Name": "\u003cterm\u003e",
+        "kind": "argument",
+        "description": "term",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cterm\u003e"
+    ]
+  },
+  "-U": {
+    "Name": "-U",
+    "kind": "option",
+    "description": "Tell screen to use UTF-8 encoding",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-X": {
+    "Name": "-X",
+    "kind": "option",
+    "description": "Execute \u003ccmd\u003e as a screen command in the specified session",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-a": {
+    "Name": "-a",
+    "kind": "option",
+    "description": "Force all capabilities into each window's termcap",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Read configuration file instead of '.screenrc'",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile\u003e"
+    ]
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "subcommand",
+    "description": "Does not start screen, but detaches the elsewhere running screen session",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-R": {
+        "Name": "-R",
+        "kind": "subcommand",
+        "description": "Reattach a session and if necessary detach or even create it first",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cidentifier\u003e": {
+            "Name": "\u003cidentifier\u003e",
+            "kind": "argument",
+            "description": "identifier",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cidentifier\u003e": {
+            "Name": "\u003cidentifier\u003e",
+            "kind": "argument",
+            "description": "identifier",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cidentifier\u003e"
+        ]
+      },
+      "-RR": {
+        "Name": "-RR",
+        "kind": "subcommand",
+        "description": "Reattach a session and if necessary detach or create it. Use the first session if more than one session is available",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cidentifier\u003e": {
+            "Name": "\u003cidentifier\u003e",
+            "kind": "argument",
+            "description": "identifier",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cidentifier\u003e": {
+            "Name": "\u003cidentifier\u003e",
+            "kind": "argument",
+            "description": "identifier",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cidentifier\u003e"
+        ]
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "subcommand",
+        "description": "Reattach a session and if necessary detach it first",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cidentifier\u003e": {
+            "Name": "\u003cidentifier\u003e",
+            "kind": "argument",
+            "description": "identifier",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cidentifier\u003e": {
+            "Name": "\u003cidentifier\u003e",
+            "kind": "argument",
+            "description": "identifier",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cidentifier\u003e"
+        ]
+      }
+    }
+  },
+  "-dmS": {
+    "Name": "-dmS",
+    "kind": "subcommand",
+    "description": "Start as daemon: Screen session in detached mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "-e": {
+    "Name": "-e",
+    "kind": "option",
+    "description": "Change command characters",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cxy\u003e": {
+        "Name": "\u003cxy\u003e",
+        "kind": "argument",
+        "description": "xy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cxy\u003e": {
+        "Name": "\u003cxy\u003e",
+        "kind": "argument",
+        "description": "xy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cxy\u003e"
+    ]
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Flow control on",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-fa": {
+    "Name": "-fa",
+    "kind": "option",
+    "description": "Flow control automatic",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-fn": {
+    "Name": "-fn",
+    "kind": "option",
+    "description": "Flow control off",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Set the size of the scrollback history buffer",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ch\u003e": {
+        "Name": "\u003ch\u003e",
+        "kind": "argument",
+        "description": "h",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ch\u003e": {
+        "Name": "\u003ch\u003e",
+        "kind": "argument",
+        "description": "h",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ch\u003e"
+    ]
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Interrupt output sooner when flow control is on",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-list": {
+    "Name": "-list",
+    "kind": "option",
+    "description": "Do nothing, just list our SockDir",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-ls": {
+    "Name": "-ls",
+    "kind": "option",
+    "description": "Do nothing, just list our SockDir",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-m": {
+    "Name": "-m",
+    "kind": "option",
+    "description": "Ignore $STY variable, do create a new screen session",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-p": {
+    "Name": "-p",
+    "kind": "option",
+    "description": "Preselect the named window if it exists",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cwindow\u003e": {
+        "Name": "\u003cwindow\u003e",
+        "kind": "argument",
+        "description": "window",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cwindow\u003e": {
+        "Name": "\u003cwindow\u003e",
+        "kind": "argument",
+        "description": "window",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cwindow\u003e"
+    ]
+  },
+  "-q": {
+    "Name": "-q",
+    "kind": "option",
+    "description": "Quiet startup. Exits with non-zero return code if unsuccessful",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "subcommand",
+    "description": "Resumes a detached screen session",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cidentifier\u003e": {
+        "Name": "\u003cidentifier\u003e",
+        "kind": "argument",
+        "description": "identifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cidentifier\u003e": {
+        "Name": "\u003cidentifier\u003e",
+        "kind": "argument",
+        "description": "identifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cidentifier\u003e"
+    ]
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Shell to execute rather than $SHELL",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cshell\u003e": {
+        "Name": "\u003cshell\u003e",
+        "kind": "argument",
+        "description": "shell",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cshell\u003e": {
+        "Name": "\u003cshell\u003e",
+        "kind": "argument",
+        "description": "shell",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cshell\u003e"
+    ]
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Set title. (window's name)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctitle\u003e": {
+        "Name": "\u003ctitle\u003e",
+        "kind": "argument",
+        "description": "title",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctitle\u003e": {
+        "Name": "\u003ctitle\u003e",
+        "kind": "argument",
+        "description": "title",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctitle\u003e"
+    ]
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Print 'Screen version 4.00.03 (FAU) 23-Oct-06'",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-wipe": {
+    "Name": "-wipe",
+    "kind": "option",
+    "description": "Do nothing, just clean up SockDir",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmatch\u003e": {
+        "Name": "\u003cmatch\u003e",
+        "kind": "argument",
+        "description": "match",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmatch\u003e": {
+        "Name": "\u003cmatch\u003e",
+        "kind": "argument",
+        "description": "match",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "-x": {
+    "Name": "-x",
+    "kind": "option",
+    "description": "Attach to a not detached screen. (Multi display mode)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003cargs\u003e": {
+    "Name": "\u003cargs\u003e",
+    "kind": "argument",
+    "description": "args",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  },
+  "\u003ccmd\u003e": {
+    "Name": "\u003ccmd\u003e",
+    "kind": "argument",
+    "description": "cmd",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

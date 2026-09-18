@@ -1,0 +1,685 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Display the help output explaining the different flags",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Prints the current Stencil version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "build": {
+    "Name": "build",
+    "kind": "subcommand",
+    "description": "Build components for development or production",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--ci": {
+        "Name": "--ci",
+        "kind": "option",
+        "description": "Run a build using recommended settings for a Continuous Integration (CI) environment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Set stencil config file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfig file\u003e": {
+            "Name": "\u003cconfig file\u003e",
+            "kind": "argument",
+            "description": "config file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfig file\u003e": {
+            "Name": "\u003cconfig file\u003e",
+            "kind": "argument",
+            "description": "config file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfig file\u003e"
+        ]
+      },
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Set the log level to debug",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dev": {
+        "Name": "--dev",
+        "kind": "option",
+        "description": "Development build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--docs-readme": {
+        "Name": "--docs-readme",
+        "kind": "option",
+        "description": "Generate component readme.md docs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--es5": {
+        "Name": "--es5",
+        "kind": "option",
+        "description": "Creates an ES5 compatible build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--log": {
+        "Name": "--log",
+        "kind": "option",
+        "description": "Write stencil-build.log file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--max-workers": {
+        "Name": "--max-workers",
+        "kind": "option",
+        "description": "Max number of workers the compiler should use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cworkers\u003e": {
+            "Name": "\u003cworkers\u003e",
+            "kind": "argument",
+            "description": "workers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cworkers\u003e": {
+            "Name": "\u003cworkers\u003e",
+            "kind": "argument",
+            "description": "workers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cworkers\u003e"
+        ]
+      },
+      "--next": {
+        "Name": "--next",
+        "kind": "option",
+        "description": "Opt-in to test the 'next' Stencil compiler features",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-cache": {
+        "Name": "--no-cache",
+        "kind": "option",
+        "description": "Disables using the cache",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-open": {
+        "Name": "--no-open",
+        "kind": "option",
+        "description": "Do not automatically open the browser window",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--p": {
+        "Name": "--p",
+        "kind": "option",
+        "description": "Port for the Integrated Dev Server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cport\u003e"
+        ]
+      },
+      "--port": {
+        "Name": "--port",
+        "kind": "option",
+        "description": "Port for the Integrated Dev Server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cport\u003e"
+        ]
+      },
+      "--prerender": {
+        "Name": "--prerender",
+        "kind": "option",
+        "description": "Prerender the application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--prod": {
+        "Name": "--prod",
+        "kind": "option",
+        "description": "Runs a production build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--serve": {
+        "Name": "--serve",
+        "kind": "option",
+        "description": "Start the dev-server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--stats": {
+        "Name": "--stats",
+        "kind": "option",
+        "description": "Write stencil-stats.json file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Logs additional information about each step of the build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--watch": {
+        "Name": "--watch",
+        "kind": "option",
+        "description": "Rebuild when files update",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Set stencil config file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfig file\u003e": {
+            "Name": "\u003cconfig file\u003e",
+            "kind": "argument",
+            "description": "config file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfig file\u003e": {
+            "Name": "\u003cconfig file\u003e",
+            "kind": "argument",
+            "description": "config file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfig file\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--ci": {
+        "Name": "--ci",
+        "kind": "option",
+        "description": "Run a build using recommended settings for a Continuous Integration (CI) environment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Set stencil config file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfig file\u003e": {
+            "Name": "\u003cconfig file\u003e",
+            "kind": "argument",
+            "description": "config file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfig file\u003e": {
+            "Name": "\u003cconfig file\u003e",
+            "kind": "argument",
+            "description": "config file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfig file\u003e"
+        ]
+      },
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Set the log level to debug",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dev": {
+        "Name": "--dev",
+        "kind": "option",
+        "description": "Development build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--docs-readme": {
+        "Name": "--docs-readme",
+        "kind": "option",
+        "description": "Generate component readme.md docs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--es5": {
+        "Name": "--es5",
+        "kind": "option",
+        "description": "Creates an ES5 compatible build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--log": {
+        "Name": "--log",
+        "kind": "option",
+        "description": "Write stencil-build.log file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--max-workers": {
+        "Name": "--max-workers",
+        "kind": "option",
+        "description": "Max number of workers the compiler should use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cworkers\u003e": {
+            "Name": "\u003cworkers\u003e",
+            "kind": "argument",
+            "description": "workers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cworkers\u003e": {
+            "Name": "\u003cworkers\u003e",
+            "kind": "argument",
+            "description": "workers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cworkers\u003e"
+        ]
+      },
+      "--next": {
+        "Name": "--next",
+        "kind": "option",
+        "description": "Opt-in to test the 'next' Stencil compiler features",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-cache": {
+        "Name": "--no-cache",
+        "kind": "option",
+        "description": "Disables using the cache",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-open": {
+        "Name": "--no-open",
+        "kind": "option",
+        "description": "Do not automatically open the browser window",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--p": {
+        "Name": "--p",
+        "kind": "option",
+        "description": "Port for the Integrated Dev Server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cport\u003e"
+        ]
+      },
+      "--port": {
+        "Name": "--port",
+        "kind": "option",
+        "description": "Port for the Integrated Dev Server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cport\u003e"
+        ]
+      },
+      "--prerender": {
+        "Name": "--prerender",
+        "kind": "option",
+        "description": "Prerender the application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--prod": {
+        "Name": "--prod",
+        "kind": "option",
+        "description": "Runs a production build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--serve": {
+        "Name": "--serve",
+        "kind": "option",
+        "description": "Start the dev-server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--stats": {
+        "Name": "--stats",
+        "kind": "option",
+        "description": "Write stencil-stats.json file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Logs additional information about each step of the build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--watch": {
+        "Name": "--watch",
+        "kind": "option",
+        "description": "Rebuild when files update",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Set stencil config file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfig file\u003e": {
+            "Name": "\u003cconfig file\u003e",
+            "kind": "argument",
+            "description": "config file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfig file\u003e": {
+            "Name": "\u003cconfig file\u003e",
+            "kind": "argument",
+            "description": "config file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfig file\u003e"
+        ]
+      }
+    }
+  },
+  "generate": {
+    "Name": "generate",
+    "kind": "subcommand",
+    "description": "Bootstrap components",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "telemetry": {
+    "Name": "telemetry",
+    "kind": "subcommand",
+    "description": "Opt in or out of telemetry",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstate\u003e": {
+        "Name": "\u003cstate\u003e",
+        "kind": "argument",
+        "description": "state",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstate\u003e": {
+        "Name": "\u003cstate\u003e",
+        "kind": "argument",
+        "description": "state",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstate\u003e"
+    ]
+  },
+  "test": {
+    "Name": "test",
+    "kind": "subcommand",
+    "description": "Run unit and end-to-end tests",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--e2e": {
+        "Name": "--e2e",
+        "kind": "option",
+        "description": "Run e2e tests with Puppeteer",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-build": {
+        "Name": "--no-build",
+        "kind": "option",
+        "description": "Skips build process before running the tests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--spec": {
+        "Name": "--spec",
+        "kind": "option",
+        "description": "Run unit tests with Jest",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--e2e": {
+        "Name": "--e2e",
+        "kind": "option",
+        "description": "Run e2e tests with Puppeteer",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-build": {
+        "Name": "--no-build",
+        "kind": "option",
+        "description": "Skips build process before running the tests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--spec": {
+        "Name": "--spec",
+        "kind": "option",
+        "description": "Run unit tests with Jest",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  }
+}

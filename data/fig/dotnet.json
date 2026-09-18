@@ -1,0 +1,474 @@
+{
+  "--additional-deps": {
+    "Name": "--additional-deps",
+    "kind": "option",
+    "description": "Path to an additional .deps.json file. A deps.json file contains a list of dependencies, compilation dependencies, and version information used to address assembly conflicts. For more information, see Runtime Configuration Files on GitHub",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdeps\u003e": {
+        "Name": "\u003cdeps\u003e",
+        "kind": "argument",
+        "description": "deps",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdeps\u003e": {
+        "Name": "\u003cdeps\u003e",
+        "kind": "argument",
+        "description": "deps",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdeps\u003e"
+    ]
+  },
+  "--additionalprobingpath": {
+    "Name": "--additionalprobingpath",
+    "kind": "option",
+    "description": "Path containing probing policy and assemblies to probe",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--diagnostics": {
+    "Name": "--diagnostics",
+    "kind": "option",
+    "description": "Enables diagnostic output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--fx-version": {
+    "Name": "--fx-version",
+    "kind": "option",
+    "description": "Version of the .NET runtime to use to run the application",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cversion\u003e"
+    ]
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Prints out a list of available commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--info": {
+    "Name": "--info",
+    "kind": "option",
+    "description": "Prints out detailed information about a .NET installation and the machine environment, such as the current operating system, and commit SHA of the .NET version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--list-runtimes": {
+    "Name": "--list-runtimes",
+    "kind": "option",
+    "description": "Prints out a list of the installed .NET runtimes. An x86 version of the SDK lists only x86 runtimes, and an x64 version of the SDK lists only x64 runtimes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--list-sdks": {
+    "Name": "--list-sdks",
+    "kind": "option",
+    "description": "Prints out a list of the installed .NET SDKs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--roll-forward": {
+    "Name": "--roll-forward",
+    "kind": "option",
+    "description": "Controls how roll forward is applied to the app. The SETTING can be one of the following values. If not specified, Minor is the default",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csetting\u003e": {
+        "Name": "\u003csetting\u003e",
+        "kind": "argument",
+        "description": "setting",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csetting\u003e": {
+        "Name": "\u003csetting\u003e",
+        "kind": "argument",
+        "description": "setting",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csetting\u003e"
+    ]
+  },
+  "--runtimeconfig": {
+    "Name": "--runtimeconfig",
+    "kind": "option",
+    "description": "Path to a runtimeconfig.json file. A runtimeconfig.json file is a configuration file that contains run-time settings",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--verbosity": {
+    "Name": "--verbosity",
+    "kind": "option",
+    "description": "Sets the verbosity level of the command. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic]. Not supported in every command. See specific command page to determine if this option is available",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cverbosity\u003e": {
+        "Name": "\u003cverbosity\u003e",
+        "kind": "argument",
+        "description": "verbosity",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cverbosity\u003e": {
+        "Name": "\u003cverbosity\u003e",
+        "kind": "argument",
+        "description": "verbosity",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cverbosity\u003e"
+    ]
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Prints out the version of the .NET SDK used by dotnet commands. Includes the effects of any global.json",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-?": {
+    "Name": "-?",
+    "kind": "option",
+    "description": "Prints out a list of available commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Enables diagnostic output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-depsfile": {
+    "Name": "-depsfile",
+    "kind": "option",
+    "description": "Path to the deps.json file. A deps.json file is a configuration file that contains information about dependencies necessary to run the application. This file is generated by the .NET SDK",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdeps\u003e": {
+        "Name": "\u003cdeps\u003e",
+        "kind": "argument",
+        "description": "deps",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdeps\u003e": {
+        "Name": "\u003cdeps\u003e",
+        "kind": "argument",
+        "description": "deps",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdeps\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Prints out a list of available commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Sets the verbosity level of the command. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic]. Not supported in every command. See specific command page to determine if this option is available",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cverbosity\u003e": {
+        "Name": "\u003cverbosity\u003e",
+        "kind": "argument",
+        "description": "verbosity",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cverbosity\u003e": {
+        "Name": "\u003cverbosity\u003e",
+        "kind": "argument",
+        "description": "verbosity",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cverbosity\u003e"
+    ]
+  },
+  "\u003ccommand\u003e": {
+    "Name": "\u003ccommand\u003e",
+    "kind": "argument",
+    "description": "command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  },
+  "add": {
+    "Name": "add",
+    "kind": "subcommand",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "build": {
+    "Name": "build",
+    "kind": "subcommand",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "build-server": {
+    "Name": "build-server",
+    "kind": "subcommand",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "clean": {
+    "Name": "clean",
+    "kind": "subcommand",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "format": {
+    "Name": "format",
+    "kind": "subcommand",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "list": {
+    "Name": "list",
+    "kind": "subcommand",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "migrate": {
+    "Name": "migrate",
+    "kind": "subcommand",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "msbuild": {
+    "Name": "msbuild",
+    "kind": "subcommand",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "new": {
+    "Name": "new",
+    "kind": "subcommand",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "nuget": {
+    "Name": "nuget",
+    "kind": "subcommand",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "pack": {
+    "Name": "pack",
+    "kind": "subcommand",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "publish": {
+    "Name": "publish",
+    "kind": "subcommand",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "remove": {
+    "Name": "remove",
+    "kind": "subcommand",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "restore": {
+    "Name": "restore",
+    "kind": "subcommand",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "run": {
+    "Name": "run",
+    "kind": "subcommand",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "sln": {
+    "Name": "sln",
+    "kind": "subcommand",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "store": {
+    "Name": "store",
+    "kind": "subcommand",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "test": {
+    "Name": "test",
+    "kind": "subcommand",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "tool": {
+    "Name": "tool",
+    "kind": "subcommand",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

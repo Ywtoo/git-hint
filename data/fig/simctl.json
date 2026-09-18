@@ -1,0 +1,3220 @@
+{
+  "addmedia": {
+    "Name": "addmedia",
+    "kind": "subcommand",
+    "description": "Add photos, live photos, videos, or contacts to the library of a device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdevice\u003e",
+      "\u003cpath\u003e"
+    ]
+  },
+  "boot": {
+    "Name": "boot",
+    "kind": "subcommand",
+    "description": "Boot a device or device pair",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--arch": {
+        "Name": "--arch",
+        "kind": "option",
+        "description": "Specify the architecture to use when booting the simulator (eg: 'arm64' or 'x86_64')",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--disabledJob": {
+        "Name": "--disabledJob",
+        "kind": "option",
+        "description": "Disables the given launchd job. Multiple jobs can be disabled by passing multiple flags",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--enabledJob": {
+        "Name": "--enabledJob",
+        "kind": "option",
+        "description": "Enables the given launchd job when it would normally be disabled. Multiple jobs can be enabled by passing multiple flags",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--arch": {
+        "Name": "--arch",
+        "kind": "option",
+        "description": "Specify the architecture to use when booting the simulator (eg: 'arm64' or 'x86_64')",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--disabledJob": {
+        "Name": "--disabledJob",
+        "kind": "option",
+        "description": "Disables the given launchd job. Multiple jobs can be disabled by passing multiple flags",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--enabledJob": {
+        "Name": "--enabledJob",
+        "kind": "option",
+        "description": "Enables the given launchd job when it would normally be disabled. Multiple jobs can be enabled by passing multiple flags",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdevice\u003e"
+    ]
+  },
+  "clone": {
+    "Name": "clone",
+    "kind": "subcommand",
+    "description": "Clone an existing device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdestination device set\u003e": {
+        "Name": "\u003cdestination device set\u003e",
+        "kind": "argument",
+        "description": "destination device set",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cnew name\u003e": {
+        "Name": "\u003cnew name\u003e",
+        "kind": "argument",
+        "description": "new name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdestination device set\u003e": {
+        "Name": "\u003cdestination device set\u003e",
+        "kind": "argument",
+        "description": "destination device set",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cnew name\u003e": {
+        "Name": "\u003cnew name\u003e",
+        "kind": "argument",
+        "description": "new name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdevice\u003e",
+      "\u003cnew name\u003e",
+      "\u003cdestination device set\u003e"
+    ]
+  },
+  "create": {
+    "Name": "create",
+    "kind": "subcommand",
+    "description": "Create a new device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdevice type id\u003e": {
+        "Name": "\u003cdevice type id\u003e",
+        "kind": "argument",
+        "description": "device type id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cruntime id\u003e": {
+        "Name": "\u003cruntime id\u003e",
+        "kind": "argument",
+        "description": "runtime id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdevice type id\u003e": {
+        "Name": "\u003cdevice type id\u003e",
+        "kind": "argument",
+        "description": "device type id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cruntime id\u003e": {
+        "Name": "\u003cruntime id\u003e",
+        "kind": "argument",
+        "description": "runtime id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e",
+      "\u003cdevice type id\u003e",
+      "\u003cruntime id\u003e"
+    ]
+  },
+  "delete": {
+    "Name": "delete",
+    "kind": "subcommand",
+    "description": "Delete specified devices, unavailable devices, or all devices",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003call\u003e": {
+        "Name": "\u003call\u003e",
+        "kind": "argument",
+        "description": "all",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cunavailable\u003e": {
+        "Name": "\u003cunavailable\u003e",
+        "kind": "argument",
+        "description": "unavailable",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003call\u003e": {
+        "Name": "\u003call\u003e",
+        "kind": "argument",
+        "description": "all",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cunavailable\u003e": {
+        "Name": "\u003cunavailable\u003e",
+        "kind": "argument",
+        "description": "unavailable",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdevice\u003e",
+      "\u003cunavailable\u003e",
+      "\u003call\u003e"
+    ]
+  },
+  "diagnose": {
+    "Name": "diagnose",
+    "kind": "subcommand",
+    "description": "Collect diagnostic information and logs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--all-logs": {
+        "Name": "--all-logs",
+        "kind": "option",
+        "description": "Include all device logs, even for non-booted devices",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--data-containers": {
+        "Name": "--data-containers",
+        "kind": "option",
+        "description": "Include booted device(s) data directory. Warning: May include private information, app data containers, and increases the size of the archive! Default is NOT to collect the data container",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-archive": {
+        "Name": "--no-archive",
+        "kind": "option",
+        "description": "Do not create an archive, leave the collected files uncompressed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output": {
+        "Name": "--output",
+        "kind": "option",
+        "description": "Specify the output directory. If not provided the temporary directory is used",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--timeout": {
+        "Name": "--timeout",
+        "kind": "option",
+        "description": "Specify a duration (in seconds) to wait for the log collection before timeout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--udid": {
+        "Name": "--udid",
+        "kind": "option",
+        "description": "Collect diagnostics only from the specified device. This option may be specified more than once to consider multiple devices. The --all-logs option causes all --udid options to be ignored",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-X": {
+        "Name": "-X",
+        "kind": "option",
+        "description": "Run all diagnostics with no timeout. It ignores the --timeout value if it is specified",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-b": {
+        "Name": "-b",
+        "kind": "option",
+        "description": "Do NOT show the resulting archive in a Finder window upon completion",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--all-logs": {
+        "Name": "--all-logs",
+        "kind": "option",
+        "description": "Include all device logs, even for non-booted devices",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--data-containers": {
+        "Name": "--data-containers",
+        "kind": "option",
+        "description": "Include booted device(s) data directory. Warning: May include private information, app data containers, and increases the size of the archive! Default is NOT to collect the data container",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-archive": {
+        "Name": "--no-archive",
+        "kind": "option",
+        "description": "Do not create an archive, leave the collected files uncompressed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output": {
+        "Name": "--output",
+        "kind": "option",
+        "description": "Specify the output directory. If not provided the temporary directory is used",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--timeout": {
+        "Name": "--timeout",
+        "kind": "option",
+        "description": "Specify a duration (in seconds) to wait for the log collection before timeout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--udid": {
+        "Name": "--udid",
+        "kind": "option",
+        "description": "Collect diagnostics only from the specified device. This option may be specified more than once to consider multiple devices. The --all-logs option causes all --udid options to be ignored",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-X": {
+        "Name": "-X",
+        "kind": "option",
+        "description": "Run all diagnostics with no timeout. It ignores the --timeout value if it is specified",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-b": {
+        "Name": "-b",
+        "kind": "option",
+        "description": "Do NOT show the resulting archive in a Finder window upon completion",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "erase": {
+    "Name": "erase",
+    "kind": "subcommand",
+    "description": "Erase a device's contents and settings",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003call\u003e": {
+        "Name": "\u003call\u003e",
+        "kind": "argument",
+        "description": "all",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003call\u003e": {
+        "Name": "\u003call\u003e",
+        "kind": "argument",
+        "description": "all",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdevice\u003e",
+      "\u003call\u003e"
+    ]
+  },
+  "get_app_container": {
+    "Name": "get_app_container",
+    "kind": "subcommand",
+    "description": "Print the path of the installed app's container",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003capp bundle identifier\u003e": {
+        "Name": "\u003capp bundle identifier\u003e",
+        "kind": "argument",
+        "description": "app bundle identifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ccontainer\u003e": {
+        "Name": "\u003ccontainer\u003e",
+        "kind": "argument",
+        "description": "container",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003capp bundle identifier\u003e": {
+        "Name": "\u003capp bundle identifier\u003e",
+        "kind": "argument",
+        "description": "app bundle identifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ccontainer\u003e": {
+        "Name": "\u003ccontainer\u003e",
+        "kind": "argument",
+        "description": "container",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdevice\u003e",
+      "\u003capp bundle identifier\u003e"
+    ]
+  },
+  "getenv": {
+    "Name": "getenv",
+    "kind": "subcommand",
+    "description": "Print an environment variable from a running device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvariable name\u003e": {
+        "Name": "\u003cvariable name\u003e",
+        "kind": "argument",
+        "description": "variable name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvariable name\u003e": {
+        "Name": "\u003cvariable name\u003e",
+        "kind": "argument",
+        "description": "variable name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdevice\u003e",
+      "\u003cvariable name\u003e"
+    ]
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Prints the usage for a given subcommand",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "icloud_sync": {
+    "Name": "icloud_sync",
+    "kind": "subcommand",
+    "description": "Trigger iCloud sync on a device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdevice\u003e"
+    ]
+  },
+  "install": {
+    "Name": "install",
+    "kind": "subcommand",
+    "description": "Install an app on a device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdevice\u003e",
+      "\u003cpath\u003e"
+    ]
+  },
+  "install_app_data": {
+    "Name": "install_app_data",
+    "kind": "subcommand",
+    "description": "Install an xcappdata package to a device, replacing the current contents of the container",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath to xcappdata package\u003e": {
+        "Name": "\u003cpath to xcappdata package\u003e",
+        "kind": "argument",
+        "description": "path to xcappdata package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath to xcappdata package\u003e": {
+        "Name": "\u003cpath to xcappdata package\u003e",
+        "kind": "argument",
+        "description": "path to xcappdata package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdevice\u003e",
+      "\u003cpath to xcappdata package\u003e"
+    ]
+  },
+  "io": {
+    "Name": "io",
+    "kind": "subcommand",
+    "description": "Set up a device IO operation",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "enumerate": {
+        "Name": "enumerate",
+        "kind": "subcommand",
+        "description": "Lists all available IO ports and descriptor states",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--poll": {
+            "Name": "--poll",
+            "kind": "option",
+            "description": "Poll after enumeration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--poll": {
+            "Name": "--poll",
+            "kind": "option",
+            "description": "Poll after enumeration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "poll": {
+        "Name": "poll",
+        "kind": "subcommand",
+        "description": "Polls all available IO ports for events",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "recordVideo": {
+        "Name": "recordVideo",
+        "kind": "subcommand",
+        "description": "Records the display to a QuickTime movie at the specified file or url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--codec": {
+            "Name": "--codec",
+            "kind": "option",
+            "description": "Specifies the codec type: 'h264' or 'hevc'. Default is 'hevc'",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--display": {
+            "Name": "--display",
+            "kind": "option",
+            "description": "iOS: supports 'internal' or 'external'. Default is 'internal'. tvOS: supports only 'external' watchOS: supports only 'internal'",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--force": {
+            "Name": "--force",
+            "kind": "option",
+            "description": "Force the output file to be written to, even if the file already exists",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--mask": {
+            "Name": "--mask",
+            "kind": "option",
+            "description": "For non-rectangular displays, handle the mask by policy: ignored: The mask is ignored and the unmasked framebuffer is saved. alpha: Not supported, but retained for compatibility; the mask is rendered black. black: The mask is rendered black",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cfile or url\u003e": {
+            "Name": "\u003cfile or url\u003e",
+            "kind": "argument",
+            "description": "file or url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--codec": {
+            "Name": "--codec",
+            "kind": "option",
+            "description": "Specifies the codec type: 'h264' or 'hevc'. Default is 'hevc'",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--display": {
+            "Name": "--display",
+            "kind": "option",
+            "description": "iOS: supports 'internal' or 'external'. Default is 'internal'. tvOS: supports only 'external' watchOS: supports only 'internal'",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--force": {
+            "Name": "--force",
+            "kind": "option",
+            "description": "Force the output file to be written to, even if the file already exists",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--mask": {
+            "Name": "--mask",
+            "kind": "option",
+            "description": "For non-rectangular displays, handle the mask by policy: ignored: The mask is ignored and the unmasked framebuffer is saved. alpha: Not supported, but retained for compatibility; the mask is rendered black. black: The mask is rendered black",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cfile or url\u003e": {
+            "Name": "\u003cfile or url\u003e",
+            "kind": "argument",
+            "description": "file or url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile or url\u003e"
+        ]
+      },
+      "screenshot": {
+        "Name": "screenshot",
+        "kind": "subcommand",
+        "description": "Saves a screenshot as a PNG to the specified file or url(use '-' for stdout)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--display": {
+            "Name": "--display",
+            "kind": "option",
+            "description": "iOS: supports 'internal' or 'external'. Default is 'internal'. tvOS: supports only 'external' watchOS: supports only 'internal'. You may also specify a port by UUID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--mask": {
+            "Name": "--mask",
+            "kind": "option",
+            "description": "For non-rectangular displays, handle the mask by policy: ignored: The mask is ignored and the unmasked framebuffer is saved. alpha: The mask is used as premultiplied alpha. black: The mask is rendered black",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--type": {
+            "Name": "--type",
+            "kind": "option",
+            "description": "Can be 'png', 'tiff', 'bmp', 'gif', 'jpeg'. Default is png",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cfile or url\u003e": {
+            "Name": "\u003cfile or url\u003e",
+            "kind": "argument",
+            "description": "file or url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--display": {
+            "Name": "--display",
+            "kind": "option",
+            "description": "iOS: supports 'internal' or 'external'. Default is 'internal'. tvOS: supports only 'external' watchOS: supports only 'internal'. You may also specify a port by UUID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--mask": {
+            "Name": "--mask",
+            "kind": "option",
+            "description": "For non-rectangular displays, handle the mask by policy: ignored: The mask is ignored and the unmasked framebuffer is saved. alpha: The mask is used as premultiplied alpha. black: The mask is rendered black",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--type": {
+            "Name": "--type",
+            "kind": "option",
+            "description": "Can be 'png', 'tiff', 'bmp', 'gif', 'jpeg'. Default is png",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cfile or url\u003e": {
+            "Name": "\u003cfile or url\u003e",
+            "kind": "argument",
+            "description": "file or url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile or url\u003e"
+        ]
+      }
+    },
+    "options": {
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdevice\u003e"
+    ]
+  },
+  "keychain": {
+    "Name": "keychain",
+    "kind": "subcommand",
+    "description": "Manipulate a device's keychain",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "add-cert": {
+        "Name": "add-cert",
+        "kind": "subcommand",
+        "description": "Add a certificate to the keychain",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "add-root-cert": {
+        "Name": "add-root-cert",
+        "kind": "subcommand",
+        "description": "Add a certificate to the trusted root store",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "reset": {
+        "Name": "reset",
+        "kind": "subcommand",
+        "description": "Reset the keychain",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "launch": {
+    "Name": "launch",
+    "kind": "subcommand",
+    "description": "Launch an application by identifier on a device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--console": {
+        "Name": "--console",
+        "kind": "option",
+        "description": "Block and print the application's stdout and stderr to the current terminal. Signals received by simctl are passed through to the application. (Cannot be combined with --stdout or --stderr)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--console-pty": {
+        "Name": "--console-pty",
+        "kind": "option",
+        "description": "Block and print the application's stdout and stderr to the current terminal via a PTY. Signals received by simctl are passed through to the application. (Cannot be combined with --stdout or --stderr)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--stderr": {
+        "Name": "--stderr",
+        "kind": "option",
+        "description": "Redirect the application's standard error to a file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--stdout": {
+        "Name": "--stdout",
+        "kind": "option",
+        "description": "Redirect the application's standard output to a file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--terminate-running-process": {
+        "Name": "--terminate-running-process",
+        "kind": "option",
+        "description": "Terminate any running copy of the application. Note: Log output is often directed to stderr, not stdout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--wait-for-debugger": {
+        "Name": "--wait-for-debugger",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-w": {
+        "Name": "-w",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003capp bundle identifier\u003e": {
+        "Name": "\u003capp bundle identifier\u003e",
+        "kind": "argument",
+        "description": "app bundle identifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cargv\u003e": {
+        "Name": "\u003cargv\u003e",
+        "kind": "argument",
+        "description": "argv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--console": {
+        "Name": "--console",
+        "kind": "option",
+        "description": "Block and print the application's stdout and stderr to the current terminal. Signals received by simctl are passed through to the application. (Cannot be combined with --stdout or --stderr)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--console-pty": {
+        "Name": "--console-pty",
+        "kind": "option",
+        "description": "Block and print the application's stdout and stderr to the current terminal via a PTY. Signals received by simctl are passed through to the application. (Cannot be combined with --stdout or --stderr)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--stderr": {
+        "Name": "--stderr",
+        "kind": "option",
+        "description": "Redirect the application's standard error to a file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--stdout": {
+        "Name": "--stdout",
+        "kind": "option",
+        "description": "Redirect the application's standard output to a file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--terminate-running-process": {
+        "Name": "--terminate-running-process",
+        "kind": "option",
+        "description": "Terminate any running copy of the application. Note: Log output is often directed to stderr, not stdout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--wait-for-debugger": {
+        "Name": "--wait-for-debugger",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-w": {
+        "Name": "-w",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003capp bundle identifier\u003e": {
+        "Name": "\u003capp bundle identifier\u003e",
+        "kind": "argument",
+        "description": "app bundle identifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cargv\u003e": {
+        "Name": "\u003cargv\u003e",
+        "kind": "argument",
+        "description": "argv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdevice\u003e",
+      "\u003capp bundle identifier\u003e",
+      "\u003cargv\u003e"
+    ]
+  },
+  "list": {
+    "Name": "list",
+    "kind": "subcommand",
+    "description": "List available devices, device types, runtimes, or device pairs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--json": {
+        "Name": "--json",
+        "kind": "option",
+        "description": "Print as JSON",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-escape-slashes": {
+        "Name": "--no-escape-slashes",
+        "kind": "option",
+        "description": "Encode slashes without escapes in JSON output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-e": {
+        "Name": "-e",
+        "kind": "option",
+        "description": "Encode slashes without escapes in JSON output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-j": {
+        "Name": "-j",
+        "kind": "option",
+        "description": "Print as JSON",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More verbose output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003csearch term\u003e": {
+        "Name": "\u003csearch term\u003e",
+        "kind": "argument",
+        "description": "search term",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--json": {
+        "Name": "--json",
+        "kind": "option",
+        "description": "Print as JSON",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-escape-slashes": {
+        "Name": "--no-escape-slashes",
+        "kind": "option",
+        "description": "Encode slashes without escapes in JSON output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-e": {
+        "Name": "-e",
+        "kind": "option",
+        "description": "Encode slashes without escapes in JSON output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-j": {
+        "Name": "-j",
+        "kind": "option",
+        "description": "Print as JSON",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More verbose output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003csearch term\u003e": {
+        "Name": "\u003csearch term\u003e",
+        "kind": "argument",
+        "description": "search term",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctype\u003e",
+      "\u003csearch term\u003e"
+    ]
+  },
+  "location": {
+    "Name": "location",
+    "kind": "subcommand",
+    "description": "Control a device's simulated location",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cempty\u003e": {
+        "Name": "\u003cempty\u003e",
+        "kind": "argument",
+        "description": "empty",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "clear": {
+        "Name": "clear",
+        "kind": "subcommand",
+        "description": "Stop any running scenario and clear any simulated location",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List available simulation scenarios",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "run": {
+        "Name": "run",
+        "kind": "subcommand",
+        "description": "Run a simulated location scenario (use the list action to get a list of scenarios)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cscenario\u003e": {
+            "Name": "\u003cscenario\u003e",
+            "kind": "argument",
+            "description": "scenario",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cscenario\u003e": {
+            "Name": "\u003cscenario\u003e",
+            "kind": "argument",
+            "description": "scenario",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cscenario\u003e"
+        ]
+      },
+      "set": {
+        "Name": "set",
+        "kind": "subcommand",
+        "description": "Set the location to a specific latitude and longitude",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003clat,lon\u003e": {
+            "Name": "\u003clat,lon\u003e",
+            "kind": "argument",
+            "description": "lat,lon",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003clat,lon\u003e": {
+            "Name": "\u003clat,lon\u003e",
+            "kind": "argument",
+            "description": "lat,lon",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003clat,lon\u003e"
+        ]
+      },
+      "start": {
+        "Name": "start",
+        "kind": "subcommand",
+        "description": "Set the location to a series of waypoints specified as 'lat,lon' pairs, interpolating between them over time.\nAt least two waypoints are required. Use '-' to read waypoints from stdin, one waypoint per li\nSpeed specifies how quickly to move between waypoints in meters per second. If not specified 20m/s is us\nThe system will issue location updates along the path between each pair of waypoints. Use distance or interval to \ncontrol how often those updates are issued. Distance will issue an update every \u003cmeters\u003e travelled without regard\nfor the time between updates. Interval will issue updates at fixed times without regard for how much\nthe location moves between updates.\nIf neither are specified an interval of 1.0 seconds is used. If both are specified the system picks on\nExample simulating a direct line between San Francisco and New York City, with updates every km:\nset --distance=1000 --speed=260 37.629538,-122.395733 40.628083,-73.768254",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003clat,lon\u003e": {
+            "Name": "\u003clat,lon\u003e",
+            "kind": "argument",
+            "description": "lat,lon",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "distance": {
+            "Name": "distance",
+            "kind": "option",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "interval": {
+            "Name": "interval",
+            "kind": "option",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "speed": {
+            "Name": "speed",
+            "kind": "option",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "\u003clat,lon\u003e": {
+            "Name": "\u003clat,lon\u003e",
+            "kind": "argument",
+            "description": "lat,lon",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003clat,lon\u003e"
+        ]
+      }
+    },
+    "options": {
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cempty\u003e": {
+        "Name": "\u003cempty\u003e",
+        "kind": "argument",
+        "description": "empty",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdevice\u003e",
+      "\u003cempty\u003e"
+    ]
+  },
+  "logverbose": {
+    "Name": "logverbose",
+    "kind": "subcommand",
+    "description": "Enable or disable verbose logging for a device.\nNOTE: You may need to reboot the affected device before logging changes will be effective",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cenable/disable\u003e": {
+        "Name": "\u003cenable/disable\u003e",
+        "kind": "argument",
+        "description": "enable/disable",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cenable/disable\u003e": {
+        "Name": "\u003cenable/disable\u003e",
+        "kind": "argument",
+        "description": "enable/disable",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdevice\u003e",
+      "\u003cenable/disable\u003e"
+    ]
+  },
+  "openurl": {
+    "Name": "openurl",
+    "kind": "subcommand",
+    "description": "Open a URL in a device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cURL\u003e": {
+        "Name": "\u003cURL\u003e",
+        "kind": "argument",
+        "description": "URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cURL\u003e": {
+        "Name": "\u003cURL\u003e",
+        "kind": "argument",
+        "description": "URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdevice\u003e",
+      "\u003cURL\u003e"
+    ]
+  },
+  "pair": {
+    "Name": "pair",
+    "kind": "subcommand",
+    "description": "Create a new watch and phone pair",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cphone device\u003e": {
+        "Name": "\u003cphone device\u003e",
+        "kind": "argument",
+        "description": "phone device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cwatch device\u003e": {
+        "Name": "\u003cwatch device\u003e",
+        "kind": "argument",
+        "description": "watch device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cphone device\u003e": {
+        "Name": "\u003cphone device\u003e",
+        "kind": "argument",
+        "description": "phone device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cwatch device\u003e": {
+        "Name": "\u003cwatch device\u003e",
+        "kind": "argument",
+        "description": "watch device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cwatch device\u003e",
+      "\u003cphone device\u003e"
+    ]
+  },
+  "pair_activate": {
+    "Name": "pair_activate",
+    "kind": "subcommand",
+    "description": "Set a given pair as active",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpair\u003e": {
+        "Name": "\u003cpair\u003e",
+        "kind": "argument",
+        "description": "pair",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpair\u003e": {
+        "Name": "\u003cpair\u003e",
+        "kind": "argument",
+        "description": "pair",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpair\u003e"
+    ]
+  },
+  "pbcopy": {
+    "Name": "pbcopy",
+    "kind": "subcommand",
+    "description": "Copy standard input onto the device pasteboard",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cdevice of 'host'\u003e": {
+        "Name": "\u003cdevice of 'host'\u003e",
+        "kind": "argument",
+        "description": "device of 'host'",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cdevice of 'host'\u003e": {
+        "Name": "\u003cdevice of 'host'\u003e",
+        "kind": "argument",
+        "description": "device of 'host'",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdevice of 'host'\u003e"
+    ]
+  },
+  "pbpaste": {
+    "Name": "pbpaste",
+    "kind": "subcommand",
+    "description": "Print the contents of the device's pasteboard to standard output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cdevice of 'host'\u003e": {
+        "Name": "\u003cdevice of 'host'\u003e",
+        "kind": "argument",
+        "description": "device of 'host'",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cdevice of 'host'\u003e": {
+        "Name": "\u003cdevice of 'host'\u003e",
+        "kind": "argument",
+        "description": "device of 'host'",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdevice of 'host'\u003e"
+    ]
+  },
+  "pbsync": {
+    "Name": "pbsync",
+    "kind": "subcommand",
+    "description": "Sync the pasteboard content from one pasteboard to another",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Causes simctl to use promise data for secondary types.  simctl will continue to run to provide that promise data until something else replaces it on the pasteboard",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cdestination device or 'host'\u003e": {
+        "Name": "\u003cdestination device or 'host'\u003e",
+        "kind": "argument",
+        "description": "destination device or 'host'",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003csource device or 'host'\u003e": {
+        "Name": "\u003csource device or 'host'\u003e",
+        "kind": "argument",
+        "description": "source device or 'host'",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Causes simctl to use promise data for secondary types.  simctl will continue to run to provide that promise data until something else replaces it on the pasteboard",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cdestination device or 'host'\u003e": {
+        "Name": "\u003cdestination device or 'host'\u003e",
+        "kind": "argument",
+        "description": "destination device or 'host'",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003csource device or 'host'\u003e": {
+        "Name": "\u003csource device or 'host'\u003e",
+        "kind": "argument",
+        "description": "source device or 'host'",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csource device or 'host'\u003e",
+      "\u003cdestination device or 'host'\u003e"
+    ]
+  },
+  "privacy": {
+    "Name": "privacy",
+    "kind": "subcommand",
+    "description": "Grant, revoke, or reset privacy and permissions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003caction\u003e": {
+        "Name": "\u003caction\u003e",
+        "kind": "argument",
+        "description": "action",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cbundle identifier\u003e": {
+        "Name": "\u003cbundle identifier\u003e",
+        "kind": "argument",
+        "description": "bundle identifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cservice\u003e": {
+        "Name": "\u003cservice\u003e",
+        "kind": "argument",
+        "description": "service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003caction\u003e": {
+        "Name": "\u003caction\u003e",
+        "kind": "argument",
+        "description": "action",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cbundle identifier\u003e": {
+        "Name": "\u003cbundle identifier\u003e",
+        "kind": "argument",
+        "description": "bundle identifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cservice\u003e": {
+        "Name": "\u003cservice\u003e",
+        "kind": "argument",
+        "description": "service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdevice\u003e",
+      "\u003caction\u003e",
+      "\u003cservice\u003e",
+      "\u003cbundle identifier\u003e"
+    ]
+  },
+  "push": {
+    "Name": "push",
+    "kind": "subcommand",
+    "description": "Send a simulated push notification",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cbundle identifier\u003e": {
+        "Name": "\u003cbundle identifier\u003e",
+        "kind": "argument",
+        "description": "bundle identifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cjson file\u003e": {
+        "Name": "\u003cjson file\u003e",
+        "kind": "argument",
+        "description": "json file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cbundle identifier\u003e": {
+        "Name": "\u003cbundle identifier\u003e",
+        "kind": "argument",
+        "description": "bundle identifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cjson file\u003e": {
+        "Name": "\u003cjson file\u003e",
+        "kind": "argument",
+        "description": "json file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdevice\u003e",
+      "\u003cbundle identifier\u003e",
+      "\u003cjson file\u003e"
+    ]
+  },
+  "rename": {
+    "Name": "rename",
+    "kind": "subcommand",
+    "description": "Rename a device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdevice\u003e",
+      "\u003cname\u003e"
+    ]
+  },
+  "runtime": {
+    "Name": "runtime",
+    "kind": "subcommand",
+    "description": "Perform operations on runtimes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "add": {
+        "Name": "add",
+        "kind": "subcommand",
+        "description": "Add a runtime disk image to the secure storage area. The image will be staged, verified, and mounted. When possible the image file will be cloned so no additional disk space will be used. If stdout is a terminal and a copy is required then progress will be reported",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--async": {
+            "Name": "--async",
+            "kind": "option",
+            "description": "Print the UUID of the new image then exit, do not wait on the results of the add operation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--move": {
+            "Name": "--move",
+            "kind": "option",
+            "description": "Remove the original file if the image is added successfully. If the image cannot be staged or the add fails the original is not removed",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-a": {
+            "Name": "-a",
+            "kind": "option",
+            "description": "Print the UUID of the new image then exit, do not wait on the results of the add operation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-m": {
+            "Name": "-m",
+            "kind": "option",
+            "description": "Remove the original file if the image is added successfully. If the image cannot be staged or the add fails the original is not removed",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--async": {
+            "Name": "--async",
+            "kind": "option",
+            "description": "Print the UUID of the new image then exit, do not wait on the results of the add operation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--move": {
+            "Name": "--move",
+            "kind": "option",
+            "description": "Remove the original file if the image is added successfully. If the image cannot be staged or the add fails the original is not removed",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-a": {
+            "Name": "-a",
+            "kind": "option",
+            "description": "Print the UUID of the new image then exit, do not wait on the results of the add operation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-m": {
+            "Name": "-m",
+            "kind": "option",
+            "description": "Remove the original file if the image is added successfully. If the image cannot be staged or the add fails the original is not removed",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "delete": {
+        "Name": "delete",
+        "kind": "subcommand",
+        "description": "Delete a simulator runtime from the secure storage area. If runtime is a disk image any booted simulators are shutdown and the disk is unmounted first. Use the alias 'all' to delete all images",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--dry-run": {
+            "Name": "--dry-run",
+            "kind": "option",
+            "description": "Print what images would be deleted without actually deleting anything",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--notUsedSinceDays": {
+            "Name": "--notUsedSinceDays",
+            "kind": "option",
+            "description": "Delete images not used within the past \u003cdays\u003e days",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-d": {
+            "Name": "-d",
+            "kind": "option",
+            "description": "Delete images not used within the past \u003cdays\u003e days",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-n": {
+            "Name": "-n",
+            "kind": "option",
+            "description": "Print what images would be deleted without actually deleting anything",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cidentifier\u003e": {
+            "Name": "\u003cidentifier\u003e",
+            "kind": "argument",
+            "description": "identifier",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--dry-run": {
+            "Name": "--dry-run",
+            "kind": "option",
+            "description": "Print what images would be deleted without actually deleting anything",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--notUsedSinceDays": {
+            "Name": "--notUsedSinceDays",
+            "kind": "option",
+            "description": "Delete images not used within the past \u003cdays\u003e days",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-d": {
+            "Name": "-d",
+            "kind": "option",
+            "description": "Delete images not used within the past \u003cdays\u003e days",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-n": {
+            "Name": "-n",
+            "kind": "option",
+            "description": "Print what images would be deleted without actually deleting anything",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cidentifier\u003e": {
+            "Name": "\u003cidentifier\u003e",
+            "kind": "argument",
+            "description": "identifier",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cidentifier\u003e"
+        ]
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--json": {
+            "Name": "--json",
+            "kind": "option",
+            "description": "Print as JSON",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-j": {
+            "Name": "-j",
+            "kind": "option",
+            "description": "Print as JSON",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-v": {
+            "Name": "-v",
+            "kind": "option",
+            "description": "Print more verbose output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--json": {
+            "Name": "--json",
+            "kind": "option",
+            "description": "Print as JSON",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-j": {
+            "Name": "-j",
+            "kind": "option",
+            "description": "Print as JSON",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-v": {
+            "Name": "-v",
+            "kind": "option",
+            "description": "Print more verbose output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "match list": {
+        "Name": "match list",
+        "kind": "subcommand",
+        "description": "List the SDK build to runtime build mapping rules for the selected Xcode. Preferred means the runtime was either bundled with Xcode, exactly matched your SDK version, or the downloadable index indicated a better match for your SDK Manual overrides using 'match set' have the highest priority",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--json": {
+            "Name": "--json",
+            "kind": "option",
+            "description": "Print as JSON",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-j": {
+            "Name": "-j",
+            "kind": "option",
+            "description": "Print as JSON",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-v": {
+            "Name": "-v",
+            "kind": "option",
+            "description": "Verbose mode. Includes the full preferred build map, user override map, and known SDK names",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--json": {
+            "Name": "--json",
+            "kind": "option",
+            "description": "Print as JSON",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-j": {
+            "Name": "-j",
+            "kind": "option",
+            "description": "Print as JSON",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-v": {
+            "Name": "-v",
+            "kind": "option",
+            "description": "Verbose mode. Includes the full preferred build map, user override map, and known SDK names",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "match set": {
+        "Name": "match set",
+        "kind": "subcommand",
+        "description": "Override the SDK to runtime build mapping. This controls which build of a given runtime Xcode will prefer for building and running when using that SDK. This matters most often during Beta releases when there are multiple builds for a given OS version. If --sdkBuild is not specified it is assumed you mean the SDK build for the currently selected Xcode.\n\nNote: Remember this is about build numbers, not semantic versions. When using the iOS 16.0 SDK Xcwill always prefer an iOS 16.0 runtime. Matching policy controls what to do when there are multiiOS 16.0 runtimes availabeg if the iOS 16.0 SDK is 20A245 and the available runtimes are (20A248, 20A252, 20A254) which should Xcode use for building, SwiftUI Previews, and when launching iOS 16.0 Simulators? They are all iOS 16.0 runtimes so a policy must decide which one is selected",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--default": {
+            "Name": "--default",
+            "kind": "option",
+            "description": "Clear the override for the given SDK and revert to default behavior",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--sdkBuild": {
+            "Name": "--sdkBuild",
+            "kind": "option",
+            "description": "Explicitly specify the SDK build, eg for an Xcode other than the selected Xcode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cruntime build\u003e": {
+            "Name": "\u003cruntime build\u003e",
+            "kind": "argument",
+            "description": "runtime build",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003csdk canonical name\u003e": {
+            "Name": "\u003csdk canonical name\u003e",
+            "kind": "argument",
+            "description": "sdk canonical name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--default": {
+            "Name": "--default",
+            "kind": "option",
+            "description": "Clear the override for the given SDK and revert to default behavior",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--sdkBuild": {
+            "Name": "--sdkBuild",
+            "kind": "option",
+            "description": "Explicitly specify the SDK build, eg for an Xcode other than the selected Xcode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cruntime build\u003e": {
+            "Name": "\u003cruntime build\u003e",
+            "kind": "argument",
+            "description": "runtime build",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003csdk canonical name\u003e": {
+            "Name": "\u003csdk canonical name\u003e",
+            "kind": "argument",
+            "description": "sdk canonical name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csdk canonical name\u003e",
+          "\u003cruntime build\u003e"
+        ]
+      },
+      "verify": {
+        "Name": "verify",
+        "kind": "subcommand",
+        "description": "Re-verify the signature of a given runtime",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cidentifier\u003e": {
+            "Name": "\u003cidentifier\u003e",
+            "kind": "argument",
+            "description": "identifier",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cidentifier\u003e": {
+            "Name": "\u003cidentifier\u003e",
+            "kind": "argument",
+            "description": "identifier",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cidentifier\u003e"
+        ]
+      }
+    }
+  },
+  "shutdown": {
+    "Name": "shutdown",
+    "kind": "subcommand",
+    "description": "Shutdown a device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003call\u003e": {
+        "Name": "\u003call\u003e",
+        "kind": "argument",
+        "description": "all",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003call\u003e": {
+        "Name": "\u003call\u003e",
+        "kind": "argument",
+        "description": "all",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdevice\u003e",
+      "\u003call\u003e"
+    ]
+  },
+  "spawn": {
+    "Name": "spawn",
+    "kind": "subcommand",
+    "description": "Spawn a process by executing a given executable on a device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--arch": {
+        "Name": "--arch",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--standalone": {
+        "Name": "--standalone",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--wait-for-debugger": {
+        "Name": "--wait-for-debugger",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-a": {
+        "Name": "-a",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-w": {
+        "Name": "-w",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cargv\u003e": {
+        "Name": "\u003cargv\u003e",
+        "kind": "argument",
+        "description": "argv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath to executable\u003e": {
+        "Name": "\u003cpath to executable\u003e",
+        "kind": "argument",
+        "description": "path to executable",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--arch": {
+        "Name": "--arch",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--standalone": {
+        "Name": "--standalone",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--wait-for-debugger": {
+        "Name": "--wait-for-debugger",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-a": {
+        "Name": "-a",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-w": {
+        "Name": "-w",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cargv\u003e": {
+        "Name": "\u003cargv\u003e",
+        "kind": "argument",
+        "description": "argv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath to executable\u003e": {
+        "Name": "\u003cpath to executable\u003e",
+        "kind": "argument",
+        "description": "path to executable",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdevice\u003e",
+      "\u003cpath to executable\u003e",
+      "\u003cargv\u003e"
+    ]
+  },
+  "status_bar": {
+    "Name": "status_bar",
+    "kind": "subcommand",
+    "description": "Set or clear status bar overrides",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "clear": {
+        "Name": "clear",
+        "kind": "subcommand",
+        "description": "Clear all existing status bar overrides",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List existing overrides",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "override": {
+        "Name": "override",
+        "kind": "subcommand",
+        "description": "Set status bar override values, according to these flags. You may specify any combination of these flags (at least one is required)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--batteryLevel": {
+            "Name": "--batteryLevel",
+            "kind": "option",
+            "description": "If specified must be 0-100",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--batteryState": {
+            "Name": "--batteryState",
+            "kind": "option",
+            "description": "If specified must be one of 'charging', 'charged', or 'discharging'",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--cellularBars": {
+            "Name": "--cellularBars",
+            "kind": "option",
+            "description": "If specified must be 0-4",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--cellularMode": {
+            "Name": "--cellularMode",
+            "kind": "option",
+            "description": "If specified must be one of 'notSupported', 'searching', 'failed', or 'active'",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--dataNetwork": {
+            "Name": "--dataNetwork",
+            "kind": "option",
+            "description": "If specified must be one of 'hide', 'wifi', '3g', '4g', 'lte', 'lte-a', 'lte+', '5g', '5g+', '5g-uwb', or '5g-uc'",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--operatorName": {
+            "Name": "--operatorName",
+            "kind": "option",
+            "description": "Set the cellular operator/carrier name. Use '' for the empty string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--time": {
+            "Name": "--time",
+            "kind": "option",
+            "description": "Set the date or time to a fixed value. If the string is a valid ISO date string it will also set the date on relevant devices",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--wifiBars": {
+            "Name": "--wifiBars",
+            "kind": "option",
+            "description": "If specified must be 0-3",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--wifiMode": {
+            "Name": "--wifiMode",
+            "kind": "option",
+            "description": "If specified must be one of 'searching', 'failed', or 'active'",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--batteryLevel": {
+            "Name": "--batteryLevel",
+            "kind": "option",
+            "description": "If specified must be 0-100",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--batteryState": {
+            "Name": "--batteryState",
+            "kind": "option",
+            "description": "If specified must be one of 'charging', 'charged', or 'discharging'",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--cellularBars": {
+            "Name": "--cellularBars",
+            "kind": "option",
+            "description": "If specified must be 0-4",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--cellularMode": {
+            "Name": "--cellularMode",
+            "kind": "option",
+            "description": "If specified must be one of 'notSupported', 'searching', 'failed', or 'active'",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--dataNetwork": {
+            "Name": "--dataNetwork",
+            "kind": "option",
+            "description": "If specified must be one of 'hide', 'wifi', '3g', '4g', 'lte', 'lte-a', 'lte+', '5g', '5g+', '5g-uwb', or '5g-uc'",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--operatorName": {
+            "Name": "--operatorName",
+            "kind": "option",
+            "description": "Set the cellular operator/carrier name. Use '' for the empty string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--time": {
+            "Name": "--time",
+            "kind": "option",
+            "description": "Set the date or time to a fixed value. If the string is a valid ISO date string it will also set the date on relevant devices",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--wifiBars": {
+            "Name": "--wifiBars",
+            "kind": "option",
+            "description": "If specified must be 0-3",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--wifiMode": {
+            "Name": "--wifiMode",
+            "kind": "option",
+            "description": "If specified must be one of 'searching', 'failed', or 'active'",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      }
+    },
+    "options": {
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdevice\u003e"
+    ]
+  },
+  "terminate": {
+    "Name": "terminate",
+    "kind": "subcommand",
+    "description": "Terminate an application by identifier on a device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003capp bundle identifier\u003e": {
+        "Name": "\u003capp bundle identifier\u003e",
+        "kind": "argument",
+        "description": "app bundle identifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003capp bundle identifier\u003e": {
+        "Name": "\u003capp bundle identifier\u003e",
+        "kind": "argument",
+        "description": "app bundle identifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdevice\u003e",
+      "\u003capp bundle identifier\u003e"
+    ]
+  },
+  "ui": {
+    "Name": "ui",
+    "kind": "subcommand",
+    "description": "Get or Set UI options",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "appearance": {
+        "Name": "appearance",
+        "kind": "subcommand",
+        "description": "When invoked without arguments prints the current user interface appearance style:\nlight\nThe Light appearance style.\ndark\nThe Dark appearance style.\nunsupported\nThe platform or runtime version do not support appearance styles.\nunknown\nThe current style is unknown or there was an error detecting it",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "content_size": {
+        "Name": "content_size",
+        "kind": "subcommand",
+        "description": "When invoked without arguments prints the current preferred content size category, from the following possible values:",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "increase_contrast": {
+        "Name": "increase_contrast",
+        "kind": "subcommand",
+        "description": "When invoked without arguments prints whether the Increase Contrast mode is currently enabled:\nenabled\nIncrease Contrast is enabled.\ndisabled\nIncrease Contrast is disabled.\nunsupported\nThe platform or runtime version do not support the Increase Contrast setting.\nunknown\nThe current setting is unknown or there was an error detecting it",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdevice\u003e"
+    ]
+  },
+  "uninstall": {
+    "Name": "uninstall",
+    "kind": "subcommand",
+    "description": "Uninstall an app from a device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003capp bundle identifier\u003e": {
+        "Name": "\u003capp bundle identifier\u003e",
+        "kind": "argument",
+        "description": "app bundle identifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003capp bundle identifier\u003e": {
+        "Name": "\u003capp bundle identifier\u003e",
+        "kind": "argument",
+        "description": "app bundle identifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdevice\u003e",
+      "\u003capp bundle identifier\u003e"
+    ]
+  },
+  "unpair": {
+    "Name": "unpair",
+    "kind": "subcommand",
+    "description": "Unpair a watch and phone pair",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpair UUID\u003e": {
+        "Name": "\u003cpair UUID\u003e",
+        "kind": "argument",
+        "description": "pair UUID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpair UUID\u003e": {
+        "Name": "\u003cpair UUID\u003e",
+        "kind": "argument",
+        "description": "pair UUID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpair UUID\u003e"
+    ]
+  },
+  "upgrade": {
+    "Name": "upgrade",
+    "kind": "subcommand",
+    "description": "Upgrade a device to a newer runtime",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cruntime id\u003e": {
+        "Name": "\u003cruntime id\u003e",
+        "kind": "argument",
+        "description": "runtime id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdevice\u003e": {
+        "Name": "\u003cdevice\u003e",
+        "kind": "argument",
+        "description": "device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cruntime id\u003e": {
+        "Name": "\u003cruntime id\u003e",
+        "kind": "argument",
+        "description": "runtime id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdevice\u003e",
+      "\u003cruntime id\u003e"
+    ]
+  }
+}

@@ -1,0 +1,437 @@
+{
+  "--debug": {
+    "Name": "--debug",
+    "kind": "option",
+    "description": "Enable debug mode, aka showing more detailed logs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--dir": {
+    "Name": "--dir",
+    "kind": "option",
+    "description": "PocketBase data directory (default \"pb_data\")",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdir\u003e": {
+        "Name": "\u003cdir\u003e",
+        "kind": "argument",
+        "description": "dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdir\u003e": {
+        "Name": "\u003cdir\u003e",
+        "kind": "argument",
+        "description": "dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdir\u003e"
+    ]
+  },
+  "--encryptionEnv": {
+    "Name": "--encryptionEnv",
+    "kind": "option",
+    "description": "Environment variable whose value of 32 chars will be used as encryption key for the app settings (default none)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cenv\u003e": {
+        "Name": "\u003cenv\u003e",
+        "kind": "argument",
+        "description": "env",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cenv\u003e": {
+        "Name": "\u003cenv\u003e",
+        "kind": "argument",
+        "description": "env",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cenv\u003e"
+    ]
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for pocketbase",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Show version for pocketbase",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help for pocketbase",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Show version for pocketbase",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Help about any command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csubcommand\u003e": {
+        "Name": "\u003csubcommand\u003e",
+        "kind": "argument",
+        "description": "subcommand",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csubcommand\u003e": {
+        "Name": "\u003csubcommand\u003e",
+        "kind": "argument",
+        "description": "subcommand",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "migrate": {
+    "Name": "migrate",
+    "kind": "subcommand",
+    "description": "Executes DB migration scripts",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "collections": {
+        "Name": "collections",
+        "kind": "subcommand",
+        "description": "(Experimental) Creates new migration file with the most recent local collections configuration",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfolder\u003e": {
+            "Name": "\u003cfolder\u003e",
+            "kind": "argument",
+            "description": "folder",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfolder\u003e": {
+            "Name": "\u003cfolder\u003e",
+            "kind": "argument",
+            "description": "folder",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "create": {
+        "Name": "create",
+        "kind": "subcommand",
+        "description": "Creates new migration template file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfolder\u003e": {
+            "Name": "\u003cfolder\u003e",
+            "kind": "argument",
+            "description": "folder",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfolder\u003e": {
+            "Name": "\u003cfolder\u003e",
+            "kind": "argument",
+            "description": "folder",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "down": {
+        "Name": "down",
+        "kind": "subcommand",
+        "description": "Reverts the last [number] applied migrations",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cnumber\u003e": {
+            "Name": "\u003cnumber\u003e",
+            "kind": "argument",
+            "description": "number",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cnumber\u003e": {
+            "Name": "\u003cnumber\u003e",
+            "kind": "argument",
+            "description": "number",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "up": {
+        "Name": "up",
+        "kind": "subcommand",
+        "description": "Runs all available migrations",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "serve": {
+    "Name": "serve",
+    "kind": "subcommand",
+    "description": "Starts the web server (default to 127.0.0.1:8090)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--http": {
+        "Name": "--http",
+        "kind": "option",
+        "description": "API HTTP server address (default \"127.0.0.1:8090\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstring\u003e"
+        ]
+      },
+      "--https": {
+        "Name": "--https",
+        "kind": "option",
+        "description": "API HTTPS server address (auto TLS via Let's Encrypt). The incoming --http address traffic also will be redirected to this address",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstring\u003e"
+        ]
+      },
+      "--origins": {
+        "Name": "--origins",
+        "kind": "option",
+        "description": "CORS allowed domain origins list (default [*])",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstrings\u003e": {
+            "Name": "\u003cstrings\u003e",
+            "kind": "argument",
+            "description": "strings",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstrings\u003e": {
+            "Name": "\u003cstrings\u003e",
+            "kind": "argument",
+            "description": "strings",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstrings\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--http": {
+        "Name": "--http",
+        "kind": "option",
+        "description": "API HTTP server address (default \"127.0.0.1:8090\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstring\u003e"
+        ]
+      },
+      "--https": {
+        "Name": "--https",
+        "kind": "option",
+        "description": "API HTTPS server address (auto TLS via Let's Encrypt). The incoming --http address traffic also will be redirected to this address",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstring\u003e"
+        ]
+      },
+      "--origins": {
+        "Name": "--origins",
+        "kind": "option",
+        "description": "CORS allowed domain origins list (default [*])",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstrings\u003e": {
+            "Name": "\u003cstrings\u003e",
+            "kind": "argument",
+            "description": "strings",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstrings\u003e": {
+            "Name": "\u003cstrings\u003e",
+            "kind": "argument",
+            "description": "strings",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstrings\u003e"
+        ]
+      }
+    }
+  }
+}

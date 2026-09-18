@@ -1,0 +1,1506 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Shows version number, config file location, module search path, module location, executable location and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "dump": {
+    "Name": "dump",
+    "kind": "subcommand",
+    "description": "Shows the current settings, merges ansible.cfg if specified",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--changed-only": {
+        "Name": "--changed-only",
+        "kind": "option",
+        "description": "Only show configurations that have changed from the default",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Path to configuration file, defaults to first file found in precedence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cCONFIG_FILE\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help and exit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--only-changed": {
+        "Name": "--only-changed",
+        "kind": "option",
+        "description": "Only show configurations that have changed from the default",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--type": {
+        "Name": "--type",
+        "kind": "option",
+        "description": "Filter down to a specific plugin type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTYPE\u003e"
+        ]
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Verbose mode (-vvv for more, -vvvv to enable connection debugging)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Path to configuration file, defaults to first file found in precedence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cCONFIG_FILE\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Show help and exit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Filter down to a specific plugin type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTYPE\u003e"
+        ]
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Verbose mode (-vvv for more, -vvvv to enable connection debugging)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cargs\u003e": {
+        "Name": "\u003cargs\u003e",
+        "kind": "argument",
+        "description": "args",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--changed-only": {
+        "Name": "--changed-only",
+        "kind": "option",
+        "description": "Only show configurations that have changed from the default",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Path to configuration file, defaults to first file found in precedence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cCONFIG_FILE\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help and exit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--only-changed": {
+        "Name": "--only-changed",
+        "kind": "option",
+        "description": "Only show configurations that have changed from the default",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--type": {
+        "Name": "--type",
+        "kind": "option",
+        "description": "Filter down to a specific plugin type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTYPE\u003e"
+        ]
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Verbose mode (-vvv for more, -vvvv to enable connection debugging)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Path to configuration file, defaults to first file found in precedence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cCONFIG_FILE\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Show help and exit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Filter down to a specific plugin type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTYPE\u003e"
+        ]
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Verbose mode (-vvv for more, -vvvv to enable connection debugging)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cargs\u003e": {
+        "Name": "\u003cargs\u003e",
+        "kind": "argument",
+        "description": "args",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "init": {
+    "Name": "init",
+    "kind": "subcommand",
+    "description": "Initializes a new config file (to stdout)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Path to configuration file, defaults to first file found in precedence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cCONFIG_FILE\u003e"
+        ]
+      },
+      "--disabled": {
+        "Name": "--disabled",
+        "kind": "option",
+        "description": "Prefixes all entries with a comment character to disable them",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Output format for init",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cFORMAT\u003e": {
+            "Name": "\u003cFORMAT\u003e",
+            "kind": "argument",
+            "description": "FORMAT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cFORMAT\u003e": {
+            "Name": "\u003cFORMAT\u003e",
+            "kind": "argument",
+            "description": "FORMAT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help and exit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--type": {
+        "Name": "--type",
+        "kind": "option",
+        "description": "Filter down to a specific plugin type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTYPE\u003e"
+        ]
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Verbose mode (-vvv for more, -vvvv to enable connection debugging)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Path to configuration file, defaults to first file found in precedence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cCONFIG_FILE\u003e"
+        ]
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Output format for init",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cFORMAT\u003e": {
+            "Name": "\u003cFORMAT\u003e",
+            "kind": "argument",
+            "description": "FORMAT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cFORMAT\u003e": {
+            "Name": "\u003cFORMAT\u003e",
+            "kind": "argument",
+            "description": "FORMAT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Show help and exit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Filter down to a specific plugin type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTYPE\u003e"
+        ]
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Verbose mode (-vvv for more, -vvvv to enable connection debugging)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cargs\u003e": {
+        "Name": "\u003cargs\u003e",
+        "kind": "argument",
+        "description": "args",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Path to configuration file, defaults to first file found in precedence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cCONFIG_FILE\u003e"
+        ]
+      },
+      "--disabled": {
+        "Name": "--disabled",
+        "kind": "option",
+        "description": "Prefixes all entries with a comment character to disable them",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Output format for init",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cFORMAT\u003e": {
+            "Name": "\u003cFORMAT\u003e",
+            "kind": "argument",
+            "description": "FORMAT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cFORMAT\u003e": {
+            "Name": "\u003cFORMAT\u003e",
+            "kind": "argument",
+            "description": "FORMAT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help and exit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--type": {
+        "Name": "--type",
+        "kind": "option",
+        "description": "Filter down to a specific plugin type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTYPE\u003e"
+        ]
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Verbose mode (-vvv for more, -vvvv to enable connection debugging)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Path to configuration file, defaults to first file found in precedence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cCONFIG_FILE\u003e"
+        ]
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Output format for init",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cFORMAT\u003e": {
+            "Name": "\u003cFORMAT\u003e",
+            "kind": "argument",
+            "description": "FORMAT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cFORMAT\u003e": {
+            "Name": "\u003cFORMAT\u003e",
+            "kind": "argument",
+            "description": "FORMAT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Show help and exit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Filter down to a specific plugin type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTYPE\u003e"
+        ]
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Verbose mode (-vvv for more, -vvvv to enable connection debugging)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cargs\u003e": {
+        "Name": "\u003cargs\u003e",
+        "kind": "argument",
+        "description": "args",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "list": {
+    "Name": "list",
+    "kind": "subcommand",
+    "description": "List and output available configs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Path to configuration file, defaults to first file found in precedence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cCONFIG_FILE\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help and exit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--type": {
+        "Name": "--type",
+        "kind": "option",
+        "description": "Filter down to a specific plugin type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTYPE\u003e"
+        ]
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Verbose mode (-vvv for more, -vvvv to enable connection debugging)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Path to configuration file, defaults to first file found in precedence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cCONFIG_FILE\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Show help and exit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Filter down to a specific plugin type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTYPE\u003e"
+        ]
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Verbose mode (-vvv for more, -vvvv to enable connection debugging)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cargs\u003e": {
+        "Name": "\u003cargs\u003e",
+        "kind": "argument",
+        "description": "args",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Path to configuration file, defaults to first file found in precedence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cCONFIG_FILE\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help and exit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--type": {
+        "Name": "--type",
+        "kind": "option",
+        "description": "Filter down to a specific plugin type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTYPE\u003e"
+        ]
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Verbose mode (-vvv for more, -vvvv to enable connection debugging)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Path to configuration file, defaults to first file found in precedence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cCONFIG_FILE\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Show help and exit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Filter down to a specific plugin type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTYPE\u003e"
+        ]
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Verbose mode (-vvv for more, -vvvv to enable connection debugging)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cargs\u003e": {
+        "Name": "\u003cargs\u003e",
+        "kind": "argument",
+        "description": "args",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "view": {
+    "Name": "view",
+    "kind": "subcommand",
+    "description": "Displays the current config file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Path to configuration file, defaults to first file found in precedence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cCONFIG_FILE\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help and exit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--type": {
+        "Name": "--type",
+        "kind": "option",
+        "description": "Filter down to a specific plugin type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTYPE\u003e"
+        ]
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Verbose mode (-vvv for more, -vvvv to enable connection debugging)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Path to configuration file, defaults to first file found in precedence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cCONFIG_FILE\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Show help and exit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Filter down to a specific plugin type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTYPE\u003e"
+        ]
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Verbose mode (-vvv for more, -vvvv to enable connection debugging)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cargs\u003e": {
+        "Name": "\u003cargs\u003e",
+        "kind": "argument",
+        "description": "args",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Path to configuration file, defaults to first file found in precedence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cCONFIG_FILE\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help and exit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--type": {
+        "Name": "--type",
+        "kind": "option",
+        "description": "Filter down to a specific plugin type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTYPE\u003e"
+        ]
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Verbose mode (-vvv for more, -vvvv to enable connection debugging)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Path to configuration file, defaults to first file found in precedence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cCONFIG_FILE\u003e": {
+            "Name": "\u003cCONFIG_FILE\u003e",
+            "kind": "argument",
+            "description": "CONFIG_FILE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cCONFIG_FILE\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Show help and exit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Filter down to a specific plugin type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTYPE\u003e": {
+            "Name": "\u003cTYPE\u003e",
+            "kind": "argument",
+            "description": "TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTYPE\u003e"
+        ]
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Verbose mode (-vvv for more, -vvvv to enable connection debugging)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cargs\u003e": {
+        "Name": "\u003cargs\u003e",
+        "kind": "argument",
+        "description": "args",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  }
+}

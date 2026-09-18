@@ -1,0 +1,346 @@
+{
+  "-3": {
+    "Name": "-3",
+    "kind": "option",
+    "description": "Copies between two remote hosts are transferred through the local\nhost.  Without this option the data is copied directly between the\ntwo remote hosts.  Note that this option disables the progress\nmeter and selects batch mode for the second host, since scp cannot\nask for passwords or passphrases for both hosts",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-4": {
+    "Name": "-4",
+    "kind": "option",
+    "description": "Forces scp to use IPv4 addresses only",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-6": {
+    "Name": "-6",
+    "kind": "option",
+    "description": "Forces scp to use IPv6 addresses only",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-A": {
+    "Name": "-A",
+    "kind": "option",
+    "description": "Allows forwarding of ssh-agent(1) to the remote system. The default is not to forward an authentication agent",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-B": {
+    "Name": "-B",
+    "kind": "option",
+    "description": "Selects batch mode (prevents asking for passwords or passphrases)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-C": {
+    "Name": "-C",
+    "kind": "option",
+    "description": "Compression enable. Passes the -C flag to ssh(1) to enable compression",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-F": {
+    "Name": "-F",
+    "kind": "option",
+    "description": "Specifies an alternative per-user configuration file for ssh. This option is directly passed to ssh(1)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cssh_config\u003e": {
+        "Name": "\u003cssh_config\u003e",
+        "kind": "argument",
+        "description": "ssh_config",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cssh_config\u003e": {
+        "Name": "\u003cssh_config\u003e",
+        "kind": "argument",
+        "description": "ssh_config",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cssh_config\u003e"
+    ]
+  },
+  "-J": {
+    "Name": "-J",
+    "kind": "option",
+    "description": "Connect to the target host by first making an scp connection to the\njump host described by destination and then establishing a TCP\nforwarding to the ultimate destination from there.  Multiple jump\nhops may be specified separated by comma characters.  This is a\nshortcut to specify a ProxyJump configuration directive.  This\noption is directly passed to ssh(1)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdestination\u003e": {
+        "Name": "\u003cdestination\u003e",
+        "kind": "argument",
+        "description": "destination",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdestination\u003e": {
+        "Name": "\u003cdestination\u003e",
+        "kind": "argument",
+        "description": "destination",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdestination\u003e"
+    ]
+  },
+  "-P": {
+    "Name": "-P",
+    "kind": "option",
+    "description": "Specifies the port to connect to on the remote host.  Note that\nthis option is written with a capital ‘P’, because -p is already\nreserved for preserving the times and modes of the file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cport\u003e": {
+        "Name": "\u003cport\u003e",
+        "kind": "argument",
+        "description": "port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cport\u003e": {
+        "Name": "\u003cport\u003e",
+        "kind": "argument",
+        "description": "port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cport\u003e"
+    ]
+  },
+  "-S": {
+    "Name": "-S",
+    "kind": "option",
+    "description": "Name of program to use for the encrypted connection.  The program must understand ssh(1) options",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cprogram\u003e": {
+        "Name": "\u003cprogram\u003e",
+        "kind": "argument",
+        "description": "program",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cprogram\u003e": {
+        "Name": "\u003cprogram\u003e",
+        "kind": "argument",
+        "description": "program",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cprogram\u003e"
+    ]
+  },
+  "-T": {
+    "Name": "-T",
+    "kind": "option",
+    "description": "Disable strict filename checking.  By default when copying files\nfrom a remote host to a local directory scp checks that the\nreceived filenames match those requested on the command-line to\nprevent the remote end from sending unexpected or unwanted files.\nBecause of differences in how various operating systems and shells\ninterpret filename wildcards, these checks may cause wanted files\nto be rejected.  This option disables these checks at the expense\nof fully trusting that the server will not send unexpected\nfilenames",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Selects the cipher to use for encrypting the data transfer. This option is directly passed to ssh(1)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccipher\u003e": {
+        "Name": "\u003ccipher\u003e",
+        "kind": "argument",
+        "description": "cipher",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccipher\u003e": {
+        "Name": "\u003ccipher\u003e",
+        "kind": "argument",
+        "description": "cipher",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccipher\u003e"
+    ]
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Selects the file from which the identity (private key) for public key authentication is read. This option is directly passed to ssh(1)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cidentity_file\u003e": {
+        "Name": "\u003cidentity_file\u003e",
+        "kind": "argument",
+        "description": "identity_file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cidentity_file\u003e": {
+        "Name": "\u003cidentity_file\u003e",
+        "kind": "argument",
+        "description": "identity_file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cidentity_file\u003e"
+    ]
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "option",
+    "description": "Limits the used bandwidth, specified in Kbit/s",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003climit\u003e": {
+        "Name": "\u003climit\u003e",
+        "kind": "argument",
+        "description": "limit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003climit\u003e": {
+        "Name": "\u003climit\u003e",
+        "kind": "argument",
+        "description": "limit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003climit\u003e"
+    ]
+  },
+  "-o": {
+    "Name": "-o",
+    "kind": "option",
+    "description": "Can be used to pass options to ssh in the format used in\nssh_config(5).  This is useful for specifying options for which\nthere is no separate scp command-line flag.  For full details of\nthe options listed below, and their possible values, see\nssh_config(5)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003coption\u003e": {
+        "Name": "\u003coption\u003e",
+        "kind": "argument",
+        "description": "option",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003coption\u003e": {
+        "Name": "\u003coption\u003e",
+        "kind": "argument",
+        "description": "option",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003coption\u003e"
+    ]
+  },
+  "-p": {
+    "Name": "-p",
+    "kind": "option",
+    "description": "Preserves modification times, access times, and modes from the original file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-q": {
+    "Name": "-q",
+    "kind": "option",
+    "description": "Quiet mode: disables the progress meter as well as warning and diagnostic messages from ssh(1)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "Recursively copy entire directories.  Note that scp follows symbolic links encountered in the tree traversal",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Verbose mode.  Causes scp and ssh(1) to print debugging messages about their progress. This is helpful in debugging connection, authentication, and configuration problems",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003csources\u003e": {
+    "Name": "\u003csources\u003e",
+    "kind": "argument",
+    "description": "sources",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  },
+  "\u003ctarget\u003e": {
+    "Name": "\u003ctarget\u003e",
+    "kind": "argument",
+    "description": "target",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

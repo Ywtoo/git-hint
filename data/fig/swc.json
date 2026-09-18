@@ -1,0 +1,556 @@
+{
+  "--config": {
+    "Name": "--config",
+    "kind": "option",
+    "description": "Override a config from .swcrc file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cCONFIG_FILE\u003e": {
+        "Name": "\u003cCONFIG_FILE\u003e",
+        "kind": "argument",
+        "description": "CONFIG_FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cCONFIG_FILE\u003e": {
+        "Name": "\u003cCONFIG_FILE\u003e",
+        "kind": "argument",
+        "description": "CONFIG_FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cCONFIG_FILE\u003e"
+    ]
+  },
+  "--config-file": {
+    "Name": "--config-file",
+    "kind": "option",
+    "description": "Path to a .swcrc file to use",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cCONFIG_FILE\u003e": {
+        "Name": "\u003cCONFIG_FILE\u003e",
+        "kind": "argument",
+        "description": "CONFIG_FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cCONFIG_FILE\u003e": {
+        "Name": "\u003cCONFIG_FILE\u003e",
+        "kind": "argument",
+        "description": "CONFIG_FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cCONFIG_FILE\u003e"
+    ]
+  },
+  "--copy-files": {
+    "Name": "--copy-files",
+    "kind": "option",
+    "description": "When compiling a directory, copy over non-compilable files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--env-name": {
+    "Name": "--env-name",
+    "kind": "option",
+    "description": "The name of the 'env' to use when loading configs and plugins. Defaults to the value of SWC_ENV, or else NODE_ENV, or else development",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cENV_NAME\u003e": {
+        "Name": "\u003cENV_NAME\u003e",
+        "kind": "argument",
+        "description": "ENV_NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cENV_NAME\u003e": {
+        "Name": "\u003cENV_NAME\u003e",
+        "kind": "argument",
+        "description": "ENV_NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cENV_NAME\u003e"
+    ]
+  },
+  "--extensions": {
+    "Name": "--extensions",
+    "kind": "option",
+    "description": "Log a message when a watched file is successfully compiled",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--filename": {
+    "Name": "--filename",
+    "kind": "option",
+    "description": "Filename to use when reading from stdin. This will be used in source maps and errors",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFILE\u003e"
+    ]
+  },
+  "--ignore": {
+    "Name": "--ignore",
+    "kind": "option",
+    "description": "List of glob paths to not compile",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH\u003e"
+    ]
+  },
+  "--include-dotfiles": {
+    "Name": "--include-dotfiles",
+    "kind": "option",
+    "description": "Include dotfiles when compiling and copying non-compilable files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--log-watch-compilation": {
+    "Name": "--log-watch-compilation",
+    "kind": "option",
+    "description": "Log a message when a watched file is successfully compiled",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-swcrc": {
+    "Name": "--no-swcrc",
+    "kind": "option",
+    "description": "Whether or not to look up .swcrc files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--only": {
+    "Name": "--only",
+    "kind": "option",
+    "description": "List of glob paths to only compile",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH\u003e"
+    ]
+  },
+  "--out-dir": {
+    "Name": "--out-dir",
+    "kind": "option",
+    "description": "Compile an input directory of modules into an output directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cOUTPUT_DIR\u003e": {
+        "Name": "\u003cOUTPUT_DIR\u003e",
+        "kind": "argument",
+        "description": "OUTPUT_DIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cOUTPUT_DIR\u003e": {
+        "Name": "\u003cOUTPUT_DIR\u003e",
+        "kind": "argument",
+        "description": "OUTPUT_DIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cOUTPUT_DIR\u003e"
+    ]
+  },
+  "--out-file": {
+    "Name": "--out-file",
+    "kind": "option",
+    "description": "Compile all input files into a single file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cOUTPUT_FILE\u003e": {
+        "Name": "\u003cOUTPUT_FILE\u003e",
+        "kind": "argument",
+        "description": "OUTPUT_FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cOUTPUT_FILE\u003e": {
+        "Name": "\u003cOUTPUT_FILE\u003e",
+        "kind": "argument",
+        "description": "OUTPUT_FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cOUTPUT_FILE\u003e"
+    ]
+  },
+  "--quiet": {
+    "Name": "--quiet",
+    "kind": "option",
+    "description": "Suppress compilation output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--source-file-name": {
+    "Name": "--source-file-name",
+    "kind": "option",
+    "description": "Set sources[0] on returned source map",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--source-map-target": {
+    "Name": "--source-map-target",
+    "kind": "option",
+    "description": "Define the file for the source map",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFILE\u003e"
+    ]
+  },
+  "--source-maps": {
+    "Name": "--source-maps",
+    "kind": "option",
+    "description": "Generate source maps",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSOURCE_MAP\u003e": {
+        "Name": "\u003cSOURCE_MAP\u003e",
+        "kind": "argument",
+        "description": "SOURCE_MAP",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSOURCE_MAP\u003e": {
+        "Name": "\u003cSOURCE_MAP\u003e",
+        "kind": "argument",
+        "description": "SOURCE_MAP",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSOURCE_MAP\u003e"
+    ]
+  },
+  "--source-root": {
+    "Name": "--source-root",
+    "kind": "option",
+    "description": "The root from which all sources are relative",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--sync": {
+    "Name": "--sync",
+    "kind": "option",
+    "description": "Invoke swc synchronously. Useful for debugging",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--watch": {
+    "Name": "--watch",
+    "kind": "option",
+    "description": "Watch for changes and recompile",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-C": {
+    "Name": "-C",
+    "kind": "option",
+    "description": "Override a config from .swcrc file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cCONFIG_FILE\u003e": {
+        "Name": "\u003cCONFIG_FILE\u003e",
+        "kind": "argument",
+        "description": "CONFIG_FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cCONFIG_FILE\u003e": {
+        "Name": "\u003cCONFIG_FILE\u003e",
+        "kind": "argument",
+        "description": "CONFIG_FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cCONFIG_FILE\u003e"
+    ]
+  },
+  "-D": {
+    "Name": "-D",
+    "kind": "option",
+    "description": "When compiling a directory, copy over non-compilable files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Compile an input directory of modules into an output directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cOUTPUT_DIR\u003e": {
+        "Name": "\u003cOUTPUT_DIR\u003e",
+        "kind": "argument",
+        "description": "OUTPUT_DIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cOUTPUT_DIR\u003e": {
+        "Name": "\u003cOUTPUT_DIR\u003e",
+        "kind": "argument",
+        "description": "OUTPUT_DIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cOUTPUT_DIR\u003e"
+    ]
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Filename to use when reading from stdin. This will be used in source maps and errors",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFILE\u003e"
+    ]
+  },
+  "-o": {
+    "Name": "-o",
+    "kind": "option",
+    "description": "Compile all input files into a single file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cOUTPUT_FILE\u003e": {
+        "Name": "\u003cOUTPUT_FILE\u003e",
+        "kind": "argument",
+        "description": "OUTPUT_FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cOUTPUT_FILE\u003e": {
+        "Name": "\u003cOUTPUT_FILE\u003e",
+        "kind": "argument",
+        "description": "OUTPUT_FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cOUTPUT_FILE\u003e"
+    ]
+  },
+  "-q": {
+    "Name": "-q",
+    "kind": "option",
+    "description": "Suppress compilation output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Generate source maps",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSOURCE_MAP\u003e": {
+        "Name": "\u003cSOURCE_MAP\u003e",
+        "kind": "argument",
+        "description": "SOURCE_MAP",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSOURCE_MAP\u003e": {
+        "Name": "\u003cSOURCE_MAP\u003e",
+        "kind": "argument",
+        "description": "SOURCE_MAP",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSOURCE_MAP\u003e"
+    ]
+  },
+  "-w": {
+    "Name": "-w",
+    "kind": "option",
+    "description": "Watch for changes and recompile",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

@@ -1,0 +1,4506 @@
+{
+  "--bare": {
+    "Name": "--bare",
+    "kind": "option",
+    "description": "Minimal output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--clear": {
+    "Name": "--clear",
+    "kind": "option",
+    "description": "Clears caches (pipenv, pip, and pip-tools). [env var: PIPENV_CLEAR]",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--completion": {
+    "Name": "--completion",
+    "kind": "option",
+    "description": "Output completion (to be executed by shell)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--envs": {
+    "Name": "--envs",
+    "kind": "option",
+    "description": "View environment variable options",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "List commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--man": {
+    "Name": "--man",
+    "kind": "option",
+    "description": "Display manpage",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-site-packages": {
+    "Name": "--no-site-packages",
+    "kind": "option",
+    "description": "Enable site-packages for the virtualenv [env var: PIPENV_SITE_PACKAGES]",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--py": {
+    "Name": "--py",
+    "kind": "option",
+    "description": "View python interpreter information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--pypi-mirror": {
+    "Name": "--pypi-mirror",
+    "kind": "option",
+    "description": "Specify a PyPi mirror",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmirror\u003e": {
+        "Name": "\u003cmirror\u003e",
+        "kind": "argument",
+        "description": "mirror",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmirror\u003e": {
+        "Name": "\u003cmirror\u003e",
+        "kind": "argument",
+        "description": "mirror",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmirror\u003e"
+    ]
+  },
+  "--python": {
+    "Name": "--python",
+    "kind": "option",
+    "description": "Specify which version of Python virtualenv should use",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--rm": {
+    "Name": "--rm",
+    "kind": "option",
+    "description": "Remove the virtualenv",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--site-packages": {
+    "Name": "--site-packages",
+    "kind": "option",
+    "description": "Enable site-packages for the virtualenv [env var: PIPENV_SITE_PACKAGES]",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--support": {
+    "Name": "--support",
+    "kind": "option",
+    "description": "View diagnostic information for use in GitHub issues",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--three": {
+    "Name": "--three",
+    "kind": "option",
+    "description": "Use python 3 when creating virtualenv",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--two": {
+    "Name": "--two",
+    "kind": "option",
+    "description": "Use python 2 when creating virtualenv",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--venv": {
+    "Name": "--venv",
+    "kind": "option",
+    "description": "View virtualenv information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Verbose mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "View your current pipenv version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--where": {
+    "Name": "--where",
+    "kind": "option",
+    "description": "View project home information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "List commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Verbose mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "check": {
+    "Name": "check",
+    "kind": "subcommand",
+    "description": "Checks for PyUp Safety security vulnerabilities and against PEP 508 markers provided in Pipfile",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--clear": {
+        "Name": "--clear",
+        "kind": "option",
+        "description": "Clears caches (pipenv, pip, and pip-tools)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--db": {
+        "Name": "--db",
+        "kind": "option",
+        "description": "Path to a local PyUp Safety vulnerabilities database. Default: ENV PIPENV_SAFETY_DB or None",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cDatabase\u003e": {
+            "Name": "\u003cDatabase\u003e",
+            "kind": "argument",
+            "description": "Database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cDatabase\u003e": {
+            "Name": "\u003cDatabase\u003e",
+            "kind": "argument",
+            "description": "Database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cDatabase\u003e"
+        ]
+      },
+      "--ignore": {
+        "Name": "--ignore",
+        "kind": "option",
+        "description": "Ignore specified vulnerability during PyUp Safety checks",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cVulnerability ID\u003e": {
+            "Name": "\u003cVulnerability ID\u003e",
+            "kind": "argument",
+            "description": "Vulnerability ID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cVulnerability ID\u003e": {
+            "Name": "\u003cVulnerability ID\u003e",
+            "kind": "argument",
+            "description": "Vulnerability ID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cVulnerability ID\u003e"
+        ]
+      },
+      "--key": {
+        "Name": "--key",
+        "kind": "option",
+        "description": "Safety API key from PyUp.io for scanning dependencies against a live vulnerabilities database. Leave blank for scanning against a database that only updates once a month",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cAPI key\u003e": {
+            "Name": "\u003cAPI key\u003e",
+            "kind": "argument",
+            "description": "API key",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cAPI key\u003e": {
+            "Name": "\u003cAPI key\u003e",
+            "kind": "argument",
+            "description": "API key",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cAPI key\u003e"
+        ]
+      },
+      "--output": {
+        "Name": "--output",
+        "kind": "option",
+        "description": "Translates to –json, –full-report or –bare from PyUp Safety check",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pypi-mirror": {
+        "Name": "--pypi-mirror",
+        "kind": "option",
+        "description": "Specify a PyPI mirror",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmirror\u003e": {
+            "Name": "\u003cmirror\u003e",
+            "kind": "argument",
+            "description": "mirror",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmirror\u003e": {
+            "Name": "\u003cmirror\u003e",
+            "kind": "argument",
+            "description": "mirror",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmirror\u003e"
+        ]
+      },
+      "--python": {
+        "Name": "--python",
+        "kind": "option",
+        "description": "Specify which version of Python virtualenv should use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpy_version\u003e"
+        ]
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Quiet standard output, except vulnerability report",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--system": {
+        "Name": "--system",
+        "kind": "option",
+        "description": "System pip management",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--three": {
+        "Name": "--three",
+        "kind": "option",
+        "description": "Use Python 3 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--two": {
+        "Name": "--two",
+        "kind": "option",
+        "description": "Use Python 2 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--unused": {
+        "Name": "--unused",
+        "kind": "option",
+        "description": "Given a code path, show potentially unused dependencies",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccode path\u003e": {
+            "Name": "\u003ccode path\u003e",
+            "kind": "argument",
+            "description": "code path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccode path\u003e": {
+            "Name": "\u003ccode path\u003e",
+            "kind": "argument",
+            "description": "code path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccode path\u003e"
+        ]
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-i": {
+        "Name": "-i",
+        "kind": "option",
+        "description": "Ignore specified vulnerability during PyUp Safety checks",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cVulnerability ID\u003e": {
+            "Name": "\u003cVulnerability ID\u003e",
+            "kind": "argument",
+            "description": "Vulnerability ID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cVulnerability ID\u003e": {
+            "Name": "\u003cVulnerability ID\u003e",
+            "kind": "argument",
+            "description": "Vulnerability ID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cVulnerability ID\u003e"
+        ]
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--clear": {
+        "Name": "--clear",
+        "kind": "option",
+        "description": "Clears caches (pipenv, pip, and pip-tools)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--db": {
+        "Name": "--db",
+        "kind": "option",
+        "description": "Path to a local PyUp Safety vulnerabilities database. Default: ENV PIPENV_SAFETY_DB or None",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cDatabase\u003e": {
+            "Name": "\u003cDatabase\u003e",
+            "kind": "argument",
+            "description": "Database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cDatabase\u003e": {
+            "Name": "\u003cDatabase\u003e",
+            "kind": "argument",
+            "description": "Database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cDatabase\u003e"
+        ]
+      },
+      "--ignore": {
+        "Name": "--ignore",
+        "kind": "option",
+        "description": "Ignore specified vulnerability during PyUp Safety checks",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cVulnerability ID\u003e": {
+            "Name": "\u003cVulnerability ID\u003e",
+            "kind": "argument",
+            "description": "Vulnerability ID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cVulnerability ID\u003e": {
+            "Name": "\u003cVulnerability ID\u003e",
+            "kind": "argument",
+            "description": "Vulnerability ID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cVulnerability ID\u003e"
+        ]
+      },
+      "--key": {
+        "Name": "--key",
+        "kind": "option",
+        "description": "Safety API key from PyUp.io for scanning dependencies against a live vulnerabilities database. Leave blank for scanning against a database that only updates once a month",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cAPI key\u003e": {
+            "Name": "\u003cAPI key\u003e",
+            "kind": "argument",
+            "description": "API key",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cAPI key\u003e": {
+            "Name": "\u003cAPI key\u003e",
+            "kind": "argument",
+            "description": "API key",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cAPI key\u003e"
+        ]
+      },
+      "--output": {
+        "Name": "--output",
+        "kind": "option",
+        "description": "Translates to –json, –full-report or –bare from PyUp Safety check",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pypi-mirror": {
+        "Name": "--pypi-mirror",
+        "kind": "option",
+        "description": "Specify a PyPI mirror",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmirror\u003e": {
+            "Name": "\u003cmirror\u003e",
+            "kind": "argument",
+            "description": "mirror",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmirror\u003e": {
+            "Name": "\u003cmirror\u003e",
+            "kind": "argument",
+            "description": "mirror",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmirror\u003e"
+        ]
+      },
+      "--python": {
+        "Name": "--python",
+        "kind": "option",
+        "description": "Specify which version of Python virtualenv should use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpy_version\u003e"
+        ]
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Quiet standard output, except vulnerability report",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--system": {
+        "Name": "--system",
+        "kind": "option",
+        "description": "System pip management",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--three": {
+        "Name": "--three",
+        "kind": "option",
+        "description": "Use Python 3 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--two": {
+        "Name": "--two",
+        "kind": "option",
+        "description": "Use Python 2 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--unused": {
+        "Name": "--unused",
+        "kind": "option",
+        "description": "Given a code path, show potentially unused dependencies",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccode path\u003e": {
+            "Name": "\u003ccode path\u003e",
+            "kind": "argument",
+            "description": "code path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccode path\u003e": {
+            "Name": "\u003ccode path\u003e",
+            "kind": "argument",
+            "description": "code path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccode path\u003e"
+        ]
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-i": {
+        "Name": "-i",
+        "kind": "option",
+        "description": "Ignore specified vulnerability during PyUp Safety checks",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cVulnerability ID\u003e": {
+            "Name": "\u003cVulnerability ID\u003e",
+            "kind": "argument",
+            "description": "Vulnerability ID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cVulnerability ID\u003e": {
+            "Name": "\u003cVulnerability ID\u003e",
+            "kind": "argument",
+            "description": "Vulnerability ID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cVulnerability ID\u003e"
+        ]
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "clean": {
+    "Name": "clean",
+    "kind": "subcommand",
+    "description": "Uninstalls all packages not specified in Pipfile.lock",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--bare": {
+        "Name": "--bare",
+        "kind": "option",
+        "description": "Minimal output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dry-run": {
+        "Name": "--dry-run",
+        "kind": "option",
+        "description": "Just output unneeded packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--python": {
+        "Name": "--python",
+        "kind": "option",
+        "description": "Specify which version of Python virtualenv should use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpy_version\u003e"
+        ]
+      },
+      "--three": {
+        "Name": "--three",
+        "kind": "option",
+        "description": "Use Python 3 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--two": {
+        "Name": "--two",
+        "kind": "option",
+        "description": "Use Python 2 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--bare": {
+        "Name": "--bare",
+        "kind": "option",
+        "description": "Minimal output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dry-run": {
+        "Name": "--dry-run",
+        "kind": "option",
+        "description": "Just output unneeded packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--python": {
+        "Name": "--python",
+        "kind": "option",
+        "description": "Specify which version of Python virtualenv should use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpy_version\u003e"
+        ]
+      },
+      "--three": {
+        "Name": "--three",
+        "kind": "option",
+        "description": "Use Python 3 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--two": {
+        "Name": "--two",
+        "kind": "option",
+        "description": "Use Python 2 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "graph": {
+    "Name": "graph",
+    "kind": "subcommand",
+    "description": "Displays currently-installed dependency graph information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--bare": {
+        "Name": "--bare",
+        "kind": "option",
+        "description": "Minimal output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--json": {
+        "Name": "--json",
+        "kind": "option",
+        "description": "Output JSON",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--json-tree": {
+        "Name": "--json-tree",
+        "kind": "option",
+        "description": "Output JSON in nested tree",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--reverse": {
+        "Name": "--reverse",
+        "kind": "option",
+        "description": "Reversed dependency graph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--bare": {
+        "Name": "--bare",
+        "kind": "option",
+        "description": "Minimal output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--json": {
+        "Name": "--json",
+        "kind": "option",
+        "description": "Output JSON",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--json-tree": {
+        "Name": "--json-tree",
+        "kind": "option",
+        "description": "Output JSON in nested tree",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--reverse": {
+        "Name": "--reverse",
+        "kind": "option",
+        "description": "Reversed dependency graph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "install": {
+    "Name": "install",
+    "kind": "subcommand",
+    "description": "Initializes a package manager or installs all packages from Pipfile",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--clear": {
+        "Name": "--clear",
+        "kind": "option",
+        "description": "Clears caches (pipenv, pip, and pip-tools)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--code": {
+        "Name": "--code",
+        "kind": "option",
+        "description": "Install packages automatically discovered from import statements",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--deploy": {
+        "Name": "--deploy",
+        "kind": "option",
+        "description": "Enforce that your Pipfile.lock is up to date in deployment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dev": {
+        "Name": "--dev",
+        "kind": "option",
+        "description": "Install both develop and default packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--editable": {
+        "Name": "--editable",
+        "kind": "option",
+        "description": "An editable Python package URL or path, often to a VCS repository",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cPackage URL | path\u003e": {
+            "Name": "\u003cPackage URL | path\u003e",
+            "kind": "argument",
+            "description": "Package URL | path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cPackage URL | path\u003e": {
+            "Name": "\u003cPackage URL | path\u003e",
+            "kind": "argument",
+            "description": "Package URL | path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cPackage URL | path\u003e"
+        ]
+      },
+      "--extra-index-url": {
+        "Name": "--extra-index-url",
+        "kind": "option",
+        "description": "URLs to the extra PyPI compatible indexes to query for package look-ups",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cURL\u003e": {
+            "Name": "\u003cURL\u003e",
+            "kind": "argument",
+            "description": "URL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cURL\u003e": {
+            "Name": "\u003cURL\u003e",
+            "kind": "argument",
+            "description": "URL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cURL\u003e"
+        ]
+      },
+      "--ignore-pipfile": {
+        "Name": "--ignore-pipfile",
+        "kind": "option",
+        "description": "Ignore Pipfile when installing, using the Pipfile.lock",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--index": {
+        "Name": "--index",
+        "kind": "option",
+        "description": "Target PyPI-compatible package index url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cURL\u003e": {
+            "Name": "\u003cURL\u003e",
+            "kind": "argument",
+            "description": "URL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cURL\u003e": {
+            "Name": "\u003cURL\u003e",
+            "kind": "argument",
+            "description": "URL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cURL\u003e"
+        ]
+      },
+      "--keep-outdated": {
+        "Name": "--keep-outdated",
+        "kind": "option",
+        "description": "Keep out-dated dependencies from being updated in Pipfile.lock",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-site-packages": {
+        "Name": "--no-site-packages",
+        "kind": "option",
+        "description": "Enable site-packages for the virtualenv [env var: PIPENV_SITE_PACKAGES]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pre": {
+        "Name": "--pre",
+        "kind": "option",
+        "description": "Allow pre-releases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pypi-mirror": {
+        "Name": "--pypi-mirror",
+        "kind": "option",
+        "description": "If you would like to override the default PyPI index URLs with the URL for a PyPI mirror",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmirror url\u003e": {
+            "Name": "\u003cmirror url\u003e",
+            "kind": "argument",
+            "description": "mirror url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmirror url\u003e": {
+            "Name": "\u003cmirror url\u003e",
+            "kind": "argument",
+            "description": "mirror url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmirror url\u003e"
+        ]
+      },
+      "--python": {
+        "Name": "--python",
+        "kind": "option",
+        "description": "Specify which version of Python virtualenv should use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpy_version\u003e"
+        ]
+      },
+      "--requirements": {
+        "Name": "--requirements",
+        "kind": "option",
+        "description": "Import a requirements.txt file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--selective-upgrade": {
+        "Name": "--selective-upgrade",
+        "kind": "option",
+        "description": "Update specified packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpackage\u003e": {
+            "Name": "\u003cpackage\u003e",
+            "kind": "argument",
+            "description": "package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpackage\u003e": {
+            "Name": "\u003cpackage\u003e",
+            "kind": "argument",
+            "description": "package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpackage\u003e"
+        ]
+      },
+      "--sequential": {
+        "Name": "--sequential",
+        "kind": "option",
+        "description": "Install dependencies one-at-a-time, instead of concurrently",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--site-packages": {
+        "Name": "--site-packages",
+        "kind": "option",
+        "description": "Enable site-packages for the virtualenv [env var: PIPENV_SITE_PACKAGES]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--skip-lock": {
+        "Name": "--skip-lock",
+        "kind": "option",
+        "description": "Skip locking mechanisms and use the Pipfile instead during operation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--system": {
+        "Name": "--system",
+        "kind": "option",
+        "description": "Install a Pipfile’s contents into its parent system",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--three": {
+        "Name": "--three",
+        "kind": "option",
+        "description": "Use Python 3 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--two": {
+        "Name": "--two",
+        "kind": "option",
+        "description": "Use Python 2 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Install packages automatically discovered from import statements",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Install both develop and default packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-e": {
+        "Name": "-e",
+        "kind": "option",
+        "description": "An editable Python package URL or path, often to a VCS repository",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cPackage URL | path\u003e": {
+            "Name": "\u003cPackage URL | path\u003e",
+            "kind": "argument",
+            "description": "Package URL | path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cPackage URL | path\u003e": {
+            "Name": "\u003cPackage URL | path\u003e",
+            "kind": "argument",
+            "description": "Package URL | path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cPackage URL | path\u003e"
+        ]
+      },
+      "-i": {
+        "Name": "-i",
+        "kind": "option",
+        "description": "Target PyPI-compatible package index url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cURL\u003e": {
+            "Name": "\u003cURL\u003e",
+            "kind": "argument",
+            "description": "URL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cURL\u003e": {
+            "Name": "\u003cURL\u003e",
+            "kind": "argument",
+            "description": "URL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cURL\u003e"
+        ]
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Import a requirements.txt file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpackage\u003e": {
+        "Name": "\u003cpackage\u003e",
+        "kind": "argument",
+        "description": "package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--clear": {
+        "Name": "--clear",
+        "kind": "option",
+        "description": "Clears caches (pipenv, pip, and pip-tools)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--code": {
+        "Name": "--code",
+        "kind": "option",
+        "description": "Install packages automatically discovered from import statements",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--deploy": {
+        "Name": "--deploy",
+        "kind": "option",
+        "description": "Enforce that your Pipfile.lock is up to date in deployment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dev": {
+        "Name": "--dev",
+        "kind": "option",
+        "description": "Install both develop and default packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--editable": {
+        "Name": "--editable",
+        "kind": "option",
+        "description": "An editable Python package URL or path, often to a VCS repository",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cPackage URL | path\u003e": {
+            "Name": "\u003cPackage URL | path\u003e",
+            "kind": "argument",
+            "description": "Package URL | path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cPackage URL | path\u003e": {
+            "Name": "\u003cPackage URL | path\u003e",
+            "kind": "argument",
+            "description": "Package URL | path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cPackage URL | path\u003e"
+        ]
+      },
+      "--extra-index-url": {
+        "Name": "--extra-index-url",
+        "kind": "option",
+        "description": "URLs to the extra PyPI compatible indexes to query for package look-ups",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cURL\u003e": {
+            "Name": "\u003cURL\u003e",
+            "kind": "argument",
+            "description": "URL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cURL\u003e": {
+            "Name": "\u003cURL\u003e",
+            "kind": "argument",
+            "description": "URL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cURL\u003e"
+        ]
+      },
+      "--ignore-pipfile": {
+        "Name": "--ignore-pipfile",
+        "kind": "option",
+        "description": "Ignore Pipfile when installing, using the Pipfile.lock",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--index": {
+        "Name": "--index",
+        "kind": "option",
+        "description": "Target PyPI-compatible package index url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cURL\u003e": {
+            "Name": "\u003cURL\u003e",
+            "kind": "argument",
+            "description": "URL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cURL\u003e": {
+            "Name": "\u003cURL\u003e",
+            "kind": "argument",
+            "description": "URL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cURL\u003e"
+        ]
+      },
+      "--keep-outdated": {
+        "Name": "--keep-outdated",
+        "kind": "option",
+        "description": "Keep out-dated dependencies from being updated in Pipfile.lock",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-site-packages": {
+        "Name": "--no-site-packages",
+        "kind": "option",
+        "description": "Enable site-packages for the virtualenv [env var: PIPENV_SITE_PACKAGES]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pre": {
+        "Name": "--pre",
+        "kind": "option",
+        "description": "Allow pre-releases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pypi-mirror": {
+        "Name": "--pypi-mirror",
+        "kind": "option",
+        "description": "If you would like to override the default PyPI index URLs with the URL for a PyPI mirror",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmirror url\u003e": {
+            "Name": "\u003cmirror url\u003e",
+            "kind": "argument",
+            "description": "mirror url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmirror url\u003e": {
+            "Name": "\u003cmirror url\u003e",
+            "kind": "argument",
+            "description": "mirror url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmirror url\u003e"
+        ]
+      },
+      "--python": {
+        "Name": "--python",
+        "kind": "option",
+        "description": "Specify which version of Python virtualenv should use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpy_version\u003e"
+        ]
+      },
+      "--requirements": {
+        "Name": "--requirements",
+        "kind": "option",
+        "description": "Import a requirements.txt file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--selective-upgrade": {
+        "Name": "--selective-upgrade",
+        "kind": "option",
+        "description": "Update specified packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpackage\u003e": {
+            "Name": "\u003cpackage\u003e",
+            "kind": "argument",
+            "description": "package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpackage\u003e": {
+            "Name": "\u003cpackage\u003e",
+            "kind": "argument",
+            "description": "package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpackage\u003e"
+        ]
+      },
+      "--sequential": {
+        "Name": "--sequential",
+        "kind": "option",
+        "description": "Install dependencies one-at-a-time, instead of concurrently",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--site-packages": {
+        "Name": "--site-packages",
+        "kind": "option",
+        "description": "Enable site-packages for the virtualenv [env var: PIPENV_SITE_PACKAGES]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--skip-lock": {
+        "Name": "--skip-lock",
+        "kind": "option",
+        "description": "Skip locking mechanisms and use the Pipfile instead during operation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--system": {
+        "Name": "--system",
+        "kind": "option",
+        "description": "Install a Pipfile’s contents into its parent system",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--three": {
+        "Name": "--three",
+        "kind": "option",
+        "description": "Use Python 3 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--two": {
+        "Name": "--two",
+        "kind": "option",
+        "description": "Use Python 2 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Install packages automatically discovered from import statements",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Install both develop and default packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-e": {
+        "Name": "-e",
+        "kind": "option",
+        "description": "An editable Python package URL or path, often to a VCS repository",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cPackage URL | path\u003e": {
+            "Name": "\u003cPackage URL | path\u003e",
+            "kind": "argument",
+            "description": "Package URL | path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cPackage URL | path\u003e": {
+            "Name": "\u003cPackage URL | path\u003e",
+            "kind": "argument",
+            "description": "Package URL | path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cPackage URL | path\u003e"
+        ]
+      },
+      "-i": {
+        "Name": "-i",
+        "kind": "option",
+        "description": "Target PyPI-compatible package index url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cURL\u003e": {
+            "Name": "\u003cURL\u003e",
+            "kind": "argument",
+            "description": "URL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cURL\u003e": {
+            "Name": "\u003cURL\u003e",
+            "kind": "argument",
+            "description": "URL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cURL\u003e"
+        ]
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Import a requirements.txt file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpackage\u003e": {
+        "Name": "\u003cpackage\u003e",
+        "kind": "argument",
+        "description": "package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "lock": {
+    "Name": "lock",
+    "kind": "subcommand",
+    "description": "Generates Pipfile.lock",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--clear": {
+        "Name": "--clear",
+        "kind": "option",
+        "description": "Clears caches (pipenv, pip, and pip-tools)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dev": {
+        "Name": "--dev",
+        "kind": "option",
+        "description": "Passing --dev will include both the default and development dependencies",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dev-only": {
+        "Name": "--dev-only",
+        "kind": "option",
+        "description": "Generate a requirements file with only the development requirements",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--header": {
+        "Name": "--header",
+        "kind": "option",
+        "description": "Add header to generated requirements",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--keep-outdated": {
+        "Name": "--keep-outdated",
+        "kind": "option",
+        "description": "Keep out-dated dependencies from being updated in Pipfile.lock",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-header": {
+        "Name": "--no-header",
+        "kind": "option",
+        "description": "Generate requirements with no header",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pre": {
+        "Name": "--pre",
+        "kind": "option",
+        "description": "Allow pre-releases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pypi-mirror": {
+        "Name": "--pypi-mirror",
+        "kind": "option",
+        "description": "If you would like to override the default PyPI index URLs with the URL for a PyPI mirror",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--python": {
+        "Name": "--python",
+        "kind": "option",
+        "description": "Specify which version of Python virtualenv should use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--requirements": {
+        "Name": "--requirements",
+        "kind": "option",
+        "description": "Import a requirements.txt file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--three": {
+        "Name": "--three",
+        "kind": "option",
+        "description": "Use Python 3 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--two": {
+        "Name": "--two",
+        "kind": "option",
+        "description": "Use Python 2 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Passing --dev will include both the default and development dependencies",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Import a requirements.txt file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003c\u003e requirements.txt\u003e": {
+        "Name": "\u003c\u003e requirements.txt\u003e",
+        "kind": "argument",
+        "description": "\u003e requirements.txt",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--clear": {
+        "Name": "--clear",
+        "kind": "option",
+        "description": "Clears caches (pipenv, pip, and pip-tools)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dev": {
+        "Name": "--dev",
+        "kind": "option",
+        "description": "Passing --dev will include both the default and development dependencies",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dev-only": {
+        "Name": "--dev-only",
+        "kind": "option",
+        "description": "Generate a requirements file with only the development requirements",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--header": {
+        "Name": "--header",
+        "kind": "option",
+        "description": "Add header to generated requirements",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--keep-outdated": {
+        "Name": "--keep-outdated",
+        "kind": "option",
+        "description": "Keep out-dated dependencies from being updated in Pipfile.lock",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-header": {
+        "Name": "--no-header",
+        "kind": "option",
+        "description": "Generate requirements with no header",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pre": {
+        "Name": "--pre",
+        "kind": "option",
+        "description": "Allow pre-releases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pypi-mirror": {
+        "Name": "--pypi-mirror",
+        "kind": "option",
+        "description": "If you would like to override the default PyPI index URLs with the URL for a PyPI mirror",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--python": {
+        "Name": "--python",
+        "kind": "option",
+        "description": "Specify which version of Python virtualenv should use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--requirements": {
+        "Name": "--requirements",
+        "kind": "option",
+        "description": "Import a requirements.txt file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--three": {
+        "Name": "--three",
+        "kind": "option",
+        "description": "Use Python 3 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--two": {
+        "Name": "--two",
+        "kind": "option",
+        "description": "Use Python 2 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Passing --dev will include both the default and development dependencies",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Import a requirements.txt file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003c\u003e requirements.txt\u003e": {
+        "Name": "\u003c\u003e requirements.txt\u003e",
+        "kind": "argument",
+        "description": "\u003e requirements.txt",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "open": {
+    "Name": "open",
+    "kind": "subcommand",
+    "description": "View a given module in your editor",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--clear": {
+        "Name": "--clear",
+        "kind": "option",
+        "description": "Clears caches (pipenv, pip, and pip-tools)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pypi-mirror": {
+        "Name": "--pypi-mirror",
+        "kind": "option",
+        "description": "If you would like to override the default PyPI index URLs with the URL for a PyPI mirror",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--python": {
+        "Name": "--python",
+        "kind": "option",
+        "description": "Specify which version of Python virtualenv should use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--three": {
+        "Name": "--three",
+        "kind": "option",
+        "description": "Use Python 3 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--two": {
+        "Name": "--two",
+        "kind": "option",
+        "description": "Use Python 2 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cmodule\u003e": {
+        "Name": "\u003cmodule\u003e",
+        "kind": "argument",
+        "description": "module",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--clear": {
+        "Name": "--clear",
+        "kind": "option",
+        "description": "Clears caches (pipenv, pip, and pip-tools)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pypi-mirror": {
+        "Name": "--pypi-mirror",
+        "kind": "option",
+        "description": "If you would like to override the default PyPI index URLs with the URL for a PyPI mirror",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--python": {
+        "Name": "--python",
+        "kind": "option",
+        "description": "Specify which version of Python virtualenv should use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--three": {
+        "Name": "--three",
+        "kind": "option",
+        "description": "Use Python 3 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--two": {
+        "Name": "--two",
+        "kind": "option",
+        "description": "Use Python 2 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cmodule\u003e": {
+        "Name": "\u003cmodule\u003e",
+        "kind": "argument",
+        "description": "module",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmodule\u003e"
+    ]
+  },
+  "run": {
+    "Name": "run",
+    "kind": "subcommand",
+    "description": "Spawns a command installed into the virtualenv",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--clear": {
+        "Name": "--clear",
+        "kind": "option",
+        "description": "Clears caches (pipenv, pip, and pip-tools)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pypi-mirror": {
+        "Name": "--pypi-mirror",
+        "kind": "option",
+        "description": "If you would like to override the default PyPI index URLs with the URL for a PyPI mirror",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmirror url\u003e": {
+            "Name": "\u003cmirror url\u003e",
+            "kind": "argument",
+            "description": "mirror url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmirror url\u003e": {
+            "Name": "\u003cmirror url\u003e",
+            "kind": "argument",
+            "description": "mirror url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmirror url\u003e"
+        ]
+      },
+      "--python": {
+        "Name": "--python",
+        "kind": "option",
+        "description": "Specify which version of Python virtualenv should use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpy_version\u003e"
+        ]
+      },
+      "--three": {
+        "Name": "--three",
+        "kind": "option",
+        "description": "Use Python 3 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--two": {
+        "Name": "--two",
+        "kind": "option",
+        "description": "Use Python 2 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "command": {
+        "Name": "command",
+        "kind": "subcommand",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--clear": {
+        "Name": "--clear",
+        "kind": "option",
+        "description": "Clears caches (pipenv, pip, and pip-tools)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pypi-mirror": {
+        "Name": "--pypi-mirror",
+        "kind": "option",
+        "description": "If you would like to override the default PyPI index URLs with the URL for a PyPI mirror",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmirror url\u003e": {
+            "Name": "\u003cmirror url\u003e",
+            "kind": "argument",
+            "description": "mirror url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmirror url\u003e": {
+            "Name": "\u003cmirror url\u003e",
+            "kind": "argument",
+            "description": "mirror url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmirror url\u003e"
+        ]
+      },
+      "--python": {
+        "Name": "--python",
+        "kind": "option",
+        "description": "Specify which version of Python virtualenv should use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpy_version\u003e"
+        ]
+      },
+      "--three": {
+        "Name": "--three",
+        "kind": "option",
+        "description": "Use Python 3 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--two": {
+        "Name": "--two",
+        "kind": "option",
+        "description": "Use Python 2 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "scripts": {
+    "Name": "scripts",
+    "kind": "subcommand",
+    "description": "Lists scripts in current environment config",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--clear": {
+        "Name": "--clear",
+        "kind": "option",
+        "description": "Clears caches (pipenv, pip, and pip-tools)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pypi-mirror": {
+        "Name": "--pypi-mirror",
+        "kind": "option",
+        "description": "If you would like to override the default PyPI index URLs with the URL for a PyPI mirror",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmirror url\u003e": {
+            "Name": "\u003cmirror url\u003e",
+            "kind": "argument",
+            "description": "mirror url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmirror url\u003e": {
+            "Name": "\u003cmirror url\u003e",
+            "kind": "argument",
+            "description": "mirror url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmirror url\u003e"
+        ]
+      },
+      "--python": {
+        "Name": "--python",
+        "kind": "option",
+        "description": "Specify which version of Python virtualenv should use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpy_version\u003e"
+        ]
+      },
+      "--three": {
+        "Name": "--three",
+        "kind": "option",
+        "description": "Use Python 3 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--two": {
+        "Name": "--two",
+        "kind": "option",
+        "description": "Use Python 2 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--clear": {
+        "Name": "--clear",
+        "kind": "option",
+        "description": "Clears caches (pipenv, pip, and pip-tools)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pypi-mirror": {
+        "Name": "--pypi-mirror",
+        "kind": "option",
+        "description": "If you would like to override the default PyPI index URLs with the URL for a PyPI mirror",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmirror url\u003e": {
+            "Name": "\u003cmirror url\u003e",
+            "kind": "argument",
+            "description": "mirror url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmirror url\u003e": {
+            "Name": "\u003cmirror url\u003e",
+            "kind": "argument",
+            "description": "mirror url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmirror url\u003e"
+        ]
+      },
+      "--python": {
+        "Name": "--python",
+        "kind": "option",
+        "description": "Specify which version of Python virtualenv should use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpy_version\u003e"
+        ]
+      },
+      "--three": {
+        "Name": "--three",
+        "kind": "option",
+        "description": "Use Python 3 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--two": {
+        "Name": "--two",
+        "kind": "option",
+        "description": "Use Python 2 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "shell": {
+    "Name": "shell",
+    "kind": "subcommand",
+    "description": "Start a shell within the environment",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--anyway": {
+        "Name": "--anyway",
+        "kind": "option",
+        "description": "Always spawn a sub-shell, even if one is already spawned",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--fancy": {
+        "Name": "--fancy",
+        "kind": "option",
+        "description": "Run in shell in fancy mode. Make sure the shell have no path manipulating scripts. Run $pipenv shell for issues with compatibility mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pypi-mirror": {
+        "Name": "--pypi-mirror",
+        "kind": "option",
+        "description": "If you would like to override the default PyPI index URLs with the URL for a PyPI mirror",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmirror url\u003e": {
+            "Name": "\u003cmirror url\u003e",
+            "kind": "argument",
+            "description": "mirror url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmirror url\u003e": {
+            "Name": "\u003cmirror url\u003e",
+            "kind": "argument",
+            "description": "mirror url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmirror url\u003e"
+        ]
+      },
+      "--python": {
+        "Name": "--python",
+        "kind": "option",
+        "description": "Specify which version of Python virtualenv should use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpy_version\u003e"
+        ]
+      },
+      "--three": {
+        "Name": "--three",
+        "kind": "option",
+        "description": "Use Python 3 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--two": {
+        "Name": "--two",
+        "kind": "option",
+        "description": "Use Python 2 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--anyway": {
+        "Name": "--anyway",
+        "kind": "option",
+        "description": "Always spawn a sub-shell, even if one is already spawned",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--fancy": {
+        "Name": "--fancy",
+        "kind": "option",
+        "description": "Run in shell in fancy mode. Make sure the shell have no path manipulating scripts. Run $pipenv shell for issues with compatibility mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pypi-mirror": {
+        "Name": "--pypi-mirror",
+        "kind": "option",
+        "description": "If you would like to override the default PyPI index URLs with the URL for a PyPI mirror",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmirror url\u003e": {
+            "Name": "\u003cmirror url\u003e",
+            "kind": "argument",
+            "description": "mirror url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmirror url\u003e": {
+            "Name": "\u003cmirror url\u003e",
+            "kind": "argument",
+            "description": "mirror url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmirror url\u003e"
+        ]
+      },
+      "--python": {
+        "Name": "--python",
+        "kind": "option",
+        "description": "Specify which version of Python virtualenv should use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpy_version\u003e"
+        ]
+      },
+      "--three": {
+        "Name": "--three",
+        "kind": "option",
+        "description": "Use Python 3 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--two": {
+        "Name": "--two",
+        "kind": "option",
+        "description": "Use Python 2 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "sync": {
+    "Name": "sync",
+    "kind": "subcommand",
+    "description": "Installs all packages specified in Pipfile.lock",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--bare": {
+        "Name": "--bare",
+        "kind": "option",
+        "description": "Minimal output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--clear": {
+        "Name": "--clear",
+        "kind": "option",
+        "description": "Clears caches (pipenv, pip, and pip-tools)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dev": {
+        "Name": "--dev",
+        "kind": "option",
+        "description": "Install both develop and default packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--keep-outdated": {
+        "Name": "--keep-outdated",
+        "kind": "option",
+        "description": "Keep out-dated dependencies from being updated in Pipfile.lock",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pre": {
+        "Name": "--pre",
+        "kind": "option",
+        "description": "Allow pre-releases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pypi-mirror": {
+        "Name": "--pypi-mirror",
+        "kind": "option",
+        "description": "If you would like to override the default PyPI index URLs with the URL for a PyPI mirror",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmirror url\u003e": {
+            "Name": "\u003cmirror url\u003e",
+            "kind": "argument",
+            "description": "mirror url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmirror url\u003e": {
+            "Name": "\u003cmirror url\u003e",
+            "kind": "argument",
+            "description": "mirror url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmirror url\u003e"
+        ]
+      },
+      "--python": {
+        "Name": "--python",
+        "kind": "option",
+        "description": "Specify which version of Python virtualenv should use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpy_version\u003e"
+        ]
+      },
+      "--sequential": {
+        "Name": "--sequential",
+        "kind": "option",
+        "description": "Install dependencies one-at-a-time, instead of concurrently",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--system": {
+        "Name": "--system",
+        "kind": "option",
+        "description": "Install a Pipfile’s contents into its parent system",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--three": {
+        "Name": "--three",
+        "kind": "option",
+        "description": "Use Python 3 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--two": {
+        "Name": "--two",
+        "kind": "option",
+        "description": "Use Python 2 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Install both develop and default packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--bare": {
+        "Name": "--bare",
+        "kind": "option",
+        "description": "Minimal output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--clear": {
+        "Name": "--clear",
+        "kind": "option",
+        "description": "Clears caches (pipenv, pip, and pip-tools)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dev": {
+        "Name": "--dev",
+        "kind": "option",
+        "description": "Install both develop and default packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--keep-outdated": {
+        "Name": "--keep-outdated",
+        "kind": "option",
+        "description": "Keep out-dated dependencies from being updated in Pipfile.lock",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pre": {
+        "Name": "--pre",
+        "kind": "option",
+        "description": "Allow pre-releases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pypi-mirror": {
+        "Name": "--pypi-mirror",
+        "kind": "option",
+        "description": "If you would like to override the default PyPI index URLs with the URL for a PyPI mirror",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmirror url\u003e": {
+            "Name": "\u003cmirror url\u003e",
+            "kind": "argument",
+            "description": "mirror url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmirror url\u003e": {
+            "Name": "\u003cmirror url\u003e",
+            "kind": "argument",
+            "description": "mirror url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmirror url\u003e"
+        ]
+      },
+      "--python": {
+        "Name": "--python",
+        "kind": "option",
+        "description": "Specify which version of Python virtualenv should use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpy_version\u003e"
+        ]
+      },
+      "--sequential": {
+        "Name": "--sequential",
+        "kind": "option",
+        "description": "Install dependencies one-at-a-time, instead of concurrently",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--system": {
+        "Name": "--system",
+        "kind": "option",
+        "description": "Install a Pipfile’s contents into its parent system",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--three": {
+        "Name": "--three",
+        "kind": "option",
+        "description": "Use Python 3 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--two": {
+        "Name": "--two",
+        "kind": "option",
+        "description": "Use Python 2 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Install both develop and default packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "uninstall": {
+    "Name": "uninstall",
+    "kind": "subcommand",
+    "description": "Uninstalls a provided package and removes it from Pipfile",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "Purge all package(s) from virtualenv. Does not edit Pipfile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--all-dev": {
+        "Name": "--all-dev",
+        "kind": "option",
+        "description": "Uninstall all package from [dev-packages]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--clear": {
+        "Name": "--clear",
+        "kind": "option",
+        "description": "Clears caches (pipenv, pip, and pip-tools)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dev": {
+        "Name": "--dev",
+        "kind": "option",
+        "description": "Install both develop and default packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--editable": {
+        "Name": "--editable",
+        "kind": "option",
+        "description": "An editable Python package URL or path, often to a VCS repository",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--keep-outdated": {
+        "Name": "--keep-outdated",
+        "kind": "option",
+        "description": "Keep out-dated dependencies from being updated in Pipfile.lock",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pre": {
+        "Name": "--pre",
+        "kind": "option",
+        "description": "Allow pre-releases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pypi-mirror": {
+        "Name": "--pypi-mirror",
+        "kind": "option",
+        "description": "If you would like to override the default PyPI index URLs with the URL for a PyPI mirror",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmirror url\u003e": {
+            "Name": "\u003cmirror url\u003e",
+            "kind": "argument",
+            "description": "mirror url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmirror url\u003e": {
+            "Name": "\u003cmirror url\u003e",
+            "kind": "argument",
+            "description": "mirror url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmirror url\u003e"
+        ]
+      },
+      "--python": {
+        "Name": "--python",
+        "kind": "option",
+        "description": "Specify which version of Python virtualenv should use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpy_version\u003e"
+        ]
+      },
+      "--skip-lock": {
+        "Name": "--skip-lock",
+        "kind": "option",
+        "description": "Skip locking mechanisms and use the Pipfile instead during operation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--three": {
+        "Name": "--three",
+        "kind": "option",
+        "description": "Use Python 3 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--two": {
+        "Name": "--two",
+        "kind": "option",
+        "description": "Use Python 2 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Install both develop and default packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-e": {
+        "Name": "-e",
+        "kind": "option",
+        "description": "An editable Python package URL or path, often to a VCS repository",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpackage\u003e": {
+        "Name": "\u003cpackage\u003e",
+        "kind": "argument",
+        "description": "package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "Purge all package(s) from virtualenv. Does not edit Pipfile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--all-dev": {
+        "Name": "--all-dev",
+        "kind": "option",
+        "description": "Uninstall all package from [dev-packages]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--clear": {
+        "Name": "--clear",
+        "kind": "option",
+        "description": "Clears caches (pipenv, pip, and pip-tools)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dev": {
+        "Name": "--dev",
+        "kind": "option",
+        "description": "Install both develop and default packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--editable": {
+        "Name": "--editable",
+        "kind": "option",
+        "description": "An editable Python package URL or path, often to a VCS repository",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--keep-outdated": {
+        "Name": "--keep-outdated",
+        "kind": "option",
+        "description": "Keep out-dated dependencies from being updated in Pipfile.lock",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pre": {
+        "Name": "--pre",
+        "kind": "option",
+        "description": "Allow pre-releases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pypi-mirror": {
+        "Name": "--pypi-mirror",
+        "kind": "option",
+        "description": "If you would like to override the default PyPI index URLs with the URL for a PyPI mirror",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmirror url\u003e": {
+            "Name": "\u003cmirror url\u003e",
+            "kind": "argument",
+            "description": "mirror url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmirror url\u003e": {
+            "Name": "\u003cmirror url\u003e",
+            "kind": "argument",
+            "description": "mirror url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmirror url\u003e"
+        ]
+      },
+      "--python": {
+        "Name": "--python",
+        "kind": "option",
+        "description": "Specify which version of Python virtualenv should use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpy_version\u003e"
+        ]
+      },
+      "--skip-lock": {
+        "Name": "--skip-lock",
+        "kind": "option",
+        "description": "Skip locking mechanisms and use the Pipfile instead during operation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--three": {
+        "Name": "--three",
+        "kind": "option",
+        "description": "Use Python 3 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--two": {
+        "Name": "--two",
+        "kind": "option",
+        "description": "Use Python 2 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Install both develop and default packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-e": {
+        "Name": "-e",
+        "kind": "option",
+        "description": "An editable Python package URL or path, often to a VCS repository",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpackage\u003e": {
+        "Name": "\u003cpackage\u003e",
+        "kind": "argument",
+        "description": "package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "update": {
+    "Name": "update",
+    "kind": "subcommand",
+    "description": "Runs lock, then sync",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--bare": {
+        "Name": "--bare",
+        "kind": "option",
+        "description": "Minimal output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--clear": {
+        "Name": "--clear",
+        "kind": "option",
+        "description": "Clears caches (pipenv, pip, and pip-tools)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dev": {
+        "Name": "--dev",
+        "kind": "option",
+        "description": "Install both develop and default packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dry-run": {
+        "Name": "--dry-run",
+        "kind": "option",
+        "description": "Just output unneeded packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--editable": {
+        "Name": "--editable",
+        "kind": "option",
+        "description": "An editable Python package URL or path, often to a VCS repository",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--extra-index-url": {
+        "Name": "--extra-index-url",
+        "kind": "option",
+        "description": "URLs to the extra PyPI compatible indexes to query for package look-ups",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003curl\u003e": {
+            "Name": "\u003curl\u003e",
+            "kind": "argument",
+            "description": "url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003curl\u003e": {
+            "Name": "\u003curl\u003e",
+            "kind": "argument",
+            "description": "url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003curl\u003e"
+        ]
+      },
+      "--ignore-pipfile": {
+        "Name": "--ignore-pipfile",
+        "kind": "option",
+        "description": "Ignore Pipfile when installing, using the Pipfile.lock",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--index": {
+        "Name": "--index",
+        "kind": "option",
+        "description": "Target PyPI-compatible package index url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cindex\u003e": {
+            "Name": "\u003cindex\u003e",
+            "kind": "argument",
+            "description": "index",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cindex\u003e": {
+            "Name": "\u003cindex\u003e",
+            "kind": "argument",
+            "description": "index",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cindex\u003e"
+        ]
+      },
+      "--keep-outdated": {
+        "Name": "--keep-outdated",
+        "kind": "option",
+        "description": "Keep out-dated dependencies from being updated in Pipfile.lock",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--outdated": {
+        "Name": "--outdated",
+        "kind": "option",
+        "description": "List out-of-date dependencies",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pre": {
+        "Name": "--pre",
+        "kind": "option",
+        "description": "Allow pre-releases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pypi-mirror": {
+        "Name": "--pypi-mirror",
+        "kind": "option",
+        "description": "If you would like to override the default PyPI index URLs with the URL for a PyPI mirror",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmirror url\u003e": {
+            "Name": "\u003cmirror url\u003e",
+            "kind": "argument",
+            "description": "mirror url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmirror url\u003e": {
+            "Name": "\u003cmirror url\u003e",
+            "kind": "argument",
+            "description": "mirror url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmirror url\u003e"
+        ]
+      },
+      "--python": {
+        "Name": "--python",
+        "kind": "option",
+        "description": "Specify which version of Python virtualenv should use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpy_version\u003e"
+        ]
+      },
+      "--requirements": {
+        "Name": "--requirements",
+        "kind": "option",
+        "description": "Import a requirements.txt file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--selective-upgrade": {
+        "Name": "--selective-upgrade",
+        "kind": "option",
+        "description": "Update specified packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpackages\u003e": {
+            "Name": "\u003cpackages\u003e",
+            "kind": "argument",
+            "description": "packages",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpackages\u003e": {
+            "Name": "\u003cpackages\u003e",
+            "kind": "argument",
+            "description": "packages",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpackages\u003e"
+        ]
+      },
+      "--sequential": {
+        "Name": "--sequential",
+        "kind": "option",
+        "description": "Install dependencies one-at-a-time, instead of concurrently",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--three": {
+        "Name": "--three",
+        "kind": "option",
+        "description": "Use Python 3 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--two": {
+        "Name": "--two",
+        "kind": "option",
+        "description": "Use Python 2 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Install both develop and default packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-e": {
+        "Name": "-e",
+        "kind": "option",
+        "description": "An editable Python package URL or path, often to a VCS repository",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "-i": {
+        "Name": "-i",
+        "kind": "option",
+        "description": "Target PyPI-compatible package index url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cindex\u003e": {
+            "Name": "\u003cindex\u003e",
+            "kind": "argument",
+            "description": "index",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cindex\u003e": {
+            "Name": "\u003cindex\u003e",
+            "kind": "argument",
+            "description": "index",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cindex\u003e"
+        ]
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Import a requirements.txt file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--bare": {
+        "Name": "--bare",
+        "kind": "option",
+        "description": "Minimal output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--clear": {
+        "Name": "--clear",
+        "kind": "option",
+        "description": "Clears caches (pipenv, pip, and pip-tools)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dev": {
+        "Name": "--dev",
+        "kind": "option",
+        "description": "Install both develop and default packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dry-run": {
+        "Name": "--dry-run",
+        "kind": "option",
+        "description": "Just output unneeded packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--editable": {
+        "Name": "--editable",
+        "kind": "option",
+        "description": "An editable Python package URL or path, often to a VCS repository",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--extra-index-url": {
+        "Name": "--extra-index-url",
+        "kind": "option",
+        "description": "URLs to the extra PyPI compatible indexes to query for package look-ups",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003curl\u003e": {
+            "Name": "\u003curl\u003e",
+            "kind": "argument",
+            "description": "url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003curl\u003e": {
+            "Name": "\u003curl\u003e",
+            "kind": "argument",
+            "description": "url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003curl\u003e"
+        ]
+      },
+      "--ignore-pipfile": {
+        "Name": "--ignore-pipfile",
+        "kind": "option",
+        "description": "Ignore Pipfile when installing, using the Pipfile.lock",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--index": {
+        "Name": "--index",
+        "kind": "option",
+        "description": "Target PyPI-compatible package index url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cindex\u003e": {
+            "Name": "\u003cindex\u003e",
+            "kind": "argument",
+            "description": "index",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cindex\u003e": {
+            "Name": "\u003cindex\u003e",
+            "kind": "argument",
+            "description": "index",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cindex\u003e"
+        ]
+      },
+      "--keep-outdated": {
+        "Name": "--keep-outdated",
+        "kind": "option",
+        "description": "Keep out-dated dependencies from being updated in Pipfile.lock",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--outdated": {
+        "Name": "--outdated",
+        "kind": "option",
+        "description": "List out-of-date dependencies",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pre": {
+        "Name": "--pre",
+        "kind": "option",
+        "description": "Allow pre-releases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pypi-mirror": {
+        "Name": "--pypi-mirror",
+        "kind": "option",
+        "description": "If you would like to override the default PyPI index URLs with the URL for a PyPI mirror",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmirror url\u003e": {
+            "Name": "\u003cmirror url\u003e",
+            "kind": "argument",
+            "description": "mirror url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmirror url\u003e": {
+            "Name": "\u003cmirror url\u003e",
+            "kind": "argument",
+            "description": "mirror url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmirror url\u003e"
+        ]
+      },
+      "--python": {
+        "Name": "--python",
+        "kind": "option",
+        "description": "Specify which version of Python virtualenv should use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpy_version\u003e": {
+            "Name": "\u003cpy_version\u003e",
+            "kind": "argument",
+            "description": "py_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpy_version\u003e"
+        ]
+      },
+      "--requirements": {
+        "Name": "--requirements",
+        "kind": "option",
+        "description": "Import a requirements.txt file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--selective-upgrade": {
+        "Name": "--selective-upgrade",
+        "kind": "option",
+        "description": "Update specified packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpackages\u003e": {
+            "Name": "\u003cpackages\u003e",
+            "kind": "argument",
+            "description": "packages",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpackages\u003e": {
+            "Name": "\u003cpackages\u003e",
+            "kind": "argument",
+            "description": "packages",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpackages\u003e"
+        ]
+      },
+      "--sequential": {
+        "Name": "--sequential",
+        "kind": "option",
+        "description": "Install dependencies one-at-a-time, instead of concurrently",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--three": {
+        "Name": "--three",
+        "kind": "option",
+        "description": "Use Python 3 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--two": {
+        "Name": "--two",
+        "kind": "option",
+        "description": "Use Python 2 when creating virtualenv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Install both develop and default packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-e": {
+        "Name": "-e",
+        "kind": "option",
+        "description": "An editable Python package URL or path, often to a VCS repository",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "-i": {
+        "Name": "-i",
+        "kind": "option",
+        "description": "Target PyPI-compatible package index url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cindex\u003e": {
+            "Name": "\u003cindex\u003e",
+            "kind": "argument",
+            "description": "index",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cindex\u003e": {
+            "Name": "\u003cindex\u003e",
+            "kind": "argument",
+            "description": "index",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cindex\u003e"
+        ]
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Import a requirements.txt file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Verbose mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  }
+}

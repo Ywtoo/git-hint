@@ -1,0 +1,1574 @@
+{
+  "--config": {
+    "Name": "--config",
+    "kind": "option",
+    "description": "Uses a custom config file (instead of `_config.yml`). Also accepts a comma-separated list (no spaces) of JSON or YAML config files that will combine the files into a single `_multiconfig.yml`",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cconfig file\u003e": {
+        "Name": "\u003cconfig file\u003e",
+        "kind": "argument",
+        "description": "config file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cconfig file\u003e": {
+        "Name": "\u003cconfig file\u003e",
+        "kind": "argument",
+        "description": "config file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cconfig file\u003e"
+    ]
+  },
+  "--cwd": {
+    "Name": "--cwd",
+    "kind": "option",
+    "description": "Customize the path of current working directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdirectory\u003e"
+    ]
+  },
+  "--debug": {
+    "Name": "--debug",
+    "kind": "option",
+    "description": "Log verbose messages to the terminal and to `debug.log`",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--draft": {
+    "Name": "--draft",
+    "kind": "option",
+    "description": "Display draft posts (stored in the `source/_drafts` folder)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--safe": {
+    "Name": "--safe",
+    "kind": "option",
+    "description": "Disable loading plugins and scripts",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--silent": {
+    "Name": "--silent",
+    "kind": "option",
+    "description": "Silence output to the terminal",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "clean": {
+    "Name": "clean",
+    "kind": "subcommand",
+    "description": "Clean the cache file (`db.json`) and generated files (`public`)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "config": {
+    "Name": "config",
+    "kind": "subcommand",
+    "description": "Get or set configurations",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "deploy": {
+    "Name": "deploy",
+    "kind": "subcommand",
+    "description": "Deploy your website",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--generate": {
+        "Name": "--generate",
+        "kind": "option",
+        "description": "Generate static files before deploying",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--setup": {
+        "Name": "--setup",
+        "kind": "option",
+        "description": "Setup without deployment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-g": {
+        "Name": "-g",
+        "kind": "option",
+        "description": "Generate static files before deploying",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--generate": {
+        "Name": "--generate",
+        "kind": "option",
+        "description": "Generate static files before deploying",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--setup": {
+        "Name": "--setup",
+        "kind": "option",
+        "description": "Setup without deployment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-g": {
+        "Name": "-g",
+        "kind": "option",
+        "description": "Generate static files before deploying",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "generate": {
+    "Name": "generate",
+    "kind": "subcommand",
+    "description": "Generate static files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--bail": {
+        "Name": "--bail",
+        "kind": "option",
+        "description": "Raise an error if any unhandled exception is thrown during generation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--concurrency": {
+        "Name": "--concurrency",
+        "kind": "option",
+        "description": "Maximum number of files to be generated in parallel. Default is infinity",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconcurrency\u003e": {
+            "Name": "\u003cconcurrency\u003e",
+            "kind": "argument",
+            "description": "concurrency",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconcurrency\u003e": {
+            "Name": "\u003cconcurrency\u003e",
+            "kind": "argument",
+            "description": "concurrency",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--deploy": {
+        "Name": "--deploy",
+        "kind": "option",
+        "description": "Deploy after generation finishes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Force regenerate",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--watch": {
+        "Name": "--watch",
+        "kind": "option",
+        "description": "Watch file changes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-b": {
+        "Name": "-b",
+        "kind": "option",
+        "description": "Raise an error if any unhandled exception is thrown during generation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Maximum number of files to be generated in parallel. Default is infinity",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconcurrency\u003e": {
+            "Name": "\u003cconcurrency\u003e",
+            "kind": "argument",
+            "description": "concurrency",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconcurrency\u003e": {
+            "Name": "\u003cconcurrency\u003e",
+            "kind": "argument",
+            "description": "concurrency",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Deploy after generation finishes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Force regenerate",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-w": {
+        "Name": "-w",
+        "kind": "option",
+        "description": "Watch file changes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--bail": {
+        "Name": "--bail",
+        "kind": "option",
+        "description": "Raise an error if any unhandled exception is thrown during generation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--concurrency": {
+        "Name": "--concurrency",
+        "kind": "option",
+        "description": "Maximum number of files to be generated in parallel. Default is infinity",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconcurrency\u003e": {
+            "Name": "\u003cconcurrency\u003e",
+            "kind": "argument",
+            "description": "concurrency",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconcurrency\u003e": {
+            "Name": "\u003cconcurrency\u003e",
+            "kind": "argument",
+            "description": "concurrency",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--deploy": {
+        "Name": "--deploy",
+        "kind": "option",
+        "description": "Deploy after generation finishes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Force regenerate",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--watch": {
+        "Name": "--watch",
+        "kind": "option",
+        "description": "Watch file changes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-b": {
+        "Name": "-b",
+        "kind": "option",
+        "description": "Raise an error if any unhandled exception is thrown during generation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Maximum number of files to be generated in parallel. Default is infinity",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconcurrency\u003e": {
+            "Name": "\u003cconcurrency\u003e",
+            "kind": "argument",
+            "description": "concurrency",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconcurrency\u003e": {
+            "Name": "\u003cconcurrency\u003e",
+            "kind": "argument",
+            "description": "concurrency",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Deploy after generation finishes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Force regenerate",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-w": {
+        "Name": "-w",
+        "kind": "option",
+        "description": "Watch file changes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Displays a help for each command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "init": {
+    "Name": "init",
+    "kind": "subcommand",
+    "description": "Create a new Hexo folder",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--no-clone": {
+        "Name": "--no-clone",
+        "kind": "option",
+        "description": "Copy files instead of cloning from GitHub",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-install": {
+        "Name": "--no-install",
+        "kind": "option",
+        "description": "Skip npm install",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cdestination\u003e": {
+        "Name": "\u003cdestination\u003e",
+        "kind": "argument",
+        "description": "destination",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--no-clone": {
+        "Name": "--no-clone",
+        "kind": "option",
+        "description": "Copy files instead of cloning from GitHub",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-install": {
+        "Name": "--no-install",
+        "kind": "option",
+        "description": "Skip npm install",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cdestination\u003e": {
+        "Name": "\u003cdestination\u003e",
+        "kind": "argument",
+        "description": "destination",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "list": {
+    "Name": "list",
+    "kind": "subcommand",
+    "description": "List all routes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctype\u003e"
+    ]
+  },
+  "migrate": {
+    "Name": "migrate",
+    "kind": "subcommand",
+    "description": "Migrate content from other blog systems",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctype\u003e"
+    ]
+  },
+  "new": {
+    "Name": "new",
+    "kind": "subcommand",
+    "description": "Create a new article",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--path": {
+        "Name": "--path",
+        "kind": "option",
+        "description": "Post path. Customize the path of the post",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--replace": {
+        "Name": "--replace",
+        "kind": "option",
+        "description": "Replace the current post if it existed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--slug": {
+        "Name": "--slug",
+        "kind": "option",
+        "description": "Post slug. Customize the URL of the post",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cslug\u003e": {
+            "Name": "\u003cslug\u003e",
+            "kind": "argument",
+            "description": "slug",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cslug\u003e": {
+            "Name": "\u003cslug\u003e",
+            "kind": "argument",
+            "description": "slug",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cslug\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Post path. Customize the path of the post",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Replace the current post if it existed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Post slug. Customize the URL of the post",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cslug\u003e": {
+            "Name": "\u003cslug\u003e",
+            "kind": "argument",
+            "description": "slug",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cslug\u003e": {
+            "Name": "\u003cslug\u003e",
+            "kind": "argument",
+            "description": "slug",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cslug\u003e"
+        ]
+      },
+      "\u003clayout\u003e": {
+        "Name": "\u003clayout\u003e",
+        "kind": "argument",
+        "description": "layout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ctitle\u003e": {
+        "Name": "\u003ctitle\u003e",
+        "kind": "argument",
+        "description": "title",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--path": {
+        "Name": "--path",
+        "kind": "option",
+        "description": "Post path. Customize the path of the post",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--replace": {
+        "Name": "--replace",
+        "kind": "option",
+        "description": "Replace the current post if it existed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--slug": {
+        "Name": "--slug",
+        "kind": "option",
+        "description": "Post slug. Customize the URL of the post",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cslug\u003e": {
+            "Name": "\u003cslug\u003e",
+            "kind": "argument",
+            "description": "slug",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cslug\u003e": {
+            "Name": "\u003cslug\u003e",
+            "kind": "argument",
+            "description": "slug",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cslug\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Post path. Customize the path of the post",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Replace the current post if it existed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Post slug. Customize the URL of the post",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cslug\u003e": {
+            "Name": "\u003cslug\u003e",
+            "kind": "argument",
+            "description": "slug",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cslug\u003e": {
+            "Name": "\u003cslug\u003e",
+            "kind": "argument",
+            "description": "slug",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cslug\u003e"
+        ]
+      },
+      "\u003clayout\u003e": {
+        "Name": "\u003clayout\u003e",
+        "kind": "argument",
+        "description": "layout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ctitle\u003e": {
+        "Name": "\u003ctitle\u003e",
+        "kind": "argument",
+        "description": "title",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctitle\u003e"
+    ]
+  },
+  "publish": {
+    "Name": "publish",
+    "kind": "subcommand",
+    "description": "Publish a draft",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfilename\u003e": {
+        "Name": "\u003cfilename\u003e",
+        "kind": "argument",
+        "description": "filename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003clayout\u003e": {
+        "Name": "\u003clayout\u003e",
+        "kind": "argument",
+        "description": "layout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfilename\u003e": {
+        "Name": "\u003cfilename\u003e",
+        "kind": "argument",
+        "description": "filename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003clayout\u003e": {
+        "Name": "\u003clayout\u003e",
+        "kind": "argument",
+        "description": "layout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfilename\u003e"
+    ]
+  },
+  "render": {
+    "Name": "render",
+    "kind": "subcommand",
+    "description": "Render files with renderer plugins (e.g. Markdown) and save them at the specified path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--engine": {
+        "Name": "--engine",
+        "kind": "option",
+        "description": "Specify render engine",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output": {
+        "Name": "--output",
+        "kind": "option",
+        "description": "Output destination. Result will be printed in the terminal if the output destination is not set",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput directory\u003e": {
+            "Name": "\u003coutput directory\u003e",
+            "kind": "argument",
+            "description": "output directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput directory\u003e": {
+            "Name": "\u003coutput directory\u003e",
+            "kind": "argument",
+            "description": "output directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput directory\u003e"
+        ]
+      },
+      "--pretty": {
+        "Name": "--pretty",
+        "kind": "option",
+        "description": "Prettify JSON output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Output destination. Result will be printed in the terminal if the output destination is not set",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput directory\u003e": {
+            "Name": "\u003coutput directory\u003e",
+            "kind": "argument",
+            "description": "output directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput directory\u003e": {
+            "Name": "\u003coutput directory\u003e",
+            "kind": "argument",
+            "description": "output directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput directory\u003e"
+        ]
+      },
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--engine": {
+        "Name": "--engine",
+        "kind": "option",
+        "description": "Specify render engine",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output": {
+        "Name": "--output",
+        "kind": "option",
+        "description": "Output destination. Result will be printed in the terminal if the output destination is not set",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput directory\u003e": {
+            "Name": "\u003coutput directory\u003e",
+            "kind": "argument",
+            "description": "output directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput directory\u003e": {
+            "Name": "\u003coutput directory\u003e",
+            "kind": "argument",
+            "description": "output directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput directory\u003e"
+        ]
+      },
+      "--pretty": {
+        "Name": "--pretty",
+        "kind": "option",
+        "description": "Prettify JSON output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Output destination. Result will be printed in the terminal if the output destination is not set",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput directory\u003e": {
+            "Name": "\u003coutput directory\u003e",
+            "kind": "argument",
+            "description": "output directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput directory\u003e": {
+            "Name": "\u003coutput directory\u003e",
+            "kind": "argument",
+            "description": "output directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput directory\u003e"
+        ]
+      },
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile\u003e"
+    ]
+  },
+  "server": {
+    "Name": "server",
+    "kind": "subcommand",
+    "description": "Start a local server. By default, this is at http://localhost:4000/",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--ip": {
+        "Name": "--ip",
+        "kind": "option",
+        "description": "Override the default server IP. Bind to all IP address by default",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cip\u003e": {
+            "Name": "\u003cip\u003e",
+            "kind": "argument",
+            "description": "ip",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cip\u003e": {
+            "Name": "\u003cip\u003e",
+            "kind": "argument",
+            "description": "ip",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cip\u003e"
+        ]
+      },
+      "--log": {
+        "Name": "--log",
+        "kind": "option",
+        "description": "Enable logger. Override logger format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--open": {
+        "Name": "--open",
+        "kind": "option",
+        "description": "Immediately open the server url in your default web browser",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--port": {
+        "Name": "--port",
+        "kind": "option",
+        "description": "Override default port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cport\u003e"
+        ]
+      },
+      "--static": {
+        "Name": "--static",
+        "kind": "option",
+        "description": "Serve static files from the given directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-i": {
+        "Name": "-i",
+        "kind": "option",
+        "description": "Override the default server IP. Bind to all IP address by default",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cip\u003e": {
+            "Name": "\u003cip\u003e",
+            "kind": "argument",
+            "description": "ip",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cip\u003e": {
+            "Name": "\u003cip\u003e",
+            "kind": "argument",
+            "description": "ip",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cip\u003e"
+        ]
+      },
+      "-l": {
+        "Name": "-l",
+        "kind": "option",
+        "description": "Enable logger. Override logger format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Immediately open the server url in your default web browser",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Override default port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cport\u003e"
+        ]
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Serve static files from the given directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--ip": {
+        "Name": "--ip",
+        "kind": "option",
+        "description": "Override the default server IP. Bind to all IP address by default",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cip\u003e": {
+            "Name": "\u003cip\u003e",
+            "kind": "argument",
+            "description": "ip",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cip\u003e": {
+            "Name": "\u003cip\u003e",
+            "kind": "argument",
+            "description": "ip",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cip\u003e"
+        ]
+      },
+      "--log": {
+        "Name": "--log",
+        "kind": "option",
+        "description": "Enable logger. Override logger format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--open": {
+        "Name": "--open",
+        "kind": "option",
+        "description": "Immediately open the server url in your default web browser",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--port": {
+        "Name": "--port",
+        "kind": "option",
+        "description": "Override default port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cport\u003e"
+        ]
+      },
+      "--static": {
+        "Name": "--static",
+        "kind": "option",
+        "description": "Serve static files from the given directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-i": {
+        "Name": "-i",
+        "kind": "option",
+        "description": "Override the default server IP. Bind to all IP address by default",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cip\u003e": {
+            "Name": "\u003cip\u003e",
+            "kind": "argument",
+            "description": "ip",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cip\u003e": {
+            "Name": "\u003cip\u003e",
+            "kind": "argument",
+            "description": "ip",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cip\u003e"
+        ]
+      },
+      "-l": {
+        "Name": "-l",
+        "kind": "option",
+        "description": "Enable logger. Override logger format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Immediately open the server url in your default web browser",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Override default port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cport\u003e"
+        ]
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Serve static files from the given directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "version": {
+    "Name": "version",
+    "kind": "subcommand",
+    "description": "Display version information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

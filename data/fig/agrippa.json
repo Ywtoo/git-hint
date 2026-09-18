@@ -1,0 +1,536 @@
+{
+  "\u003ccomponent's name\u003e": {
+    "Name": "\u003ccomponent's name\u003e",
+    "kind": "argument",
+    "description": "component's name",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  },
+  "generate": {
+    "Name": "generate",
+    "kind": "subcommand",
+    "description": "This is the core of the CLI - this command generates a new React component, based on the name and options passed to it",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--allow-outside-base": {
+        "Name": "--allow-outside-base",
+        "kind": "option",
+        "description": "Overrides default Agrippa behaviour to allow components to be specified outside `baseDir`. Defaults to current working directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--base-dir": {
+        "Name": "--base-dir",
+        "kind": "option",
+        "description": "Path to a base directory which components should be generated inside of (directly or nested). Defaults to the current working directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--children": {
+        "Name": "--children",
+        "kind": "option",
+        "description": "Whether the component is meant to have children or not. Defaults to `false`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "The `debug` flag makes Agrippa print out additional debug information. It's quite useful when debugging. Defaults to `false`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--declaration": {
+        "Name": "--declaration",
+        "kind": "option",
+        "description": "Whether to declare the component as a `const` with an arrow function, or as a `function` declaration. Defaults to `const`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dest": {
+        "Name": "--dest",
+        "kind": "option",
+        "description": "Allows the user to generate the component at a path relative to `baseDir`. It's mostly used to augment or modify the generation path in the command-line when creating the component itself. `dest` is resolved relative to `baseDir`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--destination": {
+        "Name": "--destination",
+        "kind": "option",
+        "description": "Allows the user to generate the component at a path relative to `baseDir`. It's mostly used to augment or modify the generation path in the command-line when creating the component itself. `dest` is resolved relative to `baseDir`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--export-type": {
+        "Name": "--export-type",
+        "kind": "option",
+        "description": "Whether to export the component as a named export or a default export. Defaults to `named`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--flat": {
+        "Name": "--flat",
+        "kind": "option",
+        "description": "By default, Agrippa generates a dedicated directory for the generated component; this directory has the same name as the component, and will contain the component file (as `index.tsx` or `index.jsx`), and the style file (if one is generated). Defaults to `false`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--import-react": {
+        "Name": "--import-react",
+        "kind": "option",
+        "description": "Option to import React at the top of the component. Defaults to `true` if the CLI manages to find a `tsconfig.json` file and it has a `jsx` field under `compilerOptions` with `react-jsx` or `react-jsxdev` as the value, `false` otherwise",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--memo": {
+        "Name": "--memo",
+        "kind": "option",
+        "description": "Generates a component as a memo component. Defaults to `false`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--overwrite": {
+        "Name": "--overwrite",
+        "kind": "option",
+        "description": "By default, Agrippa prevents the generation of a component over an existing components, to prevent a loss of code. `--overwrite` tells Agrippa to replace existing files, if any are found. Defaults to `false`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--post-command": {
+        "Name": "--post-command",
+        "kind": "option",
+        "description": "Allows a custom command to be run after having generated a component. This allows for some cool functionality, such as opening an IDE at the newly generated files automatically or linting them. Defaults to `none`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--postCommand": {
+        "Name": "--postCommand",
+        "kind": "option",
+        "description": "Allows a custom command to be run after having generated a component. This allows for some cool functionality, such as opening an IDE at the newly generated files automatically or linting them. Defaults to `none`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--props": {
+        "Name": "--props",
+        "kind": "option",
+        "description": "Determines which prop declaration/validation solution to generate. Defaults to `ts` if `typescript` flag is `true`, `none` otherwise",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--react-native": {
+        "Name": "--react-native",
+        "kind": "option",
+        "description": "Generates a React Native component. Defaults to `true` if `react-native` is a dependency in the project's `package.json`, `false` otherwise",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--separate-index": {
+        "Name": "--separate-index",
+        "kind": "option",
+        "description": "In the `separateIndex` generation scheme, Agrippa creates one file for the component's code, and one `index` file, whose purpose is to allow importing exports from the component's directory elegantly (the import path can then be `\u003cpath\u003e/\u003cto\u003e/\u003cdirectory\u003e/Component` instead of `\u003cpath\u003e/\u003cto\u003e/\u003cdirectory\u003e/Component/Component`). Defaults to `true`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--styling": {
+        "Name": "--styling",
+        "kind": "option",
+        "description": "Which styling solution to generate. Defaults to `none`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--styling-module": {
+        "Name": "--styling-module",
+        "kind": "option",
+        "description": "Whether to generate a scoped `module` stylesheet. This option is only relevant for `css` or `scss` styling, and will be ignored for other values. Defaults to `true`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ts": {
+        "Name": "--ts",
+        "kind": "option",
+        "description": "Option to generate Typescript components, defaults to `true` if the CLI manages to find a `tsconfig.json` file, false otherwise",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--typescript": {
+        "Name": "--typescript",
+        "kind": "option",
+        "description": "Option to generate Typescript components, defaults to `true` if the CLI manages to find a `tsconfig.json` file, false otherwise",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ccomponent\u003e": {
+        "Name": "\u003ccomponent\u003e",
+        "kind": "argument",
+        "description": "component",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--allow-outside-base": {
+        "Name": "--allow-outside-base",
+        "kind": "option",
+        "description": "Overrides default Agrippa behaviour to allow components to be specified outside `baseDir`. Defaults to current working directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--base-dir": {
+        "Name": "--base-dir",
+        "kind": "option",
+        "description": "Path to a base directory which components should be generated inside of (directly or nested). Defaults to the current working directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--children": {
+        "Name": "--children",
+        "kind": "option",
+        "description": "Whether the component is meant to have children or not. Defaults to `false`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "The `debug` flag makes Agrippa print out additional debug information. It's quite useful when debugging. Defaults to `false`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--declaration": {
+        "Name": "--declaration",
+        "kind": "option",
+        "description": "Whether to declare the component as a `const` with an arrow function, or as a `function` declaration. Defaults to `const`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dest": {
+        "Name": "--dest",
+        "kind": "option",
+        "description": "Allows the user to generate the component at a path relative to `baseDir`. It's mostly used to augment or modify the generation path in the command-line when creating the component itself. `dest` is resolved relative to `baseDir`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--destination": {
+        "Name": "--destination",
+        "kind": "option",
+        "description": "Allows the user to generate the component at a path relative to `baseDir`. It's mostly used to augment or modify the generation path in the command-line when creating the component itself. `dest` is resolved relative to `baseDir`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--export-type": {
+        "Name": "--export-type",
+        "kind": "option",
+        "description": "Whether to export the component as a named export or a default export. Defaults to `named`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--flat": {
+        "Name": "--flat",
+        "kind": "option",
+        "description": "By default, Agrippa generates a dedicated directory for the generated component; this directory has the same name as the component, and will contain the component file (as `index.tsx` or `index.jsx`), and the style file (if one is generated). Defaults to `false`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--import-react": {
+        "Name": "--import-react",
+        "kind": "option",
+        "description": "Option to import React at the top of the component. Defaults to `true` if the CLI manages to find a `tsconfig.json` file and it has a `jsx` field under `compilerOptions` with `react-jsx` or `react-jsxdev` as the value, `false` otherwise",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--memo": {
+        "Name": "--memo",
+        "kind": "option",
+        "description": "Generates a component as a memo component. Defaults to `false`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--overwrite": {
+        "Name": "--overwrite",
+        "kind": "option",
+        "description": "By default, Agrippa prevents the generation of a component over an existing components, to prevent a loss of code. `--overwrite` tells Agrippa to replace existing files, if any are found. Defaults to `false`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--post-command": {
+        "Name": "--post-command",
+        "kind": "option",
+        "description": "Allows a custom command to be run after having generated a component. This allows for some cool functionality, such as opening an IDE at the newly generated files automatically or linting them. Defaults to `none`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--postCommand": {
+        "Name": "--postCommand",
+        "kind": "option",
+        "description": "Allows a custom command to be run after having generated a component. This allows for some cool functionality, such as opening an IDE at the newly generated files automatically or linting them. Defaults to `none`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--props": {
+        "Name": "--props",
+        "kind": "option",
+        "description": "Determines which prop declaration/validation solution to generate. Defaults to `ts` if `typescript` flag is `true`, `none` otherwise",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--react-native": {
+        "Name": "--react-native",
+        "kind": "option",
+        "description": "Generates a React Native component. Defaults to `true` if `react-native` is a dependency in the project's `package.json`, `false` otherwise",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--separate-index": {
+        "Name": "--separate-index",
+        "kind": "option",
+        "description": "In the `separateIndex` generation scheme, Agrippa creates one file for the component's code, and one `index` file, whose purpose is to allow importing exports from the component's directory elegantly (the import path can then be `\u003cpath\u003e/\u003cto\u003e/\u003cdirectory\u003e/Component` instead of `\u003cpath\u003e/\u003cto\u003e/\u003cdirectory\u003e/Component/Component`). Defaults to `true`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--styling": {
+        "Name": "--styling",
+        "kind": "option",
+        "description": "Which styling solution to generate. Defaults to `none`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--styling-module": {
+        "Name": "--styling-module",
+        "kind": "option",
+        "description": "Whether to generate a scoped `module` stylesheet. This option is only relevant for `css` or `scss` styling, and will be ignored for other values. Defaults to `true`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ts": {
+        "Name": "--ts",
+        "kind": "option",
+        "description": "Option to generate Typescript components, defaults to `true` if the CLI manages to find a `tsconfig.json` file, false otherwise",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--typescript": {
+        "Name": "--typescript",
+        "kind": "option",
+        "description": "Option to generate Typescript components, defaults to `true` if the CLI manages to find a `tsconfig.json` file, false otherwise",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ccomponent\u003e": {
+        "Name": "\u003ccomponent\u003e",
+        "kind": "argument",
+        "description": "component",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccomponent\u003e"
+    ]
+  },
+  "init": {
+    "Name": "init",
+    "kind": "subcommand",
+    "description": "Generates a basic .agripparc.json file, with some default values for options that agrippa accepts",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

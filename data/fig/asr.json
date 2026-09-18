@@ -1,0 +1,1362 @@
+{
+  "--buffers": {
+    "Name": "--buffers",
+    "kind": "option",
+    "description": "One of the options that control how asr uses memory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnum\u003e": {
+        "Name": "\u003cnum\u003e",
+        "kind": "argument",
+        "description": "num",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnum\u003e": {
+        "Name": "\u003cnum\u003e",
+        "kind": "argument",
+        "description": "num",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnum\u003e"
+    ]
+  },
+  "--buffersize": {
+    "Name": "--buffersize",
+    "kind": "option",
+    "description": "One of the options that control how asr uses memory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csize\u003e": {
+        "Name": "\u003csize\u003e",
+        "kind": "argument",
+        "description": "size",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csize\u003e": {
+        "Name": "\u003csize\u003e",
+        "kind": "argument",
+        "description": "size",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csize\u003e"
+    ]
+  },
+  "--csumbuffers": {
+    "Name": "--csumbuffers",
+    "kind": "option",
+    "description": "One of the options that control how asr uses memory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnum\u003e": {
+        "Name": "\u003cnum\u003e",
+        "kind": "argument",
+        "description": "num",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnum\u003e": {
+        "Name": "\u003cnum\u003e",
+        "kind": "argument",
+        "description": "num",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnum\u003e"
+    ]
+  },
+  "--csumbuffersize": {
+    "Name": "--csumbuffersize",
+    "kind": "option",
+    "description": "One of the options that control how asr uses memory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csize\u003e": {
+        "Name": "\u003csize\u003e",
+        "kind": "argument",
+        "description": "size",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csize\u003e": {
+        "Name": "\u003csize\u003e",
+        "kind": "argument",
+        "description": "size",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csize\u003e"
+    ]
+  },
+  "--debug": {
+    "Name": "--debug",
+    "kind": "option",
+    "description": "Enables other progress and error messages",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Enables verbose progress and error messages",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Displays asr usage information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "imagescan": {
+    "Name": "imagescan",
+    "kind": "subcommand",
+    "description": "Calculate checksums of the data in the provided image and store them in the image",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "info": {
+    "Name": "info",
+    "kind": "subcommand",
+    "description": "Report the image metadata which was placed in the image by a previous use of the imagescan verb",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--plist": {
+        "Name": "--plist",
+        "kind": "option",
+        "description": "Writes its output as an XML-formatted plist",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--plist": {
+        "Name": "--plist",
+        "kind": "option",
+        "description": "Writes its output as an XML-formatted plist",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "restore": {
+    "Name": "restore",
+    "kind": "subcommand",
+    "description": "Restores a disk image or volume to another volume",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--SHA256": {
+        "Name": "--SHA256",
+        "kind": "option",
+        "description": "Forces the restore to use the SHA-256 hash in the image during verification",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--allowfragmentedcatalog": {
+        "Name": "--allowfragmentedcatalog",
+        "kind": "option",
+        "description": "Allows restores to proceed even if the source's catalog file is fragmented",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--erase": {
+        "Name": "--erase",
+        "kind": "option",
+        "description": "Erases target and is required. --erase must always be used, as file copies are no longer supported by asr",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--file": {
+        "Name": "--file",
+        "kind": "option",
+        "description": "When performing a multicast restore, --file can be specified instead of --target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csource\u003e": {
+            "Name": "\u003csource\u003e",
+            "kind": "argument",
+            "description": "source",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csource\u003e": {
+            "Name": "\u003csource\u003e",
+            "kind": "argument",
+            "description": "source",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csource\u003e"
+        ]
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Specifies the destination filesystem format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cHFS+ | HFSX\u003e": {
+            "Name": "\u003cHFS+ | HFSX\u003e",
+            "kind": "argument",
+            "description": "HFS+ | HFSX",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cHFS+ | HFSX\u003e": {
+            "Name": "\u003cHFS+ | HFSX\u003e",
+            "kind": "argument",
+            "description": "HFS+ | HFSX",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--fromSnapshot": {
+        "Name": "--fromSnapshot",
+        "kind": "option",
+        "description": "Names a snapshot on the source APFS volume to use in combination with --toSnapshot to specify a snapshot delta to restore to the target APFS volume",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--noprompt": {
+        "Name": "--noprompt",
+        "kind": "option",
+        "description": "Suppresses the prompt which usually occurs before target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--noverify": {
+        "Name": "--noverify",
+        "kind": "option",
+        "description": "Skips the verification steps normally taken to ensure that a volume has been properly restored",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--puppetstrings": {
+        "Name": "--puppetstrings",
+        "kind": "option",
+        "description": "Provide progress output that is easy for another program to parse",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--source": {
+        "Name": "--source",
+        "kind": "option",
+        "description": "Can be a disk image, /dev entry, or volume mountpoint",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csource\u003e": {
+            "Name": "\u003csource\u003e",
+            "kind": "argument",
+            "description": "source",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csource\u003e": {
+            "Name": "\u003csource\u003e",
+            "kind": "argument",
+            "description": "source",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csource\u003e"
+        ]
+      },
+      "--sourcevolumeUUID": {
+        "Name": "--sourcevolumeUUID",
+        "kind": "option",
+        "description": "Tells asr which volume in the source container to invert when doing an APFS restore",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--sourcevolumename": {
+        "Name": "--sourcevolumename",
+        "kind": "option",
+        "description": "Tells asr which volume in the source container to invert when doing an APFS restore",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--target": {
+        "Name": "--target",
+        "kind": "option",
+        "description": "Can be a /dev entry, or volume mountpoint",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctarget\u003e"
+        ]
+      },
+      "--timeout": {
+        "Name": "--timeout",
+        "kind": "option",
+        "description": "Specifies num seconds that a multicast client should wait when no payload data has been received over a multicast stream before exiting",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cnum\u003e": {
+            "Name": "\u003cnum\u003e",
+            "kind": "argument",
+            "description": "num",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cnum\u003e": {
+            "Name": "\u003cnum\u003e",
+            "kind": "argument",
+            "description": "num",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--toSnapshot": {
+        "Name": "--toSnapshot",
+        "kind": "option",
+        "description": "Specifies the snapshot on the source APFS volume to restore to the target APFS volume",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--useInverter": {
+        "Name": "--useInverter",
+        "kind": "option",
+        "description": "Forces asr to use the inverter for restoring APFS volumes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--useReplication": {
+        "Name": "--useReplication",
+        "kind": "option",
+        "description": "Forces asr to use replication for restoring APFS volumes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--SHA256": {
+        "Name": "--SHA256",
+        "kind": "option",
+        "description": "Forces the restore to use the SHA-256 hash in the image during verification",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--allowfragmentedcatalog": {
+        "Name": "--allowfragmentedcatalog",
+        "kind": "option",
+        "description": "Allows restores to proceed even if the source's catalog file is fragmented",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--erase": {
+        "Name": "--erase",
+        "kind": "option",
+        "description": "Erases target and is required. --erase must always be used, as file copies are no longer supported by asr",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--file": {
+        "Name": "--file",
+        "kind": "option",
+        "description": "When performing a multicast restore, --file can be specified instead of --target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csource\u003e": {
+            "Name": "\u003csource\u003e",
+            "kind": "argument",
+            "description": "source",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csource\u003e": {
+            "Name": "\u003csource\u003e",
+            "kind": "argument",
+            "description": "source",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csource\u003e"
+        ]
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Specifies the destination filesystem format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cHFS+ | HFSX\u003e": {
+            "Name": "\u003cHFS+ | HFSX\u003e",
+            "kind": "argument",
+            "description": "HFS+ | HFSX",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cHFS+ | HFSX\u003e": {
+            "Name": "\u003cHFS+ | HFSX\u003e",
+            "kind": "argument",
+            "description": "HFS+ | HFSX",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--fromSnapshot": {
+        "Name": "--fromSnapshot",
+        "kind": "option",
+        "description": "Names a snapshot on the source APFS volume to use in combination with --toSnapshot to specify a snapshot delta to restore to the target APFS volume",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--noprompt": {
+        "Name": "--noprompt",
+        "kind": "option",
+        "description": "Suppresses the prompt which usually occurs before target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--noverify": {
+        "Name": "--noverify",
+        "kind": "option",
+        "description": "Skips the verification steps normally taken to ensure that a volume has been properly restored",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--puppetstrings": {
+        "Name": "--puppetstrings",
+        "kind": "option",
+        "description": "Provide progress output that is easy for another program to parse",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--source": {
+        "Name": "--source",
+        "kind": "option",
+        "description": "Can be a disk image, /dev entry, or volume mountpoint",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csource\u003e": {
+            "Name": "\u003csource\u003e",
+            "kind": "argument",
+            "description": "source",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csource\u003e": {
+            "Name": "\u003csource\u003e",
+            "kind": "argument",
+            "description": "source",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csource\u003e"
+        ]
+      },
+      "--sourcevolumeUUID": {
+        "Name": "--sourcevolumeUUID",
+        "kind": "option",
+        "description": "Tells asr which volume in the source container to invert when doing an APFS restore",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--sourcevolumename": {
+        "Name": "--sourcevolumename",
+        "kind": "option",
+        "description": "Tells asr which volume in the source container to invert when doing an APFS restore",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--target": {
+        "Name": "--target",
+        "kind": "option",
+        "description": "Can be a /dev entry, or volume mountpoint",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctarget\u003e"
+        ]
+      },
+      "--timeout": {
+        "Name": "--timeout",
+        "kind": "option",
+        "description": "Specifies num seconds that a multicast client should wait when no payload data has been received over a multicast stream before exiting",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cnum\u003e": {
+            "Name": "\u003cnum\u003e",
+            "kind": "argument",
+            "description": "num",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cnum\u003e": {
+            "Name": "\u003cnum\u003e",
+            "kind": "argument",
+            "description": "num",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--toSnapshot": {
+        "Name": "--toSnapshot",
+        "kind": "option",
+        "description": "Specifies the snapshot on the source APFS volume to restore to the target APFS volume",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--useInverter": {
+        "Name": "--useInverter",
+        "kind": "option",
+        "description": "Forces asr to use the inverter for restoring APFS volumes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--useReplication": {
+        "Name": "--useReplication",
+        "kind": "option",
+        "description": "Forces asr to use replication for restoring APFS volumes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "restoreexact": {
+    "Name": "restoreexact",
+    "kind": "subcommand",
+    "description": "Same as restore verb, except that for an HFS Plus volume, the target partition is resized to match the size of the source partition/ volume",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--SHA256": {
+        "Name": "--SHA256",
+        "kind": "option",
+        "description": "Forces the restore to use the SHA-256 hash in the image during verification",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--allowfragmentedcatalog": {
+        "Name": "--allowfragmentedcatalog",
+        "kind": "option",
+        "description": "Allows restores to proceed even if the source's catalog file is fragmented",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--erase": {
+        "Name": "--erase",
+        "kind": "option",
+        "description": "Erases target and is required. --erase must always be used, as file copies are no longer supported by asr",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--file": {
+        "Name": "--file",
+        "kind": "option",
+        "description": "When performing a multicast restore, --file can be specified instead of --target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csource\u003e": {
+            "Name": "\u003csource\u003e",
+            "kind": "argument",
+            "description": "source",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csource\u003e": {
+            "Name": "\u003csource\u003e",
+            "kind": "argument",
+            "description": "source",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csource\u003e"
+        ]
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Specifies the destination filesystem format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cHFS+ | HFSX\u003e": {
+            "Name": "\u003cHFS+ | HFSX\u003e",
+            "kind": "argument",
+            "description": "HFS+ | HFSX",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cHFS+ | HFSX\u003e": {
+            "Name": "\u003cHFS+ | HFSX\u003e",
+            "kind": "argument",
+            "description": "HFS+ | HFSX",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--fromSnapshot": {
+        "Name": "--fromSnapshot",
+        "kind": "option",
+        "description": "Names a snapshot on the source APFS volume to use in combination with --toSnapshot to specify a snapshot delta to restore to the target APFS volume",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--noprompt": {
+        "Name": "--noprompt",
+        "kind": "option",
+        "description": "Suppresses the prompt which usually occurs before target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--noverify": {
+        "Name": "--noverify",
+        "kind": "option",
+        "description": "Skips the verification steps normally taken to ensure that a volume has been properly restored",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--puppetstrings": {
+        "Name": "--puppetstrings",
+        "kind": "option",
+        "description": "Provide progress output that is easy for another program to parse",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--source": {
+        "Name": "--source",
+        "kind": "option",
+        "description": "Can be a disk image, /dev entry, or volume mountpoint",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csource\u003e": {
+            "Name": "\u003csource\u003e",
+            "kind": "argument",
+            "description": "source",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csource\u003e": {
+            "Name": "\u003csource\u003e",
+            "kind": "argument",
+            "description": "source",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csource\u003e"
+        ]
+      },
+      "--sourcevolumeUUID": {
+        "Name": "--sourcevolumeUUID",
+        "kind": "option",
+        "description": "Tells asr which volume in the source container to invert when doing an APFS restore",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--sourcevolumename": {
+        "Name": "--sourcevolumename",
+        "kind": "option",
+        "description": "Tells asr which volume in the source container to invert when doing an APFS restore",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--target": {
+        "Name": "--target",
+        "kind": "option",
+        "description": "Can be a /dev entry, or volume mountpoint",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctarget\u003e"
+        ]
+      },
+      "--timeout": {
+        "Name": "--timeout",
+        "kind": "option",
+        "description": "Specifies num seconds that a multicast client should wait when no payload data has been received over a multicast stream before exiting",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cnum\u003e": {
+            "Name": "\u003cnum\u003e",
+            "kind": "argument",
+            "description": "num",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cnum\u003e": {
+            "Name": "\u003cnum\u003e",
+            "kind": "argument",
+            "description": "num",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--toSnapshot": {
+        "Name": "--toSnapshot",
+        "kind": "option",
+        "description": "Specifies the snapshot on the source APFS volume to restore to the target APFS volume",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--useInverter": {
+        "Name": "--useInverter",
+        "kind": "option",
+        "description": "Forces asr to use the inverter for restoring APFS volumes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--useReplication": {
+        "Name": "--useReplication",
+        "kind": "option",
+        "description": "Forces asr to use replication for restoring APFS volumes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--SHA256": {
+        "Name": "--SHA256",
+        "kind": "option",
+        "description": "Forces the restore to use the SHA-256 hash in the image during verification",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--allowfragmentedcatalog": {
+        "Name": "--allowfragmentedcatalog",
+        "kind": "option",
+        "description": "Allows restores to proceed even if the source's catalog file is fragmented",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--erase": {
+        "Name": "--erase",
+        "kind": "option",
+        "description": "Erases target and is required. --erase must always be used, as file copies are no longer supported by asr",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--file": {
+        "Name": "--file",
+        "kind": "option",
+        "description": "When performing a multicast restore, --file can be specified instead of --target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csource\u003e": {
+            "Name": "\u003csource\u003e",
+            "kind": "argument",
+            "description": "source",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csource\u003e": {
+            "Name": "\u003csource\u003e",
+            "kind": "argument",
+            "description": "source",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csource\u003e"
+        ]
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Specifies the destination filesystem format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cHFS+ | HFSX\u003e": {
+            "Name": "\u003cHFS+ | HFSX\u003e",
+            "kind": "argument",
+            "description": "HFS+ | HFSX",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cHFS+ | HFSX\u003e": {
+            "Name": "\u003cHFS+ | HFSX\u003e",
+            "kind": "argument",
+            "description": "HFS+ | HFSX",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--fromSnapshot": {
+        "Name": "--fromSnapshot",
+        "kind": "option",
+        "description": "Names a snapshot on the source APFS volume to use in combination with --toSnapshot to specify a snapshot delta to restore to the target APFS volume",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--noprompt": {
+        "Name": "--noprompt",
+        "kind": "option",
+        "description": "Suppresses the prompt which usually occurs before target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--noverify": {
+        "Name": "--noverify",
+        "kind": "option",
+        "description": "Skips the verification steps normally taken to ensure that a volume has been properly restored",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--puppetstrings": {
+        "Name": "--puppetstrings",
+        "kind": "option",
+        "description": "Provide progress output that is easy for another program to parse",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--source": {
+        "Name": "--source",
+        "kind": "option",
+        "description": "Can be a disk image, /dev entry, or volume mountpoint",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csource\u003e": {
+            "Name": "\u003csource\u003e",
+            "kind": "argument",
+            "description": "source",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csource\u003e": {
+            "Name": "\u003csource\u003e",
+            "kind": "argument",
+            "description": "source",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csource\u003e"
+        ]
+      },
+      "--sourcevolumeUUID": {
+        "Name": "--sourcevolumeUUID",
+        "kind": "option",
+        "description": "Tells asr which volume in the source container to invert when doing an APFS restore",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--sourcevolumename": {
+        "Name": "--sourcevolumename",
+        "kind": "option",
+        "description": "Tells asr which volume in the source container to invert when doing an APFS restore",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--target": {
+        "Name": "--target",
+        "kind": "option",
+        "description": "Can be a /dev entry, or volume mountpoint",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctarget\u003e"
+        ]
+      },
+      "--timeout": {
+        "Name": "--timeout",
+        "kind": "option",
+        "description": "Specifies num seconds that a multicast client should wait when no payload data has been received over a multicast stream before exiting",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cnum\u003e": {
+            "Name": "\u003cnum\u003e",
+            "kind": "argument",
+            "description": "num",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cnum\u003e": {
+            "Name": "\u003cnum\u003e",
+            "kind": "argument",
+            "description": "num",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--toSnapshot": {
+        "Name": "--toSnapshot",
+        "kind": "option",
+        "description": "Specifies the snapshot on the source APFS volume to restore to the target APFS volume",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--useInverter": {
+        "Name": "--useInverter",
+        "kind": "option",
+        "description": "Forces asr to use the inverter for restoring APFS volumes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--useReplication": {
+        "Name": "--useReplication",
+        "kind": "option",
+        "description": "Forces asr to use replication for restoring APFS volumes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "server": {
+    "Name": "server",
+    "kind": "subcommand",
+    "description": "Multicasts source over the network",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Server requires a configuration file to be passed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfiguration\u003e"
+        ]
+      },
+      "--interface": {
+        "Name": "--interface",
+        "kind": "option",
+        "description": "The network interface to be used for multicasting",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cinterface\u003e": {
+            "Name": "\u003cinterface\u003e",
+            "kind": "argument",
+            "description": "interface",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cinterface\u003e": {
+            "Name": "\u003cinterface\u003e",
+            "kind": "argument",
+            "description": "interface",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cinterface\u003e"
+        ]
+      },
+      "--source": {
+        "Name": "--source",
+        "kind": "option",
+        "description": "Source has to be a UDIF disk image",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csource\u003e": {
+            "Name": "\u003csource\u003e",
+            "kind": "argument",
+            "description": "source",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csource\u003e": {
+            "Name": "\u003csource\u003e",
+            "kind": "argument",
+            "description": "source",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csource\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Server requires a configuration file to be passed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfiguration\u003e"
+        ]
+      },
+      "--interface": {
+        "Name": "--interface",
+        "kind": "option",
+        "description": "The network interface to be used for multicasting",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cinterface\u003e": {
+            "Name": "\u003cinterface\u003e",
+            "kind": "argument",
+            "description": "interface",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cinterface\u003e": {
+            "Name": "\u003cinterface\u003e",
+            "kind": "argument",
+            "description": "interface",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cinterface\u003e"
+        ]
+      },
+      "--source": {
+        "Name": "--source",
+        "kind": "option",
+        "description": "Source has to be a UDIF disk image",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csource\u003e": {
+            "Name": "\u003csource\u003e",
+            "kind": "argument",
+            "description": "source",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csource\u003e": {
+            "Name": "\u003csource\u003e",
+            "kind": "argument",
+            "description": "source",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csource\u003e"
+        ]
+      }
+    }
+  },
+  "version": {
+    "Name": "version",
+    "kind": "subcommand",
+    "description": "Displays asr version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

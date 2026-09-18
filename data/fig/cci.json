@@ -1,0 +1,5188 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Help for cci",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "error": {
+    "Name": "error",
+    "kind": "subcommand",
+    "description": "Get or share information about an error",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show this message and exit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "gist": {
+        "Name": "gist",
+        "kind": "subcommand",
+        "description": "Creates a GitHub gist from the latest logfile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "info": {
+        "Name": "info",
+        "kind": "subcommand",
+        "description": "Outputs the most recent traceback (if one exists in the most recent logfile)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show this message and exit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "flow": {
+    "Name": "flow",
+    "kind": "subcommand",
+    "description": "Commands for finding and running flows for a project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "doc": {
+        "Name": "doc",
+        "kind": "subcommand",
+        "description": "Exports RST format documentation for all flows",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for flow doc",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--project": {
+            "Name": "--project",
+            "kind": "option",
+            "description": "Include project-specific flows only",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for flow doc",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--project": {
+            "Name": "--project",
+            "kind": "option",
+            "description": "Include project-specific flows only",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "info": {
+        "Name": "info",
+        "kind": "subcommand",
+        "description": "Displays information for a flow",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for flow info",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cFLOW_NAME\u003e": {
+            "Name": "\u003cFLOW_NAME\u003e",
+            "kind": "argument",
+            "description": "FLOW_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for flow info",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cFLOW_NAME\u003e": {
+            "Name": "\u003cFLOW_NAME\u003e",
+            "kind": "argument",
+            "description": "FLOW_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cFLOW_NAME\u003e"
+        ]
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List available flows for the current context",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for flow list",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--json": {
+            "Name": "--json",
+            "kind": "option",
+            "description": "Print a json string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--plain": {
+            "Name": "--plain",
+            "kind": "option",
+            "description": "Print the table using plain ascii",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for flow list",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--json": {
+            "Name": "--json",
+            "kind": "option",
+            "description": "Print a json string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--plain": {
+            "Name": "--plain",
+            "kind": "option",
+            "description": "Print the table using plain ascii",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "run": {
+        "Name": "run",
+        "kind": "subcommand",
+        "description": "Runs a flow",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--debug": {
+            "Name": "--debug",
+            "kind": "option",
+            "description": "Drops into pdb, the Python debugger, on an exception",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--delete-org": {
+            "Name": "--delete-org",
+            "kind": "option",
+            "description": "If set, deletes the scratch org after the flow completes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for flow run",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--no-prompt": {
+            "Name": "--no-prompt",
+            "kind": "option",
+            "description": "Disables all prompts. Set for non-interactive mode use such as calling from scripts or CI systems",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--org": {
+            "Name": "--org",
+            "kind": "option",
+            "description": "Specify the target org. By default, runs against the current default org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "-o": {
+            "Name": "-o",
+            "kind": "option",
+            "description": "Pass task specific options for the task as '-o taskname__option value'. You can specify more than one option by using -o more than once",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "\u003cFLOW_NAME\u003e": {
+            "Name": "\u003cFLOW_NAME\u003e",
+            "kind": "argument",
+            "description": "FLOW_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--debug": {
+            "Name": "--debug",
+            "kind": "option",
+            "description": "Drops into pdb, the Python debugger, on an exception",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--delete-org": {
+            "Name": "--delete-org",
+            "kind": "option",
+            "description": "If set, deletes the scratch org after the flow completes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for flow run",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--no-prompt": {
+            "Name": "--no-prompt",
+            "kind": "option",
+            "description": "Disables all prompts. Set for non-interactive mode use such as calling from scripts or CI systems",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--org": {
+            "Name": "--org",
+            "kind": "option",
+            "description": "Specify the target org. By default, runs against the current default org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "-o": {
+            "Name": "-o",
+            "kind": "option",
+            "description": "Pass task specific options for the task as '-o taskname__option value'. You can specify more than one option by using -o more than once",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "\u003cFLOW_NAME\u003e": {
+            "Name": "\u003cFLOW_NAME\u003e",
+            "kind": "argument",
+            "description": "FLOW_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cFLOW_NAME\u003e"
+        ]
+      }
+    }
+  },
+  "org": {
+    "Name": "org",
+    "kind": "subcommand",
+    "description": "Commands for connecting and interacting with Salesforce orgs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "browser": {
+        "Name": "browser",
+        "kind": "subcommand",
+        "description": "Opens a browser window and logs into the org using the stored OAuth credentials",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for org browser",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--org": {
+            "Name": "--org",
+            "kind": "option",
+            "description": "Alternate way to specify the target org. By default, runs against the current default org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "--path": {
+            "Name": "--path",
+            "kind": "option",
+            "description": "Navigate to the specified page after logging in",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "--url-only": {
+            "Name": "--url-only",
+            "kind": "option",
+            "description": "Display the target URL, but don't open a browser",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Navigate to the specified page after logging in",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "-r": {
+            "Name": "-r",
+            "kind": "option",
+            "description": "Display the target URL, but don't open a browser",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cORGNAME\u003e": {
+            "Name": "\u003cORGNAME\u003e",
+            "kind": "argument",
+            "description": "ORGNAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for org browser",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--org": {
+            "Name": "--org",
+            "kind": "option",
+            "description": "Alternate way to specify the target org. By default, runs against the current default org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "--path": {
+            "Name": "--path",
+            "kind": "option",
+            "description": "Navigate to the specified page after logging in",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "--url-only": {
+            "Name": "--url-only",
+            "kind": "option",
+            "description": "Display the target URL, but don't open a browser",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Navigate to the specified page after logging in",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "-r": {
+            "Name": "-r",
+            "kind": "option",
+            "description": "Display the target URL, but don't open a browser",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cORGNAME\u003e": {
+            "Name": "\u003cORGNAME\u003e",
+            "kind": "argument",
+            "description": "ORGNAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "connect": {
+        "Name": "connect",
+        "kind": "subcommand",
+        "description": "Connects a new org's credentials using OAuth Web Flow",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--connected-app": {
+            "Name": "--connected-app",
+            "kind": "option",
+            "description": "Name of the connected_app service to use",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "--default": {
+            "Name": "--default",
+            "kind": "option",
+            "description": "If set, sets the connected org as the new default org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--global-org": {
+            "Name": "--global-org",
+            "kind": "option",
+            "description": "If set, the connected org is available to all CumulusCI projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show this message and exit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--login-url": {
+            "Name": "--login-url",
+            "kind": "option",
+            "description": "If set, login to this hostname",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "--org": {
+            "Name": "--org",
+            "kind": "option",
+            "description": "Alternate way to specify the target org. One of ORGNAME (see above) or --org is required",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "--sandbox": {
+            "Name": "--sandbox",
+            "kind": "option",
+            "description": "If set, connects to a Salesforce sandbox org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cORGNAME\u003e": {
+            "Name": "\u003cORGNAME\u003e",
+            "kind": "argument",
+            "description": "ORGNAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--connected-app": {
+            "Name": "--connected-app",
+            "kind": "option",
+            "description": "Name of the connected_app service to use",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "--default": {
+            "Name": "--default",
+            "kind": "option",
+            "description": "If set, sets the connected org as the new default org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--global-org": {
+            "Name": "--global-org",
+            "kind": "option",
+            "description": "If set, the connected org is available to all CumulusCI projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show this message and exit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--login-url": {
+            "Name": "--login-url",
+            "kind": "option",
+            "description": "If set, login to this hostname",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "--org": {
+            "Name": "--org",
+            "kind": "option",
+            "description": "Alternate way to specify the target org. One of ORGNAME (see above) or --org is required",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "--sandbox": {
+            "Name": "--sandbox",
+            "kind": "option",
+            "description": "If set, connects to a Salesforce sandbox org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cORGNAME\u003e": {
+            "Name": "\u003cORGNAME\u003e",
+            "kind": "argument",
+            "description": "ORGNAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "default": {
+        "Name": "default",
+        "kind": "subcommand",
+        "description": "Sets an org as the default org for tasks and flows",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show this message and exit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--org": {
+            "Name": "--org",
+            "kind": "option",
+            "description": "Alternate way to specify the target org. By default, runs against the current default org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "--unset": {
+            "Name": "--unset",
+            "kind": "option",
+            "description": "Unset the org as the default org leaving no default org selected",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cORGNAME\u003e": {
+            "Name": "\u003cORGNAME\u003e",
+            "kind": "argument",
+            "description": "ORGNAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show this message and exit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--org": {
+            "Name": "--org",
+            "kind": "option",
+            "description": "Alternate way to specify the target org. By default, runs against the current default org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "--unset": {
+            "Name": "--unset",
+            "kind": "option",
+            "description": "Unset the org as the default org leaving no default org selected",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cORGNAME\u003e": {
+            "Name": "\u003cORGNAME\u003e",
+            "kind": "argument",
+            "description": "ORGNAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "import": {
+        "Name": "import",
+        "kind": "subcommand",
+        "description": "Import an org from Salesforce DX",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show this message and exit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--org": {
+            "Name": "--org",
+            "kind": "option",
+            "description": "Alternate way to specify the target org. One of ORGNAME (see above) or --org is required",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "\u003cORGNAME\u003e": {
+            "Name": "\u003cORGNAME\u003e",
+            "kind": "argument",
+            "description": "ORGNAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cUSERNAME_OR_ALIAS\u003e": {
+            "Name": "\u003cUSERNAME_OR_ALIAS\u003e",
+            "kind": "argument",
+            "description": "USERNAME_OR_ALIAS",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show this message and exit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--org": {
+            "Name": "--org",
+            "kind": "option",
+            "description": "Alternate way to specify the target org. One of ORGNAME (see above) or --org is required",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "\u003cORGNAME\u003e": {
+            "Name": "\u003cORGNAME\u003e",
+            "kind": "argument",
+            "description": "ORGNAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cUSERNAME_OR_ALIAS\u003e": {
+            "Name": "\u003cUSERNAME_OR_ALIAS\u003e",
+            "kind": "argument",
+            "description": "USERNAME_OR_ALIAS",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cUSERNAME_OR_ALIAS\u003e"
+        ]
+      },
+      "info": {
+        "Name": "info",
+        "kind": "subcommand",
+        "description": "Display information for a connected org",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show this message and exit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--json": {
+            "Name": "--json",
+            "kind": "option",
+            "description": "Print as JSON. Includes access token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--org": {
+            "Name": "--org",
+            "kind": "option",
+            "description": "Alternate way to specify the target org. By default, runs against the current default org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "\u003cORGNAME\u003e": {
+            "Name": "\u003cORGNAME\u003e",
+            "kind": "argument",
+            "description": "ORGNAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show this message and exit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--json": {
+            "Name": "--json",
+            "kind": "option",
+            "description": "Print as JSON. Includes access token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--org": {
+            "Name": "--org",
+            "kind": "option",
+            "description": "Alternate way to specify the target org. By default, runs against the current default org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "\u003cORGNAME\u003e": {
+            "Name": "\u003cORGNAME\u003e",
+            "kind": "argument",
+            "description": "ORGNAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "Lists all orgs in scope for the current project",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show this message and exit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--json": {
+            "Name": "--json",
+            "kind": "option",
+            "description": "Output results in JSON format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--plain": {
+            "Name": "--plain",
+            "kind": "option",
+            "description": "Print the table using plain ascii",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show this message and exit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--json": {
+            "Name": "--json",
+            "kind": "option",
+            "description": "Output results in JSON format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--plain": {
+            "Name": "--plain",
+            "kind": "option",
+            "description": "Print the table using plain ascii",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "prune": {
+        "Name": "prune",
+        "kind": "subcommand",
+        "description": "Removes all expired scratch orgs from the current project",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show this message and exit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--include-active": {
+            "Name": "--include-active",
+            "kind": "option",
+            "description": "Remove all scratch orgs, regardless of expiry",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show this message and exit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--include-active": {
+            "Name": "--include-active",
+            "kind": "option",
+            "description": "Remove all scratch orgs, regardless of expiry",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "remove": {
+        "Name": "remove",
+        "kind": "subcommand",
+        "description": "Removes an org from the keychain",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--global-org": {
+            "Name": "--global-org",
+            "kind": "option",
+            "description": "Set this option to force remove a global org. Default behavior is to error if you attempt to delete a global org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show this message and exit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--org": {
+            "Name": "--org",
+            "kind": "option",
+            "description": "Alternate way to specify the target org. One of ORGNAME (see above) or --org is required",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "\u003cORGNAME\u003e": {
+            "Name": "\u003cORGNAME\u003e",
+            "kind": "argument",
+            "description": "ORGNAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--global-org": {
+            "Name": "--global-org",
+            "kind": "option",
+            "description": "Set this option to force remove a global org. Default behavior is to error if you attempt to delete a global org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show this message and exit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--org": {
+            "Name": "--org",
+            "kind": "option",
+            "description": "Alternate way to specify the target org. One of ORGNAME (see above) or --org is required",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "\u003cORGNAME\u003e": {
+            "Name": "\u003cORGNAME\u003e",
+            "kind": "argument",
+            "description": "ORGNAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "scratch": {
+        "Name": "scratch",
+        "kind": "subcommand",
+        "description": "Connects a Salesforce DX Scratch Org to the keychain",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--days": {
+            "Name": "--days",
+            "kind": "option",
+            "description": "If provided, overrides the scratch config default days value for how many days the scratch org should persist",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "--default": {
+            "Name": "--default",
+            "kind": "option",
+            "description": "If set, sets the connected org as the new default org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--devhub": {
+            "Name": "--devhub",
+            "kind": "option",
+            "description": "If provided, overrides the devhub used to create the scratch org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show this message and exit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--no-password": {
+            "Name": "--no-password",
+            "kind": "option",
+            "description": "If set, don't set a password for the org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--org": {
+            "Name": "--org",
+            "kind": "option",
+            "description": "Alternate way to specify the target org. One of ORGNAME (see above) or --org is required",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "\u003cCONFIG_NAME\u003e": {
+            "Name": "\u003cCONFIG_NAME\u003e",
+            "kind": "argument",
+            "description": "CONFIG_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cORGNAME\u003e": {
+            "Name": "\u003cORGNAME\u003e",
+            "kind": "argument",
+            "description": "ORGNAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--days": {
+            "Name": "--days",
+            "kind": "option",
+            "description": "If provided, overrides the scratch config default days value for how many days the scratch org should persist",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "--default": {
+            "Name": "--default",
+            "kind": "option",
+            "description": "If set, sets the connected org as the new default org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--devhub": {
+            "Name": "--devhub",
+            "kind": "option",
+            "description": "If provided, overrides the devhub used to create the scratch org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show this message and exit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--no-password": {
+            "Name": "--no-password",
+            "kind": "option",
+            "description": "If set, don't set a password for the org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--org": {
+            "Name": "--org",
+            "kind": "option",
+            "description": "Alternate way to specify the target org. One of ORGNAME (see above) or --org is required",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "\u003cCONFIG_NAME\u003e": {
+            "Name": "\u003cCONFIG_NAME\u003e",
+            "kind": "argument",
+            "description": "CONFIG_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cORGNAME\u003e": {
+            "Name": "\u003cORGNAME\u003e",
+            "kind": "argument",
+            "description": "ORGNAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cCONFIG_NAME\u003e"
+        ]
+      },
+      "scratch_delete": {
+        "Name": "scratch_delete",
+        "kind": "subcommand",
+        "description": "Deletes a Salesforce DX Scratch Org leaving the config in the keychain for regeneration",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show this message and exit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--org": {
+            "Name": "--org",
+            "kind": "option",
+            "description": "Alternate way to specify the target org. One of ORGNAME (see above) or --org is required",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "\u003cORGNAME\u003e": {
+            "Name": "\u003cORGNAME\u003e",
+            "kind": "argument",
+            "description": "ORGNAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show this message and exit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--org": {
+            "Name": "--org",
+            "kind": "option",
+            "description": "Alternate way to specify the target org. One of ORGNAME (see above) or --org is required",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "\u003cORGNAME\u003e": {
+            "Name": "\u003cORGNAME\u003e",
+            "kind": "argument",
+            "description": "ORGNAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "shell": {
+        "Name": "shell",
+        "kind": "subcommand",
+        "description": "Drop into a Python shell with a simple_salesforce connection in `sf`, as well as the `org_config` and `project_config`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show this message and exit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--org": {
+            "Name": "--org",
+            "kind": "option",
+            "description": "Alternate way to specify the target org. By default, runs against the current default org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "--python": {
+            "Name": "--python",
+            "kind": "option",
+            "description": "Python code to run directly",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "--script": {
+            "Name": "--script",
+            "kind": "option",
+            "description": "Path to a script to run",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cPATH\u003e": {
+                "Name": "\u003cPATH\u003e",
+                "kind": "argument",
+                "description": "PATH",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cPATH\u003e": {
+                "Name": "\u003cPATH\u003e",
+                "kind": "argument",
+                "description": "PATH",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cPATH\u003e"
+            ]
+          },
+          "\u003cORGNAME\u003e": {
+            "Name": "\u003cORGNAME\u003e",
+            "kind": "argument",
+            "description": "ORGNAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show this message and exit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--org": {
+            "Name": "--org",
+            "kind": "option",
+            "description": "Alternate way to specify the target org. By default, runs against the current default org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "--python": {
+            "Name": "--python",
+            "kind": "option",
+            "description": "Python code to run directly",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          },
+          "--script": {
+            "Name": "--script",
+            "kind": "option",
+            "description": "Path to a script to run",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cPATH\u003e": {
+                "Name": "\u003cPATH\u003e",
+                "kind": "argument",
+                "description": "PATH",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cPATH\u003e": {
+                "Name": "\u003cPATH\u003e",
+                "kind": "argument",
+                "description": "PATH",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cPATH\u003e"
+            ]
+          },
+          "\u003cORGNAME\u003e": {
+            "Name": "\u003cORGNAME\u003e",
+            "kind": "argument",
+            "description": "ORGNAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      }
+    }
+  },
+  "plan": {
+    "Name": "plan",
+    "kind": "subcommand",
+    "description": "Commands for getting information about MetaDeploy plans",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "info": {
+        "Name": "info",
+        "kind": "subcommand",
+        "description": "Displays information for a MetaDeploy plan",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for plan info",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--messages": {
+            "Name": "--messages",
+            "kind": "option",
+            "description": "Show only plan messages",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cPLAN_NAME\u003e": {
+            "Name": "\u003cPLAN_NAME\u003e",
+            "kind": "argument",
+            "description": "PLAN_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for plan info",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--messages": {
+            "Name": "--messages",
+            "kind": "option",
+            "description": "Show only plan messages",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cPLAN_NAME\u003e": {
+            "Name": "\u003cPLAN_NAME\u003e",
+            "kind": "argument",
+            "description": "PLAN_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cPLAN_NAME\u003e"
+        ]
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List available plans for the current context",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for plan list",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--json": {
+            "Name": "--json",
+            "kind": "option",
+            "description": "Return the list of plans in JSON format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for plan list",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--json": {
+            "Name": "--json",
+            "kind": "option",
+            "description": "Return the list of plans in JSON format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      }
+    }
+  },
+  "project": {
+    "Name": "project",
+    "kind": "subcommand",
+    "description": "Commands for interacting with project repository configurations",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "dependencies": {
+        "Name": "dependencies",
+        "kind": "subcommand",
+        "description": "Displays the current dependencies for the project. If the dependencies section has references to other github repositories, the repositories are inspected and a static list of dependencies is created",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show this message and exit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--resolution-strategy": {
+            "Name": "--resolution-strategy",
+            "kind": "option",
+            "description": "The resolution strategy to use. Defaults to production",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show this message and exit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--resolution-strategy": {
+            "Name": "--resolution-strategy",
+            "kind": "option",
+            "description": "The resolution strategy to use. Defaults to production",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT\u003e": {
+                "Name": "\u003cTEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT\u003e"
+            ]
+          }
+        }
+      },
+      "info": {
+        "Name": "info",
+        "kind": "subcommand",
+        "description": "Display information about the current project's configuration",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show this message and exit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show this message and exit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "init": {
+        "Name": "init",
+        "kind": "subcommand",
+        "description": "Initialize a new project for use with the cumulusci toolbelt",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show this message and exit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show this message and exit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      }
+    }
+  },
+  "robot": {
+    "Name": "robot",
+    "kind": "subcommand",
+    "description": "Commands for working with Robot Framework",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "install_playwright": {
+        "Name": "install_playwright",
+        "kind": "subcommand",
+        "description": "Install libraries necessary to use playwright with robot framework",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--dry_run": {
+            "Name": "--dry_run",
+            "kind": "option",
+            "description": "Dry run",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for install_playwright",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-n": {
+            "Name": "-n",
+            "kind": "option",
+            "description": "Dry run",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--dry_run": {
+            "Name": "--dry_run",
+            "kind": "option",
+            "description": "Dry run",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for install_playwright",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-n": {
+            "Name": "-n",
+            "kind": "option",
+            "description": "Dry run",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "uninstall_playwright": {
+        "Name": "uninstall_playwright",
+        "kind": "subcommand",
+        "description": "Uninstalls the robotframework-browser package and node modules",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for uninstall_playwright",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for uninstall_playwright",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      }
+    }
+  },
+  "service": {
+    "Name": "service",
+    "kind": "subcommand",
+    "description": "Commands for connecting services to the keychain",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "connect": {
+        "Name": "connect",
+        "kind": "subcommand",
+        "description": "Connect an external service to CumulusCI",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "connected_app": {
+            "Name": "connected_app",
+            "kind": "subcommand",
+            "description": "Connect a Connected App service to CumulusCI",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "--callback_url": {
+                "Name": "--callback_url",
+                "kind": "option",
+                "description": "Callback URL configured on the Connected App",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003ccallback_url\u003e": {
+                    "Name": "\u003ccallback_url\u003e",
+                    "kind": "argument",
+                    "description": "callback_url",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003ccallback_url\u003e": {
+                    "Name": "\u003ccallback_url\u003e",
+                    "kind": "argument",
+                    "description": "callback_url",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003ccallback_url\u003e"
+                ]
+              },
+              "--client_id": {
+                "Name": "--client_id",
+                "kind": "option",
+                "description": "Client ID/Consumer Key from the Connected App",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cclient_id\u003e": {
+                    "Name": "\u003cclient_id\u003e",
+                    "kind": "argument",
+                    "description": "client_id",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cclient_id\u003e": {
+                    "Name": "\u003cclient_id\u003e",
+                    "kind": "argument",
+                    "description": "client_id",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cclient_id\u003e"
+                ]
+              },
+              "--client_secret": {
+                "Name": "--client_secret",
+                "kind": "option",
+                "description": "Client Secret/Consumer Secret from the Connected App",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cclient_secret\u003e": {
+                    "Name": "\u003cclient_secret\u003e",
+                    "kind": "argument",
+                    "description": "client_secret",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cclient_secret\u003e": {
+                    "Name": "\u003cclient_secret\u003e",
+                    "kind": "argument",
+                    "description": "client_secret",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cclient_secret\u003e"
+                ]
+              },
+              "--default": {
+                "Name": "--default",
+                "kind": "option",
+                "description": "Set this service as the global default",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--help": {
+                "Name": "--help",
+                "kind": "option",
+                "description": "Help for cci service connect connected_app",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--login_url": {
+                "Name": "--login_url",
+                "kind": "option",
+                "description": "Default Salesforce Login URL to be used with this Connected App",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003clogin_url\u003e": {
+                    "Name": "\u003clogin_url\u003e",
+                    "kind": "argument",
+                    "description": "login_url",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003clogin_url\u003e": {
+                    "Name": "\u003clogin_url\u003e",
+                    "kind": "argument",
+                    "description": "login_url",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003clogin_url\u003e"
+                ]
+              },
+              "\u003cSERVICE_NAME\u003e": {
+                "Name": "\u003cSERVICE_NAME\u003e",
+                "kind": "argument",
+                "description": "SERVICE_NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "--callback_url": {
+                "Name": "--callback_url",
+                "kind": "option",
+                "description": "Callback URL configured on the Connected App",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003ccallback_url\u003e": {
+                    "Name": "\u003ccallback_url\u003e",
+                    "kind": "argument",
+                    "description": "callback_url",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003ccallback_url\u003e": {
+                    "Name": "\u003ccallback_url\u003e",
+                    "kind": "argument",
+                    "description": "callback_url",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003ccallback_url\u003e"
+                ]
+              },
+              "--client_id": {
+                "Name": "--client_id",
+                "kind": "option",
+                "description": "Client ID/Consumer Key from the Connected App",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cclient_id\u003e": {
+                    "Name": "\u003cclient_id\u003e",
+                    "kind": "argument",
+                    "description": "client_id",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cclient_id\u003e": {
+                    "Name": "\u003cclient_id\u003e",
+                    "kind": "argument",
+                    "description": "client_id",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cclient_id\u003e"
+                ]
+              },
+              "--client_secret": {
+                "Name": "--client_secret",
+                "kind": "option",
+                "description": "Client Secret/Consumer Secret from the Connected App",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cclient_secret\u003e": {
+                    "Name": "\u003cclient_secret\u003e",
+                    "kind": "argument",
+                    "description": "client_secret",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cclient_secret\u003e": {
+                    "Name": "\u003cclient_secret\u003e",
+                    "kind": "argument",
+                    "description": "client_secret",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cclient_secret\u003e"
+                ]
+              },
+              "--default": {
+                "Name": "--default",
+                "kind": "option",
+                "description": "Set this service as the global default",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--help": {
+                "Name": "--help",
+                "kind": "option",
+                "description": "Help for cci service connect connected_app",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--login_url": {
+                "Name": "--login_url",
+                "kind": "option",
+                "description": "Default Salesforce Login URL to be used with this Connected App",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003clogin_url\u003e": {
+                    "Name": "\u003clogin_url\u003e",
+                    "kind": "argument",
+                    "description": "login_url",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003clogin_url\u003e": {
+                    "Name": "\u003clogin_url\u003e",
+                    "kind": "argument",
+                    "description": "login_url",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003clogin_url\u003e"
+                ]
+              },
+              "\u003cSERVICE_NAME\u003e": {
+                "Name": "\u003cSERVICE_NAME\u003e",
+                "kind": "argument",
+                "description": "SERVICE_NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "devhub": {
+            "Name": "devhub",
+            "kind": "subcommand",
+            "description": "Connect a DevHub service to CumulusCI",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "--default": {
+                "Name": "--default",
+                "kind": "option",
+                "description": "Set this service as the global default",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--help": {
+                "Name": "--help",
+                "kind": "option",
+                "description": "Show this message and exit",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--username": {
+                "Name": "--username",
+                "kind": "option",
+                "description": "Username or alias of the SFDX org to use as a Dev Hub",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "\u003cSERVICE_NAME\u003e": {
+                "Name": "\u003cSERVICE_NAME\u003e",
+                "kind": "argument",
+                "description": "SERVICE_NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "--default": {
+                "Name": "--default",
+                "kind": "option",
+                "description": "Set this service as the global default",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--help": {
+                "Name": "--help",
+                "kind": "option",
+                "description": "Show this message and exit",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--username": {
+                "Name": "--username",
+                "kind": "option",
+                "description": "Username or alias of the SFDX org to use as a Dev Hub",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "\u003cSERVICE_NAME\u003e": {
+                "Name": "\u003cSERVICE_NAME\u003e",
+                "kind": "argument",
+                "description": "SERVICE_NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "github": {
+            "Name": "github",
+            "kind": "subcommand",
+            "description": "Connect a GitHub service to CumulusCI",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "--default": {
+                "Name": "--default",
+                "kind": "option",
+                "description": "Set this service as the global default",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--email": {
+                "Name": "--email",
+                "kind": "option",
+                "description": "The email address to used by Github tasks when an operation requires an email address",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "--help": {
+                "Name": "--help",
+                "kind": "option",
+                "description": "Show this message and exit",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--token": {
+                "Name": "--token",
+                "kind": "option",
+                "description": "Personal Access Token for GitHub. Leave blank to log in via browser",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "--username": {
+                "Name": "--username",
+                "kind": "option",
+                "description": "The Github username to use for tasks",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "\u003cSERVICE_NAME\u003e": {
+                "Name": "\u003cSERVICE_NAME\u003e",
+                "kind": "argument",
+                "description": "SERVICE_NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "--default": {
+                "Name": "--default",
+                "kind": "option",
+                "description": "Set this service as the global default",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--email": {
+                "Name": "--email",
+                "kind": "option",
+                "description": "The email address to used by Github tasks when an operation requires an email address",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "--help": {
+                "Name": "--help",
+                "kind": "option",
+                "description": "Show this message and exit",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--token": {
+                "Name": "--token",
+                "kind": "option",
+                "description": "Personal Access Token for GitHub. Leave blank to log in via browser",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "--username": {
+                "Name": "--username",
+                "kind": "option",
+                "description": "The Github username to use for tasks",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "\u003cSERVICE_NAME\u003e": {
+                "Name": "\u003cSERVICE_NAME\u003e",
+                "kind": "argument",
+                "description": "SERVICE_NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "github_enterprise": {
+            "Name": "github_enterprise",
+            "kind": "subcommand",
+            "description": "Connect a GitHub Enterprise service to CumulusCI",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "--default": {
+                "Name": "--default",
+                "kind": "option",
+                "description": "Set this service as the global default",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--email": {
+                "Name": "--email",
+                "kind": "option",
+                "description": "The email address to used by GitHub tasks when an operation requires an email address",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "--help": {
+                "Name": "--help",
+                "kind": "option",
+                "description": "Show this message and exit",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--server_domain": {
+                "Name": "--server_domain",
+                "kind": "option",
+                "description": "GitHub Enterprise domain (Example: git.ent.domain.com)",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "--token": {
+                "Name": "--token",
+                "kind": "option",
+                "description": "Personal Access Token",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "--username": {
+                "Name": "--username",
+                "kind": "option",
+                "description": "The GitHub Enterprise username to use for tasks",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "\u003cSERVICE_NAME\u003e": {
+                "Name": "\u003cSERVICE_NAME\u003e",
+                "kind": "argument",
+                "description": "SERVICE_NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "--default": {
+                "Name": "--default",
+                "kind": "option",
+                "description": "Set this service as the global default",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--email": {
+                "Name": "--email",
+                "kind": "option",
+                "description": "The email address to used by GitHub tasks when an operation requires an email address",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "--help": {
+                "Name": "--help",
+                "kind": "option",
+                "description": "Show this message and exit",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--server_domain": {
+                "Name": "--server_domain",
+                "kind": "option",
+                "description": "GitHub Enterprise domain (Example: git.ent.domain.com)",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "--token": {
+                "Name": "--token",
+                "kind": "option",
+                "description": "Personal Access Token",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "--username": {
+                "Name": "--username",
+                "kind": "option",
+                "description": "The GitHub Enterprise username to use for tasks",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "\u003cSERVICE_NAME\u003e": {
+                "Name": "\u003cSERVICE_NAME\u003e",
+                "kind": "argument",
+                "description": "SERVICE_NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "marketing_cloud": {
+            "Name": "marketing_cloud",
+            "kind": "subcommand",
+            "description": "Connect a Marketing Cloud service to CumulusCI",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "--default": {
+                "Name": "--default",
+                "kind": "option",
+                "description": "Set this service as the global default",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--help": {
+                "Name": "--help",
+                "kind": "option",
+                "description": "Show this message and exit",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--oauth2_client": {
+                "Name": "--oauth2_client",
+                "kind": "option",
+                "description": "The name of the oauth2_client service with which to establish a connection to Marketing Cloud",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "\u003cSERVICE_NAME\u003e": {
+                "Name": "\u003cSERVICE_NAME\u003e",
+                "kind": "argument",
+                "description": "SERVICE_NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "--default": {
+                "Name": "--default",
+                "kind": "option",
+                "description": "Set this service as the global default",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--help": {
+                "Name": "--help",
+                "kind": "option",
+                "description": "Show this message and exit",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--oauth2_client": {
+                "Name": "--oauth2_client",
+                "kind": "option",
+                "description": "The name of the oauth2_client service with which to establish a connection to Marketing Cloud",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "\u003cSERVICE_NAME\u003e": {
+                "Name": "\u003cSERVICE_NAME\u003e",
+                "kind": "argument",
+                "description": "SERVICE_NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "metaci": {
+            "Name": "metaci",
+            "kind": "subcommand",
+            "description": "Connect a MetaCI service to CumulusCI",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "--app_name": {
+                "Name": "--app_name",
+                "kind": "option",
+                "description": "The Heroku app name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "--default": {
+                "Name": "--default",
+                "kind": "option",
+                "description": "Set this service as the global default",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--help": {
+                "Name": "--help",
+                "kind": "option",
+                "description": "Show this message and exit",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--token": {
+                "Name": "--token",
+                "kind": "option",
+                "description": "Your API token to the MetaCI site (get from SITE_URL/api/token)",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "--url": {
+                "Name": "--url",
+                "kind": "option",
+                "description": "The main url to the MetaCI site",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "\u003cSERVICE_NAME\u003e": {
+                "Name": "\u003cSERVICE_NAME\u003e",
+                "kind": "argument",
+                "description": "SERVICE_NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "--app_name": {
+                "Name": "--app_name",
+                "kind": "option",
+                "description": "The Heroku app name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "--default": {
+                "Name": "--default",
+                "kind": "option",
+                "description": "Set this service as the global default",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--help": {
+                "Name": "--help",
+                "kind": "option",
+                "description": "Show this message and exit",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--token": {
+                "Name": "--token",
+                "kind": "option",
+                "description": "Your API token to the MetaCI site (get from SITE_URL/api/token)",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "--url": {
+                "Name": "--url",
+                "kind": "option",
+                "description": "The main url to the MetaCI site",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "\u003cSERVICE_NAME\u003e": {
+                "Name": "\u003cSERVICE_NAME\u003e",
+                "kind": "argument",
+                "description": "SERVICE_NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "metadeploy": {
+            "Name": "metadeploy",
+            "kind": "subcommand",
+            "description": "Connect a MetaDeploy service to CumulusCI",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "--default": {
+                "Name": "--default",
+                "kind": "option",
+                "description": "Set this service as the global default",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--help": {
+                "Name": "--help",
+                "kind": "option",
+                "description": "Show this message and exit",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--token": {
+                "Name": "--token",
+                "kind": "option",
+                "description": "Your API token to the MetaDeploy site (get from SITE_URL/admin/authtoken/token)",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "--url": {
+                "Name": "--url",
+                "kind": "option",
+                "description": "The main url for your MetaDeploy instance",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "\u003cSERVICE_NAME\u003e": {
+                "Name": "\u003cSERVICE_NAME\u003e",
+                "kind": "argument",
+                "description": "SERVICE_NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "--default": {
+                "Name": "--default",
+                "kind": "option",
+                "description": "Set this service as the global default",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--help": {
+                "Name": "--help",
+                "kind": "option",
+                "description": "Show this message and exit",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--token": {
+                "Name": "--token",
+                "kind": "option",
+                "description": "Your API token to the MetaDeploy site (get from SITE_URL/admin/authtoken/token)",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "--url": {
+                "Name": "--url",
+                "kind": "option",
+                "description": "The main url for your MetaDeploy instance",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "\u003cSERVICE_NAME\u003e": {
+                "Name": "\u003cSERVICE_NAME\u003e",
+                "kind": "argument",
+                "description": "SERVICE_NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "oauth2_client": {
+            "Name": "oauth2_client",
+            "kind": "subcommand",
+            "description": "Connect an OAuth2 Client service to CumulusCI",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "--auth_uri": {
+                "Name": "--auth_uri",
+                "kind": "option",
+                "description": "The URI for where users are directed to login",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "--callback_url": {
+                "Name": "--callback_url",
+                "kind": "option",
+                "description": "The URL that the auth server will callback to after authentication of the user",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "--client_id": {
+                "Name": "--client_id",
+                "kind": "option",
+                "description": "The client Id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "--client_secret": {
+                "Name": "--client_secret",
+                "kind": "option",
+                "description": "The client secret",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "--default": {
+                "Name": "--default",
+                "kind": "option",
+                "description": "Set this service as the global default",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--help": {
+                "Name": "--help",
+                "kind": "option",
+                "description": "Show this message and exit",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--token_uri": {
+                "Name": "--token_uri",
+                "kind": "option",
+                "description": "The URI for where we request an access token",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "\u003cSERVICE_NAME\u003e": {
+                "Name": "\u003cSERVICE_NAME\u003e",
+                "kind": "argument",
+                "description": "SERVICE_NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "--auth_uri": {
+                "Name": "--auth_uri",
+                "kind": "option",
+                "description": "The URI for where users are directed to login",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "--callback_url": {
+                "Name": "--callback_url",
+                "kind": "option",
+                "description": "The URL that the auth server will callback to after authentication of the user",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "--client_id": {
+                "Name": "--client_id",
+                "kind": "option",
+                "description": "The client Id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "--client_secret": {
+                "Name": "--client_secret",
+                "kind": "option",
+                "description": "The client secret",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "--default": {
+                "Name": "--default",
+                "kind": "option",
+                "description": "Set this service as the global default",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--help": {
+                "Name": "--help",
+                "kind": "option",
+                "description": "Show this message and exit",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--token_uri": {
+                "Name": "--token_uri",
+                "kind": "option",
+                "description": "The URI for where we request an access token",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cTEXT\u003e": {
+                    "Name": "\u003cTEXT\u003e",
+                    "kind": "argument",
+                    "description": "TEXT",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cTEXT\u003e"
+                ]
+              },
+              "\u003cSERVICE_NAME\u003e": {
+                "Name": "\u003cSERVICE_NAME\u003e",
+                "kind": "argument",
+                "description": "SERVICE_NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          }
+        }
+      },
+      "default": {
+        "Name": "default",
+        "kind": "subcommand",
+        "description": "Set the default service for a given service type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for cci service default",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--project": {
+            "Name": "--project",
+            "kind": "option",
+            "description": "Sets the service as the default for the current project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cSERVICE_NAME\u003e": {
+            "Name": "\u003cSERVICE_NAME\u003e",
+            "kind": "argument",
+            "description": "SERVICE_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cSERVICE_TYPE\u003e": {
+            "Name": "\u003cSERVICE_TYPE\u003e",
+            "kind": "argument",
+            "description": "SERVICE_TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for cci service default",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--project": {
+            "Name": "--project",
+            "kind": "option",
+            "description": "Sets the service as the default for the current project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cSERVICE_NAME\u003e": {
+            "Name": "\u003cSERVICE_NAME\u003e",
+            "kind": "argument",
+            "description": "SERVICE_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cSERVICE_TYPE\u003e": {
+            "Name": "\u003cSERVICE_TYPE\u003e",
+            "kind": "argument",
+            "description": "SERVICE_TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSERVICE_TYPE\u003e",
+          "\u003cSERVICE_NAME\u003e"
+        ]
+      },
+      "info": {
+        "Name": "info",
+        "kind": "subcommand",
+        "description": "Show the details of a connected service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for cci service info",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--json": {
+            "Name": "--json",
+            "kind": "option",
+            "description": "Print a json string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cSERVICE_NAME\u003e": {
+            "Name": "\u003cSERVICE_NAME\u003e",
+            "kind": "argument",
+            "description": "SERVICE_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cSERVICE_TYPE\u003e": {
+            "Name": "\u003cSERVICE_TYPE\u003e",
+            "kind": "argument",
+            "description": "SERVICE_TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for cci service info",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--json": {
+            "Name": "--json",
+            "kind": "option",
+            "description": "Print a json string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cSERVICE_NAME\u003e": {
+            "Name": "\u003cSERVICE_NAME\u003e",
+            "kind": "argument",
+            "description": "SERVICE_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cSERVICE_TYPE\u003e": {
+            "Name": "\u003cSERVICE_TYPE\u003e",
+            "kind": "argument",
+            "description": "SERVICE_TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSERVICE_TYPE\u003e"
+        ]
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List services available for configuration and use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for cci service list",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--json": {
+            "Name": "--json",
+            "kind": "option",
+            "description": "Print a json string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--plain": {
+            "Name": "--plain",
+            "kind": "option",
+            "description": "Print the table using plain ascii",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for cci service list",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--json": {
+            "Name": "--json",
+            "kind": "option",
+            "description": "Print a json string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--plain": {
+            "Name": "--plain",
+            "kind": "option",
+            "description": "Print the table using plain ascii",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "remove": {
+        "Name": "remove",
+        "kind": "subcommand",
+        "description": "Remove a service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for cci service remove",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cSERVICE_NAME\u003e": {
+            "Name": "\u003cSERVICE_NAME\u003e",
+            "kind": "argument",
+            "description": "SERVICE_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cSERVICE_TYPE\u003e": {
+            "Name": "\u003cSERVICE_TYPE\u003e",
+            "kind": "argument",
+            "description": "SERVICE_TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for cci service remove",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cSERVICE_NAME\u003e": {
+            "Name": "\u003cSERVICE_NAME\u003e",
+            "kind": "argument",
+            "description": "SERVICE_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cSERVICE_TYPE\u003e": {
+            "Name": "\u003cSERVICE_TYPE\u003e",
+            "kind": "argument",
+            "description": "SERVICE_TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSERVICE_TYPE\u003e",
+          "\u003cSERVICE_NAME\u003e"
+        ]
+      },
+      "rename": {
+        "Name": "rename",
+        "kind": "subcommand",
+        "description": "Rename a service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for cci service remove",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cNEW_NAME\u003e": {
+            "Name": "\u003cNEW_NAME\u003e",
+            "kind": "argument",
+            "description": "NEW_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cSERVICE_NAME\u003e": {
+            "Name": "\u003cSERVICE_NAME\u003e",
+            "kind": "argument",
+            "description": "SERVICE_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cSERVICE_TYPE\u003e": {
+            "Name": "\u003cSERVICE_TYPE\u003e",
+            "kind": "argument",
+            "description": "SERVICE_TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for cci service remove",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cNEW_NAME\u003e": {
+            "Name": "\u003cNEW_NAME\u003e",
+            "kind": "argument",
+            "description": "NEW_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cSERVICE_NAME\u003e": {
+            "Name": "\u003cSERVICE_NAME\u003e",
+            "kind": "argument",
+            "description": "SERVICE_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cSERVICE_TYPE\u003e": {
+            "Name": "\u003cSERVICE_TYPE\u003e",
+            "kind": "argument",
+            "description": "SERVICE_TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSERVICE_TYPE\u003e",
+          "\u003cSERVICE_NAME\u003e",
+          "\u003cNEW_NAME\u003e"
+        ]
+      },
+      "update": {
+        "Name": "update",
+        "kind": "subcommand",
+        "description": "Allow users to update attribute values of a particular service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--attribute": {
+            "Name": "--attribute",
+            "kind": "option",
+            "description": "Provide values to update the service with directly. Using `--attribute foo var` will set the 'foo' attribute to a value of 'bar' on the specified service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT TEXT\u003e": {
+                "Name": "\u003cTEXT TEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT TEXT\u003e": {
+                "Name": "\u003cTEXT TEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT TEXT\u003e"
+            ]
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for cci service remove",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-s": {
+            "Name": "-s",
+            "kind": "option",
+            "description": "Provide values to update the service with directly. Using `--attribute foo var` will set the 'foo' attribute to a value of 'bar' on the specified service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT TEXT\u003e": {
+                "Name": "\u003cTEXT TEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT TEXT\u003e": {
+                "Name": "\u003cTEXT TEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT TEXT\u003e"
+            ]
+          },
+          "\u003cSERVICE_NAME\u003e": {
+            "Name": "\u003cSERVICE_NAME\u003e",
+            "kind": "argument",
+            "description": "SERVICE_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cSERVICE_TYPE\u003e": {
+            "Name": "\u003cSERVICE_TYPE\u003e",
+            "kind": "argument",
+            "description": "SERVICE_TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--attribute": {
+            "Name": "--attribute",
+            "kind": "option",
+            "description": "Provide values to update the service with directly. Using `--attribute foo var` will set the 'foo' attribute to a value of 'bar' on the specified service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT TEXT\u003e": {
+                "Name": "\u003cTEXT TEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT TEXT\u003e": {
+                "Name": "\u003cTEXT TEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT TEXT\u003e"
+            ]
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for cci service remove",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-s": {
+            "Name": "-s",
+            "kind": "option",
+            "description": "Provide values to update the service with directly. Using `--attribute foo var` will set the 'foo' attribute to a value of 'bar' on the specified service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTEXT TEXT\u003e": {
+                "Name": "\u003cTEXT TEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTEXT TEXT\u003e": {
+                "Name": "\u003cTEXT TEXT\u003e",
+                "kind": "argument",
+                "description": "TEXT TEXT",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTEXT TEXT\u003e"
+            ]
+          },
+          "\u003cSERVICE_NAME\u003e": {
+            "Name": "\u003cSERVICE_NAME\u003e",
+            "kind": "argument",
+            "description": "SERVICE_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cSERVICE_TYPE\u003e": {
+            "Name": "\u003cSERVICE_TYPE\u003e",
+            "kind": "argument",
+            "description": "SERVICE_TYPE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSERVICE_TYPE\u003e",
+          "\u003cSERVICE_NAME\u003e"
+        ]
+      }
+    }
+  },
+  "shell": {
+    "Name": "shell",
+    "kind": "subcommand",
+    "description": "Drop into a Python shell",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show this message and exit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--python": {
+        "Name": "--python",
+        "kind": "option",
+        "description": "Python code to run directly",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTEXT\u003e": {
+            "Name": "\u003cTEXT\u003e",
+            "kind": "argument",
+            "description": "TEXT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTEXT\u003e": {
+            "Name": "\u003cTEXT\u003e",
+            "kind": "argument",
+            "description": "TEXT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTEXT\u003e"
+        ]
+      },
+      "--script": {
+        "Name": "--script",
+        "kind": "option",
+        "description": "Path to a script to run",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cPATH\u003e": {
+            "Name": "\u003cPATH\u003e",
+            "kind": "argument",
+            "description": "PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cPATH\u003e": {
+            "Name": "\u003cPATH\u003e",
+            "kind": "argument",
+            "description": "PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cPATH\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show this message and exit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--python": {
+        "Name": "--python",
+        "kind": "option",
+        "description": "Python code to run directly",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTEXT\u003e": {
+            "Name": "\u003cTEXT\u003e",
+            "kind": "argument",
+            "description": "TEXT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTEXT\u003e": {
+            "Name": "\u003cTEXT\u003e",
+            "kind": "argument",
+            "description": "TEXT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTEXT\u003e"
+        ]
+      },
+      "--script": {
+        "Name": "--script",
+        "kind": "option",
+        "description": "Path to a script to run",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cPATH\u003e": {
+            "Name": "\u003cPATH\u003e",
+            "kind": "argument",
+            "description": "PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cPATH\u003e": {
+            "Name": "\u003cPATH\u003e",
+            "kind": "argument",
+            "description": "PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cPATH\u003e"
+        ]
+      }
+    }
+  },
+  "task": {
+    "Name": "task",
+    "kind": "subcommand",
+    "description": "Commands for finding and running tasks for a project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show this message and exit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "doc": {
+        "Name": "doc",
+        "kind": "subcommand",
+        "description": "Exports RST format documentation for all tasks",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "info": {
+        "Name": "info",
+        "kind": "subcommand",
+        "description": "Displays information for a task",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTASK_NAME\u003e": {
+            "Name": "\u003cTASK_NAME\u003e",
+            "kind": "argument",
+            "description": "TASK_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTASK_NAME\u003e": {
+            "Name": "\u003cTASK_NAME\u003e",
+            "kind": "argument",
+            "description": "TASK_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTASK_NAME\u003e"
+        ]
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List available tasks for the current context",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "run": {
+        "Name": "run",
+        "kind": "subcommand",
+        "description": "Runs a task",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTASK_NAME\u003e": {
+            "Name": "\u003cTASK_NAME\u003e",
+            "kind": "argument",
+            "description": "TASK_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTASK_NAME\u003e": {
+            "Name": "\u003cTASK_NAME\u003e",
+            "kind": "argument",
+            "description": "TASK_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTASK_NAME\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show this message and exit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "version": {
+    "Name": "version",
+    "kind": "subcommand",
+    "description": "Print the current version of CumulusCI",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show this message and exit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show this message and exit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  }
+}

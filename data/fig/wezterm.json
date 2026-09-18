@@ -1,0 +1,3500 @@
+{
+  "--config": {
+    "Name": "--config",
+    "kind": "option",
+    "description": "Override specific configuration values",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname=value\u003e": {
+        "Name": "\u003cname=value\u003e",
+        "kind": "argument",
+        "description": "name=value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname=value\u003e": {
+        "Name": "\u003cname=value\u003e",
+        "kind": "argument",
+        "description": "name=value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--config-file": {
+    "Name": "--config-file",
+    "kind": "option",
+    "description": "Specify the configuration file to use, overrides the normal configuration file resolution",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cconfig-file\u003e": {
+        "Name": "\u003cconfig-file\u003e",
+        "kind": "argument",
+        "description": "config-file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cconfig-file\u003e": {
+        "Name": "\u003cconfig-file\u003e",
+        "kind": "argument",
+        "description": "config-file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Print help information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Print version information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-V": {
+    "Name": "-V",
+    "kind": "option",
+    "description": "Print version information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Print help information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-n": {
+    "Name": "-n",
+    "kind": "option",
+    "description": "Skip loading wezterm.lua",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "cli": {
+    "Name": "cli",
+    "kind": "subcommand",
+    "description": "Interact with experimental mux server",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--class": {
+        "Name": "--class",
+        "kind": "option",
+        "description": "When connecting to a gui instance, if you started the gui with `--class SOMETHING`, you should also pass that same value here in order for the client to find the correct gui instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cclass\u003e": {
+            "Name": "\u003cclass\u003e",
+            "kind": "argument",
+            "description": "class",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cclass\u003e": {
+            "Name": "\u003cclass\u003e",
+            "kind": "argument",
+            "description": "class",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-auto-start": {
+        "Name": "--no-auto-start",
+        "kind": "option",
+        "description": "Don't automatically start the server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--prefer-mux": {
+        "Name": "--prefer-mux",
+        "kind": "option",
+        "description": "Prefer connecting to a background mux server. The default is to prefer connecting to a running wezterm gui instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "help": {
+        "Name": "help",
+        "kind": "subcommand",
+        "description": "Print this message or the help of the given subcommand(s)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csubcommand\u003e": {
+            "Name": "\u003csubcommand\u003e",
+            "kind": "argument",
+            "description": "subcommand",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csubcommand\u003e": {
+            "Name": "\u003csubcommand\u003e",
+            "kind": "argument",
+            "description": "subcommand",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List windows, tabs and panes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--format": {
+            "Name": "--format",
+            "kind": "option",
+            "description": "Controls the output format. \"table\" and \"json\" are possible formats",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cformat\u003e": {
+                "Name": "\u003cformat\u003e",
+                "kind": "argument",
+                "description": "format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cformat\u003e": {
+                "Name": "\u003cformat\u003e",
+                "kind": "argument",
+                "description": "format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--format": {
+            "Name": "--format",
+            "kind": "option",
+            "description": "Controls the output format. \"table\" and \"json\" are possible formats",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cformat\u003e": {
+                "Name": "\u003cformat\u003e",
+                "kind": "argument",
+                "description": "format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cformat\u003e": {
+                "Name": "\u003cformat\u003e",
+                "kind": "argument",
+                "description": "format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "list-clients": {
+        "Name": "list-clients",
+        "kind": "subcommand",
+        "description": "List clients",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--format": {
+            "Name": "--format",
+            "kind": "option",
+            "description": "Controls the output format. \"table\" and \"json\" are possible formats",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cformat\u003e": {
+                "Name": "\u003cformat\u003e",
+                "kind": "argument",
+                "description": "format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cformat\u003e": {
+                "Name": "\u003cformat\u003e",
+                "kind": "argument",
+                "description": "format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--format": {
+            "Name": "--format",
+            "kind": "option",
+            "description": "Controls the output format. \"table\" and \"json\" are possible formats",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cformat\u003e": {
+                "Name": "\u003cformat\u003e",
+                "kind": "argument",
+                "description": "format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cformat\u003e": {
+                "Name": "\u003cformat\u003e",
+                "kind": "argument",
+                "description": "format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "move-pane-to-new-tab": {
+        "Name": "move-pane-to-new-tab",
+        "kind": "subcommand",
+        "description": "Move a pane into a new tab",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--new-window": {
+            "Name": "--new-window",
+            "kind": "option",
+            "description": "Create tab in a new window, rather than the window currently containing the pane",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--pane-id": {
+            "Name": "--pane-id",
+            "kind": "option",
+            "description": "Specify the pane that should be moved. The default is to use the current pane based on the environment variable WEZTERM_PANE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpane-id\u003e": {
+                "Name": "\u003cpane-id\u003e",
+                "kind": "argument",
+                "description": "pane-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpane-id\u003e": {
+                "Name": "\u003cpane-id\u003e",
+                "kind": "argument",
+                "description": "pane-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "--window-id": {
+            "Name": "--window-id",
+            "kind": "option",
+            "description": "Specify the window into which the new tab will be created. If omitted, the window associated with the current pane is used",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cwindow-id\u003e": {
+                "Name": "\u003cwindow-id\u003e",
+                "kind": "argument",
+                "description": "window-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cwindow-id\u003e": {
+                "Name": "\u003cwindow-id\u003e",
+                "kind": "argument",
+                "description": "window-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "--workspace": {
+            "Name": "--workspace",
+            "kind": "option",
+            "description": "If creating a new window, override the default workspace name with the provided name.  The default name is \"default\"",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cworkspace\u003e": {
+                "Name": "\u003cworkspace\u003e",
+                "kind": "argument",
+                "description": "workspace",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cworkspace\u003e": {
+                "Name": "\u003cworkspace\u003e",
+                "kind": "argument",
+                "description": "workspace",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--new-window": {
+            "Name": "--new-window",
+            "kind": "option",
+            "description": "Create tab in a new window, rather than the window currently containing the pane",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--pane-id": {
+            "Name": "--pane-id",
+            "kind": "option",
+            "description": "Specify the pane that should be moved. The default is to use the current pane based on the environment variable WEZTERM_PANE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpane-id\u003e": {
+                "Name": "\u003cpane-id\u003e",
+                "kind": "argument",
+                "description": "pane-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpane-id\u003e": {
+                "Name": "\u003cpane-id\u003e",
+                "kind": "argument",
+                "description": "pane-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "--window-id": {
+            "Name": "--window-id",
+            "kind": "option",
+            "description": "Specify the window into which the new tab will be created. If omitted, the window associated with the current pane is used",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cwindow-id\u003e": {
+                "Name": "\u003cwindow-id\u003e",
+                "kind": "argument",
+                "description": "window-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cwindow-id\u003e": {
+                "Name": "\u003cwindow-id\u003e",
+                "kind": "argument",
+                "description": "window-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "--workspace": {
+            "Name": "--workspace",
+            "kind": "option",
+            "description": "If creating a new window, override the default workspace name with the provided name.  The default name is \"default\"",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cworkspace\u003e": {
+                "Name": "\u003cworkspace\u003e",
+                "kind": "argument",
+                "description": "workspace",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cworkspace\u003e": {
+                "Name": "\u003cworkspace\u003e",
+                "kind": "argument",
+                "description": "workspace",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "proxy": {
+        "Name": "proxy",
+        "kind": "subcommand",
+        "description": "Start rpc proxy pipe",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "send-text": {
+        "Name": "send-text",
+        "kind": "subcommand",
+        "description": "Send text to a pane as though it were pasted. If bracketed paste mode is enabled in the pane, then the text will be sent as a bracketed paste",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--no-paste": {
+            "Name": "--no-paste",
+            "kind": "option",
+            "description": "Send the text directly, rather than as a bracketed paste",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--pane-id": {
+            "Name": "--pane-id",
+            "kind": "option",
+            "description": "Specify the target pane. The default is to use the current pane based on the environment variable WEZTERM_PANE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpane-id\u003e": {
+                "Name": "\u003cpane-id\u003e",
+                "kind": "argument",
+                "description": "pane-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpane-id\u003e": {
+                "Name": "\u003cpane-id\u003e",
+                "kind": "argument",
+                "description": "pane-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003ctext\u003e": {
+            "Name": "\u003ctext\u003e",
+            "kind": "argument",
+            "description": "text",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--no-paste": {
+            "Name": "--no-paste",
+            "kind": "option",
+            "description": "Send the text directly, rather than as a bracketed paste",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--pane-id": {
+            "Name": "--pane-id",
+            "kind": "option",
+            "description": "Specify the target pane. The default is to use the current pane based on the environment variable WEZTERM_PANE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpane-id\u003e": {
+                "Name": "\u003cpane-id\u003e",
+                "kind": "argument",
+                "description": "pane-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpane-id\u003e": {
+                "Name": "\u003cpane-id\u003e",
+                "kind": "argument",
+                "description": "pane-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003ctext\u003e": {
+            "Name": "\u003ctext\u003e",
+            "kind": "argument",
+            "description": "text",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "spawn": {
+        "Name": "spawn",
+        "kind": "subcommand",
+        "description": "Spawn a command into a new window or tab. Outputs the pane-id for the newly created pane on success",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--cwd": {
+            "Name": "--cwd",
+            "kind": "option",
+            "description": "Specify the current working directory for the initially spawned program",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccwd\u003e": {
+                "Name": "\u003ccwd\u003e",
+                "kind": "argument",
+                "description": "cwd",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccwd\u003e": {
+                "Name": "\u003ccwd\u003e",
+                "kind": "argument",
+                "description": "cwd",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "--domain-name": {
+            "Name": "--domain-name",
+            "kind": "option",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cdomain-name\u003e": {
+                "Name": "\u003cdomain-name\u003e",
+                "kind": "argument",
+                "description": "domain-name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cdomain-name\u003e": {
+                "Name": "\u003cdomain-name\u003e",
+                "kind": "argument",
+                "description": "domain-name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--new-window": {
+            "Name": "--new-window",
+            "kind": "option",
+            "description": "Spawn into a new window, rather than a new tab",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--pane-id": {
+            "Name": "--pane-id",
+            "kind": "option",
+            "description": "Specify the current pane. The default is to use the current pane based on the environment variable WEZTERM_PANE. The pane is used to determine the current domain and window",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpane-id\u003e": {
+                "Name": "\u003cpane-id\u003e",
+                "kind": "argument",
+                "description": "pane-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpane-id\u003e": {
+                "Name": "\u003cpane-id\u003e",
+                "kind": "argument",
+                "description": "pane-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "--window-id": {
+            "Name": "--window-id",
+            "kind": "option",
+            "description": "Specify the window into which to spawn a tab. If omitted, the window associated with the current pane is used. Cannot be used with `--workspace` or `--new-window`",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cwindow-id\u003e": {
+                "Name": "\u003cwindow-id\u003e",
+                "kind": "argument",
+                "description": "window-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cwindow-id\u003e": {
+                "Name": "\u003cwindow-id\u003e",
+                "kind": "argument",
+                "description": "window-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "--workspace": {
+            "Name": "--workspace",
+            "kind": "option",
+            "description": "When creating a new window, override the default workspace name with the provided name.  The default name is \"default\"",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cworkspace\u003e": {
+                "Name": "\u003cworkspace\u003e",
+                "kind": "argument",
+                "description": "workspace",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cworkspace\u003e": {
+                "Name": "\u003cworkspace\u003e",
+                "kind": "argument",
+                "description": "workspace",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cprog\u003e": {
+            "Name": "\u003cprog\u003e",
+            "kind": "argument",
+            "description": "prog",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--cwd": {
+            "Name": "--cwd",
+            "kind": "option",
+            "description": "Specify the current working directory for the initially spawned program",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccwd\u003e": {
+                "Name": "\u003ccwd\u003e",
+                "kind": "argument",
+                "description": "cwd",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccwd\u003e": {
+                "Name": "\u003ccwd\u003e",
+                "kind": "argument",
+                "description": "cwd",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "--domain-name": {
+            "Name": "--domain-name",
+            "kind": "option",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cdomain-name\u003e": {
+                "Name": "\u003cdomain-name\u003e",
+                "kind": "argument",
+                "description": "domain-name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cdomain-name\u003e": {
+                "Name": "\u003cdomain-name\u003e",
+                "kind": "argument",
+                "description": "domain-name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--new-window": {
+            "Name": "--new-window",
+            "kind": "option",
+            "description": "Spawn into a new window, rather than a new tab",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--pane-id": {
+            "Name": "--pane-id",
+            "kind": "option",
+            "description": "Specify the current pane. The default is to use the current pane based on the environment variable WEZTERM_PANE. The pane is used to determine the current domain and window",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpane-id\u003e": {
+                "Name": "\u003cpane-id\u003e",
+                "kind": "argument",
+                "description": "pane-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpane-id\u003e": {
+                "Name": "\u003cpane-id\u003e",
+                "kind": "argument",
+                "description": "pane-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "--window-id": {
+            "Name": "--window-id",
+            "kind": "option",
+            "description": "Specify the window into which to spawn a tab. If omitted, the window associated with the current pane is used. Cannot be used with `--workspace` or `--new-window`",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cwindow-id\u003e": {
+                "Name": "\u003cwindow-id\u003e",
+                "kind": "argument",
+                "description": "window-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cwindow-id\u003e": {
+                "Name": "\u003cwindow-id\u003e",
+                "kind": "argument",
+                "description": "window-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "--workspace": {
+            "Name": "--workspace",
+            "kind": "option",
+            "description": "When creating a new window, override the default workspace name with the provided name.  The default name is \"default\"",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cworkspace\u003e": {
+                "Name": "\u003cworkspace\u003e",
+                "kind": "argument",
+                "description": "workspace",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cworkspace\u003e": {
+                "Name": "\u003cworkspace\u003e",
+                "kind": "argument",
+                "description": "workspace",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cprog\u003e": {
+            "Name": "\u003cprog\u003e",
+            "kind": "argument",
+            "description": "prog",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "split-pane": {
+        "Name": "split-pane",
+        "kind": "subcommand",
+        "description": "Split the current pane. Outputs the pane-id for the newly created pane on success",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--bottom": {
+            "Name": "--bottom",
+            "kind": "option",
+            "description": "Split vertically, with the new pane on the bottom",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--cells": {
+            "Name": "--cells",
+            "kind": "option",
+            "description": "The number of cells that the new split should have. If omitted, 50% of the available space is used",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccells\u003e": {
+                "Name": "\u003ccells\u003e",
+                "kind": "argument",
+                "description": "cells",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccells\u003e": {
+                "Name": "\u003ccells\u003e",
+                "kind": "argument",
+                "description": "cells",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "--cwd": {
+            "Name": "--cwd",
+            "kind": "option",
+            "description": "Specify the current working directory for the initially spawned program",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccwd\u003e": {
+                "Name": "\u003ccwd\u003e",
+                "kind": "argument",
+                "description": "cwd",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccwd\u003e": {
+                "Name": "\u003ccwd\u003e",
+                "kind": "argument",
+                "description": "cwd",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--horizontal": {
+            "Name": "--horizontal",
+            "kind": "option",
+            "description": "Equivalent to `--right`. If neither this nor any other direction is specified, the default is equivalent to `--bottom`",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--left": {
+            "Name": "--left",
+            "kind": "option",
+            "description": "Split horizontally, with the new pane on the left",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--move-pane-id": {
+            "Name": "--move-pane-id",
+            "kind": "option",
+            "description": "Instead of spawning a new command, move the specified pane into the newly created split",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cmove-pane-id\u003e": {
+                "Name": "\u003cmove-pane-id\u003e",
+                "kind": "argument",
+                "description": "move-pane-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cmove-pane-id\u003e": {
+                "Name": "\u003cmove-pane-id\u003e",
+                "kind": "argument",
+                "description": "move-pane-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "--pane-id": {
+            "Name": "--pane-id",
+            "kind": "option",
+            "description": "Specify the pane that should be split. The default is to use the current pane based on the environment variable WEZTERM_PANE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpane-id\u003e": {
+                "Name": "\u003cpane-id\u003e",
+                "kind": "argument",
+                "description": "pane-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpane-id\u003e": {
+                "Name": "\u003cpane-id\u003e",
+                "kind": "argument",
+                "description": "pane-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "--percent": {
+            "Name": "--percent",
+            "kind": "option",
+            "description": "Specify the number of cells that the new split should have, expressed as a percentage of the available space",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpercent\u003e": {
+                "Name": "\u003cpercent\u003e",
+                "kind": "argument",
+                "description": "percent",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpercent\u003e": {
+                "Name": "\u003cpercent\u003e",
+                "kind": "argument",
+                "description": "percent",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "--right": {
+            "Name": "--right",
+            "kind": "option",
+            "description": "Split horizontally, with the new pane on the right",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--top": {
+            "Name": "--top",
+            "kind": "option",
+            "description": "Split vertically, with the new pane on the top",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--top-level": {
+            "Name": "--top-level",
+            "kind": "option",
+            "description": "Rather than splitting the active pane, split the entire window",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cprog\u003e": {
+            "Name": "\u003cprog\u003e",
+            "kind": "argument",
+            "description": "prog",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--bottom": {
+            "Name": "--bottom",
+            "kind": "option",
+            "description": "Split vertically, with the new pane on the bottom",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--cells": {
+            "Name": "--cells",
+            "kind": "option",
+            "description": "The number of cells that the new split should have. If omitted, 50% of the available space is used",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccells\u003e": {
+                "Name": "\u003ccells\u003e",
+                "kind": "argument",
+                "description": "cells",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccells\u003e": {
+                "Name": "\u003ccells\u003e",
+                "kind": "argument",
+                "description": "cells",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "--cwd": {
+            "Name": "--cwd",
+            "kind": "option",
+            "description": "Specify the current working directory for the initially spawned program",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccwd\u003e": {
+                "Name": "\u003ccwd\u003e",
+                "kind": "argument",
+                "description": "cwd",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccwd\u003e": {
+                "Name": "\u003ccwd\u003e",
+                "kind": "argument",
+                "description": "cwd",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--horizontal": {
+            "Name": "--horizontal",
+            "kind": "option",
+            "description": "Equivalent to `--right`. If neither this nor any other direction is specified, the default is equivalent to `--bottom`",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--left": {
+            "Name": "--left",
+            "kind": "option",
+            "description": "Split horizontally, with the new pane on the left",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--move-pane-id": {
+            "Name": "--move-pane-id",
+            "kind": "option",
+            "description": "Instead of spawning a new command, move the specified pane into the newly created split",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cmove-pane-id\u003e": {
+                "Name": "\u003cmove-pane-id\u003e",
+                "kind": "argument",
+                "description": "move-pane-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cmove-pane-id\u003e": {
+                "Name": "\u003cmove-pane-id\u003e",
+                "kind": "argument",
+                "description": "move-pane-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "--pane-id": {
+            "Name": "--pane-id",
+            "kind": "option",
+            "description": "Specify the pane that should be split. The default is to use the current pane based on the environment variable WEZTERM_PANE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpane-id\u003e": {
+                "Name": "\u003cpane-id\u003e",
+                "kind": "argument",
+                "description": "pane-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpane-id\u003e": {
+                "Name": "\u003cpane-id\u003e",
+                "kind": "argument",
+                "description": "pane-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "--percent": {
+            "Name": "--percent",
+            "kind": "option",
+            "description": "Specify the number of cells that the new split should have, expressed as a percentage of the available space",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpercent\u003e": {
+                "Name": "\u003cpercent\u003e",
+                "kind": "argument",
+                "description": "percent",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpercent\u003e": {
+                "Name": "\u003cpercent\u003e",
+                "kind": "argument",
+                "description": "percent",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "--right": {
+            "Name": "--right",
+            "kind": "option",
+            "description": "Split horizontally, with the new pane on the right",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--top": {
+            "Name": "--top",
+            "kind": "option",
+            "description": "Split vertically, with the new pane on the top",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--top-level": {
+            "Name": "--top-level",
+            "kind": "option",
+            "description": "Rather than splitting the active pane, split the entire window",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cprog\u003e": {
+            "Name": "\u003cprog\u003e",
+            "kind": "argument",
+            "description": "prog",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "tlscreds": {
+        "Name": "tlscreds",
+        "kind": "subcommand",
+        "description": "Obtain tls credentials",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Print help information",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      }
+    },
+    "options": {
+      "--class": {
+        "Name": "--class",
+        "kind": "option",
+        "description": "When connecting to a gui instance, if you started the gui with `--class SOMETHING`, you should also pass that same value here in order for the client to find the correct gui instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cclass\u003e": {
+            "Name": "\u003cclass\u003e",
+            "kind": "argument",
+            "description": "class",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cclass\u003e": {
+            "Name": "\u003cclass\u003e",
+            "kind": "argument",
+            "description": "class",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-auto-start": {
+        "Name": "--no-auto-start",
+        "kind": "option",
+        "description": "Don't automatically start the server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--prefer-mux": {
+        "Name": "--prefer-mux",
+        "kind": "option",
+        "description": "Prefer connecting to a background mux server. The default is to prefer connecting to a running wezterm gui instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "connect": {
+    "Name": "connect",
+    "kind": "subcommand",
+    "description": "Connect to wezterm multiplexer",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--class": {
+        "Name": "--class",
+        "kind": "option",
+        "description": "Override the default windowing system class. The default is \"org.wezfurlong.wezterm\". Under X11 and Windows this changes the window class. Under Wayland this changes the app_id. This changes the class for all windows spawned by this instance of wezterm, including error, update and ssh authentication dialogs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cclass\u003e": {
+            "Name": "\u003cclass\u003e",
+            "kind": "argument",
+            "description": "class",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cclass\u003e": {
+            "Name": "\u003cclass\u003e",
+            "kind": "argument",
+            "description": "class",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--position": {
+        "Name": "--position",
+        "kind": "option",
+        "description": "Override the position for the initial window launched by this process",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cposition\u003e": {
+            "Name": "\u003cposition\u003e",
+            "kind": "argument",
+            "description": "position",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cposition\u003e": {
+            "Name": "\u003cposition\u003e",
+            "kind": "argument",
+            "description": "position",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--workspace": {
+        "Name": "--workspace",
+        "kind": "option",
+        "description": "Override the default workspace with the provided name. The default is \"default\"",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cworkspace\u003e": {
+            "Name": "\u003cworkspace\u003e",
+            "kind": "argument",
+            "description": "workspace",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cworkspace\u003e": {
+            "Name": "\u003cworkspace\u003e",
+            "kind": "argument",
+            "description": "workspace",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cdomain-name\u003e": {
+        "Name": "\u003cdomain-name\u003e",
+        "kind": "argument",
+        "description": "domain-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cprog\u003e": {
+        "Name": "\u003cprog\u003e",
+        "kind": "argument",
+        "description": "prog",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--class": {
+        "Name": "--class",
+        "kind": "option",
+        "description": "Override the default windowing system class. The default is \"org.wezfurlong.wezterm\". Under X11 and Windows this changes the window class. Under Wayland this changes the app_id. This changes the class for all windows spawned by this instance of wezterm, including error, update and ssh authentication dialogs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cclass\u003e": {
+            "Name": "\u003cclass\u003e",
+            "kind": "argument",
+            "description": "class",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cclass\u003e": {
+            "Name": "\u003cclass\u003e",
+            "kind": "argument",
+            "description": "class",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--position": {
+        "Name": "--position",
+        "kind": "option",
+        "description": "Override the position for the initial window launched by this process",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cposition\u003e": {
+            "Name": "\u003cposition\u003e",
+            "kind": "argument",
+            "description": "position",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cposition\u003e": {
+            "Name": "\u003cposition\u003e",
+            "kind": "argument",
+            "description": "position",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--workspace": {
+        "Name": "--workspace",
+        "kind": "option",
+        "description": "Override the default workspace with the provided name. The default is \"default\"",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cworkspace\u003e": {
+            "Name": "\u003cworkspace\u003e",
+            "kind": "argument",
+            "description": "workspace",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cworkspace\u003e": {
+            "Name": "\u003cworkspace\u003e",
+            "kind": "argument",
+            "description": "workspace",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cdomain-name\u003e": {
+        "Name": "\u003cdomain-name\u003e",
+        "kind": "argument",
+        "description": "domain-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cprog\u003e": {
+        "Name": "\u003cprog\u003e",
+        "kind": "argument",
+        "description": "prog",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdomain-name\u003e"
+    ]
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Print this message or the help of the given subcommand(s)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csubcommand\u003e": {
+        "Name": "\u003csubcommand\u003e",
+        "kind": "argument",
+        "description": "subcommand",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csubcommand\u003e": {
+        "Name": "\u003csubcommand\u003e",
+        "kind": "argument",
+        "description": "subcommand",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "imgcat": {
+    "Name": "imgcat",
+    "kind": "subcommand",
+    "description": "Output an image to the terminal",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--height": {
+        "Name": "--height",
+        "kind": "option",
+        "description": "Specify the display height; defaults to \"auto\" which automatically selects an appropriate size.  You may also use an integer value `N` to specify the number of cells, or `Npx` to specify the number of pixels, or `N%` to size relative to the terminal height",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cheight\u003e": {
+            "Name": "\u003cheight\u003e",
+            "kind": "argument",
+            "description": "height",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cheight\u003e": {
+            "Name": "\u003cheight\u003e",
+            "kind": "argument",
+            "description": "height",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-preserve-aspect-ratio": {
+        "Name": "--no-preserve-aspect-ratio",
+        "kind": "option",
+        "description": "Do not respect the aspect ratio.  The default is to respect the aspect ratio",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--width": {
+        "Name": "--width",
+        "kind": "option",
+        "description": "Specify the display width; defaults to \"auto\" which automatically selects an appropriate size.  You may also use an integer value `N` to specify the number of cells, or `Npx` to specify the number of pixels, or `N%` to size relative to the terminal width",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cwidth\u003e": {
+            "Name": "\u003cwidth\u003e",
+            "kind": "argument",
+            "description": "width",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cwidth\u003e": {
+            "Name": "\u003cwidth\u003e",
+            "kind": "argument",
+            "description": "width",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cfile-name\u003e": {
+        "Name": "\u003cfile-name\u003e",
+        "kind": "argument",
+        "description": "file-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--height": {
+        "Name": "--height",
+        "kind": "option",
+        "description": "Specify the display height; defaults to \"auto\" which automatically selects an appropriate size.  You may also use an integer value `N` to specify the number of cells, or `Npx` to specify the number of pixels, or `N%` to size relative to the terminal height",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cheight\u003e": {
+            "Name": "\u003cheight\u003e",
+            "kind": "argument",
+            "description": "height",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cheight\u003e": {
+            "Name": "\u003cheight\u003e",
+            "kind": "argument",
+            "description": "height",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-preserve-aspect-ratio": {
+        "Name": "--no-preserve-aspect-ratio",
+        "kind": "option",
+        "description": "Do not respect the aspect ratio.  The default is to respect the aspect ratio",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--width": {
+        "Name": "--width",
+        "kind": "option",
+        "description": "Specify the display width; defaults to \"auto\" which automatically selects an appropriate size.  You may also use an integer value `N` to specify the number of cells, or `Npx` to specify the number of pixels, or `N%` to size relative to the terminal width",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cwidth\u003e": {
+            "Name": "\u003cwidth\u003e",
+            "kind": "argument",
+            "description": "width",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cwidth\u003e": {
+            "Name": "\u003cwidth\u003e",
+            "kind": "argument",
+            "description": "width",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cfile-name\u003e": {
+        "Name": "\u003cfile-name\u003e",
+        "kind": "argument",
+        "description": "file-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "ls-fonts": {
+    "Name": "ls-fonts",
+    "kind": "subcommand",
+    "description": "Display information about fonts",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--list-system": {
+        "Name": "--list-system",
+        "kind": "option",
+        "description": "Whether to list all fonts available to the system",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--rasterize-ascii": {
+        "Name": "--rasterize-ascii",
+        "kind": "option",
+        "description": "Show rasterized glyphs for the text in --text using ascii blocks",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--text": {
+        "Name": "--text",
+        "kind": "option",
+        "description": "Explain which fonts are used to render the supplied text string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctext\u003e": {
+            "Name": "\u003ctext\u003e",
+            "kind": "argument",
+            "description": "text",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctext\u003e": {
+            "Name": "\u003ctext\u003e",
+            "kind": "argument",
+            "description": "text",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--list-system": {
+        "Name": "--list-system",
+        "kind": "option",
+        "description": "Whether to list all fonts available to the system",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--rasterize-ascii": {
+        "Name": "--rasterize-ascii",
+        "kind": "option",
+        "description": "Show rasterized glyphs for the text in --text using ascii blocks",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--text": {
+        "Name": "--text",
+        "kind": "option",
+        "description": "Explain which fonts are used to render the supplied text string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctext\u003e": {
+            "Name": "\u003ctext\u003e",
+            "kind": "argument",
+            "description": "text",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctext\u003e": {
+            "Name": "\u003ctext\u003e",
+            "kind": "argument",
+            "description": "text",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "record": {
+    "Name": "record",
+    "kind": "subcommand",
+    "description": "Record a terminal session as an asciicast",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cprog\u003e": {
+        "Name": "\u003cprog\u003e",
+        "kind": "argument",
+        "description": "prog",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cprog\u003e": {
+        "Name": "\u003cprog\u003e",
+        "kind": "argument",
+        "description": "prog",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "replay": {
+    "Name": "replay",
+    "kind": "subcommand",
+    "description": "Replay an asciicast terminal session",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--explain": {
+        "Name": "--explain",
+        "kind": "option",
+        "description": "Explain what is being sent/received",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ccast-file\u003e": {
+        "Name": "\u003ccast-file\u003e",
+        "kind": "argument",
+        "description": "cast-file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--explain": {
+        "Name": "--explain",
+        "kind": "option",
+        "description": "Explain what is being sent/received",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ccast-file\u003e": {
+        "Name": "\u003ccast-file\u003e",
+        "kind": "argument",
+        "description": "cast-file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccast-file\u003e"
+    ]
+  },
+  "serial": {
+    "Name": "serial",
+    "kind": "subcommand",
+    "description": "Open a serial port",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--baud": {
+        "Name": "--baud",
+        "kind": "option",
+        "description": "Set the baud rate.  The default is 9600 baud",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbaud\u003e": {
+            "Name": "\u003cbaud\u003e",
+            "kind": "argument",
+            "description": "baud",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cbaud\u003e": {
+            "Name": "\u003cbaud\u003e",
+            "kind": "argument",
+            "description": "baud",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--class": {
+        "Name": "--class",
+        "kind": "option",
+        "description": "Override the default windowing system class. The default is \"org.wezfurlong.wezterm\". Under X11 and Windows this changes the window class. Under Wayland this changes the app_id. This changes the class for all windows spawned by this instance of wezterm, including error, update and ssh authentication dialogs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cclass\u003e": {
+            "Name": "\u003cclass\u003e",
+            "kind": "argument",
+            "description": "class",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cclass\u003e": {
+            "Name": "\u003cclass\u003e",
+            "kind": "argument",
+            "description": "class",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--position": {
+        "Name": "--position",
+        "kind": "option",
+        "description": "Override the position for the initial window launched by this process",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cposition\u003e": {
+            "Name": "\u003cposition\u003e",
+            "kind": "argument",
+            "description": "position",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cposition\u003e": {
+            "Name": "\u003cposition\u003e",
+            "kind": "argument",
+            "description": "position",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cport\u003e": {
+        "Name": "\u003cport\u003e",
+        "kind": "argument",
+        "description": "port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--baud": {
+        "Name": "--baud",
+        "kind": "option",
+        "description": "Set the baud rate.  The default is 9600 baud",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbaud\u003e": {
+            "Name": "\u003cbaud\u003e",
+            "kind": "argument",
+            "description": "baud",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cbaud\u003e": {
+            "Name": "\u003cbaud\u003e",
+            "kind": "argument",
+            "description": "baud",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--class": {
+        "Name": "--class",
+        "kind": "option",
+        "description": "Override the default windowing system class. The default is \"org.wezfurlong.wezterm\". Under X11 and Windows this changes the window class. Under Wayland this changes the app_id. This changes the class for all windows spawned by this instance of wezterm, including error, update and ssh authentication dialogs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cclass\u003e": {
+            "Name": "\u003cclass\u003e",
+            "kind": "argument",
+            "description": "class",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cclass\u003e": {
+            "Name": "\u003cclass\u003e",
+            "kind": "argument",
+            "description": "class",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--position": {
+        "Name": "--position",
+        "kind": "option",
+        "description": "Override the position for the initial window launched by this process",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cposition\u003e": {
+            "Name": "\u003cposition\u003e",
+            "kind": "argument",
+            "description": "position",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cposition\u003e": {
+            "Name": "\u003cposition\u003e",
+            "kind": "argument",
+            "description": "position",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cport\u003e": {
+        "Name": "\u003cport\u003e",
+        "kind": "argument",
+        "description": "port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cport\u003e"
+    ]
+  },
+  "set-working-directory": {
+    "Name": "set-working-directory",
+    "kind": "subcommand",
+    "description": "Advise the terminal of the current working directory by emitting an OSC 7 escape sequence",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ccwd\u003e": {
+        "Name": "\u003ccwd\u003e",
+        "kind": "argument",
+        "description": "cwd",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003chost\u003e": {
+        "Name": "\u003chost\u003e",
+        "kind": "argument",
+        "description": "host",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ccwd\u003e": {
+        "Name": "\u003ccwd\u003e",
+        "kind": "argument",
+        "description": "cwd",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003chost\u003e": {
+        "Name": "\u003chost\u003e",
+        "kind": "argument",
+        "description": "host",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "shell-completion": {
+    "Name": "shell-completion",
+    "kind": "subcommand",
+    "description": "Generate shell completion information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--shell": {
+        "Name": "--shell",
+        "kind": "option",
+        "description": "Which shell to generate for",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cshell\u003e": {
+            "Name": "\u003cshell\u003e",
+            "kind": "argument",
+            "description": "shell",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cshell\u003e": {
+            "Name": "\u003cshell\u003e",
+            "kind": "argument",
+            "description": "shell",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cshell\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--shell": {
+        "Name": "--shell",
+        "kind": "option",
+        "description": "Which shell to generate for",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cshell\u003e": {
+            "Name": "\u003cshell\u003e",
+            "kind": "argument",
+            "description": "shell",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cshell\u003e": {
+            "Name": "\u003cshell\u003e",
+            "kind": "argument",
+            "description": "shell",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cshell\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "show-keys": {
+    "Name": "show-keys",
+    "kind": "subcommand",
+    "description": "Show key assignments",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--key-table": {
+        "Name": "--key-table",
+        "kind": "option",
+        "description": "In lua mode, show only the named key table",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ckey-table\u003e": {
+            "Name": "\u003ckey-table\u003e",
+            "kind": "argument",
+            "description": "key-table",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ckey-table\u003e": {
+            "Name": "\u003ckey-table\u003e",
+            "kind": "argument",
+            "description": "key-table",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--lua": {
+        "Name": "--lua",
+        "kind": "option",
+        "description": "Show the keys as lua config statements",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--key-table": {
+        "Name": "--key-table",
+        "kind": "option",
+        "description": "In lua mode, show only the named key table",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ckey-table\u003e": {
+            "Name": "\u003ckey-table\u003e",
+            "kind": "argument",
+            "description": "key-table",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ckey-table\u003e": {
+            "Name": "\u003ckey-table\u003e",
+            "kind": "argument",
+            "description": "key-table",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--lua": {
+        "Name": "--lua",
+        "kind": "option",
+        "description": "Show the keys as lua config statements",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "ssh": {
+    "Name": "ssh",
+    "kind": "subcommand",
+    "description": "Establish an ssh session",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--class": {
+        "Name": "--class",
+        "kind": "option",
+        "description": "Override the default windowing system class. The default is \"org.wezfurlong.wezterm\". Under X11 and Windows this changes the window class. Under Wayland this changes the app_id. This changes the class for all windows spawned by this instance of wezterm, including error, update and ssh authentication dialogs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cclass\u003e": {
+            "Name": "\u003cclass\u003e",
+            "kind": "argument",
+            "description": "class",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cclass\u003e": {
+            "Name": "\u003cclass\u003e",
+            "kind": "argument",
+            "description": "class",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--position": {
+        "Name": "--position",
+        "kind": "option",
+        "description": "Override the position for the initial window launched by this process",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cposition\u003e": {
+            "Name": "\u003cposition\u003e",
+            "kind": "argument",
+            "description": "position",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cposition\u003e": {
+            "Name": "\u003cposition\u003e",
+            "kind": "argument",
+            "description": "position",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--ssh-option": {
+        "Name": "--ssh-option",
+        "kind": "option",
+        "description": "Override specific SSH configuration options. `wezterm ssh` is able to parse some (but not all!) options from your `~/.ssh/config` and `/etc/ssh/ssh_config` files. This command line switch allows you to override or otherwise specify ssh_config style options",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname=value\u003e": {
+            "Name": "\u003cname=value\u003e",
+            "kind": "argument",
+            "description": "name=value",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname=value\u003e": {
+            "Name": "\u003cname=value\u003e",
+            "kind": "argument",
+            "description": "name=value",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Override specific SSH configuration options. `wezterm ssh` is able to parse some (but not all!) options from your `~/.ssh/config` and `/etc/ssh/ssh_config` files. This command line switch allows you to override or otherwise specify ssh_config style options",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname=value\u003e": {
+            "Name": "\u003cname=value\u003e",
+            "kind": "argument",
+            "description": "name=value",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname=value\u003e": {
+            "Name": "\u003cname=value\u003e",
+            "kind": "argument",
+            "description": "name=value",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Enable verbose ssh protocol tracing. The trace information is printed to the stderr stream of the process",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cprog\u003e": {
+        "Name": "\u003cprog\u003e",
+        "kind": "argument",
+        "description": "prog",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cuser-at-host-and-port\u003e": {
+        "Name": "\u003cuser-at-host-and-port\u003e",
+        "kind": "argument",
+        "description": "user-at-host-and-port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--class": {
+        "Name": "--class",
+        "kind": "option",
+        "description": "Override the default windowing system class. The default is \"org.wezfurlong.wezterm\". Under X11 and Windows this changes the window class. Under Wayland this changes the app_id. This changes the class for all windows spawned by this instance of wezterm, including error, update and ssh authentication dialogs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cclass\u003e": {
+            "Name": "\u003cclass\u003e",
+            "kind": "argument",
+            "description": "class",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cclass\u003e": {
+            "Name": "\u003cclass\u003e",
+            "kind": "argument",
+            "description": "class",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--position": {
+        "Name": "--position",
+        "kind": "option",
+        "description": "Override the position for the initial window launched by this process",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cposition\u003e": {
+            "Name": "\u003cposition\u003e",
+            "kind": "argument",
+            "description": "position",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cposition\u003e": {
+            "Name": "\u003cposition\u003e",
+            "kind": "argument",
+            "description": "position",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--ssh-option": {
+        "Name": "--ssh-option",
+        "kind": "option",
+        "description": "Override specific SSH configuration options. `wezterm ssh` is able to parse some (but not all!) options from your `~/.ssh/config` and `/etc/ssh/ssh_config` files. This command line switch allows you to override or otherwise specify ssh_config style options",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname=value\u003e": {
+            "Name": "\u003cname=value\u003e",
+            "kind": "argument",
+            "description": "name=value",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname=value\u003e": {
+            "Name": "\u003cname=value\u003e",
+            "kind": "argument",
+            "description": "name=value",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Override specific SSH configuration options. `wezterm ssh` is able to parse some (but not all!) options from your `~/.ssh/config` and `/etc/ssh/ssh_config` files. This command line switch allows you to override or otherwise specify ssh_config style options",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname=value\u003e": {
+            "Name": "\u003cname=value\u003e",
+            "kind": "argument",
+            "description": "name=value",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname=value\u003e": {
+            "Name": "\u003cname=value\u003e",
+            "kind": "argument",
+            "description": "name=value",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Enable verbose ssh protocol tracing. The trace information is printed to the stderr stream of the process",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cprog\u003e": {
+        "Name": "\u003cprog\u003e",
+        "kind": "argument",
+        "description": "prog",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cuser-at-host-and-port\u003e": {
+        "Name": "\u003cuser-at-host-and-port\u003e",
+        "kind": "argument",
+        "description": "user-at-host-and-port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cuser-at-host-and-port\u003e"
+    ]
+  },
+  "start": {
+    "Name": "start",
+    "kind": "subcommand",
+    "description": "Start the GUI, optionally running an alternative program",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--always-new-process": {
+        "Name": "--always-new-process",
+        "kind": "option",
+        "description": "If enabled, don't try to ask an existing wezterm GUI instance to start the command.  Instead, always start the GUI in this invocation of wezterm so that you can wait for the command to complete by waiting for this wezterm process to finish",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--class": {
+        "Name": "--class",
+        "kind": "option",
+        "description": "Override the default windowing system class. The default is \"org.wezfurlong.wezterm\". Under X11 and Windows this changes the window class. Under Wayland this changes the app_id. This changes the class for all windows spawned by this instance of wezterm, including error, update and ssh authentication dialogs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cclass\u003e": {
+            "Name": "\u003cclass\u003e",
+            "kind": "argument",
+            "description": "class",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cclass\u003e": {
+            "Name": "\u003cclass\u003e",
+            "kind": "argument",
+            "description": "class",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--cwd": {
+        "Name": "--cwd",
+        "kind": "option",
+        "description": "Specify the current working directory for the initially spawned program",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccwd\u003e": {
+            "Name": "\u003ccwd\u003e",
+            "kind": "argument",
+            "description": "cwd",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccwd\u003e": {
+            "Name": "\u003ccwd\u003e",
+            "kind": "argument",
+            "description": "cwd",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-auto-connect": {
+        "Name": "--no-auto-connect",
+        "kind": "option",
+        "description": "If true, do not connect to domains marked as connect_automatically in your wezterm configuration file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--position": {
+        "Name": "--position",
+        "kind": "option",
+        "description": "Override the position for the initial window launched by this process",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cposition\u003e": {
+            "Name": "\u003cposition\u003e",
+            "kind": "argument",
+            "description": "position",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cposition\u003e": {
+            "Name": "\u003cposition\u003e",
+            "kind": "argument",
+            "description": "position",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--workspace": {
+        "Name": "--workspace",
+        "kind": "option",
+        "description": "Override the default workspace with the provided name. The default is \"default\"",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cworkspace\u003e": {
+            "Name": "\u003cworkspace\u003e",
+            "kind": "argument",
+            "description": "workspace",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cworkspace\u003e": {
+            "Name": "\u003cworkspace\u003e",
+            "kind": "argument",
+            "description": "workspace",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cprog\u003e": {
+        "Name": "\u003cprog\u003e",
+        "kind": "argument",
+        "description": "prog",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--always-new-process": {
+        "Name": "--always-new-process",
+        "kind": "option",
+        "description": "If enabled, don't try to ask an existing wezterm GUI instance to start the command.  Instead, always start the GUI in this invocation of wezterm so that you can wait for the command to complete by waiting for this wezterm process to finish",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--class": {
+        "Name": "--class",
+        "kind": "option",
+        "description": "Override the default windowing system class. The default is \"org.wezfurlong.wezterm\". Under X11 and Windows this changes the window class. Under Wayland this changes the app_id. This changes the class for all windows spawned by this instance of wezterm, including error, update and ssh authentication dialogs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cclass\u003e": {
+            "Name": "\u003cclass\u003e",
+            "kind": "argument",
+            "description": "class",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cclass\u003e": {
+            "Name": "\u003cclass\u003e",
+            "kind": "argument",
+            "description": "class",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--cwd": {
+        "Name": "--cwd",
+        "kind": "option",
+        "description": "Specify the current working directory for the initially spawned program",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccwd\u003e": {
+            "Name": "\u003ccwd\u003e",
+            "kind": "argument",
+            "description": "cwd",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccwd\u003e": {
+            "Name": "\u003ccwd\u003e",
+            "kind": "argument",
+            "description": "cwd",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-auto-connect": {
+        "Name": "--no-auto-connect",
+        "kind": "option",
+        "description": "If true, do not connect to domains marked as connect_automatically in your wezterm configuration file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--position": {
+        "Name": "--position",
+        "kind": "option",
+        "description": "Override the position for the initial window launched by this process",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cposition\u003e": {
+            "Name": "\u003cposition\u003e",
+            "kind": "argument",
+            "description": "position",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cposition\u003e": {
+            "Name": "\u003cposition\u003e",
+            "kind": "argument",
+            "description": "position",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--workspace": {
+        "Name": "--workspace",
+        "kind": "option",
+        "description": "Override the default workspace with the provided name. The default is \"default\"",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cworkspace\u003e": {
+            "Name": "\u003cworkspace\u003e",
+            "kind": "argument",
+            "description": "workspace",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cworkspace\u003e": {
+            "Name": "\u003cworkspace\u003e",
+            "kind": "argument",
+            "description": "workspace",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cprog\u003e": {
+        "Name": "\u003cprog\u003e",
+        "kind": "argument",
+        "description": "prog",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  }
+}

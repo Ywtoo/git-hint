@@ -1,0 +1,3774 @@
+{
+  "--debug": {
+    "Name": "--debug",
+    "kind": "option",
+    "description": "Output debug logs to stderr",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Display help",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Display help",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "completion": {
+    "Name": "completion",
+    "kind": "subcommand",
+    "description": "Generate the autocompletion script for the specified shell",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "bash": {
+        "Name": "bash",
+        "kind": "subcommand",
+        "description": "Generate the autocompletion script for bash",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--no-descriptions": {
+            "Name": "--no-descriptions",
+            "kind": "option",
+            "description": "Disable completion descriptions",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--no-descriptions": {
+            "Name": "--no-descriptions",
+            "kind": "option",
+            "description": "Disable completion descriptions",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "fish": {
+        "Name": "fish",
+        "kind": "subcommand",
+        "description": "Generate the autocompletion script for fish",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--no-descriptions": {
+            "Name": "--no-descriptions",
+            "kind": "option",
+            "description": "Disable completion descriptions",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--no-descriptions": {
+            "Name": "--no-descriptions",
+            "kind": "option",
+            "description": "Disable completion descriptions",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "powershell": {
+        "Name": "powershell",
+        "kind": "subcommand",
+        "description": "Generate the autocompletion script for powershell",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--no-descriptions": {
+            "Name": "--no-descriptions",
+            "kind": "option",
+            "description": "Disable completion descriptions",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--no-descriptions": {
+            "Name": "--no-descriptions",
+            "kind": "option",
+            "description": "Disable completion descriptions",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "zsh": {
+        "Name": "zsh",
+        "kind": "subcommand",
+        "description": "Generate the autocompletion script for zsh",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--no-descriptions": {
+            "Name": "--no-descriptions",
+            "kind": "option",
+            "description": "Disable completion descriptions",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--no-descriptions": {
+            "Name": "--no-descriptions",
+            "kind": "option",
+            "description": "Disable completion descriptions",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      }
+    }
+  },
+  "db": {
+    "Name": "db",
+    "kind": "subcommand",
+    "description": "Manage local Postgres databases",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "branch": {
+        "Name": "branch",
+        "kind": "subcommand",
+        "description": "Manage local database branches",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "create": {
+            "Name": "create",
+            "kind": "subcommand",
+            "description": "Create a branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "delete": {
+            "Name": "delete",
+            "kind": "subcommand",
+            "description": "Delete a branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "list": {
+            "Name": "list",
+            "kind": "subcommand",
+            "description": "List branches",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "switch": {
+            "Name": "switch",
+            "kind": "subcommand",
+            "description": "Switch the active branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "diff": {
+        "Name": "diff",
+        "kind": "subcommand",
+        "description": "Diffs the local database for schema changes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--file": {
+            "Name": "--file",
+            "kind": "option",
+            "description": "Saves schema diff to a file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfile\u003e"
+            ]
+          },
+          "--schema": {
+            "Name": "--schema",
+            "kind": "option",
+            "description": "List of schema to include",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cschema\u003e": {
+                "Name": "\u003cschema\u003e",
+                "kind": "argument",
+                "description": "schema",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cschema\u003e": {
+                "Name": "\u003cschema\u003e",
+                "kind": "argument",
+                "description": "schema",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cschema\u003e"
+            ]
+          },
+          "--use-migra": {
+            "Name": "--use-migra",
+            "kind": "option",
+            "description": "Use migra to generate schema diff",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Saves schema diff to a file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfile\u003e"
+            ]
+          },
+          "-s": {
+            "Name": "-s",
+            "kind": "option",
+            "description": "List of schema to include",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cschema\u003e": {
+                "Name": "\u003cschema\u003e",
+                "kind": "argument",
+                "description": "schema",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cschema\u003e": {
+                "Name": "\u003cschema\u003e",
+                "kind": "argument",
+                "description": "schema",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cschema\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--file": {
+            "Name": "--file",
+            "kind": "option",
+            "description": "Saves schema diff to a file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfile\u003e"
+            ]
+          },
+          "--schema": {
+            "Name": "--schema",
+            "kind": "option",
+            "description": "List of schema to include",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cschema\u003e": {
+                "Name": "\u003cschema\u003e",
+                "kind": "argument",
+                "description": "schema",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cschema\u003e": {
+                "Name": "\u003cschema\u003e",
+                "kind": "argument",
+                "description": "schema",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cschema\u003e"
+            ]
+          },
+          "--use-migra": {
+            "Name": "--use-migra",
+            "kind": "option",
+            "description": "Use migra to generate schema diff",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Saves schema diff to a file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfile\u003e"
+            ]
+          },
+          "-s": {
+            "Name": "-s",
+            "kind": "option",
+            "description": "List of schema to include",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cschema\u003e": {
+                "Name": "\u003cschema\u003e",
+                "kind": "argument",
+                "description": "schema",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cschema\u003e": {
+                "Name": "\u003cschema\u003e",
+                "kind": "argument",
+                "description": "schema",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cschema\u003e"
+            ]
+          }
+        }
+      },
+      "dump": {
+        "Name": "dump",
+        "kind": "subcommand",
+        "description": "Dumps data or schemas from the remote database",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--data-only": {
+            "Name": "--data-only",
+            "kind": "option",
+            "description": "Dumps only data records",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--db-url": {
+            "Name": "--db-url",
+            "kind": "option",
+            "description": "Dumps from the database specified by the connection string (must be percent-encoded)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "--dry-run": {
+            "Name": "--dry-run",
+            "kind": "option",
+            "description": "Prints the pg_dump script that would be executed",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--file": {
+            "Name": "--file",
+            "kind": "option",
+            "description": "File path to save the dumped contents",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for dump",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--keep-comments": {
+            "Name": "--keep-comments",
+            "kind": "option",
+            "description": "Keeps commented lines from pg_dump output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--linked": {
+            "Name": "--linked",
+            "kind": "option",
+            "description": "Dumps from the linked project. (default true)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--local": {
+            "Name": "--local",
+            "kind": "option",
+            "description": "Dumps from the local database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--password": {
+            "Name": "--password",
+            "kind": "option",
+            "description": "Password to your remote Postgres database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "--role-only": {
+            "Name": "--role-only",
+            "kind": "option",
+            "description": "Dumps only cluster roles",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--schema": {
+            "Name": "--schema",
+            "kind": "option",
+            "description": "Comma separated list of schema to include. (default all)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "--use-copy": {
+            "Name": "--use-copy",
+            "kind": "option",
+            "description": "Uses copy statements in place of inserts",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "File path to save the dumped contents",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Help for dump",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Password to your remote Postgres database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "-s": {
+            "Name": "-s",
+            "kind": "option",
+            "description": "Comma separated list of schema to include. (default all)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--data-only": {
+            "Name": "--data-only",
+            "kind": "option",
+            "description": "Dumps only data records",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--db-url": {
+            "Name": "--db-url",
+            "kind": "option",
+            "description": "Dumps from the database specified by the connection string (must be percent-encoded)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "--dry-run": {
+            "Name": "--dry-run",
+            "kind": "option",
+            "description": "Prints the pg_dump script that would be executed",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--file": {
+            "Name": "--file",
+            "kind": "option",
+            "description": "File path to save the dumped contents",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for dump",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--keep-comments": {
+            "Name": "--keep-comments",
+            "kind": "option",
+            "description": "Keeps commented lines from pg_dump output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--linked": {
+            "Name": "--linked",
+            "kind": "option",
+            "description": "Dumps from the linked project. (default true)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--local": {
+            "Name": "--local",
+            "kind": "option",
+            "description": "Dumps from the local database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--password": {
+            "Name": "--password",
+            "kind": "option",
+            "description": "Password to your remote Postgres database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "--role-only": {
+            "Name": "--role-only",
+            "kind": "option",
+            "description": "Dumps only cluster roles",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--schema": {
+            "Name": "--schema",
+            "kind": "option",
+            "description": "Comma separated list of schema to include. (default all)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "--use-copy": {
+            "Name": "--use-copy",
+            "kind": "option",
+            "description": "Uses copy statements in place of inserts",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "File path to save the dumped contents",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Help for dump",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Password to your remote Postgres database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "-s": {
+            "Name": "-s",
+            "kind": "option",
+            "description": "Comma separated list of schema to include. (default all)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          }
+        }
+      },
+      "lint": {
+        "Name": "lint",
+        "kind": "subcommand",
+        "description": "Checks local database for typing error",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--level": {
+            "Name": "--level",
+            "kind": "option",
+            "description": "Error level to emit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003clevel\u003e": {
+                "Name": "\u003clevel\u003e",
+                "kind": "argument",
+                "description": "level",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003clevel\u003e": {
+                "Name": "\u003clevel\u003e",
+                "kind": "argument",
+                "description": "level",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003clevel\u003e"
+            ]
+          },
+          "--schema": {
+            "Name": "--schema",
+            "kind": "option",
+            "description": "List of schema to include",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cschema\u003e": {
+                "Name": "\u003cschema\u003e",
+                "kind": "argument",
+                "description": "schema",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cschema\u003e": {
+                "Name": "\u003cschema\u003e",
+                "kind": "argument",
+                "description": "schema",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cschema\u003e"
+            ]
+          },
+          "-s": {
+            "Name": "-s",
+            "kind": "option",
+            "description": "List of schema to include",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cschema\u003e": {
+                "Name": "\u003cschema\u003e",
+                "kind": "argument",
+                "description": "schema",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cschema\u003e": {
+                "Name": "\u003cschema\u003e",
+                "kind": "argument",
+                "description": "schema",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cschema\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--level": {
+            "Name": "--level",
+            "kind": "option",
+            "description": "Error level to emit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003clevel\u003e": {
+                "Name": "\u003clevel\u003e",
+                "kind": "argument",
+                "description": "level",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003clevel\u003e": {
+                "Name": "\u003clevel\u003e",
+                "kind": "argument",
+                "description": "level",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003clevel\u003e"
+            ]
+          },
+          "--schema": {
+            "Name": "--schema",
+            "kind": "option",
+            "description": "List of schema to include",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cschema\u003e": {
+                "Name": "\u003cschema\u003e",
+                "kind": "argument",
+                "description": "schema",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cschema\u003e": {
+                "Name": "\u003cschema\u003e",
+                "kind": "argument",
+                "description": "schema",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cschema\u003e"
+            ]
+          },
+          "-s": {
+            "Name": "-s",
+            "kind": "option",
+            "description": "List of schema to include",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cschema\u003e": {
+                "Name": "\u003cschema\u003e",
+                "kind": "argument",
+                "description": "schema",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cschema\u003e": {
+                "Name": "\u003cschema\u003e",
+                "kind": "argument",
+                "description": "schema",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cschema\u003e"
+            ]
+          }
+        }
+      },
+      "pull": {
+        "Name": "pull",
+        "kind": "subcommand",
+        "description": "Pull schema from the remote database",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "push": {
+        "Name": "push",
+        "kind": "subcommand",
+        "description": "Push new migrations to the remote database",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--dry-run": {
+            "Name": "--dry-run",
+            "kind": "option",
+            "description": "Print the migrations that would be applied, but don't actually apply them",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--password": {
+            "Name": "--password",
+            "kind": "option",
+            "description": "Password to your remote Postgres database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpassword\u003e"
+            ]
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Password to your remote Postgres database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpassword\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--dry-run": {
+            "Name": "--dry-run",
+            "kind": "option",
+            "description": "Print the migrations that would be applied, but don't actually apply them",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--password": {
+            "Name": "--password",
+            "kind": "option",
+            "description": "Password to your remote Postgres database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpassword\u003e"
+            ]
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Password to your remote Postgres database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpassword\u003e"
+            ]
+          }
+        }
+      },
+      "remote": {
+        "Name": "remote",
+        "kind": "subcommand",
+        "description": "Manage remote databases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--password": {
+            "Name": "--password",
+            "kind": "option",
+            "description": "Password to your remote Postgres database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpassword\u003e"
+            ]
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Password to your remote Postgres database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpassword\u003e"
+            ]
+          },
+          "changes": {
+            "Name": "changes",
+            "kind": "subcommand",
+            "description": "Show changes on the remote database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "commit": {
+            "Name": "commit",
+            "kind": "subcommand",
+            "description": "Commit remote changes as a new migration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--password": {
+            "Name": "--password",
+            "kind": "option",
+            "description": "Password to your remote Postgres database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpassword\u003e"
+            ]
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Password to your remote Postgres database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpassword\u003e"
+            ]
+          }
+        }
+      },
+      "reset": {
+        "Name": "reset",
+        "kind": "subcommand",
+        "description": "Resets the local database to current migrations",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "functions": {
+    "Name": "functions",
+    "kind": "subcommand",
+    "description": "Manage Supabase Edge functions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "delete": {
+        "Name": "delete",
+        "kind": "subcommand",
+        "description": "Delete a Function from Supabase",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--project-ref": {
+            "Name": "--project-ref",
+            "kind": "option",
+            "description": "Project ref of the Supabase project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cproject-ref\u003e": {
+                "Name": "\u003cproject-ref\u003e",
+                "kind": "argument",
+                "description": "project-ref",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cproject-ref\u003e": {
+                "Name": "\u003cproject-ref\u003e",
+                "kind": "argument",
+                "description": "project-ref",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cproject-ref\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--project-ref": {
+            "Name": "--project-ref",
+            "kind": "option",
+            "description": "Project ref of the Supabase project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cproject-ref\u003e": {
+                "Name": "\u003cproject-ref\u003e",
+                "kind": "argument",
+                "description": "project-ref",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cproject-ref\u003e": {
+                "Name": "\u003cproject-ref\u003e",
+                "kind": "argument",
+                "description": "project-ref",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cproject-ref\u003e"
+            ]
+          }
+        }
+      },
+      "deploy": {
+        "Name": "deploy",
+        "kind": "subcommand",
+        "description": "Deploy a Function to Supabase",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--no-verify-jwt": {
+            "Name": "--no-verify-jwt",
+            "kind": "option",
+            "description": "Disable JWT verification for the Function",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--project-ref": {
+            "Name": "--project-ref",
+            "kind": "option",
+            "description": "Project ref of the Supabase project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cproject-ref\u003e": {
+                "Name": "\u003cproject-ref\u003e",
+                "kind": "argument",
+                "description": "project-ref",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cproject-ref\u003e": {
+                "Name": "\u003cproject-ref\u003e",
+                "kind": "argument",
+                "description": "project-ref",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cproject-ref\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--no-verify-jwt": {
+            "Name": "--no-verify-jwt",
+            "kind": "option",
+            "description": "Disable JWT verification for the Function",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--project-ref": {
+            "Name": "--project-ref",
+            "kind": "option",
+            "description": "Project ref of the Supabase project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cproject-ref\u003e": {
+                "Name": "\u003cproject-ref\u003e",
+                "kind": "argument",
+                "description": "project-ref",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cproject-ref\u003e": {
+                "Name": "\u003cproject-ref\u003e",
+                "kind": "argument",
+                "description": "project-ref",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cproject-ref\u003e"
+            ]
+          }
+        }
+      },
+      "new": {
+        "Name": "new",
+        "kind": "subcommand",
+        "description": "Create a new Function locally",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "serve": {
+        "Name": "serve",
+        "kind": "subcommand",
+        "description": "Serve a Function locally",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--env-file": {
+            "Name": "--env-file",
+            "kind": "option",
+            "description": "Path to an env file to be populated to the Function environment",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cenv-file\u003e": {
+                "Name": "\u003cenv-file\u003e",
+                "kind": "argument",
+                "description": "env-file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cenv-file\u003e": {
+                "Name": "\u003cenv-file\u003e",
+                "kind": "argument",
+                "description": "env-file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cenv-file\u003e"
+            ]
+          },
+          "--no-verify-jwt": {
+            "Name": "--no-verify-jwt",
+            "kind": "option",
+            "description": "Disable JWT verification for the Function",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--env-file": {
+            "Name": "--env-file",
+            "kind": "option",
+            "description": "Path to an env file to be populated to the Function environment",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cenv-file\u003e": {
+                "Name": "\u003cenv-file\u003e",
+                "kind": "argument",
+                "description": "env-file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cenv-file\u003e": {
+                "Name": "\u003cenv-file\u003e",
+                "kind": "argument",
+                "description": "env-file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cenv-file\u003e"
+            ]
+          },
+          "--no-verify-jwt": {
+            "Name": "--no-verify-jwt",
+            "kind": "option",
+            "description": "Disable JWT verification for the Function",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      }
+    }
+  },
+  "gen": {
+    "Name": "gen",
+    "kind": "subcommand",
+    "description": "Run code generation tools",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "types": {
+        "Name": "types",
+        "kind": "subcommand",
+        "description": "Generate types from Postgres schema",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "typescript": {
+            "Name": "typescript",
+            "kind": "subcommand",
+            "description": "Generate types for TypeScript",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "--db-url": {
+                "Name": "--db-url",
+                "kind": "option",
+                "description": "Generate types from a database url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cdb-url\u003e": {
+                    "Name": "\u003cdb-url\u003e",
+                    "kind": "argument",
+                    "description": "db-url",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cdb-url\u003e": {
+                    "Name": "\u003cdb-url\u003e",
+                    "kind": "argument",
+                    "description": "db-url",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cdb-url\u003e"
+                ]
+              },
+              "--local": {
+                "Name": "--local",
+                "kind": "option",
+                "description": "Generate types from the local dev database",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            },
+            "options": {
+              "--db-url": {
+                "Name": "--db-url",
+                "kind": "option",
+                "description": "Generate types from a database url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cdb-url\u003e": {
+                    "Name": "\u003cdb-url\u003e",
+                    "kind": "argument",
+                    "description": "db-url",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cdb-url\u003e": {
+                    "Name": "\u003cdb-url\u003e",
+                    "kind": "argument",
+                    "description": "db-url",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cdb-url\u003e"
+                ]
+              },
+              "--local": {
+                "Name": "--local",
+                "kind": "option",
+                "description": "Generate types from the local dev database",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Help about any command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "completion": {
+        "Name": "completion",
+        "kind": "subcommand",
+        "description": "Generate the autocompletion script for the specified shell",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "bash": {
+            "Name": "bash",
+            "kind": "subcommand",
+            "description": "Generate the autocompletion script for bash",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "fish": {
+            "Name": "fish",
+            "kind": "subcommand",
+            "description": "Generate the autocompletion script for fish",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "powershell": {
+            "Name": "powershell",
+            "kind": "subcommand",
+            "description": "Generate the autocompletion script for powershell",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "zsh": {
+            "Name": "zsh",
+            "kind": "subcommand",
+            "description": "Generate the autocompletion script for zsh",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "db": {
+        "Name": "db",
+        "kind": "subcommand",
+        "description": "Manage local Postgres databases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "branch": {
+            "Name": "branch",
+            "kind": "subcommand",
+            "description": "Manage local database branches",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "create": {
+                "Name": "create",
+                "kind": "subcommand",
+                "description": "Create a branch",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "delete": {
+                "Name": "delete",
+                "kind": "subcommand",
+                "description": "Delete a branch",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "list": {
+                "Name": "list",
+                "kind": "subcommand",
+                "description": "List branches",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "switch": {
+                "Name": "switch",
+                "kind": "subcommand",
+                "description": "Switch the active branch",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
+          },
+          "diff": {
+            "Name": "diff",
+            "kind": "subcommand",
+            "description": "Diffs the local database for schema changes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "lint": {
+            "Name": "lint",
+            "kind": "subcommand",
+            "description": "Checks local database for typing error",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "push": {
+            "Name": "push",
+            "kind": "subcommand",
+            "description": "Push new migrations to the remote database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "remote": {
+            "Name": "remote",
+            "kind": "subcommand",
+            "description": "Manage remote databases",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "changes": {
+                "Name": "changes",
+                "kind": "subcommand",
+                "description": "Show changes on the remote database",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "commit": {
+                "Name": "commit",
+                "kind": "subcommand",
+                "description": "Commit remote changes as a new migration",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
+          },
+          "reset": {
+            "Name": "reset",
+            "kind": "subcommand",
+            "description": "Resets the local database to current migrations",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "functions": {
+        "Name": "functions",
+        "kind": "subcommand",
+        "description": "Manage Supabase Edge functions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "delete": {
+            "Name": "delete",
+            "kind": "subcommand",
+            "description": "Delete a Function from Supabase",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "deploy": {
+            "Name": "deploy",
+            "kind": "subcommand",
+            "description": "Deploy a Function to Supabase",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "new": {
+            "Name": "new",
+            "kind": "subcommand",
+            "description": "Create a new Function locally",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "serve": {
+            "Name": "serve",
+            "kind": "subcommand",
+            "description": "Serve a Function locally",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "gen": {
+        "Name": "gen",
+        "kind": "subcommand",
+        "description": "Run code generation tools",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "types": {
+            "Name": "types",
+            "kind": "subcommand",
+            "description": "Generate types from Postgres schema",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "typescript": {
+                "Name": "typescript",
+                "kind": "subcommand",
+                "description": "Generate types for TypeScript",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
+          }
+        }
+      },
+      "init": {
+        "Name": "init",
+        "kind": "subcommand",
+        "description": "Initialize a local project",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "link": {
+        "Name": "link",
+        "kind": "subcommand",
+        "description": "Link to a Supabase project",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "login": {
+        "Name": "login",
+        "kind": "subcommand",
+        "description": "Authenticate using an access token",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "migration": {
+        "Name": "migration",
+        "kind": "subcommand",
+        "description": "Manage database migration scripts",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "list": {
+            "Name": "list",
+            "kind": "subcommand",
+            "description": "List local and remote migrations",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "new": {
+            "Name": "new",
+            "kind": "subcommand",
+            "description": "Create an empty migration script",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "orgs": {
+        "Name": "orgs",
+        "kind": "subcommand",
+        "description": "Manage Supabase organizations",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "list": {
+            "Name": "list",
+            "kind": "subcommand",
+            "description": "List all organizations",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "projects": {
+        "Name": "projects",
+        "kind": "subcommand",
+        "description": "Manage Supabase projects",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "create": {
+            "Name": "create",
+            "kind": "subcommand",
+            "description": "Create a project on Supabase",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "list": {
+            "Name": "list",
+            "kind": "subcommand",
+            "description": "List all Supabase projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "secrets": {
+        "Name": "secrets",
+        "kind": "subcommand",
+        "description": "Manage Supabase secrets",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "list": {
+            "Name": "list",
+            "kind": "subcommand",
+            "description": "List all secrets on Supabase",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "set": {
+            "Name": "set",
+            "kind": "subcommand",
+            "description": "Set a secret(s) on Supabase",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "unset": {
+            "Name": "unset",
+            "kind": "subcommand",
+            "description": "Unset a secret(s) on Supabase",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "start": {
+        "Name": "start",
+        "kind": "subcommand",
+        "description": "Start containers for Supabase local development",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "status": {
+        "Name": "status",
+        "kind": "subcommand",
+        "description": "Show status of local Supabase containers",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "stop": {
+        "Name": "stop",
+        "kind": "subcommand",
+        "description": "Stop all local Supabase containers",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "init": {
+    "Name": "init",
+    "kind": "subcommand",
+    "description": "Initialize a local project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "link": {
+    "Name": "link",
+    "kind": "subcommand",
+    "description": "Link to a Supabase project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--password": {
+        "Name": "--password",
+        "kind": "option",
+        "description": "Password to your remote Postgres database",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpassword\u003e": {
+            "Name": "\u003cpassword\u003e",
+            "kind": "argument",
+            "description": "password",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpassword\u003e": {
+            "Name": "\u003cpassword\u003e",
+            "kind": "argument",
+            "description": "password",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpassword\u003e"
+        ]
+      },
+      "--project-ref": {
+        "Name": "--project-ref",
+        "kind": "option",
+        "description": "Project ref of the Supabase project",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cproject-ref\u003e": {
+            "Name": "\u003cproject-ref\u003e",
+            "kind": "argument",
+            "description": "project-ref",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cproject-ref\u003e": {
+            "Name": "\u003cproject-ref\u003e",
+            "kind": "argument",
+            "description": "project-ref",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cproject-ref\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Password to your remote Postgres database",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpassword\u003e": {
+            "Name": "\u003cpassword\u003e",
+            "kind": "argument",
+            "description": "password",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpassword\u003e": {
+            "Name": "\u003cpassword\u003e",
+            "kind": "argument",
+            "description": "password",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpassword\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--password": {
+        "Name": "--password",
+        "kind": "option",
+        "description": "Password to your remote Postgres database",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpassword\u003e": {
+            "Name": "\u003cpassword\u003e",
+            "kind": "argument",
+            "description": "password",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpassword\u003e": {
+            "Name": "\u003cpassword\u003e",
+            "kind": "argument",
+            "description": "password",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpassword\u003e"
+        ]
+      },
+      "--project-ref": {
+        "Name": "--project-ref",
+        "kind": "option",
+        "description": "Project ref of the Supabase project",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cproject-ref\u003e": {
+            "Name": "\u003cproject-ref\u003e",
+            "kind": "argument",
+            "description": "project-ref",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cproject-ref\u003e": {
+            "Name": "\u003cproject-ref\u003e",
+            "kind": "argument",
+            "description": "project-ref",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cproject-ref\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Password to your remote Postgres database",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpassword\u003e": {
+            "Name": "\u003cpassword\u003e",
+            "kind": "argument",
+            "description": "password",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpassword\u003e": {
+            "Name": "\u003cpassword\u003e",
+            "kind": "argument",
+            "description": "password",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpassword\u003e"
+        ]
+      }
+    }
+  },
+  "login": {
+    "Name": "login",
+    "kind": "subcommand",
+    "description": "Authenticate using an access token",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "migration": {
+    "Name": "migration",
+    "kind": "subcommand",
+    "description": "Manage database migration scripts",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List local and remote migrations",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--db-url": {
+            "Name": "--db-url",
+            "kind": "option",
+            "description": "Database URL to connect to",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "--linked": {
+            "Name": "--linked",
+            "kind": "option",
+            "description": "Lists migrations applied to the linked project (default true)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--local": {
+            "Name": "--local",
+            "kind": "option",
+            "description": "Lists migrations applied to the local database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--password": {
+            "Name": "--password",
+            "kind": "option",
+            "description": "Password to your remote Postgres database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpassword\u003e"
+            ]
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Password to your remote Postgres database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpassword\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--db-url": {
+            "Name": "--db-url",
+            "kind": "option",
+            "description": "Database URL to connect to",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "--linked": {
+            "Name": "--linked",
+            "kind": "option",
+            "description": "Lists migrations applied to the linked project (default true)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--local": {
+            "Name": "--local",
+            "kind": "option",
+            "description": "Lists migrations applied to the local database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--password": {
+            "Name": "--password",
+            "kind": "option",
+            "description": "Password to your remote Postgres database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpassword\u003e"
+            ]
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Password to your remote Postgres database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpassword\u003e"
+            ]
+          }
+        }
+      },
+      "new": {
+        "Name": "new",
+        "kind": "subcommand",
+        "description": "Create an empty migration script",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmigration name\u003e": {
+            "Name": "\u003cmigration name\u003e",
+            "kind": "argument",
+            "description": "migration name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmigration name\u003e": {
+            "Name": "\u003cmigration name\u003e",
+            "kind": "argument",
+            "description": "migration name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmigration name\u003e"
+        ]
+      },
+      "repair": {
+        "Name": "repair",
+        "kind": "subcommand",
+        "description": "Repair the migration history table",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--db-url": {
+            "Name": "--db-url",
+            "kind": "option",
+            "description": "Database URL to connect to",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "--linked": {
+            "Name": "--linked",
+            "kind": "option",
+            "description": "Repairs the migration history of the linked project (default true)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--local": {
+            "Name": "--local",
+            "kind": "option",
+            "description": "Repairs the migration history of the local database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--password": {
+            "Name": "--password",
+            "kind": "option",
+            "description": "Password to your remote Postgres database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpassword\u003e"
+            ]
+          },
+          "--status": {
+            "Name": "--status",
+            "kind": "option",
+            "description": "Version status to update",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstatus\u003e": {
+                "Name": "\u003cstatus\u003e",
+                "kind": "argument",
+                "description": "status",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstatus\u003e": {
+                "Name": "\u003cstatus\u003e",
+                "kind": "argument",
+                "description": "status",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstatus\u003e"
+            ]
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Password to your remote Postgres database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpassword\u003e"
+            ]
+          },
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--db-url": {
+            "Name": "--db-url",
+            "kind": "option",
+            "description": "Database URL to connect to",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "--linked": {
+            "Name": "--linked",
+            "kind": "option",
+            "description": "Repairs the migration history of the linked project (default true)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--local": {
+            "Name": "--local",
+            "kind": "option",
+            "description": "Repairs the migration history of the local database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--password": {
+            "Name": "--password",
+            "kind": "option",
+            "description": "Password to your remote Postgres database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpassword\u003e"
+            ]
+          },
+          "--status": {
+            "Name": "--status",
+            "kind": "option",
+            "description": "Version status to update",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstatus\u003e": {
+                "Name": "\u003cstatus\u003e",
+                "kind": "argument",
+                "description": "status",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstatus\u003e": {
+                "Name": "\u003cstatus\u003e",
+                "kind": "argument",
+                "description": "status",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstatus\u003e"
+            ]
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Password to your remote Postgres database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpassword\u003e"
+            ]
+          },
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cversion\u003e"
+        ]
+      },
+      "squash": {
+        "Name": "squash",
+        "kind": "subcommand",
+        "description": "Squash migrations to a single file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--db-url": {
+            "Name": "--db-url",
+            "kind": "option",
+            "description": "Database URL to connect to",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "--linked": {
+            "Name": "--linked",
+            "kind": "option",
+            "description": "Squashes the migration history of the linked project (default true)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--local": {
+            "Name": "--local",
+            "kind": "option",
+            "description": "Squashes the migration history of the local database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--password": {
+            "Name": "--password",
+            "kind": "option",
+            "description": "Password to your remote Postgres database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpassword\u003e"
+            ]
+          },
+          "--version": {
+            "Name": "--version",
+            "kind": "option",
+            "description": "Squash up to the specified version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Password to your remote Postgres database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpassword\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--db-url": {
+            "Name": "--db-url",
+            "kind": "option",
+            "description": "Database URL to connect to",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "--linked": {
+            "Name": "--linked",
+            "kind": "option",
+            "description": "Squashes the migration history of the linked project (default true)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--local": {
+            "Name": "--local",
+            "kind": "option",
+            "description": "Squashes the migration history of the local database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--password": {
+            "Name": "--password",
+            "kind": "option",
+            "description": "Password to your remote Postgres database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpassword\u003e"
+            ]
+          },
+          "--version": {
+            "Name": "--version",
+            "kind": "option",
+            "description": "Squash up to the specified version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Password to your remote Postgres database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpassword\u003e"
+            ]
+          }
+        }
+      },
+      "up": {
+        "Name": "up",
+        "kind": "subcommand",
+        "description": "Apply pending migrations to local database",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "orgs": {
+    "Name": "orgs",
+    "kind": "subcommand",
+    "description": "Manage Supabase organizations",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List all organizations",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "projects": {
+    "Name": "projects",
+    "kind": "subcommand",
+    "description": "Manage Supabase projects",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "create": {
+        "Name": "create",
+        "kind": "subcommand",
+        "description": "Create a project on Supabase",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--db-password": {
+            "Name": "--db-password",
+            "kind": "option",
+            "description": "Database password of the project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cdb-password\u003e": {
+                "Name": "\u003cdb-password\u003e",
+                "kind": "argument",
+                "description": "db-password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cdb-password\u003e": {
+                "Name": "\u003cdb-password\u003e",
+                "kind": "argument",
+                "description": "db-password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cdb-password\u003e"
+            ]
+          },
+          "--interactive": {
+            "Name": "--interactive",
+            "kind": "option",
+            "description": "Enables interactive mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--org-id": {
+            "Name": "--org-id",
+            "kind": "option",
+            "description": "Organization ID to create the project in",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003corg-id\u003e": {
+                "Name": "\u003corg-id\u003e",
+                "kind": "argument",
+                "description": "org-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003corg-id\u003e": {
+                "Name": "\u003corg-id\u003e",
+                "kind": "argument",
+                "description": "org-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003corg-id\u003e"
+            ]
+          },
+          "--plan": {
+            "Name": "--plan",
+            "kind": "option",
+            "description": "Select a plan that suits your needs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cplan\u003e": {
+                "Name": "\u003cplan\u003e",
+                "kind": "argument",
+                "description": "plan",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cplan\u003e": {
+                "Name": "\u003cplan\u003e",
+                "kind": "argument",
+                "description": "plan",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cplan\u003e"
+            ]
+          },
+          "--region": {
+            "Name": "--region",
+            "kind": "option",
+            "description": "Select a region close to you for the best performance",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cregion\u003e"
+            ]
+          },
+          "-i": {
+            "Name": "-i",
+            "kind": "option",
+            "description": "Enables interactive mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--db-password": {
+            "Name": "--db-password",
+            "kind": "option",
+            "description": "Database password of the project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cdb-password\u003e": {
+                "Name": "\u003cdb-password\u003e",
+                "kind": "argument",
+                "description": "db-password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cdb-password\u003e": {
+                "Name": "\u003cdb-password\u003e",
+                "kind": "argument",
+                "description": "db-password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cdb-password\u003e"
+            ]
+          },
+          "--interactive": {
+            "Name": "--interactive",
+            "kind": "option",
+            "description": "Enables interactive mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--org-id": {
+            "Name": "--org-id",
+            "kind": "option",
+            "description": "Organization ID to create the project in",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003corg-id\u003e": {
+                "Name": "\u003corg-id\u003e",
+                "kind": "argument",
+                "description": "org-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003corg-id\u003e": {
+                "Name": "\u003corg-id\u003e",
+                "kind": "argument",
+                "description": "org-id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003corg-id\u003e"
+            ]
+          },
+          "--plan": {
+            "Name": "--plan",
+            "kind": "option",
+            "description": "Select a plan that suits your needs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cplan\u003e": {
+                "Name": "\u003cplan\u003e",
+                "kind": "argument",
+                "description": "plan",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cplan\u003e": {
+                "Name": "\u003cplan\u003e",
+                "kind": "argument",
+                "description": "plan",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cplan\u003e"
+            ]
+          },
+          "--region": {
+            "Name": "--region",
+            "kind": "option",
+            "description": "Select a region close to you for the best performance",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cregion\u003e"
+            ]
+          },
+          "-i": {
+            "Name": "-i",
+            "kind": "option",
+            "description": "Enables interactive mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List all Supabase projects",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "secrets": {
+    "Name": "secrets",
+    "kind": "subcommand",
+    "description": "Manage Supabase secrets",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List all secrets on Supabase",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "set": {
+        "Name": "set",
+        "kind": "subcommand",
+        "description": "Set a secret(s) on Supabase",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--env-file": {
+            "Name": "--env-file",
+            "kind": "option",
+            "description": "Read secrets from a .env file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cenv-file\u003e": {
+                "Name": "\u003cenv-file\u003e",
+                "kind": "argument",
+                "description": "env-file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cenv-file\u003e": {
+                "Name": "\u003cenv-file\u003e",
+                "kind": "argument",
+                "description": "env-file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cenv-file\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--env-file": {
+            "Name": "--env-file",
+            "kind": "option",
+            "description": "Read secrets from a .env file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cenv-file\u003e": {
+                "Name": "\u003cenv-file\u003e",
+                "kind": "argument",
+                "description": "env-file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cenv-file\u003e": {
+                "Name": "\u003cenv-file\u003e",
+                "kind": "argument",
+                "description": "env-file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cenv-file\u003e"
+            ]
+          }
+        }
+      },
+      "unset": {
+        "Name": "unset",
+        "kind": "subcommand",
+        "description": "Unset a secret(s) on Supabase",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "start": {
+    "Name": "start",
+    "kind": "subcommand",
+    "description": "Start containers for Supabase local development",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "status": {
+    "Name": "status",
+    "kind": "subcommand",
+    "description": "Show status of local Supabase containers",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "stop": {
+    "Name": "stop",
+    "kind": "subcommand",
+    "description": "Stop all local Supabase containers",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

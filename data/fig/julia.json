@@ -1,0 +1,856 @@
+{
+  "--banner": {
+    "Name": "--banner",
+    "kind": "option",
+    "description": "Enable or disable startup banner",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--bug-report": {
+    "Name": "--bug-report",
+    "kind": "option",
+    "description": "Launch a bug report session. It can be used to start a REPL, run a script, or evaluate  expressions. It first tries to use BugReporting.jl installed in current environment and fallbacks to the latest compatible BugReporting.jl if not. For more information, see --bug-report=help",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cKIND\u003e": {
+        "Name": "\u003cKIND\u003e",
+        "kind": "argument",
+        "description": "KIND",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cKIND\u003e": {
+        "Name": "\u003cKIND\u003e",
+        "kind": "argument",
+        "description": "KIND",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cKIND\u003e"
+    ]
+  },
+  "--check-bounds": {
+    "Name": "--check-bounds",
+    "kind": "option",
+    "description": "Emit bounds checks always, never, or respect @inbounds declarations",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--code-coverage": {
+    "Name": "--code-coverage",
+    "kind": "option",
+    "description": "Count executions of source lines (omitting setting is equivalent to \"user\")",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--color": {
+    "Name": "--color",
+    "kind": "option",
+    "description": "Enable or disable color text",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--compile": {
+    "Name": "--compile",
+    "kind": "option",
+    "description": "Enable or disable JIT compiler, or request exhaustive or minimal compilation",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--compiled-modules": {
+    "Name": "--compiled-modules",
+    "kind": "option",
+    "description": "Enable or disable incremental precompilation of modules",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--cpu-target": {
+    "Name": "--cpu-target",
+    "kind": "option",
+    "description": "Limit usage of CPU features up to \u003ctarget\u003e; set to \"help\" to see the available options",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--depwarn": {
+    "Name": "--depwarn",
+    "kind": "option",
+    "description": "Enable or disable syntax and method deprecation warnings (\"error\" turns warnings into errors)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--eval": {
+    "Name": "--eval",
+    "kind": "option",
+    "description": "Evaluate given expr",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cexpr\u003e": {
+        "Name": "\u003cexpr\u003e",
+        "kind": "argument",
+        "description": "expr",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cexpr\u003e": {
+        "Name": "\u003cexpr\u003e",
+        "kind": "argument",
+        "description": "expr",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cexpr\u003e"
+    ]
+  },
+  "--handle-signals": {
+    "Name": "--handle-signals",
+    "kind": "option",
+    "description": "Enable or disable Julia's default signal handlers",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Print help message for julia (--help-hidden for more)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help-hidden": {
+    "Name": "--help-hidden",
+    "kind": "option",
+    "description": "Uncommon options not shown by `-h`",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--history-file": {
+    "Name": "--history-file",
+    "kind": "option",
+    "description": "Load or save history",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--home": {
+    "Name": "--home",
+    "kind": "option",
+    "description": "Set location of `julia` executable",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--image-codegen": {
+    "Name": "--image-codegen",
+    "kind": "option",
+    "description": "Force generate code in imaging mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--inline": {
+    "Name": "--inline",
+    "kind": "option",
+    "description": "Control whether inlining is permitted, including overriding @inline declarations",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--load": {
+    "Name": "--load",
+    "kind": "option",
+    "description": "Load given file immediately on all processors",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cjulia script\u003e": {
+        "Name": "\u003cjulia script\u003e",
+        "kind": "argument",
+        "description": "julia script",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cjulia script\u003e": {
+        "Name": "\u003cjulia script\u003e",
+        "kind": "argument",
+        "description": "julia script",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cjulia script\u003e"
+    ]
+  },
+  "--machine-file": {
+    "Name": "--machine-file",
+    "kind": "option",
+    "description": "Run processes on hosts listed in given file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--math-mode": {
+    "Name": "--math-mode",
+    "kind": "option",
+    "description": "Disallow or enable unsafe floating point optimizations (overrides @fastmath declaration)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--optimize": {
+    "Name": "--optimize",
+    "kind": "option",
+    "description": "Set the optimization level (default level is 2 if unspecified or 3 if used without a level)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--output-asm": {
+    "Name": "--output-asm",
+    "kind": "option",
+    "description": "Generate an assembly file (.s)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "--output-bc": {
+    "Name": "--output-bc",
+    "kind": "option",
+    "description": "Generate LLVM bitcode (.bc)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "--output-incremental": {
+    "Name": "--output-incremental",
+    "kind": "option",
+    "description": "Generate an incremental output file (rather than complete)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--output-ji": {
+    "Name": "--output-ji",
+    "kind": "option",
+    "description": "Generate a system image data file (.ji)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "--output-jit-bc": {
+    "Name": "--output-jit-bc",
+    "kind": "option",
+    "description": "Dump all IR generated by the frontend (not including system image)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "--output-o": {
+    "Name": "--output-o",
+    "kind": "option",
+    "description": "Generate an object file (including system image data)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "--output-unopt-bc": {
+    "Name": "--output-unopt-bc",
+    "kind": "option",
+    "description": "Generate unoptimized LLVM bitcode (.bc)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "--polly": {
+    "Name": "--polly",
+    "kind": "option",
+    "description": "Enable or disable the polyhedral optimizer Polly (overrides @polly declaration)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--print": {
+    "Name": "--print",
+    "kind": "option",
+    "description": "Evaluate given expr and display the result",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cexpr\u003e": {
+        "Name": "\u003cexpr\u003e",
+        "kind": "argument",
+        "description": "expr",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cexpr\u003e": {
+        "Name": "\u003cexpr\u003e",
+        "kind": "argument",
+        "description": "expr",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cexpr\u003e"
+    ]
+  },
+  "--procs": {
+    "Name": "--procs",
+    "kind": "option",
+    "description": "Integer value N launches N additional local worker processes \"auto\" launches as many workers as the number of local CPU threads",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--project": {
+    "Name": "--project",
+    "kind": "option",
+    "description": "Set given directory as the home project/environment",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cproject folder\u003e": {
+        "Name": "\u003cproject folder\u003e",
+        "kind": "argument",
+        "description": "project folder",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cproject folder\u003e": {
+        "Name": "\u003cproject folder\u003e",
+        "kind": "argument",
+        "description": "project folder",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--quiet": {
+    "Name": "--quiet",
+    "kind": "option",
+    "description": "Quiet startup: no banner, suppress REPL warnings",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--startup-file": {
+    "Name": "--startup-file",
+    "kind": "option",
+    "description": "Load `~/.julia/config/startup.jl`",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--sysimage": {
+    "Name": "--sysimage",
+    "kind": "option",
+    "description": "Start up with the given system image file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csystem image\u003e": {
+        "Name": "\u003csystem image\u003e",
+        "kind": "argument",
+        "description": "system image",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csystem image\u003e": {
+        "Name": "\u003csystem image\u003e",
+        "kind": "argument",
+        "description": "system image",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csystem image\u003e"
+    ]
+  },
+  "--sysimage-native-code": {
+    "Name": "--sysimage-native-code",
+    "kind": "option",
+    "description": "Use native code from system image if available",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--threads": {
+    "Name": "--threads",
+    "kind": "option",
+    "description": "Enable N threads; \"auto\" sets N to the number of local CPU threads",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--track-allocation": {
+    "Name": "--track-allocation",
+    "kind": "option",
+    "description": "Count bytes allocated by each source line (omitting setting is equivalent to \"user\")",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Display version information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--warn-overwrite": {
+    "Name": "--warn-overwrite",
+    "kind": "option",
+    "description": "Enable or disable method overwrite warnings",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--warn-scope": {
+    "Name": "--warn-scope",
+    "kind": "option",
+    "description": "Enable or disable warning for ambiguous top-level scope",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-C": {
+    "Name": "-C",
+    "kind": "option",
+    "description": "Limit usage of CPU features up to \u003ctarget\u003e; set to \"help\" to see the available options",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-E": {
+    "Name": "-E",
+    "kind": "option",
+    "description": "Evaluate given expr and display the result",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cexpr\u003e": {
+        "Name": "\u003cexpr\u003e",
+        "kind": "argument",
+        "description": "expr",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cexpr\u003e": {
+        "Name": "\u003cexpr\u003e",
+        "kind": "argument",
+        "description": "expr",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cexpr\u003e"
+    ]
+  },
+  "-H": {
+    "Name": "-H",
+    "kind": "option",
+    "description": "Set location of `julia` executable",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-J": {
+    "Name": "-J",
+    "kind": "option",
+    "description": "Start up with the given system image file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csystem image\u003e": {
+        "Name": "\u003csystem image\u003e",
+        "kind": "argument",
+        "description": "system image",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csystem image\u003e": {
+        "Name": "\u003csystem image\u003e",
+        "kind": "argument",
+        "description": "system image",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csystem image\u003e"
+    ]
+  },
+  "-L": {
+    "Name": "-L",
+    "kind": "option",
+    "description": "Load given file immediately on all processors",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cjulia script\u003e": {
+        "Name": "\u003cjulia script\u003e",
+        "kind": "argument",
+        "description": "julia script",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cjulia script\u003e": {
+        "Name": "\u003cjulia script\u003e",
+        "kind": "argument",
+        "description": "julia script",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cjulia script\u003e"
+    ]
+  },
+  "-O": {
+    "Name": "-O",
+    "kind": "option",
+    "description": "Set the optimization level (default level is 2 if unspecified or 3 if used without a level)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "-e": {
+    "Name": "-e",
+    "kind": "option",
+    "description": "Evaluate given expr",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cexpr\u003e": {
+        "Name": "\u003cexpr\u003e",
+        "kind": "argument",
+        "description": "expr",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cexpr\u003e": {
+        "Name": "\u003cexpr\u003e",
+        "kind": "argument",
+        "description": "expr",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cexpr\u003e"
+    ]
+  },
+  "-g": {
+    "Name": "-g",
+    "kind": "option",
+    "description": "Enable / Set the level of debug info generation",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Print help message for julia (--help-hidden for more)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Interactive mode; REPL runs and isinteractive() is true",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-p": {
+    "Name": "-p",
+    "kind": "option",
+    "description": "Integer value N launches N additional local worker processes \"auto\" launches as many workers as the number of local CPU threads",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-q": {
+    "Name": "-q",
+    "kind": "option",
+    "description": "Quiet startup: no banner, suppress REPL warnings",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Enable N threads; \"auto\" sets N to the number of local CPU threads",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Display version information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003cjulia script\u003e": {
+    "Name": "\u003cjulia script\u003e",
+    "kind": "argument",
+    "description": "julia script",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

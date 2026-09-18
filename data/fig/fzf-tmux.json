@@ -1,0 +1,1275 @@
+{
+  "+i": {
+    "Name": "+i",
+    "kind": "option",
+    "description": "Case-sensitive match (default: smart-case match)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "+s": {
+    "Name": "+s",
+    "kind": "option",
+    "description": "Do not sort the result",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "+x": {
+    "Name": "+x",
+    "kind": "option",
+    "description": "Disables extended-search mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--algo": {
+    "Name": "--algo",
+    "kind": "option",
+    "description": "Fuzzy matching algorithm",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctype\u003e"
+    ]
+  },
+  "--ansi": {
+    "Name": "--ansi",
+    "kind": "option",
+    "description": "Enable processing of ANSI color codes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--bind": {
+    "Name": "--bind",
+    "kind": "option",
+    "description": "Custom key bindings. Refer to the man page",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckeybinds\u003e": {
+        "Name": "\u003ckeybinds\u003e",
+        "kind": "argument",
+        "description": "keybinds",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckeybinds\u003e": {
+        "Name": "\u003ckeybinds\u003e",
+        "kind": "argument",
+        "description": "keybinds",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ckeybinds\u003e"
+    ]
+  },
+  "--border": {
+    "Name": "--border",
+    "kind": "option",
+    "description": "Draw border around the finder",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstyle\u003e": {
+        "Name": "\u003cstyle\u003e",
+        "kind": "argument",
+        "description": "style",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstyle\u003e": {
+        "Name": "\u003cstyle\u003e",
+        "kind": "argument",
+        "description": "style",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--color": {
+    "Name": "--color",
+    "kind": "option",
+    "description": "Base scheme",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccolor scheme\u003e": {
+        "Name": "\u003ccolor scheme\u003e",
+        "kind": "argument",
+        "description": "color scheme",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccolor scheme\u003e": {
+        "Name": "\u003ccolor scheme\u003e",
+        "kind": "argument",
+        "description": "color scheme",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccolor scheme\u003e"
+    ]
+  },
+  "--cycle": {
+    "Name": "--cycle",
+    "kind": "option",
+    "description": "Enable cyclic scroll",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--delimiter": {
+    "Name": "--delimiter",
+    "kind": "option",
+    "description": "Field delimiter regex (default: AWK-style)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSTR\u003e": {
+        "Name": "\u003cSTR\u003e",
+        "kind": "argument",
+        "description": "STR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSTR\u003e": {
+        "Name": "\u003cSTR\u003e",
+        "kind": "argument",
+        "description": "STR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSTR\u003e"
+    ]
+  },
+  "--disabled": {
+    "Name": "--disabled",
+    "kind": "option",
+    "description": "Do not perform search",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--exact": {
+    "Name": "--exact",
+    "kind": "option",
+    "description": "Enables Exact-match",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--exit-0": {
+    "Name": "--exit-0",
+    "kind": "option",
+    "description": "Exit immediately when there's no match",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--expect": {
+    "Name": "--expect",
+    "kind": "option",
+    "description": "Comma-separated list of keys to complete fzf",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckeys\u003e": {
+        "Name": "\u003ckeys\u003e",
+        "kind": "argument",
+        "description": "keys",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckeys\u003e": {
+        "Name": "\u003ckeys\u003e",
+        "kind": "argument",
+        "description": "keys",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ckeys\u003e"
+    ]
+  },
+  "--extended": {
+    "Name": "--extended",
+    "kind": "option",
+    "description": "Enables extended-search mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--filepath-word": {
+    "Name": "--filepath-word",
+    "kind": "option",
+    "description": "Make word-wise movements respect path separators",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--filter": {
+    "Name": "--filter",
+    "kind": "option",
+    "description": "Filter mode. Do not start interactive finder",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--header": {
+    "Name": "--header",
+    "kind": "option",
+    "description": "String to print as header",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--header-lines": {
+    "Name": "--header-lines",
+    "kind": "option",
+    "description": "The first N lines of the input are treated as header",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnumber\u003e": {
+        "Name": "\u003cnumber\u003e",
+        "kind": "argument",
+        "description": "number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnumber\u003e": {
+        "Name": "\u003cnumber\u003e",
+        "kind": "argument",
+        "description": "number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnumber\u003e"
+    ]
+  },
+  "--height": {
+    "Name": "--height",
+    "kind": "option",
+    "description": "Display fzf window below the cursor with the given height instead of using fullscreen",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cheight\u003e": {
+        "Name": "\u003cheight\u003e",
+        "kind": "argument",
+        "description": "height",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cheight\u003e": {
+        "Name": "\u003cheight\u003e",
+        "kind": "argument",
+        "description": "height",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cheight\u003e"
+    ]
+  },
+  "--history": {
+    "Name": "--history",
+    "kind": "option",
+    "description": "History file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile\u003e"
+    ]
+  },
+  "--history-size": {
+    "Name": "--history-size",
+    "kind": "option",
+    "description": "Maximum number of history entries",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnumber\u003e": {
+        "Name": "\u003cnumber\u003e",
+        "kind": "argument",
+        "description": "number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnumber\u003e": {
+        "Name": "\u003cnumber\u003e",
+        "kind": "argument",
+        "description": "number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnumber\u003e"
+    ]
+  },
+  "--hscroll-off": {
+    "Name": "--hscroll-off",
+    "kind": "option",
+    "description": "Number of screen columns to keep to the right of the highlighted substring",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccolumns\u003e": {
+        "Name": "\u003ccolumns\u003e",
+        "kind": "argument",
+        "description": "columns",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccolumns\u003e": {
+        "Name": "\u003ccolumns\u003e",
+        "kind": "argument",
+        "description": "columns",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccolumns\u003e"
+    ]
+  },
+  "--info": {
+    "Name": "--info",
+    "kind": "option",
+    "description": "Finder info style",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstyle\u003e": {
+        "Name": "\u003cstyle\u003e",
+        "kind": "argument",
+        "description": "style",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstyle\u003e": {
+        "Name": "\u003cstyle\u003e",
+        "kind": "argument",
+        "description": "style",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstyle\u003e"
+    ]
+  },
+  "--jump-labels": {
+    "Name": "--jump-labels",
+    "kind": "option",
+    "description": "Label characters for jump and jump-accept",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccharacters\u003e": {
+        "Name": "\u003ccharacters\u003e",
+        "kind": "argument",
+        "description": "characters",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccharacters\u003e": {
+        "Name": "\u003ccharacters\u003e",
+        "kind": "argument",
+        "description": "characters",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccharacters\u003e"
+    ]
+  },
+  "--keep-right": {
+    "Name": "--keep-right",
+    "kind": "option",
+    "description": "Keep the right end of the line visible on overflow",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--layout": {
+    "Name": "--layout",
+    "kind": "option",
+    "description": "Choose layout",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clayout\u003e": {
+        "Name": "\u003clayout\u003e",
+        "kind": "argument",
+        "description": "layout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clayout\u003e": {
+        "Name": "\u003clayout\u003e",
+        "kind": "argument",
+        "description": "layout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clayout\u003e"
+    ]
+  },
+  "--literal": {
+    "Name": "--literal",
+    "kind": "option",
+    "description": "Do not normalize latin script letters before matching",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--margin": {
+    "Name": "--margin",
+    "kind": "option",
+    "description": "Screen margin (TRBL | TB,RL | T,RL,B | T,R,B,L)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmargin\u003e": {
+        "Name": "\u003cmargin\u003e",
+        "kind": "argument",
+        "description": "margin",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmargin\u003e": {
+        "Name": "\u003cmargin\u003e",
+        "kind": "argument",
+        "description": "margin",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmargin\u003e"
+    ]
+  },
+  "--marker": {
+    "Name": "--marker",
+    "kind": "option",
+    "description": "Multi-select marker",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--min-height": {
+    "Name": "--min-height",
+    "kind": "option",
+    "description": "Minimum height when --height is given in percent",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cheight\u003e": {
+        "Name": "\u003cheight\u003e",
+        "kind": "argument",
+        "description": "height",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cheight\u003e": {
+        "Name": "\u003cheight\u003e",
+        "kind": "argument",
+        "description": "height",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cheight\u003e"
+    ]
+  },
+  "--multi": {
+    "Name": "--multi",
+    "kind": "option",
+    "description": "Enable multi-select with tab/shift-tab",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cMAX\u003e": {
+        "Name": "\u003cMAX\u003e",
+        "kind": "argument",
+        "description": "MAX",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cMAX\u003e": {
+        "Name": "\u003cMAX\u003e",
+        "kind": "argument",
+        "description": "MAX",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--no-bold": {
+    "Name": "--no-bold",
+    "kind": "option",
+    "description": "Do not use bold text",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-extended": {
+    "Name": "--no-extended",
+    "kind": "option",
+    "description": "Disables extended-search mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-hscroll": {
+    "Name": "--no-hscroll",
+    "kind": "option",
+    "description": "Disable horizontal scroll",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-mouse": {
+    "Name": "--no-mouse",
+    "kind": "option",
+    "description": "Disable mouse",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-sort": {
+    "Name": "--no-sort",
+    "kind": "option",
+    "description": "Do not sort the result",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--nth": {
+    "Name": "--nth",
+    "kind": "option",
+    "description": "Comma-separated list of field index expressions for limiting search scope",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cindex expressions\u003e": {
+        "Name": "\u003cindex expressions\u003e",
+        "kind": "argument",
+        "description": "index expressions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cindex expressions\u003e": {
+        "Name": "\u003cindex expressions\u003e",
+        "kind": "argument",
+        "description": "index expressions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cindex expressions\u003e"
+    ]
+  },
+  "--padding": {
+    "Name": "--padding",
+    "kind": "option",
+    "description": "Padding inside border (TRBL | TB,RL | T,RL,B | T,R,B,L)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpadding\u003e": {
+        "Name": "\u003cpadding\u003e",
+        "kind": "argument",
+        "description": "padding",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpadding\u003e": {
+        "Name": "\u003cpadding\u003e",
+        "kind": "argument",
+        "description": "padding",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpadding\u003e"
+    ]
+  },
+  "--pointer": {
+    "Name": "--pointer",
+    "kind": "option",
+    "description": "Pointer to the current line",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--preview": {
+    "Name": "--preview",
+    "kind": "option",
+    "description": "Command to preview highlighted line ({})",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "--preview-window": {
+    "Name": "--preview-window",
+    "kind": "option",
+    "description": "Preview window layout",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003coptions\u003e": {
+        "Name": "\u003coptions\u003e",
+        "kind": "argument",
+        "description": "options",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003coptions\u003e": {
+        "Name": "\u003coptions\u003e",
+        "kind": "argument",
+        "description": "options",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003coptions\u003e"
+    ]
+  },
+  "--print-query": {
+    "Name": "--print-query",
+    "kind": "option",
+    "description": "Print query as the first line",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--print0": {
+    "Name": "--print0",
+    "kind": "option",
+    "description": "Print output delimited by ASCII NUL characters",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--prompt": {
+    "Name": "--prompt",
+    "kind": "option",
+    "description": "Input prompt",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--query": {
+    "Name": "--query",
+    "kind": "option",
+    "description": "Start the finder with the given query",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--read0": {
+    "Name": "--read0",
+    "kind": "option",
+    "description": "Read input delimited by ASCII NUL characters",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--select-1": {
+    "Name": "--select-1",
+    "kind": "option",
+    "description": "Automatically select the only match",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--sync": {
+    "Name": "--sync",
+    "kind": "option",
+    "description": "Synchronous search for multi-staged filtering",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--tabstop": {
+    "Name": "--tabstop",
+    "kind": "option",
+    "description": "Number of spaces for a tab character",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cspaces\u003e": {
+        "Name": "\u003cspaces\u003e",
+        "kind": "argument",
+        "description": "spaces",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cspaces\u003e": {
+        "Name": "\u003cspaces\u003e",
+        "kind": "argument",
+        "description": "spaces",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cspaces\u003e"
+    ]
+  },
+  "--tac": {
+    "Name": "--tac",
+    "kind": "option",
+    "description": "Reverse the order of the input",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--tiebreak": {
+    "Name": "--tiebreak",
+    "kind": "option",
+    "description": "Comma-separated list of sort criteria to apply when the scores are tied",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccriteria\u003e": {
+        "Name": "\u003ccriteria\u003e",
+        "kind": "argument",
+        "description": "criteria",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccriteria\u003e": {
+        "Name": "\u003ccriteria\u003e",
+        "kind": "argument",
+        "description": "criteria",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccriteria\u003e"
+    ]
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Display version information and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--with-nth": {
+    "Name": "--with-nth",
+    "kind": "option",
+    "description": "Transform the presentation of each line using field index expressions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cindex expressions\u003e": {
+        "Name": "\u003cindex expressions\u003e",
+        "kind": "argument",
+        "description": "index expressions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cindex expressions\u003e": {
+        "Name": "\u003cindex expressions\u003e",
+        "kind": "argument",
+        "description": "index expressions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cindex expressions\u003e"
+    ]
+  },
+  "-0": {
+    "Name": "-0",
+    "kind": "option",
+    "description": "Exit immediately when there's no match",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-1": {
+    "Name": "-1",
+    "kind": "option",
+    "description": "Automatically select the only match",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Field delimiter regex (default: AWK-style)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSTR\u003e": {
+        "Name": "\u003cSTR\u003e",
+        "kind": "argument",
+        "description": "STR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSTR\u003e": {
+        "Name": "\u003cSTR\u003e",
+        "kind": "argument",
+        "description": "STR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSTR\u003e"
+    ]
+  },
+  "-e": {
+    "Name": "-e",
+    "kind": "option",
+    "description": "Enables Exact-match",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Filter mode. Do not start interactive finder",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Case-insensitive match (default: smart-case match)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-m": {
+    "Name": "-m",
+    "kind": "option",
+    "description": "Enable multi-select with tab/shift-tab",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cMAX\u003e": {
+        "Name": "\u003cMAX\u003e",
+        "kind": "argument",
+        "description": "MAX",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cMAX\u003e": {
+        "Name": "\u003cMAX\u003e",
+        "kind": "argument",
+        "description": "MAX",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "-n": {
+    "Name": "-n",
+    "kind": "option",
+    "description": "Comma-separated list of field index expressions for limiting search scope",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cindex expressions\u003e": {
+        "Name": "\u003cindex expressions\u003e",
+        "kind": "argument",
+        "description": "index expressions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cindex expressions\u003e": {
+        "Name": "\u003cindex expressions\u003e",
+        "kind": "argument",
+        "description": "index expressions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cindex expressions\u003e"
+    ]
+  },
+  "-q": {
+    "Name": "-q",
+    "kind": "option",
+    "description": "Start the finder with the given query",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "-x": {
+    "Name": "-x",
+    "kind": "option",
+    "description": "Enables extended-search mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

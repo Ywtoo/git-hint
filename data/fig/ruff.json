@@ -1,0 +1,2510 @@
+{
+  "--config": {
+    "Name": "--config",
+    "kind": "option",
+    "description": "Path to the `pyproject.toml` or `ruff.toml` file to use for configuration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cconfig\u003e": {
+        "Name": "\u003cconfig\u003e",
+        "kind": "argument",
+        "description": "config",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cconfig\u003e": {
+        "Name": "\u003cconfig\u003e",
+        "kind": "argument",
+        "description": "config",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Print help",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--isolated": {
+    "Name": "--isolated",
+    "kind": "option",
+    "description": "Ignore all configuration files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--quiet": {
+    "Name": "--quiet",
+    "kind": "option",
+    "description": "Print diagnostics, but nothing else",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--silent": {
+    "Name": "--silent",
+    "kind": "option",
+    "description": "Disable all logging (but still exit with status code \"1\" upon detecting diagnostics)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Enable verbose logging",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-q": {
+    "Name": "-q",
+    "kind": "option",
+    "description": "Print diagnostics, but nothing else",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Disable all logging (but still exit with status code \"1\" upon detecting diagnostics)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Enable verbose logging",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "analyze": {
+    "Name": "analyze",
+    "kind": "subcommand",
+    "description": "Run analysis over Python source code",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "graph": {
+        "Name": "graph",
+        "kind": "subcommand",
+        "description": "Generate a map of Python file dependencies or dependents",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--detect-string-imports": {
+            "Name": "--detect-string-imports",
+            "kind": "option",
+            "description": "Attempt to detect imports from string literals",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--direction": {
+            "Name": "--direction",
+            "kind": "option",
+            "description": "The direction of the import map. By default, generates a dependency map, i.e., a map from file to files that it depends on. Use `--direction dependents` to generate a map from file to files that depend on it",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cDIRECTION\u003e": {
+                "Name": "\u003cDIRECTION\u003e",
+                "kind": "argument",
+                "description": "DIRECTION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cDIRECTION\u003e": {
+                "Name": "\u003cDIRECTION\u003e",
+                "kind": "argument",
+                "description": "DIRECTION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cDIRECTION\u003e"
+            ]
+          },
+          "--no-preview": {
+            "Name": "--no-preview",
+            "kind": "option",
+            "description": "Disable preview mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--preview": {
+            "Name": "--preview",
+            "kind": "option",
+            "description": "Enable preview mode. Use `--no-preview` to disable",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--target-version": {
+            "Name": "--target-version",
+            "kind": "option",
+            "description": "The minimum Python version that should be supported",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTARGET_VERSION\u003e": {
+                "Name": "\u003cTARGET_VERSION\u003e",
+                "kind": "argument",
+                "description": "TARGET_VERSION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTARGET_VERSION\u003e": {
+                "Name": "\u003cTARGET_VERSION\u003e",
+                "kind": "argument",
+                "description": "TARGET_VERSION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTARGET_VERSION\u003e"
+            ]
+          },
+          "\u003cPath\u003e": {
+            "Name": "\u003cPath\u003e",
+            "kind": "argument",
+            "description": "Path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--detect-string-imports": {
+            "Name": "--detect-string-imports",
+            "kind": "option",
+            "description": "Attempt to detect imports from string literals",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--direction": {
+            "Name": "--direction",
+            "kind": "option",
+            "description": "The direction of the import map. By default, generates a dependency map, i.e., a map from file to files that it depends on. Use `--direction dependents` to generate a map from file to files that depend on it",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cDIRECTION\u003e": {
+                "Name": "\u003cDIRECTION\u003e",
+                "kind": "argument",
+                "description": "DIRECTION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cDIRECTION\u003e": {
+                "Name": "\u003cDIRECTION\u003e",
+                "kind": "argument",
+                "description": "DIRECTION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cDIRECTION\u003e"
+            ]
+          },
+          "--no-preview": {
+            "Name": "--no-preview",
+            "kind": "option",
+            "description": "Disable preview mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--preview": {
+            "Name": "--preview",
+            "kind": "option",
+            "description": "Enable preview mode. Use `--no-preview` to disable",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--target-version": {
+            "Name": "--target-version",
+            "kind": "option",
+            "description": "The minimum Python version that should be supported",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cTARGET_VERSION\u003e": {
+                "Name": "\u003cTARGET_VERSION\u003e",
+                "kind": "argument",
+                "description": "TARGET_VERSION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cTARGET_VERSION\u003e": {
+                "Name": "\u003cTARGET_VERSION\u003e",
+                "kind": "argument",
+                "description": "TARGET_VERSION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cTARGET_VERSION\u003e"
+            ]
+          },
+          "\u003cPath\u003e": {
+            "Name": "\u003cPath\u003e",
+            "kind": "argument",
+            "description": "Path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cPath\u003e"
+        ]
+      }
+    }
+  },
+  "check": {
+    "Name": "check",
+    "kind": "subcommand",
+    "description": "Run Ruff on the given files or directories",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--add-noqa": {
+        "Name": "--add-noqa",
+        "kind": "option",
+        "description": "Enable automatic additions of `noqa` directives to failing lines",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--cache-dir": {
+        "Name": "--cache-dir",
+        "kind": "option",
+        "description": "Path to the cache directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccache_dir\u003e": {
+            "Name": "\u003ccache_dir\u003e",
+            "kind": "argument",
+            "description": "cache_dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccache_dir\u003e": {
+            "Name": "\u003ccache_dir\u003e",
+            "kind": "argument",
+            "description": "cache_dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--diff": {
+        "Name": "--diff",
+        "kind": "option",
+        "description": "Avoid writing any fixed files back; instead, output a diff for each changed file to stdout, and exit 0 if there are no diffs. Implies `--fix-only`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "List of paths, used to omit files and/or directories from analysis",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cexclude\u003e": {
+            "Name": "\u003cexclude\u003e",
+            "kind": "argument",
+            "description": "exclude",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cexclude\u003e": {
+            "Name": "\u003cexclude\u003e",
+            "kind": "argument",
+            "description": "exclude",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--exit-non-zero-on-fix": {
+        "Name": "--exit-non-zero-on-fix",
+        "kind": "option",
+        "description": "Exit with a non-zero status code if any files were modified via fix, even if no lint violations remain",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exit-zero": {
+        "Name": "--exit-zero",
+        "kind": "option",
+        "description": "Exit with status code \"0\", even upon detecting lint violations",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--extend-exclude": {
+        "Name": "--extend-exclude",
+        "kind": "option",
+        "description": "Like --exclude, but adds additional files and directories on top of those already excluded",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cextend_exclude\u003e": {
+            "Name": "\u003cextend_exclude\u003e",
+            "kind": "argument",
+            "description": "extend_exclude",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cextend_exclude\u003e": {
+            "Name": "\u003cextend_exclude\u003e",
+            "kind": "argument",
+            "description": "extend_exclude",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--extend-fixable": {
+        "Name": "--extend-fixable",
+        "kind": "option",
+        "description": "Like --fixable, but adds additional rule codes on top of those already specified",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cextend_fixable\u003e": {
+            "Name": "\u003cextend_fixable\u003e",
+            "kind": "argument",
+            "description": "extend_fixable",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cextend_fixable\u003e": {
+            "Name": "\u003cextend_fixable\u003e",
+            "kind": "argument",
+            "description": "extend_fixable",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--extend-per-file-ignores": {
+        "Name": "--extend-per-file-ignores",
+        "kind": "option",
+        "description": "Like `--per-file-ignores`, but adds additional ignores on top of those already specified",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cextend_per_file_ignores\u003e": {
+            "Name": "\u003cextend_per_file_ignores\u003e",
+            "kind": "argument",
+            "description": "extend_per_file_ignores",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cextend_per_file_ignores\u003e": {
+            "Name": "\u003cextend_per_file_ignores\u003e",
+            "kind": "argument",
+            "description": "extend_per_file_ignores",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--extend-select": {
+        "Name": "--extend-select",
+        "kind": "option",
+        "description": "Like --select, but adds additional rule codes on top of the selected ones",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cextend_select\u003e": {
+            "Name": "\u003cextend_select\u003e",
+            "kind": "argument",
+            "description": "extend_select",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cextend_select\u003e": {
+            "Name": "\u003cextend_select\u003e",
+            "kind": "argument",
+            "description": "extend_select",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--extension": {
+        "Name": "--extension",
+        "kind": "option",
+        "description": "List of mappings from file extension to language (one of `python`, `ipynb`, `pyi`). For example, to treat `.ipy` files as IPython notebooks, use `--extension ipy:ipynb`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cextension\u003e": {
+            "Name": "\u003cextension\u003e",
+            "kind": "argument",
+            "description": "extension",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cextension\u003e": {
+            "Name": "\u003cextension\u003e",
+            "kind": "argument",
+            "description": "extension",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--fix": {
+        "Name": "--fix",
+        "kind": "option",
+        "description": "Apply fixes to resolve lint violations",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--fix-only": {
+        "Name": "--fix-only",
+        "kind": "option",
+        "description": "Apply fixes to resolve lint violations, but don't report on, or exit non-zero for, leftover violations. Implies `--fix`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--fixable": {
+        "Name": "--fixable",
+        "kind": "option",
+        "description": "List of rule codes to treat as eligible for fix. Only applicable when fix itself is enabled (e.g., via `--fix`)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfixable\u003e": {
+            "Name": "\u003cfixable\u003e",
+            "kind": "argument",
+            "description": "fixable",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfixable\u003e": {
+            "Name": "\u003cfixable\u003e",
+            "kind": "argument",
+            "description": "fixable",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--force-exclude": {
+        "Name": "--force-exclude",
+        "kind": "option",
+        "description": "Enforce exclusions, even for paths passed to Ruff directly on the command-line",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ignore": {
+        "Name": "--ignore",
+        "kind": "option",
+        "description": "Comma-separated list of rule codes to disable",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cignore\u003e": {
+            "Name": "\u003cignore\u003e",
+            "kind": "argument",
+            "description": "ignore",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cignore\u003e": {
+            "Name": "\u003cignore\u003e",
+            "kind": "argument",
+            "description": "ignore",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--ignore-noqa": {
+        "Name": "--ignore-noqa",
+        "kind": "option",
+        "description": "Ignore any `# noqa` comments",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-cache": {
+        "Name": "--no-cache",
+        "kind": "option",
+        "description": "Disable cache reads",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output-file": {
+        "Name": "--output-file",
+        "kind": "option",
+        "description": "Specify file to write the linter output to (default: stdout)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput_file\u003e": {
+            "Name": "\u003coutput_file\u003e",
+            "kind": "argument",
+            "description": "output_file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput_file\u003e": {
+            "Name": "\u003coutput_file\u003e",
+            "kind": "argument",
+            "description": "output_file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--output-format": {
+        "Name": "--output-format",
+        "kind": "option",
+        "description": "Output serialization format for violations. The default serialization format is 'full'",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput_format\u003e": {
+            "Name": "\u003coutput_format\u003e",
+            "kind": "argument",
+            "description": "output_format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput_format\u003e": {
+            "Name": "\u003coutput_format\u003e",
+            "kind": "argument",
+            "description": "output_format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--per-file-ignores": {
+        "Name": "--per-file-ignores",
+        "kind": "option",
+        "description": "List of mappings from file pattern to code to exclude",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cper_file_ignores\u003e": {
+            "Name": "\u003cper_file_ignores\u003e",
+            "kind": "argument",
+            "description": "per_file_ignores",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cper_file_ignores\u003e": {
+            "Name": "\u003cper_file_ignores\u003e",
+            "kind": "argument",
+            "description": "per_file_ignores",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--preview": {
+        "Name": "--preview",
+        "kind": "option",
+        "description": "Enable preview mode; checks will include unstable rules and fixes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--respect-gitignore": {
+        "Name": "--respect-gitignore",
+        "kind": "option",
+        "description": "Respect file exclusions via `.gitignore` and other standard ignore files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--select": {
+        "Name": "--select",
+        "kind": "option",
+        "description": "Comma-separated list of rule codes to enable (or ALL, to enable all rules)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cselect\u003e": {
+            "Name": "\u003cselect\u003e",
+            "kind": "argument",
+            "description": "select",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cselect\u003e": {
+            "Name": "\u003cselect\u003e",
+            "kind": "argument",
+            "description": "select",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--show-files": {
+        "Name": "--show-files",
+        "kind": "option",
+        "description": "See the files Ruff will be run against with the current settings",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--show-fixes": {
+        "Name": "--show-fixes",
+        "kind": "option",
+        "description": "Show an enumeration of all fixed lint violations",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--show-settings": {
+        "Name": "--show-settings",
+        "kind": "option",
+        "description": "See the settings Ruff will use to lint a given Python file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--statistics": {
+        "Name": "--statistics",
+        "kind": "option",
+        "description": "Show counts for every rule with at least one violation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--stdin-filename": {
+        "Name": "--stdin-filename",
+        "kind": "option",
+        "description": "The name of the file when passing it through stdin",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstdin_filename\u003e": {
+            "Name": "\u003cstdin_filename\u003e",
+            "kind": "argument",
+            "description": "stdin_filename",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstdin_filename\u003e": {
+            "Name": "\u003cstdin_filename\u003e",
+            "kind": "argument",
+            "description": "stdin_filename",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--target-version": {
+        "Name": "--target-version",
+        "kind": "option",
+        "description": "The minimum Python version that should be supported",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctarget_version\u003e": {
+            "Name": "\u003ctarget_version\u003e",
+            "kind": "argument",
+            "description": "target_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctarget_version\u003e": {
+            "Name": "\u003ctarget_version\u003e",
+            "kind": "argument",
+            "description": "target_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--unfixable": {
+        "Name": "--unfixable",
+        "kind": "option",
+        "description": "List of rule codes to treat as ineligible for fix. Only applicable when fix itself is enabled (e.g., via `--fix`)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cunfixable\u003e": {
+            "Name": "\u003cunfixable\u003e",
+            "kind": "argument",
+            "description": "unfixable",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cunfixable\u003e": {
+            "Name": "\u003cunfixable\u003e",
+            "kind": "argument",
+            "description": "unfixable",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--unsafe-fixes": {
+        "Name": "--unsafe-fixes",
+        "kind": "option",
+        "description": "Include fixes that may not retain the original intent of the code",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--watch": {
+        "Name": "--watch",
+        "kind": "option",
+        "description": "Run in watch mode by re-running whenever files change",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-e": {
+        "Name": "-e",
+        "kind": "option",
+        "description": "Exit with status code \"0\", even upon detecting lint violations",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "Disable cache reads",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Specify file to write the linter output to (default: stdout)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput_file\u003e": {
+            "Name": "\u003coutput_file\u003e",
+            "kind": "argument",
+            "description": "output_file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput_file\u003e": {
+            "Name": "\u003coutput_file\u003e",
+            "kind": "argument",
+            "description": "output_file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-w": {
+        "Name": "-w",
+        "kind": "option",
+        "description": "Run in watch mode by re-running whenever files change",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cPath\u003e": {
+        "Name": "\u003cPath\u003e",
+        "kind": "argument",
+        "description": "Path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--add-noqa": {
+        "Name": "--add-noqa",
+        "kind": "option",
+        "description": "Enable automatic additions of `noqa` directives to failing lines",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--cache-dir": {
+        "Name": "--cache-dir",
+        "kind": "option",
+        "description": "Path to the cache directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccache_dir\u003e": {
+            "Name": "\u003ccache_dir\u003e",
+            "kind": "argument",
+            "description": "cache_dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccache_dir\u003e": {
+            "Name": "\u003ccache_dir\u003e",
+            "kind": "argument",
+            "description": "cache_dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--diff": {
+        "Name": "--diff",
+        "kind": "option",
+        "description": "Avoid writing any fixed files back; instead, output a diff for each changed file to stdout, and exit 0 if there are no diffs. Implies `--fix-only`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "List of paths, used to omit files and/or directories from analysis",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cexclude\u003e": {
+            "Name": "\u003cexclude\u003e",
+            "kind": "argument",
+            "description": "exclude",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cexclude\u003e": {
+            "Name": "\u003cexclude\u003e",
+            "kind": "argument",
+            "description": "exclude",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--exit-non-zero-on-fix": {
+        "Name": "--exit-non-zero-on-fix",
+        "kind": "option",
+        "description": "Exit with a non-zero status code if any files were modified via fix, even if no lint violations remain",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exit-zero": {
+        "Name": "--exit-zero",
+        "kind": "option",
+        "description": "Exit with status code \"0\", even upon detecting lint violations",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--extend-exclude": {
+        "Name": "--extend-exclude",
+        "kind": "option",
+        "description": "Like --exclude, but adds additional files and directories on top of those already excluded",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cextend_exclude\u003e": {
+            "Name": "\u003cextend_exclude\u003e",
+            "kind": "argument",
+            "description": "extend_exclude",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cextend_exclude\u003e": {
+            "Name": "\u003cextend_exclude\u003e",
+            "kind": "argument",
+            "description": "extend_exclude",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--extend-fixable": {
+        "Name": "--extend-fixable",
+        "kind": "option",
+        "description": "Like --fixable, but adds additional rule codes on top of those already specified",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cextend_fixable\u003e": {
+            "Name": "\u003cextend_fixable\u003e",
+            "kind": "argument",
+            "description": "extend_fixable",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cextend_fixable\u003e": {
+            "Name": "\u003cextend_fixable\u003e",
+            "kind": "argument",
+            "description": "extend_fixable",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--extend-per-file-ignores": {
+        "Name": "--extend-per-file-ignores",
+        "kind": "option",
+        "description": "Like `--per-file-ignores`, but adds additional ignores on top of those already specified",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cextend_per_file_ignores\u003e": {
+            "Name": "\u003cextend_per_file_ignores\u003e",
+            "kind": "argument",
+            "description": "extend_per_file_ignores",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cextend_per_file_ignores\u003e": {
+            "Name": "\u003cextend_per_file_ignores\u003e",
+            "kind": "argument",
+            "description": "extend_per_file_ignores",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--extend-select": {
+        "Name": "--extend-select",
+        "kind": "option",
+        "description": "Like --select, but adds additional rule codes on top of the selected ones",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cextend_select\u003e": {
+            "Name": "\u003cextend_select\u003e",
+            "kind": "argument",
+            "description": "extend_select",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cextend_select\u003e": {
+            "Name": "\u003cextend_select\u003e",
+            "kind": "argument",
+            "description": "extend_select",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--extension": {
+        "Name": "--extension",
+        "kind": "option",
+        "description": "List of mappings from file extension to language (one of `python`, `ipynb`, `pyi`). For example, to treat `.ipy` files as IPython notebooks, use `--extension ipy:ipynb`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cextension\u003e": {
+            "Name": "\u003cextension\u003e",
+            "kind": "argument",
+            "description": "extension",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cextension\u003e": {
+            "Name": "\u003cextension\u003e",
+            "kind": "argument",
+            "description": "extension",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--fix": {
+        "Name": "--fix",
+        "kind": "option",
+        "description": "Apply fixes to resolve lint violations",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--fix-only": {
+        "Name": "--fix-only",
+        "kind": "option",
+        "description": "Apply fixes to resolve lint violations, but don't report on, or exit non-zero for, leftover violations. Implies `--fix`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--fixable": {
+        "Name": "--fixable",
+        "kind": "option",
+        "description": "List of rule codes to treat as eligible for fix. Only applicable when fix itself is enabled (e.g., via `--fix`)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfixable\u003e": {
+            "Name": "\u003cfixable\u003e",
+            "kind": "argument",
+            "description": "fixable",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfixable\u003e": {
+            "Name": "\u003cfixable\u003e",
+            "kind": "argument",
+            "description": "fixable",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--force-exclude": {
+        "Name": "--force-exclude",
+        "kind": "option",
+        "description": "Enforce exclusions, even for paths passed to Ruff directly on the command-line",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ignore": {
+        "Name": "--ignore",
+        "kind": "option",
+        "description": "Comma-separated list of rule codes to disable",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cignore\u003e": {
+            "Name": "\u003cignore\u003e",
+            "kind": "argument",
+            "description": "ignore",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cignore\u003e": {
+            "Name": "\u003cignore\u003e",
+            "kind": "argument",
+            "description": "ignore",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--ignore-noqa": {
+        "Name": "--ignore-noqa",
+        "kind": "option",
+        "description": "Ignore any `# noqa` comments",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-cache": {
+        "Name": "--no-cache",
+        "kind": "option",
+        "description": "Disable cache reads",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output-file": {
+        "Name": "--output-file",
+        "kind": "option",
+        "description": "Specify file to write the linter output to (default: stdout)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput_file\u003e": {
+            "Name": "\u003coutput_file\u003e",
+            "kind": "argument",
+            "description": "output_file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput_file\u003e": {
+            "Name": "\u003coutput_file\u003e",
+            "kind": "argument",
+            "description": "output_file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--output-format": {
+        "Name": "--output-format",
+        "kind": "option",
+        "description": "Output serialization format for violations. The default serialization format is 'full'",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput_format\u003e": {
+            "Name": "\u003coutput_format\u003e",
+            "kind": "argument",
+            "description": "output_format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput_format\u003e": {
+            "Name": "\u003coutput_format\u003e",
+            "kind": "argument",
+            "description": "output_format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--per-file-ignores": {
+        "Name": "--per-file-ignores",
+        "kind": "option",
+        "description": "List of mappings from file pattern to code to exclude",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cper_file_ignores\u003e": {
+            "Name": "\u003cper_file_ignores\u003e",
+            "kind": "argument",
+            "description": "per_file_ignores",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cper_file_ignores\u003e": {
+            "Name": "\u003cper_file_ignores\u003e",
+            "kind": "argument",
+            "description": "per_file_ignores",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--preview": {
+        "Name": "--preview",
+        "kind": "option",
+        "description": "Enable preview mode; checks will include unstable rules and fixes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--respect-gitignore": {
+        "Name": "--respect-gitignore",
+        "kind": "option",
+        "description": "Respect file exclusions via `.gitignore` and other standard ignore files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--select": {
+        "Name": "--select",
+        "kind": "option",
+        "description": "Comma-separated list of rule codes to enable (or ALL, to enable all rules)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cselect\u003e": {
+            "Name": "\u003cselect\u003e",
+            "kind": "argument",
+            "description": "select",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cselect\u003e": {
+            "Name": "\u003cselect\u003e",
+            "kind": "argument",
+            "description": "select",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--show-files": {
+        "Name": "--show-files",
+        "kind": "option",
+        "description": "See the files Ruff will be run against with the current settings",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--show-fixes": {
+        "Name": "--show-fixes",
+        "kind": "option",
+        "description": "Show an enumeration of all fixed lint violations",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--show-settings": {
+        "Name": "--show-settings",
+        "kind": "option",
+        "description": "See the settings Ruff will use to lint a given Python file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--statistics": {
+        "Name": "--statistics",
+        "kind": "option",
+        "description": "Show counts for every rule with at least one violation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--stdin-filename": {
+        "Name": "--stdin-filename",
+        "kind": "option",
+        "description": "The name of the file when passing it through stdin",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstdin_filename\u003e": {
+            "Name": "\u003cstdin_filename\u003e",
+            "kind": "argument",
+            "description": "stdin_filename",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstdin_filename\u003e": {
+            "Name": "\u003cstdin_filename\u003e",
+            "kind": "argument",
+            "description": "stdin_filename",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--target-version": {
+        "Name": "--target-version",
+        "kind": "option",
+        "description": "The minimum Python version that should be supported",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctarget_version\u003e": {
+            "Name": "\u003ctarget_version\u003e",
+            "kind": "argument",
+            "description": "target_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctarget_version\u003e": {
+            "Name": "\u003ctarget_version\u003e",
+            "kind": "argument",
+            "description": "target_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--unfixable": {
+        "Name": "--unfixable",
+        "kind": "option",
+        "description": "List of rule codes to treat as ineligible for fix. Only applicable when fix itself is enabled (e.g., via `--fix`)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cunfixable\u003e": {
+            "Name": "\u003cunfixable\u003e",
+            "kind": "argument",
+            "description": "unfixable",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cunfixable\u003e": {
+            "Name": "\u003cunfixable\u003e",
+            "kind": "argument",
+            "description": "unfixable",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--unsafe-fixes": {
+        "Name": "--unsafe-fixes",
+        "kind": "option",
+        "description": "Include fixes that may not retain the original intent of the code",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--watch": {
+        "Name": "--watch",
+        "kind": "option",
+        "description": "Run in watch mode by re-running whenever files change",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-e": {
+        "Name": "-e",
+        "kind": "option",
+        "description": "Exit with status code \"0\", even upon detecting lint violations",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "Disable cache reads",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Specify file to write the linter output to (default: stdout)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput_file\u003e": {
+            "Name": "\u003coutput_file\u003e",
+            "kind": "argument",
+            "description": "output_file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput_file\u003e": {
+            "Name": "\u003coutput_file\u003e",
+            "kind": "argument",
+            "description": "output_file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-w": {
+        "Name": "-w",
+        "kind": "option",
+        "description": "Run in watch mode by re-running whenever files change",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cPath\u003e": {
+        "Name": "\u003cPath\u003e",
+        "kind": "argument",
+        "description": "Path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPath\u003e"
+    ]
+  },
+  "clean": {
+    "Name": "clean",
+    "kind": "subcommand",
+    "description": "Clear any caches in the current directory and any subdirectories",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "config": {
+    "Name": "config",
+    "kind": "subcommand",
+    "description": "List or describe the available configuration options",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--output-format": {
+        "Name": "--output-format",
+        "kind": "option",
+        "description": "Output format [default: text]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput-format\u003e": {
+            "Name": "\u003coutput-format\u003e",
+            "kind": "argument",
+            "description": "output-format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput-format\u003e": {
+            "Name": "\u003coutput-format\u003e",
+            "kind": "argument",
+            "description": "output-format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput-format\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--output-format": {
+        "Name": "--output-format",
+        "kind": "option",
+        "description": "Output format [default: text]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput-format\u003e": {
+            "Name": "\u003coutput-format\u003e",
+            "kind": "argument",
+            "description": "output-format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput-format\u003e": {
+            "Name": "\u003coutput-format\u003e",
+            "kind": "argument",
+            "description": "output-format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput-format\u003e"
+        ]
+      }
+    }
+  },
+  "format": {
+    "Name": "format",
+    "kind": "subcommand",
+    "description": "Run the Ruff formatter on the given files or directories",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--cache-dir": {
+        "Name": "--cache-dir",
+        "kind": "option",
+        "description": "Path to the cache directory (env: RUFF_CACHE_DIR=)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccache_dir\u003e": {
+            "Name": "\u003ccache_dir\u003e",
+            "kind": "argument",
+            "description": "cache_dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccache_dir\u003e": {
+            "Name": "\u003ccache_dir\u003e",
+            "kind": "argument",
+            "description": "cache_dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccache_dir\u003e"
+        ]
+      },
+      "--check": {
+        "Name": "--check",
+        "kind": "option",
+        "description": "Avoid writing any formatted files back; instead, exit with a non-zero status code if any files would have been modified, and zero otherwise",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--diff": {
+        "Name": "--diff",
+        "kind": "option",
+        "description": "Avoid writing any formatted files back; instead, exit with a non-zero status code and the difference between the current file and how the formatted file would look like",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "List of paths, used to omit files and/or directories from analysis",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cexclude\u003e": {
+            "Name": "\u003cexclude\u003e",
+            "kind": "argument",
+            "description": "exclude",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cexclude\u003e": {
+            "Name": "\u003cexclude\u003e",
+            "kind": "argument",
+            "description": "exclude",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--extension": {
+        "Name": "--extension",
+        "kind": "option",
+        "description": "List of mappings from file extension to language (one of `python`, `ipynb`, `pyi`). For example, to treat `.ipy` files as IPython notebooks, use `--extension ipy:ipynb`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cextension\u003e": {
+            "Name": "\u003cextension\u003e",
+            "kind": "argument",
+            "description": "extension",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cextension\u003e": {
+            "Name": "\u003cextension\u003e",
+            "kind": "argument",
+            "description": "extension",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--force-exclude": {
+        "Name": "--force-exclude",
+        "kind": "option",
+        "description": "Enforce exclusions, even for paths passed to Ruff directly on the command-line",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--line-length": {
+        "Name": "--line-length",
+        "kind": "option",
+        "description": "Set the line-length",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cline_length\u003e": {
+            "Name": "\u003cline_length\u003e",
+            "kind": "argument",
+            "description": "line_length",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cline_length\u003e": {
+            "Name": "\u003cline_length\u003e",
+            "kind": "argument",
+            "description": "line_length",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--no-cache": {
+        "Name": "--no-cache",
+        "kind": "option",
+        "description": "Disable cache reads (env: RUFF_NO_CACHE=)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--preview": {
+        "Name": "--preview",
+        "kind": "option",
+        "description": "Enable preview mode; enables unstable formatting. Use `--no-preview` to disable",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--range": {
+        "Name": "--range",
+        "kind": "option",
+        "description": "When specified, Ruff will try to only format the code in the given range",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003crange\u003e": {
+            "Name": "\u003crange\u003e",
+            "kind": "argument",
+            "description": "range",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003crange\u003e": {
+            "Name": "\u003crange\u003e",
+            "kind": "argument",
+            "description": "range",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--respect-gitignore": {
+        "Name": "--respect-gitignore",
+        "kind": "option",
+        "description": "Respect file exclusions via `.gitignore` and other standard ignore files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--stdin-filename": {
+        "Name": "--stdin-filename",
+        "kind": "option",
+        "description": "The name of the file when passing it through stdin",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstdin_filename\u003e": {
+            "Name": "\u003cstdin_filename\u003e",
+            "kind": "argument",
+            "description": "stdin_filename",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstdin_filename\u003e": {
+            "Name": "\u003cstdin_filename\u003e",
+            "kind": "argument",
+            "description": "stdin_filename",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstdin_filename\u003e"
+        ]
+      },
+      "--target-version": {
+        "Name": "--target-version",
+        "kind": "option",
+        "description": "The minimum Python version that should be supported",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctarget_version\u003e": {
+            "Name": "\u003ctarget_version\u003e",
+            "kind": "argument",
+            "description": "target_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctarget_version\u003e": {
+            "Name": "\u003ctarget_version\u003e",
+            "kind": "argument",
+            "description": "target_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "Disable cache reads (env: RUFF_NO_CACHE=)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cPath\u003e": {
+        "Name": "\u003cPath\u003e",
+        "kind": "argument",
+        "description": "Path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--cache-dir": {
+        "Name": "--cache-dir",
+        "kind": "option",
+        "description": "Path to the cache directory (env: RUFF_CACHE_DIR=)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccache_dir\u003e": {
+            "Name": "\u003ccache_dir\u003e",
+            "kind": "argument",
+            "description": "cache_dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccache_dir\u003e": {
+            "Name": "\u003ccache_dir\u003e",
+            "kind": "argument",
+            "description": "cache_dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccache_dir\u003e"
+        ]
+      },
+      "--check": {
+        "Name": "--check",
+        "kind": "option",
+        "description": "Avoid writing any formatted files back; instead, exit with a non-zero status code if any files would have been modified, and zero otherwise",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--diff": {
+        "Name": "--diff",
+        "kind": "option",
+        "description": "Avoid writing any formatted files back; instead, exit with a non-zero status code and the difference between the current file and how the formatted file would look like",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "List of paths, used to omit files and/or directories from analysis",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cexclude\u003e": {
+            "Name": "\u003cexclude\u003e",
+            "kind": "argument",
+            "description": "exclude",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cexclude\u003e": {
+            "Name": "\u003cexclude\u003e",
+            "kind": "argument",
+            "description": "exclude",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--extension": {
+        "Name": "--extension",
+        "kind": "option",
+        "description": "List of mappings from file extension to language (one of `python`, `ipynb`, `pyi`). For example, to treat `.ipy` files as IPython notebooks, use `--extension ipy:ipynb`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cextension\u003e": {
+            "Name": "\u003cextension\u003e",
+            "kind": "argument",
+            "description": "extension",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cextension\u003e": {
+            "Name": "\u003cextension\u003e",
+            "kind": "argument",
+            "description": "extension",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--force-exclude": {
+        "Name": "--force-exclude",
+        "kind": "option",
+        "description": "Enforce exclusions, even for paths passed to Ruff directly on the command-line",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--line-length": {
+        "Name": "--line-length",
+        "kind": "option",
+        "description": "Set the line-length",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cline_length\u003e": {
+            "Name": "\u003cline_length\u003e",
+            "kind": "argument",
+            "description": "line_length",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cline_length\u003e": {
+            "Name": "\u003cline_length\u003e",
+            "kind": "argument",
+            "description": "line_length",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--no-cache": {
+        "Name": "--no-cache",
+        "kind": "option",
+        "description": "Disable cache reads (env: RUFF_NO_CACHE=)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--preview": {
+        "Name": "--preview",
+        "kind": "option",
+        "description": "Enable preview mode; enables unstable formatting. Use `--no-preview` to disable",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--range": {
+        "Name": "--range",
+        "kind": "option",
+        "description": "When specified, Ruff will try to only format the code in the given range",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003crange\u003e": {
+            "Name": "\u003crange\u003e",
+            "kind": "argument",
+            "description": "range",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003crange\u003e": {
+            "Name": "\u003crange\u003e",
+            "kind": "argument",
+            "description": "range",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--respect-gitignore": {
+        "Name": "--respect-gitignore",
+        "kind": "option",
+        "description": "Respect file exclusions via `.gitignore` and other standard ignore files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--stdin-filename": {
+        "Name": "--stdin-filename",
+        "kind": "option",
+        "description": "The name of the file when passing it through stdin",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstdin_filename\u003e": {
+            "Name": "\u003cstdin_filename\u003e",
+            "kind": "argument",
+            "description": "stdin_filename",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstdin_filename\u003e": {
+            "Name": "\u003cstdin_filename\u003e",
+            "kind": "argument",
+            "description": "stdin_filename",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstdin_filename\u003e"
+        ]
+      },
+      "--target-version": {
+        "Name": "--target-version",
+        "kind": "option",
+        "description": "The minimum Python version that should be supported",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctarget_version\u003e": {
+            "Name": "\u003ctarget_version\u003e",
+            "kind": "argument",
+            "description": "target_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctarget_version\u003e": {
+            "Name": "\u003ctarget_version\u003e",
+            "kind": "argument",
+            "description": "target_version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "Disable cache reads (env: RUFF_NO_CACHE=)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cPath\u003e": {
+        "Name": "\u003cPath\u003e",
+        "kind": "argument",
+        "description": "Path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPath\u003e"
+    ]
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Print this message or the help of the given subcommand(s)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "linter": {
+    "Name": "linter",
+    "kind": "subcommand",
+    "description": "List all supported upstream linters",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--output-format": {
+        "Name": "--output-format",
+        "kind": "option",
+        "description": "Output format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput-format\u003e": {
+            "Name": "\u003coutput-format\u003e",
+            "kind": "argument",
+            "description": "output-format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput-format\u003e": {
+            "Name": "\u003coutput-format\u003e",
+            "kind": "argument",
+            "description": "output-format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput-format\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--output-format": {
+        "Name": "--output-format",
+        "kind": "option",
+        "description": "Output format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput-format\u003e": {
+            "Name": "\u003coutput-format\u003e",
+            "kind": "argument",
+            "description": "output-format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput-format\u003e": {
+            "Name": "\u003coutput-format\u003e",
+            "kind": "argument",
+            "description": "output-format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput-format\u003e"
+        ]
+      }
+    }
+  },
+  "rule": {
+    "Name": "rule",
+    "kind": "subcommand",
+    "description": "Explain a rule (or all rules)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "Explain all rules",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output-format": {
+        "Name": "--output-format",
+        "kind": "option",
+        "description": "Output format [default: text]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput-format\u003e": {
+            "Name": "\u003coutput-format\u003e",
+            "kind": "argument",
+            "description": "output-format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput-format\u003e": {
+            "Name": "\u003coutput-format\u003e",
+            "kind": "argument",
+            "description": "output-format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput-format\u003e"
+        ]
+      },
+      "\u003crule\u003e": {
+        "Name": "\u003crule\u003e",
+        "kind": "argument",
+        "description": "rule",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "Explain all rules",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output-format": {
+        "Name": "--output-format",
+        "kind": "option",
+        "description": "Output format [default: text]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput-format\u003e": {
+            "Name": "\u003coutput-format\u003e",
+            "kind": "argument",
+            "description": "output-format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput-format\u003e": {
+            "Name": "\u003coutput-format\u003e",
+            "kind": "argument",
+            "description": "output-format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput-format\u003e"
+        ]
+      },
+      "\u003crule\u003e": {
+        "Name": "\u003crule\u003e",
+        "kind": "argument",
+        "description": "rule",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003crule\u003e"
+    ]
+  },
+  "server": {
+    "Name": "server",
+    "kind": "subcommand",
+    "description": "Run the language server",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--no-preview": {
+        "Name": "--no-preview",
+        "kind": "option",
+        "description": "Disable preview mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--preview": {
+        "Name": "--preview",
+        "kind": "option",
+        "description": "Enable preview mode. Use `--no-preview` to disable",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--no-preview": {
+        "Name": "--no-preview",
+        "kind": "option",
+        "description": "Disable preview mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--preview": {
+        "Name": "--preview",
+        "kind": "option",
+        "description": "Enable preview mode. Use `--no-preview` to disable",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "version": {
+    "Name": "version",
+    "kind": "subcommand",
+    "description": "Display Ruff's version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--output-format": {
+        "Name": "--output-format",
+        "kind": "option",
+        "description": "Output format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput-format\u003e": {
+            "Name": "\u003coutput-format\u003e",
+            "kind": "argument",
+            "description": "output-format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput-format\u003e": {
+            "Name": "\u003coutput-format\u003e",
+            "kind": "argument",
+            "description": "output-format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput-format\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--output-format": {
+        "Name": "--output-format",
+        "kind": "option",
+        "description": "Output format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput-format\u003e": {
+            "Name": "\u003coutput-format\u003e",
+            "kind": "argument",
+            "description": "output-format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput-format\u003e": {
+            "Name": "\u003coutput-format\u003e",
+            "kind": "argument",
+            "description": "output-format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput-format\u003e"
+        ]
+      }
+    }
+  }
+}

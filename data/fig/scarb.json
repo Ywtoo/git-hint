@@ -1,0 +1,3471 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Print help",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Print help",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "add": {
+    "Name": "add",
+    "kind": "subcommand",
+    "description": "Add dependencies to a Scarb.toml manifest file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--branch": {
+        "Name": "--branch",
+        "kind": "option",
+        "description": "Git branch to download the package from",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cBRANCH\u003e": {
+            "Name": "\u003cBRANCH\u003e",
+            "kind": "argument",
+            "description": "BRANCH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cBRANCH\u003e": {
+            "Name": "\u003cBRANCH\u003e",
+            "kind": "argument",
+            "description": "BRANCH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cBRANCH\u003e"
+        ]
+      },
+      "--dry-run": {
+        "Name": "--dry-run",
+        "kind": "option",
+        "description": "Do not actually write the manifest",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--git": {
+        "Name": "--git",
+        "kind": "option",
+        "description": "Git repository location",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cURI\u003e": {
+            "Name": "\u003cURI\u003e",
+            "kind": "argument",
+            "description": "URI",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cURI\u003e": {
+            "Name": "\u003cURI\u003e",
+            "kind": "argument",
+            "description": "URI",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cURI\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--package": {
+        "Name": "--package",
+        "kind": "option",
+        "description": "Packages to run this command on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSPEC\u003e"
+        ]
+      },
+      "--path": {
+        "Name": "--path",
+        "kind": "option",
+        "description": "Filesystem path to local package to add",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cPATH\u003e": {
+            "Name": "\u003cPATH\u003e",
+            "kind": "argument",
+            "description": "PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cPATH\u003e": {
+            "Name": "\u003cPATH\u003e",
+            "kind": "argument",
+            "description": "PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cPATH\u003e"
+        ]
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--rev": {
+        "Name": "--rev",
+        "kind": "option",
+        "description": "Git reference to download the package from",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cREV\u003e": {
+            "Name": "\u003cREV\u003e",
+            "kind": "argument",
+            "description": "REV",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cREV\u003e": {
+            "Name": "\u003cREV\u003e",
+            "kind": "argument",
+            "description": "REV",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cREV\u003e"
+        ]
+      },
+      "--tag": {
+        "Name": "--tag",
+        "kind": "option",
+        "description": "Git tag to download the package from",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTAG\u003e": {
+            "Name": "\u003cTAG\u003e",
+            "kind": "argument",
+            "description": "TAG",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTAG\u003e": {
+            "Name": "\u003cTAG\u003e",
+            "kind": "argument",
+            "description": "TAG",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTAG\u003e"
+        ]
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Packages to run this command on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSPEC\u003e"
+        ]
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cDEP_ID\u003e": {
+        "Name": "\u003cDEP_ID\u003e",
+        "kind": "argument",
+        "description": "DEP_ID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--branch": {
+        "Name": "--branch",
+        "kind": "option",
+        "description": "Git branch to download the package from",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cBRANCH\u003e": {
+            "Name": "\u003cBRANCH\u003e",
+            "kind": "argument",
+            "description": "BRANCH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cBRANCH\u003e": {
+            "Name": "\u003cBRANCH\u003e",
+            "kind": "argument",
+            "description": "BRANCH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cBRANCH\u003e"
+        ]
+      },
+      "--dry-run": {
+        "Name": "--dry-run",
+        "kind": "option",
+        "description": "Do not actually write the manifest",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--git": {
+        "Name": "--git",
+        "kind": "option",
+        "description": "Git repository location",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cURI\u003e": {
+            "Name": "\u003cURI\u003e",
+            "kind": "argument",
+            "description": "URI",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cURI\u003e": {
+            "Name": "\u003cURI\u003e",
+            "kind": "argument",
+            "description": "URI",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cURI\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--package": {
+        "Name": "--package",
+        "kind": "option",
+        "description": "Packages to run this command on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSPEC\u003e"
+        ]
+      },
+      "--path": {
+        "Name": "--path",
+        "kind": "option",
+        "description": "Filesystem path to local package to add",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cPATH\u003e": {
+            "Name": "\u003cPATH\u003e",
+            "kind": "argument",
+            "description": "PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cPATH\u003e": {
+            "Name": "\u003cPATH\u003e",
+            "kind": "argument",
+            "description": "PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cPATH\u003e"
+        ]
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--rev": {
+        "Name": "--rev",
+        "kind": "option",
+        "description": "Git reference to download the package from",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cREV\u003e": {
+            "Name": "\u003cREV\u003e",
+            "kind": "argument",
+            "description": "REV",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cREV\u003e": {
+            "Name": "\u003cREV\u003e",
+            "kind": "argument",
+            "description": "REV",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cREV\u003e"
+        ]
+      },
+      "--tag": {
+        "Name": "--tag",
+        "kind": "option",
+        "description": "Git tag to download the package from",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cTAG\u003e": {
+            "Name": "\u003cTAG\u003e",
+            "kind": "argument",
+            "description": "TAG",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cTAG\u003e": {
+            "Name": "\u003cTAG\u003e",
+            "kind": "argument",
+            "description": "TAG",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTAG\u003e"
+        ]
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Packages to run this command on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSPEC\u003e"
+        ]
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cDEP_ID\u003e": {
+        "Name": "\u003cDEP_ID\u003e",
+        "kind": "argument",
+        "description": "DEP_ID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cDEP_ID\u003e"
+    ]
+  },
+  "build": {
+    "Name": "build",
+    "kind": "subcommand",
+    "description": "Compile current project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--package": {
+        "Name": "--package",
+        "kind": "option",
+        "description": "Packages to run this command on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSPEC\u003e"
+        ]
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--workspace": {
+        "Name": "--workspace",
+        "kind": "option",
+        "description": "Run for all packages in the workspace",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Packages to run this command on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSPEC\u003e"
+        ]
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-w": {
+        "Name": "-w",
+        "kind": "option",
+        "description": "Run for all packages in the workspace",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--package": {
+        "Name": "--package",
+        "kind": "option",
+        "description": "Packages to run this command on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSPEC\u003e"
+        ]
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--workspace": {
+        "Name": "--workspace",
+        "kind": "option",
+        "description": "Run for all packages in the workspace",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Packages to run this command on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSPEC\u003e"
+        ]
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-w": {
+        "Name": "-w",
+        "kind": "option",
+        "description": "Run for all packages in the workspace",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "cache": {
+    "Name": "cache",
+    "kind": "subcommand",
+    "description": "Manipulate packages cache",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "clean": {
+        "Name": "clean",
+        "kind": "subcommand",
+        "description": "Remove all cached dependencies",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Print help",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--quiet": {
+            "Name": "--quiet",
+            "kind": "option",
+            "description": "Less output per occurrence",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--verbose": {
+            "Name": "--verbose",
+            "kind": "option",
+            "description": "More output per occurrence",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Print help",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-q": {
+            "Name": "-q",
+            "kind": "option",
+            "description": "Less output per occurrence",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-v": {
+            "Name": "-v",
+            "kind": "option",
+            "description": "More output per occurrence",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Print help",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--quiet": {
+            "Name": "--quiet",
+            "kind": "option",
+            "description": "Less output per occurrence",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--verbose": {
+            "Name": "--verbose",
+            "kind": "option",
+            "description": "More output per occurrence",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Print help",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-q": {
+            "Name": "-q",
+            "kind": "option",
+            "description": "Less output per occurrence",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-v": {
+            "Name": "-v",
+            "kind": "option",
+            "description": "More output per occurrence",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "help": {
+        "Name": "help",
+        "kind": "subcommand",
+        "description": "Print this message or the help of the given subcommand(s)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "path": {
+        "Name": "path",
+        "kind": "subcommand",
+        "description": "Print the path of the cache directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Print help",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--quiet": {
+            "Name": "--quiet",
+            "kind": "option",
+            "description": "Less output per occurrence",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--verbose": {
+            "Name": "--verbose",
+            "kind": "option",
+            "description": "More output per occurrence",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Print help",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-q": {
+            "Name": "-q",
+            "kind": "option",
+            "description": "Less output per occurrence",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-v": {
+            "Name": "-v",
+            "kind": "option",
+            "description": "More output per occurrence",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Print help",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--quiet": {
+            "Name": "--quiet",
+            "kind": "option",
+            "description": "Less output per occurrence",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--verbose": {
+            "Name": "--verbose",
+            "kind": "option",
+            "description": "More output per occurrence",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Print help",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-q": {
+            "Name": "-q",
+            "kind": "option",
+            "description": "Less output per occurrence",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-v": {
+            "Name": "-v",
+            "kind": "option",
+            "description": "More output per occurrence",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "clean": {
+    "Name": "clean",
+    "kind": "subcommand",
+    "description": "Remove generated artifacts",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "commands": {
+    "Name": "commands",
+    "kind": "subcommand",
+    "description": "List installed commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "fetch": {
+    "Name": "fetch",
+    "kind": "subcommand",
+    "description": "Fetch dependencies of packages from the network",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "fmt": {
+    "Name": "fmt",
+    "kind": "subcommand",
+    "description": "Format project files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--check": {
+        "Name": "--check",
+        "kind": "option",
+        "description": "Only check if files are formatted, do not write the changes to disk",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-color": {
+        "Name": "--no-color",
+        "kind": "option",
+        "description": "Do not color output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--package": {
+        "Name": "--package",
+        "kind": "option",
+        "description": "Packages to run this command on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSPEC\u003e"
+        ]
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--workspace": {
+        "Name": "--workspace",
+        "kind": "option",
+        "description": "Run for all packages in the workspace",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Only check if files are formatted, do not write the changes to disk",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Packages to run this command on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSPEC\u003e"
+        ]
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-w": {
+        "Name": "-w",
+        "kind": "option",
+        "description": "Run for all packages in the workspace",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--check": {
+        "Name": "--check",
+        "kind": "option",
+        "description": "Only check if files are formatted, do not write the changes to disk",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-color": {
+        "Name": "--no-color",
+        "kind": "option",
+        "description": "Do not color output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--package": {
+        "Name": "--package",
+        "kind": "option",
+        "description": "Packages to run this command on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSPEC\u003e"
+        ]
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--workspace": {
+        "Name": "--workspace",
+        "kind": "option",
+        "description": "Run for all packages in the workspace",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Only check if files are formatted, do not write the changes to disk",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Packages to run this command on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSPEC\u003e"
+        ]
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-w": {
+        "Name": "-w",
+        "kind": "option",
+        "description": "Run for all packages in the workspace",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "init": {
+    "Name": "init",
+    "kind": "subcommand",
+    "description": "Create a new Scarb package in existing directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--name": {
+        "Name": "--name",
+        "kind": "option",
+        "description": "Set the resulting package name, defaults to the directory name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cNAME\u003e"
+        ]
+      },
+      "--no-vcs": {
+        "Name": "--no-vcs",
+        "kind": "option",
+        "description": "Do not initialize a new Git repository",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--name": {
+        "Name": "--name",
+        "kind": "option",
+        "description": "Set the resulting package name, defaults to the directory name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cNAME\u003e"
+        ]
+      },
+      "--no-vcs": {
+        "Name": "--no-vcs",
+        "kind": "option",
+        "description": "Do not initialize a new Git repository",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "manifest-path": {
+    "Name": "manifest-path",
+    "kind": "subcommand",
+    "description": "Print path to current Scarb.toml file to standard output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "metadata": {
+    "Name": "metadata",
+    "kind": "subcommand",
+    "description": "Output the resolved dependencies of a package, the concrete used versions including overrides, in machine-readable format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--format-version": {
+        "Name": "--format-version",
+        "kind": "option",
+        "description": "Format version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cVERSION\u003e": {
+            "Name": "\u003cVERSION\u003e",
+            "kind": "argument",
+            "description": "VERSION",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cVERSION\u003e": {
+            "Name": "\u003cVERSION\u003e",
+            "kind": "argument",
+            "description": "VERSION",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cVERSION\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-deps": {
+        "Name": "--no-deps",
+        "kind": "option",
+        "description": "Output information only about the workspace members and don't fetch dependencies",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--format-version": {
+        "Name": "--format-version",
+        "kind": "option",
+        "description": "Format version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cVERSION\u003e": {
+            "Name": "\u003cVERSION\u003e",
+            "kind": "argument",
+            "description": "VERSION",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cVERSION\u003e": {
+            "Name": "\u003cVERSION\u003e",
+            "kind": "argument",
+            "description": "VERSION",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cVERSION\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-deps": {
+        "Name": "--no-deps",
+        "kind": "option",
+        "description": "Output information only about the workspace members and don't fetch dependencies",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "new": {
+    "Name": "new",
+    "kind": "subcommand",
+    "description": "Create a new Scarb package at \u003cPATH\u003e",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--name": {
+        "Name": "--name",
+        "kind": "option",
+        "description": "Set the resulting package name, defaults to the directory name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cNAME\u003e"
+        ]
+      },
+      "--no-vcs": {
+        "Name": "--no-vcs",
+        "kind": "option",
+        "description": "Do not initialize a new Git repository",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--name": {
+        "Name": "--name",
+        "kind": "option",
+        "description": "Set the resulting package name, defaults to the directory name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cNAME\u003e"
+        ]
+      },
+      "--no-vcs": {
+        "Name": "--no-vcs",
+        "kind": "option",
+        "description": "Do not initialize a new Git repository",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH\u003e"
+    ]
+  },
+  "remove": {
+    "Name": "remove",
+    "kind": "subcommand",
+    "description": "Remove dependencies from a manifest file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--dry-run": {
+        "Name": "--dry-run",
+        "kind": "option",
+        "description": "Do not actually write the manifest",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--package": {
+        "Name": "--package",
+        "kind": "option",
+        "description": "Packages to run this command on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSPEC\u003e"
+        ]
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--workspace": {
+        "Name": "--workspace",
+        "kind": "option",
+        "description": "Run for all packages in the workspace",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Packages to run this command on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSPEC\u003e"
+        ]
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-w": {
+        "Name": "-w",
+        "kind": "option",
+        "description": "Run for all packages in the workspace",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cDEP_ID\u003e": {
+        "Name": "\u003cDEP_ID\u003e",
+        "kind": "argument",
+        "description": "DEP_ID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--dry-run": {
+        "Name": "--dry-run",
+        "kind": "option",
+        "description": "Do not actually write the manifest",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--package": {
+        "Name": "--package",
+        "kind": "option",
+        "description": "Packages to run this command on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSPEC\u003e"
+        ]
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--workspace": {
+        "Name": "--workspace",
+        "kind": "option",
+        "description": "Run for all packages in the workspace",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Packages to run this command on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSPEC\u003e"
+        ]
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-w": {
+        "Name": "-w",
+        "kind": "option",
+        "description": "Run for all packages in the workspace",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cDEP_ID\u003e": {
+        "Name": "\u003cDEP_ID\u003e",
+        "kind": "argument",
+        "description": "DEP_ID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cDEP_ID\u003e"
+    ]
+  },
+  "run": {
+    "Name": "run",
+    "kind": "subcommand",
+    "description": "Run arbitrary package scripts",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--package": {
+        "Name": "--package",
+        "kind": "option",
+        "description": "Packages to run this command on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSPEC\u003e"
+        ]
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--workspace": {
+        "Name": "--workspace",
+        "kind": "option",
+        "description": "Run for all packages in the workspace",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Packages to run this command on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSPEC\u003e"
+        ]
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-w": {
+        "Name": "-w",
+        "kind": "option",
+        "description": "Run for all packages in the workspace",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cARGS\u003e": {
+        "Name": "\u003cARGS\u003e",
+        "kind": "argument",
+        "description": "ARGS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cSCRIPT\u003e": {
+        "Name": "\u003cSCRIPT\u003e",
+        "kind": "argument",
+        "description": "SCRIPT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--package": {
+        "Name": "--package",
+        "kind": "option",
+        "description": "Packages to run this command on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSPEC\u003e"
+        ]
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--workspace": {
+        "Name": "--workspace",
+        "kind": "option",
+        "description": "Run for all packages in the workspace",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Packages to run this command on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSPEC\u003e"
+        ]
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-w": {
+        "Name": "-w",
+        "kind": "option",
+        "description": "Run for all packages in the workspace",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cARGS\u003e": {
+        "Name": "\u003cARGS\u003e",
+        "kind": "argument",
+        "description": "ARGS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cSCRIPT\u003e": {
+        "Name": "\u003cSCRIPT\u003e",
+        "kind": "argument",
+        "description": "SCRIPT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSCRIPT\u003e",
+      "\u003cARGS\u003e"
+    ]
+  },
+  "test": {
+    "Name": "test",
+    "kind": "subcommand",
+    "description": "Runs test in the local project, if it has a Scarb.toml manifest. If project is a virtual workspace, will run all tests by default",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--filter": {
+        "Name": "--filter",
+        "kind": "option",
+        "description": "Runs the test with a specific filter",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cFILTER\u003e": {
+            "Name": "\u003cFILTER\u003e",
+            "kind": "argument",
+            "description": "FILTER",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cFILTER\u003e": {
+            "Name": "\u003cFILTER\u003e",
+            "kind": "argument",
+            "description": "FILTER",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cFILTER\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ignored": {
+        "Name": "--ignored",
+        "kind": "option",
+        "description": "Run only ignored tests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--include-ignored": {
+        "Name": "--include-ignored",
+        "kind": "option",
+        "description": "Run ignored and not ignored tests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--package": {
+        "Name": "--package",
+        "kind": "option",
+        "description": "Packages to run this command on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSPEC\u003e"
+        ]
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--workspace": {
+        "Name": "--workspace",
+        "kind": "option",
+        "description": "Run for all packages in the workspace",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Runs the test with a specific filter",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cFILTER\u003e": {
+            "Name": "\u003cFILTER\u003e",
+            "kind": "argument",
+            "description": "FILTER",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cFILTER\u003e": {
+            "Name": "\u003cFILTER\u003e",
+            "kind": "argument",
+            "description": "FILTER",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cFILTER\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Packages to run this command on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSPEC\u003e"
+        ]
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-w": {
+        "Name": "-w",
+        "kind": "option",
+        "description": "Run for all packages in the workspace",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--filter": {
+        "Name": "--filter",
+        "kind": "option",
+        "description": "Runs the test with a specific filter",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cFILTER\u003e": {
+            "Name": "\u003cFILTER\u003e",
+            "kind": "argument",
+            "description": "FILTER",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cFILTER\u003e": {
+            "Name": "\u003cFILTER\u003e",
+            "kind": "argument",
+            "description": "FILTER",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cFILTER\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ignored": {
+        "Name": "--ignored",
+        "kind": "option",
+        "description": "Run only ignored tests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--include-ignored": {
+        "Name": "--include-ignored",
+        "kind": "option",
+        "description": "Run ignored and not ignored tests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--package": {
+        "Name": "--package",
+        "kind": "option",
+        "description": "Packages to run this command on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSPEC\u003e"
+        ]
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--workspace": {
+        "Name": "--workspace",
+        "kind": "option",
+        "description": "Run for all packages in the workspace",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Runs the test with a specific filter",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cFILTER\u003e": {
+            "Name": "\u003cFILTER\u003e",
+            "kind": "argument",
+            "description": "FILTER",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cFILTER\u003e": {
+            "Name": "\u003cFILTER\u003e",
+            "kind": "argument",
+            "description": "FILTER",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cFILTER\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Print help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Packages to run this command on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSPEC\u003e": {
+            "Name": "\u003cSPEC\u003e",
+            "kind": "argument",
+            "description": "SPEC",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSPEC\u003e"
+        ]
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Less output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "More output per occurrence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-w": {
+        "Name": "-w",
+        "kind": "option",
+        "description": "Run for all packages in the workspace",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  }
+}

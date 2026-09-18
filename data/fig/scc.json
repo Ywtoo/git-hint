@@ -1,0 +1,986 @@
+{
+  "--avg-wage": {
+    "Name": "--avg-wage",
+    "kind": "option",
+    "description": "Average salary value used for COCOMO calculations",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cint\u003e": {
+        "Name": "\u003cint\u003e",
+        "kind": "argument",
+        "description": "int",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cint\u003e": {
+        "Name": "\u003cint\u003e",
+        "kind": "argument",
+        "description": "int",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cint\u003e"
+    ]
+  },
+  "--binary": {
+    "Name": "--binary",
+    "kind": "option",
+    "description": "Disable binary file detection",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--by-file": {
+    "Name": "--by-file",
+    "kind": "option",
+    "description": "Display output for every file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--ci": {
+    "Name": "--ci",
+    "kind": "option",
+    "description": "Enable CI output settings where stdout is ASCII",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--cocomo-project-type": {
+    "Name": "--cocomo-project-type",
+    "kind": "option",
+    "description": "Change the COCOMO model type (allows custom models, eg. \"name,1,1,1,1\")",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--count-as": {
+    "Name": "--count-as",
+    "kind": "option",
+    "description": "Count a file extension as a language (comma-separated key:value list, eg. jst:js,tpl:Markdown)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--debug": {
+    "Name": "--debug",
+    "kind": "option",
+    "description": "Enable debug output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--exclude-dir": {
+    "Name": "--exclude-dir",
+    "kind": "option",
+    "description": "Directories to exclude",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstrings\u003e": {
+        "Name": "\u003cstrings\u003e",
+        "kind": "argument",
+        "description": "strings",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstrings\u003e": {
+        "Name": "\u003cstrings\u003e",
+        "kind": "argument",
+        "description": "strings",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstrings\u003e"
+    ]
+  },
+  "--file-gc-count": {
+    "Name": "--file-gc-count",
+    "kind": "option",
+    "description": "Number of files to parse before turning the GC on",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cint\u003e": {
+        "Name": "\u003cint\u003e",
+        "kind": "argument",
+        "description": "int",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cint\u003e": {
+        "Name": "\u003cint\u003e",
+        "kind": "argument",
+        "description": "int",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cint\u003e"
+    ]
+  },
+  "--format": {
+    "Name": "--format",
+    "kind": "option",
+    "description": "Set output format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--format-multi": {
+    "Name": "--format-multi",
+    "kind": "option",
+    "description": "Multiple outputs with different formats (comma-separated key:value list, eg. tabular:stdout,csv:scc.csv)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--gen": {
+    "Name": "--gen",
+    "kind": "option",
+    "description": "Identify generated files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--generated-markers": {
+    "Name": "--generated-markers",
+    "kind": "option",
+    "description": "Identify generated files by the presence of a string (comma-separated list)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstrings\u003e": {
+        "Name": "\u003cstrings\u003e",
+        "kind": "argument",
+        "description": "strings",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstrings\u003e": {
+        "Name": "\u003cstrings\u003e",
+        "kind": "argument",
+        "description": "strings",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstrings\u003e"
+    ]
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Help for scc",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--include-ext": {
+    "Name": "--include-ext",
+    "kind": "option",
+    "description": "Limit to these file extensions (comma-separated list)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstrings\u003e": {
+        "Name": "\u003cstrings\u003e",
+        "kind": "argument",
+        "description": "strings",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstrings\u003e": {
+        "Name": "\u003cstrings\u003e",
+        "kind": "argument",
+        "description": "strings",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstrings\u003e"
+    ]
+  },
+  "--include-symlinks": {
+    "Name": "--include-symlinks",
+    "kind": "option",
+    "description": "Count symbolic links",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--languages": {
+    "Name": "--languages",
+    "kind": "option",
+    "description": "Print supported languages and extensions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--large-byte-count": {
+    "Name": "--large-byte-count",
+    "kind": "option",
+    "description": "Number of bytes a file can contain before being omitted",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cint\u003e": {
+        "Name": "\u003cint\u003e",
+        "kind": "argument",
+        "description": "int",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cint\u003e": {
+        "Name": "\u003cint\u003e",
+        "kind": "argument",
+        "description": "int",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cint\u003e"
+    ]
+  },
+  "--large-line-count": {
+    "Name": "--large-line-count",
+    "kind": "option",
+    "description": "Number of lines a file can contain before being omitted",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cint\u003e": {
+        "Name": "\u003cint\u003e",
+        "kind": "argument",
+        "description": "int",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cint\u003e": {
+        "Name": "\u003cint\u003e",
+        "kind": "argument",
+        "description": "int",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cint\u003e"
+    ]
+  },
+  "--min": {
+    "Name": "--min",
+    "kind": "option",
+    "description": "Identify minified files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--min-gen": {
+    "Name": "--min-gen",
+    "kind": "option",
+    "description": "Identify minified or generated files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--min-gen-line-length": {
+    "Name": "--min-gen-line-length",
+    "kind": "option",
+    "description": "Number of bytes per average line for file to be considered minified or generated",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cint\u003e": {
+        "Name": "\u003cint\u003e",
+        "kind": "argument",
+        "description": "int",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cint\u003e": {
+        "Name": "\u003cint\u003e",
+        "kind": "argument",
+        "description": "int",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cint\u003e"
+    ]
+  },
+  "--no-cocomo": {
+    "Name": "--no-cocomo",
+    "kind": "option",
+    "description": "Skip COCOMO calculation",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-complexity": {
+    "Name": "--no-complexity",
+    "kind": "option",
+    "description": "Skip code complexity calculation",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-duplicates": {
+    "Name": "--no-duplicates",
+    "kind": "option",
+    "description": "Remove duplicate files from stats and output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-gen": {
+    "Name": "--no-gen",
+    "kind": "option",
+    "description": "Ignore generated files in output (implies --gen)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-gitignore": {
+    "Name": "--no-gitignore",
+    "kind": "option",
+    "description": "Disables .gitignore file logic",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-ignore": {
+    "Name": "--no-ignore",
+    "kind": "option",
+    "description": "Disables .ignore file logic",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-large": {
+    "Name": "--no-large",
+    "kind": "option",
+    "description": "Ignore files over certain byte and line size set by --max-line-count and --max-byte-count",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-min": {
+    "Name": "--no-min",
+    "kind": "option",
+    "description": "Ignore minified files in output (implies --min)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-min-gen": {
+    "Name": "--no-min-gen",
+    "kind": "option",
+    "description": "Ignore minified or generated files in output (implies --min-gen)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-size": {
+    "Name": "--no-size",
+    "kind": "option",
+    "description": "Remove size calculation output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--not-match": {
+    "Name": "--not-match",
+    "kind": "option",
+    "description": "Ignore files and directories matching regular expression",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cregex\u003e": {
+        "Name": "\u003cregex\u003e",
+        "kind": "argument",
+        "description": "regex",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cregex\u003e": {
+        "Name": "\u003cregex\u003e",
+        "kind": "argument",
+        "description": "regex",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cregex\u003e"
+    ]
+  },
+  "--output": {
+    "Name": "--output",
+    "kind": "option",
+    "description": "Output filename (defaults to stdout if not provided)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--remap-all": {
+    "Name": "--remap-all",
+    "kind": "option",
+    "description": "Inspect every file and set its type by checking for a string (comma-separated key:value list, eg. \"-*- C++ -*-\":\"C Header\")",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--remap-unknown": {
+    "Name": "--remap-unknown",
+    "kind": "option",
+    "description": "Inspect files of unknown type and set its type by checking for a string (comma-separated key:value list, eg. \"-*- C++ -*-\":\"C Header\")",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--size-unit": {
+    "Name": "--size-unit",
+    "kind": "option",
+    "description": "Set the unit used for file size output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--sort": {
+    "Name": "--sort",
+    "kind": "option",
+    "description": "Column to sort by",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--sql-project": {
+    "Name": "--sql-project",
+    "kind": "option",
+    "description": "Use supplied name as the project identifier for the current run. Only valid with the '--format sql' or '--format sql-insert' option",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--trace": {
+    "Name": "--trace",
+    "kind": "option",
+    "description": "Enable trace output (not recommended when processing multiple files)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Verbose output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Version for scc",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--wide": {
+    "Name": "--wide",
+    "kind": "option",
+    "description": "Wider output with additional statistics (implies --complexity)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-M": {
+    "Name": "-M",
+    "kind": "option",
+    "description": "Ignore files and directories matching regular expression",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cregex\u003e": {
+        "Name": "\u003cregex\u003e",
+        "kind": "argument",
+        "description": "regex",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cregex\u003e": {
+        "Name": "\u003cregex\u003e",
+        "kind": "argument",
+        "description": "regex",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cregex\u003e"
+    ]
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Skip code complexity calculation",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Remove duplicate files from stats and output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Set output format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Help for scc",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Limit to these file extensions (comma-separated list)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstrings\u003e": {
+        "Name": "\u003cstrings\u003e",
+        "kind": "argument",
+        "description": "strings",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstrings\u003e": {
+        "Name": "\u003cstrings\u003e",
+        "kind": "argument",
+        "description": "strings",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstrings\u003e"
+    ]
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "option",
+    "description": "Print supported languages and extensions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-o": {
+    "Name": "-o",
+    "kind": "option",
+    "description": "Output filename (defaults to stdout if not provided)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Column to sort by",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Enable trace output (not recommended when processing multiple files)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Verbose output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-w": {
+    "Name": "-w",
+    "kind": "option",
+    "description": "Wider output with additional statistics (implies --complexity)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-z": {
+    "Name": "-z",
+    "kind": "option",
+    "description": "Identify minified or generated files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003cfiles or directories\u003e": {
+    "Name": "\u003cfiles or directories\u003e",
+    "kind": "argument",
+    "description": "files or directories",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

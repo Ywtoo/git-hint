@@ -1,0 +1,580 @@
+{
+  "--E": {
+    "Name": "--E",
+    "kind": "option",
+    "description": "List of tags to exclude from the test, so only tasks with no matching tags will be executed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--autoquit": {
+    "Name": "--autoquit",
+    "kind": "option",
+    "description": "Quits Locust entirely, X seconds after the run is finished",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--autostart": {
+    "Name": "--autostart",
+    "kind": "option",
+    "description": "Starts the test immediately (without disabling the web UI)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--class-picker": {
+    "Name": "--class-picker",
+    "kind": "option",
+    "description": "Enable select boxes in the web interface to choose from all available User classes and Shape classes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--config": {
+    "Name": "--config",
+    "kind": "option",
+    "description": "Config file path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfiles...\u003e": {
+        "Name": "\u003cfiles...\u003e",
+        "kind": "argument",
+        "description": "files...",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfiles...\u003e": {
+        "Name": "\u003cfiles...\u003e",
+        "kind": "argument",
+        "description": "files...",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfiles...\u003e"
+    ]
+  },
+  "--csv": {
+    "Name": "--csv",
+    "kind": "option",
+    "description": "Store current request stats to files in CSV format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--csv-full-history": {
+    "Name": "--csv-full-history",
+    "kind": "option",
+    "description": "Store each stats entry in CSV format to _stats_history.csv file. You must also specify the '--csv' argument to enable this",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--enable-rebalancing": {
+    "Name": "--enable-rebalancing",
+    "kind": "option",
+    "description": "Allow to automatically rebalance users if new workers are added or removed during a test run",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--equal-weights": {
+    "Name": "--equal-weights",
+    "kind": "option",
+    "description": "Use equally distributed task weights, overriding the weights specified in the locustfile",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--exclude-tags": {
+    "Name": "--exclude-tags",
+    "kind": "option",
+    "description": "List of tags to exclude from the test, so only tasks with no matching tags will be executed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--exit-code-on-error": {
+    "Name": "--exit-code-on-error",
+    "kind": "option",
+    "description": "Sets the process exit code to use when a test result contain any failure or error",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--expect-workers": {
+    "Name": "--expect-workers",
+    "kind": "option",
+    "description": "How many workers master should expect to connect before starting the test (only when --headless/autostart is used)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--expect-workers-max-wait": {
+    "Name": "--expect-workers-max-wait",
+    "kind": "option",
+    "description": "How long should the master wait for workers to connect before giving up. Defaults to wait forever",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--headless": {
+    "Name": "--headless",
+    "kind": "option",
+    "description": "Disable the web interface, and start the test immediately",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show this help message and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--host": {
+    "Name": "--host",
+    "kind": "option",
+    "description": "Host to load test in the following format: http://10.21.32.33",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--html": {
+    "Name": "--html",
+    "kind": "option",
+    "description": "Store HTML report to file path specified",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--list": {
+    "Name": "--list",
+    "kind": "option",
+    "description": "Show list of possible User classes and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--locustfile": {
+    "Name": "--locustfile",
+    "kind": "option",
+    "description": "Show program's version number and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfiles...\u003e": {
+        "Name": "\u003cfiles...\u003e",
+        "kind": "argument",
+        "description": "files...",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfiles...\u003e": {
+        "Name": "\u003cfiles...\u003e",
+        "kind": "argument",
+        "description": "files...",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfiles...\u003e"
+    ]
+  },
+  "--logfile": {
+    "Name": "--logfile",
+    "kind": "option",
+    "description": "Path to log file. If not set, log will go to stderr",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clogfile\u003e": {
+        "Name": "\u003clogfile\u003e",
+        "kind": "argument",
+        "description": "logfile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clogfile\u003e": {
+        "Name": "\u003clogfile\u003e",
+        "kind": "argument",
+        "description": "logfile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clogfile\u003e"
+    ]
+  },
+  "--loglevel": {
+    "Name": "--loglevel",
+    "kind": "option",
+    "description": "Choose between DEBUG/INFO/WARNING/ERROR/CRITICAL. Default is INFO",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cloglevel\u003e": {
+        "Name": "\u003cloglevel\u003e",
+        "kind": "argument",
+        "description": "loglevel",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cloglevel\u003e": {
+        "Name": "\u003cloglevel\u003e",
+        "kind": "argument",
+        "description": "loglevel",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cloglevel\u003e"
+    ]
+  },
+  "--master": {
+    "Name": "--master",
+    "kind": "option",
+    "description": "Set locust to run in distributed mode with this process as master",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--master-bind-host": {
+    "Name": "--master-bind-host",
+    "kind": "option",
+    "description": "Interfaces (hostname, ip) that locust master should bind to",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--master-bind-port": {
+    "Name": "--master-bind-port",
+    "kind": "option",
+    "description": "Port that locust master should bind to",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--master-host": {
+    "Name": "--master-host",
+    "kind": "option",
+    "description": "Host or IP address of locust master for distributed load testing. Only used when running with --worker. Defaults to 127.0.0.1",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--master-port": {
+    "Name": "--master-port",
+    "kind": "option",
+    "description": "Show list of possible User classes and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--only-summary": {
+    "Name": "--only-summary",
+    "kind": "option",
+    "description": "Only print the summary stats",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--print-stats": {
+    "Name": "--print-stats",
+    "kind": "option",
+    "description": "Print stats in the console",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--reset-stats": {
+    "Name": "--reset-stats",
+    "kind": "option",
+    "description": "Reset statistics once spawning has been completed. Should be set on both master and workers when running in distributed mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--run-time": {
+    "Name": "--run-time",
+    "kind": "option",
+    "description": "Stop after the specified amount of time, e.g. (300s, 20m, 3h, 1h30m, etc.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--show-task-ratio": {
+    "Name": "--show-task-ratio",
+    "kind": "option",
+    "description": "Print table of the User classes' task execution ratio. Use this with non-zero --user option if some classes define non-zero fixed_count attribute",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--show-task-ratio-json": {
+    "Name": "--show-task-ratio-json",
+    "kind": "option",
+    "description": "Print json data of the User classes' task execution ratio. Use this with non-zero --user option if some classes define non-zero fixed_count attribute",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--skip-log-setup": {
+    "Name": "--skip-log-setup",
+    "kind": "option",
+    "description": "Disable Locust's logging setup. Instead, the configuration is provided by the Locust test or Python defaults. --loglevel LOGLEVEL, -L LOGLEVEL",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--spawn-rate": {
+    "Name": "--spawn-rate",
+    "kind": "option",
+    "description": "Rate to spawn users at (users per second). Primarily used together with --headless or --autostart",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--tags": {
+    "Name": "--tags",
+    "kind": "option",
+    "description": "List of tags to include in the test, so only tasks with any matching tags will be executed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--tls-cert": {
+    "Name": "--tls-cert",
+    "kind": "option",
+    "description": "Optional path to TLS certificate to use to serve over HTTPS",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctls-cert\u003e": {
+        "Name": "\u003ctls-cert\u003e",
+        "kind": "argument",
+        "description": "tls-cert",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctls-cert\u003e": {
+        "Name": "\u003ctls-cert\u003e",
+        "kind": "argument",
+        "description": "tls-cert",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctls-cert\u003e"
+    ]
+  },
+  "--tls-key": {
+    "Name": "--tls-key",
+    "kind": "option",
+    "description": "Optional path to TLS private key to use to serve over HTTPS",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctls-key\u003e": {
+        "Name": "\u003ctls-key\u003e",
+        "kind": "argument",
+        "description": "tls-key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctls-key\u003e": {
+        "Name": "\u003ctls-key\u003e",
+        "kind": "argument",
+        "description": "tls-key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctls-key\u003e"
+    ]
+  },
+  "--users": {
+    "Name": "--users",
+    "kind": "option",
+    "description": "Peak number of concurrent Locust users. Primarily used together with --headless or --autostart",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Show program's version number and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--web-auth": {
+    "Name": "--web-auth",
+    "kind": "option",
+    "description": "Turn on Basic Auth for the web interface. e.g. username:password",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--web-host": {
+    "Name": "--web-host",
+    "kind": "option",
+    "description": "Host to bind the web interface to. Defaults to '*' (all interfaces)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--web-port": {
+    "Name": "--web-port",
+    "kind": "option",
+    "description": "Port on which to run web host",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--worker": {
+    "Name": "--worker",
+    "kind": "option",
+    "description": "Set locust to run in distributed mode with this process as worker",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-H": {
+    "Name": "-H",
+    "kind": "option",
+    "description": "Host to load test in the following format: http://10.21.32.33",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-P": {
+    "Name": "-P",
+    "kind": "option",
+    "description": "Port on which to run web host",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-T": {
+    "Name": "-T",
+    "kind": "option",
+    "description": "List of tags to include in the test, so only tasks with any matching tags will be executed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Show program's version number and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfiles...\u003e": {
+        "Name": "\u003cfiles...\u003e",
+        "kind": "argument",
+        "description": "files...",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfiles...\u003e": {
+        "Name": "\u003cfiles...\u003e",
+        "kind": "argument",
+        "description": "files...",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfiles...\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show this help message and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "option",
+    "description": "Show list of possible User classes and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "Rate to spawn users at (users per second). Primarily used together with --headless or --autostart",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Stop after the specified amount of time, e.g. (300s, 20m, 3h, 1h30m, etc.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-u": {
+    "Name": "-u",
+    "kind": "option",
+    "description": "Peak number of concurrent Locust users. Primarily used together with --headless or --autostart",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Show program's version number and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

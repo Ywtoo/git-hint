@@ -1,0 +1,501 @@
+{
+  "--check-upgrade": {
+    "Name": "--check-upgrade",
+    "kind": "option",
+    "description": "Check for cdk8s-cli upgrade",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "The current version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "import": {
+    "Name": "import",
+    "kind": "subcommand",
+    "description": "Import a CRD schema to generate generate resources",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--class-prefix": {
+        "Name": "--class-prefix",
+        "kind": "option",
+        "description": "A prefix to add to all generated class names",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Do not import types that match these regular expressions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cregexp\u003e": {
+            "Name": "\u003cregexp\u003e",
+            "kind": "argument",
+            "description": "regexp",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cregexp\u003e": {
+            "Name": "\u003cregexp\u003e",
+            "kind": "argument",
+            "description": "regexp",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cregexp\u003e"
+        ]
+      },
+      "--language": {
+        "Name": "--language",
+        "kind": "option",
+        "description": "Output programming language",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003clanguage\u003e": {
+            "Name": "\u003clanguage\u003e",
+            "kind": "argument",
+            "description": "language",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003clanguage\u003e": {
+            "Name": "\u003clanguage\u003e",
+            "kind": "argument",
+            "description": "language",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003clanguage\u003e"
+        ]
+      },
+      "--no-class-prefix": {
+        "Name": "--no-class-prefix",
+        "kind": "option",
+        "description": "Does not add a prefix to generated class names",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output": {
+        "Name": "--output",
+        "kind": "option",
+        "description": "Output directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-l": {
+        "Name": "-l",
+        "kind": "option",
+        "description": "Output programming language",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003clanguage\u003e": {
+            "Name": "\u003clanguage\u003e",
+            "kind": "argument",
+            "description": "language",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003clanguage\u003e": {
+            "Name": "\u003clanguage\u003e",
+            "kind": "argument",
+            "description": "language",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003clanguage\u003e"
+        ]
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Output directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cspec\u003e": {
+        "Name": "\u003cspec\u003e",
+        "kind": "argument",
+        "description": "spec",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--class-prefix": {
+        "Name": "--class-prefix",
+        "kind": "option",
+        "description": "A prefix to add to all generated class names",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Do not import types that match these regular expressions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cregexp\u003e": {
+            "Name": "\u003cregexp\u003e",
+            "kind": "argument",
+            "description": "regexp",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cregexp\u003e": {
+            "Name": "\u003cregexp\u003e",
+            "kind": "argument",
+            "description": "regexp",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cregexp\u003e"
+        ]
+      },
+      "--language": {
+        "Name": "--language",
+        "kind": "option",
+        "description": "Output programming language",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003clanguage\u003e": {
+            "Name": "\u003clanguage\u003e",
+            "kind": "argument",
+            "description": "language",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003clanguage\u003e": {
+            "Name": "\u003clanguage\u003e",
+            "kind": "argument",
+            "description": "language",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003clanguage\u003e"
+        ]
+      },
+      "--no-class-prefix": {
+        "Name": "--no-class-prefix",
+        "kind": "option",
+        "description": "Does not add a prefix to generated class names",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output": {
+        "Name": "--output",
+        "kind": "option",
+        "description": "Output directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-l": {
+        "Name": "-l",
+        "kind": "option",
+        "description": "Output programming language",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003clanguage\u003e": {
+            "Name": "\u003clanguage\u003e",
+            "kind": "argument",
+            "description": "language",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003clanguage\u003e": {
+            "Name": "\u003clanguage\u003e",
+            "kind": "argument",
+            "description": "language",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003clanguage\u003e"
+        ]
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Output directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cspec\u003e": {
+        "Name": "\u003cspec\u003e",
+        "kind": "argument",
+        "description": "spec",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cspec\u003e"
+    ]
+  },
+  "init": {
+    "Name": "init",
+    "kind": "subcommand",
+    "description": "Create a new, empty CDK8S project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctype\u003e"
+    ]
+  },
+  "synth": {
+    "Name": "synth",
+    "kind": "subcommand",
+    "description": "Synthesizes Kubernetes manifests for all charts in your app",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--app": {
+        "Name": "--app",
+        "kind": "option",
+        "description": "Command to use in order to execute cdk8s app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-validate": {
+        "Name": "--no-validate",
+        "kind": "option",
+        "description": "Disable validation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output": {
+        "Name": "--output",
+        "kind": "option",
+        "description": "Output directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--plugins-dir": {
+        "Name": "--plugins-dir",
+        "kind": "option",
+        "description": "Directory to store cdk8s plugins",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--stdout": {
+        "Name": "--stdout",
+        "kind": "option",
+        "description": "Write synthesized manifests to STDOUT instead of the output directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--validate": {
+        "Name": "--validate",
+        "kind": "option",
+        "description": "Apply validation plugins on the resulting manifests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--validation-reports-output-file": {
+        "Name": "--validation-reports-output-file",
+        "kind": "option",
+        "description": "File to write a JSON representation of the validation reports to",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-a": {
+        "Name": "-a",
+        "kind": "option",
+        "description": "Command to use in order to execute cdk8s app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Output directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Write synthesized manifests to STDOUT instead of the output directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--app": {
+        "Name": "--app",
+        "kind": "option",
+        "description": "Command to use in order to execute cdk8s app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-validate": {
+        "Name": "--no-validate",
+        "kind": "option",
+        "description": "Disable validation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output": {
+        "Name": "--output",
+        "kind": "option",
+        "description": "Output directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--plugins-dir": {
+        "Name": "--plugins-dir",
+        "kind": "option",
+        "description": "Directory to store cdk8s plugins",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--stdout": {
+        "Name": "--stdout",
+        "kind": "option",
+        "description": "Write synthesized manifests to STDOUT instead of the output directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--validate": {
+        "Name": "--validate",
+        "kind": "option",
+        "description": "Apply validation plugins on the resulting manifests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--validation-reports-output-file": {
+        "Name": "--validation-reports-output-file",
+        "kind": "option",
+        "description": "File to write a JSON representation of the validation reports to",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-a": {
+        "Name": "-a",
+        "kind": "option",
+        "description": "Command to use in order to execute cdk8s app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Output directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Write synthesized manifests to STDOUT instead of the output directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  }
+}

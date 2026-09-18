@@ -1,0 +1,5175 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Output usage information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Increase logging verbosity",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Print CLI version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Output usage information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "bundle": {
+    "Name": "bundle",
+    "kind": "subcommand",
+    "description": "Builds the javascript bundle for offline use",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--assets-dest": {
+        "Name": "--assets-dest",
+        "kind": "option",
+        "description": "Directory name where to store assets referenced in the bundle",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdirectory\u003e"
+        ]
+      },
+      "--bundle-encoding": {
+        "Name": "--bundle-encoding",
+        "kind": "option",
+        "description": "Encoding the bundle should be written in (https://nodejs.org/api/buffer.html#buffer_buffer). (default: \"utf8\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cencoding\u003e": {
+            "Name": "\u003cencoding\u003e",
+            "kind": "argument",
+            "description": "encoding",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cencoding\u003e": {
+            "Name": "\u003cencoding\u003e",
+            "kind": "argument",
+            "description": "encoding",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cencoding\u003e"
+        ]
+      },
+      "--bundle-output": {
+        "Name": "--bundle-output",
+        "kind": "option",
+        "description": "File name where to store the resulting bundle, ex. /tmp/groups.bundle",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbundle file\u003e": {
+            "Name": "\u003cbundle file\u003e",
+            "kind": "argument",
+            "description": "bundle file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cbundle file\u003e": {
+            "Name": "\u003cbundle file\u003e",
+            "kind": "argument",
+            "description": "bundle file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cbundle file\u003e"
+        ]
+      },
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Path to the CLI configuration file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstring\u003e"
+        ]
+      },
+      "--dev": {
+        "Name": "--dev",
+        "kind": "option",
+        "description": "If false, warnings are disabled and the bundle is minified (default: true)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cboolean\u003e": {
+            "Name": "\u003cboolean\u003e",
+            "kind": "argument",
+            "description": "boolean",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cboolean\u003e": {
+            "Name": "\u003cboolean\u003e",
+            "kind": "argument",
+            "description": "boolean",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--entry-file": {
+        "Name": "--entry-file",
+        "kind": "option",
+        "description": "Path to the root JS file, either absolute or relative to JS root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--max-workers": {
+        "Name": "--max-workers",
+        "kind": "option",
+        "description": "Specifies the maximum number of workers the worker-pool will spawn for transforming files. This defaults to the number of the cores available on your machine",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cNumber of workers\u003e": {
+            "Name": "\u003cNumber of workers\u003e",
+            "kind": "argument",
+            "description": "Number of workers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cNumber of workers\u003e": {
+            "Name": "\u003cNumber of workers\u003e",
+            "kind": "argument",
+            "description": "Number of workers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cNumber of workers\u003e"
+        ]
+      },
+      "--minify": {
+        "Name": "--minify",
+        "kind": "option",
+        "description": "Allows overriding whether bundle is minified. This defaults to false if dev is true, and true if dev is false. Disabling minification can be useful for speeding up production builds for testing purposes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cboolean\u003e": {
+            "Name": "\u003cboolean\u003e",
+            "kind": "argument",
+            "description": "boolean",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cboolean\u003e": {
+            "Name": "\u003cboolean\u003e",
+            "kind": "argument",
+            "description": "boolean",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--platform": {
+        "Name": "--platform",
+        "kind": "option",
+        "description": "Either \"ios\" or \"android\" (default: \"ios\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cplatform\u003e": {
+            "Name": "\u003cplatform\u003e",
+            "kind": "argument",
+            "description": "platform",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cplatform\u003e": {
+            "Name": "\u003cplatform\u003e",
+            "kind": "argument",
+            "description": "platform",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cplatform\u003e"
+        ]
+      },
+      "--read-global-cache": {
+        "Name": "--read-global-cache",
+        "kind": "option",
+        "description": "Try to fetch transformed JS code from the global cache, if configured",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--reset-cache": {
+        "Name": "--reset-cache",
+        "kind": "option",
+        "description": "Removes cached files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--sourcemap-output": {
+        "Name": "--sourcemap-output",
+        "kind": "option",
+        "description": "File name where to store the sourcemap file for resulting bundle, ex. /tmp/groups.map",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csourcemap-output\u003e": {
+            "Name": "\u003csourcemap-output\u003e",
+            "kind": "argument",
+            "description": "sourcemap-output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csourcemap-output\u003e": {
+            "Name": "\u003csourcemap-output\u003e",
+            "kind": "argument",
+            "description": "sourcemap-output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csourcemap-output\u003e"
+        ]
+      },
+      "--sourcemap-sources-root": {
+        "Name": "--sourcemap-sources-root",
+        "kind": "option",
+        "description": "Path to make sourcemap's sources entries relative to, ex. /root/dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003croot\u003e": {
+            "Name": "\u003croot\u003e",
+            "kind": "argument",
+            "description": "root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003croot\u003e": {
+            "Name": "\u003croot\u003e",
+            "kind": "argument",
+            "description": "root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003croot\u003e"
+        ]
+      },
+      "--sourcemap-use-absolute-path": {
+        "Name": "--sourcemap-use-absolute-path",
+        "kind": "option",
+        "description": "Report SourceMapURL using its full path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--transformer": {
+        "Name": "--transformer",
+        "kind": "option",
+        "description": "Specify a custom transformer to be used",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctransformer\u003e": {
+            "Name": "\u003ctransformer\u003e",
+            "kind": "argument",
+            "description": "transformer",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctransformer\u003e": {
+            "Name": "\u003ctransformer\u003e",
+            "kind": "argument",
+            "description": "transformer",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctransformer\u003e"
+        ]
+      },
+      "--unstable-transform-profile": {
+        "Name": "--unstable-transform-profile",
+        "kind": "option",
+        "description": "Experimental, transform JS for a specific JS engine. Currently supported: hermes, hermes-canary, default",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctransform-profile\u003e": {
+            "Name": "\u003ctransform-profile\u003e",
+            "kind": "argument",
+            "description": "transform-profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctransform-profile\u003e": {
+            "Name": "\u003ctransform-profile\u003e",
+            "kind": "argument",
+            "description": "transform-profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctransform-profile\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--assets-dest": {
+        "Name": "--assets-dest",
+        "kind": "option",
+        "description": "Directory name where to store assets referenced in the bundle",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdirectory\u003e"
+        ]
+      },
+      "--bundle-encoding": {
+        "Name": "--bundle-encoding",
+        "kind": "option",
+        "description": "Encoding the bundle should be written in (https://nodejs.org/api/buffer.html#buffer_buffer). (default: \"utf8\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cencoding\u003e": {
+            "Name": "\u003cencoding\u003e",
+            "kind": "argument",
+            "description": "encoding",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cencoding\u003e": {
+            "Name": "\u003cencoding\u003e",
+            "kind": "argument",
+            "description": "encoding",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cencoding\u003e"
+        ]
+      },
+      "--bundle-output": {
+        "Name": "--bundle-output",
+        "kind": "option",
+        "description": "File name where to store the resulting bundle, ex. /tmp/groups.bundle",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbundle file\u003e": {
+            "Name": "\u003cbundle file\u003e",
+            "kind": "argument",
+            "description": "bundle file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cbundle file\u003e": {
+            "Name": "\u003cbundle file\u003e",
+            "kind": "argument",
+            "description": "bundle file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cbundle file\u003e"
+        ]
+      },
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Path to the CLI configuration file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstring\u003e"
+        ]
+      },
+      "--dev": {
+        "Name": "--dev",
+        "kind": "option",
+        "description": "If false, warnings are disabled and the bundle is minified (default: true)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cboolean\u003e": {
+            "Name": "\u003cboolean\u003e",
+            "kind": "argument",
+            "description": "boolean",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cboolean\u003e": {
+            "Name": "\u003cboolean\u003e",
+            "kind": "argument",
+            "description": "boolean",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--entry-file": {
+        "Name": "--entry-file",
+        "kind": "option",
+        "description": "Path to the root JS file, either absolute or relative to JS root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--max-workers": {
+        "Name": "--max-workers",
+        "kind": "option",
+        "description": "Specifies the maximum number of workers the worker-pool will spawn for transforming files. This defaults to the number of the cores available on your machine",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cNumber of workers\u003e": {
+            "Name": "\u003cNumber of workers\u003e",
+            "kind": "argument",
+            "description": "Number of workers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cNumber of workers\u003e": {
+            "Name": "\u003cNumber of workers\u003e",
+            "kind": "argument",
+            "description": "Number of workers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cNumber of workers\u003e"
+        ]
+      },
+      "--minify": {
+        "Name": "--minify",
+        "kind": "option",
+        "description": "Allows overriding whether bundle is minified. This defaults to false if dev is true, and true if dev is false. Disabling minification can be useful for speeding up production builds for testing purposes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cboolean\u003e": {
+            "Name": "\u003cboolean\u003e",
+            "kind": "argument",
+            "description": "boolean",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cboolean\u003e": {
+            "Name": "\u003cboolean\u003e",
+            "kind": "argument",
+            "description": "boolean",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--platform": {
+        "Name": "--platform",
+        "kind": "option",
+        "description": "Either \"ios\" or \"android\" (default: \"ios\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cplatform\u003e": {
+            "Name": "\u003cplatform\u003e",
+            "kind": "argument",
+            "description": "platform",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cplatform\u003e": {
+            "Name": "\u003cplatform\u003e",
+            "kind": "argument",
+            "description": "platform",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cplatform\u003e"
+        ]
+      },
+      "--read-global-cache": {
+        "Name": "--read-global-cache",
+        "kind": "option",
+        "description": "Try to fetch transformed JS code from the global cache, if configured",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--reset-cache": {
+        "Name": "--reset-cache",
+        "kind": "option",
+        "description": "Removes cached files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--sourcemap-output": {
+        "Name": "--sourcemap-output",
+        "kind": "option",
+        "description": "File name where to store the sourcemap file for resulting bundle, ex. /tmp/groups.map",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csourcemap-output\u003e": {
+            "Name": "\u003csourcemap-output\u003e",
+            "kind": "argument",
+            "description": "sourcemap-output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csourcemap-output\u003e": {
+            "Name": "\u003csourcemap-output\u003e",
+            "kind": "argument",
+            "description": "sourcemap-output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csourcemap-output\u003e"
+        ]
+      },
+      "--sourcemap-sources-root": {
+        "Name": "--sourcemap-sources-root",
+        "kind": "option",
+        "description": "Path to make sourcemap's sources entries relative to, ex. /root/dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003croot\u003e": {
+            "Name": "\u003croot\u003e",
+            "kind": "argument",
+            "description": "root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003croot\u003e": {
+            "Name": "\u003croot\u003e",
+            "kind": "argument",
+            "description": "root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003croot\u003e"
+        ]
+      },
+      "--sourcemap-use-absolute-path": {
+        "Name": "--sourcemap-use-absolute-path",
+        "kind": "option",
+        "description": "Report SourceMapURL using its full path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--transformer": {
+        "Name": "--transformer",
+        "kind": "option",
+        "description": "Specify a custom transformer to be used",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctransformer\u003e": {
+            "Name": "\u003ctransformer\u003e",
+            "kind": "argument",
+            "description": "transformer",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctransformer\u003e": {
+            "Name": "\u003ctransformer\u003e",
+            "kind": "argument",
+            "description": "transformer",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctransformer\u003e"
+        ]
+      },
+      "--unstable-transform-profile": {
+        "Name": "--unstable-transform-profile",
+        "kind": "option",
+        "description": "Experimental, transform JS for a specific JS engine. Currently supported: hermes, hermes-canary, default",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctransform-profile\u003e": {
+            "Name": "\u003ctransform-profile\u003e",
+            "kind": "argument",
+            "description": "transform-profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctransform-profile\u003e": {
+            "Name": "\u003ctransform-profile\u003e",
+            "kind": "argument",
+            "description": "transform-profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctransform-profile\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "config": {
+    "Name": "config",
+    "kind": "subcommand",
+    "description": "Print CLI configuration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "doctor": {
+    "Name": "doctor",
+    "kind": "subcommand",
+    "description": "[EXPERIMENTAL] Diagnose and fix common Node.js, iOS, Android \u0026 React Native issues",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--contributor": {
+        "Name": "--contributor",
+        "kind": "option",
+        "description": "Add healthchecks required to installations required for contributing to React Native",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--fix": {
+        "Name": "--fix",
+        "kind": "option",
+        "description": "Attempt to fix all diagnosed issues",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--contributor": {
+        "Name": "--contributor",
+        "kind": "option",
+        "description": "Add healthchecks required to installations required for contributing to React Native",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--fix": {
+        "Name": "--fix",
+        "kind": "option",
+        "description": "Attempt to fix all diagnosed issues",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "info": {
+    "Name": "info",
+    "kind": "subcommand",
+    "description": "Get relevant version info about OS, toolchain and libraries",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "init": {
+    "Name": "init",
+    "kind": "subcommand",
+    "description": "Initialize a new React Native project named \u003cprojectName\u003e in a directory of the same name",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--directory": {
+        "Name": "--directory",
+        "kind": "option",
+        "description": "Uses a custom directory instead of `\u003cprojectName\u003e`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstring\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--npm": {
+        "Name": "--npm",
+        "kind": "option",
+        "description": "Forces using npm for initialization",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--skip-install": {
+        "Name": "--skip-install",
+        "kind": "option",
+        "description": "Skips dependencies installation step",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--template": {
+        "Name": "--template",
+        "kind": "option",
+        "description": "Uses a custom template. Valid arguments are the ones supported by `yarn add [package]` or `npm install [package]`, if you are using `--npm` option",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctemplate\u003e": {
+            "Name": "\u003ctemplate\u003e",
+            "kind": "argument",
+            "description": "template",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctemplate\u003e": {
+            "Name": "\u003ctemplate\u003e",
+            "kind": "argument",
+            "description": "template",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctemplate\u003e"
+        ]
+      },
+      "--title": {
+        "Name": "--title",
+        "kind": "option",
+        "description": "Uses a custom app title name for application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctitle\u003e": {
+            "Name": "\u003ctitle\u003e",
+            "kind": "argument",
+            "description": "title",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctitle\u003e": {
+            "Name": "\u003ctitle\u003e",
+            "kind": "argument",
+            "description": "title",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctitle\u003e"
+        ]
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Shortcut for `--template react-native@version`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cversion\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cprojectName\u003e": {
+        "Name": "\u003cprojectName\u003e",
+        "kind": "argument",
+        "description": "projectName",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--directory": {
+        "Name": "--directory",
+        "kind": "option",
+        "description": "Uses a custom directory instead of `\u003cprojectName\u003e`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstring\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--npm": {
+        "Name": "--npm",
+        "kind": "option",
+        "description": "Forces using npm for initialization",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--skip-install": {
+        "Name": "--skip-install",
+        "kind": "option",
+        "description": "Skips dependencies installation step",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--template": {
+        "Name": "--template",
+        "kind": "option",
+        "description": "Uses a custom template. Valid arguments are the ones supported by `yarn add [package]` or `npm install [package]`, if you are using `--npm` option",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctemplate\u003e": {
+            "Name": "\u003ctemplate\u003e",
+            "kind": "argument",
+            "description": "template",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctemplate\u003e": {
+            "Name": "\u003ctemplate\u003e",
+            "kind": "argument",
+            "description": "template",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctemplate\u003e"
+        ]
+      },
+      "--title": {
+        "Name": "--title",
+        "kind": "option",
+        "description": "Uses a custom app title name for application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctitle\u003e": {
+            "Name": "\u003ctitle\u003e",
+            "kind": "argument",
+            "description": "title",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctitle\u003e": {
+            "Name": "\u003ctitle\u003e",
+            "kind": "argument",
+            "description": "title",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctitle\u003e"
+        ]
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Shortcut for `--template react-native@version`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cversion\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cprojectName\u003e": {
+        "Name": "\u003cprojectName\u003e",
+        "kind": "argument",
+        "description": "projectName",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cprojectName\u003e"
+    ]
+  },
+  "install": {
+    "Name": "install",
+    "kind": "subcommand",
+    "description": "Install and link native dependencies",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpackageName\u003e": {
+        "Name": "\u003cpackageName\u003e",
+        "kind": "argument",
+        "description": "packageName",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpackageName\u003e": {
+        "Name": "\u003cpackageName\u003e",
+        "kind": "argument",
+        "description": "packageName",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpackageName\u003e"
+    ]
+  },
+  "link": {
+    "Name": "link",
+    "kind": "subcommand",
+    "description": "Links assets and optionally native modules",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "Link all native modules and assets",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--platforms": {
+        "Name": "--platforms",
+        "kind": "option",
+        "description": "Scope linking to specified platforms",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003clist\u003e": {
+            "Name": "\u003clist\u003e",
+            "kind": "argument",
+            "description": "list",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003clist\u003e": {
+            "Name": "\u003clist\u003e",
+            "kind": "argument",
+            "description": "list",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpackageName\u003e": {
+        "Name": "\u003cpackageName\u003e",
+        "kind": "argument",
+        "description": "packageName",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "Link all native modules and assets",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--platforms": {
+        "Name": "--platforms",
+        "kind": "option",
+        "description": "Scope linking to specified platforms",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003clist\u003e": {
+            "Name": "\u003clist\u003e",
+            "kind": "argument",
+            "description": "list",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003clist\u003e": {
+            "Name": "\u003clist\u003e",
+            "kind": "argument",
+            "description": "list",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpackageName\u003e": {
+        "Name": "\u003cpackageName\u003e",
+        "kind": "argument",
+        "description": "packageName",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "log-android": {
+    "Name": "log-android",
+    "kind": "subcommand",
+    "description": "Starts logkitty",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "log-ios": {
+    "Name": "log-ios",
+    "kind": "subcommand",
+    "description": "Starts iOS device syslog tail",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "profile-hermes": {
+    "Name": "profile-hermes",
+    "kind": "subcommand",
+    "description": "Pull and convert a Hermes tracing profile to Chrome tracing profile, then store it in the directory \u003cdestinationDir\u003e of the local machine",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--filename": {
+        "Name": "--filename",
+        "kind": "option",
+        "description": "File name of the profile to be downloaded, eg. sampling-profiler-trace8593107139682635366.cpuprofile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprofile\u003e": {
+            "Name": "\u003cprofile\u003e",
+            "kind": "argument",
+            "description": "profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprofile\u003e": {
+            "Name": "\u003cprofile\u003e",
+            "kind": "argument",
+            "description": "profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprofile\u003e"
+        ]
+      },
+      "--generate-sourcemap": {
+        "Name": "--generate-sourcemap",
+        "kind": "option",
+        "description": "Generates the JS bundle and source map",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--port": {
+        "Name": "--port",
+        "kind": "option",
+        "description": "Default: \"8081\"",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfree port\u003e": {
+            "Name": "\u003cfree port\u003e",
+            "kind": "argument",
+            "description": "free port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfree port\u003e": {
+            "Name": "\u003cfree port\u003e",
+            "kind": "argument",
+            "description": "free port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfree port\u003e"
+        ]
+      },
+      "--raw": {
+        "Name": "--raw",
+        "kind": "option",
+        "description": "Pulls the original Hermes tracing profile without any transformation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--sourcemap-path": {
+        "Name": "--sourcemap-path",
+        "kind": "option",
+        "description": "The local path to your source map file, eg. /tmp/sourcemap.json",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csourcemap-path\u003e": {
+            "Name": "\u003csourcemap-path\u003e",
+            "kind": "argument",
+            "description": "sourcemap-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csourcemap-path\u003e": {
+            "Name": "\u003csourcemap-path\u003e",
+            "kind": "argument",
+            "description": "sourcemap-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csourcemap-path\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cdestinationDir\u003e": {
+        "Name": "\u003cdestinationDir\u003e",
+        "kind": "argument",
+        "description": "destinationDir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--filename": {
+        "Name": "--filename",
+        "kind": "option",
+        "description": "File name of the profile to be downloaded, eg. sampling-profiler-trace8593107139682635366.cpuprofile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprofile\u003e": {
+            "Name": "\u003cprofile\u003e",
+            "kind": "argument",
+            "description": "profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprofile\u003e": {
+            "Name": "\u003cprofile\u003e",
+            "kind": "argument",
+            "description": "profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprofile\u003e"
+        ]
+      },
+      "--generate-sourcemap": {
+        "Name": "--generate-sourcemap",
+        "kind": "option",
+        "description": "Generates the JS bundle and source map",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--port": {
+        "Name": "--port",
+        "kind": "option",
+        "description": "Default: \"8081\"",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfree port\u003e": {
+            "Name": "\u003cfree port\u003e",
+            "kind": "argument",
+            "description": "free port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfree port\u003e": {
+            "Name": "\u003cfree port\u003e",
+            "kind": "argument",
+            "description": "free port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfree port\u003e"
+        ]
+      },
+      "--raw": {
+        "Name": "--raw",
+        "kind": "option",
+        "description": "Pulls the original Hermes tracing profile without any transformation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--sourcemap-path": {
+        "Name": "--sourcemap-path",
+        "kind": "option",
+        "description": "The local path to your source map file, eg. /tmp/sourcemap.json",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csourcemap-path\u003e": {
+            "Name": "\u003csourcemap-path\u003e",
+            "kind": "argument",
+            "description": "sourcemap-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csourcemap-path\u003e": {
+            "Name": "\u003csourcemap-path\u003e",
+            "kind": "argument",
+            "description": "sourcemap-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csourcemap-path\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cdestinationDir\u003e": {
+        "Name": "\u003cdestinationDir\u003e",
+        "kind": "argument",
+        "description": "destinationDir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "ram-bundle": {
+    "Name": "ram-bundle",
+    "kind": "subcommand",
+    "description": "Builds javascript as a \"Random Access Module\" bundle for offline use",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--assets-dest": {
+        "Name": "--assets-dest",
+        "kind": "option",
+        "description": "Directory name where to store assets referenced in the bundle",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdirectory\u003e"
+        ]
+      },
+      "--bundle-encoding": {
+        "Name": "--bundle-encoding",
+        "kind": "option",
+        "description": "Encoding the bundle should be written in (https://nodejs.org/api/buffer.html#buffer_buffer). (default: \"utf8\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cencoding\u003e": {
+            "Name": "\u003cencoding\u003e",
+            "kind": "argument",
+            "description": "encoding",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cencoding\u003e": {
+            "Name": "\u003cencoding\u003e",
+            "kind": "argument",
+            "description": "encoding",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cencoding\u003e"
+        ]
+      },
+      "--bundle-output": {
+        "Name": "--bundle-output",
+        "kind": "option",
+        "description": "File name where to store the resulting bundle, ex. /tmp/groups.bundle",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput file\u003e": {
+            "Name": "\u003coutput file\u003e",
+            "kind": "argument",
+            "description": "output file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput file\u003e": {
+            "Name": "\u003coutput file\u003e",
+            "kind": "argument",
+            "description": "output file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput file\u003e"
+        ]
+      },
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Path to the CLI configuration file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstring\u003e"
+        ]
+      },
+      "--dev": {
+        "Name": "--dev",
+        "kind": "option",
+        "description": "If false, warnings are disabled and the bundle is minified (default: true)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cboolean\u003e": {
+            "Name": "\u003cboolean\u003e",
+            "kind": "argument",
+            "description": "boolean",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cboolean\u003e": {
+            "Name": "\u003cboolean\u003e",
+            "kind": "argument",
+            "description": "boolean",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--entry-file": {
+        "Name": "--entry-file",
+        "kind": "option",
+        "description": "Path to the root JS file, either absolute or relative to JS root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--indexed-ram-bundle": {
+        "Name": "--indexed-ram-bundle",
+        "kind": "option",
+        "description": "Force the \"Indexed RAM\" bundle file format, even when building for android",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--max-workers": {
+        "Name": "--max-workers",
+        "kind": "option",
+        "description": "Specifies the maximum number of workers the worker-pool will spawn for transforming files. This defaults to the number of the cores available on your machine",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cNumber of workers\u003e": {
+            "Name": "\u003cNumber of workers\u003e",
+            "kind": "argument",
+            "description": "Number of workers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cNumber of workers\u003e": {
+            "Name": "\u003cNumber of workers\u003e",
+            "kind": "argument",
+            "description": "Number of workers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cNumber of workers\u003e"
+        ]
+      },
+      "--minify": {
+        "Name": "--minify",
+        "kind": "option",
+        "description": "Allows overriding whether bundle is minified. This defaults to false if dev is true, and true if dev is false. Disabling minification can be useful for speeding up production builds for testing purposes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cboolean\u003e": {
+            "Name": "\u003cboolean\u003e",
+            "kind": "argument",
+            "description": "boolean",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cboolean\u003e": {
+            "Name": "\u003cboolean\u003e",
+            "kind": "argument",
+            "description": "boolean",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--platform": {
+        "Name": "--platform",
+        "kind": "option",
+        "description": "Either \"ios\" or \"android\" (default: \"ios\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cplatform\u003e": {
+            "Name": "\u003cplatform\u003e",
+            "kind": "argument",
+            "description": "platform",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cplatform\u003e": {
+            "Name": "\u003cplatform\u003e",
+            "kind": "argument",
+            "description": "platform",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cplatform\u003e"
+        ]
+      },
+      "--read-global-cache": {
+        "Name": "--read-global-cache",
+        "kind": "option",
+        "description": "Try to fetch transformed JS code from the global cache, if configured",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--reset-cache": {
+        "Name": "--reset-cache",
+        "kind": "option",
+        "description": "Removes cached files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--sourcemap-output": {
+        "Name": "--sourcemap-output",
+        "kind": "option",
+        "description": "File name where to store the sourcemap file for resulting bundle, ex. /tmp/groups.map",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csourcemap-output\u003e": {
+            "Name": "\u003csourcemap-output\u003e",
+            "kind": "argument",
+            "description": "sourcemap-output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csourcemap-output\u003e": {
+            "Name": "\u003csourcemap-output\u003e",
+            "kind": "argument",
+            "description": "sourcemap-output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csourcemap-output\u003e"
+        ]
+      },
+      "--sourcemap-sources-root": {
+        "Name": "--sourcemap-sources-root",
+        "kind": "option",
+        "description": "Path to make sourcemap's sources entries relative to, ex. /root/dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003croot\u003e": {
+            "Name": "\u003croot\u003e",
+            "kind": "argument",
+            "description": "root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003croot\u003e": {
+            "Name": "\u003croot\u003e",
+            "kind": "argument",
+            "description": "root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003croot\u003e"
+        ]
+      },
+      "--sourcemap-use-absolute-path": {
+        "Name": "--sourcemap-use-absolute-path",
+        "kind": "option",
+        "description": "Report SourceMapURL using its full path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--transformer": {
+        "Name": "--transformer",
+        "kind": "option",
+        "description": "Specify a custom transformer to be used",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctransformer\u003e": {
+            "Name": "\u003ctransformer\u003e",
+            "kind": "argument",
+            "description": "transformer",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctransformer\u003e": {
+            "Name": "\u003ctransformer\u003e",
+            "kind": "argument",
+            "description": "transformer",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctransformer\u003e"
+        ]
+      },
+      "--unstable-transform-profile": {
+        "Name": "--unstable-transform-profile",
+        "kind": "option",
+        "description": "Experimental, transform JS for a specific JS engine. Currently supported: hermes, hermes-canary, default",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctransform-profile\u003e": {
+            "Name": "\u003ctransform-profile\u003e",
+            "kind": "argument",
+            "description": "transform-profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctransform-profile\u003e": {
+            "Name": "\u003ctransform-profile\u003e",
+            "kind": "argument",
+            "description": "transform-profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctransform-profile\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--assets-dest": {
+        "Name": "--assets-dest",
+        "kind": "option",
+        "description": "Directory name where to store assets referenced in the bundle",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdirectory\u003e"
+        ]
+      },
+      "--bundle-encoding": {
+        "Name": "--bundle-encoding",
+        "kind": "option",
+        "description": "Encoding the bundle should be written in (https://nodejs.org/api/buffer.html#buffer_buffer). (default: \"utf8\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cencoding\u003e": {
+            "Name": "\u003cencoding\u003e",
+            "kind": "argument",
+            "description": "encoding",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cencoding\u003e": {
+            "Name": "\u003cencoding\u003e",
+            "kind": "argument",
+            "description": "encoding",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cencoding\u003e"
+        ]
+      },
+      "--bundle-output": {
+        "Name": "--bundle-output",
+        "kind": "option",
+        "description": "File name where to store the resulting bundle, ex. /tmp/groups.bundle",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput file\u003e": {
+            "Name": "\u003coutput file\u003e",
+            "kind": "argument",
+            "description": "output file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput file\u003e": {
+            "Name": "\u003coutput file\u003e",
+            "kind": "argument",
+            "description": "output file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput file\u003e"
+        ]
+      },
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Path to the CLI configuration file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstring\u003e"
+        ]
+      },
+      "--dev": {
+        "Name": "--dev",
+        "kind": "option",
+        "description": "If false, warnings are disabled and the bundle is minified (default: true)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cboolean\u003e": {
+            "Name": "\u003cboolean\u003e",
+            "kind": "argument",
+            "description": "boolean",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cboolean\u003e": {
+            "Name": "\u003cboolean\u003e",
+            "kind": "argument",
+            "description": "boolean",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--entry-file": {
+        "Name": "--entry-file",
+        "kind": "option",
+        "description": "Path to the root JS file, either absolute or relative to JS root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--indexed-ram-bundle": {
+        "Name": "--indexed-ram-bundle",
+        "kind": "option",
+        "description": "Force the \"Indexed RAM\" bundle file format, even when building for android",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--max-workers": {
+        "Name": "--max-workers",
+        "kind": "option",
+        "description": "Specifies the maximum number of workers the worker-pool will spawn for transforming files. This defaults to the number of the cores available on your machine",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cNumber of workers\u003e": {
+            "Name": "\u003cNumber of workers\u003e",
+            "kind": "argument",
+            "description": "Number of workers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cNumber of workers\u003e": {
+            "Name": "\u003cNumber of workers\u003e",
+            "kind": "argument",
+            "description": "Number of workers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cNumber of workers\u003e"
+        ]
+      },
+      "--minify": {
+        "Name": "--minify",
+        "kind": "option",
+        "description": "Allows overriding whether bundle is minified. This defaults to false if dev is true, and true if dev is false. Disabling minification can be useful for speeding up production builds for testing purposes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cboolean\u003e": {
+            "Name": "\u003cboolean\u003e",
+            "kind": "argument",
+            "description": "boolean",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cboolean\u003e": {
+            "Name": "\u003cboolean\u003e",
+            "kind": "argument",
+            "description": "boolean",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--platform": {
+        "Name": "--platform",
+        "kind": "option",
+        "description": "Either \"ios\" or \"android\" (default: \"ios\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cplatform\u003e": {
+            "Name": "\u003cplatform\u003e",
+            "kind": "argument",
+            "description": "platform",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cplatform\u003e": {
+            "Name": "\u003cplatform\u003e",
+            "kind": "argument",
+            "description": "platform",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cplatform\u003e"
+        ]
+      },
+      "--read-global-cache": {
+        "Name": "--read-global-cache",
+        "kind": "option",
+        "description": "Try to fetch transformed JS code from the global cache, if configured",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--reset-cache": {
+        "Name": "--reset-cache",
+        "kind": "option",
+        "description": "Removes cached files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--sourcemap-output": {
+        "Name": "--sourcemap-output",
+        "kind": "option",
+        "description": "File name where to store the sourcemap file for resulting bundle, ex. /tmp/groups.map",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csourcemap-output\u003e": {
+            "Name": "\u003csourcemap-output\u003e",
+            "kind": "argument",
+            "description": "sourcemap-output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csourcemap-output\u003e": {
+            "Name": "\u003csourcemap-output\u003e",
+            "kind": "argument",
+            "description": "sourcemap-output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csourcemap-output\u003e"
+        ]
+      },
+      "--sourcemap-sources-root": {
+        "Name": "--sourcemap-sources-root",
+        "kind": "option",
+        "description": "Path to make sourcemap's sources entries relative to, ex. /root/dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003croot\u003e": {
+            "Name": "\u003croot\u003e",
+            "kind": "argument",
+            "description": "root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003croot\u003e": {
+            "Name": "\u003croot\u003e",
+            "kind": "argument",
+            "description": "root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003croot\u003e"
+        ]
+      },
+      "--sourcemap-use-absolute-path": {
+        "Name": "--sourcemap-use-absolute-path",
+        "kind": "option",
+        "description": "Report SourceMapURL using its full path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--transformer": {
+        "Name": "--transformer",
+        "kind": "option",
+        "description": "Specify a custom transformer to be used",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctransformer\u003e": {
+            "Name": "\u003ctransformer\u003e",
+            "kind": "argument",
+            "description": "transformer",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctransformer\u003e": {
+            "Name": "\u003ctransformer\u003e",
+            "kind": "argument",
+            "description": "transformer",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctransformer\u003e"
+        ]
+      },
+      "--unstable-transform-profile": {
+        "Name": "--unstable-transform-profile",
+        "kind": "option",
+        "description": "Experimental, transform JS for a specific JS engine. Currently supported: hermes, hermes-canary, default",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctransform-profile\u003e": {
+            "Name": "\u003ctransform-profile\u003e",
+            "kind": "argument",
+            "description": "transform-profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctransform-profile\u003e": {
+            "Name": "\u003ctransform-profile\u003e",
+            "kind": "argument",
+            "description": "transform-profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctransform-profile\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "run-android": {
+    "Name": "run-android",
+    "kind": "subcommand",
+    "description": "Builds your app and starts it on a connected Android emulator or device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--appFolder": {
+        "Name": "--appFolder",
+        "kind": "option",
+        "description": "[DEPRECATED – use \"project.android.appName\" in react-native.config.js] Specify a different application folder name for the android source. If not, we assume is \"app\"",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstring\u003e"
+        ]
+      },
+      "--appId": {
+        "Name": "--appId",
+        "kind": "option",
+        "description": "Specify an applicationId to launch after build. If not specified, `package` from AndroidManifest.xml will be used. (default: \"\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cappId\u003e": {
+            "Name": "\u003cappId\u003e",
+            "kind": "argument",
+            "description": "appId",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cappId\u003e": {
+            "Name": "\u003cappId\u003e",
+            "kind": "argument",
+            "description": "appId",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cappId\u003e"
+        ]
+      },
+      "--appIdSuffix": {
+        "Name": "--appIdSuffix",
+        "kind": "option",
+        "description": "Specify an applicationIdSuffix to launch after build. (default: \"\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cappIdSuffix\u003e": {
+            "Name": "\u003cappIdSuffix\u003e",
+            "kind": "argument",
+            "description": "appIdSuffix",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cappIdSuffix\u003e": {
+            "Name": "\u003cappIdSuffix\u003e",
+            "kind": "argument",
+            "description": "appIdSuffix",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cappIdSuffix\u003e"
+        ]
+      },
+      "--deviceId": {
+        "Name": "--deviceId",
+        "kind": "option",
+        "description": "Builds your app and starts it on a specific device/simulator with the given device id (listed by running \"adb devices\" on the command line)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdeviceId\u003e": {
+            "Name": "\u003cdeviceId\u003e",
+            "kind": "argument",
+            "description": "deviceId",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdeviceId\u003e": {
+            "Name": "\u003cdeviceId\u003e",
+            "kind": "argument",
+            "description": "deviceId",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdeviceId\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--main-activity": {
+        "Name": "--main-activity",
+        "kind": "option",
+        "description": "Name of the activity to start (default: \"MainActivity\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmain activity\u003e": {
+            "Name": "\u003cmain activity\u003e",
+            "kind": "argument",
+            "description": "main activity",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmain activity\u003e": {
+            "Name": "\u003cmain activity\u003e",
+            "kind": "argument",
+            "description": "main activity",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmain activity\u003e"
+        ]
+      },
+      "--no-jetifier": {
+        "Name": "--no-jetifier",
+        "kind": "option",
+        "description": "Do not run \"jetifier\" – the AndroidX transition tool. By default it runs before Gradle to ease working with libraries that don't support AndroidX yet. See more at: https://www.npmjs.com/package/jetifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-packager": {
+        "Name": "--no-packager",
+        "kind": "option",
+        "description": "Do not launch packager while building",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--port": {
+        "Name": "--port",
+        "kind": "option",
+        "description": "Default: 8081",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfree port\u003e": {
+            "Name": "\u003cfree port\u003e",
+            "kind": "argument",
+            "description": "free port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfree port\u003e": {
+            "Name": "\u003cfree port\u003e",
+            "kind": "argument",
+            "description": "free port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfree port\u003e"
+        ]
+      },
+      "--root": {
+        "Name": "--root",
+        "kind": "option",
+        "description": "[DEPRECATED - root is discovered automatically] Override the root directory for the android build (which contains the android directory) (default: \"\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003croot\u003e": {
+            "Name": "\u003croot\u003e",
+            "kind": "argument",
+            "description": "root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003croot\u003e": {
+            "Name": "\u003croot\u003e",
+            "kind": "argument",
+            "description": "root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003croot\u003e"
+        ]
+      },
+      "--tasks": {
+        "Name": "--tasks",
+        "kind": "option",
+        "description": "Run custom Gradle tasks. By default it's \"installDebug\"",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctask list\u003e": {
+            "Name": "\u003ctask list\u003e",
+            "kind": "argument",
+            "description": "task list",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctask list\u003e": {
+            "Name": "\u003ctask list\u003e",
+            "kind": "argument",
+            "description": "task list",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctask list\u003e"
+        ]
+      },
+      "--terminal": {
+        "Name": "--terminal",
+        "kind": "option",
+        "description": "Launches the Metro Bundler in a new window using the specified terminal path. (default: \"Apple_Terminal\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cterminal path\u003e": {
+            "Name": "\u003cterminal path\u003e",
+            "kind": "argument",
+            "description": "terminal path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cterminal path\u003e": {
+            "Name": "\u003cterminal path\u003e",
+            "kind": "argument",
+            "description": "terminal path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cterminal path\u003e"
+        ]
+      },
+      "--variant": {
+        "Name": "--variant",
+        "kind": "option",
+        "description": "Specify your app's build variant (default: \"debug\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cvariant\u003e": {
+            "Name": "\u003cvariant\u003e",
+            "kind": "argument",
+            "description": "variant",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cvariant\u003e": {
+            "Name": "\u003cvariant\u003e",
+            "kind": "argument",
+            "description": "variant",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cvariant\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--appFolder": {
+        "Name": "--appFolder",
+        "kind": "option",
+        "description": "[DEPRECATED – use \"project.android.appName\" in react-native.config.js] Specify a different application folder name for the android source. If not, we assume is \"app\"",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstring\u003e"
+        ]
+      },
+      "--appId": {
+        "Name": "--appId",
+        "kind": "option",
+        "description": "Specify an applicationId to launch after build. If not specified, `package` from AndroidManifest.xml will be used. (default: \"\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cappId\u003e": {
+            "Name": "\u003cappId\u003e",
+            "kind": "argument",
+            "description": "appId",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cappId\u003e": {
+            "Name": "\u003cappId\u003e",
+            "kind": "argument",
+            "description": "appId",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cappId\u003e"
+        ]
+      },
+      "--appIdSuffix": {
+        "Name": "--appIdSuffix",
+        "kind": "option",
+        "description": "Specify an applicationIdSuffix to launch after build. (default: \"\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cappIdSuffix\u003e": {
+            "Name": "\u003cappIdSuffix\u003e",
+            "kind": "argument",
+            "description": "appIdSuffix",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cappIdSuffix\u003e": {
+            "Name": "\u003cappIdSuffix\u003e",
+            "kind": "argument",
+            "description": "appIdSuffix",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cappIdSuffix\u003e"
+        ]
+      },
+      "--deviceId": {
+        "Name": "--deviceId",
+        "kind": "option",
+        "description": "Builds your app and starts it on a specific device/simulator with the given device id (listed by running \"adb devices\" on the command line)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdeviceId\u003e": {
+            "Name": "\u003cdeviceId\u003e",
+            "kind": "argument",
+            "description": "deviceId",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdeviceId\u003e": {
+            "Name": "\u003cdeviceId\u003e",
+            "kind": "argument",
+            "description": "deviceId",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdeviceId\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--main-activity": {
+        "Name": "--main-activity",
+        "kind": "option",
+        "description": "Name of the activity to start (default: \"MainActivity\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmain activity\u003e": {
+            "Name": "\u003cmain activity\u003e",
+            "kind": "argument",
+            "description": "main activity",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmain activity\u003e": {
+            "Name": "\u003cmain activity\u003e",
+            "kind": "argument",
+            "description": "main activity",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmain activity\u003e"
+        ]
+      },
+      "--no-jetifier": {
+        "Name": "--no-jetifier",
+        "kind": "option",
+        "description": "Do not run \"jetifier\" – the AndroidX transition tool. By default it runs before Gradle to ease working with libraries that don't support AndroidX yet. See more at: https://www.npmjs.com/package/jetifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-packager": {
+        "Name": "--no-packager",
+        "kind": "option",
+        "description": "Do not launch packager while building",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--port": {
+        "Name": "--port",
+        "kind": "option",
+        "description": "Default: 8081",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfree port\u003e": {
+            "Name": "\u003cfree port\u003e",
+            "kind": "argument",
+            "description": "free port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfree port\u003e": {
+            "Name": "\u003cfree port\u003e",
+            "kind": "argument",
+            "description": "free port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfree port\u003e"
+        ]
+      },
+      "--root": {
+        "Name": "--root",
+        "kind": "option",
+        "description": "[DEPRECATED - root is discovered automatically] Override the root directory for the android build (which contains the android directory) (default: \"\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003croot\u003e": {
+            "Name": "\u003croot\u003e",
+            "kind": "argument",
+            "description": "root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003croot\u003e": {
+            "Name": "\u003croot\u003e",
+            "kind": "argument",
+            "description": "root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003croot\u003e"
+        ]
+      },
+      "--tasks": {
+        "Name": "--tasks",
+        "kind": "option",
+        "description": "Run custom Gradle tasks. By default it's \"installDebug\"",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctask list\u003e": {
+            "Name": "\u003ctask list\u003e",
+            "kind": "argument",
+            "description": "task list",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctask list\u003e": {
+            "Name": "\u003ctask list\u003e",
+            "kind": "argument",
+            "description": "task list",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctask list\u003e"
+        ]
+      },
+      "--terminal": {
+        "Name": "--terminal",
+        "kind": "option",
+        "description": "Launches the Metro Bundler in a new window using the specified terminal path. (default: \"Apple_Terminal\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cterminal path\u003e": {
+            "Name": "\u003cterminal path\u003e",
+            "kind": "argument",
+            "description": "terminal path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cterminal path\u003e": {
+            "Name": "\u003cterminal path\u003e",
+            "kind": "argument",
+            "description": "terminal path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cterminal path\u003e"
+        ]
+      },
+      "--variant": {
+        "Name": "--variant",
+        "kind": "option",
+        "description": "Specify your app's build variant (default: \"debug\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cvariant\u003e": {
+            "Name": "\u003cvariant\u003e",
+            "kind": "argument",
+            "description": "variant",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cvariant\u003e": {
+            "Name": "\u003cvariant\u003e",
+            "kind": "argument",
+            "description": "variant",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cvariant\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "run-ios": {
+    "Name": "run-ios",
+    "kind": "subcommand",
+    "description": "Builds your app and starts it on iOS simulator",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--configuration": {
+        "Name": "--configuration",
+        "kind": "option",
+        "description": "Explicitly set the scheme configuration to use (default: \"Debug\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfig scheme\u003e": {
+            "Name": "\u003cconfig scheme\u003e",
+            "kind": "argument",
+            "description": "config scheme",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfig scheme\u003e": {
+            "Name": "\u003cconfig scheme\u003e",
+            "kind": "argument",
+            "description": "config scheme",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfig scheme\u003e"
+        ]
+      },
+      "--device": {
+        "Name": "--device",
+        "kind": "option",
+        "description": "Explicitly set device to use by name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdevice name\u003e": {
+            "Name": "\u003cdevice name\u003e",
+            "kind": "argument",
+            "description": "device name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdevice name\u003e": {
+            "Name": "\u003cdevice name\u003e",
+            "kind": "argument",
+            "description": "device name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-packager": {
+        "Name": "--no-packager",
+        "kind": "option",
+        "description": "Do not launch packager while building",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--port": {
+        "Name": "--port",
+        "kind": "option",
+        "description": "Default: 8081",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfree port\u003e": {
+            "Name": "\u003cfree port\u003e",
+            "kind": "argument",
+            "description": "free port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfree port\u003e": {
+            "Name": "\u003cfree port\u003e",
+            "kind": "argument",
+            "description": "free port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfree port\u003e"
+        ]
+      },
+      "--project-path": {
+        "Name": "--project-path",
+        "kind": "option",
+        "description": "Path relative to project root where the Xcode project (.xcodeproj) lives. (default: \"ios\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--scheme": {
+        "Name": "--scheme",
+        "kind": "option",
+        "description": "Explicitly set Xcode scheme to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cscheme\u003e": {
+            "Name": "\u003cscheme\u003e",
+            "kind": "argument",
+            "description": "scheme",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cscheme\u003e": {
+            "Name": "\u003cscheme\u003e",
+            "kind": "argument",
+            "description": "scheme",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cscheme\u003e"
+        ]
+      },
+      "--simulator": {
+        "Name": "--simulator",
+        "kind": "option",
+        "description": "Explicitly set simulator to use. Optionally include iOS version between parenthesis at the end to match an exact version: \"iPhone 6 (10.0)\" (default: \"iPhone 12\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csimulator\u003e": {
+            "Name": "\u003csimulator\u003e",
+            "kind": "argument",
+            "description": "simulator",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csimulator\u003e": {
+            "Name": "\u003csimulator\u003e",
+            "kind": "argument",
+            "description": "simulator",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csimulator\u003e"
+        ]
+      },
+      "--terminal": {
+        "Name": "--terminal",
+        "kind": "option",
+        "description": "Launches the Metro Bundler in a new window using the specified terminal path. (default: \"Apple_Terminal\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cterminal path\u003e": {
+            "Name": "\u003cterminal path\u003e",
+            "kind": "argument",
+            "description": "terminal path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cterminal path\u003e": {
+            "Name": "\u003cterminal path\u003e",
+            "kind": "argument",
+            "description": "terminal path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cterminal path\u003e"
+        ]
+      },
+      "--udid": {
+        "Name": "--udid",
+        "kind": "option",
+        "description": "Explicitly set device to use by udid",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cudid\u003e": {
+            "Name": "\u003cudid\u003e",
+            "kind": "argument",
+            "description": "udid",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cudid\u003e": {
+            "Name": "\u003cudid\u003e",
+            "kind": "argument",
+            "description": "udid",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cudid\u003e"
+        ]
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Do not use xcpretty even if installed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--configuration": {
+        "Name": "--configuration",
+        "kind": "option",
+        "description": "Explicitly set the scheme configuration to use (default: \"Debug\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfig scheme\u003e": {
+            "Name": "\u003cconfig scheme\u003e",
+            "kind": "argument",
+            "description": "config scheme",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfig scheme\u003e": {
+            "Name": "\u003cconfig scheme\u003e",
+            "kind": "argument",
+            "description": "config scheme",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfig scheme\u003e"
+        ]
+      },
+      "--device": {
+        "Name": "--device",
+        "kind": "option",
+        "description": "Explicitly set device to use by name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdevice name\u003e": {
+            "Name": "\u003cdevice name\u003e",
+            "kind": "argument",
+            "description": "device name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdevice name\u003e": {
+            "Name": "\u003cdevice name\u003e",
+            "kind": "argument",
+            "description": "device name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-packager": {
+        "Name": "--no-packager",
+        "kind": "option",
+        "description": "Do not launch packager while building",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--port": {
+        "Name": "--port",
+        "kind": "option",
+        "description": "Default: 8081",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfree port\u003e": {
+            "Name": "\u003cfree port\u003e",
+            "kind": "argument",
+            "description": "free port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfree port\u003e": {
+            "Name": "\u003cfree port\u003e",
+            "kind": "argument",
+            "description": "free port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfree port\u003e"
+        ]
+      },
+      "--project-path": {
+        "Name": "--project-path",
+        "kind": "option",
+        "description": "Path relative to project root where the Xcode project (.xcodeproj) lives. (default: \"ios\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--scheme": {
+        "Name": "--scheme",
+        "kind": "option",
+        "description": "Explicitly set Xcode scheme to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cscheme\u003e": {
+            "Name": "\u003cscheme\u003e",
+            "kind": "argument",
+            "description": "scheme",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cscheme\u003e": {
+            "Name": "\u003cscheme\u003e",
+            "kind": "argument",
+            "description": "scheme",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cscheme\u003e"
+        ]
+      },
+      "--simulator": {
+        "Name": "--simulator",
+        "kind": "option",
+        "description": "Explicitly set simulator to use. Optionally include iOS version between parenthesis at the end to match an exact version: \"iPhone 6 (10.0)\" (default: \"iPhone 12\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csimulator\u003e": {
+            "Name": "\u003csimulator\u003e",
+            "kind": "argument",
+            "description": "simulator",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csimulator\u003e": {
+            "Name": "\u003csimulator\u003e",
+            "kind": "argument",
+            "description": "simulator",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csimulator\u003e"
+        ]
+      },
+      "--terminal": {
+        "Name": "--terminal",
+        "kind": "option",
+        "description": "Launches the Metro Bundler in a new window using the specified terminal path. (default: \"Apple_Terminal\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cterminal path\u003e": {
+            "Name": "\u003cterminal path\u003e",
+            "kind": "argument",
+            "description": "terminal path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cterminal path\u003e": {
+            "Name": "\u003cterminal path\u003e",
+            "kind": "argument",
+            "description": "terminal path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cterminal path\u003e"
+        ]
+      },
+      "--udid": {
+        "Name": "--udid",
+        "kind": "option",
+        "description": "Explicitly set device to use by udid",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cudid\u003e": {
+            "Name": "\u003cudid\u003e",
+            "kind": "argument",
+            "description": "udid",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cudid\u003e": {
+            "Name": "\u003cudid\u003e",
+            "kind": "argument",
+            "description": "udid",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cudid\u003e"
+        ]
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Do not use xcpretty even if installed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "start": {
+    "Name": "start",
+    "kind": "subcommand",
+    "description": "Starts the webserver",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--assetPlugins": {
+        "Name": "--assetPlugins",
+        "kind": "option",
+        "description": "Specify any additional asset plugins to be used by the packager by full filepath",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cplugins\u003e": {
+            "Name": "\u003cplugins\u003e",
+            "kind": "argument",
+            "description": "plugins",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cplugins\u003e": {
+            "Name": "\u003cplugins\u003e",
+            "kind": "argument",
+            "description": "plugins",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cplugins\u003e"
+        ]
+      },
+      "--cert": {
+        "Name": "--cert",
+        "kind": "option",
+        "description": "Path to custom SSL cert",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Path to the CLI configuration file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstring\u003e"
+        ]
+      },
+      "--custom-log-reporter-path": {
+        "Name": "--custom-log-reporter-path",
+        "kind": "option",
+        "description": "Path to a JavaScript file that exports a log reporter as a replacement for TerminalReporter",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003clogFile\u003e": {
+            "Name": "\u003clogFile\u003e",
+            "kind": "argument",
+            "description": "logFile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003clogFile\u003e": {
+            "Name": "\u003clogFile\u003e",
+            "kind": "argument",
+            "description": "logFile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003clogFile\u003e"
+        ]
+      },
+      "--customLogReporterPath": {
+        "Name": "--customLogReporterPath",
+        "kind": "option",
+        "description": "Path to a JavaScript file that exports a log reporter as a replacement for TerminalReporter",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003clogFile\u003e": {
+            "Name": "\u003clogFile\u003e",
+            "kind": "argument",
+            "description": "logFile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003clogFile\u003e": {
+            "Name": "\u003clogFile\u003e",
+            "kind": "argument",
+            "description": "logFile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003clogFile\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--host": {
+        "Name": "--host",
+        "kind": "option",
+        "description": "Change the default host",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cnew host\u003e": {
+            "Name": "\u003cnew host\u003e",
+            "kind": "argument",
+            "description": "new host",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cnew host\u003e": {
+            "Name": "\u003cnew host\u003e",
+            "kind": "argument",
+            "description": "new host",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cnew host\u003e"
+        ]
+      },
+      "--https": {
+        "Name": "--https",
+        "kind": "option",
+        "description": "Enables https connections to the server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--key": {
+        "Name": "--key",
+        "kind": "option",
+        "description": "Path to custom SSL key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--max-workers": {
+        "Name": "--max-workers",
+        "kind": "option",
+        "description": "Specifies the maximum number of workers the worker-pool will spawn for transforming files. This defaults to the number of the cores available on your machine",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cNumber of workers\u003e": {
+            "Name": "\u003cNumber of workers\u003e",
+            "kind": "argument",
+            "description": "Number of workers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cNumber of workers\u003e": {
+            "Name": "\u003cNumber of workers\u003e",
+            "kind": "argument",
+            "description": "Number of workers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cNumber of workers\u003e"
+        ]
+      },
+      "--no-interactive": {
+        "Name": "--no-interactive",
+        "kind": "option",
+        "description": "Disables interactive mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--port": {
+        "Name": "--port",
+        "kind": "option",
+        "description": "Port on which to listen to",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfree port\u003e": {
+            "Name": "\u003cfree port\u003e",
+            "kind": "argument",
+            "description": "free port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfree port\u003e": {
+            "Name": "\u003cfree port\u003e",
+            "kind": "argument",
+            "description": "free port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfree port\u003e"
+        ]
+      },
+      "--projectRoot": {
+        "Name": "--projectRoot",
+        "kind": "option",
+        "description": "Path to a custom project root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--reset-cache": {
+        "Name": "--reset-cache",
+        "kind": "option",
+        "description": "Removes cached files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--resetCache": {
+        "Name": "--resetCache",
+        "kind": "option",
+        "description": "Removes cached files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--sourceExts": {
+        "Name": "--sourceExts",
+        "kind": "option",
+        "description": "Specify any additional source extensions to be used by the packager",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csourceExts\u003e": {
+            "Name": "\u003csourceExts\u003e",
+            "kind": "argument",
+            "description": "sourceExts",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csourceExts\u003e": {
+            "Name": "\u003csourceExts\u003e",
+            "kind": "argument",
+            "description": "sourceExts",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csourceExts\u003e"
+        ]
+      },
+      "--transformer": {
+        "Name": "--transformer",
+        "kind": "option",
+        "description": "Specify a custom transformer to be used",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctransformer\u003e": {
+            "Name": "\u003ctransformer\u003e",
+            "kind": "argument",
+            "description": "transformer",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctransformer\u003e": {
+            "Name": "\u003ctransformer\u003e",
+            "kind": "argument",
+            "description": "transformer",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctransformer\u003e"
+        ]
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Enables logging",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--watchFolders": {
+        "Name": "--watchFolders",
+        "kind": "option",
+        "description": "Specify any additional folders to be added to the watch list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfolders\u003e": {
+            "Name": "\u003cfolders\u003e",
+            "kind": "argument",
+            "description": "folders",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfolders\u003e": {
+            "Name": "\u003cfolders\u003e",
+            "kind": "argument",
+            "description": "folders",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfolders\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--assetPlugins": {
+        "Name": "--assetPlugins",
+        "kind": "option",
+        "description": "Specify any additional asset plugins to be used by the packager by full filepath",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cplugins\u003e": {
+            "Name": "\u003cplugins\u003e",
+            "kind": "argument",
+            "description": "plugins",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cplugins\u003e": {
+            "Name": "\u003cplugins\u003e",
+            "kind": "argument",
+            "description": "plugins",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cplugins\u003e"
+        ]
+      },
+      "--cert": {
+        "Name": "--cert",
+        "kind": "option",
+        "description": "Path to custom SSL cert",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Path to the CLI configuration file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstring\u003e"
+        ]
+      },
+      "--custom-log-reporter-path": {
+        "Name": "--custom-log-reporter-path",
+        "kind": "option",
+        "description": "Path to a JavaScript file that exports a log reporter as a replacement for TerminalReporter",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003clogFile\u003e": {
+            "Name": "\u003clogFile\u003e",
+            "kind": "argument",
+            "description": "logFile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003clogFile\u003e": {
+            "Name": "\u003clogFile\u003e",
+            "kind": "argument",
+            "description": "logFile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003clogFile\u003e"
+        ]
+      },
+      "--customLogReporterPath": {
+        "Name": "--customLogReporterPath",
+        "kind": "option",
+        "description": "Path to a JavaScript file that exports a log reporter as a replacement for TerminalReporter",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003clogFile\u003e": {
+            "Name": "\u003clogFile\u003e",
+            "kind": "argument",
+            "description": "logFile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003clogFile\u003e": {
+            "Name": "\u003clogFile\u003e",
+            "kind": "argument",
+            "description": "logFile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003clogFile\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--host": {
+        "Name": "--host",
+        "kind": "option",
+        "description": "Change the default host",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cnew host\u003e": {
+            "Name": "\u003cnew host\u003e",
+            "kind": "argument",
+            "description": "new host",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cnew host\u003e": {
+            "Name": "\u003cnew host\u003e",
+            "kind": "argument",
+            "description": "new host",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cnew host\u003e"
+        ]
+      },
+      "--https": {
+        "Name": "--https",
+        "kind": "option",
+        "description": "Enables https connections to the server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--key": {
+        "Name": "--key",
+        "kind": "option",
+        "description": "Path to custom SSL key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--max-workers": {
+        "Name": "--max-workers",
+        "kind": "option",
+        "description": "Specifies the maximum number of workers the worker-pool will spawn for transforming files. This defaults to the number of the cores available on your machine",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cNumber of workers\u003e": {
+            "Name": "\u003cNumber of workers\u003e",
+            "kind": "argument",
+            "description": "Number of workers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cNumber of workers\u003e": {
+            "Name": "\u003cNumber of workers\u003e",
+            "kind": "argument",
+            "description": "Number of workers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cNumber of workers\u003e"
+        ]
+      },
+      "--no-interactive": {
+        "Name": "--no-interactive",
+        "kind": "option",
+        "description": "Disables interactive mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--port": {
+        "Name": "--port",
+        "kind": "option",
+        "description": "Port on which to listen to",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfree port\u003e": {
+            "Name": "\u003cfree port\u003e",
+            "kind": "argument",
+            "description": "free port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfree port\u003e": {
+            "Name": "\u003cfree port\u003e",
+            "kind": "argument",
+            "description": "free port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfree port\u003e"
+        ]
+      },
+      "--projectRoot": {
+        "Name": "--projectRoot",
+        "kind": "option",
+        "description": "Path to a custom project root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--reset-cache": {
+        "Name": "--reset-cache",
+        "kind": "option",
+        "description": "Removes cached files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--resetCache": {
+        "Name": "--resetCache",
+        "kind": "option",
+        "description": "Removes cached files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--sourceExts": {
+        "Name": "--sourceExts",
+        "kind": "option",
+        "description": "Specify any additional source extensions to be used by the packager",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csourceExts\u003e": {
+            "Name": "\u003csourceExts\u003e",
+            "kind": "argument",
+            "description": "sourceExts",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csourceExts\u003e": {
+            "Name": "\u003csourceExts\u003e",
+            "kind": "argument",
+            "description": "sourceExts",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csourceExts\u003e"
+        ]
+      },
+      "--transformer": {
+        "Name": "--transformer",
+        "kind": "option",
+        "description": "Specify a custom transformer to be used",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctransformer\u003e": {
+            "Name": "\u003ctransformer\u003e",
+            "kind": "argument",
+            "description": "transformer",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctransformer\u003e": {
+            "Name": "\u003ctransformer\u003e",
+            "kind": "argument",
+            "description": "transformer",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctransformer\u003e"
+        ]
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Enables logging",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--watchFolders": {
+        "Name": "--watchFolders",
+        "kind": "option",
+        "description": "Specify any additional folders to be added to the watch list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfolders\u003e": {
+            "Name": "\u003cfolders\u003e",
+            "kind": "argument",
+            "description": "folders",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfolders\u003e": {
+            "Name": "\u003cfolders\u003e",
+            "kind": "argument",
+            "description": "folders",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfolders\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "uninstall": {
+    "Name": "uninstall",
+    "kind": "subcommand",
+    "description": "Uninstall and unlink native dependencies",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpackageName\u003e": {
+        "Name": "\u003cpackageName\u003e",
+        "kind": "argument",
+        "description": "packageName",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpackageName\u003e": {
+        "Name": "\u003cpackageName\u003e",
+        "kind": "argument",
+        "description": "packageName",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpackageName\u003e"
+    ]
+  },
+  "unlink": {
+    "Name": "unlink",
+    "kind": "subcommand",
+    "description": "Unlink native dependency",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--platforms": {
+        "Name": "--platforms",
+        "kind": "option",
+        "description": "Scope unlinking to specified platforms",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003clist\u003e": {
+            "Name": "\u003clist\u003e",
+            "kind": "argument",
+            "description": "list",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003clist\u003e": {
+            "Name": "\u003clist\u003e",
+            "kind": "argument",
+            "description": "list",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpackageName\u003e": {
+        "Name": "\u003cpackageName\u003e",
+        "kind": "argument",
+        "description": "packageName",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--platforms": {
+        "Name": "--platforms",
+        "kind": "option",
+        "description": "Scope unlinking to specified platforms",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003clist\u003e": {
+            "Name": "\u003clist\u003e",
+            "kind": "argument",
+            "description": "list",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003clist\u003e": {
+            "Name": "\u003clist\u003e",
+            "kind": "argument",
+            "description": "list",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpackageName\u003e": {
+        "Name": "\u003cpackageName\u003e",
+        "kind": "argument",
+        "description": "packageName",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpackageName\u003e"
+    ]
+  },
+  "upgrade": {
+    "Name": "upgrade",
+    "kind": "subcommand",
+    "description": "Upgrade your app's template files to the specified or latest npm version using `rn-diff-purge` project. Only valid semver versions are allowed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  }
+}

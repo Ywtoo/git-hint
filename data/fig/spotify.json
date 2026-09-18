@@ -1,0 +1,353 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for spotify",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help for spotify",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "next": {
+    "Name": "next",
+    "kind": "subcommand",
+    "description": "Skip to the next song in a playlist",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "pause": {
+    "Name": "pause",
+    "kind": "subcommand",
+    "description": "Pause (or resume) Spotify playback",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "play": {
+    "Name": "play",
+    "kind": "subcommand",
+    "description": "Resume playback where Spotify last left off",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csong name\u003e": {
+        "Name": "\u003csong name\u003e",
+        "kind": "argument",
+        "description": "song name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "album": {
+        "Name": "album",
+        "kind": "subcommand",
+        "description": "Find an album by name and play it",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003calbum name\u003e": {
+            "Name": "\u003calbum name\u003e",
+            "kind": "argument",
+            "description": "album name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003calbum name\u003e": {
+            "Name": "\u003calbum name\u003e",
+            "kind": "argument",
+            "description": "album name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003calbum name\u003e"
+        ]
+      },
+      "artist": {
+        "Name": "artist",
+        "kind": "subcommand",
+        "description": "Find an artist by name and play it",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cartist name\u003e": {
+            "Name": "\u003cartist name\u003e",
+            "kind": "argument",
+            "description": "artist name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cartist name\u003e": {
+            "Name": "\u003cartist name\u003e",
+            "kind": "argument",
+            "description": "artist name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cartist name\u003e"
+        ]
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "Find a playlist by name and plays it",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cplaylist name\u003e": {
+            "Name": "\u003cplaylist name\u003e",
+            "kind": "argument",
+            "description": "playlist name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cplaylist name\u003e": {
+            "Name": "\u003cplaylist name\u003e",
+            "kind": "argument",
+            "description": "playlist name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cplaylist name\u003e"
+        ]
+      },
+      "uri": {
+        "Name": "uri",
+        "kind": "subcommand",
+        "description": "Play songs from specific uri",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003curi\u003e": {
+            "Name": "\u003curi\u003e",
+            "kind": "argument",
+            "description": "uri",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003curi\u003e": {
+            "Name": "\u003curi\u003e",
+            "kind": "argument",
+            "description": "uri",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003curi\u003e"
+        ]
+      }
+    },
+    "options": {
+      "\u003csong name\u003e": {
+        "Name": "\u003csong name\u003e",
+        "kind": "argument",
+        "description": "song name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "pos": {
+    "Name": "pos",
+    "kind": "subcommand",
+    "description": "Jump to a time (in secs) in the current song",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctime\u003e": {
+        "Name": "\u003ctime\u003e",
+        "kind": "argument",
+        "description": "time",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctime\u003e": {
+        "Name": "\u003ctime\u003e",
+        "kind": "argument",
+        "description": "time",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctime\u003e"
+    ]
+  },
+  "prev": {
+    "Name": "prev",
+    "kind": "subcommand",
+    "description": "Return to the previous song in a playlist",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "quit": {
+    "Name": "quit",
+    "kind": "subcommand",
+    "description": "Stop playback and quit Spotify",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "replay": {
+    "Name": "replay",
+    "kind": "subcommand",
+    "description": "Replay the current track from the beginning",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "share": {
+    "Name": "share",
+    "kind": "subcommand",
+    "description": "Display the current song's Spotify URL and URI",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "uri": {
+        "Name": "uri",
+        "kind": "subcommand",
+        "description": "Display the current song's Spotify URI and copies it to the clipboard",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "url": {
+        "Name": "url",
+        "kind": "subcommand",
+        "description": "Display the current song's Spotify URL and copies it to the clipboard",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "status": {
+    "Name": "status",
+    "kind": "subcommand",
+    "description": "Show the current player status",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "album": {
+        "Name": "album",
+        "kind": "subcommand",
+        "description": "Show the currently playing album",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "artist": {
+        "Name": "artist",
+        "kind": "subcommand",
+        "description": "Show the currently playing artist",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "track": {
+        "Name": "track",
+        "kind": "subcommand",
+        "description": "Show the currently playing track",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "stop": {
+    "Name": "stop",
+    "kind": "subcommand",
+    "description": "Stop playback",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "toggle": {
+    "Name": "toggle",
+    "kind": "subcommand",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "repeat": {
+        "Name": "repeat",
+        "kind": "subcommand",
+        "description": "Toggle repeat playback mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "shuffle": {
+        "Name": "shuffle",
+        "kind": "subcommand",
+        "description": "Toggle shuffle playback mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "vol": {
+    "Name": "vol",
+    "kind": "subcommand",
+    "description": "Show the current Spotify volume",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003camount\u003e": {
+        "Name": "\u003camount\u003e",
+        "kind": "argument",
+        "description": "amount",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003camount\u003e": {
+        "Name": "\u003camount\u003e",
+        "kind": "argument",
+        "description": "amount",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  }
+}

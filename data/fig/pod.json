@@ -1,0 +1,5093 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help banner of specified command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-ansi": {
+    "Name": "--no-ansi",
+    "kind": "option",
+    "description": "Show output without ANSI codes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--silent": {
+    "Name": "--silent",
+    "kind": "option",
+    "description": "Show nothing",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Show more debugging information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "cache": {
+    "Name": "cache",
+    "kind": "subcommand",
+    "description": "Manipulate the CocoaPods cache",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "clean": {
+        "Name": "clean",
+        "kind": "subcommand",
+        "description": "Remove the cache for pods",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "Remove all the cached pods without asking",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "Remove all the cached pods without asking",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List the paths of pod caches for each known pod",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--short": {
+            "Name": "--short",
+            "kind": "option",
+            "description": "Only print the path relative to the cache root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--short": {
+            "Name": "--short",
+            "kind": "option",
+            "description": "Only print the path relative to the cache root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      }
+    },
+    "options": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "deintegrate": {
+    "Name": "deintegrate",
+    "kind": "subcommand",
+    "description": "Deintegrate CocoaPods from your project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--project-directory": {
+        "Name": "--project-directory",
+        "kind": "option",
+        "description": "The path to the root of the project directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c/project/dir/\u003e": {
+            "Name": "\u003c/project/dir/\u003e",
+            "kind": "argument",
+            "description": "/project/dir/",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c/project/dir/\u003e": {
+            "Name": "\u003c/project/dir/\u003e",
+            "kind": "argument",
+            "description": "/project/dir/",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c/project/dir/\u003e"
+        ]
+      },
+      "\u003cXCODE_PROJECT\u003e": {
+        "Name": "\u003cXCODE_PROJECT\u003e",
+        "kind": "argument",
+        "description": "XCODE_PROJECT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--project-directory": {
+        "Name": "--project-directory",
+        "kind": "option",
+        "description": "The path to the root of the project directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c/project/dir/\u003e": {
+            "Name": "\u003c/project/dir/\u003e",
+            "kind": "argument",
+            "description": "/project/dir/",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c/project/dir/\u003e": {
+            "Name": "\u003c/project/dir/\u003e",
+            "kind": "argument",
+            "description": "/project/dir/",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c/project/dir/\u003e"
+        ]
+      },
+      "\u003cXCODE_PROJECT\u003e": {
+        "Name": "\u003cXCODE_PROJECT\u003e",
+        "kind": "argument",
+        "description": "XCODE_PROJECT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "env": {
+    "Name": "env",
+    "kind": "subcommand",
+    "description": "Display pod environment",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "init": {
+    "Name": "init",
+    "kind": "subcommand",
+    "description": "Generate a Podfile for the current directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cXCODEPROJ\u003e": {
+        "Name": "\u003cXCODEPROJ\u003e",
+        "kind": "argument",
+        "description": "XCODEPROJ",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cXCODEPROJ\u003e": {
+        "Name": "\u003cXCODEPROJ\u003e",
+        "kind": "argument",
+        "description": "XCODEPROJ",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cXCODEPROJ\u003e"
+    ]
+  },
+  "install": {
+    "Name": "install",
+    "kind": "subcommand",
+    "description": "Install project dependencies according to versions from a Podfile.lock",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--clean-install": {
+        "Name": "--clean-install",
+        "kind": "option",
+        "description": "Ignore the contents of the project cache and force a full pod installation. This only applies to projects that have enabled incremental installation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--deployment": {
+        "Name": "--deployment",
+        "kind": "option",
+        "description": "Disallow any changes to the Podfile or the Podfile.lock during installation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--project-directory": {
+        "Name": "--project-directory",
+        "kind": "option",
+        "description": "The path to the root of the project directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c/project/dir/\u003e": {
+            "Name": "\u003c/project/dir/\u003e",
+            "kind": "argument",
+            "description": "/project/dir/",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c/project/dir/\u003e": {
+            "Name": "\u003c/project/dir/\u003e",
+            "kind": "argument",
+            "description": "/project/dir/",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c/project/dir/\u003e"
+        ]
+      },
+      "--repo-update": {
+        "Name": "--repo-update",
+        "kind": "option",
+        "description": "Force running `pod repo update` before install",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--clean-install": {
+        "Name": "--clean-install",
+        "kind": "option",
+        "description": "Ignore the contents of the project cache and force a full pod installation. This only applies to projects that have enabled incremental installation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--deployment": {
+        "Name": "--deployment",
+        "kind": "option",
+        "description": "Disallow any changes to the Podfile or the Podfile.lock during installation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--project-directory": {
+        "Name": "--project-directory",
+        "kind": "option",
+        "description": "The path to the root of the project directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c/project/dir/\u003e": {
+            "Name": "\u003c/project/dir/\u003e",
+            "kind": "argument",
+            "description": "/project/dir/",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c/project/dir/\u003e": {
+            "Name": "\u003c/project/dir/\u003e",
+            "kind": "argument",
+            "description": "/project/dir/",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c/project/dir/\u003e"
+        ]
+      },
+      "--repo-update": {
+        "Name": "--repo-update",
+        "kind": "option",
+        "description": "Force running `pod repo update` before install",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "ipc": {
+    "Name": "ipc",
+    "kind": "subcommand",
+    "description": "Inter-process communication",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "Lists the specifications known to CocoaPods",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "podfile": {
+        "Name": "podfile",
+        "kind": "subcommand",
+        "description": "Converts a Podfile to YAML",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--project-directory": {
+            "Name": "--project-directory",
+            "kind": "option",
+            "description": "The path to the root of the project directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003c/project/dir/\u003e": {
+                "Name": "\u003c/project/dir/\u003e",
+                "kind": "argument",
+                "description": "/project/dir/",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003c/project/dir/\u003e": {
+                "Name": "\u003c/project/dir/\u003e",
+                "kind": "argument",
+                "description": "/project/dir/",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003c/project/dir/\u003e"
+            ]
+          },
+          "\u003cPATH\u003e": {
+            "Name": "\u003cPATH\u003e",
+            "kind": "argument",
+            "description": "PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--project-directory": {
+            "Name": "--project-directory",
+            "kind": "option",
+            "description": "The path to the root of the project directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003c/project/dir/\u003e": {
+                "Name": "\u003c/project/dir/\u003e",
+                "kind": "argument",
+                "description": "/project/dir/",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003c/project/dir/\u003e": {
+                "Name": "\u003c/project/dir/\u003e",
+                "kind": "argument",
+                "description": "/project/dir/",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003c/project/dir/\u003e"
+            ]
+          },
+          "\u003cPATH\u003e": {
+            "Name": "\u003cPATH\u003e",
+            "kind": "argument",
+            "description": "PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cPATH\u003e"
+        ]
+      },
+      "podfile-json": {
+        "Name": "podfile-json",
+        "kind": "subcommand",
+        "description": "Converts a Podfile to JSON",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--project-directory": {
+            "Name": "--project-directory",
+            "kind": "option",
+            "description": "The path to the root of the project directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003c/project/dir/\u003e": {
+                "Name": "\u003c/project/dir/\u003e",
+                "kind": "argument",
+                "description": "/project/dir/",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003c/project/dir/\u003e": {
+                "Name": "\u003c/project/dir/\u003e",
+                "kind": "argument",
+                "description": "/project/dir/",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003c/project/dir/\u003e"
+            ]
+          },
+          "\u003cPATH\u003e": {
+            "Name": "\u003cPATH\u003e",
+            "kind": "argument",
+            "description": "PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--project-directory": {
+            "Name": "--project-directory",
+            "kind": "option",
+            "description": "The path to the root of the project directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003c/project/dir/\u003e": {
+                "Name": "\u003c/project/dir/\u003e",
+                "kind": "argument",
+                "description": "/project/dir/",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003c/project/dir/\u003e": {
+                "Name": "\u003c/project/dir/\u003e",
+                "kind": "argument",
+                "description": "/project/dir/",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003c/project/dir/\u003e"
+            ]
+          },
+          "\u003cPATH\u003e": {
+            "Name": "\u003cPATH\u003e",
+            "kind": "argument",
+            "description": "PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cPATH\u003e"
+        ]
+      },
+      "repl": {
+        "Name": "repl",
+        "kind": "subcommand",
+        "description": "The repl listens to commands on standard input",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--project-directory": {
+            "Name": "--project-directory",
+            "kind": "option",
+            "description": "The path to the root of the project directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003c/project/dir/\u003e": {
+                "Name": "\u003c/project/dir/\u003e",
+                "kind": "argument",
+                "description": "/project/dir/",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003c/project/dir/\u003e": {
+                "Name": "\u003c/project/dir/\u003e",
+                "kind": "argument",
+                "description": "/project/dir/",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003c/project/dir/\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--project-directory": {
+            "Name": "--project-directory",
+            "kind": "option",
+            "description": "The path to the root of the project directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003c/project/dir/\u003e": {
+                "Name": "\u003c/project/dir/\u003e",
+                "kind": "argument",
+                "description": "/project/dir/",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003c/project/dir/\u003e": {
+                "Name": "\u003c/project/dir/\u003e",
+                "kind": "argument",
+                "description": "/project/dir/",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003c/project/dir/\u003e"
+            ]
+          }
+        }
+      },
+      "spec": {
+        "Name": "spec",
+        "kind": "subcommand",
+        "description": "Converts a podspec to JSON",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cPATH\u003e": {
+            "Name": "\u003cPATH\u003e",
+            "kind": "argument",
+            "description": "PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cPATH\u003e": {
+            "Name": "\u003cPATH\u003e",
+            "kind": "argument",
+            "description": "PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cPATH\u003e"
+        ]
+      },
+      "update-search-index": {
+        "Name": "update-search-index",
+        "kind": "subcommand",
+        "description": "Updates the search index",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      }
+    },
+    "options": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "lib": {
+    "Name": "lib",
+    "kind": "subcommand",
+    "description": "Develop pods",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "create": {
+        "Name": "create",
+        "kind": "subcommand",
+        "description": "Creates a new Pod",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--template-url": {
+            "Name": "--template-url",
+            "kind": "option",
+            "description": "The URL of the git repo containing a compatible template",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cURL\u003e": {
+                "Name": "\u003cURL\u003e",
+                "kind": "argument",
+                "description": "URL",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cURL\u003e": {
+                "Name": "\u003cURL\u003e",
+                "kind": "argument",
+                "description": "URL",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cURL\u003e"
+            ]
+          },
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--template-url": {
+            "Name": "--template-url",
+            "kind": "option",
+            "description": "The URL of the git repo containing a compatible template",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cURL\u003e": {
+                "Name": "\u003cURL\u003e",
+                "kind": "argument",
+                "description": "URL",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cURL\u003e": {
+                "Name": "\u003cURL\u003e",
+                "kind": "argument",
+                "description": "URL",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cURL\u003e"
+            ]
+          },
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cNAME\u003e"
+        ]
+      },
+      "lint": {
+        "Name": "lint",
+        "kind": "subcommand",
+        "description": "Validates a Pod",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--allow-warnings": {
+            "Name": "--allow-warnings",
+            "kind": "option",
+            "description": "Lint validates even if warnings are present",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--analyze": {
+            "Name": "--analyze",
+            "kind": "option",
+            "description": "Validate with the Xcode Static Analysis tool",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--configuration": {
+            "Name": "--configuration",
+            "kind": "option",
+            "description": "Build using the given configuration (defaults to Release)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cCONFIGURATION\u003e": {
+                "Name": "\u003cCONFIGURATION\u003e",
+                "kind": "argument",
+                "description": "CONFIGURATION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cCONFIGURATION\u003e": {
+                "Name": "\u003cCONFIGURATION\u003e",
+                "kind": "argument",
+                "description": "CONFIGURATION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cCONFIGURATION\u003e"
+            ]
+          },
+          "--external-podspecs": {
+            "Name": "--external-podspecs",
+            "kind": "option",
+            "description": "Additional ancillary podspecs which are used for linting via :podspec. If there are --include-podspecs, then these are removed from them",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpodspec\u003e": {
+                "Name": "\u003cpodspec\u003e",
+                "kind": "argument",
+                "description": "podspec",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpodspec\u003e": {
+                "Name": "\u003cpodspec\u003e",
+                "kind": "argument",
+                "description": "podspec",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpodspec\u003e"
+            ]
+          },
+          "--fail-fast": {
+            "Name": "--fail-fast",
+            "kind": "option",
+            "description": "Lint stops on the first failing platform or subspec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--include-podspecs": {
+            "Name": "--include-podspecs",
+            "kind": "option",
+            "description": "Additional ancillary podspecs which are used for linting via :path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpodspec\u003e": {
+                "Name": "\u003cpodspec\u003e",
+                "kind": "argument",
+                "description": "podspec",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpodspec\u003e": {
+                "Name": "\u003cpodspec\u003e",
+                "kind": "argument",
+                "description": "podspec",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpodspec\u003e"
+            ]
+          },
+          "--no-clean": {
+            "Name": "--no-clean",
+            "kind": "option",
+            "description": "Lint leaves the build directory intact for inspection",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--no-subspecs": {
+            "Name": "--no-subspecs",
+            "kind": "option",
+            "description": "Lint skips validation of subspecs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--platforms": {
+            "Name": "--platforms",
+            "kind": "option",
+            "description": "Lint against specific platforms (defaults to all platforms supported by the podspec). Multiple platforms must be comma-delimited",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cplatform\u003e": {
+                "Name": "\u003cplatform\u003e",
+                "kind": "argument",
+                "description": "platform",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cplatform\u003e": {
+                "Name": "\u003cplatform\u003e",
+                "kind": "argument",
+                "description": "platform",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cplatform\u003e"
+            ]
+          },
+          "--private": {
+            "Name": "--private",
+            "kind": "option",
+            "description": "Lint skips checks that apply only to public specs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--quick": {
+            "Name": "--quick",
+            "kind": "option",
+            "description": "Lint skips checks that would require to download and build the spec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--skip-import-validation": {
+            "Name": "--skip-import-validation",
+            "kind": "option",
+            "description": "Lint skips validating that the pod can be imported",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--skip-tests": {
+            "Name": "--skip-tests",
+            "kind": "option",
+            "description": "Lint skips building and running tests during validation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--sources": {
+            "Name": "--sources",
+            "kind": "option",
+            "description": "The sources from which to pull dependent pods (defaults to https://cdn.cocoapods.org/). Multiple,sources must be comma-delimited",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003csource\u003e": {
+                "Name": "\u003csource\u003e",
+                "kind": "argument",
+                "description": "source",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003csource\u003e": {
+                "Name": "\u003csource\u003e",
+                "kind": "argument",
+                "description": "source",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003csource\u003e"
+            ]
+          },
+          "--subspec": {
+            "Name": "--subspec",
+            "kind": "option",
+            "description": "Lint validates only the given subspec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cNAME\u003e": {
+                "Name": "\u003cNAME\u003e",
+                "kind": "argument",
+                "description": "NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cNAME\u003e": {
+                "Name": "\u003cNAME\u003e",
+                "kind": "argument",
+                "description": "NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cNAME\u003e"
+            ]
+          },
+          "--swift-version": {
+            "Name": "--swift-version",
+            "kind": "option",
+            "description": "The `SWIFT_VERSION` that should be used to lint the spec. This takes precedence over the Swift versions specified by the spec or a `.swift-version` file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cVERSION\u003e": {
+                "Name": "\u003cVERSION\u003e",
+                "kind": "argument",
+                "description": "VERSION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cVERSION\u003e": {
+                "Name": "\u003cVERSION\u003e",
+                "kind": "argument",
+                "description": "VERSION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cVERSION\u003e"
+            ]
+          },
+          "--test-specs": {
+            "Name": "--test-specs",
+            "kind": "option",
+            "description": "List of test specs to run",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ctest-spec\u003e": {
+                "Name": "\u003ctest-spec\u003e",
+                "kind": "argument",
+                "description": "test-spec",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ctest-spec\u003e": {
+                "Name": "\u003ctest-spec\u003e",
+                "kind": "argument",
+                "description": "test-spec",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ctest-spec\u003e"
+            ]
+          },
+          "--use-libraries": {
+            "Name": "--use-libraries",
+            "kind": "option",
+            "description": "Lint uses static libraries to install the spec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--use-modular-headers": {
+            "Name": "--use-modular-headers",
+            "kind": "option",
+            "description": "Lint uses modular headers during installation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--use-static-frameworks": {
+            "Name": "--use-static-frameworks",
+            "kind": "option",
+            "description": "Lint uses static frameworks during installation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cPODSPEC_PATHS\u003e": {
+            "Name": "\u003cPODSPEC_PATHS\u003e",
+            "kind": "argument",
+            "description": "PODSPEC_PATHS",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--allow-warnings": {
+            "Name": "--allow-warnings",
+            "kind": "option",
+            "description": "Lint validates even if warnings are present",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--analyze": {
+            "Name": "--analyze",
+            "kind": "option",
+            "description": "Validate with the Xcode Static Analysis tool",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--configuration": {
+            "Name": "--configuration",
+            "kind": "option",
+            "description": "Build using the given configuration (defaults to Release)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cCONFIGURATION\u003e": {
+                "Name": "\u003cCONFIGURATION\u003e",
+                "kind": "argument",
+                "description": "CONFIGURATION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cCONFIGURATION\u003e": {
+                "Name": "\u003cCONFIGURATION\u003e",
+                "kind": "argument",
+                "description": "CONFIGURATION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cCONFIGURATION\u003e"
+            ]
+          },
+          "--external-podspecs": {
+            "Name": "--external-podspecs",
+            "kind": "option",
+            "description": "Additional ancillary podspecs which are used for linting via :podspec. If there are --include-podspecs, then these are removed from them",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpodspec\u003e": {
+                "Name": "\u003cpodspec\u003e",
+                "kind": "argument",
+                "description": "podspec",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpodspec\u003e": {
+                "Name": "\u003cpodspec\u003e",
+                "kind": "argument",
+                "description": "podspec",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpodspec\u003e"
+            ]
+          },
+          "--fail-fast": {
+            "Name": "--fail-fast",
+            "kind": "option",
+            "description": "Lint stops on the first failing platform or subspec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--include-podspecs": {
+            "Name": "--include-podspecs",
+            "kind": "option",
+            "description": "Additional ancillary podspecs which are used for linting via :path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpodspec\u003e": {
+                "Name": "\u003cpodspec\u003e",
+                "kind": "argument",
+                "description": "podspec",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpodspec\u003e": {
+                "Name": "\u003cpodspec\u003e",
+                "kind": "argument",
+                "description": "podspec",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpodspec\u003e"
+            ]
+          },
+          "--no-clean": {
+            "Name": "--no-clean",
+            "kind": "option",
+            "description": "Lint leaves the build directory intact for inspection",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--no-subspecs": {
+            "Name": "--no-subspecs",
+            "kind": "option",
+            "description": "Lint skips validation of subspecs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--platforms": {
+            "Name": "--platforms",
+            "kind": "option",
+            "description": "Lint against specific platforms (defaults to all platforms supported by the podspec). Multiple platforms must be comma-delimited",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cplatform\u003e": {
+                "Name": "\u003cplatform\u003e",
+                "kind": "argument",
+                "description": "platform",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cplatform\u003e": {
+                "Name": "\u003cplatform\u003e",
+                "kind": "argument",
+                "description": "platform",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cplatform\u003e"
+            ]
+          },
+          "--private": {
+            "Name": "--private",
+            "kind": "option",
+            "description": "Lint skips checks that apply only to public specs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--quick": {
+            "Name": "--quick",
+            "kind": "option",
+            "description": "Lint skips checks that would require to download and build the spec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--skip-import-validation": {
+            "Name": "--skip-import-validation",
+            "kind": "option",
+            "description": "Lint skips validating that the pod can be imported",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--skip-tests": {
+            "Name": "--skip-tests",
+            "kind": "option",
+            "description": "Lint skips building and running tests during validation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--sources": {
+            "Name": "--sources",
+            "kind": "option",
+            "description": "The sources from which to pull dependent pods (defaults to https://cdn.cocoapods.org/). Multiple,sources must be comma-delimited",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003csource\u003e": {
+                "Name": "\u003csource\u003e",
+                "kind": "argument",
+                "description": "source",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003csource\u003e": {
+                "Name": "\u003csource\u003e",
+                "kind": "argument",
+                "description": "source",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003csource\u003e"
+            ]
+          },
+          "--subspec": {
+            "Name": "--subspec",
+            "kind": "option",
+            "description": "Lint validates only the given subspec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cNAME\u003e": {
+                "Name": "\u003cNAME\u003e",
+                "kind": "argument",
+                "description": "NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cNAME\u003e": {
+                "Name": "\u003cNAME\u003e",
+                "kind": "argument",
+                "description": "NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cNAME\u003e"
+            ]
+          },
+          "--swift-version": {
+            "Name": "--swift-version",
+            "kind": "option",
+            "description": "The `SWIFT_VERSION` that should be used to lint the spec. This takes precedence over the Swift versions specified by the spec or a `.swift-version` file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cVERSION\u003e": {
+                "Name": "\u003cVERSION\u003e",
+                "kind": "argument",
+                "description": "VERSION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cVERSION\u003e": {
+                "Name": "\u003cVERSION\u003e",
+                "kind": "argument",
+                "description": "VERSION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cVERSION\u003e"
+            ]
+          },
+          "--test-specs": {
+            "Name": "--test-specs",
+            "kind": "option",
+            "description": "List of test specs to run",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ctest-spec\u003e": {
+                "Name": "\u003ctest-spec\u003e",
+                "kind": "argument",
+                "description": "test-spec",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ctest-spec\u003e": {
+                "Name": "\u003ctest-spec\u003e",
+                "kind": "argument",
+                "description": "test-spec",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ctest-spec\u003e"
+            ]
+          },
+          "--use-libraries": {
+            "Name": "--use-libraries",
+            "kind": "option",
+            "description": "Lint uses static libraries to install the spec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--use-modular-headers": {
+            "Name": "--use-modular-headers",
+            "kind": "option",
+            "description": "Lint uses modular headers during installation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--use-static-frameworks": {
+            "Name": "--use-static-frameworks",
+            "kind": "option",
+            "description": "Lint uses static frameworks during installation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cPODSPEC_PATHS\u003e": {
+            "Name": "\u003cPODSPEC_PATHS\u003e",
+            "kind": "argument",
+            "description": "PODSPEC_PATHS",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      }
+    },
+    "options": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "list": {
+    "Name": "list",
+    "kind": "subcommand",
+    "description": "List pods",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--stats": {
+        "Name": "--stats",
+        "kind": "option",
+        "description": "Show additional stats (like GitHub watchers and forks)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--update": {
+        "Name": "--update",
+        "kind": "option",
+        "description": "Run `pod repo update` before listing",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--stats": {
+        "Name": "--stats",
+        "kind": "option",
+        "description": "Show additional stats (like GitHub watchers and forks)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--update": {
+        "Name": "--update",
+        "kind": "option",
+        "description": "Run `pod repo update` before listing",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "outdated": {
+    "Name": "outdated",
+    "kind": "subcommand",
+    "description": "Show outdated project dependencies",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-repo-update": {
+        "Name": "--no-repo-update",
+        "kind": "option",
+        "description": "Skip running `pod repo update` before install",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--project-directory": {
+        "Name": "--project-directory",
+        "kind": "option",
+        "description": "The path to the root of the project directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c/project/dir/\u003e": {
+            "Name": "\u003c/project/dir/\u003e",
+            "kind": "argument",
+            "description": "/project/dir/",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c/project/dir/\u003e": {
+            "Name": "\u003c/project/dir/\u003e",
+            "kind": "argument",
+            "description": "/project/dir/",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c/project/dir/\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-repo-update": {
+        "Name": "--no-repo-update",
+        "kind": "option",
+        "description": "Skip running `pod repo update` before install",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--project-directory": {
+        "Name": "--project-directory",
+        "kind": "option",
+        "description": "The path to the root of the project directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c/project/dir/\u003e": {
+            "Name": "\u003c/project/dir/\u003e",
+            "kind": "argument",
+            "description": "/project/dir/",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c/project/dir/\u003e": {
+            "Name": "\u003c/project/dir/\u003e",
+            "kind": "argument",
+            "description": "/project/dir/",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c/project/dir/\u003e"
+        ]
+      }
+    }
+  },
+  "plugins": {
+    "Name": "plugins",
+    "kind": "subcommand",
+    "description": "Show available CocoaPods plugins",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "create": {
+        "Name": "create",
+        "kind": "subcommand",
+        "description": "Creates a new plugin",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cTEMPLATE_URL\u003e": {
+            "Name": "\u003cTEMPLATE_URL\u003e",
+            "kind": "argument",
+            "description": "TEMPLATE_URL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cTEMPLATE_URL\u003e": {
+            "Name": "\u003cTEMPLATE_URL\u003e",
+            "kind": "argument",
+            "description": "TEMPLATE_URL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cNAME\u003e"
+        ]
+      },
+      "installed": {
+        "Name": "installed",
+        "kind": "subcommand",
+        "description": "List plugins installed on your machine",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "publish": {
+        "Name": "publish",
+        "kind": "subcommand",
+        "description": "Request to add the plugin to the official plugins list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "search": {
+        "Name": "search",
+        "kind": "subcommand",
+        "description": "Search for known plugins",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--full": {
+            "Name": "--full",
+            "kind": "option",
+            "description": "Search by name  author, and description",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cQUERY\u003e": {
+            "Name": "\u003cQUERY\u003e",
+            "kind": "argument",
+            "description": "QUERY",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--full": {
+            "Name": "--full",
+            "kind": "option",
+            "description": "Search by name  author, and description",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cQUERY\u003e": {
+            "Name": "\u003cQUERY\u003e",
+            "kind": "argument",
+            "description": "QUERY",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cQUERY\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "repo": {
+    "Name": "repo",
+    "kind": "subcommand",
+    "description": "Manage spec-repositories",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "add": {
+        "Name": "add",
+        "kind": "subcommand",
+        "description": "Add a spec repo",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--progress": {
+            "Name": "--progress",
+            "kind": "option",
+            "description": "Show the progress of cloning the spec repository",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cBRANCH\u003e": {
+            "Name": "\u003cBRANCH\u003e",
+            "kind": "argument",
+            "description": "BRANCH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cURL\u003e": {
+            "Name": "\u003cURL\u003e",
+            "kind": "argument",
+            "description": "URL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--progress": {
+            "Name": "--progress",
+            "kind": "option",
+            "description": "Show the progress of cloning the spec repository",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cBRANCH\u003e": {
+            "Name": "\u003cBRANCH\u003e",
+            "kind": "argument",
+            "description": "BRANCH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cURL\u003e": {
+            "Name": "\u003cURL\u003e",
+            "kind": "argument",
+            "description": "URL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cNAME\u003e",
+          "\u003cURL\u003e"
+        ]
+      },
+      "add-cdn": {
+        "Name": "add-cdn",
+        "kind": "subcommand",
+        "description": "Add a spec repo backed by a CDN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cURL\u003e": {
+            "Name": "\u003cURL\u003e",
+            "kind": "argument",
+            "description": "URL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cURL\u003e": {
+            "Name": "\u003cURL\u003e",
+            "kind": "argument",
+            "description": "URL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cNAME\u003e",
+          "\u003cURL\u003e"
+        ]
+      },
+      "lint": {
+        "Name": "lint",
+        "kind": "subcommand",
+        "description": "Validates all specs in a repo list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--only-errors": {
+            "Name": "--only-errors",
+            "kind": "option",
+            "description": "Lint presents only the errors",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cNAME|DIRECTORY\u003e": {
+            "Name": "\u003cNAME|DIRECTORY\u003e",
+            "kind": "argument",
+            "description": "NAME|DIRECTORY",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--only-errors": {
+            "Name": "--only-errors",
+            "kind": "option",
+            "description": "Lint presents only the errors",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cNAME|DIRECTORY\u003e": {
+            "Name": "\u003cNAME|DIRECTORY\u003e",
+            "kind": "argument",
+            "description": "NAME|DIRECTORY",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "push": {
+        "Name": "push",
+        "kind": "subcommand",
+        "description": "Push new specifications to a spec-repo",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--allow-warnings": {
+            "Name": "--allow-warnings",
+            "kind": "option",
+            "description": "Allows pushing even if there are warnings",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--commit-message": {
+            "Name": "--commit-message",
+            "kind": "option",
+            "description": "Add custom commit message. Opens default editor if no commit message is specified",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cmessage\u003e": {
+                "Name": "\u003cmessage\u003e",
+                "kind": "argument",
+                "description": "message",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cmessage\u003e": {
+                "Name": "\u003cmessage\u003e",
+                "kind": "argument",
+                "description": "message",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cmessage\u003e"
+            ]
+          },
+          "--local-only": {
+            "Name": "--local-only",
+            "kind": "option",
+            "description": "Does not perform the step of pushing REPO to its remote",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--no-overwrite": {
+            "Name": "--no-overwrite",
+            "kind": "option",
+            "description": "Disallow pushing that would overwrite an existing spec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--no-private": {
+            "Name": "--no-private",
+            "kind": "option",
+            "description": "Lint includes checks that apply only to public repos",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--skip-import-validation": {
+            "Name": "--skip-import-validation",
+            "kind": "option",
+            "description": "Lint skips validating that the pod can be imported",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--skip-tests": {
+            "Name": "--skip-tests",
+            "kind": "option",
+            "description": "Lint skips building and running tests during validation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--sources": {
+            "Name": "--sources",
+            "kind": "option",
+            "description": "The sources from which to pull dependent pods (defaults to all available repos). Multiple sources must be comma-delimited",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003csource\u003e": {
+                "Name": "\u003csource\u003e",
+                "kind": "argument",
+                "description": "source",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003csource\u003e": {
+                "Name": "\u003csource\u003e",
+                "kind": "argument",
+                "description": "source",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003csource\u003e"
+            ]
+          },
+          "--swift-version": {
+            "Name": "--swift-version",
+            "kind": "option",
+            "description": "The `SWIFT_VERSION` that should be used when linting the spec. This takes precedence over the Swift versions specified by the spec or a `.swift-version` file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cVERSION\u003e": {
+                "Name": "\u003cVERSION\u003e",
+                "kind": "argument",
+                "description": "VERSION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cVERSION\u003e": {
+                "Name": "\u003cVERSION\u003e",
+                "kind": "argument",
+                "description": "VERSION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cVERSION\u003e"
+            ]
+          },
+          "--use-json": {
+            "Name": "--use-json",
+            "kind": "option",
+            "description": "Convert the podspec to JSON before pushing it to the repo",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--use-libraries": {
+            "Name": "--use-libraries",
+            "kind": "option",
+            "description": "Linter uses static libraries to install the spec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--use-modular-headers": {
+            "Name": "--use-modular-headers",
+            "kind": "option",
+            "description": "Lint uses modular headers during installation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cNAME.podspec\u003e": {
+            "Name": "\u003cNAME.podspec\u003e",
+            "kind": "argument",
+            "description": "NAME.podspec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cREPO\u003e": {
+            "Name": "\u003cREPO\u003e",
+            "kind": "argument",
+            "description": "REPO",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--allow-warnings": {
+            "Name": "--allow-warnings",
+            "kind": "option",
+            "description": "Allows pushing even if there are warnings",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--commit-message": {
+            "Name": "--commit-message",
+            "kind": "option",
+            "description": "Add custom commit message. Opens default editor if no commit message is specified",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cmessage\u003e": {
+                "Name": "\u003cmessage\u003e",
+                "kind": "argument",
+                "description": "message",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cmessage\u003e": {
+                "Name": "\u003cmessage\u003e",
+                "kind": "argument",
+                "description": "message",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cmessage\u003e"
+            ]
+          },
+          "--local-only": {
+            "Name": "--local-only",
+            "kind": "option",
+            "description": "Does not perform the step of pushing REPO to its remote",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--no-overwrite": {
+            "Name": "--no-overwrite",
+            "kind": "option",
+            "description": "Disallow pushing that would overwrite an existing spec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--no-private": {
+            "Name": "--no-private",
+            "kind": "option",
+            "description": "Lint includes checks that apply only to public repos",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--skip-import-validation": {
+            "Name": "--skip-import-validation",
+            "kind": "option",
+            "description": "Lint skips validating that the pod can be imported",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--skip-tests": {
+            "Name": "--skip-tests",
+            "kind": "option",
+            "description": "Lint skips building and running tests during validation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--sources": {
+            "Name": "--sources",
+            "kind": "option",
+            "description": "The sources from which to pull dependent pods (defaults to all available repos). Multiple sources must be comma-delimited",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003csource\u003e": {
+                "Name": "\u003csource\u003e",
+                "kind": "argument",
+                "description": "source",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003csource\u003e": {
+                "Name": "\u003csource\u003e",
+                "kind": "argument",
+                "description": "source",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003csource\u003e"
+            ]
+          },
+          "--swift-version": {
+            "Name": "--swift-version",
+            "kind": "option",
+            "description": "The `SWIFT_VERSION` that should be used when linting the spec. This takes precedence over the Swift versions specified by the spec or a `.swift-version` file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cVERSION\u003e": {
+                "Name": "\u003cVERSION\u003e",
+                "kind": "argument",
+                "description": "VERSION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cVERSION\u003e": {
+                "Name": "\u003cVERSION\u003e",
+                "kind": "argument",
+                "description": "VERSION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cVERSION\u003e"
+            ]
+          },
+          "--use-json": {
+            "Name": "--use-json",
+            "kind": "option",
+            "description": "Convert the podspec to JSON before pushing it to the repo",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--use-libraries": {
+            "Name": "--use-libraries",
+            "kind": "option",
+            "description": "Linter uses static libraries to install the spec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--use-modular-headers": {
+            "Name": "--use-modular-headers",
+            "kind": "option",
+            "description": "Lint uses modular headers during installation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cNAME.podspec\u003e": {
+            "Name": "\u003cNAME.podspec\u003e",
+            "kind": "argument",
+            "description": "NAME.podspec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cREPO\u003e": {
+            "Name": "\u003cREPO\u003e",
+            "kind": "argument",
+            "description": "REPO",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cREPO\u003e"
+        ]
+      },
+      "remove": {
+        "Name": "remove",
+        "kind": "subcommand",
+        "description": "Remove a spec repo",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cNAME\u003e"
+        ]
+      },
+      "update": {
+        "Name": "update",
+        "kind": "subcommand",
+        "description": "Update a spec repo",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      }
+    },
+    "options": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "search": {
+    "Name": "search",
+    "kind": "subcommand",
+    "description": "Search for pods",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ios": {
+        "Name": "--ios",
+        "kind": "option",
+        "description": "Restricts the search to Pods supported on iOS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-pager": {
+        "Name": "--no-pager",
+        "kind": "option",
+        "description": "Do not pipe search results into a pager",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--osx": {
+        "Name": "--osx",
+        "kind": "option",
+        "description": "Restricts the search to Pods supported on macOS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--regex": {
+        "Name": "--regex",
+        "kind": "option",
+        "description": "Interpret the `QUERY` as a regular expression",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--simple": {
+        "Name": "--simple",
+        "kind": "option",
+        "description": "Search only by name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--stats": {
+        "Name": "--stats",
+        "kind": "option",
+        "description": "Show additional stats (like GitHub watchers and forks)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--tvos": {
+        "Name": "--tvos",
+        "kind": "option",
+        "description": "Restricts the search to Pods supported on tvOS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--watchos": {
+        "Name": "--watchos",
+        "kind": "option",
+        "description": "Restricts the search to Pods supported on watchOS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--web": {
+        "Name": "--web",
+        "kind": "option",
+        "description": "Searches on cocoapods.org",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cQUERY\u003e": {
+        "Name": "\u003cQUERY\u003e",
+        "kind": "argument",
+        "description": "QUERY",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ios": {
+        "Name": "--ios",
+        "kind": "option",
+        "description": "Restricts the search to Pods supported on iOS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-pager": {
+        "Name": "--no-pager",
+        "kind": "option",
+        "description": "Do not pipe search results into a pager",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--osx": {
+        "Name": "--osx",
+        "kind": "option",
+        "description": "Restricts the search to Pods supported on macOS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--regex": {
+        "Name": "--regex",
+        "kind": "option",
+        "description": "Interpret the `QUERY` as a regular expression",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--simple": {
+        "Name": "--simple",
+        "kind": "option",
+        "description": "Search only by name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--stats": {
+        "Name": "--stats",
+        "kind": "option",
+        "description": "Show additional stats (like GitHub watchers and forks)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--tvos": {
+        "Name": "--tvos",
+        "kind": "option",
+        "description": "Restricts the search to Pods supported on tvOS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--watchos": {
+        "Name": "--watchos",
+        "kind": "option",
+        "description": "Restricts the search to Pods supported on watchOS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--web": {
+        "Name": "--web",
+        "kind": "option",
+        "description": "Searches on cocoapods.org",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cQUERY\u003e": {
+        "Name": "\u003cQUERY\u003e",
+        "kind": "argument",
+        "description": "QUERY",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cQUERY\u003e"
+    ]
+  },
+  "setup": {
+    "Name": "setup",
+    "kind": "subcommand",
+    "description": "Setup the CocoaPods environment",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "spec": {
+    "Name": "spec",
+    "kind": "subcommand",
+    "description": "Manage pod specs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "cat": {
+        "Name": "cat",
+        "kind": "subcommand",
+        "description": "Prints a spec file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--regex": {
+            "Name": "--regex",
+            "kind": "option",
+            "description": "Interpret the `QUERY` as a regular expression",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--show-all": {
+            "Name": "--show-all",
+            "kind": "option",
+            "description": "Pick from all versions of the given podspec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cQUERY\u003e": {
+            "Name": "\u003cQUERY\u003e",
+            "kind": "argument",
+            "description": "QUERY",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--regex": {
+            "Name": "--regex",
+            "kind": "option",
+            "description": "Interpret the `QUERY` as a regular expression",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--show-all": {
+            "Name": "--show-all",
+            "kind": "option",
+            "description": "Pick from all versions of the given podspec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cQUERY\u003e": {
+            "Name": "\u003cQUERY\u003e",
+            "kind": "argument",
+            "description": "QUERY",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "create": {
+        "Name": "create",
+        "kind": "subcommand",
+        "description": "Create spec file stub",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cNAME|https://github.com/USER/REPO\u003e": {
+            "Name": "\u003cNAME|https://github.com/USER/REPO\u003e",
+            "kind": "argument",
+            "description": "NAME|https://github.com/USER/REPO",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cNAME|https://github.com/USER/REPO\u003e": {
+            "Name": "\u003cNAME|https://github.com/USER/REPO\u003e",
+            "kind": "argument",
+            "description": "NAME|https://github.com/USER/REPO",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "edit": {
+        "Name": "edit",
+        "kind": "subcommand",
+        "description": "Edit a spec file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--regex": {
+            "Name": "--regex",
+            "kind": "option",
+            "description": "Interpret the `QUERY` as a regular expression",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--show-all": {
+            "Name": "--show-all",
+            "kind": "option",
+            "description": "Pick from all versions of the given podspec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cQUERY\u003e": {
+            "Name": "\u003cQUERY\u003e",
+            "kind": "argument",
+            "description": "QUERY",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--regex": {
+            "Name": "--regex",
+            "kind": "option",
+            "description": "Interpret the `QUERY` as a regular expression",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--show-all": {
+            "Name": "--show-all",
+            "kind": "option",
+            "description": "Pick from all versions of the given podspec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cQUERY\u003e": {
+            "Name": "\u003cQUERY\u003e",
+            "kind": "argument",
+            "description": "QUERY",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "lint": {
+        "Name": "lint",
+        "kind": "subcommand",
+        "description": "Validates a spec file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--allow-warnings": {
+            "Name": "--allow-warnings",
+            "kind": "option",
+            "description": "Lint validates even if warnings are present",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--analyze": {
+            "Name": "--analyze",
+            "kind": "option",
+            "description": "Validate with the Xcode Static Analysis tool",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--configuration": {
+            "Name": "--configuration",
+            "kind": "option",
+            "description": "Build using the given configuration (defaults to Release)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cCONFIGURATION\u003e": {
+                "Name": "\u003cCONFIGURATION\u003e",
+                "kind": "argument",
+                "description": "CONFIGURATION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cCONFIGURATION\u003e": {
+                "Name": "\u003cCONFIGURATION\u003e",
+                "kind": "argument",
+                "description": "CONFIGURATION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cCONFIGURATION\u003e"
+            ]
+          },
+          "--fail-fast": {
+            "Name": "--fail-fast",
+            "kind": "option",
+            "description": "Lint stops on the first failing platform or subspec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--no-clean": {
+            "Name": "--no-clean",
+            "kind": "option",
+            "description": "Lint leaves the build directory intact for inspection",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--no-subspecs": {
+            "Name": "--no-subspecs",
+            "kind": "option",
+            "description": "Lint skips validation of subspecs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--platforms": {
+            "Name": "--platforms",
+            "kind": "option",
+            "description": "Lint against specific platforms (defaults to all platforms supported by the podspec). Multiple platforms must be comma-delimited",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cplatform\u003e": {
+                "Name": "\u003cplatform\u003e",
+                "kind": "argument",
+                "description": "platform",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cplatform\u003e": {
+                "Name": "\u003cplatform\u003e",
+                "kind": "argument",
+                "description": "platform",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cplatform\u003e"
+            ]
+          },
+          "--private": {
+            "Name": "--private",
+            "kind": "option",
+            "description": "Lint skips checks that apply only to public specs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--quick": {
+            "Name": "--quick",
+            "kind": "option",
+            "description": "Lint skips checks that would require to download and build the spec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--skip-import-validation": {
+            "Name": "--skip-import-validation",
+            "kind": "option",
+            "description": "Lint skips validating that the pod can be imported",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--skip-tests": {
+            "Name": "--skip-tests",
+            "kind": "option",
+            "description": "Lint skips building and running tests during validation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--sources": {
+            "Name": "--sources",
+            "kind": "option",
+            "description": "The sources from which to pull dependent pods (defaults to https://cdn.cocoapods.org/). Multiple sources must be comma-delimited",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003csource\u003e": {
+                "Name": "\u003csource\u003e",
+                "kind": "argument",
+                "description": "source",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003csource\u003e": {
+                "Name": "\u003csource\u003e",
+                "kind": "argument",
+                "description": "source",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003csource\u003e"
+            ]
+          },
+          "--subspec": {
+            "Name": "--subspec",
+            "kind": "option",
+            "description": "Lint validates only the given subspec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cNAME\u003e": {
+                "Name": "\u003cNAME\u003e",
+                "kind": "argument",
+                "description": "NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cNAME\u003e": {
+                "Name": "\u003cNAME\u003e",
+                "kind": "argument",
+                "description": "NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cNAME\u003e"
+            ]
+          },
+          "--swift-version": {
+            "Name": "--swift-version",
+            "kind": "option",
+            "description": "The `SWIFT_VERSION` that should be used to lint the spec. This takes precedence over the Swift versions specified by the spec or a `.swift-version` file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cVERSION\u003e": {
+                "Name": "\u003cVERSION\u003e",
+                "kind": "argument",
+                "description": "VERSION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cVERSION\u003e": {
+                "Name": "\u003cVERSION\u003e",
+                "kind": "argument",
+                "description": "VERSION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cVERSION\u003e"
+            ]
+          },
+          "--test-specs": {
+            "Name": "--test-specs",
+            "kind": "option",
+            "description": "List of test specs to run",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ctest-spec\u003e": {
+                "Name": "\u003ctest-spec\u003e",
+                "kind": "argument",
+                "description": "test-spec",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ctest-spec\u003e": {
+                "Name": "\u003ctest-spec\u003e",
+                "kind": "argument",
+                "description": "test-spec",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ctest-spec\u003e"
+            ]
+          },
+          "--use-libraries": {
+            "Name": "--use-libraries",
+            "kind": "option",
+            "description": "Lint uses static libraries to install the spec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--use-modular-headers": {
+            "Name": "--use-modular-headers",
+            "kind": "option",
+            "description": "Lint uses modular headers during installation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--use-static-frameworks": {
+            "Name": "--use-static-frameworks",
+            "kind": "option",
+            "description": "Lint uses static frameworks during installation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cNAME.podspec|DIRECTORY|http://PATH/NAME.podspec\u003e": {
+            "Name": "\u003cNAME.podspec|DIRECTORY|http://PATH/NAME.podspec\u003e",
+            "kind": "argument",
+            "description": "NAME.podspec|DIRECTORY|http://PATH/NAME.podspec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--allow-warnings": {
+            "Name": "--allow-warnings",
+            "kind": "option",
+            "description": "Lint validates even if warnings are present",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--analyze": {
+            "Name": "--analyze",
+            "kind": "option",
+            "description": "Validate with the Xcode Static Analysis tool",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--configuration": {
+            "Name": "--configuration",
+            "kind": "option",
+            "description": "Build using the given configuration (defaults to Release)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cCONFIGURATION\u003e": {
+                "Name": "\u003cCONFIGURATION\u003e",
+                "kind": "argument",
+                "description": "CONFIGURATION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cCONFIGURATION\u003e": {
+                "Name": "\u003cCONFIGURATION\u003e",
+                "kind": "argument",
+                "description": "CONFIGURATION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cCONFIGURATION\u003e"
+            ]
+          },
+          "--fail-fast": {
+            "Name": "--fail-fast",
+            "kind": "option",
+            "description": "Lint stops on the first failing platform or subspec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--no-clean": {
+            "Name": "--no-clean",
+            "kind": "option",
+            "description": "Lint leaves the build directory intact for inspection",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--no-subspecs": {
+            "Name": "--no-subspecs",
+            "kind": "option",
+            "description": "Lint skips validation of subspecs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--platforms": {
+            "Name": "--platforms",
+            "kind": "option",
+            "description": "Lint against specific platforms (defaults to all platforms supported by the podspec). Multiple platforms must be comma-delimited",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cplatform\u003e": {
+                "Name": "\u003cplatform\u003e",
+                "kind": "argument",
+                "description": "platform",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cplatform\u003e": {
+                "Name": "\u003cplatform\u003e",
+                "kind": "argument",
+                "description": "platform",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cplatform\u003e"
+            ]
+          },
+          "--private": {
+            "Name": "--private",
+            "kind": "option",
+            "description": "Lint skips checks that apply only to public specs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--quick": {
+            "Name": "--quick",
+            "kind": "option",
+            "description": "Lint skips checks that would require to download and build the spec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--skip-import-validation": {
+            "Name": "--skip-import-validation",
+            "kind": "option",
+            "description": "Lint skips validating that the pod can be imported",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--skip-tests": {
+            "Name": "--skip-tests",
+            "kind": "option",
+            "description": "Lint skips building and running tests during validation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--sources": {
+            "Name": "--sources",
+            "kind": "option",
+            "description": "The sources from which to pull dependent pods (defaults to https://cdn.cocoapods.org/). Multiple sources must be comma-delimited",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003csource\u003e": {
+                "Name": "\u003csource\u003e",
+                "kind": "argument",
+                "description": "source",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003csource\u003e": {
+                "Name": "\u003csource\u003e",
+                "kind": "argument",
+                "description": "source",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003csource\u003e"
+            ]
+          },
+          "--subspec": {
+            "Name": "--subspec",
+            "kind": "option",
+            "description": "Lint validates only the given subspec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cNAME\u003e": {
+                "Name": "\u003cNAME\u003e",
+                "kind": "argument",
+                "description": "NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cNAME\u003e": {
+                "Name": "\u003cNAME\u003e",
+                "kind": "argument",
+                "description": "NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cNAME\u003e"
+            ]
+          },
+          "--swift-version": {
+            "Name": "--swift-version",
+            "kind": "option",
+            "description": "The `SWIFT_VERSION` that should be used to lint the spec. This takes precedence over the Swift versions specified by the spec or a `.swift-version` file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cVERSION\u003e": {
+                "Name": "\u003cVERSION\u003e",
+                "kind": "argument",
+                "description": "VERSION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cVERSION\u003e": {
+                "Name": "\u003cVERSION\u003e",
+                "kind": "argument",
+                "description": "VERSION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cVERSION\u003e"
+            ]
+          },
+          "--test-specs": {
+            "Name": "--test-specs",
+            "kind": "option",
+            "description": "List of test specs to run",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ctest-spec\u003e": {
+                "Name": "\u003ctest-spec\u003e",
+                "kind": "argument",
+                "description": "test-spec",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ctest-spec\u003e": {
+                "Name": "\u003ctest-spec\u003e",
+                "kind": "argument",
+                "description": "test-spec",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ctest-spec\u003e"
+            ]
+          },
+          "--use-libraries": {
+            "Name": "--use-libraries",
+            "kind": "option",
+            "description": "Lint uses static libraries to install the spec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--use-modular-headers": {
+            "Name": "--use-modular-headers",
+            "kind": "option",
+            "description": "Lint uses modular headers during installation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--use-static-frameworks": {
+            "Name": "--use-static-frameworks",
+            "kind": "option",
+            "description": "Lint uses static frameworks during installation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cNAME.podspec|DIRECTORY|http://PATH/NAME.podspec\u003e": {
+            "Name": "\u003cNAME.podspec|DIRECTORY|http://PATH/NAME.podspec\u003e",
+            "kind": "argument",
+            "description": "NAME.podspec|DIRECTORY|http://PATH/NAME.podspec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "which": {
+        "Name": "which",
+        "kind": "subcommand",
+        "description": "Prints the path of the given spec",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--regex": {
+            "Name": "--regex",
+            "kind": "option",
+            "description": "Interpret the `QUERY` as a regular expression",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--show-all": {
+            "Name": "--show-all",
+            "kind": "option",
+            "description": "Print all versions of the given podspec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cQUERY\u003e": {
+            "Name": "\u003cQUERY\u003e",
+            "kind": "argument",
+            "description": "QUERY",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--regex": {
+            "Name": "--regex",
+            "kind": "option",
+            "description": "Interpret the `QUERY` as a regular expression",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--show-all": {
+            "Name": "--show-all",
+            "kind": "option",
+            "description": "Print all versions of the given podspec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cQUERY\u003e": {
+            "Name": "\u003cQUERY\u003e",
+            "kind": "argument",
+            "description": "QUERY",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      }
+    },
+    "options": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "trunk": {
+    "Name": "trunk",
+    "kind": "subcommand",
+    "description": "Interact with the CocoaPods API (e.g. publishing new specs)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "add-owner": {
+        "Name": "add-owner",
+        "kind": "subcommand",
+        "description": "Add an owner to a pod",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cOWNER-EMAIL\u003e": {
+            "Name": "\u003cOWNER-EMAIL\u003e",
+            "kind": "argument",
+            "description": "OWNER-EMAIL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cPOD\u003e": {
+            "Name": "\u003cPOD\u003e",
+            "kind": "argument",
+            "description": "POD",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cOWNER-EMAIL\u003e": {
+            "Name": "\u003cOWNER-EMAIL\u003e",
+            "kind": "argument",
+            "description": "OWNER-EMAIL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cPOD\u003e": {
+            "Name": "\u003cPOD\u003e",
+            "kind": "argument",
+            "description": "POD",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cPOD\u003e",
+          "\u003cOWNER-EMAIL\u003e"
+        ]
+      },
+      "delete": {
+        "Name": "delete",
+        "kind": "subcommand",
+        "description": "Deletes a version of a pod",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cVERSION\u003e": {
+            "Name": "\u003cVERSION\u003e",
+            "kind": "argument",
+            "description": "VERSION",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cVERSION\u003e": {
+            "Name": "\u003cVERSION\u003e",
+            "kind": "argument",
+            "description": "VERSION",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cNAME\u003e",
+          "\u003cVERSION\u003e"
+        ]
+      },
+      "deprecate": {
+        "Name": "deprecate",
+        "kind": "subcommand",
+        "description": "Deprecates a pod",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--in-favor-of": {
+            "Name": "--in-favor-of",
+            "kind": "option",
+            "description": "The pod to deprecate this pod in favor of",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cOTHER_NAME\u003e": {
+                "Name": "\u003cOTHER_NAME\u003e",
+                "kind": "argument",
+                "description": "OTHER_NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cOTHER_NAME\u003e": {
+                "Name": "\u003cOTHER_NAME\u003e",
+                "kind": "argument",
+                "description": "OTHER_NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cOTHER_NAME\u003e"
+            ]
+          },
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--in-favor-of": {
+            "Name": "--in-favor-of",
+            "kind": "option",
+            "description": "The pod to deprecate this pod in favor of",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cOTHER_NAME\u003e": {
+                "Name": "\u003cOTHER_NAME\u003e",
+                "kind": "argument",
+                "description": "OTHER_NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cOTHER_NAME\u003e": {
+                "Name": "\u003cOTHER_NAME\u003e",
+                "kind": "argument",
+                "description": "OTHER_NAME",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cOTHER_NAME\u003e"
+            ]
+          },
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cNAME\u003e"
+        ]
+      },
+      "info": {
+        "Name": "info",
+        "kind": "subcommand",
+        "description": "Returns information about a Pod",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cNAME\u003e": {
+            "Name": "\u003cNAME\u003e",
+            "kind": "argument",
+            "description": "NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cNAME\u003e"
+        ]
+      },
+      "me": {
+        "Name": "me",
+        "kind": "subcommand",
+        "description": "Display information about your sessions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "clean-sessions": {
+            "Name": "clean-sessions",
+            "kind": "subcommand",
+            "description": "Remove sessions",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "--all": {
+                "Name": "--all",
+                "kind": "option",
+                "description": "Removes all your sessions  except for the current one",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--allow-root": {
+                "Name": "--allow-root",
+                "kind": "option",
+                "description": "Allows CocoaPods to run as root",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            },
+            "options": {
+              "--all": {
+                "Name": "--all",
+                "kind": "option",
+                "description": "Removes all your sessions  except for the current one",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--allow-root": {
+                "Name": "--allow-root",
+                "kind": "option",
+                "description": "Allows CocoaPods to run as root",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "push": {
+        "Name": "push",
+        "kind": "subcommand",
+        "description": "Publish a podspec",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--allow-warnings": {
+            "Name": "--allow-warnings",
+            "kind": "option",
+            "description": "Allows push even if there are lint warnings",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--skip-import-validation": {
+            "Name": "--skip-import-validation",
+            "kind": "option",
+            "description": "Lint skips validating that the pod can be imported",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--skip-tests": {
+            "Name": "--skip-tests",
+            "kind": "option",
+            "description": "Lint skips building and running tests during validation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--swift-version": {
+            "Name": "--swift-version",
+            "kind": "option",
+            "description": "The SWIFT_VERSION that should be used to lint the spec. This takes precedence over a .swift-version file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cVERSION\u003e": {
+                "Name": "\u003cVERSION\u003e",
+                "kind": "argument",
+                "description": "VERSION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cVERSION\u003e": {
+                "Name": "\u003cVERSION\u003e",
+                "kind": "argument",
+                "description": "VERSION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cVERSION\u003e"
+            ]
+          },
+          "--synchronous": {
+            "Name": "--synchronous",
+            "kind": "option",
+            "description": "If validation depends on other recently pushed pods ,synchronize",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--use-libraries": {
+            "Name": "--use-libraries",
+            "kind": "option",
+            "description": "Linter uses static libraries to install the spec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--use-modular-headers": {
+            "Name": "--use-modular-headers",
+            "kind": "option",
+            "description": "Lint uses modular headers during installation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cPATH\u003e": {
+            "Name": "\u003cPATH\u003e",
+            "kind": "argument",
+            "description": "PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--allow-warnings": {
+            "Name": "--allow-warnings",
+            "kind": "option",
+            "description": "Allows push even if there are lint warnings",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--skip-import-validation": {
+            "Name": "--skip-import-validation",
+            "kind": "option",
+            "description": "Lint skips validating that the pod can be imported",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--skip-tests": {
+            "Name": "--skip-tests",
+            "kind": "option",
+            "description": "Lint skips building and running tests during validation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--swift-version": {
+            "Name": "--swift-version",
+            "kind": "option",
+            "description": "The SWIFT_VERSION that should be used to lint the spec. This takes precedence over a .swift-version file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cVERSION\u003e": {
+                "Name": "\u003cVERSION\u003e",
+                "kind": "argument",
+                "description": "VERSION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cVERSION\u003e": {
+                "Name": "\u003cVERSION\u003e",
+                "kind": "argument",
+                "description": "VERSION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cVERSION\u003e"
+            ]
+          },
+          "--synchronous": {
+            "Name": "--synchronous",
+            "kind": "option",
+            "description": "If validation depends on other recently pushed pods ,synchronize",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--use-libraries": {
+            "Name": "--use-libraries",
+            "kind": "option",
+            "description": "Linter uses static libraries to install the spec",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--use-modular-headers": {
+            "Name": "--use-modular-headers",
+            "kind": "option",
+            "description": "Lint uses modular headers during installation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cPATH\u003e": {
+            "Name": "\u003cPATH\u003e",
+            "kind": "argument",
+            "description": "PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "register": {
+        "Name": "register",
+        "kind": "subcommand",
+        "description": "Manage sessions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--description": {
+            "Name": "--description",
+            "kind": "option",
+            "description": "An arbitrary description to easily identify your session later on",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cDESCRIPTION\u003e": {
+                "Name": "\u003cDESCRIPTION\u003e",
+                "kind": "argument",
+                "description": "DESCRIPTION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cDESCRIPTION\u003e": {
+                "Name": "\u003cDESCRIPTION\u003e",
+                "kind": "argument",
+                "description": "DESCRIPTION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cDESCRIPTION\u003e"
+            ]
+          },
+          "\u003cEMAIL\u003e": {
+            "Name": "\u003cEMAIL\u003e",
+            "kind": "argument",
+            "description": "EMAIL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cYOUR_NAME\u003e": {
+            "Name": "\u003cYOUR_NAME\u003e",
+            "kind": "argument",
+            "description": "YOUR_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--description": {
+            "Name": "--description",
+            "kind": "option",
+            "description": "An arbitrary description to easily identify your session later on",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cDESCRIPTION\u003e": {
+                "Name": "\u003cDESCRIPTION\u003e",
+                "kind": "argument",
+                "description": "DESCRIPTION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cDESCRIPTION\u003e": {
+                "Name": "\u003cDESCRIPTION\u003e",
+                "kind": "argument",
+                "description": "DESCRIPTION",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cDESCRIPTION\u003e"
+            ]
+          },
+          "\u003cEMAIL\u003e": {
+            "Name": "\u003cEMAIL\u003e",
+            "kind": "argument",
+            "description": "EMAIL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cYOUR_NAME\u003e": {
+            "Name": "\u003cYOUR_NAME\u003e",
+            "kind": "argument",
+            "description": "YOUR_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cEMAIL\u003e"
+        ]
+      },
+      "remove-owner": {
+        "Name": "remove-owner",
+        "kind": "subcommand",
+        "description": "Remove an owner from a pod",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cOWNER-EMAIL\u003e": {
+            "Name": "\u003cOWNER-EMAIL\u003e",
+            "kind": "argument",
+            "description": "OWNER-EMAIL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cPOD\u003e": {
+            "Name": "\u003cPOD\u003e",
+            "kind": "argument",
+            "description": "POD",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--allow-root": {
+            "Name": "--allow-root",
+            "kind": "option",
+            "description": "Allows CocoaPods to run as root",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cOWNER-EMAIL\u003e": {
+            "Name": "\u003cOWNER-EMAIL\u003e",
+            "kind": "argument",
+            "description": "OWNER-EMAIL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cPOD\u003e": {
+            "Name": "\u003cPOD\u003e",
+            "kind": "argument",
+            "description": "POD",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cPOD\u003e",
+          "\u003cOWNER-EMAIL\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "try": {
+    "Name": "try",
+    "kind": "subcommand",
+    "description": "Try a Pod!",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-repo-update": {
+        "Name": "--no-repo-update",
+        "kind": "option",
+        "description": "Skip running `pod repo update` before install",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--podspec_name": {
+        "Name": "--podspec_name",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "\u003cNAME|URL\u003e": {
+        "Name": "\u003cNAME|URL\u003e",
+        "kind": "argument",
+        "description": "NAME|URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-repo-update": {
+        "Name": "--no-repo-update",
+        "kind": "option",
+        "description": "Skip running `pod repo update` before install",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--podspec_name": {
+        "Name": "--podspec_name",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "\u003cNAME|URL\u003e": {
+        "Name": "\u003cNAME|URL\u003e",
+        "kind": "argument",
+        "description": "NAME|URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNAME|URL\u003e"
+    ]
+  },
+  "update": {
+    "Name": "update",
+    "kind": "subcommand",
+    "description": "Update outdated project dependencies and create new Podfile.lock",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--clean-install": {
+        "Name": "--clean-install",
+        "kind": "option",
+        "description": "Ignore the contents of the project cache and force a full pod installation. This only applies to projects that have enabled incremental installation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exclude-pods": {
+        "Name": "--exclude-pods",
+        "kind": "option",
+        "description": "Pods to exclude during update. Multiple pods must be comma-delimited",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpodName\u003e": {
+            "Name": "\u003cpodName\u003e",
+            "kind": "argument",
+            "description": "podName",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpodName\u003e": {
+            "Name": "\u003cpodName\u003e",
+            "kind": "argument",
+            "description": "podName",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpodName\u003e"
+        ]
+      },
+      "--no-repo-update": {
+        "Name": "--no-repo-update",
+        "kind": "option",
+        "description": "Skip running `pod repo update` before install",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--project-directory": {
+        "Name": "--project-directory",
+        "kind": "option",
+        "description": "The path to the root of the project directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c/project/dir/\u003e": {
+            "Name": "\u003c/project/dir/\u003e",
+            "kind": "argument",
+            "description": "/project/dir/",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c/project/dir/\u003e": {
+            "Name": "\u003c/project/dir/\u003e",
+            "kind": "argument",
+            "description": "/project/dir/",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c/project/dir/\u003e"
+        ]
+      },
+      "--sources": {
+        "Name": "--sources",
+        "kind": "option",
+        "description": "The sources from which to update dependent pods. Multiple sources must be comma-delimited",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003chttps://cdn.cocoapods.org/\u003e": {
+            "Name": "\u003chttps://cdn.cocoapods.org/\u003e",
+            "kind": "argument",
+            "description": "https://cdn.cocoapods.org/",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003chttps://cdn.cocoapods.org/\u003e": {
+            "Name": "\u003chttps://cdn.cocoapods.org/\u003e",
+            "kind": "argument",
+            "description": "https://cdn.cocoapods.org/",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003chttps://cdn.cocoapods.org/\u003e"
+        ]
+      },
+      "\u003cPOD_NAMES\u003e": {
+        "Name": "\u003cPOD_NAMES\u003e",
+        "kind": "argument",
+        "description": "POD_NAMES",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--allow-root": {
+        "Name": "--allow-root",
+        "kind": "option",
+        "description": "Allows CocoaPods to run as root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--clean-install": {
+        "Name": "--clean-install",
+        "kind": "option",
+        "description": "Ignore the contents of the project cache and force a full pod installation. This only applies to projects that have enabled incremental installation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exclude-pods": {
+        "Name": "--exclude-pods",
+        "kind": "option",
+        "description": "Pods to exclude during update. Multiple pods must be comma-delimited",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpodName\u003e": {
+            "Name": "\u003cpodName\u003e",
+            "kind": "argument",
+            "description": "podName",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpodName\u003e": {
+            "Name": "\u003cpodName\u003e",
+            "kind": "argument",
+            "description": "podName",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpodName\u003e"
+        ]
+      },
+      "--no-repo-update": {
+        "Name": "--no-repo-update",
+        "kind": "option",
+        "description": "Skip running `pod repo update` before install",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--project-directory": {
+        "Name": "--project-directory",
+        "kind": "option",
+        "description": "The path to the root of the project directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c/project/dir/\u003e": {
+            "Name": "\u003c/project/dir/\u003e",
+            "kind": "argument",
+            "description": "/project/dir/",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c/project/dir/\u003e": {
+            "Name": "\u003c/project/dir/\u003e",
+            "kind": "argument",
+            "description": "/project/dir/",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c/project/dir/\u003e"
+        ]
+      },
+      "--sources": {
+        "Name": "--sources",
+        "kind": "option",
+        "description": "The sources from which to update dependent pods. Multiple sources must be comma-delimited",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003chttps://cdn.cocoapods.org/\u003e": {
+            "Name": "\u003chttps://cdn.cocoapods.org/\u003e",
+            "kind": "argument",
+            "description": "https://cdn.cocoapods.org/",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003chttps://cdn.cocoapods.org/\u003e": {
+            "Name": "\u003chttps://cdn.cocoapods.org/\u003e",
+            "kind": "argument",
+            "description": "https://cdn.cocoapods.org/",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003chttps://cdn.cocoapods.org/\u003e"
+        ]
+      },
+      "\u003cPOD_NAMES\u003e": {
+        "Name": "\u003cPOD_NAMES\u003e",
+        "kind": "argument",
+        "description": "POD_NAMES",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  }
+}

@@ -1,0 +1,4331 @@
+{
+  "affected": {
+    "Name": "affected",
+    "kind": "subcommand",
+    "description": "Run target for affected projects",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "All projects",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--base": {
+        "Name": "--base",
+        "kind": "option",
+        "description": "Base of the current branch (usually main)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--configuration": {
+        "Name": "--configuration",
+        "kind": "option",
+        "description": "A named builder configuration, defined in the \"configurations\" section of the workspace configuration file. The builder uses the named configuration to run the given target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfiguration\u003e"
+        ]
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude certain projects from being processed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprojects\u003e"
+        ]
+      },
+      "--files": {
+        "Name": "--files",
+        "kind": "option",
+        "description": "Change the way Nx is calculating the affected command by providing directly changed files, list of files delimited by commas or spaces",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--graph": {
+        "Name": "--graph",
+        "kind": "option",
+        "description": "Show the task graph of the command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--head": {
+        "Name": "--head",
+        "kind": "option",
+        "description": "Latest commit of the current branch (usually HEAD)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--nx-bail": {
+        "Name": "--nx-bail",
+        "kind": "option",
+        "description": "Stop command execution after the first failed task",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--nx-ignore-cycles": {
+        "Name": "--nx-ignore-cycles",
+        "kind": "option",
+        "description": "Ignore cycles in the task graph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output-style": {
+        "Name": "--output-style",
+        "kind": "option",
+        "description": "Defines how Nx emits outputs tasks logs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--parallel": {
+        "Name": "--parallel",
+        "kind": "option",
+        "description": "Max number of parallel processes [default is 3]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--runner": {
+        "Name": "--runner",
+        "kind": "option",
+        "description": "This is the name of the tasks runner configured in nx.json",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--skip-nx-cache": {
+        "Name": "--skip-nx-cache",
+        "kind": "option",
+        "description": "Rerun the tasks even when the results are available in the cache",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--targets": {
+        "Name": "--targets",
+        "kind": "option",
+        "description": "Targets (comma/space delimited)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctargets\u003e": {
+            "Name": "\u003ctargets\u003e",
+            "kind": "argument",
+            "description": "targets",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctargets\u003e": {
+            "Name": "\u003ctargets\u003e",
+            "kind": "argument",
+            "description": "targets",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctargets\u003e"
+        ]
+      },
+      "--uncommitted": {
+        "Name": "--uncommitted",
+        "kind": "option",
+        "description": "Uncommitted changes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--untracked": {
+        "Name": "--untracked",
+        "kind": "option",
+        "description": "Untracked changes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Prints additional information about the commands (e.g., stack traces)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "A named builder configuration, defined in the \"configurations\" section of the workspace configuration file. The builder uses the named configuration to run the given target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfiguration\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "All projects",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--base": {
+        "Name": "--base",
+        "kind": "option",
+        "description": "Base of the current branch (usually main)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--configuration": {
+        "Name": "--configuration",
+        "kind": "option",
+        "description": "A named builder configuration, defined in the \"configurations\" section of the workspace configuration file. The builder uses the named configuration to run the given target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfiguration\u003e"
+        ]
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude certain projects from being processed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprojects\u003e"
+        ]
+      },
+      "--files": {
+        "Name": "--files",
+        "kind": "option",
+        "description": "Change the way Nx is calculating the affected command by providing directly changed files, list of files delimited by commas or spaces",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--graph": {
+        "Name": "--graph",
+        "kind": "option",
+        "description": "Show the task graph of the command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--head": {
+        "Name": "--head",
+        "kind": "option",
+        "description": "Latest commit of the current branch (usually HEAD)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--nx-bail": {
+        "Name": "--nx-bail",
+        "kind": "option",
+        "description": "Stop command execution after the first failed task",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--nx-ignore-cycles": {
+        "Name": "--nx-ignore-cycles",
+        "kind": "option",
+        "description": "Ignore cycles in the task graph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output-style": {
+        "Name": "--output-style",
+        "kind": "option",
+        "description": "Defines how Nx emits outputs tasks logs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--parallel": {
+        "Name": "--parallel",
+        "kind": "option",
+        "description": "Max number of parallel processes [default is 3]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--runner": {
+        "Name": "--runner",
+        "kind": "option",
+        "description": "This is the name of the tasks runner configured in nx.json",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--skip-nx-cache": {
+        "Name": "--skip-nx-cache",
+        "kind": "option",
+        "description": "Rerun the tasks even when the results are available in the cache",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--targets": {
+        "Name": "--targets",
+        "kind": "option",
+        "description": "Targets (comma/space delimited)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctargets\u003e": {
+            "Name": "\u003ctargets\u003e",
+            "kind": "argument",
+            "description": "targets",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctargets\u003e": {
+            "Name": "\u003ctargets\u003e",
+            "kind": "argument",
+            "description": "targets",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctargets\u003e"
+        ]
+      },
+      "--uncommitted": {
+        "Name": "--uncommitted",
+        "kind": "option",
+        "description": "Uncommitted changes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--untracked": {
+        "Name": "--untracked",
+        "kind": "option",
+        "description": "Untracked changes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Prints additional information about the commands (e.g., stack traces)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "A named builder configuration, defined in the \"configurations\" section of the workspace configuration file. The builder uses the named configuration to run the given target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfiguration\u003e"
+        ]
+      }
+    }
+  },
+  "affected:graph": {
+    "Name": "affected:graph",
+    "kind": "subcommand",
+    "description": "Graph dependencies affected by changes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "All projects",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--base": {
+        "Name": "--base",
+        "kind": "option",
+        "description": "Base of the current branch (usually main)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude certain projects from being processed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprojects\u003e"
+        ]
+      },
+      "--file": {
+        "Name": "--file",
+        "kind": "option",
+        "description": "Output file (e.g. --file=output.json or --file=dep-graph.html)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--files": {
+        "Name": "--files",
+        "kind": "option",
+        "description": "Change the way Nx is calculating the affected command by providing directly changed files, list of files delimited by commas or spaces",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--focus": {
+        "Name": "--focus",
+        "kind": "option",
+        "description": "Use to show the project graph for a particular project and every node that is either an ancestor or a descendant",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cproject\u003e": {
+            "Name": "\u003cproject\u003e",
+            "kind": "argument",
+            "description": "project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cproject\u003e": {
+            "Name": "\u003cproject\u003e",
+            "kind": "argument",
+            "description": "project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cproject\u003e"
+        ]
+      },
+      "--groupByFolder": {
+        "Name": "--groupByFolder",
+        "kind": "option",
+        "description": "Group projects by folder in the project graph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--head": {
+        "Name": "--head",
+        "kind": "option",
+        "description": "Latest commit of the current branch (usually HEAD)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--host": {
+        "Name": "--host",
+        "kind": "option",
+        "description": "Bind the project graph server to a specific ip address",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--open": {
+        "Name": "--open",
+        "kind": "option",
+        "description": "Open the project graph in the browser",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--port": {
+        "Name": "--port",
+        "kind": "option",
+        "description": "Bind the project graph server to a specific port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--targets": {
+        "Name": "--targets",
+        "kind": "option",
+        "description": "Targets (comma/space delimited)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctargets\u003e": {
+            "Name": "\u003ctargets\u003e",
+            "kind": "argument",
+            "description": "targets",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctargets\u003e": {
+            "Name": "\u003ctargets\u003e",
+            "kind": "argument",
+            "description": "targets",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctargets\u003e"
+        ]
+      },
+      "--uncommitted": {
+        "Name": "--uncommitted",
+        "kind": "option",
+        "description": "Uncommitted changes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--untracked": {
+        "Name": "--untracked",
+        "kind": "option",
+        "description": "Untracked changes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--view": {
+        "Name": "--view",
+        "kind": "option",
+        "description": "Choose whether to view the projects or task graph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--watch": {
+        "Name": "--watch",
+        "kind": "option",
+        "description": "Watch for changes to project graph and update in-browser",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "All projects",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--base": {
+        "Name": "--base",
+        "kind": "option",
+        "description": "Base of the current branch (usually main)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude certain projects from being processed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprojects\u003e"
+        ]
+      },
+      "--file": {
+        "Name": "--file",
+        "kind": "option",
+        "description": "Output file (e.g. --file=output.json or --file=dep-graph.html)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--files": {
+        "Name": "--files",
+        "kind": "option",
+        "description": "Change the way Nx is calculating the affected command by providing directly changed files, list of files delimited by commas or spaces",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--focus": {
+        "Name": "--focus",
+        "kind": "option",
+        "description": "Use to show the project graph for a particular project and every node that is either an ancestor or a descendant",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cproject\u003e": {
+            "Name": "\u003cproject\u003e",
+            "kind": "argument",
+            "description": "project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cproject\u003e": {
+            "Name": "\u003cproject\u003e",
+            "kind": "argument",
+            "description": "project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cproject\u003e"
+        ]
+      },
+      "--groupByFolder": {
+        "Name": "--groupByFolder",
+        "kind": "option",
+        "description": "Group projects by folder in the project graph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--head": {
+        "Name": "--head",
+        "kind": "option",
+        "description": "Latest commit of the current branch (usually HEAD)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--host": {
+        "Name": "--host",
+        "kind": "option",
+        "description": "Bind the project graph server to a specific ip address",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--open": {
+        "Name": "--open",
+        "kind": "option",
+        "description": "Open the project graph in the browser",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--port": {
+        "Name": "--port",
+        "kind": "option",
+        "description": "Bind the project graph server to a specific port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--targets": {
+        "Name": "--targets",
+        "kind": "option",
+        "description": "Targets (comma/space delimited)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctargets\u003e": {
+            "Name": "\u003ctargets\u003e",
+            "kind": "argument",
+            "description": "targets",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctargets\u003e": {
+            "Name": "\u003ctargets\u003e",
+            "kind": "argument",
+            "description": "targets",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctargets\u003e"
+        ]
+      },
+      "--uncommitted": {
+        "Name": "--uncommitted",
+        "kind": "option",
+        "description": "Uncommitted changes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--untracked": {
+        "Name": "--untracked",
+        "kind": "option",
+        "description": "Untracked changes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--view": {
+        "Name": "--view",
+        "kind": "option",
+        "description": "Choose whether to view the projects or task graph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--watch": {
+        "Name": "--watch",
+        "kind": "option",
+        "description": "Watch for changes to project graph and update in-browser",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "connect": {
+    "Name": "connect",
+    "kind": "subcommand",
+    "description": "Connect workspace to Nx Cloud",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "daemon": {
+    "Name": "daemon",
+    "kind": "subcommand",
+    "description": "Prints information about the Nx Daemon process or starts a daemon process",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--start": {
+        "Name": "--start",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--stop": {
+        "Name": "--stop",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--start": {
+        "Name": "--start",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--stop": {
+        "Name": "--stop",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "exec": {
+    "Name": "exec",
+    "kind": "subcommand",
+    "description": "Executes any command as if it was a target on the project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--configuration": {
+        "Name": "--configuration",
+        "kind": "option",
+        "description": "A named builder configuration, defined in the \"configurations\" section of the workspace configuration file. The builder uses the named configuration to run the given target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfiguration\u003e"
+        ]
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude certain projects from being processed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprojects\u003e"
+        ]
+      },
+      "--graph": {
+        "Name": "--graph",
+        "kind": "option",
+        "description": "Show the task graph of the command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--nx-bail": {
+        "Name": "--nx-bail",
+        "kind": "option",
+        "description": "Stop command execution after the first failed task",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--nx-ignore-cycles": {
+        "Name": "--nx-ignore-cycles",
+        "kind": "option",
+        "description": "Ignore cycles in the task graph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output-style": {
+        "Name": "--output-style",
+        "kind": "option",
+        "description": "Defines how Nx emits outputs tasks logs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--parallel": {
+        "Name": "--parallel",
+        "kind": "option",
+        "description": "Max number of parallel processes [default is 3]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--project": {
+        "Name": "--project",
+        "kind": "option",
+        "description": "Target project",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cproject\u003e": {
+            "Name": "\u003cproject\u003e",
+            "kind": "argument",
+            "description": "project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cproject\u003e": {
+            "Name": "\u003cproject\u003e",
+            "kind": "argument",
+            "description": "project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cproject\u003e"
+        ]
+      },
+      "--runner": {
+        "Name": "--runner",
+        "kind": "option",
+        "description": "This is the name of the tasks runner configured in nx.json",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--skip-nx-cache": {
+        "Name": "--skip-nx-cache",
+        "kind": "option",
+        "description": "Rerun the tasks even when the results are available in the cache",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Prints additional information about the commands (e.g., stack traces)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "A named builder configuration, defined in the \"configurations\" section of the workspace configuration file. The builder uses the named configuration to run the given target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfiguration\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--configuration": {
+        "Name": "--configuration",
+        "kind": "option",
+        "description": "A named builder configuration, defined in the \"configurations\" section of the workspace configuration file. The builder uses the named configuration to run the given target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfiguration\u003e"
+        ]
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude certain projects from being processed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprojects\u003e"
+        ]
+      },
+      "--graph": {
+        "Name": "--graph",
+        "kind": "option",
+        "description": "Show the task graph of the command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--nx-bail": {
+        "Name": "--nx-bail",
+        "kind": "option",
+        "description": "Stop command execution after the first failed task",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--nx-ignore-cycles": {
+        "Name": "--nx-ignore-cycles",
+        "kind": "option",
+        "description": "Ignore cycles in the task graph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output-style": {
+        "Name": "--output-style",
+        "kind": "option",
+        "description": "Defines how Nx emits outputs tasks logs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--parallel": {
+        "Name": "--parallel",
+        "kind": "option",
+        "description": "Max number of parallel processes [default is 3]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--project": {
+        "Name": "--project",
+        "kind": "option",
+        "description": "Target project",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cproject\u003e": {
+            "Name": "\u003cproject\u003e",
+            "kind": "argument",
+            "description": "project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cproject\u003e": {
+            "Name": "\u003cproject\u003e",
+            "kind": "argument",
+            "description": "project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cproject\u003e"
+        ]
+      },
+      "--runner": {
+        "Name": "--runner",
+        "kind": "option",
+        "description": "This is the name of the tasks runner configured in nx.json",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--skip-nx-cache": {
+        "Name": "--skip-nx-cache",
+        "kind": "option",
+        "description": "Rerun the tasks even when the results are available in the cache",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Prints additional information about the commands (e.g., stack traces)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "A named builder configuration, defined in the \"configurations\" section of the workspace configuration file. The builder uses the named configuration to run the given target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfiguration\u003e"
+        ]
+      }
+    }
+  },
+  "format:check": {
+    "Name": "format:check",
+    "kind": "subcommand",
+    "description": "Check for un-formatted files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "All projects",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--base": {
+        "Name": "--base",
+        "kind": "option",
+        "description": "Base of the current branch (usually main)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude certain projects from being processed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprojects\u003e"
+        ]
+      },
+      "--files": {
+        "Name": "--files",
+        "kind": "option",
+        "description": "Change the way Nx is calculating the affected command by providing directly changed files, list of files delimited by commas or spaces",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--head": {
+        "Name": "--head",
+        "kind": "option",
+        "description": "Latest commit of the current branch (usually HEAD)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--libs-and-apps": {
+        "Name": "--libs-and-apps",
+        "kind": "option",
+        "description": "Format only libraries and applications files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--projects": {
+        "Name": "--projects",
+        "kind": "option",
+        "description": "Projects (comma/space delimited)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprojects\u003e"
+        ]
+      },
+      "--uncommitted": {
+        "Name": "--uncommitted",
+        "kind": "option",
+        "description": "Uncommitted changes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--untracked": {
+        "Name": "--untracked",
+        "kind": "option",
+        "description": "Untracked changes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "All projects",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--base": {
+        "Name": "--base",
+        "kind": "option",
+        "description": "Base of the current branch (usually main)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude certain projects from being processed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprojects\u003e"
+        ]
+      },
+      "--files": {
+        "Name": "--files",
+        "kind": "option",
+        "description": "Change the way Nx is calculating the affected command by providing directly changed files, list of files delimited by commas or spaces",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--head": {
+        "Name": "--head",
+        "kind": "option",
+        "description": "Latest commit of the current branch (usually HEAD)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--libs-and-apps": {
+        "Name": "--libs-and-apps",
+        "kind": "option",
+        "description": "Format only libraries and applications files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--projects": {
+        "Name": "--projects",
+        "kind": "option",
+        "description": "Projects (comma/space delimited)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprojects\u003e"
+        ]
+      },
+      "--uncommitted": {
+        "Name": "--uncommitted",
+        "kind": "option",
+        "description": "Uncommitted changes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--untracked": {
+        "Name": "--untracked",
+        "kind": "option",
+        "description": "Untracked changes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "format:write": {
+    "Name": "format:write",
+    "kind": "subcommand",
+    "description": "Overwrite un-formatted files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "All projects",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--base": {
+        "Name": "--base",
+        "kind": "option",
+        "description": "Base of the current branch (usually main)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude certain projects from being processed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprojects\u003e"
+        ]
+      },
+      "--files": {
+        "Name": "--files",
+        "kind": "option",
+        "description": "Change the way Nx is calculating the affected command by providing directly changed files, list of files delimited by commas or spaces",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--head": {
+        "Name": "--head",
+        "kind": "option",
+        "description": "Latest commit of the current branch (usually HEAD)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--libs-and-apps": {
+        "Name": "--libs-and-apps",
+        "kind": "option",
+        "description": "Format only libraries and applications files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--projects": {
+        "Name": "--projects",
+        "kind": "option",
+        "description": "Projects (comma/space delimited)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprojects\u003e"
+        ]
+      },
+      "--uncommitted": {
+        "Name": "--uncommitted",
+        "kind": "option",
+        "description": "Uncommitted changes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--untracked": {
+        "Name": "--untracked",
+        "kind": "option",
+        "description": "Untracked changes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "All projects",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--base": {
+        "Name": "--base",
+        "kind": "option",
+        "description": "Base of the current branch (usually main)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude certain projects from being processed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprojects\u003e"
+        ]
+      },
+      "--files": {
+        "Name": "--files",
+        "kind": "option",
+        "description": "Change the way Nx is calculating the affected command by providing directly changed files, list of files delimited by commas or spaces",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--head": {
+        "Name": "--head",
+        "kind": "option",
+        "description": "Latest commit of the current branch (usually HEAD)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--libs-and-apps": {
+        "Name": "--libs-and-apps",
+        "kind": "option",
+        "description": "Format only libraries and applications files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--projects": {
+        "Name": "--projects",
+        "kind": "option",
+        "description": "Projects (comma/space delimited)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprojects\u003e"
+        ]
+      },
+      "--uncommitted": {
+        "Name": "--uncommitted",
+        "kind": "option",
+        "description": "Uncommitted changes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--untracked": {
+        "Name": "--untracked",
+        "kind": "option",
+        "description": "Untracked changes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "generate": {
+    "Name": "generate",
+    "kind": "subcommand",
+    "description": "Runs a generator that creates and/or modifies files based on a generator from a collection",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--defaults": {
+        "Name": "--defaults",
+        "kind": "option",
+        "description": "When true, disables interactive input prompts for options with a default",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dryRun": {
+        "Name": "--dryRun",
+        "kind": "option",
+        "description": "When true, preview the changes without updating files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "When true, forces overwriting of existing files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--interactive": {
+        "Name": "--interactive",
+        "kind": "option",
+        "description": "Enable/disable prompts",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ccollection:generator\u003e": {
+        "Name": "\u003ccollection:generator\u003e",
+        "kind": "argument",
+        "description": "collection:generator",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--defaults": {
+        "Name": "--defaults",
+        "kind": "option",
+        "description": "When true, disables interactive input prompts for options with a default",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dryRun": {
+        "Name": "--dryRun",
+        "kind": "option",
+        "description": "When true, preview the changes without updating files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "When true, forces overwriting of existing files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--interactive": {
+        "Name": "--interactive",
+        "kind": "option",
+        "description": "Enable/disable prompts",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ccollection:generator\u003e": {
+        "Name": "\u003ccollection:generator\u003e",
+        "kind": "argument",
+        "description": "collection:generator",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccollection:generator\u003e"
+    ]
+  },
+  "graph": {
+    "Name": "graph",
+    "kind": "subcommand",
+    "description": "Graph dependencies within workspace",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude certain projects from being processed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprojects\u003e"
+        ]
+      },
+      "--file": {
+        "Name": "--file",
+        "kind": "option",
+        "description": "Output file (e.g. --file=output.json or --file=dep-graph.html)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--focus": {
+        "Name": "--focus",
+        "kind": "option",
+        "description": "Use to show the project graph for a particular project and every node that is either an ancestor or a descendant",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cproject\u003e": {
+            "Name": "\u003cproject\u003e",
+            "kind": "argument",
+            "description": "project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cproject\u003e": {
+            "Name": "\u003cproject\u003e",
+            "kind": "argument",
+            "description": "project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cproject\u003e"
+        ]
+      },
+      "--groupByFolder": {
+        "Name": "--groupByFolder",
+        "kind": "option",
+        "description": "Group projects by folder in the project graph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--host": {
+        "Name": "--host",
+        "kind": "option",
+        "description": "Bind the project graph server to a specific ip address",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--open": {
+        "Name": "--open",
+        "kind": "option",
+        "description": "Open the project graph in the browser",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--port": {
+        "Name": "--port",
+        "kind": "option",
+        "description": "Bind the project graph server to a specific port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--targets": {
+        "Name": "--targets",
+        "kind": "option",
+        "description": "Targets (comma/space delimited)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctargets\u003e": {
+            "Name": "\u003ctargets\u003e",
+            "kind": "argument",
+            "description": "targets",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctargets\u003e": {
+            "Name": "\u003ctargets\u003e",
+            "kind": "argument",
+            "description": "targets",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctargets\u003e"
+        ]
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--view": {
+        "Name": "--view",
+        "kind": "option",
+        "description": "Choose whether to view the projects or task graph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--watch": {
+        "Name": "--watch",
+        "kind": "option",
+        "description": "Watch for changes to project graph and update in-browser",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude certain projects from being processed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprojects\u003e"
+        ]
+      },
+      "--file": {
+        "Name": "--file",
+        "kind": "option",
+        "description": "Output file (e.g. --file=output.json or --file=dep-graph.html)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--focus": {
+        "Name": "--focus",
+        "kind": "option",
+        "description": "Use to show the project graph for a particular project and every node that is either an ancestor or a descendant",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cproject\u003e": {
+            "Name": "\u003cproject\u003e",
+            "kind": "argument",
+            "description": "project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cproject\u003e": {
+            "Name": "\u003cproject\u003e",
+            "kind": "argument",
+            "description": "project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cproject\u003e"
+        ]
+      },
+      "--groupByFolder": {
+        "Name": "--groupByFolder",
+        "kind": "option",
+        "description": "Group projects by folder in the project graph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--host": {
+        "Name": "--host",
+        "kind": "option",
+        "description": "Bind the project graph server to a specific ip address",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--open": {
+        "Name": "--open",
+        "kind": "option",
+        "description": "Open the project graph in the browser",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--port": {
+        "Name": "--port",
+        "kind": "option",
+        "description": "Bind the project graph server to a specific port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--targets": {
+        "Name": "--targets",
+        "kind": "option",
+        "description": "Targets (comma/space delimited)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctargets\u003e": {
+            "Name": "\u003ctargets\u003e",
+            "kind": "argument",
+            "description": "targets",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctargets\u003e": {
+            "Name": "\u003ctargets\u003e",
+            "kind": "argument",
+            "description": "targets",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctargets\u003e"
+        ]
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--view": {
+        "Name": "--view",
+        "kind": "option",
+        "description": "Choose whether to view the projects or task graph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--watch": {
+        "Name": "--watch",
+        "kind": "option",
+        "description": "Watch for changes to project graph and update in-browser",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "init": {
+    "Name": "init",
+    "kind": "subcommand",
+    "description": "Adds nx.json file and installs nx if not installed already",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "list": {
+    "Name": "list",
+    "kind": "subcommand",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cplugin\u003e": {
+        "Name": "\u003cplugin\u003e",
+        "kind": "argument",
+        "description": "plugin",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cplugin\u003e": {
+        "Name": "\u003cplugin\u003e",
+        "kind": "argument",
+        "description": "plugin",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cplugin\u003e"
+    ]
+  },
+  "migrate": {
+    "Name": "migrate",
+    "kind": "subcommand",
+    "description": "Creates a migrations file or runs migrations from the migrations file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--commitPrefix": {
+        "Name": "--commitPrefix",
+        "kind": "option",
+        "description": "Commit prefix to apply to the commit for each migration, when --create-commits is enabled",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--createCommits": {
+        "Name": "--createCommits",
+        "kind": "option",
+        "description": "Automatically create a git commit after each migration runs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--excludeAppliedMigrations": {
+        "Name": "--excludeAppliedMigrations",
+        "kind": "option",
+        "description": "Exclude migrations that should have been applied on previous updates. To be used with --from",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--from": {
+        "Name": "--from",
+        "kind": "option",
+        "description": "Use the provided versions for packages instead of the ones installed in node_modules (e.g., --from=\"@nrwl/react@12.0.0,@nrwl/js@12.0.0\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ifExists": {
+        "Name": "--ifExists",
+        "kind": "option",
+        "description": "Run migrations only if the migrations file exists, if not continues successfully",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--interactive": {
+        "Name": "--interactive",
+        "kind": "option",
+        "description": "Enable/disable prompts",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--runMigrations": {
+        "Name": "--runMigrations",
+        "kind": "option",
+        "description": "Execute migrations from a file (when the file isn't provided, execute migrations from migrations.json)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--to": {
+        "Name": "--to",
+        "kind": "option",
+        "description": "Use the provided versions for packages instead of the ones calculated by the migrator (e.g., --to=\"@nrwl/react@12.0.0,@nrwl/js@12.0.0\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpackageAndVersion\u003e": {
+        "Name": "\u003cpackageAndVersion\u003e",
+        "kind": "argument",
+        "description": "packageAndVersion",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--commitPrefix": {
+        "Name": "--commitPrefix",
+        "kind": "option",
+        "description": "Commit prefix to apply to the commit for each migration, when --create-commits is enabled",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--createCommits": {
+        "Name": "--createCommits",
+        "kind": "option",
+        "description": "Automatically create a git commit after each migration runs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--excludeAppliedMigrations": {
+        "Name": "--excludeAppliedMigrations",
+        "kind": "option",
+        "description": "Exclude migrations that should have been applied on previous updates. To be used with --from",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--from": {
+        "Name": "--from",
+        "kind": "option",
+        "description": "Use the provided versions for packages instead of the ones installed in node_modules (e.g., --from=\"@nrwl/react@12.0.0,@nrwl/js@12.0.0\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ifExists": {
+        "Name": "--ifExists",
+        "kind": "option",
+        "description": "Run migrations only if the migrations file exists, if not continues successfully",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--interactive": {
+        "Name": "--interactive",
+        "kind": "option",
+        "description": "Enable/disable prompts",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--runMigrations": {
+        "Name": "--runMigrations",
+        "kind": "option",
+        "description": "Execute migrations from a file (when the file isn't provided, execute migrations from migrations.json)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--to": {
+        "Name": "--to",
+        "kind": "option",
+        "description": "Use the provided versions for packages instead of the ones calculated by the migrator (e.g., --to=\"@nrwl/react@12.0.0,@nrwl/js@12.0.0\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpackageAndVersion\u003e": {
+        "Name": "\u003cpackageAndVersion\u003e",
+        "kind": "argument",
+        "description": "packageAndVersion",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "print-affected": {
+    "Name": "print-affected",
+    "kind": "subcommand",
+    "description": "Prints information about the projects and targets affected by changes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "All projects",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--base": {
+        "Name": "--base",
+        "kind": "option",
+        "description": "Base of the current branch (usually main)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--configuration": {
+        "Name": "--configuration",
+        "kind": "option",
+        "description": "A named builder configuration, defined in the \"configurations\" section of the workspace configuration file. The builder uses the named configuration to run the given target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfiguration\u003e"
+        ]
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude certain projects from being processed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprojects\u003e"
+        ]
+      },
+      "--files": {
+        "Name": "--files",
+        "kind": "option",
+        "description": "Change the way Nx is calculating the affected command by providing directly changed files, list of files delimited by commas or spaces",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--head": {
+        "Name": "--head",
+        "kind": "option",
+        "description": "Latest commit of the current branch (usually HEAD)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--select": {
+        "Name": "--select",
+        "kind": "option",
+        "description": "Select the subset of the returned json document (e.g., --select=projects)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--targets": {
+        "Name": "--targets",
+        "kind": "option",
+        "description": "Targets (comma/space delimited)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctargets\u003e": {
+            "Name": "\u003ctargets\u003e",
+            "kind": "argument",
+            "description": "targets",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctargets\u003e": {
+            "Name": "\u003ctargets\u003e",
+            "kind": "argument",
+            "description": "targets",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctargets\u003e"
+        ]
+      },
+      "--type": {
+        "Name": "--type",
+        "kind": "option",
+        "description": "Select the type of projects to be returned (e.g., --type=app)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--uncommitted": {
+        "Name": "--uncommitted",
+        "kind": "option",
+        "description": "Uncommitted changes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--untracked": {
+        "Name": "--untracked",
+        "kind": "option",
+        "description": "Untracked changes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "A named builder configuration, defined in the \"configurations\" section of the workspace configuration file. The builder uses the named configuration to run the given target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfiguration\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "All projects",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--base": {
+        "Name": "--base",
+        "kind": "option",
+        "description": "Base of the current branch (usually main)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--configuration": {
+        "Name": "--configuration",
+        "kind": "option",
+        "description": "A named builder configuration, defined in the \"configurations\" section of the workspace configuration file. The builder uses the named configuration to run the given target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfiguration\u003e"
+        ]
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude certain projects from being processed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprojects\u003e"
+        ]
+      },
+      "--files": {
+        "Name": "--files",
+        "kind": "option",
+        "description": "Change the way Nx is calculating the affected command by providing directly changed files, list of files delimited by commas or spaces",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--head": {
+        "Name": "--head",
+        "kind": "option",
+        "description": "Latest commit of the current branch (usually HEAD)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--select": {
+        "Name": "--select",
+        "kind": "option",
+        "description": "Select the subset of the returned json document (e.g., --select=projects)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--targets": {
+        "Name": "--targets",
+        "kind": "option",
+        "description": "Targets (comma/space delimited)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctargets\u003e": {
+            "Name": "\u003ctargets\u003e",
+            "kind": "argument",
+            "description": "targets",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctargets\u003e": {
+            "Name": "\u003ctargets\u003e",
+            "kind": "argument",
+            "description": "targets",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctargets\u003e"
+        ]
+      },
+      "--type": {
+        "Name": "--type",
+        "kind": "option",
+        "description": "Select the type of projects to be returned (e.g., --type=app)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--uncommitted": {
+        "Name": "--uncommitted",
+        "kind": "option",
+        "description": "Uncommitted changes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--untracked": {
+        "Name": "--untracked",
+        "kind": "option",
+        "description": "Untracked changes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "A named builder configuration, defined in the \"configurations\" section of the workspace configuration file. The builder uses the named configuration to run the given target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfiguration\u003e"
+        ]
+      }
+    }
+  },
+  "repair": {
+    "Name": "repair",
+    "kind": "subcommand",
+    "description": "Repair any configuration that is no longer supported by Nx",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Prints additional information about the commands (e.g., stack traces)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Prints additional information about the commands (e.g., stack traces)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "report": {
+    "Name": "report",
+    "kind": "subcommand",
+    "description": "Reports useful version numbers to copy into the Nx issue template",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "reset": {
+    "Name": "reset",
+    "kind": "subcommand",
+    "description": "Clears all the cached Nx artifacts and metadata about the workspace and shuts down the Nx Daemon",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "run": {
+    "Name": "run",
+    "kind": "subcommand",
+    "description": "Runs an Architect target with an optional custom builder configuration defined in your project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--configuration": {
+        "Name": "--configuration",
+        "kind": "option",
+        "description": "A named builder configuration, defined in the \"configurations\" section of the workspace configuration file. The builder uses the named configuration to run the given target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfiguration\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "A named builder configuration, defined in the \"configurations\" section of the workspace configuration file. The builder uses the named configuration to run the given target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfiguration\u003e"
+        ]
+      },
+      "\u003cproject:target[:configuration]\u003e": {
+        "Name": "\u003cproject:target[:configuration]\u003e",
+        "kind": "argument",
+        "description": "project:target[:configuration]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--configuration": {
+        "Name": "--configuration",
+        "kind": "option",
+        "description": "A named builder configuration, defined in the \"configurations\" section of the workspace configuration file. The builder uses the named configuration to run the given target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfiguration\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "A named builder configuration, defined in the \"configurations\" section of the workspace configuration file. The builder uses the named configuration to run the given target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfiguration\u003e"
+        ]
+      },
+      "\u003cproject:target[:configuration]\u003e": {
+        "Name": "\u003cproject:target[:configuration]\u003e",
+        "kind": "argument",
+        "description": "project:target[:configuration]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cproject:target[:configuration]\u003e"
+    ]
+  },
+  "run-many": {
+    "Name": "run-many",
+    "kind": "subcommand",
+    "description": "Run target for multiple listed projects",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "All projects",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--configuration": {
+        "Name": "--configuration",
+        "kind": "option",
+        "description": "A named builder configuration, defined in the \"configurations\" section of the workspace configuration file. The builder uses the named configuration to run the given target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfiguration\u003e"
+        ]
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude certain projects from being processed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprojects\u003e"
+        ]
+      },
+      "--graph": {
+        "Name": "--graph",
+        "kind": "option",
+        "description": "Show the task graph of the command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--nx-bail": {
+        "Name": "--nx-bail",
+        "kind": "option",
+        "description": "Stop command execution after the first failed task",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--nx-ignore-cycles": {
+        "Name": "--nx-ignore-cycles",
+        "kind": "option",
+        "description": "Ignore cycles in the task graph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output-style": {
+        "Name": "--output-style",
+        "kind": "option",
+        "description": "Defines how Nx emits outputs tasks logs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--parallel": {
+        "Name": "--parallel",
+        "kind": "option",
+        "description": "Max number of parallel processes [default is 3]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--projects": {
+        "Name": "--projects",
+        "kind": "option",
+        "description": "Projects (comma/space delimited)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprojects\u003e"
+        ]
+      },
+      "--runner": {
+        "Name": "--runner",
+        "kind": "option",
+        "description": "This is the name of the tasks runner configured in nx.json",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--skip-nx-cache": {
+        "Name": "--skip-nx-cache",
+        "kind": "option",
+        "description": "Rerun the tasks even when the results are available in the cache",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--targets": {
+        "Name": "--targets",
+        "kind": "option",
+        "description": "Targets (comma/space delimited)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctargets\u003e": {
+            "Name": "\u003ctargets\u003e",
+            "kind": "argument",
+            "description": "targets",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctargets\u003e": {
+            "Name": "\u003ctargets\u003e",
+            "kind": "argument",
+            "description": "targets",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctargets\u003e"
+        ]
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Prints additional information about the commands (e.g., stack traces)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "A named builder configuration, defined in the \"configurations\" section of the workspace configuration file. The builder uses the named configuration to run the given target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfiguration\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "All projects",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--configuration": {
+        "Name": "--configuration",
+        "kind": "option",
+        "description": "A named builder configuration, defined in the \"configurations\" section of the workspace configuration file. The builder uses the named configuration to run the given target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfiguration\u003e"
+        ]
+      },
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude certain projects from being processed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprojects\u003e"
+        ]
+      },
+      "--graph": {
+        "Name": "--graph",
+        "kind": "option",
+        "description": "Show the task graph of the command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--nx-bail": {
+        "Name": "--nx-bail",
+        "kind": "option",
+        "description": "Stop command execution after the first failed task",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--nx-ignore-cycles": {
+        "Name": "--nx-ignore-cycles",
+        "kind": "option",
+        "description": "Ignore cycles in the task graph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output-style": {
+        "Name": "--output-style",
+        "kind": "option",
+        "description": "Defines how Nx emits outputs tasks logs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--parallel": {
+        "Name": "--parallel",
+        "kind": "option",
+        "description": "Max number of parallel processes [default is 3]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--projects": {
+        "Name": "--projects",
+        "kind": "option",
+        "description": "Projects (comma/space delimited)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprojects\u003e"
+        ]
+      },
+      "--runner": {
+        "Name": "--runner",
+        "kind": "option",
+        "description": "This is the name of the tasks runner configured in nx.json",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--skip-nx-cache": {
+        "Name": "--skip-nx-cache",
+        "kind": "option",
+        "description": "Rerun the tasks even when the results are available in the cache",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--targets": {
+        "Name": "--targets",
+        "kind": "option",
+        "description": "Targets (comma/space delimited)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctargets\u003e": {
+            "Name": "\u003ctargets\u003e",
+            "kind": "argument",
+            "description": "targets",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctargets\u003e": {
+            "Name": "\u003ctargets\u003e",
+            "kind": "argument",
+            "description": "targets",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctargets\u003e"
+        ]
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Prints additional information about the commands (e.g., stack traces)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "A named builder configuration, defined in the \"configurations\" section of the workspace configuration file. The builder uses the named configuration to run the given target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfiguration\u003e": {
+            "Name": "\u003cconfiguration\u003e",
+            "kind": "argument",
+            "description": "configuration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfiguration\u003e"
+        ]
+      }
+    }
+  },
+  "show": {
+    "Name": "show",
+    "kind": "subcommand",
+    "description": "Show information about the workspace (e.g., list of projects)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cobject\u003e": {
+        "Name": "\u003cobject\u003e",
+        "kind": "argument",
+        "description": "object",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cobject\u003e": {
+        "Name": "\u003cobject\u003e",
+        "kind": "argument",
+        "description": "object",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cobject\u003e"
+    ]
+  },
+  "view-logs": {
+    "Name": "view-logs",
+    "kind": "subcommand",
+    "description": "Enables you to view and interact with the logs via the advanced analytic UI from Nx Cloud to help you debug your issue. To do this, Nx needs to connect your workspace to Nx Cloud and upload the most recent run details. Only the metrics are uploaded, not the artefacts",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "watch": {
+    "Name": "watch",
+    "kind": "subcommand",
+    "description": "Watch for changes within projects, and execute commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "All projects",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--includeDependentProjects": {
+        "Name": "--includeDependentProjects",
+        "kind": "option",
+        "description": "When watching selected projects, include dependent projects as well",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--projects": {
+        "Name": "--projects",
+        "kind": "option",
+        "description": "Projects (comma/space delimited)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprojects\u003e"
+        ]
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Prints additional information about the commands (e.g., stack traces)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "All projects",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--includeDependentProjects": {
+        "Name": "--includeDependentProjects",
+        "kind": "option",
+        "description": "When watching selected projects, include dependent projects as well",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--projects": {
+        "Name": "--projects",
+        "kind": "option",
+        "description": "Projects (comma/space delimited)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprojects\u003e": {
+            "Name": "\u003cprojects\u003e",
+            "kind": "argument",
+            "description": "projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprojects\u003e"
+        ]
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Prints additional information about the commands (e.g., stack traces)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "workspace-generator": {
+    "Name": "workspace-generator",
+    "kind": "subcommand",
+    "description": "Runs a workspace generator from the tools/generators directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--list-generators": {
+        "Name": "--list-generators",
+        "kind": "option",
+        "description": "List the available workspace-generators",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--list-generators": {
+        "Name": "--list-generators",
+        "kind": "option",
+        "description": "List the available workspace-generators",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  }
+}

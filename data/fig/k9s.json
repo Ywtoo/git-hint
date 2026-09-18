@@ -1,0 +1,797 @@
+{
+  "--all-namespaces": {
+    "Name": "--all-namespaces",
+    "kind": "option",
+    "description": "Launch K9s in all namespaces",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--as": {
+    "Name": "--as",
+    "kind": "option",
+    "description": "Username to impersonate for the operation",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--as-group": {
+    "Name": "--as-group",
+    "kind": "option",
+    "description": "Group to impersonate for the operation",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstringArray\u003e": {
+        "Name": "\u003cstringArray\u003e",
+        "kind": "argument",
+        "description": "stringArray",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstringArray\u003e": {
+        "Name": "\u003cstringArray\u003e",
+        "kind": "argument",
+        "description": "stringArray",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstringArray\u003e"
+    ]
+  },
+  "--certificate-authority": {
+    "Name": "--certificate-authority",
+    "kind": "option",
+    "description": "Path to a cert file for the certificate authority",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--client-key": {
+    "Name": "--client-key",
+    "kind": "option",
+    "description": "Path to a client key file for TLS",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--command": {
+    "Name": "--command",
+    "kind": "option",
+    "description": "Overrides the default resource to load when the application launches",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--context": {
+    "Name": "--context",
+    "kind": "option",
+    "description": "The name of the kubeconfig context to use",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--crumbsless": {
+    "Name": "--crumbsless",
+    "kind": "option",
+    "description": "Turn K9s crumbs off",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--headless": {
+    "Name": "--headless",
+    "kind": "option",
+    "description": "Turn K9s header off",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for k9s",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--insecure-skip-tls-verify": {
+    "Name": "--insecure-skip-tls-verify",
+    "kind": "option",
+    "description": "If true, the server's caCertFile will not be checked for validity",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--kubeconfig": {
+    "Name": "--kubeconfig",
+    "kind": "option",
+    "description": "Path to the kubeconfig file to use for CLI requests",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--logFile": {
+    "Name": "--logFile",
+    "kind": "option",
+    "description": "Specify the log file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--logLevel": {
+    "Name": "--logLevel",
+    "kind": "option",
+    "description": "Specify a log level (info, warn, debug, trace, error) (default 'info')",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--logoless": {
+    "Name": "--logoless",
+    "kind": "option",
+    "description": "Turn K9s logo off",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--namespace": {
+    "Name": "--namespace",
+    "kind": "option",
+    "description": "If present, the namespace scope for this CLI request",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--readonly": {
+    "Name": "--readonly",
+    "kind": "option",
+    "description": "Sets readOnly mode by overriding readOnly configuration setting",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--refresh": {
+    "Name": "--refresh",
+    "kind": "option",
+    "description": "Specify the default refresh rate as an integer (sec) (default 2)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cint\u003e": {
+        "Name": "\u003cint\u003e",
+        "kind": "argument",
+        "description": "int",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cint\u003e": {
+        "Name": "\u003cint\u003e",
+        "kind": "argument",
+        "description": "int",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cint\u003e"
+    ]
+  },
+  "--request-timeout": {
+    "Name": "--request-timeout",
+    "kind": "option",
+    "description": "The length of time to wait before giving up on a single server request",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--screen-dump-dir": {
+    "Name": "--screen-dump-dir",
+    "kind": "option",
+    "description": "Sets a path to a dir for a screen dumps",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--token": {
+    "Name": "--token",
+    "kind": "option",
+    "description": "Bearer token for authentication to the API server",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--user": {
+    "Name": "--user",
+    "kind": "option",
+    "description": "The name of the kubeconfig user to use",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--write": {
+    "Name": "--write",
+    "kind": "option",
+    "description": "Sets write mode by overriding the readOnly configuration setting",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-A": {
+    "Name": "-A",
+    "kind": "option",
+    "description": "Launch K9s in all namespaces",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Overrides the default resource to load when the application launches",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help for k9s",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "option",
+    "description": "Specify a log level (info, warn, debug, trace, error) (default 'info')",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "-n": {
+    "Name": "-n",
+    "kind": "option",
+    "description": "If present, the namespace scope for this CLI request",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "Specify the default refresh rate as an integer (sec) (default 2)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cint\u003e": {
+        "Name": "\u003cint\u003e",
+        "kind": "argument",
+        "description": "int",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cint\u003e": {
+        "Name": "\u003cint\u003e",
+        "kind": "argument",
+        "description": "int",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cint\u003e"
+    ]
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Help about any command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "info": {
+    "Name": "info",
+    "kind": "subcommand",
+    "description": "Print configuration info",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Help for info",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Help for info",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Help for info",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Help for info",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "version": {
+    "Name": "version",
+    "kind": "subcommand",
+    "description": "Print version/build info",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Help for version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--short": {
+        "Name": "--short",
+        "kind": "option",
+        "description": "Prints K9s version info in short format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Help for version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Prints K9s version info in short format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Help for version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--short": {
+        "Name": "--short",
+        "kind": "option",
+        "description": "Prints K9s version info in short format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Help for version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Prints K9s version info in short format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  }
+}

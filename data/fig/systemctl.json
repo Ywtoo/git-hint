@@ -1,0 +1,2857 @@
+{
+  "--all": {
+    "Name": "--all",
+    "kind": "option",
+    "description": "Show all properties/all units currently in memory, including dead/empty ones. To list all units installed on the system, use 'list-unit-files' instead",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--boot-loader-entry": {
+    "Name": "--boot-loader-entry",
+    "kind": "option",
+    "description": "Boot into a specific boot loader entry on next boot",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNAME\u003e"
+    ]
+  },
+  "--boot-loader-menu": {
+    "Name": "--boot-loader-menu",
+    "kind": "option",
+    "description": "Boot into boot loader menu on next boot",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cTIME\u003e": {
+        "Name": "\u003cTIME\u003e",
+        "kind": "argument",
+        "description": "TIME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cTIME\u003e": {
+        "Name": "\u003cTIME\u003e",
+        "kind": "argument",
+        "description": "TIME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cTIME\u003e"
+    ]
+  },
+  "--check-inhibitors": {
+    "Name": "--check-inhibitors",
+    "kind": "option",
+    "description": "Specify if checking inhibitors before shutting down sleeping or hibernating",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cMODE\u003e": {
+        "Name": "\u003cMODE\u003e",
+        "kind": "argument",
+        "description": "MODE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cMODE\u003e": {
+        "Name": "\u003cMODE\u003e",
+        "kind": "argument",
+        "description": "MODE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cMODE\u003e"
+    ]
+  },
+  "--dry-run": {
+    "Name": "--dry-run",
+    "kind": "option",
+    "description": "Only print what would be done",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--failed": {
+    "Name": "--failed",
+    "kind": "option",
+    "description": "Shortcut for --state=failed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--firmware-setup": {
+    "Name": "--firmware-setup",
+    "kind": "option",
+    "description": "Tell the firmware to show the setup menu on next boot",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--force": {
+    "Name": "--force",
+    "kind": "option",
+    "description": "When enabling unit files, override existing symlinks. When shutting down, execute action immediately",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--full": {
+    "Name": "--full",
+    "kind": "option",
+    "description": "Don't ellipsize unit names on output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--global": {
+    "Name": "--global",
+    "kind": "option",
+    "description": "Edit/enable/disable/mask default user unit files globally",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show this help",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--host": {
+    "Name": "--host",
+    "kind": "option",
+    "description": "Operate on remote host",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003c[USER@]HOST\u003e": {
+        "Name": "\u003c[USER@]HOST\u003e",
+        "kind": "argument",
+        "description": "[USER@]HOST",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003c[USER@]HOST\u003e": {
+        "Name": "\u003c[USER@]HOST\u003e",
+        "kind": "argument",
+        "description": "[USER@]HOST",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003c[USER@]HOST\u003e"
+    ]
+  },
+  "--job-mode": {
+    "Name": "--job-mode",
+    "kind": "option",
+    "description": "Specify how to deal with already queued jobs, when queueing a new job",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cMODE\u003e": {
+        "Name": "\u003cMODE\u003e",
+        "kind": "argument",
+        "description": "MODE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cMODE\u003e": {
+        "Name": "\u003cMODE\u003e",
+        "kind": "argument",
+        "description": "MODE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cMODE\u003e"
+    ]
+  },
+  "--kill-who": {
+    "Name": "--kill-who",
+    "kind": "option",
+    "description": "Whom to send signal to",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cWHO\u003e": {
+        "Name": "\u003cWHO\u003e",
+        "kind": "argument",
+        "description": "WHO",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cWHO\u003e": {
+        "Name": "\u003cWHO\u003e",
+        "kind": "argument",
+        "description": "WHO",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cWHO\u003e"
+    ]
+  },
+  "--legend": {
+    "Name": "--legend",
+    "kind": "option",
+    "description": "Enable/disable the legend (column headers and hints)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cBOOL\u003e": {
+        "Name": "\u003cBOOL\u003e",
+        "kind": "argument",
+        "description": "BOOL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cBOOL\u003e": {
+        "Name": "\u003cBOOL\u003e",
+        "kind": "argument",
+        "description": "BOOL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cBOOL\u003e"
+    ]
+  },
+  "--lines": {
+    "Name": "--lines",
+    "kind": "option",
+    "description": "Number of journal entries to show",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cN\u003e": {
+        "Name": "\u003cN\u003e",
+        "kind": "argument",
+        "description": "N",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cN\u003e": {
+        "Name": "\u003cN\u003e",
+        "kind": "argument",
+        "description": "N",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cN\u003e"
+    ]
+  },
+  "--machine": {
+    "Name": "--machine",
+    "kind": "option",
+    "description": "Operate on a local container",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cCONTAINER\u003e": {
+        "Name": "\u003cCONTAINER\u003e",
+        "kind": "argument",
+        "description": "CONTAINER",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cCONTAINER\u003e": {
+        "Name": "\u003cCONTAINER\u003e",
+        "kind": "argument",
+        "description": "CONTAINER",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cCONTAINER\u003e"
+    ]
+  },
+  "--marked": {
+    "Name": "--marked",
+    "kind": "option",
+    "description": "Restart/reload previously marked units",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--mkdir": {
+    "Name": "--mkdir",
+    "kind": "option",
+    "description": "Create directory before mounting, if missing",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-ask-password": {
+    "Name": "--no-ask-password",
+    "kind": "option",
+    "description": "Do not ask for system passwords",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-block": {
+    "Name": "--no-block",
+    "kind": "option",
+    "description": "Do not wait until operation finished",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-pager": {
+    "Name": "--no-pager",
+    "kind": "option",
+    "description": "Do not pipe output into a pager",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-reload": {
+    "Name": "--no-reload",
+    "kind": "option",
+    "description": "Don't reload daemon after en-/dis-abling unit files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-wall": {
+    "Name": "--no-wall",
+    "kind": "option",
+    "description": "Don't send wall message before halt/power-off/reboot",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--now": {
+    "Name": "--now",
+    "kind": "option",
+    "description": "Start or stop unit after enabling or disabling it",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--output": {
+    "Name": "--output",
+    "kind": "option",
+    "description": "Change journal output mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cMODE\u003e": {
+        "Name": "\u003cMODE\u003e",
+        "kind": "argument",
+        "description": "MODE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cMODE\u003e": {
+        "Name": "\u003cMODE\u003e",
+        "kind": "argument",
+        "description": "MODE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cMODE\u003e"
+    ]
+  },
+  "--plain": {
+    "Name": "--plain",
+    "kind": "option",
+    "description": "Print unit dependencies as a list instead of a tree",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--preset-mode": {
+    "Name": "--preset-mode",
+    "kind": "option",
+    "description": "Apply only enable, only disable, or all presets",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cMODE\u003e": {
+        "Name": "\u003cMODE\u003e",
+        "kind": "argument",
+        "description": "MODE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cMODE\u003e": {
+        "Name": "\u003cMODE\u003e",
+        "kind": "argument",
+        "description": "MODE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cMODE\u003e"
+    ]
+  },
+  "--property": {
+    "Name": "--property",
+    "kind": "option",
+    "description": "Show only properties by this name",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNAME\u003e"
+    ]
+  },
+  "--quiet": {
+    "Name": "--quiet",
+    "kind": "option",
+    "description": "Supress output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--read-only": {
+    "Name": "--read-only",
+    "kind": "option",
+    "description": "Create read-only bind mount",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--recursive": {
+    "Name": "--recursive",
+    "kind": "option",
+    "description": "Show unit list of host and local containers",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--reverse": {
+    "Name": "--reverse",
+    "kind": "option",
+    "description": "Show reverse dependencies with 'list-dependencies'",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--root": {
+    "Name": "--root",
+    "kind": "option",
+    "description": "Edit/enable/disable/mask unit files in the specified root directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH\u003e"
+    ]
+  },
+  "--runtime": {
+    "Name": "--runtime",
+    "kind": "option",
+    "description": "Edit/enable/disable/mask unit files temporarily until next reboot",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--show-transaction": {
+    "Name": "--show-transaction",
+    "kind": "option",
+    "description": "When enqueuing a unit job, show full transaction",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--show-types": {
+    "Name": "--show-types",
+    "kind": "option",
+    "description": "When showing sockets, explicitly show their type",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--signal": {
+    "Name": "--signal",
+    "kind": "option",
+    "description": "Which signal to send",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSIGNAL\u003e": {
+        "Name": "\u003cSIGNAL\u003e",
+        "kind": "argument",
+        "description": "SIGNAL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSIGNAL\u003e": {
+        "Name": "\u003cSIGNAL\u003e",
+        "kind": "argument",
+        "description": "SIGNAL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSIGNAL\u003e"
+    ]
+  },
+  "--state": {
+    "Name": "--state",
+    "kind": "option",
+    "description": "List units with particular LOAD or SUB or ACTIVE state",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSTATE\u003e": {
+        "Name": "\u003cSTATE\u003e",
+        "kind": "argument",
+        "description": "STATE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSTATE\u003e": {
+        "Name": "\u003cSTATE\u003e",
+        "kind": "argument",
+        "description": "STATE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSTATE\u003e"
+    ]
+  },
+  "--system": {
+    "Name": "--system",
+    "kind": "option",
+    "description": "Connect to system manager",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--timestamp": {
+    "Name": "--timestamp",
+    "kind": "option",
+    "description": "Change format of printed timestamps",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFORMAT\u003e": {
+        "Name": "\u003cFORMAT\u003e",
+        "kind": "argument",
+        "description": "FORMAT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFORMAT\u003e": {
+        "Name": "\u003cFORMAT\u003e",
+        "kind": "argument",
+        "description": "FORMAT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFORMAT\u003e"
+    ]
+  },
+  "--type": {
+    "Name": "--type",
+    "kind": "option",
+    "description": "List units of a particular type",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cTYPE\u003e": {
+        "Name": "\u003cTYPE\u003e",
+        "kind": "argument",
+        "description": "TYPE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cTYPE\u003e": {
+        "Name": "\u003cTYPE\u003e",
+        "kind": "argument",
+        "description": "TYPE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cTYPE\u003e"
+    ]
+  },
+  "--user": {
+    "Name": "--user",
+    "kind": "option",
+    "description": "Connect to user service manager",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--value": {
+    "Name": "--value",
+    "kind": "option",
+    "description": "When showing properties, only print the value",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Show package version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--wait": {
+    "Name": "--wait",
+    "kind": "option",
+    "description": "For (re)start, wait until service stopped again. For is-system-running, wait until startup is completed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--what": {
+    "Name": "--what",
+    "kind": "option",
+    "description": "Which types of resources to remove",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cRESOURCES\u003e": {
+        "Name": "\u003cRESOURCES\u003e",
+        "kind": "argument",
+        "description": "RESOURCES",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cRESOURCES\u003e": {
+        "Name": "\u003cRESOURCES\u003e",
+        "kind": "argument",
+        "description": "RESOURCES",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cRESOURCES\u003e"
+    ]
+  },
+  "--with-dependencies": {
+    "Name": "--with-dependencies",
+    "kind": "option",
+    "description": "Show unit dependencies with 'status', 'cat', 'list-units', and 'list-unit-files'",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-H": {
+    "Name": "-H",
+    "kind": "option",
+    "description": "Operate on remote host",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003c[USER@]HOST\u003e": {
+        "Name": "\u003c[USER@]HOST\u003e",
+        "kind": "argument",
+        "description": "[USER@]HOST",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003c[USER@]HOST\u003e": {
+        "Name": "\u003c[USER@]HOST\u003e",
+        "kind": "argument",
+        "description": "[USER@]HOST",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003c[USER@]HOST\u003e"
+    ]
+  },
+  "-M": {
+    "Name": "-M",
+    "kind": "option",
+    "description": "Operate on a local container",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cCONTAINER\u003e": {
+        "Name": "\u003cCONTAINER\u003e",
+        "kind": "argument",
+        "description": "CONTAINER",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cCONTAINER\u003e": {
+        "Name": "\u003cCONTAINER\u003e",
+        "kind": "argument",
+        "description": "CONTAINER",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cCONTAINER\u003e"
+    ]
+  },
+  "-P": {
+    "Name": "-P",
+    "kind": "option",
+    "description": "Equivalent to --value --property=NAME",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-T": {
+    "Name": "-T",
+    "kind": "option",
+    "description": "When enqueuing a unit job, show full transaction",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-a": {
+    "Name": "-a",
+    "kind": "option",
+    "description": "Show all properties/all units currently in memory, including dead/empty ones. To list all units installed on the system, use 'list-unit-files' instead",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "When enabling unit files, override existing symlinks. When shutting down, execute action immediately",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show this help",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Shortcut for --check-inhibitors=no",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "option",
+    "description": "Don't ellipsize unit names on output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-n": {
+    "Name": "-n",
+    "kind": "option",
+    "description": "Number of journal entries to show",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cN\u003e": {
+        "Name": "\u003cN\u003e",
+        "kind": "argument",
+        "description": "N",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cN\u003e": {
+        "Name": "\u003cN\u003e",
+        "kind": "argument",
+        "description": "N",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cN\u003e"
+    ]
+  },
+  "-o": {
+    "Name": "-o",
+    "kind": "option",
+    "description": "Change journal output mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cMODE\u003e": {
+        "Name": "\u003cMODE\u003e",
+        "kind": "argument",
+        "description": "MODE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cMODE\u003e": {
+        "Name": "\u003cMODE\u003e",
+        "kind": "argument",
+        "description": "MODE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cMODE\u003e"
+    ]
+  },
+  "-p": {
+    "Name": "-p",
+    "kind": "option",
+    "description": "Show only properties by this name",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNAME\u003e"
+    ]
+  },
+  "-q": {
+    "Name": "-q",
+    "kind": "option",
+    "description": "Supress output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "Show unit list of host and local containers",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Which signal to send",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSIGNAL\u003e": {
+        "Name": "\u003cSIGNAL\u003e",
+        "kind": "argument",
+        "description": "SIGNAL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSIGNAL\u003e": {
+        "Name": "\u003cSIGNAL\u003e",
+        "kind": "argument",
+        "description": "SIGNAL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSIGNAL\u003e"
+    ]
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "List units of a particular type",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cTYPE\u003e": {
+        "Name": "\u003cTYPE\u003e",
+        "kind": "argument",
+        "description": "TYPE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cTYPE\u003e": {
+        "Name": "\u003cTYPE\u003e",
+        "kind": "argument",
+        "description": "TYPE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cTYPE\u003e"
+    ]
+  },
+  "add-requires": {
+    "Name": "add-requires",
+    "kind": "subcommand",
+    "description": "Add 'Requires' dependency for the target on specified one or more units",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cTARGET\u003e": {
+        "Name": "\u003cTARGET\u003e",
+        "kind": "argument",
+        "description": "TARGET",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cTARGET\u003e": {
+        "Name": "\u003cTARGET\u003e",
+        "kind": "argument",
+        "description": "TARGET",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cTARGET\u003e",
+      "\u003cUNIT\u003e"
+    ]
+  },
+  "add-wants": {
+    "Name": "add-wants",
+    "kind": "subcommand",
+    "description": "Add 'Wants' dependency for the target on specified one or more units",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cTARGET\u003e": {
+        "Name": "\u003cTARGET\u003e",
+        "kind": "argument",
+        "description": "TARGET",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cTARGET\u003e": {
+        "Name": "\u003cTARGET\u003e",
+        "kind": "argument",
+        "description": "TARGET",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cTARGET\u003e",
+      "\u003cUNIT\u003e"
+    ]
+  },
+  "bind": {
+    "Name": "bind",
+    "kind": "subcommand",
+    "description": "Bind-mount a path from the host into a unit's namespace",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cUNIT\u003e",
+      "\u003cPATH\u003e"
+    ]
+  },
+  "cancel": {
+    "Name": "cancel",
+    "kind": "subcommand",
+    "description": "Cancel all, one, or more jobs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cJOB\u003e": {
+        "Name": "\u003cJOB\u003e",
+        "kind": "argument",
+        "description": "JOB",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cJOB\u003e": {
+        "Name": "\u003cJOB\u003e",
+        "kind": "argument",
+        "description": "JOB",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "cat": {
+    "Name": "cat",
+    "kind": "subcommand",
+    "description": "Show files and drop-ins of specified units",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATTERN\u003e": {
+        "Name": "\u003cPATTERN\u003e",
+        "kind": "argument",
+        "description": "PATTERN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATTERN\u003e": {
+        "Name": "\u003cPATTERN\u003e",
+        "kind": "argument",
+        "description": "PATTERN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATTERN\u003e"
+    ]
+  },
+  "clean": {
+    "Name": "clean",
+    "kind": "subcommand",
+    "description": "Clean runtime, cache, state, logs or configuration of unit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cUNIT\u003e"
+    ]
+  },
+  "daemon-reexec": {
+    "Name": "daemon-reexec",
+    "kind": "subcommand",
+    "description": "Reexecute systemd manager",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "daemon-reload": {
+    "Name": "daemon-reload",
+    "kind": "subcommand",
+    "description": "Reload systemd manager configuration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "default": {
+    "Name": "default",
+    "kind": "subcommand",
+    "description": "Enter system default mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "disable": {
+    "Name": "disable",
+    "kind": "subcommand",
+    "description": "Disable one or more unit files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cUNIT|PATH\u003e": {
+        "Name": "\u003cUNIT|PATH\u003e",
+        "kind": "argument",
+        "description": "UNIT|PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cUNIT|PATH\u003e": {
+        "Name": "\u003cUNIT|PATH\u003e",
+        "kind": "argument",
+        "description": "UNIT|PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cUNIT|PATH\u003e"
+    ]
+  },
+  "edit": {
+    "Name": "edit",
+    "kind": "subcommand",
+    "description": "Edit one or more unit files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cUNIT\u003e"
+    ]
+  },
+  "emergency": {
+    "Name": "emergency",
+    "kind": "subcommand",
+    "description": "Enter system emergency mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "enable": {
+    "Name": "enable",
+    "kind": "subcommand",
+    "description": "Enable one or more unit files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cUNIT|PATH\u003e": {
+        "Name": "\u003cUNIT|PATH\u003e",
+        "kind": "argument",
+        "description": "UNIT|PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cUNIT|PATH\u003e": {
+        "Name": "\u003cUNIT|PATH\u003e",
+        "kind": "argument",
+        "description": "UNIT|PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "exit": {
+    "Name": "exit",
+    "kind": "subcommand",
+    "description": "Request user instance or container exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cEXIT_CODE\u003e": {
+        "Name": "\u003cEXIT_CODE\u003e",
+        "kind": "argument",
+        "description": "EXIT_CODE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cEXIT_CODE\u003e": {
+        "Name": "\u003cEXIT_CODE\u003e",
+        "kind": "argument",
+        "description": "EXIT_CODE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "freeze": {
+    "Name": "freeze",
+    "kind": "subcommand",
+    "description": "Freeze execution of unit processes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATTERN\u003e": {
+        "Name": "\u003cPATTERN\u003e",
+        "kind": "argument",
+        "description": "PATTERN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATTERN\u003e": {
+        "Name": "\u003cPATTERN\u003e",
+        "kind": "argument",
+        "description": "PATTERN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATTERN\u003e"
+    ]
+  },
+  "get-default": {
+    "Name": "get-default",
+    "kind": "subcommand",
+    "description": "Get the name of the default target",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "halt": {
+    "Name": "halt",
+    "kind": "subcommand",
+    "description": "Shut down and halt the system",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Show manual for one or more units",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATTERN or PID\u003e": {
+        "Name": "\u003cPATTERN or PID\u003e",
+        "kind": "argument",
+        "description": "PATTERN or PID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATTERN or PID\u003e": {
+        "Name": "\u003cPATTERN or PID\u003e",
+        "kind": "argument",
+        "description": "PATTERN or PID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATTERN or PID\u003e"
+    ]
+  },
+  "hibernate": {
+    "Name": "hibernate",
+    "kind": "subcommand",
+    "description": "Hibernate the system",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "hybrid-sleep": {
+    "Name": "hybrid-sleep",
+    "kind": "subcommand",
+    "description": "Hibernate and suspend the system",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "import-environment": {
+    "Name": "import-environment",
+    "kind": "subcommand",
+    "description": "Import all or some environment variables",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cVARIABLE\u003e": {
+        "Name": "\u003cVARIABLE\u003e",
+        "kind": "argument",
+        "description": "VARIABLE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cVARIABLE\u003e": {
+        "Name": "\u003cVARIABLE\u003e",
+        "kind": "argument",
+        "description": "VARIABLE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cVARIABLE\u003e"
+    ]
+  },
+  "is-active": {
+    "Name": "is-active",
+    "kind": "subcommand",
+    "description": "Check whether units are active",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATTERN\u003e": {
+        "Name": "\u003cPATTERN\u003e",
+        "kind": "argument",
+        "description": "PATTERN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATTERN\u003e": {
+        "Name": "\u003cPATTERN\u003e",
+        "kind": "argument",
+        "description": "PATTERN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATTERN\u003e"
+    ]
+  },
+  "is-failed": {
+    "Name": "is-failed",
+    "kind": "subcommand",
+    "description": "Check whether units are failed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATTERN\u003e": {
+        "Name": "\u003cPATTERN\u003e",
+        "kind": "argument",
+        "description": "PATTERN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATTERN\u003e": {
+        "Name": "\u003cPATTERN\u003e",
+        "kind": "argument",
+        "description": "PATTERN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATTERN\u003e"
+    ]
+  },
+  "is-system-running": {
+    "Name": "is-system-running",
+    "kind": "subcommand",
+    "description": "Check whether system is fully running",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "isolate": {
+    "Name": "isolate",
+    "kind": "subcommand",
+    "description": "Start one unit and stop all others",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cUNIT\u003e"
+    ]
+  },
+  "kexec": {
+    "Name": "kexec",
+    "kind": "subcommand",
+    "description": "Shut down and reboot the system with kexec",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "kill": {
+    "Name": "kill",
+    "kind": "subcommand",
+    "description": "Send signal to processes of a unit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cUNIT\u003e"
+    ]
+  },
+  "link": {
+    "Name": "link",
+    "kind": "subcommand",
+    "description": "Link one or more units files into the search path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH\u003e"
+    ]
+  },
+  "list-dependencies": {
+    "Name": "list-dependencies",
+    "kind": "subcommand",
+    "description": "Recursively show units which are required or wanted by the units or by which those",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATTERN\u003e": {
+        "Name": "\u003cPATTERN\u003e",
+        "kind": "argument",
+        "description": "PATTERN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATTERN\u003e": {
+        "Name": "\u003cPATTERN\u003e",
+        "kind": "argument",
+        "description": "PATTERN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "list-jobs": {
+    "Name": "list-jobs",
+    "kind": "subcommand",
+    "description": "List jobs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATTERN\u003e": {
+        "Name": "\u003cPATTERN\u003e",
+        "kind": "argument",
+        "description": "PATTERN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATTERN\u003e": {
+        "Name": "\u003cPATTERN\u003e",
+        "kind": "argument",
+        "description": "PATTERN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "list-sockets": {
+    "Name": "list-sockets",
+    "kind": "subcommand",
+    "description": "List socket units currently in memory ordered by address",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATTERN\u003e": {
+        "Name": "\u003cPATTERN\u003e",
+        "kind": "argument",
+        "description": "PATTERN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATTERN\u003e": {
+        "Name": "\u003cPATTERN\u003e",
+        "kind": "argument",
+        "description": "PATTERN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "list-timers": {
+    "Name": "list-timers",
+    "kind": "subcommand",
+    "description": "List timer units currently in memory ordered by next elapse",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATTERN\u003e": {
+        "Name": "\u003cPATTERN\u003e",
+        "kind": "argument",
+        "description": "PATTERN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATTERN\u003e": {
+        "Name": "\u003cPATTERN\u003e",
+        "kind": "argument",
+        "description": "PATTERN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "list-unit-files": {
+    "Name": "list-unit-files",
+    "kind": "subcommand",
+    "description": "List installed unit files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATTERN\u003e": {
+        "Name": "\u003cPATTERN\u003e",
+        "kind": "argument",
+        "description": "PATTERN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATTERN\u003e": {
+        "Name": "\u003cPATTERN\u003e",
+        "kind": "argument",
+        "description": "PATTERN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "list-units": {
+    "Name": "list-units",
+    "kind": "subcommand",
+    "description": "List units currently in memory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATTERN\u003e": {
+        "Name": "\u003cPATTERN\u003e",
+        "kind": "argument",
+        "description": "PATTERN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATTERN\u003e": {
+        "Name": "\u003cPATTERN\u003e",
+        "kind": "argument",
+        "description": "PATTERN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "log-level": {
+    "Name": "log-level",
+    "kind": "subcommand",
+    "description": "Get/set logging threshold for manager",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cLEVEL\u003e": {
+        "Name": "\u003cLEVEL\u003e",
+        "kind": "argument",
+        "description": "LEVEL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cLEVEL\u003e": {
+        "Name": "\u003cLEVEL\u003e",
+        "kind": "argument",
+        "description": "LEVEL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "log-target": {
+    "Name": "log-target",
+    "kind": "subcommand",
+    "description": "Get/set logging target for manager",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cTARGET\u003e": {
+        "Name": "\u003cTARGET\u003e",
+        "kind": "argument",
+        "description": "TARGET",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cTARGET\u003e": {
+        "Name": "\u003cTARGET\u003e",
+        "kind": "argument",
+        "description": "TARGET",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "mask": {
+    "Name": "mask",
+    "kind": "subcommand",
+    "description": "Mask one or more unit files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cUNIT\u003e"
+    ]
+  },
+  "mount-image": {
+    "Name": "mount-image",
+    "kind": "subcommand",
+    "description": "Mount an image from the host into a unit's namespace",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cOPTS\u003e": {
+        "Name": "\u003cOPTS\u003e",
+        "kind": "argument",
+        "description": "OPTS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cOPTS\u003e": {
+        "Name": "\u003cOPTS\u003e",
+        "kind": "argument",
+        "description": "OPTS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cUNIT\u003e",
+      "\u003cPATH\u003e"
+    ]
+  },
+  "poweroff": {
+    "Name": "poweroff",
+    "kind": "subcommand",
+    "description": "Shut down and power-off the system",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "preset": {
+    "Name": "preset",
+    "kind": "subcommand",
+    "description": "Enable/disable one or more unit files based on preset configuration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cUNIT\u003e"
+    ]
+  },
+  "preset-all": {
+    "Name": "preset-all",
+    "kind": "subcommand",
+    "description": "Enable/disable all unit files based on preset configuration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cUNIT\u003e"
+    ]
+  },
+  "reboot": {
+    "Name": "reboot",
+    "kind": "subcommand",
+    "description": "Shut down and reboot the system",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "reenable": {
+    "Name": "reenable",
+    "kind": "subcommand",
+    "description": "Reenable one or more unit files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cUNIT\u003e"
+    ]
+  },
+  "reload": {
+    "Name": "reload",
+    "kind": "subcommand",
+    "description": "Reload one or more units",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cUNIT\u003e"
+    ]
+  },
+  "reload-or-restart": {
+    "Name": "reload-or-restart",
+    "kind": "subcommand",
+    "description": "Reload one or more units if possible, otherwise start or restart",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cUNIT\u003e"
+    ]
+  },
+  "rescue": {
+    "Name": "rescue",
+    "kind": "subcommand",
+    "description": "Enter system rescue mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "reset-failed": {
+    "Name": "reset-failed",
+    "kind": "subcommand",
+    "description": "Reset failed state for all, one, or more units",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATTERN\u003e": {
+        "Name": "\u003cPATTERN\u003e",
+        "kind": "argument",
+        "description": "PATTERN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATTERN\u003e": {
+        "Name": "\u003cPATTERN\u003e",
+        "kind": "argument",
+        "description": "PATTERN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "restart": {
+    "Name": "restart",
+    "kind": "subcommand",
+    "description": "Start or restart one or more units",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cUNIT\u003e"
+    ]
+  },
+  "revert": {
+    "Name": "revert",
+    "kind": "subcommand",
+    "description": "Revert one or more unit files to vendor version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cUNIT\u003e"
+    ]
+  },
+  "service-log-level": {
+    "Name": "service-log-level",
+    "kind": "subcommand",
+    "description": "Get/set logging threshold for service",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cLEVEL\u003e": {
+        "Name": "\u003cLEVEL\u003e",
+        "kind": "argument",
+        "description": "LEVEL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cSERVICE\u003e": {
+        "Name": "\u003cSERVICE\u003e",
+        "kind": "argument",
+        "description": "SERVICE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cLEVEL\u003e": {
+        "Name": "\u003cLEVEL\u003e",
+        "kind": "argument",
+        "description": "LEVEL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cSERVICE\u003e": {
+        "Name": "\u003cSERVICE\u003e",
+        "kind": "argument",
+        "description": "SERVICE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSERVICE\u003e"
+    ]
+  },
+  "service-log-target": {
+    "Name": "service-log-target",
+    "kind": "subcommand",
+    "description": "Get/set logging target for service",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSERVICE\u003e": {
+        "Name": "\u003cSERVICE\u003e",
+        "kind": "argument",
+        "description": "SERVICE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cTARGET\u003e": {
+        "Name": "\u003cTARGET\u003e",
+        "kind": "argument",
+        "description": "TARGET",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSERVICE\u003e": {
+        "Name": "\u003cSERVICE\u003e",
+        "kind": "argument",
+        "description": "SERVICE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cTARGET\u003e": {
+        "Name": "\u003cTARGET\u003e",
+        "kind": "argument",
+        "description": "TARGET",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSERVICE\u003e"
+    ]
+  },
+  "service-watchdogs": {
+    "Name": "service-watchdogs",
+    "kind": "subcommand",
+    "description": "Get/set service watchdog state",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cBOOL\u003e": {
+        "Name": "\u003cBOOL\u003e",
+        "kind": "argument",
+        "description": "BOOL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cBOOL\u003e": {
+        "Name": "\u003cBOOL\u003e",
+        "kind": "argument",
+        "description": "BOOL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "set-default": {
+    "Name": "set-default",
+    "kind": "subcommand",
+    "description": "Set the default target",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cTARGET\u003e": {
+        "Name": "\u003cTARGET\u003e",
+        "kind": "argument",
+        "description": "TARGET",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cTARGET\u003e": {
+        "Name": "\u003cTARGET\u003e",
+        "kind": "argument",
+        "description": "TARGET",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cTARGET\u003e"
+    ]
+  },
+  "set-environment": {
+    "Name": "set-environment",
+    "kind": "subcommand",
+    "description": "Set one or more environment variables",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cVARIABLE=VALUE\u003e": {
+        "Name": "\u003cVARIABLE=VALUE\u003e",
+        "kind": "argument",
+        "description": "VARIABLE=VALUE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cVARIABLE=VALUE\u003e": {
+        "Name": "\u003cVARIABLE=VALUE\u003e",
+        "kind": "argument",
+        "description": "VARIABLE=VALUE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cVARIABLE=VALUE\u003e"
+    ]
+  },
+  "set-property": {
+    "Name": "set-property",
+    "kind": "subcommand",
+    "description": "Sets one or more properties of a unit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPROPERTY=VALUE\u003e": {
+        "Name": "\u003cPROPERTY=VALUE\u003e",
+        "kind": "argument",
+        "description": "PROPERTY=VALUE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPROPERTY=VALUE\u003e": {
+        "Name": "\u003cPROPERTY=VALUE\u003e",
+        "kind": "argument",
+        "description": "PROPERTY=VALUE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cUNIT\u003e",
+      "\u003cPROPERTY=VALUE\u003e"
+    ]
+  },
+  "show": {
+    "Name": "show",
+    "kind": "subcommand",
+    "description": "Show properties of one or more",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATTERN or JOB\u003e": {
+        "Name": "\u003cPATTERN or JOB\u003e",
+        "kind": "argument",
+        "description": "PATTERN or JOB",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATTERN or JOB\u003e": {
+        "Name": "\u003cPATTERN or JOB\u003e",
+        "kind": "argument",
+        "description": "PATTERN or JOB",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "show-environment": {
+    "Name": "show-environment",
+    "kind": "subcommand",
+    "description": "Dump environment",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "start": {
+    "Name": "start",
+    "kind": "subcommand",
+    "description": "Start (activate) one or more units",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cUNIT\u003e"
+    ]
+  },
+  "status": {
+    "Name": "status",
+    "kind": "subcommand",
+    "description": "Show runtime status of one or more units",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATTERN or PID\u003e": {
+        "Name": "\u003cPATTERN or PID\u003e",
+        "kind": "argument",
+        "description": "PATTERN or PID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATTERN or PID\u003e": {
+        "Name": "\u003cPATTERN or PID\u003e",
+        "kind": "argument",
+        "description": "PATTERN or PID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "stop": {
+    "Name": "stop",
+    "kind": "subcommand",
+    "description": "Stop (deactivate) one or more units",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cUNIT\u003e"
+    ]
+  },
+  "suspend": {
+    "Name": "suspend",
+    "kind": "subcommand",
+    "description": "Suspend the system",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "suspend-then-hibernate": {
+    "Name": "suspend-then-hibernate",
+    "kind": "subcommand",
+    "description": "Suspend the system, wake after a period of time, and hibernate",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "switch-root": {
+    "Name": "switch-root",
+    "kind": "subcommand",
+    "description": "Change to a different root file system",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cINIT\u003e": {
+        "Name": "\u003cINIT\u003e",
+        "kind": "argument",
+        "description": "INIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cROOT\u003e": {
+        "Name": "\u003cROOT\u003e",
+        "kind": "argument",
+        "description": "ROOT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cINIT\u003e": {
+        "Name": "\u003cINIT\u003e",
+        "kind": "argument",
+        "description": "INIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cROOT\u003e": {
+        "Name": "\u003cROOT\u003e",
+        "kind": "argument",
+        "description": "ROOT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cROOT\u003e",
+      "\u003cINIT\u003e"
+    ]
+  },
+  "thaw": {
+    "Name": "thaw",
+    "kind": "subcommand",
+    "description": "Resume execution of a frozen unit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATTERN\u003e": {
+        "Name": "\u003cPATTERN\u003e",
+        "kind": "argument",
+        "description": "PATTERN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATTERN\u003e": {
+        "Name": "\u003cPATTERN\u003e",
+        "kind": "argument",
+        "description": "PATTERN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATTERN\u003e"
+    ]
+  },
+  "try-reload-or-restart": {
+    "Name": "try-reload-or-restart",
+    "kind": "subcommand",
+    "description": "If active, reload one or more units, if supported, otherwise restart",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cUNIT\u003e"
+    ]
+  },
+  "try-restart": {
+    "Name": "try-restart",
+    "kind": "subcommand",
+    "description": "Restart one or more units if active",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cUNIT\u003e"
+    ]
+  },
+  "unmask": {
+    "Name": "unmask",
+    "kind": "subcommand",
+    "description": "Unmask one or more unit files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cUNIT\u003e": {
+        "Name": "\u003cUNIT\u003e",
+        "kind": "argument",
+        "description": "UNIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cUNIT\u003e"
+    ]
+  },
+  "unset-environment": {
+    "Name": "unset-environment",
+    "kind": "subcommand",
+    "description": "Unset one or more environment variables",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cVARIABLE\u003e": {
+        "Name": "\u003cVARIABLE\u003e",
+        "kind": "argument",
+        "description": "VARIABLE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cVARIABLE\u003e": {
+        "Name": "\u003cVARIABLE\u003e",
+        "kind": "argument",
+        "description": "VARIABLE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cVARIABLE\u003e"
+    ]
+  }
+}

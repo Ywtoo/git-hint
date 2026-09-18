@@ -1,0 +1,968 @@
+{
+  "--config": {
+    "Name": "--config",
+    "kind": "option",
+    "description": "Path or url to JSON configuration file. Defaults to dprint.json or .dprint.json in current or ancestor directory when not provided",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cconfig\u003e": {
+        "Name": "\u003cconfig\u003e",
+        "kind": "argument",
+        "description": "config",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cconfig\u003e": {
+        "Name": "\u003cconfig\u003e",
+        "kind": "argument",
+        "description": "config",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cconfig\u003e"
+    ]
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Prints help information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--plugins": {
+    "Name": "--plugins",
+    "kind": "option",
+    "description": "List of urls or file paths of plugins to use. This overrides what is specified in the config file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003curls/files\u003e": {
+        "Name": "\u003curls/files\u003e",
+        "kind": "argument",
+        "description": "urls/files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003curls/files\u003e": {
+        "Name": "\u003curls/files\u003e",
+        "kind": "argument",
+        "description": "urls/files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003curls/files\u003e"
+    ]
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Prints additional diagnostic information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Path or url to JSON configuration file. Defaults to dprint.json or .dprint.json in current or ancestor directory when not provided",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cconfig\u003e": {
+        "Name": "\u003cconfig\u003e",
+        "kind": "argument",
+        "description": "config",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cconfig\u003e": {
+        "Name": "\u003cconfig\u003e",
+        "kind": "argument",
+        "description": "config",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cconfig\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Prints help information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "check": {
+    "Name": "check",
+    "kind": "subcommand",
+    "description": "Checks for any files that haven't been formatted",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--allow-node-modules": {
+        "Name": "--allow-node-modules",
+        "kind": "option",
+        "description": "Allows traversing node module directories (unstable - This flag will be renamed to be non-node specific in the future)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--excludes": {
+        "Name": "--excludes",
+        "kind": "option",
+        "description": "List of file patterns or directories in quotes to exclude when formatting. This overrides what is specified in the config file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpattern\u003e": {
+            "Name": "\u003cpattern\u003e",
+            "kind": "argument",
+            "description": "pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpattern\u003e": {
+            "Name": "\u003cpattern\u003e",
+            "kind": "argument",
+            "description": "pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpattern\u003e"
+        ]
+      },
+      "--incremental": {
+        "Name": "--incremental",
+        "kind": "option",
+        "description": "Only format files when they change. This may alternatively be specified in the configuration file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cincremental\u003e": {
+            "Name": "\u003cincremental\u003e",
+            "kind": "argument",
+            "description": "incremental",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cincremental\u003e": {
+            "Name": "\u003cincremental\u003e",
+            "kind": "argument",
+            "description": "incremental",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "\u003cfiles\u003e": {
+        "Name": "\u003cfiles\u003e",
+        "kind": "argument",
+        "description": "files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--allow-node-modules": {
+        "Name": "--allow-node-modules",
+        "kind": "option",
+        "description": "Allows traversing node module directories (unstable - This flag will be renamed to be non-node specific in the future)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--excludes": {
+        "Name": "--excludes",
+        "kind": "option",
+        "description": "List of file patterns or directories in quotes to exclude when formatting. This overrides what is specified in the config file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpattern\u003e": {
+            "Name": "\u003cpattern\u003e",
+            "kind": "argument",
+            "description": "pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpattern\u003e": {
+            "Name": "\u003cpattern\u003e",
+            "kind": "argument",
+            "description": "pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpattern\u003e"
+        ]
+      },
+      "--incremental": {
+        "Name": "--incremental",
+        "kind": "option",
+        "description": "Only format files when they change. This may alternatively be specified in the configuration file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cincremental\u003e": {
+            "Name": "\u003cincremental\u003e",
+            "kind": "argument",
+            "description": "incremental",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cincremental\u003e": {
+            "Name": "\u003cincremental\u003e",
+            "kind": "argument",
+            "description": "incremental",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "\u003cfiles\u003e": {
+        "Name": "\u003cfiles\u003e",
+        "kind": "argument",
+        "description": "files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfiles\u003e"
+    ]
+  },
+  "clear-cache": {
+    "Name": "clear-cache",
+    "kind": "subcommand",
+    "description": "Deletes the plugin cache directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "config": {
+    "Name": "config",
+    "kind": "subcommand",
+    "description": "Functionality related to the configuration file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "add": {
+        "Name": "add",
+        "kind": "subcommand",
+        "description": "Adds a plugin to the configuration file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003curl-or-plugin-name\u003e": {
+            "Name": "\u003curl-or-plugin-name\u003e",
+            "kind": "argument",
+            "description": "url-or-plugin-name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003curl-or-plugin-name\u003e": {
+            "Name": "\u003curl-or-plugin-name\u003e",
+            "kind": "argument",
+            "description": "url-or-plugin-name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003curl-or-plugin-name\u003e"
+        ]
+      },
+      "help": {
+        "Name": "help",
+        "kind": "subcommand",
+        "description": "Prints the help of the given subcommand(s)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSUBCOMMAND\u003e": {
+            "Name": "\u003cSUBCOMMAND\u003e",
+            "kind": "argument",
+            "description": "SUBCOMMAND",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSUBCOMMAND\u003e": {
+            "Name": "\u003cSUBCOMMAND\u003e",
+            "kind": "argument",
+            "description": "SUBCOMMAND",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSUBCOMMAND\u003e"
+        ]
+      },
+      "init": {
+        "Name": "init",
+        "kind": "subcommand",
+        "description": "Initializes a configuration file in the current directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "update": {
+        "Name": "update",
+        "kind": "subcommand",
+        "description": "Updates the plugins in the configuration file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--yes": {
+            "Name": "--yes",
+            "kind": "option",
+            "description": "Upgrade process plugins without prompting to confirm checksums",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-y": {
+            "Name": "-y",
+            "kind": "option",
+            "description": "Upgrade process plugins without prompting to confirm checksums",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--yes": {
+            "Name": "--yes",
+            "kind": "option",
+            "description": "Upgrade process plugins without prompting to confirm checksums",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-y": {
+            "Name": "-y",
+            "kind": "option",
+            "description": "Upgrade process plugins without prompting to confirm checksums",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      }
+    }
+  },
+  "fmt": {
+    "Name": "fmt",
+    "kind": "subcommand",
+    "description": "Formats the source files and writes the result to the file system",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--allow-node-modules": {
+        "Name": "--allow-node-modules",
+        "kind": "option",
+        "description": "Allows traversing node module directories (unstable - This flag will be renamed to be non-node specific in the future)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--diff": {
+        "Name": "--diff",
+        "kind": "option",
+        "description": "Outputs a check-like diff of every formatted file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--excludes": {
+        "Name": "--excludes",
+        "kind": "option",
+        "description": "List of file patterns or directories in quotes to exclude when formatting. This overrides what is specified in the config file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpattern\u003e": {
+            "Name": "\u003cpattern\u003e",
+            "kind": "argument",
+            "description": "pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpattern\u003e": {
+            "Name": "\u003cpattern\u003e",
+            "kind": "argument",
+            "description": "pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpattern\u003e"
+        ]
+      },
+      "--incremental": {
+        "Name": "--incremental",
+        "kind": "option",
+        "description": "Only format files when they change. This may alternatively be specified in the configuration file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cincremental\u003e": {
+            "Name": "\u003cincremental\u003e",
+            "kind": "argument",
+            "description": "incremental",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cincremental\u003e": {
+            "Name": "\u003cincremental\u003e",
+            "kind": "argument",
+            "description": "incremental",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--stdin": {
+        "Name": "--stdin",
+        "kind": "option",
+        "description": "Format stdin and output the result to stdout. Provide an absolute file path to apply the inclusion and exclusion rules or an extension or file name to always format the text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cextension/file-name/file-path\u003e": {
+            "Name": "\u003cextension/file-name/file-path\u003e",
+            "kind": "argument",
+            "description": "extension/file-name/file-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cextension/file-name/file-path\u003e": {
+            "Name": "\u003cextension/file-name/file-path\u003e",
+            "kind": "argument",
+            "description": "extension/file-name/file-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cextension/file-name/file-path\u003e"
+        ]
+      },
+      "\u003cfiles\u003e": {
+        "Name": "\u003cfiles\u003e",
+        "kind": "argument",
+        "description": "files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--allow-node-modules": {
+        "Name": "--allow-node-modules",
+        "kind": "option",
+        "description": "Allows traversing node module directories (unstable - This flag will be renamed to be non-node specific in the future)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--diff": {
+        "Name": "--diff",
+        "kind": "option",
+        "description": "Outputs a check-like diff of every formatted file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--excludes": {
+        "Name": "--excludes",
+        "kind": "option",
+        "description": "List of file patterns or directories in quotes to exclude when formatting. This overrides what is specified in the config file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpattern\u003e": {
+            "Name": "\u003cpattern\u003e",
+            "kind": "argument",
+            "description": "pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpattern\u003e": {
+            "Name": "\u003cpattern\u003e",
+            "kind": "argument",
+            "description": "pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpattern\u003e"
+        ]
+      },
+      "--incremental": {
+        "Name": "--incremental",
+        "kind": "option",
+        "description": "Only format files when they change. This may alternatively be specified in the configuration file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cincremental\u003e": {
+            "Name": "\u003cincremental\u003e",
+            "kind": "argument",
+            "description": "incremental",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cincremental\u003e": {
+            "Name": "\u003cincremental\u003e",
+            "kind": "argument",
+            "description": "incremental",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--stdin": {
+        "Name": "--stdin",
+        "kind": "option",
+        "description": "Format stdin and output the result to stdout. Provide an absolute file path to apply the inclusion and exclusion rules or an extension or file name to always format the text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cextension/file-name/file-path\u003e": {
+            "Name": "\u003cextension/file-name/file-path\u003e",
+            "kind": "argument",
+            "description": "extension/file-name/file-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cextension/file-name/file-path\u003e": {
+            "Name": "\u003cextension/file-name/file-path\u003e",
+            "kind": "argument",
+            "description": "extension/file-name/file-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cextension/file-name/file-path\u003e"
+        ]
+      },
+      "\u003cfiles\u003e": {
+        "Name": "\u003cfiles\u003e",
+        "kind": "argument",
+        "description": "files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfiles\u003e"
+    ]
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Prints the help of the given subcommand(s)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSUBCOMMAND\u003e": {
+        "Name": "\u003cSUBCOMMAND\u003e",
+        "kind": "argument",
+        "description": "SUBCOMMAND",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSUBCOMMAND\u003e": {
+        "Name": "\u003cSUBCOMMAND\u003e",
+        "kind": "argument",
+        "description": "SUBCOMMAND",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSUBCOMMAND\u003e"
+    ]
+  },
+  "init": {
+    "Name": "init",
+    "kind": "subcommand",
+    "description": "Initializes a configuration file in the current directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "license": {
+    "Name": "license",
+    "kind": "subcommand",
+    "description": "Outputs the software license",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "output-file-paths": {
+    "Name": "output-file-paths",
+    "kind": "subcommand",
+    "description": "Prints the resolved file paths for the plugins based on the args and configuration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--allow-node-modules": {
+        "Name": "--allow-node-modules",
+        "kind": "option",
+        "description": "Allows traversing node module directories (unstable - This flag will be renamed to be non-node specific in the future)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--excludes": {
+        "Name": "--excludes",
+        "kind": "option",
+        "description": "List of file patterns or directories in quotes to exclude when formatting. This overrides what is specified in the config file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpattern\u003e": {
+            "Name": "\u003cpattern\u003e",
+            "kind": "argument",
+            "description": "pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpattern\u003e": {
+            "Name": "\u003cpattern\u003e",
+            "kind": "argument",
+            "description": "pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpattern\u003e"
+        ]
+      },
+      "\u003cfiles\u003e": {
+        "Name": "\u003cfiles\u003e",
+        "kind": "argument",
+        "description": "files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--allow-node-modules": {
+        "Name": "--allow-node-modules",
+        "kind": "option",
+        "description": "Allows traversing node module directories (unstable - This flag will be renamed to be non-node specific in the future)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--excludes": {
+        "Name": "--excludes",
+        "kind": "option",
+        "description": "List of file patterns or directories in quotes to exclude when formatting. This overrides what is specified in the config file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpattern\u003e": {
+            "Name": "\u003cpattern\u003e",
+            "kind": "argument",
+            "description": "pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpattern\u003e": {
+            "Name": "\u003cpattern\u003e",
+            "kind": "argument",
+            "description": "pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpattern\u003e"
+        ]
+      },
+      "\u003cfiles\u003e": {
+        "Name": "\u003cfiles\u003e",
+        "kind": "argument",
+        "description": "files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfiles\u003e"
+    ]
+  },
+  "output-format-times": {
+    "Name": "output-format-times",
+    "kind": "subcommand",
+    "description": "Prints the amount of time it takes to format each file. Use this for debugging",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--allow-node-modules": {
+        "Name": "--allow-node-modules",
+        "kind": "option",
+        "description": "Allows traversing node module directories (unstable - This flag will be renamed to be non-node specific in the future)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--excludes": {
+        "Name": "--excludes",
+        "kind": "option",
+        "description": "List of file patterns or directories in quotes to exclude when formatting. This overrides what is specified in the config file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpattern\u003e": {
+            "Name": "\u003cpattern\u003e",
+            "kind": "argument",
+            "description": "pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpattern\u003e": {
+            "Name": "\u003cpattern\u003e",
+            "kind": "argument",
+            "description": "pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpattern\u003e"
+        ]
+      },
+      "--incremental": {
+        "Name": "--incremental",
+        "kind": "option",
+        "description": "Only format files when they change. This may alternatively be specified in the configuration file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cincremental\u003e": {
+            "Name": "\u003cincremental\u003e",
+            "kind": "argument",
+            "description": "incremental",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cincremental\u003e": {
+            "Name": "\u003cincremental\u003e",
+            "kind": "argument",
+            "description": "incremental",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "\u003cfiles\u003e": {
+        "Name": "\u003cfiles\u003e",
+        "kind": "argument",
+        "description": "files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--allow-node-modules": {
+        "Name": "--allow-node-modules",
+        "kind": "option",
+        "description": "Allows traversing node module directories (unstable - This flag will be renamed to be non-node specific in the future)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--excludes": {
+        "Name": "--excludes",
+        "kind": "option",
+        "description": "List of file patterns or directories in quotes to exclude when formatting. This overrides what is specified in the config file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpattern\u003e": {
+            "Name": "\u003cpattern\u003e",
+            "kind": "argument",
+            "description": "pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpattern\u003e": {
+            "Name": "\u003cpattern\u003e",
+            "kind": "argument",
+            "description": "pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpattern\u003e"
+        ]
+      },
+      "--incremental": {
+        "Name": "--incremental",
+        "kind": "option",
+        "description": "Only format files when they change. This may alternatively be specified in the configuration file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cincremental\u003e": {
+            "Name": "\u003cincremental\u003e",
+            "kind": "argument",
+            "description": "incremental",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cincremental\u003e": {
+            "Name": "\u003cincremental\u003e",
+            "kind": "argument",
+            "description": "incremental",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "\u003cfiles\u003e": {
+        "Name": "\u003cfiles\u003e",
+        "kind": "argument",
+        "description": "files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfiles\u003e"
+    ]
+  },
+  "output-resolved-config": {
+    "Name": "output-resolved-config",
+    "kind": "subcommand",
+    "description": "Prints the resolved configuration for the plugins based on the args and configuration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "upgrade": {
+    "Name": "upgrade",
+    "kind": "subcommand",
+    "description": "Upgrades the dprint executable",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

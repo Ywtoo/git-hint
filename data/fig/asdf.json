@@ -1,0 +1,1177 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Help for asdf",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Version for asdf",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Help for asdf",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "current": {
+    "Name": "current",
+    "kind": "subcommand",
+    "description": "Display current versions for named package (else all)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "env": {
+    "Name": "env",
+    "kind": "subcommand",
+    "description": "Prints or runs an executable under a command environment",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "exec": {
+    "Name": "exec",
+    "kind": "subcommand",
+    "description": "Executes the command shim for the current version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "global": {
+    "Name": "global",
+    "kind": "subcommand",
+    "description": "Set package global version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e",
+      "\u003cversion\u003e"
+    ]
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Output documentation for plugin and tool",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "info": {
+    "Name": "info",
+    "kind": "subcommand",
+    "description": "Print os, shell and asdf debug information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "install": {
+    "Name": "install",
+    "kind": "subcommand",
+    "description": "Install plugin at stated version, or all from .tools-versions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "latest": {
+    "Name": "latest",
+    "kind": "subcommand",
+    "description": "Display latest version available to install for a named package",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "list": {
+    "Name": "list",
+    "kind": "subcommand",
+    "description": "List installed versions of a package",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "all": {
+        "Name": "all",
+        "kind": "subcommand",
+        "description": "List all available (remote) versions of a package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "list-all": {
+    "Name": "list-all",
+    "kind": "subcommand",
+    "description": "List all available (remote) versions of a package",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "local": {
+    "Name": "local",
+    "kind": "subcommand",
+    "description": "Set package local version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e",
+      "\u003cversion\u003e"
+    ]
+  },
+  "plugin": {
+    "Name": "plugin",
+    "kind": "subcommand",
+    "description": "Plugin management sub-commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "add": {
+        "Name": "add",
+        "kind": "subcommand",
+        "description": "Add a plugin from the plugin repo OR, add a Git repo as a plugin by specifying the name and repo url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cgit-url\u003e": {
+            "Name": "\u003cgit-url\u003e",
+            "kind": "argument",
+            "description": "git-url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cgit-url\u003e": {
+            "Name": "\u003cgit-url\u003e",
+            "kind": "argument",
+            "description": "git-url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List installed plugins. Optionally show git urls and git-ref",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--refs": {
+            "Name": "--refs",
+            "kind": "option",
+            "description": "Show git refs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--urls": {
+            "Name": "--urls",
+            "kind": "option",
+            "description": "Show git urls",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "all": {
+            "Name": "all",
+            "kind": "subcommand",
+            "description": "List plugins registered on asdf-plugins repository with URLs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--refs": {
+            "Name": "--refs",
+            "kind": "option",
+            "description": "Show git refs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--urls": {
+            "Name": "--urls",
+            "kind": "option",
+            "description": "Show git urls",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "remove": {
+        "Name": "remove",
+        "kind": "subcommand",
+        "description": "Remove plugin and package versions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "update": {
+        "Name": "update",
+        "kind": "subcommand",
+        "description": "Update a plugin to latest commit on default branch or a particular git-ref",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "Update all plugins to latest commit on default branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cgit-ref\u003e": {
+            "Name": "\u003cgit-ref\u003e",
+            "kind": "argument",
+            "description": "git-ref",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "Update all plugins to latest commit on default branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cgit-ref\u003e": {
+            "Name": "\u003cgit-ref\u003e",
+            "kind": "argument",
+            "description": "git-ref",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      }
+    }
+  },
+  "plugin-add": {
+    "Name": "plugin-add",
+    "kind": "subcommand",
+    "description": "Add a plugin from the plugin repo OR, add a Git repo as a plugin by specifying the name and repo url",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cgit-url\u003e": {
+        "Name": "\u003cgit-url\u003e",
+        "kind": "argument",
+        "description": "git-url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cgit-url\u003e": {
+        "Name": "\u003cgit-url\u003e",
+        "kind": "argument",
+        "description": "git-url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "plugin-list": {
+    "Name": "plugin-list",
+    "kind": "subcommand",
+    "description": "List installed plugins. Optionally show git urls and git-ref",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--refs": {
+        "Name": "--refs",
+        "kind": "option",
+        "description": "Show git refs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--urls": {
+        "Name": "--urls",
+        "kind": "option",
+        "description": "Show git urls",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "all": {
+        "Name": "all",
+        "kind": "subcommand",
+        "description": "List plugins registered on asdf-plugins repository with URLs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--refs": {
+        "Name": "--refs",
+        "kind": "option",
+        "description": "Show git refs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--urls": {
+        "Name": "--urls",
+        "kind": "option",
+        "description": "Show git urls",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "plugin-list-all": {
+    "Name": "plugin-list-all",
+    "kind": "subcommand",
+    "description": "List plugins registered on asdf-plugins repository with URLs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "plugin-remove": {
+    "Name": "plugin-remove",
+    "kind": "subcommand",
+    "description": "Remove plugin and package versions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "plugin-update": {
+    "Name": "plugin-update",
+    "kind": "subcommand",
+    "description": "Update a plugin to latest commit on default branch or a particular git-ref",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "Update all plugins to latest commit on default branch",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cgit-ref\u003e": {
+        "Name": "\u003cgit-ref\u003e",
+        "kind": "argument",
+        "description": "git-ref",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "Update all plugins to latest commit on default branch",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cgit-ref\u003e": {
+        "Name": "\u003cgit-ref\u003e",
+        "kind": "argument",
+        "description": "git-ref",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "reshim": {
+    "Name": "reshim",
+    "kind": "subcommand",
+    "description": "Recreate shims for version of a package",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "shell": {
+    "Name": "shell",
+    "kind": "subcommand",
+    "description": "Set the package version to ASDF_${LANG}_VERSION` in the current shell",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e",
+      "\u003cversion\u003e"
+    ]
+  },
+  "shim": {
+    "Name": "shim",
+    "kind": "subcommand",
+    "description": "Shim management sub-commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "versions": {
+        "Name": "versions",
+        "kind": "subcommand",
+        "description": "List for given command which plugins and versions provide it",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccommand\u003e": {
+            "Name": "\u003ccommand\u003e",
+            "kind": "argument",
+            "description": "command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccommand\u003e": {
+            "Name": "\u003ccommand\u003e",
+            "kind": "argument",
+            "description": "command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccommand\u003e"
+        ]
+      }
+    }
+  },
+  "shim-versions": {
+    "Name": "shim-versions",
+    "kind": "subcommand",
+    "description": "List for given command which plugins and versions provide it",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "uninstall": {
+    "Name": "uninstall",
+    "kind": "subcommand",
+    "description": "Remove a specific version of a package",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "update": {
+    "Name": "update",
+    "kind": "subcommand",
+    "description": "Update ASDF to the latest stable release (unless --head)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--head": {
+        "Name": "--head",
+        "kind": "option",
+        "description": "Using HEAD commit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--head": {
+        "Name": "--head",
+        "kind": "option",
+        "description": "Using HEAD commit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "version": {
+    "Name": "version",
+    "kind": "subcommand",
+    "description": "Version for asdf",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "where": {
+    "Name": "where",
+    "kind": "subcommand",
+    "description": "Display install path for given package at optional specified version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "which": {
+    "Name": "which",
+    "kind": "subcommand",
+    "description": "Display path to an executable",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  }
+}

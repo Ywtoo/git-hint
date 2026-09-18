@@ -1,0 +1,1714 @@
+{
+  "--add-check": {
+    "Name": "--add-check",
+    "kind": "option",
+    "description": "Generate a new check via CLI prompt",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--baseline": {
+    "Name": "--baseline",
+    "kind": "option",
+    "description": "Use a '.checkov.baseline' file to compare current results with a known baseline. Report will include only failed checks that are newwith respect to the provided baseline. See --create-baseline",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cBASELINE\u003e": {
+        "Name": "\u003cBASELINE\u003e",
+        "kind": "argument",
+        "description": "BASELINE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cBASELINE\u003e": {
+        "Name": "\u003cBASELINE\u003e",
+        "kind": "argument",
+        "description": "BASELINE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cBASELINE\u003e"
+    ]
+  },
+  "--bc-api-key": {
+    "Name": "--bc-api-key",
+    "kind": "option",
+    "description": "Bridgecrew API key. You may also use the environment variable: BC_API_KEY",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cBC_API_KEY\u003e": {
+        "Name": "\u003cBC_API_KEY\u003e",
+        "kind": "argument",
+        "description": "BC_API_KEY",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cBC_API_KEY\u003e": {
+        "Name": "\u003cBC_API_KEY\u003e",
+        "kind": "argument",
+        "description": "BC_API_KEY",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cBC_API_KEY\u003e"
+    ]
+  },
+  "--block-list-secret-scan": {
+    "Name": "--block-list-secret-scan",
+    "kind": "option",
+    "description": "List of files to filter out from the secret scanner",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cBLOCK_LIST_SECRET_SCAN\u003e": {
+        "Name": "\u003cBLOCK_LIST_SECRET_SCAN\u003e",
+        "kind": "argument",
+        "description": "BLOCK_LIST_SECRET_SCAN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cBLOCK_LIST_SECRET_SCAN\u003e": {
+        "Name": "\u003cBLOCK_LIST_SECRET_SCAN\u003e",
+        "kind": "argument",
+        "description": "BLOCK_LIST_SECRET_SCAN",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cBLOCK_LIST_SECRET_SCAN\u003e"
+    ]
+  },
+  "--branch": {
+    "Name": "--branch",
+    "kind": "option",
+    "description": "Selected branch of the persisted repository. Only has effect when using the --bc-api-key flag",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cBRANCH\u003e": {
+        "Name": "\u003cBRANCH\u003e",
+        "kind": "argument",
+        "description": "BRANCH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cBRANCH\u003e": {
+        "Name": "\u003cBRANCH\u003e",
+        "kind": "argument",
+        "description": "BRANCH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cBRANCH\u003e"
+    ]
+  },
+  "--ca-certificate": {
+    "Name": "--ca-certificate",
+    "kind": "option",
+    "description": "Custom CA (bundle) fila. You may also use the environment variablee: CA_CERTIFICATE",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cCA_CERTIFICATE\u003e": {
+        "Name": "\u003cCA_CERTIFICATE\u003e",
+        "kind": "argument",
+        "description": "CA_CERTIFICATE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cCA_CERTIFICATE\u003e": {
+        "Name": "\u003cCA_CERTIFICATE\u003e",
+        "kind": "argument",
+        "description": "CA_CERTIFICATE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cCA_CERTIFICATE\u003e"
+    ]
+  },
+  "--check": {
+    "Name": "--check",
+    "kind": "option",
+    "description": "Filter scan to run only on a specific check identifier (allowlist). You can specify multiple checks separated by comma delimiter. You may also use the environment variable: CKV_CHECK",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cCHECKS\u003e": {
+        "Name": "\u003cCHECKS\u003e",
+        "kind": "argument",
+        "description": "CHECKS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cCHECKS\u003e": {
+        "Name": "\u003cCHECKS\u003e",
+        "kind": "argument",
+        "description": "CHECKS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cCHECKS\u003e"
+    ]
+  },
+  "--compact": {
+    "Name": "--compact",
+    "kind": "option",
+    "description": "CLI output, do not display code blocks",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--config-file": {
+    "Name": "--config-file",
+    "kind": "option",
+    "description": "Path to the Checkov configuration YAML file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cCONFIG_FILE\u003e": {
+        "Name": "\u003cCONFIG_FILE\u003e",
+        "kind": "argument",
+        "description": "CONFIG_FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cCONFIG_FILE\u003e": {
+        "Name": "\u003cCONFIG_FILE\u003e",
+        "kind": "argument",
+        "description": "CONFIG_FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cCONFIG_FILE\u003e"
+    ]
+  },
+  "--create-baseline": {
+    "Name": "--create-baseline",
+    "kind": "option",
+    "description": "Save all current results to a '.checkov.baseline' file so future runs will only flag new findings. Works only with `--directory` flag",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--create-config": {
+    "Name": "--create-config",
+    "kind": "option",
+    "description": "Takes the current command line args and writes them out to a config file at the given path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cCONFIG_FILE\u003e": {
+        "Name": "\u003cCONFIG_FILE\u003e",
+        "kind": "argument",
+        "description": "CONFIG_FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cCONFIG_FILE\u003e": {
+        "Name": "\u003cCONFIG_FILE\u003e",
+        "kind": "argument",
+        "description": "CONFIG_FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cCONFIG_FILE\u003e"
+    ]
+  },
+  "--deep-analysis": {
+    "Name": "--deep-analysis",
+    "kind": "option",
+    "description": "Enable combine TF graph and TF Plan graph",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cDEEP_ANALYSIS\u003e": {
+        "Name": "\u003cDEEP_ANALYSIS\u003e",
+        "kind": "argument",
+        "description": "DEEP_ANALYSIS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cDEEP_ANALYSIS\u003e": {
+        "Name": "\u003cDEEP_ANALYSIS\u003e",
+        "kind": "argument",
+        "description": "DEEP_ANALYSIS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cDEEP_ANALYSIS\u003e"
+    ]
+  },
+  "--directory": {
+    "Name": "--directory",
+    "kind": "option",
+    "description": "IaC root directory (can not be used together with --file)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cDirectory\u003e": {
+        "Name": "\u003cDirectory\u003e",
+        "kind": "argument",
+        "description": "Directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cDirectory\u003e": {
+        "Name": "\u003cDirectory\u003e",
+        "kind": "argument",
+        "description": "Directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cDirectory\u003e"
+    ]
+  },
+  "--docker-image": {
+    "Name": "--docker-image",
+    "kind": "option",
+    "description": "Scan docker images by name or ID. Only works with --bc-api-key flag",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cDOCKER_IMAGE\u003e": {
+        "Name": "\u003cDOCKER_IMAGE\u003e",
+        "kind": "argument",
+        "description": "DOCKER_IMAGE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cDOCKER_IMAGE\u003e": {
+        "Name": "\u003cDOCKER_IMAGE\u003e",
+        "kind": "argument",
+        "description": "DOCKER_IMAGE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cDOCKER_IMAGE\u003e"
+    ]
+  },
+  "--dockerfile-path": {
+    "Name": "--dockerfile-path",
+    "kind": "option",
+    "description": "Path to the Dockerfile of the scanned docker image",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cDOCKERFILE_PATH\u003e": {
+        "Name": "\u003cDOCKERFILE_PATH\u003e",
+        "kind": "argument",
+        "description": "DOCKERFILE_PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cDOCKERFILE_PATH\u003e": {
+        "Name": "\u003cDOCKERFILE_PATH\u003e",
+        "kind": "argument",
+        "description": "DOCKERFILE_PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cDOCKERFILE_PATH\u003e"
+    ]
+  },
+  "--download-external-modules": {
+    "Name": "--download-external-modules",
+    "kind": "option",
+    "description": "Download external terraform modules from public git repositories and terraform registry. You may also use the environment variable: DOWNLOAD_EXTERNAL_MODULES]",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cDOWNLOAD_EXTERNAL_MODULES\u003e": {
+        "Name": "\u003cDOWNLOAD_EXTERNAL_MODULES\u003e",
+        "kind": "argument",
+        "description": "DOWNLOAD_EXTERNAL_MODULES",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cDOWNLOAD_EXTERNAL_MODULES\u003e": {
+        "Name": "\u003cDOWNLOAD_EXTERNAL_MODULES\u003e",
+        "kind": "argument",
+        "description": "DOWNLOAD_EXTERNAL_MODULES",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cDOWNLOAD_EXTERNAL_MODULES\u003e"
+    ]
+  },
+  "--enable-secret-scan-all-files": {
+    "Name": "--enable-secret-scan-all-files",
+    "kind": "option",
+    "description": "Enable secret scan for all files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cENABLE_SECRET_SCAN_ALL_FILES\u003e": {
+        "Name": "\u003cENABLE_SECRET_SCAN_ALL_FILES\u003e",
+        "kind": "argument",
+        "description": "ENABLE_SECRET_SCAN_ALL_FILES",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cENABLE_SECRET_SCAN_ALL_FILES\u003e": {
+        "Name": "\u003cENABLE_SECRET_SCAN_ALL_FILES\u003e",
+        "kind": "argument",
+        "description": "ENABLE_SECRET_SCAN_ALL_FILES",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cENABLE_SECRET_SCAN_ALL_FILES\u003e"
+    ]
+  },
+  "--evaluate-variables": {
+    "Name": "--evaluate-variables",
+    "kind": "option",
+    "description": "Evaluate the values of variables and locals",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cEVALUATE_VARIABLES\u003e": {
+        "Name": "\u003cEVALUATE_VARIABLES\u003e",
+        "kind": "argument",
+        "description": "EVALUATE_VARIABLES",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cEVALUATE_VARIABLES\u003e": {
+        "Name": "\u003cEVALUATE_VARIABLES\u003e",
+        "kind": "argument",
+        "description": "EVALUATE_VARIABLES",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cEVALUATE_VARIABLES\u003e"
+    ]
+  },
+  "--external-checks-dir": {
+    "Name": "--external-checks-dir",
+    "kind": "option",
+    "description": "Directory for custom checks to be loaded. Can be repeated",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cEXTERNAL_CHECKS_DIR\u003e": {
+        "Name": "\u003cEXTERNAL_CHECKS_DIR\u003e",
+        "kind": "argument",
+        "description": "EXTERNAL_CHECKS_DIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cEXTERNAL_CHECKS_DIR\u003e": {
+        "Name": "\u003cEXTERNAL_CHECKS_DIR\u003e",
+        "kind": "argument",
+        "description": "EXTERNAL_CHECKS_DIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cEXTERNAL_CHECKS_DIR\u003e"
+    ]
+  },
+  "--external-checks-git": {
+    "Name": "--external-checks-git",
+    "kind": "option",
+    "description": "GitHub URL of external checks to be added",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cEXTERNAL_CHECKS_GIT\u003e": {
+        "Name": "\u003cEXTERNAL_CHECKS_GIT\u003e",
+        "kind": "argument",
+        "description": "EXTERNAL_CHECKS_GIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cEXTERNAL_CHECKS_GIT\u003e": {
+        "Name": "\u003cEXTERNAL_CHECKS_GIT\u003e",
+        "kind": "argument",
+        "description": "EXTERNAL_CHECKS_GIT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cEXTERNAL_CHECKS_GIT\u003e"
+    ]
+  },
+  "--external-modules-download-path": {
+    "Name": "--external-modules-download-path",
+    "kind": "option",
+    "description": "Set the path for the download external terraform modules. You may also use the environment variable: EXTERNAL_MODULES_DIR",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cEXTERNAL_MODULES_DIR\u003e": {
+        "Name": "\u003cEXTERNAL_MODULES_DIR\u003e",
+        "kind": "argument",
+        "description": "EXTERNAL_MODULES_DIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cEXTERNAL_MODULES_DIR\u003e": {
+        "Name": "\u003cEXTERNAL_MODULES_DIR\u003e",
+        "kind": "argument",
+        "description": "EXTERNAL_MODULES_DIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cEXTERNAL_MODULES_DIR\u003e"
+    ]
+  },
+  "--file": {
+    "Name": "--file",
+    "kind": "option",
+    "description": "IaC file(can not be used together with --directory)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFILE\u003e"
+    ]
+  },
+  "--framework": {
+    "Name": "--framework",
+    "kind": "option",
+    "description": "IaC frameworks to include checks for",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFRAMEWORKS\u003e": {
+        "Name": "\u003cFRAMEWORKS\u003e",
+        "kind": "argument",
+        "description": "FRAMEWORKS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFRAMEWORKS\u003e": {
+        "Name": "\u003cFRAMEWORKS\u003e",
+        "kind": "argument",
+        "description": "FRAMEWORKS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFRAMEWORKS\u003e"
+    ]
+  },
+  "--hard-fail-on": {
+    "Name": "--hard-fail-on",
+    "kind": "option",
+    "description": "Exits with a non-zero exit code for specified checks. You can specify multiple checks separated by comma delimiter",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cCHECKS\u003e": {
+        "Name": "\u003cCHECKS\u003e",
+        "kind": "argument",
+        "description": "CHECKS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cCHECKS\u003e": {
+        "Name": "\u003cCHECKS\u003e",
+        "kind": "argument",
+        "description": "CHECKS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cCHECKS\u003e"
+    ]
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for checkov",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--include-all-checkov-policies": {
+    "Name": "--include-all-checkov-policies",
+    "kind": "option",
+    "description": "When running with an API key, Checkov will omit any policies that do not exist in the Bridgecrew or Prisma Cloud platform",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cINCLUDE_ALL_CHECKOV_POLICIES\u003e": {
+        "Name": "\u003cINCLUDE_ALL_CHECKOV_POLICIES\u003e",
+        "kind": "argument",
+        "description": "INCLUDE_ALL_CHECKOV_POLICIES",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cINCLUDE_ALL_CHECKOV_POLICIES\u003e": {
+        "Name": "\u003cINCLUDE_ALL_CHECKOV_POLICIES\u003e",
+        "kind": "argument",
+        "description": "INCLUDE_ALL_CHECKOV_POLICIES",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cINCLUDE_ALL_CHECKOV_POLICIES\u003e"
+    ]
+  },
+  "--list": {
+    "Name": "--list",
+    "kind": "option",
+    "description": "List checks",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--mask": {
+    "Name": "--mask",
+    "kind": "option",
+    "description": "Each entry in the list will be used for masking the desired attribute",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cMASK\u003e": {
+        "Name": "\u003cMASK\u003e",
+        "kind": "argument",
+        "description": "MASK",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cMASK\u003e": {
+        "Name": "\u003cMASK\u003e",
+        "kind": "argument",
+        "description": "MASK",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cMASK\u003e"
+    ]
+  },
+  "--min-cve-severity": {
+    "Name": "--min-cve-severity",
+    "kind": "option",
+    "description": "Set minimum severity to return a non-zero exit code",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cMIN_SEVERITY\u003e": {
+        "Name": "\u003cMIN_SEVERITY\u003e",
+        "kind": "argument",
+        "description": "MIN_SEVERITY",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cMIN_SEVERITY\u003e": {
+        "Name": "\u003cMIN_SEVERITY\u003e",
+        "kind": "argument",
+        "description": "MIN_SEVERITY",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cMIN_SEVERITY\u003e"
+    ]
+  },
+  "--no-fail-on-crash": {
+    "Name": "--no-fail-on-crash",
+    "kind": "option",
+    "description": "Return exit code 0 instead of 2",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNO_FAIL_ON_CRASH\u003e": {
+        "Name": "\u003cNO_FAIL_ON_CRASH\u003e",
+        "kind": "argument",
+        "description": "NO_FAIL_ON_CRASH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNO_FAIL_ON_CRASH\u003e": {
+        "Name": "\u003cNO_FAIL_ON_CRASH\u003e",
+        "kind": "argument",
+        "description": "NO_FAIL_ON_CRASH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNO_FAIL_ON_CRASH\u003e"
+    ]
+  },
+  "--no-guide": {
+    "Name": "--no-guide",
+    "kind": "option",
+    "description": "Do not fetch Bridgecrew platform IDs and guidelines for the checkov output report. Note: this prevents Bridgecrew platform check IDs from being used anywhere in the CLI",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--openai-api-key": {
+    "Name": "--openai-api-key",
+    "kind": "option",
+    "description": "Add an OpenAI API key to enhance finding guidelines. This will send Code to OpenAI",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cOPENAI_API_KEY\u003e": {
+        "Name": "\u003cOPENAI_API_KEY\u003e",
+        "kind": "argument",
+        "description": "OPENAI_API_KEY",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cOPENAI_API_KEY\u003e": {
+        "Name": "\u003cOPENAI_API_KEY\u003e",
+        "kind": "argument",
+        "description": "OPENAI_API_KEY",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cOPENAI_API_KEY\u003e"
+    ]
+  },
+  "--output": {
+    "Name": "--output",
+    "kind": "option",
+    "description": "Report output format. Add multiple outputs by using the flag multiple times (-o sarif -o cli)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFORMAT\u003e": {
+        "Name": "\u003cFORMAT\u003e",
+        "kind": "argument",
+        "description": "FORMAT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFORMAT\u003e": {
+        "Name": "\u003cFORMAT\u003e",
+        "kind": "argument",
+        "description": "FORMAT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFORMAT\u003e"
+    ]
+  },
+  "--output-baseline-as-skipped": {
+    "Name": "--output-baseline-as-skipped",
+    "kind": "option",
+    "description": "Output checks that are skipped due to baseline file presence",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cOUTPUT_BASELINE_AS_SKIPPED\u003e": {
+        "Name": "\u003cOUTPUT_BASELINE_AS_SKIPPED\u003e",
+        "kind": "argument",
+        "description": "OUTPUT_BASELINE_AS_SKIPPED",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cOUTPUT_BASELINE_AS_SKIPPED\u003e": {
+        "Name": "\u003cOUTPUT_BASELINE_AS_SKIPPED\u003e",
+        "kind": "argument",
+        "description": "OUTPUT_BASELINE_AS_SKIPPED",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cOUTPUT_BASELINE_AS_SKIPPED\u003e"
+    ]
+  },
+  "--output-bc-ids": {
+    "Name": "--output-bc-ids",
+    "kind": "option",
+    "description": "Print Bridgecrew platform IDs (BC...) instead of Checkov IDs (CKV...), if the check exists in the platform",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--output-file-path": {
+    "Name": "--output-file-path",
+    "kind": "option",
+    "description": "Name of the output folder to save the chosen output formats",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cOUTPUT_FILE_PATH\u003e": {
+        "Name": "\u003cOUTPUT_FILE_PATH\u003e",
+        "kind": "argument",
+        "description": "OUTPUT_FILE_PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cOUTPUT_FILE_PATH\u003e": {
+        "Name": "\u003cOUTPUT_FILE_PATH\u003e",
+        "kind": "argument",
+        "description": "OUTPUT_FILE_PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cOUTPUT_FILE_PATH\u003e"
+    ]
+  },
+  "--policy-metadata-filter": {
+    "Name": "--policy-metadata-filter",
+    "kind": "option",
+    "description": "Comma separated key:value string to filter policies based on Prisma Cloud policy metadata",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPOLICY_METADATA_FILTER\u003e": {
+        "Name": "\u003cPOLICY_METADATA_FILTER\u003e",
+        "kind": "argument",
+        "description": "POLICY_METADATA_FILTER",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPOLICY_METADATA_FILTER\u003e": {
+        "Name": "\u003cPOLICY_METADATA_FILTER\u003e",
+        "kind": "argument",
+        "description": "POLICY_METADATA_FILTER",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPOLICY_METADATA_FILTER\u003e"
+    ]
+  },
+  "--prisma-api-url": {
+    "Name": "--prisma-api-url",
+    "kind": "option",
+    "description": "The Prisma Cloud API URL",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPRISMA_API_URL\u003e": {
+        "Name": "\u003cPRISMA_API_URL\u003e",
+        "kind": "argument",
+        "description": "PRISMA_API_URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPRISMA_API_URL\u003e": {
+        "Name": "\u003cPRISMA_API_URL\u003e",
+        "kind": "argument",
+        "description": "PRISMA_API_URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPRISMA_API_URL\u003e"
+    ]
+  },
+  "--quiet": {
+    "Name": "--quiet",
+    "kind": "option",
+    "description": "CLI output, display only failed checks",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--repo-id": {
+    "Name": "--repo-id",
+    "kind": "option",
+    "description": "Identity string of the repository, with form \u003crepo_owner\u003e/\u003crepo_name\u003e",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cREPO_ID\u003e": {
+        "Name": "\u003cREPO_ID\u003e",
+        "kind": "argument",
+        "description": "REPO_ID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cREPO_ID\u003e": {
+        "Name": "\u003cREPO_ID\u003e",
+        "kind": "argument",
+        "description": "REPO_ID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cREPO_ID\u003e"
+    ]
+  },
+  "--repo-root-for-plan-enrichment": {
+    "Name": "--repo-root-for-plan-enrichment",
+    "kind": "option",
+    "description": "Directory containing the hcl code used to generate a given plan file. Use with -f FILE",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cREPO_ROOT_FOR_PLAN_ENRICHMENT\u003e": {
+        "Name": "\u003cREPO_ROOT_FOR_PLAN_ENRICHMENT\u003e",
+        "kind": "argument",
+        "description": "REPO_ROOT_FOR_PLAN_ENRICHMENT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cREPO_ROOT_FOR_PLAN_ENRICHMENT\u003e": {
+        "Name": "\u003cREPO_ROOT_FOR_PLAN_ENRICHMENT\u003e",
+        "kind": "argument",
+        "description": "REPO_ROOT_FOR_PLAN_ENRICHMENT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cREPO_ROOT_FOR_PLAN_ENRICHMENT\u003e"
+    ]
+  },
+  "--run-all-external-checks": {
+    "Name": "--run-all-external-checks",
+    "kind": "option",
+    "description": "Run all external checks (loaded via --external-checks options) even if the checks are not present in the --check list. This allows you to always ensure that new checks present in the external source are used. If an external check is included in --skip-check, it will still be skipped",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--scan-secrets-history": {
+    "Name": "--scan-secrets-history",
+    "kind": "option",
+    "description": "Will scan the history of commits for secrets",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSCAN_SECRETS_HISTORY\u003e": {
+        "Name": "\u003cSCAN_SECRETS_HISTORY\u003e",
+        "kind": "argument",
+        "description": "SCAN_SECRETS_HISTORY",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSCAN_SECRETS_HISTORY\u003e": {
+        "Name": "\u003cSCAN_SECRETS_HISTORY\u003e",
+        "kind": "argument",
+        "description": "SCAN_SECRETS_HISTORY",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSCAN_SECRETS_HISTORY\u003e"
+    ]
+  },
+  "--secrets-history-timeout": {
+    "Name": "--secrets-history-timeout",
+    "kind": "option",
+    "description": "Maximum time to run the history scan",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSECRETS_HISTORY_TIMEOUT\u003e": {
+        "Name": "\u003cSECRETS_HISTORY_TIMEOUT\u003e",
+        "kind": "argument",
+        "description": "SECRETS_HISTORY_TIMEOUT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSECRETS_HISTORY_TIMEOUT\u003e": {
+        "Name": "\u003cSECRETS_HISTORY_TIMEOUT\u003e",
+        "kind": "argument",
+        "description": "SECRETS_HISTORY_TIMEOUT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSECRETS_HISTORY_TIMEOUT\u003e"
+    ]
+  },
+  "--show-config": {
+    "Name": "--show-config",
+    "kind": "option",
+    "description": "Prints all arguments and config settings and where they came from (eg. commandline, config file, environment variable or default)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--skip-check": {
+    "Name": "--skip-check",
+    "kind": "option",
+    "description": "Filter scan to run all check except a specific check identifier (denylist). You can specify multiple checks separated by comma delimiter. You may also use the environment variable: CKV_SKIP_CHECK",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cCHECKS\u003e": {
+        "Name": "\u003cCHECKS\u003e",
+        "kind": "argument",
+        "description": "CHECKS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cCHECKS\u003e": {
+        "Name": "\u003cCHECKS\u003e",
+        "kind": "argument",
+        "description": "CHECKS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cCHECKS\u003e"
+    ]
+  },
+  "--skip-cve-package": {
+    "Name": "--skip-cve-package",
+    "kind": "option",
+    "description": "Ignore specific open source package when SCA scanning for CVEs in package dependencies. Can be used multiple times to skip multiple packages",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSKIP_CVE_PACKAGE\u003e": {
+        "Name": "\u003cSKIP_CVE_PACKAGE\u003e",
+        "kind": "argument",
+        "description": "SKIP_CVE_PACKAGE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSKIP_CVE_PACKAGE\u003e": {
+        "Name": "\u003cSKIP_CVE_PACKAGE\u003e",
+        "kind": "argument",
+        "description": "SKIP_CVE_PACKAGE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSKIP_CVE_PACKAGE\u003e"
+    ]
+  },
+  "--skip-download": {
+    "Name": "--skip-download",
+    "kind": "option",
+    "description": "Do not download any data from Prisma Cloud",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSKIP_DOWNLOAD\u003e": {
+        "Name": "\u003cSKIP_DOWNLOAD\u003e",
+        "kind": "argument",
+        "description": "SKIP_DOWNLOAD",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSKIP_DOWNLOAD\u003e": {
+        "Name": "\u003cSKIP_DOWNLOAD\u003e",
+        "kind": "argument",
+        "description": "SKIP_DOWNLOAD",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSKIP_DOWNLOAD\u003e"
+    ]
+  },
+  "--skip-fixes": {
+    "Name": "--skip-fixes",
+    "kind": "option",
+    "description": "Do not download fixed resource templates from Bridgecrew. Only has an effect when using the --bc-api-key flag",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--skip-framework": {
+    "Name": "--skip-framework",
+    "kind": "option",
+    "description": "IaC frameworks to exclude checks for",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFRAMEWORKS\u003e": {
+        "Name": "\u003cFRAMEWORKS\u003e",
+        "kind": "argument",
+        "description": "FRAMEWORKS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFRAMEWORKS\u003e": {
+        "Name": "\u003cFRAMEWORKS\u003e",
+        "kind": "argument",
+        "description": "FRAMEWORKS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFRAMEWORKS\u003e"
+    ]
+  },
+  "--skip-path": {
+    "Name": "--skip-path",
+    "kind": "option",
+    "description": "Path (file or directory) to skip, using regular expression logic, relative to current working directory. Word boundaries are not implicit; i.e., specifying 'dir1' will skip any directory or subdirectory named 'dir1'. Ignored with -f. Can be specified multiple times",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSKIP_PATH\u003e": {
+        "Name": "\u003cSKIP_PATH\u003e",
+        "kind": "argument",
+        "description": "SKIP_PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSKIP_PATH\u003e": {
+        "Name": "\u003cSKIP_PATH\u003e",
+        "kind": "argument",
+        "description": "SKIP_PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSKIP_PATH\u003e"
+    ]
+  },
+  "--skip-policy-download": {
+    "Name": "--skip-policy-download",
+    "kind": "option",
+    "description": "Do not download custom policies configured in the Bridgecrew platform. Only has an effect when using the --bc-api-key flag",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--skip-resources-without-violations": {
+    "Name": "--skip-resources-without-violations",
+    "kind": "option",
+    "description": "Exclude extra resources (resources without violations)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSKIP_RESOURCES_WITHOUT_VIOLATIONS\u003e": {
+        "Name": "\u003cSKIP_RESOURCES_WITHOUT_VIOLATIONS\u003e",
+        "kind": "argument",
+        "description": "SKIP_RESOURCES_WITHOUT_VIOLATIONS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSKIP_RESOURCES_WITHOUT_VIOLATIONS\u003e": {
+        "Name": "\u003cSKIP_RESOURCES_WITHOUT_VIOLATIONS\u003e",
+        "kind": "argument",
+        "description": "SKIP_RESOURCES_WITHOUT_VIOLATIONS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSKIP_RESOURCES_WITHOUT_VIOLATIONS\u003e"
+    ]
+  },
+  "--skip-suppressions": {
+    "Name": "--skip-suppressions",
+    "kind": "option",
+    "description": "Do not download preconfigured suppressions from the Bridgecrew platform. Code comment suppressions will still be honored. Only has an effect when using the --bc-api-key flag",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--soft-fail": {
+    "Name": "--soft-fail",
+    "kind": "option",
+    "description": "Runs checks but suppresses the error code",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--soft-fail-on": {
+    "Name": "--soft-fail-on",
+    "kind": "option",
+    "description": "Exits with a 0 exit code for specified checks. You can specify multiple checks separated by comma delimiter",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cCHECKS\u003e": {
+        "Name": "\u003cCHECKS\u003e",
+        "kind": "argument",
+        "description": "CHECKS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cCHECKS\u003e": {
+        "Name": "\u003cCHECKS\u003e",
+        "kind": "argument",
+        "description": "CHECKS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cCHECKS\u003e"
+    ]
+  },
+  "--summary-position": {
+    "Name": "--summary-position",
+    "kind": "option",
+    "description": "Chose whether the summary will be appended on top or on bottom",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSUMMARY_POSITION\u003e": {
+        "Name": "\u003cSUMMARY_POSITION\u003e",
+        "kind": "argument",
+        "description": "SUMMARY_POSITION",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSUMMARY_POSITION\u003e": {
+        "Name": "\u003cSUMMARY_POSITION\u003e",
+        "kind": "argument",
+        "description": "SUMMARY_POSITION",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSUMMARY_POSITION\u003e"
+    ]
+  },
+  "--support": {
+    "Name": "--support",
+    "kind": "option",
+    "description": "Enable debug logs and upload the logs to the server",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSUPPORT\u003e": {
+        "Name": "\u003cSUPPORT\u003e",
+        "kind": "argument",
+        "description": "SUPPORT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSUPPORT\u003e": {
+        "Name": "\u003cSUPPORT\u003e",
+        "kind": "argument",
+        "description": "SUPPORT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSUPPORT\u003e"
+    ]
+  },
+  "--use-enforcement-rules": {
+    "Name": "--use-enforcement-rules",
+    "kind": "option",
+    "description": "Use the Enforcement rules configured in the platform for hard / soft fail logic",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cUSE_ENFORCEMENT_RULES\u003e": {
+        "Name": "\u003cUSE_ENFORCEMENT_RULES\u003e",
+        "kind": "argument",
+        "description": "USE_ENFORCEMENT_RULES",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cUSE_ENFORCEMENT_RULES\u003e": {
+        "Name": "\u003cUSE_ENFORCEMENT_RULES\u003e",
+        "kind": "argument",
+        "description": "USE_ENFORCEMENT_RULES",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cUSE_ENFORCEMENT_RULES\u003e"
+    ]
+  },
+  "--var-file": {
+    "Name": "--var-file",
+    "kind": "option",
+    "description": "Variable files to load in addition to the default files (see https://www.terraform.io/docs/language/values/variables.html#variable-definitions-tfvars-files). Currently only supported for source Terraform (.tf file), and Helm chart scans. Requires using --directory, NOT --file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cVAR_FILE\u003e": {
+        "Name": "\u003cVAR_FILE\u003e",
+        "kind": "argument",
+        "description": "VAR_FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cVAR_FILE\u003e": {
+        "Name": "\u003cVAR_FILE\u003e",
+        "kind": "argument",
+        "description": "VAR_FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cVAR_FILE\u003e"
+    ]
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Show the version of checkov",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-b": {
+    "Name": "-b",
+    "kind": "option",
+    "description": "Selected branch of the persisted repository. Only has effect when using the --bc-api-key flag",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cBRANCH\u003e": {
+        "Name": "\u003cBRANCH\u003e",
+        "kind": "argument",
+        "description": "BRANCH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cBRANCH\u003e": {
+        "Name": "\u003cBRANCH\u003e",
+        "kind": "argument",
+        "description": "BRANCH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cBRANCH\u003e"
+    ]
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Filter scan to run only on a specific check identifier (allowlist). You can specify multiple checks separated by comma delimiter. You may also use the environment variable: CKV_CHECK",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cCHECKS\u003e": {
+        "Name": "\u003cCHECKS\u003e",
+        "kind": "argument",
+        "description": "CHECKS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cCHECKS\u003e": {
+        "Name": "\u003cCHECKS\u003e",
+        "kind": "argument",
+        "description": "CHECKS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cCHECKS\u003e"
+    ]
+  },
+  "-ca": {
+    "Name": "-ca",
+    "kind": "option",
+    "description": "Custom CA (bundle) fila. You may also use the environment variablee: CA_CERTIFICATE",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cCA_CERTIFICATE\u003e": {
+        "Name": "\u003cCA_CERTIFICATE\u003e",
+        "kind": "argument",
+        "description": "CA_CERTIFICATE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cCA_CERTIFICATE\u003e": {
+        "Name": "\u003cCA_CERTIFICATE\u003e",
+        "kind": "argument",
+        "description": "CA_CERTIFICATE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cCA_CERTIFICATE\u003e"
+    ]
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "IaC root directory (can not be used together with --file)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cDirectory\u003e": {
+        "Name": "\u003cDirectory\u003e",
+        "kind": "argument",
+        "description": "Directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cDirectory\u003e": {
+        "Name": "\u003cDirectory\u003e",
+        "kind": "argument",
+        "description": "Directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cDirectory\u003e"
+    ]
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "IaC file(can not be used together with --directory)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFILE\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help for checkov",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "option",
+    "description": "List checks",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-o": {
+    "Name": "-o",
+    "kind": "option",
+    "description": "Report output format. Add multiple outputs by using the flag multiple times (-o sarif -o cli)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFORMAT\u003e": {
+        "Name": "\u003cFORMAT\u003e",
+        "kind": "argument",
+        "description": "FORMAT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFORMAT\u003e": {
+        "Name": "\u003cFORMAT\u003e",
+        "kind": "argument",
+        "description": "FORMAT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFORMAT\u003e"
+    ]
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Runs checks but suppresses the error code",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Show the version of checkov",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

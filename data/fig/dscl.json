@@ -1,0 +1,1376 @@
+{
+  "-P": {
+    "Name": "-P",
+    "kind": "option",
+    "description": "Authenticate with password",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpassword\u003e": {
+        "Name": "\u003cpassword\u003e",
+        "kind": "argument",
+        "description": "password",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpassword\u003e": {
+        "Name": "\u003cpassword\u003e",
+        "kind": "argument",
+        "description": "password",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpassword\u003e"
+    ]
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Targeted local node database file path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile\u003e"
+    ]
+  },
+  "-p": {
+    "Name": "-p",
+    "kind": "option",
+    "description": "Prompt for password",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-plist": {
+    "Name": "-plist",
+    "kind": "option",
+    "description": "Print out record(s) or attribute(s) in XML plist format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-q": {
+    "Name": "-q",
+    "kind": "option",
+    "description": "Quiet - no interactive prompt",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-raw": {
+    "Name": "-raw",
+    "kind": "option",
+    "description": "Don't strip off prefix from DirectoryService API constants",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-u": {
+    "Name": "-u",
+    "kind": "option",
+    "description": "Authenticate as user",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cuser\u003e": {
+        "Name": "\u003cuser\u003e",
+        "kind": "argument",
+        "description": "user",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cuser\u003e": {
+        "Name": "\u003cuser\u003e",
+        "kind": "argument",
+        "description": "user",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cuser\u003e"
+    ]
+  },
+  "-url": {
+    "Name": "-url",
+    "kind": "option",
+    "description": "Print record attribute values in URL-style encoding",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003cdatasource\u003e": {
+    "Name": "\u003cdatasource\u003e",
+    "kind": "argument",
+    "description": "datasource",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  },
+  "append": {
+    "Name": "append",
+    "kind": "subcommand",
+    "description": "Appends one or more values to a property in a given record",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvals\u003e": {
+        "Name": "\u003cvals\u003e",
+        "kind": "argument",
+        "description": "vals",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvals\u003e": {
+        "Name": "\u003cvals\u003e",
+        "kind": "argument",
+        "description": "vals",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e",
+      "\u003ckey\u003e",
+      "\u003cvals\u003e"
+    ]
+  },
+  "change": {
+    "Name": "change",
+    "kind": "subcommand",
+    "description": "Replaces the given old value in the list of values of the given key with the new value in the specified record",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cnew val\u003e": {
+        "Name": "\u003cnew val\u003e",
+        "kind": "argument",
+        "description": "new val",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cold val\u003e": {
+        "Name": "\u003cold val\u003e",
+        "kind": "argument",
+        "description": "old val",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cnew val\u003e": {
+        "Name": "\u003cnew val\u003e",
+        "kind": "argument",
+        "description": "new val",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cold val\u003e": {
+        "Name": "\u003cold val\u003e",
+        "kind": "argument",
+        "description": "old val",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e",
+      "\u003ckey\u003e",
+      "\u003cold val\u003e",
+      "\u003cnew val\u003e"
+    ]
+  },
+  "changei": {
+    "Name": "changei",
+    "kind": "subcommand",
+    "description": "Replaces the value at the given index in the list of values of the given key with the new value in the specified record",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cnew val\u003e": {
+        "Name": "\u003cnew val\u003e",
+        "kind": "argument",
+        "description": "new val",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvalue index\u003e": {
+        "Name": "\u003cvalue index\u003e",
+        "kind": "argument",
+        "description": "value index",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cnew val\u003e": {
+        "Name": "\u003cnew val\u003e",
+        "kind": "argument",
+        "description": "new val",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvalue index\u003e": {
+        "Name": "\u003cvalue index\u003e",
+        "kind": "argument",
+        "description": "value index",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e",
+      "\u003ckey\u003e",
+      "\u003cvalue index\u003e",
+      "\u003cnew val\u003e"
+    ]
+  },
+  "create": {
+    "Name": "create",
+    "kind": "subcommand",
+    "description": "Creates a new record",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvals\u003e": {
+        "Name": "\u003cvals\u003e",
+        "kind": "argument",
+        "description": "vals",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvals\u003e": {
+        "Name": "\u003cvals\u003e",
+        "kind": "argument",
+        "description": "vals",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "createpl": {
+    "Name": "createpl",
+    "kind": "subcommand",
+    "description": "Creates a string, or array of strings at plist_path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cplist path\u003e": {
+        "Name": "\u003cplist path\u003e",
+        "kind": "argument",
+        "description": "plist path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cval\u003e": {
+        "Name": "\u003cval\u003e",
+        "kind": "argument",
+        "description": "val",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvals\u003e": {
+        "Name": "\u003cvals\u003e",
+        "kind": "argument",
+        "description": "vals",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cplist path\u003e": {
+        "Name": "\u003cplist path\u003e",
+        "kind": "argument",
+        "description": "plist path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cval\u003e": {
+        "Name": "\u003cval\u003e",
+        "kind": "argument",
+        "description": "val",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvals\u003e": {
+        "Name": "\u003cvals\u003e",
+        "kind": "argument",
+        "description": "vals",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e",
+      "\u003ckey\u003e",
+      "\u003cplist path\u003e",
+      "\u003cval\u003e"
+    ]
+  },
+  "createpli": {
+    "Name": "createpli",
+    "kind": "subcommand",
+    "description": "Creates a string, or array of strings at plist_path for the plist at value_index of the key",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cplist path\u003e": {
+        "Name": "\u003cplist path\u003e",
+        "kind": "argument",
+        "description": "plist path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cval\u003e": {
+        "Name": "\u003cval\u003e",
+        "kind": "argument",
+        "description": "val",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvals\u003e": {
+        "Name": "\u003cvals\u003e",
+        "kind": "argument",
+        "description": "vals",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvalue index\u003e": {
+        "Name": "\u003cvalue index\u003e",
+        "kind": "argument",
+        "description": "value index",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cplist path\u003e": {
+        "Name": "\u003cplist path\u003e",
+        "kind": "argument",
+        "description": "plist path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cval\u003e": {
+        "Name": "\u003cval\u003e",
+        "kind": "argument",
+        "description": "val",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvals\u003e": {
+        "Name": "\u003cvals\u003e",
+        "kind": "argument",
+        "description": "vals",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvalue index\u003e": {
+        "Name": "\u003cvalue index\u003e",
+        "kind": "argument",
+        "description": "value index",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e",
+      "\u003ckey\u003e",
+      "\u003cvalue index\u003e",
+      "\u003cplist path\u003e",
+      "\u003cval\u003e"
+    ]
+  },
+  "delete": {
+    "Name": "delete",
+    "kind": "subcommand",
+    "description": "Delete a directory, property, or value",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvals\u003e": {
+        "Name": "\u003cvals\u003e",
+        "kind": "argument",
+        "description": "vals",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvals\u003e": {
+        "Name": "\u003cvals\u003e",
+        "kind": "argument",
+        "description": "vals",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "deletepl": {
+    "Name": "deletepl",
+    "kind": "subcommand",
+    "description": "Deletes a value in a plist",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cplist path\u003e": {
+        "Name": "\u003cplist path\u003e",
+        "kind": "argument",
+        "description": "plist path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvals\u003e": {
+        "Name": "\u003cvals\u003e",
+        "kind": "argument",
+        "description": "vals",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cplist path\u003e": {
+        "Name": "\u003cplist path\u003e",
+        "kind": "argument",
+        "description": "plist path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvals\u003e": {
+        "Name": "\u003cvals\u003e",
+        "kind": "argument",
+        "description": "vals",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e",
+      "\u003ckey\u003e",
+      "\u003cplist path\u003e"
+    ]
+  },
+  "deletepli": {
+    "Name": "deletepli",
+    "kind": "subcommand",
+    "description": "Deletes a value for the plist at value_index of the key",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cplist path\u003e": {
+        "Name": "\u003cplist path\u003e",
+        "kind": "argument",
+        "description": "plist path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvals\u003e": {
+        "Name": "\u003cvals\u003e",
+        "kind": "argument",
+        "description": "vals",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvalue index\u003e": {
+        "Name": "\u003cvalue index\u003e",
+        "kind": "argument",
+        "description": "value index",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cplist path\u003e": {
+        "Name": "\u003cplist path\u003e",
+        "kind": "argument",
+        "description": "plist path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvals\u003e": {
+        "Name": "\u003cvals\u003e",
+        "kind": "argument",
+        "description": "vals",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvalue index\u003e": {
+        "Name": "\u003cvalue index\u003e",
+        "kind": "argument",
+        "description": "value index",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e",
+      "\u003ckey\u003e",
+      "\u003cvalue index\u003e",
+      "\u003cplist path\u003e"
+    ]
+  },
+  "diff": {
+    "Name": "diff",
+    "kind": "subcommand",
+    "description": "Compares the data from path1 and path2 looking at the specified keys (or all if no keys are specified)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckeys\u003e": {
+        "Name": "\u003ckeys\u003e",
+        "kind": "argument",
+        "description": "keys",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckeys\u003e": {
+        "Name": "\u003ckeys\u003e",
+        "kind": "argument",
+        "description": "keys",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e",
+      "\u003cpath\u003e"
+    ]
+  },
+  "list": {
+    "Name": "list",
+    "kind": "subcommand",
+    "description": "Lists the subdirectories of the given directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "merge": {
+    "Name": "merge",
+    "kind": "subcommand",
+    "description": "Appends one or more values to a property in a given directory if the property does not already have those values",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvals\u003e": {
+        "Name": "\u003cvals\u003e",
+        "kind": "argument",
+        "description": "vals",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvals\u003e": {
+        "Name": "\u003cvals\u003e",
+        "kind": "argument",
+        "description": "vals",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e",
+      "\u003ckey\u003e",
+      "\u003cvals\u003e"
+    ]
+  },
+  "passwd": {
+    "Name": "passwd",
+    "kind": "subcommand",
+    "description": "Changes the password of a user",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnew password\u003e": {
+        "Name": "\u003cnew password\u003e",
+        "kind": "argument",
+        "description": "new password",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnew password\u003e": {
+        "Name": "\u003cnew password\u003e",
+        "kind": "argument",
+        "description": "new password",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "read": {
+    "Name": "read",
+    "kind": "subcommand",
+    "description": "Prints a directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckeys\u003e": {
+        "Name": "\u003ckeys\u003e",
+        "kind": "argument",
+        "description": "keys",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckeys\u003e": {
+        "Name": "\u003ckeys\u003e",
+        "kind": "argument",
+        "description": "keys",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "readall": {
+    "Name": "readall",
+    "kind": "subcommand",
+    "description": "Prints all the records of a given type",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckeys\u003e": {
+        "Name": "\u003ckeys\u003e",
+        "kind": "argument",
+        "description": "keys",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckeys\u003e": {
+        "Name": "\u003ckeys\u003e",
+        "kind": "argument",
+        "description": "keys",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "readpl": {
+    "Name": "readpl",
+    "kind": "subcommand",
+    "description": "Prints the contents of plist_path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cplist path\u003e": {
+        "Name": "\u003cplist path\u003e",
+        "kind": "argument",
+        "description": "plist path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cplist path\u003e": {
+        "Name": "\u003cplist path\u003e",
+        "kind": "argument",
+        "description": "plist path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e",
+      "\u003ckey\u003e",
+      "\u003cplist path\u003e"
+    ]
+  },
+  "readpli": {
+    "Name": "readpli",
+    "kind": "subcommand",
+    "description": "Prints the contents of plist_path for the plist at value_index of the key",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cplist path\u003e": {
+        "Name": "\u003cplist path\u003e",
+        "kind": "argument",
+        "description": "plist path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvalue index\u003e": {
+        "Name": "\u003cvalue index\u003e",
+        "kind": "argument",
+        "description": "value index",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cplist path\u003e": {
+        "Name": "\u003cplist path\u003e",
+        "kind": "argument",
+        "description": "plist path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvalue index\u003e": {
+        "Name": "\u003cvalue index\u003e",
+        "kind": "argument",
+        "description": "value index",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e",
+      "\u003ckey\u003e",
+      "\u003cvalue index\u003e",
+      "\u003cplist path\u003e"
+    ]
+  },
+  "search": {
+    "Name": "search",
+    "kind": "subcommand",
+    "description": "Searches for records that match a pattern",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cval\u003e": {
+        "Name": "\u003cval\u003e",
+        "kind": "argument",
+        "description": "val",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cval\u003e": {
+        "Name": "\u003cval\u003e",
+        "kind": "argument",
+        "description": "val",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e",
+      "\u003ckey\u003e",
+      "\u003cval\u003e"
+    ]
+  }
+}

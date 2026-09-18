@@ -1,0 +1,934 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Shows usage information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Shows versioning information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Shows usage information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Shows versioning information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003ctask\u003e": {
+    "Name": "\u003ctask\u003e",
+    "kind": "argument",
+    "description": "task",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Prints documentation for a given task (Lists all the tasks if no task is specified)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--names": {
+        "Name": "--names",
+        "kind": "option",
+        "description": "Prints all task names and aliases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--search": {
+        "Name": "--search",
+        "kind": "option",
+        "description": "Prints all tasks and aliases that contain 'pattern' in the name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpattern\u003e": {
+            "Name": "\u003cpattern\u003e",
+            "kind": "argument",
+            "description": "pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpattern\u003e": {
+            "Name": "\u003cpattern\u003e",
+            "kind": "argument",
+            "description": "pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpattern\u003e"
+        ]
+      },
+      "\u003ctask\u003e": {
+        "Name": "\u003ctask\u003e",
+        "kind": "argument",
+        "description": "task",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--names": {
+        "Name": "--names",
+        "kind": "option",
+        "description": "Prints all task names and aliases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--search": {
+        "Name": "--search",
+        "kind": "option",
+        "description": "Prints all tasks and aliases that contain 'pattern' in the name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpattern\u003e": {
+            "Name": "\u003cpattern\u003e",
+            "kind": "argument",
+            "description": "pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpattern\u003e": {
+            "Name": "\u003cpattern\u003e",
+            "kind": "argument",
+            "description": "pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpattern\u003e"
+        ]
+      },
+      "\u003ctask\u003e": {
+        "Name": "\u003ctask\u003e",
+        "kind": "argument",
+        "description": "task",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "new": {
+    "Name": "new",
+    "kind": "subcommand",
+    "description": "Creates a new Elixir project at the given path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--app": {
+        "Name": "--app",
+        "kind": "option",
+        "description": "Name the OTP application for the project",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003capp\u003e": {
+            "Name": "\u003capp\u003e",
+            "kind": "argument",
+            "description": "app",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003capp\u003e": {
+            "Name": "\u003capp\u003e",
+            "kind": "argument",
+            "description": "app",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003capp\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--modules": {
+        "Name": "--modules",
+        "kind": "option",
+        "description": "Name the modules in the generated code skeleton",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmodule\u003e": {
+            "Name": "\u003cmodule\u003e",
+            "kind": "argument",
+            "description": "module",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmodule\u003e": {
+            "Name": "\u003cmodule\u003e",
+            "kind": "argument",
+            "description": "module",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmodule\u003e"
+        ]
+      },
+      "--sup": {
+        "Name": "--sup",
+        "kind": "option",
+        "description": "Generate an OTP application skeleton including a supervision tree. Normally an app is generated without a supervisor and without the app callback",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--umbrella": {
+        "Name": "--umbrella",
+        "kind": "option",
+        "description": "Generate an umbrella project",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--app": {
+        "Name": "--app",
+        "kind": "option",
+        "description": "Name the OTP application for the project",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003capp\u003e": {
+            "Name": "\u003capp\u003e",
+            "kind": "argument",
+            "description": "app",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003capp\u003e": {
+            "Name": "\u003capp\u003e",
+            "kind": "argument",
+            "description": "app",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003capp\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--modules": {
+        "Name": "--modules",
+        "kind": "option",
+        "description": "Name the modules in the generated code skeleton",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmodule\u003e": {
+            "Name": "\u003cmodule\u003e",
+            "kind": "argument",
+            "description": "module",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmodule\u003e": {
+            "Name": "\u003cmodule\u003e",
+            "kind": "argument",
+            "description": "module",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmodule\u003e"
+        ]
+      },
+      "--sup": {
+        "Name": "--sup",
+        "kind": "option",
+        "description": "Generate an OTP application skeleton including a supervision tree. Normally an app is generated without a supervisor and without the app callback",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--umbrella": {
+        "Name": "--umbrella",
+        "kind": "option",
+        "description": "Generate an umbrella project",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Output usage information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "run": {
+    "Name": "run",
+    "kind": "subcommand",
+    "description": "Starts the current application and runs code",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Loads the given configuration files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "--eval": {
+        "Name": "--eval",
+        "kind": "option",
+        "description": "Evaluates the given code",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccode\u003e": {
+            "Name": "\u003ccode\u003e",
+            "kind": "argument",
+            "description": "code",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccode\u003e": {
+            "Name": "\u003ccode\u003e",
+            "kind": "argument",
+            "description": "code",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccode\u003e"
+        ]
+      },
+      "--no-archives-check": {
+        "Name": "--no-archives-check",
+        "kind": "option",
+        "description": "Does not check archives",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-compile": {
+        "Name": "--no-compile",
+        "kind": "option",
+        "description": "Does not compile even if files require compilation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-deps-check": {
+        "Name": "--no-deps-check",
+        "kind": "option",
+        "description": "Does not check dependencies",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-elixir-version-check": {
+        "Name": "--no-elixir-version-check",
+        "kind": "option",
+        "description": "Does not check the Elixir version from mix.exs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-halt": {
+        "Name": "--no-halt",
+        "kind": "option",
+        "description": "Does not halt the system after running the command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-mix-exs": {
+        "Name": "--no-mix-exs",
+        "kind": "option",
+        "description": "Allows the command to run even if there is no mix.exs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-start": {
+        "Name": "--no-start",
+        "kind": "option",
+        "description": "Does not start applications after compilation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--parallel": {
+        "Name": "--parallel",
+        "kind": "option",
+        "description": "Executes the given pattern/file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile|pattern\u003e": {
+            "Name": "\u003cfile|pattern\u003e",
+            "kind": "argument",
+            "description": "file|pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile|pattern\u003e": {
+            "Name": "\u003cfile|pattern\u003e",
+            "kind": "argument",
+            "description": "file|pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile|pattern\u003e"
+        ]
+      },
+      "--preload-modules": {
+        "Name": "--preload-modules",
+        "kind": "option",
+        "description": "Preloads all modules defined in applications",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--require": {
+        "Name": "--require",
+        "kind": "option",
+        "description": "Executes the given pattern/file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile|pattern\u003e": {
+            "Name": "\u003cfile|pattern\u003e",
+            "kind": "argument",
+            "description": "file|pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile|pattern\u003e": {
+            "Name": "\u003cfile|pattern\u003e",
+            "kind": "argument",
+            "description": "file|pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile|pattern\u003e"
+        ]
+      },
+      "-e": {
+        "Name": "-e",
+        "kind": "option",
+        "description": "Evaluates the given code",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccode\u003e": {
+            "Name": "\u003ccode\u003e",
+            "kind": "argument",
+            "description": "code",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccode\u003e": {
+            "Name": "\u003ccode\u003e",
+            "kind": "argument",
+            "description": "code",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccode\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Executes the given pattern/file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile|pattern\u003e": {
+            "Name": "\u003cfile|pattern\u003e",
+            "kind": "argument",
+            "description": "file|pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile|pattern\u003e": {
+            "Name": "\u003cfile|pattern\u003e",
+            "kind": "argument",
+            "description": "file|pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile|pattern\u003e"
+        ]
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Executes the given pattern/file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile|pattern\u003e": {
+            "Name": "\u003cfile|pattern\u003e",
+            "kind": "argument",
+            "description": "file|pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile|pattern\u003e": {
+            "Name": "\u003cfile|pattern\u003e",
+            "kind": "argument",
+            "description": "file|pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile|pattern\u003e"
+        ]
+      },
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Loads the given configuration files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "--eval": {
+        "Name": "--eval",
+        "kind": "option",
+        "description": "Evaluates the given code",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccode\u003e": {
+            "Name": "\u003ccode\u003e",
+            "kind": "argument",
+            "description": "code",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccode\u003e": {
+            "Name": "\u003ccode\u003e",
+            "kind": "argument",
+            "description": "code",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccode\u003e"
+        ]
+      },
+      "--no-archives-check": {
+        "Name": "--no-archives-check",
+        "kind": "option",
+        "description": "Does not check archives",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-compile": {
+        "Name": "--no-compile",
+        "kind": "option",
+        "description": "Does not compile even if files require compilation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-deps-check": {
+        "Name": "--no-deps-check",
+        "kind": "option",
+        "description": "Does not check dependencies",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-elixir-version-check": {
+        "Name": "--no-elixir-version-check",
+        "kind": "option",
+        "description": "Does not check the Elixir version from mix.exs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-halt": {
+        "Name": "--no-halt",
+        "kind": "option",
+        "description": "Does not halt the system after running the command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-mix-exs": {
+        "Name": "--no-mix-exs",
+        "kind": "option",
+        "description": "Allows the command to run even if there is no mix.exs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-start": {
+        "Name": "--no-start",
+        "kind": "option",
+        "description": "Does not start applications after compilation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--parallel": {
+        "Name": "--parallel",
+        "kind": "option",
+        "description": "Executes the given pattern/file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile|pattern\u003e": {
+            "Name": "\u003cfile|pattern\u003e",
+            "kind": "argument",
+            "description": "file|pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile|pattern\u003e": {
+            "Name": "\u003cfile|pattern\u003e",
+            "kind": "argument",
+            "description": "file|pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile|pattern\u003e"
+        ]
+      },
+      "--preload-modules": {
+        "Name": "--preload-modules",
+        "kind": "option",
+        "description": "Preloads all modules defined in applications",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--require": {
+        "Name": "--require",
+        "kind": "option",
+        "description": "Executes the given pattern/file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile|pattern\u003e": {
+            "Name": "\u003cfile|pattern\u003e",
+            "kind": "argument",
+            "description": "file|pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile|pattern\u003e": {
+            "Name": "\u003cfile|pattern\u003e",
+            "kind": "argument",
+            "description": "file|pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile|pattern\u003e"
+        ]
+      },
+      "-e": {
+        "Name": "-e",
+        "kind": "option",
+        "description": "Evaluates the given code",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccode\u003e": {
+            "Name": "\u003ccode\u003e",
+            "kind": "argument",
+            "description": "code",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccode\u003e": {
+            "Name": "\u003ccode\u003e",
+            "kind": "argument",
+            "description": "code",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccode\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Executes the given pattern/file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile|pattern\u003e": {
+            "Name": "\u003cfile|pattern\u003e",
+            "kind": "argument",
+            "description": "file|pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile|pattern\u003e": {
+            "Name": "\u003cfile|pattern\u003e",
+            "kind": "argument",
+            "description": "file|pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile|pattern\u003e"
+        ]
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Executes the given pattern/file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile|pattern\u003e": {
+            "Name": "\u003cfile|pattern\u003e",
+            "kind": "argument",
+            "description": "file|pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile|pattern\u003e": {
+            "Name": "\u003cfile|pattern\u003e",
+            "kind": "argument",
+            "description": "file|pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile|pattern\u003e"
+        ]
+      },
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  }
+}

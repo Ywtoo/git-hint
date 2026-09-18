@@ -1,0 +1,945 @@
+{
+  "--benchmark-info": {
+    "Name": "--benchmark-info",
+    "kind": "option",
+    "description": "Print out how much time it took for rules and phases of the process to run. This is meant for benchmarking purposes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--compiler": {
+    "Name": "--compiler",
+    "kind": "option",
+    "description": "Specify the path to the elm compiler",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath-to-elm\u003e": {
+        "Name": "\u003cpath-to-elm\u003e",
+        "kind": "argument",
+        "description": "\u003cpath-to-elm\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath-to-elm\u003e": {
+        "Name": "\u003cpath-to-elm\u003e",
+        "kind": "argument",
+        "description": "\u003cpath-to-elm\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath-to-elm\u003e"
+    ]
+  },
+  "--config": {
+    "Name": "--config",
+    "kind": "option",
+    "description": "Use the review configuration in the specified directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath-to-review-directory\u003e": {
+        "Name": "\u003cpath-to-review-directory\u003e",
+        "kind": "argument",
+        "description": "\u003cpath-to-review-directory\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath-to-review-directory\u003e": {
+        "Name": "\u003cpath-to-review-directory\u003e",
+        "kind": "argument",
+        "description": "\u003cpath-to-review-directory\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath-to-review-directory\u003e"
+    ]
+  },
+  "--debug": {
+    "Name": "--debug",
+    "kind": "option",
+    "description": "Add helpful information to debug your configuration or rules",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--elm-format-path": {
+    "Name": "--elm-format-path",
+    "kind": "option",
+    "description": "Specify the path to elm-format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath-to-elm-format\u003e": {
+        "Name": "\u003cpath-to-elm-format\u003e",
+        "kind": "argument",
+        "description": "\u003cpath-to-elm-format\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath-to-elm-format\u003e": {
+        "Name": "\u003cpath-to-elm-format\u003e",
+        "kind": "argument",
+        "description": "\u003cpath-to-elm-format\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath-to-elm-format\u003e"
+    ]
+  },
+  "--elmjson": {
+    "Name": "--elmjson",
+    "kind": "option",
+    "description": "Specify the path to the elm.json file of the project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath-to-elm.json\u003e": {
+        "Name": "\u003cpath-to-elm.json\u003e",
+        "kind": "argument",
+        "description": "\u003cpath-to-elm.json\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath-to-elm.json\u003e": {
+        "Name": "\u003cpath-to-elm.json\u003e",
+        "kind": "argument",
+        "description": "\u003cpath-to-elm.json\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath-to-elm.json\u003e"
+    ]
+  },
+  "--extract": {
+    "Name": "--extract",
+    "kind": "option",
+    "description": "Enable extracting data from the project for the rules that have a data extractor. Requires running with --report=json. Learn more by reading the section about \"Extracting information\" at https://bit.ly/3UmNr0V",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--fix": {
+    "Name": "--fix",
+    "kind": "option",
+    "description": "Elm Review will present fixes for the errors that offer an automatic fix, which you can then accept or refuse one by one",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--fix-all": {
+    "Name": "--fix-all",
+    "kind": "option",
+    "description": "Elm Review will present a single fix containing the application of all available automatic fixes, which you can then accept or refuse",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--fix-limit": {
+    "Name": "--fix-limit",
+    "kind": "option",
+    "description": "Limit the number of fixes applied in a single batch to N",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cN\u003e": {
+        "Name": "\u003cN\u003e",
+        "kind": "argument",
+        "description": "N",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cN\u003e": {
+        "Name": "\u003cN\u003e",
+        "kind": "argument",
+        "description": "N",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cN\u003e"
+    ]
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for elm-review",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--ignore-dirs": {
+    "Name": "--ignore-dirs",
+    "kind": "option",
+    "description": "Ignore the reports of all rules for the specified directories",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdir1,dir2,...\u003e": {
+        "Name": "\u003cdir1,dir2,...\u003e",
+        "kind": "argument",
+        "description": "\u003cdir1,dir2,...\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdir1,dir2,...\u003e": {
+        "Name": "\u003cdir1,dir2,...\u003e",
+        "kind": "argument",
+        "description": "\u003cdir1,dir2,...\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdir1,dir2,...\u003e"
+    ]
+  },
+  "--ignore-files": {
+    "Name": "--ignore-files",
+    "kind": "option",
+    "description": "Ignore the reports of all rules for the specified files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile1,file2,...\u003e": {
+        "Name": "\u003cfile1,file2,...\u003e",
+        "kind": "argument",
+        "description": "\u003cfile1,file2,...\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile1,file2,...\u003e": {
+        "Name": "\u003cfile1,file2,...\u003e",
+        "kind": "argument",
+        "description": "\u003cfile1,file2,...\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile1,file2,...\u003e"
+    ]
+  },
+  "--no-color": {
+    "Name": "--no-color",
+    "kind": "option",
+    "description": "Disable colors in the output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-details": {
+    "Name": "--no-details",
+    "kind": "option",
+    "description": "Hide the details from error reports for a more compact view",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--report": {
+    "Name": "--report",
+    "kind": "option",
+    "description": "Error reports will be in JSON format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cjson or ndjson\u003e": {
+        "Name": "\u003cjson or ndjson\u003e",
+        "kind": "argument",
+        "description": "json or ndjson",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cjson or ndjson\u003e": {
+        "Name": "\u003cjson or ndjson\u003e",
+        "kind": "argument",
+        "description": "json or ndjson",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cjson or ndjson\u003e"
+    ]
+  },
+  "--rules": {
+    "Name": "--rules",
+    "kind": "option",
+    "description": "Run with a subsection of the rules in the configuration. Specify them by their name, and separate them by commas",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003crule1,rule2,...\u003e": {
+        "Name": "\u003crule1,rule2,...\u003e",
+        "kind": "argument",
+        "description": "\u003crule1,rule2,...\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003crule1,rule2,...\u003e": {
+        "Name": "\u003crule1,rule2,...\u003e",
+        "kind": "argument",
+        "description": "\u003crule1,rule2,...\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003crule1,rule2,...\u003e"
+    ]
+  },
+  "--template": {
+    "Name": "--template",
+    "kind": "option",
+    "description": "Use the review configuration from a GitHub repository",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cauthor\u003e/\u003crepo\u003e[/path-to-the-config-folder][#branch-or-commit]": {
+        "Name": "\u003cauthor\u003e/\u003crepo\u003e[/path-to-the-config-folder][#branch-or-commit]",
+        "kind": "argument",
+        "description": "\u003cauthor\u003e/\u003crepo\u003e[/path-to-the-config-folder][#branch-or-commit]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cauthor\u003e/\u003crepo\u003e[/path-to-the-config-folder][#branch-or-commit]": {
+        "Name": "\u003cauthor\u003e/\u003crepo\u003e[/path-to-the-config-folder][#branch-or-commit]",
+        "kind": "argument",
+        "description": "\u003cauthor\u003e/\u003crepo\u003e[/path-to-the-config-folder][#branch-or-commit]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cauthor\u003e/\u003crepo\u003e[/path-to-the-config-folder][#branch-or-commit]"
+    ]
+  },
+  "--unsuppress": {
+    "Name": "--unsuppress",
+    "kind": "option",
+    "description": "Include suppressed errors in the error report for all rules",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Print the version of the elm-review CLI",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--watch": {
+    "Name": "--watch",
+    "kind": "option",
+    "description": "Re-run elm-review automatically when your project or configuration changes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--watch-code": {
+    "Name": "--watch-code",
+    "kind": "option",
+    "description": "Re-run elm-review automatically when your project changes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help for elm-review",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Print the version of the elm-review CLI",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003cfiles or directories to review\u003e": {
+    "Name": "\u003cfiles or directories to review\u003e",
+    "kind": "argument",
+    "description": "files or directories to review",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  },
+  "init": {
+    "Name": "init",
+    "kind": "subcommand",
+    "description": "Initialize Elm Review in this directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--compiler": {
+        "Name": "--compiler",
+        "kind": "option",
+        "description": "Specify the path to the elm compiler",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath-to-elm\u003e": {
+            "Name": "\u003cpath-to-elm\u003e",
+            "kind": "argument",
+            "description": "\u003cpath-to-elm\u003e",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath-to-elm\u003e": {
+            "Name": "\u003cpath-to-elm\u003e",
+            "kind": "argument",
+            "description": "\u003cpath-to-elm\u003e",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath-to-elm\u003e"
+        ]
+      },
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Create the configuration files in the specified directory instead of in the review/ directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath-to-review-directory\u003e": {
+            "Name": "\u003cpath-to-review-directory\u003e",
+            "kind": "argument",
+            "description": "\u003cpath-to-review-directory\u003e",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath-to-review-directory\u003e": {
+            "Name": "\u003cpath-to-review-directory\u003e",
+            "kind": "argument",
+            "description": "\u003cpath-to-review-directory\u003e",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath-to-review-directory\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help for elm-review init",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--template": {
+        "Name": "--template",
+        "kind": "option",
+        "description": "Copy the review configuration from a GitHub repository, at the root or in a folder",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cauthor\u003e/\u003crepo\u003e[/path-to-the-config-folder][#branch-or-commit]": {
+            "Name": "\u003cauthor\u003e/\u003crepo\u003e[/path-to-the-config-folder][#branch-or-commit]",
+            "kind": "argument",
+            "description": "\u003cauthor\u003e/\u003crepo\u003e[/path-to-the-config-folder][#branch-or-commit]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cauthor\u003e/\u003crepo\u003e[/path-to-the-config-folder][#branch-or-commit]": {
+            "Name": "\u003cauthor\u003e/\u003crepo\u003e[/path-to-the-config-folder][#branch-or-commit]",
+            "kind": "argument",
+            "description": "\u003cauthor\u003e/\u003crepo\u003e[/path-to-the-config-folder][#branch-or-commit]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cauthor\u003e/\u003crepo\u003e[/path-to-the-config-folder][#branch-or-commit]"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Show help for elm-review init",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--compiler": {
+        "Name": "--compiler",
+        "kind": "option",
+        "description": "Specify the path to the elm compiler",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath-to-elm\u003e": {
+            "Name": "\u003cpath-to-elm\u003e",
+            "kind": "argument",
+            "description": "\u003cpath-to-elm\u003e",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath-to-elm\u003e": {
+            "Name": "\u003cpath-to-elm\u003e",
+            "kind": "argument",
+            "description": "\u003cpath-to-elm\u003e",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath-to-elm\u003e"
+        ]
+      },
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Create the configuration files in the specified directory instead of in the review/ directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath-to-review-directory\u003e": {
+            "Name": "\u003cpath-to-review-directory\u003e",
+            "kind": "argument",
+            "description": "\u003cpath-to-review-directory\u003e",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath-to-review-directory\u003e": {
+            "Name": "\u003cpath-to-review-directory\u003e",
+            "kind": "argument",
+            "description": "\u003cpath-to-review-directory\u003e",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath-to-review-directory\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help for elm-review init",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--template": {
+        "Name": "--template",
+        "kind": "option",
+        "description": "Copy the review configuration from a GitHub repository, at the root or in a folder",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cauthor\u003e/\u003crepo\u003e[/path-to-the-config-folder][#branch-or-commit]": {
+            "Name": "\u003cauthor\u003e/\u003crepo\u003e[/path-to-the-config-folder][#branch-or-commit]",
+            "kind": "argument",
+            "description": "\u003cauthor\u003e/\u003crepo\u003e[/path-to-the-config-folder][#branch-or-commit]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cauthor\u003e/\u003crepo\u003e[/path-to-the-config-folder][#branch-or-commit]": {
+            "Name": "\u003cauthor\u003e/\u003crepo\u003e[/path-to-the-config-folder][#branch-or-commit]",
+            "kind": "argument",
+            "description": "\u003cauthor\u003e/\u003crepo\u003e[/path-to-the-config-folder][#branch-or-commit]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cauthor\u003e/\u003crepo\u003e[/path-to-the-config-folder][#branch-or-commit]"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Show help for elm-review init",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "new-package": {
+    "Name": "new-package",
+    "kind": "subcommand",
+    "description": "Creates an new project aimed to contain rules and to be published later",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--compiler": {
+        "Name": "--compiler",
+        "kind": "option",
+        "description": "Specify the path to the elm compiler",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath-to-elm\u003e": {
+            "Name": "\u003cpath-to-elm\u003e",
+            "kind": "argument",
+            "description": "\u003cpath-to-elm\u003e",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath-to-elm\u003e": {
+            "Name": "\u003cpath-to-elm\u003e",
+            "kind": "argument",
+            "description": "\u003cpath-to-elm\u003e",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath-to-elm\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help for elm-review new-package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Show help for elm-review new-package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--compiler": {
+        "Name": "--compiler",
+        "kind": "option",
+        "description": "Specify the path to the elm compiler",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath-to-elm\u003e": {
+            "Name": "\u003cpath-to-elm\u003e",
+            "kind": "argument",
+            "description": "\u003cpath-to-elm\u003e",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath-to-elm\u003e": {
+            "Name": "\u003cpath-to-elm\u003e",
+            "kind": "argument",
+            "description": "\u003cpath-to-elm\u003e",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath-to-elm\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help for elm-review new-package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Show help for elm-review new-package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "new-rule": {
+    "Name": "new-rule",
+    "kind": "subcommand",
+    "description": "Adds a new rule to your review configuration or review package",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help for elm-review new-package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Show help for elm-review new-package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003crule name\u003e": {
+        "Name": "\u003crule name\u003e",
+        "kind": "argument",
+        "description": "rule name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help for elm-review new-package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Show help for elm-review new-package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003crule name\u003e": {
+        "Name": "\u003crule name\u003e",
+        "kind": "argument",
+        "description": "rule name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003crule name\u003e"
+    ]
+  },
+  "suppress": {
+    "Name": "suppress",
+    "kind": "subcommand",
+    "description": "Generate suppression files for rules that report many errors",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--check-after-tests": {
+        "Name": "--check-after-tests",
+        "kind": "option",
+        "description": "Checks whether there are uncommitted suppression files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help for elm-review suppress",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--unsuppress": {
+        "Name": "--unsuppress",
+        "kind": "option",
+        "description": "Include suppressed errors in the error report for all rules",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--unsuppress-rules": {
+        "Name": "--unsuppress-rules",
+        "kind": "option",
+        "description": "Include suppressed errors in the error report for all rules",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003crule1,rule2,...\u003e": {
+            "Name": "\u003crule1,rule2,...\u003e",
+            "kind": "argument",
+            "description": "\u003crule1,rule2,...\u003e",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003crule1,rule2,...\u003e": {
+            "Name": "\u003crule1,rule2,...\u003e",
+            "kind": "argument",
+            "description": "\u003crule1,rule2,...\u003e",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003crule1,rule2,...\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Show help for elm-review suppress",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--check-after-tests": {
+        "Name": "--check-after-tests",
+        "kind": "option",
+        "description": "Checks whether there are uncommitted suppression files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help for elm-review suppress",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--unsuppress": {
+        "Name": "--unsuppress",
+        "kind": "option",
+        "description": "Include suppressed errors in the error report for all rules",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--unsuppress-rules": {
+        "Name": "--unsuppress-rules",
+        "kind": "option",
+        "description": "Include suppressed errors in the error report for all rules",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003crule1,rule2,...\u003e": {
+            "Name": "\u003crule1,rule2,...\u003e",
+            "kind": "argument",
+            "description": "\u003crule1,rule2,...\u003e",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003crule1,rule2,...\u003e": {
+            "Name": "\u003crule1,rule2,...\u003e",
+            "kind": "argument",
+            "description": "\u003crule1,rule2,...\u003e",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003crule1,rule2,...\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Show help for elm-review suppress",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  }
+}

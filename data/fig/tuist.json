@@ -1,0 +1,2961 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for tuist",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help for tuist",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "build": {
+    "Name": "build",
+    "kind": "subcommand",
+    "description": "Build the project in the current directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--build-output-path": {
+        "Name": "--build-output-path",
+        "kind": "option",
+        "description": "Build the project to a custom directory, example usage: 'tuist build --build-output-path .build':",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--device": {
+        "Name": "--device",
+        "kind": "option",
+        "description": "Build the project to a specific device, example usage: 'tuist build --device \"iPhone X\"':",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--os": {
+        "Name": "--os",
+        "kind": "option",
+        "description": "Build the project to a specific OS, example usage: 'tuist build --os 14.0':",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cscheme\u003e": {
+        "Name": "\u003cscheme\u003e",
+        "kind": "argument",
+        "description": "scheme",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--build-output-path": {
+        "Name": "--build-output-path",
+        "kind": "option",
+        "description": "Build the project to a custom directory, example usage: 'tuist build --build-output-path .build':",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--device": {
+        "Name": "--device",
+        "kind": "option",
+        "description": "Build the project to a specific device, example usage: 'tuist build --device \"iPhone X\"':",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--os": {
+        "Name": "--os",
+        "kind": "option",
+        "description": "Build the project to a specific OS, example usage: 'tuist build --os 14.0':",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cscheme\u003e": {
+        "Name": "\u003cscheme\u003e",
+        "kind": "argument",
+        "description": "scheme",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cscheme\u003e"
+    ]
+  },
+  "cache": {
+    "Name": "cache",
+    "kind": "subcommand",
+    "description": "A set of utilities related to the caching of targets. For more info see https://docs.tuist.io/building-at-scale/caching USAGE: tuist cache \u003csubcommand\u003e",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "print-hashes": {
+        "Name": "print-hashes",
+        "kind": "subcommand",
+        "description": "Print the hashes of the cacheable frameworks in the given project",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--path": {
+            "Name": "--path",
+            "kind": "option",
+            "description": "The path to the directory that contains the project whose targets will be cached",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--profile": {
+            "Name": "--profile",
+            "kind": "option",
+            "description": "The name of the profile to be used when warming up the cache",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--xcframeworks": {
+            "Name": "--xcframeworks",
+            "kind": "option",
+            "description": "When passed it caches the targets for simulator and device using xcframeworks",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-P": {
+            "Name": "-P",
+            "kind": "option",
+            "description": "The name of the profile to be used when warming up the cache",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "The path to the directory that contains the project whose targets will be cached",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-x": {
+            "Name": "-x",
+            "kind": "option",
+            "description": "When passed it caches the targets for simulator and device using xcframeworks",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--path": {
+            "Name": "--path",
+            "kind": "option",
+            "description": "The path to the directory that contains the project whose targets will be cached",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--profile": {
+            "Name": "--profile",
+            "kind": "option",
+            "description": "The name of the profile to be used when warming up the cache",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--xcframeworks": {
+            "Name": "--xcframeworks",
+            "kind": "option",
+            "description": "When passed it caches the targets for simulator and device using xcframeworks",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-P": {
+            "Name": "-P",
+            "kind": "option",
+            "description": "The name of the profile to be used when warming up the cache",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "The path to the directory that contains the project whose targets will be cached",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-x": {
+            "Name": "-x",
+            "kind": "option",
+            "description": "When passed it caches the targets for simulator and device using xcframeworks",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "warm": {
+        "Name": "warm",
+        "kind": "subcommand",
+        "description": "Warms the local and remote cache",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--dependencies-only": {
+            "Name": "--dependencies-only",
+            "kind": "option",
+            "description": "If passed, the command doesn't cache the targets passed in the `--targets` argument, but only their dependencies",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--path": {
+            "Name": "--path",
+            "kind": "option",
+            "description": "The path to the directory that contains the project whose targets will be cached",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--profile": {
+            "Name": "--profile",
+            "kind": "option",
+            "description": "The name of the profile to be used when warming up the cache",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--xcframeworks": {
+            "Name": "--xcframeworks",
+            "kind": "option",
+            "description": "When passed it caches the targets for simulator and device using xcframeworks",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-P": {
+            "Name": "-P",
+            "kind": "option",
+            "description": "The name of the profile to be used when warming up the cache",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "The path to the directory that contains the project whose targets will be cached",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-x": {
+            "Name": "-x",
+            "kind": "option",
+            "description": "When passed it caches the targets for simulator and device using xcframeworks",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--dependencies-only": {
+            "Name": "--dependencies-only",
+            "kind": "option",
+            "description": "If passed, the command doesn't cache the targets passed in the `--targets` argument, but only their dependencies",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--path": {
+            "Name": "--path",
+            "kind": "option",
+            "description": "The path to the directory that contains the project whose targets will be cached",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--profile": {
+            "Name": "--profile",
+            "kind": "option",
+            "description": "The name of the profile to be used when warming up the cache",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--xcframeworks": {
+            "Name": "--xcframeworks",
+            "kind": "option",
+            "description": "When passed it caches the targets for simulator and device using xcframeworks",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-P": {
+            "Name": "-P",
+            "kind": "option",
+            "description": "The name of the profile to be used when warming up the cache",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "The path to the directory that contains the project whose targets will be cached",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-x": {
+            "Name": "-x",
+            "kind": "option",
+            "description": "When passed it caches the targets for simulator and device using xcframeworks",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      }
+    }
+  },
+  "clean": {
+    "Name": "clean",
+    "kind": "subcommand",
+    "description": "Clean all the data generated by Tuist. USAGE: tuist clean [\u003cclean-categories\u003e ...] [--path \u003cpath\u003e]",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--path": {
+        "Name": "--path",
+        "kind": "option",
+        "description": "The path to the directory that contains the project that should be cleaned",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "The path to the directory that contains the project that should be cleaned",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cclean-categories\u003e": {
+        "Name": "\u003cclean-categories\u003e",
+        "kind": "argument",
+        "description": "clean-categories",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "builds": {
+        "Name": "builds",
+        "kind": "option",
+        "description": "Clean only the builds artifacts cache generated by Tuist, example usage: 'tuist clean builds':",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "generatedAutomationProjects": {
+        "Name": "generatedAutomationProjects",
+        "kind": "option",
+        "description": "Clean only the automation projects cache generated by Tuist, example usage: 'tuist clean generatedAutomationProjects':",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "manifests": {
+        "Name": "manifests",
+        "kind": "option",
+        "description": "Clean only the manifests cache generated by Tuist, example usage: 'tuist clean manifests':",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "plugins": {
+        "Name": "plugins",
+        "kind": "option",
+        "description": "Clean only the plugins cache generated by Tuist, example usage: 'tuist clean plugins':",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "projectDescriptionHelpers": {
+        "Name": "projectDescriptionHelpers",
+        "kind": "option",
+        "description": "Clean only the project description helpers cache generated by Tuist, example usage: 'tuist clean projectDescriptionHelpers':",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "tests": {
+        "Name": "tests",
+        "kind": "option",
+        "description": "Clean only the tests cache generated by Tuist, example usage: 'tuist clean tests':",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--path": {
+        "Name": "--path",
+        "kind": "option",
+        "description": "The path to the directory that contains the project that should be cleaned",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "The path to the directory that contains the project that should be cleaned",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cclean-categories\u003e": {
+        "Name": "\u003cclean-categories\u003e",
+        "kind": "argument",
+        "description": "clean-categories",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cclean-categories\u003e"
+    ]
+  },
+  "edit": {
+    "Name": "edit",
+    "kind": "subcommand",
+    "description": "Editing your projects is easy; position yourself in a directory where there's a project defined and run the edit command. It will open a temporary Xcode project with all the project manifests and the project description helpers, so you will be able to edit the whole project configuration. After making changes you can run the target from Xcode and it will call tuist generate for you. For more info see https://docs.tuist.io/commands/edit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--permanent": {
+        "Name": "--permanent",
+        "kind": "option",
+        "description": "The project is deleted automatically once you are done with editing. If you wish to generate and keep the project in the current directory, you can run the command passing the --permanent argument. That will generate a Manifest.xcodeproj project that you can open manually",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--permanent": {
+        "Name": "--permanent",
+        "kind": "option",
+        "description": "The project is deleted automatically once you are done with editing. If you wish to generate and keep the project in the current directory, you can run the command passing the --permanent argument. That will generate a Manifest.xcodeproj project that you can open manually",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "fetch": {
+    "Name": "fetch",
+    "kind": "subcommand",
+    "description": "Dependencies can be fetched by running the following command. They are stored in your project's `Tuist/Dependencies` directory. For more info see https://docs.tuist.io/commands/dependencies",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--path": {
+        "Name": "--path",
+        "kind": "option",
+        "description": "The path to the directory that contains the workspace or project whose dependencies will be fetched/updated. The default is the current directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--update": {
+        "Name": "--update",
+        "kind": "option",
+        "description": "Clean only the builds artifacts cache generated by Tuist, example usage: 'tuist fetch --update':",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "The path to the directory that contains the workspace or project whose dependencies will be fetched/updated. The default is the current directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--path": {
+        "Name": "--path",
+        "kind": "option",
+        "description": "The path to the directory that contains the workspace or project whose dependencies will be fetched/updated. The default is the current directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--update": {
+        "Name": "--update",
+        "kind": "option",
+        "description": "Clean only the builds artifacts cache generated by Tuist, example usage: 'tuist fetch --update':",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "The path to the directory that contains the workspace or project whose dependencies will be fetched/updated. The default is the current directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "generate": {
+    "Name": "generate",
+    "kind": "subcommand",
+    "description": "Generates an Xcode workspace to start working on the project. For more info see https://docs.tuist.io/commands/generate",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--no-cache": {
+        "Name": "--no-cache",
+        "kind": "option",
+        "description": "Ignore cached targets, and use their sources instead.\tDefault is false",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-open": {
+        "Name": "--no-open",
+        "kind": "option",
+        "description": "Don't open the project after generating it. Default is false",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--path": {
+        "Name": "--path",
+        "kind": "option",
+        "description": "The path to the directory that contains the definition of the project. Default is current directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--profile": {
+        "Name": "--profile",
+        "kind": "option",
+        "description": "The name of the cache profile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccache profile\u003e": {
+            "Name": "\u003ccache profile\u003e",
+            "kind": "argument",
+            "description": "cache profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccache profile\u003e": {
+            "Name": "\u003ccache profile\u003e",
+            "kind": "argument",
+            "description": "cache profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccache profile\u003e"
+        ]
+      },
+      "--xcframeworks": {
+        "Name": "--xcframeworks",
+        "kind": "option",
+        "description": "When passed it uses xcframeworks (simulator and device) from the cache instead of frameworks (only simulator). Default is false",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-P": {
+        "Name": "-P",
+        "kind": "option",
+        "description": "The name of the cache profile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccache profile\u003e": {
+            "Name": "\u003ccache profile\u003e",
+            "kind": "argument",
+            "description": "cache profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccache profile\u003e": {
+            "Name": "\u003ccache profile\u003e",
+            "kind": "argument",
+            "description": "cache profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccache profile\u003e"
+        ]
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "Don't open the project after generating it. Default is false",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "The path to the directory that contains the definition of the project. Default is current directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "-x": {
+        "Name": "-x",
+        "kind": "option",
+        "description": "When passed it uses xcframeworks (simulator and device) from the cache instead of frameworks (only simulator). Default is false",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003csources\u003e": {
+        "Name": "\u003csources\u003e",
+        "kind": "argument",
+        "description": "sources",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--no-cache": {
+        "Name": "--no-cache",
+        "kind": "option",
+        "description": "Ignore cached targets, and use their sources instead.\tDefault is false",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-open": {
+        "Name": "--no-open",
+        "kind": "option",
+        "description": "Don't open the project after generating it. Default is false",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--path": {
+        "Name": "--path",
+        "kind": "option",
+        "description": "The path to the directory that contains the definition of the project. Default is current directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--profile": {
+        "Name": "--profile",
+        "kind": "option",
+        "description": "The name of the cache profile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccache profile\u003e": {
+            "Name": "\u003ccache profile\u003e",
+            "kind": "argument",
+            "description": "cache profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccache profile\u003e": {
+            "Name": "\u003ccache profile\u003e",
+            "kind": "argument",
+            "description": "cache profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccache profile\u003e"
+        ]
+      },
+      "--xcframeworks": {
+        "Name": "--xcframeworks",
+        "kind": "option",
+        "description": "When passed it uses xcframeworks (simulator and device) from the cache instead of frameworks (only simulator). Default is false",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-P": {
+        "Name": "-P",
+        "kind": "option",
+        "description": "The name of the cache profile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccache profile\u003e": {
+            "Name": "\u003ccache profile\u003e",
+            "kind": "argument",
+            "description": "cache profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccache profile\u003e": {
+            "Name": "\u003ccache profile\u003e",
+            "kind": "argument",
+            "description": "cache profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccache profile\u003e"
+        ]
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "Don't open the project after generating it. Default is false",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "The path to the directory that contains the definition of the project. Default is current directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "-x": {
+        "Name": "-x",
+        "kind": "option",
+        "description": "When passed it uses xcframeworks (simulator and device) from the cache instead of frameworks (only simulator). Default is false",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003csources\u003e": {
+        "Name": "\u003csources\u003e",
+        "kind": "argument",
+        "description": "sources",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csources\u003e"
+    ]
+  },
+  "graph": {
+    "Name": "graph",
+    "kind": "subcommand",
+    "description": "Generates a graph from the workspace or project in the current directory. For more info see https://docs.tuist.io/commands/graph USAGE: tuist graph [--skip-test-targets] [--skip-external-dependencies] [--format \u003cformat\u003e] [--algorithm \u003calgorithm\u003e] [\u003ctargets\u003e ...] [--path \u003cpath\u003e] [--output-path \u003coutput-path\u003e]",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--algorithm": {
+        "Name": "--algorithm",
+        "kind": "option",
+        "description": "Available formats: dot, neato, twopi, circo, fdp, sfddp, patchwork (default: dot)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "If you prefer to have the dot or json representations of the graph and render it separately. Available formats: dot, png, json (default: png)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "--no-open": {
+        "Name": "--no-open",
+        "kind": "option",
+        "description": "If set, the generated graph is not opened automatically. Default is yes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output-path": {
+        "Name": "--output-path",
+        "kind": "option",
+        "description": "The path to where the image will be exported. When not specified, it exports the image in the current directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput path\u003e": {
+            "Name": "\u003coutput path\u003e",
+            "kind": "argument",
+            "description": "output path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput path\u003e": {
+            "Name": "\u003coutput path\u003e",
+            "kind": "argument",
+            "description": "output path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput path\u003e"
+        ]
+      },
+      "--path": {
+        "Name": "--path",
+        "kind": "option",
+        "description": "The path to the directory that contains the definition of the project. Default is current directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cproject dir\u003e": {
+            "Name": "\u003cproject dir\u003e",
+            "kind": "argument",
+            "description": "project dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cproject dir\u003e": {
+            "Name": "\u003cproject dir\u003e",
+            "kind": "argument",
+            "description": "project dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cproject dir\u003e"
+        ]
+      },
+      "--platform": {
+        "Name": "--platform",
+        "kind": "option",
+        "description": "If set, show only the targets for the given platform. Default is all platforms. Available platforms: ios, macos, tvos, watchos",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cplatform\u003e": {
+            "Name": "\u003cplatform\u003e",
+            "kind": "argument",
+            "description": "platform",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cplatform\u003e": {
+            "Name": "\u003cplatform\u003e",
+            "kind": "argument",
+            "description": "platform",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cplatform\u003e"
+        ]
+      },
+      "--skip-external-dependencies": {
+        "Name": "--skip-external-dependencies",
+        "kind": "option",
+        "description": "Excludes external dependencies from the generated graph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--skip-test-targets": {
+        "Name": "--skip-test-targets",
+        "kind": "option",
+        "description": "Excludes test targets from the generated graph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-a": {
+        "Name": "-a",
+        "kind": "option",
+        "description": "Available formats: dot, neato, twopi, circo, fdp, sfddp, patchwork (default: dot)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Excludes external dependencies from the generated graph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "If you prefer to have the dot or json representations of the graph and render it separately. Available formats: dot, png, json (default: png)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "-l": {
+        "Name": "-l",
+        "kind": "option",
+        "description": "If set, show only the targets for the given platform. Default is all platforms. Available platforms: ios, macos, tvos, watchos",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cplatform\u003e": {
+            "Name": "\u003cplatform\u003e",
+            "kind": "argument",
+            "description": "platform",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cplatform\u003e": {
+            "Name": "\u003cplatform\u003e",
+            "kind": "argument",
+            "description": "platform",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cplatform\u003e"
+        ]
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "If set, the generated graph is not opened automatically. Default is yes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "The path to where the image will be exported. When not specified, it exports the image in the current directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput path\u003e": {
+            "Name": "\u003coutput path\u003e",
+            "kind": "argument",
+            "description": "output path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput path\u003e": {
+            "Name": "\u003coutput path\u003e",
+            "kind": "argument",
+            "description": "output path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput path\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "The path to the directory that contains the definition of the project. Default is current directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cproject dir\u003e": {
+            "Name": "\u003cproject dir\u003e",
+            "kind": "argument",
+            "description": "project dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cproject dir\u003e": {
+            "Name": "\u003cproject dir\u003e",
+            "kind": "argument",
+            "description": "project dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cproject dir\u003e"
+        ]
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Excludes test targets from the generated graph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ctargets\u003e": {
+        "Name": "\u003ctargets\u003e",
+        "kind": "argument",
+        "description": "targets",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--algorithm": {
+        "Name": "--algorithm",
+        "kind": "option",
+        "description": "Available formats: dot, neato, twopi, circo, fdp, sfddp, patchwork (default: dot)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "If you prefer to have the dot or json representations of the graph and render it separately. Available formats: dot, png, json (default: png)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "--no-open": {
+        "Name": "--no-open",
+        "kind": "option",
+        "description": "If set, the generated graph is not opened automatically. Default is yes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output-path": {
+        "Name": "--output-path",
+        "kind": "option",
+        "description": "The path to where the image will be exported. When not specified, it exports the image in the current directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput path\u003e": {
+            "Name": "\u003coutput path\u003e",
+            "kind": "argument",
+            "description": "output path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput path\u003e": {
+            "Name": "\u003coutput path\u003e",
+            "kind": "argument",
+            "description": "output path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput path\u003e"
+        ]
+      },
+      "--path": {
+        "Name": "--path",
+        "kind": "option",
+        "description": "The path to the directory that contains the definition of the project. Default is current directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cproject dir\u003e": {
+            "Name": "\u003cproject dir\u003e",
+            "kind": "argument",
+            "description": "project dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cproject dir\u003e": {
+            "Name": "\u003cproject dir\u003e",
+            "kind": "argument",
+            "description": "project dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cproject dir\u003e"
+        ]
+      },
+      "--platform": {
+        "Name": "--platform",
+        "kind": "option",
+        "description": "If set, show only the targets for the given platform. Default is all platforms. Available platforms: ios, macos, tvos, watchos",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cplatform\u003e": {
+            "Name": "\u003cplatform\u003e",
+            "kind": "argument",
+            "description": "platform",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cplatform\u003e": {
+            "Name": "\u003cplatform\u003e",
+            "kind": "argument",
+            "description": "platform",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cplatform\u003e"
+        ]
+      },
+      "--skip-external-dependencies": {
+        "Name": "--skip-external-dependencies",
+        "kind": "option",
+        "description": "Excludes external dependencies from the generated graph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--skip-test-targets": {
+        "Name": "--skip-test-targets",
+        "kind": "option",
+        "description": "Excludes test targets from the generated graph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-a": {
+        "Name": "-a",
+        "kind": "option",
+        "description": "Available formats: dot, neato, twopi, circo, fdp, sfddp, patchwork (default: dot)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Excludes external dependencies from the generated graph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "If you prefer to have the dot or json representations of the graph and render it separately. Available formats: dot, png, json (default: png)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "-l": {
+        "Name": "-l",
+        "kind": "option",
+        "description": "If set, show only the targets for the given platform. Default is all platforms. Available platforms: ios, macos, tvos, watchos",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cplatform\u003e": {
+            "Name": "\u003cplatform\u003e",
+            "kind": "argument",
+            "description": "platform",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cplatform\u003e": {
+            "Name": "\u003cplatform\u003e",
+            "kind": "argument",
+            "description": "platform",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cplatform\u003e"
+        ]
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "If set, the generated graph is not opened automatically. Default is yes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "The path to where the image will be exported. When not specified, it exports the image in the current directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput path\u003e": {
+            "Name": "\u003coutput path\u003e",
+            "kind": "argument",
+            "description": "output path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput path\u003e": {
+            "Name": "\u003coutput path\u003e",
+            "kind": "argument",
+            "description": "output path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput path\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "The path to the directory that contains the definition of the project. Default is current directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cproject dir\u003e": {
+            "Name": "\u003cproject dir\u003e",
+            "kind": "argument",
+            "description": "project dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cproject dir\u003e": {
+            "Name": "\u003cproject dir\u003e",
+            "kind": "argument",
+            "description": "project dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cproject dir\u003e"
+        ]
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Excludes test targets from the generated graph",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ctargets\u003e": {
+        "Name": "\u003ctargets\u003e",
+        "kind": "argument",
+        "description": "targets",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctargets\u003e"
+    ]
+  },
+  "migration": {
+    "Name": "migration",
+    "kind": "subcommand",
+    "description": "To help developers with the process of adopting Tuist, Tuist provides a set of commands under tuist migration. For more info see https://docs.tuist.io/commands/migration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "check-empty-settings": {
+        "Name": "check-empty-settings",
+        "kind": "subcommand",
+        "description": "After making .xcconfig files the source of truth for build settings, it's important to ensure that build settings are no longer set to the project. To help with that, Tuist includes a command that fails if the build settings of a project or a target are not empty",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--target": {
+            "Name": "--target",
+            "kind": "option",
+            "description": "Optional. The name of the target whose build settings will be checked. When not passed, it checks the build settings of the project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--xcodeproj-path": {
+            "Name": "--xcodeproj-path",
+            "kind": "option",
+            "description": "Required. Path to the Xcode project whose build settings will be checked",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Required. Path to the Xcode project whose build settings will be checked",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-t": {
+            "Name": "-t",
+            "kind": "option",
+            "description": "Optional. The name of the target whose build settings will be checked. When not passed, it checks the build settings of the project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--target": {
+            "Name": "--target",
+            "kind": "option",
+            "description": "Optional. The name of the target whose build settings will be checked. When not passed, it checks the build settings of the project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--xcodeproj-path": {
+            "Name": "--xcodeproj-path",
+            "kind": "option",
+            "description": "Required. Path to the Xcode project whose build settings will be checked",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Required. Path to the Xcode project whose build settings will be checked",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-t": {
+            "Name": "-t",
+            "kind": "option",
+            "description": "Optional. The name of the target whose build settings will be checked. When not passed, it checks the build settings of the project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "list-targets": {
+        "Name": "list-targets",
+        "kind": "subcommand",
+        "description": "When passed it uses xcframeworks (simulator and device) from the cache instead of frameworks (only simulator). Default is false",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--xcodeproj-path": {
+            "Name": "--xcodeproj-path",
+            "kind": "option",
+            "description": "Required. Path to the Xcode project whose build settings will be checked",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Required. Path to the Xcode project whose build settings will be checked",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--xcodeproj-path": {
+            "Name": "--xcodeproj-path",
+            "kind": "option",
+            "description": "Required. Path to the Xcode project whose build settings will be checked",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Required. Path to the Xcode project whose build settings will be checked",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "settings-to-xcconfig": {
+        "Name": "settings-to-xcconfig",
+        "kind": "subcommand",
+        "description": "It's recommended to make .xcconfig files the source of truth for build settings. For that, Tuist provides a tuist migration settings-to-xcconfig command that extracts the build settings from targets and projects",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--target": {
+            "Name": "--target",
+            "kind": "option",
+            "description": "Optional. The name of the target whose build settings will be extracted. When not passed, it extracts the build settings of the project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ctarget\u003e": {
+                "Name": "\u003ctarget\u003e",
+                "kind": "argument",
+                "description": "target",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ctarget\u003e": {
+                "Name": "\u003ctarget\u003e",
+                "kind": "argument",
+                "description": "target",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ctarget\u003e"
+            ]
+          },
+          "--xcconfig-path": {
+            "Name": "--xcconfig-path",
+            "kind": "option",
+            "description": "Required. Path to the Xcode project whose build settings will be extracted",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "--xcodeproj-path": {
+            "Name": "--xcodeproj-path",
+            "kind": "option",
+            "description": "Required. Path to the Xcode project whose build settings will be extracted",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Required. Path to the Xcode project whose build settings will be extracted",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "-t": {
+            "Name": "-t",
+            "kind": "option",
+            "description": "Optional. The name of the target whose build settings will be extracted. When not passed, it extracts the build settings of the project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ctarget\u003e": {
+                "Name": "\u003ctarget\u003e",
+                "kind": "argument",
+                "description": "target",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ctarget\u003e": {
+                "Name": "\u003ctarget\u003e",
+                "kind": "argument",
+                "description": "target",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ctarget\u003e"
+            ]
+          },
+          "-x": {
+            "Name": "-x",
+            "kind": "option",
+            "description": "Required. Path to the Xcode project whose build settings will be extracted",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--target": {
+            "Name": "--target",
+            "kind": "option",
+            "description": "Optional. The name of the target whose build settings will be extracted. When not passed, it extracts the build settings of the project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ctarget\u003e": {
+                "Name": "\u003ctarget\u003e",
+                "kind": "argument",
+                "description": "target",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ctarget\u003e": {
+                "Name": "\u003ctarget\u003e",
+                "kind": "argument",
+                "description": "target",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ctarget\u003e"
+            ]
+          },
+          "--xcconfig-path": {
+            "Name": "--xcconfig-path",
+            "kind": "option",
+            "description": "Required. Path to the Xcode project whose build settings will be extracted",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "--xcodeproj-path": {
+            "Name": "--xcodeproj-path",
+            "kind": "option",
+            "description": "Required. Path to the Xcode project whose build settings will be extracted",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Required. Path to the Xcode project whose build settings will be extracted",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "-t": {
+            "Name": "-t",
+            "kind": "option",
+            "description": "Optional. The name of the target whose build settings will be extracted. When not passed, it extracts the build settings of the project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ctarget\u003e": {
+                "Name": "\u003ctarget\u003e",
+                "kind": "argument",
+                "description": "target",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ctarget\u003e": {
+                "Name": "\u003ctarget\u003e",
+                "kind": "argument",
+                "description": "target",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ctarget\u003e"
+            ]
+          },
+          "-x": {
+            "Name": "-x",
+            "kind": "option",
+            "description": "Required. Path to the Xcode project whose build settings will be extracted",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "scaffold": {
+    "Name": "scaffold",
+    "kind": "subcommand",
+    "description": "Generates new project based on a template. For more info see https://docs.tuist.io/commands/scaffold USAGE: tuist scaffold \u003ctemplate\u003e [--json] [--path \u003cpath\u003e] \u003csubcommand\u003e",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--json": {
+        "Name": "--json",
+        "kind": "option",
+        "description": "The output in JSON format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--name": {
+        "Name": "--name",
+        "kind": "option",
+        "description": "The name of the generate project",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "--path": {
+        "Name": "--path",
+        "kind": "option",
+        "description": "The path to the folder where the template will be generated (Default: Current directory)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--platform": {
+        "Name": "--platform",
+        "kind": "option",
+        "description": "The platform used by the project",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cplatform\u003e": {
+            "Name": "\u003cplatform\u003e",
+            "kind": "argument",
+            "description": "platform",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cplatform\u003e": {
+            "Name": "\u003cplatform\u003e",
+            "kind": "argument",
+            "description": "platform",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cplatform\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "The path to the folder where the template will be generated (Default: Current directory)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "\u003ctemplate\u003e": {
+        "Name": "\u003ctemplate\u003e",
+        "kind": "argument",
+        "description": "template",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "Lists available scaffold templates",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--json": {
+        "Name": "--json",
+        "kind": "option",
+        "description": "The output in JSON format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--name": {
+        "Name": "--name",
+        "kind": "option",
+        "description": "The name of the generate project",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "--path": {
+        "Name": "--path",
+        "kind": "option",
+        "description": "The path to the folder where the template will be generated (Default: Current directory)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--platform": {
+        "Name": "--platform",
+        "kind": "option",
+        "description": "The platform used by the project",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cplatform\u003e": {
+            "Name": "\u003cplatform\u003e",
+            "kind": "argument",
+            "description": "platform",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cplatform\u003e": {
+            "Name": "\u003cplatform\u003e",
+            "kind": "argument",
+            "description": "platform",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cplatform\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "The path to the folder where the template will be generated (Default: Current directory)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "\u003ctemplate\u003e": {
+        "Name": "\u003ctemplate\u003e",
+        "kind": "argument",
+        "description": "template",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctemplate\u003e"
+    ]
+  },
+  "test": {
+    "Name": "test",
+    "kind": "subcommand",
+    "description": "Tests a project. For more info see https://docs.tuist.io/commands/test USAGE: tuist test [\u003cscheme\u003e] [--clean] [--path \u003cpath\u003e] [--device \u003cdevice\u003e] [--os \u003cos\u003e] [--configuration \u003cconfiguration\u003e] [--skip-ui-tests] [--result-bundle-path \u003cresult-bundle-path\u003e] [--retry-count \u003cretry-count\u003e]",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--clean": {
+        "Name": "--clean",
+        "kind": "option",
+        "description": "When passed, it cleans the project before testing it",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--configuration": {
+        "Name": "--configuration",
+        "kind": "option",
+        "description": "The configuration to be used when testing the scheme",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--device": {
+        "Name": "--device",
+        "kind": "option",
+        "description": "Test on a specific device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdevice\u003e": {
+            "Name": "\u003cdevice\u003e",
+            "kind": "argument",
+            "description": "device",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdevice\u003e": {
+            "Name": "\u003cdevice\u003e",
+            "kind": "argument",
+            "description": "device",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdevice\u003e"
+        ]
+      },
+      "--os": {
+        "Name": "--os",
+        "kind": "option",
+        "description": "Test with a specific version of the OS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cos\u003e": {
+            "Name": "\u003cos\u003e",
+            "kind": "argument",
+            "description": "os",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cos\u003e": {
+            "Name": "\u003cos\u003e",
+            "kind": "argument",
+            "description": "os",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cos\u003e"
+        ]
+      },
+      "--path": {
+        "Name": "--path",
+        "kind": "option",
+        "description": "The path to the directory that contains the project to be tested",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--result-bundle-path": {
+        "Name": "--result-bundle-path",
+        "kind": "option",
+        "description": "Path where test result bundle will be saved",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--retry-count": {
+        "Name": "--retry-count",
+        "kind": "option",
+        "description": "Tests will retry \u003cnumber\u003e of times until success. Example: if 1 is specified, the test will be retried at most once, hence it will run up to 2 times. (default: 0)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctimes\u003e": {
+            "Name": "\u003ctimes\u003e",
+            "kind": "argument",
+            "description": "times",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctimes\u003e": {
+            "Name": "\u003ctimes\u003e",
+            "kind": "argument",
+            "description": "times",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctimes\u003e"
+        ]
+      },
+      "--skip-ui-tests": {
+        "Name": "--skip-ui-tests",
+        "kind": "option",
+        "description": "When passed, it skips testing UI Tests targets",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-C": {
+        "Name": "-C",
+        "kind": "option",
+        "description": "The configuration to be used when testing the scheme",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-T": {
+        "Name": "-T",
+        "kind": "option",
+        "description": "Path where test result bundle will be saved",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "When passed, it cleans the project before testing it",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Test on a specific device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdevice\u003e": {
+            "Name": "\u003cdevice\u003e",
+            "kind": "argument",
+            "description": "device",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdevice\u003e": {
+            "Name": "\u003cdevice\u003e",
+            "kind": "argument",
+            "description": "device",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdevice\u003e"
+        ]
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Test with a specific version of the OS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cos\u003e": {
+            "Name": "\u003cos\u003e",
+            "kind": "argument",
+            "description": "os",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cos\u003e": {
+            "Name": "\u003cos\u003e",
+            "kind": "argument",
+            "description": "os",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cos\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "The path to the directory that contains the project to be tested",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "\u003cscheme\u003e": {
+        "Name": "\u003cscheme\u003e",
+        "kind": "argument",
+        "description": "scheme",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--clean": {
+        "Name": "--clean",
+        "kind": "option",
+        "description": "When passed, it cleans the project before testing it",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--configuration": {
+        "Name": "--configuration",
+        "kind": "option",
+        "description": "The configuration to be used when testing the scheme",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--device": {
+        "Name": "--device",
+        "kind": "option",
+        "description": "Test on a specific device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdevice\u003e": {
+            "Name": "\u003cdevice\u003e",
+            "kind": "argument",
+            "description": "device",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdevice\u003e": {
+            "Name": "\u003cdevice\u003e",
+            "kind": "argument",
+            "description": "device",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdevice\u003e"
+        ]
+      },
+      "--os": {
+        "Name": "--os",
+        "kind": "option",
+        "description": "Test with a specific version of the OS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cos\u003e": {
+            "Name": "\u003cos\u003e",
+            "kind": "argument",
+            "description": "os",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cos\u003e": {
+            "Name": "\u003cos\u003e",
+            "kind": "argument",
+            "description": "os",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cos\u003e"
+        ]
+      },
+      "--path": {
+        "Name": "--path",
+        "kind": "option",
+        "description": "The path to the directory that contains the project to be tested",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--result-bundle-path": {
+        "Name": "--result-bundle-path",
+        "kind": "option",
+        "description": "Path where test result bundle will be saved",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--retry-count": {
+        "Name": "--retry-count",
+        "kind": "option",
+        "description": "Tests will retry \u003cnumber\u003e of times until success. Example: if 1 is specified, the test will be retried at most once, hence it will run up to 2 times. (default: 0)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctimes\u003e": {
+            "Name": "\u003ctimes\u003e",
+            "kind": "argument",
+            "description": "times",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctimes\u003e": {
+            "Name": "\u003ctimes\u003e",
+            "kind": "argument",
+            "description": "times",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctimes\u003e"
+        ]
+      },
+      "--skip-ui-tests": {
+        "Name": "--skip-ui-tests",
+        "kind": "option",
+        "description": "When passed, it skips testing UI Tests targets",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-C": {
+        "Name": "-C",
+        "kind": "option",
+        "description": "The configuration to be used when testing the scheme",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-T": {
+        "Name": "-T",
+        "kind": "option",
+        "description": "Path where test result bundle will be saved",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "When passed, it cleans the project before testing it",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Test on a specific device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdevice\u003e": {
+            "Name": "\u003cdevice\u003e",
+            "kind": "argument",
+            "description": "device",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdevice\u003e": {
+            "Name": "\u003cdevice\u003e",
+            "kind": "argument",
+            "description": "device",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdevice\u003e"
+        ]
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Test with a specific version of the OS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cos\u003e": {
+            "Name": "\u003cos\u003e",
+            "kind": "argument",
+            "description": "os",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cos\u003e": {
+            "Name": "\u003cos\u003e",
+            "kind": "argument",
+            "description": "os",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cos\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "The path to the directory that contains the project to be tested",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "\u003cscheme\u003e": {
+        "Name": "\u003cscheme\u003e",
+        "kind": "argument",
+        "description": "scheme",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cscheme\u003e"
+    ]
+  }
+}

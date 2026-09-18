@@ -8,11 +8,6 @@ import (
 	"strings"
 )
 
-type DiscoveredCommand struct {
-	Name string
-	Path string
-}
-
 // isForeignMount reports whether dir belongs to another OS's filesystem
 // mounted inside this one (e.g. /mnt/c under WSL). We skip these — a
 // Windows binary living under /mnt/c isn't a "real" Linux command, it's

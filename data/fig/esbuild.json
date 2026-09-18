@@ -1,0 +1,1446 @@
+{
+  "--allow-overwrite": {
+    "Name": "--allow-overwrite",
+    "kind": "option",
+    "description": "Allow output files to overwrite input files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--analyze": {
+    "Name": "--analyze",
+    "kind": "option",
+    "description": "Print a report about the contents of the bundle",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cverbose\u003e": {
+        "Name": "\u003cverbose\u003e",
+        "kind": "argument",
+        "description": "verbose",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cverbose\u003e": {
+        "Name": "\u003cverbose\u003e",
+        "kind": "argument",
+        "description": "verbose",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--asset-names": {
+    "Name": "--asset-names",
+    "kind": "option",
+    "description": "Path template for 'file' loader files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctemplate\u003e": {
+        "Name": "\u003ctemplate\u003e",
+        "kind": "argument",
+        "description": "template",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctemplate\u003e": {
+        "Name": "\u003ctemplate\u003e",
+        "kind": "argument",
+        "description": "template",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctemplate\u003e"
+    ]
+  },
+  "--banner": {
+    "Name": "--banner",
+    "kind": "option",
+    "description": "Text to be prepended to each output file type",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cext=text[,ext=text...]\u003e": {
+        "Name": "\u003cext=text[,ext=text...]\u003e",
+        "kind": "argument",
+        "description": "ext=text[,ext=text...]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cext=text[,ext=text...]\u003e": {
+        "Name": "\u003cext=text[,ext=text...]\u003e",
+        "kind": "argument",
+        "description": "ext=text[,ext=text...]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cext=text[,ext=text...]\u003e"
+    ]
+  },
+  "--bundle": {
+    "Name": "--bundle",
+    "kind": "option",
+    "description": "Bundle all dependencies into the output files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--charset": {
+    "Name": "--charset",
+    "kind": "option",
+    "description": "Use UTF-8 instead of escaped codepoints in ASCII",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--chunk-names": {
+    "Name": "--chunk-names",
+    "kind": "option",
+    "description": "Path template to use for code splitting chunks",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctemplate\u003e": {
+        "Name": "\u003ctemplate\u003e",
+        "kind": "argument",
+        "description": "template",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctemplate\u003e": {
+        "Name": "\u003ctemplate\u003e",
+        "kind": "argument",
+        "description": "template",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctemplate\u003e"
+    ]
+  },
+  "--color": {
+    "Name": "--color",
+    "kind": "option",
+    "description": "Force use of terminal colors",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cenabled\u003e": {
+        "Name": "\u003cenabled\u003e",
+        "kind": "argument",
+        "description": "enabled",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cenabled\u003e": {
+        "Name": "\u003cenabled\u003e",
+        "kind": "argument",
+        "description": "enabled",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cenabled\u003e"
+    ]
+  },
+  "--define": {
+    "Name": "--define",
+    "kind": "option",
+    "description": "Replace variable names with a literal value, eg. --define:DEBUG=true",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname=value\u003e": {
+        "Name": "\u003cname=value\u003e",
+        "kind": "argument",
+        "description": "name=value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname=value\u003e": {
+        "Name": "\u003cname=value\u003e",
+        "kind": "argument",
+        "description": "name=value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname=value\u003e"
+    ]
+  },
+  "--drop": {
+    "Name": "--drop",
+    "kind": "option",
+    "description": "Remove certain constructs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--entry-names": {
+    "Name": "--entry-names",
+    "kind": "option",
+    "description": "Path template to use for entry point output paths",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctemplate\u003e": {
+        "Name": "\u003ctemplate\u003e",
+        "kind": "argument",
+        "description": "template",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctemplate\u003e": {
+        "Name": "\u003ctemplate\u003e",
+        "kind": "argument",
+        "description": "template",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctemplate\u003e"
+    ]
+  },
+  "--external": {
+    "Name": "--external",
+    "kind": "option",
+    "description": "Exclude modules from the build",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmodule specifier\u003e": {
+        "Name": "\u003cmodule specifier\u003e",
+        "kind": "argument",
+        "description": "module specifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmodule specifier\u003e": {
+        "Name": "\u003cmodule specifier\u003e",
+        "kind": "argument",
+        "description": "module specifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmodule specifier\u003e"
+    ]
+  },
+  "--footer": {
+    "Name": "--footer",
+    "kind": "option",
+    "description": "Text to be appended to each file type",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cext=text\u003e": {
+        "Name": "\u003cext=text\u003e",
+        "kind": "argument",
+        "description": "ext=text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cext=text\u003e": {
+        "Name": "\u003cext=text\u003e",
+        "kind": "argument",
+        "description": "ext=text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cext=text\u003e"
+    ]
+  },
+  "--format": {
+    "Name": "--format",
+    "kind": "option",
+    "description": "The output format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cformat\u003e": {
+        "Name": "\u003cformat\u003e",
+        "kind": "argument",
+        "description": "format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cformat\u003e": {
+        "Name": "\u003cformat\u003e",
+        "kind": "argument",
+        "description": "format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cformat\u003e"
+    ]
+  },
+  "--global-name": {
+    "Name": "--global-name",
+    "kind": "option",
+    "description": "The name of the global if using --format=iife",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "--ignore-annotations": {
+    "Name": "--ignore-annotations",
+    "kind": "option",
+    "description": "Enable this to work with packages that have incorrect tree-shaking annotations",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--inject": {
+    "Name": "--inject",
+    "kind": "option",
+    "description": "Import the file into all input files, automatically replace matching globals",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cimport\u003e": {
+        "Name": "\u003cimport\u003e",
+        "kind": "argument",
+        "description": "import",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cimport\u003e": {
+        "Name": "\u003cimport\u003e",
+        "kind": "argument",
+        "description": "import",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cimport\u003e"
+    ]
+  },
+  "--jsx": {
+    "Name": "--jsx",
+    "kind": "option",
+    "description": "Preserve JSX instead of transforming",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--jsx-dev": {
+    "Name": "--jsx-dev",
+    "kind": "option",
+    "description": "Toggles development mode for the automatic runtime",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--jsx-factory": {
+    "Name": "--jsx-factory",
+    "kind": "option",
+    "description": "What to use for the JSX factory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfactory\u003e": {
+        "Name": "\u003cfactory\u003e",
+        "kind": "argument",
+        "description": "factory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfactory\u003e": {
+        "Name": "\u003cfactory\u003e",
+        "kind": "argument",
+        "description": "factory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfactory\u003e"
+    ]
+  },
+  "--jsx-fragment": {
+    "Name": "--jsx-fragment",
+    "kind": "option",
+    "description": "What to use for the JS Fragment factory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfragment\u003e": {
+        "Name": "\u003cfragment\u003e",
+        "kind": "argument",
+        "description": "fragment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfragment\u003e": {
+        "Name": "\u003cfragment\u003e",
+        "kind": "argument",
+        "description": "fragment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfragment\u003e"
+    ]
+  },
+  "--jsx-import-source": {
+    "Name": "--jsx-import-source",
+    "kind": "option",
+    "description": "Overrides the root import for runtime functions (default: react)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csource\u003e": {
+        "Name": "\u003csource\u003e",
+        "kind": "argument",
+        "description": "source",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csource\u003e": {
+        "Name": "\u003csource\u003e",
+        "kind": "argument",
+        "description": "source",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csource\u003e"
+    ]
+  },
+  "--keep-names": {
+    "Name": "--keep-names",
+    "kind": "option",
+    "description": "Preserve 'name' on functions and classes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--legal-comments": {
+    "Name": "--legal-comments",
+    "kind": "option",
+    "description": "Where to place legal comments",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clocation\u003e": {
+        "Name": "\u003clocation\u003e",
+        "kind": "argument",
+        "description": "location",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clocation\u003e": {
+        "Name": "\u003clocation\u003e",
+        "kind": "argument",
+        "description": "location",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clocation\u003e"
+    ]
+  },
+  "--loader": {
+    "Name": "--loader",
+    "kind": "option",
+    "description": "For a given file extension, specify a loader",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cloaders\u003e": {
+        "Name": "\u003cloaders\u003e",
+        "kind": "argument",
+        "description": "loaders",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cloaders\u003e": {
+        "Name": "\u003cloaders\u003e",
+        "kind": "argument",
+        "description": "loaders",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cloaders\u003e"
+    ]
+  },
+  "--log-level": {
+    "Name": "--log-level",
+    "kind": "option",
+    "description": "Set the log level",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clevel\u003e"
+    ]
+  },
+  "--log-limit": {
+    "Name": "--log-limit",
+    "kind": "option",
+    "description": "Maximum message count, 0 to disable",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccount\u003e": {
+        "Name": "\u003ccount\u003e",
+        "kind": "argument",
+        "description": "count",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccount\u003e": {
+        "Name": "\u003ccount\u003e",
+        "kind": "argument",
+        "description": "count",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccount\u003e"
+    ]
+  },
+  "--log-override": {
+    "Name": "--log-override",
+    "kind": "option",
+    "description": "For a particular identifier, set the log level",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cidentifier:level\u003e": {
+        "Name": "\u003cidentifier:level\u003e",
+        "kind": "argument",
+        "description": "identifier:level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cidentifier:level\u003e": {
+        "Name": "\u003cidentifier:level\u003e",
+        "kind": "argument",
+        "description": "identifier:level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cidentifier:level\u003e"
+    ]
+  },
+  "--main-fields": {
+    "Name": "--main-fields",
+    "kind": "option",
+    "description": "Override the main file order in package.json",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfield order\u003e": {
+        "Name": "\u003cfield order\u003e",
+        "kind": "argument",
+        "description": "field order",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfield order\u003e": {
+        "Name": "\u003cfield order\u003e",
+        "kind": "argument",
+        "description": "field order",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfield order\u003e"
+    ]
+  },
+  "--mangle-cache": {
+    "Name": "--mangle-cache",
+    "kind": "option",
+    "description": "Save 'mangle props' decisions to a JSON file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--mangle-props": {
+    "Name": "--mangle-props",
+    "kind": "option",
+    "description": "Rename all properties matching a regular expression",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cregex\u003e": {
+        "Name": "\u003cregex\u003e",
+        "kind": "argument",
+        "description": "regex",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cregex\u003e": {
+        "Name": "\u003cregex\u003e",
+        "kind": "argument",
+        "description": "regex",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cregex\u003e"
+    ]
+  },
+  "--mangle-quoted": {
+    "Name": "--mangle-quoted",
+    "kind": "option",
+    "description": "Enable mangling (renaming) quoted properties",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstatus\u003e": {
+        "Name": "\u003cstatus\u003e",
+        "kind": "argument",
+        "description": "status",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstatus\u003e": {
+        "Name": "\u003cstatus\u003e",
+        "kind": "argument",
+        "description": "status",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstatus\u003e"
+    ]
+  },
+  "--metafile": {
+    "Name": "--metafile",
+    "kind": "option",
+    "description": "Write metadata about the build to a JSON file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--minify": {
+    "Name": "--minify",
+    "kind": "option",
+    "description": "Minify the output (sets all the --minify-* options)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--minify-identifiers": {
+    "Name": "--minify-identifiers",
+    "kind": "option",
+    "description": "Shorten identifiers in output files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--minify-syntax": {
+    "Name": "--minify-syntax",
+    "kind": "option",
+    "description": "Use equivalent but shorter syntax in output files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--minify-whitespace": {
+    "Name": "--minify-whitespace",
+    "kind": "option",
+    "description": "Remove unnecessary whitespace in output files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--out-extension": {
+    "Name": "--out-extension",
+    "kind": "option",
+    "description": "Use a custom output extension for each extension",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cext=new\u003e": {
+        "Name": "\u003cext=new\u003e",
+        "kind": "argument",
+        "description": "ext=new",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cext=new\u003e": {
+        "Name": "\u003cext=new\u003e",
+        "kind": "argument",
+        "description": "ext=new",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cext=new\u003e"
+    ]
+  },
+  "--outbase": {
+    "Name": "--outbase",
+    "kind": "option",
+    "description": "Base path used to determine entrypoint output paths, for multiple entrypoints",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--outdir": {
+    "Name": "--outdir",
+    "kind": "option",
+    "description": "The output directory for multiple entrypoints",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--outfile": {
+    "Name": "--outfile",
+    "kind": "option",
+    "description": "The output file for one entrypoint",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--platform": {
+    "Name": "--platform",
+    "kind": "option",
+    "description": "The platform target",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "--preserve-symlinks": {
+    "Name": "--preserve-symlinks",
+    "kind": "option",
+    "description": "Disable symlink resolution",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--public-path": {
+    "Name": "--public-path",
+    "kind": "option",
+    "description": "Set the base URL for the 'file' loader",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--pure": {
+    "Name": "--pure",
+    "kind": "option",
+    "description": "Mark the name as a pure function for tree shaking",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "--reserve-props": {
+    "Name": "--reserve-props",
+    "kind": "option",
+    "description": "Do not mangle these properties",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cproperties\u003e": {
+        "Name": "\u003cproperties\u003e",
+        "kind": "argument",
+        "description": "properties",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cproperties\u003e": {
+        "Name": "\u003cproperties\u003e",
+        "kind": "argument",
+        "description": "properties",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cproperties\u003e"
+    ]
+  },
+  "--resolve-extensions": {
+    "Name": "--resolve-extensions",
+    "kind": "option",
+    "description": "Comma-separated list of implicit extensions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cextensions\u003e": {
+        "Name": "\u003cextensions\u003e",
+        "kind": "argument",
+        "description": "extensions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cextensions\u003e": {
+        "Name": "\u003cextensions\u003e",
+        "kind": "argument",
+        "description": "extensions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cextensions\u003e"
+    ]
+  },
+  "--serve": {
+    "Name": "--serve",
+    "kind": "option",
+    "description": "Start a local HTTP server on this host:port",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003c[address:]port\u003e": {
+        "Name": "\u003c[address:]port\u003e",
+        "kind": "argument",
+        "description": "[address:]port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003c[address:]port\u003e": {
+        "Name": "\u003c[address:]port\u003e",
+        "kind": "argument",
+        "description": "[address:]port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--servedir": {
+    "Name": "--servedir",
+    "kind": "option",
+    "description": "What to serve in addition to the generated output files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--source-root": {
+    "Name": "--source-root",
+    "kind": "option",
+    "description": "Set the sourceRoot field in generated source maps",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cURL\u003e": {
+        "Name": "\u003cURL\u003e",
+        "kind": "argument",
+        "description": "URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cURL\u003e": {
+        "Name": "\u003cURL\u003e",
+        "kind": "argument",
+        "description": "URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cURL\u003e"
+    ]
+  },
+  "--sourcefile": {
+    "Name": "--sourcefile",
+    "kind": "option",
+    "description": "Set the source file for the source map if there's no file name to use",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "--sourcemap": {
+    "Name": "--sourcemap",
+    "kind": "option",
+    "description": "Generate source maps?",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003coptions\u003e": {
+        "Name": "\u003coptions\u003e",
+        "kind": "argument",
+        "description": "options",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003coptions\u003e": {
+        "Name": "\u003coptions\u003e",
+        "kind": "argument",
+        "description": "options",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--sources-content": {
+    "Name": "--sources-content",
+    "kind": "option",
+    "description": "Omit the sourcesContent field in generated source maps",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--splitting": {
+    "Name": "--splitting",
+    "kind": "option",
+    "description": "Enable code splitting",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--supported": {
+    "Name": "--supported",
+    "kind": "option",
+    "description": "Consider a given syntax to be supported",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csyntax=status\u003e": {
+        "Name": "\u003csyntax=status\u003e",
+        "kind": "argument",
+        "description": "syntax=status",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csyntax=status\u003e": {
+        "Name": "\u003csyntax=status\u003e",
+        "kind": "argument",
+        "description": "syntax=status",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csyntax=status\u003e"
+    ]
+  },
+  "--target": {
+    "Name": "--target",
+    "kind": "option",
+    "description": "Set the environment target. Can be a particular ES version or browser version, eg. chrome101",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctarget\u003e": {
+        "Name": "\u003ctarget\u003e",
+        "kind": "argument",
+        "description": "target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctarget\u003e": {
+        "Name": "\u003ctarget\u003e",
+        "kind": "argument",
+        "description": "target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctarget\u003e"
+    ]
+  },
+  "--tree-shaking": {
+    "Name": "--tree-shaking",
+    "kind": "option",
+    "description": "Force tree shaking on or off",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstatus\u003e": {
+        "Name": "\u003cstatus\u003e",
+        "kind": "argument",
+        "description": "status",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstatus\u003e": {
+        "Name": "\u003cstatus\u003e",
+        "kind": "argument",
+        "description": "status",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstatus\u003e"
+    ]
+  },
+  "--tsconfig": {
+    "Name": "--tsconfig",
+    "kind": "option",
+    "description": "Use this TypeScript config instead of the default",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Print the current version and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--watch": {
+    "Name": "--watch",
+    "kind": "option",
+    "description": "Rebuild on file system changes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cforever\u003e": {
+        "Name": "\u003cforever\u003e",
+        "kind": "argument",
+        "description": "forever",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cforever\u003e": {
+        "Name": "\u003cforever\u003e",
+        "kind": "argument",
+        "description": "forever",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "\u003centry points\u003e": {
+    "Name": "\u003centry points\u003e",
+    "kind": "argument",
+    "description": "entry points",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

@@ -1,0 +1,458 @@
+{
+  "-P": {
+    "Name": "-P",
+    "kind": "subcommand",
+    "description": "Pass an option to a Kotlin compiler plugin. Available plugins and their options are listed in the Tools \u003e Compiler plugins section of the documentation",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cplugin:pluginId:optionName=value\u003e": {
+        "Name": "\u003cplugin:pluginId:optionName=value\u003e",
+        "kind": "argument",
+        "description": "plugin:pluginId:optionName=value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cplugin:pluginId:optionName=value\u003e": {
+        "Name": "\u003cplugin:pluginId:optionName=value\u003e",
+        "kind": "argument",
+        "description": "plugin:pluginId:optionName=value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cplugin:pluginId:optionName=value\u003e"
+    ]
+  },
+  "-Werror": {
+    "Name": "-Werror",
+    "kind": "subcommand",
+    "description": "Turn any warnings into a compilation error",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-X": {
+    "Name": "-X",
+    "kind": "subcommand",
+    "description": "Display information about the advanced options and exit. These options are currently unstable: their names and behavior may be changed without notice",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-api-version": {
+    "Name": "-api-version",
+    "kind": "subcommand",
+    "description": "Allow using declarations only from the specified version of Kotlin bundled libraries",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cversion\u003e"
+    ]
+  },
+  "-classpath": {
+    "Name": "-classpath",
+    "kind": "subcommand",
+    "description": "Search for class files in the specified paths. Separate elements of the classpath with system path separators (; on Windows, : on macOS/Linux). The classpath can contain file and directory paths, ZIP, or JAR files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "subcommand",
+    "description": "Place the generated class files into the specified location. The location can be a directory, a ZIP, or a JAR file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "-help": {
+    "Name": "-help",
+    "kind": "subcommand",
+    "description": "Display usage information and exit. Only standard options are shown. To show advanced options, use -X",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-include-runtime": {
+    "Name": "-include-runtime",
+    "kind": "subcommand",
+    "description": "Include the Kotlin runtime into the resulting JAR file. Makes the resulting archive runnable on any Java-enabled environment",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-java-parameters": {
+    "Name": "-java-parameters",
+    "kind": "subcommand",
+    "description": "Generate metadata for Java 1.8 reflection on method parameters",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-jdk-home": {
+    "Name": "-jdk-home",
+    "kind": "subcommand",
+    "description": "Use a custom JDK home directory to include into the classpath if it differs from the default JAVA_HOME",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "-jvm-target": {
+    "Name": "-jvm-target",
+    "kind": "subcommand",
+    "description": "Specify the target version of the generated JVM bytecode. Possible values are 1.8, 9, 10, ..., 21. The default value is 1.8",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cversion\u003e"
+    ]
+  },
+  "-kotlin-home": {
+    "Name": "-kotlin-home",
+    "kind": "subcommand",
+    "description": "Specify a custom path to the Kotlin compiler used for the discovery of runtime libraries",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "-language-version": {
+    "Name": "-language-version",
+    "kind": "subcommand",
+    "description": "Provide source compatibility with the specified version of Kotlin",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cversion\u003e"
+    ]
+  },
+  "-module-name": {
+    "Name": "-module-name",
+    "kind": "subcommand",
+    "description": "Set a custom name for the generated .kotlin_module file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "-no-jdk": {
+    "Name": "-no-jdk",
+    "kind": "subcommand",
+    "description": "Don't automatically include the Java runtime into the classpath",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-no-reflect": {
+    "Name": "-no-reflect",
+    "kind": "subcommand",
+    "description": "Don't automatically include the Kotlin reflection (kotlin-reflect.jar) into the classpath",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-no-stdlib": {
+    "Name": "-no-stdlib",
+    "kind": "subcommand",
+    "description": "Don't automatically include the Kotlin/JVM stdlib (kotlin-stdlib.jar) and Kotlin reflection (kotlin-reflect.jar) into the classpath",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-nowarn": {
+    "Name": "-nowarn",
+    "kind": "subcommand",
+    "description": "Suppress the compiler from displaying warnings during compilation",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-opt-in": {
+    "Name": "-opt-in",
+    "kind": "subcommand",
+    "description": "Enable usages of API that requires opt-in with a requirement annotation specified by the given fully qualified name",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cannotation\u003e": {
+        "Name": "\u003cannotation\u003e",
+        "kind": "argument",
+        "description": "annotation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cannotation\u003e": {
+        "Name": "\u003cannotation\u003e",
+        "kind": "argument",
+        "description": "annotation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cannotation\u003e"
+    ]
+  },
+  "-progressive": {
+    "Name": "-progressive",
+    "kind": "subcommand",
+    "description": "Enable the progressive mode for the compiler. In the progressive mode, deprecations and bug fixes for unstable code take effect immediately, instead of going through a graceful migration cycle. Code written in the progressive mode is backward compatible; however, code written in a non-progressive mode may cause compilation errors in the progressive mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-script": {
+    "Name": "-script",
+    "kind": "subcommand",
+    "description": "Evaluate a Kotlin script file. When called with this option, the compiler executes the first Kotlin script (*.kts) file among the given arguments",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cscript-file\u003e": {
+        "Name": "\u003cscript-file\u003e",
+        "kind": "argument",
+        "description": "script-file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cscript-file\u003e": {
+        "Name": "\u003cscript-file\u003e",
+        "kind": "argument",
+        "description": "script-file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cscript-file\u003e"
+    ]
+  },
+  "-script-templates": {
+    "Name": "-script-templates",
+    "kind": "subcommand",
+    "description": "Script definition template classes. Use fully qualified class names and separate them with commas (,)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cclassnames[,]\u003e": {
+        "Name": "\u003cclassnames[,]\u003e",
+        "kind": "argument",
+        "description": "classnames[,]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cclassnames[,]\u003e": {
+        "Name": "\u003cclassnames[,]\u003e",
+        "kind": "argument",
+        "description": "classnames[,]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cclassnames[,]\u003e"
+    ]
+  },
+  "-verbose": {
+    "Name": "-verbose",
+    "kind": "subcommand",
+    "description": "Enable verbose logging output which includes details of the compilation process",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-version": {
+    "Name": "-version",
+    "kind": "subcommand",
+    "description": "Display the compiler version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

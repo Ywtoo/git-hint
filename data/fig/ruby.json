@@ -1,0 +1,443 @@
+{
+  "--copyright": {
+    "Name": "--copyright",
+    "kind": "option",
+    "description": "Prints the copyright notice",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--debug": {
+    "Name": "--debug",
+    "kind": "option",
+    "description": "Turns on debug mode. $DEBUG will be set to true",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Prints a summary of the options",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Enables verbose mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Prints the version of Ruby interpreter",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--yydebug": {
+    "Name": "--yydebug",
+    "kind": "option",
+    "description": "Turns on compiler debug mode. Ruby will print a bunch of internal state messages during compiling scripts. You don't have to specify this switch, unless you are going to debug the Ruby interpreter",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-0": {
+    "Name": "-0",
+    "kind": "option",
+    "description": "Specifies the input record separator ($/) as an octal number",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003coctal\u003e": {
+        "Name": "\u003coctal\u003e",
+        "kind": "argument",
+        "description": "octal",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003coctal\u003e": {
+        "Name": "\u003coctal\u003e",
+        "kind": "argument",
+        "description": "octal",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003coctal\u003e"
+    ]
+  },
+  "-C": {
+    "Name": "-C",
+    "kind": "option",
+    "description": "Causes Ruby to switch to the directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdirectory\u003e"
+    ]
+  },
+  "-F": {
+    "Name": "-F",
+    "kind": "option",
+    "description": "Specifies input field separator ($;)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpattern\u003e": {
+        "Name": "\u003cpattern\u003e",
+        "kind": "argument",
+        "description": "pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpattern\u003e": {
+        "Name": "\u003cpattern\u003e",
+        "kind": "argument",
+        "description": "pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpattern\u003e"
+    ]
+  },
+  "-I": {
+    "Name": "-I",
+    "kind": "option",
+    "description": "Used to tell Ruby where to load the library scripts. Directory path will be added to the load-path variable ($:)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdirectory\u003e"
+    ]
+  },
+  "-K": {
+    "Name": "-K",
+    "kind": "option",
+    "description": "Specifies KANJI (Japanese) encoding",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckcode\u003e": {
+        "Name": "\u003ckcode\u003e",
+        "kind": "argument",
+        "description": "kcode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckcode\u003e": {
+        "Name": "\u003ckcode\u003e",
+        "kind": "argument",
+        "description": "kcode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ckcode\u003e"
+    ]
+  },
+  "-S": {
+    "Name": "-S",
+    "kind": "option",
+    "description": "Makes Ruby use the PATH environment variable to search for script, unless its name begins with a slash. This is used to emulate #! on machines that don't support it, in the following manner: #! /usr/local/bin/ruby # This line makes the next one a comment in Ruby \\ exec /usr/local/bin/ruby -S $0 $*",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-T": {
+    "Name": "-T",
+    "kind": "option",
+    "description": "Turns on taint checks at the specified level (default 1)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clevel\u003e"
+    ]
+  },
+  "-a": {
+    "Name": "-a",
+    "kind": "option",
+    "description": "Turns on auto-split mode when used with -n or -p",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Causes Ruby to check the syntax of the script and exit without executing. If there are no syntax errors, Ruby will print “Syntax OK” to the standard output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Turns on debug mode. $DEBUG will be set to true",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-e": {
+    "Name": "-e",
+    "kind": "option",
+    "description": "Specifies script from command-line while telling Ruby not to search the rest of arguments for a script file name",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Prints a summary of the options",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Specifies in-place-edit mode. The extension, if specified, is added to old file name to make a backup copy",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cextension\u003e": {
+        "Name": "\u003cextension\u003e",
+        "kind": "argument",
+        "description": "extension",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cextension\u003e": {
+        "Name": "\u003cextension\u003e",
+        "kind": "argument",
+        "description": "extension",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "option",
+    "description": "Enables automatic line-ending processing, which means to firstly set $\\ to the value of $/, and secondly chops every line read using chop!",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-n": {
+    "Name": "-n",
+    "kind": "option",
+    "description": "Causes Ruby to assume the following loop around your script",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-p": {
+    "Name": "-p",
+    "kind": "option",
+    "description": "Acts mostly same as -n switch, but print the value of variable $_ at the each end of the loop",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "Causes Ruby to load the library using require",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clibrary\u003e": {
+        "Name": "\u003clibrary\u003e",
+        "kind": "argument",
+        "description": "library",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clibrary\u003e": {
+        "Name": "\u003clibrary\u003e",
+        "kind": "argument",
+        "description": "library",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clibrary\u003e"
+    ]
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Enables some switch parsing for switches after script name but before any file name arguments (or before a --)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Enables verbose mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-w": {
+    "Name": "-w",
+    "kind": "option",
+    "description": "Enables verbose mode without printing version message at the beginning. It sets the $VERBOSE variable to true",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-x": {
+    "Name": "-x",
+    "kind": "option",
+    "description": "Tells Ruby that the script is embedded in a message. Leading garbage will be discarded until the first that starts with “#!” and contains the string, “ruby”. Any meaningful switches on that line will applied. The end of script must be specified with either EOF, ^D (control-D), ^Z (control-Z), or reserved word __END__. If the directory name is specified, Ruby will switch to that directory before executing script",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdirectory\u003e"
+    ]
+  },
+  "-y": {
+    "Name": "-y",
+    "kind": "option",
+    "description": "Turns on compiler debug mode. Ruby will print a bunch of internal state messages during compiling scripts. You don't have to specify this switch, unless you are going to debug the Ruby interpreter",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

@@ -1,0 +1,1327 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Help for kind",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--quiet": {
+    "Name": "--quiet",
+    "kind": "option",
+    "description": "Silence all stderr output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--verbosity": {
+    "Name": "--verbosity",
+    "kind": "option",
+    "description": "Info log verbosity, higher value produces more output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cint\u003e": {
+        "Name": "\u003cint\u003e",
+        "kind": "argument",
+        "description": "int",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cint\u003e": {
+        "Name": "\u003cint\u003e",
+        "kind": "argument",
+        "description": "int",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cint\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Help for kind",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-q": {
+    "Name": "-q",
+    "kind": "option",
+    "description": "Silence all stderr output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Info log verbosity, higher value produces more output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cint\u003e": {
+        "Name": "\u003cint\u003e",
+        "kind": "argument",
+        "description": "int",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cint\u003e": {
+        "Name": "\u003cint\u003e",
+        "kind": "argument",
+        "description": "int",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cint\u003e"
+    ]
+  },
+  "Build": {
+    "Name": "Build",
+    "kind": "subcommand",
+    "description": "Build one of [node-image]",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "node-image": {
+        "Name": "node-image",
+        "kind": "subcommand",
+        "description": "Builds a node image",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--arch": {
+            "Name": "--arch",
+            "kind": "option",
+            "description": "Architecture to build for, defaults to the host architecture",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003carchitecture\u003e": {
+                "Name": "\u003carchitecture\u003e",
+                "kind": "argument",
+                "description": "architecture",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003carchitecture\u003e": {
+                "Name": "\u003carchitecture\u003e",
+                "kind": "argument",
+                "description": "architecture",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003carchitecture\u003e"
+            ]
+          },
+          "--base-image": {
+            "Name": "--base-image",
+            "kind": "option",
+            "description": "Base image to use for the node image",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cbase image\u003e": {
+                "Name": "\u003cbase image\u003e",
+                "kind": "argument",
+                "description": "base image",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cbase image\u003e": {
+                "Name": "\u003cbase image\u003e",
+                "kind": "argument",
+                "description": "base image",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cbase image\u003e"
+            ]
+          },
+          "--image": {
+            "Name": "--image",
+            "kind": "option",
+            "description": "Name:tag of the resulting image to be built",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cname:tag\u003e": {
+                "Name": "\u003cname:tag\u003e",
+                "kind": "argument",
+                "description": "name:tag",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cname:tag\u003e": {
+                "Name": "\u003cname:tag\u003e",
+                "kind": "argument",
+                "description": "name:tag",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cname:tag\u003e"
+            ]
+          },
+          "--kube-root": {
+            "Name": "--kube-root",
+            "kind": "option",
+            "description": "Path to the Kubernetes source directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "--type": {
+            "Name": "--type",
+            "kind": "option",
+            "description": "Type of node image to build",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ctype\u003e": {
+                "Name": "\u003ctype\u003e",
+                "kind": "argument",
+                "description": "type",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ctype\u003e": {
+                "Name": "\u003ctype\u003e",
+                "kind": "argument",
+                "description": "type",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ctype\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--arch": {
+            "Name": "--arch",
+            "kind": "option",
+            "description": "Architecture to build for, defaults to the host architecture",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003carchitecture\u003e": {
+                "Name": "\u003carchitecture\u003e",
+                "kind": "argument",
+                "description": "architecture",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003carchitecture\u003e": {
+                "Name": "\u003carchitecture\u003e",
+                "kind": "argument",
+                "description": "architecture",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003carchitecture\u003e"
+            ]
+          },
+          "--base-image": {
+            "Name": "--base-image",
+            "kind": "option",
+            "description": "Base image to use for the node image",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cbase image\u003e": {
+                "Name": "\u003cbase image\u003e",
+                "kind": "argument",
+                "description": "base image",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cbase image\u003e": {
+                "Name": "\u003cbase image\u003e",
+                "kind": "argument",
+                "description": "base image",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cbase image\u003e"
+            ]
+          },
+          "--image": {
+            "Name": "--image",
+            "kind": "option",
+            "description": "Name:tag of the resulting image to be built",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cname:tag\u003e": {
+                "Name": "\u003cname:tag\u003e",
+                "kind": "argument",
+                "description": "name:tag",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cname:tag\u003e": {
+                "Name": "\u003cname:tag\u003e",
+                "kind": "argument",
+                "description": "name:tag",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cname:tag\u003e"
+            ]
+          },
+          "--kube-root": {
+            "Name": "--kube-root",
+            "kind": "option",
+            "description": "Path to the Kubernetes source directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "--type": {
+            "Name": "--type",
+            "kind": "option",
+            "description": "Type of node image to build",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ctype\u003e": {
+                "Name": "\u003ctype\u003e",
+                "kind": "argument",
+                "description": "type",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ctype\u003e": {
+                "Name": "\u003ctype\u003e",
+                "kind": "argument",
+                "description": "type",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ctype\u003e"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "completion": {
+    "Name": "completion",
+    "kind": "subcommand",
+    "description": "Generates shell completion scripts",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "bash": {
+        "Name": "bash",
+        "kind": "subcommand",
+        "description": "Output shell completions for bash",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "fish": {
+        "Name": "fish",
+        "kind": "subcommand",
+        "description": "Output shell completions for fish",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "zsh": {
+        "Name": "zsh",
+        "kind": "subcommand",
+        "description": "Output shell completions for zsh",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "create": {
+    "Name": "create",
+    "kind": "subcommand",
+    "description": "Creates a cluster",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "cluster": {
+        "Name": "cluster",
+        "kind": "subcommand",
+        "description": "Creates a cluster",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--config": {
+            "Name": "--config",
+            "kind": "option",
+            "description": "Path to a kind config file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--image": {
+            "Name": "--image",
+            "kind": "option",
+            "description": "Node docker image to use for booting the cluster",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--kubeconfig": {
+            "Name": "--kubeconfig",
+            "kind": "option",
+            "description": "Sets kubeconfig path instead of $KUBECONFIG or $HOME/.kube/config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--name": {
+            "Name": "--name",
+            "kind": "option",
+            "description": "Cluster name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--retain": {
+            "Name": "--retain",
+            "kind": "option",
+            "description": "Retain nodes for debugging when cluster creation fails",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--wait": {
+            "Name": "--wait",
+            "kind": "option",
+            "description": "Wait for control-plane node to be ready",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--config": {
+            "Name": "--config",
+            "kind": "option",
+            "description": "Path to a kind config file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--image": {
+            "Name": "--image",
+            "kind": "option",
+            "description": "Node docker image to use for booting the cluster",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--kubeconfig": {
+            "Name": "--kubeconfig",
+            "kind": "option",
+            "description": "Sets kubeconfig path instead of $KUBECONFIG or $HOME/.kube/config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--name": {
+            "Name": "--name",
+            "kind": "option",
+            "description": "Cluster name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--retain": {
+            "Name": "--retain",
+            "kind": "option",
+            "description": "Retain nodes for debugging when cluster creation fails",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--wait": {
+            "Name": "--wait",
+            "kind": "option",
+            "description": "Wait for control-plane node to be ready",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      }
+    }
+  },
+  "delete": {
+    "Name": "delete",
+    "kind": "subcommand",
+    "description": "Deletes one or more clusters",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "cluster": {
+        "Name": "cluster",
+        "kind": "subcommand",
+        "description": "Delete Cluster",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--name": {
+            "Name": "--name",
+            "kind": "option",
+            "description": "Cluster name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccluster name\u003e": {
+                "Name": "\u003ccluster name\u003e",
+                "kind": "argument",
+                "description": "cluster name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccluster name\u003e": {
+                "Name": "\u003ccluster name\u003e",
+                "kind": "argument",
+                "description": "cluster name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ccluster name\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--name": {
+            "Name": "--name",
+            "kind": "option",
+            "description": "Cluster name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccluster name\u003e": {
+                "Name": "\u003ccluster name\u003e",
+                "kind": "argument",
+                "description": "cluster name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccluster name\u003e": {
+                "Name": "\u003ccluster name\u003e",
+                "kind": "argument",
+                "description": "cluster name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ccluster name\u003e"
+            ]
+          }
+        }
+      },
+      "clusters": {
+        "Name": "clusters",
+        "kind": "subcommand",
+        "description": "Delete Clusters",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "Delete all clusters",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--kubeconfig": {
+            "Name": "--kubeconfig",
+            "kind": "option",
+            "description": "Sets kubeconfig path instead of $KUBECONFIG or $HOME/.kube/config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-A": {
+            "Name": "-A",
+            "kind": "option",
+            "description": "Delete all clusters",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "Delete all clusters",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--kubeconfig": {
+            "Name": "--kubeconfig",
+            "kind": "option",
+            "description": "Sets kubeconfig path instead of $KUBECONFIG or $HOME/.kube/config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-A": {
+            "Name": "-A",
+            "kind": "option",
+            "description": "Delete all clusters",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      }
+    }
+  },
+  "export": {
+    "Name": "export",
+    "kind": "subcommand",
+    "description": "Exports a cluster's kubeconfig",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "kubeconfig": {
+        "Name": "kubeconfig",
+        "kind": "subcommand",
+        "description": "Exports a cluster's kubeconfig",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--internal": {
+            "Name": "--internal",
+            "kind": "option",
+            "description": "Use internal address instead of externalt",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--kubeconfig": {
+            "Name": "--kubeconfig",
+            "kind": "option",
+            "description": "Sets kubeconfig path instead of $KUBECONFIG or $HOME/.kube/config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--name": {
+            "Name": "--name",
+            "kind": "option",
+            "description": "Cluster name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--internal": {
+            "Name": "--internal",
+            "kind": "option",
+            "description": "Use internal address instead of externalt",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--kubeconfig": {
+            "Name": "--kubeconfig",
+            "kind": "option",
+            "description": "Sets kubeconfig path instead of $KUBECONFIG or $HOME/.kube/config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--name": {
+            "Name": "--name",
+            "kind": "option",
+            "description": "Cluster name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "logs": {
+        "Name": "logs",
+        "kind": "subcommand",
+        "description": "Exports logs to a tempdir or [output-dir] if specified",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--name": {
+            "Name": "--name",
+            "kind": "option",
+            "description": "Cluster name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccluster name\u003e": {
+                "Name": "\u003ccluster name\u003e",
+                "kind": "argument",
+                "description": "cluster name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccluster name\u003e": {
+                "Name": "\u003ccluster name\u003e",
+                "kind": "argument",
+                "description": "cluster name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ccluster name\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--name": {
+            "Name": "--name",
+            "kind": "option",
+            "description": "Cluster name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccluster name\u003e": {
+                "Name": "\u003ccluster name\u003e",
+                "kind": "argument",
+                "description": "cluster name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccluster name\u003e": {
+                "Name": "\u003ccluster name\u003e",
+                "kind": "argument",
+                "description": "cluster name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ccluster name\u003e"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "get": {
+    "Name": "get",
+    "kind": "subcommand",
+    "description": "Gets one of [clusters, nodes, kubeconfig]",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "clusters": {
+        "Name": "clusters",
+        "kind": "subcommand",
+        "description": "Lists existing kind clusters by their name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "kubeconfig": {
+        "Name": "kubeconfig",
+        "kind": "subcommand",
+        "description": "Prints cluster kubeconfig",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--internal": {
+            "Name": "--internal",
+            "kind": "option",
+            "description": "Use internal address instead of external",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--name": {
+            "Name": "--name",
+            "kind": "option",
+            "description": "Cluster name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccluster name\u003e": {
+                "Name": "\u003ccluster name\u003e",
+                "kind": "argument",
+                "description": "cluster name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccluster name\u003e": {
+                "Name": "\u003ccluster name\u003e",
+                "kind": "argument",
+                "description": "cluster name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ccluster name\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--internal": {
+            "Name": "--internal",
+            "kind": "option",
+            "description": "Use internal address instead of external",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--name": {
+            "Name": "--name",
+            "kind": "option",
+            "description": "Cluster name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccluster name\u003e": {
+                "Name": "\u003ccluster name\u003e",
+                "kind": "argument",
+                "description": "cluster name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccluster name\u003e": {
+                "Name": "\u003ccluster name\u003e",
+                "kind": "argument",
+                "description": "cluster name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ccluster name\u003e"
+            ]
+          }
+        }
+      },
+      "nodes": {
+        "Name": "nodes",
+        "kind": "subcommand",
+        "description": "Lists existing kind nodes by their name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "List all nodes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--name": {
+            "Name": "--name",
+            "kind": "option",
+            "description": "Cluster name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccluster name\u003e": {
+                "Name": "\u003ccluster name\u003e",
+                "kind": "argument",
+                "description": "cluster name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccluster name\u003e": {
+                "Name": "\u003ccluster name\u003e",
+                "kind": "argument",
+                "description": "cluster name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ccluster name\u003e"
+            ]
+          },
+          "-A": {
+            "Name": "-A",
+            "kind": "option",
+            "description": "List all nodes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "List all nodes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--name": {
+            "Name": "--name",
+            "kind": "option",
+            "description": "Cluster name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccluster name\u003e": {
+                "Name": "\u003ccluster name\u003e",
+                "kind": "argument",
+                "description": "cluster name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccluster name\u003e": {
+                "Name": "\u003ccluster name\u003e",
+                "kind": "argument",
+                "description": "cluster name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ccluster name\u003e"
+            ]
+          },
+          "-A": {
+            "Name": "-A",
+            "kind": "option",
+            "description": "List all nodes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      }
+    }
+  },
+  "load": {
+    "Name": "load",
+    "kind": "subcommand",
+    "description": "Loads images into node from an archive or image on host",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "docker-image": {
+        "Name": "docker-image",
+        "kind": "subcommand",
+        "description": "Loads docker images from host into all or specified nodes by name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--name": {
+            "Name": "--name",
+            "kind": "option",
+            "description": "Cluster name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccluster name\u003e": {
+                "Name": "\u003ccluster name\u003e",
+                "kind": "argument",
+                "description": "cluster name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccluster name\u003e": {
+                "Name": "\u003ccluster name\u003e",
+                "kind": "argument",
+                "description": "cluster name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ccluster name\u003e"
+            ]
+          },
+          "--nodes": {
+            "Name": "--nodes",
+            "kind": "option",
+            "description": "Comma separated list of nodes to load images into",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cnodes\u003e": {
+                "Name": "\u003cnodes\u003e",
+                "kind": "argument",
+                "description": "nodes",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cnodes\u003e": {
+                "Name": "\u003cnodes\u003e",
+                "kind": "argument",
+                "description": "nodes",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cnodes\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--name": {
+            "Name": "--name",
+            "kind": "option",
+            "description": "Cluster name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccluster name\u003e": {
+                "Name": "\u003ccluster name\u003e",
+                "kind": "argument",
+                "description": "cluster name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccluster name\u003e": {
+                "Name": "\u003ccluster name\u003e",
+                "kind": "argument",
+                "description": "cluster name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ccluster name\u003e"
+            ]
+          },
+          "--nodes": {
+            "Name": "--nodes",
+            "kind": "option",
+            "description": "Comma separated list of nodes to load images into",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cnodes\u003e": {
+                "Name": "\u003cnodes\u003e",
+                "kind": "argument",
+                "description": "nodes",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cnodes\u003e": {
+                "Name": "\u003cnodes\u003e",
+                "kind": "argument",
+                "description": "nodes",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cnodes\u003e"
+            ]
+          }
+        }
+      },
+      "image-archive": {
+        "Name": "image-archive",
+        "kind": "subcommand",
+        "description": "Loads docker images from archive into all or specified nodes by name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--name": {
+            "Name": "--name",
+            "kind": "option",
+            "description": "Cluster name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccluster name\u003e": {
+                "Name": "\u003ccluster name\u003e",
+                "kind": "argument",
+                "description": "cluster name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccluster name\u003e": {
+                "Name": "\u003ccluster name\u003e",
+                "kind": "argument",
+                "description": "cluster name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ccluster name\u003e"
+            ]
+          },
+          "--nodes": {
+            "Name": "--nodes",
+            "kind": "option",
+            "description": "Comma separated list of nodes to load images into",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cnodes\u003e": {
+                "Name": "\u003cnodes\u003e",
+                "kind": "argument",
+                "description": "nodes",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cnodes\u003e": {
+                "Name": "\u003cnodes\u003e",
+                "kind": "argument",
+                "description": "nodes",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cnodes\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--name": {
+            "Name": "--name",
+            "kind": "option",
+            "description": "Cluster name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccluster name\u003e": {
+                "Name": "\u003ccluster name\u003e",
+                "kind": "argument",
+                "description": "cluster name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccluster name\u003e": {
+                "Name": "\u003ccluster name\u003e",
+                "kind": "argument",
+                "description": "cluster name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ccluster name\u003e"
+            ]
+          },
+          "--nodes": {
+            "Name": "--nodes",
+            "kind": "option",
+            "description": "Comma separated list of nodes to load images into",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cnodes\u003e": {
+                "Name": "\u003cnodes\u003e",
+                "kind": "argument",
+                "description": "nodes",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cnodes\u003e": {
+                "Name": "\u003cnodes\u003e",
+                "kind": "argument",
+                "description": "nodes",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cnodes\u003e"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "version": {
+    "Name": "version",
+    "kind": "subcommand",
+    "description": "Prints the kind CLI version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

@@ -1,0 +1,630 @@
+{
+  "--apparent-size": {
+    "Name": "--apparent-size",
+    "kind": "option",
+    "description": "Use file length instead of blocks",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--depth": {
+    "Name": "--depth",
+    "kind": "option",
+    "description": "Depth to show",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdepth\u003e": {
+        "Name": "\u003cdepth\u003e",
+        "kind": "argument",
+        "description": "depth",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdepth\u003e": {
+        "Name": "\u003cdepth\u003e",
+        "kind": "argument",
+        "description": "depth",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdepth\u003e"
+    ]
+  },
+  "--file_types": {
+    "Name": "--file_types",
+    "kind": "option",
+    "description": "Show only these file types",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--filecount": {
+    "Name": "--filecount",
+    "kind": "option",
+    "description": "Directory 'size' is number of child files/dirs not disk size",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--filter": {
+    "Name": "--filter",
+    "kind": "option",
+    "description": "Only include filepaths matching this regex. For png files type: -e \"\\.png$\"",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfilter\u003e": {
+        "Name": "\u003cfilter\u003e",
+        "kind": "argument",
+        "description": "filter",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfilter\u003e": {
+        "Name": "\u003cfilter\u003e",
+        "kind": "argument",
+        "description": "filter",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfilter\u003e"
+    ]
+  },
+  "--full-paths": {
+    "Name": "--full-paths",
+    "kind": "option",
+    "description": "Subdirectories will not have their path shortened",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for dust",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--ignore-directory": {
+    "Name": "--ignore-directory",
+    "kind": "option",
+    "description": "Exclude any file or directory with this name",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cignore_directory\u003e": {
+        "Name": "\u003cignore_directory\u003e",
+        "kind": "argument",
+        "description": "ignore_directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cignore_directory\u003e": {
+        "Name": "\u003cignore_directory\u003e",
+        "kind": "argument",
+        "description": "ignore_directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cignore_directory\u003e"
+    ]
+  },
+  "--ignore_hidden": {
+    "Name": "--ignore_hidden",
+    "kind": "option",
+    "description": "Do not display hidden files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--invert-filter": {
+    "Name": "--invert-filter",
+    "kind": "option",
+    "description": "Exclude filepaths matching this regex. To ignore png files type: -v \"\\.png$\"",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cinvert_filter\u003e": {
+        "Name": "\u003cinvert_filter\u003e",
+        "kind": "argument",
+        "description": "invert_filter",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cinvert_filter\u003e": {
+        "Name": "\u003cinvert_filter\u003e",
+        "kind": "argument",
+        "description": "invert_filter",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cinvert_filter\u003e"
+    ]
+  },
+  "--limit-filesystem": {
+    "Name": "--limit-filesystem",
+    "kind": "option",
+    "description": "Only count the files and directories on the same filesystem as the supplied directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--min-size": {
+    "Name": "--min-size",
+    "kind": "option",
+    "description": "Minimum size file to include in output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmin_size\u003e": {
+        "Name": "\u003cmin_size\u003e",
+        "kind": "argument",
+        "description": "min_size",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmin_size\u003e": {
+        "Name": "\u003cmin_size\u003e",
+        "kind": "argument",
+        "description": "min_size",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmin_size\u003e"
+    ]
+  },
+  "--no-colors": {
+    "Name": "--no-colors",
+    "kind": "option",
+    "description": "No colors will be printed (Useful for commands like: watch)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-percent-bars": {
+    "Name": "--no-percent-bars",
+    "kind": "option",
+    "description": "No percent bars or percentages will be displayed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--number-of-lines": {
+    "Name": "--number-of-lines",
+    "kind": "option",
+    "description": "Number of lines of output to show. (Default is terminal_height - 10)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnumber_of_lines\u003e": {
+        "Name": "\u003cnumber_of_lines\u003e",
+        "kind": "argument",
+        "description": "number_of_lines",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnumber_of_lines\u003e": {
+        "Name": "\u003cnumber_of_lines\u003e",
+        "kind": "argument",
+        "description": "number_of_lines",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnumber_of_lines\u003e"
+    ]
+  },
+  "--reverse": {
+    "Name": "--reverse",
+    "kind": "option",
+    "description": "Print tree upside down (biggest highest)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--si": {
+    "Name": "--si",
+    "kind": "option",
+    "description": "Print sizes in powers of 1000 (e.g., 1.1G)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--skip-total": {
+    "Name": "--skip-total",
+    "kind": "option",
+    "description": "No total row will be displayed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--terminal_width": {
+    "Name": "--terminal_width",
+    "kind": "option",
+    "description": "Specify width of output overriding the auto detection of terminal width",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cwidth\u003e": {
+        "Name": "\u003cwidth\u003e",
+        "kind": "argument",
+        "description": "width",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cwidth\u003e": {
+        "Name": "\u003cwidth\u003e",
+        "kind": "argument",
+        "description": "width",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cwidth\u003e"
+    ]
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Print version information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-H": {
+    "Name": "-H",
+    "kind": "option",
+    "description": "Print sizes in powers of 1000 (e.g., 1.1G)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-V": {
+    "Name": "-V",
+    "kind": "option",
+    "description": "Print version information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-X": {
+    "Name": "-X",
+    "kind": "option",
+    "description": "Exclude any file or directory with this name",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cignore_directory\u003e": {
+        "Name": "\u003cignore_directory\u003e",
+        "kind": "argument",
+        "description": "ignore_directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cignore_directory\u003e": {
+        "Name": "\u003cignore_directory\u003e",
+        "kind": "argument",
+        "description": "ignore_directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cignore_directory\u003e"
+    ]
+  },
+  "-b": {
+    "Name": "-b",
+    "kind": "option",
+    "description": "No percent bars or percentages will be displayed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "No colors will be printed (Useful for commands like: watch)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Depth to show",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdepth\u003e": {
+        "Name": "\u003cdepth\u003e",
+        "kind": "argument",
+        "description": "depth",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdepth\u003e": {
+        "Name": "\u003cdepth\u003e",
+        "kind": "argument",
+        "description": "depth",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdepth\u003e"
+    ]
+  },
+  "-e": {
+    "Name": "-e",
+    "kind": "option",
+    "description": "Only include filepaths matching this regex. For png files type: -e \"\\.png$\"",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfilter\u003e": {
+        "Name": "\u003cfilter\u003e",
+        "kind": "argument",
+        "description": "filter",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfilter\u003e": {
+        "Name": "\u003cfilter\u003e",
+        "kind": "argument",
+        "description": "filter",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfilter\u003e"
+    ]
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Directory 'size' is number of child files/dirs not disk size",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help for dust",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Do not display hidden files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-n": {
+    "Name": "-n",
+    "kind": "option",
+    "description": "Number of lines of output to show. (Default is terminal_height - 10)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnumber_of_lines\u003e": {
+        "Name": "\u003cnumber_of_lines\u003e",
+        "kind": "argument",
+        "description": "number_of_lines",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnumber_of_lines\u003e": {
+        "Name": "\u003cnumber_of_lines\u003e",
+        "kind": "argument",
+        "description": "number_of_lines",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnumber_of_lines\u003e"
+    ]
+  },
+  "-p": {
+    "Name": "-p",
+    "kind": "option",
+    "description": "Subdirectories will not have their path shortened",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "Print tree upside down (biggest highest)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Use file length instead of blocks",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Show only these file types",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Exclude filepaths matching this regex. To ignore png files type: -v \"\\.png$\"",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cinvert_filter\u003e": {
+        "Name": "\u003cinvert_filter\u003e",
+        "kind": "argument",
+        "description": "invert_filter",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cinvert_filter\u003e": {
+        "Name": "\u003cinvert_filter\u003e",
+        "kind": "argument",
+        "description": "invert_filter",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cinvert_filter\u003e"
+    ]
+  },
+  "-w": {
+    "Name": "-w",
+    "kind": "option",
+    "description": "Specify width of output overriding the auto detection of terminal width",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cwidth\u003e": {
+        "Name": "\u003cwidth\u003e",
+        "kind": "argument",
+        "description": "width",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cwidth\u003e": {
+        "Name": "\u003cwidth\u003e",
+        "kind": "argument",
+        "description": "width",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cwidth\u003e"
+    ]
+  },
+  "-x": {
+    "Name": "-x",
+    "kind": "option",
+    "description": "Only count the files and directories on the same filesystem as the supplied directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-z": {
+    "Name": "-z",
+    "kind": "option",
+    "description": "Minimum size file to include in output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmin_size\u003e": {
+        "Name": "\u003cmin_size\u003e",
+        "kind": "argument",
+        "description": "min_size",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmin_size\u003e": {
+        "Name": "\u003cmin_size\u003e",
+        "kind": "argument",
+        "description": "min_size",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmin_size\u003e"
+    ]
+  },
+  "\u003cinputs\u003e": {
+    "Name": "\u003cinputs\u003e",
+    "kind": "argument",
+    "description": "inputs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

@@ -1,0 +1,482 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for traceroute",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-A": {
+    "Name": "-A",
+    "kind": "option",
+    "description": "Turn on AS# lookups and use the given server instead of the default",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cas_server\u003e": {
+        "Name": "\u003cas_server\u003e",
+        "kind": "argument",
+        "description": "as_server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cas_server\u003e": {
+        "Name": "\u003cas_server\u003e",
+        "kind": "argument",
+        "description": "as_server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cas_server\u003e"
+    ]
+  },
+  "-D": {
+    "Name": "-D",
+    "kind": "option",
+    "description": "When an ICMP response to our probe datagram is received, print the differences between the transmitted packet and the packet quoted by the ICMP response. A key showing the location of fields within the transmitted packet is printed, followed by the original packet in hex, followed by the quoted packet in hex. Bytes that are unchanged in the quoted packet are shown as underscores. Note, the IP checksum and the TTL of the quoted packet are not expected to match. By default, only one probe per hop is sent with this option",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-F": {
+    "Name": "-F",
+    "kind": "option",
+    "description": "Set the `don't fragment` bit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-I": {
+    "Name": "-I",
+    "kind": "option",
+    "description": "Use ICMP ECHO instead of UDP datagrams. (A synonym for `-P icmp`)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-M": {
+    "Name": "-M",
+    "kind": "option",
+    "description": "Set the initial time-to-live value used in outgoing probe packets. The default is 1, i.e., start with the first hop",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfirst_ttl\u003e": {
+        "Name": "\u003cfirst_ttl\u003e",
+        "kind": "argument",
+        "description": "first_ttl",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfirst_ttl\u003e": {
+        "Name": "\u003cfirst_ttl\u003e",
+        "kind": "argument",
+        "description": "first_ttl",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfirst_ttl\u003e"
+    ]
+  },
+  "-P": {
+    "Name": "-P",
+    "kind": "option",
+    "description": "Send packets of specified IP protocol. The currently supported protocols are: UDP, TCP, GRE and ICMP Other protocols may also be specified (either by name or by number), though traceroute does not implement any special knowledge of their packet formats. This option is useful for determining which router along a path may be blocking packets based on IP protocol number. But see BUGS below",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cproto\u003e": {
+        "Name": "\u003cproto\u003e",
+        "kind": "argument",
+        "description": "proto",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cproto\u003e": {
+        "Name": "\u003cproto\u003e",
+        "kind": "argument",
+        "description": "proto",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cproto\u003e"
+    ]
+  },
+  "-S": {
+    "Name": "-S",
+    "kind": "option",
+    "description": "Print a summary of how many probes were not answered for each hop",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-a": {
+    "Name": "-a",
+    "kind": "option",
+    "description": "Turn on AS# lookups for each hop encountered",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Enable socket level debugging",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-e": {
+    "Name": "-e",
+    "kind": "option",
+    "description": "Firewall evasion mode. Use fixed destination ports for UDP and TCP probes. The destination port does NOT increment with each packet sent",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Set the initial time-to-live used in the first outgoing probe packet",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfirst_ttl\u003e": {
+        "Name": "\u003cfirst_ttl\u003e",
+        "kind": "argument",
+        "description": "first_ttl",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfirst_ttl\u003e": {
+        "Name": "\u003cfirst_ttl\u003e",
+        "kind": "argument",
+        "description": "first_ttl",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfirst_ttl\u003e"
+    ]
+  },
+  "-g": {
+    "Name": "-g",
+    "kind": "option",
+    "description": "Specify a loose source route gateway (8 maximum)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cgateway\u003e": {
+        "Name": "\u003cgateway\u003e",
+        "kind": "argument",
+        "description": "gateway",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cgateway\u003e": {
+        "Name": "\u003cgateway\u003e",
+        "kind": "argument",
+        "description": "gateway",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cgateway\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help for traceroute",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Specify a network interface to obtain the source IP address for outgoing probe packets. This is normally only useful on a multihomed host. (See the -s flag for another way to do this.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ciface\u003e": {
+        "Name": "\u003ciface\u003e",
+        "kind": "argument",
+        "description": "iface",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ciface\u003e": {
+        "Name": "\u003ciface\u003e",
+        "kind": "argument",
+        "description": "iface",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ciface\u003e"
+    ]
+  },
+  "-m": {
+    "Name": "-m",
+    "kind": "option",
+    "description": "Set the max time-to-live (max number of hops) used in outgoing probe packets. The default is net.inet.ip.ttl hops (the same default used for TCP connections)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmax_ttl\u003e": {
+        "Name": "\u003cmax_ttl\u003e",
+        "kind": "argument",
+        "description": "max_ttl",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmax_ttl\u003e": {
+        "Name": "\u003cmax_ttl\u003e",
+        "kind": "argument",
+        "description": "max_ttl",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmax_ttl\u003e"
+    ]
+  },
+  "-n": {
+    "Name": "-n",
+    "kind": "option",
+    "description": "Print hop addresses numerically rather than symbolically and numerically (saves a nameserver address-to-name lookup for each gateway found on the path)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-p": {
+    "Name": "-p",
+    "kind": "option",
+    "description": "Protocol specific. For UDP and TCP, sets the base port number used in probes (default is 33434). traceroute hopes that nothing is listening on UDP ports base to base+nhops-1 at the destination host (so an ICMP PORT_UNREACHABLE message will be returned to terminate the route tracing). If something is listening on a port in the default range, this option can be used to pick an unused port range",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cport\u003e": {
+        "Name": "\u003cport\u003e",
+        "kind": "argument",
+        "description": "port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cport\u003e": {
+        "Name": "\u003cport\u003e",
+        "kind": "argument",
+        "description": "port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cport\u003e"
+    ]
+  },
+  "-q": {
+    "Name": "-q",
+    "kind": "option",
+    "description": "Set the number of probes per ``ttl'' to nqueries (default is three probes)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnqueries\u003e": {
+        "Name": "\u003cnqueries\u003e",
+        "kind": "argument",
+        "description": "nqueries",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnqueries\u003e": {
+        "Name": "\u003cnqueries\u003e",
+        "kind": "argument",
+        "description": "nqueries",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnqueries\u003e"
+    ]
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "Bypass the normal routing tables and send directly to a host on an attached network. If the host is not on a directly-attached network, an error is returned. This option can be used to ping a local host through an interface that has no route through it (e.g., after the interface was dropped by routed(8))",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Use the following IP address (which must be given as an IP number, not a hostname) as the source address in outgoing probe packets. On hosts with more than one IP address, this option can be used to force the source address to be something other than the IP address of the interface the probe packet is sent on. If the IP address is not one of this machine's interface addresses, an error is returned and nothing is sent. (See the -i flag for another way to do this.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csrc_addr\u003e": {
+        "Name": "\u003csrc_addr\u003e",
+        "kind": "argument",
+        "description": "src_addr",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csrc_addr\u003e": {
+        "Name": "\u003csrc_addr\u003e",
+        "kind": "argument",
+        "description": "src_addr",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csrc_addr\u003e"
+    ]
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Set the type-of-service in probe packets to the following value (default zero). The value must be a decimal integer in the range 0 to 255. This option can be used to see if different types-of- service result in different paths. (If you are not running a 4.4BSD or later system, this may be academic since the normal network services like telnet and ftp don't let you control the TOS). Not all values of TOS are legal or meaningful - see the IP spec for definitions. Useful values are probably `-t 16' (low delay) and `-t 8' (high throughput)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctos\u003e": {
+        "Name": "\u003ctos\u003e",
+        "kind": "argument",
+        "description": "tos",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctos\u003e": {
+        "Name": "\u003ctos\u003e",
+        "kind": "argument",
+        "description": "tos",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctos\u003e"
+    ]
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Verbose output. Received ICMP packets other than TIME_EXCEEDED and UNREACHABLEs are listed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-w": {
+    "Name": "-w",
+    "kind": "option",
+    "description": "Set the time (in seconds) to wait for a response to a probe (default 5 sec.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-x": {
+    "Name": "-x",
+    "kind": "option",
+    "description": "Toggle IP checksums. Normally, this prevents traceroute from calculating IP checksums. In some cases, the operating system can overwrite parts of the outgoing packet but not recalculate the checksum (so in some cases the default is to not calculate checksums and using -x causes them to be calculated). Note that checksums are usually required for the last hop when using ICMP ECHO probes ( -I ). So they are always calculated when using ICMP",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-z": {
+    "Name": "-z",
+    "kind": "option",
+    "description": "Set the time (in milliseconds) to pause between probes (default 0). Some systems such as Solaris and routers such as Ciscos rate limit ICMP messages. A good value to use with this this is 500 (e.g. 1/2 second)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpausemsecs\u003e": {
+        "Name": "\u003cpausemsecs\u003e",
+        "kind": "argument",
+        "description": "pausemsecs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpausemsecs\u003e": {
+        "Name": "\u003cpausemsecs\u003e",
+        "kind": "argument",
+        "description": "pausemsecs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpausemsecs\u003e"
+    ]
+  },
+  "\u003chost\u003e": {
+    "Name": "\u003chost\u003e",
+    "kind": "argument",
+    "description": "host",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

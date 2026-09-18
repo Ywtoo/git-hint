@@ -1,0 +1,839 @@
+{
+  "--all-architectures": {
+    "Name": "--all-architectures",
+    "kind": "option",
+    "description": "When verifying a code signature on code that has a universal ('fat') Mach-O binary, separately verify each architecture contained. This is the default unless overridden with the -a (--architecture) option",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--architecture": {
+    "Name": "--architecture",
+    "kind": "option",
+    "description": "When verifying or displaying signatures, explicitly select the Mach-O architecture given",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003carchitecture\u003e": {
+        "Name": "\u003carchitecture\u003e",
+        "kind": "argument",
+        "description": "architecture",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003carchitecture\u003e": {
+        "Name": "\u003carchitecture\u003e",
+        "kind": "argument",
+        "description": "architecture",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003carchitecture\u003e"
+    ]
+  },
+  "--bundle-version": {
+    "Name": "--bundle-version",
+    "kind": "option",
+    "description": "When handling versioned bundles such as frameworks, explicitly specify the version to operate on",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cversion-string\u003e": {
+        "Name": "\u003cversion-string\u003e",
+        "kind": "argument",
+        "description": "version-string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cversion-string\u003e": {
+        "Name": "\u003cversion-string\u003e",
+        "kind": "argument",
+        "description": "version-string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cversion-string\u003e"
+    ]
+  },
+  "--continue": {
+    "Name": "--continue",
+    "kind": "option",
+    "description": "Instructs codesign to continue processing path arguments even if processing one fails",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--deep": {
+    "Name": "--deep",
+    "kind": "option",
+    "description": "When signing a bundle, specifies that nested code content such as helpers, frameworks, and plug-ins, should be recursively signed in turn. Beware that all signing options you specify will apply, in turn, to such nested content",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--detached": {
+    "Name": "--detached",
+    "kind": "option",
+    "description": "When signing, designates that a detached signature should be written to the specified file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile\u003e"
+    ]
+  },
+  "--detached-database": {
+    "Name": "--detached-database",
+    "kind": "option",
+    "description": "When signing, specifies that a detached signature should be generated as with the --detached option, but that the resulting signature should be written into a system database, from where it is made automatically available whenever apparently unsigned code is validated on the system",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--display": {
+    "Name": "--display",
+    "kind": "option",
+    "description": "Display information about the code at the path(s) given",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--dryrun": {
+    "Name": "--dryrun",
+    "kind": "option",
+    "description": "During signing, performs almost all signing operations, but does not actually write the result anywhere",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--entitlements": {
+    "Name": "--entitlements",
+    "kind": "option",
+    "description": "When signing, take the file at the given path and embed its contents in the signature as entitlement data",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--extract-certificates": {
+    "Name": "--extract-certificates",
+    "kind": "option",
+    "description": "When displaying a signature, extract the certificates in the embedded certificate chain and write them to individual files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cprefix\u003e": {
+        "Name": "\u003cprefix\u003e",
+        "kind": "argument",
+        "description": "prefix",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cprefix\u003e": {
+        "Name": "\u003cprefix\u003e",
+        "kind": "argument",
+        "description": "prefix",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cprefix\u003e"
+    ]
+  },
+  "--file-list": {
+    "Name": "--file-list",
+    "kind": "option",
+    "description": "When signing or displaying a signature, codesign writes to the given path a list of files that may have been modified as part of the signing process",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile\u003e"
+    ]
+  },
+  "--force": {
+    "Name": "--force",
+    "kind": "option",
+    "description": "When signing, causes codesign to replace any existing signature on the path(s) given",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--hosting": {
+    "Name": "--hosting",
+    "kind": "option",
+    "description": "Constructs and prints the hosting chain of a running program",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--identifier": {
+    "Name": "--identifier",
+    "kind": "option",
+    "description": "During signing, explicitly specify the unique identifier string that is embedded in code signatures",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cidentifier\u003e": {
+        "Name": "\u003cidentifier\u003e",
+        "kind": "argument",
+        "description": "identifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cidentifier\u003e": {
+        "Name": "\u003cidentifier\u003e",
+        "kind": "argument",
+        "description": "identifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cidentifier\u003e"
+    ]
+  },
+  "--ignore-resources": {
+    "Name": "--ignore-resources",
+    "kind": "option",
+    "description": "During static validation, do not validate the contents of the code's resources",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--keychain": {
+    "Name": "--keychain",
+    "kind": "option",
+    "description": "During signing, only search for the signing identity in the keychain file specified",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfilename\u003e": {
+        "Name": "\u003cfilename\u003e",
+        "kind": "argument",
+        "description": "filename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfilename\u003e": {
+        "Name": "\u003cfilename\u003e",
+        "kind": "argument",
+        "description": "filename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfilename\u003e"
+    ]
+  },
+  "--options": {
+    "Name": "--options",
+    "kind": "option",
+    "description": "During signing, specifies a set of option flags to be embedded in the code signature",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cversion-string\u003e": {
+        "Name": "\u003cversion-string\u003e",
+        "kind": "argument",
+        "description": "version-string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cversion-string\u003e": {
+        "Name": "\u003cversion-string\u003e",
+        "kind": "argument",
+        "description": "version-string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cversion-string\u003e"
+    ]
+  },
+  "--pagesize": {
+    "Name": "--pagesize",
+    "kind": "option",
+    "description": "Indicates the granularity of code signing. Pagesize must be a power of two",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csize\u003e": {
+        "Name": "\u003csize\u003e",
+        "kind": "argument",
+        "description": "size",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csize\u003e": {
+        "Name": "\u003csize\u003e",
+        "kind": "argument",
+        "description": "size",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csize\u003e"
+    ]
+  },
+  "--prefix": {
+    "Name": "--prefix",
+    "kind": "option",
+    "description": "If no explicit unique identifier is specified (using the -i option), and if the implicitly generated identifier does not contain any dot (.) characters, then the given string is prefixed to the identifier before use",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cprefix\u003e": {
+        "Name": "\u003cprefix\u003e",
+        "kind": "argument",
+        "description": "prefix",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cprefix\u003e": {
+        "Name": "\u003cprefix\u003e",
+        "kind": "argument",
+        "description": "prefix",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cprefix\u003e"
+    ]
+  },
+  "--preserve-metadata=list": {
+    "Name": "--preserve-metadata=list",
+    "kind": "option",
+    "description": "When re-signing code that is already signed, reuse some information from the old signature",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--requirements": {
+    "Name": "--requirements",
+    "kind": "option",
+    "description": "During signing, indicates that internal requirements should be embedded in the code path(s) as specified",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003crequirements\u003e": {
+        "Name": "\u003crequirements\u003e",
+        "kind": "argument",
+        "description": "requirements",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003crequirements\u003e": {
+        "Name": "\u003crequirements\u003e",
+        "kind": "argument",
+        "description": "requirements",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003crequirements\u003e"
+    ]
+  },
+  "--resource-rules": {
+    "Name": "--resource-rules",
+    "kind": "option",
+    "description": "During signing, this option overrides the default rules for identifying and collecting bundle resources and nested code to be sealed into the signature",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile\u003e"
+    ]
+  },
+  "--sign": {
+    "Name": "--sign",
+    "kind": "option",
+    "description": "Sign the code at the path(s) given using this identity",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cidentity\u003e": {
+        "Name": "\u003cidentity\u003e",
+        "kind": "argument",
+        "description": "identity",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cidentity\u003e": {
+        "Name": "\u003cidentity\u003e",
+        "kind": "argument",
+        "description": "identity",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cidentity\u003e"
+    ]
+  },
+  "--test-requirement": {
+    "Name": "--test-requirement",
+    "kind": "option",
+    "description": "During verification, indicates that the path(s) given should be verified against the code requirement specified",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003crequirement\u003e": {
+        "Name": "\u003crequirement\u003e",
+        "kind": "argument",
+        "description": "requirement",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003crequirement\u003e": {
+        "Name": "\u003crequirement\u003e",
+        "kind": "argument",
+        "description": "requirement",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003crequirement\u003e"
+    ]
+  },
+  "--timestamp": {
+    "Name": "--timestamp",
+    "kind": "option",
+    "description": "During signing, requests that a timestamp authority server be contacted to authenticate the time of signing",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cURL\u003e": {
+        "Name": "\u003cURL\u003e",
+        "kind": "argument",
+        "description": "URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cURL\u003e": {
+        "Name": "\u003cURL\u003e",
+        "kind": "argument",
+        "description": "URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--verify": {
+    "Name": "--verify",
+    "kind": "option",
+    "description": "Requests verification of code signatures",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-D": {
+    "Name": "-D",
+    "kind": "option",
+    "description": "When signing, designates that a detached signature should be written to the specified file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile\u003e"
+    ]
+  },
+  "-P": {
+    "Name": "-P",
+    "kind": "option",
+    "description": "Indicates the granularity of code signing. Pagesize must be a power of two",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csize\u003e": {
+        "Name": "\u003csize\u003e",
+        "kind": "argument",
+        "description": "size",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csize\u003e": {
+        "Name": "\u003csize\u003e",
+        "kind": "argument",
+        "description": "size",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csize\u003e"
+    ]
+  },
+  "-R": {
+    "Name": "-R",
+    "kind": "option",
+    "description": "During verification, indicates that the path(s) given should be verified against the code requirement specified",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003crequirement\u003e": {
+        "Name": "\u003crequirement\u003e",
+        "kind": "argument",
+        "description": "requirement",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003crequirement\u003e": {
+        "Name": "\u003crequirement\u003e",
+        "kind": "argument",
+        "description": "requirement",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003crequirement\u003e"
+    ]
+  },
+  "-a": {
+    "Name": "-a",
+    "kind": "option",
+    "description": "When verifying or displaying signatures, explicitly select the Mach-O architecture given",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003carchitecture\u003e": {
+        "Name": "\u003carchitecture\u003e",
+        "kind": "argument",
+        "description": "architecture",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003carchitecture\u003e": {
+        "Name": "\u003carchitecture\u003e",
+        "kind": "argument",
+        "description": "architecture",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003carchitecture\u003e"
+    ]
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Display information about the code at the path(s) given",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "When signing, causes codesign to replace any existing signature on the path(s) given",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Constructs and prints the hosting chain of a running program",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "During signing, explicitly specify the unique identifier string that is embedded in code signatures",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cidentifier\u003e": {
+        "Name": "\u003cidentifier\u003e",
+        "kind": "argument",
+        "description": "identifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cidentifier\u003e": {
+        "Name": "\u003cidentifier\u003e",
+        "kind": "argument",
+        "description": "identifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cidentifier\u003e"
+    ]
+  },
+  "-o": {
+    "Name": "-o",
+    "kind": "option",
+    "description": "During signing, specifies a set of option flags to be embedded in the code signature",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cversion-string\u003e": {
+        "Name": "\u003cversion-string\u003e",
+        "kind": "argument",
+        "description": "version-string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cversion-string\u003e": {
+        "Name": "\u003cversion-string\u003e",
+        "kind": "argument",
+        "description": "version-string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cversion-string\u003e"
+    ]
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "During signing, indicates that internal requirements should be embedded in the code path(s) as specified",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003crequirements\u003e": {
+        "Name": "\u003crequirements\u003e",
+        "kind": "argument",
+        "description": "requirements",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003crequirements\u003e": {
+        "Name": "\u003crequirements\u003e",
+        "kind": "argument",
+        "description": "requirements",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003crequirements\u003e"
+    ]
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Sign the code at the path(s) given using this identity",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cidentity\u003e": {
+        "Name": "\u003cidentity\u003e",
+        "kind": "argument",
+        "description": "identity",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cidentity\u003e": {
+        "Name": "\u003cidentity\u003e",
+        "kind": "argument",
+        "description": "identity",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cidentity\u003e"
+    ]
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Requests verification of code signatures",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

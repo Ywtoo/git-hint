@@ -1,0 +1,730 @@
+{
+  "--body": {
+    "Name": "--body",
+    "kind": "option",
+    "description": "Sets the template for the changelog body",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctemplate\u003e": {
+        "Name": "\u003ctemplate\u003e",
+        "kind": "argument",
+        "description": "template",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctemplate\u003e": {
+        "Name": "\u003ctemplate\u003e",
+        "kind": "argument",
+        "description": "template",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctemplate\u003e"
+    ]
+  },
+  "--config": {
+    "Name": "--config",
+    "kind": "option",
+    "description": "Sets the configuration file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--context": {
+    "Name": "--context",
+    "kind": "option",
+    "description": "Prints changelog context as JSON",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--current": {
+    "Name": "--current",
+    "kind": "option",
+    "description": "Processes the commits that belong to the current tag",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--date-order": {
+    "Name": "--date-order",
+    "kind": "option",
+    "description": "Sorts the tags chronologically",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--exclude-path": {
+    "Name": "--exclude-path",
+    "kind": "option",
+    "description": "Sets the path to exclude related commits",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpattern\u003e": {
+        "Name": "\u003cpattern\u003e",
+        "kind": "argument",
+        "description": "pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpattern\u003e": {
+        "Name": "\u003cpattern\u003e",
+        "kind": "argument",
+        "description": "pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpattern\u003e"
+    ]
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Prints help information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--include-path": {
+    "Name": "--include-path",
+    "kind": "option",
+    "description": "Sets the path to include related commits",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpattern\u003e": {
+        "Name": "\u003cpattern\u003e",
+        "kind": "argument",
+        "description": "pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpattern\u003e": {
+        "Name": "\u003cpattern\u003e",
+        "kind": "argument",
+        "description": "pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpattern\u003e"
+    ]
+  },
+  "--init": {
+    "Name": "--init",
+    "kind": "option",
+    "description": "Writes the default configuration file to cliff.toml",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--latest": {
+    "Name": "--latest",
+    "kind": "option",
+    "description": "Processes the commits starting from the latest tag",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--output": {
+    "Name": "--output",
+    "kind": "option",
+    "description": "Writes output to the given file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--prepend": {
+    "Name": "--prepend",
+    "kind": "option",
+    "description": "Prepends entries to the given changelog file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--repository": {
+    "Name": "--repository",
+    "kind": "option",
+    "description": "Sets the git repository",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--sort": {
+    "Name": "--sort",
+    "kind": "option",
+    "description": "Sets sorting of the commits inside sections",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csort\u003e": {
+        "Name": "\u003csort\u003e",
+        "kind": "argument",
+        "description": "sort",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csort\u003e": {
+        "Name": "\u003csort\u003e",
+        "kind": "argument",
+        "description": "sort",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csort\u003e"
+    ]
+  },
+  "--strip": {
+    "Name": "--strip",
+    "kind": "option",
+    "description": "Strips the given parts from the changelog",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpart\u003e": {
+        "Name": "\u003cpart\u003e",
+        "kind": "argument",
+        "description": "part",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpart\u003e": {
+        "Name": "\u003cpart\u003e",
+        "kind": "argument",
+        "description": "part",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpart\u003e"
+    ]
+  },
+  "--tag": {
+    "Name": "--tag",
+    "kind": "option",
+    "description": "Sets the tag for the latest version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctag\u003e": {
+        "Name": "\u003ctag\u003e",
+        "kind": "argument",
+        "description": "tag",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctag\u003e": {
+        "Name": "\u003ctag\u003e",
+        "kind": "argument",
+        "description": "tag",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctag\u003e"
+    ]
+  },
+  "--unreleased": {
+    "Name": "--unreleased",
+    "kind": "option",
+    "description": "Processes the commits that do not belong to a tag",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Increases the logging verbosity",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Prints version information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--with-commit": {
+    "Name": "--with-commit",
+    "kind": "option",
+    "description": "Sets custom commit messages to include in the changelog",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmsg\u003e": {
+        "Name": "\u003cmsg\u003e",
+        "kind": "argument",
+        "description": "msg",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmsg\u003e": {
+        "Name": "\u003cmsg\u003e",
+        "kind": "argument",
+        "description": "msg",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmsg\u003e"
+    ]
+  },
+  "--workdir": {
+    "Name": "--workdir",
+    "kind": "option",
+    "description": "Sets the working directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "-V": {
+    "Name": "-V",
+    "kind": "option",
+    "description": "Prints version information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-b": {
+    "Name": "-b",
+    "kind": "option",
+    "description": "Sets the template for the changelog body",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctemplate\u003e": {
+        "Name": "\u003ctemplate\u003e",
+        "kind": "argument",
+        "description": "template",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctemplate\u003e": {
+        "Name": "\u003ctemplate\u003e",
+        "kind": "argument",
+        "description": "template",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctemplate\u003e"
+    ]
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Sets the configuration file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Prints help information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Writes the default configuration file to cliff.toml",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "option",
+    "description": "Processes the commits starting from the latest tag",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-o": {
+    "Name": "-o",
+    "kind": "option",
+    "description": "Writes output to the given file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "-p": {
+    "Name": "-p",
+    "kind": "option",
+    "description": "Prepends entries to the given changelog file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "Sets the git repository",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Strips the given parts from the changelog",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpart\u003e": {
+        "Name": "\u003cpart\u003e",
+        "kind": "argument",
+        "description": "part",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpart\u003e": {
+        "Name": "\u003cpart\u003e",
+        "kind": "argument",
+        "description": "part",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpart\u003e"
+    ]
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Sets the tag for the latest version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctag\u003e": {
+        "Name": "\u003ctag\u003e",
+        "kind": "argument",
+        "description": "tag",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctag\u003e": {
+        "Name": "\u003ctag\u003e",
+        "kind": "argument",
+        "description": "tag",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctag\u003e"
+    ]
+  },
+  "-u": {
+    "Name": "-u",
+    "kind": "option",
+    "description": "Processes the commits that do not belong to a tag",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Increases the logging verbosity",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-w": {
+    "Name": "-w",
+    "kind": "option",
+    "description": "Sets the working directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "\u003crange\u003e": {
+    "Name": "\u003crange\u003e",
+    "kind": "argument",
+    "description": "range",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

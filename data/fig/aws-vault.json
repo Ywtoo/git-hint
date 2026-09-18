@@ -1,0 +1,738 @@
+{
+  "--debug": {
+    "Name": "--debug",
+    "kind": "option",
+    "description": "Show debugging output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show context-sensitive help (also try --help-long and --help-man)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Show application version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "add": {
+    "Name": "add",
+    "kind": "subcommand",
+    "description": "Add credentials to the secure keystore",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cprofile\u003e": {
+        "Name": "\u003cprofile\u003e",
+        "kind": "argument",
+        "description": "profile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cprofile\u003e": {
+        "Name": "\u003cprofile\u003e",
+        "kind": "argument",
+        "description": "profile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cprofile\u003e"
+    ]
+  },
+  "clear": {
+    "Name": "clear",
+    "kind": "subcommand",
+    "description": "Clear temporary credentials from the secure keystore",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cprofile\u003e": {
+        "Name": "\u003cprofile\u003e",
+        "kind": "argument",
+        "description": "profile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cprofile\u003e": {
+        "Name": "\u003cprofile\u003e",
+        "kind": "argument",
+        "description": "profile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cprofile\u003e"
+    ]
+  },
+  "exec": {
+    "Name": "exec",
+    "kind": "subcommand",
+    "description": "Execute a command with AWS credentials",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--duration": {
+        "Name": "--duration",
+        "kind": "option",
+        "description": "Duration of the temporary or assume-role session. Defaults to 1h",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cDURATION\u003e": {
+            "Name": "\u003cDURATION\u003e",
+            "kind": "argument",
+            "description": "DURATION",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cDURATION\u003e": {
+            "Name": "\u003cDURATION\u003e",
+            "kind": "argument",
+            "description": "DURATION",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cDURATION\u003e"
+        ]
+      },
+      "--mfa-token": {
+        "Name": "--mfa-token",
+        "kind": "option",
+        "description": "The MFA token to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cMFA-TOKEN\u003e": {
+            "Name": "\u003cMFA-TOKEN\u003e",
+            "kind": "argument",
+            "description": "MFA-TOKEN",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cMFA-TOKEN\u003e": {
+            "Name": "\u003cMFA-TOKEN\u003e",
+            "kind": "argument",
+            "description": "MFA-TOKEN",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cMFA-TOKEN\u003e"
+        ]
+      },
+      "--no-session": {
+        "Name": "--no-session",
+        "kind": "option",
+        "description": "Use master credentials, no session or role used",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--region": {
+        "Name": "--region",
+        "kind": "option",
+        "description": "The AWS region",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cREGION\u003e": {
+            "Name": "\u003cREGION\u003e",
+            "kind": "argument",
+            "description": "REGION",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cREGION\u003e": {
+            "Name": "\u003cREGION\u003e",
+            "kind": "argument",
+            "description": "REGION",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cREGION\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Duration of the temporary or assume-role session. Defaults to 1h",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cDURATION\u003e": {
+            "Name": "\u003cDURATION\u003e",
+            "kind": "argument",
+            "description": "DURATION",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cDURATION\u003e": {
+            "Name": "\u003cDURATION\u003e",
+            "kind": "argument",
+            "description": "DURATION",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cDURATION\u003e"
+        ]
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "Use master credentials, no session or role used",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "The MFA token to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cMFA-TOKEN\u003e": {
+            "Name": "\u003cMFA-TOKEN\u003e",
+            "kind": "argument",
+            "description": "MFA-TOKEN",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cMFA-TOKEN\u003e": {
+            "Name": "\u003cMFA-TOKEN\u003e",
+            "kind": "argument",
+            "description": "MFA-TOKEN",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cMFA-TOKEN\u003e"
+        ]
+      },
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cprofile\u003e": {
+        "Name": "\u003cprofile\u003e",
+        "kind": "argument",
+        "description": "profile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--duration": {
+        "Name": "--duration",
+        "kind": "option",
+        "description": "Duration of the temporary or assume-role session. Defaults to 1h",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cDURATION\u003e": {
+            "Name": "\u003cDURATION\u003e",
+            "kind": "argument",
+            "description": "DURATION",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cDURATION\u003e": {
+            "Name": "\u003cDURATION\u003e",
+            "kind": "argument",
+            "description": "DURATION",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cDURATION\u003e"
+        ]
+      },
+      "--mfa-token": {
+        "Name": "--mfa-token",
+        "kind": "option",
+        "description": "The MFA token to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cMFA-TOKEN\u003e": {
+            "Name": "\u003cMFA-TOKEN\u003e",
+            "kind": "argument",
+            "description": "MFA-TOKEN",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cMFA-TOKEN\u003e": {
+            "Name": "\u003cMFA-TOKEN\u003e",
+            "kind": "argument",
+            "description": "MFA-TOKEN",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cMFA-TOKEN\u003e"
+        ]
+      },
+      "--no-session": {
+        "Name": "--no-session",
+        "kind": "option",
+        "description": "Use master credentials, no session or role used",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--region": {
+        "Name": "--region",
+        "kind": "option",
+        "description": "The AWS region",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cREGION\u003e": {
+            "Name": "\u003cREGION\u003e",
+            "kind": "argument",
+            "description": "REGION",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cREGION\u003e": {
+            "Name": "\u003cREGION\u003e",
+            "kind": "argument",
+            "description": "REGION",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cREGION\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Duration of the temporary or assume-role session. Defaults to 1h",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cDURATION\u003e": {
+            "Name": "\u003cDURATION\u003e",
+            "kind": "argument",
+            "description": "DURATION",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cDURATION\u003e": {
+            "Name": "\u003cDURATION\u003e",
+            "kind": "argument",
+            "description": "DURATION",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cDURATION\u003e"
+        ]
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "Use master credentials, no session or role used",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "The MFA token to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cMFA-TOKEN\u003e": {
+            "Name": "\u003cMFA-TOKEN\u003e",
+            "kind": "argument",
+            "description": "MFA-TOKEN",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cMFA-TOKEN\u003e": {
+            "Name": "\u003cMFA-TOKEN\u003e",
+            "kind": "argument",
+            "description": "MFA-TOKEN",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cMFA-TOKEN\u003e"
+        ]
+      },
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cprofile\u003e": {
+        "Name": "\u003cprofile\u003e",
+        "kind": "argument",
+        "description": "profile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cprofile\u003e",
+      "\u003ccommand\u003e"
+    ]
+  },
+  "export": {
+    "Name": "export",
+    "kind": "subcommand",
+    "description": "Export AWS credentials",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cprofile\u003e": {
+        "Name": "\u003cprofile\u003e",
+        "kind": "argument",
+        "description": "profile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cprofile\u003e": {
+        "Name": "\u003cprofile\u003e",
+        "kind": "argument",
+        "description": "profile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cprofile\u003e"
+    ]
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Show help about the command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "list": {
+    "Name": "list",
+    "kind": "subcommand",
+    "description": "List profiles, along with their credentials and sessions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--credentials": {
+        "Name": "--credentials",
+        "kind": "option",
+        "description": "Show only the profiles with stored credential",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--profiles": {
+        "Name": "--profiles",
+        "kind": "option",
+        "description": "Show only the profile names",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--sessions": {
+        "Name": "--sessions",
+        "kind": "option",
+        "description": "Show only the session names",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--credentials": {
+        "Name": "--credentials",
+        "kind": "option",
+        "description": "Show only the profiles with stored credential",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--profiles": {
+        "Name": "--profiles",
+        "kind": "option",
+        "description": "Show only the profile names",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--sessions": {
+        "Name": "--sessions",
+        "kind": "option",
+        "description": "Show only the session names",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "login": {
+    "Name": "login",
+    "kind": "subcommand",
+    "description": "Generate a login link for the AWS Console",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cprofile\u003e": {
+        "Name": "\u003cprofile\u003e",
+        "kind": "argument",
+        "description": "profile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cprofile\u003e": {
+        "Name": "\u003cprofile\u003e",
+        "kind": "argument",
+        "description": "profile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cprofile\u003e"
+    ]
+  },
+  "remove": {
+    "Name": "remove",
+    "kind": "subcommand",
+    "description": "Remove credentials from the secure keystore",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Force-remove the profile without a prompt",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Force-remove the profile without a prompt",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cprofile\u003e": {
+        "Name": "\u003cprofile\u003e",
+        "kind": "argument",
+        "description": "profile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Force-remove the profile without a prompt",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Force-remove the profile without a prompt",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cprofile\u003e": {
+        "Name": "\u003cprofile\u003e",
+        "kind": "argument",
+        "description": "profile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cprofile\u003e"
+    ]
+  },
+  "rotate": {
+    "Name": "rotate",
+    "kind": "subcommand",
+    "description": "Rotate credentials",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--no-session": {
+        "Name": "--no-session",
+        "kind": "option",
+        "description": "Use master credentials, no session or role used",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "Use master credentials, no session or role used",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cprofile\u003e": {
+        "Name": "\u003cprofile\u003e",
+        "kind": "argument",
+        "description": "profile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--no-session": {
+        "Name": "--no-session",
+        "kind": "option",
+        "description": "Use master credentials, no session or role used",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "Use master credentials, no session or role used",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cprofile\u003e": {
+        "Name": "\u003cprofile\u003e",
+        "kind": "argument",
+        "description": "profile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cprofile\u003e"
+    ]
+  }
+}

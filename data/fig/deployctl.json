@@ -1,0 +1,423 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Show the version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-V": {
+    "Name": "-V",
+    "kind": "option",
+    "description": "Show the version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "deploy": {
+    "Name": "deploy",
+    "kind": "subcommand",
+    "description": "Deploy a script with static files to Deno Deploy",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude files that match this pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpattern\u003e": {
+            "Name": "\u003cpattern\u003e",
+            "kind": "argument",
+            "description": "pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpattern\u003e": {
+            "Name": "\u003cpattern\u003e",
+            "kind": "argument",
+            "description": "pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpattern\u003e"
+        ]
+      },
+      "--include": {
+        "Name": "--include",
+        "kind": "option",
+        "description": "Only upload files that match this pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpattern\u003e": {
+            "Name": "\u003cpattern\u003e",
+            "kind": "argument",
+            "description": "pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpattern\u003e": {
+            "Name": "\u003cpattern\u003e",
+            "kind": "argument",
+            "description": "pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpattern\u003e"
+        ]
+      },
+      "--no-static": {
+        "Name": "--no-static",
+        "kind": "option",
+        "description": "Don't include the files in the CWD as static files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--prod": {
+        "Name": "--prod",
+        "kind": "option",
+        "description": "Create a production deployment (default is preview deployment)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--project": {
+        "Name": "--project",
+        "kind": "option",
+        "description": "The project to deploy to",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "--token": {
+        "Name": "--token",
+        "kind": "option",
+        "description": "The API token to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctoken\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "The project to deploy to",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "\u003centrypoint\u003e": {
+        "Name": "\u003centrypoint\u003e",
+        "kind": "argument",
+        "description": "entrypoint",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--exclude": {
+        "Name": "--exclude",
+        "kind": "option",
+        "description": "Exclude files that match this pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpattern\u003e": {
+            "Name": "\u003cpattern\u003e",
+            "kind": "argument",
+            "description": "pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpattern\u003e": {
+            "Name": "\u003cpattern\u003e",
+            "kind": "argument",
+            "description": "pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpattern\u003e"
+        ]
+      },
+      "--include": {
+        "Name": "--include",
+        "kind": "option",
+        "description": "Only upload files that match this pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpattern\u003e": {
+            "Name": "\u003cpattern\u003e",
+            "kind": "argument",
+            "description": "pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpattern\u003e": {
+            "Name": "\u003cpattern\u003e",
+            "kind": "argument",
+            "description": "pattern",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpattern\u003e"
+        ]
+      },
+      "--no-static": {
+        "Name": "--no-static",
+        "kind": "option",
+        "description": "Don't include the files in the CWD as static files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--prod": {
+        "Name": "--prod",
+        "kind": "option",
+        "description": "Create a production deployment (default is preview deployment)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--project": {
+        "Name": "--project",
+        "kind": "option",
+        "description": "The project to deploy to",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "--token": {
+        "Name": "--token",
+        "kind": "option",
+        "description": "The API token to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctoken\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "The project to deploy to",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "\u003centrypoint\u003e": {
+        "Name": "\u003centrypoint\u003e",
+        "kind": "argument",
+        "description": "entrypoint",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003centrypoint\u003e"
+    ]
+  },
+  "upgrade": {
+    "Name": "upgrade",
+    "kind": "subcommand",
+    "description": "Upgrade deployctl",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  }
+}

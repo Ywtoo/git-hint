@@ -1,0 +1,1318 @@
+{
+  "--cache": {
+    "Name": "--cache",
+    "kind": "option",
+    "description": "Cache versions to a local cache file. Default --cacheFile is ~/.ncu-cache.json and default --cacheExpiration is 10 minutes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--cacheClear": {
+    "Name": "--cacheClear",
+    "kind": "option",
+    "description": "Clear the default cache, or the cache file specified by --cacheFile",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--cacheExpiration": {
+    "Name": "--cacheExpiration",
+    "kind": "option",
+    "description": "Cache expiration in minutes. Only works with --cache. (default: 10)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmin\u003e": {
+        "Name": "\u003cmin\u003e",
+        "kind": "argument",
+        "description": "min",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmin\u003e": {
+        "Name": "\u003cmin\u003e",
+        "kind": "argument",
+        "description": "min",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmin\u003e"
+    ]
+  },
+  "--cacheFile": {
+    "Name": "--cacheFile",
+    "kind": "option",
+    "description": "Filepath for the cache file. Only works with --cache. (default: \"~/.ncu-cache.json\")",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--color": {
+    "Name": "--color",
+    "kind": "option",
+    "description": "Force color in terminal",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--concurrency": {
+    "Name": "--concurrency",
+    "kind": "option",
+    "description": "Max number of concurrent HTTP requests to registry. (default: 8)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cn\u003e": {
+        "Name": "\u003cn\u003e",
+        "kind": "argument",
+        "description": "n",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cn\u003e": {
+        "Name": "\u003cn\u003e",
+        "kind": "argument",
+        "description": "n",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cn\u003e"
+    ]
+  },
+  "--configFileName": {
+    "Name": "--configFileName",
+    "kind": "option",
+    "description": "Config file name. (default: .ncurc.{json,yml,js,cjs})",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cs\u003e": {
+        "Name": "\u003cs\u003e",
+        "kind": "argument",
+        "description": "s",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cs\u003e": {
+        "Name": "\u003cs\u003e",
+        "kind": "argument",
+        "description": "s",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cs\u003e"
+    ]
+  },
+  "--configFilePath": {
+    "Name": "--configFilePath",
+    "kind": "option",
+    "description": "Directory of .ncurc config file. (default: directory of packageFile)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--cwd": {
+    "Name": "--cwd",
+    "kind": "option",
+    "description": "Working directory in which npm will be executed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--deep": {
+    "Name": "--deep",
+    "kind": "option",
+    "description": "Run recursively in current working directory. Alias of (--packageFile '**/package.json')",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--dep": {
+    "Name": "--dep",
+    "kind": "option",
+    "description": "Check one or more sections of dependencies only: dev, optional, peer, prod, or packageManager (comma-delimited). (default: [\"prod\",\"dev\",\"optional\"])",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cvalue\u003e"
+    ]
+  },
+  "--deprecated": {
+    "Name": "--deprecated",
+    "kind": "option",
+    "description": "Include deprecated packages",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--doctor": {
+    "Name": "--doctor",
+    "kind": "option",
+    "description": "Iteratively installs upgrades and runs tests to identify breaking upgrades. Requires -u to execute. Run \"ncu --help --doctor\" for details",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--doctorInstall": {
+    "Name": "--doctorInstall",
+    "kind": "option",
+    "description": "Specifies the install script to use in doctor mode. (default: npm install/yarn)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "--doctorTest": {
+    "Name": "--doctorTest",
+    "kind": "option",
+    "description": "Specifies the test script to use in doctor mode. (default: npm test)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "--enginesNode": {
+    "Name": "--enginesNode",
+    "kind": "option",
+    "description": "Include only packages that satisfy engines.node as specified in the package file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--errorLevel": {
+    "Name": "--errorLevel",
+    "kind": "option",
+    "description": "Set the error level. 1: exits with error code 0 if no errors occur. 2: exits with error code 0 if no packages need updating (useful for continuous integration). (default: 1)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cn\u003e": {
+        "Name": "\u003cn\u003e",
+        "kind": "argument",
+        "description": "n",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cn\u003e": {
+        "Name": "\u003cn\u003e",
+        "kind": "argument",
+        "description": "n",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cn\u003e"
+    ]
+  },
+  "--filter": {
+    "Name": "--filter",
+    "kind": "option",
+    "description": "Include only package names matching the given string, wildcard, glob, comma-or-space-delimited list, /regex/, or predicate function",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cp\u003e": {
+        "Name": "\u003cp\u003e",
+        "kind": "argument",
+        "description": "p",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cp\u003e": {
+        "Name": "\u003cp\u003e",
+        "kind": "argument",
+        "description": "p",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cp\u003e"
+    ]
+  },
+  "--filterResults": {
+    "Name": "--filterResults",
+    "kind": "option",
+    "description": "Filters out upgrades based on a user provided function. Run \"ncu --help --filterResults\" for details",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--filterVersion": {
+    "Name": "--filterVersion",
+    "kind": "option",
+    "description": "Filter on package version using comma-or-space-delimited list, /regex/, or predicate function",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cp\u003e": {
+        "Name": "\u003cp\u003e",
+        "kind": "argument",
+        "description": "p",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cp\u003e": {
+        "Name": "\u003cp\u003e",
+        "kind": "argument",
+        "description": "p",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cp\u003e"
+    ]
+  },
+  "--format": {
+    "Name": "--format",
+    "kind": "option",
+    "description": "Modify the output formatting or show additional information. Specify one or more comma-delimited values: group, ownerChanged, repo, time, lines. Run \"ncu --help --format\" for details. (default: [])",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cvalue\u003e"
+    ]
+  },
+  "--global": {
+    "Name": "--global",
+    "kind": "option",
+    "description": "Check global packages instead of in the current project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--groupFunction": {
+    "Name": "--groupFunction",
+    "kind": "option",
+    "description": "Customize how packages are divided into groups when using --format group. Run \"ncu --help --groupFunction\" for details",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--interactive": {
+    "Name": "--interactive",
+    "kind": "option",
+    "description": "Enable interactive prompts for each dependency; implies -u unless one of the json options are set",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--jsonAll": {
+    "Name": "--jsonAll",
+    "kind": "option",
+    "description": "Output new package file instead of human-readable message",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--jsonDeps": {
+    "Name": "--jsonDeps",
+    "kind": "option",
+    "description": "Like jsonAll but only lists dependencies, devDependencies, optionalDependencies, etc of the new package data",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--jsonUpgraded": {
+    "Name": "--jsonUpgraded",
+    "kind": "option",
+    "description": "Output upgraded dependencies in json",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--loglevel": {
+    "Name": "--loglevel",
+    "kind": "option",
+    "description": "Amount to log: silent, error, minimal, warn, info, verbose, silly. (default: \"warn\")",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cn\u003e": {
+        "Name": "\u003cn\u003e",
+        "kind": "argument",
+        "description": "n",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cn\u003e": {
+        "Name": "\u003cn\u003e",
+        "kind": "argument",
+        "description": "n",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cn\u003e"
+    ]
+  },
+  "--mergeConfig": {
+    "Name": "--mergeConfig",
+    "kind": "option",
+    "description": "Merges nested configs with the root config file for --deep or --packageFile options. (default: false)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--minimal": {
+    "Name": "--minimal",
+    "kind": "option",
+    "description": "Do not upgrade newer versions that are already satisfied by the version range according to semver",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--packageData": {
+    "Name": "--packageData",
+    "kind": "option",
+    "description": "Package file data (you can also use stdin)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cvalue\u003e"
+    ]
+  },
+  "--packageFile": {
+    "Name": "--packageFile",
+    "kind": "option",
+    "description": "Package file(s) location. (default: ./package.json)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath|glob\u003e": {
+        "Name": "\u003cpath|glob\u003e",
+        "kind": "argument",
+        "description": "path|glob",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath|glob\u003e": {
+        "Name": "\u003cpath|glob\u003e",
+        "kind": "argument",
+        "description": "path|glob",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath|glob\u003e"
+    ]
+  },
+  "--packageManager": {
+    "Name": "--packageManager",
+    "kind": "option",
+    "description": "Npm, yarn, pnpm, deno, staticRegistry (default: npm). Run \"ncu --help --packageManager\" for details",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cs\u003e": {
+        "Name": "\u003cs\u003e",
+        "kind": "argument",
+        "description": "s",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cs\u003e": {
+        "Name": "\u003cs\u003e",
+        "kind": "argument",
+        "description": "s",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cs\u003e"
+    ]
+  },
+  "--peer": {
+    "Name": "--peer",
+    "kind": "option",
+    "description": "Check peer dependencies of installed packages and filter updates to compatible versions. Run \"ncu --help --peer\" for details",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--pre": {
+    "Name": "--pre",
+    "kind": "option",
+    "description": "Include prerelease versions, e.g. -alpha.0, -beta.5, -rc.2. Automatically set to 1 when --target is newest or greatest, or when the current version is a prerelease. (default: 0)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cn\u003e": {
+        "Name": "\u003cn\u003e",
+        "kind": "argument",
+        "description": "n",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cn\u003e": {
+        "Name": "\u003cn\u003e",
+        "kind": "argument",
+        "description": "n",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cn\u003e"
+    ]
+  },
+  "--prefix": {
+    "Name": "--prefix",
+    "kind": "option",
+    "description": "Current working directory of npm",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--registry": {
+    "Name": "--registry",
+    "kind": "option",
+    "description": "Third-party npm registry. Run \"ncu --help --registry\" for details",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003curi\u003e": {
+        "Name": "\u003curi\u003e",
+        "kind": "argument",
+        "description": "uri",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003curi\u003e": {
+        "Name": "\u003curi\u003e",
+        "kind": "argument",
+        "description": "uri",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003curi\u003e"
+    ]
+  },
+  "--reject": {
+    "Name": "--reject",
+    "kind": "option",
+    "description": "Exclude packages matching the given string, wildcard, glob, comma-or-space-delimited list, /regex/, or predicate function",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cp\u003e": {
+        "Name": "\u003cp\u003e",
+        "kind": "argument",
+        "description": "p",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cp\u003e": {
+        "Name": "\u003cp\u003e",
+        "kind": "argument",
+        "description": "p",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cp\u003e"
+    ]
+  },
+  "--rejectVersion": {
+    "Name": "--rejectVersion",
+    "kind": "option",
+    "description": "Exclude package.json versions using comma-or-space-delimited list, /regex/, or predicate function",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cp\u003e": {
+        "Name": "\u003cp\u003e",
+        "kind": "argument",
+        "description": "p",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cp\u003e": {
+        "Name": "\u003cp\u003e",
+        "kind": "argument",
+        "description": "p",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cp\u003e"
+    ]
+  },
+  "--removeRange": {
+    "Name": "--removeRange",
+    "kind": "option",
+    "description": "Remove version ranges from the final package version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--retry": {
+    "Name": "--retry",
+    "kind": "option",
+    "description": "Number of times to retry failed requests for package info. (default: 3)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cn\u003e": {
+        "Name": "\u003cn\u003e",
+        "kind": "argument",
+        "description": "n",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cn\u003e": {
+        "Name": "\u003cn\u003e",
+        "kind": "argument",
+        "description": "n",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cn\u003e"
+    ]
+  },
+  "--root": {
+    "Name": "--root",
+    "kind": "option",
+    "description": "Runs updates on the root project in addition to specified workspaces. Only allowed with --workspace or --workspaces. (default: false)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--silent": {
+    "Name": "--silent",
+    "kind": "option",
+    "description": "Don't output anything. Alias for --loglevel silent",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--stdin": {
+    "Name": "--stdin",
+    "kind": "option",
+    "description": "Read package.json from stdin",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--target": {
+    "Name": "--target",
+    "kind": "option",
+    "description": "Determines the version to upgrade to: latest, newest, greatest, minor, patch, @[tag], or [function]. (default: latest) Run \"ncu --help --target\" for details",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cvalue\u003e"
+    ]
+  },
+  "--timeout": {
+    "Name": "--timeout",
+    "kind": "option",
+    "description": "Global timeout in milliseconds. (default: no global timeout and 30 seconds per npm-registry-fetch)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cms\u003e": {
+        "Name": "\u003cms\u003e",
+        "kind": "argument",
+        "description": "ms",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cms\u003e": {
+        "Name": "\u003cms\u003e",
+        "kind": "argument",
+        "description": "ms",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cms\u003e"
+    ]
+  },
+  "--upgrade": {
+    "Name": "--upgrade",
+    "kind": "option",
+    "description": "Overwrite package file with upgraded versions instead of just outputting to console",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Log additional information for debugging. Alias for --loglevel verbose",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Output the version number of npm-check-updates",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--workspace": {
+    "Name": "--workspace",
+    "kind": "option",
+    "description": "Run on one or more specified workspaces. Add --root to also upgrade the root project. (default: [])",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cs\u003e": {
+        "Name": "\u003cs\u003e",
+        "kind": "argument",
+        "description": "s",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cs\u003e": {
+        "Name": "\u003cs\u003e",
+        "kind": "argument",
+        "description": "s",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cs\u003e"
+    ]
+  },
+  "--workspaces": {
+    "Name": "--workspaces",
+    "kind": "option",
+    "description": "Run on all workspaces. Add --root to also upgrade the root project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Iteratively installs upgrades and runs tests to identify breaking upgrades. Requires -u to execute. Run \"ncu --help --doctor\" for details",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-e": {
+    "Name": "-e",
+    "kind": "option",
+    "description": "Set the error level. 1: exits with error code 0 if no errors occur. 2: exits with error code 0 if no packages need updating (useful for continuous integration). (default: 1)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cn\u003e": {
+        "Name": "\u003cn\u003e",
+        "kind": "argument",
+        "description": "n",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cn\u003e": {
+        "Name": "\u003cn\u003e",
+        "kind": "argument",
+        "description": "n",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cn\u003e"
+    ]
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Include only package names matching the given string, wildcard, glob, comma-or-space-delimited list, /regex/, or predicate function",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cp\u003e": {
+        "Name": "\u003cp\u003e",
+        "kind": "argument",
+        "description": "p",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cp\u003e": {
+        "Name": "\u003cp\u003e",
+        "kind": "argument",
+        "description": "p",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cp\u003e"
+    ]
+  },
+  "-g": {
+    "Name": "-g",
+    "kind": "option",
+    "description": "Check global packages instead of in the current project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Enable interactive prompts for each dependency; implies -u unless one of the json options are set",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-j": {
+    "Name": "-j",
+    "kind": "option",
+    "description": "Output new package file instead of human-readable message",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "option",
+    "description": "Amount to log: silent, error, minimal, warn, info, verbose, silly. (default: \"warn\")",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cn\u003e": {
+        "Name": "\u003cn\u003e",
+        "kind": "argument",
+        "description": "n",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cn\u003e": {
+        "Name": "\u003cn\u003e",
+        "kind": "argument",
+        "description": "n",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cn\u003e"
+    ]
+  },
+  "-m": {
+    "Name": "-m",
+    "kind": "option",
+    "description": "Do not upgrade newer versions that are already satisfied by the version range according to semver",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-p": {
+    "Name": "-p",
+    "kind": "option",
+    "description": "Npm, yarn, pnpm, deno, staticRegistry (default: npm). Run \"ncu --help --packageManager\" for details",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cs\u003e": {
+        "Name": "\u003cs\u003e",
+        "kind": "argument",
+        "description": "s",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cs\u003e": {
+        "Name": "\u003cs\u003e",
+        "kind": "argument",
+        "description": "s",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cs\u003e"
+    ]
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "Third-party npm registry. Run \"ncu --help --registry\" for details",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003curi\u003e": {
+        "Name": "\u003curi\u003e",
+        "kind": "argument",
+        "description": "uri",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003curi\u003e": {
+        "Name": "\u003curi\u003e",
+        "kind": "argument",
+        "description": "uri",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003curi\u003e"
+    ]
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Don't output anything. Alias for --loglevel silent",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Determines the version to upgrade to: latest, newest, greatest, minor, patch, @[tag], or [function]. (default: latest) Run \"ncu --help --target\" for details",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cvalue\u003e"
+    ]
+  },
+  "-u": {
+    "Name": "-u",
+    "kind": "option",
+    "description": "Overwrite package file with upgraded versions instead of just outputting to console",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Output the version number of npm-check-updates",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-w": {
+    "Name": "-w",
+    "kind": "option",
+    "description": "Run on one or more specified workspaces. Add --root to also upgrade the root project. (default: [])",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cs\u003e": {
+        "Name": "\u003cs\u003e",
+        "kind": "argument",
+        "description": "s",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cs\u003e": {
+        "Name": "\u003cs\u003e",
+        "kind": "argument",
+        "description": "s",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cs\u003e"
+    ]
+  },
+  "-ws": {
+    "Name": "-ws",
+    "kind": "option",
+    "description": "Run on all workspaces. Add --root to also upgrade the root project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-x": {
+    "Name": "-x",
+    "kind": "option",
+    "description": "Exclude packages matching the given string, wildcard, glob, comma-or-space-delimited list, /regex/, or predicate function",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cp\u003e": {
+        "Name": "\u003cp\u003e",
+        "kind": "argument",
+        "description": "p",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cp\u003e": {
+        "Name": "\u003cp\u003e",
+        "kind": "argument",
+        "description": "p",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cp\u003e"
+    ]
+  },
+  "\u003cfilter\u003e": {
+    "Name": "\u003cfilter\u003e",
+    "kind": "argument",
+    "description": "filter",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

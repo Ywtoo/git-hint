@@ -1,0 +1,756 @@
+{
+  "--acknowledgements": {
+    "Name": "--acknowledgements",
+    "kind": "option",
+    "description": "Show acknowledgements",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--color": {
+    "Name": "--color",
+    "kind": "option",
+    "description": "Specify when to use colored output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cwhen\u003e": {
+        "Name": "\u003cwhen\u003e",
+        "kind": "argument",
+        "description": "\u003cwhen\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cwhen\u003e": {
+        "Name": "\u003cwhen\u003e",
+        "kind": "argument",
+        "description": "\u003cwhen\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cwhen\u003e"
+    ]
+  },
+  "--decorations": {
+    "Name": "--decorations",
+    "kind": "option",
+    "description": "Specify when to use the decorations that have been specified via '--style'",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cwhen\u003e": {
+        "Name": "\u003cwhen\u003e",
+        "kind": "argument",
+        "description": "\u003cwhen\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cwhen\u003e": {
+        "Name": "\u003cwhen\u003e",
+        "kind": "argument",
+        "description": "\u003cwhen\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cwhen\u003e"
+    ]
+  },
+  "--diagnostic": {
+    "Name": "--diagnostic",
+    "kind": "option",
+    "description": "Show diagnostic information for bug reports",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--diff": {
+    "Name": "--diff",
+    "kind": "option",
+    "description": "Show lines that have been added/removed/modified with respect to the Git index",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--diff-context": {
+    "Name": "--diff-context",
+    "kind": "option",
+    "description": "Include N lines of context around added/removed/modified lines when using '--diff'",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cN\u003e ": {
+        "Name": "\u003cN\u003e ",
+        "kind": "argument",
+        "description": "\u003cN\u003e ",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cN\u003e ": {
+        "Name": "\u003cN\u003e ",
+        "kind": "argument",
+        "description": "\u003cN\u003e ",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cN\u003e "
+    ]
+  },
+  "--file-name": {
+    "Name": "--file-name",
+    "kind": "option",
+    "description": "Specify the name to display for a file. Useful when piping data to bat from STDIN when bat does not otherwise know the filename",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--force-colorization": {
+    "Name": "--force-colorization",
+    "kind": "option",
+    "description": "Alias for '--decorations=always --color=always'",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Print help message",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--highlight-line": {
+    "Name": "--highlight-line",
+    "kind": "option",
+    "description": "Highlight the specified line ranges",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cN:M\u003e ": {
+        "Name": "\u003cN:M\u003e ",
+        "kind": "argument",
+        "description": "\u003cN:M\u003e ",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cN:M\u003e ": {
+        "Name": "\u003cN:M\u003e ",
+        "kind": "argument",
+        "description": "\u003cN:M\u003e ",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cN:M\u003e "
+    ]
+  },
+  "--ignored-suffix": {
+    "Name": "--ignored-suffix",
+    "kind": "option",
+    "description": "Ignore extension",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cignored-suffix\u003e": {
+        "Name": "\u003cignored-suffix\u003e",
+        "kind": "argument",
+        "description": "\u003cignored-suffix\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cignored-suffix\u003e": {
+        "Name": "\u003cignored-suffix\u003e",
+        "kind": "argument",
+        "description": "\u003cignored-suffix\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cignored-suffix\u003e"
+    ]
+  },
+  "--italic-text": {
+    "Name": "--italic-text",
+    "kind": "option",
+    "description": "Specify when to use ANSI sequences for italic text in the output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cwhen\u003e": {
+        "Name": "\u003cwhen\u003e",
+        "kind": "argument",
+        "description": "\u003cwhen\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cwhen\u003e": {
+        "Name": "\u003cwhen\u003e",
+        "kind": "argument",
+        "description": "\u003cwhen\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cwhen\u003e"
+    ]
+  },
+  "--language": {
+    "Name": "--language",
+    "kind": "option",
+    "description": "Explicitly set the language for syntax highlighting",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clanguage\u003e": {
+        "Name": "\u003clanguage\u003e",
+        "kind": "argument",
+        "description": "\u003clanguage\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clanguage\u003e": {
+        "Name": "\u003clanguage\u003e",
+        "kind": "argument",
+        "description": "\u003clanguage\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clanguage\u003e"
+    ]
+  },
+  "--line-range": {
+    "Name": "--line-range",
+    "kind": "option",
+    "description": "Only print the specified range of lines for each file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cN:M\u003e ": {
+        "Name": "\u003cN:M\u003e ",
+        "kind": "argument",
+        "description": "\u003cN:M\u003e ",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cN:M\u003e ": {
+        "Name": "\u003cN:M\u003e ",
+        "kind": "argument",
+        "description": "\u003cN:M\u003e ",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cN:M\u003e "
+    ]
+  },
+  "--list-languages": {
+    "Name": "--list-languages",
+    "kind": "option",
+    "description": "Display a list of supported languages for syntax highlighting",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--list-themes": {
+    "Name": "--list-themes",
+    "kind": "option",
+    "description": "Display a list of supported themes for syntax highlighting",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--map-syntax": {
+    "Name": "--map-syntax",
+    "kind": "option",
+    "description": "Map a glob pattern to an existing syntax name",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cglob:syntax\u003e": {
+        "Name": "\u003cglob:syntax\u003e",
+        "kind": "argument",
+        "description": "\u003cglob:syntax\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cglob:syntax\u003e": {
+        "Name": "\u003cglob:syntax\u003e",
+        "kind": "argument",
+        "description": "\u003cglob:syntax\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cglob:syntax\u003e"
+    ]
+  },
+  "--number": {
+    "Name": "--number",
+    "kind": "option",
+    "description": "Show line numbers, no other decorations",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--pager": {
+    "Name": "--pager",
+    "kind": "option",
+    "description": "Determine which pager is used",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "\u003ccommand\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "\u003ccommand\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "--paging": {
+    "Name": "--paging",
+    "kind": "option",
+    "description": "Specify when to use the pager",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cwhen\u003e": {
+        "Name": "\u003cwhen\u003e",
+        "kind": "argument",
+        "description": "\u003cwhen\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cwhen\u003e": {
+        "Name": "\u003cwhen\u003e",
+        "kind": "argument",
+        "description": "\u003cwhen\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cwhen\u003e"
+    ]
+  },
+  "--plain": {
+    "Name": "--plain",
+    "kind": "option",
+    "description": "Show plain style, no decorations",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--show-all": {
+    "Name": "--show-all",
+    "kind": "option",
+    "description": "Show non-printable characters",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--style": {
+    "Name": "--style",
+    "kind": "option",
+    "description": "Display a list of supported themes for syntax highlighting",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--tabs": {
+    "Name": "--tabs",
+    "kind": "option",
+    "description": "Set the tab width to T spaces. Use a width of 0 to pass tabs through directly",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cT\u003e ": {
+        "Name": "\u003cT\u003e ",
+        "kind": "argument",
+        "description": "\u003cT\u003e ",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cT\u003e ": {
+        "Name": "\u003cT\u003e ",
+        "kind": "argument",
+        "description": "\u003cT\u003e ",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cT\u003e "
+    ]
+  },
+  "--terminal-width": {
+    "Name": "--terminal-width",
+    "kind": "option",
+    "description": "Explicitly set the width of the terminal instead of determining it automatically",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cwidth\u003e ": {
+        "Name": "\u003cwidth\u003e ",
+        "kind": "argument",
+        "description": "\u003cwidth\u003e ",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cwidth\u003e ": {
+        "Name": "\u003cwidth\u003e ",
+        "kind": "argument",
+        "description": "\u003cwidth\u003e ",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cwidth\u003e "
+    ]
+  },
+  "--theme": {
+    "Name": "--theme",
+    "kind": "option",
+    "description": "Set the theme for syntax highlighting",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctheme\u003e": {
+        "Name": "\u003ctheme\u003e",
+        "kind": "argument",
+        "description": "\u003ctheme\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctheme\u003e": {
+        "Name": "\u003ctheme\u003e",
+        "kind": "argument",
+        "description": "\u003ctheme\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctheme\u003e"
+    ]
+  },
+  "--unbuffered": {
+    "Name": "--unbuffered",
+    "kind": "option",
+    "description": "Make output unbuffered (exists for POSIX-compliance reasons and is simply ignored)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Show version information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--wrap": {
+    "Name": "--wrap",
+    "kind": "option",
+    "description": "Specify when to use colored output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "\u003cmode\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "\u003cmode\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmode\u003e"
+    ]
+  },
+  "-A": {
+    "Name": "-A",
+    "kind": "option",
+    "description": "Show non-printable characters",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-H": {
+    "Name": "-H",
+    "kind": "option",
+    "description": "Highlight the specified line ranges",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cN:M\u003e ": {
+        "Name": "\u003cN:M\u003e ",
+        "kind": "argument",
+        "description": "\u003cN:M\u003e ",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cN:M\u003e ": {
+        "Name": "\u003cN:M\u003e ",
+        "kind": "argument",
+        "description": "\u003cN:M\u003e ",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cN:M\u003e "
+    ]
+  },
+  "-L": {
+    "Name": "-L",
+    "kind": "option",
+    "description": "Display a list of supported languages for syntax highlighting",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-V": {
+    "Name": "-V",
+    "kind": "option",
+    "description": "Show version information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Show lines that have been added/removed/modified with respect to the Git index",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Alias for '--decorations=always --color=always'",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Print help message",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "option",
+    "description": "Explicitly set the language for syntax highlighting",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clanguage\u003e": {
+        "Name": "\u003clanguage\u003e",
+        "kind": "argument",
+        "description": "\u003clanguage\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clanguage\u003e": {
+        "Name": "\u003clanguage\u003e",
+        "kind": "argument",
+        "description": "\u003clanguage\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clanguage\u003e"
+    ]
+  },
+  "-m": {
+    "Name": "-m",
+    "kind": "option",
+    "description": "Map a glob pattern to an existing syntax name",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cglob:syntax\u003e": {
+        "Name": "\u003cglob:syntax\u003e",
+        "kind": "argument",
+        "description": "\u003cglob:syntax\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cglob:syntax\u003e": {
+        "Name": "\u003cglob:syntax\u003e",
+        "kind": "argument",
+        "description": "\u003cglob:syntax\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cglob:syntax\u003e"
+    ]
+  },
+  "-n": {
+    "Name": "-n",
+    "kind": "option",
+    "description": "Show line numbers, no other decorations",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-p": {
+    "Name": "-p",
+    "kind": "option",
+    "description": "Show plain style, no decorations",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "Only print the specified range of lines for each file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cN:M\u003e ": {
+        "Name": "\u003cN:M\u003e ",
+        "kind": "argument",
+        "description": "\u003cN:M\u003e ",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cN:M\u003e ": {
+        "Name": "\u003cN:M\u003e ",
+        "kind": "argument",
+        "description": "\u003cN:M\u003e ",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cN:M\u003e "
+    ]
+  },
+  "-u": {
+    "Name": "-u",
+    "kind": "option",
+    "description": "Make output unbuffered (exists for POSIX-compliance reasons and is simply ignored)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

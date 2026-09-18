@@ -1,0 +1,5611 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Help for k3d",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--timestamps": {
+    "Name": "--timestamps",
+    "kind": "option",
+    "description": "Print timestamp in log output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--trace": {
+    "Name": "--trace",
+    "kind": "option",
+    "description": "Trace output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Verbose output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Print version information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Help for k3d",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "cluster": {
+    "Name": "cluster",
+    "kind": "subcommand",
+    "description": "Manage k3s clusters",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "create": {
+        "Name": "create",
+        "kind": "subcommand",
+        "description": "Create a new k3s cluster",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--agents": {
+            "Name": "--agents",
+            "kind": "option",
+            "description": "Number of agents to create",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cnumber of agents\u003e": {
+                "Name": "\u003cnumber of agents\u003e",
+                "kind": "argument",
+                "description": "number of agents",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cnumber of agents\u003e": {
+                "Name": "\u003cnumber of agents\u003e",
+                "kind": "argument",
+                "description": "number of agents",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cnumber of agents\u003e"
+            ]
+          },
+          "--agents-memory": {
+            "Name": "--agents-memory",
+            "kind": "option",
+            "description": "Memory limit imposed on the agents nodes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cmemory limit\u003e": {
+                "Name": "\u003cmemory limit\u003e",
+                "kind": "argument",
+                "description": "memory limit",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cmemory limit\u003e": {
+                "Name": "\u003cmemory limit\u003e",
+                "kind": "argument",
+                "description": "memory limit",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cmemory limit\u003e"
+            ]
+          },
+          "--api-port": {
+            "Name": "--api-port",
+            "kind": "option",
+            "description": "Specify the Kubernetes API server port exposed on the LoadBalancer",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cport\u003e": {
+                "Name": "\u003cport\u003e",
+                "kind": "argument",
+                "description": "port",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cport\u003e": {
+                "Name": "\u003cport\u003e",
+                "kind": "argument",
+                "description": "port",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cport\u003e"
+            ]
+          },
+          "--config": {
+            "Name": "--config",
+            "kind": "option",
+            "description": "Path of a config file to use",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "--env": {
+            "Name": "--env",
+            "kind": "option",
+            "description": "Add environment variables to nodes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cenvironment variables\u003e": {
+                "Name": "\u003cenvironment variables\u003e",
+                "kind": "argument",
+                "description": "environment variables",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cenvironment variables\u003e": {
+                "Name": "\u003cenvironment variables\u003e",
+                "kind": "argument",
+                "description": "environment variables",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cenvironment variables\u003e"
+            ]
+          },
+          "--gpus": {
+            "Name": "--gpus",
+            "kind": "option",
+            "description": "GPU devices to add to the cluster node containers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cdevices\u003e": {
+                "Name": "\u003cdevices\u003e",
+                "kind": "argument",
+                "description": "devices",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cdevices\u003e": {
+                "Name": "\u003cdevices\u003e",
+                "kind": "argument",
+                "description": "devices",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cdevices\u003e"
+            ]
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for create",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--host-alias": {
+            "Name": "--host-alias",
+            "kind": "option",
+            "description": "Add ip:host[,host,...] mappings",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cip:host[,host,...]\u003e": {
+                "Name": "\u003cip:host[,host,...]\u003e",
+                "kind": "argument",
+                "description": "ip:host[,host,...]",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cip:host[,host,...]\u003e": {
+                "Name": "\u003cip:host[,host,...]\u003e",
+                "kind": "argument",
+                "description": "ip:host[,host,...]",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cip:host[,host,...]\u003e"
+            ]
+          },
+          "--host-pid-mode": {
+            "Name": "--host-pid-mode",
+            "kind": "option",
+            "description": "Enable host pid mode of server(s) and agent(s)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--image": {
+            "Name": "--image",
+            "kind": "option",
+            "description": "Specify k3s image that you want to use for the nodes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cimage\u003e": {
+                "Name": "\u003cimage\u003e",
+                "kind": "argument",
+                "description": "image",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cimage\u003e": {
+                "Name": "\u003cimage\u003e",
+                "kind": "argument",
+                "description": "image",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cimage\u003e"
+            ]
+          },
+          "--k3s-arg": {
+            "Name": "--k3s-arg",
+            "kind": "option",
+            "description": "Additional args passed to k3s command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cARG@NODEFILTER[;@NODEFILTER]\u003e": {
+                "Name": "\u003cARG@NODEFILTER[;@NODEFILTER]\u003e",
+                "kind": "argument",
+                "description": "ARG@NODEFILTER[;@NODEFILTER]",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cARG@NODEFILTER[;@NODEFILTER]\u003e": {
+                "Name": "\u003cARG@NODEFILTER[;@NODEFILTER]\u003e",
+                "kind": "argument",
+                "description": "ARG@NODEFILTER[;@NODEFILTER]",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cARG@NODEFILTER[;@NODEFILTER]\u003e"
+            ]
+          },
+          "--k3s-node-label": {
+            "Name": "--k3s-node-label",
+            "kind": "option",
+            "description": "Add label to k3s node",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cKEY[=VALUE][@NODEFILTER[;NODEFILTER...]]\u003e": {
+                "Name": "\u003cKEY[=VALUE][@NODEFILTER[;NODEFILTER...]]\u003e",
+                "kind": "argument",
+                "description": "KEY[=VALUE][@NODEFILTER[;NODEFILTER...]]",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cKEY[=VALUE][@NODEFILTER[;NODEFILTER...]]\u003e": {
+                "Name": "\u003cKEY[=VALUE][@NODEFILTER[;NODEFILTER...]]\u003e",
+                "kind": "argument",
+                "description": "KEY[=VALUE][@NODEFILTER[;NODEFILTER...]]",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cKEY[=VALUE][@NODEFILTER[;NODEFILTER...]]\u003e"
+            ]
+          },
+          "--kubeconfig-switch-context": {
+            "Name": "--kubeconfig-switch-context",
+            "kind": "option",
+            "description": "Directly switch the default kubeconfig's current-context to the new cluster's context (requires --kubeconfig-update-default) (default true)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--kubeconfig-update-default": {
+            "Name": "--kubeconfig-update-default",
+            "kind": "option",
+            "description": "Directly update the default kubeconfig with the new cluster's context (default true)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--lb-config-override": {
+            "Name": "--lb-config-override",
+            "kind": "option",
+            "description": "Use dotted YAML path syntax to override nginx loadbalancer settings",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "--network": {
+            "Name": "--network",
+            "kind": "option",
+            "description": "Specify the docker network to use",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cnetwork\u003e": {
+                "Name": "\u003cnetwork\u003e",
+                "kind": "argument",
+                "description": "network",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cnetwork\u003e": {
+                "Name": "\u003cnetwork\u003e",
+                "kind": "argument",
+                "description": "network",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cnetwork\u003e"
+            ]
+          },
+          "--no-image-volume": {
+            "Name": "--no-image-volume",
+            "kind": "option",
+            "description": "Don't create a volume for the container's root filesystem",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--no-lb": {
+            "Name": "--no-lb",
+            "kind": "option",
+            "description": "Don't create a loadbalancer for the cluster",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--no-rollback": {
+            "Name": "--no-rollback",
+            "kind": "option",
+            "description": "Don't rollback changes if cluster creation failed",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--port": {
+            "Name": "--port",
+            "kind": "option",
+            "description": "Map ports from the node containers (via the serverlb) to the host",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cport\u003e": {
+                "Name": "\u003cport\u003e",
+                "kind": "argument",
+                "description": "port",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cport\u003e": {
+                "Name": "\u003cport\u003e",
+                "kind": "argument",
+                "description": "port",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cport\u003e"
+            ]
+          },
+          "--registry-config": {
+            "Name": "--registry-config",
+            "kind": "option",
+            "description": "Specify path to an extra registries.yaml file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "--registry-create": {
+            "Name": "--registry-create",
+            "kind": "option",
+            "description": "Create a k3d-managed registry and connect it to the cluster (Format: NAME[:HOST][:HOSTPORT] - Example: `k3d cluster create --registry-create mycluster-registry",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cNAME[:HOST][:HOSTPORT]\u003e": {
+                "Name": "\u003cNAME[:HOST][:HOSTPORT]\u003e",
+                "kind": "argument",
+                "description": "NAME[:HOST][:HOSTPORT]",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cNAME[:HOST][:HOSTPORT]\u003e": {
+                "Name": "\u003cNAME[:HOST][:HOSTPORT]\u003e",
+                "kind": "argument",
+                "description": "NAME[:HOST][:HOSTPORT]",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cNAME[:HOST][:HOSTPORT]\u003e"
+            ]
+          },
+          "--registry-use": {
+            "Name": "--registry-use",
+            "kind": "option",
+            "description": "Connect to one or more k3d-managed registries running locally",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cNAME[:HOST][:HOSTPORT]\u003e": {
+                "Name": "\u003cNAME[:HOST][:HOSTPORT]\u003e",
+                "kind": "argument",
+                "description": "NAME[:HOST][:HOSTPORT]",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cNAME[:HOST][:HOSTPORT]\u003e": {
+                "Name": "\u003cNAME[:HOST][:HOSTPORT]\u003e",
+                "kind": "argument",
+                "description": "NAME[:HOST][:HOSTPORT]",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cNAME[:HOST][:HOSTPORT]\u003e"
+            ]
+          },
+          "--runtime-label": {
+            "Name": "--runtime-label",
+            "kind": "option",
+            "description": "Add label to container runtime (Format: KEY[=VALUE][@NODEFILTER[;NODEFILTER...]] - Example: `k3d cluster create --agents 2 --runtime-label \"my.label@agent:0,1\" --runtime-label \"other.label=somevalue@server:0\"`",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--servers": {
+            "Name": "--servers",
+            "kind": "option",
+            "description": "Specify how many servers you want to create",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cint\u003e": {
+                "Name": "\u003cint\u003e",
+                "kind": "argument",
+                "description": "int",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cint\u003e": {
+                "Name": "\u003cint\u003e",
+                "kind": "argument",
+                "description": "int",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cint\u003e"
+            ]
+          },
+          "--servers-memory": {
+            "Name": "--servers-memory",
+            "kind": "option",
+            "description": "Memory limit imposed on the server nodes [From docker]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "--subnet": {
+            "Name": "--subnet",
+            "kind": "option",
+            "description": "[Experimental: IPAM] Define a subnet for the newly created container network",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "--timeout": {
+            "Name": "--timeout",
+            "kind": "option",
+            "description": "Rollback changes if cluster couldn't be created in specified duration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cduration\u003e": {
+                "Name": "\u003cduration\u003e",
+                "kind": "argument",
+                "description": "duration",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cduration\u003e": {
+                "Name": "\u003cduration\u003e",
+                "kind": "argument",
+                "description": "duration",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cduration\u003e"
+            ]
+          },
+          "--token": {
+            "Name": "--token",
+            "kind": "option",
+            "description": "Specify a cluster token. By default, we generate one",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "--volume": {
+            "Name": "--volume",
+            "kind": "option",
+            "description": "Mount volumes into the nodes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003c[SOURCE:]DEST[@NODEFILTER[;NODEFILTER...]]\u003e": {
+                "Name": "\u003c[SOURCE:]DEST[@NODEFILTER[;NODEFILTER...]]\u003e",
+                "kind": "argument",
+                "description": "[SOURCE:]DEST[@NODEFILTER[;NODEFILTER...]]",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003c[SOURCE:]DEST[@NODEFILTER[;NODEFILTER...]]\u003e": {
+                "Name": "\u003c[SOURCE:]DEST[@NODEFILTER[;NODEFILTER...]]\u003e",
+                "kind": "argument",
+                "description": "[SOURCE:]DEST[@NODEFILTER[;NODEFILTER...]]",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003c[SOURCE:]DEST[@NODEFILTER[;NODEFILTER...]]\u003e"
+            ]
+          },
+          "--wait": {
+            "Name": "--wait",
+            "kind": "option",
+            "description": "Wait for the server(s) to be ready before returning",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-a": {
+            "Name": "-a",
+            "kind": "option",
+            "description": "Number of agents to create",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cnumber of agents\u003e": {
+                "Name": "\u003cnumber of agents\u003e",
+                "kind": "argument",
+                "description": "number of agents",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cnumber of agents\u003e": {
+                "Name": "\u003cnumber of agents\u003e",
+                "kind": "argument",
+                "description": "number of agents",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cnumber of agents\u003e"
+            ]
+          },
+          "-c": {
+            "Name": "-c",
+            "kind": "option",
+            "description": "Path of a config file to use",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "-e": {
+            "Name": "-e",
+            "kind": "option",
+            "description": "Add environment variables to nodes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cenvironment variables\u003e": {
+                "Name": "\u003cenvironment variables\u003e",
+                "kind": "argument",
+                "description": "environment variables",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cenvironment variables\u003e": {
+                "Name": "\u003cenvironment variables\u003e",
+                "kind": "argument",
+                "description": "environment variables",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cenvironment variables\u003e"
+            ]
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Help for create",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-i": {
+            "Name": "-i",
+            "kind": "option",
+            "description": "Specify k3s image that you want to use for the nodes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cimage\u003e": {
+                "Name": "\u003cimage\u003e",
+                "kind": "argument",
+                "description": "image",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cimage\u003e": {
+                "Name": "\u003cimage\u003e",
+                "kind": "argument",
+                "description": "image",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cimage\u003e"
+            ]
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Map ports from the node containers (via the serverlb) to the host",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cport\u003e": {
+                "Name": "\u003cport\u003e",
+                "kind": "argument",
+                "description": "port",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cport\u003e": {
+                "Name": "\u003cport\u003e",
+                "kind": "argument",
+                "description": "port",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cport\u003e"
+            ]
+          },
+          "-s": {
+            "Name": "-s",
+            "kind": "option",
+            "description": "Specify how many servers you want to create",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cint\u003e": {
+                "Name": "\u003cint\u003e",
+                "kind": "argument",
+                "description": "int",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cint\u003e": {
+                "Name": "\u003cint\u003e",
+                "kind": "argument",
+                "description": "int",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cint\u003e"
+            ]
+          },
+          "-v": {
+            "Name": "-v",
+            "kind": "option",
+            "description": "Mount volumes into the nodes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003c[SOURCE:]DEST[@NODEFILTER[;NODEFILTER...]]\u003e": {
+                "Name": "\u003c[SOURCE:]DEST[@NODEFILTER[;NODEFILTER...]]\u003e",
+                "kind": "argument",
+                "description": "[SOURCE:]DEST[@NODEFILTER[;NODEFILTER...]]",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003c[SOURCE:]DEST[@NODEFILTER[;NODEFILTER...]]\u003e": {
+                "Name": "\u003c[SOURCE:]DEST[@NODEFILTER[;NODEFILTER...]]\u003e",
+                "kind": "argument",
+                "description": "[SOURCE:]DEST[@NODEFILTER[;NODEFILTER...]]",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003c[SOURCE:]DEST[@NODEFILTER[;NODEFILTER...]]\u003e"
+            ]
+          },
+          "\u003ccluster name\u003e": {
+            "Name": "\u003ccluster name\u003e",
+            "kind": "argument",
+            "description": "cluster name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--agents": {
+            "Name": "--agents",
+            "kind": "option",
+            "description": "Number of agents to create",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cnumber of agents\u003e": {
+                "Name": "\u003cnumber of agents\u003e",
+                "kind": "argument",
+                "description": "number of agents",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cnumber of agents\u003e": {
+                "Name": "\u003cnumber of agents\u003e",
+                "kind": "argument",
+                "description": "number of agents",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cnumber of agents\u003e"
+            ]
+          },
+          "--agents-memory": {
+            "Name": "--agents-memory",
+            "kind": "option",
+            "description": "Memory limit imposed on the agents nodes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cmemory limit\u003e": {
+                "Name": "\u003cmemory limit\u003e",
+                "kind": "argument",
+                "description": "memory limit",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cmemory limit\u003e": {
+                "Name": "\u003cmemory limit\u003e",
+                "kind": "argument",
+                "description": "memory limit",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cmemory limit\u003e"
+            ]
+          },
+          "--api-port": {
+            "Name": "--api-port",
+            "kind": "option",
+            "description": "Specify the Kubernetes API server port exposed on the LoadBalancer",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cport\u003e": {
+                "Name": "\u003cport\u003e",
+                "kind": "argument",
+                "description": "port",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cport\u003e": {
+                "Name": "\u003cport\u003e",
+                "kind": "argument",
+                "description": "port",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cport\u003e"
+            ]
+          },
+          "--config": {
+            "Name": "--config",
+            "kind": "option",
+            "description": "Path of a config file to use",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "--env": {
+            "Name": "--env",
+            "kind": "option",
+            "description": "Add environment variables to nodes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cenvironment variables\u003e": {
+                "Name": "\u003cenvironment variables\u003e",
+                "kind": "argument",
+                "description": "environment variables",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cenvironment variables\u003e": {
+                "Name": "\u003cenvironment variables\u003e",
+                "kind": "argument",
+                "description": "environment variables",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cenvironment variables\u003e"
+            ]
+          },
+          "--gpus": {
+            "Name": "--gpus",
+            "kind": "option",
+            "description": "GPU devices to add to the cluster node containers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cdevices\u003e": {
+                "Name": "\u003cdevices\u003e",
+                "kind": "argument",
+                "description": "devices",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cdevices\u003e": {
+                "Name": "\u003cdevices\u003e",
+                "kind": "argument",
+                "description": "devices",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cdevices\u003e"
+            ]
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Help for create",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--host-alias": {
+            "Name": "--host-alias",
+            "kind": "option",
+            "description": "Add ip:host[,host,...] mappings",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cip:host[,host,...]\u003e": {
+                "Name": "\u003cip:host[,host,...]\u003e",
+                "kind": "argument",
+                "description": "ip:host[,host,...]",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cip:host[,host,...]\u003e": {
+                "Name": "\u003cip:host[,host,...]\u003e",
+                "kind": "argument",
+                "description": "ip:host[,host,...]",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cip:host[,host,...]\u003e"
+            ]
+          },
+          "--host-pid-mode": {
+            "Name": "--host-pid-mode",
+            "kind": "option",
+            "description": "Enable host pid mode of server(s) and agent(s)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--image": {
+            "Name": "--image",
+            "kind": "option",
+            "description": "Specify k3s image that you want to use for the nodes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cimage\u003e": {
+                "Name": "\u003cimage\u003e",
+                "kind": "argument",
+                "description": "image",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cimage\u003e": {
+                "Name": "\u003cimage\u003e",
+                "kind": "argument",
+                "description": "image",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cimage\u003e"
+            ]
+          },
+          "--k3s-arg": {
+            "Name": "--k3s-arg",
+            "kind": "option",
+            "description": "Additional args passed to k3s command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cARG@NODEFILTER[;@NODEFILTER]\u003e": {
+                "Name": "\u003cARG@NODEFILTER[;@NODEFILTER]\u003e",
+                "kind": "argument",
+                "description": "ARG@NODEFILTER[;@NODEFILTER]",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cARG@NODEFILTER[;@NODEFILTER]\u003e": {
+                "Name": "\u003cARG@NODEFILTER[;@NODEFILTER]\u003e",
+                "kind": "argument",
+                "description": "ARG@NODEFILTER[;@NODEFILTER]",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cARG@NODEFILTER[;@NODEFILTER]\u003e"
+            ]
+          },
+          "--k3s-node-label": {
+            "Name": "--k3s-node-label",
+            "kind": "option",
+            "description": "Add label to k3s node",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cKEY[=VALUE][@NODEFILTER[;NODEFILTER...]]\u003e": {
+                "Name": "\u003cKEY[=VALUE][@NODEFILTER[;NODEFILTER...]]\u003e",
+                "kind": "argument",
+                "description": "KEY[=VALUE][@NODEFILTER[;NODEFILTER...]]",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cKEY[=VALUE][@NODEFILTER[;NODEFILTER...]]\u003e": {
+                "Name": "\u003cKEY[=VALUE][@NODEFILTER[;NODEFILTER...]]\u003e",
+                "kind": "argument",
+                "description": "KEY[=VALUE][@NODEFILTER[;NODEFILTER...]]",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cKEY[=VALUE][@NODEFILTER[;NODEFILTER...]]\u003e"
+            ]
+          },
+          "--kubeconfig-switch-context": {
+            "Name": "--kubeconfig-switch-context",
+            "kind": "option",
+            "description": "Directly switch the default kubeconfig's current-context to the new cluster's context (requires --kubeconfig-update-default) (default true)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--kubeconfig-update-default": {
+            "Name": "--kubeconfig-update-default",
+            "kind": "option",
+            "description": "Directly update the default kubeconfig with the new cluster's context (default true)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--lb-config-override": {
+            "Name": "--lb-config-override",
+            "kind": "option",
+            "description": "Use dotted YAML path syntax to override nginx loadbalancer settings",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "--network": {
+            "Name": "--network",
+            "kind": "option",
+            "description": "Specify the docker network to use",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cnetwork\u003e": {
+                "Name": "\u003cnetwork\u003e",
+                "kind": "argument",
+                "description": "network",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cnetwork\u003e": {
+                "Name": "\u003cnetwork\u003e",
+                "kind": "argument",
+                "description": "network",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cnetwork\u003e"
+            ]
+          },
+          "--no-image-volume": {
+            "Name": "--no-image-volume",
+            "kind": "option",
+            "description": "Don't create a volume for the container's root filesystem",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--no-lb": {
+            "Name": "--no-lb",
+            "kind": "option",
+            "description": "Don't create a loadbalancer for the cluster",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--no-rollback": {
+            "Name": "--no-rollback",
+            "kind": "option",
+            "description": "Don't rollback changes if cluster creation failed",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--port": {
+            "Name": "--port",
+            "kind": "option",
+            "description": "Map ports from the node containers (via the serverlb) to the host",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cport\u003e": {
+                "Name": "\u003cport\u003e",
+                "kind": "argument",
+                "description": "port",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cport\u003e": {
+                "Name": "\u003cport\u003e",
+                "kind": "argument",
+                "description": "port",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cport\u003e"
+            ]
+          },
+          "--registry-config": {
+            "Name": "--registry-config",
+            "kind": "option",
+            "description": "Specify path to an extra registries.yaml file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "--registry-create": {
+            "Name": "--registry-create",
+            "kind": "option",
+            "description": "Create a k3d-managed registry and connect it to the cluster (Format: NAME[:HOST][:HOSTPORT] - Example: `k3d cluster create --registry-create mycluster-registry",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cNAME[:HOST][:HOSTPORT]\u003e": {
+                "Name": "\u003cNAME[:HOST][:HOSTPORT]\u003e",
+                "kind": "argument",
+                "description": "NAME[:HOST][:HOSTPORT]",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cNAME[:HOST][:HOSTPORT]\u003e": {
+                "Name": "\u003cNAME[:HOST][:HOSTPORT]\u003e",
+                "kind": "argument",
+                "description": "NAME[:HOST][:HOSTPORT]",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cNAME[:HOST][:HOSTPORT]\u003e"
+            ]
+          },
+          "--registry-use": {
+            "Name": "--registry-use",
+            "kind": "option",
+            "description": "Connect to one or more k3d-managed registries running locally",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cNAME[:HOST][:HOSTPORT]\u003e": {
+                "Name": "\u003cNAME[:HOST][:HOSTPORT]\u003e",
+                "kind": "argument",
+                "description": "NAME[:HOST][:HOSTPORT]",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cNAME[:HOST][:HOSTPORT]\u003e": {
+                "Name": "\u003cNAME[:HOST][:HOSTPORT]\u003e",
+                "kind": "argument",
+                "description": "NAME[:HOST][:HOSTPORT]",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cNAME[:HOST][:HOSTPORT]\u003e"
+            ]
+          },
+          "--runtime-label": {
+            "Name": "--runtime-label",
+            "kind": "option",
+            "description": "Add label to container runtime (Format: KEY[=VALUE][@NODEFILTER[;NODEFILTER...]] - Example: `k3d cluster create --agents 2 --runtime-label \"my.label@agent:0,1\" --runtime-label \"other.label=somevalue@server:0\"`",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--servers": {
+            "Name": "--servers",
+            "kind": "option",
+            "description": "Specify how many servers you want to create",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cint\u003e": {
+                "Name": "\u003cint\u003e",
+                "kind": "argument",
+                "description": "int",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cint\u003e": {
+                "Name": "\u003cint\u003e",
+                "kind": "argument",
+                "description": "int",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cint\u003e"
+            ]
+          },
+          "--servers-memory": {
+            "Name": "--servers-memory",
+            "kind": "option",
+            "description": "Memory limit imposed on the server nodes [From docker]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "--subnet": {
+            "Name": "--subnet",
+            "kind": "option",
+            "description": "[Experimental: IPAM] Define a subnet for the newly created container network",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "--timeout": {
+            "Name": "--timeout",
+            "kind": "option",
+            "description": "Rollback changes if cluster couldn't be created in specified duration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cduration\u003e": {
+                "Name": "\u003cduration\u003e",
+                "kind": "argument",
+                "description": "duration",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cduration\u003e": {
+                "Name": "\u003cduration\u003e",
+                "kind": "argument",
+                "description": "duration",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cduration\u003e"
+            ]
+          },
+          "--token": {
+            "Name": "--token",
+            "kind": "option",
+            "description": "Specify a cluster token. By default, we generate one",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "--volume": {
+            "Name": "--volume",
+            "kind": "option",
+            "description": "Mount volumes into the nodes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003c[SOURCE:]DEST[@NODEFILTER[;NODEFILTER...]]\u003e": {
+                "Name": "\u003c[SOURCE:]DEST[@NODEFILTER[;NODEFILTER...]]\u003e",
+                "kind": "argument",
+                "description": "[SOURCE:]DEST[@NODEFILTER[;NODEFILTER...]]",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003c[SOURCE:]DEST[@NODEFILTER[;NODEFILTER...]]\u003e": {
+                "Name": "\u003c[SOURCE:]DEST[@NODEFILTER[;NODEFILTER...]]\u003e",
+                "kind": "argument",
+                "description": "[SOURCE:]DEST[@NODEFILTER[;NODEFILTER...]]",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003c[SOURCE:]DEST[@NODEFILTER[;NODEFILTER...]]\u003e"
+            ]
+          },
+          "--wait": {
+            "Name": "--wait",
+            "kind": "option",
+            "description": "Wait for the server(s) to be ready before returning",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-a": {
+            "Name": "-a",
+            "kind": "option",
+            "description": "Number of agents to create",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cnumber of agents\u003e": {
+                "Name": "\u003cnumber of agents\u003e",
+                "kind": "argument",
+                "description": "number of agents",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cnumber of agents\u003e": {
+                "Name": "\u003cnumber of agents\u003e",
+                "kind": "argument",
+                "description": "number of agents",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cnumber of agents\u003e"
+            ]
+          },
+          "-c": {
+            "Name": "-c",
+            "kind": "option",
+            "description": "Path of a config file to use",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "-e": {
+            "Name": "-e",
+            "kind": "option",
+            "description": "Add environment variables to nodes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cenvironment variables\u003e": {
+                "Name": "\u003cenvironment variables\u003e",
+                "kind": "argument",
+                "description": "environment variables",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cenvironment variables\u003e": {
+                "Name": "\u003cenvironment variables\u003e",
+                "kind": "argument",
+                "description": "environment variables",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cenvironment variables\u003e"
+            ]
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Help for create",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-i": {
+            "Name": "-i",
+            "kind": "option",
+            "description": "Specify k3s image that you want to use for the nodes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cimage\u003e": {
+                "Name": "\u003cimage\u003e",
+                "kind": "argument",
+                "description": "image",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cimage\u003e": {
+                "Name": "\u003cimage\u003e",
+                "kind": "argument",
+                "description": "image",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cimage\u003e"
+            ]
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Map ports from the node containers (via the serverlb) to the host",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cport\u003e": {
+                "Name": "\u003cport\u003e",
+                "kind": "argument",
+                "description": "port",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cport\u003e": {
+                "Name": "\u003cport\u003e",
+                "kind": "argument",
+                "description": "port",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cport\u003e"
+            ]
+          },
+          "-s": {
+            "Name": "-s",
+            "kind": "option",
+            "description": "Specify how many servers you want to create",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cint\u003e": {
+                "Name": "\u003cint\u003e",
+                "kind": "argument",
+                "description": "int",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cint\u003e": {
+                "Name": "\u003cint\u003e",
+                "kind": "argument",
+                "description": "int",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cint\u003e"
+            ]
+          },
+          "-v": {
+            "Name": "-v",
+            "kind": "option",
+            "description": "Mount volumes into the nodes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003c[SOURCE:]DEST[@NODEFILTER[;NODEFILTER...]]\u003e": {
+                "Name": "\u003c[SOURCE:]DEST[@NODEFILTER[;NODEFILTER...]]\u003e",
+                "kind": "argument",
+                "description": "[SOURCE:]DEST[@NODEFILTER[;NODEFILTER...]]",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003c[SOURCE:]DEST[@NODEFILTER[;NODEFILTER...]]\u003e": {
+                "Name": "\u003c[SOURCE:]DEST[@NODEFILTER[;NODEFILTER...]]\u003e",
+                "kind": "argument",
+                "description": "[SOURCE:]DEST[@NODEFILTER[;NODEFILTER...]]",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003c[SOURCE:]DEST[@NODEFILTER[;NODEFILTER...]]\u003e"
+            ]
+          },
+          "\u003ccluster name\u003e": {
+            "Name": "\u003ccluster name\u003e",
+            "kind": "argument",
+            "description": "cluster name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccluster name\u003e"
+        ]
+      },
+      "delete": {
+        "Name": "delete",
+        "kind": "subcommand",
+        "description": "Delete a cluster",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "Delete all clusters",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--config": {
+            "Name": "--config",
+            "kind": "option",
+            "description": "Path of a config file to use",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "-a": {
+            "Name": "-a",
+            "kind": "option",
+            "description": "Delete all clusters",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-c": {
+            "Name": "-c",
+            "kind": "option",
+            "description": "Path of a config file to use",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "\u003ccluster\u003e": {
+            "Name": "\u003ccluster\u003e",
+            "kind": "argument",
+            "description": "cluster",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "Delete all clusters",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--config": {
+            "Name": "--config",
+            "kind": "option",
+            "description": "Path of a config file to use",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "-a": {
+            "Name": "-a",
+            "kind": "option",
+            "description": "Delete all clusters",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-c": {
+            "Name": "-c",
+            "kind": "option",
+            "description": "Path of a config file to use",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "\u003ccluster\u003e": {
+            "Name": "\u003ccluster\u003e",
+            "kind": "argument",
+            "description": "cluster",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccluster\u003e"
+        ]
+      },
+      "edit": {
+        "Name": "edit",
+        "kind": "subcommand",
+        "description": "Edit a cluster",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--port-add": {
+            "Name": "--port-add",
+            "kind": "option",
+            "description": "Map ports from the node containers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003ccluster\u003e": {
+            "Name": "\u003ccluster\u003e",
+            "kind": "argument",
+            "description": "cluster",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--port-add": {
+            "Name": "--port-add",
+            "kind": "option",
+            "description": "Map ports from the node containers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003ccluster\u003e": {
+            "Name": "\u003ccluster\u003e",
+            "kind": "argument",
+            "description": "cluster",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccluster\u003e"
+        ]
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List clusters",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--no-headers": {
+            "Name": "--no-headers",
+            "kind": "option",
+            "description": "Don't print headers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--output": {
+            "Name": "--output",
+            "kind": "option",
+            "description": "Output format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "--token": {
+            "Name": "--token",
+            "kind": "option",
+            "description": "Print k3s cluster token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-o": {
+            "Name": "-o",
+            "kind": "option",
+            "description": "Output format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "\u003ccluster\u003e": {
+            "Name": "\u003ccluster\u003e",
+            "kind": "argument",
+            "description": "cluster",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--no-headers": {
+            "Name": "--no-headers",
+            "kind": "option",
+            "description": "Don't print headers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--output": {
+            "Name": "--output",
+            "kind": "option",
+            "description": "Output format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "--token": {
+            "Name": "--token",
+            "kind": "option",
+            "description": "Print k3s cluster token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-o": {
+            "Name": "-o",
+            "kind": "option",
+            "description": "Output format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "\u003ccluster\u003e": {
+            "Name": "\u003ccluster\u003e",
+            "kind": "argument",
+            "description": "cluster",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccluster\u003e"
+        ]
+      },
+      "start": {
+        "Name": "start",
+        "kind": "subcommand",
+        "description": "Start a cluster",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "Start all clusters",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--timeout": {
+            "Name": "--timeout",
+            "kind": "option",
+            "description": "Maximum waiting time for '--wait' before canceling/returning",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cduration\u003e": {
+                "Name": "\u003cduration\u003e",
+                "kind": "argument",
+                "description": "duration",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cduration\u003e": {
+                "Name": "\u003cduration\u003e",
+                "kind": "argument",
+                "description": "duration",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cduration\u003e"
+            ]
+          },
+          "--wait": {
+            "Name": "--wait",
+            "kind": "option",
+            "description": "Wait for the server(s) (and loadbalancer) to be ready before returning",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003ccluster\u003e": {
+            "Name": "\u003ccluster\u003e",
+            "kind": "argument",
+            "description": "cluster",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "a": {
+            "Name": "a",
+            "kind": "option",
+            "description": "Start all clusters",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "Start all clusters",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--timeout": {
+            "Name": "--timeout",
+            "kind": "option",
+            "description": "Maximum waiting time for '--wait' before canceling/returning",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cduration\u003e": {
+                "Name": "\u003cduration\u003e",
+                "kind": "argument",
+                "description": "duration",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cduration\u003e": {
+                "Name": "\u003cduration\u003e",
+                "kind": "argument",
+                "description": "duration",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cduration\u003e"
+            ]
+          },
+          "--wait": {
+            "Name": "--wait",
+            "kind": "option",
+            "description": "Wait for the server(s) (and loadbalancer) to be ready before returning",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003ccluster\u003e": {
+            "Name": "\u003ccluster\u003e",
+            "kind": "argument",
+            "description": "cluster",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccluster\u003e"
+        ]
+      },
+      "stop": {
+        "Name": "stop",
+        "kind": "subcommand",
+        "description": "Stop a cluster",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "Stop all clusters",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-a": {
+            "Name": "-a",
+            "kind": "option",
+            "description": "Stop all clusters",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003ccluster\u003e": {
+            "Name": "\u003ccluster\u003e",
+            "kind": "argument",
+            "description": "cluster",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "Stop all clusters",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-a": {
+            "Name": "-a",
+            "kind": "option",
+            "description": "Stop all clusters",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003ccluster\u003e": {
+            "Name": "\u003ccluster\u003e",
+            "kind": "argument",
+            "description": "cluster",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccluster\u003e"
+        ]
+      }
+    }
+  },
+  "completion": {
+    "Name": "completion",
+    "kind": "subcommand",
+    "description": "Generate shell completion scripts",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cshell\u003e": {
+        "Name": "\u003cshell\u003e",
+        "kind": "argument",
+        "description": "shell",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cshell\u003e": {
+        "Name": "\u003cshell\u003e",
+        "kind": "argument",
+        "description": "shell",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cshell\u003e"
+    ]
+  },
+  "config": {
+    "Name": "config",
+    "kind": "subcommand",
+    "description": "Manage k3d config",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "init": {
+        "Name": "init",
+        "kind": "subcommand",
+        "description": "Create a new config file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--force": {
+            "Name": "--force",
+            "kind": "option",
+            "description": "Force overwrite of target file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--output": {
+            "Name": "--output",
+            "kind": "option",
+            "description": "Write a default k3d config (default \"k3d-default.yaml\")",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Force overwrite of target file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-o": {
+            "Name": "-o",
+            "kind": "option",
+            "description": "Write a default k3d config (default \"k3d-default.yaml\")",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--force": {
+            "Name": "--force",
+            "kind": "option",
+            "description": "Force overwrite of target file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--output": {
+            "Name": "--output",
+            "kind": "option",
+            "description": "Write a default k3d config (default \"k3d-default.yaml\")",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Force overwrite of target file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-o": {
+            "Name": "-o",
+            "kind": "option",
+            "description": "Write a default k3d config (default \"k3d-default.yaml\")",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "migrate": {
+        "Name": "migrate",
+        "kind": "subcommand",
+        "description": "Migrate a config file to the latest version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "image": {
+    "Name": "image",
+    "kind": "subcommand",
+    "description": "Manage k3d images",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "import": {
+        "Name": "import",
+        "kind": "subcommand",
+        "description": "Import image(s) from docker into k3d cluster(s)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--cluster": {
+            "Name": "--cluster",
+            "kind": "option",
+            "description": "Cluster to import image(s) into",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccluster\u003e": {
+                "Name": "\u003ccluster\u003e",
+                "kind": "argument",
+                "description": "cluster",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccluster\u003e": {
+                "Name": "\u003ccluster\u003e",
+                "kind": "argument",
+                "description": "cluster",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ccluster\u003e"
+            ]
+          },
+          "--keep-tarball": {
+            "Name": "--keep-tarball",
+            "kind": "option",
+            "description": "Do not delete the tarball containing the saved images from the shared volume",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--keep-tools": {
+            "Name": "--keep-tools",
+            "kind": "option",
+            "description": "Do not delete the tools node after import",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--mode": {
+            "Name": "--mode",
+            "kind": "option",
+            "description": "Import mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cmode\u003e": {
+                "Name": "\u003cmode\u003e",
+                "kind": "argument",
+                "description": "mode",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cmode\u003e": {
+                "Name": "\u003cmode\u003e",
+                "kind": "argument",
+                "description": "mode",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cmode\u003e"
+            ]
+          },
+          "-c": {
+            "Name": "-c",
+            "kind": "option",
+            "description": "Cluster to import image(s) into",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccluster\u003e": {
+                "Name": "\u003ccluster\u003e",
+                "kind": "argument",
+                "description": "cluster",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccluster\u003e": {
+                "Name": "\u003ccluster\u003e",
+                "kind": "argument",
+                "description": "cluster",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ccluster\u003e"
+            ]
+          },
+          "-k": {
+            "Name": "-k",
+            "kind": "option",
+            "description": "Do not delete the tarball containing the saved images from the shared volume",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-m": {
+            "Name": "-m",
+            "kind": "option",
+            "description": "Import mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cmode\u003e": {
+                "Name": "\u003cmode\u003e",
+                "kind": "argument",
+                "description": "mode",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cmode\u003e": {
+                "Name": "\u003cmode\u003e",
+                "kind": "argument",
+                "description": "mode",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cmode\u003e"
+            ]
+          },
+          "-t": {
+            "Name": "-t",
+            "kind": "option",
+            "description": "Do not delete the tools node after import",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cimage\u003e": {
+            "Name": "\u003cimage\u003e",
+            "kind": "argument",
+            "description": "image",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--cluster": {
+            "Name": "--cluster",
+            "kind": "option",
+            "description": "Cluster to import image(s) into",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccluster\u003e": {
+                "Name": "\u003ccluster\u003e",
+                "kind": "argument",
+                "description": "cluster",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccluster\u003e": {
+                "Name": "\u003ccluster\u003e",
+                "kind": "argument",
+                "description": "cluster",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ccluster\u003e"
+            ]
+          },
+          "--keep-tarball": {
+            "Name": "--keep-tarball",
+            "kind": "option",
+            "description": "Do not delete the tarball containing the saved images from the shared volume",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--keep-tools": {
+            "Name": "--keep-tools",
+            "kind": "option",
+            "description": "Do not delete the tools node after import",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--mode": {
+            "Name": "--mode",
+            "kind": "option",
+            "description": "Import mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cmode\u003e": {
+                "Name": "\u003cmode\u003e",
+                "kind": "argument",
+                "description": "mode",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cmode\u003e": {
+                "Name": "\u003cmode\u003e",
+                "kind": "argument",
+                "description": "mode",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cmode\u003e"
+            ]
+          },
+          "-c": {
+            "Name": "-c",
+            "kind": "option",
+            "description": "Cluster to import image(s) into",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccluster\u003e": {
+                "Name": "\u003ccluster\u003e",
+                "kind": "argument",
+                "description": "cluster",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccluster\u003e": {
+                "Name": "\u003ccluster\u003e",
+                "kind": "argument",
+                "description": "cluster",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ccluster\u003e"
+            ]
+          },
+          "-k": {
+            "Name": "-k",
+            "kind": "option",
+            "description": "Do not delete the tarball containing the saved images from the shared volume",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-m": {
+            "Name": "-m",
+            "kind": "option",
+            "description": "Import mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cmode\u003e": {
+                "Name": "\u003cmode\u003e",
+                "kind": "argument",
+                "description": "mode",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cmode\u003e": {
+                "Name": "\u003cmode\u003e",
+                "kind": "argument",
+                "description": "mode",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cmode\u003e"
+            ]
+          },
+          "-t": {
+            "Name": "-t",
+            "kind": "option",
+            "description": "Do not delete the tools node after import",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cimage\u003e": {
+            "Name": "\u003cimage\u003e",
+            "kind": "argument",
+            "description": "image",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cimage\u003e"
+        ]
+      }
+    }
+  },
+  "kubeconfig": {
+    "Name": "kubeconfig",
+    "kind": "subcommand",
+    "description": "Manage k3d kubeconfig",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "get": {
+        "Name": "get",
+        "kind": "subcommand",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-a": {
+            "Name": "-a",
+            "kind": "option",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003ccluster\u003e": {
+            "Name": "\u003ccluster\u003e",
+            "kind": "argument",
+            "description": "cluster",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-a": {
+            "Name": "-a",
+            "kind": "option",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003ccluster\u003e": {
+            "Name": "\u003ccluster\u003e",
+            "kind": "argument",
+            "description": "cluster",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccluster\u003e"
+        ]
+      },
+      "merge": {
+        "Name": "merge",
+        "kind": "subcommand",
+        "description": "Write/Merge kubeconfig(s) from cluster(s) into new or existing kubeconfig/file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--kubeconfig-merge-default": {
+            "Name": "--kubeconfig-merge-default",
+            "kind": "option",
+            "description": "Merge into the default kubeconfig ($KUBECONFIG or /Users/balli/.kube/config)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--kubeconfig-switch-context": {
+            "Name": "--kubeconfig-switch-context",
+            "kind": "option",
+            "description": "Switch to new context (default true)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--output": {
+            "Name": "--output",
+            "kind": "option",
+            "description": "Define output [ - | FILE ] (default from $KUBECONFIG or /Users/balli/.kube/config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "--overwrite": {
+            "Name": "--overwrite",
+            "kind": "option",
+            "description": "[Careful!] Overwrite existing file, ignoring its contents",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--update": {
+            "Name": "--update",
+            "kind": "option",
+            "description": "Update conflicting fields in existing kubeconfig (default true)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-a": {
+            "Name": "-a",
+            "kind": "option",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-d": {
+            "Name": "-d",
+            "kind": "option",
+            "description": "Merge into the default kubeconfig ($KUBECONFIG or /Users/balli/.kube/config)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-o": {
+            "Name": "-o",
+            "kind": "option",
+            "description": "Define output [ - | FILE ] (default from $KUBECONFIG or /Users/balli/.kube/config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "-s": {
+            "Name": "-s",
+            "kind": "option",
+            "description": "Switch to new context (default true)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-u": {
+            "Name": "-u",
+            "kind": "option",
+            "description": "Update conflicting fields in existing kubeconfig (default true)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003ccluster\u003e": {
+            "Name": "\u003ccluster\u003e",
+            "kind": "argument",
+            "description": "cluster",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--kubeconfig-merge-default": {
+            "Name": "--kubeconfig-merge-default",
+            "kind": "option",
+            "description": "Merge into the default kubeconfig ($KUBECONFIG or /Users/balli/.kube/config)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--kubeconfig-switch-context": {
+            "Name": "--kubeconfig-switch-context",
+            "kind": "option",
+            "description": "Switch to new context (default true)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--output": {
+            "Name": "--output",
+            "kind": "option",
+            "description": "Define output [ - | FILE ] (default from $KUBECONFIG or /Users/balli/.kube/config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "--overwrite": {
+            "Name": "--overwrite",
+            "kind": "option",
+            "description": "[Careful!] Overwrite existing file, ignoring its contents",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--update": {
+            "Name": "--update",
+            "kind": "option",
+            "description": "Update conflicting fields in existing kubeconfig (default true)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-a": {
+            "Name": "-a",
+            "kind": "option",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-d": {
+            "Name": "-d",
+            "kind": "option",
+            "description": "Merge into the default kubeconfig ($KUBECONFIG or /Users/balli/.kube/config)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-o": {
+            "Name": "-o",
+            "kind": "option",
+            "description": "Define output [ - | FILE ] (default from $KUBECONFIG or /Users/balli/.kube/config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstring\u003e": {
+                "Name": "\u003cstring\u003e",
+                "kind": "argument",
+                "description": "string",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstring\u003e"
+            ]
+          },
+          "-s": {
+            "Name": "-s",
+            "kind": "option",
+            "description": "Switch to new context (default true)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-u": {
+            "Name": "-u",
+            "kind": "option",
+            "description": "Update conflicting fields in existing kubeconfig (default true)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003ccluster\u003e": {
+            "Name": "\u003ccluster\u003e",
+            "kind": "argument",
+            "description": "cluster",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccluster\u003e"
+        ]
+      }
+    }
+  },
+  "node": {
+    "Name": "node",
+    "kind": "subcommand",
+    "description": "Manage k3d nodes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "create": {
+        "Name": "create",
+        "kind": "subcommand",
+        "description": "Create a new node",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--cluster": {
+            "Name": "--cluster",
+            "kind": "option",
+            "description": "Cluster URL or k3d cluster name to connect to. (default \"k3s-default\")",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccluster\u003e": {
+                "Name": "\u003ccluster\u003e",
+                "kind": "argument",
+                "description": "cluster",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccluster\u003e": {
+                "Name": "\u003ccluster\u003e",
+                "kind": "argument",
+                "description": "cluster",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ccluster\u003e"
+            ]
+          },
+          "--image": {
+            "Name": "--image",
+            "kind": "option",
+            "description": "Node image to use",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cimage\u003e": {
+                "Name": "\u003cimage\u003e",
+                "kind": "argument",
+                "description": "image",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cimage\u003e": {
+                "Name": "\u003cimage\u003e",
+                "kind": "argument",
+                "description": "image",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cimage\u003e"
+            ]
+          },
+          "--k3s-arg": {
+            "Name": "--k3s-arg",
+            "kind": "option",
+            "description": "Additional k3s arguments",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ck3s-arg\u003e": {
+                "Name": "\u003ck3s-arg\u003e",
+                "kind": "argument",
+                "description": "k3s-arg",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ck3s-arg\u003e": {
+                "Name": "\u003ck3s-arg\u003e",
+                "kind": "argument",
+                "description": "k3s-arg",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ck3s-arg\u003e"
+            ]
+          },
+          "--k3s-node-label": {
+            "Name": "--k3s-node-label",
+            "kind": "option",
+            "description": "Specify k3s node labels in format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ck3s-node-label\u003e": {
+                "Name": "\u003ck3s-node-label\u003e",
+                "kind": "argument",
+                "description": "k3s-node-label",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ck3s-node-label\u003e": {
+                "Name": "\u003ck3s-node-label\u003e",
+                "kind": "argument",
+                "description": "k3s-node-label",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ck3s-node-label\u003e"
+            ]
+          },
+          "--memory": {
+            "Name": "--memory",
+            "kind": "option",
+            "description": "Memory limit for the node container",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cmemory\u003e": {
+                "Name": "\u003cmemory\u003e",
+                "kind": "argument",
+                "description": "memory",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cmemory\u003e": {
+                "Name": "\u003cmemory\u003e",
+                "kind": "argument",
+                "description": "memory",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cmemory\u003e"
+            ]
+          },
+          "--network": {
+            "Name": "--network",
+            "kind": "option",
+            "description": "Add node to (another) runtime network",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cnetwork\u003e": {
+                "Name": "\u003cnetwork\u003e",
+                "kind": "argument",
+                "description": "network",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cnetwork\u003e": {
+                "Name": "\u003cnetwork\u003e",
+                "kind": "argument",
+                "description": "network",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cnetwork\u003e"
+            ]
+          },
+          "--replicas": {
+            "Name": "--replicas",
+            "kind": "option",
+            "description": "Number of replicas to create",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003creplicas\u003e": {
+                "Name": "\u003creplicas\u003e",
+                "kind": "argument",
+                "description": "replicas",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003creplicas\u003e": {
+                "Name": "\u003creplicas\u003e",
+                "kind": "argument",
+                "description": "replicas",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003creplicas\u003e"
+            ]
+          },
+          "--role": {
+            "Name": "--role",
+            "kind": "option",
+            "description": "Node role",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003crole\u003e": {
+                "Name": "\u003crole\u003e",
+                "kind": "argument",
+                "description": "role",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003crole\u003e": {
+                "Name": "\u003crole\u003e",
+                "kind": "argument",
+                "description": "role",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003crole\u003e"
+            ]
+          },
+          "--runtime-label": {
+            "Name": "--runtime-label",
+            "kind": "option",
+            "description": "Specify runtime labels in format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cruntime-label\u003e": {
+                "Name": "\u003cruntime-label\u003e",
+                "kind": "argument",
+                "description": "runtime-label",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cruntime-label\u003e": {
+                "Name": "\u003cruntime-label\u003e",
+                "kind": "argument",
+                "description": "runtime-label",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cruntime-label\u003e"
+            ]
+          },
+          "--timeout": {
+            "Name": "--timeout",
+            "kind": "option",
+            "description": "Maximum waiting time for '--wait' before canceling/returning",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ctimeout\u003e": {
+                "Name": "\u003ctimeout\u003e",
+                "kind": "argument",
+                "description": "timeout",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ctimeout\u003e": {
+                "Name": "\u003ctimeout\u003e",
+                "kind": "argument",
+                "description": "timeout",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ctimeout\u003e"
+            ]
+          },
+          "--token": {
+            "Name": "--token",
+            "kind": "option",
+            "description": "Override cluster token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ctoken\u003e": {
+                "Name": "\u003ctoken\u003e",
+                "kind": "argument",
+                "description": "token",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ctoken\u003e": {
+                "Name": "\u003ctoken\u003e",
+                "kind": "argument",
+                "description": "token",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ctoken\u003e"
+            ]
+          },
+          "--wait": {
+            "Name": "--wait",
+            "kind": "option",
+            "description": "Wait for the node(s) to be ready before returning",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-c": {
+            "Name": "-c",
+            "kind": "option",
+            "description": "Cluster URL or k3d cluster name to connect to. (default \"k3s-default\")",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccluster\u003e": {
+                "Name": "\u003ccluster\u003e",
+                "kind": "argument",
+                "description": "cluster",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccluster\u003e": {
+                "Name": "\u003ccluster\u003e",
+                "kind": "argument",
+                "description": "cluster",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ccluster\u003e"
+            ]
+          },
+          "-i": {
+            "Name": "-i",
+            "kind": "option",
+            "description": "Node image to use",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cimage\u003e": {
+                "Name": "\u003cimage\u003e",
+                "kind": "argument",
+                "description": "image",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cimage\u003e": {
+                "Name": "\u003cimage\u003e",
+                "kind": "argument",
+                "description": "image",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cimage\u003e"
+            ]
+          },
+          "-n": {
+            "Name": "-n",
+            "kind": "option",
+            "description": "Add node to (another) runtime network",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cnetwork\u003e": {
+                "Name": "\u003cnetwork\u003e",
+                "kind": "argument",
+                "description": "network",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cnetwork\u003e": {
+                "Name": "\u003cnetwork\u003e",
+                "kind": "argument",
+                "description": "network",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cnetwork\u003e"
+            ]
+          },
+          "-t": {
+            "Name": "-t",
+            "kind": "option",
+            "description": "Override cluster token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ctoken\u003e": {
+                "Name": "\u003ctoken\u003e",
+                "kind": "argument",
+                "description": "token",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ctoken\u003e": {
+                "Name": "\u003ctoken\u003e",
+                "kind": "argument",
+                "description": "token",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ctoken\u003e"
+            ]
+          },
+          "\u003cNode Name\u003e": {
+            "Name": "\u003cNode Name\u003e",
+            "kind": "argument",
+            "description": "Node Name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--cluster": {
+            "Name": "--cluster",
+            "kind": "option",
+            "description": "Cluster URL or k3d cluster name to connect to. (default \"k3s-default\")",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccluster\u003e": {
+                "Name": "\u003ccluster\u003e",
+                "kind": "argument",
+                "description": "cluster",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccluster\u003e": {
+                "Name": "\u003ccluster\u003e",
+                "kind": "argument",
+                "description": "cluster",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ccluster\u003e"
+            ]
+          },
+          "--image": {
+            "Name": "--image",
+            "kind": "option",
+            "description": "Node image to use",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cimage\u003e": {
+                "Name": "\u003cimage\u003e",
+                "kind": "argument",
+                "description": "image",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cimage\u003e": {
+                "Name": "\u003cimage\u003e",
+                "kind": "argument",
+                "description": "image",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cimage\u003e"
+            ]
+          },
+          "--k3s-arg": {
+            "Name": "--k3s-arg",
+            "kind": "option",
+            "description": "Additional k3s arguments",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ck3s-arg\u003e": {
+                "Name": "\u003ck3s-arg\u003e",
+                "kind": "argument",
+                "description": "k3s-arg",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ck3s-arg\u003e": {
+                "Name": "\u003ck3s-arg\u003e",
+                "kind": "argument",
+                "description": "k3s-arg",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ck3s-arg\u003e"
+            ]
+          },
+          "--k3s-node-label": {
+            "Name": "--k3s-node-label",
+            "kind": "option",
+            "description": "Specify k3s node labels in format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ck3s-node-label\u003e": {
+                "Name": "\u003ck3s-node-label\u003e",
+                "kind": "argument",
+                "description": "k3s-node-label",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ck3s-node-label\u003e": {
+                "Name": "\u003ck3s-node-label\u003e",
+                "kind": "argument",
+                "description": "k3s-node-label",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ck3s-node-label\u003e"
+            ]
+          },
+          "--memory": {
+            "Name": "--memory",
+            "kind": "option",
+            "description": "Memory limit for the node container",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cmemory\u003e": {
+                "Name": "\u003cmemory\u003e",
+                "kind": "argument",
+                "description": "memory",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cmemory\u003e": {
+                "Name": "\u003cmemory\u003e",
+                "kind": "argument",
+                "description": "memory",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cmemory\u003e"
+            ]
+          },
+          "--network": {
+            "Name": "--network",
+            "kind": "option",
+            "description": "Add node to (another) runtime network",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cnetwork\u003e": {
+                "Name": "\u003cnetwork\u003e",
+                "kind": "argument",
+                "description": "network",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cnetwork\u003e": {
+                "Name": "\u003cnetwork\u003e",
+                "kind": "argument",
+                "description": "network",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cnetwork\u003e"
+            ]
+          },
+          "--replicas": {
+            "Name": "--replicas",
+            "kind": "option",
+            "description": "Number of replicas to create",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003creplicas\u003e": {
+                "Name": "\u003creplicas\u003e",
+                "kind": "argument",
+                "description": "replicas",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003creplicas\u003e": {
+                "Name": "\u003creplicas\u003e",
+                "kind": "argument",
+                "description": "replicas",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003creplicas\u003e"
+            ]
+          },
+          "--role": {
+            "Name": "--role",
+            "kind": "option",
+            "description": "Node role",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003crole\u003e": {
+                "Name": "\u003crole\u003e",
+                "kind": "argument",
+                "description": "role",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003crole\u003e": {
+                "Name": "\u003crole\u003e",
+                "kind": "argument",
+                "description": "role",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003crole\u003e"
+            ]
+          },
+          "--runtime-label": {
+            "Name": "--runtime-label",
+            "kind": "option",
+            "description": "Specify runtime labels in format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cruntime-label\u003e": {
+                "Name": "\u003cruntime-label\u003e",
+                "kind": "argument",
+                "description": "runtime-label",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cruntime-label\u003e": {
+                "Name": "\u003cruntime-label\u003e",
+                "kind": "argument",
+                "description": "runtime-label",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cruntime-label\u003e"
+            ]
+          },
+          "--timeout": {
+            "Name": "--timeout",
+            "kind": "option",
+            "description": "Maximum waiting time for '--wait' before canceling/returning",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ctimeout\u003e": {
+                "Name": "\u003ctimeout\u003e",
+                "kind": "argument",
+                "description": "timeout",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ctimeout\u003e": {
+                "Name": "\u003ctimeout\u003e",
+                "kind": "argument",
+                "description": "timeout",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ctimeout\u003e"
+            ]
+          },
+          "--token": {
+            "Name": "--token",
+            "kind": "option",
+            "description": "Override cluster token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ctoken\u003e": {
+                "Name": "\u003ctoken\u003e",
+                "kind": "argument",
+                "description": "token",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ctoken\u003e": {
+                "Name": "\u003ctoken\u003e",
+                "kind": "argument",
+                "description": "token",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ctoken\u003e"
+            ]
+          },
+          "--wait": {
+            "Name": "--wait",
+            "kind": "option",
+            "description": "Wait for the node(s) to be ready before returning",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-c": {
+            "Name": "-c",
+            "kind": "option",
+            "description": "Cluster URL or k3d cluster name to connect to. (default \"k3s-default\")",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccluster\u003e": {
+                "Name": "\u003ccluster\u003e",
+                "kind": "argument",
+                "description": "cluster",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccluster\u003e": {
+                "Name": "\u003ccluster\u003e",
+                "kind": "argument",
+                "description": "cluster",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ccluster\u003e"
+            ]
+          },
+          "-i": {
+            "Name": "-i",
+            "kind": "option",
+            "description": "Node image to use",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cimage\u003e": {
+                "Name": "\u003cimage\u003e",
+                "kind": "argument",
+                "description": "image",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cimage\u003e": {
+                "Name": "\u003cimage\u003e",
+                "kind": "argument",
+                "description": "image",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cimage\u003e"
+            ]
+          },
+          "-n": {
+            "Name": "-n",
+            "kind": "option",
+            "description": "Add node to (another) runtime network",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cnetwork\u003e": {
+                "Name": "\u003cnetwork\u003e",
+                "kind": "argument",
+                "description": "network",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cnetwork\u003e": {
+                "Name": "\u003cnetwork\u003e",
+                "kind": "argument",
+                "description": "network",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cnetwork\u003e"
+            ]
+          },
+          "-t": {
+            "Name": "-t",
+            "kind": "option",
+            "description": "Override cluster token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ctoken\u003e": {
+                "Name": "\u003ctoken\u003e",
+                "kind": "argument",
+                "description": "token",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ctoken\u003e": {
+                "Name": "\u003ctoken\u003e",
+                "kind": "argument",
+                "description": "token",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ctoken\u003e"
+            ]
+          },
+          "\u003cNode Name\u003e": {
+            "Name": "\u003cNode Name\u003e",
+            "kind": "argument",
+            "description": "Node Name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cNode Name\u003e"
+        ]
+      },
+      "delete": {
+        "Name": "delete",
+        "kind": "subcommand",
+        "description": "Delete a node",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "Delete all existing nodes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--registry": {
+            "Name": "--registry",
+            "kind": "option",
+            "description": "Also delete registries",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-a": {
+            "Name": "-a",
+            "kind": "option",
+            "description": "Delete all existing nodes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-r": {
+            "Name": "-r",
+            "kind": "option",
+            "description": "Also delete registries",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cNode Name\u003e": {
+            "Name": "\u003cNode Name\u003e",
+            "kind": "argument",
+            "description": "Node Name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "Delete all existing nodes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--registry": {
+            "Name": "--registry",
+            "kind": "option",
+            "description": "Also delete registries",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-a": {
+            "Name": "-a",
+            "kind": "option",
+            "description": "Delete all existing nodes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-r": {
+            "Name": "-r",
+            "kind": "option",
+            "description": "Also delete registries",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cNode Name\u003e": {
+            "Name": "\u003cNode Name\u003e",
+            "kind": "argument",
+            "description": "Node Name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cNode Name\u003e"
+        ]
+      },
+      "edit": {
+        "Name": "edit",
+        "kind": "subcommand",
+        "description": "[EXPERIMENTAL] Edit node(s)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--port-add": {
+            "Name": "--port-add",
+            "kind": "option",
+            "description": "Map ports from the node container to the host",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cport-add\u003e": {
+                "Name": "\u003cport-add\u003e",
+                "kind": "argument",
+                "description": "port-add",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cport-add\u003e": {
+                "Name": "\u003cport-add\u003e",
+                "kind": "argument",
+                "description": "port-add",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cport-add\u003e"
+            ]
+          },
+          "\u003cNode Name\u003e": {
+            "Name": "\u003cNode Name\u003e",
+            "kind": "argument",
+            "description": "Node Name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--port-add": {
+            "Name": "--port-add",
+            "kind": "option",
+            "description": "Map ports from the node container to the host",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cport-add\u003e": {
+                "Name": "\u003cport-add\u003e",
+                "kind": "argument",
+                "description": "port-add",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cport-add\u003e": {
+                "Name": "\u003cport-add\u003e",
+                "kind": "argument",
+                "description": "port-add",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cport-add\u003e"
+            ]
+          },
+          "\u003cNode Name\u003e": {
+            "Name": "\u003cNode Name\u003e",
+            "kind": "argument",
+            "description": "Node Name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cNode Name\u003e"
+        ]
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List nodes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--no-headers": {
+            "Name": "--no-headers",
+            "kind": "option",
+            "description": "Don't print headers (default print headers)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--output": {
+            "Name": "--output",
+            "kind": "option",
+            "description": "Output format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003coutput\u003e": {
+                "Name": "\u003coutput\u003e",
+                "kind": "argument",
+                "description": "output",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003coutput\u003e": {
+                "Name": "\u003coutput\u003e",
+                "kind": "argument",
+                "description": "output",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003coutput\u003e"
+            ]
+          },
+          "-o": {
+            "Name": "-o",
+            "kind": "option",
+            "description": "Output format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003coutput\u003e": {
+                "Name": "\u003coutput\u003e",
+                "kind": "argument",
+                "description": "output",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003coutput\u003e": {
+                "Name": "\u003coutput\u003e",
+                "kind": "argument",
+                "description": "output",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003coutput\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--no-headers": {
+            "Name": "--no-headers",
+            "kind": "option",
+            "description": "Don't print headers (default print headers)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--output": {
+            "Name": "--output",
+            "kind": "option",
+            "description": "Output format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003coutput\u003e": {
+                "Name": "\u003coutput\u003e",
+                "kind": "argument",
+                "description": "output",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003coutput\u003e": {
+                "Name": "\u003coutput\u003e",
+                "kind": "argument",
+                "description": "output",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003coutput\u003e"
+            ]
+          },
+          "-o": {
+            "Name": "-o",
+            "kind": "option",
+            "description": "Output format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003coutput\u003e": {
+                "Name": "\u003coutput\u003e",
+                "kind": "argument",
+                "description": "output",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003coutput\u003e": {
+                "Name": "\u003coutput\u003e",
+                "kind": "argument",
+                "description": "output",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003coutput\u003e"
+            ]
+          }
+        }
+      },
+      "start": {
+        "Name": "start",
+        "kind": "subcommand",
+        "description": "Start a node",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cNode Name\u003e": {
+            "Name": "\u003cNode Name\u003e",
+            "kind": "argument",
+            "description": "Node Name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cNode Name\u003e": {
+            "Name": "\u003cNode Name\u003e",
+            "kind": "argument",
+            "description": "Node Name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cNode Name\u003e"
+        ]
+      },
+      "stop": {
+        "Name": "stop",
+        "kind": "subcommand",
+        "description": "Stop a node",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cNode Name\u003e": {
+            "Name": "\u003cNode Name\u003e",
+            "kind": "argument",
+            "description": "Node Name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cNode Name\u003e": {
+            "Name": "\u003cNode Name\u003e",
+            "kind": "argument",
+            "description": "Node Name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cNode Name\u003e"
+        ]
+      }
+    }
+  },
+  "registry": {
+    "Name": "registry",
+    "kind": "subcommand",
+    "description": "Manage registry/registries",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "create": {
+        "Name": "create",
+        "kind": "subcommand",
+        "description": "Create a new registry",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--default-network": {
+            "Name": "--default-network",
+            "kind": "option",
+            "description": "Specify the network connected to the registry (default \"bridge\")",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--image": {
+            "Name": "--image",
+            "kind": "option",
+            "description": "Specify image used for the registry (default \"docker.io/library/registry:2\")",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cimage\u003e": {
+                "Name": "\u003cimage\u003e",
+                "kind": "argument",
+                "description": "image",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cimage\u003e": {
+                "Name": "\u003cimage\u003e",
+                "kind": "argument",
+                "description": "image",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cimage\u003e"
+            ]
+          },
+          "--no-help": {
+            "Name": "--no-help",
+            "kind": "option",
+            "description": "Disable the help text (How-To use the registry)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--port": {
+            "Name": "--port",
+            "kind": "option",
+            "description": "Select which port the registry should be listening on your machine (localhost) (Format: [HOST:]HOSTPORT)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cport\u003e": {
+                "Name": "\u003cport\u003e",
+                "kind": "argument",
+                "description": "port",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cport\u003e": {
+                "Name": "\u003cport\u003e",
+                "kind": "argument",
+                "description": "port",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cport\u003e"
+            ]
+          },
+          "--proxy-password": {
+            "Name": "--proxy-password",
+            "kind": "option",
+            "description": "Specify the password of the proxied remote registry",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cproxy-password\u003e": {
+                "Name": "\u003cproxy-password\u003e",
+                "kind": "argument",
+                "description": "proxy-password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cproxy-password\u003e": {
+                "Name": "\u003cproxy-password\u003e",
+                "kind": "argument",
+                "description": "proxy-password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cproxy-password\u003e"
+            ]
+          },
+          "--proxy-remote-url": {
+            "Name": "--proxy-remote-url",
+            "kind": "option",
+            "description": "Specify the url of the proxied remote registry",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cproxy-remote-url\u003e": {
+                "Name": "\u003cproxy-remote-url\u003e",
+                "kind": "argument",
+                "description": "proxy-remote-url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cproxy-remote-url\u003e": {
+                "Name": "\u003cproxy-remote-url\u003e",
+                "kind": "argument",
+                "description": "proxy-remote-url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cproxy-remote-url\u003e"
+            ]
+          },
+          "--proxy-username": {
+            "Name": "--proxy-username",
+            "kind": "option",
+            "description": "Specify the username of the proxied remote registry",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cproxy-username\u003e": {
+                "Name": "\u003cproxy-username\u003e",
+                "kind": "argument",
+                "description": "proxy-username",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cproxy-username\u003e": {
+                "Name": "\u003cproxy-username\u003e",
+                "kind": "argument",
+                "description": "proxy-username",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cproxy-username\u003e"
+            ]
+          },
+          "--volume": {
+            "Name": "--volume",
+            "kind": "option",
+            "description": "Mount volumes into the registry node (Format: [SOURCE:]DEST",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cvolume\u003e": {
+                "Name": "\u003cvolume\u003e",
+                "kind": "argument",
+                "description": "volume",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cvolume\u003e": {
+                "Name": "\u003cvolume\u003e",
+                "kind": "argument",
+                "description": "volume",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cvolume\u003e"
+            ]
+          },
+          "-i": {
+            "Name": "-i",
+            "kind": "option",
+            "description": "Specify image used for the registry (default \"docker.io/library/registry:2\")",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cimage\u003e": {
+                "Name": "\u003cimage\u003e",
+                "kind": "argument",
+                "description": "image",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cimage\u003e": {
+                "Name": "\u003cimage\u003e",
+                "kind": "argument",
+                "description": "image",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cimage\u003e"
+            ]
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Select which port the registry should be listening on your machine (localhost) (Format: [HOST:]HOSTPORT)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cport\u003e": {
+                "Name": "\u003cport\u003e",
+                "kind": "argument",
+                "description": "port",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cport\u003e": {
+                "Name": "\u003cport\u003e",
+                "kind": "argument",
+                "description": "port",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cport\u003e"
+            ]
+          },
+          "-v": {
+            "Name": "-v",
+            "kind": "option",
+            "description": "Mount volumes into the registry node (Format: [SOURCE:]DEST",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cvolume\u003e": {
+                "Name": "\u003cvolume\u003e",
+                "kind": "argument",
+                "description": "volume",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cvolume\u003e": {
+                "Name": "\u003cvolume\u003e",
+                "kind": "argument",
+                "description": "volume",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cvolume\u003e"
+            ]
+          },
+          "\u003cRegistry Name\u003e": {
+            "Name": "\u003cRegistry Name\u003e",
+            "kind": "argument",
+            "description": "Registry Name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--default-network": {
+            "Name": "--default-network",
+            "kind": "option",
+            "description": "Specify the network connected to the registry (default \"bridge\")",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--image": {
+            "Name": "--image",
+            "kind": "option",
+            "description": "Specify image used for the registry (default \"docker.io/library/registry:2\")",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cimage\u003e": {
+                "Name": "\u003cimage\u003e",
+                "kind": "argument",
+                "description": "image",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cimage\u003e": {
+                "Name": "\u003cimage\u003e",
+                "kind": "argument",
+                "description": "image",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cimage\u003e"
+            ]
+          },
+          "--no-help": {
+            "Name": "--no-help",
+            "kind": "option",
+            "description": "Disable the help text (How-To use the registry)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--port": {
+            "Name": "--port",
+            "kind": "option",
+            "description": "Select which port the registry should be listening on your machine (localhost) (Format: [HOST:]HOSTPORT)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cport\u003e": {
+                "Name": "\u003cport\u003e",
+                "kind": "argument",
+                "description": "port",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cport\u003e": {
+                "Name": "\u003cport\u003e",
+                "kind": "argument",
+                "description": "port",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cport\u003e"
+            ]
+          },
+          "--proxy-password": {
+            "Name": "--proxy-password",
+            "kind": "option",
+            "description": "Specify the password of the proxied remote registry",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cproxy-password\u003e": {
+                "Name": "\u003cproxy-password\u003e",
+                "kind": "argument",
+                "description": "proxy-password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cproxy-password\u003e": {
+                "Name": "\u003cproxy-password\u003e",
+                "kind": "argument",
+                "description": "proxy-password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cproxy-password\u003e"
+            ]
+          },
+          "--proxy-remote-url": {
+            "Name": "--proxy-remote-url",
+            "kind": "option",
+            "description": "Specify the url of the proxied remote registry",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cproxy-remote-url\u003e": {
+                "Name": "\u003cproxy-remote-url\u003e",
+                "kind": "argument",
+                "description": "proxy-remote-url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cproxy-remote-url\u003e": {
+                "Name": "\u003cproxy-remote-url\u003e",
+                "kind": "argument",
+                "description": "proxy-remote-url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cproxy-remote-url\u003e"
+            ]
+          },
+          "--proxy-username": {
+            "Name": "--proxy-username",
+            "kind": "option",
+            "description": "Specify the username of the proxied remote registry",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cproxy-username\u003e": {
+                "Name": "\u003cproxy-username\u003e",
+                "kind": "argument",
+                "description": "proxy-username",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cproxy-username\u003e": {
+                "Name": "\u003cproxy-username\u003e",
+                "kind": "argument",
+                "description": "proxy-username",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cproxy-username\u003e"
+            ]
+          },
+          "--volume": {
+            "Name": "--volume",
+            "kind": "option",
+            "description": "Mount volumes into the registry node (Format: [SOURCE:]DEST",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cvolume\u003e": {
+                "Name": "\u003cvolume\u003e",
+                "kind": "argument",
+                "description": "volume",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cvolume\u003e": {
+                "Name": "\u003cvolume\u003e",
+                "kind": "argument",
+                "description": "volume",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cvolume\u003e"
+            ]
+          },
+          "-i": {
+            "Name": "-i",
+            "kind": "option",
+            "description": "Specify image used for the registry (default \"docker.io/library/registry:2\")",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cimage\u003e": {
+                "Name": "\u003cimage\u003e",
+                "kind": "argument",
+                "description": "image",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cimage\u003e": {
+                "Name": "\u003cimage\u003e",
+                "kind": "argument",
+                "description": "image",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cimage\u003e"
+            ]
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Select which port the registry should be listening on your machine (localhost) (Format: [HOST:]HOSTPORT)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cport\u003e": {
+                "Name": "\u003cport\u003e",
+                "kind": "argument",
+                "description": "port",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cport\u003e": {
+                "Name": "\u003cport\u003e",
+                "kind": "argument",
+                "description": "port",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cport\u003e"
+            ]
+          },
+          "-v": {
+            "Name": "-v",
+            "kind": "option",
+            "description": "Mount volumes into the registry node (Format: [SOURCE:]DEST",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cvolume\u003e": {
+                "Name": "\u003cvolume\u003e",
+                "kind": "argument",
+                "description": "volume",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cvolume\u003e": {
+                "Name": "\u003cvolume\u003e",
+                "kind": "argument",
+                "description": "volume",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cvolume\u003e"
+            ]
+          },
+          "\u003cRegistry Name\u003e": {
+            "Name": "\u003cRegistry Name\u003e",
+            "kind": "argument",
+            "description": "Registry Name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cRegistry Name\u003e"
+        ]
+      },
+      "delete": {
+        "Name": "delete",
+        "kind": "subcommand",
+        "description": "Delete registry/registries",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-a": {
+            "Name": "-a",
+            "kind": "option",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cRegistry Name\u003e": {
+            "Name": "\u003cRegistry Name\u003e",
+            "kind": "argument",
+            "description": "Registry Name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-a": {
+            "Name": "-a",
+            "kind": "option",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cRegistry Name\u003e": {
+            "Name": "\u003cRegistry Name\u003e",
+            "kind": "argument",
+            "description": "Registry Name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cRegistry Name\u003e"
+        ]
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List registries",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--no-headers": {
+            "Name": "--no-headers",
+            "kind": "option",
+            "description": "Don't print headers (default print headers)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--output": {
+            "Name": "--output",
+            "kind": "option",
+            "description": "Output format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003coutput\u003e": {
+                "Name": "\u003coutput\u003e",
+                "kind": "argument",
+                "description": "output",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003coutput\u003e": {
+                "Name": "\u003coutput\u003e",
+                "kind": "argument",
+                "description": "output",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003coutput\u003e"
+            ]
+          },
+          "-o": {
+            "Name": "-o",
+            "kind": "option",
+            "description": "Output format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003coutput\u003e": {
+                "Name": "\u003coutput\u003e",
+                "kind": "argument",
+                "description": "output",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003coutput\u003e": {
+                "Name": "\u003coutput\u003e",
+                "kind": "argument",
+                "description": "output",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003coutput\u003e"
+            ]
+          },
+          "\u003cRegistry Name\u003e": {
+            "Name": "\u003cRegistry Name\u003e",
+            "kind": "argument",
+            "description": "Registry Name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--no-headers": {
+            "Name": "--no-headers",
+            "kind": "option",
+            "description": "Don't print headers (default print headers)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--output": {
+            "Name": "--output",
+            "kind": "option",
+            "description": "Output format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003coutput\u003e": {
+                "Name": "\u003coutput\u003e",
+                "kind": "argument",
+                "description": "output",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003coutput\u003e": {
+                "Name": "\u003coutput\u003e",
+                "kind": "argument",
+                "description": "output",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003coutput\u003e"
+            ]
+          },
+          "-o": {
+            "Name": "-o",
+            "kind": "option",
+            "description": "Output format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003coutput\u003e": {
+                "Name": "\u003coutput\u003e",
+                "kind": "argument",
+                "description": "output",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003coutput\u003e": {
+                "Name": "\u003coutput\u003e",
+                "kind": "argument",
+                "description": "output",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003coutput\u003e"
+            ]
+          },
+          "\u003cRegistry Name\u003e": {
+            "Name": "\u003cRegistry Name\u003e",
+            "kind": "argument",
+            "description": "Registry Name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      }
+    }
+  },
+  "version": {
+    "Name": "version",
+    "kind": "subcommand",
+    "description": "Show k3d and default k3s version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

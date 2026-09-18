@@ -1,0 +1,240 @@
+{
+  "--any-branch": {
+    "Name": "--any-branch",
+    "kind": "option",
+    "description": "Allow publishing from any branch",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--branch": {
+    "Name": "--branch",
+    "kind": "option",
+    "description": "Name of the release branch (default: main | master)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cbranch\u003e": {
+        "Name": "\u003cbranch\u003e",
+        "kind": "argument",
+        "description": "branch",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cbranch\u003e": {
+        "Name": "\u003cbranch\u003e",
+        "kind": "argument",
+        "description": "branch",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cbranch\u003e"
+    ]
+  },
+  "--contents": {
+    "Name": "--contents",
+    "kind": "option",
+    "description": "Subdirectory to publish",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdirectory\u003e"
+    ]
+  },
+  "--message": {
+    "Name": "--message",
+    "kind": "option",
+    "description": "Version bump commit message. `%s` will be replaced with version. (default: '%s' with npm and 'v%s' with yarn)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmessage\u003e": {
+        "Name": "\u003cmessage\u003e",
+        "kind": "argument",
+        "description": "message",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmessage\u003e": {
+        "Name": "\u003cmessage\u003e",
+        "kind": "argument",
+        "description": "message",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmessage\u003e"
+    ]
+  },
+  "--no-2fa": {
+    "Name": "--no-2fa",
+    "kind": "option",
+    "description": "Don't enable 2FA on new packages (not recommended)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-cleanup": {
+    "Name": "--no-cleanup",
+    "kind": "option",
+    "description": "Skips cleanup of node_modules",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-publish": {
+    "Name": "--no-publish",
+    "kind": "option",
+    "description": "Skips publishing",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-release-draft": {
+    "Name": "--no-release-draft",
+    "kind": "option",
+    "description": "Skips opening a GitHub release draft",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-tests": {
+    "Name": "--no-tests",
+    "kind": "option",
+    "description": "Skips tests",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-yarn": {
+    "Name": "--no-yarn",
+    "kind": "option",
+    "description": "Don't use Yarn",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--preview": {
+    "Name": "--preview",
+    "kind": "option",
+    "description": "Show tasks without actually executing them",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--release-draft-only": {
+    "Name": "--release-draft-only",
+    "kind": "option",
+    "description": "Only opens a GitHub release draft",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--tag": {
+    "Name": "--tag",
+    "kind": "option",
+    "description": "Publish under a given dist-tag",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctag\u003e": {
+        "Name": "\u003ctag\u003e",
+        "kind": "argument",
+        "description": "tag",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctag\u003e": {
+        "Name": "\u003ctag\u003e",
+        "kind": "argument",
+        "description": "tag",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctag\u003e"
+    ]
+  },
+  "--test-script": {
+    "Name": "--test-script",
+    "kind": "option",
+    "description": "Name of npm run script to run tests before publishing (default: test)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cscript\u003e": {
+        "Name": "\u003cscript\u003e",
+        "kind": "argument",
+        "description": "script",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cscript\u003e": {
+        "Name": "\u003cscript\u003e",
+        "kind": "argument",
+        "description": "script",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cscript\u003e"
+    ]
+  },
+  "--yolo": {
+    "Name": "--yolo",
+    "kind": "option",
+    "description": "Skips cleanup and testing",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003cversion\u003e": {
+    "Name": "\u003cversion\u003e",
+    "kind": "argument",
+    "description": "version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

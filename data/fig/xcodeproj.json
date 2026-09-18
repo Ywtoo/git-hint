@@ -1,0 +1,465 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help banner of specified command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-ansi": {
+    "Name": "--no-ansi",
+    "kind": "option",
+    "description": "Show output without ANSI codes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Show more debugging information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Show the version of the tool",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "config-dump": {
+    "Name": "config-dump",
+    "kind": "subcommand",
+    "description": "Dumps the build settings of all project targets for all configurations in directories named by the target in the given output directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cOUTPUT\u003e": {
+        "Name": "\u003cOUTPUT\u003e",
+        "kind": "argument",
+        "description": "OUTPUT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cPROJECT\u003e": {
+        "Name": "\u003cPROJECT\u003e",
+        "kind": "argument",
+        "description": "PROJECT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cOUTPUT\u003e": {
+        "Name": "\u003cOUTPUT\u003e",
+        "kind": "argument",
+        "description": "OUTPUT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cPROJECT\u003e": {
+        "Name": "\u003cPROJECT\u003e",
+        "kind": "argument",
+        "description": "PROJECT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "project-diff": {
+    "Name": "project-diff",
+    "kind": "subcommand",
+    "description": "Shows the difference between two projects",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--ignore": {
+        "Name": "--ignore",
+        "kind": "option",
+        "description": "A key to ignore in the comparison. Can be specified multiple times",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cKEY\u003e": {
+            "Name": "\u003cKEY\u003e",
+            "kind": "argument",
+            "description": "KEY",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cKEY\u003e": {
+            "Name": "\u003cKEY\u003e",
+            "kind": "argument",
+            "description": "KEY",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cKEY\u003e"
+        ]
+      },
+      "\u003cPROJECT1\u003e": {
+        "Name": "\u003cPROJECT1\u003e",
+        "kind": "argument",
+        "description": "PROJECT1",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cPROJECT2\u003e": {
+        "Name": "\u003cPROJECT2\u003e",
+        "kind": "argument",
+        "description": "PROJECT2",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--ignore": {
+        "Name": "--ignore",
+        "kind": "option",
+        "description": "A key to ignore in the comparison. Can be specified multiple times",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cKEY\u003e": {
+            "Name": "\u003cKEY\u003e",
+            "kind": "argument",
+            "description": "KEY",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cKEY\u003e": {
+            "Name": "\u003cKEY\u003e",
+            "kind": "argument",
+            "description": "KEY",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cKEY\u003e"
+        ]
+      },
+      "\u003cPROJECT1\u003e": {
+        "Name": "\u003cPROJECT1\u003e",
+        "kind": "argument",
+        "description": "PROJECT1",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cPROJECT2\u003e": {
+        "Name": "\u003cPROJECT2\u003e",
+        "kind": "argument",
+        "description": "PROJECT2",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPROJECT1\u003e",
+      "\u003cPROJECT2\u003e"
+    ]
+  },
+  "show": {
+    "Name": "show",
+    "kind": "subcommand",
+    "description": "Shows an overview of a project in a YAML representation",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "YAML output format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cFORMAT\u003e": {
+            "Name": "\u003cFORMAT\u003e",
+            "kind": "argument",
+            "description": "FORMAT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cFORMAT\u003e": {
+            "Name": "\u003cFORMAT\u003e",
+            "kind": "argument",
+            "description": "FORMAT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cFORMAT\u003e"
+        ]
+      },
+      "\u003cPROJECT\u003e": {
+        "Name": "\u003cPROJECT\u003e",
+        "kind": "argument",
+        "description": "PROJECT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "YAML output format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cFORMAT\u003e": {
+            "Name": "\u003cFORMAT\u003e",
+            "kind": "argument",
+            "description": "FORMAT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cFORMAT\u003e": {
+            "Name": "\u003cFORMAT\u003e",
+            "kind": "argument",
+            "description": "FORMAT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cFORMAT\u003e"
+        ]
+      },
+      "\u003cPROJECT\u003e": {
+        "Name": "\u003cPROJECT\u003e",
+        "kind": "argument",
+        "description": "PROJECT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "sort": {
+    "Name": "sort",
+    "kind": "subcommand",
+    "description": "Sorts the given project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--group-option": {
+        "Name": "--group-option",
+        "kind": "option",
+        "description": "The position of the groups when sorting. If no option is specified sorting will interleave groups and files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cPOSITION\u003e": {
+            "Name": "\u003cPOSITION\u003e",
+            "kind": "argument",
+            "description": "POSITION",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cPOSITION\u003e": {
+            "Name": "\u003cPOSITION\u003e",
+            "kind": "argument",
+            "description": "POSITION",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cPOSITION\u003e"
+        ]
+      },
+      "\u003cPROJECT\u003e": {
+        "Name": "\u003cPROJECT\u003e",
+        "kind": "argument",
+        "description": "PROJECT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--group-option": {
+        "Name": "--group-option",
+        "kind": "option",
+        "description": "The position of the groups when sorting. If no option is specified sorting will interleave groups and files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cPOSITION\u003e": {
+            "Name": "\u003cPOSITION\u003e",
+            "kind": "argument",
+            "description": "POSITION",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cPOSITION\u003e": {
+            "Name": "\u003cPOSITION\u003e",
+            "kind": "argument",
+            "description": "POSITION",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cPOSITION\u003e"
+        ]
+      },
+      "\u003cPROJECT\u003e": {
+        "Name": "\u003cPROJECT\u003e",
+        "kind": "argument",
+        "description": "PROJECT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "target-diff": {
+    "Name": "target-diff",
+    "kind": "subcommand",
+    "description": "Shows the difference between two targets",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--project": {
+        "Name": "--project",
+        "kind": "option",
+        "description": "The Xcode project document to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cPATH\u003e": {
+            "Name": "\u003cPATH\u003e",
+            "kind": "argument",
+            "description": "PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cPATH\u003e": {
+            "Name": "\u003cPATH\u003e",
+            "kind": "argument",
+            "description": "PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cPATH\u003e"
+        ]
+      },
+      "\u003cTARGET1\u003e": {
+        "Name": "\u003cTARGET1\u003e",
+        "kind": "argument",
+        "description": "TARGET1",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cTARGET2\u003e": {
+        "Name": "\u003cTARGET2\u003e",
+        "kind": "argument",
+        "description": "TARGET2",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--project": {
+        "Name": "--project",
+        "kind": "option",
+        "description": "The Xcode project document to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cPATH\u003e": {
+            "Name": "\u003cPATH\u003e",
+            "kind": "argument",
+            "description": "PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cPATH\u003e": {
+            "Name": "\u003cPATH\u003e",
+            "kind": "argument",
+            "description": "PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cPATH\u003e"
+        ]
+      },
+      "\u003cTARGET1\u003e": {
+        "Name": "\u003cTARGET1\u003e",
+        "kind": "argument",
+        "description": "TARGET1",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cTARGET2\u003e": {
+        "Name": "\u003cTARGET2\u003e",
+        "kind": "argument",
+        "description": "TARGET2",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cTARGET1\u003e",
+      "\u003cTARGET2\u003e"
+    ]
+  }
+}

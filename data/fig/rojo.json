@@ -1,0 +1,868 @@
+{
+  "--color": {
+    "Name": "--color",
+    "kind": "option",
+    "description": "Set color behavior. Valid values are auto, always, and never [default: auto]",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cCOLOR\u003e": {
+        "Name": "\u003cCOLOR\u003e",
+        "kind": "argument",
+        "description": "COLOR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cCOLOR\u003e": {
+        "Name": "\u003cCOLOR\u003e",
+        "kind": "argument",
+        "description": "COLOR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cCOLOR\u003e"
+    ]
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Print help information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Sets verbosity level. Can be specified multiple times",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Print version information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-V": {
+    "Name": "-V",
+    "kind": "option",
+    "description": "Print version information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Print help information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Sets verbosity level. Can be specified multiple times",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "build": {
+    "Name": "build",
+    "kind": "subcommand",
+    "description": "Generates a model or place file from the Rojo project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--output": {
+        "Name": "--output",
+        "kind": "option",
+        "description": "Where to output the result. Should end in .rbxm, .rbxl, .rbxmx, or .rbxlx",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cOUTPUT\u003e": {
+            "Name": "\u003cOUTPUT\u003e",
+            "kind": "argument",
+            "description": "OUTPUT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cOUTPUT\u003e": {
+            "Name": "\u003cOUTPUT\u003e",
+            "kind": "argument",
+            "description": "OUTPUT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cOUTPUT\u003e"
+        ]
+      },
+      "--watch": {
+        "Name": "--watch",
+        "kind": "option",
+        "description": "Whether to automatically rebuild when any input files change",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Where to output the result. Should end in .rbxm, .rbxl, .rbxmx, or .rbxlx",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cOUTPUT\u003e": {
+            "Name": "\u003cOUTPUT\u003e",
+            "kind": "argument",
+            "description": "OUTPUT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cOUTPUT\u003e": {
+            "Name": "\u003cOUTPUT\u003e",
+            "kind": "argument",
+            "description": "OUTPUT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cOUTPUT\u003e"
+        ]
+      },
+      "\u003cPROJECT\u003e": {
+        "Name": "\u003cPROJECT\u003e",
+        "kind": "argument",
+        "description": "PROJECT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--output": {
+        "Name": "--output",
+        "kind": "option",
+        "description": "Where to output the result. Should end in .rbxm, .rbxl, .rbxmx, or .rbxlx",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cOUTPUT\u003e": {
+            "Name": "\u003cOUTPUT\u003e",
+            "kind": "argument",
+            "description": "OUTPUT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cOUTPUT\u003e": {
+            "Name": "\u003cOUTPUT\u003e",
+            "kind": "argument",
+            "description": "OUTPUT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cOUTPUT\u003e"
+        ]
+      },
+      "--watch": {
+        "Name": "--watch",
+        "kind": "option",
+        "description": "Whether to automatically rebuild when any input files change",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Where to output the result. Should end in .rbxm, .rbxl, .rbxmx, or .rbxlx",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cOUTPUT\u003e": {
+            "Name": "\u003cOUTPUT\u003e",
+            "kind": "argument",
+            "description": "OUTPUT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cOUTPUT\u003e": {
+            "Name": "\u003cOUTPUT\u003e",
+            "kind": "argument",
+            "description": "OUTPUT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cOUTPUT\u003e"
+        ]
+      },
+      "\u003cPROJECT\u003e": {
+        "Name": "\u003cPROJECT\u003e",
+        "kind": "argument",
+        "description": "PROJECT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPROJECT\u003e"
+    ]
+  },
+  "doc": {
+    "Name": "doc",
+    "kind": "subcommand",
+    "description": "Open Rojo's documentation in your browser",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "fmt-project": {
+    "Name": "fmt-project",
+    "kind": "subcommand",
+    "description": "Reformat a Rojo project using the standard JSON formatting rules",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPROJECT\u003e": {
+        "Name": "\u003cPROJECT\u003e",
+        "kind": "argument",
+        "description": "PROJECT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPROJECT\u003e": {
+        "Name": "\u003cPROJECT\u003e",
+        "kind": "argument",
+        "description": "PROJECT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPROJECT\u003e"
+    ]
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Print this message or the help of the given subcommand(s)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSUBCOMMAND\u003e": {
+        "Name": "\u003cSUBCOMMAND\u003e",
+        "kind": "argument",
+        "description": "SUBCOMMAND",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSUBCOMMAND\u003e": {
+        "Name": "\u003cSUBCOMMAND\u003e",
+        "kind": "argument",
+        "description": "SUBCOMMAND",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSUBCOMMAND\u003e"
+    ]
+  },
+  "init": {
+    "Name": "init",
+    "kind": "subcommand",
+    "description": "Initializes a new Rojo project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--kind": {
+        "Name": "--kind",
+        "kind": "option",
+        "description": "The kind of project to create, 'place' or 'model'. Defaults to place",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cKIND\u003e": {
+            "Name": "\u003cKIND\u003e",
+            "kind": "argument",
+            "description": "KIND",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cKIND\u003e": {
+            "Name": "\u003cKIND\u003e",
+            "kind": "argument",
+            "description": "KIND",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cKIND\u003e"
+        ]
+      },
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--kind": {
+        "Name": "--kind",
+        "kind": "option",
+        "description": "The kind of project to create, 'place' or 'model'. Defaults to place",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cKIND\u003e": {
+            "Name": "\u003cKIND\u003e",
+            "kind": "argument",
+            "description": "KIND",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cKIND\u003e": {
+            "Name": "\u003cKIND\u003e",
+            "kind": "argument",
+            "description": "KIND",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cKIND\u003e"
+        ]
+      },
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH\u003e"
+    ]
+  },
+  "plugin": {
+    "Name": "plugin",
+    "kind": "subcommand",
+    "description": "Install Rojo's plugin",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "serve": {
+    "Name": "serve",
+    "kind": "subcommand",
+    "description": "Expose a Rojo project to the Rojo Studio plugin",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "address": {
+        "Name": "address",
+        "kind": "option",
+        "description": "The IP address to listen on. Defaults to `127.0.0.1`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cADDRESS\u003e": {
+            "Name": "\u003cADDRESS\u003e",
+            "kind": "argument",
+            "description": "ADDRESS",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cADDRESS\u003e": {
+            "Name": "\u003cADDRESS\u003e",
+            "kind": "argument",
+            "description": "ADDRESS",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cADDRESS\u003e"
+        ]
+      }
+    }
+  },
+  "sourcemap": {
+    "Name": "sourcemap",
+    "kind": "subcommand",
+    "description": "Generates a sourcemap file from the Rojo project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--include-non-scripts": {
+        "Name": "--include-non-scripts",
+        "kind": "option",
+        "description": "If non-script files should be included or not. Defaults to false",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output": {
+        "Name": "--output",
+        "kind": "option",
+        "description": "Where to output the sourcemap. Omit this to use stdout instead of writing to a file. Should end in .json",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cOUTPUT\u003e": {
+            "Name": "\u003cOUTPUT\u003e",
+            "kind": "argument",
+            "description": "OUTPUT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cOUTPUT\u003e": {
+            "Name": "\u003cOUTPUT\u003e",
+            "kind": "argument",
+            "description": "OUTPUT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cOUTPUT\u003e"
+        ]
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Where to output the sourcemap. Omit this to use stdout instead of writing to a file. Should end in .json",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cOUTPUT\u003e": {
+            "Name": "\u003cOUTPUT\u003e",
+            "kind": "argument",
+            "description": "OUTPUT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cOUTPUT\u003e": {
+            "Name": "\u003cOUTPUT\u003e",
+            "kind": "argument",
+            "description": "OUTPUT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cOUTPUT\u003e"
+        ]
+      },
+      "\u003cPROJECT\u003e": {
+        "Name": "\u003cPROJECT\u003e",
+        "kind": "argument",
+        "description": "PROJECT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--include-non-scripts": {
+        "Name": "--include-non-scripts",
+        "kind": "option",
+        "description": "If non-script files should be included or not. Defaults to false",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output": {
+        "Name": "--output",
+        "kind": "option",
+        "description": "Where to output the sourcemap. Omit this to use stdout instead of writing to a file. Should end in .json",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cOUTPUT\u003e": {
+            "Name": "\u003cOUTPUT\u003e",
+            "kind": "argument",
+            "description": "OUTPUT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cOUTPUT\u003e": {
+            "Name": "\u003cOUTPUT\u003e",
+            "kind": "argument",
+            "description": "OUTPUT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cOUTPUT\u003e"
+        ]
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Where to output the sourcemap. Omit this to use stdout instead of writing to a file. Should end in .json",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cOUTPUT\u003e": {
+            "Name": "\u003cOUTPUT\u003e",
+            "kind": "argument",
+            "description": "OUTPUT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cOUTPUT\u003e": {
+            "Name": "\u003cOUTPUT\u003e",
+            "kind": "argument",
+            "description": "OUTPUT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cOUTPUT\u003e"
+        ]
+      },
+      "\u003cPROJECT\u003e": {
+        "Name": "\u003cPROJECT\u003e",
+        "kind": "argument",
+        "description": "PROJECT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPROJECT\u003e"
+    ]
+  },
+  "upload": {
+    "Name": "upload",
+    "kind": "subcommand",
+    "description": "Builds the project and uploads it to Roblox",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--api-key": {
+        "Name": "--api-key",
+        "kind": "option",
+        "description": "API key obtained from create.roblox.com/credentials. Rojo will use the Open Cloud API when this is provided. Only supports uploading to a place",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cAPI_KEY\u003e": {
+            "Name": "\u003cAPI_KEY\u003e",
+            "kind": "argument",
+            "description": "API_KEY",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cAPI_KEY\u003e": {
+            "Name": "\u003cAPI_KEY\u003e",
+            "kind": "argument",
+            "description": "API_KEY",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cAPI_KEY\u003e"
+        ]
+      },
+      "--asset_id": {
+        "Name": "--asset_id",
+        "kind": "option",
+        "description": "Asset ID to upload to",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cASSET_ID\u003e": {
+            "Name": "\u003cASSET_ID\u003e",
+            "kind": "argument",
+            "description": "ASSET_ID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cASSET_ID\u003e": {
+            "Name": "\u003cASSET_ID\u003e",
+            "kind": "argument",
+            "description": "ASSET_ID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cASSET_ID\u003e"
+        ]
+      },
+      "--cookie": {
+        "Name": "--cookie",
+        "kind": "option",
+        "description": "Authenication cookie to use. If not specified, Rojo will attempt to find one from the system automatically",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cCOOKIE\u003e": {
+            "Name": "\u003cCOOKIE\u003e",
+            "kind": "argument",
+            "description": "COOKIE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cCOOKIE\u003e": {
+            "Name": "\u003cCOOKIE\u003e",
+            "kind": "argument",
+            "description": "COOKIE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cCOOKIE\u003e"
+        ]
+      },
+      "--universe_id": {
+        "Name": "--universe_id",
+        "kind": "option",
+        "description": "The Universe ID of the given place. Required when using the Open Cloud API",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cUNIVERSE_ID\u003e": {
+            "Name": "\u003cUNIVERSE_ID\u003e",
+            "kind": "argument",
+            "description": "UNIVERSE_ID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cUNIVERSE_ID\u003e": {
+            "Name": "\u003cUNIVERSE_ID\u003e",
+            "kind": "argument",
+            "description": "UNIVERSE_ID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cUNIVERSE_ID\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--api-key": {
+        "Name": "--api-key",
+        "kind": "option",
+        "description": "API key obtained from create.roblox.com/credentials. Rojo will use the Open Cloud API when this is provided. Only supports uploading to a place",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cAPI_KEY\u003e": {
+            "Name": "\u003cAPI_KEY\u003e",
+            "kind": "argument",
+            "description": "API_KEY",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cAPI_KEY\u003e": {
+            "Name": "\u003cAPI_KEY\u003e",
+            "kind": "argument",
+            "description": "API_KEY",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cAPI_KEY\u003e"
+        ]
+      },
+      "--asset_id": {
+        "Name": "--asset_id",
+        "kind": "option",
+        "description": "Asset ID to upload to",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cASSET_ID\u003e": {
+            "Name": "\u003cASSET_ID\u003e",
+            "kind": "argument",
+            "description": "ASSET_ID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cASSET_ID\u003e": {
+            "Name": "\u003cASSET_ID\u003e",
+            "kind": "argument",
+            "description": "ASSET_ID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cASSET_ID\u003e"
+        ]
+      },
+      "--cookie": {
+        "Name": "--cookie",
+        "kind": "option",
+        "description": "Authenication cookie to use. If not specified, Rojo will attempt to find one from the system automatically",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cCOOKIE\u003e": {
+            "Name": "\u003cCOOKIE\u003e",
+            "kind": "argument",
+            "description": "COOKIE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cCOOKIE\u003e": {
+            "Name": "\u003cCOOKIE\u003e",
+            "kind": "argument",
+            "description": "COOKIE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cCOOKIE\u003e"
+        ]
+      },
+      "--universe_id": {
+        "Name": "--universe_id",
+        "kind": "option",
+        "description": "The Universe ID of the given place. Required when using the Open Cloud API",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cUNIVERSE_ID\u003e": {
+            "Name": "\u003cUNIVERSE_ID\u003e",
+            "kind": "argument",
+            "description": "UNIVERSE_ID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cUNIVERSE_ID\u003e": {
+            "Name": "\u003cUNIVERSE_ID\u003e",
+            "kind": "argument",
+            "description": "UNIVERSE_ID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cUNIVERSE_ID\u003e"
+        ]
+      }
+    }
+  }
+}

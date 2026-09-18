@@ -1,0 +1,506 @@
+{
+  "--args": {
+    "Name": "--args",
+    "kind": "option",
+    "description": "All remaining arguments are passed to the opened application in the argv parameter to main().  These arguments are not opened or interpreted by the open tool",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cArguments\u003e": {
+        "Name": "\u003cArguments\u003e",
+        "kind": "argument",
+        "description": "Arguments",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cArguments\u003e": {
+        "Name": "\u003cArguments\u003e",
+        "kind": "argument",
+        "description": "Arguments",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cArguments\u003e"
+    ]
+  },
+  "--background": {
+    "Name": "--background",
+    "kind": "option",
+    "description": "Do not bring the application to the foreground",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--env": {
+    "Name": "--env",
+    "kind": "option",
+    "description": "Add an enviroment variable to the launched process, where VAR is formatted AAA=foo",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cVAR\u003e": {
+        "Name": "\u003cVAR\u003e",
+        "kind": "argument",
+        "description": "VAR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cVAR\u003e": {
+        "Name": "\u003cVAR\u003e",
+        "kind": "argument",
+        "description": "VAR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cVAR\u003e"
+    ]
+  },
+  "--fresh": {
+    "Name": "--fresh",
+    "kind": "option",
+    "description": "Opens the application without restoring windows",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--header": {
+    "Name": "--header",
+    "kind": "option",
+    "description": "Searches header locations for a header whose name matches the given string and then opens it",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--hide": {
+    "Name": "--hide",
+    "kind": "option",
+    "description": "Launches the app hidden",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--new": {
+    "Name": "--new",
+    "kind": "option",
+    "description": "Open a new instance of the application(s) even if one is already running",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--reveal": {
+    "Name": "--reveal",
+    "kind": "option",
+    "description": "Reveals the file(s) in the Finder instead of opening them",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--stderr": {
+    "Name": "--stderr",
+    "kind": "option",
+    "description": "Launches the application with /dev/stderr connected to PATH",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH\u003e"
+    ]
+  },
+  "--stdin": {
+    "Name": "--stdin",
+    "kind": "option",
+    "description": "Launches the application with stdin connected to PATH; defaults to /dev/null",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH\u003e"
+    ]
+  },
+  "--stdout": {
+    "Name": "--stdout",
+    "kind": "option",
+    "description": "Launches the application with /dev/stdout connected to PATH",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH\u003e"
+    ]
+  },
+  "--url": {
+    "Name": "--url",
+    "kind": "option",
+    "description": "Open this URL, even if it matches exactly a filepath",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cURL\u003e": {
+        "Name": "\u003cURL\u003e",
+        "kind": "argument",
+        "description": "URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cURL\u003e": {
+        "Name": "\u003cURL\u003e",
+        "kind": "argument",
+        "description": "URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cURL\u003e"
+    ]
+  },
+  "--wait-apps": {
+    "Name": "--wait-apps",
+    "kind": "option",
+    "description": "Waits until the applications exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-D": {
+    "Name": "-D",
+    "kind": "option",
+    "description": "Reveals the enclosing folder in finder",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-F": {
+    "Name": "-F",
+    "kind": "option",
+    "description": "Opens the application without restoring windows",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-R": {
+    "Name": "-R",
+    "kind": "option",
+    "description": "Reveals the file(s) in the Finder instead of opening them",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-W": {
+    "Name": "-W",
+    "kind": "option",
+    "description": "Waits until the applications exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-a": {
+    "Name": "-a",
+    "kind": "option",
+    "description": "Specify the application to use for opening the file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cApplication\u003e": {
+        "Name": "\u003cApplication\u003e",
+        "kind": "argument",
+        "description": "Application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cApplication\u003e": {
+        "Name": "\u003cApplication\u003e",
+        "kind": "argument",
+        "description": "Application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cApplication\u003e"
+    ]
+  },
+  "-b": {
+    "Name": "-b",
+    "kind": "option",
+    "description": "Specify the bundle identifier of the app to use to open the file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cBundle Identifier\u003e": {
+        "Name": "\u003cBundle Identifier\u003e",
+        "kind": "argument",
+        "description": "Bundle Identifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cBundle Identifier\u003e": {
+        "Name": "\u003cBundle Identifier\u003e",
+        "kind": "argument",
+        "description": "Bundle Identifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cBundle Identifier\u003e"
+    ]
+  },
+  "-e": {
+    "Name": "-e",
+    "kind": "option",
+    "description": "Opens the file with /Applications/TextEdit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Read input from standard input and open the results in the default text editor",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-g": {
+    "Name": "-g",
+    "kind": "option",
+    "description": "Do not bring the application to the foreground",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Searches header locations for a header whose name matches the given string and then opens it",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Launches the application with stdin connected to PATH; defaults to /dev/null",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH\u003e"
+    ]
+  },
+  "-j": {
+    "Name": "-j",
+    "kind": "option",
+    "description": "Launches the app hidden",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-n": {
+    "Name": "-n",
+    "kind": "option",
+    "description": "Open a new instance of the application(s) even if one is already running",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-o": {
+    "Name": "-o",
+    "kind": "option",
+    "description": "Launches the application with /dev/stdout connected to PATH",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH\u003e"
+    ]
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "For -h, the SDK to use; if supplied, only SDKs whose names contain the argument value are searched",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpartial SDK name\u003e": {
+        "Name": "\u003cpartial SDK name\u003e",
+        "kind": "argument",
+        "description": "partial SDK name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpartial SDK name\u003e": {
+        "Name": "\u003cpartial SDK name\u003e",
+        "kind": "argument",
+        "description": "partial SDK name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpartial SDK name\u003e"
+    ]
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Open the file with the default text editor",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-u": {
+    "Name": "-u",
+    "kind": "option",
+    "description": "Open this URL, even if it matches exactly a filepath",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cURL\u003e": {
+        "Name": "\u003cURL\u003e",
+        "kind": "argument",
+        "description": "URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cURL\u003e": {
+        "Name": "\u003cURL\u003e",
+        "kind": "argument",
+        "description": "URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cURL\u003e"
+    ]
+  }
+}

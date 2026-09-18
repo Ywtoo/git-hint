@@ -1,0 +1,576 @@
+{
+  "--apple-delegate-pid": {
+    "Name": "--apple-delegate-pid",
+    "kind": "option",
+    "description": "Requests that nc should delegate the socket for the specified PID",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--apple-delegate-uuid": {
+    "Name": "--apple-delegate-uuid",
+    "kind": "option",
+    "description": "Requests that nc should delegate the socket for the specified UUID",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--apple-ext-bk-idle": {
+    "Name": "--apple-ext-bk-idle",
+    "kind": "option",
+    "description": "Requests that nc marks its socket for extended background idle time when the process becomes suspended",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--apple-nowakefromsleep": {
+    "Name": "--apple-nowakefromsleep",
+    "kind": "option",
+    "description": "When the parameter n is greater than 0, requests that nc marks its socket to exlude the local port from the list of opened ports that is queried by drivers when the system goes to sleep args",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--ecn": {
+    "Name": "--ecn",
+    "kind": "option",
+    "description": "Requests that nc marks to use the socket option TCP_ECN_MODE to set the ECN mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-4": {
+    "Name": "-4",
+    "kind": "option",
+    "description": "Forces nc to use IPv4 addresses only",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-6": {
+    "Name": "-6",
+    "kind": "option",
+    "description": "Forces nc to use IPv6 addresses only",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-A": {
+    "Name": "-A",
+    "kind": "option",
+    "description": "Set SO_RECV_ANYIF on socket",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-C": {
+    "Name": "-C",
+    "kind": "option",
+    "description": "Force nc not to use cellular data context",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-D": {
+    "Name": "-D",
+    "kind": "option",
+    "description": "Enable debugging on the socket",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-G": {
+    "Name": "-G",
+    "kind": "option",
+    "description": "TCP connection timeout in seconds",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cconntimeout\u003e": {
+        "Name": "\u003cconntimeout\u003e",
+        "kind": "argument",
+        "description": "conntimeout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cconntimeout\u003e": {
+        "Name": "\u003cconntimeout\u003e",
+        "kind": "argument",
+        "description": "conntimeout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cconntimeout\u003e"
+    ]
+  },
+  "-H": {
+    "Name": "-H",
+    "kind": "option",
+    "description": "Initial TCP keep alive timeout in seconds",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckeepidle\u003e": {
+        "Name": "\u003ckeepidle\u003e",
+        "kind": "argument",
+        "description": "keepidle",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckeepidle\u003e": {
+        "Name": "\u003ckeepidle\u003e",
+        "kind": "argument",
+        "description": "keepidle",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ckeepidle\u003e"
+    ]
+  },
+  "-I": {
+    "Name": "-I",
+    "kind": "option",
+    "description": "Interval for repeating TCP keep alive timeout in seconds",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckeepintvl\u003e": {
+        "Name": "\u003ckeepintvl\u003e",
+        "kind": "argument",
+        "description": "keepintvl",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckeepintvl\u003e": {
+        "Name": "\u003ckeepintvl\u003e",
+        "kind": "argument",
+        "description": "keepintvl",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ckeepintvl\u003e"
+    ]
+  },
+  "-J": {
+    "Name": "-J",
+    "kind": "option",
+    "description": "Number of times to repeat TCP keep alive packets",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckeepcnt\u003e": {
+        "Name": "\u003ckeepcnt\u003e",
+        "kind": "argument",
+        "description": "keepcnt",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckeepcnt\u003e": {
+        "Name": "\u003ckeepcnt\u003e",
+        "kind": "argument",
+        "description": "keepcnt",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ckeepcnt\u003e"
+    ]
+  },
+  "-L": {
+    "Name": "-L",
+    "kind": "option",
+    "description": "Number of prbes to send to the peer before declaring that the peer is not reachable",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnum_probes\u003e": {
+        "Name": "\u003cnum_probes\u003e",
+        "kind": "argument",
+        "description": "num_probes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnum_probes\u003e": {
+        "Name": "\u003cnum_probes\u003e",
+        "kind": "argument",
+        "description": "num_probes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnum_probes\u003e"
+    ]
+  },
+  "-U": {
+    "Name": "-U",
+    "kind": "option",
+    "description": "Specifies to use Unix Domain Sockets",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-X": {
+    "Name": "-X",
+    "kind": "option",
+    "description": "Requests that nc should use the specified protocol when talking to the proxy server",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cproxy_version\u003e": {
+        "Name": "\u003cproxy_version\u003e",
+        "kind": "argument",
+        "description": "proxy_version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cproxy_version\u003e": {
+        "Name": "\u003cproxy_version\u003e",
+        "kind": "argument",
+        "description": "proxy_version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cproxy_version\u003e"
+    ]
+  },
+  "-b": {
+    "Name": "-b",
+    "kind": "option",
+    "description": "Specifies the interface to bind the socket to",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cboundif\u003e": {
+        "Name": "\u003cboundif\u003e",
+        "kind": "argument",
+        "description": "boundif",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cboundif\u003e": {
+        "Name": "\u003cboundif\u003e",
+        "kind": "argument",
+        "description": "boundif",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cboundif\u003e"
+    ]
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Send CRLF as line-ending",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Do not attempt to read from stdin",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Prints out nc help",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Specifies a delay time interval between lines of text sent and received",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cinterval\u003e": {
+        "Name": "\u003cinterval\u003e",
+        "kind": "argument",
+        "description": "interval",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cinterval\u003e": {
+        "Name": "\u003cinterval\u003e",
+        "kind": "argument",
+        "description": "interval",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cinterval\u003e"
+    ]
+  },
+  "-k": {
+    "Name": "-k",
+    "kind": "option",
+    "description": "Force nc to stay listening for another connection after its current connection is completed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "option",
+    "description": "Used to specify that nc should listen for an incoming connection rather than initiate a connection to a remote host",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cport\u003e": {
+        "Name": "\u003cport\u003e",
+        "kind": "argument",
+        "description": "port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cport\u003e": {
+        "Name": "\u003cport\u003e",
+        "kind": "argument",
+        "description": "port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cport\u003e"
+    ]
+  },
+  "-n": {
+    "Name": "-n",
+    "kind": "option",
+    "description": "Do not do any DNS or service lookups on any specified addresses, hostnames or ports",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-p": {
+    "Name": "-p",
+    "kind": "option",
+    "description": "Specifies the source port nc should use, subject to privilege restrictions and availability",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csource_port\u003e": {
+        "Name": "\u003csource_port\u003e",
+        "kind": "argument",
+        "description": "source_port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csource_port\u003e": {
+        "Name": "\u003csource_port\u003e",
+        "kind": "argument",
+        "description": "source_port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csource_port\u003e"
+    ]
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "Specifies that source and/or destination ports should be chosen randomly instead of sequentially within a range or in the order that the system assigns them",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Specifies the IP of the interface which is used to send the packets",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csource_ip_address\u003e": {
+        "Name": "\u003csource_ip_address\u003e",
+        "kind": "argument",
+        "description": "source_ip_address",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csource_ip_address\u003e": {
+        "Name": "\u003csource_ip_address\u003e",
+        "kind": "argument",
+        "description": "source_ip_address",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csource_ip_address\u003e"
+    ]
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Causes nc to send RFC 854 DON'T and WON'T responses to RFC 854 DO and WILL requests",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-u": {
+    "Name": "-u",
+    "kind": "option",
+    "description": "Use UDP instead of the default option of TCP",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Have nc give more verbose output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-w": {
+    "Name": "-w",
+    "kind": "option",
+    "description": "If a connection and stdin are idle for more than timeout seconds, then the connection is silently closed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctimeout\u003e": {
+        "Name": "\u003ctimeout\u003e",
+        "kind": "argument",
+        "description": "timeout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctimeout\u003e": {
+        "Name": "\u003ctimeout\u003e",
+        "kind": "argument",
+        "description": "timeout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctimeout\u003e"
+    ]
+  },
+  "-x": {
+    "Name": "-x",
+    "kind": "option",
+    "description": "Requests that nc should connect to hostname using a proxy at proxy_address and port",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cproxy_address[:port]\u003e": {
+        "Name": "\u003cproxy_address[:port]\u003e",
+        "kind": "argument",
+        "description": "proxy_address[:port]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cproxy_address[:port]\u003e": {
+        "Name": "\u003cproxy_address[:port]\u003e",
+        "kind": "argument",
+        "description": "proxy_address[:port]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cproxy_address[:port]\u003e"
+    ]
+  },
+  "-z": {
+    "Name": "-z",
+    "kind": "option",
+    "description": "Specifies that nc should just scan for listening daemons, without sending any data to them",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003chostname\u003e": {
+    "Name": "\u003chostname\u003e",
+    "kind": "argument",
+    "description": "hostname",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  },
+  "\u003cport\u003e": {
+    "Name": "\u003cport\u003e",
+    "kind": "argument",
+    "description": "port",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

@@ -1,0 +1,1284 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help page",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-colors": {
+    "Name": "--no-colors",
+    "kind": "option",
+    "description": "Suppress colored output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Print out the installed version of nvm",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "alias": {
+    "Name": "alias",
+    "kind": "subcommand",
+    "description": "Show all aliases beginning with \u003cpattern\u003e or Set an alias named \u003cname\u003e pointing to \u003cversion\u003e",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpattern or name\u003e": {
+        "Name": "\u003cpattern or name\u003e",
+        "kind": "argument",
+        "description": "pattern or name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpattern or name\u003e": {
+        "Name": "\u003cpattern or name\u003e",
+        "kind": "argument",
+        "description": "pattern or name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpattern or name\u003e"
+    ]
+  },
+  "cache": {
+    "Name": "cache",
+    "kind": "subcommand",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "current": {
+    "Name": "current",
+    "kind": "subcommand",
+    "description": "Display currently activated version of Node",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "deactivate": {
+    "Name": "deactivate",
+    "kind": "subcommand",
+    "description": "Undo effects of `nvm` on current shell",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--silent": {
+        "Name": "--silent",
+        "kind": "option",
+        "description": "Silences stdout/stderr output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--silent": {
+        "Name": "--silent",
+        "kind": "option",
+        "description": "Silences stdout/stderr output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "exec": {
+    "Name": "exec",
+    "kind": "subcommand",
+    "description": "Run \u003ccommand\u003e on \u003cversion\u003e. Uses .nvmrc if available and version is omitted",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--lts": {
+        "Name": "--lts",
+        "kind": "option",
+        "description": "Uses automatic alias for provided LTS line, if available",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cLTS name\u003e": {
+            "Name": "\u003cLTS name\u003e",
+            "kind": "argument",
+            "description": "LTS name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cLTS name\u003e": {
+            "Name": "\u003cLTS name\u003e",
+            "kind": "argument",
+            "description": "LTS name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cLTS name\u003e"
+        ]
+      },
+      "--silent": {
+        "Name": "--silent",
+        "kind": "option",
+        "description": "Silences stdout/stderr output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--lts": {
+        "Name": "--lts",
+        "kind": "option",
+        "description": "Uses automatic alias for provided LTS line, if available",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cLTS name\u003e": {
+            "Name": "\u003cLTS name\u003e",
+            "kind": "argument",
+            "description": "LTS name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cLTS name\u003e": {
+            "Name": "\u003cLTS name\u003e",
+            "kind": "argument",
+            "description": "LTS name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cLTS name\u003e"
+        ]
+      },
+      "--silent": {
+        "Name": "--silent",
+        "kind": "option",
+        "description": "Silences stdout/stderr output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "install": {
+    "Name": "install",
+    "kind": "subcommand",
+    "description": "Download and install a \u003cversion\u003e. Uses .nvmrc if available and version is omitted",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--alias": {
+        "Name": "--alias",
+        "kind": "option",
+        "description": "After installing, set the alias specified to the version specified. (same as: nvm alias \u003cname\u003e \u003cversion\u003e)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "--default": {
+        "Name": "--default",
+        "kind": "option",
+        "description": "After installing, set default alias to the version specified. (same as: nvm alias default \u003cversion\u003e)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--latest-npm": {
+        "Name": "--latest-npm",
+        "kind": "option",
+        "description": "After installing, attempt to upgrade to the latest working npm on the given node version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--lts": {
+        "Name": "--lts",
+        "kind": "option",
+        "description": "When installing, only select from versions for a specific LTS line",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cLTS name\u003e": {
+            "Name": "\u003cLTS name\u003e",
+            "kind": "argument",
+            "description": "LTS name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cLTS name\u003e": {
+            "Name": "\u003cLTS name\u003e",
+            "kind": "argument",
+            "description": "LTS name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cLTS name\u003e"
+        ]
+      },
+      "--no-progress": {
+        "Name": "--no-progress",
+        "kind": "option",
+        "description": "Disable the progress bar on any downloads",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--reinstall-packages-from": {
+        "Name": "--reinstall-packages-from",
+        "kind": "option",
+        "description": "When installing, reinstall packages installed in \u003cversion\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cversion\u003e"
+        ]
+      },
+      "--skip-default-packages": {
+        "Name": "--skip-default-packages",
+        "kind": "option",
+        "description": "When installing, skip the default-packages file if it exists",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Skip binary download, install from source only",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--alias": {
+        "Name": "--alias",
+        "kind": "option",
+        "description": "After installing, set the alias specified to the version specified. (same as: nvm alias \u003cname\u003e \u003cversion\u003e)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "--default": {
+        "Name": "--default",
+        "kind": "option",
+        "description": "After installing, set default alias to the version specified. (same as: nvm alias default \u003cversion\u003e)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--latest-npm": {
+        "Name": "--latest-npm",
+        "kind": "option",
+        "description": "After installing, attempt to upgrade to the latest working npm on the given node version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--lts": {
+        "Name": "--lts",
+        "kind": "option",
+        "description": "When installing, only select from versions for a specific LTS line",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cLTS name\u003e": {
+            "Name": "\u003cLTS name\u003e",
+            "kind": "argument",
+            "description": "LTS name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cLTS name\u003e": {
+            "Name": "\u003cLTS name\u003e",
+            "kind": "argument",
+            "description": "LTS name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cLTS name\u003e"
+        ]
+      },
+      "--no-progress": {
+        "Name": "--no-progress",
+        "kind": "option",
+        "description": "Disable the progress bar on any downloads",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--reinstall-packages-from": {
+        "Name": "--reinstall-packages-from",
+        "kind": "option",
+        "description": "When installing, reinstall packages installed in \u003cversion\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cversion\u003e"
+        ]
+      },
+      "--skip-default-packages": {
+        "Name": "--skip-default-packages",
+        "kind": "option",
+        "description": "When installing, skip the default-packages file if it exists",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Skip binary download, install from source only",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "install-latest-npm": {
+    "Name": "install-latest-npm",
+    "kind": "subcommand",
+    "description": "Attempt to upgrade to the latest working `npm` on the current node version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "ls": {
+    "Name": "ls",
+    "kind": "subcommand",
+    "description": "List installed versions, matching a given \u003cversion\u003e if provided",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--no-alias": {
+        "Name": "--no-alias",
+        "kind": "option",
+        "description": "Suppress `nvm alias` output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-colors": {
+        "Name": "--no-colors",
+        "kind": "option",
+        "description": "Suppress colored output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--no-alias": {
+        "Name": "--no-alias",
+        "kind": "option",
+        "description": "Suppress `nvm alias` output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-colors": {
+        "Name": "--no-colors",
+        "kind": "option",
+        "description": "Suppress colored output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cversion\u003e"
+    ]
+  },
+  "ls-remote": {
+    "Name": "ls-remote",
+    "kind": "subcommand",
+    "description": "List remote versions available for install, matching a given \u003cversion\u003e if provided",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--lts": {
+        "Name": "--lts",
+        "kind": "option",
+        "description": "When listing, only show versions for a specific LTS line",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cLTS name\u003e": {
+            "Name": "\u003cLTS name\u003e",
+            "kind": "argument",
+            "description": "LTS name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cLTS name\u003e": {
+            "Name": "\u003cLTS name\u003e",
+            "kind": "argument",
+            "description": "LTS name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cLTS name\u003e"
+        ]
+      },
+      "--no-colors": {
+        "Name": "--no-colors",
+        "kind": "option",
+        "description": "Suppress colored output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--lts": {
+        "Name": "--lts",
+        "kind": "option",
+        "description": "When listing, only show versions for a specific LTS line",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cLTS name\u003e": {
+            "Name": "\u003cLTS name\u003e",
+            "kind": "argument",
+            "description": "LTS name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cLTS name\u003e": {
+            "Name": "\u003cLTS name\u003e",
+            "kind": "argument",
+            "description": "LTS name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cLTS name\u003e"
+        ]
+      },
+      "--no-colors": {
+        "Name": "--no-colors",
+        "kind": "option",
+        "description": "Suppress colored output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cversion\u003e"
+    ]
+  },
+  "reinstall-packages": {
+    "Name": "reinstall-packages",
+    "kind": "subcommand",
+    "description": "Reinstall global `npm` packages contained in \u003cversion\u003e to current version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cversion\u003e"
+    ]
+  },
+  "run": {
+    "Name": "run",
+    "kind": "subcommand",
+    "description": "Run `node` on \u003cversion\u003e with \u003cargs\u003e as arguments. Uses .nvmrc if available and version is omitted",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--lts": {
+        "Name": "--lts",
+        "kind": "option",
+        "description": "Uses automatic alias for provided LTS line, if available",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cLTS name\u003e": {
+            "Name": "\u003cLTS name\u003e",
+            "kind": "argument",
+            "description": "LTS name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cLTS name\u003e": {
+            "Name": "\u003cLTS name\u003e",
+            "kind": "argument",
+            "description": "LTS name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cLTS name\u003e"
+        ]
+      },
+      "--silent": {
+        "Name": "--silent",
+        "kind": "option",
+        "description": "Silences stdout/stderr output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cargs\u003e": {
+        "Name": "\u003cargs\u003e",
+        "kind": "argument",
+        "description": "args",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--lts": {
+        "Name": "--lts",
+        "kind": "option",
+        "description": "Uses automatic alias for provided LTS line, if available",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cLTS name\u003e": {
+            "Name": "\u003cLTS name\u003e",
+            "kind": "argument",
+            "description": "LTS name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cLTS name\u003e": {
+            "Name": "\u003cLTS name\u003e",
+            "kind": "argument",
+            "description": "LTS name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cLTS name\u003e"
+        ]
+      },
+      "--silent": {
+        "Name": "--silent",
+        "kind": "option",
+        "description": "Silences stdout/stderr output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cargs\u003e": {
+        "Name": "\u003cargs\u003e",
+        "kind": "argument",
+        "description": "args",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cargs\u003e"
+    ]
+  },
+  "set-colors": {
+    "Name": "set-colors",
+    "kind": "subcommand",
+    "description": "Set five text colors using format \"yMeBg\". Available when supported",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccolor codes\u003e": {
+        "Name": "\u003ccolor codes\u003e",
+        "kind": "argument",
+        "description": "color codes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccolor codes\u003e": {
+        "Name": "\u003ccolor codes\u003e",
+        "kind": "argument",
+        "description": "color codes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccolor codes\u003e"
+    ]
+  },
+  "unalias": {
+    "Name": "unalias",
+    "kind": "subcommand",
+    "description": "Deletes the alias named \u003cname\u003e",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "uninstall": {
+    "Name": "uninstall",
+    "kind": "subcommand",
+    "description": "Uninstall a version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--lts": {
+        "Name": "--lts",
+        "kind": "option",
+        "description": "Uninstall using automatic alias for provided LTS line, if available",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cLTS name\u003e": {
+            "Name": "\u003cLTS name\u003e",
+            "kind": "argument",
+            "description": "LTS name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cLTS name\u003e": {
+            "Name": "\u003cLTS name\u003e",
+            "kind": "argument",
+            "description": "LTS name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cLTS name\u003e"
+        ]
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--lts": {
+        "Name": "--lts",
+        "kind": "option",
+        "description": "Uninstall using automatic alias for provided LTS line, if available",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cLTS name\u003e": {
+            "Name": "\u003cLTS name\u003e",
+            "kind": "argument",
+            "description": "LTS name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cLTS name\u003e": {
+            "Name": "\u003cLTS name\u003e",
+            "kind": "argument",
+            "description": "LTS name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cLTS name\u003e"
+        ]
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cversion\u003e"
+    ]
+  },
+  "unload": {
+    "Name": "unload",
+    "kind": "subcommand",
+    "description": "Unload `nvm` from shell",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "use": {
+    "Name": "use",
+    "kind": "subcommand",
+    "description": "Modify PATH to use \u003cversion\u003e. Uses .nvmrc if available and version is omitted",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--lts": {
+        "Name": "--lts",
+        "kind": "option",
+        "description": "Uses automatic alias for provided LTS line, if available",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cLTS name\u003e": {
+            "Name": "\u003cLTS name\u003e",
+            "kind": "argument",
+            "description": "LTS name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cLTS name\u003e": {
+            "Name": "\u003cLTS name\u003e",
+            "kind": "argument",
+            "description": "LTS name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cLTS name\u003e"
+        ]
+      },
+      "--silent": {
+        "Name": "--silent",
+        "kind": "option",
+        "description": "Silences stdout/stderr output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--lts": {
+        "Name": "--lts",
+        "kind": "option",
+        "description": "Uses automatic alias for provided LTS line, if available",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cLTS name\u003e": {
+            "Name": "\u003cLTS name\u003e",
+            "kind": "argument",
+            "description": "LTS name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cLTS name\u003e": {
+            "Name": "\u003cLTS name\u003e",
+            "kind": "argument",
+            "description": "LTS name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cLTS name\u003e"
+        ]
+      },
+      "--silent": {
+        "Name": "--silent",
+        "kind": "option",
+        "description": "Silences stdout/stderr output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "version": {
+    "Name": "version",
+    "kind": "subcommand",
+    "description": "Resolve the given description to a single local version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cversion\u003e"
+    ]
+  },
+  "version-remote": {
+    "Name": "version-remote",
+    "kind": "subcommand",
+    "description": "Resolve the given description to a single remote version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--lts": {
+        "Name": "--lts",
+        "kind": "option",
+        "description": "When listing, only show versions for a specific LTS line",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cLTS name\u003e": {
+            "Name": "\u003cLTS name\u003e",
+            "kind": "argument",
+            "description": "LTS name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cLTS name\u003e": {
+            "Name": "\u003cLTS name\u003e",
+            "kind": "argument",
+            "description": "LTS name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cLTS name\u003e"
+        ]
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--lts": {
+        "Name": "--lts",
+        "kind": "option",
+        "description": "When listing, only show versions for a specific LTS line",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cLTS name\u003e": {
+            "Name": "\u003cLTS name\u003e",
+            "kind": "argument",
+            "description": "LTS name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cLTS name\u003e": {
+            "Name": "\u003cLTS name\u003e",
+            "kind": "argument",
+            "description": "LTS name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cLTS name\u003e"
+        ]
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cversion\u003e"
+    ]
+  },
+  "which": {
+    "Name": "which",
+    "kind": "subcommand",
+    "description": "Display path to installed node version. Uses .nvmrc if available and version is omitted",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--silent": {
+        "Name": "--silent",
+        "kind": "option",
+        "description": "Silences stdout/stderr output when a version is omitted",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "current": {
+        "Name": "current",
+        "kind": "subcommand",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--silent": {
+        "Name": "--silent",
+        "kind": "option",
+        "description": "Silences stdout/stderr output when a version is omitted",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  }
+}

@@ -1,0 +1,5076 @@
+{
+  "add": {
+    "Name": "add",
+    "kind": "subcommand",
+    "description": "Add packages to your Meteor project. You can add multiple packages with one command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--allow-incompatible-update": {
+        "Name": "--allow-incompatible-update",
+        "kind": "option",
+        "description": "Allow packages in your project to be upgraded or downgraded to versions that are potentially incompatible with the current versions, if required to satisfy all package version constraints",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpackage\u003e": {
+        "Name": "\u003cpackage\u003e",
+        "kind": "argument",
+        "description": "package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--allow-incompatible-update": {
+        "Name": "--allow-incompatible-update",
+        "kind": "option",
+        "description": "Allow packages in your project to be upgraded or downgraded to versions that are potentially incompatible with the current versions, if required to satisfy all package version constraints",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpackage\u003e": {
+        "Name": "\u003cpackage\u003e",
+        "kind": "argument",
+        "description": "package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpackage\u003e"
+    ]
+  },
+  "add-platform": {
+    "Name": "add-platform",
+    "kind": "subcommand",
+    "description": "Adds platforms to your Meteor project. You can add multiple platforms with one command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cplatform\u003e": {
+        "Name": "\u003cplatform\u003e",
+        "kind": "argument",
+        "description": "platform",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cplatform\u003e": {
+        "Name": "\u003cplatform\u003e",
+        "kind": "argument",
+        "description": "platform",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cplatform\u003e"
+    ]
+  },
+  "admin": {
+    "Name": "admin",
+    "kind": "subcommand",
+    "description": "Rarely used commands for administering official Meteor services",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "change-homepage": {
+        "Name": "change-homepage",
+        "kind": "subcommand",
+        "description": "Change the homepage containing package information",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cnew_url\u003e": {
+            "Name": "\u003cnew_url\u003e",
+            "kind": "argument",
+            "description": "new_url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cpackage_name\u003e": {
+            "Name": "\u003cpackage_name\u003e",
+            "kind": "argument",
+            "description": "package_name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cnew_url\u003e": {
+            "Name": "\u003cnew_url\u003e",
+            "kind": "argument",
+            "description": "new_url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cpackage_name\u003e": {
+            "Name": "\u003cpackage_name\u003e",
+            "kind": "argument",
+            "description": "package_name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpackage_name\u003e",
+          "\u003cnew_url\u003e"
+        ]
+      },
+      "list-organizations": {
+        "Name": "list-organizations",
+        "kind": "subcommand",
+        "description": "List the organizations of which you are a member",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "maintainers": {
+        "Name": "maintainers",
+        "kind": "subcommand",
+        "description": "Manage users and organizations that are maintainers for a particular package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--add": {
+            "Name": "--add",
+            "kind": "option",
+            "description": "Add an authorized maintainer to a package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cusername\u003e": {
+                "Name": "\u003cusername\u003e",
+                "kind": "argument",
+                "description": "username",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cusername\u003e": {
+                "Name": "\u003cusername\u003e",
+                "kind": "argument",
+                "description": "username",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cusername\u003e"
+            ]
+          },
+          "--list": {
+            "Name": "--list",
+            "kind": "option",
+            "description": "List authorized maintainers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--remove": {
+            "Name": "--remove",
+            "kind": "option",
+            "description": "Remove an authorized maintainer from a package. You cannot remove yourself if you are the last maintainer on a package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cusername\u003e": {
+                "Name": "\u003cusername\u003e",
+                "kind": "argument",
+                "description": "username",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cusername\u003e": {
+                "Name": "\u003cusername\u003e",
+                "kind": "argument",
+                "description": "username",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cusername\u003e"
+            ]
+          },
+          "\u003cpackage_name\u003e": {
+            "Name": "\u003cpackage_name\u003e",
+            "kind": "argument",
+            "description": "package_name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--add": {
+            "Name": "--add",
+            "kind": "option",
+            "description": "Add an authorized maintainer to a package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cusername\u003e": {
+                "Name": "\u003cusername\u003e",
+                "kind": "argument",
+                "description": "username",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cusername\u003e": {
+                "Name": "\u003cusername\u003e",
+                "kind": "argument",
+                "description": "username",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cusername\u003e"
+            ]
+          },
+          "--list": {
+            "Name": "--list",
+            "kind": "option",
+            "description": "List authorized maintainers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--remove": {
+            "Name": "--remove",
+            "kind": "option",
+            "description": "Remove an authorized maintainer from a package. You cannot remove yourself if you are the last maintainer on a package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cusername\u003e": {
+                "Name": "\u003cusername\u003e",
+                "kind": "argument",
+                "description": "username",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cusername\u003e": {
+                "Name": "\u003cusername\u003e",
+                "kind": "argument",
+                "description": "username",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cusername\u003e"
+            ]
+          },
+          "\u003cpackage_name\u003e": {
+            "Name": "\u003cpackage_name\u003e",
+            "kind": "argument",
+            "description": "package_name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpackage_name\u003e"
+        ]
+      },
+      "members": {
+        "Name": "members",
+        "kind": "subcommand",
+        "description": "Manage members of an organization",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--add": {
+            "Name": "--add",
+            "kind": "option",
+            "description": "Add a member to the organization",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cusername\u003e": {
+                "Name": "\u003cusername\u003e",
+                "kind": "argument",
+                "description": "username",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cusername\u003e": {
+                "Name": "\u003cusername\u003e",
+                "kind": "argument",
+                "description": "username",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cusername\u003e"
+            ]
+          },
+          "--list": {
+            "Name": "--list",
+            "kind": "option",
+            "description": "List members of the organization",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--remove": {
+            "Name": "--remove",
+            "kind": "option",
+            "description": "Remove a member to the organization",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cusername\u003e": {
+                "Name": "\u003cusername\u003e",
+                "kind": "argument",
+                "description": "username",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cusername\u003e": {
+                "Name": "\u003cusername\u003e",
+                "kind": "argument",
+                "description": "username",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cusername\u003e"
+            ]
+          },
+          "\u003corganization_name\u003e": {
+            "Name": "\u003corganization_name\u003e",
+            "kind": "argument",
+            "description": "organization_name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--add": {
+            "Name": "--add",
+            "kind": "option",
+            "description": "Add a member to the organization",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cusername\u003e": {
+                "Name": "\u003cusername\u003e",
+                "kind": "argument",
+                "description": "username",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cusername\u003e": {
+                "Name": "\u003cusername\u003e",
+                "kind": "argument",
+                "description": "username",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cusername\u003e"
+            ]
+          },
+          "--list": {
+            "Name": "--list",
+            "kind": "option",
+            "description": "List members of the organization",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--remove": {
+            "Name": "--remove",
+            "kind": "option",
+            "description": "Remove a member to the organization",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cusername\u003e": {
+                "Name": "\u003cusername\u003e",
+                "kind": "argument",
+                "description": "username",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cusername\u003e": {
+                "Name": "\u003cusername\u003e",
+                "kind": "argument",
+                "description": "username",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cusername\u003e"
+            ]
+          },
+          "\u003corganization_name\u003e": {
+            "Name": "\u003corganization_name\u003e",
+            "kind": "argument",
+            "description": "organization_name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003corganization_name\u003e"
+        ]
+      },
+      "recommend-release": {
+        "Name": "recommend-release",
+        "kind": "subcommand",
+        "description": "Recommend a version of a meteor release",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpackage_name\u003e": {
+            "Name": "\u003cpackage_name\u003e",
+            "kind": "argument",
+            "description": "package_name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpackage_name\u003e": {
+            "Name": "\u003cpackage_name\u003e",
+            "kind": "argument",
+            "description": "package_name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpackage_name\u003e"
+        ]
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "authorized": {
+    "Name": "authorized",
+    "kind": "subcommand",
+    "description": "Manage authorized users and organizations",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--add": {
+        "Name": "--add",
+        "kind": "option",
+        "description": "Add an authorized user or organization",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--list": {
+        "Name": "--list",
+        "kind": "option",
+        "description": "List authorized users and organizations",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--remove": {
+        "Name": "--remove",
+        "kind": "option",
+        "description": "Remove an authorized user or organization",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--transfer": {
+        "Name": "--transfer",
+        "kind": "option",
+        "description": "Transfer the (Galaxy) app to a new user or organization",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003csite\u003e": {
+        "Name": "\u003csite\u003e",
+        "kind": "argument",
+        "description": "site",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--add": {
+        "Name": "--add",
+        "kind": "option",
+        "description": "Add an authorized user or organization",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--list": {
+        "Name": "--list",
+        "kind": "option",
+        "description": "List authorized users and organizations",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--remove": {
+        "Name": "--remove",
+        "kind": "option",
+        "description": "Remove an authorized user or organization",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--transfer": {
+        "Name": "--transfer",
+        "kind": "option",
+        "description": "Transfer the (Galaxy) app to a new user or organization",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003csite\u003e": {
+        "Name": "\u003csite\u003e",
+        "kind": "argument",
+        "description": "site",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csite\u003e"
+    ]
+  },
+  "build": {
+    "Name": "build",
+    "kind": "subcommand",
+    "description": "Package this project up for deployment. The command outputs a directory with builds for all platforms in this project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--allow-incompatible-update": {
+        "Name": "--allow-incompatible-update",
+        "kind": "option",
+        "description": "Allow packages in your project to be upgraded or downgraded to versions that are potentially incompatible with the current versions, if required to satisfy all package version constraints",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--architecture": {
+        "Name": "--architecture",
+        "kind": "option",
+        "description": "Builds the server for a different architecture than your developer machine's architecture. Note: This option selects the architecture of the binary-dependent Atmosphere packages you would like bundled into your application, when those packages were specifically published for multiple architectures (i.e. with meteor publish-for-arch). If your project doesn't use any Atmosphere packages that have binary dependencies, --architecture has no effect",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003carch\u003e": {
+            "Name": "\u003carch\u003e",
+            "kind": "argument",
+            "description": "arch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003carch\u003e": {
+            "Name": "\u003carch\u003e",
+            "kind": "argument",
+            "description": "arch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003carch\u003e"
+        ]
+      },
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Build in debug mode (don't minify, etc)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--directory": {
+        "Name": "--directory",
+        "kind": "option",
+        "description": "Output a directory (rather than a tarball) for the application server bundle. If the output location exists, it will be recursively deleted first",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--mobile-settings": {
+        "Name": "--mobile-settings",
+        "kind": "option",
+        "description": "Set optional data for the initial value of Meteor.settings in your mobile application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--packageType": {
+        "Name": "--packageType",
+        "kind": "option",
+        "description": "Choose between apk/bundle for android builds",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpackage-type\u003e": {
+            "Name": "\u003cpackage-type\u003e",
+            "kind": "argument",
+            "description": "package-type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpackage-type\u003e": {
+            "Name": "\u003cpackage-type\u003e",
+            "kind": "argument",
+            "description": "package-type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--platforms": {
+        "Name": "--platforms",
+        "kind": "option",
+        "description": "Builds only the specified platforms (when available)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cplatforms\u003e": {
+            "Name": "\u003cplatforms\u003e",
+            "kind": "argument",
+            "description": "platforms",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cplatforms\u003e": {
+            "Name": "\u003cplatforms\u003e",
+            "kind": "argument",
+            "description": "platforms",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--server": {
+        "Name": "--server",
+        "kind": "option",
+        "description": "Location where mobile builds connect to the Meteor server. Defaults to localhost:3000. Can include a URL scheme (for example, --server https://example.com:443)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--server-only": {
+        "Name": "--server-only",
+        "kind": "option",
+        "description": "Skip building mobile apps even if mobile platforms have been added",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003coutput path\u003e": {
+        "Name": "\u003coutput path\u003e",
+        "kind": "argument",
+        "description": "output path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--allow-incompatible-update": {
+        "Name": "--allow-incompatible-update",
+        "kind": "option",
+        "description": "Allow packages in your project to be upgraded or downgraded to versions that are potentially incompatible with the current versions, if required to satisfy all package version constraints",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--architecture": {
+        "Name": "--architecture",
+        "kind": "option",
+        "description": "Builds the server for a different architecture than your developer machine's architecture. Note: This option selects the architecture of the binary-dependent Atmosphere packages you would like bundled into your application, when those packages were specifically published for multiple architectures (i.e. with meteor publish-for-arch). If your project doesn't use any Atmosphere packages that have binary dependencies, --architecture has no effect",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003carch\u003e": {
+            "Name": "\u003carch\u003e",
+            "kind": "argument",
+            "description": "arch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003carch\u003e": {
+            "Name": "\u003carch\u003e",
+            "kind": "argument",
+            "description": "arch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003carch\u003e"
+        ]
+      },
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Build in debug mode (don't minify, etc)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--directory": {
+        "Name": "--directory",
+        "kind": "option",
+        "description": "Output a directory (rather than a tarball) for the application server bundle. If the output location exists, it will be recursively deleted first",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--mobile-settings": {
+        "Name": "--mobile-settings",
+        "kind": "option",
+        "description": "Set optional data for the initial value of Meteor.settings in your mobile application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--packageType": {
+        "Name": "--packageType",
+        "kind": "option",
+        "description": "Choose between apk/bundle for android builds",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpackage-type\u003e": {
+            "Name": "\u003cpackage-type\u003e",
+            "kind": "argument",
+            "description": "package-type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpackage-type\u003e": {
+            "Name": "\u003cpackage-type\u003e",
+            "kind": "argument",
+            "description": "package-type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--platforms": {
+        "Name": "--platforms",
+        "kind": "option",
+        "description": "Builds only the specified platforms (when available)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cplatforms\u003e": {
+            "Name": "\u003cplatforms\u003e",
+            "kind": "argument",
+            "description": "platforms",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cplatforms\u003e": {
+            "Name": "\u003cplatforms\u003e",
+            "kind": "argument",
+            "description": "platforms",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--server": {
+        "Name": "--server",
+        "kind": "option",
+        "description": "Location where mobile builds connect to the Meteor server. Defaults to localhost:3000. Can include a URL scheme (for example, --server https://example.com:443)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--server-only": {
+        "Name": "--server-only",
+        "kind": "option",
+        "description": "Skip building mobile apps even if mobile platforms have been added",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003coutput path\u003e": {
+        "Name": "\u003coutput path\u003e",
+        "kind": "argument",
+        "description": "output path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003coutput path\u003e"
+    ]
+  },
+  "create": {
+    "Name": "create",
+    "kind": "subcommand",
+    "description": "Create a new Meteor project. By default, it uses React and makes a subdirectory named name and copies in the template app. You can pass an absolute or relative path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--apollo": {
+        "Name": "--apollo",
+        "kind": "option",
+        "description": "Create a basic apollo-based app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--bare": {
+        "Name": "--bare",
+        "kind": "option",
+        "description": "Create an empty app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--blaze": {
+        "Name": "--blaze",
+        "kind": "option",
+        "description": "Create a basic blaze-based app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--example": {
+        "Name": "--example",
+        "kind": "option",
+        "description": "Example template to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cexample_name\u003e": {
+            "Name": "\u003cexample_name\u003e",
+            "kind": "argument",
+            "description": "example_name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cexample_name\u003e": {
+            "Name": "\u003cexample_name\u003e",
+            "kind": "argument",
+            "description": "example_name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cexample_name\u003e"
+        ]
+      },
+      "--full": {
+        "Name": "--full",
+        "kind": "option",
+        "description": "Create a fully scaffolded app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--list": {
+        "Name": "--list",
+        "kind": "option",
+        "description": "Show list of available examples",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--minimal": {
+        "Name": "--minimal",
+        "kind": "option",
+        "description": "Create an app with as few Meteor packages as possible",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--package": {
+        "Name": "--package",
+        "kind": "option",
+        "description": "Create a new meteor package instead of an app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpackage_name\u003e": {
+            "Name": "\u003cpackage_name\u003e",
+            "kind": "argument",
+            "description": "package_name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpackage_name\u003e": {
+            "Name": "\u003cpackage_name\u003e",
+            "kind": "argument",
+            "description": "package_name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpackage_name\u003e"
+        ]
+      },
+      "--react": {
+        "Name": "--react",
+        "kind": "option",
+        "description": "Create a basic react-based app, same as default",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--release": {
+        "Name": "--release",
+        "kind": "option",
+        "description": "Specify the release of Meteor to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003crelease\u003e": {
+            "Name": "\u003crelease\u003e",
+            "kind": "argument",
+            "description": "release",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003crelease\u003e": {
+            "Name": "\u003crelease\u003e",
+            "kind": "argument",
+            "description": "release",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003crelease\u003e"
+        ]
+      },
+      "--svelte": {
+        "Name": "--svelte",
+        "kind": "option",
+        "description": "Create a basic svelte-based app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--tailwind": {
+        "Name": "--tailwind",
+        "kind": "option",
+        "description": "Create a basic react-based app, with tailwind configured",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--typescript": {
+        "Name": "--typescript",
+        "kind": "option",
+        "description": "Create a basic Typescript React-based app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--vue": {
+        "Name": "--vue",
+        "kind": "option",
+        "description": "Create a basic vue-based app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--apollo": {
+        "Name": "--apollo",
+        "kind": "option",
+        "description": "Create a basic apollo-based app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--bare": {
+        "Name": "--bare",
+        "kind": "option",
+        "description": "Create an empty app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--blaze": {
+        "Name": "--blaze",
+        "kind": "option",
+        "description": "Create a basic blaze-based app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--example": {
+        "Name": "--example",
+        "kind": "option",
+        "description": "Example template to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cexample_name\u003e": {
+            "Name": "\u003cexample_name\u003e",
+            "kind": "argument",
+            "description": "example_name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cexample_name\u003e": {
+            "Name": "\u003cexample_name\u003e",
+            "kind": "argument",
+            "description": "example_name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cexample_name\u003e"
+        ]
+      },
+      "--full": {
+        "Name": "--full",
+        "kind": "option",
+        "description": "Create a fully scaffolded app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--list": {
+        "Name": "--list",
+        "kind": "option",
+        "description": "Show list of available examples",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--minimal": {
+        "Name": "--minimal",
+        "kind": "option",
+        "description": "Create an app with as few Meteor packages as possible",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--package": {
+        "Name": "--package",
+        "kind": "option",
+        "description": "Create a new meteor package instead of an app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpackage_name\u003e": {
+            "Name": "\u003cpackage_name\u003e",
+            "kind": "argument",
+            "description": "package_name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpackage_name\u003e": {
+            "Name": "\u003cpackage_name\u003e",
+            "kind": "argument",
+            "description": "package_name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpackage_name\u003e"
+        ]
+      },
+      "--react": {
+        "Name": "--react",
+        "kind": "option",
+        "description": "Create a basic react-based app, same as default",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--release": {
+        "Name": "--release",
+        "kind": "option",
+        "description": "Specify the release of Meteor to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003crelease\u003e": {
+            "Name": "\u003crelease\u003e",
+            "kind": "argument",
+            "description": "release",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003crelease\u003e": {
+            "Name": "\u003crelease\u003e",
+            "kind": "argument",
+            "description": "release",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003crelease\u003e"
+        ]
+      },
+      "--svelte": {
+        "Name": "--svelte",
+        "kind": "option",
+        "description": "Create a basic svelte-based app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--tailwind": {
+        "Name": "--tailwind",
+        "kind": "option",
+        "description": "Create a basic react-based app, with tailwind configured",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--typescript": {
+        "Name": "--typescript",
+        "kind": "option",
+        "description": "Create a basic Typescript React-based app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--vue": {
+        "Name": "--vue",
+        "kind": "option",
+        "description": "Create a basic vue-based app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "debug": {
+    "Name": "debug",
+    "kind": "subcommand",
+    "description": "DEPRECATED. The 'meteor debug' command is deprecated in favor of 'meteor --inspect-brk'",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "deploy": {
+    "Name": "deploy",
+    "kind": "subcommand",
+    "description": "Deploys the project in your current directory to Meteor's servers",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--allow-incompatible-update": {
+        "Name": "--allow-incompatible-update",
+        "kind": "option",
+        "description": "Allow packages in your project to be upgraded or downgraded to versions that are potentially incompatible with the current versions, if required to satisfy all package version constraints",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--cache-build": {
+        "Name": "--cache-build",
+        "kind": "option",
+        "description": "Reuses the build already created if the git commit hash is the same",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--container-size": {
+        "Name": "--container-size",
+        "kind": "option",
+        "description": "Change your app's container size using the deploy command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csize\u003e": {
+            "Name": "\u003csize\u003e",
+            "kind": "argument",
+            "description": "size",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csize\u003e": {
+            "Name": "\u003csize\u003e",
+            "kind": "argument",
+            "description": "size",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csize\u003e"
+        ]
+      },
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Deploy in debug mode (don't minify, etc)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--delete": {
+        "Name": "--delete",
+        "kind": "option",
+        "description": "Permanently delete this deployment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--deploy-polling-timeout": {
+        "Name": "--deploy-polling-timeout",
+        "kind": "option",
+        "description": "The number of milliseconds to wait for build/deploy success or failure after a successful upload of your app's minified code; defaults to 15 minutes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmilliseconds\u003e": {
+            "Name": "\u003cmilliseconds\u003e",
+            "kind": "argument",
+            "description": "milliseconds",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmilliseconds\u003e": {
+            "Name": "\u003cmilliseconds\u003e",
+            "kind": "argument",
+            "description": "milliseconds",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmilliseconds\u003e"
+        ]
+      },
+      "--free": {
+        "Name": "--free",
+        "kind": "option",
+        "description": "When deploying an app for the first time, you can pass this option to deploy your app in the Galaxy's free mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--mongo": {
+        "Name": "--mongo",
+        "kind": "option",
+        "description": "If this flag is true and it's not provided a mongo url in the settings ('galaxy.meteor.com'.env.MONGO_URL), when deploying, Galaxy will create a database to your app in its shared cluster and will insert the URL in your app's settings for you",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctrue/false\u003e": {
+            "Name": "\u003ctrue/false\u003e",
+            "kind": "argument",
+            "description": "true/false",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctrue/false\u003e": {
+            "Name": "\u003ctrue/false\u003e",
+            "kind": "argument",
+            "description": "true/false",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctrue/false\u003e"
+        ]
+      },
+      "--no-wait": {
+        "Name": "--no-wait",
+        "kind": "option",
+        "description": "Exits when Meteor has uploaded the app's code instead of waiting for the deploy to conclude",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--plan": {
+        "Name": "--plan",
+        "kind": "option",
+        "description": "You can change the app plan by providing this argument with one of the following values: professional, essentials, or free. Be aware that this argument overwrites the `--free` argument",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--settings": {
+        "Name": "--settings",
+        "kind": "option",
+        "description": "Set optional data for Meteor.settings",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cJSON File\u003e"
+        ]
+      },
+      "-D": {
+        "Name": "-D",
+        "kind": "option",
+        "description": "Permanently delete this deployment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Set optional data for Meteor.settings",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cJSON File\u003e"
+        ]
+      },
+      "\u003csite\u003e": {
+        "Name": "\u003csite\u003e",
+        "kind": "argument",
+        "description": "site",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--allow-incompatible-update": {
+        "Name": "--allow-incompatible-update",
+        "kind": "option",
+        "description": "Allow packages in your project to be upgraded or downgraded to versions that are potentially incompatible with the current versions, if required to satisfy all package version constraints",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--cache-build": {
+        "Name": "--cache-build",
+        "kind": "option",
+        "description": "Reuses the build already created if the git commit hash is the same",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--container-size": {
+        "Name": "--container-size",
+        "kind": "option",
+        "description": "Change your app's container size using the deploy command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csize\u003e": {
+            "Name": "\u003csize\u003e",
+            "kind": "argument",
+            "description": "size",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csize\u003e": {
+            "Name": "\u003csize\u003e",
+            "kind": "argument",
+            "description": "size",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csize\u003e"
+        ]
+      },
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Deploy in debug mode (don't minify, etc)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--delete": {
+        "Name": "--delete",
+        "kind": "option",
+        "description": "Permanently delete this deployment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--deploy-polling-timeout": {
+        "Name": "--deploy-polling-timeout",
+        "kind": "option",
+        "description": "The number of milliseconds to wait for build/deploy success or failure after a successful upload of your app's minified code; defaults to 15 minutes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmilliseconds\u003e": {
+            "Name": "\u003cmilliseconds\u003e",
+            "kind": "argument",
+            "description": "milliseconds",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmilliseconds\u003e": {
+            "Name": "\u003cmilliseconds\u003e",
+            "kind": "argument",
+            "description": "milliseconds",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmilliseconds\u003e"
+        ]
+      },
+      "--free": {
+        "Name": "--free",
+        "kind": "option",
+        "description": "When deploying an app for the first time, you can pass this option to deploy your app in the Galaxy's free mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--mongo": {
+        "Name": "--mongo",
+        "kind": "option",
+        "description": "If this flag is true and it's not provided a mongo url in the settings ('galaxy.meteor.com'.env.MONGO_URL), when deploying, Galaxy will create a database to your app in its shared cluster and will insert the URL in your app's settings for you",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctrue/false\u003e": {
+            "Name": "\u003ctrue/false\u003e",
+            "kind": "argument",
+            "description": "true/false",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctrue/false\u003e": {
+            "Name": "\u003ctrue/false\u003e",
+            "kind": "argument",
+            "description": "true/false",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctrue/false\u003e"
+        ]
+      },
+      "--no-wait": {
+        "Name": "--no-wait",
+        "kind": "option",
+        "description": "Exits when Meteor has uploaded the app's code instead of waiting for the deploy to conclude",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--plan": {
+        "Name": "--plan",
+        "kind": "option",
+        "description": "You can change the app plan by providing this argument with one of the following values: professional, essentials, or free. Be aware that this argument overwrites the `--free` argument",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--settings": {
+        "Name": "--settings",
+        "kind": "option",
+        "description": "Set optional data for Meteor.settings",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cJSON File\u003e"
+        ]
+      },
+      "-D": {
+        "Name": "-D",
+        "kind": "option",
+        "description": "Permanently delete this deployment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Set optional data for Meteor.settings",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cJSON File\u003e"
+        ]
+      },
+      "\u003csite\u003e": {
+        "Name": "\u003csite\u003e",
+        "kind": "argument",
+        "description": "site",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csite\u003e"
+    ]
+  },
+  "ensure-cordova-dependencies": {
+    "Name": "ensure-cordova-dependencies",
+    "kind": "subcommand",
+    "description": "Check if the dependencies are installed, otherwise install them",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Get help on meteor command line usage",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "admin": {
+        "Name": "admin",
+        "kind": "subcommand",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "change-homepage": {
+            "Name": "change-homepage",
+            "kind": "subcommand",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "list-organizations": {
+            "Name": "list-organizations",
+            "kind": "subcommand",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "maintainers": {
+            "Name": "maintainers",
+            "kind": "subcommand",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "members": {
+            "Name": "members",
+            "kind": "subcommand",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "recommend-release": {
+            "Name": "recommend-release",
+            "kind": "subcommand",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "lint": {
+    "Name": "lint",
+    "kind": "subcommand",
+    "description": "Run through the whole build process for the app and run all linters the app uses",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--allow-incompatible-update": {
+        "Name": "--allow-incompatible-update",
+        "kind": "option",
+        "description": "Allow packages in your project to be upgraded or downgraded to versions that are potentially incompatible with the current versions, if required to satisfy all package version constraints",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--allow-incompatible-update": {
+        "Name": "--allow-incompatible-update",
+        "kind": "option",
+        "description": "Allow packages in your project to be upgraded or downgraded to versions that are potentially incompatible with the current versions, if required to satisfy all package version constraints",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "list": {
+    "Name": "list",
+    "kind": "subcommand",
+    "description": "Lists the packages that you have explicitly added to your project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--details": {
+        "Name": "--details",
+        "kind": "option",
+        "description": "Adds more package details to the JSON output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--json": {
+        "Name": "--json",
+        "kind": "option",
+        "description": "Outputs the tree in JSON format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--tree": {
+        "Name": "--tree",
+        "kind": "option",
+        "description": "Outputs a tree showing how packages are referenced",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--weak": {
+        "Name": "--weak",
+        "kind": "option",
+        "description": "Show weakly referenced dependencies in the tree",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--details": {
+        "Name": "--details",
+        "kind": "option",
+        "description": "Adds more package details to the JSON output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--json": {
+        "Name": "--json",
+        "kind": "option",
+        "description": "Outputs the tree in JSON format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--tree": {
+        "Name": "--tree",
+        "kind": "option",
+        "description": "Outputs a tree showing how packages are referenced",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--weak": {
+        "Name": "--weak",
+        "kind": "option",
+        "description": "Show weakly referenced dependencies in the tree",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "list-platforms": {
+    "Name": "list-platforms",
+    "kind": "subcommand",
+    "description": "Lists all of the platforms added to your project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "list-sites": {
+    "Name": "list-sites",
+    "kind": "subcommand",
+    "description": "List the sites that you have deployed with `meteor deploy`, and sites for which other users have authorized you with the `meteor authorized` command. To see sites in a region other than us-east-1, set the DEPLOY_HOSTNAME environment variable. For example, `DEPLOY_HOSTNAME=eu-west-1.galaxy-deploy.meteor.com meteor list-sites`",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "login": {
+    "Name": "login",
+    "kind": "subcommand",
+    "description": "Prompts for your username and password and logs you in to your Meteor developer account",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--email": {
+        "Name": "--email",
+        "kind": "option",
+        "description": "Add an authorized user or organization",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cemail\u003e": {
+            "Name": "\u003cemail\u003e",
+            "kind": "argument",
+            "description": "email",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cemail\u003e": {
+            "Name": "\u003cemail\u003e",
+            "kind": "argument",
+            "description": "email",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cemail\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--email": {
+        "Name": "--email",
+        "kind": "option",
+        "description": "Add an authorized user or organization",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cemail\u003e": {
+            "Name": "\u003cemail\u003e",
+            "kind": "argument",
+            "description": "email",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cemail\u003e": {
+            "Name": "\u003cemail\u003e",
+            "kind": "argument",
+            "description": "email",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cemail\u003e"
+        ]
+      }
+    }
+  },
+  "logout": {
+    "Name": "logout",
+    "kind": "subcommand",
+    "description": "Log out of your Meteor developer account",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "mongo": {
+    "Name": "mongo",
+    "kind": "subcommand",
+    "description": "Opens a Mongo shell to view or manipulate collections. Can only be used when developing locally",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--url": {
+        "Name": "--url",
+        "kind": "option",
+        "description": "Mongo database URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003curl\u003e": {
+            "Name": "\u003curl\u003e",
+            "kind": "argument",
+            "description": "url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003curl\u003e": {
+            "Name": "\u003curl\u003e",
+            "kind": "argument",
+            "description": "url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003curl\u003e"
+        ]
+      },
+      "-U": {
+        "Name": "-U",
+        "kind": "option",
+        "description": "Mongo database URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003curl\u003e": {
+            "Name": "\u003curl\u003e",
+            "kind": "argument",
+            "description": "url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003curl\u003e": {
+            "Name": "\u003curl\u003e",
+            "kind": "argument",
+            "description": "url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003curl\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--url": {
+        "Name": "--url",
+        "kind": "option",
+        "description": "Mongo database URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003curl\u003e": {
+            "Name": "\u003curl\u003e",
+            "kind": "argument",
+            "description": "url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003curl\u003e": {
+            "Name": "\u003curl\u003e",
+            "kind": "argument",
+            "description": "url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003curl\u003e"
+        ]
+      },
+      "-U": {
+        "Name": "-U",
+        "kind": "option",
+        "description": "Mongo database URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003curl\u003e": {
+            "Name": "\u003curl\u003e",
+            "kind": "argument",
+            "description": "url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003curl\u003e": {
+            "Name": "\u003curl\u003e",
+            "kind": "argument",
+            "description": "url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003curl\u003e"
+        ]
+      }
+    }
+  },
+  "npm": {
+    "Name": "npm",
+    "kind": "subcommand",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "publish": {
+    "Name": "publish",
+    "kind": "subcommand",
+    "description": "Publishes a new version of a local package to the package server. Must be runfrom the directory containing the package",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--allow-incompatible-update": {
+        "Name": "--allow-incompatible-update",
+        "kind": "option",
+        "description": "Allow packages in your project to be upgraded or downgraded to versions that are potentially incompatible with the current versions, if required to satisfy all package version constraints",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--create": {
+        "Name": "--create",
+        "kind": "option",
+        "description": "Publish a new package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-lint": {
+        "Name": "--no-lint",
+        "kind": "option",
+        "description": "Don't run linters used by the app on every rebuild",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--update": {
+        "Name": "--update",
+        "kind": "option",
+        "description": "Publish a new package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--allow-incompatible-update": {
+        "Name": "--allow-incompatible-update",
+        "kind": "option",
+        "description": "Allow packages in your project to be upgraded or downgraded to versions that are potentially incompatible with the current versions, if required to satisfy all package version constraints",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--create": {
+        "Name": "--create",
+        "kind": "option",
+        "description": "Publish a new package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-lint": {
+        "Name": "--no-lint",
+        "kind": "option",
+        "description": "Don't run linters used by the app on every rebuild",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--update": {
+        "Name": "--update",
+        "kind": "option",
+        "description": "Publish a new package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "publish-for-arch": {
+    "Name": "publish-for-arch",
+    "kind": "subcommand",
+    "description": "Publish a package for the same architecture that you are currently on",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpackageName@version\u003e": {
+        "Name": "\u003cpackageName@version\u003e",
+        "kind": "argument",
+        "description": "packageName@version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpackageName@version\u003e": {
+        "Name": "\u003cpackageName@version\u003e",
+        "kind": "argument",
+        "description": "packageName@version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpackageName@version\u003e"
+    ]
+  },
+  "publish-release": {
+    "Name": "publish-release",
+    "kind": "subcommand",
+    "description": "Publishes a new release to the package server, as determined by a JSON configuration file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--create-track": {
+        "Name": "--create-track",
+        "kind": "option",
+        "description": "Publish a new release track",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cJSON File\u003e": {
+        "Name": "\u003cJSON File\u003e",
+        "kind": "argument",
+        "description": "JSON File",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--create-track": {
+        "Name": "--create-track",
+        "kind": "option",
+        "description": "Publish a new release track",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cJSON File\u003e": {
+        "Name": "\u003cJSON File\u003e",
+        "kind": "argument",
+        "description": "JSON File",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cJSON File\u003e"
+    ]
+  },
+  "remove": {
+    "Name": "remove",
+    "kind": "subcommand",
+    "description": "Removes a package previously added to your Meteor project. You can remove multiple packages with one command. For a list of the packages that your application is currently using, see \"meteor list\"",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpackage\u003e": {
+        "Name": "\u003cpackage\u003e",
+        "kind": "argument",
+        "description": "package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpackage\u003e": {
+        "Name": "\u003cpackage\u003e",
+        "kind": "argument",
+        "description": "package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpackage\u003e"
+    ]
+  },
+  "remove-platform": {
+    "Name": "remove-platform",
+    "kind": "subcommand",
+    "description": "Removes a platform previously added to your Meteor project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cplatform\u003e": {
+        "Name": "\u003cplatform\u003e",
+        "kind": "argument",
+        "description": "platform",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cplatform\u003e": {
+        "Name": "\u003cplatform\u003e",
+        "kind": "argument",
+        "description": "platform",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cplatform\u003e"
+    ]
+  },
+  "reset": {
+    "Name": "reset",
+    "kind": "subcommand",
+    "description": "Reset the current project to a fresh state. Removes all local data",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "run": {
+    "Name": "run",
+    "kind": "subcommand",
+    "description": "Run a meteor development server in the current project. Searches upward from the current directory for the root directory of a Meteor project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--allow-incompatible-update": {
+        "Name": "--allow-incompatible-update",
+        "kind": "option",
+        "description": "Allow packages in your project to be upgraded or downgraded to versions that are potentially incompatible with the current versions, if required to satisfy all package version constraints",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--cordova-server-port": {
+        "Name": "--cordova-server-port",
+        "kind": "option",
+        "description": "Local port where Cordova will serve the content. It's important when multiple Cordova apps are build from the same Meteor app source code as by default the port is generated using the id inside .meteor/.id file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cport\u003e"
+        ]
+      },
+      "--exclude-archs": {
+        "Name": "--exclude-archs",
+        "kind": "option",
+        "description": "Don't create bundles for certain web architectures (comma separated, for example: --exclude-archs \"web.browser.legacy, web.cordova\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003carchitectures\u003e": {
+            "Name": "\u003carchitectures\u003e",
+            "kind": "argument",
+            "description": "architectures",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003carchitectures\u003e": {
+            "Name": "\u003carchitectures\u003e",
+            "kind": "argument",
+            "description": "architectures",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003carchitectures\u003e"
+        ]
+      },
+      "--extra-packages": {
+        "Name": "--extra-packages",
+        "kind": "option",
+        "description": "Run with additional packages (comma separated, for example: --extra-packages \"package-name1, package-name2@1.2.3\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpackages\u003e": {
+            "Name": "\u003cpackages\u003e",
+            "kind": "argument",
+            "description": "packages",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpackages\u003e": {
+            "Name": "\u003cpackages\u003e",
+            "kind": "argument",
+            "description": "packages",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpackages\u003e"
+        ]
+      },
+      "--inspect": {
+        "Name": "--inspect",
+        "kind": "option",
+        "description": "Enable server-side debugging via debugging clients like the Node.js command-line debugger, Chrome DevTools, or Visual Studio Code",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--inspect-brk": {
+        "Name": "--inspect-brk",
+        "kind": "option",
+        "description": "Enable server-side debugging via debugging clients like the Node.js command-line debugger, Chrome DevTools, or Visual Studio Code. The server will be paused at startup, waiting for clients to attach to the process on the specified port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--mobile-server": {
+        "Name": "--mobile-server",
+        "kind": "option",
+        "description": "Location where mobile builds connect to the Meteor server. Defaults to your local IP and the port that the Meteor server binds to. Can include a URL scheme (for example, --mobile-server https://example.com:443)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-lint": {
+        "Name": "--no-lint",
+        "kind": "option",
+        "description": "Don't run linters used by the app on every rebuild",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-release-check": {
+        "Name": "--no-release-check",
+        "kind": "option",
+        "description": "Don't run the release updater to check for new releases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--port": {
+        "Name": "--port",
+        "kind": "option",
+        "description": "Port to listen on (instead of the default 3000)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--production": {
+        "Name": "--production",
+        "kind": "option",
+        "description": "Simulate production mode. Minify and bundle CSS and JS files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--raw-logs": {
+        "Name": "--raw-logs",
+        "kind": "option",
+        "description": "Run without parsing logs from stdout and stderr",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--release": {
+        "Name": "--release",
+        "kind": "option",
+        "description": "Specify the release of Meteor to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003crelease\u003e": {
+            "Name": "\u003crelease\u003e",
+            "kind": "argument",
+            "description": "release",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003crelease\u003e": {
+            "Name": "\u003crelease\u003e",
+            "kind": "argument",
+            "description": "release",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003crelease\u003e"
+        ]
+      },
+      "--settings": {
+        "Name": "--settings",
+        "kind": "option",
+        "description": "Set optional data for Meteor.settings on the server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cJSON File\u003e"
+        ]
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Print all output from builds logs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Port to listen on (instead of the default 3000)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Set optional data for Meteor.settings on the server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cJSON File\u003e"
+        ]
+      },
+      "target": {
+        "Name": "target",
+        "kind": "option",
+        "description": "If you have added a platform to your app with 'meteor add-platform', you can pass one of the following targets as an argument to this command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--allow-incompatible-update": {
+        "Name": "--allow-incompatible-update",
+        "kind": "option",
+        "description": "Allow packages in your project to be upgraded or downgraded to versions that are potentially incompatible with the current versions, if required to satisfy all package version constraints",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--cordova-server-port": {
+        "Name": "--cordova-server-port",
+        "kind": "option",
+        "description": "Local port where Cordova will serve the content. It's important when multiple Cordova apps are build from the same Meteor app source code as by default the port is generated using the id inside .meteor/.id file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cport\u003e"
+        ]
+      },
+      "--exclude-archs": {
+        "Name": "--exclude-archs",
+        "kind": "option",
+        "description": "Don't create bundles for certain web architectures (comma separated, for example: --exclude-archs \"web.browser.legacy, web.cordova\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003carchitectures\u003e": {
+            "Name": "\u003carchitectures\u003e",
+            "kind": "argument",
+            "description": "architectures",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003carchitectures\u003e": {
+            "Name": "\u003carchitectures\u003e",
+            "kind": "argument",
+            "description": "architectures",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003carchitectures\u003e"
+        ]
+      },
+      "--extra-packages": {
+        "Name": "--extra-packages",
+        "kind": "option",
+        "description": "Run with additional packages (comma separated, for example: --extra-packages \"package-name1, package-name2@1.2.3\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpackages\u003e": {
+            "Name": "\u003cpackages\u003e",
+            "kind": "argument",
+            "description": "packages",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpackages\u003e": {
+            "Name": "\u003cpackages\u003e",
+            "kind": "argument",
+            "description": "packages",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpackages\u003e"
+        ]
+      },
+      "--inspect": {
+        "Name": "--inspect",
+        "kind": "option",
+        "description": "Enable server-side debugging via debugging clients like the Node.js command-line debugger, Chrome DevTools, or Visual Studio Code",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--inspect-brk": {
+        "Name": "--inspect-brk",
+        "kind": "option",
+        "description": "Enable server-side debugging via debugging clients like the Node.js command-line debugger, Chrome DevTools, or Visual Studio Code. The server will be paused at startup, waiting for clients to attach to the process on the specified port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--mobile-server": {
+        "Name": "--mobile-server",
+        "kind": "option",
+        "description": "Location where mobile builds connect to the Meteor server. Defaults to your local IP and the port that the Meteor server binds to. Can include a URL scheme (for example, --mobile-server https://example.com:443)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-lint": {
+        "Name": "--no-lint",
+        "kind": "option",
+        "description": "Don't run linters used by the app on every rebuild",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-release-check": {
+        "Name": "--no-release-check",
+        "kind": "option",
+        "description": "Don't run the release updater to check for new releases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--port": {
+        "Name": "--port",
+        "kind": "option",
+        "description": "Port to listen on (instead of the default 3000)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--production": {
+        "Name": "--production",
+        "kind": "option",
+        "description": "Simulate production mode. Minify and bundle CSS and JS files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--raw-logs": {
+        "Name": "--raw-logs",
+        "kind": "option",
+        "description": "Run without parsing logs from stdout and stderr",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--release": {
+        "Name": "--release",
+        "kind": "option",
+        "description": "Specify the release of Meteor to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003crelease\u003e": {
+            "Name": "\u003crelease\u003e",
+            "kind": "argument",
+            "description": "release",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003crelease\u003e": {
+            "Name": "\u003crelease\u003e",
+            "kind": "argument",
+            "description": "release",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003crelease\u003e"
+        ]
+      },
+      "--settings": {
+        "Name": "--settings",
+        "kind": "option",
+        "description": "Set optional data for Meteor.settings on the server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cJSON File\u003e"
+        ]
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Print all output from builds logs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Port to listen on (instead of the default 3000)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Set optional data for Meteor.settings on the server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cJSON File\u003e"
+        ]
+      }
+    }
+  },
+  "search": {
+    "Name": "search",
+    "kind": "subcommand",
+    "description": "Searches through the Meteor package and release database for items whose names match the regular expression",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--ejson": {
+        "Name": "--ejson",
+        "kind": "option",
+        "description": "Show more detailed output in EJSON format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--maintainer": {
+        "Name": "--maintainer",
+        "kind": "option",
+        "description": "Filter by authorized maintainer",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmaintainer_name\u003e": {
+            "Name": "\u003cmaintainer_name\u003e",
+            "kind": "argument",
+            "description": "maintainer_name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmaintainer_name\u003e": {
+            "Name": "\u003cmaintainer_name\u003e",
+            "kind": "argument",
+            "description": "maintainer_name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmaintainer_name\u003e"
+        ]
+      },
+      "--show-all": {
+        "Name": "--show-all",
+        "kind": "option",
+        "description": "Show all matches, even prereleases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cregex\u003e": {
+        "Name": "\u003cregex\u003e",
+        "kind": "argument",
+        "description": "regex",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--ejson": {
+        "Name": "--ejson",
+        "kind": "option",
+        "description": "Show more detailed output in EJSON format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--maintainer": {
+        "Name": "--maintainer",
+        "kind": "option",
+        "description": "Filter by authorized maintainer",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmaintainer_name\u003e": {
+            "Name": "\u003cmaintainer_name\u003e",
+            "kind": "argument",
+            "description": "maintainer_name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmaintainer_name\u003e": {
+            "Name": "\u003cmaintainer_name\u003e",
+            "kind": "argument",
+            "description": "maintainer_name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmaintainer_name\u003e"
+        ]
+      },
+      "--show-all": {
+        "Name": "--show-all",
+        "kind": "option",
+        "description": "Show all matches, even prereleases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cregex\u003e": {
+        "Name": "\u003cregex\u003e",
+        "kind": "argument",
+        "description": "regex",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cregex\u003e"
+    ]
+  },
+  "shell": {
+    "Name": "shell",
+    "kind": "subcommand",
+    "description": "When `meteor shell` is executed in an application directory where a server is already running, it connects to the server and starts an interactive shell for evaluating server-side code",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "show": {
+    "Name": "show",
+    "kind": "subcommand",
+    "description": "Searches through the Meteor package and release database for items whose names match the regular expression",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--ejson": {
+        "Name": "--ejson",
+        "kind": "option",
+        "description": "Show more detailed output in EJSON format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--show-all": {
+        "Name": "--show-all",
+        "kind": "option",
+        "description": "Show all matches, even prereleases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cname or name@version\u003e": {
+        "Name": "\u003cname or name@version\u003e",
+        "kind": "argument",
+        "description": "name or name@version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--ejson": {
+        "Name": "--ejson",
+        "kind": "option",
+        "description": "Show more detailed output in EJSON format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--show-all": {
+        "Name": "--show-all",
+        "kind": "option",
+        "description": "Show all matches, even prereleases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cname or name@version\u003e": {
+        "Name": "\u003cname or name@version\u003e",
+        "kind": "argument",
+        "description": "name or name@version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname or name@version\u003e"
+    ]
+  },
+  "test": {
+    "Name": "test",
+    "kind": "subcommand",
+    "description": "Runs tests against the application",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--android": {
+        "Name": "--android",
+        "kind": "option",
+        "description": "Run tests in an Android emulator. All of the tests for client and server will run in addition to mobile-specific tests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--android-device": {
+        "Name": "--android-device",
+        "kind": "option",
+        "description": "Run tests on Android emulator or on a mobile device. All of the tests for client and server will run in addition to mobile-specific tests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--cordova-server-port": {
+        "Name": "--cordova-server-port",
+        "kind": "option",
+        "description": "Local port where Cordova will serve the content. It's important when multiple Cordova apps are build from the same Meteor app source code as by default the port is generated using the id inside .meteor/.id file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cport\u003e"
+        ]
+      },
+      "--driver-package": {
+        "Name": "--driver-package",
+        "kind": "option",
+        "description": "Test driver package to use to run tests and display results. For example: --driver-package meteortesting:mocha",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdriver-package\u003e": {
+            "Name": "\u003cdriver-package\u003e",
+            "kind": "argument",
+            "description": "driver-package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdriver-package\u003e": {
+            "Name": "\u003cdriver-package\u003e",
+            "kind": "argument",
+            "description": "driver-package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdriver-package\u003e"
+        ]
+      },
+      "--exclude-archs": {
+        "Name": "--exclude-archs",
+        "kind": "option",
+        "description": "Don't create bundles for certain web architectures (comma separated, for example: --exclude-archs \"web.browser.legacy, web.cordova\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003carchitectures\u003e": {
+            "Name": "\u003carchitectures\u003e",
+            "kind": "argument",
+            "description": "architectures",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003carchitectures\u003e": {
+            "Name": "\u003carchitectures\u003e",
+            "kind": "argument",
+            "description": "architectures",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003carchitectures\u003e"
+        ]
+      },
+      "--extra-packages": {
+        "Name": "--extra-packages",
+        "kind": "option",
+        "description": "Run with additional packages (comma separated, for example: --extra-packages \"package-name1, package-name2@1.2.3\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpackages\u003e": {
+            "Name": "\u003cpackages\u003e",
+            "kind": "argument",
+            "description": "packages",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpackages\u003e": {
+            "Name": "\u003cpackages\u003e",
+            "kind": "argument",
+            "description": "packages",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpackages\u003e"
+        ]
+      },
+      "--full-app": {
+        "Name": "--full-app",
+        "kind": "option",
+        "description": "Your app is loaded as usual, then hidden, so that your tests can inspect and interact with the full running application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cport\u003e"
+        ]
+      },
+      "--inspect": {
+        "Name": "--inspect",
+        "kind": "option",
+        "description": "Enable server-side debugging via debugging clients like the Node.js command-line debugger, Chrome DevTools, or Visual Studio Code",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--inspect-brk": {
+        "Name": "--inspect-brk",
+        "kind": "option",
+        "description": "Enable server-side debugging via debugging clients like the Node.js command-line debugger, Chrome DevTools, or Visual Studio Code. The server will be paused at startup, waiting for clients to attach to the process on the specified port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--ios": {
+        "Name": "--ios",
+        "kind": "option",
+        "description": "Run tests in an iOS emulator. All of the tests for client and server will run in addition to mobile-specific tests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ios-device": {
+        "Name": "--ios-device",
+        "kind": "option",
+        "description": "Run tests on iOS mobile device. All of the tests for client and server will run in addition to mobile-specific tests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--mobile-server": {
+        "Name": "--mobile-server",
+        "kind": "option",
+        "description": "Location where mobile builds connect to the Meteor server. Defaults to your local IP and the port that the Meteor server binds to. Can include a URL scheme (for example, --mobile-server https://example.com:443)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--port": {
+        "Name": "--port",
+        "kind": "option",
+        "description": "Port to listen on (instead of the default 3000). Also uses port N+1 and N+2",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cport\u003e"
+        ]
+      },
+      "--raw-logs": {
+        "Name": "--raw-logs",
+        "kind": "option",
+        "description": "Run without parsing logs from stdout and stderr",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--settings": {
+        "Name": "--settings",
+        "kind": "option",
+        "description": "Set optional data for Meteor.settings on the server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cJSON File\u003e"
+        ]
+      },
+      "--test-app-path": {
+        "Name": "--test-app-path",
+        "kind": "option",
+        "description": "Set the directory in which to create a temporary app used for tests. Defaults to the system's temporary directory, usually /tmp",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Print all output from builds logs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Port to listen on (instead of the default 3000). Also uses port N+1 and N+2",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cport\u003e"
+        ]
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Set optional data for Meteor.settings on the server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cJSON File\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--android": {
+        "Name": "--android",
+        "kind": "option",
+        "description": "Run tests in an Android emulator. All of the tests for client and server will run in addition to mobile-specific tests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--android-device": {
+        "Name": "--android-device",
+        "kind": "option",
+        "description": "Run tests on Android emulator or on a mobile device. All of the tests for client and server will run in addition to mobile-specific tests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--cordova-server-port": {
+        "Name": "--cordova-server-port",
+        "kind": "option",
+        "description": "Local port where Cordova will serve the content. It's important when multiple Cordova apps are build from the same Meteor app source code as by default the port is generated using the id inside .meteor/.id file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cport\u003e"
+        ]
+      },
+      "--driver-package": {
+        "Name": "--driver-package",
+        "kind": "option",
+        "description": "Test driver package to use to run tests and display results. For example: --driver-package meteortesting:mocha",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdriver-package\u003e": {
+            "Name": "\u003cdriver-package\u003e",
+            "kind": "argument",
+            "description": "driver-package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdriver-package\u003e": {
+            "Name": "\u003cdriver-package\u003e",
+            "kind": "argument",
+            "description": "driver-package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdriver-package\u003e"
+        ]
+      },
+      "--exclude-archs": {
+        "Name": "--exclude-archs",
+        "kind": "option",
+        "description": "Don't create bundles for certain web architectures (comma separated, for example: --exclude-archs \"web.browser.legacy, web.cordova\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003carchitectures\u003e": {
+            "Name": "\u003carchitectures\u003e",
+            "kind": "argument",
+            "description": "architectures",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003carchitectures\u003e": {
+            "Name": "\u003carchitectures\u003e",
+            "kind": "argument",
+            "description": "architectures",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003carchitectures\u003e"
+        ]
+      },
+      "--extra-packages": {
+        "Name": "--extra-packages",
+        "kind": "option",
+        "description": "Run with additional packages (comma separated, for example: --extra-packages \"package-name1, package-name2@1.2.3\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpackages\u003e": {
+            "Name": "\u003cpackages\u003e",
+            "kind": "argument",
+            "description": "packages",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpackages\u003e": {
+            "Name": "\u003cpackages\u003e",
+            "kind": "argument",
+            "description": "packages",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpackages\u003e"
+        ]
+      },
+      "--full-app": {
+        "Name": "--full-app",
+        "kind": "option",
+        "description": "Your app is loaded as usual, then hidden, so that your tests can inspect and interact with the full running application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cport\u003e"
+        ]
+      },
+      "--inspect": {
+        "Name": "--inspect",
+        "kind": "option",
+        "description": "Enable server-side debugging via debugging clients like the Node.js command-line debugger, Chrome DevTools, or Visual Studio Code",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--inspect-brk": {
+        "Name": "--inspect-brk",
+        "kind": "option",
+        "description": "Enable server-side debugging via debugging clients like the Node.js command-line debugger, Chrome DevTools, or Visual Studio Code. The server will be paused at startup, waiting for clients to attach to the process on the specified port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--ios": {
+        "Name": "--ios",
+        "kind": "option",
+        "description": "Run tests in an iOS emulator. All of the tests for client and server will run in addition to mobile-specific tests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ios-device": {
+        "Name": "--ios-device",
+        "kind": "option",
+        "description": "Run tests on iOS mobile device. All of the tests for client and server will run in addition to mobile-specific tests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--mobile-server": {
+        "Name": "--mobile-server",
+        "kind": "option",
+        "description": "Location where mobile builds connect to the Meteor server. Defaults to your local IP and the port that the Meteor server binds to. Can include a URL scheme (for example, --mobile-server https://example.com:443)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--port": {
+        "Name": "--port",
+        "kind": "option",
+        "description": "Port to listen on (instead of the default 3000). Also uses port N+1 and N+2",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cport\u003e"
+        ]
+      },
+      "--raw-logs": {
+        "Name": "--raw-logs",
+        "kind": "option",
+        "description": "Run without parsing logs from stdout and stderr",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--settings": {
+        "Name": "--settings",
+        "kind": "option",
+        "description": "Set optional data for Meteor.settings on the server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cJSON File\u003e"
+        ]
+      },
+      "--test-app-path": {
+        "Name": "--test-app-path",
+        "kind": "option",
+        "description": "Set the directory in which to create a temporary app used for tests. Defaults to the system's temporary directory, usually /tmp",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Print all output from builds logs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Port to listen on (instead of the default 3000). Also uses port N+1 and N+2",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cport\u003e"
+        ]
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Set optional data for Meteor.settings on the server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cJSON File\u003e"
+        ]
+      }
+    }
+  },
+  "test-packages": {
+    "Name": "test-packages",
+    "kind": "subcommand",
+    "description": "Runs unit tests for one or more packages. The results are shown in a browser dashboard that updates whenever a relevant source file is modified",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--android": {
+        "Name": "--android",
+        "kind": "option",
+        "description": "Run tests in an Android emulator. All of the tests for client and server will run in addition to mobile-specific tests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--android-device": {
+        "Name": "--android-device",
+        "kind": "option",
+        "description": "Run tests on Android emulator or on a mobile device. All of the tests for client and server will run in addition to mobile-specific tests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--cordova-server-port": {
+        "Name": "--cordova-server-port",
+        "kind": "option",
+        "description": "Local port where Cordova will serve the content. It's important when multiple Cordova apps are build from the same Meteor app source code as by default the port is generated using the id inside .meteor/.id file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cport\u003e"
+        ]
+      },
+      "--driver-package": {
+        "Name": "--driver-package",
+        "kind": "option",
+        "description": "Test driver package to use to run tests and display results. For example: --driver-package meteortesting:mocha",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdriver-package\u003e": {
+            "Name": "\u003cdriver-package\u003e",
+            "kind": "argument",
+            "description": "driver-package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdriver-package\u003e": {
+            "Name": "\u003cdriver-package\u003e",
+            "kind": "argument",
+            "description": "driver-package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdriver-package\u003e"
+        ]
+      },
+      "--extra-packages": {
+        "Name": "--extra-packages",
+        "kind": "option",
+        "description": "Run with additional packages (comma separated, for example: --extra-packages \"package-name1, package-name2@1.2.3\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpackages\u003e": {
+            "Name": "\u003cpackages\u003e",
+            "kind": "argument",
+            "description": "packages",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpackages\u003e": {
+            "Name": "\u003cpackages\u003e",
+            "kind": "argument",
+            "description": "packages",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpackages\u003e"
+        ]
+      },
+      "--inspect": {
+        "Name": "--inspect",
+        "kind": "option",
+        "description": "Enable server-side debugging via debugging clients like the Node.js command-line debugger, Chrome DevTools, or Visual Studio Code",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--inspect-brk": {
+        "Name": "--inspect-brk",
+        "kind": "option",
+        "description": "Enable server-side debugging via debugging clients like the Node.js command-line debugger, Chrome DevTools, or Visual Studio Code. The server will be paused at startup, waiting for clients to attach to the process on the specified port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--ios": {
+        "Name": "--ios",
+        "kind": "option",
+        "description": "Run tests in an iOS emulator. All of the tests for client and server will run in addition to mobile-specific tests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ios-device": {
+        "Name": "--ios-device",
+        "kind": "option",
+        "description": "Run tests on iOS mobile device. All of the tests for client and server will run in addition to mobile-specific tests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--mobile-server": {
+        "Name": "--mobile-server",
+        "kind": "option",
+        "description": "Location where mobile builds connect to the Meteor server. Defaults to your local IP and the port that the Meteor server binds to. Can include a URL scheme (for example, --mobile-server https://example.com:443)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-lint": {
+        "Name": "--no-lint",
+        "kind": "option",
+        "description": "Don't run linters used by the app on every rebuild",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--port": {
+        "Name": "--port",
+        "kind": "option",
+        "description": "Port to listen on (instead of the default 3000). Also uses port N+1 and N+2",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cport\u003e"
+        ]
+      },
+      "--production": {
+        "Name": "--production",
+        "kind": "option",
+        "description": "Simulate production mode. Minify and bundle CSS and JS files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--release": {
+        "Name": "--release",
+        "kind": "option",
+        "description": "Specify the release of Meteor to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003crelease\u003e": {
+            "Name": "\u003crelease\u003e",
+            "kind": "argument",
+            "description": "release",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003crelease\u003e": {
+            "Name": "\u003crelease\u003e",
+            "kind": "argument",
+            "description": "release",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003crelease\u003e"
+        ]
+      },
+      "--settings": {
+        "Name": "--settings",
+        "kind": "option",
+        "description": "Set optional data for Meteor.settings on the server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cJSON File\u003e"
+        ]
+      },
+      "--test-app-path": {
+        "Name": "--test-app-path",
+        "kind": "option",
+        "description": "Set the directory in which to create a temporary app used for tests. Defaults to the system's temporary directory, usually /tmp",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Print all output from builds logs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Port to listen on (instead of the default 3000). Also uses port N+1 and N+2",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cport\u003e"
+        ]
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Set optional data for Meteor.settings on the server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cJSON File\u003e"
+        ]
+      },
+      "package": {
+        "Name": "package",
+        "kind": "option",
+        "description": "Package name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--android": {
+        "Name": "--android",
+        "kind": "option",
+        "description": "Run tests in an Android emulator. All of the tests for client and server will run in addition to mobile-specific tests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--android-device": {
+        "Name": "--android-device",
+        "kind": "option",
+        "description": "Run tests on Android emulator or on a mobile device. All of the tests for client and server will run in addition to mobile-specific tests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--cordova-server-port": {
+        "Name": "--cordova-server-port",
+        "kind": "option",
+        "description": "Local port where Cordova will serve the content. It's important when multiple Cordova apps are build from the same Meteor app source code as by default the port is generated using the id inside .meteor/.id file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cport\u003e"
+        ]
+      },
+      "--driver-package": {
+        "Name": "--driver-package",
+        "kind": "option",
+        "description": "Test driver package to use to run tests and display results. For example: --driver-package meteortesting:mocha",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdriver-package\u003e": {
+            "Name": "\u003cdriver-package\u003e",
+            "kind": "argument",
+            "description": "driver-package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdriver-package\u003e": {
+            "Name": "\u003cdriver-package\u003e",
+            "kind": "argument",
+            "description": "driver-package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdriver-package\u003e"
+        ]
+      },
+      "--extra-packages": {
+        "Name": "--extra-packages",
+        "kind": "option",
+        "description": "Run with additional packages (comma separated, for example: --extra-packages \"package-name1, package-name2@1.2.3\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpackages\u003e": {
+            "Name": "\u003cpackages\u003e",
+            "kind": "argument",
+            "description": "packages",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpackages\u003e": {
+            "Name": "\u003cpackages\u003e",
+            "kind": "argument",
+            "description": "packages",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpackages\u003e"
+        ]
+      },
+      "--inspect": {
+        "Name": "--inspect",
+        "kind": "option",
+        "description": "Enable server-side debugging via debugging clients like the Node.js command-line debugger, Chrome DevTools, or Visual Studio Code",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--inspect-brk": {
+        "Name": "--inspect-brk",
+        "kind": "option",
+        "description": "Enable server-side debugging via debugging clients like the Node.js command-line debugger, Chrome DevTools, or Visual Studio Code. The server will be paused at startup, waiting for clients to attach to the process on the specified port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--ios": {
+        "Name": "--ios",
+        "kind": "option",
+        "description": "Run tests in an iOS emulator. All of the tests for client and server will run in addition to mobile-specific tests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ios-device": {
+        "Name": "--ios-device",
+        "kind": "option",
+        "description": "Run tests on iOS mobile device. All of the tests for client and server will run in addition to mobile-specific tests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--mobile-server": {
+        "Name": "--mobile-server",
+        "kind": "option",
+        "description": "Location where mobile builds connect to the Meteor server. Defaults to your local IP and the port that the Meteor server binds to. Can include a URL scheme (for example, --mobile-server https://example.com:443)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-lint": {
+        "Name": "--no-lint",
+        "kind": "option",
+        "description": "Don't run linters used by the app on every rebuild",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--port": {
+        "Name": "--port",
+        "kind": "option",
+        "description": "Port to listen on (instead of the default 3000). Also uses port N+1 and N+2",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cport\u003e"
+        ]
+      },
+      "--production": {
+        "Name": "--production",
+        "kind": "option",
+        "description": "Simulate production mode. Minify and bundle CSS and JS files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--release": {
+        "Name": "--release",
+        "kind": "option",
+        "description": "Specify the release of Meteor to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003crelease\u003e": {
+            "Name": "\u003crelease\u003e",
+            "kind": "argument",
+            "description": "release",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003crelease\u003e": {
+            "Name": "\u003crelease\u003e",
+            "kind": "argument",
+            "description": "release",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003crelease\u003e"
+        ]
+      },
+      "--settings": {
+        "Name": "--settings",
+        "kind": "option",
+        "description": "Set optional data for Meteor.settings on the server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cJSON File\u003e"
+        ]
+      },
+      "--test-app-path": {
+        "Name": "--test-app-path",
+        "kind": "option",
+        "description": "Set the directory in which to create a temporary app used for tests. Defaults to the system's temporary directory, usually /tmp",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Print all output from builds logs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Port to listen on (instead of the default 3000). Also uses port N+1 and N+2",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cport\u003e": {
+            "Name": "\u003cport\u003e",
+            "kind": "argument",
+            "description": "port",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cport\u003e"
+        ]
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Set optional data for Meteor.settings on the server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cJSON File\u003e": {
+            "Name": "\u003cJSON File\u003e",
+            "kind": "argument",
+            "description": "JSON File",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cJSON File\u003e"
+        ]
+      }
+    }
+  },
+  "update": {
+    "Name": "update",
+    "kind": "subcommand",
+    "description": "Attempts to bring you to the latest version of Meteor, and then to upgrade your packages to their latest versions. By default, update will not break compatibility",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--all-packages": {
+        "Name": "--all-packages",
+        "kind": "option",
+        "description": "Update all packages including indirect dependencies",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--allow-incompatible-update": {
+        "Name": "--allow-incompatible-update",
+        "kind": "option",
+        "description": "Allow packages in your project to be upgraded or downgraded to versions that are potentially incompatible with the current versions, if required to satisfy all package version constraints",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--packages-only": {
+        "Name": "--packages-only",
+        "kind": "option",
+        "description": "Update the package versions only. Do not update the release",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--patch": {
+        "Name": "--patch",
+        "kind": "option",
+        "description": "Update the release to a patch release only",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--release": {
+        "Name": "--release",
+        "kind": "option",
+        "description": "Update to a specific release of meteor",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003crelease\u003e": {
+            "Name": "\u003crelease\u003e",
+            "kind": "argument",
+            "description": "release",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003crelease\u003e": {
+            "Name": "\u003crelease\u003e",
+            "kind": "argument",
+            "description": "release",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003crelease\u003e"
+        ]
+      },
+      "\u003cpackage_names\u003e": {
+        "Name": "\u003cpackage_names\u003e",
+        "kind": "argument",
+        "description": "package_names",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--all-packages": {
+        "Name": "--all-packages",
+        "kind": "option",
+        "description": "Update all packages including indirect dependencies",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--allow-incompatible-update": {
+        "Name": "--allow-incompatible-update",
+        "kind": "option",
+        "description": "Allow packages in your project to be upgraded or downgraded to versions that are potentially incompatible with the current versions, if required to satisfy all package version constraints",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--packages-only": {
+        "Name": "--packages-only",
+        "kind": "option",
+        "description": "Update the package versions only. Do not update the release",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--patch": {
+        "Name": "--patch",
+        "kind": "option",
+        "description": "Update the release to a patch release only",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--release": {
+        "Name": "--release",
+        "kind": "option",
+        "description": "Update to a specific release of meteor",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003crelease\u003e": {
+            "Name": "\u003crelease\u003e",
+            "kind": "argument",
+            "description": "release",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003crelease\u003e": {
+            "Name": "\u003crelease\u003e",
+            "kind": "argument",
+            "description": "release",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003crelease\u003e"
+        ]
+      },
+      "\u003cpackage_names\u003e": {
+        "Name": "\u003cpackage_names\u003e",
+        "kind": "argument",
+        "description": "package_names",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "whoami": {
+    "Name": "whoami",
+    "kind": "subcommand",
+    "description": "Prints the username of the currently logged-in Meteor developer",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

@@ -1,0 +1,654 @@
+{
+  "--auto-vertical-output": {
+    "Name": "--auto-vertical-output",
+    "kind": "option",
+    "description": "Automatically switch to vertical output mode if the result is wider than the terminal width",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--dbname": {
+    "Name": "--dbname",
+    "kind": "option",
+    "description": "Database name to connect to",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctext\u003e"
+    ]
+  },
+  "--dsn": {
+    "Name": "--dsn",
+    "kind": "option",
+    "description": "Use DSN configured into the [alias_dsn] section of pgclirc file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctext\u003e"
+    ]
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show this message and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--host": {
+    "Name": "--host",
+    "kind": "option",
+    "description": "Host address of the postgres database",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctext\u003e"
+    ]
+  },
+  "--less-chatty": {
+    "Name": "--less-chatty",
+    "kind": "option",
+    "description": "Skip intro on startup and goodbye on exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--list": {
+    "Name": "--list",
+    "kind": "option",
+    "description": "List available databases, then exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--list-dsn": {
+    "Name": "--list-dsn",
+    "kind": "option",
+    "description": "List of DSN configured into the [alias_dsn] section of pgclirc file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-password": {
+    "Name": "--no-password",
+    "kind": "option",
+    "description": "Never prompt for password",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--password": {
+    "Name": "--password",
+    "kind": "option",
+    "description": "Force password prompt",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--pgclirc": {
+    "Name": "--pgclirc",
+    "kind": "option",
+    "description": "Location of pgclirc file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile\u003e"
+    ]
+  },
+  "--port": {
+    "Name": "--port",
+    "kind": "option",
+    "description": "Port number at which the postgres instance is listening",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cinteger\u003e": {
+        "Name": "\u003cinteger\u003e",
+        "kind": "argument",
+        "description": "integer",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cinteger\u003e": {
+        "Name": "\u003cinteger\u003e",
+        "kind": "argument",
+        "description": "integer",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cinteger\u003e"
+    ]
+  },
+  "--prompt": {
+    "Name": "--prompt",
+    "kind": "option",
+    "description": "Prompt format (Default: \"\\u@\\h:\\d\u003e \")",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctext\u003e"
+    ]
+  },
+  "--prompt-dsn": {
+    "Name": "--prompt-dsn",
+    "kind": "option",
+    "description": "Prompt format for connections using DSN aliases (Default: \"\\u@\\h:\\d\u003e \")",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctext\u003e"
+    ]
+  },
+  "--row-limit": {
+    "Name": "--row-limit",
+    "kind": "option",
+    "description": "Set threshold for row limit prompt. Use 0 to disable prompt",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cinteger\u003e": {
+        "Name": "\u003cinteger\u003e",
+        "kind": "argument",
+        "description": "integer",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cinteger\u003e": {
+        "Name": "\u003cinteger\u003e",
+        "kind": "argument",
+        "description": "integer",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cinteger\u003e"
+    ]
+  },
+  "--single-connection": {
+    "Name": "--single-connection",
+    "kind": "option",
+    "description": "Do not use a separate connection for completions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--ssh-tunnel": {
+    "Name": "--ssh-tunnel",
+    "kind": "option",
+    "description": "Open an SSH tunnel to the given address and connect to the database from it",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctext\u003e"
+    ]
+  },
+  "--user": {
+    "Name": "--user",
+    "kind": "option",
+    "description": "Username to connect to the postgres database",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctext\u003e"
+    ]
+  },
+  "--username": {
+    "Name": "--username",
+    "kind": "option",
+    "description": "Username to connect to the postgres database",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctext\u003e"
+    ]
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Version of pgcli",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--warn": {
+    "Name": "--warn",
+    "kind": "option",
+    "description": "Warn before running a destructive query",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cchoice\u003e": {
+        "Name": "\u003cchoice\u003e",
+        "kind": "argument",
+        "description": "choice",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cchoice\u003e": {
+        "Name": "\u003cchoice\u003e",
+        "kind": "argument",
+        "description": "choice",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cchoice\u003e"
+    ]
+  },
+  "-D": {
+    "Name": "-D",
+    "kind": "option",
+    "description": "Use DSN configured into the [alias_dsn] section of pgclirc file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctext\u003e"
+    ]
+  },
+  "-U": {
+    "Name": "-U",
+    "kind": "option",
+    "description": "Username to connect to the postgres database",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctext\u003e"
+    ]
+  },
+  "-W": {
+    "Name": "-W",
+    "kind": "option",
+    "description": "Force password prompt",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Database name to connect to",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctext\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Host address of the postgres database",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctext\u003e"
+    ]
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "option",
+    "description": "List available databases, then exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-p": {
+    "Name": "-p",
+    "kind": "option",
+    "description": "Port number at which the postgres instance is listening",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cinteger\u003e": {
+        "Name": "\u003cinteger\u003e",
+        "kind": "argument",
+        "description": "integer",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cinteger\u003e": {
+        "Name": "\u003cinteger\u003e",
+        "kind": "argument",
+        "description": "integer",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cinteger\u003e"
+    ]
+  },
+  "-u": {
+    "Name": "-u",
+    "kind": "option",
+    "description": "Username to connect to the postgres database",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctext\u003e"
+    ]
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Version of pgcli",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-w": {
+    "Name": "-w",
+    "kind": "option",
+    "description": "Never prompt for password",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003cdatabase_name or db_url\u003e": {
+    "Name": "\u003cdatabase_name or db_url\u003e",
+    "kind": "argument",
+    "description": "database_name or db_url",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

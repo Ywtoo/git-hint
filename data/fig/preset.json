@@ -1,0 +1,555 @@
+{
+  "--debug": {
+    "Name": "--debug",
+    "kind": "option",
+    "description": "Display debug information instead of standard output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for preset",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-cache": {
+    "Name": "--no-cache",
+    "kind": "option",
+    "description": "Do not use the cached repository if it exists",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-interaction": {
+    "Name": "--no-interaction",
+    "kind": "option",
+    "description": "Disable interactions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-ssh": {
+    "Name": "--no-ssh",
+    "kind": "option",
+    "description": "Do not use SSH when cloning repositories",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--path": {
+    "Name": "--path",
+    "kind": "option",
+    "description": "Path to a sub-directory in which to look for a preset",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--silent": {
+    "Name": "--silent",
+    "kind": "option",
+    "description": "Do not print anything",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--tag": {
+    "Name": "--tag",
+    "kind": "option",
+    "description": "Branch or tag to use if the preset is a repository",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctag\u003e": {
+        "Name": "\u003ctag\u003e",
+        "kind": "argument",
+        "description": "tag",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctag\u003e": {
+        "Name": "\u003ctag\u003e",
+        "kind": "argument",
+        "description": "tag",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctag\u003e"
+    ]
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Show the version number",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help for preset",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-p": {
+    "Name": "-p",
+    "kind": "option",
+    "description": "Path to a sub-directory in which to look for a preset",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Branch or tag to use if the preset is a repository",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctag\u003e": {
+        "Name": "\u003ctag\u003e",
+        "kind": "argument",
+        "description": "tag",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctag\u003e": {
+        "Name": "\u003ctag\u003e",
+        "kind": "argument",
+        "description": "tag",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctag\u003e"
+    ]
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Show the version number",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003cresolvable\u003e": {
+    "Name": "\u003cresolvable\u003e",
+    "kind": "argument",
+    "description": "resolvable",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  },
+  "\u003ctarget-directory\u003e": {
+    "Name": "\u003ctarget-directory\u003e",
+    "kind": "argument",
+    "description": "target-directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  },
+  "apply": {
+    "Name": "apply",
+    "kind": "subcommand",
+    "description": "Apply a preset",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--no-cache": {
+        "Name": "--no-cache",
+        "kind": "option",
+        "description": "Do not use the cached repository if it exists",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-ssh": {
+        "Name": "--no-ssh",
+        "kind": "option",
+        "description": "Do not use SSH when cloning repositories",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--path": {
+        "Name": "--path",
+        "kind": "option",
+        "description": "Path to a sub-directory in which to look for a preset",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--tag": {
+        "Name": "--tag",
+        "kind": "option",
+        "description": "Branch or tag to use if the preset is a repository",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctag\u003e": {
+            "Name": "\u003ctag\u003e",
+            "kind": "argument",
+            "description": "tag",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctag\u003e": {
+            "Name": "\u003ctag\u003e",
+            "kind": "argument",
+            "description": "tag",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctag\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Path to a sub-directory in which to look for a preset",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Branch or tag to use if the preset is a repository",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctag\u003e": {
+            "Name": "\u003ctag\u003e",
+            "kind": "argument",
+            "description": "tag",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctag\u003e": {
+            "Name": "\u003ctag\u003e",
+            "kind": "argument",
+            "description": "tag",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctag\u003e"
+        ]
+      },
+      "\u003cresolvable\u003e": {
+        "Name": "\u003cresolvable\u003e",
+        "kind": "argument",
+        "description": "resolvable",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ctarget-directory\u003e": {
+        "Name": "\u003ctarget-directory\u003e",
+        "kind": "argument",
+        "description": "target-directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--no-cache": {
+        "Name": "--no-cache",
+        "kind": "option",
+        "description": "Do not use the cached repository if it exists",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-ssh": {
+        "Name": "--no-ssh",
+        "kind": "option",
+        "description": "Do not use SSH when cloning repositories",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--path": {
+        "Name": "--path",
+        "kind": "option",
+        "description": "Path to a sub-directory in which to look for a preset",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--tag": {
+        "Name": "--tag",
+        "kind": "option",
+        "description": "Branch or tag to use if the preset is a repository",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctag\u003e": {
+            "Name": "\u003ctag\u003e",
+            "kind": "argument",
+            "description": "tag",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctag\u003e": {
+            "Name": "\u003ctag\u003e",
+            "kind": "argument",
+            "description": "tag",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctag\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Path to a sub-directory in which to look for a preset",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Branch or tag to use if the preset is a repository",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctag\u003e": {
+            "Name": "\u003ctag\u003e",
+            "kind": "argument",
+            "description": "tag",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctag\u003e": {
+            "Name": "\u003ctag\u003e",
+            "kind": "argument",
+            "description": "tag",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctag\u003e"
+        ]
+      },
+      "\u003cresolvable\u003e": {
+        "Name": "\u003cresolvable\u003e",
+        "kind": "argument",
+        "description": "resolvable",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ctarget-directory\u003e": {
+        "Name": "\u003ctarget-directory\u003e",
+        "kind": "argument",
+        "description": "target-directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cresolvable\u003e"
+    ]
+  },
+  "init": {
+    "Name": "init",
+    "kind": "subcommand",
+    "description": "Create a new preset",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctarget-directory\u003e": {
+        "Name": "\u003ctarget-directory\u003e",
+        "kind": "argument",
+        "description": "target-directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctarget-directory\u003e": {
+        "Name": "\u003ctarget-directory\u003e",
+        "kind": "argument",
+        "description": "target-directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  }
+}

@@ -1,0 +1,6251 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "create": {
+    "Name": "create",
+    "kind": "subcommand",
+    "description": "Create new Serverless service",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "dashboard": {
+    "Name": "dashboard",
+    "kind": "subcommand",
+    "description": "Open the Serverless dashboard",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "deploy": {
+    "Name": "deploy",
+    "kind": "subcommand",
+    "description": "Deploy a Serverless service",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--app": {
+        "Name": "--app",
+        "kind": "option",
+        "description": "Dashboard app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003capp\u003e": {
+            "Name": "\u003capp\u003e",
+            "kind": "argument",
+            "description": "app",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003capp\u003e": {
+            "Name": "\u003capp\u003e",
+            "kind": "argument",
+            "description": "app",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003capp\u003e"
+        ]
+      },
+      "--aws-profile": {
+        "Name": "--aws-profile",
+        "kind": "option",
+        "description": "AWS profile to use with the command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprofile name\u003e": {
+            "Name": "\u003cprofile name\u003e",
+            "kind": "argument",
+            "description": "profile name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprofile name\u003e": {
+            "Name": "\u003cprofile name\u003e",
+            "kind": "argument",
+            "description": "profile name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprofile name\u003e"
+        ]
+      },
+      "--aws-s3-accelerate": {
+        "Name": "--aws-s3-accelerate",
+        "kind": "option",
+        "description": "Enables S3 Transfer Acceleration making uploading artifacts much faster",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--conceal": {
+        "Name": "--conceal",
+        "kind": "option",
+        "description": "Hide secrets from the output (e.g. API Gateway key values)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Path to serverless config file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c.yml file\u003e": {
+            "Name": "\u003c.yml file\u003e",
+            "kind": "argument",
+            "description": ".yml file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c.yml file\u003e": {
+            "Name": "\u003c.yml file\u003e",
+            "kind": "argument",
+            "description": ".yml file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c.yml file\u003e"
+        ]
+      },
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Forces a deployment to take place",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--function": {
+        "Name": "--function",
+        "kind": "option",
+        "description": "Name of the function",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfunction\u003e": {
+            "Name": "\u003cfunction\u003e",
+            "kind": "argument",
+            "description": "function",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfunction\u003e": {
+            "Name": "\u003cfunction\u003e",
+            "kind": "argument",
+            "description": "function",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfunction\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--org": {
+        "Name": "--org",
+        "kind": "option",
+        "description": "Dashboard org",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003corg\u003e": {
+            "Name": "\u003corg\u003e",
+            "kind": "argument",
+            "description": "org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003corg\u003e": {
+            "Name": "\u003corg\u003e",
+            "kind": "argument",
+            "description": "org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003corg\u003e"
+        ]
+      },
+      "--package": {
+        "Name": "--package",
+        "kind": "option",
+        "description": "Path of the deployment package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpackage\u003e": {
+            "Name": "\u003cpackage\u003e",
+            "kind": "argument",
+            "description": "package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpackage\u003e": {
+            "Name": "\u003cpackage\u003e",
+            "kind": "argument",
+            "description": "package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpackage\u003e"
+        ]
+      },
+      "--region": {
+        "Name": "--region",
+        "kind": "option",
+        "description": "Region of the service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cregion\u003e"
+        ]
+      },
+      "--stage": {
+        "Name": "--stage",
+        "kind": "option",
+        "description": "Stage of the service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstage\u003e": {
+            "Name": "\u003cstage\u003e",
+            "kind": "argument",
+            "description": "stage",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstage\u003e": {
+            "Name": "\u003cstage\u003e",
+            "kind": "argument",
+            "description": "stage",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstage\u003e"
+        ]
+      },
+      "--use-local-credentials": {
+        "Name": "--use-local-credentials",
+        "kind": "option",
+        "description": "Rely on locally resolved AWS credentials instead of loading them from Dashboard provider settings (applies only to services integrated with Dashboard)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Show all stack events during deployment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cproduction\u003e": {
+            "Name": "\u003cproduction\u003e",
+            "kind": "argument",
+            "description": "production",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cproduction\u003e": {
+            "Name": "\u003cproduction\u003e",
+            "kind": "argument",
+            "description": "production",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cproduction\u003e"
+        ]
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version info",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Path to serverless config file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c.yml file\u003e": {
+            "Name": "\u003c.yml file\u003e",
+            "kind": "argument",
+            "description": ".yml file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c.yml file\u003e": {
+            "Name": "\u003c.yml file\u003e",
+            "kind": "argument",
+            "description": ".yml file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c.yml file\u003e"
+        ]
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Name of the function",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfunction\u003e": {
+            "Name": "\u003cfunction\u003e",
+            "kind": "argument",
+            "description": "function",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfunction\u003e": {
+            "Name": "\u003cfunction\u003e",
+            "kind": "argument",
+            "description": "function",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfunction\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Path of the deployment package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpackage\u003e": {
+            "Name": "\u003cpackage\u003e",
+            "kind": "argument",
+            "description": "package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpackage\u003e": {
+            "Name": "\u003cpackage\u003e",
+            "kind": "argument",
+            "description": "package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpackage\u003e"
+        ]
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Region of the service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cregion\u003e"
+        ]
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Stage of the service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstage\u003e": {
+            "Name": "\u003cstage\u003e",
+            "kind": "argument",
+            "description": "stage",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstage\u003e": {
+            "Name": "\u003cstage\u003e",
+            "kind": "argument",
+            "description": "stage",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstage\u003e"
+        ]
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Show all stack events during deployment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cproduction\u003e": {
+            "Name": "\u003cproduction\u003e",
+            "kind": "argument",
+            "description": "production",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cproduction\u003e": {
+            "Name": "\u003cproduction\u003e",
+            "kind": "argument",
+            "description": "production",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cproduction\u003e"
+        ]
+      },
+      "function": {
+        "Name": "function",
+        "kind": "subcommand",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--app": {
+            "Name": "--app",
+            "kind": "option",
+            "description": "Dashboard app",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003capp\u003e": {
+                "Name": "\u003capp\u003e",
+                "kind": "argument",
+                "description": "app",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003capp\u003e": {
+                "Name": "\u003capp\u003e",
+                "kind": "argument",
+                "description": "app",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003capp\u003e"
+            ]
+          },
+          "--aws-profile": {
+            "Name": "--aws-profile",
+            "kind": "option",
+            "description": "AWS profile to use with the command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cprofile name\u003e": {
+                "Name": "\u003cprofile name\u003e",
+                "kind": "argument",
+                "description": "profile name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cprofile name\u003e": {
+                "Name": "\u003cprofile name\u003e",
+                "kind": "argument",
+                "description": "profile name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cprofile name\u003e"
+            ]
+          },
+          "--config": {
+            "Name": "--config",
+            "kind": "option",
+            "description": "Path to serverless config file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003c.yml file\u003e": {
+                "Name": "\u003c.yml file\u003e",
+                "kind": "argument",
+                "description": ".yml file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003c.yml file\u003e": {
+                "Name": "\u003c.yml file\u003e",
+                "kind": "argument",
+                "description": ".yml file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003c.yml file\u003e"
+            ]
+          },
+          "--force": {
+            "Name": "--force",
+            "kind": "option",
+            "description": "Forces a deployment to take place",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--function": {
+            "Name": "--function",
+            "kind": "option",
+            "description": "Name of the function",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfunction\u003e": {
+                "Name": "\u003cfunction\u003e",
+                "kind": "argument",
+                "description": "function",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfunction\u003e": {
+                "Name": "\u003cfunction\u003e",
+                "kind": "argument",
+                "description": "function",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfunction\u003e"
+            ]
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show help",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--org": {
+            "Name": "--org",
+            "kind": "option",
+            "description": "Dashboard org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003corg\u003e": {
+                "Name": "\u003corg\u003e",
+                "kind": "argument",
+                "description": "org",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003corg\u003e": {
+                "Name": "\u003corg\u003e",
+                "kind": "argument",
+                "description": "org",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003corg\u003e"
+            ]
+          },
+          "--region": {
+            "Name": "--region",
+            "kind": "option",
+            "description": "Region of the service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cregion\u003e"
+            ]
+          },
+          "--stage": {
+            "Name": "--stage",
+            "kind": "option",
+            "description": "Stage of the service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstage\u003e": {
+                "Name": "\u003cstage\u003e",
+                "kind": "argument",
+                "description": "stage",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstage\u003e": {
+                "Name": "\u003cstage\u003e",
+                "kind": "argument",
+                "description": "stage",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstage\u003e"
+            ]
+          },
+          "--update-config": {
+            "Name": "--update-config",
+            "kind": "option",
+            "description": "Updates function configuration, e.g. Timeout or Memory Size without deploying code",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cconfig\u003e": {
+                "Name": "\u003cconfig\u003e",
+                "kind": "argument",
+                "description": "config",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cconfig\u003e": {
+                "Name": "\u003cconfig\u003e",
+                "kind": "argument",
+                "description": "config",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cconfig\u003e"
+            ]
+          },
+          "--use-local-credentials": {
+            "Name": "--use-local-credentials",
+            "kind": "option",
+            "description": "Rely on locally resolved AWS credentials instead of loading them from Dashboard provider settings (applies only to services integrated with Dashboard)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--version": {
+            "Name": "--version",
+            "kind": "option",
+            "description": "Show version info",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-c": {
+            "Name": "-c",
+            "kind": "option",
+            "description": "Path to serverless config file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003c.yml file\u003e": {
+                "Name": "\u003c.yml file\u003e",
+                "kind": "argument",
+                "description": ".yml file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003c.yml file\u003e": {
+                "Name": "\u003c.yml file\u003e",
+                "kind": "argument",
+                "description": ".yml file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003c.yml file\u003e"
+            ]
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Name of the function",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfunction\u003e": {
+                "Name": "\u003cfunction\u003e",
+                "kind": "argument",
+                "description": "function",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfunction\u003e": {
+                "Name": "\u003cfunction\u003e",
+                "kind": "argument",
+                "description": "function",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfunction\u003e"
+            ]
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Show help",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-r": {
+            "Name": "-r",
+            "kind": "option",
+            "description": "Region of the service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cregion\u003e"
+            ]
+          },
+          "-s": {
+            "Name": "-s",
+            "kind": "option",
+            "description": "Stage of the service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstage\u003e": {
+                "Name": "\u003cstage\u003e",
+                "kind": "argument",
+                "description": "stage",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstage\u003e": {
+                "Name": "\u003cstage\u003e",
+                "kind": "argument",
+                "description": "stage",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstage\u003e"
+            ]
+          },
+          "-u": {
+            "Name": "-u",
+            "kind": "option",
+            "description": "Updates function configuration, e.g. Timeout or Memory Size without deploying code",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cconfig\u003e": {
+                "Name": "\u003cconfig\u003e",
+                "kind": "argument",
+                "description": "config",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cconfig\u003e": {
+                "Name": "\u003cconfig\u003e",
+                "kind": "argument",
+                "description": "config",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cconfig\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--app": {
+            "Name": "--app",
+            "kind": "option",
+            "description": "Dashboard app",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003capp\u003e": {
+                "Name": "\u003capp\u003e",
+                "kind": "argument",
+                "description": "app",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003capp\u003e": {
+                "Name": "\u003capp\u003e",
+                "kind": "argument",
+                "description": "app",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003capp\u003e"
+            ]
+          },
+          "--aws-profile": {
+            "Name": "--aws-profile",
+            "kind": "option",
+            "description": "AWS profile to use with the command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cprofile name\u003e": {
+                "Name": "\u003cprofile name\u003e",
+                "kind": "argument",
+                "description": "profile name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cprofile name\u003e": {
+                "Name": "\u003cprofile name\u003e",
+                "kind": "argument",
+                "description": "profile name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cprofile name\u003e"
+            ]
+          },
+          "--config": {
+            "Name": "--config",
+            "kind": "option",
+            "description": "Path to serverless config file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003c.yml file\u003e": {
+                "Name": "\u003c.yml file\u003e",
+                "kind": "argument",
+                "description": ".yml file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003c.yml file\u003e": {
+                "Name": "\u003c.yml file\u003e",
+                "kind": "argument",
+                "description": ".yml file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003c.yml file\u003e"
+            ]
+          },
+          "--force": {
+            "Name": "--force",
+            "kind": "option",
+            "description": "Forces a deployment to take place",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--function": {
+            "Name": "--function",
+            "kind": "option",
+            "description": "Name of the function",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfunction\u003e": {
+                "Name": "\u003cfunction\u003e",
+                "kind": "argument",
+                "description": "function",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfunction\u003e": {
+                "Name": "\u003cfunction\u003e",
+                "kind": "argument",
+                "description": "function",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfunction\u003e"
+            ]
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show help",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--org": {
+            "Name": "--org",
+            "kind": "option",
+            "description": "Dashboard org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003corg\u003e": {
+                "Name": "\u003corg\u003e",
+                "kind": "argument",
+                "description": "org",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003corg\u003e": {
+                "Name": "\u003corg\u003e",
+                "kind": "argument",
+                "description": "org",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003corg\u003e"
+            ]
+          },
+          "--region": {
+            "Name": "--region",
+            "kind": "option",
+            "description": "Region of the service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cregion\u003e"
+            ]
+          },
+          "--stage": {
+            "Name": "--stage",
+            "kind": "option",
+            "description": "Stage of the service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstage\u003e": {
+                "Name": "\u003cstage\u003e",
+                "kind": "argument",
+                "description": "stage",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstage\u003e": {
+                "Name": "\u003cstage\u003e",
+                "kind": "argument",
+                "description": "stage",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstage\u003e"
+            ]
+          },
+          "--update-config": {
+            "Name": "--update-config",
+            "kind": "option",
+            "description": "Updates function configuration, e.g. Timeout or Memory Size without deploying code",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cconfig\u003e": {
+                "Name": "\u003cconfig\u003e",
+                "kind": "argument",
+                "description": "config",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cconfig\u003e": {
+                "Name": "\u003cconfig\u003e",
+                "kind": "argument",
+                "description": "config",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cconfig\u003e"
+            ]
+          },
+          "--use-local-credentials": {
+            "Name": "--use-local-credentials",
+            "kind": "option",
+            "description": "Rely on locally resolved AWS credentials instead of loading them from Dashboard provider settings (applies only to services integrated with Dashboard)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--version": {
+            "Name": "--version",
+            "kind": "option",
+            "description": "Show version info",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-c": {
+            "Name": "-c",
+            "kind": "option",
+            "description": "Path to serverless config file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003c.yml file\u003e": {
+                "Name": "\u003c.yml file\u003e",
+                "kind": "argument",
+                "description": ".yml file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003c.yml file\u003e": {
+                "Name": "\u003c.yml file\u003e",
+                "kind": "argument",
+                "description": ".yml file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003c.yml file\u003e"
+            ]
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Name of the function",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfunction\u003e": {
+                "Name": "\u003cfunction\u003e",
+                "kind": "argument",
+                "description": "function",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfunction\u003e": {
+                "Name": "\u003cfunction\u003e",
+                "kind": "argument",
+                "description": "function",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfunction\u003e"
+            ]
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Show help",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-r": {
+            "Name": "-r",
+            "kind": "option",
+            "description": "Region of the service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cregion\u003e"
+            ]
+          },
+          "-s": {
+            "Name": "-s",
+            "kind": "option",
+            "description": "Stage of the service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstage\u003e": {
+                "Name": "\u003cstage\u003e",
+                "kind": "argument",
+                "description": "stage",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstage\u003e": {
+                "Name": "\u003cstage\u003e",
+                "kind": "argument",
+                "description": "stage",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstage\u003e"
+            ]
+          },
+          "-u": {
+            "Name": "-u",
+            "kind": "option",
+            "description": "Updates function configuration, e.g. Timeout or Memory Size without deploying code",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cconfig\u003e": {
+                "Name": "\u003cconfig\u003e",
+                "kind": "argument",
+                "description": "config",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cconfig\u003e": {
+                "Name": "\u003cconfig\u003e",
+                "kind": "argument",
+                "description": "config",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cconfig\u003e"
+            ]
+          }
+        }
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--app": {
+            "Name": "--app",
+            "kind": "option",
+            "description": "Dashboard app",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003capp\u003e": {
+                "Name": "\u003capp\u003e",
+                "kind": "argument",
+                "description": "app",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003capp\u003e": {
+                "Name": "\u003capp\u003e",
+                "kind": "argument",
+                "description": "app",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003capp\u003e"
+            ]
+          },
+          "--aws-profile": {
+            "Name": "--aws-profile",
+            "kind": "option",
+            "description": "AWS profile to use with the command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cprofile name\u003e": {
+                "Name": "\u003cprofile name\u003e",
+                "kind": "argument",
+                "description": "profile name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cprofile name\u003e": {
+                "Name": "\u003cprofile name\u003e",
+                "kind": "argument",
+                "description": "profile name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cprofile name\u003e"
+            ]
+          },
+          "--config": {
+            "Name": "--config",
+            "kind": "option",
+            "description": "Path to serverless config file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003c.yml file\u003e": {
+                "Name": "\u003c.yml file\u003e",
+                "kind": "argument",
+                "description": ".yml file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003c.yml file\u003e": {
+                "Name": "\u003c.yml file\u003e",
+                "kind": "argument",
+                "description": ".yml file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003c.yml file\u003e"
+            ]
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show help",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--org": {
+            "Name": "--org",
+            "kind": "option",
+            "description": "Dashboard org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003corg\u003e": {
+                "Name": "\u003corg\u003e",
+                "kind": "argument",
+                "description": "org",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003corg\u003e": {
+                "Name": "\u003corg\u003e",
+                "kind": "argument",
+                "description": "org",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003corg\u003e"
+            ]
+          },
+          "--region": {
+            "Name": "--region",
+            "kind": "option",
+            "description": "Region of the service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cregion\u003e"
+            ]
+          },
+          "--stage": {
+            "Name": "--stage",
+            "kind": "option",
+            "description": "Stage of the service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstage\u003e": {
+                "Name": "\u003cstage\u003e",
+                "kind": "argument",
+                "description": "stage",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstage\u003e": {
+                "Name": "\u003cstage\u003e",
+                "kind": "argument",
+                "description": "stage",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstage\u003e"
+            ]
+          },
+          "--use-local-credentials": {
+            "Name": "--use-local-credentials",
+            "kind": "option",
+            "description": "Rely on locally resolved AWS credentials instead of loading them from Dashboard provider settings (applies only to services integrated with Dashboard)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--version": {
+            "Name": "--version",
+            "kind": "option",
+            "description": "Show version info",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-c": {
+            "Name": "-c",
+            "kind": "option",
+            "description": "Path to serverless config file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003c.yml file\u003e": {
+                "Name": "\u003c.yml file\u003e",
+                "kind": "argument",
+                "description": ".yml file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003c.yml file\u003e": {
+                "Name": "\u003c.yml file\u003e",
+                "kind": "argument",
+                "description": ".yml file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003c.yml file\u003e"
+            ]
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Show help",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-r": {
+            "Name": "-r",
+            "kind": "option",
+            "description": "Region of the service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cregion\u003e"
+            ]
+          },
+          "-s": {
+            "Name": "-s",
+            "kind": "option",
+            "description": "Stage of the service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstage\u003e": {
+                "Name": "\u003cstage\u003e",
+                "kind": "argument",
+                "description": "stage",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstage\u003e": {
+                "Name": "\u003cstage\u003e",
+                "kind": "argument",
+                "description": "stage",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstage\u003e"
+            ]
+          },
+          "functions": {
+            "Name": "functions",
+            "kind": "subcommand",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "--app": {
+                "Name": "--app",
+                "kind": "option",
+                "description": "Dashboard app",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003capp\u003e": {
+                    "Name": "\u003capp\u003e",
+                    "kind": "argument",
+                    "description": "app",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003capp\u003e": {
+                    "Name": "\u003capp\u003e",
+                    "kind": "argument",
+                    "description": "app",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003capp\u003e"
+                ]
+              },
+              "--aws-profile": {
+                "Name": "--aws-profile",
+                "kind": "option",
+                "description": "AWS profile to use with the command",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cprofile name\u003e": {
+                    "Name": "\u003cprofile name\u003e",
+                    "kind": "argument",
+                    "description": "profile name",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cprofile name\u003e": {
+                    "Name": "\u003cprofile name\u003e",
+                    "kind": "argument",
+                    "description": "profile name",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cprofile name\u003e"
+                ]
+              },
+              "--config": {
+                "Name": "--config",
+                "kind": "option",
+                "description": "Path to serverless config file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003c.yml file\u003e": {
+                    "Name": "\u003c.yml file\u003e",
+                    "kind": "argument",
+                    "description": ".yml file",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003c.yml file\u003e": {
+                    "Name": "\u003c.yml file\u003e",
+                    "kind": "argument",
+                    "description": ".yml file",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003c.yml file\u003e"
+                ]
+              },
+              "--help": {
+                "Name": "--help",
+                "kind": "option",
+                "description": "Show help",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--org": {
+                "Name": "--org",
+                "kind": "option",
+                "description": "Dashboard org",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003corg\u003e": {
+                    "Name": "\u003corg\u003e",
+                    "kind": "argument",
+                    "description": "org",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003corg\u003e": {
+                    "Name": "\u003corg\u003e",
+                    "kind": "argument",
+                    "description": "org",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003corg\u003e"
+                ]
+              },
+              "--region": {
+                "Name": "--region",
+                "kind": "option",
+                "description": "Region of the service",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cregion\u003e": {
+                    "Name": "\u003cregion\u003e",
+                    "kind": "argument",
+                    "description": "region",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cregion\u003e": {
+                    "Name": "\u003cregion\u003e",
+                    "kind": "argument",
+                    "description": "region",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cregion\u003e"
+                ]
+              },
+              "--stage": {
+                "Name": "--stage",
+                "kind": "option",
+                "description": "Stage of the service",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cstage\u003e": {
+                    "Name": "\u003cstage\u003e",
+                    "kind": "argument",
+                    "description": "stage",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cstage\u003e": {
+                    "Name": "\u003cstage\u003e",
+                    "kind": "argument",
+                    "description": "stage",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cstage\u003e"
+                ]
+              },
+              "--use-local-credentials": {
+                "Name": "--use-local-credentials",
+                "kind": "option",
+                "description": "Rely on locally resolved AWS credentials instead of loading them from Dashboard provider settings (applies only to services integrated with Dashboard)",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--version": {
+                "Name": "--version",
+                "kind": "option",
+                "description": "Show version info",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "-c": {
+                "Name": "-c",
+                "kind": "option",
+                "description": "Path to serverless config file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003c.yml file\u003e": {
+                    "Name": "\u003c.yml file\u003e",
+                    "kind": "argument",
+                    "description": ".yml file",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003c.yml file\u003e": {
+                    "Name": "\u003c.yml file\u003e",
+                    "kind": "argument",
+                    "description": ".yml file",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003c.yml file\u003e"
+                ]
+              },
+              "-h": {
+                "Name": "-h",
+                "kind": "option",
+                "description": "Show help",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "-r": {
+                "Name": "-r",
+                "kind": "option",
+                "description": "Region of the service",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cregion\u003e": {
+                    "Name": "\u003cregion\u003e",
+                    "kind": "argument",
+                    "description": "region",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cregion\u003e": {
+                    "Name": "\u003cregion\u003e",
+                    "kind": "argument",
+                    "description": "region",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cregion\u003e"
+                ]
+              },
+              "-s": {
+                "Name": "-s",
+                "kind": "option",
+                "description": "Stage of the service",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cstage\u003e": {
+                    "Name": "\u003cstage\u003e",
+                    "kind": "argument",
+                    "description": "stage",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cstage\u003e": {
+                    "Name": "\u003cstage\u003e",
+                    "kind": "argument",
+                    "description": "stage",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cstage\u003e"
+                ]
+              }
+            },
+            "options": {
+              "--app": {
+                "Name": "--app",
+                "kind": "option",
+                "description": "Dashboard app",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003capp\u003e": {
+                    "Name": "\u003capp\u003e",
+                    "kind": "argument",
+                    "description": "app",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003capp\u003e": {
+                    "Name": "\u003capp\u003e",
+                    "kind": "argument",
+                    "description": "app",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003capp\u003e"
+                ]
+              },
+              "--aws-profile": {
+                "Name": "--aws-profile",
+                "kind": "option",
+                "description": "AWS profile to use with the command",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cprofile name\u003e": {
+                    "Name": "\u003cprofile name\u003e",
+                    "kind": "argument",
+                    "description": "profile name",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cprofile name\u003e": {
+                    "Name": "\u003cprofile name\u003e",
+                    "kind": "argument",
+                    "description": "profile name",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cprofile name\u003e"
+                ]
+              },
+              "--config": {
+                "Name": "--config",
+                "kind": "option",
+                "description": "Path to serverless config file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003c.yml file\u003e": {
+                    "Name": "\u003c.yml file\u003e",
+                    "kind": "argument",
+                    "description": ".yml file",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003c.yml file\u003e": {
+                    "Name": "\u003c.yml file\u003e",
+                    "kind": "argument",
+                    "description": ".yml file",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003c.yml file\u003e"
+                ]
+              },
+              "--help": {
+                "Name": "--help",
+                "kind": "option",
+                "description": "Show help",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--org": {
+                "Name": "--org",
+                "kind": "option",
+                "description": "Dashboard org",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003corg\u003e": {
+                    "Name": "\u003corg\u003e",
+                    "kind": "argument",
+                    "description": "org",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003corg\u003e": {
+                    "Name": "\u003corg\u003e",
+                    "kind": "argument",
+                    "description": "org",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003corg\u003e"
+                ]
+              },
+              "--region": {
+                "Name": "--region",
+                "kind": "option",
+                "description": "Region of the service",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cregion\u003e": {
+                    "Name": "\u003cregion\u003e",
+                    "kind": "argument",
+                    "description": "region",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cregion\u003e": {
+                    "Name": "\u003cregion\u003e",
+                    "kind": "argument",
+                    "description": "region",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cregion\u003e"
+                ]
+              },
+              "--stage": {
+                "Name": "--stage",
+                "kind": "option",
+                "description": "Stage of the service",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cstage\u003e": {
+                    "Name": "\u003cstage\u003e",
+                    "kind": "argument",
+                    "description": "stage",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cstage\u003e": {
+                    "Name": "\u003cstage\u003e",
+                    "kind": "argument",
+                    "description": "stage",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cstage\u003e"
+                ]
+              },
+              "--use-local-credentials": {
+                "Name": "--use-local-credentials",
+                "kind": "option",
+                "description": "Rely on locally resolved AWS credentials instead of loading them from Dashboard provider settings (applies only to services integrated with Dashboard)",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "--version": {
+                "Name": "--version",
+                "kind": "option",
+                "description": "Show version info",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "-c": {
+                "Name": "-c",
+                "kind": "option",
+                "description": "Path to serverless config file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003c.yml file\u003e": {
+                    "Name": "\u003c.yml file\u003e",
+                    "kind": "argument",
+                    "description": ".yml file",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003c.yml file\u003e": {
+                    "Name": "\u003c.yml file\u003e",
+                    "kind": "argument",
+                    "description": ".yml file",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003c.yml file\u003e"
+                ]
+              },
+              "-h": {
+                "Name": "-h",
+                "kind": "option",
+                "description": "Show help",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              },
+              "-r": {
+                "Name": "-r",
+                "kind": "option",
+                "description": "Region of the service",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cregion\u003e": {
+                    "Name": "\u003cregion\u003e",
+                    "kind": "argument",
+                    "description": "region",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cregion\u003e": {
+                    "Name": "\u003cregion\u003e",
+                    "kind": "argument",
+                    "description": "region",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cregion\u003e"
+                ]
+              },
+              "-s": {
+                "Name": "-s",
+                "kind": "option",
+                "description": "Stage of the service",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {
+                  "\u003cstage\u003e": {
+                    "Name": "\u003cstage\u003e",
+                    "kind": "argument",
+                    "description": "stage",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "options": {
+                  "\u003cstage\u003e": {
+                    "Name": "\u003cstage\u003e",
+                    "kind": "argument",
+                    "description": "stage",
+                    "completeDescription": "",
+                    "nUsed": 0,
+                    "subCommand": null
+                  }
+                },
+                "requires": [
+                  "\u003cstage\u003e"
+                ]
+              }
+            }
+          }
+        },
+        "options": {
+          "--app": {
+            "Name": "--app",
+            "kind": "option",
+            "description": "Dashboard app",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003capp\u003e": {
+                "Name": "\u003capp\u003e",
+                "kind": "argument",
+                "description": "app",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003capp\u003e": {
+                "Name": "\u003capp\u003e",
+                "kind": "argument",
+                "description": "app",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003capp\u003e"
+            ]
+          },
+          "--aws-profile": {
+            "Name": "--aws-profile",
+            "kind": "option",
+            "description": "AWS profile to use with the command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cprofile name\u003e": {
+                "Name": "\u003cprofile name\u003e",
+                "kind": "argument",
+                "description": "profile name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cprofile name\u003e": {
+                "Name": "\u003cprofile name\u003e",
+                "kind": "argument",
+                "description": "profile name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cprofile name\u003e"
+            ]
+          },
+          "--config": {
+            "Name": "--config",
+            "kind": "option",
+            "description": "Path to serverless config file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003c.yml file\u003e": {
+                "Name": "\u003c.yml file\u003e",
+                "kind": "argument",
+                "description": ".yml file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003c.yml file\u003e": {
+                "Name": "\u003c.yml file\u003e",
+                "kind": "argument",
+                "description": ".yml file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003c.yml file\u003e"
+            ]
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show help",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--org": {
+            "Name": "--org",
+            "kind": "option",
+            "description": "Dashboard org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003corg\u003e": {
+                "Name": "\u003corg\u003e",
+                "kind": "argument",
+                "description": "org",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003corg\u003e": {
+                "Name": "\u003corg\u003e",
+                "kind": "argument",
+                "description": "org",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003corg\u003e"
+            ]
+          },
+          "--region": {
+            "Name": "--region",
+            "kind": "option",
+            "description": "Region of the service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cregion\u003e"
+            ]
+          },
+          "--stage": {
+            "Name": "--stage",
+            "kind": "option",
+            "description": "Stage of the service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstage\u003e": {
+                "Name": "\u003cstage\u003e",
+                "kind": "argument",
+                "description": "stage",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstage\u003e": {
+                "Name": "\u003cstage\u003e",
+                "kind": "argument",
+                "description": "stage",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstage\u003e"
+            ]
+          },
+          "--use-local-credentials": {
+            "Name": "--use-local-credentials",
+            "kind": "option",
+            "description": "Rely on locally resolved AWS credentials instead of loading them from Dashboard provider settings (applies only to services integrated with Dashboard)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--version": {
+            "Name": "--version",
+            "kind": "option",
+            "description": "Show version info",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-c": {
+            "Name": "-c",
+            "kind": "option",
+            "description": "Path to serverless config file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003c.yml file\u003e": {
+                "Name": "\u003c.yml file\u003e",
+                "kind": "argument",
+                "description": ".yml file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003c.yml file\u003e": {
+                "Name": "\u003c.yml file\u003e",
+                "kind": "argument",
+                "description": ".yml file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003c.yml file\u003e"
+            ]
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Show help",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-r": {
+            "Name": "-r",
+            "kind": "option",
+            "description": "Region of the service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cregion\u003e"
+            ]
+          },
+          "-s": {
+            "Name": "-s",
+            "kind": "option",
+            "description": "Stage of the service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstage\u003e": {
+                "Name": "\u003cstage\u003e",
+                "kind": "argument",
+                "description": "stage",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstage\u003e": {
+                "Name": "\u003cstage\u003e",
+                "kind": "argument",
+                "description": "stage",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstage\u003e"
+            ]
+          }
+        }
+      }
+    },
+    "options": {
+      "--app": {
+        "Name": "--app",
+        "kind": "option",
+        "description": "Dashboard app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003capp\u003e": {
+            "Name": "\u003capp\u003e",
+            "kind": "argument",
+            "description": "app",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003capp\u003e": {
+            "Name": "\u003capp\u003e",
+            "kind": "argument",
+            "description": "app",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003capp\u003e"
+        ]
+      },
+      "--aws-profile": {
+        "Name": "--aws-profile",
+        "kind": "option",
+        "description": "AWS profile to use with the command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprofile name\u003e": {
+            "Name": "\u003cprofile name\u003e",
+            "kind": "argument",
+            "description": "profile name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprofile name\u003e": {
+            "Name": "\u003cprofile name\u003e",
+            "kind": "argument",
+            "description": "profile name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprofile name\u003e"
+        ]
+      },
+      "--aws-s3-accelerate": {
+        "Name": "--aws-s3-accelerate",
+        "kind": "option",
+        "description": "Enables S3 Transfer Acceleration making uploading artifacts much faster",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--conceal": {
+        "Name": "--conceal",
+        "kind": "option",
+        "description": "Hide secrets from the output (e.g. API Gateway key values)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Path to serverless config file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c.yml file\u003e": {
+            "Name": "\u003c.yml file\u003e",
+            "kind": "argument",
+            "description": ".yml file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c.yml file\u003e": {
+            "Name": "\u003c.yml file\u003e",
+            "kind": "argument",
+            "description": ".yml file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c.yml file\u003e"
+        ]
+      },
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Forces a deployment to take place",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--function": {
+        "Name": "--function",
+        "kind": "option",
+        "description": "Name of the function",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfunction\u003e": {
+            "Name": "\u003cfunction\u003e",
+            "kind": "argument",
+            "description": "function",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfunction\u003e": {
+            "Name": "\u003cfunction\u003e",
+            "kind": "argument",
+            "description": "function",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfunction\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--org": {
+        "Name": "--org",
+        "kind": "option",
+        "description": "Dashboard org",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003corg\u003e": {
+            "Name": "\u003corg\u003e",
+            "kind": "argument",
+            "description": "org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003corg\u003e": {
+            "Name": "\u003corg\u003e",
+            "kind": "argument",
+            "description": "org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003corg\u003e"
+        ]
+      },
+      "--package": {
+        "Name": "--package",
+        "kind": "option",
+        "description": "Path of the deployment package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpackage\u003e": {
+            "Name": "\u003cpackage\u003e",
+            "kind": "argument",
+            "description": "package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpackage\u003e": {
+            "Name": "\u003cpackage\u003e",
+            "kind": "argument",
+            "description": "package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpackage\u003e"
+        ]
+      },
+      "--region": {
+        "Name": "--region",
+        "kind": "option",
+        "description": "Region of the service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cregion\u003e"
+        ]
+      },
+      "--stage": {
+        "Name": "--stage",
+        "kind": "option",
+        "description": "Stage of the service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstage\u003e": {
+            "Name": "\u003cstage\u003e",
+            "kind": "argument",
+            "description": "stage",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstage\u003e": {
+            "Name": "\u003cstage\u003e",
+            "kind": "argument",
+            "description": "stage",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstage\u003e"
+        ]
+      },
+      "--use-local-credentials": {
+        "Name": "--use-local-credentials",
+        "kind": "option",
+        "description": "Rely on locally resolved AWS credentials instead of loading them from Dashboard provider settings (applies only to services integrated with Dashboard)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Show all stack events during deployment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cproduction\u003e": {
+            "Name": "\u003cproduction\u003e",
+            "kind": "argument",
+            "description": "production",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cproduction\u003e": {
+            "Name": "\u003cproduction\u003e",
+            "kind": "argument",
+            "description": "production",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cproduction\u003e"
+        ]
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version info",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Path to serverless config file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c.yml file\u003e": {
+            "Name": "\u003c.yml file\u003e",
+            "kind": "argument",
+            "description": ".yml file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c.yml file\u003e": {
+            "Name": "\u003c.yml file\u003e",
+            "kind": "argument",
+            "description": ".yml file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c.yml file\u003e"
+        ]
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Name of the function",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfunction\u003e": {
+            "Name": "\u003cfunction\u003e",
+            "kind": "argument",
+            "description": "function",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfunction\u003e": {
+            "Name": "\u003cfunction\u003e",
+            "kind": "argument",
+            "description": "function",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfunction\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Path of the deployment package",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpackage\u003e": {
+            "Name": "\u003cpackage\u003e",
+            "kind": "argument",
+            "description": "package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpackage\u003e": {
+            "Name": "\u003cpackage\u003e",
+            "kind": "argument",
+            "description": "package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpackage\u003e"
+        ]
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Region of the service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cregion\u003e"
+        ]
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Stage of the service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstage\u003e": {
+            "Name": "\u003cstage\u003e",
+            "kind": "argument",
+            "description": "stage",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstage\u003e": {
+            "Name": "\u003cstage\u003e",
+            "kind": "argument",
+            "description": "stage",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstage\u003e"
+        ]
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Show all stack events during deployment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cproduction\u003e": {
+            "Name": "\u003cproduction\u003e",
+            "kind": "argument",
+            "description": "production",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cproduction\u003e": {
+            "Name": "\u003cproduction\u003e",
+            "kind": "argument",
+            "description": "production",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cproduction\u003e"
+        ]
+      }
+    }
+  },
+  "generate-event": {
+    "Name": "generate-event",
+    "kind": "subcommand",
+    "description": "Generate event",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "info": {
+    "Name": "info",
+    "kind": "subcommand",
+    "description": "Display information about the service",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--app": {
+        "Name": "--app",
+        "kind": "option",
+        "description": "Dashboard app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003capp\u003e": {
+            "Name": "\u003capp\u003e",
+            "kind": "argument",
+            "description": "app",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003capp\u003e": {
+            "Name": "\u003capp\u003e",
+            "kind": "argument",
+            "description": "app",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003capp\u003e"
+        ]
+      },
+      "--aws-profile": {
+        "Name": "--aws-profile",
+        "kind": "option",
+        "description": "AWS profile to use with the command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprofile name\u003e": {
+            "Name": "\u003cprofile name\u003e",
+            "kind": "argument",
+            "description": "profile name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprofile name\u003e": {
+            "Name": "\u003cprofile name\u003e",
+            "kind": "argument",
+            "description": "profile name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprofile name\u003e"
+        ]
+      },
+      "--conceal": {
+        "Name": "--conceal",
+        "kind": "option",
+        "description": "Hide secrets from the output (e.g. API Gateway key values)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Path to serverless config file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c.yml file\u003e": {
+            "Name": "\u003c.yml file\u003e",
+            "kind": "argument",
+            "description": ".yml file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c.yml file\u003e": {
+            "Name": "\u003c.yml file\u003e",
+            "kind": "argument",
+            "description": ".yml file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c.yml file\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--org": {
+        "Name": "--org",
+        "kind": "option",
+        "description": "Dashboard org",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003corg\u003e": {
+            "Name": "\u003corg\u003e",
+            "kind": "argument",
+            "description": "org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003corg\u003e": {
+            "Name": "\u003corg\u003e",
+            "kind": "argument",
+            "description": "org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003corg\u003e"
+        ]
+      },
+      "--region": {
+        "Name": "--region",
+        "kind": "option",
+        "description": "Region of the service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cregion\u003e"
+        ]
+      },
+      "--stage": {
+        "Name": "--stage",
+        "kind": "option",
+        "description": "Stage of the service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstage\u003e": {
+            "Name": "\u003cstage\u003e",
+            "kind": "argument",
+            "description": "stage",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstage\u003e": {
+            "Name": "\u003cstage\u003e",
+            "kind": "argument",
+            "description": "stage",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstage\u003e"
+        ]
+      },
+      "--use-local-credentials": {
+        "Name": "--use-local-credentials",
+        "kind": "option",
+        "description": "Rely on locally resolved AWS credentials instead of loading them from Dashboard provider settings (applies only to services integrated with Dashboard)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version info",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Path to serverless config file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c.yml file\u003e": {
+            "Name": "\u003c.yml file\u003e",
+            "kind": "argument",
+            "description": ".yml file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c.yml file\u003e": {
+            "Name": "\u003c.yml file\u003e",
+            "kind": "argument",
+            "description": ".yml file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c.yml file\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Region of the service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cregion\u003e"
+        ]
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Stage of the service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstage\u003e": {
+            "Name": "\u003cstage\u003e",
+            "kind": "argument",
+            "description": "stage",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstage\u003e": {
+            "Name": "\u003cstage\u003e",
+            "kind": "argument",
+            "description": "stage",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstage\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--app": {
+        "Name": "--app",
+        "kind": "option",
+        "description": "Dashboard app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003capp\u003e": {
+            "Name": "\u003capp\u003e",
+            "kind": "argument",
+            "description": "app",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003capp\u003e": {
+            "Name": "\u003capp\u003e",
+            "kind": "argument",
+            "description": "app",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003capp\u003e"
+        ]
+      },
+      "--aws-profile": {
+        "Name": "--aws-profile",
+        "kind": "option",
+        "description": "AWS profile to use with the command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprofile name\u003e": {
+            "Name": "\u003cprofile name\u003e",
+            "kind": "argument",
+            "description": "profile name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprofile name\u003e": {
+            "Name": "\u003cprofile name\u003e",
+            "kind": "argument",
+            "description": "profile name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprofile name\u003e"
+        ]
+      },
+      "--conceal": {
+        "Name": "--conceal",
+        "kind": "option",
+        "description": "Hide secrets from the output (e.g. API Gateway key values)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Path to serverless config file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c.yml file\u003e": {
+            "Name": "\u003c.yml file\u003e",
+            "kind": "argument",
+            "description": ".yml file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c.yml file\u003e": {
+            "Name": "\u003c.yml file\u003e",
+            "kind": "argument",
+            "description": ".yml file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c.yml file\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--org": {
+        "Name": "--org",
+        "kind": "option",
+        "description": "Dashboard org",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003corg\u003e": {
+            "Name": "\u003corg\u003e",
+            "kind": "argument",
+            "description": "org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003corg\u003e": {
+            "Name": "\u003corg\u003e",
+            "kind": "argument",
+            "description": "org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003corg\u003e"
+        ]
+      },
+      "--region": {
+        "Name": "--region",
+        "kind": "option",
+        "description": "Region of the service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cregion\u003e"
+        ]
+      },
+      "--stage": {
+        "Name": "--stage",
+        "kind": "option",
+        "description": "Stage of the service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstage\u003e": {
+            "Name": "\u003cstage\u003e",
+            "kind": "argument",
+            "description": "stage",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstage\u003e": {
+            "Name": "\u003cstage\u003e",
+            "kind": "argument",
+            "description": "stage",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstage\u003e"
+        ]
+      },
+      "--use-local-credentials": {
+        "Name": "--use-local-credentials",
+        "kind": "option",
+        "description": "Rely on locally resolved AWS credentials instead of loading them from Dashboard provider settings (applies only to services integrated with Dashboard)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version info",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Path to serverless config file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c.yml file\u003e": {
+            "Name": "\u003c.yml file\u003e",
+            "kind": "argument",
+            "description": ".yml file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c.yml file\u003e": {
+            "Name": "\u003c.yml file\u003e",
+            "kind": "argument",
+            "description": ".yml file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c.yml file\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Region of the service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cregion\u003e"
+        ]
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Stage of the service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstage\u003e": {
+            "Name": "\u003cstage\u003e",
+            "kind": "argument",
+            "description": "stage",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstage\u003e": {
+            "Name": "\u003cstage\u003e",
+            "kind": "argument",
+            "description": "stage",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstage\u003e"
+        ]
+      }
+    }
+  },
+  "install": {
+    "Name": "install",
+    "kind": "subcommand",
+    "description": "Install a Serverless service from GitHub or a plugin from the Serverless registry",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "invoke": {
+    "Name": "invoke",
+    "kind": "subcommand",
+    "description": "Invoke a deployed function",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--app": {
+        "Name": "--app",
+        "kind": "option",
+        "description": "Dashboard app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003capp\u003e": {
+            "Name": "\u003capp\u003e",
+            "kind": "argument",
+            "description": "app",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003capp\u003e": {
+            "Name": "\u003capp\u003e",
+            "kind": "argument",
+            "description": "app",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003capp\u003e"
+        ]
+      },
+      "--aws-profile": {
+        "Name": "--aws-profile",
+        "kind": "option",
+        "description": "AWS profile to use with the command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprofile name\u003e": {
+            "Name": "\u003cprofile name\u003e",
+            "kind": "argument",
+            "description": "profile name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprofile name\u003e": {
+            "Name": "\u003cprofile name\u003e",
+            "kind": "argument",
+            "description": "profile name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprofile name\u003e"
+        ]
+      },
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Path to serverless config file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c.yml file\u003e": {
+            "Name": "\u003c.yml file\u003e",
+            "kind": "argument",
+            "description": ".yml file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c.yml file\u003e": {
+            "Name": "\u003c.yml file\u003e",
+            "kind": "argument",
+            "description": ".yml file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c.yml file\u003e"
+        ]
+      },
+      "--context": {
+        "Name": "--context",
+        "kind": "option",
+        "description": "Context of the service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpackage\u003e": {
+            "Name": "\u003cpackage\u003e",
+            "kind": "argument",
+            "description": "package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpackage\u003e": {
+            "Name": "\u003cpackage\u003e",
+            "kind": "argument",
+            "description": "package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpackage\u003e"
+        ]
+      },
+      "--contextPath": {
+        "Name": "--contextPath",
+        "kind": "option",
+        "description": "Path to JSON or YAML file holding context data",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--data": {
+        "Name": "--data",
+        "kind": "option",
+        "description": "Input data",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cinput\u003e": {
+            "Name": "\u003cinput\u003e",
+            "kind": "argument",
+            "description": "input",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cinput\u003e": {
+            "Name": "\u003cinput\u003e",
+            "kind": "argument",
+            "description": "input",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cinput\u003e"
+        ]
+      },
+      "--function": {
+        "Name": "--function",
+        "kind": "option",
+        "description": "Name of the function",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfunction\u003e": {
+            "Name": "\u003cfunction\u003e",
+            "kind": "argument",
+            "description": "function",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfunction\u003e": {
+            "Name": "\u003cfunction\u003e",
+            "kind": "argument",
+            "description": "function",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfunction\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--org": {
+        "Name": "--org",
+        "kind": "option",
+        "description": "Dashboard org",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003corg\u003e": {
+            "Name": "\u003corg\u003e",
+            "kind": "argument",
+            "description": "org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003corg\u003e": {
+            "Name": "\u003corg\u003e",
+            "kind": "argument",
+            "description": "org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003corg\u003e"
+        ]
+      },
+      "--path": {
+        "Name": "--path",
+        "kind": "option",
+        "description": "Path to JSON or YAML file holding input data",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--raw": {
+        "Name": "--raw",
+        "kind": "option",
+        "description": "Flag to pass input data as a raw string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--region": {
+        "Name": "--region",
+        "kind": "option",
+        "description": "Region of the service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cregion\u003e"
+        ]
+      },
+      "--stage": {
+        "Name": "--stage",
+        "kind": "option",
+        "description": "Stage of the service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstage\u003e": {
+            "Name": "\u003cstage\u003e",
+            "kind": "argument",
+            "description": "stage",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstage\u003e": {
+            "Name": "\u003cstage\u003e",
+            "kind": "argument",
+            "description": "stage",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstage\u003e"
+        ]
+      },
+      "--use-local-credentials": {
+        "Name": "--use-local-credentials",
+        "kind": "option",
+        "description": "Rely on locally resolved AWS credentials instead of loading them from Dashboard provider settings (applies only to services integrated with Dashboard)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version info",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Path to serverless config file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c.yml file\u003e": {
+            "Name": "\u003c.yml file\u003e",
+            "kind": "argument",
+            "description": ".yml file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c.yml file\u003e": {
+            "Name": "\u003c.yml file\u003e",
+            "kind": "argument",
+            "description": ".yml file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c.yml file\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Input data",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cinput\u003e": {
+            "Name": "\u003cinput\u003e",
+            "kind": "argument",
+            "description": "input",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cinput\u003e": {
+            "Name": "\u003cinput\u003e",
+            "kind": "argument",
+            "description": "input",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cinput\u003e"
+        ]
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Name of the function",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfunction\u003e": {
+            "Name": "\u003cfunction\u003e",
+            "kind": "argument",
+            "description": "function",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfunction\u003e": {
+            "Name": "\u003cfunction\u003e",
+            "kind": "argument",
+            "description": "function",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfunction\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Path to JSON or YAML file holding input data",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Region of the service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cregion\u003e"
+        ]
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Stage of the service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstage\u003e": {
+            "Name": "\u003cstage\u003e",
+            "kind": "argument",
+            "description": "stage",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstage\u003e": {
+            "Name": "\u003cstage\u003e",
+            "kind": "argument",
+            "description": "stage",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstage\u003e"
+        ]
+      },
+      "local": {
+        "Name": "local",
+        "kind": "subcommand",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--app": {
+            "Name": "--app",
+            "kind": "option",
+            "description": "Dashboard app",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003capp\u003e": {
+                "Name": "\u003capp\u003e",
+                "kind": "argument",
+                "description": "app",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003capp\u003e": {
+                "Name": "\u003capp\u003e",
+                "kind": "argument",
+                "description": "app",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003capp\u003e"
+            ]
+          },
+          "--aws-profile": {
+            "Name": "--aws-profile",
+            "kind": "option",
+            "description": "AWS profile to use with the command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cprofile name\u003e": {
+                "Name": "\u003cprofile name\u003e",
+                "kind": "argument",
+                "description": "profile name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cprofile name\u003e": {
+                "Name": "\u003cprofile name\u003e",
+                "kind": "argument",
+                "description": "profile name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cprofile name\u003e"
+            ]
+          },
+          "--config": {
+            "Name": "--config",
+            "kind": "option",
+            "description": "Path to serverless config file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003c.yml file\u003e": {
+                "Name": "\u003c.yml file\u003e",
+                "kind": "argument",
+                "description": ".yml file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003c.yml file\u003e": {
+                "Name": "\u003c.yml file\u003e",
+                "kind": "argument",
+                "description": ".yml file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003c.yml file\u003e"
+            ]
+          },
+          "--context": {
+            "Name": "--context",
+            "kind": "option",
+            "description": "Context of the service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpackage\u003e": {
+                "Name": "\u003cpackage\u003e",
+                "kind": "argument",
+                "description": "package",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpackage\u003e": {
+                "Name": "\u003cpackage\u003e",
+                "kind": "argument",
+                "description": "package",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpackage\u003e"
+            ]
+          },
+          "--contextPath": {
+            "Name": "--contextPath",
+            "kind": "option",
+            "description": "Path to JSON or YAML file holding context data",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "--data": {
+            "Name": "--data",
+            "kind": "option",
+            "description": "Input data",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cinput\u003e": {
+                "Name": "\u003cinput\u003e",
+                "kind": "argument",
+                "description": "input",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cinput\u003e": {
+                "Name": "\u003cinput\u003e",
+                "kind": "argument",
+                "description": "input",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cinput\u003e"
+            ]
+          },
+          "--env": {
+            "Name": "--env",
+            "kind": "option",
+            "description": "Override environment variables. e.g. --env VAR1=val1 --env VAR2=val2",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003c--env VAR1=val1 --env VAR2=val2\u003e": {
+                "Name": "\u003c--env VAR1=val1 --env VAR2=val2\u003e",
+                "kind": "argument",
+                "description": "--env VAR1=val1 --env VAR2=val2",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003c--env VAR1=val1 --env VAR2=val2\u003e": {
+                "Name": "\u003c--env VAR1=val1 --env VAR2=val2\u003e",
+                "kind": "argument",
+                "description": "--env VAR1=val1 --env VAR2=val2",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003c--env VAR1=val1 --env VAR2=val2\u003e"
+            ]
+          },
+          "--function": {
+            "Name": "--function",
+            "kind": "option",
+            "description": "Name of the function",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfunction\u003e": {
+                "Name": "\u003cfunction\u003e",
+                "kind": "argument",
+                "description": "function",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfunction\u003e": {
+                "Name": "\u003cfunction\u003e",
+                "kind": "argument",
+                "description": "function",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfunction\u003e"
+            ]
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show help",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--org": {
+            "Name": "--org",
+            "kind": "option",
+            "description": "Dashboard org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003corg\u003e": {
+                "Name": "\u003corg\u003e",
+                "kind": "argument",
+                "description": "org",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003corg\u003e": {
+                "Name": "\u003corg\u003e",
+                "kind": "argument",
+                "description": "org",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003corg\u003e"
+            ]
+          },
+          "--path": {
+            "Name": "--path",
+            "kind": "option",
+            "description": "Path to JSON or YAML file holding input data",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "--raw": {
+            "Name": "--raw",
+            "kind": "option",
+            "description": "Flag to pass input data as a raw string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--region": {
+            "Name": "--region",
+            "kind": "option",
+            "description": "Region of the service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cregion\u003e"
+            ]
+          },
+          "--stage": {
+            "Name": "--stage",
+            "kind": "option",
+            "description": "Stage of the service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstage\u003e": {
+                "Name": "\u003cstage\u003e",
+                "kind": "argument",
+                "description": "stage",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstage\u003e": {
+                "Name": "\u003cstage\u003e",
+                "kind": "argument",
+                "description": "stage",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstage\u003e"
+            ]
+          },
+          "--use-local-credentials": {
+            "Name": "--use-local-credentials",
+            "kind": "option",
+            "description": "Rely on locally resolved AWS credentials instead of loading them from Dashboard provider settings (applies only to services integrated with Dashboard)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--version": {
+            "Name": "--version",
+            "kind": "option",
+            "description": "Show version info",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-c": {
+            "Name": "-c",
+            "kind": "option",
+            "description": "Path to serverless config file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003c.yml file\u003e": {
+                "Name": "\u003c.yml file\u003e",
+                "kind": "argument",
+                "description": ".yml file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003c.yml file\u003e": {
+                "Name": "\u003c.yml file\u003e",
+                "kind": "argument",
+                "description": ".yml file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003c.yml file\u003e"
+            ]
+          },
+          "-d": {
+            "Name": "-d",
+            "kind": "option",
+            "description": "Input data",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cinput\u003e": {
+                "Name": "\u003cinput\u003e",
+                "kind": "argument",
+                "description": "input",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cinput\u003e": {
+                "Name": "\u003cinput\u003e",
+                "kind": "argument",
+                "description": "input",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cinput\u003e"
+            ]
+          },
+          "-e": {
+            "Name": "-e",
+            "kind": "option",
+            "description": "Override environment variables. e.g. --env VAR1=val1 --env VAR2=val2",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003c--env VAR1=val1 --env VAR2=val2\u003e": {
+                "Name": "\u003c--env VAR1=val1 --env VAR2=val2\u003e",
+                "kind": "argument",
+                "description": "--env VAR1=val1 --env VAR2=val2",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003c--env VAR1=val1 --env VAR2=val2\u003e": {
+                "Name": "\u003c--env VAR1=val1 --env VAR2=val2\u003e",
+                "kind": "argument",
+                "description": "--env VAR1=val1 --env VAR2=val2",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003c--env VAR1=val1 --env VAR2=val2\u003e"
+            ]
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Name of the function",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfunction\u003e": {
+                "Name": "\u003cfunction\u003e",
+                "kind": "argument",
+                "description": "function",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfunction\u003e": {
+                "Name": "\u003cfunction\u003e",
+                "kind": "argument",
+                "description": "function",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfunction\u003e"
+            ]
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Show help",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Path to JSON or YAML file holding input data",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "-r": {
+            "Name": "-r",
+            "kind": "option",
+            "description": "Region of the service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cregion\u003e"
+            ]
+          },
+          "-s": {
+            "Name": "-s",
+            "kind": "option",
+            "description": "Stage of the service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstage\u003e": {
+                "Name": "\u003cstage\u003e",
+                "kind": "argument",
+                "description": "stage",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstage\u003e": {
+                "Name": "\u003cstage\u003e",
+                "kind": "argument",
+                "description": "stage",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstage\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--app": {
+            "Name": "--app",
+            "kind": "option",
+            "description": "Dashboard app",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003capp\u003e": {
+                "Name": "\u003capp\u003e",
+                "kind": "argument",
+                "description": "app",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003capp\u003e": {
+                "Name": "\u003capp\u003e",
+                "kind": "argument",
+                "description": "app",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003capp\u003e"
+            ]
+          },
+          "--aws-profile": {
+            "Name": "--aws-profile",
+            "kind": "option",
+            "description": "AWS profile to use with the command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cprofile name\u003e": {
+                "Name": "\u003cprofile name\u003e",
+                "kind": "argument",
+                "description": "profile name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cprofile name\u003e": {
+                "Name": "\u003cprofile name\u003e",
+                "kind": "argument",
+                "description": "profile name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cprofile name\u003e"
+            ]
+          },
+          "--config": {
+            "Name": "--config",
+            "kind": "option",
+            "description": "Path to serverless config file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003c.yml file\u003e": {
+                "Name": "\u003c.yml file\u003e",
+                "kind": "argument",
+                "description": ".yml file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003c.yml file\u003e": {
+                "Name": "\u003c.yml file\u003e",
+                "kind": "argument",
+                "description": ".yml file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003c.yml file\u003e"
+            ]
+          },
+          "--context": {
+            "Name": "--context",
+            "kind": "option",
+            "description": "Context of the service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpackage\u003e": {
+                "Name": "\u003cpackage\u003e",
+                "kind": "argument",
+                "description": "package",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpackage\u003e": {
+                "Name": "\u003cpackage\u003e",
+                "kind": "argument",
+                "description": "package",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpackage\u003e"
+            ]
+          },
+          "--contextPath": {
+            "Name": "--contextPath",
+            "kind": "option",
+            "description": "Path to JSON or YAML file holding context data",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "--data": {
+            "Name": "--data",
+            "kind": "option",
+            "description": "Input data",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cinput\u003e": {
+                "Name": "\u003cinput\u003e",
+                "kind": "argument",
+                "description": "input",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cinput\u003e": {
+                "Name": "\u003cinput\u003e",
+                "kind": "argument",
+                "description": "input",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cinput\u003e"
+            ]
+          },
+          "--env": {
+            "Name": "--env",
+            "kind": "option",
+            "description": "Override environment variables. e.g. --env VAR1=val1 --env VAR2=val2",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003c--env VAR1=val1 --env VAR2=val2\u003e": {
+                "Name": "\u003c--env VAR1=val1 --env VAR2=val2\u003e",
+                "kind": "argument",
+                "description": "--env VAR1=val1 --env VAR2=val2",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003c--env VAR1=val1 --env VAR2=val2\u003e": {
+                "Name": "\u003c--env VAR1=val1 --env VAR2=val2\u003e",
+                "kind": "argument",
+                "description": "--env VAR1=val1 --env VAR2=val2",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003c--env VAR1=val1 --env VAR2=val2\u003e"
+            ]
+          },
+          "--function": {
+            "Name": "--function",
+            "kind": "option",
+            "description": "Name of the function",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfunction\u003e": {
+                "Name": "\u003cfunction\u003e",
+                "kind": "argument",
+                "description": "function",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfunction\u003e": {
+                "Name": "\u003cfunction\u003e",
+                "kind": "argument",
+                "description": "function",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfunction\u003e"
+            ]
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show help",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--org": {
+            "Name": "--org",
+            "kind": "option",
+            "description": "Dashboard org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003corg\u003e": {
+                "Name": "\u003corg\u003e",
+                "kind": "argument",
+                "description": "org",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003corg\u003e": {
+                "Name": "\u003corg\u003e",
+                "kind": "argument",
+                "description": "org",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003corg\u003e"
+            ]
+          },
+          "--path": {
+            "Name": "--path",
+            "kind": "option",
+            "description": "Path to JSON or YAML file holding input data",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "--raw": {
+            "Name": "--raw",
+            "kind": "option",
+            "description": "Flag to pass input data as a raw string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--region": {
+            "Name": "--region",
+            "kind": "option",
+            "description": "Region of the service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cregion\u003e"
+            ]
+          },
+          "--stage": {
+            "Name": "--stage",
+            "kind": "option",
+            "description": "Stage of the service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstage\u003e": {
+                "Name": "\u003cstage\u003e",
+                "kind": "argument",
+                "description": "stage",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstage\u003e": {
+                "Name": "\u003cstage\u003e",
+                "kind": "argument",
+                "description": "stage",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstage\u003e"
+            ]
+          },
+          "--use-local-credentials": {
+            "Name": "--use-local-credentials",
+            "kind": "option",
+            "description": "Rely on locally resolved AWS credentials instead of loading them from Dashboard provider settings (applies only to services integrated with Dashboard)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--version": {
+            "Name": "--version",
+            "kind": "option",
+            "description": "Show version info",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-c": {
+            "Name": "-c",
+            "kind": "option",
+            "description": "Path to serverless config file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003c.yml file\u003e": {
+                "Name": "\u003c.yml file\u003e",
+                "kind": "argument",
+                "description": ".yml file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003c.yml file\u003e": {
+                "Name": "\u003c.yml file\u003e",
+                "kind": "argument",
+                "description": ".yml file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003c.yml file\u003e"
+            ]
+          },
+          "-d": {
+            "Name": "-d",
+            "kind": "option",
+            "description": "Input data",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cinput\u003e": {
+                "Name": "\u003cinput\u003e",
+                "kind": "argument",
+                "description": "input",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cinput\u003e": {
+                "Name": "\u003cinput\u003e",
+                "kind": "argument",
+                "description": "input",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cinput\u003e"
+            ]
+          },
+          "-e": {
+            "Name": "-e",
+            "kind": "option",
+            "description": "Override environment variables. e.g. --env VAR1=val1 --env VAR2=val2",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003c--env VAR1=val1 --env VAR2=val2\u003e": {
+                "Name": "\u003c--env VAR1=val1 --env VAR2=val2\u003e",
+                "kind": "argument",
+                "description": "--env VAR1=val1 --env VAR2=val2",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003c--env VAR1=val1 --env VAR2=val2\u003e": {
+                "Name": "\u003c--env VAR1=val1 --env VAR2=val2\u003e",
+                "kind": "argument",
+                "description": "--env VAR1=val1 --env VAR2=val2",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003c--env VAR1=val1 --env VAR2=val2\u003e"
+            ]
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Name of the function",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfunction\u003e": {
+                "Name": "\u003cfunction\u003e",
+                "kind": "argument",
+                "description": "function",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfunction\u003e": {
+                "Name": "\u003cfunction\u003e",
+                "kind": "argument",
+                "description": "function",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfunction\u003e"
+            ]
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Show help",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Path to JSON or YAML file holding input data",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "-r": {
+            "Name": "-r",
+            "kind": "option",
+            "description": "Region of the service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cregion\u003e"
+            ]
+          },
+          "-s": {
+            "Name": "-s",
+            "kind": "option",
+            "description": "Stage of the service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstage\u003e": {
+                "Name": "\u003cstage\u003e",
+                "kind": "argument",
+                "description": "stage",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstage\u003e": {
+                "Name": "\u003cstage\u003e",
+                "kind": "argument",
+                "description": "stage",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstage\u003e"
+            ]
+          }
+        }
+      }
+    },
+    "options": {
+      "--app": {
+        "Name": "--app",
+        "kind": "option",
+        "description": "Dashboard app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003capp\u003e": {
+            "Name": "\u003capp\u003e",
+            "kind": "argument",
+            "description": "app",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003capp\u003e": {
+            "Name": "\u003capp\u003e",
+            "kind": "argument",
+            "description": "app",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003capp\u003e"
+        ]
+      },
+      "--aws-profile": {
+        "Name": "--aws-profile",
+        "kind": "option",
+        "description": "AWS profile to use with the command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprofile name\u003e": {
+            "Name": "\u003cprofile name\u003e",
+            "kind": "argument",
+            "description": "profile name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprofile name\u003e": {
+            "Name": "\u003cprofile name\u003e",
+            "kind": "argument",
+            "description": "profile name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprofile name\u003e"
+        ]
+      },
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Path to serverless config file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c.yml file\u003e": {
+            "Name": "\u003c.yml file\u003e",
+            "kind": "argument",
+            "description": ".yml file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c.yml file\u003e": {
+            "Name": "\u003c.yml file\u003e",
+            "kind": "argument",
+            "description": ".yml file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c.yml file\u003e"
+        ]
+      },
+      "--context": {
+        "Name": "--context",
+        "kind": "option",
+        "description": "Context of the service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpackage\u003e": {
+            "Name": "\u003cpackage\u003e",
+            "kind": "argument",
+            "description": "package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpackage\u003e": {
+            "Name": "\u003cpackage\u003e",
+            "kind": "argument",
+            "description": "package",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpackage\u003e"
+        ]
+      },
+      "--contextPath": {
+        "Name": "--contextPath",
+        "kind": "option",
+        "description": "Path to JSON or YAML file holding context data",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--data": {
+        "Name": "--data",
+        "kind": "option",
+        "description": "Input data",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cinput\u003e": {
+            "Name": "\u003cinput\u003e",
+            "kind": "argument",
+            "description": "input",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cinput\u003e": {
+            "Name": "\u003cinput\u003e",
+            "kind": "argument",
+            "description": "input",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cinput\u003e"
+        ]
+      },
+      "--function": {
+        "Name": "--function",
+        "kind": "option",
+        "description": "Name of the function",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfunction\u003e": {
+            "Name": "\u003cfunction\u003e",
+            "kind": "argument",
+            "description": "function",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfunction\u003e": {
+            "Name": "\u003cfunction\u003e",
+            "kind": "argument",
+            "description": "function",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfunction\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--org": {
+        "Name": "--org",
+        "kind": "option",
+        "description": "Dashboard org",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003corg\u003e": {
+            "Name": "\u003corg\u003e",
+            "kind": "argument",
+            "description": "org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003corg\u003e": {
+            "Name": "\u003corg\u003e",
+            "kind": "argument",
+            "description": "org",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003corg\u003e"
+        ]
+      },
+      "--path": {
+        "Name": "--path",
+        "kind": "option",
+        "description": "Path to JSON or YAML file holding input data",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--raw": {
+        "Name": "--raw",
+        "kind": "option",
+        "description": "Flag to pass input data as a raw string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--region": {
+        "Name": "--region",
+        "kind": "option",
+        "description": "Region of the service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cregion\u003e"
+        ]
+      },
+      "--stage": {
+        "Name": "--stage",
+        "kind": "option",
+        "description": "Stage of the service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstage\u003e": {
+            "Name": "\u003cstage\u003e",
+            "kind": "argument",
+            "description": "stage",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstage\u003e": {
+            "Name": "\u003cstage\u003e",
+            "kind": "argument",
+            "description": "stage",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstage\u003e"
+        ]
+      },
+      "--use-local-credentials": {
+        "Name": "--use-local-credentials",
+        "kind": "option",
+        "description": "Rely on locally resolved AWS credentials instead of loading them from Dashboard provider settings (applies only to services integrated with Dashboard)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Show version info",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Path to serverless config file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c.yml file\u003e": {
+            "Name": "\u003c.yml file\u003e",
+            "kind": "argument",
+            "description": ".yml file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c.yml file\u003e": {
+            "Name": "\u003c.yml file\u003e",
+            "kind": "argument",
+            "description": ".yml file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c.yml file\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Input data",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cinput\u003e": {
+            "Name": "\u003cinput\u003e",
+            "kind": "argument",
+            "description": "input",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cinput\u003e": {
+            "Name": "\u003cinput\u003e",
+            "kind": "argument",
+            "description": "input",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cinput\u003e"
+        ]
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Name of the function",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfunction\u003e": {
+            "Name": "\u003cfunction\u003e",
+            "kind": "argument",
+            "description": "function",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfunction\u003e": {
+            "Name": "\u003cfunction\u003e",
+            "kind": "argument",
+            "description": "function",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfunction\u003e"
+        ]
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Path to JSON or YAML file holding input data",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Region of the service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cregion\u003e"
+        ]
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Stage of the service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstage\u003e": {
+            "Name": "\u003cstage\u003e",
+            "kind": "argument",
+            "description": "stage",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstage\u003e": {
+            "Name": "\u003cstage\u003e",
+            "kind": "argument",
+            "description": "stage",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstage\u003e"
+        ]
+      }
+    }
+  },
+  "login": {
+    "Name": "login",
+    "kind": "subcommand",
+    "description": "Login or sign up for Serverless",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "logout": {
+    "Name": "logout",
+    "kind": "subcommand",
+    "description": "Logout from Serverless",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "logs": {
+    "Name": "logs",
+    "kind": "subcommand",
+    "description": "Output the logs of a deployed function",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "metrics": {
+    "Name": "metrics",
+    "kind": "subcommand",
+    "description": "Show metrics for a specific function",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "output": {
+    "Name": "output",
+    "kind": "subcommand",
+    "description": "Get/list value of dashboard deployment profile parameter",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "package": {
+    "Name": "package",
+    "kind": "subcommand",
+    "description": "Package a Serverless service",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "param": {
+    "Name": "param",
+    "kind": "subcommand",
+    "description": "Get/list value of dashboard service output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "plugin": {
+    "Name": "plugin",
+    "kind": "subcommand",
+    "description": "Handle plugins",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "print": {
+    "Name": "print",
+    "kind": "subcommand",
+    "description": "Print your compiled and resolved config file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "remove": {
+    "Name": "remove",
+    "kind": "subcommand",
+    "description": "Remove Serverless service and all resources",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "rollback": {
+    "Name": "rollback",
+    "kind": "subcommand",
+    "description": "Rollback the Serverless service to a specific deployment",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "slstats": {
+    "Name": "slstats",
+    "kind": "subcommand",
+    "description": "Enable or disable stats",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "studio": {
+    "Name": "studio",
+    "kind": "subcommand",
+    "description": "Develop a Serverless application in the cloud",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "test": {
+    "Name": "test",
+    "kind": "subcommand",
+    "description": "Run HTTP tests",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

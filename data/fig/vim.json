@@ -1,0 +1,695 @@
+{
+  "+": {
+    "Name": "+",
+    "kind": "option",
+    "description": "Start at end of file, if line number is specified, start at that line",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clnum\u003e": {
+        "Name": "\u003clnum\u003e",
+        "kind": "argument",
+        "description": "lnum",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clnum\u003e": {
+        "Name": "\u003clnum\u003e",
+        "kind": "argument",
+        "description": "lnum",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--clean": {
+    "Name": "--clean",
+    "kind": "option",
+    "description": "'nocompatible', Vim defaults, no plugins, no viminfo",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--cmd": {
+    "Name": "--cmd",
+    "kind": "option",
+    "description": "Execute \u003ccommand\u003e before loading any vimrc file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Print Help message and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--noplugin": {
+    "Name": "--noplugin",
+    "kind": "option",
+    "description": "Don't load plugin scripts",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--not-a-term": {
+    "Name": "--not-a-term",
+    "kind": "option",
+    "description": "Skip warning for input/output not being a terminal",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--startuptime": {
+    "Name": "--startuptime",
+    "kind": "option",
+    "description": "Write startup timing messages to \u003cfile\u003e",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile\u003e"
+    ]
+  },
+  "--ttyfail": {
+    "Name": "--ttyfail",
+    "kind": "option",
+    "description": "Exit if input or output is not a terminal",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Print version information and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-C": {
+    "Name": "-C",
+    "kind": "option",
+    "description": "Compatible with Vi: 'compatible'",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-D": {
+    "Name": "-D",
+    "kind": "option",
+    "description": "Debugging mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-E": {
+    "Name": "-E",
+    "kind": "option",
+    "description": "Improved Ex mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-L": {
+    "Name": "-L",
+    "kind": "option",
+    "description": "Same as -r",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfilename\u003e": {
+        "Name": "\u003cfilename\u003e",
+        "kind": "argument",
+        "description": "filename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfilename\u003e": {
+        "Name": "\u003cfilename\u003e",
+        "kind": "argument",
+        "description": "filename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfilename\u003e"
+    ]
+  },
+  "-M": {
+    "Name": "-M",
+    "kind": "option",
+    "description": "Modifications in text not allowed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-N": {
+    "Name": "-N",
+    "kind": "option",
+    "description": "Not fully Vi compatible: 'nocompatible'",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-O": {
+    "Name": "-O",
+    "kind": "option",
+    "description": "Like -o but split vertically",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cN\u003e": {
+        "Name": "\u003cN\u003e",
+        "kind": "argument",
+        "description": "N",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cN\u003e": {
+        "Name": "\u003cN\u003e",
+        "kind": "argument",
+        "description": "N",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "-R": {
+    "Name": "-R",
+    "kind": "option",
+    "description": "Readonly mode (like 'view')",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-S": {
+    "Name": "-S",
+    "kind": "option",
+    "description": "Source file \u003csession\u003e after loading the first file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csession\u003e": {
+        "Name": "\u003csession\u003e",
+        "kind": "argument",
+        "description": "session",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csession\u003e": {
+        "Name": "\u003csession\u003e",
+        "kind": "argument",
+        "description": "session",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csession\u003e"
+    ]
+  },
+  "-T": {
+    "Name": "-T",
+    "kind": "option",
+    "description": "Set terminal type to \u003cterminal\u003e",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cterminal\u003e": {
+        "Name": "\u003cterminal\u003e",
+        "kind": "argument",
+        "description": "terminal",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cterminal\u003e": {
+        "Name": "\u003cterminal\u003e",
+        "kind": "argument",
+        "description": "terminal",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cterminal\u003e"
+    ]
+  },
+  "-V": {
+    "Name": "-V",
+    "kind": "option",
+    "description": "Be verbose [level N] [log messages to fname]",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cN\u003e": {
+        "Name": "\u003cN\u003e",
+        "kind": "argument",
+        "description": "N",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cfname\u003e": {
+        "Name": "\u003cfname\u003e",
+        "kind": "argument",
+        "description": "fname",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cN\u003e": {
+        "Name": "\u003cN\u003e",
+        "kind": "argument",
+        "description": "N",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cfname\u003e": {
+        "Name": "\u003cfname\u003e",
+        "kind": "argument",
+        "description": "fname",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cN\u003e",
+      "\u003cfname\u003e"
+    ]
+  },
+  "-W": {
+    "Name": "-W",
+    "kind": "option",
+    "description": "Write all typed commands to file \u003cscriptout\u003e",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cscriptout\u003e": {
+        "Name": "\u003cscriptout\u003e",
+        "kind": "argument",
+        "description": "scriptout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cscriptout\u003e": {
+        "Name": "\u003cscriptout\u003e",
+        "kind": "argument",
+        "description": "scriptout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cscriptout\u003e"
+    ]
+  },
+  "-Z": {
+    "Name": "-Z",
+    "kind": "option",
+    "description": "Restricted mode (like 'rvim')",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-b": {
+    "Name": "-b",
+    "kind": "option",
+    "description": "Binary mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Execute \u003ccommand\u003e after loading the first file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Diff mode (like 'vimdiff')",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-e": {
+    "Name": "-e",
+    "kind": "option",
+    "description": "Ex mode (like 'ex')",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Print Help message and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Use \u003cviminfo\u003e instead of .viminfo",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cviminfo\u003e": {
+        "Name": "\u003cviminfo\u003e",
+        "kind": "argument",
+        "description": "viminfo",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cviminfo\u003e": {
+        "Name": "\u003cviminfo\u003e",
+        "kind": "argument",
+        "description": "viminfo",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cviminfo\u003e"
+    ]
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "option",
+    "description": "Lisp mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-m": {
+    "Name": "-m",
+    "kind": "option",
+    "description": "Modifications (writing files) not allowed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-n": {
+    "Name": "-n",
+    "kind": "option",
+    "description": "No swap file, use memory only",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-o": {
+    "Name": "-o",
+    "kind": "option",
+    "description": "Open N windows (default: one for each file)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cN\u003e": {
+        "Name": "\u003cN\u003e",
+        "kind": "argument",
+        "description": "N",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cN\u003e": {
+        "Name": "\u003cN\u003e",
+        "kind": "argument",
+        "description": "N",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "-p": {
+    "Name": "-p",
+    "kind": "option",
+    "description": "Open N tab pages (default: one for each file)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cN\u003e": {
+        "Name": "\u003cN\u003e",
+        "kind": "argument",
+        "description": "N",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cN\u003e": {
+        "Name": "\u003cN\u003e",
+        "kind": "argument",
+        "description": "N",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "Recover crashed session if filename is specified, otherwise list swap files and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfilename\u003e": {
+        "Name": "\u003cfilename\u003e",
+        "kind": "argument",
+        "description": "filename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfilename\u003e": {
+        "Name": "\u003cfilename\u003e",
+        "kind": "argument",
+        "description": "filename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Enable silent mode (when in ex mode), or Read Normal mode commands from file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cscriptin\u003e": {
+        "Name": "\u003cscriptin\u003e",
+        "kind": "argument",
+        "description": "scriptin",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cscriptin\u003e": {
+        "Name": "\u003cscriptin\u003e",
+        "kind": "argument",
+        "description": "scriptin",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "-u": {
+    "Name": "-u",
+    "kind": "option",
+    "description": "Use \u003cvimrc\u003e instead of any .vimrc",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cvimrc\u003e": {
+        "Name": "\u003cvimrc\u003e",
+        "kind": "argument",
+        "description": "vimrc",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cvimrc\u003e": {
+        "Name": "\u003cvimrc\u003e",
+        "kind": "argument",
+        "description": "vimrc",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cvimrc\u003e"
+    ]
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Vi mode (like 'vi')",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-w": {
+    "Name": "-w",
+    "kind": "option",
+    "description": "Append all typed commands to file \u003cscriptout\u003e",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cscriptout\u003e": {
+        "Name": "\u003cscriptout\u003e",
+        "kind": "argument",
+        "description": "scriptout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cscriptout\u003e": {
+        "Name": "\u003cscriptout\u003e",
+        "kind": "argument",
+        "description": "scriptout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cscriptout\u003e"
+    ]
+  },
+  "-x": {
+    "Name": "-x",
+    "kind": "option",
+    "description": "Edit encrypted files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-y": {
+    "Name": "-y",
+    "kind": "option",
+    "description": "Easy mode (like 'evim', modeless)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

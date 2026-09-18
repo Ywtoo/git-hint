@@ -1,0 +1,2827 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for rclone commands, flags and backends",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "View your current rclone version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help for rclone commands, flags and backends",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "about": {
+    "Name": "about",
+    "kind": "subcommand",
+    "description": "Get quota information from the remote",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--full": {
+        "Name": "--full",
+        "kind": "option",
+        "description": "Full numbers instead of SI units",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--json": {
+        "Name": "--json",
+        "kind": "option",
+        "description": "Format output as JSON",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cremote:\u003e": {
+        "Name": "\u003cremote:\u003e",
+        "kind": "argument",
+        "description": "remote:",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--full": {
+        "Name": "--full",
+        "kind": "option",
+        "description": "Full numbers instead of SI units",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--json": {
+        "Name": "--json",
+        "kind": "option",
+        "description": "Format output as JSON",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cremote:\u003e": {
+        "Name": "\u003cremote:\u003e",
+        "kind": "argument",
+        "description": "remote:",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cremote:\u003e"
+    ]
+  },
+  "authorize": {
+    "Name": "authorize",
+    "kind": "subcommand",
+    "description": "Remote authorization",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--auth-no-open-browser": {
+        "Name": "--auth-no-open-browser",
+        "kind": "option",
+        "description": "Do not automatically open auth link in default browser",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--auth-no-open-browser": {
+        "Name": "--auth-no-open-browser",
+        "kind": "option",
+        "description": "Do not automatically open auth link in default browser",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "backend": {
+    "Name": "backend",
+    "kind": "subcommand",
+    "description": "Run a backend specific command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--json": {
+        "Name": "--json",
+        "kind": "option",
+        "description": "Format output as JSON",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--json": {
+        "Name": "--json",
+        "kind": "option",
+        "description": "Format output as JSON",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "cat": {
+    "Name": "cat",
+    "kind": "subcommand",
+    "description": "Concatenates any files and sends them to stdout",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--count": {
+        "Name": "--count",
+        "kind": "option",
+        "description": "Only print N characters. (default -1)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cint\u003e": {
+            "Name": "\u003cint\u003e",
+            "kind": "argument",
+            "description": "int",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cint\u003e": {
+            "Name": "\u003cint\u003e",
+            "kind": "argument",
+            "description": "int",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cint\u003e"
+        ]
+      },
+      "--discard": {
+        "Name": "--discard",
+        "kind": "option",
+        "description": "Discard the output instead of printing",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--head": {
+        "Name": "--head",
+        "kind": "option",
+        "description": "Only print the first N characters",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cint\u003e": {
+            "Name": "\u003cint\u003e",
+            "kind": "argument",
+            "description": "int",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cint\u003e": {
+            "Name": "\u003cint\u003e",
+            "kind": "argument",
+            "description": "int",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cint\u003e"
+        ]
+      },
+      "--offset": {
+        "Name": "--offset",
+        "kind": "option",
+        "description": "Start printing at offset N (or from end if -ve)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cint\u003e": {
+            "Name": "\u003cint\u003e",
+            "kind": "argument",
+            "description": "int",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cint\u003e": {
+            "Name": "\u003cint\u003e",
+            "kind": "argument",
+            "description": "int",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cint\u003e"
+        ]
+      },
+      "--tail": {
+        "Name": "--tail",
+        "kind": "option",
+        "description": "Only print the last N characters",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cint\u003e": {
+            "Name": "\u003cint\u003e",
+            "kind": "argument",
+            "description": "int",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cint\u003e": {
+            "Name": "\u003cint\u003e",
+            "kind": "argument",
+            "description": "int",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cint\u003e"
+        ]
+      },
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--count": {
+        "Name": "--count",
+        "kind": "option",
+        "description": "Only print N characters. (default -1)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cint\u003e": {
+            "Name": "\u003cint\u003e",
+            "kind": "argument",
+            "description": "int",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cint\u003e": {
+            "Name": "\u003cint\u003e",
+            "kind": "argument",
+            "description": "int",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cint\u003e"
+        ]
+      },
+      "--discard": {
+        "Name": "--discard",
+        "kind": "option",
+        "description": "Discard the output instead of printing",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--head": {
+        "Name": "--head",
+        "kind": "option",
+        "description": "Only print the first N characters",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cint\u003e": {
+            "Name": "\u003cint\u003e",
+            "kind": "argument",
+            "description": "int",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cint\u003e": {
+            "Name": "\u003cint\u003e",
+            "kind": "argument",
+            "description": "int",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cint\u003e"
+        ]
+      },
+      "--offset": {
+        "Name": "--offset",
+        "kind": "option",
+        "description": "Start printing at offset N (or from end if -ve)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cint\u003e": {
+            "Name": "\u003cint\u003e",
+            "kind": "argument",
+            "description": "int",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cint\u003e": {
+            "Name": "\u003cint\u003e",
+            "kind": "argument",
+            "description": "int",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cint\u003e"
+        ]
+      },
+      "--tail": {
+        "Name": "--tail",
+        "kind": "option",
+        "description": "Only print the last N characters",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cint\u003e": {
+            "Name": "\u003cint\u003e",
+            "kind": "argument",
+            "description": "int",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cint\u003e": {
+            "Name": "\u003cint\u003e",
+            "kind": "argument",
+            "description": "int",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cint\u003e"
+        ]
+      },
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cremote:path\u003e"
+    ]
+  },
+  "check": {
+    "Name": "check",
+    "kind": "subcommand",
+    "description": "Checks the files in the source and destination match",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--combined": {
+        "Name": "--combined",
+        "kind": "option",
+        "description": "Make a combined report of changes to this file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--differ": {
+        "Name": "--differ",
+        "kind": "option",
+        "description": "Report all non-matching files to this file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--download": {
+        "Name": "--download",
+        "kind": "option",
+        "description": "Check by downloading rather than with hash",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--error": {
+        "Name": "--error",
+        "kind": "option",
+        "description": "Report all files with errors (hashing or reading) to this file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--match": {
+        "Name": "--match",
+        "kind": "option",
+        "description": "Report all matching files to this file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--missing-on-dst": {
+        "Name": "--missing-on-dst",
+        "kind": "option",
+        "description": "Report all files missing from the destination to this file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--missing-on-src": {
+        "Name": "--missing-on-src",
+        "kind": "option",
+        "description": "Report all files missing from the source to this file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--one-way": {
+        "Name": "--one-way",
+        "kind": "option",
+        "description": "Check one way only, source files must exist on remote",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003csource:path\u003e": {
+        "Name": "\u003csource:path\u003e",
+        "kind": "argument",
+        "description": "source:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--combined": {
+        "Name": "--combined",
+        "kind": "option",
+        "description": "Make a combined report of changes to this file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--differ": {
+        "Name": "--differ",
+        "kind": "option",
+        "description": "Report all non-matching files to this file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--download": {
+        "Name": "--download",
+        "kind": "option",
+        "description": "Check by downloading rather than with hash",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--error": {
+        "Name": "--error",
+        "kind": "option",
+        "description": "Report all files with errors (hashing or reading) to this file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--match": {
+        "Name": "--match",
+        "kind": "option",
+        "description": "Report all matching files to this file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--missing-on-dst": {
+        "Name": "--missing-on-dst",
+        "kind": "option",
+        "description": "Report all files missing from the destination to this file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--missing-on-src": {
+        "Name": "--missing-on-src",
+        "kind": "option",
+        "description": "Report all files missing from the source to this file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--one-way": {
+        "Name": "--one-way",
+        "kind": "option",
+        "description": "Check one way only, source files must exist on remote",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003csource:path\u003e": {
+        "Name": "\u003csource:path\u003e",
+        "kind": "argument",
+        "description": "source:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csource:path\u003e",
+      "\u003cremote:path\u003e"
+    ]
+  },
+  "cleanup": {
+    "Name": "cleanup",
+    "kind": "subcommand",
+    "description": "Clean up the remote if possible",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cremote:path\u003e"
+    ]
+  },
+  "config": {
+    "Name": "config",
+    "kind": "subcommand",
+    "description": "Enter an interactive configuration session",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "create": {
+        "Name": "create",
+        "kind": "subcommand",
+        "description": "Create a new remote with name, type and options",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003ctype\u003e": {
+            "Name": "\u003ctype\u003e",
+            "kind": "argument",
+            "description": "type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003ctype\u003e": {
+            "Name": "\u003ctype\u003e",
+            "kind": "argument",
+            "description": "type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e",
+          "\u003ctype\u003e"
+        ]
+      }
+    }
+  },
+  "copy": {
+    "Name": "copy",
+    "kind": "subcommand",
+    "description": "Copy files from source to dest, skipping already copied",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdest:path\u003e": {
+        "Name": "\u003cdest:path\u003e",
+        "kind": "argument",
+        "description": "dest:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003csource:path\u003e": {
+        "Name": "\u003csource:path\u003e",
+        "kind": "argument",
+        "description": "source:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdest:path\u003e": {
+        "Name": "\u003cdest:path\u003e",
+        "kind": "argument",
+        "description": "dest:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003csource:path\u003e": {
+        "Name": "\u003csource:path\u003e",
+        "kind": "argument",
+        "description": "source:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csource:path\u003e",
+      "\u003cdest:path\u003e"
+    ]
+  },
+  "copyto": {
+    "Name": "copyto",
+    "kind": "subcommand",
+    "description": "Copy files from source to dest, skipping already copied",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdest:path\u003e": {
+        "Name": "\u003cdest:path\u003e",
+        "kind": "argument",
+        "description": "dest:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003csource:path\u003e": {
+        "Name": "\u003csource:path\u003e",
+        "kind": "argument",
+        "description": "source:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdest:path\u003e": {
+        "Name": "\u003cdest:path\u003e",
+        "kind": "argument",
+        "description": "dest:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003csource:path\u003e": {
+        "Name": "\u003csource:path\u003e",
+        "kind": "argument",
+        "description": "source:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csource:path\u003e",
+      "\u003cdest:path\u003e"
+    ]
+  },
+  "copyurl": {
+    "Name": "copyurl",
+    "kind": "subcommand",
+    "description": "Copy url content to dest",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdest:path\u003e": {
+        "Name": "\u003cdest:path\u003e",
+        "kind": "argument",
+        "description": "dest:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003curl\u003e": {
+        "Name": "\u003curl\u003e",
+        "kind": "argument",
+        "description": "url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdest:path\u003e": {
+        "Name": "\u003cdest:path\u003e",
+        "kind": "argument",
+        "description": "dest:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003curl\u003e": {
+        "Name": "\u003curl\u003e",
+        "kind": "argument",
+        "description": "url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003curl\u003e",
+      "\u003cdest:path\u003e"
+    ]
+  },
+  "cryptcheck": {
+    "Name": "cryptcheck",
+    "kind": "subcommand",
+    "description": "Cryptcheck checks the integrity of a crypted remote",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--combined": {
+        "Name": "--combined",
+        "kind": "option",
+        "description": "Make a combined report of changes to this file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--differ": {
+        "Name": "--differ",
+        "kind": "option",
+        "description": "Report all non-matching files to this file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--error": {
+        "Name": "--error",
+        "kind": "option",
+        "description": "Report all files with errors (hashing or reading) to this file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--match": {
+        "Name": "--match",
+        "kind": "option",
+        "description": "Report all matching files to this file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--missing-on-dst": {
+        "Name": "--missing-on-dst",
+        "kind": "option",
+        "description": "Report all files missing from the destination to this file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--missing-on-src": {
+        "Name": "--missing-on-src",
+        "kind": "option",
+        "description": "Report all files missing from the source to this file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--one-way": {
+        "Name": "--one-way",
+        "kind": "option",
+        "description": "Check one way only, source files must exist on remote",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ccryptedremote\u003e": {
+        "Name": "\u003ccryptedremote\u003e",
+        "kind": "argument",
+        "description": "cryptedremote",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--combined": {
+        "Name": "--combined",
+        "kind": "option",
+        "description": "Make a combined report of changes to this file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--differ": {
+        "Name": "--differ",
+        "kind": "option",
+        "description": "Report all non-matching files to this file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--error": {
+        "Name": "--error",
+        "kind": "option",
+        "description": "Report all files with errors (hashing or reading) to this file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--match": {
+        "Name": "--match",
+        "kind": "option",
+        "description": "Report all matching files to this file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--missing-on-dst": {
+        "Name": "--missing-on-dst",
+        "kind": "option",
+        "description": "Report all files missing from the destination to this file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--missing-on-src": {
+        "Name": "--missing-on-src",
+        "kind": "option",
+        "description": "Report all files missing from the source to this file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--one-way": {
+        "Name": "--one-way",
+        "kind": "option",
+        "description": "Check one way only, source files must exist on remote",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ccryptedremote\u003e": {
+        "Name": "\u003ccryptedremote\u003e",
+        "kind": "argument",
+        "description": "cryptedremote",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cremote:path\u003e",
+      "\u003ccryptedremote\u003e"
+    ]
+  },
+  "cryptdecode": {
+    "Name": "cryptdecode",
+    "kind": "subcommand",
+    "description": "Cryptdecode returns unencrypted file names",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--reverse": {
+        "Name": "--reverse",
+        "kind": "option",
+        "description": "Reverse cryptdecode, encrypts filenames",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ccryptedremote\u003e": {
+        "Name": "\u003ccryptedremote\u003e",
+        "kind": "argument",
+        "description": "cryptedremote",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cencryptedfilename\u003e": {
+        "Name": "\u003cencryptedfilename\u003e",
+        "kind": "argument",
+        "description": "encryptedfilename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--reverse": {
+        "Name": "--reverse",
+        "kind": "option",
+        "description": "Reverse cryptdecode, encrypts filenames",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ccryptedremote\u003e": {
+        "Name": "\u003ccryptedremote\u003e",
+        "kind": "argument",
+        "description": "cryptedremote",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cencryptedfilename\u003e": {
+        "Name": "\u003cencryptedfilename\u003e",
+        "kind": "argument",
+        "description": "encryptedfilename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccryptedremote\u003e",
+      "\u003cencryptedfilename\u003e"
+    ]
+  },
+  "dedupe": {
+    "Name": "dedupe",
+    "kind": "subcommand",
+    "description": "Interactively find duplicate filenames and delete/rename them",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--by-hash": {
+        "Name": "--by-hash",
+        "kind": "option",
+        "description": "Find identical hashes rather than names",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dedupe-mode": {
+        "Name": "--dedupe-mode",
+        "kind": "option",
+        "description": "Dedupe mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmode\u003e": {
+            "Name": "\u003cmode\u003e",
+            "kind": "argument",
+            "description": "mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmode\u003e": {
+            "Name": "\u003cmode\u003e",
+            "kind": "argument",
+            "description": "mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmode\u003e"
+        ]
+      },
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--by-hash": {
+        "Name": "--by-hash",
+        "kind": "option",
+        "description": "Find identical hashes rather than names",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dedupe-mode": {
+        "Name": "--dedupe-mode",
+        "kind": "option",
+        "description": "Dedupe mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmode\u003e": {
+            "Name": "\u003cmode\u003e",
+            "kind": "argument",
+            "description": "mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmode\u003e": {
+            "Name": "\u003cmode\u003e",
+            "kind": "argument",
+            "description": "mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmode\u003e"
+        ]
+      },
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cremote:path\u003e"
+    ]
+  },
+  "delete": {
+    "Name": "delete",
+    "kind": "subcommand",
+    "description": "Remove the files in path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--rmdirs": {
+        "Name": "--rmdirs",
+        "kind": "option",
+        "description": "Rmdirs removes empty directories but leaves root intact",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--rmdirs": {
+        "Name": "--rmdirs",
+        "kind": "option",
+        "description": "Rmdirs removes empty directories but leaves root intact",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cremote:path\u003e"
+    ]
+  },
+  "deletefile": {
+    "Name": "deletefile",
+    "kind": "subcommand",
+    "description": "Remove a single file from remote",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cremote:path\u003e"
+    ]
+  },
+  "genautocomplete": {
+    "Name": "genautocomplete",
+    "kind": "subcommand",
+    "description": "Output completion script for a given shell",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "bash": {
+        "Name": "bash",
+        "kind": "subcommand",
+        "description": "Output bash completion script for rclone.",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput_file\u003e": {
+            "Name": "\u003coutput_file\u003e",
+            "kind": "argument",
+            "description": "output_file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput_file\u003e": {
+            "Name": "\u003coutput_file\u003e",
+            "kind": "argument",
+            "description": "output_file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "fish": {
+        "Name": "fish",
+        "kind": "subcommand",
+        "description": "Output fish completion script for rclone.",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput_file\u003e": {
+            "Name": "\u003coutput_file\u003e",
+            "kind": "argument",
+            "description": "output_file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput_file\u003e": {
+            "Name": "\u003coutput_file\u003e",
+            "kind": "argument",
+            "description": "output_file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "zsh": {
+        "Name": "zsh",
+        "kind": "subcommand",
+        "description": "Output zsh completion script for rclone.",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput_file\u003e": {
+            "Name": "\u003coutput_file\u003e",
+            "kind": "argument",
+            "description": "output_file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput_file\u003e": {
+            "Name": "\u003coutput_file\u003e",
+            "kind": "argument",
+            "description": "output_file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      }
+    }
+  },
+  "gendocs": {
+    "Name": "gendocs",
+    "kind": "subcommand",
+    "description": "Output markdown docs for rclone to the directory supplied",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003coutput_directory\u003e": {
+        "Name": "\u003coutput_directory\u003e",
+        "kind": "argument",
+        "description": "output_directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003coutput_directory\u003e": {
+        "Name": "\u003coutput_directory\u003e",
+        "kind": "argument",
+        "description": "output_directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003coutput_directory\u003e"
+    ]
+  },
+  "hashsum": {
+    "Name": "hashsum",
+    "kind": "subcommand",
+    "description": "Produces a hashsum file for all the objects in the path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--base64": {
+        "Name": "--base64",
+        "kind": "option",
+        "description": "Output base64 encoded hashsum",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--download": {
+        "Name": "--download",
+        "kind": "option",
+        "description": "Download the file and hash it locally; if this flag is not specified, the hash is requested from the remote",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output-file": {
+        "Name": "--output-file",
+        "kind": "option",
+        "description": "Output hashsums to a file rather than the terminal",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003chash\u003e": {
+        "Name": "\u003chash\u003e",
+        "kind": "argument",
+        "description": "hash",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--base64": {
+        "Name": "--base64",
+        "kind": "option",
+        "description": "Output base64 encoded hashsum",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--download": {
+        "Name": "--download",
+        "kind": "option",
+        "description": "Download the file and hash it locally; if this flag is not specified, the hash is requested from the remote",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output-file": {
+        "Name": "--output-file",
+        "kind": "option",
+        "description": "Output hashsums to a file rather than the terminal",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003chash\u003e": {
+        "Name": "\u003chash\u003e",
+        "kind": "argument",
+        "description": "hash",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003chash\u003e",
+      "\u003cremote:path\u003e"
+    ]
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Show help for rclone commands, flags and backends",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "flags": {
+        "Name": "flags",
+        "kind": "subcommand",
+        "description": "List of global flags",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "link": {
+    "Name": "link",
+    "kind": "subcommand",
+    "description": "Generate public link to file/folder",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--expire": {
+        "Name": "--expire",
+        "kind": "option",
+        "description": "The amount of time that the link will be valid (default 100y)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cduration\u003e": {
+            "Name": "\u003cduration\u003e",
+            "kind": "argument",
+            "description": "duration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cduration\u003e": {
+            "Name": "\u003cduration\u003e",
+            "kind": "argument",
+            "description": "duration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cduration\u003e"
+        ]
+      },
+      "--unlink": {
+        "Name": "--unlink",
+        "kind": "option",
+        "description": "Remove existing public link to file/folder",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--expire": {
+        "Name": "--expire",
+        "kind": "option",
+        "description": "The amount of time that the link will be valid (default 100y)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cduration\u003e": {
+            "Name": "\u003cduration\u003e",
+            "kind": "argument",
+            "description": "duration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cduration\u003e": {
+            "Name": "\u003cduration\u003e",
+            "kind": "argument",
+            "description": "duration",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cduration\u003e"
+        ]
+      },
+      "--unlink": {
+        "Name": "--unlink",
+        "kind": "option",
+        "description": "Remove existing public link to file/folder",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cremote:path\u003e"
+    ]
+  },
+  "listremotes": {
+    "Name": "listremotes",
+    "kind": "subcommand",
+    "description": "List all the remotes in the config file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--long": {
+        "Name": "--long",
+        "kind": "option",
+        "description": "Show the type as well as names",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--long": {
+        "Name": "--long",
+        "kind": "option",
+        "description": "Show the type as well as names",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "ls": {
+    "Name": "ls",
+    "kind": "subcommand",
+    "description": "List the objects in the path with size and path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cremote:path\u003e"
+    ]
+  },
+  "lsd": {
+    "Name": "lsd",
+    "kind": "subcommand",
+    "description": "List all directories/containers/buckets in the path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--recursive": {
+        "Name": "--recursive",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-R": {
+        "Name": "-R",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--recursive": {
+        "Name": "--recursive",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-R": {
+        "Name": "-R",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cremote:path\u003e"
+    ]
+  },
+  "lsf": {
+    "Name": "lsf",
+    "kind": "subcommand",
+    "description": "List directories and objects in remote:path formatted for parsing",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--absolute": {
+        "Name": "--absolute",
+        "kind": "option",
+        "description": "Put a leading / in front of path names",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--csv": {
+        "Name": "--csv",
+        "kind": "option",
+        "description": "Output in CSV format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dir-slash": {
+        "Name": "--dir-slash",
+        "kind": "option",
+        "description": "Append a slash to directory names. (default true)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dirs-only": {
+        "Name": "--dirs-only",
+        "kind": "option",
+        "description": "Only list directories",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--files-only": {
+        "Name": "--files-only",
+        "kind": "option",
+        "description": "Only list files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Output format - see  help for details (default \"p\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "--hash": {
+        "Name": "--hash",
+        "kind": "option",
+        "description": "Use this hash when h is used in the format (default \"MD5\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003chash\u003e": {
+            "Name": "\u003chash\u003e",
+            "kind": "argument",
+            "description": "hash",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003chash\u003e": {
+            "Name": "\u003chash\u003e",
+            "kind": "argument",
+            "description": "hash",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003chash\u003e"
+        ]
+      },
+      "--recursive": {
+        "Name": "--recursive",
+        "kind": "option",
+        "description": "Recurse into the listing",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--separator": {
+        "Name": "--separator",
+        "kind": "option",
+        "description": "Separator for the items in the format. (default \";\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cseparator\u003e": {
+            "Name": "\u003cseparator\u003e",
+            "kind": "argument",
+            "description": "separator",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cseparator\u003e": {
+            "Name": "\u003cseparator\u003e",
+            "kind": "argument",
+            "description": "separator",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cseparator\u003e"
+        ]
+      },
+      "-F": {
+        "Name": "-F",
+        "kind": "option",
+        "description": "Output format - see  help for details (default \"p\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "-R": {
+        "Name": "-R",
+        "kind": "option",
+        "description": "Recurse into the listing",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Append a slash to directory names. (default true)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Separator for the items in the format. (default \";\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cseparator\u003e": {
+            "Name": "\u003cseparator\u003e",
+            "kind": "argument",
+            "description": "separator",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cseparator\u003e": {
+            "Name": "\u003cseparator\u003e",
+            "kind": "argument",
+            "description": "separator",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cseparator\u003e"
+        ]
+      },
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--absolute": {
+        "Name": "--absolute",
+        "kind": "option",
+        "description": "Put a leading / in front of path names",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--csv": {
+        "Name": "--csv",
+        "kind": "option",
+        "description": "Output in CSV format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dir-slash": {
+        "Name": "--dir-slash",
+        "kind": "option",
+        "description": "Append a slash to directory names. (default true)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dirs-only": {
+        "Name": "--dirs-only",
+        "kind": "option",
+        "description": "Only list directories",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--files-only": {
+        "Name": "--files-only",
+        "kind": "option",
+        "description": "Only list files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Output format - see  help for details (default \"p\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "--hash": {
+        "Name": "--hash",
+        "kind": "option",
+        "description": "Use this hash when h is used in the format (default \"MD5\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003chash\u003e": {
+            "Name": "\u003chash\u003e",
+            "kind": "argument",
+            "description": "hash",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003chash\u003e": {
+            "Name": "\u003chash\u003e",
+            "kind": "argument",
+            "description": "hash",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003chash\u003e"
+        ]
+      },
+      "--recursive": {
+        "Name": "--recursive",
+        "kind": "option",
+        "description": "Recurse into the listing",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--separator": {
+        "Name": "--separator",
+        "kind": "option",
+        "description": "Separator for the items in the format. (default \";\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cseparator\u003e": {
+            "Name": "\u003cseparator\u003e",
+            "kind": "argument",
+            "description": "separator",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cseparator\u003e": {
+            "Name": "\u003cseparator\u003e",
+            "kind": "argument",
+            "description": "separator",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cseparator\u003e"
+        ]
+      },
+      "-F": {
+        "Name": "-F",
+        "kind": "option",
+        "description": "Output format - see  help for details (default \"p\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "-R": {
+        "Name": "-R",
+        "kind": "option",
+        "description": "Recurse into the listing",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Append a slash to directory names. (default true)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Separator for the items in the format. (default \";\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cseparator\u003e": {
+            "Name": "\u003cseparator\u003e",
+            "kind": "argument",
+            "description": "separator",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cseparator\u003e": {
+            "Name": "\u003cseparator\u003e",
+            "kind": "argument",
+            "description": "separator",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cseparator\u003e"
+        ]
+      },
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cremote:path\u003e"
+    ]
+  },
+  "lsjson": {
+    "Name": "lsjson",
+    "kind": "subcommand",
+    "description": "List directories and objects in the path in JSON format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--dirs-only": {
+        "Name": "--dirs-only",
+        "kind": "option",
+        "description": "Only list directories",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--encrypted": {
+        "Name": "--encrypted",
+        "kind": "option",
+        "description": "Show the encrypted names",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--files-only": {
+        "Name": "--files-only",
+        "kind": "option",
+        "description": "Only list files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--hash": {
+        "Name": "--hash",
+        "kind": "option",
+        "description": "Include hashes in the output (may take longer)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--hash-type": {
+        "Name": "--hash-type",
+        "kind": "option",
+        "description": "Show only this hash type (may be repeated)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003chashes\u003e": {
+            "Name": "\u003chashes\u003e",
+            "kind": "argument",
+            "description": "hashes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003chashes\u003e": {
+            "Name": "\u003chashes\u003e",
+            "kind": "argument",
+            "description": "hashes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003chashes\u003e"
+        ]
+      },
+      "--no-mimetype": {
+        "Name": "--no-mimetype",
+        "kind": "option",
+        "description": "Don't read the mime type (can speed things up)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-modtime": {
+        "Name": "--no-modtime",
+        "kind": "option",
+        "description": "Don't read the modification time (can speed things up)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--original": {
+        "Name": "--original",
+        "kind": "option",
+        "description": "Show the ID of the underlying Object",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--recursive": {
+        "Name": "--recursive",
+        "kind": "option",
+        "description": "Recurse into the listing",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-M": {
+        "Name": "-M",
+        "kind": "option",
+        "description": "Show the encrypted names",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-R": {
+        "Name": "-R",
+        "kind": "option",
+        "description": "Recurse into the listing",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--dirs-only": {
+        "Name": "--dirs-only",
+        "kind": "option",
+        "description": "Only list directories",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--encrypted": {
+        "Name": "--encrypted",
+        "kind": "option",
+        "description": "Show the encrypted names",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--files-only": {
+        "Name": "--files-only",
+        "kind": "option",
+        "description": "Only list files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--hash": {
+        "Name": "--hash",
+        "kind": "option",
+        "description": "Include hashes in the output (may take longer)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--hash-type": {
+        "Name": "--hash-type",
+        "kind": "option",
+        "description": "Show only this hash type (may be repeated)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003chashes\u003e": {
+            "Name": "\u003chashes\u003e",
+            "kind": "argument",
+            "description": "hashes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003chashes\u003e": {
+            "Name": "\u003chashes\u003e",
+            "kind": "argument",
+            "description": "hashes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003chashes\u003e"
+        ]
+      },
+      "--no-mimetype": {
+        "Name": "--no-mimetype",
+        "kind": "option",
+        "description": "Don't read the mime type (can speed things up)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-modtime": {
+        "Name": "--no-modtime",
+        "kind": "option",
+        "description": "Don't read the modification time (can speed things up)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--original": {
+        "Name": "--original",
+        "kind": "option",
+        "description": "Show the ID of the underlying Object",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--recursive": {
+        "Name": "--recursive",
+        "kind": "option",
+        "description": "Recurse into the listing",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-M": {
+        "Name": "-M",
+        "kind": "option",
+        "description": "Show the encrypted names",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-R": {
+        "Name": "-R",
+        "kind": "option",
+        "description": "Recurse into the listing",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cremote:path\u003e"
+    ]
+  },
+  "lsl": {
+    "Name": "lsl",
+    "kind": "subcommand",
+    "description": "List the objects in path with modification time, size and path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cremote:path\u003e"
+    ]
+  },
+  "md5sum": {
+    "Name": "md5sum",
+    "kind": "subcommand",
+    "description": "Produces an md5sum file for all the objects in the path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--base64": {
+        "Name": "--base64",
+        "kind": "option",
+        "description": "Output base64 encoded hashsum",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--download": {
+        "Name": "--download",
+        "kind": "option",
+        "description": "Download the file and hash it locally; if this flag is not specified, the hash is requested from the remote",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output-file": {
+        "Name": "--output-file",
+        "kind": "option",
+        "description": "Output hashsums to a file rather than the terminal",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--base64": {
+        "Name": "--base64",
+        "kind": "option",
+        "description": "Output base64 encoded hashsum",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--download": {
+        "Name": "--download",
+        "kind": "option",
+        "description": "Download the file and hash it locally; if this flag is not specified, the hash is requested from the remote",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output-file": {
+        "Name": "--output-file",
+        "kind": "option",
+        "description": "Output hashsums to a file rather than the terminal",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cremote:path\u003e"
+    ]
+  },
+  "mkdir": {
+    "Name": "mkdir",
+    "kind": "subcommand",
+    "description": "Make the path if it doesn't already exist",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cremote:path\u003e"
+    ]
+  },
+  "mount": {
+    "Name": "mount",
+    "kind": "subcommand",
+    "description": "Mount the remote as file system on a mountpoint",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmountpoint\u003e": {
+        "Name": "\u003cmountpoint\u003e",
+        "kind": "argument",
+        "description": "mountpoint",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmountpoint\u003e": {
+        "Name": "\u003cmountpoint\u003e",
+        "kind": "argument",
+        "description": "mountpoint",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cremote:path\u003e": {
+        "Name": "\u003cremote:path\u003e",
+        "kind": "argument",
+        "description": "remote:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cremote:path\u003e",
+      "\u003cmountpoint\u003e"
+    ]
+  },
+  "move": {
+    "Name": "move",
+    "kind": "subcommand",
+    "description": "Move files from source to dest",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "moveto": {
+    "Name": "moveto",
+    "kind": "subcommand",
+    "description": "Move file or directory from source to dest",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "ncdu": {
+    "Name": "ncdu",
+    "kind": "subcommand",
+    "description": "Explore a remote with a text based user interface",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "obscure": {
+    "Name": "obscure",
+    "kind": "subcommand",
+    "description": "Obscure password for use in the rclone config file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "purge": {
+    "Name": "purge",
+    "kind": "subcommand",
+    "description": "Remove the path and all of its contents",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "rc": {
+    "Name": "rc",
+    "kind": "subcommand",
+    "description": "Run a command against a running rclone",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "rcat": {
+    "Name": "rcat",
+    "kind": "subcommand",
+    "description": "Copies standard input to file on remote",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "rcd": {
+    "Name": "rcd",
+    "kind": "subcommand",
+    "description": "Run rclone listening to remote control commands only",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "rmdir": {
+    "Name": "rmdir",
+    "kind": "subcommand",
+    "description": "Remove the empty directory at path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "rmdirs": {
+    "Name": "rmdirs",
+    "kind": "subcommand",
+    "description": "Remove empty directories under the path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "selfupdate": {
+    "Name": "selfupdate",
+    "kind": "subcommand",
+    "description": "Update the rclone binary",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "serve": {
+    "Name": "serve",
+    "kind": "subcommand",
+    "description": "Serve a remote over a protocol",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "settier": {
+    "Name": "settier",
+    "kind": "subcommand",
+    "description": "Changes storage class/tier of objects in remote",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "sha1sum": {
+    "Name": "sha1sum",
+    "kind": "subcommand",
+    "description": "Produces an sha1sum file for all the objects in the path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "size": {
+    "Name": "size",
+    "kind": "subcommand",
+    "description": "Prints the total size and number of objects in remote:path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "sync": {
+    "Name": "sync",
+    "kind": "subcommand",
+    "description": "Make source and dest identical, modifying destination only",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdest:path\u003e": {
+        "Name": "\u003cdest:path\u003e",
+        "kind": "argument",
+        "description": "dest:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003csource:path\u003e": {
+        "Name": "\u003csource:path\u003e",
+        "kind": "argument",
+        "description": "source:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdest:path\u003e": {
+        "Name": "\u003cdest:path\u003e",
+        "kind": "argument",
+        "description": "dest:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003csource:path\u003e": {
+        "Name": "\u003csource:path\u003e",
+        "kind": "argument",
+        "description": "source:path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csource:path\u003e",
+      "\u003cdest:path\u003e"
+    ]
+  },
+  "test": {
+    "Name": "test",
+    "kind": "subcommand",
+    "description": "Run a test command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "touch": {
+    "Name": "touch",
+    "kind": "subcommand",
+    "description": "Create new file or change file modification time",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "tree": {
+    "Name": "tree",
+    "kind": "subcommand",
+    "description": "List the contents of the remote in a tree like fashion",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "version": {
+    "Name": "version",
+    "kind": "subcommand",
+    "description": "Show the version number",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

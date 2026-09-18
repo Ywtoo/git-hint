@@ -1,0 +1,785 @@
+{
+  "--app": {
+    "Name": "--app",
+    "kind": "option",
+    "description": "Starts the given app and its dependencies",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cAPP\u003e": {
+        "Name": "\u003cAPP\u003e",
+        "kind": "argument",
+        "description": "APP",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cAPP\u003e": {
+        "Name": "\u003cAPP\u003e",
+        "kind": "argument",
+        "description": "APP",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cAPP\u003e"
+    ]
+  },
+  "--boot": {
+    "Name": "--boot",
+    "kind": "option",
+    "description": "Uses the given FILE.boot to start the system",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFILE\u003e"
+    ]
+  },
+  "--boot-var": {
+    "Name": "--boot-var",
+    "kind": "option",
+    "description": "Makes $VAR available as VALUE to FILE.boot",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cVALUE\u003e": {
+        "Name": "\u003cVALUE\u003e",
+        "kind": "argument",
+        "description": "VALUE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cVAR\u003e": {
+        "Name": "\u003cVAR\u003e",
+        "kind": "argument",
+        "description": "VAR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cVALUE\u003e": {
+        "Name": "\u003cVALUE\u003e",
+        "kind": "argument",
+        "description": "VALUE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cVAR\u003e": {
+        "Name": "\u003cVAR\u003e",
+        "kind": "argument",
+        "description": "VAR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cVAR\u003e",
+      "\u003cVALUE\u003e"
+    ]
+  },
+  "--cookie": {
+    "Name": "--cookie",
+    "kind": "option",
+    "description": "Sets a cookie for this distributed node",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cCOOKIE\u003e": {
+        "Name": "\u003cCOOKIE\u003e",
+        "kind": "argument",
+        "description": "COOKIE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cCOOKIE\u003e": {
+        "Name": "\u003cCOOKIE\u003e",
+        "kind": "argument",
+        "description": "COOKIE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cCOOKIE\u003e"
+    ]
+  },
+  "--dot-iex": {
+    "Name": "--dot-iex",
+    "kind": "option",
+    "description": "Overrides default .iex.exs file and uses path instead; path can be empty, then no file will be loaded",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH\u003e"
+    ]
+  },
+  "--erl": {
+    "Name": "--erl",
+    "kind": "option",
+    "description": "Switches to be passed down to Erlang",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSWITCHES\u003e": {
+        "Name": "\u003cSWITCHES\u003e",
+        "kind": "argument",
+        "description": "SWITCHES",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSWITCHES\u003e": {
+        "Name": "\u003cSWITCHES\u003e",
+        "kind": "argument",
+        "description": "SWITCHES",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSWITCHES\u003e"
+    ]
+  },
+  "--erl-config": {
+    "Name": "--erl-config",
+    "kind": "option",
+    "description": "Loads configuration in FILE.config written in Erlang",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFILE\u003e"
+    ]
+  },
+  "--eval": {
+    "Name": "--eval",
+    "kind": "option",
+    "description": "Evaluates the given command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cEXPRESSION\u003e": {
+        "Name": "\u003cEXPRESSION\u003e",
+        "kind": "argument",
+        "description": "EXPRESSION",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cEXPRESSION\u003e": {
+        "Name": "\u003cEXPRESSION\u003e",
+        "kind": "argument",
+        "description": "EXPRESSION",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cEXPRESSION\u003e"
+    ]
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Prints this message and exits",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--hidden": {
+    "Name": "--hidden",
+    "kind": "option",
+    "description": "Makes a hidden node",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--logger-otp-reports": {
+    "Name": "--logger-otp-reports",
+    "kind": "option",
+    "description": "Enables or disables OTP reporting",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cBOOL\u003e": {
+        "Name": "\u003cBOOL\u003e",
+        "kind": "argument",
+        "description": "BOOL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cBOOL\u003e": {
+        "Name": "\u003cBOOL\u003e",
+        "kind": "argument",
+        "description": "BOOL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cBOOL\u003e"
+    ]
+  },
+  "--logger-sasl-reports": {
+    "Name": "--logger-sasl-reports",
+    "kind": "option",
+    "description": "Enables or disables SASL reporting",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cBOOL\u003e": {
+        "Name": "\u003cBOOL\u003e",
+        "kind": "argument",
+        "description": "BOOL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cBOOL\u003e": {
+        "Name": "\u003cBOOL\u003e",
+        "kind": "argument",
+        "description": "BOOL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cBOOL\u003e"
+    ]
+  },
+  "--name": {
+    "Name": "--name",
+    "kind": "option",
+    "description": "Makes and assigns a name to the distributed node",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNAME\u003e"
+    ]
+  },
+  "--no-halt": {
+    "Name": "--no-halt",
+    "kind": "option",
+    "description": "Does not halt the Erlang VM after execution",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--pipe-to": {
+    "Name": "--pipe-to",
+    "kind": "option",
+    "description": "Starts the Erlang VM as a named PIPEDIR and LOGDIR",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cLOGDIR\u003e": {
+        "Name": "\u003cLOGDIR\u003e",
+        "kind": "argument",
+        "description": "LOGDIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cPIPEDIR\u003e": {
+        "Name": "\u003cPIPEDIR\u003e",
+        "kind": "argument",
+        "description": "PIPEDIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cLOGDIR\u003e": {
+        "Name": "\u003cLOGDIR\u003e",
+        "kind": "argument",
+        "description": "LOGDIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cPIPEDIR\u003e": {
+        "Name": "\u003cPIPEDIR\u003e",
+        "kind": "argument",
+        "description": "PIPEDIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPIPEDIR\u003e",
+      "\u003cLOGDIR\u003e"
+    ]
+  },
+  "--remsh": {
+    "Name": "--remsh",
+    "kind": "option",
+    "description": "Connects to a node using a remote shell",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNAME\u003e"
+    ]
+  },
+  "--rpc-eval": {
+    "Name": "--rpc-eval",
+    "kind": "option",
+    "description": "Evaluates the given command on the given remote node",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cCOMMAND\u003e": {
+        "Name": "\u003cCOMMAND\u003e",
+        "kind": "argument",
+        "description": "COMMAND",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cNODE\u003e": {
+        "Name": "\u003cNODE\u003e",
+        "kind": "argument",
+        "description": "NODE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cCOMMAND\u003e": {
+        "Name": "\u003cCOMMAND\u003e",
+        "kind": "argument",
+        "description": "COMMAND",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cNODE\u003e": {
+        "Name": "\u003cNODE\u003e",
+        "kind": "argument",
+        "description": "NODE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNODE\u003e",
+      "\u003cCOMMAND\u003e"
+    ]
+  },
+  "--sname": {
+    "Name": "--sname",
+    "kind": "option",
+    "description": "Makes and assigns a short name to the distributed node",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNAME\u003e"
+    ]
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Prints Elixir version and exits",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--vm-args": {
+    "Name": "--vm-args",
+    "kind": "option",
+    "description": "Passes the contents in file as arguments to the VM",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFILE\u003e"
+    ]
+  },
+  "--werl": {
+    "Name": "--werl",
+    "kind": "option",
+    "description": "Uses Erlang's Windows shell GUI (Windows only)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-S": {
+    "Name": "-S",
+    "kind": "option",
+    "description": "Finds and executes the given script in $PATH",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSCRIPT\u003e": {
+        "Name": "\u003cSCRIPT\u003e",
+        "kind": "argument",
+        "description": "SCRIPT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSCRIPT\u003e": {
+        "Name": "\u003cSCRIPT\u003e",
+        "kind": "argument",
+        "description": "SCRIPT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSCRIPT\u003e"
+    ]
+  },
+  "-e": {
+    "Name": "-e",
+    "kind": "option",
+    "description": "Evaluates the given command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cEXPRESSION\u003e": {
+        "Name": "\u003cEXPRESSION\u003e",
+        "kind": "argument",
+        "description": "EXPRESSION",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cEXPRESSION\u003e": {
+        "Name": "\u003cEXPRESSION\u003e",
+        "kind": "argument",
+        "description": "EXPRESSION",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cEXPRESSION\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Prints this message and exits",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-pa": {
+    "Name": "-pa",
+    "kind": "option",
+    "description": "Prepends the given path to Erlang code path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH\u003e"
+    ]
+  },
+  "-pr": {
+    "Name": "-pr",
+    "kind": "option",
+    "description": "Requires the given files/patterns in parallel",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFILE\u003e"
+    ]
+  },
+  "-pz": {
+    "Name": "-pz",
+    "kind": "option",
+    "description": "Appends the given path to Erlang code path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH\u003e"
+    ]
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "Requires the given files/patterns",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFILE\u003e"
+    ]
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Prints Elixir version and exits",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003cdata\u003e": {
+    "Name": "\u003cdata\u003e",
+    "kind": "argument",
+    "description": "data",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  },
+  "\u003cfile\u003e": {
+    "Name": "\u003cfile\u003e",
+    "kind": "argument",
+    "description": "file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

@@ -5,13 +5,39 @@ import (
 	"strings"
 )
 
+// ============================================================================
+// Types
+// ============================================================================
+
+// NodeKind classifies a parsed token by its role in the command's help text.
+type NodeKind string
+
+const (
+	// KindSubcommand marks an exclusive child: selecting it moves to the
+	// next command level and may trigger a new help invocation.
+	KindSubcommand NodeKind = "subcommand"
+	// KindOption marks a combinable flag. Never triggers a new help
+	// invocation; its children (if any) are extracted from the same
+	// help output as the flag itself.
+	KindOption NodeKind = "option"
+	// KindArgument marks a leaf value, such as a placeholder (<message>)
+	// or a literal enum member (always/auto/never). Never triggers a new
+	// help invocation.
+	KindArgument NodeKind = "argument"
+)
+
 // ParsedNode represents one token in the parsed help output with its children.
-// A flag like -m that takes a <message> will have <message> as a child node.
-// A flag with a fixed set of values (e.g. "--color[=WHEN]" where WHEN is
-// one of always/auto/never) has one child per literal value instead.
+// A flag like -m that takes a <message> will have <message> as a child node
+// and its key listed in Requires. A flag with a fixed set of values (e.g.
+// "--color[=WHEN]" where WHEN is one of always/auto/never) has one child per
+// literal value instead.
 type ParsedNode struct {
+	Kind        NodeKind
 	Description string
-	Children    map[string]*ParsedNode // for flags: their value/placeholder children
+	Children    map[string]*ParsedNode
+	// Requires lists keys from Children that become mandatory once this
+	// node is selected (e.g. a flag requiring its value argument).
+	Requires []string
 }
 
 // ParsedHelp is the result of parsing one "-h" output.
@@ -24,40 +50,62 @@ func (p ParsedHelp) IsLeaf() bool {
 	return len(p.Nodes) == 0
 }
 
-// A valid subcommand name: starts with a letter, then letters/digits/hyphens.
-var validNameRe = regexp.MustCompile(`^[a-zA-Z][a-zA-Z0-9-]*$`)
+// ============================================================================
+// Regex patterns
+// ============================================================================
 
-// placeholderRe matches a single "<...>" placeholder.
-var placeholderRe = regexp.MustCompile(`<[^<>]+>`)
+var (
+	// validNameRe matches a valid subcommand name: starts with a letter,
+	// then letters/digits/hyphens.
+	validNameRe = regexp.MustCompile(`^[a-zA-Z][a-zA-Z0-9-]*$`)
 
-// bareWordRe matches a single uppercase-ish word with no punctuation,
-// e.g. "WHEN", "CONTROL", "N" — used to recognize a flag's value spec
-// as a normalizable placeholder rather than an enum or garbage.
-var bareWordRe = regexp.MustCompile(`^[A-Za-z][A-Za-z0-9_]*$`)
+	// placeholderRe matches a single "<...>" placeholder.
+	placeholderRe = regexp.MustCompile(`<[^<>]+>`)
 
-// ---------------------------------------------------------------------
-// Flag name / value-spec extraction
+	// bareWordRe matches a single uppercase-ish word with no punctuation,
+	// e.g. "WHEN", "CONTROL", "N" — used to recognize a flag's value spec
+	// as a normalizable placeholder rather than an enum or garbage.
+	bareWordRe = regexp.MustCompile(`^[A-Za-z][A-Za-z0-9_]*$`)
+
+	// listLineRe matches indented list lines (Strategy A):
+	// "   subcommand  description text"
+	listLineRe = regexp.MustCompile(`^   (\S+)\s{2,}(.+)$`)
+
+	// flagWithDescRe matches a flag spec + description on the same line:
+	// "-m, --message <message>    commit message"
+	flagWithDescRe = regexp.MustCompile(`^\s*(-\S.*?)\s{2,}(\S.*)$`)
+
+	// flagOnlyRe matches a flag spec alone (description on next line):
+	// "-F, --file <file>"
+	flagOnlyRe = regexp.MustCompile(`^\s*(-\S.*)$`)
+
+	// wrappedDescRe matches deeply-indented continuation lines:
+	// "                           read message from file"
+	wrappedDescRe = regexp.MustCompile(`^\s{6,}(\S.*)$`)
+)
+
+// ============================================================================
+// Shared helpers — token classification
+// ============================================================================
+
+func isFlag(tok string) bool        { return strings.HasPrefix(tok, "-") }
+func isPlaceholder(tok string) bool { return strings.HasPrefix(tok, "<") }
+
+// ============================================================================
+// Shared helpers — flag name / value-spec extraction
 //
 // Flag specs come in a few shapes:
-//   --format=WORD           value is required
-//   --color[=WHEN]          value is optional (flag works bare too)
-//   --no-track[=(direct|inherit)]   optional, with a fixed set of values
-//   --[no-]include-untracked        negatable flag, no value at all
-//   -m <message>            required, space-separated (handled elsewhere,
-//                           see collectTokens' second pass / parseFlagSpec)
 //
-// stripFlagValue isolates the bare flag name. Using strings.Trim on a
-// cutset (the old approach) only strips characters from the START/END of
-// the string, so it never touches an unclosed "[" sitting in the middle —
-// that's what let "--color[=WHEN]" through as the corrupted key
-// "--color[=WHEN" instead of the clean "--color". Cutting at the first
-// "[" or "=" instead handles every case uniformly, including nested
-// brackets like node's "--inspect-brk[=[host:]port]".
+//	--format=WORD                        value is required
+//	--color[=WHEN]                       value is optional
+//	--no-track[=(direct|inherit)]        optional, with a fixed set of values
+//	--[no-]include-untracked             negatable flag, no value at all
+//	-m <message>                         required, space-separated
 //
-// IMPORTANT: the cut must skip over an embedded "[no-]" negation marker
-// first (see valueSpecIndex), otherwise "--[no-]include-untracked" gets
-// truncated at its own "[" down to a bare "--".
-// ---------------------------------------------------------------------
+// stripFlagValue isolates the bare flag name. The cut must skip over an
+// embedded "[no-]" negation marker first (see valueSpecIndex), otherwise
+// "--[no-]include-untracked" gets truncated at its own "[" down to "--".
+// ============================================================================
 
 // noPrefixMarker is the GNU convention for a flag with a negated form,
 // e.g. "--[no-]include-untracked". It must not be mistaken for a value
@@ -82,6 +130,8 @@ func valueSpecIndex(tok string) int {
 	return offset + idx
 }
 
+// stripFlagValue removes the value spec from a flag token, leaving just
+// the bare flag name (e.g. "--color[=WHEN]" → "--color").
 func stripFlagValue(tok string) string {
 	if idx := valueSpecIndex(tok); idx != -1 {
 		return tok[:idx]
@@ -89,16 +139,34 @@ func stripFlagValue(tok string) string {
 	return tok
 }
 
+// stripWrapping trims surrounding usage-line punctuation (brackets,
+// parens, pipes) and then isolates the flag name via stripFlagValue,
+// so a raw usage-line token like "[--color[=WHEN]]" collapses to
+// "--color" instead of leaving a dangling bracket in the key.
+func stripWrapping(tok string) string {
+	return stripFlagValue(strings.Trim(tok, "[]()|="))
+}
+
+// expandNoPrefix expands a "[no-]" marker into its positive and negative
+// forms. E.g. "--[no-]include-untracked" → ["--include-untracked", "--no-include-untracked"].
+func expandNoPrefix(flag string) []string {
+	idx := strings.Index(flag, noPrefixMarker)
+	if idx == -1 {
+		return []string{flag}
+	}
+	without := flag[:idx] + flag[idx+len(noPrefixMarker):]
+	with := flag[:idx] + "no-" + flag[idx+len(noPrefixMarker):]
+	return []string{without, with}
+}
+
 // extractValueChildren pulls the value spec out of a raw flag token (the
 // part after the first real value-spec bracket/equals — see
 // valueSpecIndex, which skips over an embedded "[no-]" marker) and
 // classifies it into child nodes:
-//   - "(a|b|c)" or "a|b|c"  -> one literal child per option (enum)
-//   - "<name>"              -> that placeholder as-is
-//   - "WORD" (bare word)    -> normalized to "<word>", same convention
-//     used for GNU positional args
-//   - anything else (unclosed brackets, "...", empty) -> nil, no children
-//     rather than guessing and creating a corrupted placeholder.
+//   - "(a|b|c)" or "a|b|c"  → one literal child per option (enum)
+//   - "<name>"              → that placeholder as-is
+//   - "WORD" (bare word)    → normalized to "<word>"
+//   - anything else         → nil (no children)
 func extractValueChildren(tok, desc string) map[string]*ParsedNode {
 	idx := valueSpecIndex(tok)
 	if idx == -1 {
@@ -114,7 +182,7 @@ func extractValueChildren(tok, desc string) map[string]*ParsedNode {
 	if rest == "" || rest == "..." {
 		return nil
 	}
-	// Leftover brackets mean we couldn't cleanly isolate the value
+	// Leftover brackets mean the value could not be cleanly isolated
 	// (e.g. nested "[host:]port") — bail out instead of emitting garbage.
 	if strings.ContainsAny(rest, "[]") {
 		return nil
@@ -128,7 +196,7 @@ func extractValueChildren(tok, desc string) map[string]*ParsedNode {
 			if opt == "" {
 				continue
 			}
-			children[opt] = &ParsedNode{Description: desc}
+			children[opt] = &ParsedNode{Kind: KindArgument, Description: desc}
 		}
 		if len(children) == 0 {
 			return nil
@@ -137,17 +205,36 @@ func extractValueChildren(tok, desc string) map[string]*ParsedNode {
 	}
 
 	if m := placeholderRe.FindString(rest); m != "" {
-		children[m] = &ParsedNode{Description: desc}
+		children[m] = &ParsedNode{Kind: KindArgument, Description: desc}
 		return children
 	}
 
 	if bareWordRe.MatchString(rest) {
 		placeholder := "<" + strings.ToLower(rest) + ">"
-		children[placeholder] = &ParsedNode{Description: desc}
+		children[placeholder] = &ParsedNode{Kind: KindArgument, Description: desc}
 		return children
 	}
 
 	return nil
+}
+
+// ============================================================================
+// Shared helpers — node manipulation
+// ============================================================================
+
+// getOrCreate returns the existing node for key, or creates one with the
+// given kind. The kind of an existing node is never downgraded — the
+// first classification for a given key is authoritative.
+func getOrCreate(nodes map[string]*ParsedNode, key string, kind NodeKind) *ParsedNode {
+	if n, ok := nodes[key]; ok {
+		if n.Kind == "" {
+			n.Kind = kind
+		}
+		return n
+	}
+	n := &ParsedNode{Kind: kind}
+	nodes[key] = n
+	return n
 }
 
 // mergeChildren copies src into dst (creating dst if needed), keeping
@@ -166,11 +253,25 @@ func mergeChildren(node *ParsedNode, src map[string]*ParsedNode) {
 	}
 }
 
-// ---------------------------------------------------------------------
-// STRATEGY A: indented list with description (git root level: git -h / git help -a)
-// ---------------------------------------------------------------------
+// requireChild records that key becomes mandatory once node is selected,
+// without introducing a duplicate entry in Requires.
+func requireChild(node *ParsedNode, key string) {
+	for _, existing := range node.Requires {
+		if existing == key {
+			return
+		}
+	}
+	node.Requires = append(node.Requires, key)
+}
 
-var listLineRe = regexp.MustCompile(`^   (\S+)\s{2,}(.+)$`)
+// ============================================================================
+// Strategy A — indented list with description
+//
+// Used at root level only (git -h / git help -a). Lines like:
+//
+//	   commit    create a commit for the staged changes
+//	   add       add file contents to the index
+// ============================================================================
 
 func parseIndentedList(output string) ParsedHelp {
 	nodes := make(map[string]*ParsedNode)
@@ -193,15 +294,19 @@ func parseIndentedList(output string) ParsedHelp {
 			continue
 		}
 
-		nodes[name] = &ParsedNode{Description: desc}
+		nodes[name] = &ParsedNode{Kind: KindSubcommand, Description: desc}
 	}
 
 	return ParsedHelp{Nodes: nodes}
 }
 
-// ---------------------------------------------------------------------
-// STRATEGY B: "usage:" / "or:" lines
-// ---------------------------------------------------------------------
+// ============================================================================
+// Strategy B — "usage:" / "or:" lines
+//
+// Parses the usage synopsis to extract the command structure (flags,
+// placeholders, subcommands). This gives the skeleton; descriptions
+// come from Strategy C.
+// ============================================================================
 
 // collectUsageLines returns the full text of each "usage:"/"or:" statement,
 // with wrapped continuation lines joined back in.
@@ -250,6 +355,7 @@ func collectUsageLines(output string) []string {
 	return statements
 }
 
+// pathMatches checks that fields starts with the given path segments.
 func pathMatches(fields []string, path []string) bool {
 	if len(fields) < len(path) {
 		return false
@@ -262,41 +368,10 @@ func pathMatches(fields []string, path []string) bool {
 	return true
 }
 
-// stripWrapping trims surrounding usage-line punctuation (brackets,
-// parens, pipes) and then isolates the flag name via stripFlagValue,
-// so a raw usage-line token like "[--color[=WHEN]]" collapses to
-// "--color" instead of leaving a dangling bracket in the key.
-func stripWrapping(tok string) string {
-	return stripFlagValue(strings.Trim(tok, "[]()|="))
-}
-
-func isFlag(tok string) bool        { return strings.HasPrefix(tok, "-") }
-func isPlaceholder(tok string) bool { return strings.HasPrefix(tok, "<") }
-
-func expandNoPrefix(flag string) []string {
-	idx := strings.Index(flag, noPrefixMarker)
-	if idx == -1 {
-		return []string{flag}
-	}
-	without := flag[:idx] + flag[idx+len(noPrefixMarker):]
-	with := flag[:idx] + "no-" + flag[idx+len(noPrefixMarker):]
-	return []string{without, with}
-}
-
-// getOrCreate returns the existing node for key, or creates a new one.
-func getOrCreate(nodes map[string]*ParsedNode, key string) *ParsedNode {
-	if n, ok := nodes[key]; ok {
-		return n
-	}
-	n := &ParsedNode{}
-	nodes[key] = n
-	return n
-}
-
 // collectTokens walks usage-line tokens after the command path.
 //   - Flags and placeholders are added to nodes.
 //   - Flags followed immediately by a placeholder (next token) register the
-//     placeholder as a child of the flag.
+//     placeholder as a required child of the flag.
 //   - Flags carrying a bracketed value spec (enum or bare word) get that
 //     value expanded into children too.
 //   - Flags carrying a "[no-]" negation marker get expanded into both
@@ -317,20 +392,20 @@ func collectTokens(fields []string, afterIndex int, nodes map[string]*ParsedNode
 			switch {
 			case isFlag(tok):
 				for _, expanded := range expandNoPrefix(tok) {
-					flagNode := getOrCreate(nodes, expanded)
+					flagNode := getOrCreate(nodes, expanded, KindOption)
 
 					inlinePhs := placeholderRe.FindAllString(rawTok, -1)
 					for _, ph := range inlinePhs {
-						mergeChildren(flagNode, map[string]*ParsedNode{ph: {}})
+						mergeChildren(flagNode, map[string]*ParsedNode{ph: {Kind: KindArgument}})
 					}
 					mergeChildren(flagNode, extractValueChildren(rawTok, ""))
 				}
 
 			case isPlaceholder(tok):
-				getOrCreate(nodes, tok)
+				getOrCreate(nodes, tok, KindArgument)
 
 			case validNameRe.MatchString(tok):
-				getOrCreate(nodes, tok)
+				getOrCreate(nodes, tok, KindSubcommand)
 				return // stop: rest belongs to this subcommand
 			}
 		}
@@ -338,8 +413,8 @@ func collectTokens(fields []string, afterIndex int, nodes map[string]*ParsedNode
 	}
 
 	// Second pass: link flags to their placeholder siblings when the flag
-	// is immediately followed by a standalone placeholder in the usage line.
-	// e.g. "git commit [-m <message>]" → -m has child <message>
+	// is immediately followed by a standalone placeholder in the usage line,
+	// e.g. "git commit [-m <message>]" -> -m requires <message>.
 	for idx := afterIndex; idx < len(fields)-1; idx++ {
 		cur := stripWrapping(strings.ReplaceAll(fields[idx], "|", " "))
 		nxt := stripWrapping(fields[idx+1])
@@ -353,10 +428,11 @@ func collectTokens(fields []string, afterIndex int, nodes map[string]*ParsedNode
 		if isFlag(lastCur) && isPlaceholder(firstNxt) {
 			for _, expanded := range expandNoPrefix(lastCur) {
 				if flagNode, ok := nodes[expanded]; ok {
-					mergeChildren(flagNode, map[string]*ParsedNode{firstNxt: {}})
+					mergeChildren(flagNode, map[string]*ParsedNode{firstNxt: {Kind: KindArgument}})
+					requireChild(flagNode, firstNxt)
 				}
 			}
-			// Remove the placeholder from the top-level (it belongs under the flag)
+			// The placeholder belongs under the flag, not at the top level.
 			delete(nodes, firstNxt)
 		}
 	}
@@ -379,9 +455,10 @@ func parseUsageLines(output string, path []string) ParsedHelp {
 	return ParsedHelp{Nodes: nodes}
 }
 
-// ---------------------------------------------------------------------
-// STRATEGY C: flag list with description
-// e.g.:
+// ============================================================================
+// Strategy C — flag list with description
+//
+// Parses the detailed flag descriptions, e.g.:
 //
 //	-m, --message <message>    commit message
 //	-F, --file <file>
@@ -393,16 +470,7 @@ func parseUsageLines(output string, path []string) ParsedHelp {
 // Any value spec (placeholder, bracketed optional, or enum) attaches as
 // children to every alias flag in the spec. A "[no-]" marker on any alias
 // expands that alias into its positive and negative forms.
-// ---------------------------------------------------------------------
-
-var (
-	// flag spec + description on the same line, separated by 2+ spaces.
-	flagWithDescRe = regexp.MustCompile(`^\s*(-\S.*?)\s{2,}(\S.*)$`)
-	// flag spec alone (description on next line).
-	flagOnlyRe = regexp.MustCompile(`^\s*(-\S.*)$`)
-	// deeply-indented continuation (description for the previous flag-only line).
-	wrappedDescRe = regexp.MustCompile(`^\s{6,}(\S.*)$`)
-)
+// ============================================================================
 
 // parseFlagSpec parses a flag spec like "-m, --message <message>" or
 // "--color[=WHEN]" or "-u, --[no-]include-untracked" and records each
@@ -422,32 +490,35 @@ func parseFlagSpec(spec, desc string, nodes map[string]*ParsedNode) {
 			clean := stripFlagValue(tok)
 			switch {
 			case isPlaceholder(clean):
-				valueChildren[clean] = &ParsedNode{Description: desc}
+				valueChildren[clean] = &ParsedNode{Kind: KindArgument, Description: desc}
 			case isFlag(clean):
 				flags = append(flags, expandNoPrefix(clean)...)
 				for name, child := range extractValueChildren(tok, desc) {
 					valueChildren[name] = child
 				}
 			case placeholderRe.MatchString(tok):
-				// inline placeholder glued onto flag e.g. "-u<mode>"
+				// Inline placeholder glued onto the flag, e.g. "-u<mode>".
 				phs := placeholderRe.FindAllString(tok, -1)
 				flagPart := stripFlagValue(placeholderRe.ReplaceAllString(tok, ""))
 				if isFlag(flagPart) {
 					flags = append(flags, expandNoPrefix(flagPart)...)
 				}
 				for _, ph := range phs {
-					valueChildren[ph] = &ParsedNode{Description: desc}
+					valueChildren[ph] = &ParsedNode{Kind: KindArgument, Description: desc}
 				}
 			}
 		}
 	}
 
 	for _, f := range flags {
-		flagNode := getOrCreate(nodes, f)
+		flagNode := getOrCreate(nodes, f, KindOption)
 		if flagNode.Description == "" {
 			flagNode.Description = desc
 		}
 		mergeChildren(flagNode, valueChildren)
+		for vName := range valueChildren {
+			requireChild(flagNode, vName)
+		}
 	}
 }
 
@@ -482,12 +553,15 @@ func parseFlagList(output string) map[string]*ParsedNode {
 	return nodes
 }
 
-// ---------------------------------------------------------------------
+// ============================================================================
 // Entry point
-// ---------------------------------------------------------------------
+// ============================================================================
 
+// ParseCommand parses the help output for a command at the given path
+// and returns a tree of nodes (subcommands, options, arguments).
 func ParseCommand(output string, path []string) ParsedHelp {
-	// At root level only, try the indented-list strategy first (has descriptions).
+	// At root level only, try the indented-list strategy first (it carries
+	// descriptions that the usage-line strategy does not).
 	if len(path) == 1 {
 		if fromList := parseIndentedList(output); !fromList.IsLeaf() {
 			return fromList
@@ -502,11 +576,17 @@ func ParseCommand(output string, path []string) ParsedHelp {
 			if existing.Description == "" && node.Description != "" {
 				existing.Description = node.Description
 			}
+			if existing.Kind == "" {
+				existing.Kind = node.Kind
+			}
 			if len(node.Children) > 0 {
 				mergeChildren(existing, node.Children)
 				for chName := range node.Children {
 					delete(nodes, chName)
 				}
+			}
+			for _, req := range node.Requires {
+				requireChild(existing, req)
 			}
 		} else {
 			nodes[name] = node

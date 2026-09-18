@@ -1,0 +1,943 @@
+{
+  "--add-readonly": {
+    "Name": "--add-readonly",
+    "kind": "option",
+    "description": "Generate readonly properties",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--another-array-type": {
+    "Name": "--another-array-type",
+    "kind": "option",
+    "description": "Generate array types as Array\u003cType\u003e (by default Type[]) (default: false)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--api-class-name": {
+    "Name": "--api-class-name",
+    "kind": "option",
+    "description": "Name of the api class",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cName\u003e": {
+        "Name": "\u003cName\u003e",
+        "kind": "argument",
+        "description": "Name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cName\u003e": {
+        "Name": "\u003cName\u003e",
+        "kind": "argument",
+        "description": "Name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cName\u003e"
+    ]
+  },
+  "--axios": {
+    "Name": "--axios",
+    "kind": "option",
+    "description": "Generate axios http client",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--clean-output": {
+    "Name": "--clean-output",
+    "kind": "option",
+    "description": "Clean output folder before generate api. WARNING: May cause data loss (default: false)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--debug": {
+    "Name": "--debug",
+    "kind": "option",
+    "description": "Additional information about processes inside this tool (default: false)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--default-as-success": {
+    "Name": "--default-as-success",
+    "kind": "option",
+    "description": "Use \"default\" response status code as success response too",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--default-response": {
+    "Name": "--default-response",
+    "kind": "option",
+    "description": "Default type for empty response schema",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cType\u003e": {
+        "Name": "\u003cType\u003e",
+        "kind": "argument",
+        "description": "Type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cType\u003e": {
+        "Name": "\u003cType\u003e",
+        "kind": "argument",
+        "description": "Type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cType\u003e"
+    ]
+  },
+  "--disable-throw-on-error": {
+    "Name": "--disable-throw-on-error",
+    "kind": "option",
+    "description": "Do not throw an error when response.ok is not true (default: false)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--disableProxy": {
+    "Name": "--disableProxy",
+    "kind": "option",
+    "description": "Disabled proxy",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--disableStrictSSL": {
+    "Name": "--disableStrictSSL",
+    "kind": "option",
+    "description": "Disabled strict SSL",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--enum-names-as-values": {
+    "Name": "--enum-names-as-values",
+    "kind": "option",
+    "description": "Use values in 'x-enumNames' as enum values (not only as keys)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--extract-enums": {
+    "Name": "--extract-enums",
+    "kind": "option",
+    "description": "Extract all enums from inline interface\type content to typescript enum construction (default: false)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--extract-request-body": {
+    "Name": "--extract-request-body",
+    "kind": "option",
+    "description": "Extract request body type to data contract",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--extract-request-params": {
+    "Name": "--extract-request-params",
+    "kind": "option",
+    "description": "Extract request params to data contract",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--extract-response-body": {
+    "Name": "--extract-response-body",
+    "kind": "option",
+    "description": "Extract response body type to data contract",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--extract-response-error": {
+    "Name": "--extract-response-error",
+    "kind": "option",
+    "description": "Extract response error type to data contract",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for swagger-typescript-api",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--js": {
+    "Name": "--js",
+    "kind": "option",
+    "description": "Generate js api module with declaration file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--modular": {
+    "Name": "--modular",
+    "kind": "option",
+    "description": "Generate separated files for http client, data contracts, and routes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--module-name-first-tag": {
+    "Name": "--module-name-first-tag",
+    "kind": "option",
+    "description": "Splits routes based on the first tag",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--module-name-index": {
+    "Name": "--module-name-index",
+    "kind": "option",
+    "description": "Determines which path index should be used for routes separation",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cIndex\u003e": {
+        "Name": "\u003cIndex\u003e",
+        "kind": "argument",
+        "description": "Index",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cIndex\u003e": {
+        "Name": "\u003cIndex\u003e",
+        "kind": "argument",
+        "description": "Index",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cIndex\u003e"
+    ]
+  },
+  "--name": {
+    "Name": "--name",
+    "kind": "option",
+    "description": "Name of output typescript api file (default: \"Api.ts\")",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cName\u003e": {
+        "Name": "\u003cName\u003e",
+        "kind": "argument",
+        "description": "Name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cName\u003e": {
+        "Name": "\u003cName\u003e",
+        "kind": "argument",
+        "description": "Name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cName\u003e"
+    ]
+  },
+  "--no-client": {
+    "Name": "--no-client",
+    "kind": "option",
+    "description": "Do not generate an API class",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--output": {
+    "Name": "--output",
+    "kind": "option",
+    "description": "Output path of typescript api file (default: \"./\")",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPath\u003e": {
+        "Name": "\u003cPath\u003e",
+        "kind": "argument",
+        "description": "Path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPath\u003e": {
+        "Name": "\u003cPath\u003e",
+        "kind": "argument",
+        "description": "Path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPath\u003e"
+    ]
+  },
+  "--patch": {
+    "Name": "--patch",
+    "kind": "option",
+    "description": "Fix up small errors in the swagger source definition (default: false)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--path": {
+    "Name": "--path",
+    "kind": "option",
+    "description": "Path/url to swagger scheme",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPath\u003e": {
+        "Name": "\u003cPath\u003e",
+        "kind": "argument",
+        "description": "Path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPath\u003e": {
+        "Name": "\u003cPath\u003e",
+        "kind": "argument",
+        "description": "Path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPath\u003e"
+    ]
+  },
+  "--responses": {
+    "Name": "--responses",
+    "kind": "option",
+    "description": "Generate additional information about request responses",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--route-types": {
+    "Name": "--route-types",
+    "kind": "option",
+    "description": "Generate type definitions for API routes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--silent": {
+    "Name": "--silent",
+    "kind": "option",
+    "description": "Output only errors to console",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--single-http-client": {
+    "Name": "--single-http-client",
+    "kind": "option",
+    "description": "Ability to send HttpClient instance to Api constructor (default: false)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--sort-types": {
+    "Name": "--sort-types",
+    "kind": "option",
+    "description": "Sort fields and types (default: false)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--templates": {
+    "Name": "--templates",
+    "kind": "option",
+    "description": "Path to folder containing templates",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPath\u003e": {
+        "Name": "\u003cPath\u003e",
+        "kind": "argument",
+        "description": "Path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPath\u003e": {
+        "Name": "\u003cPath\u003e",
+        "kind": "argument",
+        "description": "Path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPath\u003e"
+    ]
+  },
+  "--type-prefix": {
+    "Name": "--type-prefix",
+    "kind": "option",
+    "description": "Data contract name prefix",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPrefix\u003e": {
+        "Name": "\u003cPrefix\u003e",
+        "kind": "argument",
+        "description": "Prefix",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPrefix\u003e": {
+        "Name": "\u003cPrefix\u003e",
+        "kind": "argument",
+        "description": "Prefix",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPrefix\u003e"
+    ]
+  },
+  "--type-suffix": {
+    "Name": "--type-suffix",
+    "kind": "option",
+    "description": "Data contract name suffix",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSuffix\u003e": {
+        "Name": "\u003cSuffix\u003e",
+        "kind": "argument",
+        "description": "Suffix",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSuffix\u003e": {
+        "Name": "\u003cSuffix\u003e",
+        "kind": "argument",
+        "description": "Suffix",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSuffix\u003e"
+    ]
+  },
+  "--union-enums": {
+    "Name": "--union-enums",
+    "kind": "option",
+    "description": "Generate all \"enum\" types as union types (T1 | T2 | TN)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--unwrap-response-data": {
+    "Name": "--unwrap-response-data",
+    "kind": "option",
+    "description": "Unwrap the data item from the response",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Output the current version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Use \"default\" response status code as success response too",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help for swagger-typescript-api",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-n": {
+    "Name": "-n",
+    "kind": "option",
+    "description": "Name of output typescript api file (default: \"Api.ts\")",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cName\u003e": {
+        "Name": "\u003cName\u003e",
+        "kind": "argument",
+        "description": "Name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cName\u003e": {
+        "Name": "\u003cName\u003e",
+        "kind": "argument",
+        "description": "Name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cName\u003e"
+    ]
+  },
+  "-o": {
+    "Name": "-o",
+    "kind": "option",
+    "description": "Output path of typescript api file (default: \"./\")",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPath\u003e": {
+        "Name": "\u003cPath\u003e",
+        "kind": "argument",
+        "description": "Path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPath\u003e": {
+        "Name": "\u003cPath\u003e",
+        "kind": "argument",
+        "description": "Path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPath\u003e"
+    ]
+  },
+  "-p": {
+    "Name": "-p",
+    "kind": "option",
+    "description": "Path/url to swagger scheme",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPath\u003e": {
+        "Name": "\u003cPath\u003e",
+        "kind": "argument",
+        "description": "Path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPath\u003e": {
+        "Name": "\u003cPath\u003e",
+        "kind": "argument",
+        "description": "Path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPath\u003e"
+    ]
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "Generate additional information about request responses",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Path to folder containing templates",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPath\u003e": {
+        "Name": "\u003cPath\u003e",
+        "kind": "argument",
+        "description": "Path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPath\u003e": {
+        "Name": "\u003cPath\u003e",
+        "kind": "argument",
+        "description": "Path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPath\u003e"
+    ]
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Output the current version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "generate-templates": {
+    "Name": "generate-templates",
+    "kind": "subcommand",
+    "description": "Generate \".ejs\" templates needed for generate api",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--clean-output": {
+        "Name": "--clean-output",
+        "kind": "option",
+        "description": "Clean output folder before generate template",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--http-client": {
+        "Name": "--http-client",
+        "kind": "option",
+        "description": "Http client type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cHttp client\u003e": {
+            "Name": "\u003cHttp client\u003e",
+            "kind": "argument",
+            "description": "Http client",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cHttp client\u003e": {
+            "Name": "\u003cHttp client\u003e",
+            "kind": "argument",
+            "description": "Http client",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cHttp client\u003e"
+        ]
+      },
+      "--modular": {
+        "Name": "--modular",
+        "kind": "option",
+        "description": "Generate templates needed to separate files for http client, data contracts, and routes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output": {
+        "Name": "--output",
+        "kind": "option",
+        "description": "Output path of generated templates",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cPath\u003e": {
+            "Name": "\u003cPath\u003e",
+            "kind": "argument",
+            "description": "Path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cPath\u003e": {
+            "Name": "\u003cPath\u003e",
+            "kind": "argument",
+            "description": "Path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cPath\u003e"
+        ]
+      },
+      "--rewrite": {
+        "Name": "--rewrite",
+        "kind": "option",
+        "description": "Rewrite content in existing templates",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Clean output folder before generate template",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-m": {
+        "Name": "-m",
+        "kind": "option",
+        "description": "Generate templates needed to separate files for http client, data contracts, and routes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Output path of generated templates",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cPath\u003e": {
+            "Name": "\u003cPath\u003e",
+            "kind": "argument",
+            "description": "Path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cPath\u003e": {
+            "Name": "\u003cPath\u003e",
+            "kind": "argument",
+            "description": "Path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cPath\u003e"
+        ]
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Rewrite content in existing templates",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--clean-output": {
+        "Name": "--clean-output",
+        "kind": "option",
+        "description": "Clean output folder before generate template",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--http-client": {
+        "Name": "--http-client",
+        "kind": "option",
+        "description": "Http client type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cHttp client\u003e": {
+            "Name": "\u003cHttp client\u003e",
+            "kind": "argument",
+            "description": "Http client",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cHttp client\u003e": {
+            "Name": "\u003cHttp client\u003e",
+            "kind": "argument",
+            "description": "Http client",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cHttp client\u003e"
+        ]
+      },
+      "--modular": {
+        "Name": "--modular",
+        "kind": "option",
+        "description": "Generate templates needed to separate files for http client, data contracts, and routes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output": {
+        "Name": "--output",
+        "kind": "option",
+        "description": "Output path of generated templates",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cPath\u003e": {
+            "Name": "\u003cPath\u003e",
+            "kind": "argument",
+            "description": "Path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cPath\u003e": {
+            "Name": "\u003cPath\u003e",
+            "kind": "argument",
+            "description": "Path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cPath\u003e"
+        ]
+      },
+      "--rewrite": {
+        "Name": "--rewrite",
+        "kind": "option",
+        "description": "Rewrite content in existing templates",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Clean output folder before generate template",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-m": {
+        "Name": "-m",
+        "kind": "option",
+        "description": "Generate templates needed to separate files for http client, data contracts, and routes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Output path of generated templates",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cPath\u003e": {
+            "Name": "\u003cPath\u003e",
+            "kind": "argument",
+            "description": "Path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cPath\u003e": {
+            "Name": "\u003cPath\u003e",
+            "kind": "argument",
+            "description": "Path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cPath\u003e"
+        ]
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Rewrite content in existing templates",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  }
+}

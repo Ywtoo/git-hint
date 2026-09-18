@@ -1,0 +1,4500 @@
+{
+  "analytics": {
+    "Name": "analytics",
+    "kind": "subcommand",
+    "description": "Show the status of the analytics that are collected. Also used to change what is collected",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--mode": {
+        "Name": "--mode",
+        "kind": "option",
+        "description": "Choose how much information to share. Anonymous mode drops the OS type and Zapier user id, but keeps command info. Identifying information is used only for debugging purposes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmode\u003e": {
+            "Name": "\u003cmode\u003e",
+            "kind": "argument",
+            "description": "mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmode\u003e": {
+            "Name": "\u003cmode\u003e",
+            "kind": "argument",
+            "description": "mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmode\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-m": {
+        "Name": "-m",
+        "kind": "option",
+        "description": "Choose how much information to share. Anonymous mode drops the OS type and Zapier user id, but keeps command info. Identifying information is used only for debugging purposes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmode\u003e": {
+            "Name": "\u003cmode\u003e",
+            "kind": "argument",
+            "description": "mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmode\u003e": {
+            "Name": "\u003cmode\u003e",
+            "kind": "argument",
+            "description": "mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmode\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--mode": {
+        "Name": "--mode",
+        "kind": "option",
+        "description": "Choose how much information to share. Anonymous mode drops the OS type and Zapier user id, but keeps command info. Identifying information is used only for debugging purposes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmode\u003e": {
+            "Name": "\u003cmode\u003e",
+            "kind": "argument",
+            "description": "mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmode\u003e": {
+            "Name": "\u003cmode\u003e",
+            "kind": "argument",
+            "description": "mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmode\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-m": {
+        "Name": "-m",
+        "kind": "option",
+        "description": "Choose how much information to share. Anonymous mode drops the OS type and Zapier user id, but keeps command info. Identifying information is used only for debugging purposes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmode\u003e": {
+            "Name": "\u003cmode\u003e",
+            "kind": "argument",
+            "description": "mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmode\u003e": {
+            "Name": "\u003cmode\u003e",
+            "kind": "argument",
+            "description": "mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmode\u003e"
+        ]
+      }
+    }
+  },
+  "build": {
+    "Name": "build",
+    "kind": "subcommand",
+    "description": "Build a pushable zip from the current directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--disable-dependency-detection": {
+        "Name": "--disable-dependency-detection",
+        "kind": "option",
+        "description": "Disable \"smart\" file inclusion. By default, Zapier only includes files that are required by `index.js`. If you (or your dependencies) require files dynamically (such as with `require(someVar)`), then you may see \"Cannot find module\" errors. Disabling this may make your `build.zip` too large. If that's the case, try using the `includeInBuild` option in your `.zapierapprc`. See the docs about `includeInBuild` for more info",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--disable-dependency-detection": {
+        "Name": "--disable-dependency-detection",
+        "kind": "option",
+        "description": "Disable \"smart\" file inclusion. By default, Zapier only includes files that are required by `index.js`. If you (or your dependencies) require files dynamically (such as with `require(someVar)`), then you may see \"Cannot find module\" errors. Disabling this may make your `build.zip` too large. If that's the case, try using the `includeInBuild` option in your `.zapierapprc`. See the docs about `includeInBuild` for more info",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "convert": {
+    "Name": "convert",
+    "kind": "subcommand",
+    "description": "Convert a Legacy Web Builder app or Visual Builder integration to a CLI integration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Convert a specific version. Required when converting a Visual Builder integration",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cversion\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Convert a specific version. Required when converting a Visual Builder integration",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cversion\u003e"
+        ]
+      },
+      "\u003cintegrationId\u003e": {
+        "Name": "\u003cintegrationId\u003e",
+        "kind": "argument",
+        "description": "integrationId",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Convert a specific version. Required when converting a Visual Builder integration",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cversion\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Convert a specific version. Required when converting a Visual Builder integration",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cversion\u003e"
+        ]
+      },
+      "\u003cintegrationId\u003e": {
+        "Name": "\u003cintegrationId\u003e",
+        "kind": "argument",
+        "description": "integrationId",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cintegrationId\u003e",
+      "\u003cpath\u003e"
+    ]
+  },
+  "delete:integration": {
+    "Name": "delete:integration",
+    "kind": "subcommand",
+    "description": "Delete your integration (including all versions)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "delete:version": {
+    "Name": "delete:version",
+    "kind": "subcommand",
+    "description": "Delete a specific version of your integration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cversion\u003e"
+    ]
+  },
+  "deprecate": {
+    "Name": "deprecate",
+    "kind": "subcommand",
+    "description": "Mark a non-production version of your integration as deprecated, with removal by a certain date",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cdate\u003e": {
+        "Name": "\u003cdate\u003e",
+        "kind": "argument",
+        "description": "date",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cdate\u003e": {
+        "Name": "\u003cdate\u003e",
+        "kind": "argument",
+        "description": "date",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cversion\u003e",
+      "\u003cdate\u003e"
+    ]
+  },
+  "describe": {
+    "Name": "describe",
+    "kind": "subcommand",
+    "description": "Describe the current integraiton",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      }
+    }
+  },
+  "env:get": {
+    "Name": "env:get",
+    "kind": "subcommand",
+    "description": "Get environment variables for a version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cversion\u003e"
+    ]
+  },
+  "env:set": {
+    "Name": "env:set",
+    "kind": "subcommand",
+    "description": "Set environment variables for a version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ckey-value pairs...\u003e": {
+        "Name": "\u003ckey-value pairs...\u003e",
+        "kind": "argument",
+        "description": "key-value pairs...",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ckey-value pairs...\u003e": {
+        "Name": "\u003ckey-value pairs...\u003e",
+        "kind": "argument",
+        "description": "key-value pairs...",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cversion\u003e"
+    ]
+  },
+  "env:unset": {
+    "Name": "env:unset",
+    "kind": "subcommand",
+    "description": "Unset environment variables for a version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ckeys...\u003e": {
+        "Name": "\u003ckeys...\u003e",
+        "kind": "argument",
+        "description": "keys...",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ckeys...\u003e": {
+        "Name": "\u003ckeys...\u003e",
+        "kind": "argument",
+        "description": "keys...",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cversion\u003e"
+    ]
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Display help for \u003c%= config.bin %\u003e",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "See all commands in CLI",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "See all commands in CLI",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "history": {
+    "Name": "history",
+    "kind": "subcommand",
+    "description": "Get the history of your integration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      }
+    }
+  },
+  "init": {
+    "Name": "init",
+    "kind": "subcommand",
+    "description": "Initialize a new Zapier integration with a project template",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--template": {
+        "Name": "--template",
+        "kind": "option",
+        "description": "The template to start your integration with",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctemplate\u003e": {
+            "Name": "\u003ctemplate\u003e",
+            "kind": "argument",
+            "description": "template",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctemplate\u003e": {
+            "Name": "\u003ctemplate\u003e",
+            "kind": "argument",
+            "description": "template",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctemplate\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "The template to start your integration with",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctemplate\u003e": {
+            "Name": "\u003ctemplate\u003e",
+            "kind": "argument",
+            "description": "template",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctemplate\u003e": {
+            "Name": "\u003ctemplate\u003e",
+            "kind": "argument",
+            "description": "template",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctemplate\u003e"
+        ]
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--template": {
+        "Name": "--template",
+        "kind": "option",
+        "description": "The template to start your integration with",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctemplate\u003e": {
+            "Name": "\u003ctemplate\u003e",
+            "kind": "argument",
+            "description": "template",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctemplate\u003e": {
+            "Name": "\u003ctemplate\u003e",
+            "kind": "argument",
+            "description": "template",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctemplate\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "The template to start your integration with",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctemplate\u003e": {
+            "Name": "\u003ctemplate\u003e",
+            "kind": "argument",
+            "description": "template",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctemplate\u003e": {
+            "Name": "\u003ctemplate\u003e",
+            "kind": "argument",
+            "description": "template",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctemplate\u003e"
+        ]
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "integrations": {
+    "Name": "integrations",
+    "kind": "subcommand",
+    "description": "List integrations you have admin access to",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      }
+    }
+  },
+  "link": {
+    "Name": "link",
+    "kind": "subcommand",
+    "description": "Link the current directory with an existing integration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "login": {
+    "Name": "login",
+    "kind": "subcommand",
+    "description": "Configure your `~/.zapierrc` with a deploy key",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--sso": {
+        "Name": "--sso",
+        "kind": "option",
+        "description": "Use this flag if you log into Zapier a Single Sign-On (SSO) button and don't have a Zapier password",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Use this flag if you log into Zapier a Single Sign-On (SSO) button and don't have a Zapier password",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--sso": {
+        "Name": "--sso",
+        "kind": "option",
+        "description": "Use this flag if you log into Zapier a Single Sign-On (SSO) button and don't have a Zapier password",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Use this flag if you log into Zapier a Single Sign-On (SSO) button and don't have a Zapier password",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "logout": {
+    "Name": "logout",
+    "kind": "subcommand",
+    "description": "Deactivate your active deploy key and reset `~/.zapierrc`",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "logs": {
+    "Name": "logs",
+    "kind": "subcommand",
+    "description": "Print recent logs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--detailed": {
+        "Name": "--detailed",
+        "kind": "option",
+        "description": "See extra info, like request/response body and headers",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "--limit": {
+        "Name": "--limit",
+        "kind": "option",
+        "description": "Cap the number of logs returned. Max is 50 (also the default)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003climit\u003e": {
+            "Name": "\u003climit\u003e",
+            "kind": "argument",
+            "description": "limit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003climit\u003e": {
+            "Name": "\u003climit\u003e",
+            "kind": "argument",
+            "description": "limit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003climit\u003e"
+        ]
+      },
+      "--status": {
+        "Name": "--status",
+        "kind": "option",
+        "description": "Filter logs to only see errors or successes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstatus\u003e": {
+            "Name": "\u003cstatus\u003e",
+            "kind": "argument",
+            "description": "status",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstatus\u003e": {
+            "Name": "\u003cstatus\u003e",
+            "kind": "argument",
+            "description": "status",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstatus\u003e"
+        ]
+      },
+      "--type": {
+        "Name": "--type",
+        "kind": "option",
+        "description": "See logs of the specified type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctype\u003e": {
+            "Name": "\u003ctype\u003e",
+            "kind": "argument",
+            "description": "type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctype\u003e": {
+            "Name": "\u003ctype\u003e",
+            "kind": "argument",
+            "description": "type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctype\u003e"
+        ]
+      },
+      "--user": {
+        "Name": "--user",
+        "kind": "option",
+        "description": "Only show logs for this user. Defaults to your account",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cuser\u003e": {
+            "Name": "\u003cuser\u003e",
+            "kind": "argument",
+            "description": "user",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cuser\u003e": {
+            "Name": "\u003cuser\u003e",
+            "kind": "argument",
+            "description": "user",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cuser\u003e"
+        ]
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Filter logs to the specified version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cversion\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Filter logs to only see errors or successes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstatus\u003e": {
+            "Name": "\u003cstatus\u003e",
+            "kind": "argument",
+            "description": "status",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstatus\u003e": {
+            "Name": "\u003cstatus\u003e",
+            "kind": "argument",
+            "description": "status",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstatus\u003e"
+        ]
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "See logs of the specified type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctype\u003e": {
+            "Name": "\u003ctype\u003e",
+            "kind": "argument",
+            "description": "type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctype\u003e": {
+            "Name": "\u003ctype\u003e",
+            "kind": "argument",
+            "description": "type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctype\u003e"
+        ]
+      },
+      "-u": {
+        "Name": "-u",
+        "kind": "option",
+        "description": "Only show logs for this user. Defaults to your account",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cuser\u003e": {
+            "Name": "\u003cuser\u003e",
+            "kind": "argument",
+            "description": "user",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cuser\u003e": {
+            "Name": "\u003cuser\u003e",
+            "kind": "argument",
+            "description": "user",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cuser\u003e"
+        ]
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Filter logs to the specified version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cversion\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--detailed": {
+        "Name": "--detailed",
+        "kind": "option",
+        "description": "See extra info, like request/response body and headers",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "--limit": {
+        "Name": "--limit",
+        "kind": "option",
+        "description": "Cap the number of logs returned. Max is 50 (also the default)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003climit\u003e": {
+            "Name": "\u003climit\u003e",
+            "kind": "argument",
+            "description": "limit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003climit\u003e": {
+            "Name": "\u003climit\u003e",
+            "kind": "argument",
+            "description": "limit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003climit\u003e"
+        ]
+      },
+      "--status": {
+        "Name": "--status",
+        "kind": "option",
+        "description": "Filter logs to only see errors or successes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstatus\u003e": {
+            "Name": "\u003cstatus\u003e",
+            "kind": "argument",
+            "description": "status",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstatus\u003e": {
+            "Name": "\u003cstatus\u003e",
+            "kind": "argument",
+            "description": "status",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstatus\u003e"
+        ]
+      },
+      "--type": {
+        "Name": "--type",
+        "kind": "option",
+        "description": "See logs of the specified type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctype\u003e": {
+            "Name": "\u003ctype\u003e",
+            "kind": "argument",
+            "description": "type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctype\u003e": {
+            "Name": "\u003ctype\u003e",
+            "kind": "argument",
+            "description": "type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctype\u003e"
+        ]
+      },
+      "--user": {
+        "Name": "--user",
+        "kind": "option",
+        "description": "Only show logs for this user. Defaults to your account",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cuser\u003e": {
+            "Name": "\u003cuser\u003e",
+            "kind": "argument",
+            "description": "user",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cuser\u003e": {
+            "Name": "\u003cuser\u003e",
+            "kind": "argument",
+            "description": "user",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cuser\u003e"
+        ]
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "Filter logs to the specified version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cversion\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Filter logs to only see errors or successes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstatus\u003e": {
+            "Name": "\u003cstatus\u003e",
+            "kind": "argument",
+            "description": "status",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstatus\u003e": {
+            "Name": "\u003cstatus\u003e",
+            "kind": "argument",
+            "description": "status",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstatus\u003e"
+        ]
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "See logs of the specified type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctype\u003e": {
+            "Name": "\u003ctype\u003e",
+            "kind": "argument",
+            "description": "type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctype\u003e": {
+            "Name": "\u003ctype\u003e",
+            "kind": "argument",
+            "description": "type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctype\u003e"
+        ]
+      },
+      "-u": {
+        "Name": "-u",
+        "kind": "option",
+        "description": "Only show logs for this user. Defaults to your account",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cuser\u003e": {
+            "Name": "\u003cuser\u003e",
+            "kind": "argument",
+            "description": "user",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cuser\u003e": {
+            "Name": "\u003cuser\u003e",
+            "kind": "argument",
+            "description": "user",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cuser\u003e"
+        ]
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Filter logs to the specified version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cversion\u003e"
+        ]
+      }
+    }
+  },
+  "migrate": {
+    "Name": "migrate",
+    "kind": "subcommand",
+    "description": "Migrate users from one version of your integration to another",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--user": {
+        "Name": "--user",
+        "kind": "option",
+        "description": "Migrate only this user",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cuser\u003e": {
+            "Name": "\u003cuser\u003e",
+            "kind": "argument",
+            "description": "user",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cuser\u003e": {
+            "Name": "\u003cuser\u003e",
+            "kind": "argument",
+            "description": "user",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cuser\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cfromVersion\u003e": {
+        "Name": "\u003cfromVersion\u003e",
+        "kind": "argument",
+        "description": "fromVersion",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpercent\u003e": {
+        "Name": "\u003cpercent\u003e",
+        "kind": "argument",
+        "description": "percent",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ctoVersion\u003e": {
+        "Name": "\u003ctoVersion\u003e",
+        "kind": "argument",
+        "description": "toVersion",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--user": {
+        "Name": "--user",
+        "kind": "option",
+        "description": "Migrate only this user",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cuser\u003e": {
+            "Name": "\u003cuser\u003e",
+            "kind": "argument",
+            "description": "user",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cuser\u003e": {
+            "Name": "\u003cuser\u003e",
+            "kind": "argument",
+            "description": "user",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cuser\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cfromVersion\u003e": {
+        "Name": "\u003cfromVersion\u003e",
+        "kind": "argument",
+        "description": "fromVersion",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpercent\u003e": {
+        "Name": "\u003cpercent\u003e",
+        "kind": "argument",
+        "description": "percent",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ctoVersion\u003e": {
+        "Name": "\u003ctoVersion\u003e",
+        "kind": "argument",
+        "description": "toVersion",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfromVersion\u003e",
+      "\u003ctoVersion\u003e"
+    ]
+  },
+  "promote": {
+    "Name": "promote",
+    "kind": "subcommand",
+    "description": "Promote a specific version to public access",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cversion\u003e"
+    ]
+  },
+  "push": {
+    "Name": "push",
+    "kind": "subcommand",
+    "description": "Build and upload the current integration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--disable-dependency-detection": {
+        "Name": "--disable-dependency-detection",
+        "kind": "option",
+        "description": "Disable \"smart\" file inclusion. By default, Zapier only includes files that are required by `index.js`. If you (or your dependencies) require files dynamically (such as with `require(someVar)`), then you may see \"Cannot find module\" errors. Disabling this may make your `build.zip` too large. If that's the case, try using the `includeInBuild` option in your `.zapierapprc`. See the docs about `includeInBuild` for more info",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--disable-dependency-detection": {
+        "Name": "--disable-dependency-detection",
+        "kind": "option",
+        "description": "Disable \"smart\" file inclusion. By default, Zapier only includes files that are required by `index.js`. If you (or your dependencies) require files dynamically (such as with `require(someVar)`), then you may see \"Cannot find module\" errors. Disabling this may make your `build.zip` too large. If that's the case, try using the `includeInBuild` option in your `.zapierapprc`. See the docs about `includeInBuild` for more info",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "register": {
+    "Name": "register",
+    "kind": "subcommand",
+    "description": "Register a new integration in your account",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ctitle\u003e": {
+        "Name": "\u003ctitle\u003e",
+        "kind": "argument",
+        "description": "title",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ctitle\u003e": {
+        "Name": "\u003ctitle\u003e",
+        "kind": "argument",
+        "description": "title",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "scaffold": {
+    "Name": "scaffold",
+    "kind": "subcommand",
+    "description": "Add a starting trigger, create, search, or resource to your integration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dest": {
+        "Name": "--dest",
+        "kind": "option",
+        "description": "Specify the new file's directory. Use this flag when you want to create a different folder structure such as `src/triggers` instead of the default `triggers`. Defaults to `[triggers|searches|creates]/{noun}`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdest\u003e": {
+            "Name": "\u003cdest\u003e",
+            "kind": "argument",
+            "description": "dest",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdest\u003e": {
+            "Name": "\u003cdest\u003e",
+            "kind": "argument",
+            "description": "dest",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdest\u003e"
+        ]
+      },
+      "--entry": {
+        "Name": "--entry",
+        "kind": "option",
+        "description": "Supply the path to your integration's root (`index.js`). Only needed if your `index.js` is in a subfolder, like `src`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003centry\u003e": {
+            "Name": "\u003centry\u003e",
+            "kind": "argument",
+            "description": "entry",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003centry\u003e": {
+            "Name": "\u003centry\u003e",
+            "kind": "argument",
+            "description": "entry",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003centry\u003e"
+        ]
+      },
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Should we overwrite an existing trigger/search/create file?",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-help": {
+        "Name": "--no-help",
+        "kind": "option",
+        "description": "When scaffolding, should we skip adding helpful intro comments? Useful if this isn't your first rodeo",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--test-dest": {
+        "Name": "--test-dest",
+        "kind": "option",
+        "description": "Specify the new test file's directory. Use this flag when you want to create a different folder structure such as `src/triggers` instead of the default `triggers`. Defaults to `test/[triggers|searches|creates]/{noun}`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctest-dest\u003e": {
+            "Name": "\u003ctest-dest\u003e",
+            "kind": "argument",
+            "description": "test-dest",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctest-dest\u003e": {
+            "Name": "\u003ctest-dest\u003e",
+            "kind": "argument",
+            "description": "test-dest",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctest-dest\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-e": {
+        "Name": "-e",
+        "kind": "option",
+        "description": "Supply the path to your integration's root (`index.js`). Only needed if your `index.js` is in a subfolder, like `src`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003centry\u003e": {
+            "Name": "\u003centry\u003e",
+            "kind": "argument",
+            "description": "entry",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003centry\u003e": {
+            "Name": "\u003centry\u003e",
+            "kind": "argument",
+            "description": "entry",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003centry\u003e"
+        ]
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Should we overwrite an existing trigger/search/create file?",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cactionType\u003e": {
+        "Name": "\u003cactionType\u003e",
+        "kind": "argument",
+        "description": "actionType",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cnoun\u003e": {
+        "Name": "\u003cnoun\u003e",
+        "kind": "argument",
+        "description": "noun",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dest": {
+        "Name": "--dest",
+        "kind": "option",
+        "description": "Specify the new file's directory. Use this flag when you want to create a different folder structure such as `src/triggers` instead of the default `triggers`. Defaults to `[triggers|searches|creates]/{noun}`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdest\u003e": {
+            "Name": "\u003cdest\u003e",
+            "kind": "argument",
+            "description": "dest",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdest\u003e": {
+            "Name": "\u003cdest\u003e",
+            "kind": "argument",
+            "description": "dest",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdest\u003e"
+        ]
+      },
+      "--entry": {
+        "Name": "--entry",
+        "kind": "option",
+        "description": "Supply the path to your integration's root (`index.js`). Only needed if your `index.js` is in a subfolder, like `src`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003centry\u003e": {
+            "Name": "\u003centry\u003e",
+            "kind": "argument",
+            "description": "entry",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003centry\u003e": {
+            "Name": "\u003centry\u003e",
+            "kind": "argument",
+            "description": "entry",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003centry\u003e"
+        ]
+      },
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Should we overwrite an existing trigger/search/create file?",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-help": {
+        "Name": "--no-help",
+        "kind": "option",
+        "description": "When scaffolding, should we skip adding helpful intro comments? Useful if this isn't your first rodeo",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--test-dest": {
+        "Name": "--test-dest",
+        "kind": "option",
+        "description": "Specify the new test file's directory. Use this flag when you want to create a different folder structure such as `src/triggers` instead of the default `triggers`. Defaults to `test/[triggers|searches|creates]/{noun}`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctest-dest\u003e": {
+            "Name": "\u003ctest-dest\u003e",
+            "kind": "argument",
+            "description": "test-dest",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctest-dest\u003e": {
+            "Name": "\u003ctest-dest\u003e",
+            "kind": "argument",
+            "description": "test-dest",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctest-dest\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-e": {
+        "Name": "-e",
+        "kind": "option",
+        "description": "Supply the path to your integration's root (`index.js`). Only needed if your `index.js` is in a subfolder, like `src`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003centry\u003e": {
+            "Name": "\u003centry\u003e",
+            "kind": "argument",
+            "description": "entry",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003centry\u003e": {
+            "Name": "\u003centry\u003e",
+            "kind": "argument",
+            "description": "entry",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003centry\u003e"
+        ]
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Should we overwrite an existing trigger/search/create file?",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cactionType\u003e": {
+        "Name": "\u003cactionType\u003e",
+        "kind": "argument",
+        "description": "actionType",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cnoun\u003e": {
+        "Name": "\u003cnoun\u003e",
+        "kind": "argument",
+        "description": "noun",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cactionType\u003e",
+      "\u003cnoun\u003e"
+    ]
+  },
+  "team:add": {
+    "Name": "team:add",
+    "kind": "subcommand",
+    "description": "Add a team member to your integration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cemail\u003e": {
+        "Name": "\u003cemail\u003e",
+        "kind": "argument",
+        "description": "email",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cmessage\u003e": {
+        "Name": "\u003cmessage\u003e",
+        "kind": "argument",
+        "description": "message",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003crole\u003e": {
+        "Name": "\u003crole\u003e",
+        "kind": "argument",
+        "description": "role",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cemail\u003e": {
+        "Name": "\u003cemail\u003e",
+        "kind": "argument",
+        "description": "email",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cmessage\u003e": {
+        "Name": "\u003cmessage\u003e",
+        "kind": "argument",
+        "description": "message",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003crole\u003e": {
+        "Name": "\u003crole\u003e",
+        "kind": "argument",
+        "description": "role",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cemail\u003e",
+      "\u003crole\u003e"
+    ]
+  },
+  "team:get": {
+    "Name": "team:get",
+    "kind": "subcommand",
+    "description": "Get team members involved with your integration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      }
+    }
+  },
+  "team:remove": {
+    "Name": "team:remove",
+    "kind": "subcommand",
+    "description": "Remove a team member from all versions of your integration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "test": {
+    "Name": "test",
+    "kind": "subcommand",
+    "description": "Test your integration via the \"test\" script in your \"package.json\"",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--skip-validate": {
+        "Name": "--skip-validate",
+        "kind": "option",
+        "description": "Forgo running `zapier validate` before tests are run. This will speed up tests if you're modifying functionality of an existing integration rather than adding new actions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--yarn": {
+        "Name": "--yarn",
+        "kind": "option",
+        "description": "Use `yarn` instead of `npm`. This happens automatically if there's a `yarn.lock` file, but you can manually force `yarn` if you run tests from a sub-directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--skip-validate": {
+        "Name": "--skip-validate",
+        "kind": "option",
+        "description": "Forgo running `zapier validate` before tests are run. This will speed up tests if you're modifying functionality of an existing integration rather than adding new actions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--yarn": {
+        "Name": "--yarn",
+        "kind": "option",
+        "description": "Use `yarn` instead of `npm`. This happens automatically if there's a `yarn.lock` file, but you can manually force `yarn` if you run tests from a sub-directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "upload": {
+    "Name": "upload",
+    "kind": "subcommand",
+    "description": "Upload the latest build of your integration to Zapier",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "users:add": {
+    "Name": "users:add",
+    "kind": "subcommand",
+    "description": "Add a user to some or all versions of your integration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Skip confirmation. Useful for running programmatically",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Skip confirmation. Useful for running programmatically",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cemail\u003e": {
+        "Name": "\u003cemail\u003e",
+        "kind": "argument",
+        "description": "email",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Skip confirmation. Useful for running programmatically",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Skip confirmation. Useful for running programmatically",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cemail\u003e": {
+        "Name": "\u003cemail\u003e",
+        "kind": "argument",
+        "description": "email",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cemail\u003e"
+    ]
+  },
+  "users:get": {
+    "Name": "users:get",
+    "kind": "subcommand",
+    "description": "Get a list of users who have been invited to your integration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      }
+    }
+  },
+  "users:links": {
+    "Name": "users:links",
+    "kind": "subcommand",
+    "description": "Get a list of links that are used to invite users to your integration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      }
+    }
+  },
+  "users:remove": {
+    "Name": "users:remove",
+    "kind": "subcommand",
+    "description": "Remove a user from all versions of your integration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Skips confirmation. Useful for running programmatically",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Skips confirmation. Useful for running programmatically",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cemail\u003e": {
+        "Name": "\u003cemail\u003e",
+        "kind": "argument",
+        "description": "email",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Skips confirmation. Useful for running programmatically",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Skips confirmation. Useful for running programmatically",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cemail\u003e": {
+        "Name": "\u003cemail\u003e",
+        "kind": "argument",
+        "description": "email",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cemail\u003e"
+    ]
+  },
+  "validate": {
+    "Name": "validate",
+    "kind": "subcommand",
+    "description": "Validate your integration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "--without-style": {
+        "Name": "--without-style",
+        "kind": "option",
+        "description": "Forgo pinging the Zapier server to run further checks",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "--without-style": {
+        "Name": "--without-style",
+        "kind": "option",
+        "description": "Forgo pinging the Zapier server to run further checks",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      }
+    }
+  },
+  "versions": {
+    "Name": "versions",
+    "kind": "subcommand",
+    "description": "List the versions of your integration available for use in the Zapier editor",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Show extra debugging output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Change the way structured data is presented. If \"json\" or \"raw\", you can pipe the output of the command into other tools, such as jq",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,603 @@
+{
+  "--eval": {
+    "Name": "--eval",
+    "kind": "option",
+    "description": "Evaluate expressions in string; print non-nil values",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for clojure",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--init": {
+    "Name": "--init",
+    "kind": "option",
+    "description": "Load a file or resource",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--main": {
+    "Name": "--main",
+    "kind": "option",
+    "description": "Call the -main function from a namespace with args",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cargs\u003e": {
+        "Name": "\u003cargs\u003e",
+        "kind": "argument",
+        "description": "args",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cns-name\u003e": {
+        "Name": "\u003cns-name\u003e",
+        "kind": "argument",
+        "description": "ns-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cargs\u003e": {
+        "Name": "\u003cargs\u003e",
+        "kind": "argument",
+        "description": "args",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cns-name\u003e": {
+        "Name": "\u003cns-name\u003e",
+        "kind": "argument",
+        "description": "ns-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cns-name\u003e",
+      "\u003cargs\u003e"
+    ]
+  },
+  "--repl": {
+    "Name": "--repl",
+    "kind": "option",
+    "description": "Run a REPL",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--report": {
+    "Name": "--report",
+    "kind": "option",
+    "description": "Report uncaught exceptions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctarget\u003e": {
+        "Name": "\u003ctarget\u003e",
+        "kind": "argument",
+        "description": "target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctarget\u003e": {
+        "Name": "\u003ctarget\u003e",
+        "kind": "argument",
+        "description": "target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctarget\u003e"
+    ]
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Print the Clojure CLI version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-?": {
+    "Name": "-?",
+    "kind": "option",
+    "description": "Show help for clojure",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-A": {
+    "Name": "-A",
+    "kind": "option",
+    "description": "Use concatenated aliases to modify classpath",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-J": {
+    "Name": "-J",
+    "kind": "option",
+    "description": "Pass opt through in java_opts",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-M": {
+    "Name": "-M",
+    "kind": "option",
+    "description": "Use concatenated aliases to modify classpath or supply main opts",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cargs\u003e": {
+        "Name": "\u003cargs\u003e",
+        "kind": "argument",
+        "description": "args",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cargs\u003e": {
+        "Name": "\u003cargs\u003e",
+        "kind": "argument",
+        "description": "args",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "-P": {
+    "Name": "-P",
+    "kind": "option",
+    "description": "Prepare deps - download libs, cache classpath, but don't exec",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-Scp": {
+    "Name": "-Scp",
+    "kind": "option",
+    "description": "Use specified classpath instead of cached or computed one",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccp\u003e": {
+        "Name": "\u003ccp\u003e",
+        "kind": "argument",
+        "description": "cp",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccp\u003e": {
+        "Name": "\u003ccp\u003e",
+        "kind": "argument",
+        "description": "cp",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccp\u003e"
+    ]
+  },
+  "-Sdeps": {
+    "Name": "-Sdeps",
+    "kind": "option",
+    "description": "Pass the deps data on the command line",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cedn\u003e": {
+        "Name": "\u003cedn\u003e",
+        "kind": "argument",
+        "description": "edn",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cedn\u003e": {
+        "Name": "\u003cedn\u003e",
+        "kind": "argument",
+        "description": "edn",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cedn\u003e"
+    ]
+  },
+  "-Sdescribe": {
+    "Name": "-Sdescribe",
+    "kind": "option",
+    "description": "Print environment and command parsing information as data",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-Sforce": {
+    "Name": "-Sforce",
+    "kind": "option",
+    "description": "Ignore classpath cache and force recomputation",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-Spath": {
+    "Name": "-Spath",
+    "kind": "option",
+    "description": "Compute classpath and echo to stdout only",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-Spom": {
+    "Name": "-Spom",
+    "kind": "option",
+    "description": "Generate (or update) pom.xml with deps and paths",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-Srepro": {
+    "Name": "-Srepro",
+    "kind": "option",
+    "description": "Ignore the ~/.clojure/deps.edn config file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-Sthreads": {
+    "Name": "-Sthreads",
+    "kind": "option",
+    "description": "Set the number of threads to use when downloading dependencies",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-Strace": {
+    "Name": "-Strace",
+    "kind": "option",
+    "description": "Write a trace.edn file that traces deps expansion",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-Stree": {
+    "Name": "-Stree",
+    "kind": "option",
+    "description": "Print dependency tree",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-Sverbose": {
+    "Name": "-Sverbose",
+    "kind": "option",
+    "description": "Print all path locations",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-T": {
+    "Name": "-T",
+    "kind": "option",
+    "description": "Invoke tool by name or via aliases ala -X",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ca/fn\u003e": {
+        "Name": "\u003ca/fn\u003e",
+        "kind": "argument",
+        "description": "a/fn",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ckv-map\u003e": {
+        "Name": "\u003ckv-map\u003e",
+        "kind": "argument",
+        "description": "kv-map",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ckvs\u003e": {
+        "Name": "\u003ckvs\u003e",
+        "kind": "argument",
+        "description": "kvs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ca/fn\u003e": {
+        "Name": "\u003ca/fn\u003e",
+        "kind": "argument",
+        "description": "a/fn",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ckv-map\u003e": {
+        "Name": "\u003ckv-map\u003e",
+        "kind": "argument",
+        "description": "kv-map",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ckvs\u003e": {
+        "Name": "\u003ckvs\u003e",
+        "kind": "argument",
+        "description": "kvs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "-X": {
+    "Name": "-X",
+    "kind": "option",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ca/fn\u003e": {
+        "Name": "\u003ca/fn\u003e",
+        "kind": "argument",
+        "description": "a/fn",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ckv-map\u003e": {
+        "Name": "\u003ckv-map\u003e",
+        "kind": "argument",
+        "description": "kv-map",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ckvs\u003e": {
+        "Name": "\u003ckvs\u003e",
+        "kind": "argument",
+        "description": "kvs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ca/fn\u003e": {
+        "Name": "\u003ca/fn\u003e",
+        "kind": "argument",
+        "description": "a/fn",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ckv-map\u003e": {
+        "Name": "\u003ckv-map\u003e",
+        "kind": "argument",
+        "description": "kv-map",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ckvs\u003e": {
+        "Name": "\u003ckvs\u003e",
+        "kind": "argument",
+        "description": "kvs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "-e": {
+    "Name": "-e",
+    "kind": "option",
+    "description": "Evaluate expressions in string; print non-nil values",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help for clojure",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Load a file or resource",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "-m": {
+    "Name": "-m",
+    "kind": "option",
+    "description": "Call the -main function from a namespace with args",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cargs\u003e": {
+        "Name": "\u003cargs\u003e",
+        "kind": "argument",
+        "description": "args",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cns-name\u003e": {
+        "Name": "\u003cns-name\u003e",
+        "kind": "argument",
+        "description": "ns-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cargs\u003e": {
+        "Name": "\u003cargs\u003e",
+        "kind": "argument",
+        "description": "args",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cns-name\u003e": {
+        "Name": "\u003cns-name\u003e",
+        "kind": "argument",
+        "description": "ns-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cns-name\u003e",
+      "\u003cargs\u003e"
+    ]
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "Run a REPL",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-version": {
+    "Name": "-version",
+    "kind": "option",
+    "description": "Print the Clojure CLI version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

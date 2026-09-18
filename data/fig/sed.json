@@ -1,0 +1,721 @@
+{
+  "#": {
+    "Name": "#",
+    "kind": "subcommand",
+    "description": "Comment until the next newline",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-E": {
+    "Name": "-E",
+    "kind": "option",
+    "description": "Interprets regular expressions as extended (modern) regular expressions rather than basic regular expressions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-I": {
+    "Name": "-I",
+    "kind": "option",
+    "description": "Edits files in-place, saving backups with the specified extension.  If a zero-length extension is given, no backup will be saved",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cextension\u003e": {
+        "Name": "\u003cextension\u003e",
+        "kind": "argument",
+        "description": "extension",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cextension\u003e": {
+        "Name": "\u003cextension\u003e",
+        "kind": "argument",
+        "description": "extension",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cextension\u003e"
+    ]
+  },
+  "-a": {
+    "Name": "-a",
+    "kind": "option",
+    "description": "Causes sed to delay opening each file until a command containing the related ``w'' function is applied to a line of input",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-e": {
+    "Name": "-e",
+    "kind": "option",
+    "description": "Appends the editing commands specified by the command argument to the list of commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Appends the editing commands found in the file command_file to the list of commands. The editing commands should each be listed on a separate line",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand_file\u003e": {
+        "Name": "\u003ccommand_file\u003e",
+        "kind": "argument",
+        "description": "command_file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand_file\u003e": {
+        "Name": "\u003ccommand_file\u003e",
+        "kind": "argument",
+        "description": "command_file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand_file\u003e"
+    ]
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Edits files in-place similarly to `-I`, but treats each file independently from other files.  In particular, line numbers in each file start at 1, the ``$'' address matches the last line of the current file, and address ranges are limited to the current file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cextension\u003e": {
+        "Name": "\u003cextension\u003e",
+        "kind": "argument",
+        "description": "extension",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cextension\u003e": {
+        "Name": "\u003cextension\u003e",
+        "kind": "argument",
+        "description": "extension",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cextension\u003e"
+    ]
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "option",
+    "description": "Makes output line buffered",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-n": {
+    "Name": "-n",
+    "kind": "option",
+    "description": "By default, each line of input is echoed to the standard output after all of the commands have been applied to it.  The `-n` option suppresses this behavior",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "Same as `-E` for compatibility with GNU sed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-u": {
+    "Name": "-u",
+    "kind": "option",
+    "description": "Makes output unbuffered",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003ccommand\u003e": {
+    "Name": "\u003ccommand\u003e",
+    "kind": "argument",
+    "description": "command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  },
+  "\u003cfile\u003e": {
+    "Name": "\u003cfile\u003e",
+    "kind": "argument",
+    "description": "file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  },
+  "D": {
+    "Name": "D",
+    "kind": "subcommand",
+    "description": "If pattern space contains newlines, delete text in the pattern space up to the first newline, and restart cycle with the resultant pattern space, without reading a new line of input. If pattern space contains no newline, start a normal new cycle as if the d command was issued",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "F": {
+    "Name": "F",
+    "kind": "subcommand",
+    "description": "Prints the file name of the current input file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "G": {
+    "Name": "G",
+    "kind": "subcommand",
+    "description": "Appends a newline to the contents of the pattern space, and then appends the contents of the hold space to that of the pattern space",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "H": {
+    "Name": "H",
+    "kind": "subcommand",
+    "description": "Appends a newline to the contents of the hold space, and then appends the contents of the pattern space to that of the hold space",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "N": {
+    "Name": "N",
+    "kind": "subcommand",
+    "description": "Adds a newline to the pattern space, then appends the next line of input to the pattern space. If there is no more input then sed exits without processing any more commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "P": {
+    "Name": "P",
+    "kind": "subcommand",
+    "description": "Prints the pattern space up to the first newline",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "Q": {
+    "Name": "Q",
+    "kind": "subcommand",
+    "description": "This command is the same as q, but will not print the contents of pattern space",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cExit Code\u003e": {
+        "Name": "\u003cExit Code\u003e",
+        "kind": "argument",
+        "description": "Exit Code",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cExit Code\u003e": {
+        "Name": "\u003cExit Code\u003e",
+        "kind": "argument",
+        "description": "Exit Code",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "R": {
+    "Name": "R",
+    "kind": "subcommand",
+    "description": "Queue a line of filename to be read and inserted into the output stream at the end of the current cycle, or when the next input line is read",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfilename\u003e": {
+        "Name": "\u003cfilename\u003e",
+        "kind": "argument",
+        "description": "filename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfilename\u003e": {
+        "Name": "\u003cfilename\u003e",
+        "kind": "argument",
+        "description": "filename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfilename\u003e"
+    ]
+  },
+  "T": {
+    "Name": "T",
+    "kind": "subcommand",
+    "description": "(test) Branch to label only if there have been no successful substitutions since the last input line was read or conditional branch was taken. The label may be omitted, in which case the next cycle is started",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clabel\u003e": {
+        "Name": "\u003clabel\u003e",
+        "kind": "argument",
+        "description": "label",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clabel\u003e": {
+        "Name": "\u003clabel\u003e",
+        "kind": "argument",
+        "description": "label",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "W": {
+    "Name": "W",
+    "kind": "subcommand",
+    "description": "Writes to the given filename the portion of the pattern space up to the first newline",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfilename\u003e": {
+        "Name": "\u003cfilename\u003e",
+        "kind": "argument",
+        "description": "filename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfilename\u003e": {
+        "Name": "\u003cfilename\u003e",
+        "kind": "argument",
+        "description": "filename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfilename\u003e"
+    ]
+  },
+  "a": {
+    "Name": "a",
+    "kind": "subcommand",
+    "description": "Appends `text` after a line",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctext\u003e"
+    ]
+  },
+  "b": {
+    "Name": "b",
+    "kind": "subcommand",
+    "description": "Branch unconditionally to `label`",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clabel\u003e": {
+        "Name": "\u003clabel\u003e",
+        "kind": "argument",
+        "description": "label",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clabel\u003e": {
+        "Name": "\u003clabel\u003e",
+        "kind": "argument",
+        "description": "label",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "c": {
+    "Name": "c",
+    "kind": "subcommand",
+    "description": "Replace (change) lines with `text`",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctext\u003e"
+    ]
+  },
+  "d": {
+    "Name": "d",
+    "kind": "subcommand",
+    "description": "Delete the pattern space; immediately start next cycle",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "e": {
+    "Name": "e",
+    "kind": "subcommand",
+    "description": "Executes the command that is found in pattern space and replaces the pattern space with the output; a trailing newline is suppressed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "g": {
+    "Name": "g",
+    "kind": "subcommand",
+    "description": "Replaces the contents of the pattern space with the contents of the hold space",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "h": {
+    "Name": "h",
+    "kind": "subcommand",
+    "description": "Replaces the contents of the hold space with the contents of the pattern space",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "i": {
+    "Name": "i",
+    "kind": "subcommand",
+    "description": "Insert text before a line",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctext\u003e"
+    ]
+  },
+  "l": {
+    "Name": "l",
+    "kind": "subcommand",
+    "description": "Prints the pattern space in an unambiguous form",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "n": {
+    "Name": "n",
+    "kind": "subcommand",
+    "description": "Prints the pattern space, then, regardless, replaces the pattern space with the next line of input. If there is no more input then sed exits without processing any more commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "p": {
+    "Name": "p",
+    "kind": "subcommand",
+    "description": "Prints the pattern space",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "q": {
+    "Name": "q",
+    "kind": "subcommand",
+    "description": "Exit sed without processing any more commands or input",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cExit Code\u003e": {
+        "Name": "\u003cExit Code\u003e",
+        "kind": "argument",
+        "description": "Exit Code",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cExit Code\u003e": {
+        "Name": "\u003cExit Code\u003e",
+        "kind": "argument",
+        "description": "Exit Code",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "r": {
+    "Name": "r",
+    "kind": "subcommand",
+    "description": "Reads file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfilename\u003e": {
+        "Name": "\u003cfilename\u003e",
+        "kind": "argument",
+        "description": "filename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfilename\u003e": {
+        "Name": "\u003cfilename\u003e",
+        "kind": "argument",
+        "description": "filename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfilename\u003e"
+    ]
+  },
+  "s": {
+    "Name": "s",
+    "kind": "subcommand",
+    "description": "Match the regular-expression against the content of the pattern space. If found, replace matched string with replacement",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "t": {
+    "Name": "t",
+    "kind": "subcommand",
+    "description": "(test) Branch to label only if there has been a successful substitution since the last input line was read or conditional branch was taken. The label may be omitted, in which case the next cycle is started",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clabel\u003e": {
+        "Name": "\u003clabel\u003e",
+        "kind": "argument",
+        "description": "label",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clabel\u003e": {
+        "Name": "\u003clabel\u003e",
+        "kind": "argument",
+        "description": "label",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "v": {
+    "Name": "v",
+    "kind": "subcommand",
+    "description": "Makes sed fail if GNU sed extensions are not supported, or if the requested version is not available",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "w": {
+    "Name": "w",
+    "kind": "subcommand",
+    "description": "Writes the pattern space to the file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfilename\u003e": {
+        "Name": "\u003cfilename\u003e",
+        "kind": "argument",
+        "description": "filename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfilename\u003e": {
+        "Name": "\u003cfilename\u003e",
+        "kind": "argument",
+        "description": "filename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfilename\u003e"
+    ]
+  },
+  "x": {
+    "Name": "x",
+    "kind": "subcommand",
+    "description": "Exchanges the contents of the hold and pattern spaces",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "y": {
+    "Name": "y",
+    "kind": "subcommand",
+    "description": "Transliterate any characters in the pattern space which match any of the source-chars with the corresponding character in dest-chars",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "z": {
+    "Name": "z",
+    "kind": "subcommand",
+    "description": "(zap) Empties the content of pattern space",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

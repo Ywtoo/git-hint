@@ -1,0 +1,390 @@
+{
+  "--batch": {
+    "Name": "--batch",
+    "kind": "option",
+    "description": "Batch mode, will not prompt for user input",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for Okta CLI",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Verbose logging",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Print version information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-V": {
+    "Name": "-V",
+    "kind": "option",
+    "description": "Print version information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help for Okta CLI",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "apps": {
+    "Name": "apps",
+    "kind": "subcommand",
+    "description": "Manage Okta apps",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "config": {
+        "Name": "config",
+        "kind": "subcommand",
+        "description": "Show an Okta app's configuration",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--app": {
+            "Name": "--app",
+            "kind": "option",
+            "description": "The App ID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--app": {
+            "Name": "--app",
+            "kind": "option",
+            "description": "The App ID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "create": {
+        "Name": "create",
+        "kind": "subcommand",
+        "description": "Create a new Okta app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--app-name": {
+            "Name": "--app-name",
+            "kind": "option",
+            "description": "Application name to be created, defaults to current directory name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--authorization-server-id": {
+            "Name": "--authorization-server-id",
+            "kind": "option",
+            "description": "Okta Authorization Server Id",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--config-file": {
+            "Name": "--config-file",
+            "kind": "option",
+            "description": "Application config file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--redirect-uri": {
+            "Name": "--redirect-uri",
+            "kind": "option",
+            "description": "OIDC Redirect URI",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--app-name": {
+            "Name": "--app-name",
+            "kind": "option",
+            "description": "Application name to be created, defaults to current directory name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--authorization-server-id": {
+            "Name": "--authorization-server-id",
+            "kind": "option",
+            "description": "Okta Authorization Server Id",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--config-file": {
+            "Name": "--config-file",
+            "kind": "option",
+            "description": "Application config file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--redirect-uri": {
+            "Name": "--redirect-uri",
+            "kind": "option",
+            "description": "OIDC Redirect URI",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "delete": {
+        "Name": "delete",
+        "kind": "subcommand",
+        "description": "Deletes an Okta app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--force": {
+            "Name": "--force",
+            "kind": "option",
+            "description": "Deactivate and delete applications without confirmation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Deactivate and delete applications without confirmation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cappIds\u003e": {
+            "Name": "\u003cappIds\u003e",
+            "kind": "argument",
+            "description": "appIds",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--force": {
+            "Name": "--force",
+            "kind": "option",
+            "description": "Deactivate and delete applications without confirmation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Deactivate and delete applications without confirmation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cappIds\u003e": {
+            "Name": "\u003cappIds\u003e",
+            "kind": "argument",
+            "description": "appIds",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cappIds\u003e"
+        ]
+      }
+    }
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Displays help information about the specified command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "apps": {
+        "Name": "apps",
+        "kind": "option",
+        "description": "Manage Okta apps",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "generate-completion": {
+        "Name": "generate-completion",
+        "kind": "option",
+        "description": "Generate bash/zsh completion script for Okta",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "help": {
+        "Name": "help",
+        "kind": "option",
+        "description": "Displays help information about the specified command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "login": {
+        "Name": "login",
+        "kind": "option",
+        "description": "Authorizes the Okta CLI tool",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "register": {
+        "Name": "register",
+        "kind": "option",
+        "description": "Sign up for a new Okta account",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "start": {
+        "Name": "start",
+        "kind": "option",
+        "description": "Creates an Okta Sample Application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "login": {
+    "Name": "login",
+    "kind": "subcommand",
+    "description": "Authorizes the Okta CLI tool",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "register": {
+    "Name": "register",
+    "kind": "subcommand",
+    "description": "Sign up for a new Okta account",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--company": {
+        "Name": "--company",
+        "kind": "option",
+        "description": "Company/organization used when registering a new Okta account",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--email": {
+        "Name": "--email",
+        "kind": "option",
+        "description": "Email used when registering a new Okta account",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--first-name": {
+        "Name": "--first-name",
+        "kind": "option",
+        "description": "First name used when registering a new Okta account",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--last-name": {
+        "Name": "--last-name",
+        "kind": "option",
+        "description": "Last name used when registering a new Okta account",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--company": {
+        "Name": "--company",
+        "kind": "option",
+        "description": "Company/organization used when registering a new Okta account",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--email": {
+        "Name": "--email",
+        "kind": "option",
+        "description": "Email used when registering a new Okta account",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--first-name": {
+        "Name": "--first-name",
+        "kind": "option",
+        "description": "First name used when registering a new Okta account",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--last-name": {
+        "Name": "--last-name",
+        "kind": "option",
+        "description": "Last name used when registering a new Okta account",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "start": {
+    "Name": "start",
+    "kind": "subcommand",
+    "description": "Creates an Okta Sample Application",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  }
+}

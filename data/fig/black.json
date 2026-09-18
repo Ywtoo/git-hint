@@ -1,0 +1,650 @@
+{
+  "--check": {
+    "Name": "--check",
+    "kind": "option",
+    "description": "Don't write the files back, just return the status",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--code": {
+    "Name": "--code",
+    "kind": "option",
+    "description": "Format the code passed in as a string",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--color": {
+    "Name": "--color",
+    "kind": "option",
+    "description": "Show colored diff",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--config": {
+    "Name": "--config",
+    "kind": "option",
+    "description": "Read configuration from filepath",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile\u003e"
+    ]
+  },
+  "--diff": {
+    "Name": "--diff",
+    "kind": "option",
+    "description": "Don't write the files back, just output a diff for each file on stdout",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--exclude": {
+    "Name": "--exclude",
+    "kind": "option",
+    "description": "Regex that matches files and directories that should be excluded on recursive searches",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cRegex\u003e": {
+        "Name": "\u003cRegex\u003e",
+        "kind": "argument",
+        "description": "Regex",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cRegex\u003e": {
+        "Name": "\u003cRegex\u003e",
+        "kind": "argument",
+        "description": "Regex",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cRegex\u003e"
+    ]
+  },
+  "--extend-exclude": {
+    "Name": "--extend-exclude",
+    "kind": "option",
+    "description": "Additional exlusions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cRegex\u003e": {
+        "Name": "\u003cRegex\u003e",
+        "kind": "argument",
+        "description": "Regex",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cRegex\u003e": {
+        "Name": "\u003cRegex\u003e",
+        "kind": "argument",
+        "description": "Regex",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cRegex\u003e"
+    ]
+  },
+  "--fast": {
+    "Name": "--fast",
+    "kind": "option",
+    "description": "Skip temporary sanity checks",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--force-exclude": {
+    "Name": "--force-exclude",
+    "kind": "option",
+    "description": "Exlude matching files and folders even when passed explicitly",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cRegex\u003e": {
+        "Name": "\u003cRegex\u003e",
+        "kind": "argument",
+        "description": "Regex",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cRegex\u003e": {
+        "Name": "\u003cRegex\u003e",
+        "kind": "argument",
+        "description": "Regex",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cRegex\u003e"
+    ]
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show usage information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--include": {
+    "Name": "--include",
+    "kind": "option",
+    "description": "Regex that matches files and directories that should be included on recursive searches",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cRegex\u003e": {
+        "Name": "\u003cRegex\u003e",
+        "kind": "argument",
+        "description": "Regex",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cRegex\u003e": {
+        "Name": "\u003cRegex\u003e",
+        "kind": "argument",
+        "description": "Regex",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cRegex\u003e"
+    ]
+  },
+  "--ipynb": {
+    "Name": "--ipynb",
+    "kind": "option",
+    "description": "Format all input files like Jupyter Notebooks regardless of file extension",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--line-length": {
+    "Name": "--line-length",
+    "kind": "option",
+    "description": "How many characters per line to allow",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cline length\u003e": {
+        "Name": "\u003cline length\u003e",
+        "kind": "argument",
+        "description": "line length",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cline length\u003e": {
+        "Name": "\u003cline length\u003e",
+        "kind": "argument",
+        "description": "line length",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cline length\u003e"
+    ]
+  },
+  "--no-color": {
+    "Name": "--no-color",
+    "kind": "option",
+    "description": "Show uncolored diff",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--preview": {
+    "Name": "--preview",
+    "kind": "option",
+    "description": "Enable potentially disruptive style changes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--pyi": {
+    "Name": "--pyi",
+    "kind": "option",
+    "description": "Format all input files regardless of file extension",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--python-cell-magics": {
+    "Name": "--python-cell-magics",
+    "kind": "option",
+    "description": "Add the given magic to the list of known python-magics",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpython-magic\u003e": {
+        "Name": "\u003cpython-magic\u003e",
+        "kind": "argument",
+        "description": "python-magic",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpython-magic\u003e": {
+        "Name": "\u003cpython-magic\u003e",
+        "kind": "argument",
+        "description": "python-magic",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpython-magic\u003e"
+    ]
+  },
+  "--quiet": {
+    "Name": "--quiet",
+    "kind": "option",
+    "description": "Don't emit non-error messages to stderr",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--required-version": {
+    "Name": "--required-version",
+    "kind": "option",
+    "description": "Require a specific version of Black",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cversion\u003e"
+    ]
+  },
+  "--safe": {
+    "Name": "--safe",
+    "kind": "option",
+    "description": "Run temporary sanity checks",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--skip-magic-trailing-comma": {
+    "Name": "--skip-magic-trailing-comma",
+    "kind": "option",
+    "description": "Don't use trailing commas as a reason to split lines",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--skip-string-normalization": {
+    "Name": "--skip-string-normalization",
+    "kind": "option",
+    "description": "Don't normalize string quotes or prefixes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--stdin-filename": {
+    "Name": "--stdin-filename",
+    "kind": "option",
+    "description": "The name of the file when passing it through stdin",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile\u003e"
+    ]
+  },
+  "--target-version": {
+    "Name": "--target-version",
+    "kind": "option",
+    "description": "Python versions that should be supported",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpython version\u003e": {
+        "Name": "\u003cpython version\u003e",
+        "kind": "argument",
+        "description": "python version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpython version\u003e": {
+        "Name": "\u003cpython version\u003e",
+        "kind": "argument",
+        "description": "python version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpython version\u003e"
+    ]
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Also emit messages about files that were not changed or were ignored due to exclusion patterns",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Show the version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--workers": {
+    "Name": "--workers",
+    "kind": "option",
+    "description": "Number of parallel workers",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cinteger\u003e": {
+        "Name": "\u003cinteger\u003e",
+        "kind": "argument",
+        "description": "integer",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cinteger\u003e": {
+        "Name": "\u003cinteger\u003e",
+        "kind": "argument",
+        "description": "integer",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cinteger\u003e"
+    ]
+  },
+  "-C": {
+    "Name": "-C",
+    "kind": "option",
+    "description": "Don't use trailing commas as a reason to split lines",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-S": {
+    "Name": "-S",
+    "kind": "option",
+    "description": "Don't normalize string quotes or prefixes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-W": {
+    "Name": "-W",
+    "kind": "option",
+    "description": "Number of parallel workers",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cinteger\u003e": {
+        "Name": "\u003cinteger\u003e",
+        "kind": "argument",
+        "description": "integer",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cinteger\u003e": {
+        "Name": "\u003cinteger\u003e",
+        "kind": "argument",
+        "description": "integer",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cinteger\u003e"
+    ]
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Format the code passed in as a string",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show usage information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "option",
+    "description": "How many characters per line to allow",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cline length\u003e": {
+        "Name": "\u003cline length\u003e",
+        "kind": "argument",
+        "description": "line length",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cline length\u003e": {
+        "Name": "\u003cline length\u003e",
+        "kind": "argument",
+        "description": "line length",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cline length\u003e"
+    ]
+  },
+  "-q": {
+    "Name": "-q",
+    "kind": "option",
+    "description": "Don't emit non-error messages to stderr",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Python versions that should be supported",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpython version\u003e": {
+        "Name": "\u003cpython version\u003e",
+        "kind": "argument",
+        "description": "python version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpython version\u003e": {
+        "Name": "\u003cpython version\u003e",
+        "kind": "argument",
+        "description": "python version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpython version\u003e"
+    ]
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Also emit messages about files that were not changed or were ignored due to exclusion patterns",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003cfile or directory\u003e": {
+    "Name": "\u003cfile or directory\u003e",
+    "kind": "argument",
+    "description": "file or directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

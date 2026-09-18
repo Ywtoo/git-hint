@@ -1,0 +1,648 @@
+{
+  "--autodetect_server_javabase": {
+    "Name": "--autodetect_server_javabase",
+    "kind": "option",
+    "description": "Back to the local JDK for running the bazel server and instead exits",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--batch": {
+    "Name": "--batch",
+    "kind": "option",
+    "description": "Run as just a client process without a server",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--batch_cpu_scheduling": {
+    "Name": "--batch_cpu_scheduling",
+    "kind": "option",
+    "description": "Only on Linux; use 'batch' CPU scheduling for Bazel",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--bazelrc": {
+    "Name": "--bazelrc",
+    "kind": "option",
+    "description": "The location of the user .bazelrc file containing default values of Bazel options",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cbazelrc path\u003e": {
+        "Name": "\u003cbazelrc path\u003e",
+        "kind": "argument",
+        "description": "bazelrc path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cbazelrc path\u003e": {
+        "Name": "\u003cbazelrc path\u003e",
+        "kind": "argument",
+        "description": "bazelrc path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cbazelrc path\u003e"
+    ]
+  },
+  "--block_for_lock": {
+    "Name": "--block_for_lock",
+    "kind": "option",
+    "description": "Wait for a running command to complete",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--client_debug": {
+    "Name": "--client_debug",
+    "kind": "option",
+    "description": "Log debug information from the client to stderr. Changing this option will not cause the server to restart",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--connect_timeout_secs": {
+    "Name": "--connect_timeout_secs",
+    "kind": "option",
+    "description": "The amount of time the client waits for each attempt to connect to the server",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctime\u003e": {
+        "Name": "\u003ctime\u003e",
+        "kind": "argument",
+        "description": "time",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctime\u003e": {
+        "Name": "\u003ctime\u003e",
+        "kind": "argument",
+        "description": "time",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctime\u003e"
+    ]
+  },
+  "--expand_configs_in_place": {
+    "Name": "--expand_configs_in_place",
+    "kind": "option",
+    "description": "Changed the expansion of --config flags to be done in-place",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--failure_detail_out": {
+    "Name": "--failure_detail_out",
+    "kind": "option",
+    "description": "Specifies a location to write a failure_detail protobuf message if the server experiences a failure and cannot report it via gRPC, as normal. Otherwise, the location will be ${OUTPUT_BASE}/failure_detail.rawproto",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--home_rc": {
+    "Name": "--home_rc",
+    "kind": "option",
+    "description": "Look for the home bazelrc file at $HOME/.bazelrc",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--idle_server_tasks": {
+    "Name": "--idle_server_tasks",
+    "kind": "option",
+    "description": "Run System.gc() when the server is idle",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--ignore_all_rc_files": {
+    "Name": "--ignore_all_rc_files",
+    "kind": "option",
+    "description": "Disables all rc files, regardless of the values of other rc-modifying flags, even if these flags come later in the list of startup options",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--io_nice_level": {
+    "Name": "--io_nice_level",
+    "kind": "option",
+    "description": "Only on Linux; set a level from 0-7 for best-effort IO scheduling using the sys_ioprio_set system call. 0 is highest priority, 7 is lowest",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cio-level\u003e": {
+        "Name": "\u003cio-level\u003e",
+        "kind": "argument",
+        "description": "io-level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cio-level\u003e": {
+        "Name": "\u003cio-level\u003e",
+        "kind": "argument",
+        "description": "io-level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cio-level\u003e"
+    ]
+  },
+  "--local_startup_timeout_secs": {
+    "Name": "--local_startup_timeout_secs",
+    "kind": "option",
+    "description": "The maximum amount of time the client waits to connect to the server",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cseconds\u003e": {
+        "Name": "\u003cseconds\u003e",
+        "kind": "argument",
+        "description": "seconds",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cseconds\u003e": {
+        "Name": "\u003cseconds\u003e",
+        "kind": "argument",
+        "description": "seconds",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cseconds\u003e"
+    ]
+  },
+  "--macos_qos_class": {
+    "Name": "--macos_qos_class",
+    "kind": "option",
+    "description": "Sets the QoS service class of the bazel server when running on macOS",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cQoS service class\u003e": {
+        "Name": "\u003cQoS service class\u003e",
+        "kind": "argument",
+        "description": "QoS service class",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cQoS service class\u003e": {
+        "Name": "\u003cQoS service class\u003e",
+        "kind": "argument",
+        "description": "QoS service class",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cQoS service class\u003e"
+    ]
+  },
+  "--max_idle_secs": {
+    "Name": "--max_idle_secs",
+    "kind": "option",
+    "description": "The number of seconds the build server will wait idling before shutting down",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cseconds\u003e": {
+        "Name": "\u003cseconds\u003e",
+        "kind": "argument",
+        "description": "seconds",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cseconds\u003e": {
+        "Name": "\u003cseconds\u003e",
+        "kind": "argument",
+        "description": "seconds",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cseconds\u003e"
+    ]
+  },
+  "--noautodetect_server_javabase": {
+    "Name": "--noautodetect_server_javabase",
+    "kind": "option",
+    "description": "Does not fall back to the local JDK for running the bazel server and instead exits",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--nobatch": {
+    "Name": "--nobatch",
+    "kind": "option",
+    "description": "Run with a server",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--nobatch_cpu_scheduling": {
+    "Name": "--nobatch_cpu_scheduling",
+    "kind": "option",
+    "description": "Only on Linux; Bazel does not perform a system call",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--noblock_for_lock": {
+    "Name": "--noblock_for_lock",
+    "kind": "option",
+    "description": "Bazel does not wait for a running command to complete, but instead exits immediately",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--noclient_debug": {
+    "Name": "--noclient_debug",
+    "kind": "option",
+    "description": "Don't log debug information from the client to stderr",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--noexpand_configs_in_place": {
+    "Name": "--noexpand_configs_in_place",
+    "kind": "option",
+    "description": "--config flags in a fixed point expansion between normal rc options and command-line specified options",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--nohome_rc": {
+    "Name": "--nohome_rc",
+    "kind": "option",
+    "description": "Don't look for the home bazelrc file at $HOME/.bazelrc",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--noidle_server_tasks": {
+    "Name": "--noidle_server_tasks",
+    "kind": "option",
+    "description": "Don't run System.gc() when the server is idle",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--noignore_all_rc_files": {
+    "Name": "--noignore_all_rc_files",
+    "kind": "option",
+    "description": "Enables all rc files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--nopreemptible": {
+    "Name": "--nopreemptible",
+    "kind": "option",
+    "description": "If true, the command can be preempted if another command is started",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--noshutdown_on_low_sys_mem": {
+    "Name": "--noshutdown_on_low_sys_mem",
+    "kind": "option",
+    "description": "Linux only. Don't shut down the server when the system is low on free RAM",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--nosystem_rc": {
+    "Name": "--nosystem_rc",
+    "kind": "option",
+    "description": "Don't look for the system-wide bazelrc",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--nounlimit_coredumps": {
+    "Name": "--nounlimit_coredumps",
+    "kind": "option",
+    "description": "Don't raise the soft coredump limit to the hard limit to make coredumps of the server (including the JVM) and the client possible under common conditions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--nowatchfs": {
+    "Name": "--nowatchfs",
+    "kind": "option",
+    "description": "Scan every file for a change",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--nowindows_enable_symlinks": {
+    "Name": "--nowindows_enable_symlinks",
+    "kind": "option",
+    "description": "Real symbolic links will be created via file copying",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--noworkspace_rc": {
+    "Name": "--noworkspace_rc",
+    "kind": "option",
+    "description": "Don't look for the workspace bazelrc file at $workspace/.bazelrc",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--output_base": {
+    "Name": "--output_base",
+    "kind": "option",
+    "description": "Specifies the output location to which all build output will be written",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPath\u003e": {
+        "Name": "\u003cPath\u003e",
+        "kind": "argument",
+        "description": "Path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPath\u003e": {
+        "Name": "\u003cPath\u003e",
+        "kind": "argument",
+        "description": "Path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPath\u003e"
+    ]
+  },
+  "--output_base_root": {
+    "Name": "--output_base_root",
+    "kind": "option",
+    "description": "The user-specific directory beneath which all build outputs are written",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPath\u003e": {
+        "Name": "\u003cPath\u003e",
+        "kind": "argument",
+        "description": "Path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPath\u003e": {
+        "Name": "\u003cPath\u003e",
+        "kind": "argument",
+        "description": "Path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPath\u003e"
+    ]
+  },
+  "--preemptible": {
+    "Name": "--preemptible",
+    "kind": "option",
+    "description": "If true, the command can be preempted if another command is started",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--server_jvm_out": {
+    "Name": "--server_jvm_out",
+    "kind": "option",
+    "description": "The location to write the server's JVM's output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPath\u003e": {
+        "Name": "\u003cPath\u003e",
+        "kind": "argument",
+        "description": "Path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPath\u003e": {
+        "Name": "\u003cPath\u003e",
+        "kind": "argument",
+        "description": "Path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPath\u003e"
+    ]
+  },
+  "--shutdown_on_low_sys_mem": {
+    "Name": "--shutdown_on_low_sys_mem",
+    "kind": "option",
+    "description": "Linux only. If max_idle_secs is set and the build server has been idle for a while, shut down the server when the system is low on free RAM",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--system_rc": {
+    "Name": "--system_rc",
+    "kind": "option",
+    "description": "Look for the system-wide bazelrc",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--unlimit_coredumps": {
+    "Name": "--unlimit_coredumps",
+    "kind": "option",
+    "description": "Raises the soft coredump limit to the hard limit to make coredumps of the server (including the JVM) and the client possible under common conditions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--watchfs": {
+    "Name": "--watchfs",
+    "kind": "option",
+    "description": "Use the operating system's file watch service for local changes instead of scanning every file for a change",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--windows_enable_symlinks": {
+    "Name": "--windows_enable_symlinks",
+    "kind": "option",
+    "description": "Real symbolic links will be created on Windows instead of file copying",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--workspace_rc": {
+    "Name": "--workspace_rc",
+    "kind": "option",
+    "description": "Look for the workspace bazelrc file at $workspace/.bazelrc",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "build": {
+    "Name": "build",
+    "kind": "subcommand",
+    "description": "Builds the specified targets",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cBUILD file\u003e": {
+        "Name": "\u003cBUILD file\u003e",
+        "kind": "argument",
+        "description": "BUILD file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cBUILD file\u003e": {
+        "Name": "\u003cBUILD file\u003e",
+        "kind": "argument",
+        "description": "BUILD file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cBUILD file\u003e"
+    ]
+  },
+  "run": {
+    "Name": "run",
+    "kind": "subcommand",
+    "description": "Runs the specified target",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cBUILD file\u003e": {
+        "Name": "\u003cBUILD file\u003e",
+        "kind": "argument",
+        "description": "BUILD file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cBUILD file\u003e": {
+        "Name": "\u003cBUILD file\u003e",
+        "kind": "argument",
+        "description": "BUILD file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cBUILD file\u003e"
+    ]
+  },
+  "test": {
+    "Name": "test",
+    "kind": "subcommand",
+    "description": "Builds and runs the specified test targets",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cBUILD file\u003e": {
+        "Name": "\u003cBUILD file\u003e",
+        "kind": "argument",
+        "description": "BUILD file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cBUILD file\u003e": {
+        "Name": "\u003cBUILD file\u003e",
+        "kind": "argument",
+        "description": "BUILD file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cBUILD file\u003e"
+    ]
+  }
+}

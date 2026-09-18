@@ -1,0 +1,2111 @@
+{
+  "--debug": {
+    "Name": "--debug",
+    "kind": "option",
+    "description": "Enable verbose mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Display help",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Enable verbose mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Display help",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "b": {
+    "Name": "b",
+    "kind": "subcommand",
+    "description": "Builds the current project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--clean": {
+        "Name": "--clean",
+        "kind": "option",
+        "description": "Remove the dist folder before building",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Load configuration from file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfig\u003e"
+        ]
+      },
+      "--id": {
+        "Name": "--id",
+        "kind": "option",
+        "description": "Builds only the specified build ids",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cid\u003e": {
+            "Name": "\u003cid\u003e",
+            "kind": "argument",
+            "description": "id",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cid\u003e": {
+            "Name": "\u003cid\u003e",
+            "kind": "argument",
+            "description": "id",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cid\u003e"
+        ]
+      },
+      "--output": {
+        "Name": "--output",
+        "kind": "option",
+        "description": "Copy the binary to the path after the build. Only taken into account when using --single-target and a single id (either with --id or if configuration only has one build)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput\u003e"
+        ]
+      },
+      "--parallelism": {
+        "Name": "--parallelism",
+        "kind": "option",
+        "description": "Amount tasks to run concurrently (default: number of CPUs)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cparallelism\u003e": {
+            "Name": "\u003cparallelism\u003e",
+            "kind": "argument",
+            "description": "parallelism",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cparallelism\u003e": {
+            "Name": "\u003cparallelism\u003e",
+            "kind": "argument",
+            "description": "parallelism",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cparallelism\u003e"
+        ]
+      },
+      "--single-target": {
+        "Name": "--single-target",
+        "kind": "option",
+        "description": "Builds only for current GOOS and GOARCH, regardless of what's set in the configuration file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--skip": {
+        "Name": "--skip",
+        "kind": "option",
+        "description": "Skip the given options (valid options are: before, post-hooks, pre-hooks, validate)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cskip\u003e": {
+            "Name": "\u003cskip\u003e",
+            "kind": "argument",
+            "description": "skip",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cskip\u003e": {
+            "Name": "\u003cskip\u003e",
+            "kind": "argument",
+            "description": "skip",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cskip\u003e"
+        ]
+      },
+      "--snapshot": {
+        "Name": "--snapshot",
+        "kind": "option",
+        "description": "Generate an unversioned snapshot build, skipping all validations",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--timeout": {
+        "Name": "--timeout",
+        "kind": "option",
+        "description": "Timeout to the entire build process",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctimeout\u003e": {
+            "Name": "\u003ctimeout\u003e",
+            "kind": "argument",
+            "description": "timeout",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctimeout\u003e": {
+            "Name": "\u003ctimeout\u003e",
+            "kind": "argument",
+            "description": "timeout",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctimeout\u003e"
+        ]
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Load configuration from file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfig\u003e"
+        ]
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Copy the binary to the path after the build. Only taken into account when using --single-target and a single id (either with --id or if configuration only has one build)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Amount tasks to run concurrently (default: number of CPUs)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cparallelism\u003e": {
+            "Name": "\u003cparallelism\u003e",
+            "kind": "argument",
+            "description": "parallelism",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cparallelism\u003e": {
+            "Name": "\u003cparallelism\u003e",
+            "kind": "argument",
+            "description": "parallelism",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cparallelism\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--clean": {
+        "Name": "--clean",
+        "kind": "option",
+        "description": "Remove the dist folder before building",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Load configuration from file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfig\u003e"
+        ]
+      },
+      "--id": {
+        "Name": "--id",
+        "kind": "option",
+        "description": "Builds only the specified build ids",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cid\u003e": {
+            "Name": "\u003cid\u003e",
+            "kind": "argument",
+            "description": "id",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cid\u003e": {
+            "Name": "\u003cid\u003e",
+            "kind": "argument",
+            "description": "id",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cid\u003e"
+        ]
+      },
+      "--output": {
+        "Name": "--output",
+        "kind": "option",
+        "description": "Copy the binary to the path after the build. Only taken into account when using --single-target and a single id (either with --id or if configuration only has one build)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput\u003e"
+        ]
+      },
+      "--parallelism": {
+        "Name": "--parallelism",
+        "kind": "option",
+        "description": "Amount tasks to run concurrently (default: number of CPUs)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cparallelism\u003e": {
+            "Name": "\u003cparallelism\u003e",
+            "kind": "argument",
+            "description": "parallelism",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cparallelism\u003e": {
+            "Name": "\u003cparallelism\u003e",
+            "kind": "argument",
+            "description": "parallelism",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cparallelism\u003e"
+        ]
+      },
+      "--single-target": {
+        "Name": "--single-target",
+        "kind": "option",
+        "description": "Builds only for current GOOS and GOARCH, regardless of what's set in the configuration file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--skip": {
+        "Name": "--skip",
+        "kind": "option",
+        "description": "Skip the given options (valid options are: before, post-hooks, pre-hooks, validate)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cskip\u003e": {
+            "Name": "\u003cskip\u003e",
+            "kind": "argument",
+            "description": "skip",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cskip\u003e": {
+            "Name": "\u003cskip\u003e",
+            "kind": "argument",
+            "description": "skip",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cskip\u003e"
+        ]
+      },
+      "--snapshot": {
+        "Name": "--snapshot",
+        "kind": "option",
+        "description": "Generate an unversioned snapshot build, skipping all validations",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--timeout": {
+        "Name": "--timeout",
+        "kind": "option",
+        "description": "Timeout to the entire build process",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctimeout\u003e": {
+            "Name": "\u003ctimeout\u003e",
+            "kind": "argument",
+            "description": "timeout",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctimeout\u003e": {
+            "Name": "\u003ctimeout\u003e",
+            "kind": "argument",
+            "description": "timeout",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctimeout\u003e"
+        ]
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Load configuration from file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfig\u003e"
+        ]
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Copy the binary to the path after the build. Only taken into account when using --single-target and a single id (either with --id or if configuration only has one build)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Amount tasks to run concurrently (default: number of CPUs)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cparallelism\u003e": {
+            "Name": "\u003cparallelism\u003e",
+            "kind": "argument",
+            "description": "parallelism",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cparallelism\u003e": {
+            "Name": "\u003cparallelism\u003e",
+            "kind": "argument",
+            "description": "parallelism",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cparallelism\u003e"
+        ]
+      }
+    }
+  },
+  "c": {
+    "Name": "c",
+    "kind": "subcommand",
+    "description": "Checks if configuration is valid",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Quiet mode: no output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Quiet mode: no output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Quiet mode: no output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Quiet mode: no output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "completion": {
+    "Name": "completion",
+    "kind": "subcommand",
+    "description": "Generate the autocompletion script for the specified shell",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "bash": {
+        "Name": "bash",
+        "kind": "subcommand",
+        "description": "Generate the autocompletion script for bash",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--no-descriptions": {
+            "Name": "--no-descriptions",
+            "kind": "option",
+            "description": "Disable completion descriptions",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--no-descriptions": {
+            "Name": "--no-descriptions",
+            "kind": "option",
+            "description": "Disable completion descriptions",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "fish": {
+        "Name": "fish",
+        "kind": "subcommand",
+        "description": "Generate the autocompletion script for fish",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--no-descriptions": {
+            "Name": "--no-descriptions",
+            "kind": "option",
+            "description": "Disable completion descriptions",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--no-descriptions": {
+            "Name": "--no-descriptions",
+            "kind": "option",
+            "description": "Disable completion descriptions",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "powershell": {
+        "Name": "powershell",
+        "kind": "subcommand",
+        "description": "Generate the autocompletion script for powershell",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--no-descriptions": {
+            "Name": "--no-descriptions",
+            "kind": "option",
+            "description": "Disable completion descriptions",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--no-descriptions": {
+            "Name": "--no-descriptions",
+            "kind": "option",
+            "description": "Disable completion descriptions",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "zsh": {
+        "Name": "zsh",
+        "kind": "subcommand",
+        "description": "Generate the autocompletion script for zsh",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--no-descriptions": {
+            "Name": "--no-descriptions",
+            "kind": "option",
+            "description": "Disable completion descriptions",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--no-descriptions": {
+            "Name": "--no-descriptions",
+            "kind": "option",
+            "description": "Disable completion descriptions",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      }
+    }
+  },
+  "hc": {
+    "Name": "hc",
+    "kind": "subcommand",
+    "description": "Checks if needed tools are installed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Configuration file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfig\u003e"
+        ]
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Quiet mode: no output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Configuration file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfig\u003e"
+        ]
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Quiet mode: no output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Configuration file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfig\u003e"
+        ]
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Quiet mode: no output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Configuration file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfig\u003e"
+        ]
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Quiet mode: no output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Help about any command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "b": {
+        "Name": "b",
+        "kind": "subcommand",
+        "description": "Builds the current project",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "c": {
+        "Name": "c",
+        "kind": "subcommand",
+        "description": "Checks if configuration is valid",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "completion": {
+        "Name": "completion",
+        "kind": "subcommand",
+        "description": "Generate the autocompletion script for the specified shell",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "bash": {
+            "Name": "bash",
+            "kind": "subcommand",
+            "description": "Generate the autocompletion script for bash",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "fish": {
+            "Name": "fish",
+            "kind": "subcommand",
+            "description": "Generate the autocompletion script for fish",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "powershell": {
+            "Name": "powershell",
+            "kind": "subcommand",
+            "description": "Generate the autocompletion script for powershell",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "zsh": {
+            "Name": "zsh",
+            "kind": "subcommand",
+            "description": "Generate the autocompletion script for zsh",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "hc": {
+        "Name": "hc",
+        "kind": "subcommand",
+        "description": "Checks if needed tools are installed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "i": {
+        "Name": "i",
+        "kind": "subcommand",
+        "description": "Generates a .goreleaser.yaml file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "r": {
+        "Name": "r",
+        "kind": "subcommand",
+        "description": "Releases the current project",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "schema": {
+        "Name": "schema",
+        "kind": "subcommand",
+        "description": "Outputs goreleaser's JSON schema",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "i": {
+    "Name": "i",
+    "kind": "subcommand",
+    "description": "Generates a .goreleaser.yaml file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Load configuration from file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfig\u003e"
+        ]
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Load configuration from file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfig\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Load configuration from file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfig\u003e"
+        ]
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Load configuration from file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfig\u003e"
+        ]
+      }
+    }
+  },
+  "r": {
+    "Name": "r",
+    "kind": "subcommand",
+    "description": "Releases the current project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--auto-snapshot": {
+        "Name": "--auto-snapshot",
+        "kind": "option",
+        "description": "Automatically sets --snapshot if the repository is dirty",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--clean": {
+        "Name": "--clean",
+        "kind": "option",
+        "description": "Removes the dist folder",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Load configuration from file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfig\u003e"
+        ]
+      },
+      "--fail-fast": {
+        "Name": "--fail-fast",
+        "kind": "option",
+        "description": "Whether to abort the release publishing on the first error",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--parallelism": {
+        "Name": "--parallelism",
+        "kind": "option",
+        "description": "Amount tasks to run concurrently (default: number of CPUs)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cparallelism\u003e": {
+            "Name": "\u003cparallelism\u003e",
+            "kind": "argument",
+            "description": "parallelism",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cparallelism\u003e": {
+            "Name": "\u003cparallelism\u003e",
+            "kind": "argument",
+            "description": "parallelism",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cparallelism\u003e"
+        ]
+      },
+      "--release-footer": {
+        "Name": "--release-footer",
+        "kind": "option",
+        "description": "Load custom release notes footer from a markdown file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003crelease-footer\u003e": {
+            "Name": "\u003crelease-footer\u003e",
+            "kind": "argument",
+            "description": "release-footer",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003crelease-footer\u003e": {
+            "Name": "\u003crelease-footer\u003e",
+            "kind": "argument",
+            "description": "release-footer",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003crelease-footer\u003e"
+        ]
+      },
+      "--release-footer-tmpl": {
+        "Name": "--release-footer-tmpl",
+        "kind": "option",
+        "description": "Load custom release notes footer from a templated markdown file (overrides --release-footer)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003crelease-footer-tmpl\u003e": {
+            "Name": "\u003crelease-footer-tmpl\u003e",
+            "kind": "argument",
+            "description": "release-footer-tmpl",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003crelease-footer-tmpl\u003e": {
+            "Name": "\u003crelease-footer-tmpl\u003e",
+            "kind": "argument",
+            "description": "release-footer-tmpl",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003crelease-footer-tmpl\u003e"
+        ]
+      },
+      "--release-header": {
+        "Name": "--release-header",
+        "kind": "option",
+        "description": "Load custom release notes header from a markdown file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003crelease-header\u003e": {
+            "Name": "\u003crelease-header\u003e",
+            "kind": "argument",
+            "description": "release-header",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003crelease-header\u003e": {
+            "Name": "\u003crelease-header\u003e",
+            "kind": "argument",
+            "description": "release-header",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003crelease-header\u003e"
+        ]
+      },
+      "--release-header-tmpl": {
+        "Name": "--release-header-tmpl",
+        "kind": "option",
+        "description": "Load custom release notes header from a templated markdown file (overrides --release-header)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003crelease-header-tmpl\u003e": {
+            "Name": "\u003crelease-header-tmpl\u003e",
+            "kind": "argument",
+            "description": "release-header-tmpl",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003crelease-header-tmpl\u003e": {
+            "Name": "\u003crelease-header-tmpl\u003e",
+            "kind": "argument",
+            "description": "release-header-tmpl",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003crelease-header-tmpl\u003e"
+        ]
+      },
+      "--release-notes": {
+        "Name": "--release-notes",
+        "kind": "option",
+        "description": "Load custom release notes from a markdown file (will skip GoReleaser changelog generation)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003crelease-notes\u003e": {
+            "Name": "\u003crelease-notes\u003e",
+            "kind": "argument",
+            "description": "release-notes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003crelease-notes\u003e": {
+            "Name": "\u003crelease-notes\u003e",
+            "kind": "argument",
+            "description": "release-notes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003crelease-notes\u003e"
+        ]
+      },
+      "--release-notes-tmpl": {
+        "Name": "--release-notes-tmpl",
+        "kind": "option",
+        "description": "Load custom release notes from a templated markdown file (overrides --release-notes)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003crelease-notes-tmpl\u003e": {
+            "Name": "\u003crelease-notes-tmpl\u003e",
+            "kind": "argument",
+            "description": "release-notes-tmpl",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003crelease-notes-tmpl\u003e": {
+            "Name": "\u003crelease-notes-tmpl\u003e",
+            "kind": "argument",
+            "description": "release-notes-tmpl",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003crelease-notes-tmpl\u003e"
+        ]
+      },
+      "--skip": {
+        "Name": "--skip",
+        "kind": "option",
+        "description": "Skip the given options (valid options are announce, aur, before, chocolatey, docker, homebrew, ko, nfpm, nix, publish, sbom, scoop, sign, snapcraft, validate, winget)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cskip\u003e": {
+            "Name": "\u003cskip\u003e",
+            "kind": "argument",
+            "description": "skip",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cskip\u003e": {
+            "Name": "\u003cskip\u003e",
+            "kind": "argument",
+            "description": "skip",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cskip\u003e"
+        ]
+      },
+      "--snapshot": {
+        "Name": "--snapshot",
+        "kind": "option",
+        "description": "Generate an unversioned snapshot release, skipping all validations and without publishing any artifacts (implies --skip=announce,publish,validate)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--timeout": {
+        "Name": "--timeout",
+        "kind": "option",
+        "description": "Timeout to the entire release process",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctimeout\u003e": {
+            "Name": "\u003ctimeout\u003e",
+            "kind": "argument",
+            "description": "timeout",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctimeout\u003e": {
+            "Name": "\u003ctimeout\u003e",
+            "kind": "argument",
+            "description": "timeout",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctimeout\u003e"
+        ]
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Load configuration from file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfig\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Amount tasks to run concurrently (default: number of CPUs)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cparallelism\u003e": {
+            "Name": "\u003cparallelism\u003e",
+            "kind": "argument",
+            "description": "parallelism",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cparallelism\u003e": {
+            "Name": "\u003cparallelism\u003e",
+            "kind": "argument",
+            "description": "parallelism",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cparallelism\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--auto-snapshot": {
+        "Name": "--auto-snapshot",
+        "kind": "option",
+        "description": "Automatically sets --snapshot if the repository is dirty",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--clean": {
+        "Name": "--clean",
+        "kind": "option",
+        "description": "Removes the dist folder",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "Load configuration from file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfig\u003e"
+        ]
+      },
+      "--fail-fast": {
+        "Name": "--fail-fast",
+        "kind": "option",
+        "description": "Whether to abort the release publishing on the first error",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--parallelism": {
+        "Name": "--parallelism",
+        "kind": "option",
+        "description": "Amount tasks to run concurrently (default: number of CPUs)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cparallelism\u003e": {
+            "Name": "\u003cparallelism\u003e",
+            "kind": "argument",
+            "description": "parallelism",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cparallelism\u003e": {
+            "Name": "\u003cparallelism\u003e",
+            "kind": "argument",
+            "description": "parallelism",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cparallelism\u003e"
+        ]
+      },
+      "--release-footer": {
+        "Name": "--release-footer",
+        "kind": "option",
+        "description": "Load custom release notes footer from a markdown file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003crelease-footer\u003e": {
+            "Name": "\u003crelease-footer\u003e",
+            "kind": "argument",
+            "description": "release-footer",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003crelease-footer\u003e": {
+            "Name": "\u003crelease-footer\u003e",
+            "kind": "argument",
+            "description": "release-footer",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003crelease-footer\u003e"
+        ]
+      },
+      "--release-footer-tmpl": {
+        "Name": "--release-footer-tmpl",
+        "kind": "option",
+        "description": "Load custom release notes footer from a templated markdown file (overrides --release-footer)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003crelease-footer-tmpl\u003e": {
+            "Name": "\u003crelease-footer-tmpl\u003e",
+            "kind": "argument",
+            "description": "release-footer-tmpl",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003crelease-footer-tmpl\u003e": {
+            "Name": "\u003crelease-footer-tmpl\u003e",
+            "kind": "argument",
+            "description": "release-footer-tmpl",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003crelease-footer-tmpl\u003e"
+        ]
+      },
+      "--release-header": {
+        "Name": "--release-header",
+        "kind": "option",
+        "description": "Load custom release notes header from a markdown file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003crelease-header\u003e": {
+            "Name": "\u003crelease-header\u003e",
+            "kind": "argument",
+            "description": "release-header",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003crelease-header\u003e": {
+            "Name": "\u003crelease-header\u003e",
+            "kind": "argument",
+            "description": "release-header",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003crelease-header\u003e"
+        ]
+      },
+      "--release-header-tmpl": {
+        "Name": "--release-header-tmpl",
+        "kind": "option",
+        "description": "Load custom release notes header from a templated markdown file (overrides --release-header)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003crelease-header-tmpl\u003e": {
+            "Name": "\u003crelease-header-tmpl\u003e",
+            "kind": "argument",
+            "description": "release-header-tmpl",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003crelease-header-tmpl\u003e": {
+            "Name": "\u003crelease-header-tmpl\u003e",
+            "kind": "argument",
+            "description": "release-header-tmpl",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003crelease-header-tmpl\u003e"
+        ]
+      },
+      "--release-notes": {
+        "Name": "--release-notes",
+        "kind": "option",
+        "description": "Load custom release notes from a markdown file (will skip GoReleaser changelog generation)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003crelease-notes\u003e": {
+            "Name": "\u003crelease-notes\u003e",
+            "kind": "argument",
+            "description": "release-notes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003crelease-notes\u003e": {
+            "Name": "\u003crelease-notes\u003e",
+            "kind": "argument",
+            "description": "release-notes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003crelease-notes\u003e"
+        ]
+      },
+      "--release-notes-tmpl": {
+        "Name": "--release-notes-tmpl",
+        "kind": "option",
+        "description": "Load custom release notes from a templated markdown file (overrides --release-notes)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003crelease-notes-tmpl\u003e": {
+            "Name": "\u003crelease-notes-tmpl\u003e",
+            "kind": "argument",
+            "description": "release-notes-tmpl",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003crelease-notes-tmpl\u003e": {
+            "Name": "\u003crelease-notes-tmpl\u003e",
+            "kind": "argument",
+            "description": "release-notes-tmpl",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003crelease-notes-tmpl\u003e"
+        ]
+      },
+      "--skip": {
+        "Name": "--skip",
+        "kind": "option",
+        "description": "Skip the given options (valid options are announce, aur, before, chocolatey, docker, homebrew, ko, nfpm, nix, publish, sbom, scoop, sign, snapcraft, validate, winget)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cskip\u003e": {
+            "Name": "\u003cskip\u003e",
+            "kind": "argument",
+            "description": "skip",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cskip\u003e": {
+            "Name": "\u003cskip\u003e",
+            "kind": "argument",
+            "description": "skip",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cskip\u003e"
+        ]
+      },
+      "--snapshot": {
+        "Name": "--snapshot",
+        "kind": "option",
+        "description": "Generate an unversioned snapshot release, skipping all validations and without publishing any artifacts (implies --skip=announce,publish,validate)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--timeout": {
+        "Name": "--timeout",
+        "kind": "option",
+        "description": "Timeout to the entire release process",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctimeout\u003e": {
+            "Name": "\u003ctimeout\u003e",
+            "kind": "argument",
+            "description": "timeout",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctimeout\u003e": {
+            "Name": "\u003ctimeout\u003e",
+            "kind": "argument",
+            "description": "timeout",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctimeout\u003e"
+        ]
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Load configuration from file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfig\u003e": {
+            "Name": "\u003cconfig\u003e",
+            "kind": "argument",
+            "description": "config",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfig\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Amount tasks to run concurrently (default: number of CPUs)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cparallelism\u003e": {
+            "Name": "\u003cparallelism\u003e",
+            "kind": "argument",
+            "description": "parallelism",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cparallelism\u003e": {
+            "Name": "\u003cparallelism\u003e",
+            "kind": "argument",
+            "description": "parallelism",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cparallelism\u003e"
+        ]
+      }
+    }
+  },
+  "schema": {
+    "Name": "schema",
+    "kind": "subcommand",
+    "description": "Outputs goreleaser's JSON schema",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--output": {
+        "Name": "--output",
+        "kind": "option",
+        "description": "Where to save the JSONSchema file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput\u003e"
+        ]
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Where to save the JSONSchema file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--output": {
+        "Name": "--output",
+        "kind": "option",
+        "description": "Where to save the JSONSchema file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput\u003e"
+        ]
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Where to save the JSONSchema file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput\u003e"
+        ]
+      }
+    }
+  }
+}

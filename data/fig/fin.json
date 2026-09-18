@@ -1,0 +1,3313 @@
+{
+  "addon": {
+    "Name": "addon",
+    "kind": "subcommand",
+    "description": "Addons management commands: install, remove (fin help addon)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "install": {
+        "Name": "install",
+        "kind": "subcommand",
+        "description": "Install addon",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cName\u003e": {
+            "Name": "\u003cName\u003e",
+            "kind": "argument",
+            "description": "Name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cName\u003e": {
+            "Name": "\u003cName\u003e",
+            "kind": "argument",
+            "description": "Name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cName\u003e"
+        ]
+      },
+      "remove": {
+        "Name": "remove",
+        "kind": "subcommand",
+        "description": "Remove addon",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cName\u003e": {
+            "Name": "\u003cName\u003e",
+            "kind": "argument",
+            "description": "Name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cName\u003e": {
+            "Name": "\u003cName\u003e",
+            "kind": "argument",
+            "description": "Name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cName\u003e"
+        ]
+      }
+    }
+  },
+  "alias": {
+    "Name": "alias",
+    "kind": "subcommand",
+    "description": "Manage aliases that allow fin @alias execution (fin help alias). Create/update alias with \u003calias_name\u003e that links to \u003cpath\u003e",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003calias_name\u003e": {
+        "Name": "\u003calias_name\u003e",
+        "kind": "argument",
+        "description": "alias_name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "Show aliases list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "remove": {
+        "Name": "remove",
+        "kind": "subcommand",
+        "description": "Remove alias",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003calias_name\u003e": {
+            "Name": "\u003calias_name\u003e",
+            "kind": "argument",
+            "description": "alias_name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003calias_name\u003e": {
+            "Name": "\u003calias_name\u003e",
+            "kind": "argument",
+            "description": "alias_name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003calias_name\u003e"
+        ]
+      }
+    },
+    "options": {
+      "\u003calias_name\u003e": {
+        "Name": "\u003calias_name\u003e",
+        "kind": "argument",
+        "description": "alias_name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e",
+      "\u003calias_name\u003e"
+    ]
+  },
+  "bash": {
+    "Name": "bash",
+    "kind": "subcommand",
+    "description": "Open shell into service's container. Defaults to cli",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cservice\u003e": {
+        "Name": "\u003cservice\u003e",
+        "kind": "argument",
+        "description": "service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cservice\u003e": {
+        "Name": "\u003cservice\u003e",
+        "kind": "argument",
+        "description": "service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cservice\u003e"
+    ]
+  },
+  "cleanup": {
+    "Name": "cleanup",
+    "kind": "subcommand",
+    "description": "Remove all unused Docker images, unused Docksal volumes and containers",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--hard": {
+        "Name": "--hard",
+        "kind": "option",
+        "description": "Remove ALL stopped containers even unrelated to Docksal (potentially destructive operation)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--images": {
+        "Name": "--images",
+        "kind": "option",
+        "description": "Docker images cleanup Wizard",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--hard": {
+        "Name": "--hard",
+        "kind": "option",
+        "description": "Remove ALL stopped containers even unrelated to Docksal (potentially destructive operation)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--images": {
+        "Name": "--images",
+        "kind": "option",
+        "description": "Docker images cleanup Wizard",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "composer": {
+    "Name": "composer",
+    "kind": "subcommand",
+    "description": "Run Composer commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "config": {
+    "Name": "config",
+    "kind": "subcommand",
+    "description": "Show or change configuration (fin help config)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "env": {
+        "Name": "env",
+        "kind": "subcommand",
+        "description": "Display only environment variables section",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "generate": {
+        "Name": "generate",
+        "kind": "subcommand",
+        "description": "Generate empty Docksal configuration for the project",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--docroot": {
+            "Name": "--docroot",
+            "kind": "option",
+            "description": "Set non-default DOCROOT during config generate",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cdirectory\u003e": {
+                "Name": "\u003cdirectory\u003e",
+                "kind": "argument",
+                "description": "directory",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cdirectory\u003e": {
+                "Name": "\u003cdirectory\u003e",
+                "kind": "argument",
+                "description": "directory",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cdirectory\u003e"
+            ]
+          },
+          "--stack": {
+            "Name": "--stack",
+            "kind": "option",
+            "description": "Set non-default DOCKSAL_STACK during config generate",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstack\u003e": {
+                "Name": "\u003cstack\u003e",
+                "kind": "argument",
+                "description": "stack",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstack\u003e": {
+                "Name": "\u003cstack\u003e",
+                "kind": "argument",
+                "description": "stack",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstack\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--docroot": {
+            "Name": "--docroot",
+            "kind": "option",
+            "description": "Set non-default DOCROOT during config generate",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cdirectory\u003e": {
+                "Name": "\u003cdirectory\u003e",
+                "kind": "argument",
+                "description": "directory",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cdirectory\u003e": {
+                "Name": "\u003cdirectory\u003e",
+                "kind": "argument",
+                "description": "directory",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cdirectory\u003e"
+            ]
+          },
+          "--stack": {
+            "Name": "--stack",
+            "kind": "option",
+            "description": "Set non-default DOCKSAL_STACK during config generate",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstack\u003e": {
+                "Name": "\u003cstack\u003e",
+                "kind": "argument",
+                "description": "stack",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstack\u003e": {
+                "Name": "\u003cstack\u003e",
+                "kind": "argument",
+                "description": "stack",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstack\u003e"
+            ]
+          }
+        }
+      },
+      "get": {
+        "Name": "get",
+        "kind": "subcommand",
+        "description": "Get the value of the single variable from project ENV file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--env": {
+            "Name": "--env",
+            "kind": "option",
+            "description": "Get value from environment specific project ENV file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cname\u003e"
+            ]
+          },
+          "--global": {
+            "Name": "--global",
+            "kind": "option",
+            "description": "Get value from global ENV file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cVAR\u003e": {
+            "Name": "\u003cVAR\u003e",
+            "kind": "argument",
+            "description": "VAR",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--env": {
+            "Name": "--env",
+            "kind": "option",
+            "description": "Get value from environment specific project ENV file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cname\u003e"
+            ]
+          },
+          "--global": {
+            "Name": "--global",
+            "kind": "option",
+            "description": "Get value from global ENV file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cVAR\u003e": {
+            "Name": "\u003cVAR\u003e",
+            "kind": "argument",
+            "description": "VAR",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cVAR\u003e"
+        ]
+      },
+      "remove": {
+        "Name": "remove",
+        "kind": "subcommand",
+        "description": "Remove variable(s) from project ENV file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--env": {
+            "Name": "--env",
+            "kind": "option",
+            "description": "Remove from environment specific project ENV file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cname\u003e"
+            ]
+          },
+          "--global": {
+            "Name": "--global",
+            "kind": "option",
+            "description": "Remove from global ENV file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cVAR\u003e": {
+            "Name": "\u003cVAR\u003e",
+            "kind": "argument",
+            "description": "VAR",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--env": {
+            "Name": "--env",
+            "kind": "option",
+            "description": "Remove from environment specific project ENV file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cname\u003e"
+            ]
+          },
+          "--global": {
+            "Name": "--global",
+            "kind": "option",
+            "description": "Remove from global ENV file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cVAR\u003e": {
+            "Name": "\u003cVAR\u003e",
+            "kind": "argument",
+            "description": "VAR",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cVAR\u003e"
+        ]
+      },
+      "set": {
+        "Name": "set",
+        "kind": "subcommand",
+        "description": "Set value(s) for the variable(s) in project ENV file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--env": {
+            "Name": "--env",
+            "kind": "option",
+            "description": "Set in environment specific project ENV file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cname\u003e"
+            ]
+          },
+          "--global": {
+            "Name": "--global",
+            "kind": "option",
+            "description": "Set for global ENV file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cVAR=VAL\u003e": {
+            "Name": "\u003cVAR=VAL\u003e",
+            "kind": "argument",
+            "description": "VAR=VAL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--env": {
+            "Name": "--env",
+            "kind": "option",
+            "description": "Set in environment specific project ENV file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cname\u003e"
+            ]
+          },
+          "--global": {
+            "Name": "--global",
+            "kind": "option",
+            "description": "Set for global ENV file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cVAR=VAL\u003e": {
+            "Name": "\u003cVAR=VAL\u003e",
+            "kind": "argument",
+            "description": "VAR=VAL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cVAR=VAL\u003e"
+        ]
+      },
+      "show": {
+        "Name": "show",
+        "kind": "subcommand",
+        "description": "Display configuration for the current project",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--show-secrets": {
+            "Name": "--show-secrets",
+            "kind": "option",
+            "description": "Do not truncate value of SECRET_* environment vars",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--show-secrets": {
+            "Name": "--show-secrets",
+            "kind": "option",
+            "description": "Do not truncate value of SECRET_* environment vars",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "yml": {
+        "Name": "yml",
+        "kind": "subcommand",
+        "description": "Display static YML project config suitable for export (NOTE: SECRET_* values will not be hidden)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "db": {
+    "Name": "db",
+    "kind": "subcommand",
+    "description": "Manage databases (fin help db)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--db": {
+        "Name": "--db",
+        "kind": "option",
+        "description": "Use another database (default is the one set with 'MYSQL_DATABASE')",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdatabase\u003e": {
+            "Name": "\u003cdatabase\u003e",
+            "kind": "argument",
+            "description": "database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdatabase\u003e": {
+            "Name": "\u003cdatabase\u003e",
+            "kind": "argument",
+            "description": "database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdatabase\u003e"
+        ]
+      },
+      "--db-charset": {
+        "Name": "--db-charset",
+        "kind": "option",
+        "description": "Override charset when creating a database (default is utf8)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccharset\u003e": {
+            "Name": "\u003ccharset\u003e",
+            "kind": "argument",
+            "description": "charset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccharset\u003e": {
+            "Name": "\u003ccharset\u003e",
+            "kind": "argument",
+            "description": "charset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccharset\u003e"
+        ]
+      },
+      "--db-collation": {
+        "Name": "--db-collation",
+        "kind": "option",
+        "description": "Override collation when creating a database (default is utf8_general_ci)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccollation\u003e": {
+            "Name": "\u003ccollation\u003e",
+            "kind": "argument",
+            "description": "collation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccollation\u003e": {
+            "Name": "\u003ccollation\u003e",
+            "kind": "argument",
+            "description": "collation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccollation\u003e"
+        ]
+      },
+      "--db-password": {
+        "Name": "--db-password",
+        "kind": "option",
+        "description": "Use another database password (default is the one set with 'MYSQL_ROOT_PASSWORD', see fin config)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpassword\u003e": {
+            "Name": "\u003cpassword\u003e",
+            "kind": "argument",
+            "description": "password",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpassword\u003e": {
+            "Name": "\u003cpassword\u003e",
+            "kind": "argument",
+            "description": "password",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpassword\u003e"
+        ]
+      },
+      "--db-user": {
+        "Name": "--db-user",
+        "kind": "option",
+        "description": "Use another mysql username (default is 'root')",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cuser\u003e": {
+            "Name": "\u003cuser\u003e",
+            "kind": "argument",
+            "description": "user",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cuser\u003e": {
+            "Name": "\u003cuser\u003e",
+            "kind": "argument",
+            "description": "user",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cuser\u003e"
+        ]
+      },
+      "cli": {
+        "Name": "cli",
+        "kind": "subcommand",
+        "description": "Open command line interface to the DB server (and execute query if provided)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cquery\u003e": {
+            "Name": "\u003cquery\u003e",
+            "kind": "argument",
+            "description": "query",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cquery\u003e": {
+            "Name": "\u003cquery\u003e",
+            "kind": "argument",
+            "description": "query",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "create": {
+        "Name": "create",
+        "kind": "subcommand",
+        "description": "Create a database",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "drop": {
+        "Name": "drop",
+        "kind": "subcommand",
+        "description": "Delete a database",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "dump": {
+        "Name": "dump",
+        "kind": "subcommand",
+        "description": "Dump a database into an SQL dump file or stdout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "import": {
+        "Name": "import",
+        "kind": "subcommand",
+        "description": "Truncate the database and import from SQL dump file or stdin",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--no-truncate": {
+            "Name": "--no-truncate",
+            "kind": "option",
+            "description": "Do no truncate database before import",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--progress": {
+            "Name": "--progress",
+            "kind": "option",
+            "description": "Show import progess (requires pv)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--no-truncate": {
+            "Name": "--no-truncate",
+            "kind": "option",
+            "description": "Do no truncate database before import",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--progress": {
+            "Name": "--progress",
+            "kind": "option",
+            "description": "Show import progess (requires pv)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "Show list of existing databases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "truncate": {
+        "Name": "truncate",
+        "kind": "subcommand",
+        "description": "Truncate a database (defaults to the `default`)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      }
+    },
+    "options": {
+      "--db": {
+        "Name": "--db",
+        "kind": "option",
+        "description": "Use another database (default is the one set with 'MYSQL_DATABASE')",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdatabase\u003e": {
+            "Name": "\u003cdatabase\u003e",
+            "kind": "argument",
+            "description": "database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdatabase\u003e": {
+            "Name": "\u003cdatabase\u003e",
+            "kind": "argument",
+            "description": "database",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdatabase\u003e"
+        ]
+      },
+      "--db-charset": {
+        "Name": "--db-charset",
+        "kind": "option",
+        "description": "Override charset when creating a database (default is utf8)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccharset\u003e": {
+            "Name": "\u003ccharset\u003e",
+            "kind": "argument",
+            "description": "charset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccharset\u003e": {
+            "Name": "\u003ccharset\u003e",
+            "kind": "argument",
+            "description": "charset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccharset\u003e"
+        ]
+      },
+      "--db-collation": {
+        "Name": "--db-collation",
+        "kind": "option",
+        "description": "Override collation when creating a database (default is utf8_general_ci)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccollation\u003e": {
+            "Name": "\u003ccollation\u003e",
+            "kind": "argument",
+            "description": "collation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccollation\u003e": {
+            "Name": "\u003ccollation\u003e",
+            "kind": "argument",
+            "description": "collation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccollation\u003e"
+        ]
+      },
+      "--db-password": {
+        "Name": "--db-password",
+        "kind": "option",
+        "description": "Use another database password (default is the one set with 'MYSQL_ROOT_PASSWORD', see fin config)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpassword\u003e": {
+            "Name": "\u003cpassword\u003e",
+            "kind": "argument",
+            "description": "password",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpassword\u003e": {
+            "Name": "\u003cpassword\u003e",
+            "kind": "argument",
+            "description": "password",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpassword\u003e"
+        ]
+      },
+      "--db-user": {
+        "Name": "--db-user",
+        "kind": "option",
+        "description": "Use another mysql username (default is 'root')",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cuser\u003e": {
+            "Name": "\u003cuser\u003e",
+            "kind": "argument",
+            "description": "user",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cuser\u003e": {
+            "Name": "\u003cuser\u003e",
+            "kind": "argument",
+            "description": "user",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cuser\u003e"
+        ]
+      }
+    }
+  },
+  "diagnose": {
+    "Name": "diagnose",
+    "kind": "subcommand",
+    "description": "Show diagnostic information for troubleshooting and bug reporting",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "docker": {
+    "Name": "docker",
+    "kind": "subcommand",
+    "description": "Run Docker commands directly",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "docker-compose": {
+    "Name": "docker-compose",
+    "kind": "subcommand",
+    "description": "Run Docker Compose commands directly",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "docker-machine": {
+    "Name": "docker-machine",
+    "kind": "subcommand",
+    "description": "Run Docker Machine commands directly",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "drupal": {
+    "Name": "drupal",
+    "kind": "subcommand",
+    "description": "Drupal Console command (requires Drupal 8)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "drush": {
+    "Name": "drush",
+    "kind": "subcommand",
+    "description": "Drush command (requires Drupal)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "exec": {
+    "Name": "exec",
+    "kind": "subcommand",
+    "description": "Execute a command or a script in cli",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand|file\u003e": {
+        "Name": "\u003ccommand|file\u003e",
+        "kind": "argument",
+        "description": "command|file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand|file\u003e": {
+        "Name": "\u003ccommand|file\u003e",
+        "kind": "argument",
+        "description": "command|file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand|file\u003e"
+    ]
+  },
+  "exec-url": {
+    "Name": "exec-url",
+    "kind": "subcommand",
+    "description": "Download script from URL and run it on host (URL should be public)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003curl\u003e": {
+        "Name": "\u003curl\u003e",
+        "kind": "argument",
+        "description": "url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003curl\u003e": {
+        "Name": "\u003curl\u003e",
+        "kind": "argument",
+        "description": "url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003curl\u003e"
+    ]
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Shows help",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "hosts": {
+    "Name": "hosts",
+    "kind": "subcommand",
+    "description": "Hosts file commands: add, remove, list (fin help hosts)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "add": {
+        "Name": "add",
+        "kind": "subcommand",
+        "description": "Add hostname to hosts file. If none provided uses VIRTUAL_HOST",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003chostname\u003e": {
+            "Name": "\u003chostname\u003e",
+            "kind": "argument",
+            "description": "hostname",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003chostname\u003e": {
+            "Name": "\u003chostname\u003e",
+            "kind": "argument",
+            "description": "hostname",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003chostname\u003e"
+        ]
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "Output hosts file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "remove": {
+        "Name": "remove",
+        "kind": "subcommand",
+        "description": "Remove lines containing hostname from hosts file. If none provided uses VIRTUAL_HOST",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003chostname\u003e": {
+            "Name": "\u003chostname\u003e",
+            "kind": "argument",
+            "description": "hostname",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003chostname\u003e": {
+            "Name": "\u003chostname\u003e",
+            "kind": "argument",
+            "description": "hostname",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003chostname\u003e"
+        ]
+      }
+    }
+  },
+  "image": {
+    "Name": "image",
+    "kind": "subcommand",
+    "description": "Image management commands: registry, save, load (fin help image)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "load": {
+        "Name": "load",
+        "kind": "subcommand",
+        "description": "Load docker images from a tar archive",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "registry": {
+        "Name": "registry",
+        "kind": "subcommand",
+        "description": "Show all Docksal images on Docker Hub",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cimage name\u003e": {
+            "Name": "\u003cimage name\u003e",
+            "kind": "argument",
+            "description": "image name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cimage name\u003e": {
+            "Name": "\u003cimage name\u003e",
+            "kind": "argument",
+            "description": "image name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "save": {
+        "Name": "save",
+        "kind": "subcommand",
+        "description": "Save docker images into a tar archive",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "Save all images available on the host",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--project": {
+            "Name": "--project",
+            "kind": "option",
+            "description": "Save current project's images",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--system": {
+            "Name": "--system",
+            "kind": "option",
+            "description": "Save Docksal system images",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "Save all images available on the host",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--project": {
+            "Name": "--project",
+            "kind": "option",
+            "description": "Save current project's images",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--system": {
+            "Name": "--system",
+            "kind": "option",
+            "description": "Save Docksal system images",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      }
+    }
+  },
+  "init": {
+    "Name": "init",
+    "kind": "subcommand",
+    "description": "Initialize a project (override it with your own automation, see fin help init)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "logs": {
+    "Name": "logs",
+    "kind": "subcommand",
+    "description": "Show service logs (e.g., Apache logs, MySQL logs) and Unison logs (fin help logs)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--follow": {
+        "Name": "--follow",
+        "kind": "option",
+        "description": "Follow log output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-color": {
+        "Name": "--no-color",
+        "kind": "option",
+        "description": "Produce monochrome output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-log-prefix": {
+        "Name": "--no-log-prefix",
+        "kind": "option",
+        "description": "Don't print prefix in logs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--since": {
+        "Name": "--since",
+        "kind": "option",
+        "description": "Show logs since timestamp (e.g. 2013-01-02T13:23:37Z) or relative (e.g. 42m for 42 minutes)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstring\u003e"
+        ]
+      },
+      "--tail": {
+        "Name": "--tail",
+        "kind": "option",
+        "description": "Number of lines to show from the end of the logs for each container. (default \"all\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstring\u003e"
+        ]
+      },
+      "--timestamps": {
+        "Name": "--timestamps",
+        "kind": "option",
+        "description": "Show timestamps",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--until": {
+        "Name": "--until",
+        "kind": "option",
+        "description": "Show logs before a timestamp (e.g. 2013-01-02T13:23:37Z) or relative (e.g. 42m for 42 minutes)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstring\u003e"
+        ]
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Follow log output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Show timestamps",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cservice\u003e": {
+        "Name": "\u003cservice\u003e",
+        "kind": "argument",
+        "description": "service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--follow": {
+        "Name": "--follow",
+        "kind": "option",
+        "description": "Follow log output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-color": {
+        "Name": "--no-color",
+        "kind": "option",
+        "description": "Produce monochrome output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-log-prefix": {
+        "Name": "--no-log-prefix",
+        "kind": "option",
+        "description": "Don't print prefix in logs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--since": {
+        "Name": "--since",
+        "kind": "option",
+        "description": "Show logs since timestamp (e.g. 2013-01-02T13:23:37Z) or relative (e.g. 42m for 42 minutes)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstring\u003e"
+        ]
+      },
+      "--tail": {
+        "Name": "--tail",
+        "kind": "option",
+        "description": "Number of lines to show from the end of the logs for each container. (default \"all\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstring\u003e"
+        ]
+      },
+      "--timestamps": {
+        "Name": "--timestamps",
+        "kind": "option",
+        "description": "Show timestamps",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--until": {
+        "Name": "--until",
+        "kind": "option",
+        "description": "Show logs before a timestamp (e.g. 2013-01-02T13:23:37Z) or relative (e.g. 42m for 42 minutes)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstring\u003e"
+        ]
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Follow log output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Show timestamps",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cservice\u003e": {
+        "Name": "\u003cservice\u003e",
+        "kind": "argument",
+        "description": "service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cservice\u003e"
+    ]
+  },
+  "platform": {
+    "Name": "platform",
+    "kind": "subcommand",
+    "description": "Platform.sh's CLI (requires docksal/cli 2.3+)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "project": {
+    "Name": "project",
+    "kind": "subcommand",
+    "description": "Manage project(s) (fin help project)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "build": {
+        "Name": "build",
+        "kind": "subcommand",
+        "description": "Build or rebuild services (alias for 'docker-compose build')",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "config": {
+        "Name": "config",
+        "kind": "subcommand",
+        "description": "Show project configuration",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "create": {
+        "Name": "create",
+        "kind": "subcommand",
+        "description": "Create a new project with a pre-configured boilerplate: Drupal, Wordpress, Magento, Laravel, Backdrop, Hugo, Gatsby, and others",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--branch": {
+            "Name": "--branch",
+            "kind": "option",
+            "description": "Clone from a custom repo: branch name (optional)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cname\u003e"
+            ]
+          },
+          "--choice": {
+            "Name": "--choice",
+            "kind": "option",
+            "description": "Provide software choice number upfront",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003c#\u003e": {
+                "Name": "\u003c#\u003e",
+                "kind": "argument",
+                "description": "#",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003c#\u003e": {
+                "Name": "\u003c#\u003e",
+                "kind": "argument",
+                "description": "#",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003c#\u003e"
+            ]
+          },
+          "--name": {
+            "Name": "--name",
+            "kind": "option",
+            "description": "Provide project name upfront",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cname\u003e"
+            ]
+          },
+          "--repo": {
+            "Name": "--repo",
+            "kind": "option",
+            "description": "Clone from a custom repo: name (--choice is set to '0' automatically)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cname\u003e"
+            ]
+          },
+          "--yes": {
+            "Name": "--yes",
+            "kind": "option",
+            "description": "Avoid confirmation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-y": {
+            "Name": "-y",
+            "kind": "option",
+            "description": "Avoid confirmation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--branch": {
+            "Name": "--branch",
+            "kind": "option",
+            "description": "Clone from a custom repo: branch name (optional)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cname\u003e"
+            ]
+          },
+          "--choice": {
+            "Name": "--choice",
+            "kind": "option",
+            "description": "Provide software choice number upfront",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003c#\u003e": {
+                "Name": "\u003c#\u003e",
+                "kind": "argument",
+                "description": "#",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003c#\u003e": {
+                "Name": "\u003c#\u003e",
+                "kind": "argument",
+                "description": "#",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003c#\u003e"
+            ]
+          },
+          "--name": {
+            "Name": "--name",
+            "kind": "option",
+            "description": "Provide project name upfront",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cname\u003e"
+            ]
+          },
+          "--repo": {
+            "Name": "--repo",
+            "kind": "option",
+            "description": "Clone from a custom repo: name (--choice is set to '0' automatically)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cname\u003e"
+            ]
+          },
+          "--yes": {
+            "Name": "--yes",
+            "kind": "option",
+            "description": "Avoid confirmation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-y": {
+            "Name": "-y",
+            "kind": "option",
+            "description": "Avoid confirmation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List running Docksal projects (alias: fin pl)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "List all Docksal projects (stopped as well)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-a": {
+            "Name": "-a",
+            "kind": "option",
+            "description": "List all Docksal projects (stopped as well)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "List all Docksal projects (stopped as well)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-a": {
+            "Name": "-a",
+            "kind": "option",
+            "description": "List all Docksal projects (stopped as well)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "remove": {
+        "Name": "remove",
+        "kind": "subcommand",
+        "description": "Remove all project services, networks and all their volumes, or specified services only",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--force": {
+            "Name": "--force",
+            "kind": "option",
+            "description": "Do not ask for confirmation when deleting all project services",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Do not ask for confirmation when deleting all project services",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cservice\u003e": {
+            "Name": "\u003cservice\u003e",
+            "kind": "argument",
+            "description": "service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--force": {
+            "Name": "--force",
+            "kind": "option",
+            "description": "Do not ask for confirmation when deleting all project services",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Do not ask for confirmation when deleting all project services",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cservice\u003e": {
+            "Name": "\u003cservice\u003e",
+            "kind": "argument",
+            "description": "service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cservice\u003e"
+        ]
+      },
+      "reset": {
+        "Name": "reset",
+        "kind": "subcommand",
+        "description": "Recreate all or specified project services, their containers and volumes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cservice\u003e": {
+            "Name": "\u003cservice\u003e",
+            "kind": "argument",
+            "description": "service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cservice\u003e": {
+            "Name": "\u003cservice\u003e",
+            "kind": "argument",
+            "description": "service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cservice\u003e"
+        ]
+      },
+      "restart": {
+        "Name": "restart",
+        "kind": "subcommand",
+        "description": "Restart project services (alias: fin restart)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "start": {
+        "Name": "start",
+        "kind": "subcommand",
+        "description": "Start project services (alias: fin start)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "status": {
+        "Name": "status",
+        "kind": "subcommand",
+        "description": "List project services (alias: fin ps)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "stop": {
+        "Name": "stop",
+        "kind": "subcommand",
+        "description": "Stop all or specified project services (alias: fin stop)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "Stop all services on all Docksal projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-a": {
+            "Name": "-a",
+            "kind": "option",
+            "description": "Stop all services on all Docksal projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cservice\u003e": {
+            "Name": "\u003cservice\u003e",
+            "kind": "argument",
+            "description": "service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "Stop all services on all Docksal projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-a": {
+            "Name": "-a",
+            "kind": "option",
+            "description": "Stop all services on all Docksal projects",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cservice\u003e": {
+            "Name": "\u003cservice\u003e",
+            "kind": "argument",
+            "description": "service",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "up": {
+        "Name": "up",
+        "kind": "subcommand",
+        "description": "Configuration re-read and start project services (alias: fin up)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "run-cli": {
+    "Name": "run-cli",
+    "kind": "subcommand",
+    "description": "Run a command in a standalone cli container in the current directory (fin help run-cli)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--clean": {
+        "Name": "--clean",
+        "kind": "option",
+        "description": "Run command with a non-persistent $HOME directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--clenup": {
+        "Name": "--clenup",
+        "kind": "option",
+        "description": "Clean the persistent $HOME directory and run command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Print container debug output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--image": {
+        "Name": "--image",
+        "kind": "option",
+        "description": "Override default container image",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cIMAGE\u003e": {
+            "Name": "\u003cIMAGE\u003e",
+            "kind": "argument",
+            "description": "IMAGE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cIMAGE\u003e": {
+            "Name": "\u003cIMAGE\u003e",
+            "kind": "argument",
+            "description": "IMAGE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cIMAGE\u003e"
+        ]
+      },
+      "-T": {
+        "Name": "-T",
+        "kind": "option",
+        "description": "Disable pseudo-tty allocation (useful to get clean stdout)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-e": {
+        "Name": "-e",
+        "kind": "option",
+        "description": "Pass environment variable(s) to the container",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cVAR=VALUE\u003e": {
+            "Name": "\u003cVAR=VALUE\u003e",
+            "kind": "argument",
+            "description": "VAR=VALUE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cVAR=VALUE\u003e": {
+            "Name": "\u003cVAR=VALUE\u003e",
+            "kind": "argument",
+            "description": "VAR=VALUE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cVAR=VALUE\u003e"
+        ]
+      },
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--clean": {
+        "Name": "--clean",
+        "kind": "option",
+        "description": "Run command with a non-persistent $HOME directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--clenup": {
+        "Name": "--clenup",
+        "kind": "option",
+        "description": "Clean the persistent $HOME directory and run command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Print container debug output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--image": {
+        "Name": "--image",
+        "kind": "option",
+        "description": "Override default container image",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cIMAGE\u003e": {
+            "Name": "\u003cIMAGE\u003e",
+            "kind": "argument",
+            "description": "IMAGE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cIMAGE\u003e": {
+            "Name": "\u003cIMAGE\u003e",
+            "kind": "argument",
+            "description": "IMAGE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cIMAGE\u003e"
+        ]
+      },
+      "-T": {
+        "Name": "-T",
+        "kind": "option",
+        "description": "Disable pseudo-tty allocation (useful to get clean stdout)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-e": {
+        "Name": "-e",
+        "kind": "option",
+        "description": "Pass environment variable(s) to the container",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cVAR=VALUE\u003e": {
+            "Name": "\u003cVAR=VALUE\u003e",
+            "kind": "argument",
+            "description": "VAR=VALUE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cVAR=VALUE\u003e": {
+            "Name": "\u003cVAR=VALUE\u003e",
+            "kind": "argument",
+            "description": "VAR=VALUE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cVAR=VALUE\u003e"
+        ]
+      },
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "share": {
+    "Name": "share",
+    "kind": "subcommand",
+    "description": "Create temporary public url for current project using ngrok",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--host": {
+        "Name": "--host",
+        "kind": "option",
+        "description": "Override a hostname for ngrok to route to (default is $VIRTUAL_HOST)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003chost\u003e": {
+            "Name": "\u003chost\u003e",
+            "kind": "argument",
+            "description": "host",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003chost\u003e": {
+            "Name": "\u003chost\u003e",
+            "kind": "argument",
+            "description": "host",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003chost\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--host": {
+        "Name": "--host",
+        "kind": "option",
+        "description": "Override a hostname for ngrok to route to (default is $VIRTUAL_HOST)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003chost\u003e": {
+            "Name": "\u003chost\u003e",
+            "kind": "argument",
+            "description": "host",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003chost\u003e": {
+            "Name": "\u003chost\u003e",
+            "kind": "argument",
+            "description": "host",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003chost\u003e"
+        ]
+      }
+    }
+  },
+  "share-v2": {
+    "Name": "share-v2",
+    "kind": "subcommand",
+    "description": "Create a temporary public URL for the project using Cloudflare Tunnel",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "logs": {
+        "Name": "logs",
+        "kind": "subcommand",
+        "description": "Prints tunnel container logs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "start": {
+        "Name": "start",
+        "kind": "subcommand",
+        "description": "Start tunnel and print public URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "status": {
+        "Name": "status",
+        "kind": "subcommand",
+        "description": "Prints tunnel status and public URL (if Active)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "stop": {
+        "Name": "stop",
+        "kind": "subcommand",
+        "description": "Stop tunnel",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "url": {
+        "Name": "url",
+        "kind": "subcommand",
+        "description": "Prints tunnel public URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "ssh-key": {
+    "Name": "ssh-key",
+    "kind": "subcommand",
+    "description": "Manage SSH keys (fin help ssh-key)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "add": {
+        "Name": "add",
+        "kind": "subcommand",
+        "description": "Add a private SSH key from $HOME/.ssh by file name. Adds all default keys (id_rsa/id_dsa/id_ecdsa/id_ed25519) if no file name is given",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--quiet": {
+            "Name": "--quiet",
+            "kind": "option",
+            "description": "Suppress key already loaded notifications",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003ckey-name\u003e": {
+            "Name": "\u003ckey-name\u003e",
+            "kind": "argument",
+            "description": "key-name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--quiet": {
+            "Name": "--quiet",
+            "kind": "option",
+            "description": "Suppress key already loaded notifications",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003ckey-name\u003e": {
+            "Name": "\u003ckey-name\u003e",
+            "kind": "argument",
+            "description": "key-name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "ls": {
+        "Name": "ls",
+        "kind": "subcommand",
+        "description": "List SSH keys loaded in the docksal-ssh-agent",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "new": {
+        "Name": "new",
+        "kind": "subcommand",
+        "description": "Generate a new SSH key pair",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ckey-name\u003e": {
+            "Name": "\u003ckey-name\u003e",
+            "kind": "argument",
+            "description": "key-name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ckey-name\u003e": {
+            "Name": "\u003ckey-name\u003e",
+            "kind": "argument",
+            "description": "key-name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ckey-name\u003e"
+        ]
+      },
+      "rm": {
+        "Name": "rm",
+        "kind": "subcommand",
+        "description": "Remove all keys from the docksal-ssh-agent",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "sysinfo": {
+    "Name": "sysinfo",
+    "kind": "subcommand",
+    "description": "Show system information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "system": {
+    "Name": "system",
+    "kind": "subcommand",
+    "description": "Manage Docksal state (fin help system)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "reset": {
+        "Name": "reset",
+        "kind": "subcommand",
+        "description": "Reset Docksal",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "start": {
+        "Name": "start",
+        "kind": "subcommand",
+        "description": "Start Docksal",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "status": {
+        "Name": "status",
+        "kind": "subcommand",
+        "description": "Check Docksal status",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "stop": {
+        "Name": "stop",
+        "kind": "subcommand",
+        "description": "Stop Docksal",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "terminus": {
+    "Name": "terminus",
+    "kind": "subcommand",
+    "description": "Pantheon's Terminus (requires docksal/cli 2.1+)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "update": {
+    "Name": "update",
+    "kind": "subcommand",
+    "description": "Update Docksal",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "DOCKSAL_VERSION": {
+        "Name": "DOCKSAL_VERSION",
+        "kind": "option",
+        "description": "Update Docksal to the latest development version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdevelop\u003e": {
+            "Name": "\u003cdevelop\u003e",
+            "kind": "argument",
+            "description": "develop",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdevelop\u003e": {
+            "Name": "\u003cdevelop\u003e",
+            "kind": "argument",
+            "description": "develop",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdevelop\u003e"
+        ]
+      }
+    }
+  },
+  "version": {
+    "Name": "version",
+    "kind": "subcommand",
+    "description": "Print fin version. [v, -v] prints short version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "vhosts": {
+    "Name": "vhosts",
+    "kind": "subcommand",
+    "description": "List all virtual *.docksal hosts registered in Docksal proxy",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "vm": {
+    "Name": "vm",
+    "kind": "subcommand",
+    "description": "Manage Docksal VM (fin help vm)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "env": {
+        "Name": "env",
+        "kind": "subcommand",
+        "description": "Display the commands to set up the shell for direct use of Docker client",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "hdd": {
+        "Name": "hdd",
+        "kind": "subcommand",
+        "description": "Show disk size and usage",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "ip": {
+        "Name": "ip",
+        "kind": "subcommand",
+        "description": "Show the machine IP address",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "kill": {
+        "Name": "kill",
+        "kind": "subcommand",
+        "description": "Forcibly stop the machine",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "ls": {
+        "Name": "ls",
+        "kind": "subcommand",
+        "description": "List all docker machines",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "mount": {
+        "Name": "mount",
+        "kind": "subcommand",
+        "description": "Try remounting host filesystem (NFS on macOS, SMB on Windows)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "ram": {
+        "Name": "ram",
+        "kind": "subcommand",
+        "description": "Show memory size",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmegabyte\u003e": {
+            "Name": "\u003cmegabyte\u003e",
+            "kind": "argument",
+            "description": "megabyte",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmegabyte\u003e": {
+            "Name": "\u003cmegabyte\u003e",
+            "kind": "argument",
+            "description": "megabyte",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "regenerate-certs": {
+        "Name": "regenerate-certs",
+        "kind": "subcommand",
+        "description": "Regenerate TLS certificates and restart the VM",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "remove": {
+        "Name": "remove",
+        "kind": "subcommand",
+        "description": "Remove Docksal machine and cleanup after it",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "restart": {
+        "Name": "restart",
+        "kind": "subcommand",
+        "description": "Restart the machine",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "ssh": {
+        "Name": "ssh",
+        "kind": "subcommand",
+        "description": "Log into ssh or run a command via ssh",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccommand\u003e": {
+            "Name": "\u003ccommand\u003e",
+            "kind": "argument",
+            "description": "command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccommand\u003e": {
+            "Name": "\u003ccommand\u003e",
+            "kind": "argument",
+            "description": "command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccommand\u003e"
+        ]
+      },
+      "start": {
+        "Name": "start",
+        "kind": "subcommand",
+        "description": "Start the machine (create if needed)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "stats": {
+        "Name": "stats",
+        "kind": "subcommand",
+        "description": "Show CPU and network usage",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "status": {
+        "Name": "status",
+        "kind": "subcommand",
+        "description": "Get the status",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "stop": {
+        "Name": "stop",
+        "kind": "subcommand",
+        "description": "Stop the machine",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "wp": {
+    "Name": "wp",
+    "kind": "subcommand",
+    "description": "WordPress CLI command (requires WordPress)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  }
+}

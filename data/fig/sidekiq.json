@@ -1,0 +1,502 @@
+{
+  "--concurrency": {
+    "Name": "--concurrency",
+    "kind": "option",
+    "description": "Processor threads to use",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cINT\u003e": {
+        "Name": "\u003cINT\u003e",
+        "kind": "argument",
+        "description": "INT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cINT\u003e": {
+        "Name": "\u003cINT\u003e",
+        "kind": "argument",
+        "description": "INT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cINT\u003e"
+    ]
+  },
+  "--config": {
+    "Name": "--config",
+    "kind": "option",
+    "description": "Path to YAML config file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH\u003e"
+    ]
+  },
+  "--environment": {
+    "Name": "--environment",
+    "kind": "option",
+    "description": "Application environment",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cENV\u003e": {
+        "Name": "\u003cENV\u003e",
+        "kind": "argument",
+        "description": "ENV",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cENV\u003e": {
+        "Name": "\u003cENV\u003e",
+        "kind": "argument",
+        "description": "ENV",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cENV\u003e"
+    ]
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for sidekiq run",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--queue": {
+    "Name": "--queue",
+    "kind": "option",
+    "description": "Queues to process with optional weights",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cQUEUE\u003e": {
+        "Name": "\u003cQUEUE\u003e",
+        "kind": "argument",
+        "description": "QUEUE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cWEIGHT\u003e": {
+        "Name": "\u003cWEIGHT\u003e",
+        "kind": "argument",
+        "description": "WEIGHT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cQUEUE\u003e": {
+        "Name": "\u003cQUEUE\u003e",
+        "kind": "argument",
+        "description": "QUEUE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cWEIGHT\u003e": {
+        "Name": "\u003cWEIGHT\u003e",
+        "kind": "argument",
+        "description": "WEIGHT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cQUEUE\u003e"
+    ]
+  },
+  "--require": {
+    "Name": "--require",
+    "kind": "option",
+    "description": "Location of Rails application with jobs or file to require",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH|DIR\u003e": {
+        "Name": "\u003cPATH|DIR\u003e",
+        "kind": "argument",
+        "description": "PATH|DIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH|DIR\u003e": {
+        "Name": "\u003cPATH|DIR\u003e",
+        "kind": "argument",
+        "description": "PATH|DIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH|DIR\u003e"
+    ]
+  },
+  "--tag": {
+    "Name": "--tag",
+    "kind": "option",
+    "description": "Process tag for procline",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cTAG\u003e": {
+        "Name": "\u003cTAG\u003e",
+        "kind": "argument",
+        "description": "TAG",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cTAG\u003e": {
+        "Name": "\u003cTAG\u003e",
+        "kind": "argument",
+        "description": "TAG",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cTAG\u003e"
+    ]
+  },
+  "--timeout": {
+    "Name": "--timeout",
+    "kind": "option",
+    "description": "Shutdown timeout",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNUM\u003e": {
+        "Name": "\u003cNUM\u003e",
+        "kind": "argument",
+        "description": "NUM",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNUM\u003e": {
+        "Name": "\u003cNUM\u003e",
+        "kind": "argument",
+        "description": "NUM",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNUM\u003e"
+    ]
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Print more verbose output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Print version and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-C": {
+    "Name": "-C",
+    "kind": "option",
+    "description": "Path to YAML config file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH\u003e"
+    ]
+  },
+  "-V": {
+    "Name": "-V",
+    "kind": "option",
+    "description": "Print version and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Processor threads to use",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cINT\u003e": {
+        "Name": "\u003cINT\u003e",
+        "kind": "argument",
+        "description": "INT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cINT\u003e": {
+        "Name": "\u003cINT\u003e",
+        "kind": "argument",
+        "description": "INT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cINT\u003e"
+    ]
+  },
+  "-e": {
+    "Name": "-e",
+    "kind": "option",
+    "description": "Application environment",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cENV\u003e": {
+        "Name": "\u003cENV\u003e",
+        "kind": "argument",
+        "description": "ENV",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cENV\u003e": {
+        "Name": "\u003cENV\u003e",
+        "kind": "argument",
+        "description": "ENV",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cENV\u003e"
+    ]
+  },
+  "-g": {
+    "Name": "-g",
+    "kind": "option",
+    "description": "Process tag for procline",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cTAG\u003e": {
+        "Name": "\u003cTAG\u003e",
+        "kind": "argument",
+        "description": "TAG",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cTAG\u003e": {
+        "Name": "\u003cTAG\u003e",
+        "kind": "argument",
+        "description": "TAG",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cTAG\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help for sidekiq run",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-q": {
+    "Name": "-q",
+    "kind": "option",
+    "description": "Queues to process with optional weights",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cQUEUE\u003e": {
+        "Name": "\u003cQUEUE\u003e",
+        "kind": "argument",
+        "description": "QUEUE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cWEIGHT\u003e": {
+        "Name": "\u003cWEIGHT\u003e",
+        "kind": "argument",
+        "description": "WEIGHT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cQUEUE\u003e": {
+        "Name": "\u003cQUEUE\u003e",
+        "kind": "argument",
+        "description": "QUEUE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cWEIGHT\u003e": {
+        "Name": "\u003cWEIGHT\u003e",
+        "kind": "argument",
+        "description": "WEIGHT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cQUEUE\u003e"
+    ]
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "Location of Rails application with jobs or file to require",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH|DIR\u003e": {
+        "Name": "\u003cPATH|DIR\u003e",
+        "kind": "argument",
+        "description": "PATH|DIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH|DIR\u003e": {
+        "Name": "\u003cPATH|DIR\u003e",
+        "kind": "argument",
+        "description": "PATH|DIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH|DIR\u003e"
+    ]
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Shutdown timeout",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNUM\u003e": {
+        "Name": "\u003cNUM\u003e",
+        "kind": "argument",
+        "description": "NUM",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNUM\u003e": {
+        "Name": "\u003cNUM\u003e",
+        "kind": "argument",
+        "description": "NUM",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNUM\u003e"
+    ]
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Print more verbose output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

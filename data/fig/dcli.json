@@ -1,0 +1,1713 @@
+{
+  "--debug": {
+    "Name": "--debug",
+    "kind": "option",
+    "description": "Print debug messages",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Display help for command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Output the version number",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-V": {
+    "Name": "-V",
+    "kind": "option",
+    "description": "Output the version number",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Display help for command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "accounts": {
+    "Name": "accounts",
+    "kind": "subcommand",
+    "description": "Manage your accounts connected to the CLI",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "help": {
+        "Name": "help",
+        "kind": "subcommand",
+        "description": "Display help for command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccommand\u003e": {
+            "Name": "\u003ccommand\u003e",
+            "kind": "argument",
+            "description": "command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccommand\u003e": {
+            "Name": "\u003ccommand\u003e",
+            "kind": "argument",
+            "description": "command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "whoami": {
+        "Name": "whoami",
+        "kind": "subcommand",
+        "description": "Prints the login email of the account currently in use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "backup": {
+    "Name": "backup",
+    "kind": "subcommand",
+    "description": "Backup your local vault (will use the current directory by default)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--directory": {
+        "Name": "--directory",
+        "kind": "option",
+        "description": "Output directory of the backup (\".\" by default)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdirectory\u003e"
+        ]
+      },
+      "--filename": {
+        "Name": "--filename",
+        "kind": "option",
+        "description": "Filename of the backup (\"dashlane-backup-\u003cunix_timestamp\u003e.db by default\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfilename\u003e": {
+            "Name": "\u003cfilename\u003e",
+            "kind": "argument",
+            "description": "filename",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfilename\u003e": {
+            "Name": "\u003cfilename\u003e",
+            "kind": "argument",
+            "description": "filename",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfilename\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--directory": {
+        "Name": "--directory",
+        "kind": "option",
+        "description": "Output directory of the backup (\".\" by default)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdirectory\u003e"
+        ]
+      },
+      "--filename": {
+        "Name": "--filename",
+        "kind": "option",
+        "description": "Filename of the backup (\"dashlane-backup-\u003cunix_timestamp\u003e.db by default\")",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfilename\u003e": {
+            "Name": "\u003cfilename\u003e",
+            "kind": "argument",
+            "description": "filename",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfilename\u003e": {
+            "Name": "\u003cfilename\u003e",
+            "kind": "argument",
+            "description": "filename",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfilename\u003e"
+        ]
+      }
+    }
+  },
+  "configure": {
+    "Name": "configure",
+    "kind": "subcommand",
+    "description": "Configure the CLI",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "disable-auto-sync": {
+        "Name": "disable-auto-sync",
+        "kind": "subcommand",
+        "description": "Disable automatic synchronization which is done once per hour (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cboolean\u003e": {
+            "Name": "\u003cboolean\u003e",
+            "kind": "argument",
+            "description": "boolean",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cboolean\u003e": {
+            "Name": "\u003cboolean\u003e",
+            "kind": "argument",
+            "description": "boolean",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cboolean\u003e"
+        ]
+      },
+      "help": {
+        "Name": "help",
+        "kind": "subcommand",
+        "description": "Display help for command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccommand\u003e": {
+            "Name": "\u003ccommand\u003e",
+            "kind": "argument",
+            "description": "command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccommand\u003e": {
+            "Name": "\u003ccommand\u003e",
+            "kind": "argument",
+            "description": "command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "save-master-password": {
+        "Name": "save-master-password",
+        "kind": "subcommand",
+        "description": "Should the encrypted master password be saved and the OS keychain be used (default: true)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cboolean\u003e": {
+            "Name": "\u003cboolean\u003e",
+            "kind": "argument",
+            "description": "boolean",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cboolean\u003e": {
+            "Name": "\u003cboolean\u003e",
+            "kind": "argument",
+            "description": "boolean",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cboolean\u003e"
+        ]
+      }
+    }
+  },
+  "devices": {
+    "Name": "devices",
+    "kind": "subcommand",
+    "description": "Operations on devices",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "help": {
+        "Name": "help",
+        "kind": "subcommand",
+        "description": "Display help for command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccommand\u003e": {
+            "Name": "\u003ccommand\u003e",
+            "kind": "argument",
+            "description": "command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccommand\u003e": {
+            "Name": "\u003ccommand\u003e",
+            "kind": "argument",
+            "description": "command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "Lists all registered devices that can access your account",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--json": {
+            "Name": "--json",
+            "kind": "option",
+            "description": "Output in JSON format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--json": {
+            "Name": "--json",
+            "kind": "option",
+            "description": "Output in JSON format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "register": {
+        "Name": "register",
+        "kind": "subcommand",
+        "description": "Registers a new device to be used in non-interactive mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--json": {
+            "Name": "--json",
+            "kind": "option",
+            "description": "Output in JSON format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cdevice name\u003e": {
+            "Name": "\u003cdevice name\u003e",
+            "kind": "argument",
+            "description": "device name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--json": {
+            "Name": "--json",
+            "kind": "option",
+            "description": "Output in JSON format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cdevice name\u003e": {
+            "Name": "\u003cdevice name\u003e",
+            "kind": "argument",
+            "description": "device name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdevice name\u003e"
+        ]
+      },
+      "remove": {
+        "Name": "remove",
+        "kind": "subcommand",
+        "description": "De-registers a list of devices. De-registering the CLI will implies doing a \"dcli logout\"",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "Remove all devices including this one (dangerous)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--others": {
+            "Name": "--others",
+            "kind": "option",
+            "description": "Remove all other devices",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cdevice ids\u003e": {
+            "Name": "\u003cdevice ids\u003e",
+            "kind": "argument",
+            "description": "device ids",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--all": {
+            "Name": "--all",
+            "kind": "option",
+            "description": "Remove all devices including this one (dangerous)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--others": {
+            "Name": "--others",
+            "kind": "option",
+            "description": "Remove all other devices",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cdevice ids\u003e": {
+            "Name": "\u003cdevice ids\u003e",
+            "kind": "argument",
+            "description": "device ids",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      }
+    }
+  },
+  "exec": {
+    "Name": "exec",
+    "kind": "subcommand",
+    "description": "Execute a command with secrets injected into the environment variables (-- \u003ccommand\u003e)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Display help for command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "inject": {
+    "Name": "inject",
+    "kind": "subcommand",
+    "description": "Inject secrets into a templated string or file (uses stdin and stdout by default)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--in": {
+        "Name": "--in",
+        "kind": "option",
+        "description": "Input file of a template to inject the credential into",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "--out": {
+        "Name": "--out",
+        "kind": "option",
+        "description": "Output file to write the injected template to",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "-i": {
+        "Name": "-i",
+        "kind": "option",
+        "description": "Input file of a template to inject the credential into",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Output file to write the injected template to",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--in": {
+        "Name": "--in",
+        "kind": "option",
+        "description": "Input file of a template to inject the credential into",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "--out": {
+        "Name": "--out",
+        "kind": "option",
+        "description": "Output file to write the injected template to",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "-i": {
+        "Name": "-i",
+        "kind": "option",
+        "description": "Input file of a template to inject the credential into",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Output file to write the injected template to",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      }
+    }
+  },
+  "logout": {
+    "Name": "logout",
+    "kind": "subcommand",
+    "description": "Logout and clean your local database and OS keychain",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "note": {
+    "Name": "note",
+    "kind": "subcommand",
+    "description": "Retrieve a secure note from the local vault and open it",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--output": {
+        "Name": "--output",
+        "kind": "option",
+        "description": "How to print the notes. The JSON option outputs all the matching notes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctype\u003e": {
+            "Name": "\u003ctype\u003e",
+            "kind": "argument",
+            "description": "type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctype\u003e": {
+            "Name": "\u003ctype\u003e",
+            "kind": "argument",
+            "description": "type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctype\u003e"
+        ]
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "How to print the notes. The JSON option outputs all the matching notes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctype\u003e": {
+            "Name": "\u003ctype\u003e",
+            "kind": "argument",
+            "description": "type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctype\u003e": {
+            "Name": "\u003ctype\u003e",
+            "kind": "argument",
+            "description": "type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctype\u003e"
+        ]
+      },
+      "\u003cfilters\u003e": {
+        "Name": "\u003cfilters\u003e",
+        "kind": "argument",
+        "description": "filters",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--output": {
+        "Name": "--output",
+        "kind": "option",
+        "description": "How to print the notes. The JSON option outputs all the matching notes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctype\u003e": {
+            "Name": "\u003ctype\u003e",
+            "kind": "argument",
+            "description": "type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctype\u003e": {
+            "Name": "\u003ctype\u003e",
+            "kind": "argument",
+            "description": "type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctype\u003e"
+        ]
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "How to print the notes. The JSON option outputs all the matching notes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctype\u003e": {
+            "Name": "\u003ctype\u003e",
+            "kind": "argument",
+            "description": "type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctype\u003e": {
+            "Name": "\u003ctype\u003e",
+            "kind": "argument",
+            "description": "type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctype\u003e"
+        ]
+      },
+      "\u003cfilters\u003e": {
+        "Name": "\u003cfilters\u003e",
+        "kind": "argument",
+        "description": "filters",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "otp": {
+    "Name": "otp",
+    "kind": "subcommand",
+    "description": "Retrieve an OTP code from local vault and copy it to the clipboard",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--print": {
+        "Name": "--print",
+        "kind": "option",
+        "description": "Prints just the OTP code, instead of copying it to the clipboard",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cfilters\u003e": {
+        "Name": "\u003cfilters\u003e",
+        "kind": "argument",
+        "description": "filters",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--print": {
+        "Name": "--print",
+        "kind": "option",
+        "description": "Prints just the OTP code, instead of copying it to the clipboard",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cfilters\u003e": {
+        "Name": "\u003cfilters\u003e",
+        "kind": "argument",
+        "description": "filters",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "password": {
+    "Name": "password",
+    "kind": "subcommand",
+    "description": "Retrieve a password from the local vault and copy it to the clipboard",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--output": {
+        "Name": "--output",
+        "kind": "option",
+        "description": "How to print the passwords. The JSON option outputs all the matching credentials",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctype\u003e": {
+            "Name": "\u003ctype\u003e",
+            "kind": "argument",
+            "description": "type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctype\u003e": {
+            "Name": "\u003ctype\u003e",
+            "kind": "argument",
+            "description": "type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctype\u003e"
+        ]
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "How to print the passwords. The JSON option outputs all the matching credentials",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctype\u003e": {
+            "Name": "\u003ctype\u003e",
+            "kind": "argument",
+            "description": "type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctype\u003e": {
+            "Name": "\u003ctype\u003e",
+            "kind": "argument",
+            "description": "type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctype\u003e"
+        ]
+      },
+      "\u003cfilters\u003e": {
+        "Name": "\u003cfilters\u003e",
+        "kind": "argument",
+        "description": "filters",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--output": {
+        "Name": "--output",
+        "kind": "option",
+        "description": "How to print the passwords. The JSON option outputs all the matching credentials",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctype\u003e": {
+            "Name": "\u003ctype\u003e",
+            "kind": "argument",
+            "description": "type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctype\u003e": {
+            "Name": "\u003ctype\u003e",
+            "kind": "argument",
+            "description": "type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctype\u003e"
+        ]
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "How to print the passwords. The JSON option outputs all the matching credentials",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctype\u003e": {
+            "Name": "\u003ctype\u003e",
+            "kind": "argument",
+            "description": "type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctype\u003e": {
+            "Name": "\u003ctype\u003e",
+            "kind": "argument",
+            "description": "type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctype\u003e"
+        ]
+      },
+      "\u003cfilters\u003e": {
+        "Name": "\u003cfilters\u003e",
+        "kind": "argument",
+        "description": "filters",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "read": {
+    "Name": "read",
+    "kind": "subcommand",
+    "description": "Retrieve a secret from the local vault via its path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "sync": {
+    "Name": "sync",
+    "kind": "subcommand",
+    "description": "Manually synchronize the local vault with Dashlane",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "team": {
+    "Name": "team",
+    "kind": "subcommand",
+    "description": "Team related commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "credentials": {
+        "Name": "credentials",
+        "kind": "subcommand",
+        "description": "Team credentials operations",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "generate": {
+            "Name": "generate",
+            "kind": "subcommand",
+            "description": "Generate new team credentials",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "--json": {
+                "Name": "--json",
+                "kind": "option",
+                "description": "Output in JSON format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            },
+            "options": {
+              "--json": {
+                "Name": "--json",
+                "kind": "option",
+                "description": "Output in JSON format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
+          },
+          "help": {
+            "Name": "help",
+            "kind": "subcommand",
+            "description": "Display help for command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccommand\u003e": {
+                "Name": "\u003ccommand\u003e",
+                "kind": "argument",
+                "description": "command",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccommand\u003e": {
+                "Name": "\u003ccommand\u003e",
+                "kind": "argument",
+                "description": "command",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            }
+          },
+          "list": {
+            "Name": "list",
+            "kind": "subcommand",
+            "description": "List all team credentials",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "--json": {
+                "Name": "--json",
+                "kind": "option",
+                "description": "Output in JSON format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            },
+            "options": {
+              "--json": {
+                "Name": "--json",
+                "kind": "option",
+                "description": "Output in JSON format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": {}
+              }
+            }
+          },
+          "revoke": {
+            "Name": "revoke",
+            "kind": "subcommand",
+            "description": "Revoke credentials by access key",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003caccessKey\u003e": {
+                "Name": "\u003caccessKey\u003e",
+                "kind": "argument",
+                "description": "accessKey",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003caccessKey\u003e": {
+                "Name": "\u003caccessKey\u003e",
+                "kind": "argument",
+                "description": "accessKey",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003caccessKey\u003e"
+            ]
+          }
+        }
+      },
+      "help": {
+        "Name": "help",
+        "kind": "subcommand",
+        "description": "Display help for command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccommand\u003e": {
+            "Name": "\u003ccommand\u003e",
+            "kind": "argument",
+            "description": "command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccommand\u003e": {
+            "Name": "\u003ccommand\u003e",
+            "kind": "argument",
+            "description": "command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "logs": {
+        "Name": "logs",
+        "kind": "subcommand",
+        "description": "List audit logs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--category": {
+            "Name": "--category",
+            "kind": "option",
+            "description": "Log category",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccategory\u003e": {
+                "Name": "\u003ccategory\u003e",
+                "kind": "argument",
+                "description": "category",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccategory\u003e": {
+                "Name": "\u003ccategory\u003e",
+                "kind": "argument",
+                "description": "category",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ccategory\u003e"
+            ]
+          },
+          "--csv": {
+            "Name": "--csv",
+            "kind": "option",
+            "description": "Output in CSV format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--end": {
+            "Name": "--end",
+            "kind": "option",
+            "description": "End timestamp in ms (use \"now\" to get the current timestamp)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cend\u003e": {
+                "Name": "\u003cend\u003e",
+                "kind": "argument",
+                "description": "end",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cend\u003e": {
+                "Name": "\u003cend\u003e",
+                "kind": "argument",
+                "description": "end",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cend\u003e"
+            ]
+          },
+          "--human-readable": {
+            "Name": "--human-readable",
+            "kind": "option",
+            "description": "Output dates in human readable format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--start": {
+            "Name": "--start",
+            "kind": "option",
+            "description": "Start timestamp in ms",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstart\u003e": {
+                "Name": "\u003cstart\u003e",
+                "kind": "argument",
+                "description": "start",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstart\u003e": {
+                "Name": "\u003cstart\u003e",
+                "kind": "argument",
+                "description": "start",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstart\u003e"
+            ]
+          },
+          "--type": {
+            "Name": "--type",
+            "kind": "option",
+            "description": "Log type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ctype\u003e": {
+                "Name": "\u003ctype\u003e",
+                "kind": "argument",
+                "description": "type",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ctype\u003e": {
+                "Name": "\u003ctype\u003e",
+                "kind": "argument",
+                "description": "type",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ctype\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--category": {
+            "Name": "--category",
+            "kind": "option",
+            "description": "Log category",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ccategory\u003e": {
+                "Name": "\u003ccategory\u003e",
+                "kind": "argument",
+                "description": "category",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ccategory\u003e": {
+                "Name": "\u003ccategory\u003e",
+                "kind": "argument",
+                "description": "category",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ccategory\u003e"
+            ]
+          },
+          "--csv": {
+            "Name": "--csv",
+            "kind": "option",
+            "description": "Output in CSV format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--end": {
+            "Name": "--end",
+            "kind": "option",
+            "description": "End timestamp in ms (use \"now\" to get the current timestamp)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cend\u003e": {
+                "Name": "\u003cend\u003e",
+                "kind": "argument",
+                "description": "end",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cend\u003e": {
+                "Name": "\u003cend\u003e",
+                "kind": "argument",
+                "description": "end",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cend\u003e"
+            ]
+          },
+          "--human-readable": {
+            "Name": "--human-readable",
+            "kind": "option",
+            "description": "Output dates in human readable format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--start": {
+            "Name": "--start",
+            "kind": "option",
+            "description": "Start timestamp in ms",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cstart\u003e": {
+                "Name": "\u003cstart\u003e",
+                "kind": "argument",
+                "description": "start",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cstart\u003e": {
+                "Name": "\u003cstart\u003e",
+                "kind": "argument",
+                "description": "start",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cstart\u003e"
+            ]
+          },
+          "--type": {
+            "Name": "--type",
+            "kind": "option",
+            "description": "Log type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ctype\u003e": {
+                "Name": "\u003ctype\u003e",
+                "kind": "argument",
+                "description": "type",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ctype\u003e": {
+                "Name": "\u003ctype\u003e",
+                "kind": "argument",
+                "description": "type",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ctype\u003e"
+            ]
+          }
+        }
+      },
+      "members": {
+        "Name": "members",
+        "kind": "subcommand",
+        "description": "List team members",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--csv": {
+            "Name": "--csv",
+            "kind": "option",
+            "description": "Output in CSV format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--human-readable": {
+            "Name": "--human-readable",
+            "kind": "option",
+            "description": "Output dates in human readable format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003climit\u003e": {
+            "Name": "\u003climit\u003e",
+            "kind": "argument",
+            "description": "limit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cpage\u003e": {
+            "Name": "\u003cpage\u003e",
+            "kind": "argument",
+            "description": "page",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--csv": {
+            "Name": "--csv",
+            "kind": "option",
+            "description": "Output in CSV format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--human-readable": {
+            "Name": "--human-readable",
+            "kind": "option",
+            "description": "Output dates in human readable format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003climit\u003e": {
+            "Name": "\u003climit\u003e",
+            "kind": "argument",
+            "description": "limit",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cpage\u003e": {
+            "Name": "\u003cpage\u003e",
+            "kind": "argument",
+            "description": "page",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "report": {
+        "Name": "report",
+        "kind": "subcommand",
+        "description": "Get team report",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdays\u003e": {
+            "Name": "\u003cdays\u003e",
+            "kind": "argument",
+            "description": "days",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdays\u003e": {
+            "Name": "\u003cdays\u003e",
+            "kind": "argument",
+            "description": "days",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      }
+    }
+  }
+}

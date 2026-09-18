@@ -1,0 +1,841 @@
+{
+  "-A": {
+    "Name": "-A",
+    "kind": "option",
+    "description": "For each of the key types (rsa, dsa, ecdsa and ed25519) for which host keys do not exist, generate the host keys with the default key file path, an empty passphrase, default bits for the key type, and default comment",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-B": {
+    "Name": "-B",
+    "kind": "option",
+    "description": "Show the bubblebabble digest of specified private or public key file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-C": {
+    "Name": "-C",
+    "kind": "option",
+    "description": "Provides a new comment",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccomment\u003e": {
+        "Name": "\u003ccomment\u003e",
+        "kind": "argument",
+        "description": "comment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccomment\u003e": {
+        "Name": "\u003ccomment\u003e",
+        "kind": "argument",
+        "description": "comment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccomment\u003e"
+    ]
+  },
+  "-D": {
+    "Name": "-D",
+    "kind": "option",
+    "description": "Download the public keys provided by the PKCS#11",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpkcs11\u003e": {
+        "Name": "\u003cpkcs11\u003e",
+        "kind": "argument",
+        "description": "pkcs11",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpkcs11\u003e": {
+        "Name": "\u003cpkcs11\u003e",
+        "kind": "argument",
+        "description": "pkcs11",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpkcs11\u003e"
+    ]
+  },
+  "-E": {
+    "Name": "-E",
+    "kind": "option",
+    "description": "Specifies the hash algorithm used",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfingerprint_hash\u003e": {
+        "Name": "\u003cfingerprint_hash\u003e",
+        "kind": "argument",
+        "description": "fingerprint_hash",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfingerprint_hash\u003e": {
+        "Name": "\u003cfingerprint_hash\u003e",
+        "kind": "argument",
+        "description": "fingerprint_hash",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfingerprint_hash\u003e"
+    ]
+  },
+  "-F": {
+    "Name": "-F",
+    "kind": "option",
+    "description": "Search for the specified hostname (with optional port number)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003chostname\u003e": {
+        "Name": "\u003chostname\u003e",
+        "kind": "argument",
+        "description": "hostname",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003chostname\u003e": {
+        "Name": "\u003chostname\u003e",
+        "kind": "argument",
+        "description": "hostname",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003chostname\u003e"
+    ]
+  },
+  "-H": {
+    "Name": "-H",
+    "kind": "option",
+    "description": "Hash a known_hosts file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-I": {
+    "Name": "-I",
+    "kind": "option",
+    "description": "Specify the key identity when signing a public key",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccertificate_identity\u003e": {
+        "Name": "\u003ccertificate_identity\u003e",
+        "kind": "argument",
+        "description": "certificate_identity",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccertificate_identity\u003e": {
+        "Name": "\u003ccertificate_identity\u003e",
+        "kind": "argument",
+        "description": "certificate_identity",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccertificate_identity\u003e"
+    ]
+  },
+  "-K": {
+    "Name": "-K",
+    "kind": "option",
+    "description": "Download resident keys from a FIDO\tauthenticator",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-L": {
+    "Name": "-L",
+    "kind": "option",
+    "description": "Generate a\tKRL file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-M": {
+    "Name": "-M",
+    "kind": "option",
+    "description": "Use for Moduli generation",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "-N": {
+    "Name": "-N",
+    "kind": "option",
+    "description": "Provides the new passphrase",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnew_passphrase\u003e": {
+        "Name": "\u003cnew_passphrase\u003e",
+        "kind": "argument",
+        "description": "new_passphrase",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnew_passphrase\u003e": {
+        "Name": "\u003cnew_passphrase\u003e",
+        "kind": "argument",
+        "description": "new_passphrase",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnew_passphrase\u003e"
+    ]
+  },
+  "-O": {
+    "Name": "-O",
+    "kind": "option",
+    "description": "Specify a key/value option",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003coption\u003e": {
+        "Name": "\u003coption\u003e",
+        "kind": "argument",
+        "description": "option",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003coption\u003e": {
+        "Name": "\u003coption\u003e",
+        "kind": "argument",
+        "description": "option",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003coption\u003e"
+    ]
+  },
+  "-P": {
+    "Name": "-P",
+    "kind": "option",
+    "description": "Provides the (old) passphrase",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpassphrase\u003e": {
+        "Name": "\u003cpassphrase\u003e",
+        "kind": "argument",
+        "description": "passphrase",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpassphrase\u003e": {
+        "Name": "\u003cpassphrase\u003e",
+        "kind": "argument",
+        "description": "passphrase",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpassphrase\u003e"
+    ]
+  },
+  "-Q": {
+    "Name": "-Q",
+    "kind": "option",
+    "description": "Test whether keys have been revoked in a KRL",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-R": {
+    "Name": "-R",
+    "kind": "option",
+    "description": "Removes all keys belonging to hostname",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003chostname\u003e": {
+        "Name": "\u003chostname\u003e",
+        "kind": "argument",
+        "description": "hostname",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003chostname\u003e": {
+        "Name": "\u003chostname\u003e",
+        "kind": "argument",
+        "description": "hostname",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003chostname\u003e"
+    ]
+  },
+  "-U": {
+    "Name": "-U",
+    "kind": "option",
+    "description": "When used in combination with -s, this option indicates that a CA key resides in a ssh-agent(1)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-V": {
+    "Name": "-V",
+    "kind": "option",
+    "description": "Specify a validity interval when signing a certificate",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cvalidity_interval\u003e": {
+        "Name": "\u003cvalidity_interval\u003e",
+        "kind": "argument",
+        "description": "validity_interval",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cvalidity_interval\u003e": {
+        "Name": "\u003cvalidity_interval\u003e",
+        "kind": "argument",
+        "description": "validity_interval",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cvalidity_interval\u003e"
+    ]
+  },
+  "-Y": {
+    "Name": "-Y",
+    "kind": "option",
+    "description": "Multiple functions: find principals, match principals, check novalidate, sign, verify",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "-Z": {
+    "Name": "-Z",
+    "kind": "option",
+    "description": "Specifies the cipher to use for encryption when writing an OpenSSH-format private key file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccipher\u003e": {
+        "Name": "\u003ccipher\u003e",
+        "kind": "argument",
+        "description": "cipher",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccipher\u003e": {
+        "Name": "\u003ccipher\u003e",
+        "kind": "argument",
+        "description": "cipher",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccipher\u003e"
+    ]
+  },
+  "-a": {
+    "Name": "-a",
+    "kind": "option",
+    "description": "When saving a private key, this option specifies the number of KDF",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003crounds\u003e": {
+        "Name": "\u003crounds\u003e",
+        "kind": "argument",
+        "description": "rounds",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003crounds\u003e": {
+        "Name": "\u003crounds\u003e",
+        "kind": "argument",
+        "description": "rounds",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "-b": {
+    "Name": "-b",
+    "kind": "option",
+    "description": "Specifies the number of bits in the key to create",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cbits\u003e": {
+        "Name": "\u003cbits\u003e",
+        "kind": "argument",
+        "description": "bits",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cbits\u003e": {
+        "Name": "\u003cbits\u003e",
+        "kind": "argument",
+        "description": "bits",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cbits\u003e"
+    ]
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Requests changing the comment in the private and public key files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-e": {
+    "Name": "-e",
+    "kind": "option",
+    "description": "Read a OpenSSH key file and print to stdout",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Specifies the filename of the key file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfilename\u003e": {
+        "Name": "\u003cfilename\u003e",
+        "kind": "argument",
+        "description": "filename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfilename\u003e": {
+        "Name": "\u003cfilename\u003e",
+        "kind": "argument",
+        "description": "filename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfilename\u003e"
+    ]
+  },
+  "-g": {
+    "Name": "-g",
+    "kind": "option",
+    "description": "Use generic DNS format when printing fingerprint resource records",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Create a host certificate instead of a user",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Read an unencrypted private (or public) key file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-k": {
+    "Name": "-k",
+    "kind": "option",
+    "description": "Generate a\tKRL file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "option",
+    "description": "Show fingerprint of specified public key file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-m": {
+    "Name": "-m",
+    "kind": "option",
+    "description": "Specify a key format for key generation",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckey_format\u003e": {
+        "Name": "\u003ckey_format\u003e",
+        "kind": "argument",
+        "description": "key_format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckey_format\u003e": {
+        "Name": "\u003ckey_format\u003e",
+        "kind": "argument",
+        "description": "key_format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ckey_format\u003e"
+    ]
+  },
+  "-n": {
+    "Name": "-n",
+    "kind": "option",
+    "description": "Specify one or more principals (user or host names) to be included in a certificate when signing a key",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cprincipals\u003e": {
+        "Name": "\u003cprincipals\u003e",
+        "kind": "argument",
+        "description": "principals",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cprincipals\u003e": {
+        "Name": "\u003cprincipals\u003e",
+        "kind": "argument",
+        "description": "principals",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cprincipals\u003e"
+    ]
+  },
+  "-p": {
+    "Name": "-p",
+    "kind": "option",
+    "description": "Requests changing the passphrase of a private key file instead of creating a new private key",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-q": {
+    "Name": "-q",
+    "kind": "option",
+    "description": "Silence ssh-keygen",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "Print the SSHFP fingerprint resource record named hostname for the specified public key file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003chostname\u003e": {
+        "Name": "\u003chostname\u003e",
+        "kind": "argument",
+        "description": "hostname",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003chostname\u003e": {
+        "Name": "\u003chostname\u003e",
+        "kind": "argument",
+        "description": "hostname",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003chostname\u003e"
+    ]
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Certify (sign) a public key using the specified CA\tkey",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cca_key\u003e": {
+        "Name": "\u003cca_key\u003e",
+        "kind": "argument",
+        "description": "ca_key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cca_key\u003e": {
+        "Name": "\u003cca_key\u003e",
+        "kind": "argument",
+        "description": "ca_key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cca_key\u003e"
+    ]
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Specifies the type of key to create",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "-u": {
+    "Name": "-u",
+    "kind": "option",
+    "description": "Update a KRL",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Verbose mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-w": {
+    "Name": "-w",
+    "kind": "option",
+    "description": "Specifies a path to a library that will be used when creating FIDO authenticator-hosted keys",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cprovider\u003e": {
+        "Name": "\u003cprovider\u003e",
+        "kind": "argument",
+        "description": "provider",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cprovider\u003e": {
+        "Name": "\u003cprovider\u003e",
+        "kind": "argument",
+        "description": "provider",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cprovider\u003e"
+    ]
+  },
+  "-y": {
+    "Name": "-y",
+    "kind": "option",
+    "description": "Read a private OpenSSH format file and print an OpenSSH public key to stdout",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-z": {
+    "Name": "-z",
+    "kind": "option",
+    "description": "Specifies a serial number to be embedded in the certificate to distinguish this certificate from others from the same CA",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cserial_number\u003e": {
+        "Name": "\u003cserial_number\u003e",
+        "kind": "argument",
+        "description": "serial_number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cserial_number\u003e": {
+        "Name": "\u003cserial_number\u003e",
+        "kind": "argument",
+        "description": "serial_number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cserial_number\u003e"
+    ]
+  }
+}

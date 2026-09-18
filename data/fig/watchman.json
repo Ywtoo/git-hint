@@ -1,0 +1,771 @@
+{
+  "--foreground": {
+    "Name": "--foreground",
+    "kind": "option",
+    "description": "Run the service in the foreground",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for watchman",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--inetd": {
+    "Name": "--inetd",
+    "kind": "option",
+    "description": "Spawning from an inetd style supervisor",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--json-command": {
+    "Name": "--json-command",
+    "kind": "option",
+    "description": "Instead of parsing CLI arguments, take a single json object from stdin",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--log-level": {
+    "Name": "--log-level",
+    "kind": "option",
+    "description": "Set the log level",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clevel\u003e"
+    ]
+  },
+  "--logfile": {
+    "Name": "--logfile",
+    "kind": "option",
+    "description": "Specify the path to logfile",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--named-pipe-path": {
+    "Name": "--named-pipe-path",
+    "kind": "option",
+    "description": "Specify alternate named pipe path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--no-local": {
+    "Name": "--no-local",
+    "kind": "option",
+    "description": "When no-spawn is enabled, don't try to handle request in client mode if service is unavailable",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-pretty": {
+    "Name": "--no-pretty",
+    "kind": "option",
+    "description": "Don't pretty print JSON",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-save-state": {
+    "Name": "--no-save-state",
+    "kind": "option",
+    "description": "Don't save state between invocations",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-site-spawner": {
+    "Name": "--no-site-spawner",
+    "kind": "option",
+    "description": "Don't use the site or system spawner",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-spawn": {
+    "Name": "--no-spawn",
+    "kind": "option",
+    "description": "Don't try to start the service if it is not available",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--output-encoding": {
+    "Name": "--output-encoding",
+    "kind": "option",
+    "description": "CLI output encoding",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cencoding\u003e": {
+        "Name": "\u003cencoding\u003e",
+        "kind": "argument",
+        "description": "encoding",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cencoding\u003e": {
+        "Name": "\u003cencoding\u003e",
+        "kind": "argument",
+        "description": "encoding",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cencoding\u003e"
+    ]
+  },
+  "--persistent": {
+    "Name": "--persistent",
+    "kind": "option",
+    "description": "Persist and wait for further responses",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--pidfile": {
+    "Name": "--pidfile",
+    "kind": "option",
+    "description": "Specify path to pidfile",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--server-encoding": {
+    "Name": "--server-encoding",
+    "kind": "option",
+    "description": "CLI\u003c-\u003eserver encoding",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cencoding\u003e": {
+        "Name": "\u003cencoding\u003e",
+        "kind": "argument",
+        "description": "encoding",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cencoding\u003e": {
+        "Name": "\u003cencoding\u003e",
+        "kind": "argument",
+        "description": "encoding",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cencoding\u003e"
+    ]
+  },
+  "--statefile": {
+    "Name": "--statefile",
+    "kind": "option",
+    "description": "Specify path to file to hold watch and trigger state",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--unix-listener-path": {
+    "Name": "--unix-listener-path",
+    "kind": "option",
+    "description": "Specify alternate unix domain socket path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Show version number for watchman",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-S": {
+    "Name": "-S",
+    "kind": "option",
+    "description": "Don't use the site or system spawner",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Run the service in the foreground",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help for watchman",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-j": {
+    "Name": "-j",
+    "kind": "option",
+    "description": "Instead of parsing CLI arguments, take a single json object from stdin",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-n": {
+    "Name": "-n",
+    "kind": "option",
+    "description": "Don't save state between invocations",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-o": {
+    "Name": "-o",
+    "kind": "option",
+    "description": "Specify the path to logfile",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "-p": {
+    "Name": "-p",
+    "kind": "option",
+    "description": "Persist and wait for further responses",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-u": {
+    "Name": "-u",
+    "kind": "option",
+    "description": "Specify alternate unix domain socket path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Show version number for watchman",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "clock": {
+    "Name": "clock",
+    "kind": "subcommand",
+    "description": "Returns the current clock value for a watched root",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "find": {
+    "Name": "find",
+    "kind": "subcommand",
+    "description": "Finds all files that match the optional list of patterns under the specified dir",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "flush-subscriptions": {
+    "Name": "flush-subscriptions",
+    "kind": "subcommand",
+    "description": "This is designed to be used by interactive programs that have a background process or daemon maintaining a subscription to Watchman",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "get-config": {
+    "Name": "get-config",
+    "kind": "subcommand",
+    "description": "Returns the .watchmanconfig for the root",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "path": {
+        "Name": "path",
+        "kind": "subcommand",
+        "description": "The path to root",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "get-sockname": {
+    "Name": "get-sockname",
+    "kind": "subcommand",
+    "description": "Get socket path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "list-capabilities": {
+    "Name": "list-capabilities",
+    "kind": "subcommand",
+    "description": "Returns the full list of supported capabilities offered by the watchman server",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "log": {
+    "Name": "log",
+    "kind": "subcommand",
+    "description": "Generates a log line in the watchman log",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clevel\u003e"
+    ]
+  },
+  "log-level": {
+    "Name": "log-level",
+    "kind": "subcommand",
+    "description": "Changes the log level of your connection to the watchman service",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clevel\u003e"
+    ]
+  },
+  "query": {
+    "Name": "query",
+    "kind": "subcommand",
+    "description": "Executes a query against the specified root",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "shutdown-server": {
+    "Name": "shutdown-server",
+    "kind": "subcommand",
+    "description": "This causes your watchman service to exit with a normal status code",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "since": {
+    "Name": "since",
+    "kind": "subcommand",
+    "description": "Finds all files that were modified since the specified clockspec that match the optional list of patterns",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "state-enter": {
+    "Name": "state-enter",
+    "kind": "subcommand",
+    "description": "This causes a watch to be marked as being in a particular named state",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "state-leave": {
+    "Name": "state-leave",
+    "kind": "subcommand",
+    "description": "This causes a watch to no longer be marked as being in a particular named state",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "subscribe": {
+    "Name": "subscribe",
+    "kind": "subcommand",
+    "description": "Subscribes to changes against a specified root and requests that they be sent to the client via its connection",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "trigger": {
+    "Name": "trigger",
+    "kind": "subcommand",
+    "description": "This will create or replace a trigger",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "trigger-del": {
+    "Name": "trigger-del",
+    "kind": "subcommand",
+    "description": "Deletes a named trigger from the list of registered triggers",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "trigger-list": {
+    "Name": "trigger-list",
+    "kind": "subcommand",
+    "description": "Returns the set of registered triggers associated with a root directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "unsubscribe": {
+    "Name": "unsubscribe",
+    "kind": "subcommand",
+    "description": "Cancels a named subscription against the specified root",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "version": {
+    "Name": "version",
+    "kind": "subcommand",
+    "description": "The version and build information for the currently running watchman service",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "watch-del": {
+    "Name": "watch-del",
+    "kind": "subcommand",
+    "description": "Removes a watch and any associated triggers",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "watch-del-all": {
+    "Name": "watch-del-all",
+    "kind": "subcommand",
+    "description": "Removes all watches and associated triggers",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "watch-list": {
+    "Name": "watch-list",
+    "kind": "subcommand",
+    "description": "Returns a list of watched dirs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "watch-project": {
+    "Name": "watch-project",
+    "kind": "subcommand",
+    "description": "Requests that the project containing the requested dir is watched for changes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

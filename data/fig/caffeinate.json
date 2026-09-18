@@ -1,0 +1,102 @@
+{
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Create an assertion to prevent the display from sleeping",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Create an assertion to prevent the system from idle sleeping",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-m": {
+    "Name": "-m",
+    "kind": "option",
+    "description": "Create an assertion to prevent the disk from idle sleeping",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Create an assertion to prevent the system from sleeping. This assertion is valid only when system is running on AC power",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Specifies the timeout value in seconds for which this assertion has to be valid. The assertion is dropped after the specified timeout. Timeout value is not used when an utility is invoked with this command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctime\u003e": {
+        "Name": "\u003ctime\u003e",
+        "kind": "argument",
+        "description": "time",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctime\u003e": {
+        "Name": "\u003ctime\u003e",
+        "kind": "argument",
+        "description": "time",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctime\u003e"
+    ]
+  },
+  "-u": {
+    "Name": "-u",
+    "kind": "option",
+    "description": "Create an assertion to declare that user is active. If the display is off, this option turns the display on and prevents the display from going into idle sleep. If a timeout is not specified with '-t' option, then this assertion is taken with a default of 5 second timeout",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-w": {
+    "Name": "-w",
+    "kind": "option",
+    "description": "Waits for the process with the specified pid to exit. Once the the process exits, the assertion is also released.  This option is ignored when used with utility option",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpid\u003e": {
+        "Name": "\u003cpid\u003e",
+        "kind": "argument",
+        "description": "pid",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpid\u003e": {
+        "Name": "\u003cpid\u003e",
+        "kind": "argument",
+        "description": "pid",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpid\u003e"
+    ]
+  }
+}

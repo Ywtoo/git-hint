@@ -1,0 +1,912 @@
+{
+  "-": {
+    "Name": "-",
+    "kind": "option",
+    "description": "Read from stdin (e.g. 'ps aux | grep code | code -')",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--add": {
+    "Name": "--add",
+    "kind": "option",
+    "description": "Add folder(s) to the last active window",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfolder\u003e": {
+        "Name": "\u003cfolder\u003e",
+        "kind": "argument",
+        "description": "folder",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfolder\u003e": {
+        "Name": "\u003cfolder\u003e",
+        "kind": "argument",
+        "description": "folder",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfolder\u003e"
+    ]
+  },
+  "--category": {
+    "Name": "--category",
+    "kind": "option",
+    "description": "Filters installed extensions by provided category, when using --list-extensions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccategory\u003e": {
+        "Name": "\u003ccategory\u003e",
+        "kind": "argument",
+        "description": "category",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccategory\u003e": {
+        "Name": "\u003ccategory\u003e",
+        "kind": "argument",
+        "description": "category",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccategory\u003e"
+    ]
+  },
+  "--diff": {
+    "Name": "--diff",
+    "kind": "option",
+    "description": "Compare two files with each other",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile\u003e",
+      "\u003cfile\u003e"
+    ]
+  },
+  "--disable-extension": {
+    "Name": "--disable-extension",
+    "kind": "option",
+    "description": "Disable an extension",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cextension-id\u003e": {
+        "Name": "\u003cextension-id\u003e",
+        "kind": "argument",
+        "description": "extension-id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cextension-id\u003e": {
+        "Name": "\u003cextension-id\u003e",
+        "kind": "argument",
+        "description": "extension-id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cextension-id\u003e"
+    ]
+  },
+  "--disable-extensions": {
+    "Name": "--disable-extensions",
+    "kind": "option",
+    "description": "Disable all installed extensions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--disable-gpu": {
+    "Name": "--disable-gpu",
+    "kind": "option",
+    "description": "Disable GPU hardware acceleration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--enable-proposed-api": {
+    "Name": "--enable-proposed-api",
+    "kind": "option",
+    "description": "Enables proposed API features for extensions. Can receive one or more extension IDs to enable individually",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--extensions-dir": {
+    "Name": "--extensions-dir",
+    "kind": "option",
+    "description": "Set the root path for extensions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdir\u003e": {
+        "Name": "\u003cdir\u003e",
+        "kind": "argument",
+        "description": "dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdir\u003e": {
+        "Name": "\u003cdir\u003e",
+        "kind": "argument",
+        "description": "dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdir\u003e"
+    ]
+  },
+  "--goto": {
+    "Name": "--goto",
+    "kind": "option",
+    "description": "Open a file at the path on the specified line and character position",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile:line[:character]\u003e": {
+        "Name": "\u003cfile:line[:character]\u003e",
+        "kind": "argument",
+        "description": "file:line[:character]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile:line[:character]\u003e": {
+        "Name": "\u003cfile:line[:character]\u003e",
+        "kind": "argument",
+        "description": "file:line[:character]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile:line[:character]\u003e"
+    ]
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Print usage",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--inspect-brk-extensions": {
+    "Name": "--inspect-brk-extensions",
+    "kind": "option",
+    "description": "Allow debugging and profiling of extensions with the extension host being paused after start. Check the developer tools for the connection URI",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cport\u003e": {
+        "Name": "\u003cport\u003e",
+        "kind": "argument",
+        "description": "port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cport\u003e": {
+        "Name": "\u003cport\u003e",
+        "kind": "argument",
+        "description": "port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cport\u003e"
+    ]
+  },
+  "--inspect-extensions": {
+    "Name": "--inspect-extensions",
+    "kind": "option",
+    "description": "Allow debugging and profiling of extensions. Check the developer tools for the connection URI",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cport\u003e": {
+        "Name": "\u003cport\u003e",
+        "kind": "argument",
+        "description": "port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cport\u003e": {
+        "Name": "\u003cport\u003e",
+        "kind": "argument",
+        "description": "port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cport\u003e"
+    ]
+  },
+  "--install-extension": {
+    "Name": "--install-extension",
+    "kind": "option",
+    "description": "Installs or updates an extension. The argument is either an extension id or a path to a VSIX. The identifier of an extension is '${publisher}.${name}'. Use '--force' argument to update to latest version. To install a specific version provide '@${version}'. For example: 'vscode.csharp@1.2.3'",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cextension-id[@version] | path-to-vsix\u003e": {
+        "Name": "\u003cextension-id[@version] | path-to-vsix\u003e",
+        "kind": "argument",
+        "description": "extension-id[@version] | path-to-vsix",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cextension-id[@version] | path-to-vsix\u003e": {
+        "Name": "\u003cextension-id[@version] | path-to-vsix\u003e",
+        "kind": "argument",
+        "description": "extension-id[@version] | path-to-vsix",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cextension-id[@version] | path-to-vsix\u003e"
+    ]
+  },
+  "--list-extensions": {
+    "Name": "--list-extensions",
+    "kind": "option",
+    "description": "List the installed extensions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--locale": {
+    "Name": "--locale",
+    "kind": "option",
+    "description": "The locale to use (e.g. en-US or zh-TW)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clocale\u003e": {
+        "Name": "\u003clocale\u003e",
+        "kind": "argument",
+        "description": "locale",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clocale\u003e": {
+        "Name": "\u003clocale\u003e",
+        "kind": "argument",
+        "description": "locale",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clocale\u003e"
+    ]
+  },
+  "--log": {
+    "Name": "--log",
+    "kind": "option",
+    "description": "Log level to use. Default is 'info' when unspecified",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clevel\u003e"
+    ]
+  },
+  "--max-memory": {
+    "Name": "--max-memory",
+    "kind": "option",
+    "description": "Max memory size for a window (in Mbytes)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmemory\u003e": {
+        "Name": "\u003cmemory\u003e",
+        "kind": "argument",
+        "description": "memory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmemory\u003e": {
+        "Name": "\u003cmemory\u003e",
+        "kind": "argument",
+        "description": "memory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmemory\u003e"
+    ]
+  },
+  "--merge": {
+    "Name": "--merge",
+    "kind": "option",
+    "description": "Perform a three-way merge by providing paths for two modified versions of a file, the common origin of both modified versions and the output file to save merge results",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cbase\u003e": {
+        "Name": "\u003cbase\u003e",
+        "kind": "argument",
+        "description": "base",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath1\u003e": {
+        "Name": "\u003cpath1\u003e",
+        "kind": "argument",
+        "description": "path1",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath2\u003e": {
+        "Name": "\u003cpath2\u003e",
+        "kind": "argument",
+        "description": "path2",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cresult\u003e": {
+        "Name": "\u003cresult\u003e",
+        "kind": "argument",
+        "description": "result",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cbase\u003e": {
+        "Name": "\u003cbase\u003e",
+        "kind": "argument",
+        "description": "base",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath1\u003e": {
+        "Name": "\u003cpath1\u003e",
+        "kind": "argument",
+        "description": "path1",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath2\u003e": {
+        "Name": "\u003cpath2\u003e",
+        "kind": "argument",
+        "description": "path2",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cresult\u003e": {
+        "Name": "\u003cresult\u003e",
+        "kind": "argument",
+        "description": "result",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath1\u003e",
+      "\u003cpath2\u003e",
+      "\u003cbase\u003e",
+      "\u003cresult\u003e"
+    ]
+  },
+  "--new-window": {
+    "Name": "--new-window",
+    "kind": "option",
+    "description": "Force to open a new window",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--pre-release": {
+    "Name": "--pre-release",
+    "kind": "option",
+    "description": "Installs the pre-release version of the extension, when using --install-extension",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--prof-startup": {
+    "Name": "--prof-startup",
+    "kind": "option",
+    "description": "Run CPU profiler during startup",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--profile": {
+    "Name": "--profile",
+    "kind": "option",
+    "description": "Opens the provided folder or workspace with the given profile and associates the profile with the workspace. If the profile does not exist, a new empty one is created. A folder or workspace must be provided for the profile to take effect",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csettingsProfileName\u003e": {
+        "Name": "\u003csettingsProfileName\u003e",
+        "kind": "argument",
+        "description": "settingsProfileName",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csettingsProfileName\u003e": {
+        "Name": "\u003csettingsProfileName\u003e",
+        "kind": "argument",
+        "description": "settingsProfileName",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csettingsProfileName\u003e"
+    ]
+  },
+  "--reuse-window": {
+    "Name": "--reuse-window",
+    "kind": "option",
+    "description": "Force to open a file or folder in an already opened window",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--show-versions": {
+    "Name": "--show-versions",
+    "kind": "option",
+    "description": "Show versions of installed extensions, when using --list-extensions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--status": {
+    "Name": "--status",
+    "kind": "option",
+    "description": "Print process usage and diagnostics information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--sync": {
+    "Name": "--sync",
+    "kind": "option",
+    "description": "Turn sync on or off",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csync\u003e": {
+        "Name": "\u003csync\u003e",
+        "kind": "argument",
+        "description": "sync",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csync\u003e": {
+        "Name": "\u003csync\u003e",
+        "kind": "argument",
+        "description": "sync",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csync\u003e"
+    ]
+  },
+  "--telemetry": {
+    "Name": "--telemetry",
+    "kind": "option",
+    "description": "Shows all telemetry events which VS code collects",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--uninstall-extension": {
+    "Name": "--uninstall-extension",
+    "kind": "option",
+    "description": "Uninstalls an extension",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cextension-id\u003e": {
+        "Name": "\u003cextension-id\u003e",
+        "kind": "argument",
+        "description": "extension-id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cextension-id\u003e": {
+        "Name": "\u003cextension-id\u003e",
+        "kind": "argument",
+        "description": "extension-id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cextension-id\u003e"
+    ]
+  },
+  "--user-data-dir": {
+    "Name": "--user-data-dir",
+    "kind": "option",
+    "description": "Specifies the directory that user data is kept in. Can be used to open multiple distinct instances of Code",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdir\u003e": {
+        "Name": "\u003cdir\u003e",
+        "kind": "argument",
+        "description": "dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdir\u003e": {
+        "Name": "\u003cdir\u003e",
+        "kind": "argument",
+        "description": "dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdir\u003e"
+    ]
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Print verbose output (implies --wait)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Print version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--wait": {
+    "Name": "--wait",
+    "kind": "option",
+    "description": "Wait for the files to be closed before returning",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-a": {
+    "Name": "-a",
+    "kind": "option",
+    "description": "Add folder(s) to the last active window",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfolder\u003e": {
+        "Name": "\u003cfolder\u003e",
+        "kind": "argument",
+        "description": "folder",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfolder\u003e": {
+        "Name": "\u003cfolder\u003e",
+        "kind": "argument",
+        "description": "folder",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfolder\u003e"
+    ]
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Compare two files with each other",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile\u003e",
+      "\u003cfile\u003e"
+    ]
+  },
+  "-g": {
+    "Name": "-g",
+    "kind": "option",
+    "description": "Open a file at the path on the specified line and character position",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile:line[:character]\u003e": {
+        "Name": "\u003cfile:line[:character]\u003e",
+        "kind": "argument",
+        "description": "file:line[:character]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile:line[:character]\u003e": {
+        "Name": "\u003cfile:line[:character]\u003e",
+        "kind": "argument",
+        "description": "file:line[:character]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile:line[:character]\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Print usage",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-m": {
+    "Name": "-m",
+    "kind": "option",
+    "description": "Perform a three-way merge by providing paths for two modified versions of a file, the common origin of both modified versions and the output file to save merge results",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cbase\u003e": {
+        "Name": "\u003cbase\u003e",
+        "kind": "argument",
+        "description": "base",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath1\u003e": {
+        "Name": "\u003cpath1\u003e",
+        "kind": "argument",
+        "description": "path1",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath2\u003e": {
+        "Name": "\u003cpath2\u003e",
+        "kind": "argument",
+        "description": "path2",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cresult\u003e": {
+        "Name": "\u003cresult\u003e",
+        "kind": "argument",
+        "description": "result",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cbase\u003e": {
+        "Name": "\u003cbase\u003e",
+        "kind": "argument",
+        "description": "base",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath1\u003e": {
+        "Name": "\u003cpath1\u003e",
+        "kind": "argument",
+        "description": "path1",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath2\u003e": {
+        "Name": "\u003cpath2\u003e",
+        "kind": "argument",
+        "description": "path2",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cresult\u003e": {
+        "Name": "\u003cresult\u003e",
+        "kind": "argument",
+        "description": "result",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath1\u003e",
+      "\u003cpath2\u003e",
+      "\u003cbase\u003e",
+      "\u003cresult\u003e"
+    ]
+  },
+  "-n": {
+    "Name": "-n",
+    "kind": "option",
+    "description": "Force to open a new window",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "Force to open a file or folder in an already opened window",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Print process usage and diagnostics information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Print version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-w": {
+    "Name": "-w",
+    "kind": "option",
+    "description": "Wait for the files to be closed before returning",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

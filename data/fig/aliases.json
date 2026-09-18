@@ -1,0 +1,833 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Prints help information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Prints version information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-V": {
+    "Name": "-V",
+    "kind": "option",
+    "description": "Prints version information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Prints help information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "add": {
+    "Name": "add",
+    "kind": "subcommand",
+    "description": "Add an alias via the cli",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e",
+      "\u003ccommand\u003e"
+    ]
+  },
+  "clone": {
+    "Name": "clone",
+    "kind": "subcommand",
+    "description": "Clone external aliases",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--enable": {
+        "Name": "--enable",
+        "kind": "option",
+        "description": "Whether to enable the user if they are not currently enabled",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-E": {
+        "Name": "-E",
+        "kind": "option",
+        "description": "Whether to enable the user if they are not currently enabled",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003crepo_url\u003e": {
+        "Name": "\u003crepo_url\u003e",
+        "kind": "argument",
+        "description": "repo_url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cusername\u003e": {
+        "Name": "\u003cusername\u003e",
+        "kind": "argument",
+        "description": "username",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--enable": {
+        "Name": "--enable",
+        "kind": "option",
+        "description": "Whether to enable the user if they are not currently enabled",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-E": {
+        "Name": "-E",
+        "kind": "option",
+        "description": "Whether to enable the user if they are not currently enabled",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003crepo_url\u003e": {
+        "Name": "\u003crepo_url\u003e",
+        "kind": "argument",
+        "description": "repo_url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cusername\u003e": {
+        "Name": "\u003cusername\u003e",
+        "kind": "argument",
+        "description": "username",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cusername\u003e",
+      "\u003crepo_url\u003e"
+    ]
+  },
+  "directories": {
+    "Name": "directories",
+    "kind": "subcommand",
+    "description": "List all directories initialized with aliases",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "exec": {
+    "Name": "exec",
+    "kind": "subcommand",
+    "description": "Execute an alias for a given directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdirectory\u003e",
+      "\u003cname\u003e"
+    ]
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Prints help information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "init": {
+    "Name": "init",
+    "kind": "subcommand",
+    "description": "Initialize a directory for aliases",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--global": {
+        "Name": "--global",
+        "kind": "option",
+        "description": "Returns the global initialization for the app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--user": {
+        "Name": "--user",
+        "kind": "option",
+        "description": "Initialize aliases for a specific user",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cuser\u003e": {
+            "Name": "\u003cuser\u003e",
+            "kind": "argument",
+            "description": "user",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cuser\u003e": {
+            "Name": "\u003cuser\u003e",
+            "kind": "argument",
+            "description": "user",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cuser\u003e"
+        ]
+      },
+      "-g": {
+        "Name": "-g",
+        "kind": "option",
+        "description": "Returns the global initialization for the app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-u": {
+        "Name": "-u",
+        "kind": "option",
+        "description": "Initialize aliases for a specific user",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cuser\u003e": {
+            "Name": "\u003cuser\u003e",
+            "kind": "argument",
+            "description": "user",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cuser\u003e": {
+            "Name": "\u003cuser\u003e",
+            "kind": "argument",
+            "description": "user",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cuser\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--global": {
+        "Name": "--global",
+        "kind": "option",
+        "description": "Returns the global initialization for the app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--user": {
+        "Name": "--user",
+        "kind": "option",
+        "description": "Initialize aliases for a specific user",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cuser\u003e": {
+            "Name": "\u003cuser\u003e",
+            "kind": "argument",
+            "description": "user",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cuser\u003e": {
+            "Name": "\u003cuser\u003e",
+            "kind": "argument",
+            "description": "user",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cuser\u003e"
+        ]
+      },
+      "-g": {
+        "Name": "-g",
+        "kind": "option",
+        "description": "Returns the global initialization for the app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-u": {
+        "Name": "-u",
+        "kind": "option",
+        "description": "Initialize aliases for a specific user",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cuser\u003e": {
+            "Name": "\u003cuser\u003e",
+            "kind": "argument",
+            "description": "user",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cuser\u003e": {
+            "Name": "\u003cuser\u003e",
+            "kind": "argument",
+            "description": "user",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cuser\u003e"
+        ]
+      }
+    }
+  },
+  "list": {
+    "Name": "list",
+    "kind": "subcommand",
+    "description": "List the aliases available",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--directory": {
+        "Name": "--directory",
+        "kind": "option",
+        "description": "List aliases for a specific directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdirectory\u003e"
+        ]
+      },
+      "--global": {
+        "Name": "--global",
+        "kind": "option",
+        "description": "List only global aliases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--local": {
+        "Name": "--local",
+        "kind": "option",
+        "description": "List only local aliases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "List aliases for a specific directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdirectory\u003e"
+        ]
+      },
+      "-g": {
+        "Name": "-g",
+        "kind": "option",
+        "description": "List only global aliases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-l": {
+        "Name": "-l",
+        "kind": "option",
+        "description": "List only local aliases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "name": {
+        "Name": "name",
+        "kind": "option",
+        "description": "List aliases for with a specific name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--directory": {
+        "Name": "--directory",
+        "kind": "option",
+        "description": "List aliases for a specific directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdirectory\u003e"
+        ]
+      },
+      "--global": {
+        "Name": "--global",
+        "kind": "option",
+        "description": "List only global aliases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--local": {
+        "Name": "--local",
+        "kind": "option",
+        "description": "List only local aliases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "List aliases for a specific directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdirectory\u003e": {
+            "Name": "\u003cdirectory\u003e",
+            "kind": "argument",
+            "description": "directory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdirectory\u003e"
+        ]
+      },
+      "-g": {
+        "Name": "-g",
+        "kind": "option",
+        "description": "List only global aliases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-l": {
+        "Name": "-l",
+        "kind": "option",
+        "description": "List only local aliases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "pull": {
+    "Name": "pull",
+    "kind": "subcommand",
+    "description": "Pull a cloned user's aliases",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cusername\u003e": {
+        "Name": "\u003cusername\u003e",
+        "kind": "argument",
+        "description": "username",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cusername\u003e": {
+        "Name": "\u003cusername\u003e",
+        "kind": "argument",
+        "description": "username",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cusername\u003e"
+    ]
+  },
+  "rehash": {
+    "Name": "rehash",
+    "kind": "subcommand",
+    "description": "Update the aliases",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "remove": {
+    "Name": "remove",
+    "kind": "subcommand",
+    "description": "Remove an alias via the cli",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "users": {
+    "Name": "users",
+    "kind": "subcommand",
+    "description": "List the users",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "disable": {
+        "Name": "disable",
+        "kind": "subcommand",
+        "description": "Disable a user's aliases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cusername\u003e": {
+            "Name": "\u003cusername\u003e",
+            "kind": "argument",
+            "description": "username",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cusername\u003e": {
+            "Name": "\u003cusername\u003e",
+            "kind": "argument",
+            "description": "username",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cusername\u003e"
+        ]
+      },
+      "enable": {
+        "Name": "enable",
+        "kind": "subcommand",
+        "description": "Enable a user's aliases",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cusername\u003e": {
+            "Name": "\u003cusername\u003e",
+            "kind": "argument",
+            "description": "username",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cusername\u003e": {
+            "Name": "\u003cusername\u003e",
+            "kind": "argument",
+            "description": "username",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cusername\u003e"
+        ]
+      },
+      "help": {
+        "Name": "help",
+        "kind": "subcommand",
+        "description": "Prints this message or the help of the given subcommand(s)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "move": {
+        "Name": "move",
+        "kind": "subcommand",
+        "description": "Move a user up or down the prioritization list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprioritization\u003e": {
+            "Name": "\u003cprioritization\u003e",
+            "kind": "argument",
+            "description": "prioritization",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cusername\u003e": {
+            "Name": "\u003cusername\u003e",
+            "kind": "argument",
+            "description": "username",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprioritization\u003e": {
+            "Name": "\u003cprioritization\u003e",
+            "kind": "argument",
+            "description": "prioritization",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cusername\u003e": {
+            "Name": "\u003cusername\u003e",
+            "kind": "argument",
+            "description": "username",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cusername\u003e",
+          "\u003cprioritization\u003e"
+        ]
+      },
+      "use": {
+        "Name": "use",
+        "kind": "subcommand",
+        "description": "Assign a user to the top of the priority list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cusername\u003e": {
+            "Name": "\u003cusername\u003e",
+            "kind": "argument",
+            "description": "username",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cusername\u003e": {
+            "Name": "\u003cusername\u003e",
+            "kind": "argument",
+            "description": "username",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cusername\u003e"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,392 @@
+{
+  "--adopt": {
+    "Name": "--adopt",
+    "kind": "option",
+    "description": "This behaviour is specifically intended to alter the contents of your stow directory.  If you do not want that, this option is not for you",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--defer": {
+    "Name": "--defer",
+    "kind": "option",
+    "description": "Don't stow files beginning with this Perl regex if the file is already stowed to another package",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cREGEX\u003e": {
+        "Name": "\u003cREGEX\u003e",
+        "kind": "argument",
+        "description": "REGEX",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cREGEX\u003e": {
+        "Name": "\u003cREGEX\u003e",
+        "kind": "argument",
+        "description": "REGEX",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cREGEX\u003e"
+    ]
+  },
+  "--delete": {
+    "Name": "--delete",
+    "kind": "option",
+    "description": "Unstow the packages that follow this option from the target directory rather than installing them",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--dir": {
+    "Name": "--dir",
+    "kind": "option",
+    "description": "Set the stow directory to 'DIR' instead of the current directory. This also has the effect of making the default target directory be the parent of 'DIR'",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cDIR\u003e": {
+        "Name": "\u003cDIR\u003e",
+        "kind": "argument",
+        "description": "DIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cDIR\u003e": {
+        "Name": "\u003cDIR\u003e",
+        "kind": "argument",
+        "description": "DIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cDIR\u003e"
+    ]
+  },
+  "--dotfiles": {
+    "Name": "--dotfiles",
+    "kind": "option",
+    "description": "Enable special handling for 'dotfiles' (files or folders whose name begins with a period) in the package directory. If this option is enabled, Stow will add a preprocessing step for each file or folder whose name begins with 'dot - ', and replace the 'dot- ' prefix in the name by a period (.). This is useful when Stow is used to manage collections of dotfiles, to avoid having a package directory full of hidden files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show Stow command syntax, and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--ignore": {
+    "Name": "--ignore",
+    "kind": "option",
+    "description": "Ignore files ending in this Perl regex",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cREGEX\u003e": {
+        "Name": "\u003cREGEX\u003e",
+        "kind": "argument",
+        "description": "REGEX",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cREGEX\u003e": {
+        "Name": "\u003cREGEX\u003e",
+        "kind": "argument",
+        "description": "REGEX",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cREGEX\u003e"
+    ]
+  },
+  "--no": {
+    "Name": "--no",
+    "kind": "option",
+    "description": "Do not perform any operations that modify the filesystem; merely show what would happen",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-folding": {
+    "Name": "--no-folding",
+    "kind": "option",
+    "description": "Disable folding of newly stowed directories when stowing, and refolding of newly foldable directories when unstowing",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--override": {
+    "Name": "--override",
+    "kind": "option",
+    "description": "Force stowing files beginning with this Perl regex if the file is already stowed to another package",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cREGEX\u003e": {
+        "Name": "\u003cREGEX\u003e",
+        "kind": "argument",
+        "description": "REGEX",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cREGEX\u003e": {
+        "Name": "\u003cREGEX\u003e",
+        "kind": "argument",
+        "description": "REGEX",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cREGEX\u003e"
+    ]
+  },
+  "--restow": {
+    "Name": "--restow",
+    "kind": "option",
+    "description": "Restow packages (first unstow, then stow again). This is useful for pruning obsolete symlinks from the target tree after updating the software in a package",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--stow": {
+    "Name": "--stow",
+    "kind": "option",
+    "description": "Stow the packages that follow this option into the target directory. This is the default action and so can be omitted if you are only stowing packages rather than performing a mixture of stow/delete/restow actions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--target": {
+    "Name": "--target",
+    "kind": "option",
+    "description": "Set the target directory to 'DIR' instead of the parent of the stow directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cDIR\u003e": {
+        "Name": "\u003cDIR\u003e",
+        "kind": "argument",
+        "description": "DIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cDIR\u003e": {
+        "Name": "\u003cDIR\u003e",
+        "kind": "argument",
+        "description": "DIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cDIR\u003e"
+    ]
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Send verbose output to standard error describing what Stow is doing. Verbosity levels are from 0 to 5; 0 is the default. Using '-v' or '--verbose' increases the verbosity by one; using `--verbose=N' sets it to N",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clevel\u003e"
+    ]
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Show Stow version, and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-D": {
+    "Name": "-D",
+    "kind": "option",
+    "description": "Unstow the packages that follow this option from the target directory rather than installing them",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-R": {
+    "Name": "-R",
+    "kind": "option",
+    "description": "Restow packages (first unstow, then stow again). This is useful for pruning obsolete symlinks from the target tree after updating the software in a package",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-S": {
+    "Name": "-S",
+    "kind": "option",
+    "description": "Stow the packages that follow this option into the target directory. This is the default action and so can be omitted if you are only stowing packages rather than performing a mixture of stow/delete/restow actions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-V": {
+    "Name": "-V",
+    "kind": "option",
+    "description": "Show Stow version, and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Set the stow directory to 'DIR' instead of the current directory. This also has the effect of making the default target directory be the parent of 'DIR'",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cDIR\u003e": {
+        "Name": "\u003cDIR\u003e",
+        "kind": "argument",
+        "description": "DIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cDIR\u003e": {
+        "Name": "\u003cDIR\u003e",
+        "kind": "argument",
+        "description": "DIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cDIR\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show Stow command syntax, and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-n": {
+    "Name": "-n",
+    "kind": "option",
+    "description": "Do not perform any operations that modify the filesystem; merely show what would happen",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Set the target directory to 'DIR' instead of the parent of the stow directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cDIR\u003e": {
+        "Name": "\u003cDIR\u003e",
+        "kind": "argument",
+        "description": "DIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cDIR\u003e": {
+        "Name": "\u003cDIR\u003e",
+        "kind": "argument",
+        "description": "DIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cDIR\u003e"
+    ]
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Send verbose output to standard error describing what Stow is doing. Verbosity levels are from 0 to 5; 0 is the default. Using '-v' or '--verbose' increases the verbosity by one; using `--verbose=N' sets it to N",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clevel\u003e"
+    ]
+  }
+}

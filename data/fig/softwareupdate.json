@@ -1,0 +1,332 @@
+{
+  "--agree-to-license": {
+    "Name": "--agree-to-license",
+    "kind": "option",
+    "description": "Agree to the software license agreement without user interaction",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--background": {
+    "Name": "--background",
+    "kind": "subcommand",
+    "description": "Trigger a background scan and update operation",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--dump-state": {
+    "Name": "--dump-state",
+    "kind": "subcommand",
+    "description": "Log the internal state of the SU daemon to /var/log/install.log",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--evaluate-products": {
+    "Name": "--evaluate-products",
+    "kind": "subcommand",
+    "description": "Evaluate a list of product keys specified by the --products option",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--fetch-full-installer": {
+    "Name": "--fetch-full-installer",
+    "kind": "subcommand",
+    "description": "Install the latest recommended macOS Installer",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--force": {
+    "Name": "--force",
+    "kind": "option",
+    "description": "Force an operation to complete.  Use with --background to trigger a background scan regardless of \"Automatically check\" pref",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--full-installer-version": {
+    "Name": "--full-installer-version",
+    "kind": "subcommand",
+    "description": "The version of macOS to install",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cversion\u003e"
+    ]
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for softwareupdate",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--history": {
+    "Name": "--history",
+    "kind": "subcommand",
+    "description": "Show the install history.  By default, only displays updates installed by softwareupdate",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "Include all processes in history (including App installs)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "Include all processes in history (including App installs)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "--install-rosetta": {
+    "Name": "--install-rosetta",
+    "kind": "subcommand",
+    "description": "Install Rosetta 2",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--list-full-installers": {
+    "Name": "--list-full-installers",
+    "kind": "subcommand",
+    "description": "List the available macOS Installers",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-scan": {
+    "Name": "--no-scan",
+    "kind": "option",
+    "description": "Do not scan when listing or installing updates (use available updates previously scanned)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--product-types": {
+    "Name": "--product-types",
+    "kind": "option",
+    "description": "Limit a scan to a particular product type only - ignoring all others",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctype\u003e"
+    ]
+  },
+  "--products": {
+    "Name": "--products",
+    "kind": "option",
+    "description": "A comma-separated (no spaces) list of product keys to operate on",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Enable verbose output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "subcommand",
+    "description": "Download Only",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help for softwareupdate",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "subcommand",
+    "description": "Install",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "All appropriate updates",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--recommended": {
+        "Name": "--recommended",
+        "kind": "option",
+        "description": "Only recommended updates",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--restart": {
+        "Name": "--restart",
+        "kind": "option",
+        "description": "Automatically restart (or shut down) if required to complete installation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-R": {
+        "Name": "-R",
+        "kind": "option",
+        "description": "Automatically restart (or shut down) if required to complete installation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-a": {
+        "Name": "-a",
+        "kind": "option",
+        "description": "All appropriate updates",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Only recommended updates",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003clabel\u003e": {
+        "Name": "\u003clabel\u003e",
+        "kind": "argument",
+        "description": "label",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "All appropriate updates",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--recommended": {
+        "Name": "--recommended",
+        "kind": "option",
+        "description": "Only recommended updates",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--restart": {
+        "Name": "--restart",
+        "kind": "option",
+        "description": "Automatically restart (or shut down) if required to complete installation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-R": {
+        "Name": "-R",
+        "kind": "option",
+        "description": "Automatically restart (or shut down) if required to complete installation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-a": {
+        "Name": "-a",
+        "kind": "option",
+        "description": "All appropriate updates",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Only recommended updates",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003clabel\u003e": {
+        "Name": "\u003clabel\u003e",
+        "kind": "argument",
+        "description": "label",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "subcommand",
+    "description": "List all appropriate update labels",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

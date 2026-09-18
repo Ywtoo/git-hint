@@ -1,0 +1,547 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for bwdc",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "clear-cache": {
+    "Name": "clear-cache",
+    "kind": "subcommand",
+    "description": "The clear-cache command allows you to clear cached data that the application stores while performing sync operations",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "config": {
+    "Name": "config",
+    "kind": "subcommand",
+    "description": "The config command allows you to specify your directory settings",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003csetting\u003e": {
+        "Name": "\u003csetting\u003e",
+        "kind": "argument",
+        "description": "setting",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "azure.key": {
+        "Name": "azure.key",
+        "kind": "subcommand",
+        "description": "Azure AD secret key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ckey\u003e": {
+            "Name": "\u003ckey\u003e",
+            "kind": "argument",
+            "description": "key",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ckey\u003e": {
+            "Name": "\u003ckey\u003e",
+            "kind": "argument",
+            "description": "key",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ckey\u003e"
+        ]
+      },
+      "directory": {
+        "Name": "directory",
+        "kind": "subcommand",
+        "description": "Type of directory to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdirectory-type\u003e": {
+            "Name": "\u003cdirectory-type\u003e",
+            "kind": "argument",
+            "description": "directory-type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdirectory-type\u003e": {
+            "Name": "\u003cdirectory-type\u003e",
+            "kind": "argument",
+            "description": "directory-type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdirectory-type\u003e"
+        ]
+      },
+      "gsuite.key": {
+        "Name": "gsuite.key",
+        "kind": "subcommand",
+        "description": "Google Workspace/GSuite private key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ckey\u003e": {
+            "Name": "\u003ckey\u003e",
+            "kind": "argument",
+            "description": "key",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ckey\u003e": {
+            "Name": "\u003ckey\u003e",
+            "kind": "argument",
+            "description": "key",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ckey\u003e"
+        ]
+      },
+      "ldap.password": {
+        "Name": "ldap.password",
+        "kind": "subcommand",
+        "description": "Password for connection to the LDAP server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpassword\u003e": {
+            "Name": "\u003cpassword\u003e",
+            "kind": "argument",
+            "description": "password",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpassword\u003e": {
+            "Name": "\u003cpassword\u003e",
+            "kind": "argument",
+            "description": "password",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpassword\u003e"
+        ]
+      },
+      "okta.token": {
+        "Name": "okta.token",
+        "kind": "subcommand",
+        "description": "Okta token",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctoken\u003e"
+        ]
+      },
+      "onelogin.secret": {
+        "Name": "onelogin.secret",
+        "kind": "subcommand",
+        "description": "OneLogin client secret",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csecret\u003e": {
+            "Name": "\u003csecret\u003e",
+            "kind": "argument",
+            "description": "secret",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csecret\u003e": {
+            "Name": "\u003csecret\u003e",
+            "kind": "argument",
+            "description": "secret",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csecret\u003e"
+        ]
+      },
+      "server": {
+        "Name": "server",
+        "kind": "subcommand",
+        "description": "URL of your self-hosted installation (e.g. https://my.url.com) or https://vault.bitwarden.eu",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cserver-url\u003e": {
+            "Name": "\u003cserver-url\u003e",
+            "kind": "argument",
+            "description": "server-url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cserver-url\u003e": {
+            "Name": "\u003cserver-url\u003e",
+            "kind": "argument",
+            "description": "server-url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cserver-url\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003csetting\u003e": {
+        "Name": "\u003csetting\u003e",
+        "kind": "argument",
+        "description": "setting",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csetting\u003e",
+      "\u003cvalue\u003e"
+    ]
+  },
+  "data-file": {
+    "Name": "data-file",
+    "kind": "subcommand",
+    "description": "Path to data.json database file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "last-sync": {
+    "Name": "last-sync",
+    "kind": "subcommand",
+    "description": "The last-sync command returns an ISO 8601 timestamp for the last sync operation that was performed for users or groups. You must specify either users or groups as an \u003cobject\u003e to run the command against- Returns an empty response if no sync has been performed for the given object",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cObject\u003e": {
+        "Name": "\u003cObject\u003e",
+        "kind": "argument",
+        "description": "Object",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cObject\u003e": {
+        "Name": "\u003cObject\u003e",
+        "kind": "argument",
+        "description": "Object",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cObject\u003e"
+    ]
+  },
+  "login": {
+    "Name": "login",
+    "kind": "subcommand",
+    "description": "Log in to Directory Connector",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cclient_id\u003e": {
+        "Name": "\u003cclient_id\u003e",
+        "kind": "argument",
+        "description": "client_id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cclient_secret\u003e": {
+        "Name": "\u003cclient_secret\u003e",
+        "kind": "argument",
+        "description": "client_secret",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cclient_id\u003e": {
+        "Name": "\u003cclient_id\u003e",
+        "kind": "argument",
+        "description": "client_id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cclient_secret\u003e": {
+        "Name": "\u003cclient_secret\u003e",
+        "kind": "argument",
+        "description": "client_secret",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "logout": {
+    "Name": "logout",
+    "kind": "subcommand",
+    "description": "Log out of Directory Connector",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "sync": {
+    "Name": "sync",
+    "kind": "subcommand",
+    "description": "Run a live sync operation and push data to your Bitwarden organization",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "test": {
+    "Name": "test",
+    "kind": "subcommand",
+    "description": "Prints a JSON formatted array of groups and users that would be synced to your Bitwarden organization",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--last": {
+        "Name": "--last",
+        "kind": "option",
+        "description": "Test only the changes since the last successful sync",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--last": {
+        "Name": "--last",
+        "kind": "option",
+        "description": "Test only the changes since the last successful sync",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "update": {
+    "Name": "update",
+    "kind": "subcommand",
+    "description": "The update command allows you to check if your Directory Connector CLI is up-to-date",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

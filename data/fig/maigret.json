@@ -1,0 +1,896 @@
+{
+  "--all-sites": {
+    "Name": "--all-sites",
+    "kind": "option",
+    "description": "Use all sites for scan",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--cookies-jar-file": {
+    "Name": "--cookies-jar-file",
+    "kind": "option",
+    "description": "File with cookies",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cCookie file\u003e": {
+        "Name": "\u003cCookie file\u003e",
+        "kind": "argument",
+        "description": "Cookie file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cCookie file\u003e": {
+        "Name": "\u003cCookie file\u003e",
+        "kind": "argument",
+        "description": "Cookie file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cCookie file\u003e"
+    ]
+  },
+  "--csv": {
+    "Name": "--csv",
+    "kind": "option",
+    "description": "Create a CSV report (one report per username)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--db": {
+    "Name": "--db",
+    "kind": "option",
+    "description": "Load Maigret database from a JSON file or HTTP web resource",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cDB path\u003e": {
+        "Name": "\u003cDB path\u003e",
+        "kind": "argument",
+        "description": "DB path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cDB path\u003e": {
+        "Name": "\u003cDB path\u003e",
+        "kind": "argument",
+        "description": "DB path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cDB path\u003e"
+    ]
+  },
+  "--debug": {
+    "Name": "--debug",
+    "kind": "option",
+    "description": "Display extra/service/debug information and metrics, save responses in debug.log",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--folderoutput": {
+    "Name": "--folderoutput",
+    "kind": "option",
+    "description": "If using multiple usernames, the output of the results will be saved to this folder",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cReports path\u003e": {
+        "Name": "\u003cReports path\u003e",
+        "kind": "argument",
+        "description": "Reports path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cReports path\u003e": {
+        "Name": "\u003cReports path\u003e",
+        "kind": "argument",
+        "description": "Reports path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cReports path\u003e"
+    ]
+  },
+  "--graph": {
+    "Name": "--graph",
+    "kind": "option",
+    "description": "Create a graph report (one report per username)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--html": {
+    "Name": "--html",
+    "kind": "option",
+    "description": "Create an HTML report (one report per username)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--i2p-proxy": {
+    "Name": "--i2p-proxy",
+    "kind": "option",
+    "description": "Specify URL of your I2P gateway. Default is http://127.0.0.1:4444",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cI2P URL\u003e": {
+        "Name": "\u003cI2P URL\u003e",
+        "kind": "argument",
+        "description": "I2P URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cI2P URL\u003e": {
+        "Name": "\u003cI2P URL\u003e",
+        "kind": "argument",
+        "description": "I2P URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cI2P URL\u003e"
+    ]
+  },
+  "--id-type": {
+    "Name": "--id-type",
+    "kind": "option",
+    "description": "Specify identifier(s) type (default: username)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cType\u003e": {
+        "Name": "\u003cType\u003e",
+        "kind": "argument",
+        "description": "Type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cType\u003e": {
+        "Name": "\u003cType\u003e",
+        "kind": "argument",
+        "description": "Type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cType\u003e"
+    ]
+  },
+  "--ignore-ids": {
+    "Name": "--ignore-ids",
+    "kind": "option",
+    "description": "Do not make search by the specified username or other ids",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cIgnored ids\u003e": {
+        "Name": "\u003cIgnored ids\u003e",
+        "kind": "argument",
+        "description": "Ignored ids",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cIgnored ids\u003e": {
+        "Name": "\u003cIgnored ids\u003e",
+        "kind": "argument",
+        "description": "Ignored ids",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cIgnored ids\u003e"
+    ]
+  },
+  "--json": {
+    "Name": "--json",
+    "kind": "option",
+    "description": "Generate a JSON report of specific type: simple, ndjson (one report per username)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cType\u003e": {
+        "Name": "\u003cType\u003e",
+        "kind": "argument",
+        "description": "Type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cType\u003e": {
+        "Name": "\u003cType\u003e",
+        "kind": "argument",
+        "description": "Type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cType\u003e"
+    ]
+  },
+  "--max-connections": {
+    "Name": "--max-connections",
+    "kind": "option",
+    "description": "Allowed number of concurrent connections (default {settings.max_connections})",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cConnections\u003e": {
+        "Name": "\u003cConnections\u003e",
+        "kind": "argument",
+        "description": "Connections",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cConnections\u003e": {
+        "Name": "\u003cConnections\u003e",
+        "kind": "argument",
+        "description": "Connections",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cConnections\u003e"
+    ]
+  },
+  "--no-color": {
+    "Name": "--no-color",
+    "kind": "option",
+    "description": "Don't color terminal output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-extracting": {
+    "Name": "--no-extracting",
+    "kind": "option",
+    "description": "Disable parsing pages for additional data and other usernames",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-progressbar": {
+    "Name": "--no-progressbar",
+    "kind": "option",
+    "description": "Don't show progressbar",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-recursion": {
+    "Name": "--no-recursion",
+    "kind": "option",
+    "description": "Disable recursive search by additional data extracted from pages",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--parse": {
+    "Name": "--parse",
+    "kind": "option",
+    "description": "Parse page by URL and extract username and IDs to use for search",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cParse URL\u003e": {
+        "Name": "\u003cParse URL\u003e",
+        "kind": "argument",
+        "description": "Parse URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cParse URL\u003e": {
+        "Name": "\u003cParse URL\u003e",
+        "kind": "argument",
+        "description": "Parse URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cParse URL\u003e"
+    ]
+  },
+  "--pdf": {
+    "Name": "--pdf",
+    "kind": "option",
+    "description": "Create a PDF report (one report per username)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--print-errors": {
+    "Name": "--print-errors",
+    "kind": "option",
+    "description": "Print errors messages: connection, captcha, site country ban, etc",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--print-not-found": {
+    "Name": "--print-not-found",
+    "kind": "option",
+    "description": "Print sites where the username was not found",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--proxy": {
+    "Name": "--proxy",
+    "kind": "option",
+    "description": "Make requests over a proxy. e.g. socks5://127.0.0.1:1080",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cProxy URL\u003e": {
+        "Name": "\u003cProxy URL\u003e",
+        "kind": "argument",
+        "description": "Proxy URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cProxy URL\u003e": {
+        "Name": "\u003cProxy URL\u003e",
+        "kind": "argument",
+        "description": "Proxy URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cProxy URL\u003e"
+    ]
+  },
+  "--reports-sorting": {
+    "Name": "--reports-sorting",
+    "kind": "option",
+    "description": "Method of results sorting in reports (default: in order of getting the result)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cType\u003e": {
+        "Name": "\u003cType\u003e",
+        "kind": "argument",
+        "description": "Type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cType\u003e": {
+        "Name": "\u003cType\u003e",
+        "kind": "argument",
+        "description": "Type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cType\u003e"
+    ]
+  },
+  "--retries": {
+    "Name": "--retries",
+    "kind": "option",
+    "description": "Attempts to restart temporarily failed requests",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cRetries\u003e": {
+        "Name": "\u003cRetries\u003e",
+        "kind": "argument",
+        "description": "Retries",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cRetries\u003e": {
+        "Name": "\u003cRetries\u003e",
+        "kind": "argument",
+        "description": "Retries",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cRetries\u003e"
+    ]
+  },
+  "--self-check": {
+    "Name": "--self-check",
+    "kind": "option",
+    "description": "Do self check for sites and database and disable non-working ones",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--site": {
+    "Name": "--site",
+    "kind": "option",
+    "description": "Limit analysis to just the specified sites (multiple option)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSite name\u003e": {
+        "Name": "\u003cSite name\u003e",
+        "kind": "argument",
+        "description": "Site name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSite name\u003e": {
+        "Name": "\u003cSite name\u003e",
+        "kind": "argument",
+        "description": "Site name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSite name\u003e"
+    ]
+  },
+  "--stats": {
+    "Name": "--stats",
+    "kind": "option",
+    "description": "Show database statistics (most frequent sites engines and tags)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--submit": {
+    "Name": "--submit",
+    "kind": "option",
+    "description": "URL of existing profile in new site to submit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSite URL\u003e": {
+        "Name": "\u003cSite URL\u003e",
+        "kind": "argument",
+        "description": "Site URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSite URL\u003e": {
+        "Name": "\u003cSite URL\u003e",
+        "kind": "argument",
+        "description": "Site URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSite URL\u003e"
+    ]
+  },
+  "--tags": {
+    "Name": "--tags",
+    "kind": "option",
+    "description": "Specify tags of sites (see `--stats`)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cTags\u003e": {
+        "Name": "\u003cTags\u003e",
+        "kind": "argument",
+        "description": "Tags",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cTags\u003e": {
+        "Name": "\u003cTags\u003e",
+        "kind": "argument",
+        "description": "Tags",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cTags\u003e"
+    ]
+  },
+  "--timeout": {
+    "Name": "--timeout",
+    "kind": "option",
+    "description": "Time in seconds to wait for response to requests (default {settings.timeout}s). A longer timeout will be more likely to get results from slow sites. On the other hand, this may cause a long delay to gather all results",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cTimeout\u003e": {
+        "Name": "\u003cTimeout\u003e",
+        "kind": "argument",
+        "description": "Timeout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cTimeout\u003e": {
+        "Name": "\u003cTimeout\u003e",
+        "kind": "argument",
+        "description": "Timeout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cTimeout\u003e"
+    ]
+  },
+  "--tor-proxy": {
+    "Name": "--tor-proxy",
+    "kind": "option",
+    "description": "Specify URL of your Tor gateway. Default is socks5://127.0.0.1:9050",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cTor Proxy URL\u003e": {
+        "Name": "\u003cTor Proxy URL\u003e",
+        "kind": "argument",
+        "description": "Tor Proxy URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cTor Proxy URL\u003e": {
+        "Name": "\u003cTor Proxy URL\u003e",
+        "kind": "argument",
+        "description": "Tor Proxy URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cTor Proxy URL\u003e"
+    ]
+  },
+  "--txt": {
+    "Name": "--txt",
+    "kind": "option",
+    "description": "Create a TXT report (one report per username)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--use-disabled-sites": {
+    "Name": "--use-disabled-sites",
+    "kind": "option",
+    "description": "Use disabled sites to search (may cause many false positives)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Display extra information and metrics",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Display version information and dependencies",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--vv": {
+    "Name": "--vv",
+    "kind": "option",
+    "description": "Display extra/service information and metrics",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--with-domains": {
+    "Name": "--with-domains",
+    "kind": "option",
+    "description": "Enable (experimental) feature of checking domains on usernames",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--xmind": {
+    "Name": "--xmind",
+    "kind": "option",
+    "description": "Create a XMind 8 mindmap report (one report per username)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-C": {
+    "Name": "-C",
+    "kind": "option",
+    "description": "Create a CSV report (one report per username)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-G": {
+    "Name": "-G",
+    "kind": "option",
+    "description": "Create a graph report (one report per username)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-H": {
+    "Name": "-H",
+    "kind": "option",
+    "description": "Create an HTML report (one report per username)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-J": {
+    "Name": "-J",
+    "kind": "option",
+    "description": "Generate a JSON report of specific type: simple, ndjson (one report per username)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cType\u003e": {
+        "Name": "\u003cType\u003e",
+        "kind": "argument",
+        "description": "Type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cType\u003e": {
+        "Name": "\u003cType\u003e",
+        "kind": "argument",
+        "description": "Type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cType\u003e"
+    ]
+  },
+  "-P": {
+    "Name": "-P",
+    "kind": "option",
+    "description": "Create a PDF report (one report per username)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-T": {
+    "Name": "-T",
+    "kind": "option",
+    "description": "Create a TXT report (one report per username)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-X": {
+    "Name": "-X",
+    "kind": "option",
+    "description": "Create a XMind 8 mindmap report (one report per username)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-a": {
+    "Name": "-a",
+    "kind": "option",
+    "description": "Use all sites for scan",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Display extra/service/debug information and metrics, save responses in debug.log",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-fo": {
+    "Name": "-fo",
+    "kind": "option",
+    "description": "If using multiple usernames, the output of the results will be saved to this folder",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cReports path\u003e": {
+        "Name": "\u003cReports path\u003e",
+        "kind": "argument",
+        "description": "Reports path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cReports path\u003e": {
+        "Name": "\u003cReports path\u003e",
+        "kind": "argument",
+        "description": "Reports path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cReports path\u003e"
+    ]
+  },
+  "-info": {
+    "Name": "-info",
+    "kind": "option",
+    "description": "Display extra/service information and metrics",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-n": {
+    "Name": "-n",
+    "kind": "option",
+    "description": "Allowed number of concurrent connections (default {settings.max_connections})",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cConnections\u003e": {
+        "Name": "\u003cConnections\u003e",
+        "kind": "argument",
+        "description": "Connections",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cConnections\u003e": {
+        "Name": "\u003cConnections\u003e",
+        "kind": "argument",
+        "description": "Connections",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cConnections\u003e"
+    ]
+  },
+  "-p": {
+    "Name": "-p",
+    "kind": "option",
+    "description": "Make requests over a proxy. e.g. socks5://127.0.0.1:1080",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cProxy URL\u003e": {
+        "Name": "\u003cProxy URL\u003e",
+        "kind": "argument",
+        "description": "Proxy URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cProxy URL\u003e": {
+        "Name": "\u003cProxy URL\u003e",
+        "kind": "argument",
+        "description": "Proxy URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cProxy URL\u003e"
+    ]
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Display extra information and metrics",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-vvv": {
+    "Name": "-vvv",
+    "kind": "option",
+    "description": "Display extra/service/debug information and metrics, save responses in debug.log",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003cuser\u003e": {
+    "Name": "\u003cuser\u003e",
+    "kind": "argument",
+    "description": "user",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

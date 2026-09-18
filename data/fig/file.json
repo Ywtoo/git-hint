@@ -1,0 +1,676 @@
+{
+  "--apple": {
+    "Name": "--apple",
+    "kind": "option",
+    "description": "Causes the file command to output the file type and creator code\nas used by older MacOS versions.  The code consists of eight\nletters, the first describing the file type, the latter the\ncreator.  This option works properly only for file formats that\nhave the apple-style output defined",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--brief": {
+    "Name": "--brief",
+    "kind": "option",
+    "description": "Do not prepend filenames to output lines (brief mode)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--checking-printoug": {
+    "Name": "--checking-printoug",
+    "kind": "option",
+    "description": "Cause a checking printout of the parsed form of the magic file.\nThis is usually used in conjunction with the -m option to debug a\nnew magic file before installing it",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--compile": {
+    "Name": "--compile",
+    "kind": "option",
+    "description": "Write a magic.mgc output file that contains a pre-parsed version\nof the magic file or directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--dereference": {
+    "Name": "--dereference",
+    "kind": "option",
+    "description": "This option causes symlinks to be followed, as the like-named\noption in ls(1) (on systems that support symbolic links).  This\nis the default behavior",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--exclude": {
+    "Name": "--exclude",
+    "kind": "option",
+    "description": "Exclude the test named in testname from the list of tests made to\ndetermine the file type",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctestname\u003e": {
+        "Name": "\u003ctestname\u003e",
+        "kind": "argument",
+        "description": "testname",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctestname\u003e": {
+        "Name": "\u003ctestname\u003e",
+        "kind": "argument",
+        "description": "testname",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctestname\u003e"
+    ]
+  },
+  "--exclude-quiet": {
+    "Name": "--exclude-quiet",
+    "kind": "option",
+    "description": "Like --exclude but ignore tests that file does not know about.\nThis is intended for compatibility with older versions of file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--extension": {
+    "Name": "--extension",
+    "kind": "option",
+    "description": "Print a slash-separated list of valid extensions for the file\ntype found",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--files-from": {
+    "Name": "--files-from",
+    "kind": "option",
+    "description": "Read the names of the files to be examined from namefile (one per\nline) before the argument list.  Either namefile or at least one\nfilename argument must be present; to test the standard input,\nuse ‘-’ as a filename argument.  Please note that namefile is\nunwrapped and the enclosed filenames are processed when this\noption is encountered and before any further options processing\nis done.  This allows one to process multiple lists of files with\ndifferent command line arguments on the same file invocation.\nThus if you want to set the delimiter, you need to do it before\nyou specify the list of files, like: \"-F @ -f namefile\", instead\nof: \"-f namefile -F @\"",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnamefile\u003e": {
+        "Name": "\u003cnamefile\u003e",
+        "kind": "argument",
+        "description": "namefile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnamefile\u003e": {
+        "Name": "\u003cnamefile\u003e",
+        "kind": "argument",
+        "description": "namefile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnamefile\u003e"
+    ]
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Print a help message and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--keep-going": {
+    "Name": "--keep-going",
+    "kind": "option",
+    "description": "Don't stop at the first match, keep going.  Subsequent matches\nwill be have the string '\\012- ' prepended.  (If you want a\nnewline, see the -r option.)  The magic pattern with the highest\nstrength (see the -l option) comes first",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--list": {
+    "Name": "--list",
+    "kind": "option",
+    "description": "Shows a list of patterns and their strength sorted descending by\nmagic(5) strength which is used for the matching (see also the -k\noption)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--magic-file": {
+    "Name": "--magic-file",
+    "kind": "option",
+    "description": "Specify an alternate list of files and directories containing\nmagic.  This can be a single item, or a colon-separated list.  If\na compiled magic file is found alongside a file or directory, it\nwill be used instead",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clist\u003e"
+    ]
+  },
+  "--mime": {
+    "Name": "--mime",
+    "kind": "option",
+    "description": "Causes the file command to output mime type strings rather than\nthe more traditional human readable ones.  Thus it may say\n'text/plain; charset=us-ascii' rather than \"ASCII text\"",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--mime-encoding": {
+    "Name": "--mime-encoding",
+    "kind": "option",
+    "description": "Like -I, but print only the specified element(s)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--mime-type": {
+    "Name": "--mime-type",
+    "kind": "option",
+    "description": "Like -I, but print only the specified element(s)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-buffer": {
+    "Name": "--no-buffer",
+    "kind": "option",
+    "description": "Force stdout to be flushed after checking each file.  This is\nonly useful if checking a list of files.  It is intended to be\nused by programs that want filetype output from a pipe",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-dereference": {
+    "Name": "--no-dereference",
+    "kind": "option",
+    "description": "This option causes symlinks not to be followed (on systems that\nsupport symbolic links)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--parameter": {
+    "Name": "--parameter",
+    "kind": "option",
+    "description": "Set various parameter limits",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname=value\u003e": {
+        "Name": "\u003cname=value\u003e",
+        "kind": "argument",
+        "description": "name=value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname=value\u003e": {
+        "Name": "\u003cname=value\u003e",
+        "kind": "argument",
+        "description": "name=value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname=value\u003e"
+    ]
+  },
+  "--preserve-data": {
+    "Name": "--preserve-data",
+    "kind": "option",
+    "description": "On systems that support utime(3) or utimes(2), attempt to\npreserve the access time of files analyzed, to pretend that file\nnever read them",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--print0": {
+    "Name": "--print0",
+    "kind": "option",
+    "description": "Output a null character '\u0000' after the end of the filename.  Nice\nto cut(1) the output.  This does not affect the separator, which\nis still printed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--raw": {
+    "Name": "--raw",
+    "kind": "option",
+    "description": "No operation, included for historical compatibility",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--separator": {
+    "Name": "--separator",
+    "kind": "option",
+    "description": "Use the specified string as the separator between the filename\nand the file result returned",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cseparator\u003e": {
+        "Name": "\u003cseparator\u003e",
+        "kind": "argument",
+        "description": "separator",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cseparator\u003e": {
+        "Name": "\u003cseparator\u003e",
+        "kind": "argument",
+        "description": "separator",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cseparator\u003e"
+    ]
+  },
+  "--special-files": {
+    "Name": "--special-files",
+    "kind": "option",
+    "description": "Normally, file only attempts to read and determine the type of\nargument files which stat(2) reports are ordinary files.  This\nprevents problems, because reading special files may have\npeculiar consequences.  Specifying the -s option causes file to\nalso read argument files which are block or character special\nfiles.  This is useful for determining the filesystem types of\nthe data in raw disk partitions, which are block special files.\nThis option also causes file to disregard the file size as\nreported by stat(2) since on some systems it reports a zero size\nfor raw disk partitions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--uncompress": {
+    "Name": "--uncompress",
+    "kind": "option",
+    "description": "Try to look inside compressed files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--uncompress-noreport": {
+    "Name": "--uncompress-noreport",
+    "kind": "option",
+    "description": "Try to look inside compressed files, but report information about\nthe contents only not the compression",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Print the version of the program and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-0": {
+    "Name": "-0",
+    "kind": "option",
+    "description": "Output a null character '\u0000' after the end of the filename.  Nice\nto cut(1) the output.  This does not affect the separator, which\nis still printed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-C": {
+    "Name": "-C",
+    "kind": "option",
+    "description": "Write a magic.mgc output file that contains a pre-parsed version\nof the magic file or directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-D": {
+    "Name": "-D",
+    "kind": "option",
+    "description": "Print debugging messages",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-E": {
+    "Name": "-E",
+    "kind": "option",
+    "description": "On filesystem errors (file not found etc), instead of handling\nthe error as regular output as POSIX mandates and keep going,\nissue an error message and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-F": {
+    "Name": "-F",
+    "kind": "option",
+    "description": "Use the specified string as the separator between the filename\nand the file result returned",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cseparator\u003e": {
+        "Name": "\u003cseparator\u003e",
+        "kind": "argument",
+        "description": "separator",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cseparator\u003e": {
+        "Name": "\u003cseparator\u003e",
+        "kind": "argument",
+        "description": "separator",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cseparator\u003e"
+    ]
+  },
+  "-I": {
+    "Name": "-I",
+    "kind": "option",
+    "description": "Causes the file command to output mime type strings rather than\nthe more traditional human readable ones.  Thus it may say\n'text/plain; charset=us-ascii' rather than \"ASCII text\"",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-L": {
+    "Name": "-L",
+    "kind": "option",
+    "description": "This option causes symlinks to be followed, as the like-named\noption in ls(1) (on systems that support symbolic links).  This\nis the default behavior",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-M": {
+    "Name": "-M",
+    "kind": "option",
+    "description": "Like -m, except that the default rules are not applied unless -d\nis specified",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clist\u003e"
+    ]
+  },
+  "-P": {
+    "Name": "-P",
+    "kind": "option",
+    "description": "Set various parameter limits",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname=value\u003e": {
+        "Name": "\u003cname=value\u003e",
+        "kind": "argument",
+        "description": "name=value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname=value\u003e": {
+        "Name": "\u003cname=value\u003e",
+        "kind": "argument",
+        "description": "name=value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname=value\u003e"
+    ]
+  },
+  "-Z": {
+    "Name": "-Z",
+    "kind": "option",
+    "description": "Try to look inside compressed files, but report information about\nthe contents only not the compression",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-b": {
+    "Name": "-b",
+    "kind": "option",
+    "description": "Do not prepend filenames to output lines (brief mode)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Cause a checking printout of the parsed form of the magic file.\nThis is usually used in conjunction with the -m option to debug a\nnew magic file before installing it",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Apply the default system tests; this is the default behavior\nunless -M is specified",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-e": {
+    "Name": "-e",
+    "kind": "option",
+    "description": "Exclude the test named in testname from the list of tests made to\ndetermine the file type",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctestname\u003e": {
+        "Name": "\u003ctestname\u003e",
+        "kind": "argument",
+        "description": "testname",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctestname\u003e": {
+        "Name": "\u003ctestname\u003e",
+        "kind": "argument",
+        "description": "testname",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctestname\u003e"
+    ]
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Read the names of the files to be examined from namefile (one per\nline) before the argument list.  Either namefile or at least one\nfilename argument must be present; to test the standard input,\nuse ‘-’ as a filename argument.  Please note that namefile is\nunwrapped and the enclosed filenames are processed when this\noption is encountered and before any further options processing\nis done.  This allows one to process multiple lists of files with\ndifferent command line arguments on the same file invocation.\nThus if you want to set the delimiter, you need to do it before\nyou specify the list of files, like: \"-F @ -f namefile\", instead\nof: \"-f namefile -F @\"",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnamefile\u003e": {
+        "Name": "\u003cnamefile\u003e",
+        "kind": "argument",
+        "description": "namefile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnamefile\u003e": {
+        "Name": "\u003cnamefile\u003e",
+        "kind": "argument",
+        "description": "namefile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnamefile\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "This option causes symlinks not to be followed (on systems that\nsupport symbolic links)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "If the file is a regular file, do not classify its contents",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-k": {
+    "Name": "-k",
+    "kind": "option",
+    "description": "Don't stop at the first match, keep going.  Subsequent matches\nwill be have the string '\\012- ' prepended.  (If you want a\nnewline, see the -r option.)  The magic pattern with the highest\nstrength (see the -l option) comes first",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "option",
+    "description": "Shows a list of patterns and their strength sorted descending by\nmagic(5) strength which is used for the matching (see also the -k\noption)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-m": {
+    "Name": "-m",
+    "kind": "option",
+    "description": "Specify an alternate list of files and directories containing\nmagic.  This can be a single item, or a colon-separated list.  If\na compiled magic file is found alongside a file or directory, it\nwill be used instead",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clist\u003e"
+    ]
+  },
+  "-n": {
+    "Name": "-n",
+    "kind": "option",
+    "description": "Force stdout to be flushed after checking each file.  This is\nonly useful if checking a list of files.  It is intended to be\nused by programs that want filetype output from a pipe",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-p": {
+    "Name": "-p",
+    "kind": "option",
+    "description": "On systems that support utime(3) or utimes(2), attempt to\npreserve the access time of files analyzed, to pretend that file\nnever read them",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "No operation, included for historical compatibility",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Print the version of the program and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-z": {
+    "Name": "-z",
+    "kind": "option",
+    "description": "Try to look inside compressed files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003cfile\u003e": {
+    "Name": "\u003cfile\u003e",
+    "kind": "argument",
+    "description": "file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  },
+  "s": {
+    "Name": "s",
+    "kind": "option",
+    "description": "Normally, file only attempts to read and determine the type of\nargument files which stat(2) reports are ordinary files.  This\nprevents problems, because reading special files may have\npeculiar consequences.  Specifying the -s option causes file to\nalso read argument files which are block or character special\nfiles.  This is useful for determining the filesystem types of\nthe data in raw disk partitions, which are block special files.\nThis option also causes file to disregard the file size as\nreported by stat(2) since on some systems it reports a zero size\nfor raw disk partitions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

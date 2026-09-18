@@ -1,0 +1,654 @@
+{
+  "--quiet": {
+    "Name": "--quiet",
+    "kind": "option",
+    "description": "Show help for svn",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Show help for svn",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Show help for svn",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "checkout": {
+    "Name": "checkout",
+    "kind": "subcommand",
+    "description": "Check out a working copy from a repository",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003crepository\u003e": {
+        "Name": "\u003crepository\u003e",
+        "kind": "argument",
+        "description": "repository",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003crepository\u003e": {
+        "Name": "\u003crepository\u003e",
+        "kind": "argument",
+        "description": "repository",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003crepository\u003e"
+    ]
+  },
+  "commit": {
+    "Name": "commit",
+    "kind": "subcommand",
+    "description": "Commit to a repository",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--config-dir": {
+        "Name": "--config-dir",
+        "kind": "option",
+        "description": "Read user configuration files from directory ARG",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmessage\u003e": {
+            "Name": "\u003cmessage\u003e",
+            "kind": "argument",
+            "description": "message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmessage\u003e": {
+            "Name": "\u003cmessage\u003e",
+            "kind": "argument",
+            "description": "message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmessage\u003e"
+        ]
+      },
+      "--config-option": {
+        "Name": "--config-option",
+        "kind": "option",
+        "description": "Specify a password ARG",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmessage\u003e": {
+            "Name": "\u003cmessage\u003e",
+            "kind": "argument",
+            "description": "message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmessage\u003e": {
+            "Name": "\u003cmessage\u003e",
+            "kind": "argument",
+            "description": "message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmessage\u003e"
+        ]
+      },
+      "--force-interactive": {
+        "Name": "--force-interactive",
+        "kind": "option",
+        "description": "Do interactive prompting even if standard input is not a terminal device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--message": {
+        "Name": "--message",
+        "kind": "option",
+        "description": "Use the given message as the commit message",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmessage\u003e": {
+            "Name": "\u003cmessage\u003e",
+            "kind": "argument",
+            "description": "message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmessage\u003e": {
+            "Name": "\u003cmessage\u003e",
+            "kind": "argument",
+            "description": "message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmessage\u003e"
+        ]
+      },
+      "--no-auth-cache": {
+        "Name": "--no-auth-cache",
+        "kind": "option",
+        "description": "Do not cache authentication tokens",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--non-interactive": {
+        "Name": "--non-interactive",
+        "kind": "option",
+        "description": "Do no interactive prompting (default is to prompt only if standard input is a terminal device)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--password": {
+        "Name": "--password",
+        "kind": "option",
+        "description": "Specify a password ARG",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpassword\u003e": {
+            "Name": "\u003cpassword\u003e",
+            "kind": "argument",
+            "description": "password",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpassword\u003e": {
+            "Name": "\u003cpassword\u003e",
+            "kind": "argument",
+            "description": "password",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpassword\u003e"
+        ]
+      },
+      "--password-from-stdin": {
+        "Name": "--password-from-stdin",
+        "kind": "option",
+        "description": "Read password from stdin",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--trust-server-cert": {
+        "Name": "--trust-server-cert",
+        "kind": "option",
+        "description": "Specify a password ARG",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmessage\u003e": {
+            "Name": "\u003cmessage\u003e",
+            "kind": "argument",
+            "description": "message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmessage\u003e": {
+            "Name": "\u003cmessage\u003e",
+            "kind": "argument",
+            "description": "message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmessage\u003e"
+        ]
+      },
+      "--trust-server-cert-failures": {
+        "Name": "--trust-server-cert-failures",
+        "kind": "option",
+        "description": "Specify a password ARG",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmessage\u003e": {
+            "Name": "\u003cmessage\u003e",
+            "kind": "argument",
+            "description": "message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmessage\u003e": {
+            "Name": "\u003cmessage\u003e",
+            "kind": "argument",
+            "description": "message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmessage\u003e"
+        ]
+      },
+      "--username": {
+        "Name": "--username",
+        "kind": "option",
+        "description": "Specify a username ARG",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cusername\u003e": {
+            "Name": "\u003cusername\u003e",
+            "kind": "argument",
+            "description": "username",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cusername\u003e": {
+            "Name": "\u003cusername\u003e",
+            "kind": "argument",
+            "description": "username",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cusername\u003e"
+        ]
+      },
+      "-m": {
+        "Name": "-m",
+        "kind": "option",
+        "description": "Use the given message as the commit message",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmessage\u003e": {
+            "Name": "\u003cmessage\u003e",
+            "kind": "argument",
+            "description": "message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmessage\u003e": {
+            "Name": "\u003cmessage\u003e",
+            "kind": "argument",
+            "description": "message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmessage\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--config-dir": {
+        "Name": "--config-dir",
+        "kind": "option",
+        "description": "Read user configuration files from directory ARG",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmessage\u003e": {
+            "Name": "\u003cmessage\u003e",
+            "kind": "argument",
+            "description": "message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmessage\u003e": {
+            "Name": "\u003cmessage\u003e",
+            "kind": "argument",
+            "description": "message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmessage\u003e"
+        ]
+      },
+      "--config-option": {
+        "Name": "--config-option",
+        "kind": "option",
+        "description": "Specify a password ARG",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmessage\u003e": {
+            "Name": "\u003cmessage\u003e",
+            "kind": "argument",
+            "description": "message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmessage\u003e": {
+            "Name": "\u003cmessage\u003e",
+            "kind": "argument",
+            "description": "message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmessage\u003e"
+        ]
+      },
+      "--force-interactive": {
+        "Name": "--force-interactive",
+        "kind": "option",
+        "description": "Do interactive prompting even if standard input is not a terminal device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--message": {
+        "Name": "--message",
+        "kind": "option",
+        "description": "Use the given message as the commit message",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmessage\u003e": {
+            "Name": "\u003cmessage\u003e",
+            "kind": "argument",
+            "description": "message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmessage\u003e": {
+            "Name": "\u003cmessage\u003e",
+            "kind": "argument",
+            "description": "message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmessage\u003e"
+        ]
+      },
+      "--no-auth-cache": {
+        "Name": "--no-auth-cache",
+        "kind": "option",
+        "description": "Do not cache authentication tokens",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--non-interactive": {
+        "Name": "--non-interactive",
+        "kind": "option",
+        "description": "Do no interactive prompting (default is to prompt only if standard input is a terminal device)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--password": {
+        "Name": "--password",
+        "kind": "option",
+        "description": "Specify a password ARG",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpassword\u003e": {
+            "Name": "\u003cpassword\u003e",
+            "kind": "argument",
+            "description": "password",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpassword\u003e": {
+            "Name": "\u003cpassword\u003e",
+            "kind": "argument",
+            "description": "password",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpassword\u003e"
+        ]
+      },
+      "--password-from-stdin": {
+        "Name": "--password-from-stdin",
+        "kind": "option",
+        "description": "Read password from stdin",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--trust-server-cert": {
+        "Name": "--trust-server-cert",
+        "kind": "option",
+        "description": "Specify a password ARG",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmessage\u003e": {
+            "Name": "\u003cmessage\u003e",
+            "kind": "argument",
+            "description": "message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmessage\u003e": {
+            "Name": "\u003cmessage\u003e",
+            "kind": "argument",
+            "description": "message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmessage\u003e"
+        ]
+      },
+      "--trust-server-cert-failures": {
+        "Name": "--trust-server-cert-failures",
+        "kind": "option",
+        "description": "Specify a password ARG",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmessage\u003e": {
+            "Name": "\u003cmessage\u003e",
+            "kind": "argument",
+            "description": "message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmessage\u003e": {
+            "Name": "\u003cmessage\u003e",
+            "kind": "argument",
+            "description": "message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmessage\u003e"
+        ]
+      },
+      "--username": {
+        "Name": "--username",
+        "kind": "option",
+        "description": "Specify a username ARG",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cusername\u003e": {
+            "Name": "\u003cusername\u003e",
+            "kind": "argument",
+            "description": "username",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cusername\u003e": {
+            "Name": "\u003cusername\u003e",
+            "kind": "argument",
+            "description": "username",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cusername\u003e"
+        ]
+      },
+      "-m": {
+        "Name": "-m",
+        "kind": "option",
+        "description": "Use the given message as the commit message",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmessage\u003e": {
+            "Name": "\u003cmessage\u003e",
+            "kind": "argument",
+            "description": "message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmessage\u003e": {
+            "Name": "\u003cmessage\u003e",
+            "kind": "argument",
+            "description": "message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmessage\u003e"
+        ]
+      }
+    }
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Show help for svn",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csubcommand\u003e": {
+        "Name": "\u003csubcommand\u003e",
+        "kind": "argument",
+        "description": "subcommand",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csubcommand\u003e": {
+        "Name": "\u003csubcommand\u003e",
+        "kind": "argument",
+        "description": "subcommand",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "info": {
+    "Name": "info",
+    "kind": "subcommand",
+    "description": "Show information about a local or remote item",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "status": {
+    "Name": "status",
+    "kind": "subcommand",
+    "description": "Show the working tree status",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

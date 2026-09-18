@@ -1,0 +1,747 @@
+{
+  "--color": {
+    "Name": "--color",
+    "kind": "option",
+    "description": "Colorize the output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cwhen\u003e": {
+        "Name": "\u003cwhen\u003e",
+        "kind": "argument",
+        "description": "when",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cwhen\u003e": {
+        "Name": "\u003cwhen\u003e",
+        "kind": "argument",
+        "description": "when",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--compatibility": {
+    "Name": "--compatibility",
+    "kind": "option",
+    "description": "Specify the compatibility mode, 'dos' or 'nondos'",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--cylinders": {
+    "Name": "--cylinders",
+    "kind": "option",
+    "description": "Specify the number of cylinders of the disk",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnumber\u003e": {
+        "Name": "\u003cnumber\u003e",
+        "kind": "argument",
+        "description": "number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnumber\u003e": {
+        "Name": "\u003cnumber\u003e",
+        "kind": "argument",
+        "description": "number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnumber\u003e"
+    ]
+  },
+  "--getsz": {
+    "Name": "--getsz",
+    "kind": "option",
+    "description": "Print the size in 512-byte sectors of each given block device. This option is DEPRECATED in favour of blockdev(8)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--heads": {
+    "Name": "--heads",
+    "kind": "option",
+    "description": "Specify the number of heads of the disk. (Not the physical number, of course, but the number used for partition tables.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnumber\u003e": {
+        "Name": "\u003cnumber\u003e",
+        "kind": "argument",
+        "description": "number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnumber\u003e": {
+        "Name": "\u003cnumber\u003e",
+        "kind": "argument",
+        "description": "number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnumber\u003e"
+    ]
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for fdisk",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--list": {
+    "Name": "--list",
+    "kind": "option",
+    "description": "List the partition tables for the specified devices and then exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--list-details": {
+    "Name": "--list-details",
+    "kind": "option",
+    "description": "Like --list, but provides more details",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--lock": {
+    "Name": "--lock",
+    "kind": "option",
+    "description": "Use exclusive BSD lock for device or file it operates",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--noauto-pt": {
+    "Name": "--noauto-pt",
+    "kind": "option",
+    "description": "Don't automatically create a default partition table on empty device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--output": {
+    "Name": "--output",
+    "kind": "option",
+    "description": "Desc",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clist\u003e"
+    ]
+  },
+  "--protect-boot": {
+    "Name": "--protect-boot",
+    "kind": "option",
+    "description": "Don't erase the beginning of the first disk sector when creating a new disk label",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--sector-size": {
+    "Name": "--sector-size",
+    "kind": "option",
+    "description": "Specify the sector size of the disk",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmode\u003e"
+    ]
+  },
+  "--sectors": {
+    "Name": "--sectors",
+    "kind": "option",
+    "description": "Specify the number of sectors per track of the disk. (Not the physical number, of course, but the number used for partition tables.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--type": {
+    "Name": "--type",
+    "kind": "option",
+    "description": "Enable support only for disklabels of the specified type, and disable support for all other types",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctype\u003e"
+    ]
+  },
+  "--units": {
+    "Name": "--units",
+    "kind": "option",
+    "description": "When listing partition tables, show sizes in 'sectors' or in 'cylinders'",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cunit\u003e": {
+        "Name": "\u003cunit\u003e",
+        "kind": "argument",
+        "description": "unit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cunit\u003e": {
+        "Name": "\u003cunit\u003e",
+        "kind": "argument",
+        "description": "unit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Show version for lsblk",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--wipe": {
+    "Name": "--wipe",
+    "kind": "option",
+    "description": "Wipe filesystem, RAID and partition-table signatures from the device, in order to avoid possible collisions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cwhen\u003e": {
+        "Name": "\u003cwhen\u003e",
+        "kind": "argument",
+        "description": "when",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cwhen\u003e": {
+        "Name": "\u003cwhen\u003e",
+        "kind": "argument",
+        "description": "when",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cwhen\u003e"
+    ]
+  },
+  "--wipe-partitions": {
+    "Name": "--wipe-partitions",
+    "kind": "option",
+    "description": "Wipe filesystem, RAID and partition-table signatures from a newly created partitions, in order to avoid possible collisions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cwhen\u003e": {
+        "Name": "\u003cwhen\u003e",
+        "kind": "argument",
+        "description": "when",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cwhen\u003e": {
+        "Name": "\u003cwhen\u003e",
+        "kind": "argument",
+        "description": "when",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cwhen\u003e"
+    ]
+  },
+  "-B": {
+    "Name": "-B",
+    "kind": "option",
+    "description": "Don't erase the beginning of the first disk sector when creating a new disk label",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-C": {
+    "Name": "-C",
+    "kind": "option",
+    "description": "Specify the number of cylinders of the disk",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnumber\u003e": {
+        "Name": "\u003cnumber\u003e",
+        "kind": "argument",
+        "description": "number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnumber\u003e": {
+        "Name": "\u003cnumber\u003e",
+        "kind": "argument",
+        "description": "number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnumber\u003e"
+    ]
+  },
+  "-H": {
+    "Name": "-H",
+    "kind": "option",
+    "description": "Specify the number of heads of the disk. (Not the physical number, of course, but the number used for partition tables.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnumber\u003e": {
+        "Name": "\u003cnumber\u003e",
+        "kind": "argument",
+        "description": "number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnumber\u003e": {
+        "Name": "\u003cnumber\u003e",
+        "kind": "argument",
+        "description": "number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnumber\u003e"
+    ]
+  },
+  "-L": {
+    "Name": "-L",
+    "kind": "option",
+    "description": "Colorize the output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cwhen\u003e": {
+        "Name": "\u003cwhen\u003e",
+        "kind": "argument",
+        "description": "when",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cwhen\u003e": {
+        "Name": "\u003cwhen\u003e",
+        "kind": "argument",
+        "description": "when",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "-S": {
+    "Name": "-S",
+    "kind": "option",
+    "description": "Specify the number of sectors per track of the disk. (Not the physical number, of course, but the number used for partition tables.)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-V": {
+    "Name": "-V",
+    "kind": "option",
+    "description": "Show version for lsblk",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-W": {
+    "Name": "-W",
+    "kind": "option",
+    "description": "Wipe filesystem, RAID and partition-table signatures from a newly created partitions, in order to avoid possible collisions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cwhen\u003e": {
+        "Name": "\u003cwhen\u003e",
+        "kind": "argument",
+        "description": "when",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cwhen\u003e": {
+        "Name": "\u003cwhen\u003e",
+        "kind": "argument",
+        "description": "when",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cwhen\u003e"
+    ]
+  },
+  "-b": {
+    "Name": "-b",
+    "kind": "option",
+    "description": "Specify the sector size of the disk",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmode\u003e"
+    ]
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Specify the compatibility mode, 'dos' or 'nondos'",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help for fdisk",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "option",
+    "description": "List the partition tables for the specified devices and then exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-n": {
+    "Name": "-n",
+    "kind": "option",
+    "description": "Don't automatically create a default partition table on empty device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-o": {
+    "Name": "-o",
+    "kind": "option",
+    "description": "Desc",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clist\u003e"
+    ]
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Print the size in 512-byte sectors of each given block device. This option is DEPRECATED in favour of blockdev(8)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Enable support only for disklabels of the specified type, and disable support for all other types",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctype\u003e"
+    ]
+  },
+  "-u": {
+    "Name": "-u",
+    "kind": "option",
+    "description": "When listing partition tables, show sizes in 'sectors' or in 'cylinders'",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cunit\u003e": {
+        "Name": "\u003cunit\u003e",
+        "kind": "argument",
+        "description": "unit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cunit\u003e": {
+        "Name": "\u003cunit\u003e",
+        "kind": "argument",
+        "description": "unit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "-w": {
+    "Name": "-w",
+    "kind": "option",
+    "description": "Wipe filesystem, RAID and partition-table signatures from the device, in order to avoid possible collisions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cwhen\u003e": {
+        "Name": "\u003cwhen\u003e",
+        "kind": "argument",
+        "description": "when",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cwhen\u003e": {
+        "Name": "\u003cwhen\u003e",
+        "kind": "argument",
+        "description": "when",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cwhen\u003e"
+    ]
+  },
+  "-x": {
+    "Name": "-x",
+    "kind": "option",
+    "description": "Like --list, but provides more details",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003cdevice\u003e": {
+    "Name": "\u003cdevice\u003e",
+    "kind": "argument",
+    "description": "device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

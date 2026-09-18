@@ -1,0 +1,954 @@
+{
+  "--arrow-parens": {
+    "Name": "--arrow-parens",
+    "kind": "option",
+    "description": "Include parentheses around a sole arrow function parameter",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmode\u003e"
+    ]
+  },
+  "--check": {
+    "Name": "--check",
+    "kind": "option",
+    "description": "Check if your files are formatted",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile, dir, or glob\u003e": {
+        "Name": "\u003cfile, dir, or glob\u003e",
+        "kind": "argument",
+        "description": "file, dir, or glob",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile, dir, or glob\u003e": {
+        "Name": "\u003cfile, dir, or glob\u003e",
+        "kind": "argument",
+        "description": "file, dir, or glob",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile, dir, or glob\u003e"
+    ]
+  },
+  "--config": {
+    "Name": "--config",
+    "kind": "option",
+    "description": "Path to a Prettier configuration file (.prettierrc, package.json, prettier.config.js)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--config-precedence": {
+    "Name": "--config-precedence",
+    "kind": "option",
+    "description": "Define in which order config files and CLI options should be evaluated",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cprecedence\u003e": {
+        "Name": "\u003cprecedence\u003e",
+        "kind": "argument",
+        "description": "precedence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cprecedence\u003e": {
+        "Name": "\u003cprecedence\u003e",
+        "kind": "argument",
+        "description": "precedence",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cprecedence\u003e"
+    ]
+  },
+  "--cursor-offset": {
+    "Name": "--cursor-offset",
+    "kind": "option",
+    "description": "Print (to stderr) where a cursor at the given position would move to after formatting",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cint\u003e": {
+        "Name": "\u003cint\u003e",
+        "kind": "argument",
+        "description": "int",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cint\u003e": {
+        "Name": "\u003cint\u003e",
+        "kind": "argument",
+        "description": "int",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cint\u003e"
+    ]
+  },
+  "--debug-check": {
+    "Name": "--debug-check",
+    "kind": "option",
+    "description": "This will cause Prettier to print an error message if it detects that code correctness might have changed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--embedded-language-formatting": {
+    "Name": "--embedded-language-formatting",
+    "kind": "option",
+    "description": "Control how Prettier formats quoted code embedded in the file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmode\u003e"
+    ]
+  },
+  "--end-of-line": {
+    "Name": "--end-of-line",
+    "kind": "option",
+    "description": "Which end of line characters to apply",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cchoice\u003e": {
+        "Name": "\u003cchoice\u003e",
+        "kind": "argument",
+        "description": "choice",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cchoice\u003e": {
+        "Name": "\u003cchoice\u003e",
+        "kind": "argument",
+        "description": "choice",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cchoice\u003e"
+    ]
+  },
+  "--file-info": {
+    "Name": "--file-info",
+    "kind": "option",
+    "description": "Extract the following info (as JSON) for a given file path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--find-config-path": {
+    "Name": "--find-config-path",
+    "kind": "option",
+    "description": "Finds a path to the configuration file for the given input file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile\u003e"
+    ]
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show CLI usage, or details about the given flag",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cflag\u003e": {
+        "Name": "\u003cflag\u003e",
+        "kind": "argument",
+        "description": "flag",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cflag\u003e": {
+        "Name": "\u003cflag\u003e",
+        "kind": "argument",
+        "description": "flag",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--html-whitespace-sensitivity": {
+    "Name": "--html-whitespace-sensitivity",
+    "kind": "option",
+    "description": "How to handle whitespaces in HTML",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cchoice\u003e": {
+        "Name": "\u003cchoice\u003e",
+        "kind": "argument",
+        "description": "choice",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cchoice\u003e": {
+        "Name": "\u003cchoice\u003e",
+        "kind": "argument",
+        "description": "choice",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cchoice\u003e"
+    ]
+  },
+  "--ignore-path": {
+    "Name": "--ignore-path",
+    "kind": "option",
+    "description": "Path to a file with patterns describing files to ignore",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--ignore-unknown": {
+    "Name": "--ignore-unknown",
+    "kind": "option",
+    "description": "Ignore unknown files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--insert-pragma": {
+    "Name": "--insert-pragma",
+    "kind": "option",
+    "description": "Insert @format pragma into file's first docblock comment",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--jsx-bracket-same-line": {
+    "Name": "--jsx-bracket-same-line",
+    "kind": "option",
+    "description": "Put \u003e on the last line instead of at a new line",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--jsx-single-quote": {
+    "Name": "--jsx-single-quote",
+    "kind": "option",
+    "description": "Use single quotes in JSX",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--list-different": {
+    "Name": "--list-different",
+    "kind": "option",
+    "description": "Print the names of files that are different from Prettier's formatting",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--loglevel": {
+    "Name": "--loglevel",
+    "kind": "option",
+    "description": "What level of logs to report",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clevel\u003e"
+    ]
+  },
+  "--no-bracket-spacing": {
+    "Name": "--no-bracket-spacing",
+    "kind": "option",
+    "description": "Do not print spaces between brackets",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-color": {
+    "Name": "--no-color",
+    "kind": "option",
+    "description": "Do not colorize error messages",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-config": {
+    "Name": "--no-config",
+    "kind": "option",
+    "description": "Do not look for a configuration file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-editorconfig": {
+    "Name": "--no-editorconfig",
+    "kind": "option",
+    "description": "Don't take .editorconfig into account when parsing configuration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-error-on-unmatched-pattern": {
+    "Name": "--no-error-on-unmatched-pattern",
+    "kind": "option",
+    "description": "Prevent errors when pattern is unmatched",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-semi": {
+    "Name": "--no-semi",
+    "kind": "option",
+    "description": "Do not print semicolons, except at the beginning of lines which may need them",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--parser": {
+    "Name": "--parser",
+    "kind": "option",
+    "description": "Which parser to use",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cparser\u003e": {
+        "Name": "\u003cparser\u003e",
+        "kind": "argument",
+        "description": "parser",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cparser\u003e": {
+        "Name": "\u003cparser\u003e",
+        "kind": "argument",
+        "description": "parser",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cparser\u003e"
+    ]
+  },
+  "--plugin": {
+    "Name": "--plugin",
+    "kind": "option",
+    "description": "Add a plugin",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--plugin-search-dir": {
+    "Name": "--plugin-search-dir",
+    "kind": "option",
+    "description": "Custom directory that contains prettier plugins in node_modules subdirectory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--print-width": {
+    "Name": "--print-width",
+    "kind": "option",
+    "description": "The line length where Prettier will try wrap",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cint\u003e": {
+        "Name": "\u003cint\u003e",
+        "kind": "argument",
+        "description": "int",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cint\u003e": {
+        "Name": "\u003cint\u003e",
+        "kind": "argument",
+        "description": "int",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cint\u003e"
+    ]
+  },
+  "--prose-wrap": {
+    "Name": "--prose-wrap",
+    "kind": "option",
+    "description": "How to wrap prose",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--quote-props": {
+    "Name": "--quote-props",
+    "kind": "option",
+    "description": "Change when properties in objects are quoted",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cwhen\u003e": {
+        "Name": "\u003cwhen\u003e",
+        "kind": "argument",
+        "description": "when",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cwhen\u003e": {
+        "Name": "\u003cwhen\u003e",
+        "kind": "argument",
+        "description": "when",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cwhen\u003e"
+    ]
+  },
+  "--range-end": {
+    "Name": "--range-end",
+    "kind": "option",
+    "description": "Format code ending at a given character offset (exclusive)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cint\u003e": {
+        "Name": "\u003cint\u003e",
+        "kind": "argument",
+        "description": "int",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cint\u003e": {
+        "Name": "\u003cint\u003e",
+        "kind": "argument",
+        "description": "int",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cint\u003e"
+    ]
+  },
+  "--range-start": {
+    "Name": "--range-start",
+    "kind": "option",
+    "description": "Format code starting at a given character offset",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cint\u003e": {
+        "Name": "\u003cint\u003e",
+        "kind": "argument",
+        "description": "int",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cint\u003e": {
+        "Name": "\u003cint\u003e",
+        "kind": "argument",
+        "description": "int",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cint\u003e"
+    ]
+  },
+  "--require-pragma": {
+    "Name": "--require-pragma",
+    "kind": "option",
+    "description": "Require either '@prettier' or '@format' to be present in the file's first docblock comment in order for it to be formatted",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--single-quote": {
+    "Name": "--single-quote",
+    "kind": "option",
+    "description": "Use single quotes instead of double quotes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--stdin-filepath": {
+    "Name": "--stdin-filepath",
+    "kind": "option",
+    "description": "Path to the file to pretend that stdin comes from",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--support-info": {
+    "Name": "--support-info",
+    "kind": "option",
+    "description": "Print support information as JSON",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--tab-width": {
+    "Name": "--tab-width",
+    "kind": "option",
+    "description": "Number of spaces per indentation level",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cint\u003e": {
+        "Name": "\u003cint\u003e",
+        "kind": "argument",
+        "description": "int",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cint\u003e": {
+        "Name": "\u003cint\u003e",
+        "kind": "argument",
+        "description": "int",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cint\u003e"
+    ]
+  },
+  "--trailing-comma": {
+    "Name": "--trailing-comma",
+    "kind": "option",
+    "description": "Print trailing commas wherever possible when multi-line",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctype\u003e"
+    ]
+  },
+  "--use-tabs": {
+    "Name": "--use-tabs",
+    "kind": "option",
+    "description": "Indent with tabs instead of spaces",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Print Prettier version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--vue-indent-script-and-style": {
+    "Name": "--vue-indent-script-and-style",
+    "kind": "option",
+    "description": "Indent script and style tags in Vue files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--with-node-modules": {
+    "Name": "--with-node-modules",
+    "kind": "option",
+    "description": "Process files inside 'node_modules' directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--write": {
+    "Name": "--write",
+    "kind": "option",
+    "description": "Edit files in-place",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Check if your files are formatted",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile, dir, or glob\u003e": {
+        "Name": "\u003cfile, dir, or glob\u003e",
+        "kind": "argument",
+        "description": "file, dir, or glob",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile, dir, or glob\u003e": {
+        "Name": "\u003cfile, dir, or glob\u003e",
+        "kind": "argument",
+        "description": "file, dir, or glob",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile, dir, or glob\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show CLI usage, or details about the given flag",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cflag\u003e": {
+        "Name": "\u003cflag\u003e",
+        "kind": "argument",
+        "description": "flag",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cflag\u003e": {
+        "Name": "\u003cflag\u003e",
+        "kind": "argument",
+        "description": "flag",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "option",
+    "description": "Print the names of files that are different from Prettier's formatting",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-u": {
+    "Name": "-u",
+    "kind": "option",
+    "description": "Ignore unknown files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Print Prettier version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-w": {
+    "Name": "-w",
+    "kind": "option",
+    "description": "Edit files in-place",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003cfile, dir or glob\u003e": {
+    "Name": "\u003cfile, dir or glob\u003e",
+    "kind": "argument",
+    "description": "file, dir or glob",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

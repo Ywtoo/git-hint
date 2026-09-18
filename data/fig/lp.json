@@ -1,0 +1,342 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for lp",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-E": {
+    "Name": "-E",
+    "kind": "option",
+    "description": "Force encryption when connecting to the server",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-H": {
+    "Name": "-H",
+    "kind": "option",
+    "description": "Specifies when the job should be printed.  A value of immediate will print the file immediately, a value of hold will hold the job indefinitely, and a UTC time value (HH:MM) will hold the job until the specified UTC (not local) time. Use a value of resume with the -i option to resume a held job.  Use a value of restart with the -i option to restart a completed job",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpages\u003e": {
+        "Name": "\u003cpages\u003e",
+        "kind": "argument",
+        "description": "pages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpages\u003e": {
+        "Name": "\u003cpages\u003e",
+        "kind": "argument",
+        "description": "pages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpages\u003e"
+    ]
+  },
+  "-P": {
+    "Name": "-P",
+    "kind": "option",
+    "description": "Specifies which pages to print in the document. The list can contain a list of numbers and ranges (#-#) separated by commas, e.g., \"1,3-5,16\". The page numbers refer to the output pages and not the document's original  pages - options like  \"number-up\" can affect the numbering of the pages",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003chh:mm\u003e": {
+        "Name": "\u003chh:mm\u003e",
+        "kind": "argument",
+        "description": "hh:mm",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003chh:mm\u003e": {
+        "Name": "\u003chh:mm\u003e",
+        "kind": "argument",
+        "description": "hh:mm",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003chh:mm\u003e"
+    ]
+  },
+  "-U": {
+    "Name": "-U",
+    "kind": "option",
+    "description": "Specifies the username to use when connecting to the server",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cUsername\u003e": {
+        "Name": "\u003cUsername\u003e",
+        "kind": "argument",
+        "description": "Username",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cUsername\u003e": {
+        "Name": "\u003cUsername\u003e",
+        "kind": "argument",
+        "description": "Username",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cUsername\u003e"
+    ]
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "This  option is provided for backwards-compatibility only. On systems that support it, this option forces the print file to be copied to the spool directory before printing.  In CUPS, print files are always sent to the scheduler via IPP which has the  same effect",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Print files to the named printer",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cDestination printer name\u003e": {
+        "Name": "\u003cDestination printer name\u003e",
+        "kind": "argument",
+        "description": "Destination printer name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cDestination printer name\u003e": {
+        "Name": "\u003cDestination printer name\u003e",
+        "kind": "argument",
+        "description": "Destination printer name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cDestination printer name\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Chooses an alternate server",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003chostname[:port]\u003e": {
+        "Name": "\u003chostname[:port]\u003e",
+        "kind": "argument",
+        "description": "hostname[:port]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003chostname[:port]\u003e": {
+        "Name": "\u003chostname[:port]\u003e",
+        "kind": "argument",
+        "description": "hostname[:port]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003chostname[:port]\u003e"
+    ]
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Specifies an existing job to modify",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cjob-id\u003e": {
+        "Name": "\u003cjob-id\u003e",
+        "kind": "argument",
+        "description": "job-id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cjob-id\u003e": {
+        "Name": "\u003cjob-id\u003e",
+        "kind": "argument",
+        "description": "job-id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cjob-id\u003e"
+    ]
+  },
+  "-m": {
+    "Name": "-m",
+    "kind": "option",
+    "description": "Sends an email when the job is completed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-n": {
+    "Name": "-n",
+    "kind": "option",
+    "description": "Sets the number of copies to print",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccopies\u003e": {
+        "Name": "\u003ccopies\u003e",
+        "kind": "argument",
+        "description": "copies",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccopies\u003e": {
+        "Name": "\u003ccopies\u003e",
+        "kind": "argument",
+        "description": "copies",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccopies\u003e"
+    ]
+  },
+  "-o": {
+    "Name": "-o",
+    "kind": "option",
+    "description": "Sets one or more job options",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname=value\u003e": {
+        "Name": "\u003cname=value\u003e",
+        "kind": "argument",
+        "description": "name=value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname=value\u003e": {
+        "Name": "\u003cname=value\u003e",
+        "kind": "argument",
+        "description": "name=value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname=value\u003e"
+    ]
+  },
+  "-q": {
+    "Name": "-q",
+    "kind": "option",
+    "description": "Sets the job priority from 1 (lowest) to 100 (highest). The default priority is 50",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpriority\u003e": {
+        "Name": "\u003cpriority\u003e",
+        "kind": "argument",
+        "description": "priority",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpriority\u003e": {
+        "Name": "\u003cpriority\u003e",
+        "kind": "argument",
+        "description": "priority",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpriority\u003e"
+    ]
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Do not report the resulting job IDs (silent mode)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Sets the job name",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  }
+}

@@ -1,0 +1,838 @@
+{
+  "--ask": {
+    "Name": "--ask",
+    "kind": "option",
+    "description": "Make sure sender and recipient are prompted",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--curve": {
+    "Name": "--curve",
+    "kind": "option",
+    "description": "Choose an encryption curve",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cvalue\u003e"
+    ]
+  },
+  "--debug": {
+    "Name": "--debug",
+    "kind": "option",
+    "description": "Toggle debug mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for croc",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--ignore-stdin": {
+    "Name": "--ignore-stdin",
+    "kind": "option",
+    "description": "Ignore piped stdin",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--internal-dns": {
+    "Name": "--internal-dns",
+    "kind": "option",
+    "description": "Use a built-in DNS stub resolver rather than the host operating system",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--ip": {
+    "Name": "--ip",
+    "kind": "option",
+    "description": "Set sender ip if known",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cvalue\u003e"
+    ]
+  },
+  "--local": {
+    "Name": "--local",
+    "kind": "option",
+    "description": "Force to use only local connections",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-compress": {
+    "Name": "--no-compress",
+    "kind": "option",
+    "description": "Disable compression",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--out": {
+    "Name": "--out",
+    "kind": "option",
+    "description": "Specify an output folder to receive the file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003coutput folder\u003e": {
+        "Name": "\u003coutput folder\u003e",
+        "kind": "argument",
+        "description": "output folder",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003coutput folder\u003e": {
+        "Name": "\u003coutput folder\u003e",
+        "kind": "argument",
+        "description": "output folder",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003coutput folder\u003e"
+    ]
+  },
+  "--overwrite": {
+    "Name": "--overwrite",
+    "kind": "option",
+    "description": "Do not prompt to overwrite",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--pass": {
+    "Name": "--pass",
+    "kind": "option",
+    "description": "Password for the relay (default: \"pass123\")",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpassword\u003e": {
+        "Name": "\u003cpassword\u003e",
+        "kind": "argument",
+        "description": "password",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpassword\u003e": {
+        "Name": "\u003cpassword\u003e",
+        "kind": "argument",
+        "description": "password",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpassword\u003e"
+    ]
+  },
+  "--relay": {
+    "Name": "--relay",
+    "kind": "option",
+    "description": "Address of the relay",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cipv4 address\u003e": {
+        "Name": "\u003cipv4 address\u003e",
+        "kind": "argument",
+        "description": "ipv4 address",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cipv4 address\u003e": {
+        "Name": "\u003cipv4 address\u003e",
+        "kind": "argument",
+        "description": "ipv4 address",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cipv4 address\u003e"
+    ]
+  },
+  "--relay6": {
+    "Name": "--relay6",
+    "kind": "option",
+    "description": "Ipv6 address of the relay",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cipv6 address\u003e": {
+        "Name": "\u003cipv6 address\u003e",
+        "kind": "argument",
+        "description": "ipv6 address",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cipv6 address\u003e": {
+        "Name": "\u003cipv6 address\u003e",
+        "kind": "argument",
+        "description": "ipv6 address",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cipv6 address\u003e"
+    ]
+  },
+  "--remember": {
+    "Name": "--remember",
+    "kind": "option",
+    "description": "Save these settings to reuse next time",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--socks5": {
+    "Name": "--socks5",
+    "kind": "option",
+    "description": "Add a socks5 proxy",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cvalue\u003e"
+    ]
+  },
+  "--stdout": {
+    "Name": "--stdout",
+    "kind": "option",
+    "description": "Redirect file to stdout",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--throttleUpload": {
+    "Name": "--throttleUpload",
+    "kind": "option",
+    "description": "Throttle the upload speed e.g. 500k",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cvalue\u003e"
+    ]
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Print the version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--yes": {
+    "Name": "--yes",
+    "kind": "option",
+    "description": "Automatically agree to all prompts",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help for croc",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Print the version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003csecret-code\u003e": {
+    "Name": "\u003csecret-code\u003e",
+    "kind": "argument",
+    "description": "secret-code",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Shows a list of commands or help for one command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "relay": {
+    "Name": "relay",
+    "kind": "subcommand",
+    "description": "Start your own relay",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--host": {
+        "Name": "--host",
+        "kind": "option",
+        "description": "Host of the relay",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cvalue\u003e": {
+            "Name": "\u003cvalue\u003e",
+            "kind": "argument",
+            "description": "value",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cvalue\u003e": {
+            "Name": "\u003cvalue\u003e",
+            "kind": "argument",
+            "description": "value",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cvalue\u003e"
+        ]
+      },
+      "--ports": {
+        "Name": "--ports",
+        "kind": "option",
+        "description": "Ports of the local relay",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cports\u003e": {
+            "Name": "\u003cports\u003e",
+            "kind": "argument",
+            "description": "ports",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cports\u003e": {
+            "Name": "\u003cports\u003e",
+            "kind": "argument",
+            "description": "ports",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cports\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--host": {
+        "Name": "--host",
+        "kind": "option",
+        "description": "Host of the relay",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cvalue\u003e": {
+            "Name": "\u003cvalue\u003e",
+            "kind": "argument",
+            "description": "value",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cvalue\u003e": {
+            "Name": "\u003cvalue\u003e",
+            "kind": "argument",
+            "description": "value",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cvalue\u003e"
+        ]
+      },
+      "--ports": {
+        "Name": "--ports",
+        "kind": "option",
+        "description": "Ports of the local relay",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cports\u003e": {
+            "Name": "\u003cports\u003e",
+            "kind": "argument",
+            "description": "ports",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cports\u003e": {
+            "Name": "\u003cports\u003e",
+            "kind": "argument",
+            "description": "ports",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cports\u003e"
+        ]
+      }
+    }
+  },
+  "send": {
+    "Name": "send",
+    "kind": "subcommand",
+    "description": "Send file(s), or folder",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--code": {
+        "Name": "--code",
+        "kind": "option",
+        "description": "Codephrase used to connect to relay",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccodephrase\u003e": {
+            "Name": "\u003ccodephrase\u003e",
+            "kind": "argument",
+            "description": "codephrase",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccodephrase\u003e": {
+            "Name": "\u003ccodephrase\u003e",
+            "kind": "argument",
+            "description": "codephrase",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccodephrase\u003e"
+        ]
+      },
+      "--hash": {
+        "Name": "--hash",
+        "kind": "option",
+        "description": "Hash algorithm",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-local": {
+        "Name": "--no-local",
+        "kind": "option",
+        "description": "Disable local relay when sending",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-multi": {
+        "Name": "--no-multi",
+        "kind": "option",
+        "description": "Disable multiplexing",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ports": {
+        "Name": "--ports",
+        "kind": "option",
+        "description": "Ports of the local relay",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--text": {
+        "Name": "--text",
+        "kind": "option",
+        "description": "Send some text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctext\u003e": {
+            "Name": "\u003ctext\u003e",
+            "kind": "argument",
+            "description": "text",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctext\u003e": {
+            "Name": "\u003ctext\u003e",
+            "kind": "argument",
+            "description": "text",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctext\u003e"
+        ]
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Codephrase used to connect to relay",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccodephrase\u003e": {
+            "Name": "\u003ccodephrase\u003e",
+            "kind": "argument",
+            "description": "codephrase",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccodephrase\u003e": {
+            "Name": "\u003ccodephrase\u003e",
+            "kind": "argument",
+            "description": "codephrase",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccodephrase\u003e"
+        ]
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Send some text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctext\u003e": {
+            "Name": "\u003ctext\u003e",
+            "kind": "argument",
+            "description": "text",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctext\u003e": {
+            "Name": "\u003ctext\u003e",
+            "kind": "argument",
+            "description": "text",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctext\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--code": {
+        "Name": "--code",
+        "kind": "option",
+        "description": "Codephrase used to connect to relay",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccodephrase\u003e": {
+            "Name": "\u003ccodephrase\u003e",
+            "kind": "argument",
+            "description": "codephrase",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccodephrase\u003e": {
+            "Name": "\u003ccodephrase\u003e",
+            "kind": "argument",
+            "description": "codephrase",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccodephrase\u003e"
+        ]
+      },
+      "--hash": {
+        "Name": "--hash",
+        "kind": "option",
+        "description": "Hash algorithm",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-local": {
+        "Name": "--no-local",
+        "kind": "option",
+        "description": "Disable local relay when sending",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-multi": {
+        "Name": "--no-multi",
+        "kind": "option",
+        "description": "Disable multiplexing",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ports": {
+        "Name": "--ports",
+        "kind": "option",
+        "description": "Ports of the local relay",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--text": {
+        "Name": "--text",
+        "kind": "option",
+        "description": "Send some text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctext\u003e": {
+            "Name": "\u003ctext\u003e",
+            "kind": "argument",
+            "description": "text",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctext\u003e": {
+            "Name": "\u003ctext\u003e",
+            "kind": "argument",
+            "description": "text",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctext\u003e"
+        ]
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Codephrase used to connect to relay",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccodephrase\u003e": {
+            "Name": "\u003ccodephrase\u003e",
+            "kind": "argument",
+            "description": "codephrase",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccodephrase\u003e": {
+            "Name": "\u003ccodephrase\u003e",
+            "kind": "argument",
+            "description": "codephrase",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccodephrase\u003e"
+        ]
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Send some text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctext\u003e": {
+            "Name": "\u003ctext\u003e",
+            "kind": "argument",
+            "description": "text",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctext\u003e": {
+            "Name": "\u003ctext\u003e",
+            "kind": "argument",
+            "description": "text",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctext\u003e"
+        ]
+      }
+    }
+  }
+}

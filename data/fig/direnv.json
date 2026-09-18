@@ -1,0 +1,676 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Help for direnv",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSHOW_PRIVATE\u003e": {
+        "Name": "\u003cSHOW_PRIVATE\u003e",
+        "kind": "argument",
+        "description": "SHOW_PRIVATE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSHOW_PRIVATE\u003e": {
+        "Name": "\u003cSHOW_PRIVATE\u003e",
+        "kind": "argument",
+        "description": "SHOW_PRIVATE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Prints the version or checks that direnv is older than VERSION_AT_LEAST",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cVERSION_AT_LEAST\u003e": {
+        "Name": "\u003cVERSION_AT_LEAST\u003e",
+        "kind": "argument",
+        "description": "VERSION_AT_LEAST",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cVERSION_AT_LEAST\u003e": {
+        "Name": "\u003cVERSION_AT_LEAST\u003e",
+        "kind": "argument",
+        "description": "VERSION_AT_LEAST",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "allow": {
+    "Name": "allow",
+    "kind": "subcommand",
+    "description": "Grants direnv to load the given .envrc",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH_TO_RC\u003e": {
+        "Name": "\u003cPATH_TO_RC\u003e",
+        "kind": "argument",
+        "description": "PATH_TO_RC",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH_TO_RC\u003e": {
+        "Name": "\u003cPATH_TO_RC\u003e",
+        "kind": "argument",
+        "description": "PATH_TO_RC",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "apply_dump": {
+    "Name": "apply_dump",
+    "kind": "subcommand",
+    "description": "Accepts a filename containing `direnv dump` output and generates a series of bash export statements to apply the given env",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFILE\u003e"
+    ]
+  },
+  "current": {
+    "Name": "current",
+    "kind": "subcommand",
+    "description": "Reports whether direnv's view of a file is current (or stale)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH\u003e"
+    ]
+  },
+  "deny": {
+    "Name": "deny",
+    "kind": "subcommand",
+    "description": "Revokes the authorization of a given .envrc",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH_TO_RC\u003e": {
+        "Name": "\u003cPATH_TO_RC\u003e",
+        "kind": "argument",
+        "description": "PATH_TO_RC",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH_TO_RC\u003e": {
+        "Name": "\u003cPATH_TO_RC\u003e",
+        "kind": "argument",
+        "description": "PATH_TO_RC",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "dotenv": {
+    "Name": "dotenv",
+    "kind": "subcommand",
+    "description": "Transforms a .env file to evaluatable `export KEY=PAIR` statements",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH_TO_DOTENV\u003e": {
+        "Name": "\u003cPATH_TO_DOTENV\u003e",
+        "kind": "argument",
+        "description": "PATH_TO_DOTENV",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cSHELL\u003e": {
+        "Name": "\u003cSHELL\u003e",
+        "kind": "argument",
+        "description": "SHELL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH_TO_DOTENV\u003e": {
+        "Name": "\u003cPATH_TO_DOTENV\u003e",
+        "kind": "argument",
+        "description": "PATH_TO_DOTENV",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cSHELL\u003e": {
+        "Name": "\u003cSHELL\u003e",
+        "kind": "argument",
+        "description": "SHELL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH_TO_DOTENV\u003e"
+    ]
+  },
+  "dump": {
+    "Name": "dump",
+    "kind": "subcommand",
+    "description": "Used to export the inner bash state at the end of execution",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cSHELL\u003e": {
+        "Name": "\u003cSHELL\u003e",
+        "kind": "argument",
+        "description": "SHELL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cSHELL\u003e": {
+        "Name": "\u003cSHELL\u003e",
+        "kind": "argument",
+        "description": "SHELL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "edit": {
+    "Name": "edit",
+    "kind": "subcommand",
+    "description": "Opens PATH_TO_RC or the current .envrc into an $EDITOR and allow the file to be loaded afterwards",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH_TO_RC\u003e": {
+        "Name": "\u003cPATH_TO_RC\u003e",
+        "kind": "argument",
+        "description": "PATH_TO_RC",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH_TO_RC\u003e": {
+        "Name": "\u003cPATH_TO_RC\u003e",
+        "kind": "argument",
+        "description": "PATH_TO_RC",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "exec": {
+    "Name": "exec",
+    "kind": "subcommand",
+    "description": "Executes a command after loading the first .envrc found in DIR",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cCOMMAND\u003e": {
+        "Name": "\u003cCOMMAND\u003e",
+        "kind": "argument",
+        "description": "COMMAND",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cDIR\u003e": {
+        "Name": "\u003cDIR\u003e",
+        "kind": "argument",
+        "description": "DIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cCOMMAND\u003e": {
+        "Name": "\u003cCOMMAND\u003e",
+        "kind": "argument",
+        "description": "COMMAND",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cDIR\u003e": {
+        "Name": "\u003cDIR\u003e",
+        "kind": "argument",
+        "description": "DIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cDIR\u003e",
+      "\u003cCOMMAND\u003e"
+    ]
+  },
+  "export": {
+    "Name": "export",
+    "kind": "subcommand",
+    "description": "Loads an .envrc and prints the diff in terms of exports",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSHELL\u003e": {
+        "Name": "\u003cSHELL\u003e",
+        "kind": "argument",
+        "description": "SHELL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSHELL\u003e": {
+        "Name": "\u003cSHELL\u003e",
+        "kind": "argument",
+        "description": "SHELL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSHELL\u003e"
+    ]
+  },
+  "fetchurl": {
+    "Name": "fetchurl",
+    "kind": "subcommand",
+    "description": "Fetches a given URL into direnv's CAS",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cintegrity-hash\u003e": {
+        "Name": "\u003cintegrity-hash\u003e",
+        "kind": "argument",
+        "description": "integrity-hash",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003curl\u003e": {
+        "Name": "\u003curl\u003e",
+        "kind": "argument",
+        "description": "url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cintegrity-hash\u003e": {
+        "Name": "\u003cintegrity-hash\u003e",
+        "kind": "argument",
+        "description": "integrity-hash",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003curl\u003e": {
+        "Name": "\u003curl\u003e",
+        "kind": "argument",
+        "description": "url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003curl\u003e"
+    ]
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Help for direnv",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSHOW_PRIVATE\u003e": {
+        "Name": "\u003cSHOW_PRIVATE\u003e",
+        "kind": "argument",
+        "description": "SHOW_PRIVATE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSHOW_PRIVATE\u003e": {
+        "Name": "\u003cSHOW_PRIVATE\u003e",
+        "kind": "argument",
+        "description": "SHOW_PRIVATE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "hook": {
+    "Name": "hook",
+    "kind": "subcommand",
+    "description": "Used to setup the shell hook",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSHELL\u003e": {
+        "Name": "\u003cSHELL\u003e",
+        "kind": "argument",
+        "description": "SHELL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSHELL\u003e": {
+        "Name": "\u003cSHELL\u003e",
+        "kind": "argument",
+        "description": "SHELL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSHELL\u003e"
+    ]
+  },
+  "prune": {
+    "Name": "prune",
+    "kind": "subcommand",
+    "description": "Removes old allowed files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "reload": {
+    "Name": "reload",
+    "kind": "subcommand",
+    "description": "Triggers an env reload",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "show_dump": {
+    "Name": "show_dump",
+    "kind": "subcommand",
+    "description": "Show the data inside of a dump for debugging purposes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cDUMP\u003e": {
+        "Name": "\u003cDUMP\u003e",
+        "kind": "argument",
+        "description": "DUMP",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cDUMP\u003e": {
+        "Name": "\u003cDUMP\u003e",
+        "kind": "argument",
+        "description": "DUMP",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cDUMP\u003e"
+    ]
+  },
+  "status": {
+    "Name": "status",
+    "kind": "subcommand",
+    "description": "Prints some debug status information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "stdlib": {
+    "Name": "stdlib",
+    "kind": "subcommand",
+    "description": "Displays the stdlib available in the .envrc execution context",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "version": {
+    "Name": "version",
+    "kind": "subcommand",
+    "description": "Prints the version or checks that direnv is older than VERSION_AT_LEAST",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cVERSION_AT_LEAST\u003e": {
+        "Name": "\u003cVERSION_AT_LEAST\u003e",
+        "kind": "argument",
+        "description": "VERSION_AT_LEAST",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cVERSION_AT_LEAST\u003e": {
+        "Name": "\u003cVERSION_AT_LEAST\u003e",
+        "kind": "argument",
+        "description": "VERSION_AT_LEAST",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "watch": {
+    "Name": "watch",
+    "kind": "subcommand",
+    "description": "Adds a path to the list that direnv watches for changes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cSHELL\u003e": {
+        "Name": "\u003cSHELL\u003e",
+        "kind": "argument",
+        "description": "SHELL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cSHELL\u003e": {
+        "Name": "\u003cSHELL\u003e",
+        "kind": "argument",
+        "description": "SHELL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSHELL\u003e",
+      "\u003cPATH\u003e"
+    ]
+  },
+  "watch-dir": {
+    "Name": "watch-dir",
+    "kind": "subcommand",
+    "description": "Recursively adds a directory to the list that direnv watches for changes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cDIR\u003e": {
+        "Name": "\u003cDIR\u003e",
+        "kind": "argument",
+        "description": "DIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cSHELL\u003e": {
+        "Name": "\u003cSHELL\u003e",
+        "kind": "argument",
+        "description": "SHELL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cDIR\u003e": {
+        "Name": "\u003cDIR\u003e",
+        "kind": "argument",
+        "description": "DIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cSHELL\u003e": {
+        "Name": "\u003cSHELL\u003e",
+        "kind": "argument",
+        "description": "SHELL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSHELL\u003e",
+      "\u003cDIR\u003e"
+    ]
+  },
+  "watch-list": {
+    "Name": "watch-list",
+    "kind": "subcommand",
+    "description": "Pipe pairs of `mtime path` to stdin to build a list of files to watch",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSHELL\u003e": {
+        "Name": "\u003cSHELL\u003e",
+        "kind": "argument",
+        "description": "SHELL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSHELL\u003e": {
+        "Name": "\u003cSHELL\u003e",
+        "kind": "argument",
+        "description": "SHELL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  }
+}

@@ -1,0 +1,430 @@
+{
+  "--entry-point": {
+    "Name": "--entry-point",
+    "kind": "option",
+    "description": "Select the entry point for role(s)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cENTRY_POINT\u003e": {
+        "Name": "\u003cENTRY_POINT\u003e",
+        "kind": "argument",
+        "description": "ENTRY_POINT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cENTRY_POINT\u003e": {
+        "Name": "\u003cENTRY_POINT\u003e",
+        "kind": "argument",
+        "description": "ENTRY_POINT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cENTRY_POINT\u003e"
+    ]
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--json": {
+    "Name": "--json",
+    "kind": "option",
+    "description": "Change output into json format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--list": {
+    "Name": "--list",
+    "kind": "option",
+    "description": "List available plugins; a supplied argument will be used for filtering (can be a namespace or full collection name)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNAMESPACE|COLLECTION\u003e": {
+        "Name": "\u003cNAMESPACE|COLLECTION\u003e",
+        "kind": "argument",
+        "description": "NAMESPACE|COLLECTION",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNAMESPACE|COLLECTION\u003e": {
+        "Name": "\u003cNAMESPACE|COLLECTION\u003e",
+        "kind": "argument",
+        "description": "NAMESPACE|COLLECTION",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--list_files": {
+    "Name": "--list_files",
+    "kind": "option",
+    "description": "Show plugin names and their source files without summaries (implies --list)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--metadata-dump": {
+    "Name": "--metadata-dump",
+    "kind": "option",
+    "description": "For internal testing only Dump json metadata for all plugins",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--module-path": {
+    "Name": "--module-path",
+    "kind": "option",
+    "description": "Prepend colon-separated path(s) to module library",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--playbook-dir": {
+    "Name": "--playbook-dir",
+    "kind": "option",
+    "description": "Sets the relative path for many features including roles/ group_vars/ etc",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cBASEDIR\u003e": {
+        "Name": "\u003cBASEDIR\u003e",
+        "kind": "argument",
+        "description": "BASEDIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cBASEDIR\u003e": {
+        "Name": "\u003cBASEDIR\u003e",
+        "kind": "argument",
+        "description": "BASEDIR",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cBASEDIR\u003e"
+    ]
+  },
+  "--roles-path": {
+    "Name": "--roles-path",
+    "kind": "option",
+    "description": "The path to the directory containing your roles",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH\u003e"
+    ]
+  },
+  "--snippet": {
+    "Name": "--snippet",
+    "kind": "option",
+    "description": "Show playbook snippet for these plugin types: inventory, lookup, module",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPLUGIN_TYPE\u003e": {
+        "Name": "\u003cPLUGIN_TYPE\u003e",
+        "kind": "argument",
+        "description": "PLUGIN_TYPE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPLUGIN_TYPE\u003e": {
+        "Name": "\u003cPLUGIN_TYPE\u003e",
+        "kind": "argument",
+        "description": "PLUGIN_TYPE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPLUGIN_TYPE\u003e"
+    ]
+  },
+  "--type": {
+    "Name": "--type",
+    "kind": "option",
+    "description": "Choose which plugin type (defaults to \"module\")",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPLUGIN_TYPE\u003e": {
+        "Name": "\u003cPLUGIN_TYPE\u003e",
+        "kind": "argument",
+        "description": "PLUGIN_TYPE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPLUGIN_TYPE\u003e": {
+        "Name": "\u003cPLUGIN_TYPE\u003e",
+        "kind": "argument",
+        "description": "PLUGIN_TYPE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPLUGIN_TYPE\u003e"
+    ]
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Verbose mode (-vvv for more, -vvvv to enable connection debugging)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Shows version number, config file location, module search path, module location, executable location and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-E": {
+    "Name": "-E",
+    "kind": "option",
+    "description": "Select the entry point for role(s)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cENTRY_POINT\u003e": {
+        "Name": "\u003cENTRY_POINT\u003e",
+        "kind": "argument",
+        "description": "ENTRY_POINT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cENTRY_POINT\u003e": {
+        "Name": "\u003cENTRY_POINT\u003e",
+        "kind": "argument",
+        "description": "ENTRY_POINT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cENTRY_POINT\u003e"
+    ]
+  },
+  "-F": {
+    "Name": "-F",
+    "kind": "option",
+    "description": "Show plugin names and their source files without summaries (implies --list)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-M": {
+    "Name": "-M",
+    "kind": "option",
+    "description": "Prepend colon-separated path(s) to module library",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-j": {
+    "Name": "-j",
+    "kind": "option",
+    "description": "Change output into json format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "option",
+    "description": "List available plugins; a supplied argument will be used for filtering (can be a namespace or full collection name)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNAMESPACE|COLLECTION\u003e": {
+        "Name": "\u003cNAMESPACE|COLLECTION\u003e",
+        "kind": "argument",
+        "description": "NAMESPACE|COLLECTION",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNAMESPACE|COLLECTION\u003e": {
+        "Name": "\u003cNAMESPACE|COLLECTION\u003e",
+        "kind": "argument",
+        "description": "NAMESPACE|COLLECTION",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "The path to the directory containing your roles",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH\u003e"
+    ]
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Show playbook snippet for these plugin types: inventory, lookup, module",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPLUGIN_TYPE\u003e": {
+        "Name": "\u003cPLUGIN_TYPE\u003e",
+        "kind": "argument",
+        "description": "PLUGIN_TYPE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPLUGIN_TYPE\u003e": {
+        "Name": "\u003cPLUGIN_TYPE\u003e",
+        "kind": "argument",
+        "description": "PLUGIN_TYPE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPLUGIN_TYPE\u003e"
+    ]
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Choose which plugin type (defaults to \"module\")",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPLUGIN_TYPE\u003e": {
+        "Name": "\u003cPLUGIN_TYPE\u003e",
+        "kind": "argument",
+        "description": "PLUGIN_TYPE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPLUGIN_TYPE\u003e": {
+        "Name": "\u003cPLUGIN_TYPE\u003e",
+        "kind": "argument",
+        "description": "PLUGIN_TYPE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPLUGIN_TYPE\u003e"
+    ]
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Verbose mode (-vvv for more, -vvvv to enable connection debugging)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003cplugin\u003e": {
+    "Name": "\u003cplugin\u003e",
+    "kind": "argument",
+    "description": "plugin",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

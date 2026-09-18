@@ -1,0 +1,76 @@
+{
+  "name": "tldr",
+  "description": "A simpler man page than the existing man page",
+  "options": [
+    {
+      "name": [
+        "-h",
+        "--help"
+      ],
+      "description": "Display help for command"
+    },
+    {
+      "name": [
+        "-s",
+        "--search"
+      ],
+      "description": "Search all pages for the query",
+      "args": {
+        "name": "query"
+      }
+    },
+    {
+      "name": "--linux",
+      "description": "Show command page for Linux",
+      "args": {}
+    },
+    {
+      "name": "--osx",
+      "description": "Show command page for OSX",
+      "args": {}
+    },
+    {
+      "name": "--sunos",
+      "description": "Show command page for SunOS",
+      "args": {}
+    },
+    {
+      "name": [
+        "-l",
+        "--list"
+      ],
+      "description": "Show all pages for current platform"
+    },
+    {
+      "name": [
+        "-u",
+        "--update"
+      ],
+      "description": "Download the latest pages and generate search index"
+    },
+    {
+      "name": [
+        "-c",
+        "--clear-cache"
+      ],
+      "description": "Delete the entire local cache"
+    },
+    {
+      "name": [
+        "--platform",
+        "-p"
+      ],
+      "description": "Select platform",
+      "args": {
+        "name": "platform",
+        "suggestions": [
+          "linux",
+          "osx",
+          "sunos",
+          "windows",
+          "common"
+        ]
+      }
+    }
+  ]
+}

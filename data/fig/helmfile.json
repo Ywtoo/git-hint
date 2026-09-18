@@ -1,0 +1,762 @@
+{
+  " write-values": {
+    "Name": " write-values",
+    "kind": "subcommand",
+    "description": "Write values files for releases. Similar to `helmfile template`, write values files instead of manifests",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--allow-no-matching-release": {
+    "Name": "--allow-no-matching-release",
+    "kind": "option",
+    "description": "Show help for helmfile",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--chart": {
+    "Name": "--chart",
+    "kind": "option",
+    "description": "Set chart. Uses the chart set in release by default, and is available in template as {{ .Chart }}",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "--color": {
+    "Name": "--color",
+    "kind": "option",
+    "description": "Output with color",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--debug": {
+    "Name": "--debug",
+    "kind": "option",
+    "description": "Enable verbose output for Helm and set log-level to debug, this disables --quiet/-q effect",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--enable-live-output": {
+    "Name": "--enable-live-output",
+    "kind": "option",
+    "description": "Show live output from the Helm binary Stdout/Stderr into Helmfile own Stdout/Stderr. It only applies for the Helm CLI commands, Stdout/Stderr for Hooks are still displayed only when it's execution finishes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--environment": {
+    "Name": "--environment",
+    "kind": "option",
+    "description": "Specify the environment name. defaults to default",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cenvironment\u003e": {
+        "Name": "\u003cenvironment\u003e",
+        "kind": "argument",
+        "description": "environment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cenvironment\u003e": {
+        "Name": "\u003cenvironment\u003e",
+        "kind": "argument",
+        "description": "environment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cenvironment\u003e"
+    ]
+  },
+  "--file": {
+    "Name": "--file",
+    "kind": "option",
+    "description": "Load config from file or directory. defaults to helmfile.yaml or `helmfile.d`(means `helmfile.d/*.yaml`) in this preference",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile\u003e"
+    ]
+  },
+  "--helm-binary": {
+    "Name": "--helm-binary",
+    "kind": "option",
+    "description": "Path to the helm binary (default \"helm\")",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cbinary\u003e": {
+        "Name": "\u003cbinary\u003e",
+        "kind": "argument",
+        "description": "binary",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cbinary\u003e": {
+        "Name": "\u003cbinary\u003e",
+        "kind": "argument",
+        "description": "binary",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cbinary\u003e"
+    ]
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Do not exit with an error code if the provided selector has no matching releases",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--interactive": {
+    "Name": "--interactive",
+    "kind": "option",
+    "description": "Request confirmation before attempting to modify clusters",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--kube-context": {
+    "Name": "--kube-context",
+    "kind": "option",
+    "description": "Set kubectl context. Uses current context by default",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckube-context\u003e": {
+        "Name": "\u003ckube-context\u003e",
+        "kind": "argument",
+        "description": "kube-context",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckube-context\u003e": {
+        "Name": "\u003ckube-context\u003e",
+        "kind": "argument",
+        "description": "kube-context",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ckube-context\u003e"
+    ]
+  },
+  "--log-level": {
+    "Name": "--log-level",
+    "kind": "option",
+    "description": "Set log level, default info (default info)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clog-level\u003e": {
+        "Name": "\u003clog-level\u003e",
+        "kind": "argument",
+        "description": "log-level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clog-level\u003e": {
+        "Name": "\u003clog-level\u003e",
+        "kind": "argument",
+        "description": "log-level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clog-level\u003e"
+    ]
+  },
+  "--namespace": {
+    "Name": "--namespace",
+    "kind": "option",
+    "description": "Set namespace. Uses the namespace set in the context by default, and is available in templates as {{ .Namespace }}",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnamespace\u003e": {
+        "Name": "\u003cnamespace\u003e",
+        "kind": "argument",
+        "description": "namespace",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnamespace\u003e": {
+        "Name": "\u003cnamespace\u003e",
+        "kind": "argument",
+        "description": "namespace",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnamespace\u003e"
+    ]
+  },
+  "--no-color": {
+    "Name": "--no-color",
+    "kind": "option",
+    "description": "Output without color",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--quiet": {
+    "Name": "--quiet",
+    "kind": "option",
+    "description": "Silence output. Equivalent to log-level warn",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--selector": {
+    "Name": "--selector",
+    "kind": "option",
+    "description": "Only run using the releases that match labels. Labels can take the form of foo=bar or foo!=bar",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003c selector \u003e": {
+        "Name": "\u003c selector \u003e",
+        "kind": "argument",
+        "description": " selector ",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003c selector \u003e": {
+        "Name": "\u003c selector \u003e",
+        "kind": "argument",
+        "description": " selector ",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003c selector \u003e"
+    ]
+  },
+  "--state-values-file": {
+    "Name": "--state-values-file",
+    "kind": "option",
+    "description": "Specify state values in a YAML file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstate-values-file\u003e": {
+        "Name": "\u003cstate-values-file\u003e",
+        "kind": "argument",
+        "description": "state-values-file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstate-values-file\u003e": {
+        "Name": "\u003cstate-values-file\u003e",
+        "kind": "argument",
+        "description": "state-values-file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstate-values-file\u003e"
+    ]
+  },
+  "--state-values-set": {
+    "Name": "--state-values-set",
+    "kind": "option",
+    "description": "Set state values on the command line (can specify multiple or separate values with commas: key1=val1,key2=val2)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstate-values-=set\u003e": {
+        "Name": "\u003cstate-values-=set\u003e",
+        "kind": "argument",
+        "description": "state-values-=set",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstate-values-=set\u003e": {
+        "Name": "\u003cstate-values-=set\u003e",
+        "kind": "argument",
+        "description": "state-values-=set",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstate-values-=set\u003e"
+    ]
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Version for helmfile",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-b": {
+    "Name": "-b",
+    "kind": "option",
+    "description": "Path to the helm binary (default \"helm\")",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cbinary\u003e": {
+        "Name": "\u003cbinary\u003e",
+        "kind": "argument",
+        "description": "binary",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cbinary\u003e": {
+        "Name": "\u003cbinary\u003e",
+        "kind": "argument",
+        "description": "binary",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cbinary\u003e"
+    ]
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Set chart. Uses the chart set in release by default, and is available in template as {{ .Chart }}",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstring\u003e": {
+        "Name": "\u003cstring\u003e",
+        "kind": "argument",
+        "description": "string",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstring\u003e"
+    ]
+  },
+  "-e": {
+    "Name": "-e",
+    "kind": "option",
+    "description": "Specify the environment name. defaults to default",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cenvironment\u003e": {
+        "Name": "\u003cenvironment\u003e",
+        "kind": "argument",
+        "description": "environment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cenvironment\u003e": {
+        "Name": "\u003cenvironment\u003e",
+        "kind": "argument",
+        "description": "environment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cenvironment\u003e"
+    ]
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Load config from file or directory. defaults to helmfile.yaml or `helmfile.d`(means `helmfile.d/*.yaml`) in this preference",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Do not exit with an error code if the provided selector has no matching releases",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Request confirmation before attempting to modify clusters",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "option",
+    "description": "Only run using the releases that match labels. Labels can take the form of foo=bar or foo!=bar",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003c selector \u003e": {
+        "Name": "\u003c selector \u003e",
+        "kind": "argument",
+        "description": " selector ",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003c selector \u003e": {
+        "Name": "\u003c selector \u003e",
+        "kind": "argument",
+        "description": " selector ",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003c selector \u003e"
+    ]
+  },
+  "-n": {
+    "Name": "-n",
+    "kind": "option",
+    "description": "Set namespace. Uses the namespace set in the context by default, and is available in templates as {{ .Namespace }}",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnamespace\u003e": {
+        "Name": "\u003cnamespace\u003e",
+        "kind": "argument",
+        "description": "namespace",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnamespace\u003e": {
+        "Name": "\u003cnamespace\u003e",
+        "kind": "argument",
+        "description": "namespace",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnamespace\u003e"
+    ]
+  },
+  "-q": {
+    "Name": "-q",
+    "kind": "option",
+    "description": "Silence output. Equivalent to log-level warn",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Version for helmfile",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "apply": {
+    "Name": "apply",
+    "kind": "subcommand",
+    "description": "Apply all resources from state file only when there are changes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "build": {
+    "Name": "build",
+    "kind": "subcommand",
+    "description": "Build all resources from state file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "cache": {
+    "Name": "cache",
+    "kind": "subcommand",
+    "description": "Cache management",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "charts": {
+    "Name": "charts",
+    "kind": "subcommand",
+    "description": "DEPRECATED: sync releases from state file (helm upgrade --install)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "completion": {
+    "Name": "completion",
+    "kind": "subcommand",
+    "description": "Generate the autocompletion script for the specified shell",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "delete": {
+    "Name": "delete",
+    "kind": "subcommand",
+    "description": "The helmfile delete sub-command deletes all the releases defined in the manifests",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "deps": {
+    "Name": "deps",
+    "kind": "subcommand",
+    "description": "Update charts based on their requirements, it locks your helmfile state and local charts dependencies",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "destroy": {
+    "Name": "destroy",
+    "kind": "subcommand",
+    "description": "Destroys and then purges releases",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "diff": {
+    "Name": "diff",
+    "kind": "subcommand",
+    "description": "Diff releases defined in state file, it executes the helm-diff plugin across all of the charts/releases defined in the manifest",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "fetch": {
+    "Name": "fetch",
+    "kind": "subcommand",
+    "description": "Fetch charts from state file, it downloads or copies local charts to a local directory for debug purpose",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Help about any command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "init": {
+    "Name": "init",
+    "kind": "subcommand",
+    "description": "Initialize the helmfile, includes version checking and installation of helm and plug-ins",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "lint": {
+    "Name": "lint",
+    "kind": "subcommand",
+    "description": "Lint charts from state file (helm lint)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "list": {
+    "Name": "list",
+    "kind": "subcommand",
+    "description": "List releases defined in state file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "repos": {
+    "Name": "repos",
+    "kind": "subcommand",
+    "description": "Repos releases defined in state file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "secrets": {
+    "Name": "secrets",
+    "kind": "subcommand",
+    "description": "Causes the helm-secrets plugin to be executed to decrypt the file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "status": {
+    "Name": "status",
+    "kind": "subcommand",
+    "description": "Retrieve status of releases in state file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "sync": {
+    "Name": "sync",
+    "kind": "subcommand",
+    "description": "Sync releases defined in state file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "template": {
+    "Name": "template",
+    "kind": "subcommand",
+    "description": "Template releases defined in state file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "test": {
+    "Name": "test",
+    "kind": "subcommand",
+    "description": "Test charts from state file (helm test)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "version": {
+    "Name": "version",
+    "kind": "subcommand",
+    "description": "Print the CLI version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

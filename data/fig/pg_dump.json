@@ -1,0 +1,1550 @@
+{
+  "--attribute-inserts": {
+    "Name": "--attribute-inserts",
+    "kind": "option",
+    "description": "Dump data as INSERT commands with column names",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--binary-upgrade": {
+    "Name": "--binary-upgrade",
+    "kind": "option",
+    "description": "For use by upgrade utilities only",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--blobs": {
+    "Name": "--blobs",
+    "kind": "option",
+    "description": "Include large objects in dump",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--clean": {
+    "Name": "--clean",
+    "kind": "option",
+    "description": "Clean (drop) database objects before recreating",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--column-inserts": {
+    "Name": "--column-inserts",
+    "kind": "option",
+    "description": "Dump data as INSERT commands with column names",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--compress": {
+    "Name": "--compress",
+    "kind": "option",
+    "description": "Compression level for compressed formats",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clevel\u003e"
+    ]
+  },
+  "--create": {
+    "Name": "--create",
+    "kind": "option",
+    "description": "Include commands to create database in dump",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--data-only": {
+    "Name": "--data-only",
+    "kind": "option",
+    "description": "Dump only the data, not the schema",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--dbname": {
+    "Name": "--dbname",
+    "kind": "option",
+    "description": "Database to dump",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdatabase\u003e": {
+        "Name": "\u003cdatabase\u003e",
+        "kind": "argument",
+        "description": "database",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdatabase\u003e": {
+        "Name": "\u003cdatabase\u003e",
+        "kind": "argument",
+        "description": "database",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdatabase\u003e"
+    ]
+  },
+  "--disable-dollar-quoting": {
+    "Name": "--disable-dollar-quoting",
+    "kind": "option",
+    "description": "Disable dollar quoting, use SQL standard quoting",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--disable-triggers": {
+    "Name": "--disable-triggers",
+    "kind": "option",
+    "description": "Disable triggers during data-only restore",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--enable-row-security": {
+    "Name": "--enable-row-security",
+    "kind": "option",
+    "description": "Enable row security (dump only content user has access to)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--encoding": {
+    "Name": "--encoding",
+    "kind": "option",
+    "description": "Dump the data in encoding \u003cencoding\u003e",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cencoding\u003e": {
+        "Name": "\u003cencoding\u003e",
+        "kind": "argument",
+        "description": "encoding",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cencoding\u003e": {
+        "Name": "\u003cencoding\u003e",
+        "kind": "argument",
+        "description": "encoding",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cencoding\u003e"
+    ]
+  },
+  "--exclude-schema": {
+    "Name": "--exclude-schema",
+    "kind": "option",
+    "description": "Do NOT dump the specified schema(s)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpattern\u003e": {
+        "Name": "\u003cpattern\u003e",
+        "kind": "argument",
+        "description": "pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpattern\u003e": {
+        "Name": "\u003cpattern\u003e",
+        "kind": "argument",
+        "description": "pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpattern\u003e"
+    ]
+  },
+  "--exclude-table": {
+    "Name": "--exclude-table",
+    "kind": "option",
+    "description": "Do NOT dump the specified table(s)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctable\u003e": {
+        "Name": "\u003ctable\u003e",
+        "kind": "argument",
+        "description": "table",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctable\u003e": {
+        "Name": "\u003ctable\u003e",
+        "kind": "argument",
+        "description": "table",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctable\u003e"
+    ]
+  },
+  "--exclude-table-data": {
+    "Name": "--exclude-table-data",
+    "kind": "option",
+    "description": "Do NOT dump data for the specified table(s)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctable\u003e": {
+        "Name": "\u003ctable\u003e",
+        "kind": "argument",
+        "description": "table",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctable\u003e": {
+        "Name": "\u003ctable\u003e",
+        "kind": "argument",
+        "description": "table",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctable\u003e"
+    ]
+  },
+  "--extension": {
+    "Name": "--extension",
+    "kind": "option",
+    "description": "Dump the specified extension(s) only",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpattern\u003e": {
+        "Name": "\u003cpattern\u003e",
+        "kind": "argument",
+        "description": "pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpattern\u003e": {
+        "Name": "\u003cpattern\u003e",
+        "kind": "argument",
+        "description": "pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpattern\u003e"
+    ]
+  },
+  "--extra-float-digits": {
+    "Name": "--extra-float-digits",
+    "kind": "option",
+    "description": "Override default setting for extra_float_digits",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnum\u003e": {
+        "Name": "\u003cnum\u003e",
+        "kind": "argument",
+        "description": "num",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnum\u003e": {
+        "Name": "\u003cnum\u003e",
+        "kind": "argument",
+        "description": "num",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnum\u003e"
+    ]
+  },
+  "--file": {
+    "Name": "--file",
+    "kind": "option",
+    "description": "Output file or directory name",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfilename\u003e": {
+        "Name": "\u003cfilename\u003e",
+        "kind": "argument",
+        "description": "filename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfilename\u003e": {
+        "Name": "\u003cfilename\u003e",
+        "kind": "argument",
+        "description": "filename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfilename\u003e"
+    ]
+  },
+  "--format": {
+    "Name": "--format",
+    "kind": "option",
+    "description": "Output file format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cformat\u003e": {
+        "Name": "\u003cformat\u003e",
+        "kind": "argument",
+        "description": "format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cformat\u003e": {
+        "Name": "\u003cformat\u003e",
+        "kind": "argument",
+        "description": "format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cformat\u003e"
+    ]
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for pg_dump",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--host": {
+    "Name": "--host",
+    "kind": "option",
+    "description": "Database server host or socket directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003chost\u003e": {
+        "Name": "\u003chost\u003e",
+        "kind": "argument",
+        "description": "host",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003chost\u003e": {
+        "Name": "\u003chost\u003e",
+        "kind": "argument",
+        "description": "host",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003chost\u003e"
+    ]
+  },
+  "--if-exists": {
+    "Name": "--if-exists",
+    "kind": "option",
+    "description": "Use IF EXISTS when dropping objects",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--include-foreign-data": {
+    "Name": "--include-foreign-data",
+    "kind": "option",
+    "description": "Include data of foreign tables on foreign servers matching PATTERN",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpattern\u003e": {
+        "Name": "\u003cpattern\u003e",
+        "kind": "argument",
+        "description": "pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpattern\u003e": {
+        "Name": "\u003cpattern\u003e",
+        "kind": "argument",
+        "description": "pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpattern\u003e"
+    ]
+  },
+  "--inserts": {
+    "Name": "--inserts",
+    "kind": "option",
+    "description": "Dump data as INSERT commands, rather than COPY",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--jobs": {
+    "Name": "--jobs",
+    "kind": "option",
+    "description": "Number of parallel job to dump",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnum\u003e": {
+        "Name": "\u003cnum\u003e",
+        "kind": "argument",
+        "description": "num",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnum\u003e": {
+        "Name": "\u003cnum\u003e",
+        "kind": "argument",
+        "description": "num",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnum\u003e"
+    ]
+  },
+  "--load-via-partition-root": {
+    "Name": "--load-via-partition-root",
+    "kind": "option",
+    "description": "Load partitions via the root table",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--lock-wait-timeout": {
+    "Name": "--lock-wait-timeout",
+    "kind": "option",
+    "description": "Fail after waiting \u003ctimeout\u003e for a table lock",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctimeout\u003e": {
+        "Name": "\u003ctimeout\u003e",
+        "kind": "argument",
+        "description": "timeout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctimeout\u003e": {
+        "Name": "\u003ctimeout\u003e",
+        "kind": "argument",
+        "description": "timeout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctimeout\u003e"
+    ]
+  },
+  "--no-acl": {
+    "Name": "--no-acl",
+    "kind": "option",
+    "description": "Do not dump privileges (grant/revoke)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-blobs": {
+    "Name": "--no-blobs",
+    "kind": "option",
+    "description": "Exclude large objects in dump",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-comments": {
+    "Name": "--no-comments",
+    "kind": "option",
+    "description": "Do not dump comments",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-owner": {
+    "Name": "--no-owner",
+    "kind": "option",
+    "description": "Skip restoration of object ownership in plain-text format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-password": {
+    "Name": "--no-password",
+    "kind": "option",
+    "description": "Never prompt for password",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-privileges": {
+    "Name": "--no-privileges",
+    "kind": "option",
+    "description": "Do not dump privileges (grant/revoke)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-publications": {
+    "Name": "--no-publications",
+    "kind": "option",
+    "description": "Do not dump publications",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-security-labels": {
+    "Name": "--no-security-labels",
+    "kind": "option",
+    "description": "Do not dump security label assignments",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-subscriptions": {
+    "Name": "--no-subscriptions",
+    "kind": "option",
+    "description": "Do not dump subscriptions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-sync": {
+    "Name": "--no-sync",
+    "kind": "option",
+    "description": "Do not wait for changes to be written safely to disk",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-synchronized-snapshots": {
+    "Name": "--no-synchronized-snapshots",
+    "kind": "option",
+    "description": "Do not use synchronized snapshots in parallel jobs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-tablespaces": {
+    "Name": "--no-tablespaces",
+    "kind": "option",
+    "description": "Do not dump tablespace assignments",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-toast-compression": {
+    "Name": "--no-toast-compression",
+    "kind": "option",
+    "description": "Do not dump TOAST compression methods",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-unlogged-table-data": {
+    "Name": "--no-unlogged-table-data",
+    "kind": "option",
+    "description": "Do not dump unlogged table data",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--on-conflict-do-nothing": {
+    "Name": "--on-conflict-do-nothing",
+    "kind": "option",
+    "description": "Add ON CONFLICT DO NOTHING to INSERT commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--password": {
+    "Name": "--password",
+    "kind": "option",
+    "description": "Force password prompt (should happen automatically)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--port": {
+    "Name": "--port",
+    "kind": "option",
+    "description": "Database server port number",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnumber\u003e": {
+        "Name": "\u003cnumber\u003e",
+        "kind": "argument",
+        "description": "number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnumber\u003e": {
+        "Name": "\u003cnumber\u003e",
+        "kind": "argument",
+        "description": "number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnumber\u003e"
+    ]
+  },
+  "--quote-all-identifiers": {
+    "Name": "--quote-all-identifiers",
+    "kind": "option",
+    "description": "Quote all identifiers, even if not key words",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--role": {
+    "Name": "--role",
+    "kind": "option",
+    "description": "Do SET ROLE before dump",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "--rows-per-insert": {
+    "Name": "--rows-per-insert",
+    "kind": "option",
+    "description": "Number of rows per INSERT; implies --inserts",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnumbers\u003e": {
+        "Name": "\u003cnumbers\u003e",
+        "kind": "argument",
+        "description": "numbers",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnumbers\u003e": {
+        "Name": "\u003cnumbers\u003e",
+        "kind": "argument",
+        "description": "numbers",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnumbers\u003e"
+    ]
+  },
+  "--schema": {
+    "Name": "--schema",
+    "kind": "option",
+    "description": "Dump the specified schema(s) only",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpattern\u003e": {
+        "Name": "\u003cpattern\u003e",
+        "kind": "argument",
+        "description": "pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpattern\u003e": {
+        "Name": "\u003cpattern\u003e",
+        "kind": "argument",
+        "description": "pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpattern\u003e"
+    ]
+  },
+  "--schema-only": {
+    "Name": "--schema-only",
+    "kind": "option",
+    "description": "Dump only the schema, no data",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--section": {
+    "Name": "--section",
+    "kind": "option",
+    "description": "Dump named section (pre-data, data, or post-data)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csection\u003e": {
+        "Name": "\u003csection\u003e",
+        "kind": "argument",
+        "description": "section",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csection\u003e": {
+        "Name": "\u003csection\u003e",
+        "kind": "argument",
+        "description": "section",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csection\u003e"
+    ]
+  },
+  "--serializable-deferrable": {
+    "Name": "--serializable-deferrable",
+    "kind": "option",
+    "description": "Wait until the dump can run without anomalies",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--snapshot": {
+    "Name": "--snapshot",
+    "kind": "option",
+    "description": "Use given snapshot for the dump",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csnapshot\u003e": {
+        "Name": "\u003csnapshot\u003e",
+        "kind": "argument",
+        "description": "snapshot",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csnapshot\u003e": {
+        "Name": "\u003csnapshot\u003e",
+        "kind": "argument",
+        "description": "snapshot",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csnapshot\u003e"
+    ]
+  },
+  "--strict-names": {
+    "Name": "--strict-names",
+    "kind": "option",
+    "description": "Require table and/or schema include patterns to match at least one entity each",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--superuser": {
+    "Name": "--superuser",
+    "kind": "option",
+    "description": "Superuser user name to use in plain-text format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "--table": {
+    "Name": "--table",
+    "kind": "option",
+    "description": "Dump the specified table(s) only",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctable\u003e": {
+        "Name": "\u003ctable\u003e",
+        "kind": "argument",
+        "description": "table",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctable\u003e": {
+        "Name": "\u003ctable\u003e",
+        "kind": "argument",
+        "description": "table",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctable\u003e"
+    ]
+  },
+  "--use-set-session-authorization": {
+    "Name": "--use-set-session-authorization",
+    "kind": "option",
+    "description": "Use SET SESSION AUTHORIZATION commands instead of ALTER OWNER commands to set ownership",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--username": {
+    "Name": "--username",
+    "kind": "option",
+    "description": "Connect as specified database user",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Verbose mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Output version information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-?": {
+    "Name": "-?",
+    "kind": "option",
+    "description": "Show help for pg_dump",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-B": {
+    "Name": "-B",
+    "kind": "option",
+    "description": "Exclude large objects in dump",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-C": {
+    "Name": "-C",
+    "kind": "option",
+    "description": "Include commands to create database in dump",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-E": {
+    "Name": "-E",
+    "kind": "option",
+    "description": "Dump the data in encoding \u003cencoding\u003e",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cencoding\u003e": {
+        "Name": "\u003cencoding\u003e",
+        "kind": "argument",
+        "description": "encoding",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cencoding\u003e": {
+        "Name": "\u003cencoding\u003e",
+        "kind": "argument",
+        "description": "encoding",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cencoding\u003e"
+    ]
+  },
+  "-F": {
+    "Name": "-F",
+    "kind": "option",
+    "description": "Output file format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cformat\u003e": {
+        "Name": "\u003cformat\u003e",
+        "kind": "argument",
+        "description": "format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cformat\u003e": {
+        "Name": "\u003cformat\u003e",
+        "kind": "argument",
+        "description": "format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cformat\u003e"
+    ]
+  },
+  "-N": {
+    "Name": "-N",
+    "kind": "option",
+    "description": "Do NOT dump the specified schema(s)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpattern\u003e": {
+        "Name": "\u003cpattern\u003e",
+        "kind": "argument",
+        "description": "pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpattern\u003e": {
+        "Name": "\u003cpattern\u003e",
+        "kind": "argument",
+        "description": "pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpattern\u003e"
+    ]
+  },
+  "-O": {
+    "Name": "-O",
+    "kind": "option",
+    "description": "Skip restoration of object ownership in plain-text format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-S": {
+    "Name": "-S",
+    "kind": "option",
+    "description": "Superuser user name to use in plain-text format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "-T": {
+    "Name": "-T",
+    "kind": "option",
+    "description": "Do NOT dump the specified table(s)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctable\u003e": {
+        "Name": "\u003ctable\u003e",
+        "kind": "argument",
+        "description": "table",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctable\u003e": {
+        "Name": "\u003ctable\u003e",
+        "kind": "argument",
+        "description": "table",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctable\u003e"
+    ]
+  },
+  "-U": {
+    "Name": "-U",
+    "kind": "option",
+    "description": "Connect as specified database user",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "-V": {
+    "Name": "-V",
+    "kind": "option",
+    "description": "Output version information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-W": {
+    "Name": "-W",
+    "kind": "option",
+    "description": "Force password prompt (should happen automatically)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-Z": {
+    "Name": "-Z",
+    "kind": "option",
+    "description": "Compression level for compressed formats",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clevel\u003e": {
+        "Name": "\u003clevel\u003e",
+        "kind": "argument",
+        "description": "level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clevel\u003e"
+    ]
+  },
+  "-a": {
+    "Name": "-a",
+    "kind": "option",
+    "description": "Dump only the data, not the schema",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-b": {
+    "Name": "-b",
+    "kind": "option",
+    "description": "Include large objects in dump",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Clean (drop) database objects before recreating",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Database to dump",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdatabase\u003e": {
+        "Name": "\u003cdatabase\u003e",
+        "kind": "argument",
+        "description": "database",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdatabase\u003e": {
+        "Name": "\u003cdatabase\u003e",
+        "kind": "argument",
+        "description": "database",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdatabase\u003e"
+    ]
+  },
+  "-e": {
+    "Name": "-e",
+    "kind": "option",
+    "description": "Dump the specified extension(s) only",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpattern\u003e": {
+        "Name": "\u003cpattern\u003e",
+        "kind": "argument",
+        "description": "pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpattern\u003e": {
+        "Name": "\u003cpattern\u003e",
+        "kind": "argument",
+        "description": "pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpattern\u003e"
+    ]
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Output file or directory name",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfilename\u003e": {
+        "Name": "\u003cfilename\u003e",
+        "kind": "argument",
+        "description": "filename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfilename\u003e": {
+        "Name": "\u003cfilename\u003e",
+        "kind": "argument",
+        "description": "filename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfilename\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Database server host or socket directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003chost\u003e": {
+        "Name": "\u003chost\u003e",
+        "kind": "argument",
+        "description": "host",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003chost\u003e": {
+        "Name": "\u003chost\u003e",
+        "kind": "argument",
+        "description": "host",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003chost\u003e"
+    ]
+  },
+  "-j": {
+    "Name": "-j",
+    "kind": "option",
+    "description": "Number of parallel job to dump",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnum\u003e": {
+        "Name": "\u003cnum\u003e",
+        "kind": "argument",
+        "description": "num",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnum\u003e": {
+        "Name": "\u003cnum\u003e",
+        "kind": "argument",
+        "description": "num",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnum\u003e"
+    ]
+  },
+  "-n": {
+    "Name": "-n",
+    "kind": "option",
+    "description": "Dump the specified schema(s) only",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpattern\u003e": {
+        "Name": "\u003cpattern\u003e",
+        "kind": "argument",
+        "description": "pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpattern\u003e": {
+        "Name": "\u003cpattern\u003e",
+        "kind": "argument",
+        "description": "pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpattern\u003e"
+    ]
+  },
+  "-p": {
+    "Name": "-p",
+    "kind": "option",
+    "description": "Database server port number",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnumber\u003e": {
+        "Name": "\u003cnumber\u003e",
+        "kind": "argument",
+        "description": "number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnumber\u003e": {
+        "Name": "\u003cnumber\u003e",
+        "kind": "argument",
+        "description": "number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnumber\u003e"
+    ]
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Dump only the schema, no data",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Dump the specified table(s) only",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctable\u003e": {
+        "Name": "\u003ctable\u003e",
+        "kind": "argument",
+        "description": "table",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctable\u003e": {
+        "Name": "\u003ctable\u003e",
+        "kind": "argument",
+        "description": "table",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctable\u003e"
+    ]
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Verbose mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-w": {
+    "Name": "-w",
+    "kind": "option",
+    "description": "Never prompt for password",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-x": {
+    "Name": "-x",
+    "kind": "option",
+    "description": "Do not dump privileges (grant/revoke)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003cdbname\u003e": {
+    "Name": "\u003cdbname\u003e",
+    "kind": "argument",
+    "description": "dbname",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

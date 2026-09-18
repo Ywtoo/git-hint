@@ -1,0 +1,697 @@
+{
+  "--": {
+    "Name": "--",
+    "kind": "option",
+    "description": "Treat all following options as file names. Use this option if you want to convert files whose names start with a dash",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--add-bom": {
+    "Name": "--add-bom",
+    "kind": "option",
+    "description": "Write a Byte Order Mark (BOM) in the output file. By default an UTF-8 BOM is written",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--allow-chown": {
+    "Name": "--allow-chown",
+    "kind": "option",
+    "description": "Allow file ownership change in old file mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--assume-utf16be": {
+    "Name": "--assume-utf16be",
+    "kind": "option",
+    "description": "Assume that the input format is UTF-16BE",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--assume-utf16le": {
+    "Name": "--assume-utf16le",
+    "kind": "option",
+    "description": "Assume that the input format is UTF-16LE",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--convmode": {
+    "Name": "--convmode",
+    "kind": "option",
+    "description": "Set conversion mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cCONVMODE\u003e": {
+        "Name": "\u003cCONVMODE\u003e",
+        "kind": "argument",
+        "description": "CONVMODE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cCONVMODE\u003e": {
+        "Name": "\u003cCONVMODE\u003e",
+        "kind": "argument",
+        "description": "CONVMODE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cCONVMODE\u003e"
+    ]
+  },
+  "--display-enc": {
+    "Name": "--display-enc",
+    "kind": "option",
+    "description": "Set encoding of displayed text",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cENCODING\u003e": {
+        "Name": "\u003cENCODING\u003e",
+        "kind": "argument",
+        "description": "ENCODING",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cENCODING\u003e": {
+        "Name": "\u003cENCODING\u003e",
+        "kind": "argument",
+        "description": "ENCODING",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cENCODING\u003e"
+    ]
+  },
+  "--follow-symlink": {
+    "Name": "--follow-symlink",
+    "kind": "option",
+    "description": "Follow symbolic links and convert the targets",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--force": {
+    "Name": "--force",
+    "kind": "option",
+    "description": "Force conversion of binary files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--gb18030": {
+    "Name": "--gb18030",
+    "kind": "option",
+    "description": "On Windows UTF-16 files are by default converted to UTF-8, regardless of the locale setting",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for dos2unix",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--info": {
+    "Name": "--info",
+    "kind": "option",
+    "description": "Display file information. No conversion is done",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cvalue\u003e"
+    ]
+  },
+  "--keep-bom": {
+    "Name": "--keep-bom",
+    "kind": "option",
+    "description": "Keep Byte Order Mark (BOM). When the input file has a BOM, write a BOM in the output file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--keep-utf16": {
+    "Name": "--keep-utf16",
+    "kind": "option",
+    "description": "Keep UTF-16 encoding",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--keepdate": {
+    "Name": "--keepdate",
+    "kind": "option",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--license": {
+    "Name": "--license",
+    "kind": "option",
+    "description": "Display program's license",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--newfile": {
+    "Name": "--newfile",
+    "kind": "option",
+    "description": "New file mode. Convert file INFILE and write output to file OUTFILE. File names must be given in pairs and wildcard names should not be used or you will lose your files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cINFILE\u003e": {
+        "Name": "\u003cINFILE\u003e",
+        "kind": "argument",
+        "description": "INFILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cOUTFILE\u003e": {
+        "Name": "\u003cOUTFILE\u003e",
+        "kind": "argument",
+        "description": "OUTFILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cINFILE\u003e": {
+        "Name": "\u003cINFILE\u003e",
+        "kind": "argument",
+        "description": "INFILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cOUTFILE\u003e": {
+        "Name": "\u003cOUTFILE\u003e",
+        "kind": "argument",
+        "description": "OUTFILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cINFILE\u003e",
+      "\u003cOUTFILE\u003e"
+    ]
+  },
+  "--newline": {
+    "Name": "--newline",
+    "kind": "option",
+    "description": "Add additional newline",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-allow-chown": {
+    "Name": "--no-allow-chown",
+    "kind": "option",
+    "description": "Don't allow file ownership change in old file mode (default)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--oldfile": {
+    "Name": "--oldfile",
+    "kind": "option",
+    "description": "Old file mode. Convert file FILE and overwrite output to it",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFILE\u003e"
+    ]
+  },
+  "--quiet": {
+    "Name": "--quiet",
+    "kind": "option",
+    "description": "Quiet mode. Suppress all warnings and messages. The return value is zero.  Except when wrong command-line options are used",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--remove-bom": {
+    "Name": "--remove-bom",
+    "kind": "option",
+    "description": "Remove Byte Order Mark (BOM). Do not write a BOM in the output file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--replace-symlink": {
+    "Name": "--replace-symlink",
+    "kind": "option",
+    "description": "Replace symbolic links with converted files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--safe": {
+    "Name": "--safe",
+    "kind": "option",
+    "description": "Skip binary files (default)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--skip-symlink": {
+    "Name": "--skip-symlink",
+    "kind": "option",
+    "description": "Keep symbolic links and targets unchanged (default)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Verbose operation",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Display version number",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-1252": {
+    "Name": "-1252",
+    "kind": "option",
+    "description": "Use Windows code page 1252 (Western European)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-437": {
+    "Name": "-437",
+    "kind": "option",
+    "description": "Use DOS code page 437 (US). This is the default code page used for ISO conversion",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-7": {
+    "Name": "-7",
+    "kind": "option",
+    "description": "Convert 8 bit characters to 7 bit space",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-850": {
+    "Name": "-850",
+    "kind": "option",
+    "description": "Use DOS code page 850 (Western European)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-860": {
+    "Name": "-860",
+    "kind": "option",
+    "description": "Use DOS code page 860 (Portuguese)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-863": {
+    "Name": "-863",
+    "kind": "option",
+    "description": "Use DOS code page 863 (French Canadian)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-865": {
+    "Name": "-865",
+    "kind": "option",
+    "description": "Use DOS code page 865 (Nordic)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-D": {
+    "Name": "-D",
+    "kind": "option",
+    "description": "Set encoding of displayed text",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cENCODING\u003e": {
+        "Name": "\u003cENCODING\u003e",
+        "kind": "argument",
+        "description": "ENCODING",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cENCODING\u003e": {
+        "Name": "\u003cENCODING\u003e",
+        "kind": "argument",
+        "description": "ENCODING",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cENCODING\u003e"
+    ]
+  },
+  "-F": {
+    "Name": "-F",
+    "kind": "option",
+    "description": "Follow symbolic links and convert the targets",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-L": {
+    "Name": "-L",
+    "kind": "option",
+    "description": "Display program's license",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-R": {
+    "Name": "-R",
+    "kind": "option",
+    "description": "Replace symbolic links with converted files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-S": {
+    "Name": "-S",
+    "kind": "option",
+    "description": "Keep symbolic links and targets unchanged (default)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-V": {
+    "Name": "-V",
+    "kind": "option",
+    "description": "Display version number",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-ascii": {
+    "Name": "-ascii",
+    "kind": "option",
+    "description": "Convert only line breaks. This is the default conversion mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-b": {
+    "Name": "-b",
+    "kind": "option",
+    "description": "Keep Byte Order Mark (BOM). When the input file has a BOM, write a BOM in the output file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Set conversion mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cCONVMODE\u003e": {
+        "Name": "\u003cCONVMODE\u003e",
+        "kind": "argument",
+        "description": "CONVMODE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cCONVMODE\u003e": {
+        "Name": "\u003cCONVMODE\u003e",
+        "kind": "argument",
+        "description": "CONVMODE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cCONVMODE\u003e"
+    ]
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Force conversion of binary files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-gb": {
+    "Name": "-gb",
+    "kind": "option",
+    "description": "On Windows UTF-16 files are by default converted to UTF-8, regardless of the locale setting",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help for dos2unix",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Display file information. No conversion is done",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cvalue\u003e"
+    ]
+  },
+  "-iso": {
+    "Name": "-iso",
+    "kind": "option",
+    "description": "Conversion between DOS and ISO-8859-1 character set",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-k": {
+    "Name": "-k",
+    "kind": "option",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "option",
+    "description": "Add additional newline",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-m": {
+    "Name": "-m",
+    "kind": "option",
+    "description": "Write a Byte Order Mark (BOM) in the output file. By default an UTF-8 BOM is written",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-o": {
+    "Name": "-o",
+    "kind": "option",
+    "description": "Old file mode. Convert file FILE and overwrite output to it",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFILE\u003e"
+    ]
+  },
+  "-q": {
+    "Name": "-q",
+    "kind": "option",
+    "description": "Quiet mode. Suppress all warnings and messages. The return value is zero.  Except when wrong command-line options are used",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "Remove Byte Order Mark (BOM). Do not write a BOM in the output file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Skip binary files (default)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-u": {
+    "Name": "-u",
+    "kind": "option",
+    "description": "Keep UTF-16 encoding",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-ub": {
+    "Name": "-ub",
+    "kind": "option",
+    "description": "Assume that the input format is UTF-16BE",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-ul": {
+    "Name": "-ul",
+    "kind": "option",
+    "description": "Assume that the input format is UTF-16LE",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Verbose operation",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003cfile\u003e": {
+    "Name": "\u003cfile\u003e",
+    "kind": "argument",
+    "description": "file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

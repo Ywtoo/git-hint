@@ -1,0 +1,276 @@
+{
+  "--client": {
+    "Name": "--client",
+    "kind": "option",
+    "description": "Set DB client without a knexfile",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--connection": {
+    "Name": "--connection",
+    "kind": "option",
+    "description": "Set DB connection without a knexfile",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--cwd": {
+    "Name": "--cwd",
+    "kind": "option",
+    "description": "Specify the working directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--debug": {
+    "Name": "--debug",
+    "kind": "option",
+    "description": "Run with debugging",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--env": {
+    "Name": "--env",
+    "kind": "option",
+    "description": "Environment, default: process.env.NODE_ENV || development",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cenvironment\u003e": {
+        "Name": "\u003cenvironment\u003e",
+        "kind": "argument",
+        "description": "environment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cenvironment\u003e": {
+        "Name": "\u003cenvironment\u003e",
+        "kind": "argument",
+        "description": "environment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cenvironment\u003e"
+    ]
+  },
+  "--esm": {
+    "Name": "--esm",
+    "kind": "option",
+    "description": "Enable ESM interop",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Display help for command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--knexfile": {
+    "Name": "--knexfile",
+    "kind": "option",
+    "description": "Specify the knexfile path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--knexpath": {
+    "Name": "--knexpath",
+    "kind": "option",
+    "description": "Specify the path to knex instance",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--migrations-directory": {
+    "Name": "--migrations-directory",
+    "kind": "option",
+    "description": "Set migrations directory without a knexfile",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--migrations-table-name": {
+    "Name": "--migrations-table-name",
+    "kind": "option",
+    "description": "Set migrations table name without a knexfile",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--specific": {
+    "Name": "--specific",
+    "kind": "option",
+    "description": "Specify one seed file to execute",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--timestamp-filename-prefix": {
+    "Name": "--timestamp-filename-prefix",
+    "kind": "option",
+    "description": "Enable a timestamp prefix on name of generated seed files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Output the version number",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Display help for command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "init": {
+    "Name": "init",
+    "kind": "subcommand",
+    "description": "Create a fresh knexfile",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "migrate:currentVersion": {
+    "Name": "migrate:currentVersion",
+    "kind": "subcommand",
+    "description": "View the current version for the  migration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "migrate:down": {
+    "Name": "migrate:down",
+    "kind": "subcommand",
+    "description": "Undo the last or the specified migration that was already run",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "migrate:latest": {
+    "Name": "migrate:latest",
+    "kind": "subcommand",
+    "description": "Run all migrations that have not yet been run",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "migrate:list|migrate:status": {
+    "Name": "migrate:list|migrate:status",
+    "kind": "subcommand",
+    "description": "List all migrations files with status",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "migrate:make": {
+    "Name": "migrate:make",
+    "kind": "subcommand",
+    "description": "Create a named migration file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmigration name\u003e": {
+        "Name": "\u003cmigration name\u003e",
+        "kind": "argument",
+        "description": "migration name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmigration name\u003e": {
+        "Name": "\u003cmigration name\u003e",
+        "kind": "argument",
+        "description": "migration name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmigration name\u003e"
+    ]
+  },
+  "migrate:rollback": {
+    "Name": "migrate:rollback",
+    "kind": "subcommand",
+    "description": "Rollback the last batch of migrations performed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "migrate:unlock": {
+    "Name": "migrate:unlock",
+    "kind": "subcommand",
+    "description": "Forcibly unlocks the migrations lock table",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "migrate:up": {
+    "Name": "migrate:up",
+    "kind": "subcommand",
+    "description": "Run the next or the specified migration that has not yet been run",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "seed:make": {
+    "Name": "seed:make",
+    "kind": "subcommand",
+    "description": "Create a named seed file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cseed name\u003e": {
+        "Name": "\u003cseed name\u003e",
+        "kind": "argument",
+        "description": "seed name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cseed name\u003e": {
+        "Name": "\u003cseed name\u003e",
+        "kind": "argument",
+        "description": "seed name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cseed name\u003e"
+    ]
+  },
+  "seed:run": {
+    "Name": "seed:run",
+    "kind": "subcommand",
+    "description": "Run seed files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

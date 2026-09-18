@@ -1,0 +1,708 @@
+{
+  "--cmd": {
+    "Name": "--cmd",
+    "kind": "option",
+    "description": "Semicolon separated commands to execute on start of broot",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommands\u003e": {
+        "Name": "\u003ccommands\u003e",
+        "kind": "argument",
+        "description": "commands",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommands\u003e": {
+        "Name": "\u003ccommands\u003e",
+        "kind": "argument",
+        "description": "commands",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommands\u003e"
+    ]
+  },
+  "--color": {
+    "Name": "--color",
+    "kind": "option",
+    "description": "Controls styling of the output (default: auto). If set to auto, all styling is removed when output is piped",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--conf": {
+    "Name": "--conf",
+    "kind": "option",
+    "description": "Semicolon separated paths to specific config files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cconf\u003e": {
+        "Name": "\u003cconf\u003e",
+        "kind": "argument",
+        "description": "conf",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cconf\u003e": {
+        "Name": "\u003cconf\u003e",
+        "kind": "argument",
+        "description": "conf",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cconf\u003e"
+    ]
+  },
+  "--dates": {
+    "Name": "--dates",
+    "kind": "option",
+    "description": "Show the last modified date of files and directories",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--get-root": {
+    "Name": "--get-root",
+    "kind": "option",
+    "description": "Ask for the current root of the remote broot",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--git-status": {
+    "Name": "--git-status",
+    "kind": "option",
+    "description": "Only show files having an interesting git status, including hidden ones",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--height": {
+    "Name": "--height",
+    "kind": "option",
+    "description": "Height to use if you don't want to fill the screen or for file export (by default the terminal height is used)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cheight\u003e": {
+        "Name": "\u003cheight\u003e",
+        "kind": "argument",
+        "description": "height",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cheight\u003e": {
+        "Name": "\u003cheight\u003e",
+        "kind": "argument",
+        "description": "height",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cheight\u003e"
+    ]
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Prints a help page, with more or less the same content as this man page",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--hidden": {
+    "Name": "--hidden",
+    "kind": "option",
+    "description": "Show hidden files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--install": {
+    "Name": "--install",
+    "kind": "option",
+    "description": "Install or reinstall the br shell function",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--listen": {
+    "Name": "--listen",
+    "kind": "option",
+    "description": "Listen for commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clisten\u003e": {
+        "Name": "\u003clisten\u003e",
+        "kind": "argument",
+        "description": "listen",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clisten\u003e": {
+        "Name": "\u003clisten\u003e",
+        "kind": "argument",
+        "description": "listen",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clisten\u003e"
+    ]
+  },
+  "--no-dates": {
+    "Name": "--no-dates",
+    "kind": "option",
+    "description": "Don't show the last modified date",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-hidden": {
+    "Name": "--no-hidden",
+    "kind": "option",
+    "description": "Don't show hidden files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-only-folders": {
+    "Name": "--no-only-folders",
+    "kind": "option",
+    "description": "Show folders and files alike",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-permissions": {
+    "Name": "--no-permissions",
+    "kind": "option",
+    "description": "Don't show permissions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-show-git-info": {
+    "Name": "--no-show-git-info",
+    "kind": "option",
+    "description": "Don't show git statuses on files nor stats",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-show-gitignored": {
+    "Name": "--no-show-gitignored",
+    "kind": "option",
+    "description": "Don't show gitignored files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-sizes": {
+    "Name": "--no-sizes",
+    "kind": "option",
+    "description": "Don't show sizes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-sort": {
+    "Name": "--no-sort",
+    "kind": "option",
+    "description": "Don't sort",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-trim-root": {
+    "Name": "--no-trim-root",
+    "kind": "option",
+    "description": "Don't trim the root (still trim the deeper levels). A scrollbar may be used when there are too many elements to show on screen",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--only-folders": {
+    "Name": "--only-folders",
+    "kind": "option",
+    "description": "Only show folders",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--out": {
+    "Name": "--out",
+    "kind": "option",
+    "description": "Where to write the produced path, if any",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile-export-path\u003e": {
+        "Name": "\u003cfile-export-path\u003e",
+        "kind": "argument",
+        "description": "file-export-path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile-export-path\u003e": {
+        "Name": "\u003cfile-export-path\u003e",
+        "kind": "argument",
+        "description": "file-export-path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile-export-path\u003e"
+    ]
+  },
+  "--outcmd": {
+    "Name": "--outcmd",
+    "kind": "option",
+    "description": "Where to write a command if broot produces one",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccmd-export-path\u003e": {
+        "Name": "\u003ccmd-export-path\u003e",
+        "kind": "argument",
+        "description": "cmd-export-path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccmd-export-path\u003e": {
+        "Name": "\u003ccmd-export-path\u003e",
+        "kind": "argument",
+        "description": "cmd-export-path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccmd-export-path\u003e"
+    ]
+  },
+  "--permissions": {
+    "Name": "--permissions",
+    "kind": "option",
+    "description": "Show permissions with owner and group",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--print-shell-function": {
+    "Name": "--print-shell-function",
+    "kind": "option",
+    "description": "Print to stdout the br function for the given shell. This can be used in your own installation process overriden the standard one",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cshell\u003e": {
+        "Name": "\u003cshell\u003e",
+        "kind": "argument",
+        "description": "shell",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cshell\u003e": {
+        "Name": "\u003cshell\u003e",
+        "kind": "argument",
+        "description": "shell",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cshell\u003e"
+    ]
+  },
+  "--send": {
+    "Name": "--send",
+    "kind": "option",
+    "description": "Send commands to a remote broot then quits",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csend\u003e": {
+        "Name": "\u003csend\u003e",
+        "kind": "argument",
+        "description": "send",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csend\u003e": {
+        "Name": "\u003csend\u003e",
+        "kind": "argument",
+        "description": "send",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csend\u003e"
+    ]
+  },
+  "--set-install-state": {
+    "Name": "--set-install-state",
+    "kind": "option",
+    "description": "Set the installation state. This is mostly useful in installation scripts to override the normal installation process",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstate\u003e": {
+        "Name": "\u003cstate\u003e",
+        "kind": "argument",
+        "description": "state",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstate\u003e": {
+        "Name": "\u003cstate\u003e",
+        "kind": "argument",
+        "description": "state",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstate\u003e"
+    ]
+  },
+  "--show-git-info": {
+    "Name": "--show-git-info",
+    "kind": "option",
+    "description": "Show git statuses on files and stats of repository",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--show-gitignored": {
+    "Name": "--show-gitignored",
+    "kind": "option",
+    "description": "Show files which should be ignored according to git",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--show-root-fs": {
+    "Name": "--show-root-fs",
+    "kind": "option",
+    "description": "Show filesystem info on top",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--sizes": {
+    "Name": "--sizes",
+    "kind": "option",
+    "description": "Show the sizes of files and directories. When this mode is on, children aren't shown so that the biggest entries at the selected level can be sorted first",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--sort-by-count": {
+    "Name": "--sort-by-count",
+    "kind": "option",
+    "description": "Sort by count (only show one level of the tree)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--sort-by-date": {
+    "Name": "--sort-by-date",
+    "kind": "option",
+    "description": "Sort by date (only show one level of the tree)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--sort-by-size": {
+    "Name": "--sort-by-size",
+    "kind": "option",
+    "description": "Sort by size (only show one level of the tree)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--trim-root": {
+    "Name": "--trim-root",
+    "kind": "option",
+    "description": "Trim the root: remove elements which would exceed the screen size. This removes the scrollbar",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Prints the version of broot",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--whale-spotting": {
+    "Name": "--whale-spotting",
+    "kind": "option",
+    "description": "Sort by size, show ignored and hidden files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-D": {
+    "Name": "-D",
+    "kind": "option",
+    "description": "Don't show the last modified date",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-F": {
+    "Name": "-F",
+    "kind": "option",
+    "description": "Show folders and files alike",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-G": {
+    "Name": "-G",
+    "kind": "option",
+    "description": "Don't show git statuses on files nor stats",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-H": {
+    "Name": "-H",
+    "kind": "option",
+    "description": "Don't show hidden files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-I": {
+    "Name": "-I",
+    "kind": "option",
+    "description": "Don't show gitignored files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-P": {
+    "Name": "-P",
+    "kind": "option",
+    "description": "Don't show permissions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-S": {
+    "Name": "-S",
+    "kind": "option",
+    "description": "Don't show sizes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-T": {
+    "Name": "-T",
+    "kind": "option",
+    "description": "Don't trim the root (still trim the deeper levels). A scrollbar may be used when there are too many elements to show on screen",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Semicolon separated commands to execute on start of broot",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommands\u003e": {
+        "Name": "\u003ccommands\u003e",
+        "kind": "argument",
+        "description": "commands",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommands\u003e": {
+        "Name": "\u003ccommands\u003e",
+        "kind": "argument",
+        "description": "commands",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommands\u003e"
+    ]
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Show the last modified date of files and directories",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Only show folders",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-g": {
+    "Name": "-g",
+    "kind": "option",
+    "description": "Show git statuses on files and stats of repository",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show hidden files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Show files which should be ignored according to git",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-o": {
+    "Name": "-o",
+    "kind": "option",
+    "description": "Where to write the produced path, if any",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile-export-path\u003e": {
+        "Name": "\u003cfile-export-path\u003e",
+        "kind": "argument",
+        "description": "file-export-path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile-export-path\u003e": {
+        "Name": "\u003cfile-export-path\u003e",
+        "kind": "argument",
+        "description": "file-export-path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile-export-path\u003e"
+    ]
+  },
+  "-p": {
+    "Name": "-p",
+    "kind": "option",
+    "description": "Show permissions with owner and group",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Show the sizes of files and directories. When this mode is on, children aren't shown so that the biggest entries at the selected level can be sorted first",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Trim the root: remove elements which would exceed the screen size. This removes the scrollbar",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Prints the version of broot",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-w": {
+    "Name": "-w",
+    "kind": "option",
+    "description": "Sort by size, show ignored and hidden files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003cROOT\u003e": {
+    "Name": "\u003cROOT\u003e",
+    "kind": "argument",
+    "description": "ROOT",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

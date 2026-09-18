@@ -1,0 +1,299 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show command synopsis",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--manual": {
+    "Name": "--manual",
+    "kind": "option",
+    "description": "Show manual page",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Show the xdg-utils version information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "default": {
+    "Name": "default",
+    "kind": "subcommand",
+    "description": "Ask the desktop environment to make application the default application for opening files of type mimetype",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003capplication\u003e": {
+        "Name": "\u003capplication\u003e",
+        "kind": "argument",
+        "description": "application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cmimetype(s)\u003e": {
+        "Name": "\u003cmimetype(s)\u003e",
+        "kind": "argument",
+        "description": "mimetype(s)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003capplication\u003e": {
+        "Name": "\u003capplication\u003e",
+        "kind": "argument",
+        "description": "application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cmimetype(s)\u003e": {
+        "Name": "\u003cmimetype(s)\u003e",
+        "kind": "argument",
+        "description": "mimetype(s)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003capplication\u003e",
+      "\u003cmimetype(s)\u003e"
+    ]
+  },
+  "install": {
+    "Name": "install",
+    "kind": "subcommand",
+    "description": "Adds the file type descriptions provided in mimetypes-file to the desktop environment",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--mode": {
+        "Name": "--mode",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmode\u003e": {
+            "Name": "\u003cmode\u003e",
+            "kind": "argument",
+            "description": "mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmode\u003e": {
+            "Name": "\u003cmode\u003e",
+            "kind": "argument",
+            "description": "mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmode\u003e"
+        ]
+      },
+      "--novendor": {
+        "Name": "--novendor",
+        "kind": "option",
+        "description": "Disables xdg-mime checks that the mimetypes-file to be installed has a proper vendor prefix",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cmimetypes-file\u003e": {
+        "Name": "\u003cmimetypes-file\u003e",
+        "kind": "argument",
+        "description": "mimetypes-file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--mode": {
+        "Name": "--mode",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmode\u003e": {
+            "Name": "\u003cmode\u003e",
+            "kind": "argument",
+            "description": "mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmode\u003e": {
+            "Name": "\u003cmode\u003e",
+            "kind": "argument",
+            "description": "mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmode\u003e"
+        ]
+      },
+      "--novendor": {
+        "Name": "--novendor",
+        "kind": "option",
+        "description": "Disables xdg-mime checks that the mimetypes-file to be installed has a proper vendor prefix",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cmimetypes-file\u003e": {
+        "Name": "\u003cmimetypes-file\u003e",
+        "kind": "argument",
+        "description": "mimetypes-file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmimetypes-file\u003e"
+    ]
+  },
+  "query": {
+    "Name": "query",
+    "kind": "subcommand",
+    "description": "Returns information related to file types",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfiletype | default\u003e": {
+        "Name": "\u003cfiletype | default\u003e",
+        "kind": "argument",
+        "description": "filetype | default",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfiletype | default\u003e": {
+        "Name": "\u003cfiletype | default\u003e",
+        "kind": "argument",
+        "description": "filetype | default",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfiletype | default\u003e"
+    ]
+  },
+  "uninstall": {
+    "Name": "uninstall",
+    "kind": "subcommand",
+    "description": "Removes the file type descriptions provided in mimetypes-file and previously added with xdg-mime install from the desktop environment",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--mode": {
+        "Name": "--mode",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmode\u003e": {
+            "Name": "\u003cmode\u003e",
+            "kind": "argument",
+            "description": "mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmode\u003e": {
+            "Name": "\u003cmode\u003e",
+            "kind": "argument",
+            "description": "mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmode\u003e"
+        ]
+      },
+      "\u003cmimetypes-file\u003e": {
+        "Name": "\u003cmimetypes-file\u003e",
+        "kind": "argument",
+        "description": "mimetypes-file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--mode": {
+        "Name": "--mode",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmode\u003e": {
+            "Name": "\u003cmode\u003e",
+            "kind": "argument",
+            "description": "mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmode\u003e": {
+            "Name": "\u003cmode\u003e",
+            "kind": "argument",
+            "description": "mode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmode\u003e"
+        ]
+      },
+      "\u003cmimetypes-file\u003e": {
+        "Name": "\u003cmimetypes-file\u003e",
+        "kind": "argument",
+        "description": "mimetypes-file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmimetypes-file\u003e"
+    ]
+  }
+}

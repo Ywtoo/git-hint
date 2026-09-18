@@ -1,0 +1,125 @@
+package ranking
+
+import (
+	"strings"
+	"testing"
+
+	"git-hint/internal/core"
+)
+
+func TestRankSuggestionsWithReader(t *testing.T) {
+	tests := []struct {
+		name          string
+		commandName   string
+		history       string
+		suggestions   []core.CommandMatch
+		expectedOrder []string
+	}{
+		{
+			name:        "Prioritize frequency over alphabet",
+			commandName: "git",
+			history:     ": 1718540000:0;git checkout\n: 1718540001:0;git checkout\n: 1718540002:0;git status\n",
+			suggestions: []core.CommandMatch{
+				{Name: "checkout", Description: "desc1"},
+				{Name: "status", Description: "desc2"},
+				{Name: "add", Description: "desc3"},
+			},
+			expectedOrder: []string{"checkout", "status", "add"},
+		},
+		{
+			name:        "Alphabetical tie-break",
+			commandName: "git",
+			history:     ": 1718540000:0;git add\n: 1718540001:0;git commit\n",
+			suggestions: []core.CommandMatch{
+				{Name: "commit", Description: "desc1"},
+				{Name: "add", Description: "desc2"},
+			},
+			expectedOrder: []string{"add", "commit"},
+		},
+		{
+			name:        "Flag priority over alphabet",
+			commandName: "git commit",
+			history:     ": 1718540000:0;git commit -m 'msg'\n: 1718540001:0;git commit -m 'msg2'\n: 1718540002:0;git commit -a\n",
+			suggestions: []core.CommandMatch{
+				{Name: "-a", Description: "desc1"},
+				{Name: "-m", Description: "desc2"},
+				{Name: "--amend", Description: "desc3"},
+			},
+			expectedOrder: []string{"-m", "-a", "--amend"},
+		},
+		{
+			name:        "Command name with arguments",
+			commandName: "git remote",
+			history:     ": 1718540000:0;git remote add\n: 1718540001:0;git remote add\n: 1718540002:0;git remote set-url\n",
+			suggestions: []core.CommandMatch{
+				{Name: "add", Description: "desc1"},
+				{Name: "set-url", Description: "desc2"},
+				{Name: "remove", Description: "desc3"},
+			},
+			expectedOrder: []string{"add", "set-url", "remove"},
+		},
+		{
+			name:        "Root command frequency ranking when commandName is empty",
+			commandName: "",
+			history:     ": 1718540000:0;git status\n: 1718540001:0;docker ps\n: 1718540002:0;git commit\n: 1718540003:0;curl https://...\n",
+			suggestions: []core.CommandMatch{
+				{Name: "curl"},
+				{Name: "docker"},
+				{Name: "git"},
+				{Name: "kubectl"},
+			},
+			expectedOrder: []string{"git", "curl", "docker", "kubectl"},
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			reader := strings.NewReader(tt.history)
+			got, err := RankSuggestionsWithReader(tt.commandName, tt.suggestions, reader)
+			if err != nil {
+				t.Fatalf("Unexpected error: %v", err)
+			}
+
+			if len(got) != len(tt.expectedOrder) {
+				t.Errorf("Expected length %d, got %d", len(tt.expectedOrder), len(got))
+			}
+
+			for i, name := range tt.expectedOrder {
+				if i < len(got) && got[i].Name != name {
+					t.Errorf("At index %d, expected %s, got %s", i, name, got[i].Name)
+				}
+			}
+		})
+	}
+}
+
+func TestRankSuggestionsPutCommandsBeforeFlags(t *testing.T) {
+	got, err := RankSuggestionsWithReader("git", []core.CommandMatch{
+		{Name: "status"},
+		{Name: "--version"},
+		{Name: "commit"},
+	}, strings.NewReader(""))
+	if err != nil {
+		t.Fatal(err)
+	}
+	if got[0].Name == "--version" {
+		t.Fatalf("flag was placed before commands: %v", got)
+	}
+	if got[2].Name != "--version" {
+		t.Fatalf("flag was not placed last: %v", got)
+	}
+}
+
+func TestRankSuggestionsPutPlaceholdersBeforeOtherSuggestions(t *testing.T) {
+	got, err := RankSuggestionsWithReader("git checkout ", []core.CommandMatch{
+		{Name: "--detach"},
+		{Name: "main", Placeholder: "<branch>"},
+		{Name: "status"},
+	}, strings.NewReader("git checkout status\ngit checkout main\ngit checkout main\n"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	if got[0].Name != "main" {
+		t.Fatalf("placeholder was not prioritized: %v", got)
+	}
+}

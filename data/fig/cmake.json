@@ -1,0 +1,2966 @@
+{
+  "--build": {
+    "Name": "--build",
+    "kind": "subcommand",
+    "description": "Project binary directory to be built and must be first. This is required unless a preset is specified",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--": {
+        "Name": "--",
+        "kind": "option",
+        "description": "Pass remaining options to the native tool",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--clean-first": {
+        "Name": "--clean-first",
+        "kind": "option",
+        "description": "Build target clean first, then build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "For multi-configuration tools, choose configuration \u003ccfg\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccfg\u003e": {
+            "Name": "\u003ccfg\u003e",
+            "kind": "argument",
+            "description": "cfg",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccfg\u003e": {
+            "Name": "\u003ccfg\u003e",
+            "kind": "argument",
+            "description": "cfg",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccfg\u003e"
+        ]
+      },
+      "--list-presets": {
+        "Name": "--list-presets",
+        "kind": "option",
+        "description": "Lists the available presets. If no option is specified only configure presets will be listed. The current working directory must contain CMake preset files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--parallel": {
+        "Name": "--parallel",
+        "kind": "option",
+        "description": "The maximum number of concurrent processes to use when building. If \u003cjobs\u003e is omitted the native build tool's default number is used",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cjobs\u003e": {
+            "Name": "\u003cjobs\u003e",
+            "kind": "argument",
+            "description": "jobs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cjobs\u003e": {
+            "Name": "\u003cjobs\u003e",
+            "kind": "argument",
+            "description": "jobs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--preset": {
+        "Name": "--preset",
+        "kind": "option",
+        "description": "Use a build preset to specify build options",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpreset\u003e": {
+            "Name": "\u003cpreset\u003e",
+            "kind": "argument",
+            "description": "preset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpreset\u003e": {
+            "Name": "\u003cpreset\u003e",
+            "kind": "argument",
+            "description": "preset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpreset\u003e"
+        ]
+      },
+      "--target": {
+        "Name": "--target",
+        "kind": "option",
+        "description": "Build \u003ctgt\u003e instead of the default target. Multiple targets may be given, separated by spaces",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctarget\u003e"
+        ]
+      },
+      "--use-stderr": {
+        "Name": "--use-stderr",
+        "kind": "option",
+        "description": "Ignored. Behavior is default in CMake \u003e= 3.0",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Enable verbose output - if supported - including the build commands to be executed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-j": {
+        "Name": "-j",
+        "kind": "option",
+        "description": "The maximum number of concurrent processes to use when building. If \u003cjobs\u003e is omitted the native build tool's default number is used",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cjobs\u003e": {
+            "Name": "\u003cjobs\u003e",
+            "kind": "argument",
+            "description": "jobs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cjobs\u003e": {
+            "Name": "\u003cjobs\u003e",
+            "kind": "argument",
+            "description": "jobs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Build \u003ctgt\u003e instead of the default target. Multiple targets may be given, separated by spaces",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctarget\u003e"
+        ]
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Enable verbose output - if supported - including the build commands to be executed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cdir\u003e": {
+        "Name": "\u003cdir\u003e",
+        "kind": "argument",
+        "description": "dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--": {
+        "Name": "--",
+        "kind": "option",
+        "description": "Pass remaining options to the native tool",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--clean-first": {
+        "Name": "--clean-first",
+        "kind": "option",
+        "description": "Build target clean first, then build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "For multi-configuration tools, choose configuration \u003ccfg\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccfg\u003e": {
+            "Name": "\u003ccfg\u003e",
+            "kind": "argument",
+            "description": "cfg",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccfg\u003e": {
+            "Name": "\u003ccfg\u003e",
+            "kind": "argument",
+            "description": "cfg",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccfg\u003e"
+        ]
+      },
+      "--list-presets": {
+        "Name": "--list-presets",
+        "kind": "option",
+        "description": "Lists the available presets. If no option is specified only configure presets will be listed. The current working directory must contain CMake preset files",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--parallel": {
+        "Name": "--parallel",
+        "kind": "option",
+        "description": "The maximum number of concurrent processes to use when building. If \u003cjobs\u003e is omitted the native build tool's default number is used",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cjobs\u003e": {
+            "Name": "\u003cjobs\u003e",
+            "kind": "argument",
+            "description": "jobs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cjobs\u003e": {
+            "Name": "\u003cjobs\u003e",
+            "kind": "argument",
+            "description": "jobs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--preset": {
+        "Name": "--preset",
+        "kind": "option",
+        "description": "Use a build preset to specify build options",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpreset\u003e": {
+            "Name": "\u003cpreset\u003e",
+            "kind": "argument",
+            "description": "preset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpreset\u003e": {
+            "Name": "\u003cpreset\u003e",
+            "kind": "argument",
+            "description": "preset",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpreset\u003e"
+        ]
+      },
+      "--target": {
+        "Name": "--target",
+        "kind": "option",
+        "description": "Build \u003ctgt\u003e instead of the default target. Multiple targets may be given, separated by spaces",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctarget\u003e"
+        ]
+      },
+      "--use-stderr": {
+        "Name": "--use-stderr",
+        "kind": "option",
+        "description": "Ignored. Behavior is default in CMake \u003e= 3.0",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Enable verbose output - if supported - including the build commands to be executed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-j": {
+        "Name": "-j",
+        "kind": "option",
+        "description": "The maximum number of concurrent processes to use when building. If \u003cjobs\u003e is omitted the native build tool's default number is used",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cjobs\u003e": {
+            "Name": "\u003cjobs\u003e",
+            "kind": "argument",
+            "description": "jobs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cjobs\u003e": {
+            "Name": "\u003cjobs\u003e",
+            "kind": "argument",
+            "description": "jobs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Build \u003ctgt\u003e instead of the default target. Multiple targets may be given, separated by spaces",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctarget\u003e"
+        ]
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Enable verbose output - if supported - including the build commands to be executed",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cdir\u003e": {
+        "Name": "\u003cdir\u003e",
+        "kind": "argument",
+        "description": "dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--check-system-vars": {
+    "Name": "--check-system-vars",
+    "kind": "option",
+    "description": "Find problems with variable usage in system files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--debug-find": {
+    "Name": "--debug-find",
+    "kind": "option",
+    "description": "Put cmake find commands in a debug mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--debug-output": {
+    "Name": "--debug-output",
+    "kind": "option",
+    "description": "Put cmake in a debug mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--debug-trycompile": {
+    "Name": "--debug-trycompile",
+    "kind": "option",
+    "description": "Do not delete the try_compile() build tree",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--graphviz": {
+    "Name": "--graphviz",
+    "kind": "option",
+    "description": "Generate graphviz of dependencies",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--install": {
+    "Name": "--install",
+    "kind": "subcommand",
+    "description": "Project binary directory to install. This is required and must be first",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--component": {
+        "Name": "--component",
+        "kind": "option",
+        "description": "Component-based install. Only install component specified",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccfg\u003e": {
+            "Name": "\u003ccfg\u003e",
+            "kind": "argument",
+            "description": "cfg",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccfg\u003e": {
+            "Name": "\u003ccfg\u003e",
+            "kind": "argument",
+            "description": "cfg",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccfg\u003e"
+        ]
+      },
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "For multi-configuration generators",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccfg\u003e": {
+            "Name": "\u003ccfg\u003e",
+            "kind": "argument",
+            "description": "cfg",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccfg\u003e": {
+            "Name": "\u003ccfg\u003e",
+            "kind": "argument",
+            "description": "cfg",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccfg\u003e"
+        ]
+      },
+      "--default-directory-permissions": {
+        "Name": "--default-directory-permissions",
+        "kind": "option",
+        "description": "Default directory install permissions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpermissions\u003e": {
+            "Name": "\u003cpermissions\u003e",
+            "kind": "argument",
+            "description": "permissions",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpermissions\u003e": {
+            "Name": "\u003cpermissions\u003e",
+            "kind": "argument",
+            "description": "permissions",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpermissions\u003e"
+        ]
+      },
+      "--prefix": {
+        "Name": "--prefix",
+        "kind": "option",
+        "description": "Override the installation prefix",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprefix\u003e": {
+            "Name": "\u003cprefix\u003e",
+            "kind": "argument",
+            "description": "prefix",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprefix\u003e": {
+            "Name": "\u003cprefix\u003e",
+            "kind": "argument",
+            "description": "prefix",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprefix\u003e"
+        ]
+      },
+      "--strip": {
+        "Name": "--strip",
+        "kind": "option",
+        "description": "Strip before installing",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Enable verbose output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Enable verbose output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cdir\u003e": {
+        "Name": "\u003cdir\u003e",
+        "kind": "argument",
+        "description": "dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--component": {
+        "Name": "--component",
+        "kind": "option",
+        "description": "Component-based install. Only install component specified",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccfg\u003e": {
+            "Name": "\u003ccfg\u003e",
+            "kind": "argument",
+            "description": "cfg",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccfg\u003e": {
+            "Name": "\u003ccfg\u003e",
+            "kind": "argument",
+            "description": "cfg",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccfg\u003e"
+        ]
+      },
+      "--config": {
+        "Name": "--config",
+        "kind": "option",
+        "description": "For multi-configuration generators",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccfg\u003e": {
+            "Name": "\u003ccfg\u003e",
+            "kind": "argument",
+            "description": "cfg",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccfg\u003e": {
+            "Name": "\u003ccfg\u003e",
+            "kind": "argument",
+            "description": "cfg",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccfg\u003e"
+        ]
+      },
+      "--default-directory-permissions": {
+        "Name": "--default-directory-permissions",
+        "kind": "option",
+        "description": "Default directory install permissions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpermissions\u003e": {
+            "Name": "\u003cpermissions\u003e",
+            "kind": "argument",
+            "description": "permissions",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpermissions\u003e": {
+            "Name": "\u003cpermissions\u003e",
+            "kind": "argument",
+            "description": "permissions",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpermissions\u003e"
+        ]
+      },
+      "--prefix": {
+        "Name": "--prefix",
+        "kind": "option",
+        "description": "Override the installation prefix",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprefix\u003e": {
+            "Name": "\u003cprefix\u003e",
+            "kind": "argument",
+            "description": "prefix",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprefix\u003e": {
+            "Name": "\u003cprefix\u003e",
+            "kind": "argument",
+            "description": "prefix",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprefix\u003e"
+        ]
+      },
+      "--strip": {
+        "Name": "--strip",
+        "kind": "option",
+        "description": "Strip before installing",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Enable verbose output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Enable verbose output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cdir\u003e": {
+        "Name": "\u003cdir\u003e",
+        "kind": "argument",
+        "description": "dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdir\u003e"
+    ]
+  },
+  "--install-prefix": {
+    "Name": "--install-prefix",
+    "kind": "option",
+    "description": "Specify the installation directory, used by the CMAKE_INSTALL_PREFIX variable. Must be an absolute path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdirectory\u003e"
+    ]
+  },
+  "--list-presets": {
+    "Name": "--list-presets",
+    "kind": "option",
+    "description": "Lists the available presets",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--log-context": {
+    "Name": "--log-context",
+    "kind": "option",
+    "description": "Enable the message() command outputting context attached to each message",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--log-level": {
+    "Name": "--log-level",
+    "kind": "option",
+    "description": "Set log-level",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clog-level\u003e": {
+        "Name": "\u003clog-level\u003e",
+        "kind": "argument",
+        "description": "log-level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clog-level\u003e": {
+        "Name": "\u003clog-level\u003e",
+        "kind": "argument",
+        "description": "log-level",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clog-level\u003e"
+    ]
+  },
+  "--no-warn-unused-cli": {
+    "Name": "--no-warn-unused-cli",
+    "kind": "option",
+    "description": "Don't warn about command line options. Don't find variables that are declared on the command line, but not used",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--open": {
+    "Name": "--open",
+    "kind": "subcommand",
+    "description": "Open the generated project in the associated application. This is only supported by some generators",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdir\u003e": {
+        "Name": "\u003cdir\u003e",
+        "kind": "argument",
+        "description": "dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdir\u003e": {
+        "Name": "\u003cdir\u003e",
+        "kind": "argument",
+        "description": "dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdir\u003e"
+    ]
+  },
+  "--preset": {
+    "Name": "--preset",
+    "kind": "option",
+    "description": "Reads a preset from \u003cpath-to-source\u003e/CMakePresets.json and \u003cpath-to-source\u003e/CMakeUserPresets.json. The preset may specify the generator and the build directory, and a list of variables and other arguments to pass to CMake. The current working directory must contain CMake preset files. The CMake GUI can also recognize CMakePresets.json and CMakeUserPresets.json files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpreset\u003e": {
+        "Name": "\u003cpreset\u003e",
+        "kind": "argument",
+        "description": "preset",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpreset\u003e": {
+        "Name": "\u003cpreset\u003e",
+        "kind": "argument",
+        "description": "preset",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpreset\u003e"
+    ]
+  },
+  "--system-information": {
+    "Name": "--system-information",
+    "kind": "option",
+    "description": "Dump information about this system",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--trace": {
+    "Name": "--trace",
+    "kind": "option",
+    "description": "Put cmake in trace mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--trace-expand": {
+    "Name": "--trace-expand",
+    "kind": "option",
+    "description": "Put cmake in trace mode with variables expanded",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--trace-format": {
+    "Name": "--trace-format",
+    "kind": "option",
+    "description": "Put cmake in trace mode and sets the trace output format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cformat\u003e": {
+        "Name": "\u003cformat\u003e",
+        "kind": "argument",
+        "description": "format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cformat\u003e": {
+        "Name": "\u003cformat\u003e",
+        "kind": "argument",
+        "description": "format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cformat\u003e"
+    ]
+  },
+  "--trace-redirect": {
+    "Name": "--trace-redirect",
+    "kind": "option",
+    "description": "Put cmake in trace mode and redirect trace output to a file instead of stderr",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile\u003e"
+    ]
+  },
+  "--trace-source": {
+    "Name": "--trace-source",
+    "kind": "option",
+    "description": "Put cmake in trace mode, but output only lines of a specified file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile\u003e"
+    ]
+  },
+  "--warn-uninitialized": {
+    "Name": "--warn-uninitialized",
+    "kind": "option",
+    "description": "Warn about uninitialized values",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--warn-unused-vars": {
+    "Name": "--warn-unused-vars",
+    "kind": "option",
+    "description": "Does nothing. In CMake versions 3.2 and below this enabled warnings about unused variables. In CMake versions 3.3 through 3.18 the option was broken. In CMake 3.19 and above the option has been removed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-A": {
+    "Name": "-A",
+    "kind": "option",
+    "description": "Specify platform name if supported by generator",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cplatform-name\u003e": {
+        "Name": "\u003cplatform-name\u003e",
+        "kind": "argument",
+        "description": "platform-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cplatform-name\u003e": {
+        "Name": "\u003cplatform-name\u003e",
+        "kind": "argument",
+        "description": "platform-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cplatform-name\u003e"
+    ]
+  },
+  "-B": {
+    "Name": "-B",
+    "kind": "option",
+    "description": "Path to directory which CMake will use as the root of build directory. If the directory doesn't already exist CMake will make it",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath-to-source\u003e": {
+        "Name": "\u003cpath-to-source\u003e",
+        "kind": "argument",
+        "description": "path-to-source",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath-to-source\u003e": {
+        "Name": "\u003cpath-to-source\u003e",
+        "kind": "argument",
+        "description": "path-to-source",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath-to-source\u003e"
+    ]
+  },
+  "-C": {
+    "Name": "-C",
+    "kind": "option",
+    "description": "Pre-load a script to populate the cache",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cinitial-cache\u003e": {
+        "Name": "\u003cinitial-cache\u003e",
+        "kind": "argument",
+        "description": "initial-cache",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cinitial-cache\u003e": {
+        "Name": "\u003cinitial-cache\u003e",
+        "kind": "argument",
+        "description": "initial-cache",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cinitial-cache\u003e"
+    ]
+  },
+  "-D": {
+    "Name": "-D",
+    "kind": "option",
+    "description": "Create or update a CMake CACHE entry",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckey value pair\u003e": {
+        "Name": "\u003ckey value pair\u003e",
+        "kind": "argument",
+        "description": "key value pair",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckey value pair\u003e": {
+        "Name": "\u003ckey value pair\u003e",
+        "kind": "argument",
+        "description": "key value pair",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ckey value pair\u003e"
+    ]
+  },
+  "-E": {
+    "Name": "-E",
+    "kind": "subcommand",
+    "description": "CMake provides builtin command-line tools through the signature",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "capabilities": {
+        "Name": "capabilities",
+        "kind": "subcommand",
+        "description": "Report cmake capabilities in JSON format. The output is a JSON object with the following keys",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "cat": {
+        "Name": "cat",
+        "kind": "subcommand",
+        "description": "Concatenate files and print on the standard output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfiles\u003e": {
+            "Name": "\u003cfiles\u003e",
+            "kind": "argument",
+            "description": "files",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfiles\u003e": {
+            "Name": "\u003cfiles\u003e",
+            "kind": "argument",
+            "description": "files",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfiles\u003e"
+        ]
+      },
+      "chdir": {
+        "Name": "chdir",
+        "kind": "subcommand",
+        "description": "Change the current working directory and run a command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccommand\u003e": {
+            "Name": "\u003ccommand\u003e",
+            "kind": "argument",
+            "description": "command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cdir\u003e": {
+            "Name": "\u003cdir\u003e",
+            "kind": "argument",
+            "description": "dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccommand\u003e": {
+            "Name": "\u003ccommand\u003e",
+            "kind": "argument",
+            "description": "command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cdir\u003e": {
+            "Name": "\u003cdir\u003e",
+            "kind": "argument",
+            "description": "dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdir\u003e",
+          "\u003ccommand\u003e"
+        ]
+      },
+      "compare_files": {
+        "Name": "compare_files",
+        "kind": "subcommand",
+        "description": "Check if file1 is the same as file2. If fails are the same, then returns 0, if not returns 1. In case of invalid arguments, it returns 2",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--ignore-eol": {
+            "Name": "--ignore-eol",
+            "kind": "option",
+            "description": "Implies line-wise comparison and ignores LF/CRLF differences",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cfile1\u003e": {
+            "Name": "\u003cfile1\u003e",
+            "kind": "argument",
+            "description": "file1",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cfile2\u003e": {
+            "Name": "\u003cfile2\u003e",
+            "kind": "argument",
+            "description": "file2",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--ignore-eol": {
+            "Name": "--ignore-eol",
+            "kind": "option",
+            "description": "Implies line-wise comparison and ignores LF/CRLF differences",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cfile1\u003e": {
+            "Name": "\u003cfile1\u003e",
+            "kind": "argument",
+            "description": "file1",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cfile2\u003e": {
+            "Name": "\u003cfile2\u003e",
+            "kind": "argument",
+            "description": "file2",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile1\u003e",
+          "\u003cfile2\u003e"
+        ]
+      },
+      "copy": {
+        "Name": "copy",
+        "kind": "subcommand",
+        "description": "Copy files to \u003cdestination\u003e (either file or directory). If multiple files are specified, the \u003cdestination\u003e must be directory and it must exist. Wildcards are not supported. copy does follow symlinks. That means it does not copy symlinks, but the files or directories it point to",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdestination\u003e": {
+            "Name": "\u003cdestination\u003e",
+            "kind": "argument",
+            "description": "destination",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdestination\u003e": {
+            "Name": "\u003cdestination\u003e",
+            "kind": "argument",
+            "description": "destination",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e",
+          "\u003cdestination\u003e"
+        ]
+      },
+      "copy_directory": {
+        "Name": "copy_directory",
+        "kind": "subcommand",
+        "description": "Copy content of \u003cdir\u003e... directories to \u003cdestination\u003e directory. If \u003cdestination\u003e directory does not exist it will be created. copy_directory does follow symlinks",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdestination\u003e": {
+            "Name": "\u003cdestination\u003e",
+            "kind": "argument",
+            "description": "destination",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cdir\u003e": {
+            "Name": "\u003cdir\u003e",
+            "kind": "argument",
+            "description": "dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdestination\u003e": {
+            "Name": "\u003cdestination\u003e",
+            "kind": "argument",
+            "description": "destination",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cdir\u003e": {
+            "Name": "\u003cdir\u003e",
+            "kind": "argument",
+            "description": "dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdir\u003e",
+          "\u003cdestination\u003e"
+        ]
+      },
+      "copy_if_different": {
+        "Name": "copy_if_different",
+        "kind": "subcommand",
+        "description": "Copy files to \u003cdestination\u003e (either file or directory) if they have changed. If multiple files are specified, the \u003cdestination\u003e must be directory and it must exist. copy_if_different does follow symlinks",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdestination\u003e": {
+            "Name": "\u003cdestination\u003e",
+            "kind": "argument",
+            "description": "destination",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdestination\u003e": {
+            "Name": "\u003cdestination\u003e",
+            "kind": "argument",
+            "description": "destination",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e",
+          "\u003cdestination\u003e"
+        ]
+      },
+      "create_hardlink": {
+        "Name": "create_hardlink",
+        "kind": "subcommand",
+        "description": "Create a hard link \u003cnew\u003e naming \u003cold\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cnew\u003e": {
+            "Name": "\u003cnew\u003e",
+            "kind": "argument",
+            "description": "new",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cold\u003e": {
+            "Name": "\u003cold\u003e",
+            "kind": "argument",
+            "description": "old",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cnew\u003e": {
+            "Name": "\u003cnew\u003e",
+            "kind": "argument",
+            "description": "new",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cold\u003e": {
+            "Name": "\u003cold\u003e",
+            "kind": "argument",
+            "description": "old",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cold\u003e",
+          "\u003cnew\u003e"
+        ]
+      },
+      "create_symlink": {
+        "Name": "create_symlink",
+        "kind": "subcommand",
+        "description": "Create a symbolic link \u003cnew\u003e naming \u003cold\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cnew\u003e": {
+            "Name": "\u003cnew\u003e",
+            "kind": "argument",
+            "description": "new",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cold\u003e": {
+            "Name": "\u003cold\u003e",
+            "kind": "argument",
+            "description": "old",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cnew\u003e": {
+            "Name": "\u003cnew\u003e",
+            "kind": "argument",
+            "description": "new",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cold\u003e": {
+            "Name": "\u003cold\u003e",
+            "kind": "argument",
+            "description": "old",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cold\u003e",
+          "\u003cnew\u003e"
+        ]
+      },
+      "echo": {
+        "Name": "echo",
+        "kind": "subcommand",
+        "description": "Displays arguments as text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "echo_append": {
+        "Name": "echo_append",
+        "kind": "subcommand",
+        "description": "Displays arguments as text but no new line",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "env": {
+        "Name": "env",
+        "kind": "subcommand",
+        "description": "Run command in a modified environment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--unset": {
+            "Name": "--unset",
+            "kind": "option",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cname\u003e"
+            ]
+          },
+          "\u003ccommand\u003e": {
+            "Name": "\u003ccommand\u003e",
+            "kind": "argument",
+            "description": "command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003ckey value pair\u003e": {
+            "Name": "\u003ckey value pair\u003e",
+            "kind": "argument",
+            "description": "key value pair",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--unset": {
+            "Name": "--unset",
+            "kind": "option",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cname\u003e"
+            ]
+          },
+          "\u003ccommand\u003e": {
+            "Name": "\u003ccommand\u003e",
+            "kind": "argument",
+            "description": "command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003ckey value pair\u003e": {
+            "Name": "\u003ckey value pair\u003e",
+            "kind": "argument",
+            "description": "key value pair",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccommand\u003e"
+        ]
+      },
+      "environment": {
+        "Name": "environment",
+        "kind": "subcommand",
+        "description": "Display the current environment variables",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "false": {
+        "Name": "false",
+        "kind": "subcommand",
+        "description": "Do nothing, with an exit code of 1",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "make_directory": {
+        "Name": "make_directory",
+        "kind": "subcommand",
+        "description": "Create \u003cdir\u003e directories. If necessary, create parent directories too. If a directory already exists it will be silently ignored",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdir\u003e": {
+            "Name": "\u003cdir\u003e",
+            "kind": "argument",
+            "description": "dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdir\u003e": {
+            "Name": "\u003cdir\u003e",
+            "kind": "argument",
+            "description": "dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdir\u003e"
+        ]
+      },
+      "md5sum": {
+        "Name": "md5sum",
+        "kind": "subcommand",
+        "description": "Create MD5 checksum of files in md5sum compatible format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "remove": {
+        "Name": "remove",
+        "kind": "subcommand",
+        "description": "Remove the file(s). The planned behavior was that if any of the listed files already do not exist, the command returns a non-zero exit code, but no message is logged",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "The -f option changes the behavior to return a zero exit code (i.e. success) in such situations instead. remove does not follow symlinks. That means it remove only symlinks and not files it point to",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "The -f option changes the behavior to return a zero exit code (i.e. success) in such situations instead. remove does not follow symlinks. That means it remove only symlinks and not files it point to",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "remove_directory": {
+        "Name": "remove_directory",
+        "kind": "subcommand",
+        "description": "Remove \u003cdir\u003e directories and their contents. If a directory does not exist it will be silently ignored. If \u003cdir\u003e is a symlink to a directory, just the symlink will be removed. Use rm instead",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdir\u003e": {
+            "Name": "\u003cdir\u003e",
+            "kind": "argument",
+            "description": "dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdir\u003e": {
+            "Name": "\u003cdir\u003e",
+            "kind": "argument",
+            "description": "dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdir\u003e"
+        ]
+      },
+      "rm": {
+        "Name": "rm",
+        "kind": "subcommand",
+        "description": "Remove the files \u003cfile\u003e or directories dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "-R": {
+            "Name": "-R",
+            "kind": "option",
+            "description": "Use -r or -R to remove directories and their contents recursively. If any of the listed files/directories do not exist, the command returns a non-zero exit code, but no message is logged",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "The -f option changes the behavior to return a zero exit code (i.e. success) in such situations instead",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-r": {
+            "Name": "-r",
+            "kind": "option",
+            "description": "Use -r or -R to remove directories and their contents recursively. If any of the listed files/directories do not exist, the command returns a non-zero exit code, but no message is logged",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cdir\u003e": {
+            "Name": "\u003cdir\u003e",
+            "kind": "argument",
+            "description": "dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "-R": {
+            "Name": "-R",
+            "kind": "option",
+            "description": "Use -r or -R to remove directories and their contents recursively. If any of the listed files/directories do not exist, the command returns a non-zero exit code, but no message is logged",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "The -f option changes the behavior to return a zero exit code (i.e. success) in such situations instead",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-r": {
+            "Name": "-r",
+            "kind": "option",
+            "description": "Use -r or -R to remove directories and their contents recursively. If any of the listed files/directories do not exist, the command returns a non-zero exit code, but no message is logged",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cdir\u003e": {
+            "Name": "\u003cdir\u003e",
+            "kind": "argument",
+            "description": "dir",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e",
+          "\u003cdir\u003e"
+        ]
+      },
+      "server": {
+        "Name": "server",
+        "kind": "subcommand",
+        "description": "Launch cmake-server(7) mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "sha1sum": {
+        "Name": "sha1sum",
+        "kind": "subcommand",
+        "description": "Create SHA1 checksum of files in sha1sum compatible format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "sha224sum": {
+        "Name": "sha224sum",
+        "kind": "subcommand",
+        "description": "Create SHA224 checksum of files in sha224sum compatible format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "sha226sum": {
+        "Name": "sha226sum",
+        "kind": "subcommand",
+        "description": "Create SHA226 checksum of files in sha226sum compatible format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "sha384sum": {
+        "Name": "sha384sum",
+        "kind": "subcommand",
+        "description": "Create SHA384 checksum of files in sha384sum compatible format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "sha512sum": {
+        "Name": "sha512sum",
+        "kind": "subcommand",
+        "description": "Create SHA512 checksum of files in sha512sum compatible format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "sleep": {
+        "Name": "sleep",
+        "kind": "subcommand",
+        "description": "Sleep for given number of seconds",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cnumber\u003e": {
+            "Name": "\u003cnumber\u003e",
+            "kind": "argument",
+            "description": "number",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cnumber\u003e": {
+            "Name": "\u003cnumber\u003e",
+            "kind": "argument",
+            "description": "number",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cnumber\u003e"
+        ]
+      },
+      "tar": {
+        "Name": "tar",
+        "kind": "subcommand",
+        "description": "Create or extract a tar or zip archive",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--": {
+            "Name": "--",
+            "kind": "option",
+            "description": "Stop interpreting options and treat all remaining arguments as file names, even if they start with -",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--files-from": {
+            "Name": "--files-from",
+            "kind": "option",
+            "description": "Read file names from the given file, one per line. Blank lines are ignored. Lines may not start in - except for --add-file=\u003cname\u003e to add files whose names start in -",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfile\u003e"
+            ]
+          },
+          "--format": {
+            "Name": "--format",
+            "kind": "option",
+            "description": "Specify the format of the archive to be created",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cformat\u003e": {
+                "Name": "\u003cformat\u003e",
+                "kind": "argument",
+                "description": "format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cformat\u003e": {
+                "Name": "\u003cformat\u003e",
+                "kind": "argument",
+                "description": "format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cformat\u003e"
+            ]
+          },
+          "--mtime": {
+            "Name": "--mtime",
+            "kind": "option",
+            "description": "Specify modification time recorded in tarball entries",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cdate\u003e": {
+                "Name": "\u003cdate\u003e",
+                "kind": "argument",
+                "description": "date",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cdate\u003e": {
+                "Name": "\u003cdate\u003e",
+                "kind": "argument",
+                "description": "date",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cdate\u003e"
+            ]
+          },
+          "--zstd": {
+            "Name": "--zstd",
+            "kind": "option",
+            "description": "Compress the resulting archive with Zstandard",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cpathname\u003e": {
+            "Name": "\u003cpathname\u003e",
+            "kind": "argument",
+            "description": "pathname",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "J": {
+            "Name": "J",
+            "kind": "option",
+            "description": "Compress the resulting archive with XZ",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "c": {
+            "Name": "c",
+            "kind": "option",
+            "description": "Create a new archive containing the specified files. If used, the pathname argument is mandatory",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "j": {
+            "Name": "j",
+            "kind": "option",
+            "description": "Compress the resulting archive with bzip2",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "t": {
+            "Name": "t",
+            "kind": "option",
+            "description": "List archive contents. The \u003cpathname\u003e... argument could be used to list only selected files or directories",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "v": {
+            "Name": "v",
+            "kind": "option",
+            "description": "Produce verbose output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "x": {
+            "Name": "x",
+            "kind": "option",
+            "description": "Extract to disk from the archive. The \u003cpathname\u003e... argument could be used to extract only selected files or directories. When extracting selected files or directories, you must provide their exact names including the path, as printed by list (-t)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "z": {
+            "Name": "z",
+            "kind": "option",
+            "description": "Compress the resulting archive with gzip",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--": {
+            "Name": "--",
+            "kind": "option",
+            "description": "Stop interpreting options and treat all remaining arguments as file names, even if they start with -",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--files-from": {
+            "Name": "--files-from",
+            "kind": "option",
+            "description": "Read file names from the given file, one per line. Blank lines are ignored. Lines may not start in - except for --add-file=\u003cname\u003e to add files whose names start in -",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfile\u003e"
+            ]
+          },
+          "--format": {
+            "Name": "--format",
+            "kind": "option",
+            "description": "Specify the format of the archive to be created",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cformat\u003e": {
+                "Name": "\u003cformat\u003e",
+                "kind": "argument",
+                "description": "format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cformat\u003e": {
+                "Name": "\u003cformat\u003e",
+                "kind": "argument",
+                "description": "format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cformat\u003e"
+            ]
+          },
+          "--mtime": {
+            "Name": "--mtime",
+            "kind": "option",
+            "description": "Specify modification time recorded in tarball entries",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cdate\u003e": {
+                "Name": "\u003cdate\u003e",
+                "kind": "argument",
+                "description": "date",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cdate\u003e": {
+                "Name": "\u003cdate\u003e",
+                "kind": "argument",
+                "description": "date",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cdate\u003e"
+            ]
+          },
+          "--zstd": {
+            "Name": "--zstd",
+            "kind": "option",
+            "description": "Compress the resulting archive with Zstandard",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cpathname\u003e": {
+            "Name": "\u003cpathname\u003e",
+            "kind": "argument",
+            "description": "pathname",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "time": {
+        "Name": "time",
+        "kind": "subcommand",
+        "description": "Run command and display elapsed time",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccommand\u003e": {
+            "Name": "\u003ccommand\u003e",
+            "kind": "argument",
+            "description": "command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccommand\u003e": {
+            "Name": "\u003ccommand\u003e",
+            "kind": "argument",
+            "description": "command",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccommand\u003e"
+        ]
+      },
+      "touch": {
+        "Name": "touch",
+        "kind": "subcommand",
+        "description": "Creates \u003cfile\u003e if file do not exist. If \u003cfile\u003e exists, it is changing \u003cfile\u003e access and modification times",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "touch_nocreate": {
+        "Name": "touch_nocreate",
+        "kind": "subcommand",
+        "description": "Touch a file if it exists but do not create it. If a file does not exist it will be silently ignored",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "true": {
+        "Name": "true",
+        "kind": "subcommand",
+        "description": "Do nothing, with an exit code of 0",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "-G": {
+    "Name": "-G",
+    "kind": "option",
+    "description": "Specify a build system generator",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cgenerator-name\u003e": {
+        "Name": "\u003cgenerator-name\u003e",
+        "kind": "argument",
+        "description": "generator-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cgenerator-name\u003e": {
+        "Name": "\u003cgenerator-name\u003e",
+        "kind": "argument",
+        "description": "generator-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cgenerator-name\u003e"
+    ]
+  },
+  "-L": {
+    "Name": "-L",
+    "kind": "option",
+    "description": "List non-advanced cached-variables",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-N": {
+    "Name": "-N",
+    "kind": "option",
+    "description": "View mode only",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-P": {
+    "Name": "-P",
+    "kind": "subcommand",
+    "description": "Process the given cmake file as a script written in the CMake language. No configure or generate step is performed and the cache is not modified. If variables are defined using -D, this must be done before the -P argument",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccmake script file\u003e": {
+        "Name": "\u003ccmake script file\u003e",
+        "kind": "argument",
+        "description": "cmake script file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccmake script file\u003e": {
+        "Name": "\u003ccmake script file\u003e",
+        "kind": "argument",
+        "description": "cmake script file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccmake script file\u003e"
+    ]
+  },
+  "-S": {
+    "Name": "-S",
+    "kind": "option",
+    "description": "Path to root directory of the CMake project to build",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath-to-source\u003e": {
+        "Name": "\u003cpath-to-source\u003e",
+        "kind": "argument",
+        "description": "path-to-source",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath-to-source\u003e": {
+        "Name": "\u003cpath-to-source\u003e",
+        "kind": "argument",
+        "description": "path-to-source",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath-to-source\u003e"
+    ]
+  },
+  "-T": {
+    "Name": "-T",
+    "kind": "option",
+    "description": "Toolset specification for the generator, if supported",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctoolset-spec\u003e": {
+        "Name": "\u003ctoolset-spec\u003e",
+        "kind": "argument",
+        "description": "toolset-spec",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctoolset-spec\u003e": {
+        "Name": "\u003ctoolset-spec\u003e",
+        "kind": "argument",
+        "description": "toolset-spec",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctoolset-spec\u003e"
+    ]
+  },
+  "-U": {
+    "Name": "-U",
+    "kind": "option",
+    "description": "Remove matching entries from CMake CACHE",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cglobbing_expr\u003e": {
+        "Name": "\u003cglobbing_expr\u003e",
+        "kind": "argument",
+        "description": "globbing_expr",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cglobbing_expr\u003e": {
+        "Name": "\u003cglobbing_expr\u003e",
+        "kind": "argument",
+        "description": "globbing_expr",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cglobbing_expr\u003e"
+    ]
+  },
+  "-Wdeprecated": {
+    "Name": "-Wdeprecated",
+    "kind": "option",
+    "description": "Enable deprecated functionality warnings",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-Wdev": {
+    "Name": "-Wdev",
+    "kind": "option",
+    "description": "Enable developer warnings",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-Werror": {
+    "Name": "-Werror",
+    "kind": "option",
+    "description": "Enable the type of warnings",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctype\u003e"
+    ]
+  },
+  "-Wno-deprecated": {
+    "Name": "-Wno-deprecated",
+    "kind": "option",
+    "description": "Suppress deprecated functionality warnings",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-Wno-dev": {
+    "Name": "-Wno-dev",
+    "kind": "option",
+    "description": "Suppress developer warnings",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-Wno-error": {
+    "Name": "-Wno-error",
+    "kind": "option",
+    "description": "Disable the type of warnings",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctype\u003e"
+    ]
+  },
+  "\u003cpath-to-source | path-to-existing-build\u003e": {
+    "Name": "\u003cpath-to-source | path-to-existing-build\u003e",
+    "kind": "argument",
+    "description": "path-to-source | path-to-existing-build",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  },
+  "toolchain": {
+    "Name": "toolchain",
+    "kind": "option",
+    "description": "Specify the cross compiling toolchain file, equivalent to setting CMAKE_TOOLCHAIN_FILE variable",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath-to-file\u003e": {
+        "Name": "\u003cpath-to-file\u003e",
+        "kind": "argument",
+        "description": "path-to-file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath-to-file\u003e": {
+        "Name": "\u003cpath-to-file\u003e",
+        "kind": "argument",
+        "description": "path-to-file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath-to-file\u003e"
+    ]
+  }
+}

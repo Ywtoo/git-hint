@@ -1,0 +1,2090 @@
+{
+  "build": {
+    "Name": "build",
+    "kind": "subcommand",
+    "description": "Execute build pipeline (if configuration present)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "compile": {
+    "Name": "compile",
+    "kind": "subcommand",
+    "description": "Compile contract source files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "Compile all contracts instead of only the contracts changed since last compile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--list": {
+        "Name": "--list",
+        "kind": "option",
+        "description": "List all recent stable releases from solc-bin. If filter is specified then it will display only that type of release or docker tags",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfilter\u003e": {
+            "Name": "\u003cfilter\u003e",
+            "kind": "argument",
+            "description": "filter",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfilter\u003e": {
+            "Name": "\u003cfilter\u003e",
+            "kind": "argument",
+            "description": "filter",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfilter\u003e"
+        ]
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Suppress all compilation output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "Compile all contracts instead of only the contracts changed since last compile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--list": {
+        "Name": "--list",
+        "kind": "option",
+        "description": "List all recent stable releases from solc-bin. If filter is specified then it will display only that type of release or docker tags",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfilter\u003e": {
+            "Name": "\u003cfilter\u003e",
+            "kind": "argument",
+            "description": "filter",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfilter\u003e": {
+            "Name": "\u003cfilter\u003e",
+            "kind": "argument",
+            "description": "filter",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfilter\u003e"
+        ]
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Suppress all compilation output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "config": {
+    "Name": "config",
+    "kind": "subcommand",
+    "description": "Set user-level configuration options",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--disable-analytics": {
+        "Name": "--disable-analytics",
+        "kind": "option",
+        "description": "Disable Truffle's ability to send usage data to Google Analytics",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--enable-analytics": {
+        "Name": "--enable-analytics",
+        "kind": "option",
+        "description": "Enable Truffle to send usage data to Google Analytics",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "get": {
+        "Name": "get",
+        "kind": "subcommand",
+        "description": "Get a Truffle configuration option value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ckey\u003e": {
+            "Name": "\u003ckey\u003e",
+            "kind": "argument",
+            "description": "key",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ckey\u003e": {
+            "Name": "\u003ckey\u003e",
+            "kind": "argument",
+            "description": "key",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ckey\u003e"
+        ]
+      },
+      "set": {
+        "Name": "set",
+        "kind": "subcommand",
+        "description": "Set a Truffle configuration option value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ckey\u003e": {
+            "Name": "\u003ckey\u003e",
+            "kind": "argument",
+            "description": "key",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cvalue-for-set\u003e": {
+            "Name": "\u003cvalue-for-set\u003e",
+            "kind": "argument",
+            "description": "value-for-set",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ckey\u003e": {
+            "Name": "\u003ckey\u003e",
+            "kind": "argument",
+            "description": "key",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cvalue-for-set\u003e": {
+            "Name": "\u003cvalue-for-set\u003e",
+            "kind": "argument",
+            "description": "value-for-set",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ckey\u003e",
+          "\u003cvalue-for-set\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--disable-analytics": {
+        "Name": "--disable-analytics",
+        "kind": "option",
+        "description": "Disable Truffle's ability to send usage data to Google Analytics",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--enable-analytics": {
+        "Name": "--enable-analytics",
+        "kind": "option",
+        "description": "Enable Truffle to send usage data to Google Analytics",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "console": {
+    "Name": "console",
+    "kind": "subcommand",
+    "description": "Run a console with contract abstractions and commands available",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--network": {
+        "Name": "--network",
+        "kind": "option",
+        "description": "Specify the network to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "--require": {
+        "Name": "--require",
+        "kind": "option",
+        "description": "Preload console environment from required JavaScript file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "--require-none": {
+        "Name": "--require-none",
+        "kind": "option",
+        "description": "Do not load any user-defined JavaScript into the console environment. This option takes precedence over --require, -r, and values provided for console.require in your project's truffle-config.js",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose-rpc": {
+        "Name": "--verbose-rpc",
+        "kind": "option",
+        "description": "Log communication between Truffle and the Ethereum client",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Preload console environment from required JavaScript file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--network": {
+        "Name": "--network",
+        "kind": "option",
+        "description": "Specify the network to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "--require": {
+        "Name": "--require",
+        "kind": "option",
+        "description": "Preload console environment from required JavaScript file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "--require-none": {
+        "Name": "--require-none",
+        "kind": "option",
+        "description": "Do not load any user-defined JavaScript into the console environment. This option takes precedence over --require, -r, and values provided for console.require in your project's truffle-config.js",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose-rpc": {
+        "Name": "--verbose-rpc",
+        "kind": "option",
+        "description": "Log communication between Truffle and the Ethereum client",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Preload console environment from required JavaScript file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      }
+    }
+  },
+  "create": {
+    "Name": "create",
+    "kind": "subcommand",
+    "description": "Helper to create new contracts, migrations and tests",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cArtifactName\u003e": {
+        "Name": "\u003cArtifactName\u003e",
+        "kind": "argument",
+        "description": "ArtifactName",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cartifact_type\u003e": {
+        "Name": "\u003cartifact_type\u003e",
+        "kind": "argument",
+        "description": "artifact_type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cArtifactName\u003e": {
+        "Name": "\u003cArtifactName\u003e",
+        "kind": "argument",
+        "description": "ArtifactName",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cartifact_type\u003e": {
+        "Name": "\u003cartifact_type\u003e",
+        "kind": "argument",
+        "description": "artifact_type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cartifact_type\u003e",
+      "\u003cArtifactName\u003e"
+    ]
+  },
+  "debug": {
+    "Name": "debug",
+    "kind": "subcommand",
+    "description": "Interactively debug any transaction on the blockchain",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--compile-all": {
+        "Name": "--compile-all",
+        "kind": "option",
+        "description": "Forces the debugger to recompile all contracts, even when it would otherwise judge doing so unnecessary. Compilation results are not saved",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--compile-none": {
+        "Name": "--compile-none",
+        "kind": "option",
+        "description": "Forces the debugger not to recompile contracts, even when it would otherwise judge it necessary. This option is dangerous and may cause errors. Please only use this if you are sure a recompilation is not necessary",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--compile-tests": {
+        "Name": "--compile-tests",
+        "kind": "option",
+        "description": "Allows the debugger to compile Solidity test contracts. Implies --compile-all",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--fetch-external": {
+        "Name": "--fetch-external",
+        "kind": "option",
+        "description": "Allows the debugger to download source from source verification services to debug transactions involving external contracts. When used, a transaction hash is required. May be abbreviated -x",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--network": {
+        "Name": "--network",
+        "kind": "option",
+        "description": "The network to connect to",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cnetwork\u003e": {
+            "Name": "\u003cnetwork\u003e",
+            "kind": "argument",
+            "description": "network",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cnetwork\u003e": {
+            "Name": "\u003cnetwork\u003e",
+            "kind": "argument",
+            "description": "network",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cnetwork\u003e"
+        ]
+      },
+      "-x": {
+        "Name": "-x",
+        "kind": "option",
+        "description": "Allows the debugger to download source from source verification services to debug transactions involving external contracts. When used, a transaction hash is required. May be abbreviated -x",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ctransaction_hash\u003e": {
+        "Name": "\u003ctransaction_hash\u003e",
+        "kind": "argument",
+        "description": "transaction_hash",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--compile-all": {
+        "Name": "--compile-all",
+        "kind": "option",
+        "description": "Forces the debugger to recompile all contracts, even when it would otherwise judge doing so unnecessary. Compilation results are not saved",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--compile-none": {
+        "Name": "--compile-none",
+        "kind": "option",
+        "description": "Forces the debugger not to recompile contracts, even when it would otherwise judge it necessary. This option is dangerous and may cause errors. Please only use this if you are sure a recompilation is not necessary",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--compile-tests": {
+        "Name": "--compile-tests",
+        "kind": "option",
+        "description": "Allows the debugger to compile Solidity test contracts. Implies --compile-all",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--fetch-external": {
+        "Name": "--fetch-external",
+        "kind": "option",
+        "description": "Allows the debugger to download source from source verification services to debug transactions involving external contracts. When used, a transaction hash is required. May be abbreviated -x",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--network": {
+        "Name": "--network",
+        "kind": "option",
+        "description": "The network to connect to",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cnetwork\u003e": {
+            "Name": "\u003cnetwork\u003e",
+            "kind": "argument",
+            "description": "network",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cnetwork\u003e": {
+            "Name": "\u003cnetwork\u003e",
+            "kind": "argument",
+            "description": "network",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cnetwork\u003e"
+        ]
+      },
+      "-x": {
+        "Name": "-x",
+        "kind": "option",
+        "description": "Allows the debugger to download source from source verification services to debug transactions involving external contracts. When used, a transaction hash is required. May be abbreviated -x",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ctransaction_hash\u003e": {
+        "Name": "\u003ctransaction_hash\u003e",
+        "kind": "argument",
+        "description": "transaction_hash",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "deploy": {
+    "Name": "deploy",
+    "kind": "subcommand",
+    "description": "Alias for migrate. See migrate for details",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "develop": {
+    "Name": "develop",
+    "kind": "subcommand",
+    "description": "Open a console with a development blockchaine",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--log": {
+        "Name": "--log",
+        "kind": "option",
+        "description": "Start/Connect to a Truffle develop session and log all RPC activity. See the Log RPC Activity docs for more information about using this option",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cnetwork\u003e": {
+            "Name": "\u003cnetwork\u003e",
+            "kind": "argument",
+            "description": "network",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cnetwork\u003e": {
+            "Name": "\u003cnetwork\u003e",
+            "kind": "argument",
+            "description": "network",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cnetwork\u003e"
+        ]
+      },
+      "--require": {
+        "Name": "--require",
+        "kind": "option",
+        "description": "Preload console environment from required JavaScript file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "--require-none": {
+        "Name": "--require-none",
+        "kind": "option",
+        "description": "Do not load any user-defined JavaScript into the console environment. This option takes precedence over --require, -r, and values provided for console.require in your project's truffle-config.js",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Preload console environment from required JavaScript file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--log": {
+        "Name": "--log",
+        "kind": "option",
+        "description": "Start/Connect to a Truffle develop session and log all RPC activity. See the Log RPC Activity docs for more information about using this option",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cnetwork\u003e": {
+            "Name": "\u003cnetwork\u003e",
+            "kind": "argument",
+            "description": "network",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cnetwork\u003e": {
+            "Name": "\u003cnetwork\u003e",
+            "kind": "argument",
+            "description": "network",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cnetwork\u003e"
+        ]
+      },
+      "--require": {
+        "Name": "--require",
+        "kind": "option",
+        "description": "Preload console environment from required JavaScript file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      },
+      "--require-none": {
+        "Name": "--require-none",
+        "kind": "option",
+        "description": "Do not load any user-defined JavaScript into the console environment. This option takes precedence over --require, -r, and values provided for console.require in your project's truffle-config.js",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Preload console environment from required JavaScript file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfile\u003e": {
+            "Name": "\u003cfile\u003e",
+            "kind": "argument",
+            "description": "file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfile\u003e"
+        ]
+      }
+    }
+  },
+  "exec": {
+    "Name": "exec",
+    "kind": "subcommand",
+    "description": "Execute a JS module within the Truffle environment",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--compile": {
+        "Name": "--compile",
+        "kind": "option",
+        "description": "Compile contracts before executing the script",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--network": {
+        "Name": "--network",
+        "kind": "option",
+        "description": "Specify the network to use, using artifacts specific to that network",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "\u003cscript.js\u003e": {
+        "Name": "\u003cscript.js\u003e",
+        "kind": "argument",
+        "description": "script.js",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--compile": {
+        "Name": "--compile",
+        "kind": "option",
+        "description": "Compile contracts before executing the script",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--network": {
+        "Name": "--network",
+        "kind": "option",
+        "description": "Specify the network to use, using artifacts specific to that network",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "\u003cscript.js\u003e": {
+        "Name": "\u003cscript.js\u003e",
+        "kind": "argument",
+        "description": "script.js",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cscript.js\u003e"
+    ]
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Display a list of all commands or information about a specific command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "init": {
+    "Name": "init",
+    "kind": "subcommand",
+    "description": "Initialize new and empty Ethereum project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Initialize project regardless of the current working directory's state. Be careful, this could overwrite existing files that have name conflicts",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Initialize project regardless of the current working directory's state. Be careful, this could overwrite existing files that have name conflicts",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "install": {
+    "Name": "install",
+    "kind": "subcommand",
+    "description": "Install a package from the Ethereum Package Registry",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003c@version\u003e": {
+        "Name": "\u003c@version\u003e",
+        "kind": "argument",
+        "description": "@version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpackage_name\u003e": {
+        "Name": "\u003cpackage_name\u003e",
+        "kind": "argument",
+        "description": "package_name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003c@version\u003e": {
+        "Name": "\u003c@version\u003e",
+        "kind": "argument",
+        "description": "@version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpackage_name\u003e": {
+        "Name": "\u003cpackage_name\u003e",
+        "kind": "argument",
+        "description": "package_name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpackage_name\u003e",
+      "\u003c@version\u003e"
+    ]
+  },
+  "migrate": {
+    "Name": "migrate",
+    "kind": "subcommand",
+    "description": "Run migrations to deploy contracts",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--compile-all": {
+        "Name": "--compile-all",
+        "kind": "option",
+        "description": "Compile all contracts instead of intelligently choosing which contracts need to be compiled",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--describe-json": {
+        "Name": "--describe-json",
+        "kind": "option",
+        "description": "Prints additional status messages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dry-run": {
+        "Name": "--dry-run",
+        "kind": "option",
+        "description": "Fork the network specified and only perform a test migration",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--f": {
+        "Name": "--f",
+        "kind": "option",
+        "description": "Run contracts from a specific migration",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cnumber\u003e": {
+            "Name": "\u003cnumber\u003e",
+            "kind": "argument",
+            "description": "number",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cnumber\u003e": {
+            "Name": "\u003cnumber\u003e",
+            "kind": "argument",
+            "description": "number",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cnumber\u003e"
+        ]
+      },
+      "--interactive": {
+        "Name": "--interactive",
+        "kind": "option",
+        "description": "Prompt to confirm that the user wants to proceed after the dry run",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--network": {
+        "Name": "--network",
+        "kind": "option",
+        "description": "Specify the network to use, saving artifacts specific to that network",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "--reset": {
+        "Name": "--reset",
+        "kind": "option",
+        "description": "Run all migrations from the beginning, instead of running from the last completed migration",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--skip-dry-run": {
+        "Name": "--skip-dry-run",
+        "kind": "option",
+        "description": "Skip the test migration performed before the real migration",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--to": {
+        "Name": "--to",
+        "kind": "option",
+        "description": "Run contracts to a specific migration",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cnumber\u003e": {
+            "Name": "\u003cnumber\u003e",
+            "kind": "argument",
+            "description": "number",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cnumber\u003e": {
+            "Name": "\u003cnumber\u003e",
+            "kind": "argument",
+            "description": "number",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cnumber\u003e"
+        ]
+      },
+      "--verbose-rpc": {
+        "Name": "--verbose-rpc",
+        "kind": "option",
+        "description": "Log communication between Truffle and the Ethereum client",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--compile-all": {
+        "Name": "--compile-all",
+        "kind": "option",
+        "description": "Compile all contracts instead of intelligently choosing which contracts need to be compiled",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--describe-json": {
+        "Name": "--describe-json",
+        "kind": "option",
+        "description": "Prints additional status messages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dry-run": {
+        "Name": "--dry-run",
+        "kind": "option",
+        "description": "Fork the network specified and only perform a test migration",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--f": {
+        "Name": "--f",
+        "kind": "option",
+        "description": "Run contracts from a specific migration",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cnumber\u003e": {
+            "Name": "\u003cnumber\u003e",
+            "kind": "argument",
+            "description": "number",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cnumber\u003e": {
+            "Name": "\u003cnumber\u003e",
+            "kind": "argument",
+            "description": "number",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cnumber\u003e"
+        ]
+      },
+      "--interactive": {
+        "Name": "--interactive",
+        "kind": "option",
+        "description": "Prompt to confirm that the user wants to proceed after the dry run",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--network": {
+        "Name": "--network",
+        "kind": "option",
+        "description": "Specify the network to use, saving artifacts specific to that network",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "--reset": {
+        "Name": "--reset",
+        "kind": "option",
+        "description": "Run all migrations from the beginning, instead of running from the last completed migration",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--skip-dry-run": {
+        "Name": "--skip-dry-run",
+        "kind": "option",
+        "description": "Skip the test migration performed before the real migration",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--to": {
+        "Name": "--to",
+        "kind": "option",
+        "description": "Run contracts to a specific migration",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cnumber\u003e": {
+            "Name": "\u003cnumber\u003e",
+            "kind": "argument",
+            "description": "number",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cnumber\u003e": {
+            "Name": "\u003cnumber\u003e",
+            "kind": "argument",
+            "description": "number",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cnumber\u003e"
+        ]
+      },
+      "--verbose-rpc": {
+        "Name": "--verbose-rpc",
+        "kind": "option",
+        "description": "Log communication between Truffle and the Ethereum client",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "networks": {
+    "Name": "networks",
+    "kind": "subcommand",
+    "description": "Show addresses for deployed contracts on each network",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--clean": {
+        "Name": "--clean",
+        "kind": "option",
+        "description": "Remove all network artifacts that aren't associated with a named network",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--clean": {
+        "Name": "--clean",
+        "kind": "option",
+        "description": "Remove all network artifacts that aren't associated with a named network",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "obtain": {
+    "Name": "obtain",
+    "kind": "subcommand",
+    "description": "Fetch and cache a specified compiler",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--solc": {
+        "Name": "--solc",
+        "kind": "option",
+        "description": "Download and cache a version of the solc compiler. (required)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cversion\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--solc": {
+        "Name": "--solc",
+        "kind": "option",
+        "description": "Download and cache a version of the solc compiler. (required)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cversion\u003e": {
+            "Name": "\u003cversion\u003e",
+            "kind": "argument",
+            "description": "version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cversion\u003e"
+        ]
+      }
+    }
+  },
+  "opcode": {
+    "Name": "opcode",
+    "kind": "subcommand",
+    "description": "Print the compiled opcodes for a given contract",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccontract_name\u003e": {
+        "Name": "\u003ccontract_name\u003e",
+        "kind": "argument",
+        "description": "contract_name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccontract_name\u003e": {
+        "Name": "\u003ccontract_name\u003e",
+        "kind": "argument",
+        "description": "contract_name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccontract_name\u003e"
+    ]
+  },
+  "preserve": {
+    "Name": "preserve",
+    "kind": "subcommand",
+    "description": "Save data to decentralized storage platforms like IPFS and Filecoin",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--buckets": {
+        "Name": "--buckets",
+        "kind": "option",
+        "description": "Preserve to Textile Buckets",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--environment": {
+        "Name": "--environment",
+        "kind": "option",
+        "description": "Environment name, as defined in truffle-config `environments` object",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "--filecoin": {
+        "Name": "--filecoin",
+        "kind": "option",
+        "description": "Preserve to Filecoin",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ipfs": {
+        "Name": "--ipfs",
+        "kind": "option",
+        "description": "Preserve to IPFS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--buckets": {
+        "Name": "--buckets",
+        "kind": "option",
+        "description": "Preserve to Textile Buckets",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--environment": {
+        "Name": "--environment",
+        "kind": "option",
+        "description": "Environment name, as defined in truffle-config `environments` object",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "--filecoin": {
+        "Name": "--filecoin",
+        "kind": "option",
+        "description": "Preserve to Filecoin",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ipfs": {
+        "Name": "--ipfs",
+        "kind": "option",
+        "description": "Preserve to IPFS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "publish": {
+    "Name": "publish",
+    "kind": "subcommand",
+    "description": "Publish a package to the Ethereum Package Registry",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "run": {
+    "Name": "run",
+    "kind": "subcommand",
+    "description": "Run a third-party plugin command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "test": {
+    "Name": "test",
+    "kind": "subcommand",
+    "description": "Run JavaScript and Solidity tests",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--bail": {
+        "Name": "--bail",
+        "kind": "option",
+        "description": "Bail after the first test failure. May be abbreviated -b",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--compile-all": {
+        "Name": "--compile-all",
+        "kind": "option",
+        "description": "Compile all contracts instead of intelligently choosing which contracts need to be compiled",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--compile-all-debug": {
+        "Name": "--compile-all-debug",
+        "kind": "option",
+        "description": "Like --compile-all, but compiles contracts in debug mode for extra information. Has no effect on Solidity \u003c0.6.3",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Provides global debug() function for in-test debugging. Usable with Javascript tests only; implies --compile-all",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--debug-global": {
+        "Name": "--debug-global",
+        "kind": "option",
+        "description": "Allows one to rename the debug() function to something else",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cidentifier\u003e": {
+            "Name": "\u003cidentifier\u003e",
+            "kind": "argument",
+            "description": "identifier",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cidentifier\u003e": {
+            "Name": "\u003cidentifier\u003e",
+            "kind": "argument",
+            "description": "identifier",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cidentifier\u003e"
+        ]
+      },
+      "--network": {
+        "Name": "--network",
+        "kind": "option",
+        "description": "Specify the network to use, using artifacts specific to that network",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "--show-events": {
+        "Name": "--show-events",
+        "kind": "option",
+        "description": "Log all contract events",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--stacktrace": {
+        "Name": "--stacktrace",
+        "kind": "option",
+        "description": "Allows for mixed Javascript-and-Solidity stacktraces when a Truffle Contract transaction or deployment reverts. Does not apply to calls or gas estimates. Implies --compile-all. May be abbreviated -t. Warning: This option is still somewhat experimental",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--stacktrace-extra": {
+        "Name": "--stacktrace-extra",
+        "kind": "option",
+        "description": "Shortcut for --stacktrace --compile-all-debug",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose-rpc": {
+        "Name": "--verbose-rpc",
+        "kind": "option",
+        "description": "Log communication between Truffle and the Ethereum client",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-b": {
+        "Name": "-b",
+        "kind": "option",
+        "description": "Bail after the first test failure. May be abbreviated -b",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Allows for mixed Javascript-and-Solidity stacktraces when a Truffle Contract transaction or deployment reverts. Does not apply to calls or gas estimates. Implies --compile-all. May be abbreviated -t. Warning: This option is still somewhat experimental",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ctest_file\u003e": {
+        "Name": "\u003ctest_file\u003e",
+        "kind": "argument",
+        "description": "test_file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--bail": {
+        "Name": "--bail",
+        "kind": "option",
+        "description": "Bail after the first test failure. May be abbreviated -b",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--compile-all": {
+        "Name": "--compile-all",
+        "kind": "option",
+        "description": "Compile all contracts instead of intelligently choosing which contracts need to be compiled",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--compile-all-debug": {
+        "Name": "--compile-all-debug",
+        "kind": "option",
+        "description": "Like --compile-all, but compiles contracts in debug mode for extra information. Has no effect on Solidity \u003c0.6.3",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--debug": {
+        "Name": "--debug",
+        "kind": "option",
+        "description": "Provides global debug() function for in-test debugging. Usable with Javascript tests only; implies --compile-all",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--debug-global": {
+        "Name": "--debug-global",
+        "kind": "option",
+        "description": "Allows one to rename the debug() function to something else",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cidentifier\u003e": {
+            "Name": "\u003cidentifier\u003e",
+            "kind": "argument",
+            "description": "identifier",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cidentifier\u003e": {
+            "Name": "\u003cidentifier\u003e",
+            "kind": "argument",
+            "description": "identifier",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cidentifier\u003e"
+        ]
+      },
+      "--network": {
+        "Name": "--network",
+        "kind": "option",
+        "description": "Specify the network to use, using artifacts specific to that network",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "--show-events": {
+        "Name": "--show-events",
+        "kind": "option",
+        "description": "Log all contract events",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--stacktrace": {
+        "Name": "--stacktrace",
+        "kind": "option",
+        "description": "Allows for mixed Javascript-and-Solidity stacktraces when a Truffle Contract transaction or deployment reverts. Does not apply to calls or gas estimates. Implies --compile-all. May be abbreviated -t. Warning: This option is still somewhat experimental",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--stacktrace-extra": {
+        "Name": "--stacktrace-extra",
+        "kind": "option",
+        "description": "Shortcut for --stacktrace --compile-all-debug",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose-rpc": {
+        "Name": "--verbose-rpc",
+        "kind": "option",
+        "description": "Log communication between Truffle and the Ethereum client",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-b": {
+        "Name": "-b",
+        "kind": "option",
+        "description": "Bail after the first test failure. May be abbreviated -b",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Allows for mixed Javascript-and-Solidity stacktraces when a Truffle Contract transaction or deployment reverts. Does not apply to calls or gas estimates. Implies --compile-all. May be abbreviated -t. Warning: This option is still somewhat experimental",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ctest_file\u003e": {
+        "Name": "\u003ctest_file\u003e",
+        "kind": "argument",
+        "description": "test_file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctest_file\u003e"
+    ]
+  },
+  "unbox": {
+    "Name": "unbox",
+    "kind": "subcommand",
+    "description": "Download a Truffle Box, a pre-built Truffle project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Unbox project in the current directory regardless of its state. Be careful, this will potentially overwrite files that exist in the directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cbox_name\u003e": {
+        "Name": "\u003cbox_name\u003e",
+        "kind": "argument",
+        "description": "box_name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Unbox project in the current directory regardless of its state. Be careful, this will potentially overwrite files that exist in the directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cbox_name\u003e": {
+        "Name": "\u003cbox_name\u003e",
+        "kind": "argument",
+        "description": "box_name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cbox_name\u003e"
+    ]
+  },
+  "version": {
+    "Name": "version",
+    "kind": "subcommand",
+    "description": "Show version number and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "watch": {
+    "Name": "watch",
+    "kind": "subcommand",
+    "description": "Watch filesystem for changes and rebuild the project automatically",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

@@ -1,0 +1,690 @@
+{
+  "--concise-output": {
+    "Name": "--concise-output",
+    "kind": "option",
+    "description": "Reduce the amount of output and no statistics",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--config-file": {
+    "Name": "--config-file",
+    "kind": "option",
+    "description": "Config file to use during run",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cconfig-file\u003e": {
+        "Name": "\u003cconfig-file\u003e",
+        "kind": "argument",
+        "description": "config-file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cconfig-file\u003e": {
+        "Name": "\u003cconfig-file\u003e",
+        "kind": "argument",
+        "description": "config-file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cconfig-file\u003e"
+    ]
+  },
+  "--custom-check-dir": {
+    "Name": "--custom-check-dir",
+    "kind": "option",
+    "description": "Explicitly the custom checks dir location",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccustom-check-dir\u003e": {
+        "Name": "\u003ccustom-check-dir\u003e",
+        "kind": "argument",
+        "description": "custom-check-dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccustom-check-dir\u003e": {
+        "Name": "\u003ccustom-check-dir\u003e",
+        "kind": "argument",
+        "description": "custom-check-dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccustom-check-dir\u003e"
+    ]
+  },
+  "--debug": {
+    "Name": "--debug",
+    "kind": "option",
+    "description": "Enable debug logging (same as verbose)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--disable-grouping": {
+    "Name": "--disable-grouping",
+    "kind": "option",
+    "description": "Disable grouping of similar results",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--exclude": {
+    "Name": "--exclude",
+    "kind": "option",
+    "description": "Provide comma-separated list of rule IDs to exclude from run",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cexcludeList\u003e": {
+        "Name": "\u003cexcludeList\u003e",
+        "kind": "argument",
+        "description": "excludeList",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cexcludeList\u003e": {
+        "Name": "\u003cexcludeList\u003e",
+        "kind": "argument",
+        "description": "excludeList",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cexcludeList\u003e"
+    ]
+  },
+  "--exclude-downloaded-modules": {
+    "Name": "--exclude-downloaded-modules",
+    "kind": "option",
+    "description": "Remove results for downloaded modules in .terraform folder",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--exclude-path": {
+    "Name": "--exclude-path",
+    "kind": "option",
+    "description": "Folder path to exclude, can be used multiple times and evaluated in order of specification",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cexcludePath\u003e": {
+        "Name": "\u003cexcludePath\u003e",
+        "kind": "argument",
+        "description": "excludePath",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cexcludePath\u003e": {
+        "Name": "\u003cexcludePath\u003e",
+        "kind": "argument",
+        "description": "excludePath",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cexcludePath\u003e"
+    ]
+  },
+  "--filter-results": {
+    "Name": "--filter-results",
+    "kind": "option",
+    "description": "Filter results to return specific checks only (supports comma-delimited input)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfilterResults\u003e": {
+        "Name": "\u003cfilterResults\u003e",
+        "kind": "argument",
+        "description": "filterResults",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfilterResults\u003e": {
+        "Name": "\u003cfilterResults\u003e",
+        "kind": "argument",
+        "description": "filterResults",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfilterResults\u003e"
+    ]
+  },
+  "--force-all-dirs": {
+    "Name": "--force-all-dirs",
+    "kind": "option",
+    "description": "Don't search for tf files, include everything below provided directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--format": {
+    "Name": "--format",
+    "kind": "option",
+    "description": "Select output format: default, json, csv, checkstyle, junit, sarif. To use multiple formats, separate with a comma and specify a base output filename with --out. A file will be written for each type. The first format will additionally be written stdout",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cformat\u003e": {
+        "Name": "\u003cformat\u003e",
+        "kind": "argument",
+        "description": "format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cformat\u003e": {
+        "Name": "\u003cformat\u003e",
+        "kind": "argument",
+        "description": "format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cformat\u003e"
+    ]
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Help for tfsec",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--ignore-hcl-errors": {
+    "Name": "--ignore-hcl-errors",
+    "kind": "option",
+    "description": "Stop and report an error if an HCL parse error is encountered",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--include-ignored": {
+    "Name": "--include-ignored",
+    "kind": "option",
+    "description": "Include ignored checks in the result output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--include-passed": {
+    "Name": "--include-passed",
+    "kind": "option",
+    "description": "Include passed checks in the result output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--migrate-ignores": {
+    "Name": "--migrate-ignores",
+    "kind": "option",
+    "description": "Migrate ignore codes to the new ID structure",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--minimum-severity": {
+    "Name": "--minimum-severity",
+    "kind": "option",
+    "description": "The minimum severity to report. One of CRITICAL, HIGH, MEDIUM, LOW",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cminimumSeverity\u003e": {
+        "Name": "\u003cminimumSeverity\u003e",
+        "kind": "argument",
+        "description": "minimumSeverity",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cminimumSeverity\u003e": {
+        "Name": "\u003cminimumSeverity\u003e",
+        "kind": "argument",
+        "description": "minimumSeverity",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cminimumSeverity\u003e"
+    ]
+  },
+  "--no-color": {
+    "Name": "--no-color",
+    "kind": "option",
+    "description": "Disable colored output (American style!)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-colour": {
+    "Name": "--no-colour",
+    "kind": "option",
+    "description": "Disable coloured output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-ignores": {
+    "Name": "--no-ignores",
+    "kind": "option",
+    "description": "Do not apply any ignore rules - normally ignored checks will fail",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-module-downloads": {
+    "Name": "--no-module-downloads",
+    "kind": "option",
+    "description": "Do not download remote modules",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--out": {
+    "Name": "--out",
+    "kind": "option",
+    "description": "Set output file. This filename will have a format descriptor appended if multiple formats are specified with --format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003coutputFile\u003e": {
+        "Name": "\u003coutputFile\u003e",
+        "kind": "argument",
+        "description": "outputFile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003coutputFile\u003e": {
+        "Name": "\u003coutputFile\u003e",
+        "kind": "argument",
+        "description": "outputFile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003coutputFile\u003e"
+    ]
+  },
+  "--print-rego-input": {
+    "Name": "--print-rego-input",
+    "kind": "option",
+    "description": "Print a JSON representation of the input supplied to rego policies",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--rego-policy-dir": {
+    "Name": "--rego-policy-dir",
+    "kind": "option",
+    "description": "Directory to load rego policies from (recursively)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cregoPolicyDir\u003e": {
+        "Name": "\u003cregoPolicyDir\u003e",
+        "kind": "argument",
+        "description": "regoPolicyDir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cregoPolicyDir\u003e": {
+        "Name": "\u003cregoPolicyDir\u003e",
+        "kind": "argument",
+        "description": "regoPolicyDir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cregoPolicyDir\u003e"
+    ]
+  },
+  "--run-statistics": {
+    "Name": "--run-statistics",
+    "kind": "option",
+    "description": "View statistics table of current findings",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--single-thread": {
+    "Name": "--single-thread",
+    "kind": "option",
+    "description": "Run checks using a single thread",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--soft-fail": {
+    "Name": "--soft-fail",
+    "kind": "option",
+    "description": "Runs checks but suppresses error code",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--tfvars-file": {
+    "Name": "--tfvars-file",
+    "kind": "option",
+    "description": "Path to .tfvars file, can be used multiple times and evaluated in order of specification",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctfvarsFilePath\u003e": {
+        "Name": "\u003ctfvarsFilePath\u003e",
+        "kind": "argument",
+        "description": "tfvarsFilePath",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctfvarsFilePath\u003e": {
+        "Name": "\u003ctfvarsFilePath\u003e",
+        "kind": "argument",
+        "description": "tfvarsFilePath",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctfvarsFilePath\u003e"
+    ]
+  },
+  "--update": {
+    "Name": "--update",
+    "kind": "option",
+    "description": "Update to latest version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Enable verbose logging (same as debug)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Show version information and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--workspace": {
+    "Name": "--workspace",
+    "kind": "option",
+    "description": "Specify a workspace for ignore limits (default \"default\")",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cworkspace\u003e": {
+        "Name": "\u003cworkspace\u003e",
+        "kind": "argument",
+        "description": "workspace",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cworkspace\u003e": {
+        "Name": "\u003cworkspace\u003e",
+        "kind": "argument",
+        "description": "workspace",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cworkspace\u003e"
+    ]
+  },
+  "-G": {
+    "Name": "-G",
+    "kind": "option",
+    "description": "Disable grouping of similar results",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-O": {
+    "Name": "-O",
+    "kind": "option",
+    "description": "Set output file. This filename will have a format descriptor appended if multiple formats are specified with --format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003coutputFile\u003e": {
+        "Name": "\u003coutputFile\u003e",
+        "kind": "argument",
+        "description": "outputFile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003coutputFile\u003e": {
+        "Name": "\u003coutputFile\u003e",
+        "kind": "argument",
+        "description": "outputFile",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003coutputFile\u003e"
+    ]
+  },
+  "-W": {
+    "Name": "-W",
+    "kind": "option",
+    "description": "Specify a workspace for ignore limits (default \"default\")",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cworkspace\u003e": {
+        "Name": "\u003cworkspace\u003e",
+        "kind": "argument",
+        "description": "workspace",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cworkspace\u003e": {
+        "Name": "\u003cworkspace\u003e",
+        "kind": "argument",
+        "description": "workspace",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cworkspace\u003e"
+    ]
+  },
+  "-e": {
+    "Name": "-e",
+    "kind": "option",
+    "description": "Provide comma-separated list of rule IDs to exclude from run",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cexcludeList\u003e": {
+        "Name": "\u003cexcludeList\u003e",
+        "kind": "argument",
+        "description": "excludeList",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cexcludeList\u003e": {
+        "Name": "\u003cexcludeList\u003e",
+        "kind": "argument",
+        "description": "excludeList",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cexcludeList\u003e"
+    ]
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Select output format: default, json, csv, checkstyle, junit, sarif. To use multiple formats, separate with a comma and specify a base output filename with --out. A file will be written for each type. The first format will additionally be written stdout",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cformat\u003e": {
+        "Name": "\u003cformat\u003e",
+        "kind": "argument",
+        "description": "format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cformat\u003e": {
+        "Name": "\u003cformat\u003e",
+        "kind": "argument",
+        "description": "format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cformat\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Help for tfsec",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-m": {
+    "Name": "-m",
+    "kind": "option",
+    "description": "The minimum severity to report. One of CRITICAL, HIGH, MEDIUM, LOW",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cminimumSeverity\u003e": {
+        "Name": "\u003cminimumSeverity\u003e",
+        "kind": "argument",
+        "description": "minimumSeverity",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cminimumSeverity\u003e": {
+        "Name": "\u003cminimumSeverity\u003e",
+        "kind": "argument",
+        "description": "minimumSeverity",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cminimumSeverity\u003e"
+    ]
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Runs checks but suppresses error code",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Show version information and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003cdirectory\u003e": {
+    "Name": "\u003cdirectory\u003e",
+    "kind": "argument",
+    "description": "directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

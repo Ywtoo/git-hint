@@ -1,0 +1,1124 @@
+{
+  "--bail": {
+    "Name": "--bail",
+    "kind": "option",
+    "description": "Exit the test suite immediately upon n number of failing test suite. Defaults to 1",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cn\u003e": {
+        "Name": "\u003cn\u003e",
+        "kind": "argument",
+        "description": "n",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cn\u003e": {
+        "Name": "\u003cn\u003e",
+        "kind": "argument",
+        "description": "n",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cn\u003e"
+    ]
+  },
+  "--cache": {
+    "Name": "--cache",
+    "kind": "option",
+    "description": "Whether to use the cache",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--changedFilesWithAncestor": {
+    "Name": "--changedFilesWithAncestor",
+    "kind": "option",
+    "description": "Runs tests related to the current changes and the changes made in the last commit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--changedSince": {
+    "Name": "--changedSince",
+    "kind": "option",
+    "description": "Runs tests related to the changes since the provided branch or commit hash",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csince\u003e": {
+        "Name": "\u003csince\u003e",
+        "kind": "argument",
+        "description": "since",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csince\u003e": {
+        "Name": "\u003csince\u003e",
+        "kind": "argument",
+        "description": "since",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csince\u003e"
+    ]
+  },
+  "--ci": {
+    "Name": "--ci",
+    "kind": "option",
+    "description": "Instead of the regular behavior of storing a new snapshot automatically, will fail the test and require Jest to be run with --updateSnapshot",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--clearCache": {
+    "Name": "--clearCache",
+    "kind": "option",
+    "description": "Deletes the Jest cache directory and then exits without running tests",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccacheDirectory\u003e": {
+        "Name": "\u003ccacheDirectory\u003e",
+        "kind": "argument",
+        "description": "cacheDirectory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccacheDirectory\u003e": {
+        "Name": "\u003ccacheDirectory\u003e",
+        "kind": "argument",
+        "description": "cacheDirectory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccacheDirectory\u003e"
+    ]
+  },
+  "--collectCoverageFrom": {
+    "Name": "--collectCoverageFrom",
+    "kind": "option",
+    "description": "A glob pattern relative to rootDir matching the files that coverage info needs to be collected from",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cglob\u003e": {
+        "Name": "\u003cglob\u003e",
+        "kind": "argument",
+        "description": "glob",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cglob\u003e": {
+        "Name": "\u003cglob\u003e",
+        "kind": "argument",
+        "description": "glob",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cglob\u003e"
+    ]
+  },
+  "--colors": {
+    "Name": "--colors",
+    "kind": "option",
+    "description": "Forces test results output highlighting even if stdout is not a TTY",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--config": {
+    "Name": "--config",
+    "kind": "option",
+    "description": "The path to a Jest config file specifying how to find and execute tests",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--coverage": {
+    "Name": "--coverage",
+    "kind": "option",
+    "description": "Enable or disable coverage, disabled by default",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctrue|false\u003e": {
+        "Name": "\u003ctrue|false\u003e",
+        "kind": "argument",
+        "description": "true|false",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctrue|false\u003e": {
+        "Name": "\u003ctrue|false\u003e",
+        "kind": "argument",
+        "description": "true|false",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctrue|false\u003e"
+    ]
+  },
+  "--coverageProvider": {
+    "Name": "--coverageProvider",
+    "kind": "option",
+    "description": "Indicates which provider should be used to instrument code for coverage",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cbabel|v8\u003e": {
+        "Name": "\u003cbabel|v8\u003e",
+        "kind": "argument",
+        "description": "babel|v8",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cbabel|v8\u003e": {
+        "Name": "\u003cbabel|v8\u003e",
+        "kind": "argument",
+        "description": "babel|v8",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cbabel|v8\u003e"
+    ]
+  },
+  "--debug": {
+    "Name": "--debug",
+    "kind": "option",
+    "description": "Print debugging info about your Jest config",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--detectOpenHandles": {
+    "Name": "--detectOpenHandles",
+    "kind": "option",
+    "description": "Attempt to collect and print open handles preventing Jest from exiting cleanly",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--env": {
+    "Name": "--env",
+    "kind": "option",
+    "description": "The test environment used for all tests",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cjsdom|node|path/to/env.js\u003e": {
+        "Name": "\u003cjsdom|node|path/to/env.js\u003e",
+        "kind": "argument",
+        "description": "jsdom|node|path/to/env.js",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cjsdom|node|path/to/env.js\u003e": {
+        "Name": "\u003cjsdom|node|path/to/env.js\u003e",
+        "kind": "argument",
+        "description": "jsdom|node|path/to/env.js",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cjsdom|node|path/to/env.js\u003e"
+    ]
+  },
+  "--errorOnDeprecated": {
+    "Name": "--errorOnDeprecated",
+    "kind": "option",
+    "description": "Make calling deprecated APIs throw helpful error messages",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--expand": {
+    "Name": "--expand",
+    "kind": "option",
+    "description": "Use this flag to show full diffs and errors instead of a patch",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--findRelatedTests": {
+    "Name": "--findRelatedTests",
+    "kind": "option",
+    "description": "Find and run the tests that cover a space separated list of source files that were passed in as arguments",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath1\u003e ... \u003cpathN\u003e": {
+        "Name": "\u003cpath1\u003e ... \u003cpathN\u003e",
+        "kind": "argument",
+        "description": "\u003cpath1\u003e ... \u003cpathN\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath1\u003e ... \u003cpathN\u003e": {
+        "Name": "\u003cpath1\u003e ... \u003cpathN\u003e",
+        "kind": "argument",
+        "description": "\u003cpath1\u003e ... \u003cpathN\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath1\u003e ... \u003cpathN\u003e"
+    ]
+  },
+  "--forceExit": {
+    "Name": "--forceExit",
+    "kind": "option",
+    "description": "Force Jest to exit after all tests have completed running",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show the help information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--init": {
+    "Name": "--init",
+    "kind": "option",
+    "description": "Generate a basic configuration file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--injectGlobals": {
+    "Name": "--injectGlobals",
+    "kind": "option",
+    "description": "Insert Jest's globals (expect, test, describe, beforeEach etc.) into the global environment",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--json": {
+    "Name": "--json",
+    "kind": "option",
+    "description": "Prints the test results in JSON",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--lastCommit": {
+    "Name": "--lastCommit",
+    "kind": "option",
+    "description": "Run all tests affected by file changes in the last commit made",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--listTests": {
+    "Name": "--listTests",
+    "kind": "option",
+    "description": "Lists all tests as JSON that Jest will run given the arguments, and exits",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--logHeapUsage": {
+    "Name": "--logHeapUsage",
+    "kind": "option",
+    "description": "Logs the heap usage after every test",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--maxConcurrency": {
+    "Name": "--maxConcurrency",
+    "kind": "option",
+    "description": "Prevents Jest from executing more than the specified amount of tests at the same time",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnum\u003e": {
+        "Name": "\u003cnum\u003e",
+        "kind": "argument",
+        "description": "num",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnum\u003e": {
+        "Name": "\u003cnum\u003e",
+        "kind": "argument",
+        "description": "num",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnum\u003e"
+    ]
+  },
+  "--maxWorkers": {
+    "Name": "--maxWorkers",
+    "kind": "option",
+    "description": "Specifies the maximum number of workers the worker-pool will spawn for running tests",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnum\u003e|\u003cstring\u003e": {
+        "Name": "\u003cnum\u003e|\u003cstring\u003e",
+        "kind": "argument",
+        "description": "\u003cnum\u003e|\u003cstring\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnum\u003e|\u003cstring\u003e": {
+        "Name": "\u003cnum\u003e|\u003cstring\u003e",
+        "kind": "argument",
+        "description": "\u003cnum\u003e|\u003cstring\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnum\u003e|\u003cstring\u003e"
+    ]
+  },
+  "--no-cache": {
+    "Name": "--no-cache",
+    "kind": "option",
+    "description": "Whether to use the cache",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-watchman": {
+    "Name": "--no-watchman",
+    "kind": "option",
+    "description": "Whether to use watchman for file crawling",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--noStackTrace": {
+    "Name": "--noStackTrace",
+    "kind": "option",
+    "description": "Disables stack trace in test results output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--notify": {
+    "Name": "--notify",
+    "kind": "option",
+    "description": "Activates notifications for test results",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--onlyChanged": {
+    "Name": "--onlyChanged",
+    "kind": "option",
+    "description": "Attempts to identify which tests to run based on which files have changed in the current repository",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--outputFile": {
+    "Name": "--outputFile",
+    "kind": "option",
+    "description": "Write test results to a file when the --json option is also specified",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfilename\u003e": {
+        "Name": "\u003cfilename\u003e",
+        "kind": "argument",
+        "description": "filename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfilename\u003e": {
+        "Name": "\u003cfilename\u003e",
+        "kind": "argument",
+        "description": "filename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfilename\u003e"
+    ]
+  },
+  "--passWithNoTests": {
+    "Name": "--passWithNoTests",
+    "kind": "option",
+    "description": "Allows the test suite to pass when no files are found",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--projects": {
+    "Name": "--projects",
+    "kind": "option",
+    "description": "Run tests from one or more projects, found in the specified paths; also takes path globs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath1\u003e ... \u003cpathN\u003e": {
+        "Name": "\u003cpath1\u003e ... \u003cpathN\u003e",
+        "kind": "argument",
+        "description": "\u003cpath1\u003e ... \u003cpathN\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath1\u003e ... \u003cpathN\u003e": {
+        "Name": "\u003cpath1\u003e ... \u003cpathN\u003e",
+        "kind": "argument",
+        "description": "\u003cpath1\u003e ... \u003cpathN\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath1\u003e ... \u003cpathN\u003e"
+    ]
+  },
+  "--reporters": {
+    "Name": "--reporters",
+    "kind": "option",
+    "description": "Run tests with specified reporters",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003creporter\u003e": {
+        "Name": "\u003creporter\u003e",
+        "kind": "argument",
+        "description": "reporter",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003creporter\u003e": {
+        "Name": "\u003creporter\u003e",
+        "kind": "argument",
+        "description": "reporter",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003creporter\u003e"
+    ]
+  },
+  "--roots": {
+    "Name": "--roots",
+    "kind": "option",
+    "description": "A list of paths to directories that Jest should use to search for files in",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath1\u003e ... \u003cpathN\u003e": {
+        "Name": "\u003cpath1\u003e ... \u003cpathN\u003e",
+        "kind": "argument",
+        "description": "\u003cpath1\u003e ... \u003cpathN\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath1\u003e ... \u003cpathN\u003e": {
+        "Name": "\u003cpath1\u003e ... \u003cpathN\u003e",
+        "kind": "argument",
+        "description": "\u003cpath1\u003e ... \u003cpathN\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath1\u003e ... \u003cpathN\u003e"
+    ]
+  },
+  "--runInBand": {
+    "Name": "--runInBand",
+    "kind": "option",
+    "description": "Run all tests serially in the current process, rather than creating a worker pool of child processes that run tests",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--runTestsByPath": {
+    "Name": "--runTestsByPath",
+    "kind": "option",
+    "description": "Run only the tests that were specified with their exact paths",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--selectProjects": {
+    "Name": "--selectProjects",
+    "kind": "option",
+    "description": "Run only the tests of the specified projects",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cproject1\u003e ... \u003cprojectN\u003e": {
+        "Name": "\u003cproject1\u003e ... \u003cprojectN\u003e",
+        "kind": "argument",
+        "description": "\u003cproject1\u003e ... \u003cprojectN\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cproject1\u003e ... \u003cprojectN\u003e": {
+        "Name": "\u003cproject1\u003e ... \u003cprojectN\u003e",
+        "kind": "argument",
+        "description": "\u003cproject1\u003e ... \u003cprojectN\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cproject1\u003e ... \u003cprojectN\u003e"
+    ]
+  },
+  "--setupTestFrameworkScriptFile": {
+    "Name": "--setupTestFrameworkScriptFile",
+    "kind": "option",
+    "description": "The path to a module that runs some code to configure or set up the testing framework before each test",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile\u003e"
+    ]
+  },
+  "--showConfig": {
+    "Name": "--showConfig",
+    "kind": "option",
+    "description": "Print your Jest config and then exits",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--silent": {
+    "Name": "--silent",
+    "kind": "option",
+    "description": "Prevent tests from printing messages through the console",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--testLocationInResults": {
+    "Name": "--testLocationInResults",
+    "kind": "option",
+    "description": "Adds a location field to test results",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--testNamePattern": {
+    "Name": "--testNamePattern",
+    "kind": "option",
+    "description": "Run only tests with a name that matches the regex",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cregex\u003e": {
+        "Name": "\u003cregex\u003e",
+        "kind": "argument",
+        "description": "regex",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cregex\u003e": {
+        "Name": "\u003cregex\u003e",
+        "kind": "argument",
+        "description": "regex",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cregex\u003e"
+    ]
+  },
+  "--testPathIgnorePatterns": {
+    "Name": "--testPathIgnorePatterns",
+    "kind": "option",
+    "description": "An array of regexp pattern strings that are tested against all tests paths before executing the test",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003c[array]\u003e": {
+        "Name": "\u003c[array]\u003e",
+        "kind": "argument",
+        "description": "[array]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003c[array]\u003e": {
+        "Name": "\u003c[array]\u003e",
+        "kind": "argument",
+        "description": "[array]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003c[array]\u003e"
+    ]
+  },
+  "--testPathPattern": {
+    "Name": "--testPathPattern",
+    "kind": "option",
+    "description": "A regexp pattern string that is matched against all tests paths before executing the test",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cregex\u003e": {
+        "Name": "\u003cregex\u003e",
+        "kind": "argument",
+        "description": "regex",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cregex\u003e": {
+        "Name": "\u003cregex\u003e",
+        "kind": "argument",
+        "description": "regex",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cregex\u003e"
+    ]
+  },
+  "--testRunner": {
+    "Name": "--testRunner",
+    "kind": "option",
+    "description": "Lets you specify a custom test runner",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--testSequencer": {
+    "Name": "--testSequencer",
+    "kind": "option",
+    "description": "Lets you specify a custom test sequencer",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--testTimeout": {
+    "Name": "--testTimeout",
+    "kind": "option",
+    "description": "Default timeout of a test in milliseconds",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctimeout in ms\u003e": {
+        "Name": "\u003ctimeout in ms\u003e",
+        "kind": "argument",
+        "description": "timeout in ms",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctimeout in ms\u003e": {
+        "Name": "\u003ctimeout in ms\u003e",
+        "kind": "argument",
+        "description": "timeout in ms",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctimeout in ms\u003e"
+    ]
+  },
+  "--updateSnapshot": {
+    "Name": "--updateSnapshot",
+    "kind": "option",
+    "description": "Use this flag to re-record every snapshot that fails during this test run",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--useStderr": {
+    "Name": "--useStderr",
+    "kind": "option",
+    "description": "Divert all output to stderr",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Display individual test results with the test suite hierarchy",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Print the version and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--watch": {
+    "Name": "--watch",
+    "kind": "option",
+    "description": "Watch files for changes and rerun tests related to changed files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--watchAll": {
+    "Name": "--watchAll",
+    "kind": "option",
+    "description": "Watch files for changes and rerun all tests when something changes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--watchman": {
+    "Name": "--watchman",
+    "kind": "option",
+    "description": "Whether to use watchman for file crawling",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-b": {
+    "Name": "-b",
+    "kind": "option",
+    "description": "Exit the test suite immediately upon n number of failing test suite. Defaults to 1",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cn\u003e": {
+        "Name": "\u003cn\u003e",
+        "kind": "argument",
+        "description": "n",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cn\u003e": {
+        "Name": "\u003cn\u003e",
+        "kind": "argument",
+        "description": "n",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cn\u003e"
+    ]
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "The path to a Jest config file specifying how to find and execute tests",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "-e": {
+    "Name": "-e",
+    "kind": "option",
+    "description": "Use this flag to show full diffs and errors instead of a patch",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Run all tests serially in the current process, rather than creating a worker pool of child processes that run tests",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-o": {
+    "Name": "-o",
+    "kind": "option",
+    "description": "Attempts to identify which tests to run based on which files have changed in the current repository",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Run only tests with a name that matches the regex",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cregex\u003e": {
+        "Name": "\u003cregex\u003e",
+        "kind": "argument",
+        "description": "regex",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cregex\u003e": {
+        "Name": "\u003cregex\u003e",
+        "kind": "argument",
+        "description": "regex",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cregex\u003e"
+    ]
+  },
+  "-u": {
+    "Name": "-u",
+    "kind": "option",
+    "description": "Use this flag to re-record every snapshot that fails during this test run",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Print the version and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-w": {
+    "Name": "-w",
+    "kind": "option",
+    "description": "Specifies the maximum number of workers the worker-pool will spawn for running tests",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnum\u003e|\u003cstring\u003e": {
+        "Name": "\u003cnum\u003e|\u003cstring\u003e",
+        "kind": "argument",
+        "description": "\u003cnum\u003e|\u003cstring\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnum\u003e|\u003cstring\u003e": {
+        "Name": "\u003cnum\u003e|\u003cstring\u003e",
+        "kind": "argument",
+        "description": "\u003cnum\u003e|\u003cstring\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnum\u003e|\u003cstring\u003e"
+    ]
+  }
+}

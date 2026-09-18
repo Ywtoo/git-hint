@@ -1,0 +1,780 @@
+{
+  "--all": {
+    "Name": "--all",
+    "kind": "option",
+    "description": "Also list empty devices and RAM disk devices",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--ascii": {
+    "Name": "--ascii",
+    "kind": "option",
+    "description": "Use ASCII characters for tree formatting",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--bytes": {
+    "Name": "--bytes",
+    "kind": "option",
+    "description": "Print the SIZE column in bytes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--dedup": {
+    "Name": "--dedup",
+    "kind": "option",
+    "description": "Use column as a de-duplication key to de-duplicate output tree",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccolumn\u003e": {
+        "Name": "\u003ccolumn\u003e",
+        "kind": "argument",
+        "description": "column",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccolumn\u003e": {
+        "Name": "\u003ccolumn\u003e",
+        "kind": "argument",
+        "description": "column",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccolumn\u003e"
+    ]
+  },
+  "--discard": {
+    "Name": "--discard",
+    "kind": "option",
+    "description": "Print information about the discarding capabilities (TRIM, UNMAP) for each device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--exclude": {
+    "Name": "--exclude",
+    "kind": "option",
+    "description": "Exclude the devices specified by the comma-separated list of major device numbers",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clist\u003e"
+    ]
+  },
+  "--fs": {
+    "Name": "--fs",
+    "kind": "option",
+    "description": "Output info about filesystems",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for lsblk",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--include": {
+    "Name": "--include",
+    "kind": "option",
+    "description": "Include devices specified by the comma-separated list of major device numbers",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clist\u003e"
+    ]
+  },
+  "--inverse": {
+    "Name": "--inverse",
+    "kind": "option",
+    "description": "Print dependencies in inverse order",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--json": {
+    "Name": "--json",
+    "kind": "option",
+    "description": "Use JSON output format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--list": {
+    "Name": "--list",
+    "kind": "option",
+    "description": "Produce output in the form of a list",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--merge": {
+    "Name": "--merge",
+    "kind": "option",
+    "description": "Group parents of sub-trees to provide more readable output for RAIDs and Multi-path devices",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--nodeps": {
+    "Name": "--nodeps",
+    "kind": "option",
+    "description": "Do not print holder devices or slaves",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--noheadings": {
+    "Name": "--noheadings",
+    "kind": "option",
+    "description": "Do not print a header line",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--output": {
+    "Name": "--output",
+    "kind": "option",
+    "description": "Specify which output columns to print",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clist\u003e"
+    ]
+  },
+  "--output-all": {
+    "Name": "--output-all",
+    "kind": "option",
+    "description": "Output all available columns",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--pairs": {
+    "Name": "--pairs",
+    "kind": "option",
+    "description": "Produce output in the form of key-value pairs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--perms": {
+    "Name": "--perms",
+    "kind": "option",
+    "description": "Output info about device owner, group and mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--raw": {
+    "Name": "--raw",
+    "kind": "option",
+    "description": "Produce output in raw format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--scsi": {
+    "Name": "--scsi",
+    "kind": "option",
+    "description": "Output info about SCSI devices only",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--sort": {
+    "Name": "--sort",
+    "kind": "option",
+    "description": "Sort output lines by column",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccolumn\u003e": {
+        "Name": "\u003ccolumn\u003e",
+        "kind": "argument",
+        "description": "column",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccolumn\u003e": {
+        "Name": "\u003ccolumn\u003e",
+        "kind": "argument",
+        "description": "column",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccolumn\u003e"
+    ]
+  },
+  "--sysroot": {
+    "Name": "--sysroot",
+    "kind": "option",
+    "description": "Gather data for a Linux instance other than the instance from which the lsblk command is issued",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdirectory\u003e": {
+        "Name": "\u003cdirectory\u003e",
+        "kind": "argument",
+        "description": "directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdirectory\u003e"
+    ]
+  },
+  "--topology": {
+    "Name": "--topology",
+    "kind": "option",
+    "description": "Output info about block-device topology",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--tree": {
+    "Name": "--tree",
+    "kind": "option",
+    "description": "Force tree-like output format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccolumn\u003e": {
+        "Name": "\u003ccolumn\u003e",
+        "kind": "argument",
+        "description": "column",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccolumn\u003e": {
+        "Name": "\u003ccolumn\u003e",
+        "kind": "argument",
+        "description": "column",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccolumn\u003e"
+    ]
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Show version for lsblk",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--width": {
+    "Name": "--width",
+    "kind": "option",
+    "description": "Specifies output width as a number of characters",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnumber\u003e": {
+        "Name": "\u003cnumber\u003e",
+        "kind": "argument",
+        "description": "number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnumber\u003e": {
+        "Name": "\u003cnumber\u003e",
+        "kind": "argument",
+        "description": "number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnumber\u003e"
+    ]
+  },
+  "--zoned": {
+    "Name": "--zoned",
+    "kind": "option",
+    "description": "Print the zone model for each device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-D": {
+    "Name": "-D",
+    "kind": "option",
+    "description": "Print information about the discarding capabilities (TRIM, UNMAP) for each device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-E": {
+    "Name": "-E",
+    "kind": "option",
+    "description": "Use column as a de-duplication key to de-duplicate output tree",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccolumn\u003e": {
+        "Name": "\u003ccolumn\u003e",
+        "kind": "argument",
+        "description": "column",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccolumn\u003e": {
+        "Name": "\u003ccolumn\u003e",
+        "kind": "argument",
+        "description": "column",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccolumn\u003e"
+    ]
+  },
+  "-I": {
+    "Name": "-I",
+    "kind": "option",
+    "description": "Include devices specified by the comma-separated list of major device numbers",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clist\u003e"
+    ]
+  },
+  "-J": {
+    "Name": "-J",
+    "kind": "option",
+    "description": "Use JSON output format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-M": {
+    "Name": "-M",
+    "kind": "option",
+    "description": "Group parents of sub-trees to provide more readable output for RAIDs and Multi-path devices",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-O": {
+    "Name": "-O",
+    "kind": "option",
+    "description": "Output all available columns",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-P": {
+    "Name": "-P",
+    "kind": "option",
+    "description": "Produce output in the form of key-value pairs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-S": {
+    "Name": "-S",
+    "kind": "option",
+    "description": "Output info about SCSI devices only",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-T": {
+    "Name": "-T",
+    "kind": "option",
+    "description": "Force tree-like output format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccolumn\u003e": {
+        "Name": "\u003ccolumn\u003e",
+        "kind": "argument",
+        "description": "column",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccolumn\u003e": {
+        "Name": "\u003ccolumn\u003e",
+        "kind": "argument",
+        "description": "column",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccolumn\u003e"
+    ]
+  },
+  "-V": {
+    "Name": "-V",
+    "kind": "option",
+    "description": "Show version for lsblk",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-a": {
+    "Name": "-a",
+    "kind": "option",
+    "description": "Also list empty devices and RAM disk devices",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-b": {
+    "Name": "-b",
+    "kind": "option",
+    "description": "Print the SIZE column in bytes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Do not print holder devices or slaves",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-e": {
+    "Name": "-e",
+    "kind": "option",
+    "description": "Exclude the devices specified by the comma-separated list of major device numbers",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clist\u003e"
+    ]
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Output info about filesystems",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help for lsblk",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Use ASCII characters for tree formatting",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "option",
+    "description": "Produce output in the form of a list",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-m": {
+    "Name": "-m",
+    "kind": "option",
+    "description": "Output info about device owner, group and mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-n": {
+    "Name": "-n",
+    "kind": "option",
+    "description": "Do not print a header line",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-o": {
+    "Name": "-o",
+    "kind": "option",
+    "description": "Specify which output columns to print",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clist\u003e"
+    ]
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "Produce output in raw format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Print dependencies in inverse order",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Output info about block-device topology",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-w": {
+    "Name": "-w",
+    "kind": "option",
+    "description": "Specifies output width as a number of characters",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnumber\u003e": {
+        "Name": "\u003cnumber\u003e",
+        "kind": "argument",
+        "description": "number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnumber\u003e": {
+        "Name": "\u003cnumber\u003e",
+        "kind": "argument",
+        "description": "number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnumber\u003e"
+    ]
+  },
+  "-x": {
+    "Name": "-x",
+    "kind": "option",
+    "description": "Sort output lines by column",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccolumn\u003e": {
+        "Name": "\u003ccolumn\u003e",
+        "kind": "argument",
+        "description": "column",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccolumn\u003e": {
+        "Name": "\u003ccolumn\u003e",
+        "kind": "argument",
+        "description": "column",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccolumn\u003e"
+    ]
+  },
+  "-z": {
+    "Name": "-z",
+    "kind": "option",
+    "description": "Print the zone model for each device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003cdevice\u003e": {
+    "Name": "\u003cdevice\u003e",
+    "kind": "argument",
+    "description": "device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

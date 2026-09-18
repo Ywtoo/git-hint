@@ -1,0 +1,4033 @@
+{
+  "--cli-config-file": {
+    "Name": "--cli-config-file",
+    "kind": "option",
+    "description": "Meroxa configuration file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccli-config-file\u003e": {
+        "Name": "\u003ccli-config-file\u003e",
+        "kind": "argument",
+        "description": "cli-config-file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccli-config-file\u003e": {
+        "Name": "\u003ccli-config-file\u003e",
+        "kind": "argument",
+        "description": "cli-config-file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccli-config-file\u003e"
+    ]
+  },
+  "--debug": {
+    "Name": "--debug",
+    "kind": "option",
+    "description": "Display any debugging information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Display help",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--json": {
+    "Name": "--json",
+    "kind": "option",
+    "description": "Output json",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--timeout": {
+    "Name": "--timeout",
+    "kind": "option",
+    "description": "Set the duration of the client timeout in seconds",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctimeout\u003e": {
+        "Name": "\u003ctimeout\u003e",
+        "kind": "argument",
+        "description": "timeout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctimeout\u003e": {
+        "Name": "\u003ctimeout\u003e",
+        "kind": "argument",
+        "description": "timeout",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctimeout\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Display help",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "accounts": {
+    "Name": "accounts",
+    "kind": "subcommand",
+    "description": "Manage Meroxa Accounts",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "ls": {
+        "Name": "ls",
+        "kind": "subcommand",
+        "description": "List Meroxa Accounts",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--no-headers": {
+            "Name": "--no-headers",
+            "kind": "option",
+            "description": "Display output without headers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--no-headers": {
+            "Name": "--no-headers",
+            "kind": "option",
+            "description": "Display output without headers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "set": {
+        "Name": "set",
+        "kind": "subcommand",
+        "description": "Set active account",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "api": {
+    "Name": "api",
+    "kind": "subcommand",
+    "description": "Invoke Meroxa API",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "app": {
+    "Name": "app",
+    "kind": "subcommand",
+    "description": "Manage Turbine Data Applications",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "deploy": {
+        "Name": "deploy",
+        "kind": "subcommand",
+        "description": "Deploy a Turbine Data Application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--env": {
+            "Name": "--env",
+            "kind": "option",
+            "description": "Environment (name or UUID) where application will be deployed to",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cenv\u003e": {
+                "Name": "\u003cenv\u003e",
+                "kind": "argument",
+                "description": "env",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cenv\u003e": {
+                "Name": "\u003cenv\u003e",
+                "kind": "argument",
+                "description": "env",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cenv\u003e"
+            ]
+          },
+          "--path": {
+            "Name": "--path",
+            "kind": "option",
+            "description": "Path to the app directory (default is local directory)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "--skip-collection-validation": {
+            "Name": "--skip-collection-validation",
+            "kind": "option",
+            "description": "Skips unique destination collection and looping validations",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--env": {
+            "Name": "--env",
+            "kind": "option",
+            "description": "Environment (name or UUID) where application will be deployed to",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cenv\u003e": {
+                "Name": "\u003cenv\u003e",
+                "kind": "argument",
+                "description": "env",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cenv\u003e": {
+                "Name": "\u003cenv\u003e",
+                "kind": "argument",
+                "description": "env",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cenv\u003e"
+            ]
+          },
+          "--path": {
+            "Name": "--path",
+            "kind": "option",
+            "description": "Path to the app directory (default is local directory)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "--skip-collection-validation": {
+            "Name": "--skip-collection-validation",
+            "kind": "option",
+            "description": "Skips unique destination collection and looping validations",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "describe": {
+        "Name": "describe",
+        "kind": "subcommand",
+        "description": "Describe a Turbine Data Application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--path": {
+            "Name": "--path",
+            "kind": "option",
+            "description": "Path to the app directory (default is local directory)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--path": {
+            "Name": "--path",
+            "kind": "option",
+            "description": "Path to the app directory (default is local directory)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          }
+        }
+      },
+      "init": {
+        "Name": "init",
+        "kind": "subcommand",
+        "description": "Initialize a Turbine Data Application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--lang": {
+            "Name": "--lang",
+            "kind": "option",
+            "description": "Language to use (js|go|py) (required)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003clang\u003e": {
+                "Name": "\u003clang\u003e",
+                "kind": "argument",
+                "description": "lang",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003clang\u003e": {
+                "Name": "\u003clang\u003e",
+                "kind": "argument",
+                "description": "lang",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003clang\u003e"
+            ]
+          },
+          "--mod-vendor": {
+            "Name": "--mod-vendor",
+            "kind": "option",
+            "description": "Whether to download modules to vendor or globally while initializing a Go application",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--path": {
+            "Name": "--path",
+            "kind": "option",
+            "description": "Path where application will be initialized (current directory as default)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "--skip-mod-init": {
+            "Name": "--skip-mod-init",
+            "kind": "option",
+            "description": "Whether to run 'go mod init' while initializing a Go application",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-l": {
+            "Name": "-l",
+            "kind": "option",
+            "description": "Language to use (js|go|py) (required)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003clang\u003e": {
+                "Name": "\u003clang\u003e",
+                "kind": "argument",
+                "description": "lang",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003clang\u003e": {
+                "Name": "\u003clang\u003e",
+                "kind": "argument",
+                "description": "lang",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003clang\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--lang": {
+            "Name": "--lang",
+            "kind": "option",
+            "description": "Language to use (js|go|py) (required)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003clang\u003e": {
+                "Name": "\u003clang\u003e",
+                "kind": "argument",
+                "description": "lang",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003clang\u003e": {
+                "Name": "\u003clang\u003e",
+                "kind": "argument",
+                "description": "lang",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003clang\u003e"
+            ]
+          },
+          "--mod-vendor": {
+            "Name": "--mod-vendor",
+            "kind": "option",
+            "description": "Whether to download modules to vendor or globally while initializing a Go application",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--path": {
+            "Name": "--path",
+            "kind": "option",
+            "description": "Path where application will be initialized (current directory as default)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "--skip-mod-init": {
+            "Name": "--skip-mod-init",
+            "kind": "option",
+            "description": "Whether to run 'go mod init' while initializing a Go application",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-l": {
+            "Name": "-l",
+            "kind": "option",
+            "description": "Language to use (js|go|py) (required)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003clang\u003e": {
+                "Name": "\u003clang\u003e",
+                "kind": "argument",
+                "description": "lang",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003clang\u003e": {
+                "Name": "\u003clang\u003e",
+                "kind": "argument",
+                "description": "lang",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003clang\u003e"
+            ]
+          }
+        }
+      },
+      "log": {
+        "Name": "log",
+        "kind": "subcommand",
+        "description": "View relevant logs to the state of the given Turbine Data Application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--path": {
+            "Name": "--path",
+            "kind": "option",
+            "description": "Path to the app directory (default is local directory)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--path": {
+            "Name": "--path",
+            "kind": "option",
+            "description": "Path to the app directory (default is local directory)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          }
+        }
+      },
+      "ls": {
+        "Name": "ls",
+        "kind": "subcommand",
+        "description": "List Turbine Data Applications",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--no-headers": {
+            "Name": "--no-headers",
+            "kind": "option",
+            "description": "Display output without headers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--no-headers": {
+            "Name": "--no-headers",
+            "kind": "option",
+            "description": "Display output without headers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "open": {
+        "Name": "open",
+        "kind": "subcommand",
+        "description": "Open the link to a Turbine Data Application in the Dashboard",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--path": {
+            "Name": "--path",
+            "kind": "option",
+            "description": "Path to the app directory (default is local directory)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--path": {
+            "Name": "--path",
+            "kind": "option",
+            "description": "Path to the app directory (default is local directory)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          }
+        }
+      },
+      "rm": {
+        "Name": "rm",
+        "kind": "subcommand",
+        "description": "Remove a Turbine Data Application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--force": {
+            "Name": "--force",
+            "kind": "option",
+            "description": "Skip confirmation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--path": {
+            "Name": "--path",
+            "kind": "option",
+            "description": "Path to the app directory (default is local directory)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Skip confirmation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--force": {
+            "Name": "--force",
+            "kind": "option",
+            "description": "Skip confirmation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--path": {
+            "Name": "--path",
+            "kind": "option",
+            "description": "Path to the app directory (default is local directory)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Skip confirmation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "run": {
+        "Name": "run",
+        "kind": "subcommand",
+        "description": "Execute a Turbine Data Application locally",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--path": {
+            "Name": "--path",
+            "kind": "option",
+            "description": "Path of application to run",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--path": {
+            "Name": "--path",
+            "kind": "option",
+            "description": "Path of application to run",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          }
+        }
+      },
+      "upgrade": {
+        "Name": "upgrade",
+        "kind": "subcommand",
+        "description": "Upgrade a Turbine Data Application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--path": {
+            "Name": "--path",
+            "kind": "option",
+            "description": "Path where application exists (current directory as default)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--path": {
+            "Name": "--path",
+            "kind": "option",
+            "description": "Path where application exists (current directory as default)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpath\u003e": {
+                "Name": "\u003cpath\u003e",
+                "kind": "argument",
+                "description": "path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpath\u003e"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "auth": {
+    "Name": "auth",
+    "kind": "subcommand",
+    "description": "Authentication commands for Meroxa",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "login": {
+        "Name": "login",
+        "kind": "subcommand",
+        "description": "Login or Sign up to the Meroxa Platform",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "logout": {
+        "Name": "logout",
+        "kind": "subcommand",
+        "description": "Clears local login credentials of the Meroxa Platform",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "whoami": {
+        "Name": "whoami",
+        "kind": "subcommand",
+        "description": "Display the current logged in user",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "billing": {
+    "Name": "billing",
+    "kind": "subcommand",
+    "description": "Open your billing page in a web browser",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "build": {
+    "Name": "build",
+    "kind": "subcommand",
+    "description": "Inspect Process Builds on Meroxa",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "describe": {
+        "Name": "describe",
+        "kind": "subcommand",
+        "description": "Describe a Meroxa Process Build",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "log": {
+        "Name": "log",
+        "kind": "subcommand",
+        "description": "List a Meroxa Process Build's Logs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "cfg": {
+    "Name": "cfg",
+    "kind": "subcommand",
+    "description": "Manage your Meroxa CLI configuration",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "describe": {
+        "Name": "describe",
+        "kind": "subcommand",
+        "description": "Show Meroxa CLI configuration details",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "set": {
+        "Name": "set",
+        "kind": "subcommand",
+        "description": "Update your Meroxa CLI configuration file with a specific key=value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "completion": {
+    "Name": "completion",
+    "kind": "subcommand",
+    "description": "Generate completion script",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "env": {
+    "Name": "env",
+    "kind": "subcommand",
+    "description": "Manage environments on Meroxa",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "create": {
+        "Name": "create",
+        "kind": "subcommand",
+        "description": "Create an environment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--config": {
+            "Name": "--config",
+            "kind": "option",
+            "description": "Environment configuration based on type and provider (e.g.: --config aws_access_key_id=my_access_key --config aws_secret_access_key=my_access_secret)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cconfig\u003e": {
+                "Name": "\u003cconfig\u003e",
+                "kind": "argument",
+                "description": "config",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cconfig\u003e": {
+                "Name": "\u003cconfig\u003e",
+                "kind": "argument",
+                "description": "config",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cconfig\u003e"
+            ]
+          },
+          "--provider": {
+            "Name": "--provider",
+            "kind": "option",
+            "description": "Environment cloud provider to use",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cprovider\u003e": {
+                "Name": "\u003cprovider\u003e",
+                "kind": "argument",
+                "description": "provider",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cprovider\u003e": {
+                "Name": "\u003cprovider\u003e",
+                "kind": "argument",
+                "description": "provider",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cprovider\u003e"
+            ]
+          },
+          "--region": {
+            "Name": "--region",
+            "kind": "option",
+            "description": "Environment region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cregion\u003e"
+            ]
+          },
+          "--type": {
+            "Name": "--type",
+            "kind": "option",
+            "description": "Environment type, when not specified",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ctype\u003e": {
+                "Name": "\u003ctype\u003e",
+                "kind": "argument",
+                "description": "type",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ctype\u003e": {
+                "Name": "\u003ctype\u003e",
+                "kind": "argument",
+                "description": "type",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ctype\u003e"
+            ]
+          },
+          "--yes": {
+            "Name": "--yes",
+            "kind": "option",
+            "description": "Skip confirmation prompt",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-c": {
+            "Name": "-c",
+            "kind": "option",
+            "description": "Environment configuration based on type and provider (e.g.: --config aws_access_key_id=my_access_key --config aws_secret_access_key=my_access_secret)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cconfig\u003e": {
+                "Name": "\u003cconfig\u003e",
+                "kind": "argument",
+                "description": "config",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cconfig\u003e": {
+                "Name": "\u003cconfig\u003e",
+                "kind": "argument",
+                "description": "config",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cconfig\u003e"
+            ]
+          },
+          "-y": {
+            "Name": "-y",
+            "kind": "option",
+            "description": "Skip confirmation prompt",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--config": {
+            "Name": "--config",
+            "kind": "option",
+            "description": "Environment configuration based on type and provider (e.g.: --config aws_access_key_id=my_access_key --config aws_secret_access_key=my_access_secret)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cconfig\u003e": {
+                "Name": "\u003cconfig\u003e",
+                "kind": "argument",
+                "description": "config",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cconfig\u003e": {
+                "Name": "\u003cconfig\u003e",
+                "kind": "argument",
+                "description": "config",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cconfig\u003e"
+            ]
+          },
+          "--provider": {
+            "Name": "--provider",
+            "kind": "option",
+            "description": "Environment cloud provider to use",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cprovider\u003e": {
+                "Name": "\u003cprovider\u003e",
+                "kind": "argument",
+                "description": "provider",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cprovider\u003e": {
+                "Name": "\u003cprovider\u003e",
+                "kind": "argument",
+                "description": "provider",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cprovider\u003e"
+            ]
+          },
+          "--region": {
+            "Name": "--region",
+            "kind": "option",
+            "description": "Environment region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cregion\u003e": {
+                "Name": "\u003cregion\u003e",
+                "kind": "argument",
+                "description": "region",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cregion\u003e"
+            ]
+          },
+          "--type": {
+            "Name": "--type",
+            "kind": "option",
+            "description": "Environment type, when not specified",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ctype\u003e": {
+                "Name": "\u003ctype\u003e",
+                "kind": "argument",
+                "description": "type",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ctype\u003e": {
+                "Name": "\u003ctype\u003e",
+                "kind": "argument",
+                "description": "type",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ctype\u003e"
+            ]
+          },
+          "--yes": {
+            "Name": "--yes",
+            "kind": "option",
+            "description": "Skip confirmation prompt",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-c": {
+            "Name": "-c",
+            "kind": "option",
+            "description": "Environment configuration based on type and provider (e.g.: --config aws_access_key_id=my_access_key --config aws_secret_access_key=my_access_secret)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cconfig\u003e": {
+                "Name": "\u003cconfig\u003e",
+                "kind": "argument",
+                "description": "config",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cconfig\u003e": {
+                "Name": "\u003cconfig\u003e",
+                "kind": "argument",
+                "description": "config",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cconfig\u003e"
+            ]
+          },
+          "-y": {
+            "Name": "-y",
+            "kind": "option",
+            "description": "Skip confirmation prompt",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "describe": {
+        "Name": "describe",
+        "kind": "subcommand",
+        "description": "Describe environment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "ls": {
+        "Name": "ls",
+        "kind": "subcommand",
+        "description": "List environments",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--no-headers": {
+            "Name": "--no-headers",
+            "kind": "option",
+            "description": "Display output without headers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--no-headers": {
+            "Name": "--no-headers",
+            "kind": "option",
+            "description": "Display output without headers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "repair": {
+        "Name": "repair",
+        "kind": "subcommand",
+        "description": "Repair environment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "rm": {
+        "Name": "rm",
+        "kind": "subcommand",
+        "description": "Remove environment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--force": {
+            "Name": "--force",
+            "kind": "option",
+            "description": "Skip confirmation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Skip confirmation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--force": {
+            "Name": "--force",
+            "kind": "option",
+            "description": "Skip confirmation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Skip confirmation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "update": {
+        "Name": "update",
+        "kind": "subcommand",
+        "description": "Update an environment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--config": {
+            "Name": "--config",
+            "kind": "option",
+            "description": "Updated environment configuration based on type and provider (e.g.: --config aws_access_key_id=my_access_key --config aws_secret_access_key=my_access_secret)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cconfig\u003e": {
+                "Name": "\u003cconfig\u003e",
+                "kind": "argument",
+                "description": "config",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cconfig\u003e": {
+                "Name": "\u003cconfig\u003e",
+                "kind": "argument",
+                "description": "config",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cconfig\u003e"
+            ]
+          },
+          "--name": {
+            "Name": "--name",
+            "kind": "option",
+            "description": "Updated environment name, when specified",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cname\u003e"
+            ]
+          },
+          "--yes": {
+            "Name": "--yes",
+            "kind": "option",
+            "description": "Skip confirmation prompt",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-c": {
+            "Name": "-c",
+            "kind": "option",
+            "description": "Updated environment configuration based on type and provider (e.g.: --config aws_access_key_id=my_access_key --config aws_secret_access_key=my_access_secret)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cconfig\u003e": {
+                "Name": "\u003cconfig\u003e",
+                "kind": "argument",
+                "description": "config",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cconfig\u003e": {
+                "Name": "\u003cconfig\u003e",
+                "kind": "argument",
+                "description": "config",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cconfig\u003e"
+            ]
+          },
+          "-y": {
+            "Name": "-y",
+            "kind": "option",
+            "description": "Skip confirmation prompt",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--config": {
+            "Name": "--config",
+            "kind": "option",
+            "description": "Updated environment configuration based on type and provider (e.g.: --config aws_access_key_id=my_access_key --config aws_secret_access_key=my_access_secret)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cconfig\u003e": {
+                "Name": "\u003cconfig\u003e",
+                "kind": "argument",
+                "description": "config",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cconfig\u003e": {
+                "Name": "\u003cconfig\u003e",
+                "kind": "argument",
+                "description": "config",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cconfig\u003e"
+            ]
+          },
+          "--name": {
+            "Name": "--name",
+            "kind": "option",
+            "description": "Updated environment name, when specified",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cname\u003e"
+            ]
+          },
+          "--yes": {
+            "Name": "--yes",
+            "kind": "option",
+            "description": "Skip confirmation prompt",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-c": {
+            "Name": "-c",
+            "kind": "option",
+            "description": "Updated environment configuration based on type and provider (e.g.: --config aws_access_key_id=my_access_key --config aws_secret_access_key=my_access_secret)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cconfig\u003e": {
+                "Name": "\u003cconfig\u003e",
+                "kind": "argument",
+                "description": "config",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cconfig\u003e": {
+                "Name": "\u003cconfig\u003e",
+                "kind": "argument",
+                "description": "config",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cconfig\u003e"
+            ]
+          },
+          "-y": {
+            "Name": "-y",
+            "kind": "option",
+            "description": "Skip confirmation prompt",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      }
+    }
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Help about any command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "accounts": {
+        "Name": "accounts",
+        "kind": "subcommand",
+        "description": "Manage Meroxa Accounts",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "ls": {
+            "Name": "ls",
+            "kind": "subcommand",
+            "description": "List Meroxa Accounts",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "set": {
+            "Name": "set",
+            "kind": "subcommand",
+            "description": "Set active account",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "api": {
+        "Name": "api",
+        "kind": "subcommand",
+        "description": "Invoke Meroxa API",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "app": {
+        "Name": "app",
+        "kind": "subcommand",
+        "description": "Manage Turbine Data Applications",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "deploy": {
+            "Name": "deploy",
+            "kind": "subcommand",
+            "description": "Deploy a Turbine Data Application",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "describe": {
+            "Name": "describe",
+            "kind": "subcommand",
+            "description": "Describe a Turbine Data Application",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "init": {
+            "Name": "init",
+            "kind": "subcommand",
+            "description": "Initialize a Turbine Data Application",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "log": {
+            "Name": "log",
+            "kind": "subcommand",
+            "description": "View relevant logs to the state of the given Turbine Data Application",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "ls": {
+            "Name": "ls",
+            "kind": "subcommand",
+            "description": "List Turbine Data Applications",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "open": {
+            "Name": "open",
+            "kind": "subcommand",
+            "description": "Open the link to a Turbine Data Application in the Dashboard",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "rm": {
+            "Name": "rm",
+            "kind": "subcommand",
+            "description": "Remove a Turbine Data Application",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "run": {
+            "Name": "run",
+            "kind": "subcommand",
+            "description": "Execute a Turbine Data Application locally",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "upgrade": {
+            "Name": "upgrade",
+            "kind": "subcommand",
+            "description": "Upgrade a Turbine Data Application",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "auth": {
+        "Name": "auth",
+        "kind": "subcommand",
+        "description": "Authentication commands for Meroxa",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "login": {
+            "Name": "login",
+            "kind": "subcommand",
+            "description": "Login or Sign up to the Meroxa Platform",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "logout": {
+            "Name": "logout",
+            "kind": "subcommand",
+            "description": "Clears local login credentials of the Meroxa Platform",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "whoami": {
+            "Name": "whoami",
+            "kind": "subcommand",
+            "description": "Display the current logged in user",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "billing": {
+        "Name": "billing",
+        "kind": "subcommand",
+        "description": "Open your billing page in a web browser",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "build": {
+        "Name": "build",
+        "kind": "subcommand",
+        "description": "Inspect Process Builds on Meroxa",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "describe": {
+            "Name": "describe",
+            "kind": "subcommand",
+            "description": "Describe a Meroxa Process Build",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "log": {
+            "Name": "log",
+            "kind": "subcommand",
+            "description": "List a Meroxa Process Build's Logs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "cfg": {
+        "Name": "cfg",
+        "kind": "subcommand",
+        "description": "Manage your Meroxa CLI configuration",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "describe": {
+            "Name": "describe",
+            "kind": "subcommand",
+            "description": "Show Meroxa CLI configuration details",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "set": {
+            "Name": "set",
+            "kind": "subcommand",
+            "description": "Update your Meroxa CLI configuration file with a specific key=value",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "completion": {
+        "Name": "completion",
+        "kind": "subcommand",
+        "description": "Generate completion script",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "env": {
+        "Name": "env",
+        "kind": "subcommand",
+        "description": "Manage environments on Meroxa",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "create": {
+            "Name": "create",
+            "kind": "subcommand",
+            "description": "Create an environment",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "describe": {
+            "Name": "describe",
+            "kind": "subcommand",
+            "description": "Describe environment",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "ls": {
+            "Name": "ls",
+            "kind": "subcommand",
+            "description": "List environments",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "repair": {
+            "Name": "repair",
+            "kind": "subcommand",
+            "description": "Repair environment",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "rm": {
+            "Name": "rm",
+            "kind": "subcommand",
+            "description": "Remove environment",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "update": {
+            "Name": "update",
+            "kind": "subcommand",
+            "description": "Update an environment",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "login": {
+        "Name": "login",
+        "kind": "subcommand",
+        "description": "Login or Sign up to the Meroxa Platform",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "logout": {
+        "Name": "logout",
+        "kind": "subcommand",
+        "description": "Clears local login credentials of the Meroxa Platform",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "open": {
+        "Name": "open",
+        "kind": "subcommand",
+        "description": "Open in a web browser",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "billing": {
+            "Name": "billing",
+            "kind": "subcommand",
+            "description": "Open your billing page in a web browser",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "resource": {
+        "Name": "resource",
+        "kind": "subcommand",
+        "description": "Manage resources on Meroxa",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "add": {
+            "Name": "add",
+            "kind": "subcommand",
+            "description": "Add a resource to your Meroxa resource catalog",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "describe": {
+            "Name": "describe",
+            "kind": "subcommand",
+            "description": "Describe resource",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "ls": {
+            "Name": "ls",
+            "kind": "subcommand",
+            "description": "List resources and resource types",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "rm": {
+            "Name": "rm",
+            "kind": "subcommand",
+            "description": "Remove resource",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "rotate-tunnel-key": {
+            "Name": "rotate-tunnel-key",
+            "kind": "subcommand",
+            "description": "Rotate the tunnel key for a resource",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "update": {
+            "Name": "update",
+            "kind": "subcommand",
+            "description": "Update a resource",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "validate": {
+            "Name": "validate",
+            "kind": "subcommand",
+            "description": "Validate a resource",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "transform": {
+        "Name": "transform",
+        "kind": "subcommand",
+        "description": "Manage transforms on Meroxa",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "ls": {
+            "Name": "ls",
+            "kind": "subcommand",
+            "description": "List transforms",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "version": {
+        "Name": "version",
+        "kind": "subcommand",
+        "description": "Display the Meroxa CLI version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "whoami": {
+        "Name": "whoami",
+        "kind": "subcommand",
+        "description": "Display the current logged in user",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "login": {
+    "Name": "login",
+    "kind": "subcommand",
+    "description": "Login or Sign up to the Meroxa Platform",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "logout": {
+    "Name": "logout",
+    "kind": "subcommand",
+    "description": "Clears local login credentials of the Meroxa Platform",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "open": {
+    "Name": "open",
+    "kind": "subcommand",
+    "description": "Open in a web browser",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "billing": {
+        "Name": "billing",
+        "kind": "subcommand",
+        "description": "Open your billing page in a web browser",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "resource": {
+    "Name": "resource",
+    "kind": "subcommand",
+    "description": "Manage resources on Meroxa",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "add": {
+        "Name": "add",
+        "kind": "subcommand",
+        "description": "Add a resource to your Meroxa resource catalog",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--ca-cert": {
+            "Name": "--ca-cert",
+            "kind": "option",
+            "description": "Trusted certificates for verifying resource",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cca-cert\u003e": {
+                "Name": "\u003cca-cert\u003e",
+                "kind": "argument",
+                "description": "ca-cert",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cca-cert\u003e": {
+                "Name": "\u003cca-cert\u003e",
+                "kind": "argument",
+                "description": "ca-cert",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cca-cert\u003e"
+            ]
+          },
+          "--client-cert": {
+            "Name": "--client-cert",
+            "kind": "option",
+            "description": "Client certificate for authenticating to the resource",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cclient-cert\u003e": {
+                "Name": "\u003cclient-cert\u003e",
+                "kind": "argument",
+                "description": "client-cert",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cclient-cert\u003e": {
+                "Name": "\u003cclient-cert\u003e",
+                "kind": "argument",
+                "description": "client-cert",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cclient-cert\u003e"
+            ]
+          },
+          "--client-key": {
+            "Name": "--client-key",
+            "kind": "option",
+            "description": "Client private key for authenticating to the resource",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cclient-key\u003e": {
+                "Name": "\u003cclient-key\u003e",
+                "kind": "argument",
+                "description": "client-key",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cclient-key\u003e": {
+                "Name": "\u003cclient-key\u003e",
+                "kind": "argument",
+                "description": "client-key",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cclient-key\u003e"
+            ]
+          },
+          "--env": {
+            "Name": "--env",
+            "kind": "option",
+            "description": "Environment (name or UUID) where resource will be created",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cenv\u003e": {
+                "Name": "\u003cenv\u003e",
+                "kind": "argument",
+                "description": "env",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cenv\u003e": {
+                "Name": "\u003cenv\u003e",
+                "kind": "argument",
+                "description": "env",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cenv\u003e"
+            ]
+          },
+          "--metadata": {
+            "Name": "--metadata",
+            "kind": "option",
+            "description": "Resource metadata",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cmetadata\u003e": {
+                "Name": "\u003cmetadata\u003e",
+                "kind": "argument",
+                "description": "metadata",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cmetadata\u003e": {
+                "Name": "\u003cmetadata\u003e",
+                "kind": "argument",
+                "description": "metadata",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cmetadata\u003e"
+            ]
+          },
+          "--password": {
+            "Name": "--password",
+            "kind": "option",
+            "description": "Password",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpassword\u003e"
+            ]
+          },
+          "--private-key-file": {
+            "Name": "--private-key-file",
+            "kind": "option",
+            "description": "Path to private key file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cprivate-key-file\u003e": {
+                "Name": "\u003cprivate-key-file\u003e",
+                "kind": "argument",
+                "description": "private-key-file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cprivate-key-file\u003e": {
+                "Name": "\u003cprivate-key-file\u003e",
+                "kind": "argument",
+                "description": "private-key-file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cprivate-key-file\u003e"
+            ]
+          },
+          "--ssh-private-key": {
+            "Name": "--ssh-private-key",
+            "kind": "option",
+            "description": "SSH tunneling private key",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cssh-private-key\u003e": {
+                "Name": "\u003cssh-private-key\u003e",
+                "kind": "argument",
+                "description": "ssh-private-key",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cssh-private-key\u003e": {
+                "Name": "\u003cssh-private-key\u003e",
+                "kind": "argument",
+                "description": "ssh-private-key",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cssh-private-key\u003e"
+            ]
+          },
+          "--ssh-url": {
+            "Name": "--ssh-url",
+            "kind": "option",
+            "description": "SSH tunneling address",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cssh-url\u003e": {
+                "Name": "\u003cssh-url\u003e",
+                "kind": "argument",
+                "description": "ssh-url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cssh-url\u003e": {
+                "Name": "\u003cssh-url\u003e",
+                "kind": "argument",
+                "description": "ssh-url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cssh-url\u003e"
+            ]
+          },
+          "--ssl": {
+            "Name": "--ssl",
+            "kind": "option",
+            "description": "Use SSL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--token": {
+            "Name": "--token",
+            "kind": "option",
+            "description": "API Token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ctoken\u003e": {
+                "Name": "\u003ctoken\u003e",
+                "kind": "argument",
+                "description": "token",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ctoken\u003e": {
+                "Name": "\u003ctoken\u003e",
+                "kind": "argument",
+                "description": "token",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ctoken\u003e"
+            ]
+          },
+          "--type": {
+            "Name": "--type",
+            "kind": "option",
+            "description": "Resource type (required)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ctype\u003e": {
+                "Name": "\u003ctype\u003e",
+                "kind": "argument",
+                "description": "type",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ctype\u003e": {
+                "Name": "\u003ctype\u003e",
+                "kind": "argument",
+                "description": "type",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ctype\u003e"
+            ]
+          },
+          "--url": {
+            "Name": "--url",
+            "kind": "option",
+            "description": "Resource url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003curl\u003e": {
+                "Name": "\u003curl\u003e",
+                "kind": "argument",
+                "description": "url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003curl\u003e": {
+                "Name": "\u003curl\u003e",
+                "kind": "argument",
+                "description": "url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003curl\u003e"
+            ]
+          },
+          "--username": {
+            "Name": "--username",
+            "kind": "option",
+            "description": "Username",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cusername\u003e": {
+                "Name": "\u003cusername\u003e",
+                "kind": "argument",
+                "description": "username",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cusername\u003e": {
+                "Name": "\u003cusername\u003e",
+                "kind": "argument",
+                "description": "username",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cusername\u003e"
+            ]
+          },
+          "-m": {
+            "Name": "-m",
+            "kind": "option",
+            "description": "Resource metadata",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cmetadata\u003e": {
+                "Name": "\u003cmetadata\u003e",
+                "kind": "argument",
+                "description": "metadata",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cmetadata\u003e": {
+                "Name": "\u003cmetadata\u003e",
+                "kind": "argument",
+                "description": "metadata",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cmetadata\u003e"
+            ]
+          },
+          "-u": {
+            "Name": "-u",
+            "kind": "option",
+            "description": "Resource url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003curl\u003e": {
+                "Name": "\u003curl\u003e",
+                "kind": "argument",
+                "description": "url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003curl\u003e": {
+                "Name": "\u003curl\u003e",
+                "kind": "argument",
+                "description": "url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003curl\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--ca-cert": {
+            "Name": "--ca-cert",
+            "kind": "option",
+            "description": "Trusted certificates for verifying resource",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cca-cert\u003e": {
+                "Name": "\u003cca-cert\u003e",
+                "kind": "argument",
+                "description": "ca-cert",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cca-cert\u003e": {
+                "Name": "\u003cca-cert\u003e",
+                "kind": "argument",
+                "description": "ca-cert",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cca-cert\u003e"
+            ]
+          },
+          "--client-cert": {
+            "Name": "--client-cert",
+            "kind": "option",
+            "description": "Client certificate for authenticating to the resource",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cclient-cert\u003e": {
+                "Name": "\u003cclient-cert\u003e",
+                "kind": "argument",
+                "description": "client-cert",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cclient-cert\u003e": {
+                "Name": "\u003cclient-cert\u003e",
+                "kind": "argument",
+                "description": "client-cert",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cclient-cert\u003e"
+            ]
+          },
+          "--client-key": {
+            "Name": "--client-key",
+            "kind": "option",
+            "description": "Client private key for authenticating to the resource",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cclient-key\u003e": {
+                "Name": "\u003cclient-key\u003e",
+                "kind": "argument",
+                "description": "client-key",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cclient-key\u003e": {
+                "Name": "\u003cclient-key\u003e",
+                "kind": "argument",
+                "description": "client-key",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cclient-key\u003e"
+            ]
+          },
+          "--env": {
+            "Name": "--env",
+            "kind": "option",
+            "description": "Environment (name or UUID) where resource will be created",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cenv\u003e": {
+                "Name": "\u003cenv\u003e",
+                "kind": "argument",
+                "description": "env",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cenv\u003e": {
+                "Name": "\u003cenv\u003e",
+                "kind": "argument",
+                "description": "env",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cenv\u003e"
+            ]
+          },
+          "--metadata": {
+            "Name": "--metadata",
+            "kind": "option",
+            "description": "Resource metadata",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cmetadata\u003e": {
+                "Name": "\u003cmetadata\u003e",
+                "kind": "argument",
+                "description": "metadata",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cmetadata\u003e": {
+                "Name": "\u003cmetadata\u003e",
+                "kind": "argument",
+                "description": "metadata",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cmetadata\u003e"
+            ]
+          },
+          "--password": {
+            "Name": "--password",
+            "kind": "option",
+            "description": "Password",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpassword\u003e"
+            ]
+          },
+          "--private-key-file": {
+            "Name": "--private-key-file",
+            "kind": "option",
+            "description": "Path to private key file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cprivate-key-file\u003e": {
+                "Name": "\u003cprivate-key-file\u003e",
+                "kind": "argument",
+                "description": "private-key-file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cprivate-key-file\u003e": {
+                "Name": "\u003cprivate-key-file\u003e",
+                "kind": "argument",
+                "description": "private-key-file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cprivate-key-file\u003e"
+            ]
+          },
+          "--ssh-private-key": {
+            "Name": "--ssh-private-key",
+            "kind": "option",
+            "description": "SSH tunneling private key",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cssh-private-key\u003e": {
+                "Name": "\u003cssh-private-key\u003e",
+                "kind": "argument",
+                "description": "ssh-private-key",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cssh-private-key\u003e": {
+                "Name": "\u003cssh-private-key\u003e",
+                "kind": "argument",
+                "description": "ssh-private-key",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cssh-private-key\u003e"
+            ]
+          },
+          "--ssh-url": {
+            "Name": "--ssh-url",
+            "kind": "option",
+            "description": "SSH tunneling address",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cssh-url\u003e": {
+                "Name": "\u003cssh-url\u003e",
+                "kind": "argument",
+                "description": "ssh-url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cssh-url\u003e": {
+                "Name": "\u003cssh-url\u003e",
+                "kind": "argument",
+                "description": "ssh-url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cssh-url\u003e"
+            ]
+          },
+          "--ssl": {
+            "Name": "--ssl",
+            "kind": "option",
+            "description": "Use SSL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--token": {
+            "Name": "--token",
+            "kind": "option",
+            "description": "API Token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ctoken\u003e": {
+                "Name": "\u003ctoken\u003e",
+                "kind": "argument",
+                "description": "token",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ctoken\u003e": {
+                "Name": "\u003ctoken\u003e",
+                "kind": "argument",
+                "description": "token",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ctoken\u003e"
+            ]
+          },
+          "--type": {
+            "Name": "--type",
+            "kind": "option",
+            "description": "Resource type (required)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ctype\u003e": {
+                "Name": "\u003ctype\u003e",
+                "kind": "argument",
+                "description": "type",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ctype\u003e": {
+                "Name": "\u003ctype\u003e",
+                "kind": "argument",
+                "description": "type",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ctype\u003e"
+            ]
+          },
+          "--url": {
+            "Name": "--url",
+            "kind": "option",
+            "description": "Resource url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003curl\u003e": {
+                "Name": "\u003curl\u003e",
+                "kind": "argument",
+                "description": "url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003curl\u003e": {
+                "Name": "\u003curl\u003e",
+                "kind": "argument",
+                "description": "url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003curl\u003e"
+            ]
+          },
+          "--username": {
+            "Name": "--username",
+            "kind": "option",
+            "description": "Username",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cusername\u003e": {
+                "Name": "\u003cusername\u003e",
+                "kind": "argument",
+                "description": "username",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cusername\u003e": {
+                "Name": "\u003cusername\u003e",
+                "kind": "argument",
+                "description": "username",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cusername\u003e"
+            ]
+          },
+          "-m": {
+            "Name": "-m",
+            "kind": "option",
+            "description": "Resource metadata",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cmetadata\u003e": {
+                "Name": "\u003cmetadata\u003e",
+                "kind": "argument",
+                "description": "metadata",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cmetadata\u003e": {
+                "Name": "\u003cmetadata\u003e",
+                "kind": "argument",
+                "description": "metadata",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cmetadata\u003e"
+            ]
+          },
+          "-u": {
+            "Name": "-u",
+            "kind": "option",
+            "description": "Resource url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003curl\u003e": {
+                "Name": "\u003curl\u003e",
+                "kind": "argument",
+                "description": "url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003curl\u003e": {
+                "Name": "\u003curl\u003e",
+                "kind": "argument",
+                "description": "url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003curl\u003e"
+            ]
+          }
+        }
+      },
+      "describe": {
+        "Name": "describe",
+        "kind": "subcommand",
+        "description": "Describe resource",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "ls": {
+        "Name": "ls",
+        "kind": "subcommand",
+        "description": "List resources and resource types",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--no-headers": {
+            "Name": "--no-headers",
+            "kind": "option",
+            "description": "Display output without headers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--types": {
+            "Name": "--types",
+            "kind": "option",
+            "description": "List resource types",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--no-headers": {
+            "Name": "--no-headers",
+            "kind": "option",
+            "description": "Display output without headers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--types": {
+            "Name": "--types",
+            "kind": "option",
+            "description": "List resource types",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "rm": {
+        "Name": "rm",
+        "kind": "subcommand",
+        "description": "Remove resource",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--force": {
+            "Name": "--force",
+            "kind": "option",
+            "description": "Skip confirmation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Skip confirmation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--force": {
+            "Name": "--force",
+            "kind": "option",
+            "description": "Skip confirmation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Skip confirmation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "rotate-tunnel-key": {
+        "Name": "rotate-tunnel-key",
+        "kind": "subcommand",
+        "description": "Rotate the tunnel key for a resource",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--force": {
+            "Name": "--force",
+            "kind": "option",
+            "description": "Skip confirmation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Skip confirmation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--force": {
+            "Name": "--force",
+            "kind": "option",
+            "description": "Skip confirmation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Skip confirmation",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "update": {
+        "Name": "update",
+        "kind": "subcommand",
+        "description": "Update a resource",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--ca-cert": {
+            "Name": "--ca-cert",
+            "kind": "option",
+            "description": "Trusted certificates for verifying resource",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cca-cert\u003e": {
+                "Name": "\u003cca-cert\u003e",
+                "kind": "argument",
+                "description": "ca-cert",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cca-cert\u003e": {
+                "Name": "\u003cca-cert\u003e",
+                "kind": "argument",
+                "description": "ca-cert",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cca-cert\u003e"
+            ]
+          },
+          "--client-cert": {
+            "Name": "--client-cert",
+            "kind": "option",
+            "description": "Client certificate for authenticating to the resource",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cclient-cert\u003e": {
+                "Name": "\u003cclient-cert\u003e",
+                "kind": "argument",
+                "description": "client-cert",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cclient-cert\u003e": {
+                "Name": "\u003cclient-cert\u003e",
+                "kind": "argument",
+                "description": "client-cert",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cclient-cert\u003e"
+            ]
+          },
+          "--client-key": {
+            "Name": "--client-key",
+            "kind": "option",
+            "description": "Client private key for authenticating to the resource",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cclient-key\u003e": {
+                "Name": "\u003cclient-key\u003e",
+                "kind": "argument",
+                "description": "client-key",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cclient-key\u003e": {
+                "Name": "\u003cclient-key\u003e",
+                "kind": "argument",
+                "description": "client-key",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cclient-key\u003e"
+            ]
+          },
+          "--metadata": {
+            "Name": "--metadata",
+            "kind": "option",
+            "description": "New resource metadata",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cmetadata\u003e": {
+                "Name": "\u003cmetadata\u003e",
+                "kind": "argument",
+                "description": "metadata",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cmetadata\u003e": {
+                "Name": "\u003cmetadata\u003e",
+                "kind": "argument",
+                "description": "metadata",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cmetadata\u003e"
+            ]
+          },
+          "--name": {
+            "Name": "--name",
+            "kind": "option",
+            "description": "New resource name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cname\u003e"
+            ]
+          },
+          "--password": {
+            "Name": "--password",
+            "kind": "option",
+            "description": "Password",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpassword\u003e"
+            ]
+          },
+          "--ssh-url": {
+            "Name": "--ssh-url",
+            "kind": "option",
+            "description": "SSH tunneling address",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cssh-url\u003e": {
+                "Name": "\u003cssh-url\u003e",
+                "kind": "argument",
+                "description": "ssh-url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cssh-url\u003e": {
+                "Name": "\u003cssh-url\u003e",
+                "kind": "argument",
+                "description": "ssh-url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cssh-url\u003e"
+            ]
+          },
+          "--ssl": {
+            "Name": "--ssl",
+            "kind": "option",
+            "description": "Use SSL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--url": {
+            "Name": "--url",
+            "kind": "option",
+            "description": "New resource url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003curl\u003e": {
+                "Name": "\u003curl\u003e",
+                "kind": "argument",
+                "description": "url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003curl\u003e": {
+                "Name": "\u003curl\u003e",
+                "kind": "argument",
+                "description": "url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003curl\u003e"
+            ]
+          },
+          "--username": {
+            "Name": "--username",
+            "kind": "option",
+            "description": "Username",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cusername\u003e": {
+                "Name": "\u003cusername\u003e",
+                "kind": "argument",
+                "description": "username",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cusername\u003e": {
+                "Name": "\u003cusername\u003e",
+                "kind": "argument",
+                "description": "username",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cusername\u003e"
+            ]
+          },
+          "-m": {
+            "Name": "-m",
+            "kind": "option",
+            "description": "New resource metadata",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cmetadata\u003e": {
+                "Name": "\u003cmetadata\u003e",
+                "kind": "argument",
+                "description": "metadata",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cmetadata\u003e": {
+                "Name": "\u003cmetadata\u003e",
+                "kind": "argument",
+                "description": "metadata",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cmetadata\u003e"
+            ]
+          },
+          "-u": {
+            "Name": "-u",
+            "kind": "option",
+            "description": "New resource url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003curl\u003e": {
+                "Name": "\u003curl\u003e",
+                "kind": "argument",
+                "description": "url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003curl\u003e": {
+                "Name": "\u003curl\u003e",
+                "kind": "argument",
+                "description": "url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003curl\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--ca-cert": {
+            "Name": "--ca-cert",
+            "kind": "option",
+            "description": "Trusted certificates for verifying resource",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cca-cert\u003e": {
+                "Name": "\u003cca-cert\u003e",
+                "kind": "argument",
+                "description": "ca-cert",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cca-cert\u003e": {
+                "Name": "\u003cca-cert\u003e",
+                "kind": "argument",
+                "description": "ca-cert",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cca-cert\u003e"
+            ]
+          },
+          "--client-cert": {
+            "Name": "--client-cert",
+            "kind": "option",
+            "description": "Client certificate for authenticating to the resource",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cclient-cert\u003e": {
+                "Name": "\u003cclient-cert\u003e",
+                "kind": "argument",
+                "description": "client-cert",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cclient-cert\u003e": {
+                "Name": "\u003cclient-cert\u003e",
+                "kind": "argument",
+                "description": "client-cert",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cclient-cert\u003e"
+            ]
+          },
+          "--client-key": {
+            "Name": "--client-key",
+            "kind": "option",
+            "description": "Client private key for authenticating to the resource",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cclient-key\u003e": {
+                "Name": "\u003cclient-key\u003e",
+                "kind": "argument",
+                "description": "client-key",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cclient-key\u003e": {
+                "Name": "\u003cclient-key\u003e",
+                "kind": "argument",
+                "description": "client-key",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cclient-key\u003e"
+            ]
+          },
+          "--metadata": {
+            "Name": "--metadata",
+            "kind": "option",
+            "description": "New resource metadata",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cmetadata\u003e": {
+                "Name": "\u003cmetadata\u003e",
+                "kind": "argument",
+                "description": "metadata",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cmetadata\u003e": {
+                "Name": "\u003cmetadata\u003e",
+                "kind": "argument",
+                "description": "metadata",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cmetadata\u003e"
+            ]
+          },
+          "--name": {
+            "Name": "--name",
+            "kind": "option",
+            "description": "New resource name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cname\u003e"
+            ]
+          },
+          "--password": {
+            "Name": "--password",
+            "kind": "option",
+            "description": "Password",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpassword\u003e": {
+                "Name": "\u003cpassword\u003e",
+                "kind": "argument",
+                "description": "password",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpassword\u003e"
+            ]
+          },
+          "--ssh-url": {
+            "Name": "--ssh-url",
+            "kind": "option",
+            "description": "SSH tunneling address",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cssh-url\u003e": {
+                "Name": "\u003cssh-url\u003e",
+                "kind": "argument",
+                "description": "ssh-url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cssh-url\u003e": {
+                "Name": "\u003cssh-url\u003e",
+                "kind": "argument",
+                "description": "ssh-url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cssh-url\u003e"
+            ]
+          },
+          "--ssl": {
+            "Name": "--ssl",
+            "kind": "option",
+            "description": "Use SSL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--url": {
+            "Name": "--url",
+            "kind": "option",
+            "description": "New resource url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003curl\u003e": {
+                "Name": "\u003curl\u003e",
+                "kind": "argument",
+                "description": "url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003curl\u003e": {
+                "Name": "\u003curl\u003e",
+                "kind": "argument",
+                "description": "url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003curl\u003e"
+            ]
+          },
+          "--username": {
+            "Name": "--username",
+            "kind": "option",
+            "description": "Username",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cusername\u003e": {
+                "Name": "\u003cusername\u003e",
+                "kind": "argument",
+                "description": "username",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cusername\u003e": {
+                "Name": "\u003cusername\u003e",
+                "kind": "argument",
+                "description": "username",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cusername\u003e"
+            ]
+          },
+          "-m": {
+            "Name": "-m",
+            "kind": "option",
+            "description": "New resource metadata",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cmetadata\u003e": {
+                "Name": "\u003cmetadata\u003e",
+                "kind": "argument",
+                "description": "metadata",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cmetadata\u003e": {
+                "Name": "\u003cmetadata\u003e",
+                "kind": "argument",
+                "description": "metadata",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cmetadata\u003e"
+            ]
+          },
+          "-u": {
+            "Name": "-u",
+            "kind": "option",
+            "description": "New resource url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003curl\u003e": {
+                "Name": "\u003curl\u003e",
+                "kind": "argument",
+                "description": "url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003curl\u003e": {
+                "Name": "\u003curl\u003e",
+                "kind": "argument",
+                "description": "url",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003curl\u003e"
+            ]
+          }
+        }
+      },
+      "validate": {
+        "Name": "validate",
+        "kind": "subcommand",
+        "description": "Validate a resource",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "transform": {
+    "Name": "transform",
+    "kind": "subcommand",
+    "description": "Manage transforms on Meroxa",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "ls": {
+        "Name": "ls",
+        "kind": "subcommand",
+        "description": "List transforms",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--no-headers": {
+            "Name": "--no-headers",
+            "kind": "option",
+            "description": "Display output without headers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--no-headers": {
+            "Name": "--no-headers",
+            "kind": "option",
+            "description": "Display output without headers",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      }
+    }
+  },
+  "version": {
+    "Name": "version",
+    "kind": "subcommand",
+    "description": "Display the Meroxa CLI version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "whoami": {
+    "Name": "whoami",
+    "kind": "subcommand",
+    "description": "Display the current logged in user",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

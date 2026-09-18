@@ -1,0 +1,1582 @@
+{
+  "-allowProvisioningDeviceRegistration": {
+    "Name": "-allowProvisioningDeviceRegistration",
+    "kind": "option",
+    "description": "Allow xcodebuild to register your destination device on the developer portal if necessary. This flag only takes effect if -allowProvisioningUpdates is also passed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-allowProvisioningUpdates": {
+    "Name": "-allowProvisioningUpdates",
+    "kind": "option",
+    "description": "Allow xcodebuild to communicate with the Apple Developer website. For automatically signed targets, xcodebuild will create and update profiles, app IDs, and certificates. For manually signed targets, xcodebuild will download missing or updated provisioning profiles. Requires a developer account to have been added in Xcode's Accounts preference pane",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-alltargets": {
+    "Name": "-alltargets",
+    "kind": "option",
+    "description": "Build all targets",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-arch": {
+    "Name": "-arch",
+    "kind": "option",
+    "description": "Build each target for the architecture ARCH; this will override architectures defined in the project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cARCH\u003e": {
+        "Name": "\u003cARCH\u003e",
+        "kind": "argument",
+        "description": "ARCH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cARCH\u003e": {
+        "Name": "\u003cARCH\u003e",
+        "kind": "argument",
+        "description": "ARCH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cARCH\u003e"
+    ]
+  },
+  "-archivePath": {
+    "Name": "-archivePath",
+    "kind": "option",
+    "description": "Specifies the directory where any created archives will be placed, or the archive that should be exported",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH\u003e"
+    ]
+  },
+  "-checkFirstLaunchStatus": {
+    "Name": "-checkFirstLaunchStatus",
+    "kind": "option",
+    "description": "Check if any First Launch tasks need to be performed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-clonedSourcePackagesDirPath": {
+    "Name": "-clonedSourcePackagesDirPath",
+    "kind": "option",
+    "description": "Specifies the directory to which remote source packages are fetch or expected to be found",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH\u003e"
+    ]
+  },
+  "-configuration": {
+    "Name": "-configuration",
+    "kind": "option",
+    "description": "Use the build configuration NAME for building each target",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNAME\u003e"
+    ]
+  },
+  "-create-xcframework": {
+    "Name": "-create-xcframework",
+    "kind": "option",
+    "description": "Create an xcframework from prebuilt libraries; -help for more information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-default-test-execution-time-allowance": {
+    "Name": "-default-test-execution-time-allowance",
+    "kind": "option",
+    "description": "The default execution time an individual test is given to execute, if test timeouts are enabled",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSECONDS\u003e": {
+        "Name": "\u003cSECONDS\u003e",
+        "kind": "argument",
+        "description": "SECONDS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSECONDS\u003e": {
+        "Name": "\u003cSECONDS\u003e",
+        "kind": "argument",
+        "description": "SECONDS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSECONDS\u003e"
+    ]
+  },
+  "-derivedDataPath": {
+    "Name": "-derivedDataPath",
+    "kind": "option",
+    "description": "Specifies the directory where build products and other derived data will go",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH\u003e"
+    ]
+  },
+  "-destination": {
+    "Name": "-destination",
+    "kind": "option",
+    "description": "Use the destination described by DESTINATIONSPECIFIER (a comma-separated set of key=value pairs describing the destination to use)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cDESTINATION SPECIFIER\u003e": {
+        "Name": "\u003cDESTINATION SPECIFIER\u003e",
+        "kind": "argument",
+        "description": "DESTINATION SPECIFIER",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cDESTINATION SPECIFIER\u003e": {
+        "Name": "\u003cDESTINATION SPECIFIER\u003e",
+        "kind": "argument",
+        "description": "DESTINATION SPECIFIER",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cDESTINATION SPECIFIER\u003e"
+    ]
+  },
+  "-destination-timeout": {
+    "Name": "-destination-timeout",
+    "kind": "option",
+    "description": "Wait for TIMEOUT seconds while searching for the destination device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cTIMEOUT\u003e": {
+        "Name": "\u003cTIMEOUT\u003e",
+        "kind": "argument",
+        "description": "TIMEOUT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cTIMEOUT\u003e": {
+        "Name": "\u003cTIMEOUT\u003e",
+        "kind": "argument",
+        "description": "TIMEOUT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cTIMEOUT\u003e"
+    ]
+  },
+  "-disableAutomaticPackageResolution": {
+    "Name": "-disableAutomaticPackageResolution",
+    "kind": "option",
+    "description": "Prevents packages from automatically being resolved to versions other than those recorded in the `Package.resolved` file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-dry-run": {
+    "Name": "-dry-run",
+    "kind": "option",
+    "description": "Do everything except actually running the commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-enableAddressSanitizer": {
+    "Name": "-enableAddressSanitizer",
+    "kind": "option",
+    "description": "Turn the address sanitizer on or off",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmode\u003e"
+    ]
+  },
+  "-enableCodeCoverage": {
+    "Name": "-enableCodeCoverage",
+    "kind": "option",
+    "description": "Turn code coverage on or off when testing",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmode\u003e"
+    ]
+  },
+  "-enableThreadSanitizer": {
+    "Name": "-enableThreadSanitizer",
+    "kind": "option",
+    "description": "Turn the thread sanitizer on or off",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmode\u003e"
+    ]
+  },
+  "-enableUndefinedBehaviorSanitizer": {
+    "Name": "-enableUndefinedBehaviorSanitizer",
+    "kind": "option",
+    "description": "Turn the undefined behavior sanitizer on or off",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmode\u003e"
+    ]
+  },
+  "-exportArchive": {
+    "Name": "-exportArchive",
+    "kind": "option",
+    "description": "Specifies that an archive should be exported",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-exportLanguage": {
+    "Name": "-exportLanguage",
+    "kind": "option",
+    "description": "Specifies multiple optional ISO 639-1 languages included in a localization export",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clanguages\u003e": {
+        "Name": "\u003clanguages\u003e",
+        "kind": "argument",
+        "description": "languages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clanguages\u003e": {
+        "Name": "\u003clanguages\u003e",
+        "kind": "argument",
+        "description": "languages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clanguages\u003e"
+    ]
+  },
+  "-exportLocalizations": {
+    "Name": "-exportLocalizations",
+    "kind": "option",
+    "description": "Exports completed and outstanding project localizations",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-exportNotarizedApp": {
+    "Name": "-exportNotarizedApp",
+    "kind": "option",
+    "description": "Export an archive that has been notarized by Apple",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-exportOptionsPlist": {
+    "Name": "-exportOptionsPlist",
+    "kind": "option",
+    "description": "Specifies a path to a plist file that configures archive exporting",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH\u003e"
+    ]
+  },
+  "-exportPath": {
+    "Name": "-exportPath",
+    "kind": "option",
+    "description": "Specifies the destination for the product exported from an archive",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH\u003e"
+    ]
+  },
+  "-find-executable": {
+    "Name": "-find-executable",
+    "kind": "option",
+    "description": "Display the full path to executable NAME in the provided SDK and toolchain",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNAME\u003e"
+    ]
+  },
+  "-find-library": {
+    "Name": "-find-library",
+    "kind": "option",
+    "description": "Display the full path to library NAME in the provided SDK and toolchain",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNAME\u003e"
+    ]
+  },
+  "-help": {
+    "Name": "-help",
+    "kind": "option",
+    "description": "Print complete usage",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-hideShellScriptEnvironment": {
+    "Name": "-hideShellScriptEnvironment",
+    "kind": "option",
+    "description": "Don't show shell script environment variables in build log",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-importLocalizations": {
+    "Name": "-importLocalizations",
+    "kind": "option",
+    "description": "Imports localizations for a project, assuming any necessary localized resources have been created in Xcode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-jobs": {
+    "Name": "-jobs",
+    "kind": "option",
+    "description": "Specify the maximum number of concurrent build operations",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNUMBER\u003e": {
+        "Name": "\u003cNUMBER\u003e",
+        "kind": "argument",
+        "description": "NUMBER",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNUMBER\u003e": {
+        "Name": "\u003cNUMBER\u003e",
+        "kind": "argument",
+        "description": "NUMBER",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNUMBER\u003e"
+    ]
+  },
+  "-json": {
+    "Name": "-json",
+    "kind": "option",
+    "description": "Output as JSON",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-license": {
+    "Name": "-license",
+    "kind": "option",
+    "description": "Show the Xcode and SDK license agreements",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-list": {
+    "Name": "-list",
+    "kind": "option",
+    "description": "Lists the targets and configurations in a project, or the schemes in a workspace",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-localizationPath": {
+    "Name": "-localizationPath",
+    "kind": "option",
+    "description": "Specifies a path to XLIFF localization file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH\u003e"
+    ]
+  },
+  "-maximum-concurrent-test-device-destinations": {
+    "Name": "-maximum-concurrent-test-device-destinations",
+    "kind": "option",
+    "description": "The maximum number of device destinations to test on concurrently",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNUMBER\u003e": {
+        "Name": "\u003cNUMBER\u003e",
+        "kind": "argument",
+        "description": "NUMBER",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNUMBER\u003e": {
+        "Name": "\u003cNUMBER\u003e",
+        "kind": "argument",
+        "description": "NUMBER",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNUMBER\u003e"
+    ]
+  },
+  "-maximum-concurrent-test-simulator-destinations": {
+    "Name": "-maximum-concurrent-test-simulator-destinations",
+    "kind": "option",
+    "description": "The maximum number of simulator destinations to test on concurrently",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNUMBER\u003e": {
+        "Name": "\u003cNUMBER\u003e",
+        "kind": "argument",
+        "description": "NUMBER",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNUMBER\u003e": {
+        "Name": "\u003cNUMBER\u003e",
+        "kind": "argument",
+        "description": "NUMBER",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNUMBER\u003e"
+    ]
+  },
+  "-maximum-parallel-testing-workers": {
+    "Name": "-maximum-parallel-testing-workers",
+    "kind": "option",
+    "description": "The maximum number of test runners that will be spawned during parallel testing",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNUMBER\u003e": {
+        "Name": "\u003cNUMBER\u003e",
+        "kind": "argument",
+        "description": "NUMBER",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNUMBER\u003e": {
+        "Name": "\u003cNUMBER\u003e",
+        "kind": "argument",
+        "description": "NUMBER",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNUMBER\u003e"
+    ]
+  },
+  "-maximum-test-execution-time-allowance": {
+    "Name": "-maximum-test-execution-time-allowance",
+    "kind": "option",
+    "description": "The maximum execution time an individual test is given to execute, regardless of the test's preferred allowance",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSECONDS\u003e": {
+        "Name": "\u003cSECONDS\u003e",
+        "kind": "argument",
+        "description": "SECONDS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSECONDS\u003e": {
+        "Name": "\u003cSECONDS\u003e",
+        "kind": "argument",
+        "description": "SECONDS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSECONDS\u003e"
+    ]
+  },
+  "-only-test-configuration": {
+    "Name": "-only-test-configuration",
+    "kind": "option",
+    "description": "Constrains testing by specifying test configurations to include, and excluding other test configurations",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-only-testing": {
+    "Name": "-only-testing",
+    "kind": "option",
+    "description": "Constrains testing by specifying tests to include, and excluding other tests",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-only-testing:": {
+    "Name": "-only-testing:",
+    "kind": "option",
+    "description": "Constrains testing by specifying tests to include, and excluding other tests",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cTest Identifier\u003e": {
+        "Name": "\u003cTest Identifier\u003e",
+        "kind": "argument",
+        "description": "Test Identifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cTest Identifier\u003e": {
+        "Name": "\u003cTest Identifier\u003e",
+        "kind": "argument",
+        "description": "Test Identifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cTest Identifier\u003e"
+    ]
+  },
+  "-parallel-testing-enabled": {
+    "Name": "-parallel-testing-enabled",
+    "kind": "option",
+    "description": "Overrides the per-target setting in the scheme",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmode\u003e"
+    ]
+  },
+  "-parallel-testing-worker-count": {
+    "Name": "-parallel-testing-worker-count",
+    "kind": "option",
+    "description": "The exact number of test runners that will be spawned during parallel testing",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNUMBER\u003e": {
+        "Name": "\u003cNUMBER\u003e",
+        "kind": "argument",
+        "description": "NUMBER",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNUMBER\u003e": {
+        "Name": "\u003cNUMBER\u003e",
+        "kind": "argument",
+        "description": "NUMBER",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNUMBER\u003e"
+    ]
+  },
+  "-parallelizeTargets": {
+    "Name": "-parallelizeTargets",
+    "kind": "option",
+    "description": "Build independent targets in parallel",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-project": {
+    "Name": "-project",
+    "kind": "option",
+    "description": "Build the project NAME",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNAME\u003e"
+    ]
+  },
+  "-quiet": {
+    "Name": "-quiet",
+    "kind": "option",
+    "description": "Do not print any output except for warnings and errors",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-resolvePackageDependencies": {
+    "Name": "-resolvePackageDependencies",
+    "kind": "option",
+    "description": "Resolves any Swift package dependencies referenced by the project or workspace",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-resultBundlePath": {
+    "Name": "-resultBundlePath",
+    "kind": "option",
+    "description": "Specifies the directory where a result bundle describing what occurred will be placed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH\u003e"
+    ]
+  },
+  "-resultBundleVersion": {
+    "Name": "-resultBundleVersion",
+    "kind": "option",
+    "description": "Specifies which result bundle version should be used",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cversion\u003e": {
+        "Name": "\u003cversion\u003e",
+        "kind": "argument",
+        "description": "version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cversion\u003e"
+    ]
+  },
+  "-resultStreamPath": {
+    "Name": "-resultStreamPath",
+    "kind": "option",
+    "description": "Specifies the file where a result stream will be written to (the file must already exist)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPATH\u003e"
+    ]
+  },
+  "-runFirstLaunch": {
+    "Name": "-runFirstLaunch",
+    "kind": "option",
+    "description": "Install packages and agree to the license",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-scheme": {
+    "Name": "-scheme",
+    "kind": "option",
+    "description": "Build the scheme NAME",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNAME\u003e"
+    ]
+  },
+  "-scmProvider": {
+    "Name": "-scmProvider",
+    "kind": "option",
+    "description": "Which implementation to use for Git operations (system/xcode)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cImplementation\u003e": {
+        "Name": "\u003cImplementation\u003e",
+        "kind": "argument",
+        "description": "Implementation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cImplementation\u003e": {
+        "Name": "\u003cImplementation\u003e",
+        "kind": "argument",
+        "description": "Implementation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cImplementation\u003e"
+    ]
+  },
+  "-sdk": {
+    "Name": "-sdk",
+    "kind": "option",
+    "description": "Use SDK as the name or path of the base SDK when building the project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSDK\u003e": {
+        "Name": "\u003cSDK\u003e",
+        "kind": "argument",
+        "description": "SDK",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSDK\u003e": {
+        "Name": "\u003cSDK\u003e",
+        "kind": "argument",
+        "description": "SDK",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSDK\u003e"
+    ]
+  },
+  "-showBuildSettings": {
+    "Name": "-showBuildSettings",
+    "kind": "option",
+    "description": "Display a list of build settings and values",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-showBuildSettingsForIndex": {
+    "Name": "-showBuildSettingsForIndex",
+    "kind": "option",
+    "description": "Display build settings for the index service",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-showBuildTimingSummary": {
+    "Name": "-showBuildTimingSummary",
+    "kind": "option",
+    "description": "Display a report of the timings of all the commands invoked during the build",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-showTestPlans": {
+    "Name": "-showTestPlans",
+    "kind": "option",
+    "description": "Display a list of test plans",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-showdestinations": {
+    "Name": "-showdestinations",
+    "kind": "option",
+    "description": "Display a list of destinations",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-showsdks": {
+    "Name": "-showsdks",
+    "kind": "option",
+    "description": "Display a compact list of the installed SDKs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-skip-test-configuration": {
+    "Name": "-skip-test-configuration",
+    "kind": "option",
+    "description": "Constrains testing by specifying test configurations to exclude, but including other test configurations",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-skip-testing": {
+    "Name": "-skip-testing",
+    "kind": "option",
+    "description": "Constrains testing by specifying tests to exclude, but including other tests",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-skip-testing:": {
+    "Name": "-skip-testing:",
+    "kind": "option",
+    "description": "Constrains testing by specifying tests to exclude, but including other tests",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cTest Identifier\u003e": {
+        "Name": "\u003cTest Identifier\u003e",
+        "kind": "argument",
+        "description": "Test Identifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cTest Identifier\u003e": {
+        "Name": "\u003cTest Identifier\u003e",
+        "kind": "argument",
+        "description": "Test Identifier",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cTest Identifier\u003e"
+    ]
+  },
+  "-skipUnavailableActions": {
+    "Name": "-skipUnavailableActions",
+    "kind": "option",
+    "description": "Specifies that scheme actions that cannot be performed should be skipped instead of causing a failure",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-target": {
+    "Name": "-target",
+    "kind": "option",
+    "description": "Build the target NAME",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNAME\u003e"
+    ]
+  },
+  "-test-timeouts-enabled": {
+    "Name": "-test-timeouts-enabled",
+    "kind": "option",
+    "description": "Enable or disable test timeout behavior",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmode\u003e"
+    ]
+  },
+  "-testLanguage": {
+    "Name": "-testLanguage",
+    "kind": "option",
+    "description": "Constrains testing by specifying ISO 639-1 language in which to run the tests",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-testPlan": {
+    "Name": "-testPlan",
+    "kind": "option",
+    "description": "Specifies the name of the test plan associated with the scheme to use for testing",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctest plan\u003e": {
+        "Name": "\u003ctest plan\u003e",
+        "kind": "argument",
+        "description": "test plan",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctest plan\u003e": {
+        "Name": "\u003ctest plan\u003e",
+        "kind": "argument",
+        "description": "test plan",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctest plan\u003e"
+    ]
+  },
+  "-testRegion": {
+    "Name": "-testRegion",
+    "kind": "option",
+    "description": "Constrains testing by specifying ISO 3166-1 region in which to run the tests",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-toolchain": {
+    "Name": "-toolchain",
+    "kind": "option",
+    "description": "Use the toolchain with identifier or name NAME",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNAME\u003e"
+    ]
+  },
+  "-usage": {
+    "Name": "-usage",
+    "kind": "option",
+    "description": "Print brief usage",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-verbose": {
+    "Name": "-verbose",
+    "kind": "option",
+    "description": "Provide additional status output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-version": {
+    "Name": "-version",
+    "kind": "option",
+    "description": "Display the version of Xcode; with -sdk will display info about one or all installed SDKs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-workspace": {
+    "Name": "-workspace",
+    "kind": "option",
+    "description": "Build the workspace NAME",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNAME\u003e"
+    ]
+  },
+  "-xcconfig": {
+    "Name": "-xcconfig",
+    "kind": "option",
+    "description": "Apply the build settings defined in the file at PATH as overrides",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cNAME\u003e"
+    ]
+  },
+  "-xcroot": {
+    "Name": "-xcroot",
+    "kind": "option",
+    "description": "Specifies a path to a .xcroot to use for building and/or testing",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "-xctestrun": {
+    "Name": "-xctestrun",
+    "kind": "option",
+    "description": "Specifies a path to a test run specification",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "build": {
+    "Name": "build",
+    "kind": "option",
+    "description": "Build the target in the build root (SYMROOT).  This is the default build action",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "clean": {
+    "Name": "clean",
+    "kind": "option",
+    "description": "Remove build products and intermediate files from the build root (SYMROOT)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "install": {
+    "Name": "install",
+    "kind": "option",
+    "description": "Build the target and install it into the target's installation directory in the distribution root (DSTROOT)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "installsrc": {
+    "Name": "installsrc",
+    "kind": "option",
+    "description": "Copy the source of the project to the source root (SRCROOT)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

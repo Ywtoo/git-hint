@@ -1,0 +1,904 @@
+{
+  "--echo": {
+    "Name": "--echo",
+    "kind": "option",
+    "description": "Display what is killed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--euid": {
+    "Name": "--euid",
+    "kind": "option",
+    "description": "Match by effective IDs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cID\u003e": {
+        "Name": "\u003cID\u003e",
+        "kind": "argument",
+        "description": "ID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cID\u003e": {
+        "Name": "\u003cID\u003e",
+        "kind": "argument",
+        "description": "ID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cID\u003e"
+    ]
+  },
+  "--exact": {
+    "Name": "--exact",
+    "kind": "option",
+    "description": "Match exactly with the command name",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--full": {
+    "Name": "--full",
+    "kind": "option",
+    "description": "Use full process name to match",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--group": {
+    "Name": "--group",
+    "kind": "option",
+    "description": "Match real group IDs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cGID\u003e": {
+        "Name": "\u003cGID\u003e",
+        "kind": "argument",
+        "description": "GID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cGID\u003e": {
+        "Name": "\u003cGID\u003e",
+        "kind": "argument",
+        "description": "GID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cGID\u003e"
+    ]
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Output help message and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--ignore-case": {
+    "Name": "--ignore-case",
+    "kind": "option",
+    "description": "Match case insensitively",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--newest": {
+    "Name": "--newest",
+    "kind": "option",
+    "description": "Select most recently started",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--ns": {
+    "Name": "--ns",
+    "kind": "option",
+    "description": "Match the processes that belong to a specified PID",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPID\u003e": {
+        "Name": "\u003cPID\u003e",
+        "kind": "argument",
+        "description": "PID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPID\u003e": {
+        "Name": "\u003cPID\u003e",
+        "kind": "argument",
+        "description": "PID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPID\u003e"
+    ]
+  },
+  "--nslist": {
+    "Name": "--nslist",
+    "kind": "option",
+    "description": "List which namespaces will be considered for the --ns option",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cns\u003e": {
+        "Name": "\u003cns\u003e",
+        "kind": "argument",
+        "description": "ns",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cns\u003e": {
+        "Name": "\u003cns\u003e",
+        "kind": "argument",
+        "description": "ns",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cns\u003e"
+    ]
+  },
+  "--older": {
+    "Name": "--older",
+    "kind": "option",
+    "description": "Select where older than seconds",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cseconds\u003e": {
+        "Name": "\u003cseconds\u003e",
+        "kind": "argument",
+        "description": "seconds",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cseconds\u003e": {
+        "Name": "\u003cseconds\u003e",
+        "kind": "argument",
+        "description": "seconds",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cseconds\u003e"
+    ]
+  },
+  "--oldest": {
+    "Name": "--oldest",
+    "kind": "option",
+    "description": "Select least recently started",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--parent": {
+    "Name": "--parent",
+    "kind": "option",
+    "description": "Match only child processes of the given parent",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPPID\u003e": {
+        "Name": "\u003cPPID\u003e",
+        "kind": "argument",
+        "description": "PPID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPPID\u003e": {
+        "Name": "\u003cPPID\u003e",
+        "kind": "argument",
+        "description": "PPID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPPID\u003e"
+    ]
+  },
+  "--pgroup": {
+    "Name": "--pgroup",
+    "kind": "option",
+    "description": "Match listed process group IDs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPGID\u003e": {
+        "Name": "\u003cPGID\u003e",
+        "kind": "argument",
+        "description": "PGID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPGID\u003e": {
+        "Name": "\u003cPGID\u003e",
+        "kind": "argument",
+        "description": "PGID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPGID\u003e"
+    ]
+  },
+  "--pidfile": {
+    "Name": "--pidfile",
+    "kind": "option",
+    "description": "Read PIDs from file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile\u003e"
+    ]
+  },
+  "--queue": {
+    "Name": "--queue",
+    "kind": "option",
+    "description": "Integer value to be sent with the signal",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cvalue\u003e"
+    ]
+  },
+  "--runstates": {
+    "Name": "--runstates",
+    "kind": "option",
+    "description": "Match runstates",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstate\u003e": {
+        "Name": "\u003cstate\u003e",
+        "kind": "argument",
+        "description": "state",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstate\u003e": {
+        "Name": "\u003cstate\u003e",
+        "kind": "argument",
+        "description": "state",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstate\u003e"
+    ]
+  },
+  "--session": {
+    "Name": "--session",
+    "kind": "option",
+    "description": "Match session IDs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSID\u003e": {
+        "Name": "\u003cSID\u003e",
+        "kind": "argument",
+        "description": "SID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSID\u003e": {
+        "Name": "\u003cSID\u003e",
+        "kind": "argument",
+        "description": "SID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSID\u003e"
+    ]
+  },
+  "--signal": {
+    "Name": "--signal",
+    "kind": "option",
+    "description": "Signal to send (either number or name)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csignal\u003e": {
+        "Name": "\u003csignal\u003e",
+        "kind": "argument",
+        "description": "signal",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csignal\u003e": {
+        "Name": "\u003csignal\u003e",
+        "kind": "argument",
+        "description": "signal",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csignal\u003e"
+    ]
+  },
+  "--terminal": {
+    "Name": "--terminal",
+    "kind": "option",
+    "description": "Match by controlling terminal",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctty\u003e": {
+        "Name": "\u003ctty\u003e",
+        "kind": "argument",
+        "description": "tty",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctty\u003e": {
+        "Name": "\u003ctty\u003e",
+        "kind": "argument",
+        "description": "tty",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctty\u003e"
+    ]
+  },
+  "--uid": {
+    "Name": "--uid",
+    "kind": "option",
+    "description": "Match by real IDs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cID\u003e": {
+        "Name": "\u003cID\u003e",
+        "kind": "argument",
+        "description": "ID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cID\u003e": {
+        "Name": "\u003cID\u003e",
+        "kind": "argument",
+        "description": "ID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cID\u003e"
+    ]
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Output version information and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-F": {
+    "Name": "-F",
+    "kind": "option",
+    "description": "Read PIDs from file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile\u003e"
+    ]
+  },
+  "-G": {
+    "Name": "-G",
+    "kind": "option",
+    "description": "Match real group IDs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cGID\u003e": {
+        "Name": "\u003cGID\u003e",
+        "kind": "argument",
+        "description": "GID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cGID\u003e": {
+        "Name": "\u003cGID\u003e",
+        "kind": "argument",
+        "description": "GID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cGID\u003e"
+    ]
+  },
+  "-L": {
+    "Name": "-L",
+    "kind": "option",
+    "description": "Fail if PID file is not locked",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-O": {
+    "Name": "-O",
+    "kind": "option",
+    "description": "Select where older than seconds",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cseconds\u003e": {
+        "Name": "\u003cseconds\u003e",
+        "kind": "argument",
+        "description": "seconds",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cseconds\u003e": {
+        "Name": "\u003cseconds\u003e",
+        "kind": "argument",
+        "description": "seconds",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cseconds\u003e"
+    ]
+  },
+  "-P": {
+    "Name": "-P",
+    "kind": "option",
+    "description": "Match only child processes of the given parent",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPPID\u003e": {
+        "Name": "\u003cPPID\u003e",
+        "kind": "argument",
+        "description": "PPID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPPID\u003e": {
+        "Name": "\u003cPPID\u003e",
+        "kind": "argument",
+        "description": "PPID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPPID\u003e"
+    ]
+  },
+  "-U": {
+    "Name": "-U",
+    "kind": "option",
+    "description": "Match by real IDs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cID\u003e": {
+        "Name": "\u003cID\u003e",
+        "kind": "argument",
+        "description": "ID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cID\u003e": {
+        "Name": "\u003cID\u003e",
+        "kind": "argument",
+        "description": "ID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cID\u003e"
+    ]
+  },
+  "-V": {
+    "Name": "-V",
+    "kind": "option",
+    "description": "Output version information and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-e": {
+    "Name": "-e",
+    "kind": "option",
+    "description": "Display what is killed",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Use full process name to match",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-g": {
+    "Name": "-g",
+    "kind": "option",
+    "description": "Match listed process group IDs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPGID\u003e": {
+        "Name": "\u003cPGID\u003e",
+        "kind": "argument",
+        "description": "PGID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPGID\u003e": {
+        "Name": "\u003cPGID\u003e",
+        "kind": "argument",
+        "description": "PGID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPGID\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Output help message and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Match case insensitively",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-n": {
+    "Name": "-n",
+    "kind": "option",
+    "description": "Select most recently started",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-o": {
+    "Name": "-o",
+    "kind": "option",
+    "description": "Select least recently started",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-q": {
+    "Name": "-q",
+    "kind": "option",
+    "description": "Integer value to be sent with the signal",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cvalue\u003e"
+    ]
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "Match runstates",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cstate\u003e": {
+        "Name": "\u003cstate\u003e",
+        "kind": "argument",
+        "description": "state",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cstate\u003e": {
+        "Name": "\u003cstate\u003e",
+        "kind": "argument",
+        "description": "state",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cstate\u003e"
+    ]
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Match session IDs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSID\u003e": {
+        "Name": "\u003cSID\u003e",
+        "kind": "argument",
+        "description": "SID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSID\u003e": {
+        "Name": "\u003cSID\u003e",
+        "kind": "argument",
+        "description": "SID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSID\u003e"
+    ]
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Match by controlling terminal",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctty\u003e": {
+        "Name": "\u003ctty\u003e",
+        "kind": "argument",
+        "description": "tty",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctty\u003e": {
+        "Name": "\u003ctty\u003e",
+        "kind": "argument",
+        "description": "tty",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctty\u003e"
+    ]
+  },
+  "-u": {
+    "Name": "-u",
+    "kind": "option",
+    "description": "Match by effective IDs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cID\u003e": {
+        "Name": "\u003cID\u003e",
+        "kind": "argument",
+        "description": "ID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cID\u003e": {
+        "Name": "\u003cID\u003e",
+        "kind": "argument",
+        "description": "ID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cID\u003e"
+    ]
+  },
+  "-x": {
+    "Name": "-x",
+    "kind": "option",
+    "description": "Match exactly with the command name",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003cpattern\u003e": {
+    "Name": "\u003cpattern\u003e",
+    "kind": "argument",
+    "description": "pattern",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  },
+  "logpidfile": {
+    "Name": "logpidfile",
+    "kind": "option",
+    "description": "Fail if PID file is not locked",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

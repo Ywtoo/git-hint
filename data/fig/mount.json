@@ -1,0 +1,744 @@
+{
+  "--all": {
+    "Name": "--all",
+    "kind": "option",
+    "description": "Mount all filesystems in fstab",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--bind": {
+    "Name": "--bind",
+    "kind": "option",
+    "description": "Mount a subtree somewhere else (same as -o bind)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--fake": {
+    "Name": "--fake",
+    "kind": "option",
+    "description": "Dry run; skip the mount(2) syscall",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--fork": {
+    "Name": "--fork",
+    "kind": "option",
+    "description": "Fork off for each device (use with -a)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--fstab": {
+    "Name": "--fstab",
+    "kind": "option",
+    "description": "Alternative file to /etc/fstab",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfstab\u003e": {
+        "Name": "\u003cfstab\u003e",
+        "kind": "argument",
+        "description": "fstab",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfstab\u003e": {
+        "Name": "\u003cfstab\u003e",
+        "kind": "argument",
+        "description": "fstab",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfstab\u003e"
+    ]
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Help for abc",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--internal-only": {
+    "Name": "--internal-only",
+    "kind": "option",
+    "description": "Don't call the mount.\u003ctype\u003e helpers",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--make-private": {
+    "Name": "--make-private",
+    "kind": "option",
+    "description": "Mark a subtree as private",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--make-rprivate": {
+    "Name": "--make-rprivate",
+    "kind": "option",
+    "description": "Recursively mark a whole subtree as private",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--make-rshared": {
+    "Name": "--make-rshared",
+    "kind": "option",
+    "description": "Recursively mark a whole subtree as shared",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--make-rslave": {
+    "Name": "--make-rslave",
+    "kind": "option",
+    "description": "Recursively mark a whole subtree as slave",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--make-runbindable": {
+    "Name": "--make-runbindable",
+    "kind": "option",
+    "description": "Recursively mark a whole subtree as unbindable",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--make-shared": {
+    "Name": "--make-shared",
+    "kind": "option",
+    "description": "Mark a subtree as shared",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--make-slave": {
+    "Name": "--make-slave",
+    "kind": "option",
+    "description": "Mark a subtree as slave",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--make-unbindable": {
+    "Name": "--make-unbindable",
+    "kind": "option",
+    "description": "Mark a subtree as unbindable",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--mkdir": {
+    "Name": "--mkdir",
+    "kind": "option",
+    "description": "Alias to '-o X-mount.mkdir",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--move": {
+    "Name": "--move",
+    "kind": "option",
+    "description": "Move a subtree to some other place",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-canonicalize": {
+    "Name": "--no-canonicalize",
+    "kind": "option",
+    "description": "Don't canonicalize paths",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-mtab": {
+    "Name": "--no-mtab",
+    "kind": "option",
+    "description": "Don't write to /etc/mtab",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--options": {
+    "Name": "--options",
+    "kind": "option",
+    "description": "Comma-separated list of mount options",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clist\u003e"
+    ]
+  },
+  "--options-mode": {
+    "Name": "--options-mode",
+    "kind": "option",
+    "description": "What to do with options loaded from fstab",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmode\u003e": {
+        "Name": "\u003cmode\u003e",
+        "kind": "argument",
+        "description": "mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmode\u003e"
+    ]
+  },
+  "--options-source": {
+    "Name": "--options-source",
+    "kind": "option",
+    "description": "Mount options source",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csource\u003e": {
+        "Name": "\u003csource\u003e",
+        "kind": "argument",
+        "description": "source",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csource\u003e": {
+        "Name": "\u003csource\u003e",
+        "kind": "argument",
+        "description": "source",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csource\u003e"
+    ]
+  },
+  "--options-source-force": {
+    "Name": "--options-source-force",
+    "kind": "option",
+    "description": "Force use of options from fstab/mtab",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--read-only": {
+    "Name": "--read-only",
+    "kind": "option",
+    "description": "Mount the filesystem read-only (same as -o ro)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--read-write": {
+    "Name": "--read-write",
+    "kind": "option",
+    "description": "Mount the filesystem read-write (default)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--rw": {
+    "Name": "--rw",
+    "kind": "option",
+    "description": "Mount the filesystem read-write (default)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--show-labels": {
+    "Name": "--show-labels",
+    "kind": "option",
+    "description": "Show also filesystem labels",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--source": {
+    "Name": "--source",
+    "kind": "option",
+    "description": "Explicitly specifies source",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csource\u003e": {
+        "Name": "\u003csource\u003e",
+        "kind": "argument",
+        "description": "source",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csource\u003e": {
+        "Name": "\u003csource\u003e",
+        "kind": "argument",
+        "description": "source",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csource\u003e"
+    ]
+  },
+  "--target": {
+    "Name": "--target",
+    "kind": "option",
+    "description": "Explicitly specifies mountpoint",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmountpoint\u003e": {
+        "Name": "\u003cmountpoint\u003e",
+        "kind": "argument",
+        "description": "mountpoint",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmountpoint\u003e": {
+        "Name": "\u003cmountpoint\u003e",
+        "kind": "argument",
+        "description": "mountpoint",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmountpoint\u003e"
+    ]
+  },
+  "--target-prefix": {
+    "Name": "--target-prefix",
+    "kind": "option",
+    "description": "Specifies path used for all mountpoints",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--test-opts": {
+    "Name": "--test-opts",
+    "kind": "option",
+    "description": "Limit the set of filesystems (use with -a)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clist\u003e"
+    ]
+  },
+  "--types": {
+    "Name": "--types",
+    "kind": "option",
+    "description": "Limit the set of filesystem types",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clist\u003e"
+    ]
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Say what is being done",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Display version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-B": {
+    "Name": "-B",
+    "kind": "option",
+    "description": "Mount a subtree somewhere else (same as -o bind)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-F": {
+    "Name": "-F",
+    "kind": "option",
+    "description": "Fork off for each device (use with -a)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-M": {
+    "Name": "-M",
+    "kind": "option",
+    "description": "Move a subtree to some other place",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-O": {
+    "Name": "-O",
+    "kind": "option",
+    "description": "Limit the set of filesystems (use with -a)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clist\u003e"
+    ]
+  },
+  "-R": {
+    "Name": "-R",
+    "kind": "option",
+    "description": "Mount a subtree and all submounts somewhere else",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-T": {
+    "Name": "-T",
+    "kind": "option",
+    "description": "Alternative file to /etc/fstab",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfstab\u003e": {
+        "Name": "\u003cfstab\u003e",
+        "kind": "argument",
+        "description": "fstab",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfstab\u003e": {
+        "Name": "\u003cfstab\u003e",
+        "kind": "argument",
+        "description": "fstab",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfstab\u003e"
+    ]
+  },
+  "-V": {
+    "Name": "-V",
+    "kind": "option",
+    "description": "Display version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-a": {
+    "Name": "-a",
+    "kind": "option",
+    "description": "Mount all filesystems in fstab",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Don't canonicalize paths",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Dry run; skip the mount(2) syscall",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Help for abc",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Don't call the mount.\u003ctype\u003e helpers",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "option",
+    "description": "Show also filesystem labels",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-m": {
+    "Name": "-m",
+    "kind": "option",
+    "description": "Alias to '-o X-mount.mkdir",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-n": {
+    "Name": "-n",
+    "kind": "option",
+    "description": "Don't write to /etc/mtab",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-o": {
+    "Name": "-o",
+    "kind": "option",
+    "description": "Comma-separated list of mount options",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clist\u003e"
+    ]
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "Mount the filesystem read-only (same as -o ro)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-rbind": {
+    "Name": "-rbind",
+    "kind": "option",
+    "description": "Mount a subtree and all submounts somewhere else",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Limit the set of filesystem types",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clist\u003e": {
+        "Name": "\u003clist\u003e",
+        "kind": "argument",
+        "description": "list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clist\u003e"
+    ]
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Say what is being done",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-w": {
+    "Name": "-w",
+    "kind": "option",
+    "description": "Mount the filesystem read-write (default)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003cDisk/loopfile\u003e": {
+    "Name": "\u003cDisk/loopfile\u003e",
+    "kind": "argument",
+    "description": "Disk/loopfile",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  },
+  "\u003cmountpoint\u003e": {
+    "Name": "\u003cmountpoint\u003e",
+    "kind": "argument",
+    "description": "mountpoint",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

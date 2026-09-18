@@ -1,0 +1,956 @@
+{
+  "--all": {
+    "Name": "--all",
+    "kind": "option",
+    "description": "By default, only the final request/response is shown. Use this flag to show\nany intermediary requests/responses as well. Intermediary requests include\nfollowed redirects (with --follow), the first unauthorized request when\nDigest auth is used (--auth=digest), etc",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--auth": {
+    "Name": "--auth",
+    "kind": "option",
+    "description": "If only the username is provided (-a username), HTTPie will prompt for the password",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cUSER[:PASS]\u003e": {
+        "Name": "\u003cUSER[:PASS]\u003e",
+        "kind": "argument",
+        "description": "USER[:PASS]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cUSER[:PASS]\u003e": {
+        "Name": "\u003cUSER[:PASS]\u003e",
+        "kind": "argument",
+        "description": "USER[:PASS]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cUSER[:PASS]\u003e"
+    ]
+  },
+  "--auth-type": {
+    "Name": "--auth-type",
+    "kind": "option",
+    "description": "The authentication mechanism to be used. Defaults to \"basic\"",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--body": {
+    "Name": "--body",
+    "kind": "option",
+    "description": "Print only the response body. Shortcut for --print=b",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--boundary": {
+    "Name": "--boundary",
+    "kind": "option",
+    "description": "Specify a custom boundary string for multipart/form-data requests. Has effect only together with --form",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--cert": {
+    "Name": "--cert",
+    "kind": "option",
+    "description": "You can specify a local cert to use as client side SSL certificate.\nThis file may either contain both private key and certificate or you may\nspecify --cert-key separately",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--cert-key": {
+    "Name": "--cert-key",
+    "kind": "option",
+    "description": "The private key to use with SSL. Only needed if --cert is given and the certificate file does not contain the private key",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--check-status": {
+    "Name": "--check-status",
+    "kind": "option",
+    "description": "By default, HTTPie exits with 0 when no network or other fatal errors\noccur. This flag instructs HTTPie to also check the HTTP status code and\nexit with an error if the status indicates one",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--chunked": {
+    "Name": "--chunked",
+    "kind": "option",
+    "description": "Enable streaming via chunked transfer encoding",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--ciphers": {
+    "Name": "--ciphers",
+    "kind": "option",
+    "description": "A string in the OpenSSL cipher list format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--compress": {
+    "Name": "--compress",
+    "kind": "option",
+    "description": "Content compressed (encoded) with Deflate algorithm. The Content-Encoding header is set to deflate",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--continue": {
+    "Name": "--continue",
+    "kind": "option",
+    "description": "Resume an interrupted download. Note that the --output option needs to be specified as well",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--debug": {
+    "Name": "--debug",
+    "kind": "option",
+    "description": "Prints the exception traceback should one occur, as well as other\ninformation useful for debugging HTTPie itself and for reporting bugs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--default-scheme": {
+    "Name": "--default-scheme",
+    "kind": "option",
+    "description": "The default scheme to use if not specified in the URL",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cDEFAULT_SCHEME\u003e": {
+        "Name": "\u003cDEFAULT_SCHEME\u003e",
+        "kind": "argument",
+        "description": "DEFAULT_SCHEME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cDEFAULT_SCHEME\u003e": {
+        "Name": "\u003cDEFAULT_SCHEME\u003e",
+        "kind": "argument",
+        "description": "DEFAULT_SCHEME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cDEFAULT_SCHEME\u003e"
+    ]
+  },
+  "--download": {
+    "Name": "--download",
+    "kind": "option",
+    "description": "Do not print the response body to stdout. Rather, download it and store it\nin a file. The filename is guessed unless specified with --output\n[filename]. This action is similar to the default behaviour of wget",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--follow": {
+    "Name": "--follow",
+    "kind": "option",
+    "description": "Follow 30x Location redirects",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--form": {
+    "Name": "--form",
+    "kind": "option",
+    "description": "FData items from the command line are serialized as form fields.\nThe Content-Type is set to application/x-www-form-urlencoded (if not\nspecified). The presence of any file fields results in a\nmultipart/form-data request",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--format-options": {
+    "Name": "--format-options",
+    "kind": "option",
+    "description": "Controls output formatting",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFORMAT_OPTIONS\u003e": {
+        "Name": "\u003cFORMAT_OPTIONS\u003e",
+        "kind": "argument",
+        "description": "FORMAT_OPTIONS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFORMAT_OPTIONS\u003e": {
+        "Name": "\u003cFORMAT_OPTIONS\u003e",
+        "kind": "argument",
+        "description": "FORMAT_OPTIONS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFORMAT_OPTIONS\u003e"
+    ]
+  },
+  "--headers": {
+    "Name": "--headers",
+    "kind": "option",
+    "description": "Print only the response headers. Shortcut for --print=h",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show the help message and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--history-print": {
+    "Name": "--history-print",
+    "kind": "option",
+    "description": "The same as --print, -p but applies only to intermediary requests/responses\n(such as redirects) when their inclusion is enabled with --all. If this\noptions is not specified, then they are formatted the same way as the final\nresponse",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cWHAT\u003e": {
+        "Name": "\u003cWHAT\u003e",
+        "kind": "argument",
+        "description": "WHAT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cWHAT\u003e": {
+        "Name": "\u003cWHAT\u003e",
+        "kind": "argument",
+        "description": "WHAT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cWHAT\u003e"
+    ]
+  },
+  "--ignore-netrc": {
+    "Name": "--ignore-netrc",
+    "kind": "option",
+    "description": "Ignore credentials from .netrc",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--ignore-stdin": {
+    "Name": "--ignore-stdin",
+    "kind": "option",
+    "description": "Do not attempt to read stdin",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--json": {
+    "Name": "--json",
+    "kind": "option",
+    "description": "Data items from the command line are serialized as a JSON object. The Content-Type and Accept headers are set to application/json",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--max-headers": {
+    "Name": "--max-headers",
+    "kind": "option",
+    "description": "The maximum number of response headers to be read before giving up (default 0, i.e., no limit)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cMAX_HEADERS\u003e": {
+        "Name": "\u003cMAX_HEADERS\u003e",
+        "kind": "argument",
+        "description": "MAX_HEADERS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cMAX_HEADERS\u003e": {
+        "Name": "\u003cMAX_HEADERS\u003e",
+        "kind": "argument",
+        "description": "MAX_HEADERS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cMAX_HEADERS\u003e"
+    ]
+  },
+  "--max-redirects": {
+    "Name": "--max-redirects",
+    "kind": "option",
+    "description": "By default, requests have a limit of 30 redirects (works with --follow)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cMAX_REDIRECTS\u003e": {
+        "Name": "\u003cMAX_REDIRECTS\u003e",
+        "kind": "argument",
+        "description": "MAX_REDIRECTS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cMAX_REDIRECTS\u003e": {
+        "Name": "\u003cMAX_REDIRECTS\u003e",
+        "kind": "argument",
+        "description": "MAX_REDIRECTS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cMAX_REDIRECTS\u003e"
+    ]
+  },
+  "--multipart": {
+    "Name": "--multipart",
+    "kind": "option",
+    "description": "Similar to --form, but always sends a multipart/form-data request (i.e., even without files)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--offline": {
+    "Name": "--offline",
+    "kind": "option",
+    "description": "Build the request and print it but don’t actually send it",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--output": {
+    "Name": "--output",
+    "kind": "option",
+    "description": "Save output to FILE instead of stdout. If --download is also set, then only\nthe response body is saved to FILE. Other parts of the HTTP exchange are\nprinted to stderr",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFILE\u003e"
+    ]
+  },
+  "--path-as-is": {
+    "Name": "--path-as-is",
+    "kind": "option",
+    "description": "Bypass dot segment (/../ or /./) URL squashing",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--pretty": {
+    "Name": "--pretty",
+    "kind": "option",
+    "description": "Controls output processing. The value can be \"none\" to not prettify\nthe output (default for redirected output), \"all\" to apply both colors\nand formatting (default for terminal output), \"colors\", or \"format\"",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--print": {
+    "Name": "--print",
+    "kind": "option",
+    "description": "String specifying what the output should contain",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cWHAT\u003e": {
+        "Name": "\u003cWHAT\u003e",
+        "kind": "argument",
+        "description": "WHAT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cWHAT\u003e": {
+        "Name": "\u003cWHAT\u003e",
+        "kind": "argument",
+        "description": "WHAT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cWHAT\u003e"
+    ]
+  },
+  "--proxy": {
+    "Name": "--proxy",
+    "kind": "option",
+    "description": "String mapping protocol to the URL of the proxy\n(e.g. http:http://foo.bar:3128). You can specify multiple proxies with\ndifferent protocols. The environment variables $ALL_PROXY, $HTTP_PROXY,\nand $HTTPS_proxy are supported as well",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPROTOCOL:PROXY_URL\u003e": {
+        "Name": "\u003cPROTOCOL:PROXY_URL\u003e",
+        "kind": "argument",
+        "description": "PROTOCOL:PROXY_URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPROTOCOL:PROXY_URL\u003e": {
+        "Name": "\u003cPROTOCOL:PROXY_URL\u003e",
+        "kind": "argument",
+        "description": "PROTOCOL:PROXY_URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPROTOCOL:PROXY_URL\u003e"
+    ]
+  },
+  "--quiet": {
+    "Name": "--quiet",
+    "kind": "option",
+    "description": "Do not print to stdout or stderr.\nstdout is still redirected if --output is specified.\nFlag doesn't affect behaviour of download beyond not printing to terminal",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--session": {
+    "Name": "--session",
+    "kind": "option",
+    "description": "Create, or reuse and update a session. Within a session, custom headers,\nauth credential, as well as any cookies sent by the server persist between\nrequests",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSESSION_NAME_OR_PATH\u003e": {
+        "Name": "\u003cSESSION_NAME_OR_PATH\u003e",
+        "kind": "argument",
+        "description": "SESSION_NAME_OR_PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSESSION_NAME_OR_PATH\u003e": {
+        "Name": "\u003cSESSION_NAME_OR_PATH\u003e",
+        "kind": "argument",
+        "description": "SESSION_NAME_OR_PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSESSION_NAME_OR_PATH\u003e"
+    ]
+  },
+  "--session-read-only": {
+    "Name": "--session-read-only",
+    "kind": "option",
+    "description": "Create or read a session without updating it form the request/response exchange",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSESSION_NAME_OR_PATH\u003e": {
+        "Name": "\u003cSESSION_NAME_OR_PATH\u003e",
+        "kind": "argument",
+        "description": "SESSION_NAME_OR_PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSESSION_NAME_OR_PATH\u003e": {
+        "Name": "\u003cSESSION_NAME_OR_PATH\u003e",
+        "kind": "argument",
+        "description": "SESSION_NAME_OR_PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSESSION_NAME_OR_PATH\u003e"
+    ]
+  },
+  "--sorted": {
+    "Name": "--sorted",
+    "kind": "option",
+    "description": "Re-enables all sorting options while formatting output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--ssl": {
+    "Name": "--ssl",
+    "kind": "option",
+    "description": "The desired protocol version to use. This will default to\nSSL v2.3 which will negotiate the highest protocol that both\nthe server and your installation of OpenSSL support",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--stream": {
+    "Name": "--stream",
+    "kind": "option",
+    "description": "Always stream the response body by line, i.e., behave like `tail -f'",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--style": {
+    "Name": "--style",
+    "kind": "option",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSTYLE\u003e": {
+        "Name": "\u003cSTYLE\u003e",
+        "kind": "argument",
+        "description": "STYLE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSTYLE\u003e": {
+        "Name": "\u003cSTYLE\u003e",
+        "kind": "argument",
+        "description": "STYLE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSTYLE\u003e"
+    ]
+  },
+  "--timeout": {
+    "Name": "--timeout",
+    "kind": "option",
+    "description": "The connection timeout of the request in seconds.\nThe default value is 0, i.e., there is no timeout limit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSECONDS\u003e": {
+        "Name": "\u003cSECONDS\u003e",
+        "kind": "argument",
+        "description": "SECONDS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSECONDS\u003e": {
+        "Name": "\u003cSECONDS\u003e",
+        "kind": "argument",
+        "description": "SECONDS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSECONDS\u003e"
+    ]
+  },
+  "--traceback": {
+    "Name": "--traceback",
+    "kind": "option",
+    "description": "Prints the exception traceback should one occur",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--unsorted": {
+    "Name": "--unsorted",
+    "kind": "option",
+    "description": "Disables all sorting while formatting output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Verbose output. Print the whole request as well as the response. Also print\nany intermediary requests/responses (such as redirects).\nIt's a shortcut for: --all --print=BHbh",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--verify": {
+    "Name": "--verify",
+    "kind": "option",
+    "description": "Set to \"no\" (or \"false\") to skip checking the host's SSL certificate.\nDefaults to \"yes\" (\"true\"). You can also pass the path to a CA_BUNDLE file\nfor private certs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cVERIFY\u003e": {
+        "Name": "\u003cVERIFY\u003e",
+        "kind": "argument",
+        "description": "VERIFY",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cVERIFY\u003e": {
+        "Name": "\u003cVERIFY\u003e",
+        "kind": "argument",
+        "description": "VERIFY",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cVERIFY\u003e"
+    ]
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Show version and exit",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-A": {
+    "Name": "-A",
+    "kind": "option",
+    "description": "The authentication mechanism to be used. Defaults to \"basic\"",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-F": {
+    "Name": "-F",
+    "kind": "option",
+    "description": "Follow 30x Location redirects",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-I": {
+    "Name": "-I",
+    "kind": "option",
+    "description": "Do not attempt to read stdin",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-P": {
+    "Name": "-P",
+    "kind": "option",
+    "description": "The same as --print, -p but applies only to intermediary requests/responses\n(such as redirects) when their inclusion is enabled with --all. If this\noptions is not specified, then they are formatted the same way as the final\nresponse",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cWHAT\u003e": {
+        "Name": "\u003cWHAT\u003e",
+        "kind": "argument",
+        "description": "WHAT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cWHAT\u003e": {
+        "Name": "\u003cWHAT\u003e",
+        "kind": "argument",
+        "description": "WHAT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cWHAT\u003e"
+    ]
+  },
+  "-S": {
+    "Name": "-S",
+    "kind": "option",
+    "description": "Always stream the response body by line, i.e., behave like `tail -f'",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-a": {
+    "Name": "-a",
+    "kind": "option",
+    "description": "If only the username is provided (-a username), HTTPie will prompt for the password",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cUSER[:PASS]\u003e": {
+        "Name": "\u003cUSER[:PASS]\u003e",
+        "kind": "argument",
+        "description": "USER[:PASS]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cUSER[:PASS]\u003e": {
+        "Name": "\u003cUSER[:PASS]\u003e",
+        "kind": "argument",
+        "description": "USER[:PASS]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cUSER[:PASS]\u003e"
+    ]
+  },
+  "-b": {
+    "Name": "-b",
+    "kind": "option",
+    "description": "Print only the response body. Shortcut for --print=b",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Resume an interrupted download. Note that the --output option needs to be specified as well",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Do not print the response body to stdout. Rather, download it and store it\nin a file. The filename is guessed unless specified with --output\n[filename]. This action is similar to the default behaviour of wget",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "FData items from the command line are serialized as form fields.\nThe Content-Type is set to application/x-www-form-urlencoded (if not\nspecified). The presence of any file fields results in a\nmultipart/form-data request",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Print only the response headers. Shortcut for --print=h",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-j": {
+    "Name": "-j",
+    "kind": "option",
+    "description": "Data items from the command line are serialized as a JSON object. The Content-Type and Accept headers are set to application/json",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-o": {
+    "Name": "-o",
+    "kind": "option",
+    "description": "Save output to FILE instead of stdout. If --download is also set, then only\nthe response body is saved to FILE. Other parts of the HTTP exchange are\nprinted to stderr",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFILE\u003e"
+    ]
+  },
+  "-p": {
+    "Name": "-p",
+    "kind": "option",
+    "description": "String specifying what the output should contain",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cWHAT\u003e": {
+        "Name": "\u003cWHAT\u003e",
+        "kind": "argument",
+        "description": "WHAT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cWHAT\u003e": {
+        "Name": "\u003cWHAT\u003e",
+        "kind": "argument",
+        "description": "WHAT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cWHAT\u003e"
+    ]
+  },
+  "-q": {
+    "Name": "-q",
+    "kind": "option",
+    "description": "Do not print to stdout or stderr.\nstdout is still redirected if --output is specified.\nFlag doesn't affect behaviour of download beyond not printing to terminal",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSTYLE\u003e": {
+        "Name": "\u003cSTYLE\u003e",
+        "kind": "argument",
+        "description": "STYLE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSTYLE\u003e": {
+        "Name": "\u003cSTYLE\u003e",
+        "kind": "argument",
+        "description": "STYLE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSTYLE\u003e"
+    ]
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Verbose output. Print the whole request as well as the response. Also print\nany intermediary requests/responses (such as redirects).\nIt's a shortcut for: --all --print=BHbh",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-x": {
+    "Name": "-x",
+    "kind": "option",
+    "description": "Content compressed (encoded) with Deflate algorithm. The Content-Encoding header is set to deflate",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003cMETHOD\u003e": {
+    "Name": "\u003cMETHOD\u003e",
+    "kind": "argument",
+    "description": "METHOD",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  },
+  "\u003cREQUEST_ITEM\u003e": {
+    "Name": "\u003cREQUEST_ITEM\u003e",
+    "kind": "argument",
+    "description": "REQUEST_ITEM",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  },
+  "\u003cURL\u003e": {
+    "Name": "\u003cURL\u003e",
+    "kind": "argument",
+    "description": "URL",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

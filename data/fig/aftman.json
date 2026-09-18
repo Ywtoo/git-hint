@@ -1,0 +1,188 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for aftman",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Show aftman's version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-V": {
+    "Name": "-V",
+    "kind": "option",
+    "description": "Show aftman's version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help for aftman",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "add": {
+    "Name": "add",
+    "kind": "subcommand",
+    "description": "Adds a new tool to Aftman and installs it",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--global": {
+        "Name": "--global",
+        "kind": "option",
+        "description": "Install this tool globally",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003calias\u003e": {
+        "Name": "\u003calias\u003e",
+        "kind": "argument",
+        "description": "alias",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ctool\u003e": {
+        "Name": "\u003ctool\u003e",
+        "kind": "argument",
+        "description": "tool",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--global": {
+        "Name": "--global",
+        "kind": "option",
+        "description": "Install this tool globally",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003calias\u003e": {
+        "Name": "\u003calias\u003e",
+        "kind": "argument",
+        "description": "alias",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ctool\u003e": {
+        "Name": "\u003ctool\u003e",
+        "kind": "argument",
+        "description": "tool",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctool\u003e"
+    ]
+  },
+  "init": {
+    "Name": "init",
+    "kind": "subcommand",
+    "description": "Creates a new aftman.toml file in the given directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "install": {
+    "Name": "install",
+    "kind": "subcommand",
+    "description": "Install all tools listed in aftman.toml files based on your current directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--no-trust-check": {
+        "Name": "--no-trust-check",
+        "kind": "option",
+        "description": "All tools will be installed, regardless of whether they are known",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--no-trust-check": {
+        "Name": "--no-trust-check",
+        "kind": "option",
+        "description": "All tools will be installed, regardless of whether they are known",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "self-install": {
+    "Name": "self-install",
+    "kind": "subcommand",
+    "description": "Installs Aftman, upgrades any references to Aftman, and adds aftman to your system PATH if supported",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "trust": {
+    "Name": "trust",
+    "kind": "subcommand",
+    "description": "",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctool\u003e": {
+        "Name": "\u003ctool\u003e",
+        "kind": "argument",
+        "description": "tool",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctool\u003e": {
+        "Name": "\u003ctool\u003e",
+        "kind": "argument",
+        "description": "tool",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctool\u003e"
+    ]
+  }
+}

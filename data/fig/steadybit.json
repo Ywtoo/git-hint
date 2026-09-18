@@ -1,0 +1,1683 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Display usage information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Display usage information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "config": {
+    "Name": "config",
+    "kind": "subcommand",
+    "description": "Show/modify the CLI configuration and authentication profiles",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "profile": {
+        "Name": "profile",
+        "kind": "subcommand",
+        "description": "Configure authentication profiles",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "add": {
+            "Name": "add",
+            "kind": "subcommand",
+            "description": "Interactively configure a new profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "list": {
+            "Name": "list",
+            "kind": "subcommand",
+            "description": "List all configured profiles",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "remove": {
+            "Name": "remove",
+            "kind": "subcommand",
+            "description": "Interactively remove an existing profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "select": {
+            "Name": "select",
+            "kind": "subcommand",
+            "description": "Interactively change the currently active profile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "show": {
+        "Name": "show",
+        "kind": "subcommand",
+        "description": "Show the active CLI configuration. Warning: Prints secrets!",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "def-repo": {
+    "Name": "def-repo",
+    "kind": "subcommand",
+    "description": "Change versions and verify a task/policy definition repository state",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "check": {
+        "Name": "check",
+        "kind": "subcommand",
+        "description": "Checks that the tasks and policies are valid",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--directory": {
+            "Name": "--directory",
+            "kind": "option",
+            "description": "The directory to search for task and policy files",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cdirectory\u003e": {
+                "Name": "\u003cdirectory\u003e",
+                "kind": "argument",
+                "description": "directory",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cdirectory\u003e": {
+                "Name": "\u003cdirectory\u003e",
+                "kind": "argument",
+                "description": "directory",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cdirectory\u003e"
+            ]
+          },
+          "--version": {
+            "Name": "--version",
+            "kind": "option",
+            "description": "The version to check",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cversion\u003e"
+            ]
+          },
+          "-d": {
+            "Name": "-d",
+            "kind": "option",
+            "description": "The directory to search for task and policy files",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cdirectory\u003e": {
+                "Name": "\u003cdirectory\u003e",
+                "kind": "argument",
+                "description": "directory",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cdirectory\u003e": {
+                "Name": "\u003cdirectory\u003e",
+                "kind": "argument",
+                "description": "directory",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cdirectory\u003e"
+            ]
+          },
+          "-v": {
+            "Name": "-v",
+            "kind": "option",
+            "description": "The version to check",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cversion\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--directory": {
+            "Name": "--directory",
+            "kind": "option",
+            "description": "The directory to search for task and policy files",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cdirectory\u003e": {
+                "Name": "\u003cdirectory\u003e",
+                "kind": "argument",
+                "description": "directory",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cdirectory\u003e": {
+                "Name": "\u003cdirectory\u003e",
+                "kind": "argument",
+                "description": "directory",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cdirectory\u003e"
+            ]
+          },
+          "--version": {
+            "Name": "--version",
+            "kind": "option",
+            "description": "The version to check",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cversion\u003e"
+            ]
+          },
+          "-d": {
+            "Name": "-d",
+            "kind": "option",
+            "description": "The directory to search for task and policy files",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cdirectory\u003e": {
+                "Name": "\u003cdirectory\u003e",
+                "kind": "argument",
+                "description": "directory",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cdirectory\u003e": {
+                "Name": "\u003cdirectory\u003e",
+                "kind": "argument",
+                "description": "directory",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cdirectory\u003e"
+            ]
+          },
+          "-v": {
+            "Name": "-v",
+            "kind": "option",
+            "description": "The version to check",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cversion\u003e"
+            ]
+          }
+        }
+      },
+      "set-version": {
+        "Name": "set-version",
+        "kind": "subcommand",
+        "description": "Set the versions in policies and task references",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--directory": {
+            "Name": "--directory",
+            "kind": "option",
+            "description": "The directory to search for task and policy files",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cdirectory\u003e": {
+                "Name": "\u003cdirectory\u003e",
+                "kind": "argument",
+                "description": "directory",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cdirectory\u003e": {
+                "Name": "\u003cdirectory\u003e",
+                "kind": "argument",
+                "description": "directory",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cdirectory\u003e"
+            ]
+          },
+          "--version": {
+            "Name": "--version",
+            "kind": "option",
+            "description": "Version to set",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cversion\u003e"
+            ]
+          },
+          "-d": {
+            "Name": "-d",
+            "kind": "option",
+            "description": "The directory to search for task and policy files",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cdirectory\u003e": {
+                "Name": "\u003cdirectory\u003e",
+                "kind": "argument",
+                "description": "directory",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cdirectory\u003e": {
+                "Name": "\u003cdirectory\u003e",
+                "kind": "argument",
+                "description": "directory",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cdirectory\u003e"
+            ]
+          },
+          "-v": {
+            "Name": "-v",
+            "kind": "option",
+            "description": "Version to set",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cversion\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--directory": {
+            "Name": "--directory",
+            "kind": "option",
+            "description": "The directory to search for task and policy files",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cdirectory\u003e": {
+                "Name": "\u003cdirectory\u003e",
+                "kind": "argument",
+                "description": "directory",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cdirectory\u003e": {
+                "Name": "\u003cdirectory\u003e",
+                "kind": "argument",
+                "description": "directory",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cdirectory\u003e"
+            ]
+          },
+          "--version": {
+            "Name": "--version",
+            "kind": "option",
+            "description": "Version to set",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cversion\u003e"
+            ]
+          },
+          "-d": {
+            "Name": "-d",
+            "kind": "option",
+            "description": "The directory to search for task and policy files",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cdirectory\u003e": {
+                "Name": "\u003cdirectory\u003e",
+                "kind": "argument",
+                "description": "directory",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cdirectory\u003e": {
+                "Name": "\u003cdirectory\u003e",
+                "kind": "argument",
+                "description": "directory",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cdirectory\u003e"
+            ]
+          },
+          "-v": {
+            "Name": "-v",
+            "kind": "option",
+            "description": "Version to set",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cversion\u003e"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "service": {
+    "Name": "service",
+    "kind": "subcommand",
+    "description": "Configure or verify service definitions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "apply": {
+        "Name": "apply",
+        "kind": "subcommand",
+        "description": "Upload a service definition",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--file": {
+            "Name": "--file",
+            "kind": "option",
+            "description": "Path to the service definition file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfile\u003e"
+            ]
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Path to the service definition file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfile\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--file": {
+            "Name": "--file",
+            "kind": "option",
+            "description": "Path to the service definition file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfile\u003e"
+            ]
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Path to the service definition file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfile\u003e"
+            ]
+          }
+        }
+      },
+      "delete": {
+        "Name": "delete",
+        "kind": "subcommand",
+        "description": "Delete a service definition",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--file": {
+            "Name": "--file",
+            "kind": "option",
+            "description": "Path to the service definition file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfile\u003e"
+            ]
+          },
+          "--id": {
+            "Name": "--id",
+            "kind": "option",
+            "description": "ID of the service definition to delete",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cid\u003e": {
+                "Name": "\u003cid\u003e",
+                "kind": "argument",
+                "description": "id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cid\u003e": {
+                "Name": "\u003cid\u003e",
+                "kind": "argument",
+                "description": "id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cid\u003e"
+            ]
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Path to the service definition file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfile\u003e"
+            ]
+          },
+          "-i": {
+            "Name": "-i",
+            "kind": "option",
+            "description": "ID of the service definition to delete",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cid\u003e": {
+                "Name": "\u003cid\u003e",
+                "kind": "argument",
+                "description": "id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cid\u003e": {
+                "Name": "\u003cid\u003e",
+                "kind": "argument",
+                "description": "id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cid\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--file": {
+            "Name": "--file",
+            "kind": "option",
+            "description": "Path to the service definition file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfile\u003e"
+            ]
+          },
+          "--id": {
+            "Name": "--id",
+            "kind": "option",
+            "description": "ID of the service definition to delete",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cid\u003e": {
+                "Name": "\u003cid\u003e",
+                "kind": "argument",
+                "description": "id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cid\u003e": {
+                "Name": "\u003cid\u003e",
+                "kind": "argument",
+                "description": "id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cid\u003e"
+            ]
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Path to the service definition file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfile\u003e"
+            ]
+          },
+          "-i": {
+            "Name": "-i",
+            "kind": "option",
+            "description": "ID of the service definition to delete",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cid\u003e": {
+                "Name": "\u003cid\u003e",
+                "kind": "argument",
+                "description": "id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cid\u003e": {
+                "Name": "\u003cid\u003e",
+                "kind": "argument",
+                "description": "id",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cid\u003e"
+            ]
+          }
+        }
+      },
+      "init": {
+        "Name": "init",
+        "kind": "subcommand",
+        "description": "Initialize a service definition file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "open": {
+        "Name": "open",
+        "kind": "subcommand",
+        "description": "Open the service in the Steadybit UI",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--file": {
+            "Name": "--file",
+            "kind": "option",
+            "description": "Path to the service definition file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfile\u003e"
+            ]
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Path to the service definition file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfile\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--file": {
+            "Name": "--file",
+            "kind": "option",
+            "description": "Path to the service definition file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfile\u003e"
+            ]
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Path to the service definition file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfile\u003e"
+            ]
+          }
+        }
+      },
+      "show": {
+        "Name": "show",
+        "kind": "subcommand",
+        "description": "Show a list of tasks and policies referenced by this service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--file": {
+            "Name": "--file",
+            "kind": "option",
+            "description": "Path to the service definition file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfile\u003e"
+            ]
+          },
+          "--name": {
+            "Name": "--name",
+            "kind": "option",
+            "description": "Optional task name to filter the result list",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cname\u003e"
+            ]
+          },
+          "--version": {
+            "Name": "--version",
+            "kind": "option",
+            "description": "Optional task version to filter the result list",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cversion\u003e"
+            ]
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Path to the service definition file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfile\u003e"
+            ]
+          },
+          "-n": {
+            "Name": "-n",
+            "kind": "option",
+            "description": "Optional task name to filter the result list",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cname\u003e"
+            ]
+          },
+          "-v": {
+            "Name": "-v",
+            "kind": "option",
+            "description": "Optional task version to filter the result list",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cversion\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--file": {
+            "Name": "--file",
+            "kind": "option",
+            "description": "Path to the service definition file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfile\u003e"
+            ]
+          },
+          "--name": {
+            "Name": "--name",
+            "kind": "option",
+            "description": "Optional task name to filter the result list",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cname\u003e"
+            ]
+          },
+          "--version": {
+            "Name": "--version",
+            "kind": "option",
+            "description": "Optional task version to filter the result list",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cversion\u003e"
+            ]
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Path to the service definition file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfile\u003e"
+            ]
+          },
+          "-n": {
+            "Name": "-n",
+            "kind": "option",
+            "description": "Optional task name to filter the result list",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cname\u003e": {
+                "Name": "\u003cname\u003e",
+                "kind": "argument",
+                "description": "name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cname\u003e"
+            ]
+          },
+          "-v": {
+            "Name": "-v",
+            "kind": "option",
+            "description": "Optional task version to filter the result list",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cversion\u003e"
+            ]
+          }
+        }
+      },
+      "verify": {
+        "Name": "verify",
+        "kind": "subcommand",
+        "description": "Read the current service definition and state",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--file": {
+            "Name": "--file",
+            "kind": "option",
+            "description": "Path to the service definition file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfile\u003e"
+            ]
+          },
+          "--print-matrix-context": {
+            "Name": "--print-matrix-context",
+            "kind": "option",
+            "description": "Print the matrix execution context information when listing tasks",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--print-parameters": {
+            "Name": "--print-parameters",
+            "kind": "option",
+            "description": "Print task parameters when listing tasks",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Path to the service definition file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfile\u003e"
+            ]
+          },
+          "-pm": {
+            "Name": "-pm",
+            "kind": "option",
+            "description": "Print the matrix execution context information when listing tasks",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-pp": {
+            "Name": "-pp",
+            "kind": "option",
+            "description": "Print task parameters when listing tasks",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--file": {
+            "Name": "--file",
+            "kind": "option",
+            "description": "Path to the service definition file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfile\u003e"
+            ]
+          },
+          "--print-matrix-context": {
+            "Name": "--print-matrix-context",
+            "kind": "option",
+            "description": "Print the matrix execution context information when listing tasks",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--print-parameters": {
+            "Name": "--print-parameters",
+            "kind": "option",
+            "description": "Print task parameters when listing tasks",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-f": {
+            "Name": "-f",
+            "kind": "option",
+            "description": "Path to the service definition file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cfile\u003e": {
+                "Name": "\u003cfile\u003e",
+                "kind": "argument",
+                "description": "file",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cfile\u003e"
+            ]
+          },
+          "-pm": {
+            "Name": "-pm",
+            "kind": "option",
+            "description": "Print the matrix execution context information when listing tasks",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-pp": {
+            "Name": "-pp",
+            "kind": "option",
+            "description": "Print task parameters when listing tasks",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      }
+    }
+  }
+}

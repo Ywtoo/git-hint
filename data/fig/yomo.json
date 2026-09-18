@@ -1,0 +1,402 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for yomo",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help for yomo",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "build": {
+    "Name": "build",
+    "kind": "subcommand",
+    "description": "Build a StreamFunction to WebAssembly",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--modfile": {
+        "Name": "--modfile",
+        "kind": "option",
+        "description": "Custom go.mod filepath",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmodule\u003e": {
+            "Name": "\u003cmodule\u003e",
+            "kind": "argument",
+            "description": "module",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmodule\u003e": {
+            "Name": "\u003cmodule\u003e",
+            "kind": "argument",
+            "description": "module",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmodule\u003e"
+        ]
+      },
+      "--target": {
+        "Name": "--target",
+        "kind": "option",
+        "description": "Build to wasm or binary",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbinary\u003e": {
+            "Name": "\u003cbinary\u003e",
+            "kind": "argument",
+            "description": "binary",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cwasm\u003e": {
+            "Name": "\u003cwasm\u003e",
+            "kind": "argument",
+            "description": "wasm",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cbinary\u003e": {
+            "Name": "\u003cbinary\u003e",
+            "kind": "argument",
+            "description": "binary",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cwasm\u003e": {
+            "Name": "\u003cwasm\u003e",
+            "kind": "argument",
+            "description": "wasm",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cwasm\u003e",
+          "\u003cbinary\u003e"
+        ]
+      },
+      "-m": {
+        "Name": "-m",
+        "kind": "option",
+        "description": "Custom go.mod filepath",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmodule\u003e": {
+            "Name": "\u003cmodule\u003e",
+            "kind": "argument",
+            "description": "module",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmodule\u003e": {
+            "Name": "\u003cmodule\u003e",
+            "kind": "argument",
+            "description": "module",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmodule\u003e"
+        ]
+      },
+      "\u003c.go file\u003e": {
+        "Name": "\u003c.go file\u003e",
+        "kind": "argument",
+        "description": ".go file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--modfile": {
+        "Name": "--modfile",
+        "kind": "option",
+        "description": "Custom go.mod filepath",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmodule\u003e": {
+            "Name": "\u003cmodule\u003e",
+            "kind": "argument",
+            "description": "module",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmodule\u003e": {
+            "Name": "\u003cmodule\u003e",
+            "kind": "argument",
+            "description": "module",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmodule\u003e"
+        ]
+      },
+      "--target": {
+        "Name": "--target",
+        "kind": "option",
+        "description": "Build to wasm or binary",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbinary\u003e": {
+            "Name": "\u003cbinary\u003e",
+            "kind": "argument",
+            "description": "binary",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cwasm\u003e": {
+            "Name": "\u003cwasm\u003e",
+            "kind": "argument",
+            "description": "wasm",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cbinary\u003e": {
+            "Name": "\u003cbinary\u003e",
+            "kind": "argument",
+            "description": "binary",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cwasm\u003e": {
+            "Name": "\u003cwasm\u003e",
+            "kind": "argument",
+            "description": "wasm",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cwasm\u003e",
+          "\u003cbinary\u003e"
+        ]
+      },
+      "-m": {
+        "Name": "-m",
+        "kind": "option",
+        "description": "Custom go.mod filepath",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cmodule\u003e": {
+            "Name": "\u003cmodule\u003e",
+            "kind": "argument",
+            "description": "module",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cmodule\u003e": {
+            "Name": "\u003cmodule\u003e",
+            "kind": "argument",
+            "description": "module",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cmodule\u003e"
+        ]
+      },
+      "\u003c.go file\u003e": {
+        "Name": "\u003c.go file\u003e",
+        "kind": "argument",
+        "description": ".go file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003c.go file\u003e"
+    ]
+  },
+  "init": {
+    "Name": "init",
+    "kind": "subcommand",
+    "description": "Initial an example StreamFunction",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--rx": {
+        "Name": "--rx",
+        "kind": "option",
+        "description": "Generate Rx code template",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cfunction name\u003e": {
+        "Name": "\u003cfunction name\u003e",
+        "kind": "argument",
+        "description": "function name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--rx": {
+        "Name": "--rx",
+        "kind": "option",
+        "description": "Generate Rx code template",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cfunction name\u003e": {
+        "Name": "\u003cfunction name\u003e",
+        "kind": "argument",
+        "description": "function name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfunction name\u003e"
+    ]
+  },
+  "run": {
+    "Name": "run",
+    "kind": "subcommand",
+    "description": "Run a wasm stream function",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--name": {
+        "Name": "--name",
+        "kind": "option",
+        "description": "Specify the name of this StreamFunction",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--zipper": {
+        "Name": "--zipper",
+        "kind": "option",
+        "description": "Zipper endpoint this StreamFunction will connect to",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "Specify the name of this StreamFunction",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-z": {
+        "Name": "-z",
+        "kind": "option",
+        "description": "Zipper endpoint this StreamFunction will connect to",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003c.wasm file\u003e": {
+        "Name": "\u003c.wasm file\u003e",
+        "kind": "argument",
+        "description": ".wasm file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--name": {
+        "Name": "--name",
+        "kind": "option",
+        "description": "Specify the name of this StreamFunction",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--zipper": {
+        "Name": "--zipper",
+        "kind": "option",
+        "description": "Zipper endpoint this StreamFunction will connect to",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "Specify the name of this StreamFunction",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-z": {
+        "Name": "-z",
+        "kind": "option",
+        "description": "Zipper endpoint this StreamFunction will connect to",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003c.wasm file\u003e": {
+        "Name": "\u003c.wasm file\u003e",
+        "kind": "argument",
+        "description": ".wasm file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003c.wasm file\u003e"
+    ]
+  }
+}

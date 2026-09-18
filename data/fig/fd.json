@@ -1,0 +1,750 @@
+{
+  "--absolute-path": {
+    "Name": "--absolute-path",
+    "kind": "option",
+    "description": "Show absolute instead of relative paths",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--case-sensitive": {
+    "Name": "--case-sensitive",
+    "kind": "option",
+    "description": "Case-sensitive search (default: smart case)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--changed-before": {
+    "Name": "--changed-before",
+    "kind": "option",
+    "description": "Filter by file modification time (older than)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdate\u003e": {
+        "Name": "\u003cdate\u003e",
+        "kind": "argument",
+        "description": "date",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdate\u003e": {
+        "Name": "\u003cdate\u003e",
+        "kind": "argument",
+        "description": "date",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdate\u003e"
+    ]
+  },
+  "--changed-within": {
+    "Name": "--changed-within",
+    "kind": "option",
+    "description": "Filter by file modification time (newer than)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdate\u003e": {
+        "Name": "\u003cdate\u003e",
+        "kind": "argument",
+        "description": "date",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdate\u003e": {
+        "Name": "\u003cdate\u003e",
+        "kind": "argument",
+        "description": "date",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdate\u003e"
+    ]
+  },
+  "--color": {
+    "Name": "--color",
+    "kind": "option",
+    "description": "When to use colors",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cwhen\u003e": {
+        "Name": "\u003cwhen\u003e",
+        "kind": "argument",
+        "description": "when",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cwhen\u003e": {
+        "Name": "\u003cwhen\u003e",
+        "kind": "argument",
+        "description": "when",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cwhen\u003e"
+    ]
+  },
+  "--exclude": {
+    "Name": "--exclude",
+    "kind": "option",
+    "description": "Exclude entries that match the given glob pattern",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpattern\u003e": {
+        "Name": "\u003cpattern\u003e",
+        "kind": "argument",
+        "description": "pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpattern\u003e": {
+        "Name": "\u003cpattern\u003e",
+        "kind": "argument",
+        "description": "pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpattern\u003e"
+    ]
+  },
+  "--exec": {
+    "Name": "--exec",
+    "kind": "option",
+    "description": "Execute a command for each search result",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccmd\u003e": {
+        "Name": "\u003ccmd\u003e",
+        "kind": "argument",
+        "description": "cmd",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccmd\u003e": {
+        "Name": "\u003ccmd\u003e",
+        "kind": "argument",
+        "description": "cmd",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccmd\u003e"
+    ]
+  },
+  "--exec-batch": {
+    "Name": "--exec-batch",
+    "kind": "option",
+    "description": "Execute a command with all search results at once",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccmd\u003e": {
+        "Name": "\u003ccmd\u003e",
+        "kind": "argument",
+        "description": "cmd",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccmd\u003e": {
+        "Name": "\u003ccmd\u003e",
+        "kind": "argument",
+        "description": "cmd",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccmd\u003e"
+    ]
+  },
+  "--extension": {
+    "Name": "--extension",
+    "kind": "option",
+    "description": "Filter by file extension",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile extension\u003e": {
+        "Name": "\u003cfile extension\u003e",
+        "kind": "argument",
+        "description": "file extension",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile extension\u003e": {
+        "Name": "\u003cfile extension\u003e",
+        "kind": "argument",
+        "description": "file extension",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile extension\u003e"
+    ]
+  },
+  "--follow": {
+    "Name": "--follow",
+    "kind": "option",
+    "description": "Follow symbolic links",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--full-path": {
+    "Name": "--full-path",
+    "kind": "option",
+    "description": "Search full path (default: file-/dirname only)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--glob": {
+    "Name": "--glob",
+    "kind": "option",
+    "description": "Glob-based search (default: regular expression)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Prints help information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--hidden": {
+    "Name": "--hidden",
+    "kind": "option",
+    "description": "Search hidden files and directories",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--ignore-case": {
+    "Name": "--ignore-case",
+    "kind": "option",
+    "description": "Case-insensitive search (default: smart case)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--list-details": {
+    "Name": "--list-details",
+    "kind": "option",
+    "description": "Use a long listing format with file metadata",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--max-depth": {
+    "Name": "--max-depth",
+    "kind": "option",
+    "description": "Set maximum search depth",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdepth\u003e": {
+        "Name": "\u003cdepth\u003e",
+        "kind": "argument",
+        "description": "depth",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdepth\u003e": {
+        "Name": "\u003cdepth\u003e",
+        "kind": "argument",
+        "description": "depth",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdepth\u003e"
+    ]
+  },
+  "--no-ignore": {
+    "Name": "--no-ignore",
+    "kind": "option",
+    "description": "Do not respect .(git|fd)ignore files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--print0": {
+    "Name": "--print0",
+    "kind": "option",
+    "description": "Separate results by the null character",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--size": {
+    "Name": "--size",
+    "kind": "option",
+    "description": "Limit results based on the size of files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csize\u003e": {
+        "Name": "\u003csize\u003e",
+        "kind": "argument",
+        "description": "size",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csize\u003e": {
+        "Name": "\u003csize\u003e",
+        "kind": "argument",
+        "description": "size",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csize\u003e"
+    ]
+  },
+  "--type": {
+    "Name": "--type",
+    "kind": "option",
+    "description": "Filter by type",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfiletype\u003e": {
+        "Name": "\u003cfiletype\u003e",
+        "kind": "argument",
+        "description": "filetype",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfiletype\u003e": {
+        "Name": "\u003cfiletype\u003e",
+        "kind": "argument",
+        "description": "filetype",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfiletype\u003e"
+    ]
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Prints version information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-0": {
+    "Name": "-0",
+    "kind": "option",
+    "description": "Separate results by the null character",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-E": {
+    "Name": "-E",
+    "kind": "option",
+    "description": "Exclude entries that match the given glob pattern",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpattern\u003e": {
+        "Name": "\u003cpattern\u003e",
+        "kind": "argument",
+        "description": "pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpattern\u003e": {
+        "Name": "\u003cpattern\u003e",
+        "kind": "argument",
+        "description": "pattern",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpattern\u003e"
+    ]
+  },
+  "-H": {
+    "Name": "-H",
+    "kind": "option",
+    "description": "Search hidden files and directories",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-I": {
+    "Name": "-I",
+    "kind": "option",
+    "description": "Do not respect .(git|fd)ignore files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-L": {
+    "Name": "-L",
+    "kind": "option",
+    "description": "Follow symbolic links",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-S": {
+    "Name": "-S",
+    "kind": "option",
+    "description": "Limit results based on the size of files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csize\u003e": {
+        "Name": "\u003csize\u003e",
+        "kind": "argument",
+        "description": "size",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csize\u003e": {
+        "Name": "\u003csize\u003e",
+        "kind": "argument",
+        "description": "size",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csize\u003e"
+    ]
+  },
+  "-V": {
+    "Name": "-V",
+    "kind": "option",
+    "description": "Prints version information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-X": {
+    "Name": "-X",
+    "kind": "option",
+    "description": "Execute a command with all search results at once",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccmd\u003e": {
+        "Name": "\u003ccmd\u003e",
+        "kind": "argument",
+        "description": "cmd",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccmd\u003e": {
+        "Name": "\u003ccmd\u003e",
+        "kind": "argument",
+        "description": "cmd",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccmd\u003e"
+    ]
+  },
+  "-a": {
+    "Name": "-a",
+    "kind": "option",
+    "description": "Show absolute instead of relative paths",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "When to use colors",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cwhen\u003e": {
+        "Name": "\u003cwhen\u003e",
+        "kind": "argument",
+        "description": "when",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cwhen\u003e": {
+        "Name": "\u003cwhen\u003e",
+        "kind": "argument",
+        "description": "when",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cwhen\u003e"
+    ]
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Set maximum search depth",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdepth\u003e": {
+        "Name": "\u003cdepth\u003e",
+        "kind": "argument",
+        "description": "depth",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdepth\u003e": {
+        "Name": "\u003cdepth\u003e",
+        "kind": "argument",
+        "description": "depth",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdepth\u003e"
+    ]
+  },
+  "-e": {
+    "Name": "-e",
+    "kind": "option",
+    "description": "Filter by file extension",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile extension\u003e": {
+        "Name": "\u003cfile extension\u003e",
+        "kind": "argument",
+        "description": "file extension",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile extension\u003e": {
+        "Name": "\u003cfile extension\u003e",
+        "kind": "argument",
+        "description": "file extension",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile extension\u003e"
+    ]
+  },
+  "-g": {
+    "Name": "-g",
+    "kind": "option",
+    "description": "Glob-based search (default: regular expression)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Prints help information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Case-insensitive search (default: smart case)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "option",
+    "description": "Use a long listing format with file metadata",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-p": {
+    "Name": "-p",
+    "kind": "option",
+    "description": "Search full path (default: file-/dirname only)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Case-sensitive search (default: smart case)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Filter by type",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfiletype\u003e": {
+        "Name": "\u003cfiletype\u003e",
+        "kind": "argument",
+        "description": "filetype",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfiletype\u003e": {
+        "Name": "\u003cfiletype\u003e",
+        "kind": "argument",
+        "description": "filetype",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfiletype\u003e"
+    ]
+  },
+  "-x": {
+    "Name": "-x",
+    "kind": "option",
+    "description": "Execute a command for each search result",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccmd\u003e": {
+        "Name": "\u003ccmd\u003e",
+        "kind": "argument",
+        "description": "cmd",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccmd\u003e": {
+        "Name": "\u003ccmd\u003e",
+        "kind": "argument",
+        "description": "cmd",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccmd\u003e"
+    ]
+  },
+  "\u003cpath\u003e": {
+    "Name": "\u003cpath\u003e",
+    "kind": "argument",
+    "description": "path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  },
+  "\u003cpattern\u003e": {
+    "Name": "\u003cpattern\u003e",
+    "kind": "argument",
+    "description": "pattern",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

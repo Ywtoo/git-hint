@@ -1,0 +1,740 @@
+{
+  "--bom": {
+    "Name": "--bom",
+    "kind": "subcommand",
+    "description": "Extract any BOM files from the flat pkg at path into /tmp and return the filename(s)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--check-signature": {
+    "Name": "--check-signature",
+    "kind": "subcommand",
+    "description": "Check the validity and trust of the signature on the package at pkg-path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpkg-path\u003e": {
+        "Name": "\u003cpkg-path\u003e",
+        "kind": "argument",
+        "description": "pkg-path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpkg-path\u003e": {
+        "Name": "\u003cpkg-path\u003e",
+        "kind": "argument",
+        "description": "pkg-path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpkg-path\u003e"
+    ]
+  },
+  "--edit-pkg": {
+    "Name": "--edit-pkg",
+    "kind": "option",
+    "description": "Specifies an existing receipt to be modified in-place by --learn",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpackage-id\u003e": {
+        "Name": "\u003cpackage-id\u003e",
+        "kind": "argument",
+        "description": "package-id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpackage-id\u003e": {
+        "Name": "\u003cpackage-id\u003e",
+        "kind": "argument",
+        "description": "package-id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpackage-id\u003e"
+    ]
+  },
+  "--expand": {
+    "Name": "--expand",
+    "kind": "subcommand",
+    "description": "Expand the flat package at pkg-path into a new directory specified by dir-path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdir-path\u003e": {
+        "Name": "\u003cdir-path\u003e",
+        "kind": "argument",
+        "description": "dir-path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpkg-path\u003e": {
+        "Name": "\u003cpkg-path\u003e",
+        "kind": "argument",
+        "description": "pkg-path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdir-path\u003e": {
+        "Name": "\u003cdir-path\u003e",
+        "kind": "argument",
+        "description": "dir-path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpkg-path\u003e": {
+        "Name": "\u003cpkg-path\u003e",
+        "kind": "argument",
+        "description": "pkg-path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpkg-path\u003e",
+      "\u003cdir-path\u003e"
+    ]
+  },
+  "--export-plist": {
+    "Name": "--export-plist",
+    "kind": "subcommand",
+    "description": "Print all receipt information about the specified package-id in Mac OS X plist(5) format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpackage-id\u003e": {
+        "Name": "\u003cpackage-id\u003e",
+        "kind": "argument",
+        "description": "package-id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpackage-id\u003e": {
+        "Name": "\u003cpackage-id\u003e",
+        "kind": "argument",
+        "description": "package-id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpackage-id\u003e"
+    ]
+  },
+  "--file-info": {
+    "Name": "--file-info",
+    "kind": "subcommand",
+    "description": "Show the metadata known about path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--file-info-plist": {
+    "Name": "--file-info-plist",
+    "kind": "subcommand",
+    "description": "Show the metadata known about path in Mac OS X plist(5) format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--files": {
+    "Name": "--files",
+    "kind": "subcommand",
+    "description": "List all of the files installed under the package-id",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpackage-id\u003e": {
+        "Name": "\u003cpackage-id\u003e",
+        "kind": "argument",
+        "description": "package-id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpackage-id\u003e": {
+        "Name": "\u003cpackage-id\u003e",
+        "kind": "argument",
+        "description": "package-id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpackage-id\u003e"
+    ]
+  },
+  "--flatten": {
+    "Name": "--flatten",
+    "kind": "subcommand",
+    "description": "Flatten the dir-path into a new flat package created at pkg-path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdir-path\u003e": {
+        "Name": "\u003cdir-path\u003e",
+        "kind": "argument",
+        "description": "dir-path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpkg-path\u003e": {
+        "Name": "\u003cpkg-path\u003e",
+        "kind": "argument",
+        "description": "pkg-path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdir-path\u003e": {
+        "Name": "\u003cdir-path\u003e",
+        "kind": "argument",
+        "description": "dir-path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpkg-path\u003e": {
+        "Name": "\u003cpkg-path\u003e",
+        "kind": "argument",
+        "description": "pkg-path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdir-path\u003e",
+      "\u003cpkg-path\u003e"
+    ]
+  },
+  "--force": {
+    "Name": "--force",
+    "kind": "option",
+    "description": "Skip confirmation before a potentially destructive or ambiguous action",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--forget": {
+    "Name": "--forget",
+    "kind": "subcommand",
+    "description": "Discard all receipt data about package-id, but don't touch installed files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpackage-id\u003e": {
+        "Name": "\u003cpackage-id\u003e",
+        "kind": "argument",
+        "description": "package-id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpackage-id\u003e": {
+        "Name": "\u003cpackage-id\u003e",
+        "kind": "argument",
+        "description": "package-id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpackage-id\u003e"
+    ]
+  },
+  "--group-pkgs": {
+    "Name": "--group-pkgs",
+    "kind": "subcommand",
+    "description": "List all of the packages that are members of this group-id",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cgroup-id\u003e": {
+        "Name": "\u003cgroup-id\u003e",
+        "kind": "argument",
+        "description": "group-id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cgroup-id\u003e": {
+        "Name": "\u003cgroup-id\u003e",
+        "kind": "argument",
+        "description": "group-id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cgroup-id\u003e"
+    ]
+  },
+  "--group-plist": {
+    "Name": "--group-plist",
+    "kind": "subcommand",
+    "description": "List all of the package groups ont he specified --volume in Mac OS X plist(5) format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--groups": {
+    "Name": "--groups",
+    "kind": "subcommand",
+    "description": "List all of the package groups ont he specified --volume",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "A brief summary of commands and usage",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--learn": {
+    "Name": "--learn",
+    "kind": "subcommand",
+    "description": "Update the ACLs of the given path in the receipt identified by --edit-pkg",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--only-dirs": {
+    "Name": "--only-dirs",
+    "kind": "option",
+    "description": "List only directories (not files) in --files listing",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--only-files": {
+    "Name": "--only-files",
+    "kind": "option",
+    "description": "List only files (not directories) in --files listing",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--packages": {
+    "Name": "--packages",
+    "kind": "subcommand",
+    "description": "List all installed package IDs on the specified --volume",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--payload-files": {
+    "Name": "--payload-files",
+    "kind": "subcommand",
+    "description": "List the files archived within the uninstalled flat package(s) at path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "--pkg-groups": {
+    "Name": "--pkg-groups",
+    "kind": "subcommand",
+    "description": "List all of the package groups this package-id is a member of",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpackage-id\u003e": {
+        "Name": "\u003cpackage-id\u003e",
+        "kind": "argument",
+        "description": "package-id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpackage-id\u003e": {
+        "Name": "\u003cpackage-id\u003e",
+        "kind": "argument",
+        "description": "package-id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpackage-id\u003e"
+    ]
+  },
+  "--pkg-info": {
+    "Name": "--pkg-info",
+    "kind": "subcommand",
+    "description": "Print extended information about the specified package-id",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpackage-id\u003e": {
+        "Name": "\u003cpackage-id\u003e",
+        "kind": "argument",
+        "description": "package-id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpackage-id\u003e": {
+        "Name": "\u003cpackage-id\u003e",
+        "kind": "argument",
+        "description": "package-id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpackage-id\u003e"
+    ]
+  },
+  "--pkg-info-plist": {
+    "Name": "--pkg-info-plist",
+    "kind": "subcommand",
+    "description": "Print extended information about the specified package-id in Mac OS X plist(5) format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpackage-id\u003e": {
+        "Name": "\u003cpackage-id\u003e",
+        "kind": "argument",
+        "description": "package-id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpackage-id\u003e": {
+        "Name": "\u003cpackage-id\u003e",
+        "kind": "argument",
+        "description": "package-id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpackage-id\u003e"
+    ]
+  },
+  "--pkgs": {
+    "Name": "--pkgs",
+    "kind": "option",
+    "description": "List all installed package IDs, optionally matching kwarg REGEXP, on the specified --volume",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cREGEXP\u003e": {
+        "Name": "\u003cREGEXP\u003e",
+        "kind": "argument",
+        "description": "REGEXP",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cREGEXP\u003e": {
+        "Name": "\u003cREGEXP\u003e",
+        "kind": "argument",
+        "description": "REGEXP",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cREGEXP\u003e"
+    ]
+  },
+  "--pkgs-plist": {
+    "Name": "--pkgs-plist",
+    "kind": "subcommand",
+    "description": "List all installed package IDs, in Mac OS X plist(5) format, on the specified --volume",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--regexp": {
+    "Name": "--regexp",
+    "kind": "option",
+    "description": "Use regex to match package-id arguments, if an exact match isn't found",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--repair": {
+    "Name": "--repair",
+    "kind": "subcommand",
+    "description": "Run repair_packages(8) to repair the specified package-id",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpackage-id\u003e": {
+        "Name": "\u003cpackage-id\u003e",
+        "kind": "argument",
+        "description": "package-id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpackage-id\u003e": {
+        "Name": "\u003cpackage-id\u003e",
+        "kind": "argument",
+        "description": "package-id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpackage-id\u003e"
+    ]
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Output in a human-readable format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--verify": {
+    "Name": "--verify",
+    "kind": "subcommand",
+    "description": "Run repair_packages(8) to verify the specified package-id",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpackage-id\u003e": {
+        "Name": "\u003cpackage-id\u003e",
+        "kind": "argument",
+        "description": "package-id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpackage-id\u003e": {
+        "Name": "\u003cpackage-id\u003e",
+        "kind": "argument",
+        "description": "package-id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpackage-id\u003e"
+    ]
+  },
+  "--volume": {
+    "Name": "--volume",
+    "kind": "option",
+    "description": "Perform all operations on specified volume",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cvolume\u003e": {
+        "Name": "\u003cvolume\u003e",
+        "kind": "argument",
+        "description": "volume",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cvolume\u003e": {
+        "Name": "\u003cvolume\u003e",
+        "kind": "argument",
+        "description": "volume",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cvolume\u003e"
+    ]
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Skip confirmation before a potentially destructive or ambiguous action",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "A brief summary of commands and usage",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Output in a human-readable format",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

@@ -1,0 +1,749 @@
+{
+  "--changelog": {
+    "Name": "--changelog",
+    "kind": "option",
+    "description": "Print the changelog",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--check": {
+    "Name": "--check",
+    "kind": "option",
+    "description": "Run --fmt in 'check' mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--choose": {
+    "Name": "--choose",
+    "kind": "option",
+    "description": "Select one or more recipes to run using another program",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--chooser": {
+    "Name": "--chooser",
+    "kind": "option",
+    "description": "Override the binary invoked by --choose",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cprogram\u003e": {
+        "Name": "\u003cprogram\u003e",
+        "kind": "argument",
+        "description": "program",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cprogram\u003e": {
+        "Name": "\u003cprogram\u003e",
+        "kind": "argument",
+        "description": "program",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cprogram\u003e"
+    ]
+  },
+  "--clear-shell-args": {
+    "Name": "--clear-shell-args",
+    "kind": "option",
+    "description": "Clear shell arguments",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--color": {
+    "Name": "--color",
+    "kind": "option",
+    "description": "Print colorful output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--command": {
+    "Name": "--command",
+    "kind": "option",
+    "description": "Run an arbitrary command with the working directory, .env, overrides, and exports",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "--completions": {
+    "Name": "--completions",
+    "kind": "option",
+    "description": "Print shell completions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cshell\u003e": {
+        "Name": "\u003cshell\u003e",
+        "kind": "argument",
+        "description": "shell",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cshell\u003e": {
+        "Name": "\u003cshell\u003e",
+        "kind": "argument",
+        "description": "shell",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cshell\u003e"
+    ]
+  },
+  "--dotenv-filename": {
+    "Name": "--dotenv-filename",
+    "kind": "option",
+    "description": "Use a file with this name instead of .env",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "--dotenv-path": {
+    "Name": "--dotenv-path",
+    "kind": "option",
+    "description": "Load the environment file from a path instead of searching for one",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--dry-run": {
+    "Name": "--dry-run",
+    "kind": "option",
+    "description": "Print what just would do, without doing it",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--dump": {
+    "Name": "--dump",
+    "kind": "option",
+    "description": "Print justfile",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--dump-format": {
+    "Name": "--dump-format",
+    "kind": "option",
+    "description": "Specify the format for dumping the justfile",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cformat\u003e": {
+        "Name": "\u003cformat\u003e",
+        "kind": "argument",
+        "description": "format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cformat\u003e": {
+        "Name": "\u003cformat\u003e",
+        "kind": "argument",
+        "description": "format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cformat\u003e"
+    ]
+  },
+  "--edit": {
+    "Name": "--edit",
+    "kind": "option",
+    "description": "Edit the justfile with $VISUAL or $EDITOR, falling back to vim",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--evaluate": {
+    "Name": "--evaluate",
+    "kind": "option",
+    "description": "Evaluate and print all variables",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--fmt": {
+    "Name": "--fmt",
+    "kind": "option",
+    "description": "Format and overwrite the justfile",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Print help information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--highlight": {
+    "Name": "--highlight",
+    "kind": "option",
+    "description": "Highlight echoed recipe lines in bold",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--init": {
+    "Name": "--init",
+    "kind": "option",
+    "description": "Initialize a new justfile",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--justfile": {
+    "Name": "--justfile",
+    "kind": "option",
+    "description": "Use a specific justfile",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile\u003e"
+    ]
+  },
+  "--list": {
+    "Name": "--list",
+    "kind": "option",
+    "description": "List available recipes and their arguments",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--list-heading": {
+    "Name": "--list-heading",
+    "kind": "option",
+    "description": "Print this text before the list",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctext\u003e"
+    ]
+  },
+  "--list-prefix": {
+    "Name": "--list-prefix",
+    "kind": "option",
+    "description": "Print this text before each list item",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctext\u003e"
+    ]
+  },
+  "--no-dotenv": {
+    "Name": "--no-dotenv",
+    "kind": "option",
+    "description": "Don't load the environment file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--no-highlight": {
+    "Name": "--no-highlight",
+    "kind": "option",
+    "description": "Don't highlight echoed recipe lines",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--quiet": {
+    "Name": "--quiet",
+    "kind": "option",
+    "description": "Suppress all output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--set": {
+    "Name": "--set",
+    "kind": "option",
+    "description": "Override a variable with a value",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvariable\u003e": {
+        "Name": "\u003cvariable\u003e",
+        "kind": "argument",
+        "description": "variable",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvariable\u003e": {
+        "Name": "\u003cvariable\u003e",
+        "kind": "argument",
+        "description": "variable",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cvariable\u003e",
+      "\u003cvalue\u003e"
+    ]
+  },
+  "--shell": {
+    "Name": "--shell",
+    "kind": "option",
+    "description": "Invoke this shell to run recipes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cshell\u003e": {
+        "Name": "\u003cshell\u003e",
+        "kind": "argument",
+        "description": "shell",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cshell\u003e": {
+        "Name": "\u003cshell\u003e",
+        "kind": "argument",
+        "description": "shell",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cshell\u003e"
+    ]
+  },
+  "--shell-arg": {
+    "Name": "--shell-arg",
+    "kind": "option",
+    "description": "Invoke the shell with this as an argument",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cargument\u003e": {
+        "Name": "\u003cargument\u003e",
+        "kind": "argument",
+        "description": "argument",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cargument\u003e": {
+        "Name": "\u003cargument\u003e",
+        "kind": "argument",
+        "description": "argument",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cargument\u003e"
+    ]
+  },
+  "--shell-command": {
+    "Name": "--shell-command",
+    "kind": "option",
+    "description": "Invoke --command with the shell used to run recipe lines and backticks",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--show": {
+    "Name": "--show",
+    "kind": "option",
+    "description": "Show information about a recipe",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003crecipe\u003e": {
+        "Name": "\u003crecipe\u003e",
+        "kind": "argument",
+        "description": "recipe",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003crecipe\u003e": {
+        "Name": "\u003crecipe\u003e",
+        "kind": "argument",
+        "description": "recipe",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003crecipe\u003e"
+    ]
+  },
+  "--summary": {
+    "Name": "--summary",
+    "kind": "option",
+    "description": "List names of available recipes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--unsorted": {
+    "Name": "--unsorted",
+    "kind": "option",
+    "description": "Return list and summary entries in source order",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--unstable": {
+    "Name": "--unstable",
+    "kind": "option",
+    "description": "Enable unstable features",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--variables": {
+    "Name": "--variables",
+    "kind": "option",
+    "description": "List names of variables",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--verbose": {
+    "Name": "--verbose",
+    "kind": "option",
+    "description": "Use verbose output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Print version information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--working-directory": {
+    "Name": "--working-directory",
+    "kind": "option",
+    "description": "Use this as the working directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-V": {
+    "Name": "-V",
+    "kind": "option",
+    "description": "Print version information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Run an arbitrary command with the working directory, .env, overrides, and exports",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Use this as the working directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-e": {
+    "Name": "-e",
+    "kind": "option",
+    "description": "Edit the justfile with $VISUAL or $EDITOR, falling back to vim",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Use a specific justfile",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfile\u003e": {
+        "Name": "\u003cfile\u003e",
+        "kind": "argument",
+        "description": "file",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfile\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Print help information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-l": {
+    "Name": "-l",
+    "kind": "option",
+    "description": "List available recipes and their arguments",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-q": {
+    "Name": "-q",
+    "kind": "option",
+    "description": "Suppress all output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Show information about a recipe",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003crecipe\u003e": {
+        "Name": "\u003crecipe\u003e",
+        "kind": "argument",
+        "description": "recipe",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003crecipe\u003e": {
+        "Name": "\u003crecipe\u003e",
+        "kind": "argument",
+        "description": "recipe",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003crecipe\u003e"
+    ]
+  },
+  "-u": {
+    "Name": "-u",
+    "kind": "option",
+    "description": "Return list and summary entries in source order",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Use verbose output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003cargs\u003e": {
+    "Name": "\u003cargs\u003e",
+    "kind": "argument",
+    "description": "args",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

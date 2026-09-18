@@ -1,0 +1,805 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "add": {
+    "Name": "add",
+    "kind": "subcommand",
+    "description": "Generate a entity into your Nuxt application",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--cwd": {
+        "Name": "--cwd",
+        "kind": "option",
+        "description": "The current working directory of the target application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Force override file if it already exists",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cTEMPLATE\u003e": {
+        "Name": "\u003cTEMPLATE\u003e",
+        "kind": "argument",
+        "description": "TEMPLATE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--cwd": {
+        "Name": "--cwd",
+        "kind": "option",
+        "description": "The current working directory of the target application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Force override file if it already exists",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cNAME\u003e": {
+        "Name": "\u003cNAME\u003e",
+        "kind": "argument",
+        "description": "NAME",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cTEMPLATE\u003e": {
+        "Name": "\u003cTEMPLATE\u003e",
+        "kind": "argument",
+        "description": "TEMPLATE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cTEMPLATE\u003e",
+      "\u003cNAME\u003e"
+    ]
+  },
+  "analyze": {
+    "Name": "analyze",
+    "kind": "subcommand",
+    "description": "The analyze command builds Nuxt and analyzes the production bundle (experimental)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003crootDir\u003e": {
+        "Name": "\u003crootDir\u003e",
+        "kind": "argument",
+        "description": "rootDir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003crootDir\u003e": {
+        "Name": "\u003crootDir\u003e",
+        "kind": "argument",
+        "description": "rootDir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "build": {
+    "Name": "build",
+    "kind": "subcommand",
+    "description": "The build command creates a .output directory with all your application, server and dependencies ready for production",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--dotenv": {
+        "Name": "--dotenv",
+        "kind": "option",
+        "description": "Point to another .env file to load, relative to the root directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--prerender": {
+        "Name": "--prerender",
+        "kind": "option",
+        "description": "Pre-render every route of your application. (note: This is an experimental flag. The behavior might be changed)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003crootDir\u003e": {
+        "Name": "\u003crootDir\u003e",
+        "kind": "argument",
+        "description": "rootDir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--dotenv": {
+        "Name": "--dotenv",
+        "kind": "option",
+        "description": "Point to another .env file to load, relative to the root directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--prerender": {
+        "Name": "--prerender",
+        "kind": "option",
+        "description": "Pre-render every route of your application. (note: This is an experimental flag. The behavior might be changed)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003crootDir\u003e": {
+        "Name": "\u003crootDir\u003e",
+        "kind": "argument",
+        "description": "rootDir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "clean": {
+    "Name": "clean",
+    "kind": "subcommand",
+    "description": "The cleanup command removes common generated Nuxt files and caches including .nuxt/, .output/, node_modules/.vite and node_modules/.cache",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003crootDir\u003e": {
+        "Name": "\u003crootDir\u003e",
+        "kind": "argument",
+        "description": "rootDir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003crootDir\u003e": {
+        "Name": "\u003crootDir\u003e",
+        "kind": "argument",
+        "description": "rootDir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "dev": {
+    "Name": "dev",
+    "kind": "subcommand",
+    "description": "The dev command starts a development server with hot module replacement at http://localhost:3000",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--clipboard": {
+        "Name": "--clipboard",
+        "kind": "option",
+        "description": "Copy URL to clipboard",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dotenv": {
+        "Name": "--dotenv",
+        "kind": "option",
+        "description": "Point to another .env file to load, relative to the root directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--host": {
+        "Name": "--host",
+        "kind": "option",
+        "description": "Hostname of the server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--https": {
+        "Name": "--https",
+        "kind": "option",
+        "description": "Listen with https protocol with a self-signed certificate by default",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-clear": {
+        "Name": "--no-clear",
+        "kind": "option",
+        "description": "Does not clear the console after startup",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--open": {
+        "Name": "--open",
+        "kind": "option",
+        "description": "Open URL in browser",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--port": {
+        "Name": "--port",
+        "kind": "option",
+        "description": "Port to listen",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ssl-cert": {
+        "Name": "--ssl-cert",
+        "kind": "option",
+        "description": "Specify a certificate for https",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ssl-key": {
+        "Name": "--ssl-key",
+        "kind": "option",
+        "description": "Specify the key for the https certificate",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Hostname of the server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Open URL in browser",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Port to listen",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003crootDir\u003e": {
+        "Name": "\u003crootDir\u003e",
+        "kind": "argument",
+        "description": "rootDir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--clipboard": {
+        "Name": "--clipboard",
+        "kind": "option",
+        "description": "Copy URL to clipboard",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--dotenv": {
+        "Name": "--dotenv",
+        "kind": "option",
+        "description": "Point to another .env file to load, relative to the root directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--host": {
+        "Name": "--host",
+        "kind": "option",
+        "description": "Hostname of the server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--https": {
+        "Name": "--https",
+        "kind": "option",
+        "description": "Listen with https protocol with a self-signed certificate by default",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-clear": {
+        "Name": "--no-clear",
+        "kind": "option",
+        "description": "Does not clear the console after startup",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--open": {
+        "Name": "--open",
+        "kind": "option",
+        "description": "Open URL in browser",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--port": {
+        "Name": "--port",
+        "kind": "option",
+        "description": "Port to listen",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ssl-cert": {
+        "Name": "--ssl-cert",
+        "kind": "option",
+        "description": "Specify a certificate for https",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ssl-key": {
+        "Name": "--ssl-key",
+        "kind": "option",
+        "description": "Specify the key for the https certificate",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Hostname of the server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Open URL in browser",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Port to listen",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003crootDir\u003e": {
+        "Name": "\u003crootDir\u003e",
+        "kind": "argument",
+        "description": "rootDir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "generate": {
+    "Name": "generate",
+    "kind": "subcommand",
+    "description": "Build Nuxt and prerender static routes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003crootDir\u003e": {
+        "Name": "\u003crootDir\u003e",
+        "kind": "argument",
+        "description": "rootDir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003crootDir\u003e": {
+        "Name": "\u003crootDir\u003e",
+        "kind": "argument",
+        "description": "rootDir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "info": {
+    "Name": "info",
+    "kind": "subcommand",
+    "description": "The info command logs information about the current or specified Nuxt project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003crootDir\u003e": {
+        "Name": "\u003crootDir\u003e",
+        "kind": "argument",
+        "description": "rootDir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003crootDir\u003e": {
+        "Name": "\u003crootDir\u003e",
+        "kind": "argument",
+        "description": "rootDir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "init": {
+    "Name": "init",
+    "kind": "subcommand",
+    "description": "The init command initializes a fresh Nuxt project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Force clone to any existing directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--prefer-offline": {
+        "Name": "--prefer-offline",
+        "kind": "option",
+        "description": "Try local cache first to download templates",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--shell": {
+        "Name": "--shell",
+        "kind": "option",
+        "description": "Open shell in cloned directory (experimental)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--template": {
+        "Name": "--template",
+        "kind": "option",
+        "description": "Specify a Git repository to use as a template",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Log information about the installation process",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Specify a Git repository to use as a template",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Log information about the installation process",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cdir\u003e": {
+        "Name": "\u003cdir\u003e",
+        "kind": "argument",
+        "description": "dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Force clone to any existing directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--prefer-offline": {
+        "Name": "--prefer-offline",
+        "kind": "option",
+        "description": "Try local cache first to download templates",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--shell": {
+        "Name": "--shell",
+        "kind": "option",
+        "description": "Open shell in cloned directory (experimental)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--template": {
+        "Name": "--template",
+        "kind": "option",
+        "description": "Specify a Git repository to use as a template",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Log information about the installation process",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Specify a Git repository to use as a template",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Log information about the installation process",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cdir\u003e": {
+        "Name": "\u003cdir\u003e",
+        "kind": "argument",
+        "description": "dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdir\u003e"
+    ]
+  },
+  "prepare": {
+    "Name": "prepare",
+    "kind": "subcommand",
+    "description": "The prepare command creates a .nuxt directory in your application and generates ts types",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "preview": {
+    "Name": "preview",
+    "kind": "subcommand",
+    "description": "The preview command starts a server to preview your Nuxt application after running the build command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--dotenv": {
+        "Name": "--dotenv",
+        "kind": "option",
+        "description": "Point to another .env file to load, relative to the root directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003crootDir\u003e": {
+        "Name": "\u003crootDir\u003e",
+        "kind": "argument",
+        "description": "rootDir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--dotenv": {
+        "Name": "--dotenv",
+        "kind": "option",
+        "description": "Point to another .env file to load, relative to the root directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003crootDir\u003e": {
+        "Name": "\u003crootDir\u003e",
+        "kind": "argument",
+        "description": "rootDir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "test": {
+    "Name": "test",
+    "kind": "subcommand",
+    "description": "Run the test files for your Nuxt application",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--dev": {
+        "Name": "--dev",
+        "kind": "option",
+        "description": "Run tests in development mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--watch": {
+        "Name": "--watch",
+        "kind": "option",
+        "description": "Actively watch for changes and rerun tests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003crootDir\u003e": {
+        "Name": "\u003crootDir\u003e",
+        "kind": "argument",
+        "description": "rootDir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--dev": {
+        "Name": "--dev",
+        "kind": "option",
+        "description": "Run tests in development mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--watch": {
+        "Name": "--watch",
+        "kind": "option",
+        "description": "Actively watch for changes and rerun tests",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003crootDir\u003e": {
+        "Name": "\u003crootDir\u003e",
+        "kind": "argument",
+        "description": "rootDir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "typecheck": {
+    "Name": "typecheck",
+    "kind": "subcommand",
+    "description": "The typecheck command runs vue-tsc to check types throughout your app",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003crootDir\u003e": {
+        "Name": "\u003crootDir\u003e",
+        "kind": "argument",
+        "description": "rootDir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003crootDir\u003e": {
+        "Name": "\u003crootDir\u003e",
+        "kind": "argument",
+        "description": "rootDir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "upgrade": {
+    "Name": "upgrade",
+    "kind": "subcommand",
+    "description": "The upgrade command upgrades Nuxt 3 to the latest version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Removes node_modules and lock files before upgrade",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Removes node_modules and lock files before upgrade",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Removes node_modules and lock files before upgrade",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Removes node_modules and lock files before upgrade",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "usage": {
+    "Name": "usage",
+    "kind": "subcommand",
+    "description": "The usage command shows the usage of the Nuxt CLI",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

@@ -3,99 +3,44 @@ package scraper
 import (
 	"fmt"
 	"path/filepath"
-	"sort"
 	"strings"
 	"sync"
-	"sync/atomic"
 	"time"
 
-	"git-hint/core"
+	"git-hint/internal/core"
 	"git-hint/scraper/parser"
 )
 
-type ProgressState struct {
-	Total   int
-	Current int
-}
+// ============================================================================
+// Core crawling logic
+//
+// CrawlOne is the public entry point for crawling a single command.
+// crawlCommand recursively builds the command tree by executing help
+// flags and parsing the output.
+// ============================================================================
 
-type Options struct {
-	MaxDepth   int
-	Verbose    bool
-	OnProgress func(current, total int, cmd string)
-	Progress   *ProgressState
-}
-
-// --- temporary instrumentation for diagnostics ---
-var (
-	execCount int64
-	slowMu    sync.Mutex
-	slowLog   []slowEntry
-)
-
-type slowEntry struct {
-	path     string
-	duration time.Duration
-}
-
-func recordDuration(path string, d time.Duration) {
-	atomic.AddInt64(&execCount, 1)
-	if d > 300*time.Millisecond {
-		slowMu.Lock()
-		slowLog = append(slowLog, slowEntry{path, d})
-		slowMu.Unlock()
-	}
-}
-
-func runWithTimeout(d time.Duration, fn func() (string, error)) (string, error, bool) {
-	type result struct {
-		output string
-		err    error
-	}
-	ch := make(chan result, 1)
-
-	go func() {
-		out, err := fn()
-		ch <- result{out, err}
-	}()
-
-	select {
-	case r := <-ch:
-		return r.output, r.err, false
-	case <-time.After(d):
-		return "", fmt.Errorf("timeout"), true
-	}
-}
-
-func PrintDiagnostics() {
-	fmt.Printf("\n=== DIAGNOSTICS ===\n")
-	fmt.Printf("Total exec.Command calls: %d\n", atomic.LoadInt64(&execCount))
-
-	slowMu.Lock()
-	defer slowMu.Unlock()
-	sort.Slice(slowLog, func(i, j int) bool { return slowLog[i].duration > slowLog[j].duration })
-
-	limit := 30
-	if len(slowLog) < limit {
-		limit = len(slowLog)
-	}
-	fmt.Printf("Top %d slowest (>300ms):\n", limit)
-	for i := 0; i < limit; i++ {
-		fmt.Printf("  %v  %s\n", slowLog[i].duration, slowLog[i].path)
-	}
-}
-
-// --- end instrumentation ---
-
+// CrawlOne crawls a single command and writes its tree to data/<name>.json.
+// If path is empty, the command is a shell builtin and is sourced from
+// documentation instead of running --help.
 func CrawlOne(name, path string, opts Options) error {
+	if path == "" {
+		return CrawlBuiltin(name)
+	}
+
 	visited := make(map[string]bool)
 	tree := crawlCommand([]string{path}, opts, visited)
 	return WriteCommand(name, tree.SubCommand)
 }
 
+// isTerminalToken reports whether a token is a flag or placeholder
+// (leaf nodes that don't trigger further help invocations).
 func isTerminalToken(name string) bool {
 	return strings.HasPrefix(name, "-") || strings.HasPrefix(name, "<")
 }
 
+// crawlCommand recursively builds the command tree for a command at the
+// given path. It executes help flags, parses the output, and recursively
+// crawls subcommands.
 func crawlCommand(path []string, opts Options, visited map[string]bool) core.CommandMatch {
 	node := core.NewCommandMatch("", "")
 
@@ -114,6 +59,7 @@ func crawlCommand(path []string, opts Options, visited map[string]bool) core.Com
 		return node
 	}
 
+	// Execute help and measure duration
 	start := time.Now()
 	var output string
 	var err error
@@ -140,12 +86,14 @@ func crawlCommand(path []string, opts Options, visited map[string]bool) core.Com
 		return node
 	}
 
+	// Parse the help output
 	namePath := append([]string{filepath.Base(path[0])}, path[1:]...)
 	parsed := parser.ParseCommand(output, namePath)
 	if parsed.IsLeaf() {
 		return node
 	}
 
+	// Recursively crawl subcommands concurrently
 	var (
 		mu  sync.Mutex
 		wg  sync.WaitGroup
@@ -163,13 +111,7 @@ func crawlCommand(path []string, opts Options, visited map[string]bool) core.Com
 
 			var child core.CommandMatch
 			if isTerminalToken(subName) {
-				child = core.NewCommandMatch("", "")
-				child.Description = pNode.Description
-				for chName, chNode := range pNode.Children {
-					ph := core.NewCommandMatch("", "")
-					ph.Description = chNode.Description
-					child.SubCommand[chName] = ph
-				}
+				child = buildTerminalChild(pNode)
 			} else {
 				mu.Lock()
 				localVisited := make(map[string]bool, len(visited))
@@ -182,12 +124,57 @@ func crawlCommand(path []string, opts Options, visited map[string]bool) core.Com
 				child.Description = pNode.Description
 			}
 
+			child.Kind = core.NodeKind(pNode.Kind)
+			child.Requires = pNode.Requires
+
 			mu.Lock()
-			node.SubCommand[subName] = child
+			attachChildNode(&node, subName, child)
 			mu.Unlock()
 		}(subName, pNode)
 	}
 	wg.Wait()
 
 	return node
+}
+
+// ============================================================================
+// Node construction helpers
+// ============================================================================
+
+// buildTerminalChild constructs a leaf CommandMatch for placeholders
+// and terminal options.
+func buildTerminalChild(pNode *parser.ParsedNode) core.CommandMatch {
+	child := core.NewCommandMatch("", "")
+	child.Description = pNode.Description
+	child.Kind = core.NodeKind(pNode.Kind)
+	child.Requires = pNode.Requires
+
+	for chName, chNode := range pNode.Children {
+		ph := core.NewCommandMatch("", "")
+		ph.Description = chNode.Description
+		ph.Kind = core.NodeKind(chNode.Kind)
+		ph.Requires = chNode.Requires
+		attachChildNode(&child, chName, ph)
+	}
+	return child
+}
+
+// attachChildNode routes a child into Options or SubCommand based on
+// its Kind. SubCommands remain in SubCommand, while Options and
+// Arguments go to Options (and SubCommand for backwards-compat).
+func attachChildNode(parent *core.CommandMatch, name string, child core.CommandMatch) {
+	if parent.SubCommand == nil {
+		parent.SubCommand = make(map[string]core.CommandMatch)
+	}
+	if parent.Options == nil {
+		parent.Options = make(map[string]core.CommandMatch)
+	}
+
+	// Always populate SubCommand for backwards compatibility
+	parent.SubCommand[name] = child
+
+	// If it is an option (flag) or argument, also place it into Options pool
+	if child.Kind == core.KindOption || child.Kind == core.KindArgument || strings.HasPrefix(name, "-") {
+		parent.Options[name] = child
+	}
 }

@@ -1,0 +1,1040 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Help for charm",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Version for charm",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Help for charm",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Version for charm",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "backup-keys": {
+    "Name": "backup-keys",
+    "kind": "subcommand",
+    "description": "Backup your Charm account keys",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "completion": {
+    "Name": "completion",
+    "kind": "subcommand",
+    "description": "Generate shell completion",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "crypt": {
+    "Name": "crypt",
+    "kind": "subcommand",
+    "description": "Use charm encryption",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "decrypt": {
+        "Name": "decrypt",
+        "kind": "subcommand",
+        "description": "Decrypt stdin with your Charm account encryption key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "decrypt-lookup": {
+        "Name": "decrypt-lookup",
+        "kind": "subcommand",
+        "description": "Decrypt arg deterministically",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "encrypt": {
+        "Name": "encrypt",
+        "kind": "subcommand",
+        "description": "Encrypt stdin with your Charm account encryption key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "encrypt-lookup": {
+        "Name": "encrypt-lookup",
+        "kind": "subcommand",
+        "description": "Encrypt arg deterministically",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "fs": {
+    "Name": "fs",
+    "kind": "subcommand",
+    "description": "Use the Charm file systems",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "cat": {
+        "Name": "cat",
+        "kind": "subcommand",
+        "description": "Output the content of the file at path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c[charm:]PATH\u003e": {
+            "Name": "\u003c[charm:]PATH\u003e",
+            "kind": "argument",
+            "description": "[charm:]PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c[charm:]PATH\u003e": {
+            "Name": "\u003c[charm:]PATH\u003e",
+            "kind": "argument",
+            "description": "[charm:]PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c[charm:]PATH\u003e"
+        ]
+      },
+      "cp": {
+        "Name": "cp",
+        "kind": "subcommand",
+        "description": "Copy a file, preface source or destination with \"charm:\" to specify a remote path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--recursive": {
+            "Name": "--recursive",
+            "kind": "option",
+            "description": "Copy directories recursively",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-r": {
+            "Name": "-r",
+            "kind": "option",
+            "description": "Copy directories recursively",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003c[charm:]PATH\u003e": {
+            "Name": "\u003c[charm:]PATH\u003e",
+            "kind": "argument",
+            "description": "[charm:]PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--recursive": {
+            "Name": "--recursive",
+            "kind": "option",
+            "description": "Copy directories recursively",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-r": {
+            "Name": "-r",
+            "kind": "option",
+            "description": "Copy directories recursively",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003c[charm:]PATH\u003e": {
+            "Name": "\u003c[charm:]PATH\u003e",
+            "kind": "argument",
+            "description": "[charm:]PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c[charm:]PATH\u003e",
+          "\u003c[charm:]PATH\u003e"
+        ]
+      },
+      "ls": {
+        "Name": "ls",
+        "kind": "subcommand",
+        "description": "List file or directory at path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c[charm:]PATH\u003e": {
+            "Name": "\u003c[charm:]PATH\u003e",
+            "kind": "argument",
+            "description": "[charm:]PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c[charm:]PATH\u003e": {
+            "Name": "\u003c[charm:]PATH\u003e",
+            "kind": "argument",
+            "description": "[charm:]PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c[charm:]PATH\u003e"
+        ]
+      },
+      "mv": {
+        "Name": "mv",
+        "kind": "subcommand",
+        "description": "Move a file, preface source or destination with \"charm\" to specify a remote  path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c[charm:]PATH\u003e": {
+            "Name": "\u003c[charm:]PATH\u003e",
+            "kind": "argument",
+            "description": "[charm:]PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c[charm:]PATH\u003e": {
+            "Name": "\u003c[charm:]PATH\u003e",
+            "kind": "argument",
+            "description": "[charm:]PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c[charm:]PATH\u003e",
+          "\u003c[charm:]PATH\u003e"
+        ]
+      },
+      "rm": {
+        "Name": "rm",
+        "kind": "subcommand",
+        "description": "Remove file or directory at path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c[charm:]PATH\u003e": {
+            "Name": "\u003c[charm:]PATH\u003e",
+            "kind": "argument",
+            "description": "[charm:]PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c[charm:]PATH\u003e": {
+            "Name": "\u003c[charm:]PATH\u003e",
+            "kind": "argument",
+            "description": "[charm:]PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c[charm:]PATH\u003e"
+        ]
+      },
+      "tree": {
+        "Name": "tree",
+        "kind": "subcommand",
+        "description": "Print a file system tree from path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c[charm:]PATH\u003e": {
+            "Name": "\u003c[charm:]PATH\u003e",
+            "kind": "argument",
+            "description": "[charm:]PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c[charm:]PATH\u003e": {
+            "Name": "\u003c[charm:]PATH\u003e",
+            "kind": "argument",
+            "description": "[charm:]PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c[charm:]PATH\u003e"
+        ]
+      }
+    }
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Help about any command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "id": {
+    "Name": "id",
+    "kind": "subcommand",
+    "description": "Print your Charm ID",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "import-keys": {
+    "Name": "import-keys",
+    "kind": "subcommand",
+    "description": "Import previously backed up Charm account keys",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--force-overwrite": {
+        "Name": "--force-overwrite",
+        "kind": "option",
+        "description": "Overwrite if keys exist; don't prompt for input",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Overwrite if keys exist; don't prompt for input",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cBACKUP.tar\u003e": {
+        "Name": "\u003cBACKUP.tar\u003e",
+        "kind": "argument",
+        "description": "BACKUP.tar",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--force-overwrite": {
+        "Name": "--force-overwrite",
+        "kind": "option",
+        "description": "Overwrite if keys exist; don't prompt for input",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Overwrite if keys exist; don't prompt for input",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cBACKUP.tar\u003e": {
+        "Name": "\u003cBACKUP.tar\u003e",
+        "kind": "argument",
+        "description": "BACKUP.tar",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cBACKUP.tar\u003e"
+    ]
+  },
+  "jwt": {
+    "Name": "jwt",
+    "kind": "subcommand",
+    "description": "Print a JWT",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "keys": {
+    "Name": "keys",
+    "kind": "subcommand",
+    "description": "Browse or print linked SSH keys",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--randomart": {
+        "Name": "--randomart",
+        "kind": "option",
+        "description": "Print SSH 5.1 randomart for each key (the Drunken Bishop algorithm)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--simple": {
+        "Name": "--simple",
+        "kind": "option",
+        "description": "Simple, non-interactive output (good for scripts)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Print SSH 5.1 randomart for each key (the Drunken Bishop algorithm)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Simple, non-interactive output (good for scripts)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--randomart": {
+        "Name": "--randomart",
+        "kind": "option",
+        "description": "Print SSH 5.1 randomart for each key (the Drunken Bishop algorithm)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--simple": {
+        "Name": "--simple",
+        "kind": "option",
+        "description": "Simple, non-interactive output (good for scripts)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Print SSH 5.1 randomart for each key (the Drunken Bishop algorithm)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Simple, non-interactive output (good for scripts)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "kv": {
+    "Name": "kv",
+    "kind": "subcommand",
+    "description": "Use the Charm key value store",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "delete": {
+        "Name": "delete",
+        "kind": "subcommand",
+        "description": "Delete a key with an optional @ db",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cKEY[@DB]\u003e": {
+            "Name": "\u003cKEY[@DB]\u003e",
+            "kind": "argument",
+            "description": "KEY[@DB]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cKEY[@DB]\u003e": {
+            "Name": "\u003cKEY[@DB]\u003e",
+            "kind": "argument",
+            "description": "KEY[@DB]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cKEY[@DB]\u003e"
+        ]
+      },
+      "get": {
+        "Name": "get",
+        "kind": "subcommand",
+        "description": "Get a value for a key with an optional @ db",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cKEY[@DB]\u003e": {
+            "Name": "\u003cKEY[@DB]\u003e",
+            "kind": "argument",
+            "description": "KEY[@DB]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cKEY[@DB]\u003e": {
+            "Name": "\u003cKEY[@DB]\u003e",
+            "kind": "argument",
+            "description": "KEY[@DB]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cKEY[@DB]\u003e"
+        ]
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List all key value pairs with an optional @ db",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cKEY[@DB]\u003e": {
+            "Name": "\u003cKEY[@DB]\u003e",
+            "kind": "argument",
+            "description": "KEY[@DB]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cKEY[@DB]\u003e": {
+            "Name": "\u003cKEY[@DB]\u003e",
+            "kind": "argument",
+            "description": "KEY[@DB]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "reset": {
+        "Name": "reset",
+        "kind": "subcommand",
+        "description": "Delete local db and pull down fresh copy from Charm Cloud",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cKEY[@DB]\u003e": {
+            "Name": "\u003cKEY[@DB]\u003e",
+            "kind": "argument",
+            "description": "KEY[@DB]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cKEY[@DB]\u003e": {
+            "Name": "\u003cKEY[@DB]\u003e",
+            "kind": "argument",
+            "description": "KEY[@DB]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "set": {
+        "Name": "set",
+        "kind": "subcommand",
+        "description": "Set a value for a key with an optional @ db",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cKEY[@DB]\u003e": {
+            "Name": "\u003cKEY[@DB]\u003e",
+            "kind": "argument",
+            "description": "KEY[@DB]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cVALUE\u003e": {
+            "Name": "\u003cVALUE\u003e",
+            "kind": "argument",
+            "description": "VALUE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cKEY[@DB]\u003e": {
+            "Name": "\u003cKEY[@DB]\u003e",
+            "kind": "argument",
+            "description": "KEY[@DB]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cVALUE\u003e": {
+            "Name": "\u003cVALUE\u003e",
+            "kind": "argument",
+            "description": "VALUE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cKEY[@DB]\u003e",
+          "\u003cVALUE\u003e"
+        ]
+      },
+      "sync": {
+        "Name": "sync",
+        "kind": "subcommand",
+        "description": "Sync local db with latest Charm Cloud db",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cKEY[@DB]\u003e": {
+            "Name": "\u003cKEY[@DB]\u003e",
+            "kind": "argument",
+            "description": "KEY[@DB]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cKEY[@DB]\u003e": {
+            "Name": "\u003cKEY[@DB]\u003e",
+            "kind": "argument",
+            "description": "KEY[@DB]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cKEY[@DB]\u003e"
+        ]
+      }
+    }
+  },
+  "link": {
+    "Name": "link",
+    "kind": "subcommand",
+    "description": "Link multiple machines to your Charm account",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccode\u003e": {
+        "Name": "\u003ccode\u003e",
+        "kind": "argument",
+        "description": "code",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccode\u003e": {
+        "Name": "\u003ccode\u003e",
+        "kind": "argument",
+        "description": "code",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "name": {
+    "Name": "name",
+    "kind": "subcommand",
+    "description": "Username stuff",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cusername\u003e": {
+        "Name": "\u003cusername\u003e",
+        "kind": "argument",
+        "description": "username",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cusername\u003e": {
+        "Name": "\u003cusername\u003e",
+        "kind": "argument",
+        "description": "username",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "serve": {
+    "Name": "serve",
+    "kind": "subcommand",
+    "description": "Start a self-hosted Charm Cloud server",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--data-dir": {
+        "Name": "--data-dir",
+        "kind": "option",
+        "description": "Directory to store SQLite db, SSH keys and file data",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cDATA_DIR\u003e": {
+            "Name": "\u003cDATA_DIR\u003e",
+            "kind": "argument",
+            "description": "DATA_DIR",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cDATA_DIR\u003e": {
+            "Name": "\u003cDATA_DIR\u003e",
+            "kind": "argument",
+            "description": "DATA_DIR",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cDATA_DIR\u003e"
+        ]
+      },
+      "--health-port": {
+        "Name": "--health-port",
+        "kind": "option",
+        "description": "Health port to listen on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cHEALTH_PORT\u003e": {
+            "Name": "\u003cHEALTH_PORT\u003e",
+            "kind": "argument",
+            "description": "HEALTH_PORT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cHEALTH_PORT\u003e": {
+            "Name": "\u003cHEALTH_PORT\u003e",
+            "kind": "argument",
+            "description": "HEALTH_PORT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cHEALTH_PORT\u003e"
+        ]
+      },
+      "--http-port": {
+        "Name": "--http-port",
+        "kind": "option",
+        "description": "HTTP port to listen on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cHTTP_PORT\u003e": {
+            "Name": "\u003cHTTP_PORT\u003e",
+            "kind": "argument",
+            "description": "HTTP_PORT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cHTTP_PORT\u003e": {
+            "Name": "\u003cHTTP_PORT\u003e",
+            "kind": "argument",
+            "description": "HTTP_PORT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cHTTP_PORT\u003e"
+        ]
+      },
+      "--ssh-port": {
+        "Name": "--ssh-port",
+        "kind": "option",
+        "description": "SSH port to listen on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSSH_PORT\u003e": {
+            "Name": "\u003cSSH_PORT\u003e",
+            "kind": "argument",
+            "description": "SSH_PORT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSSH_PORT\u003e": {
+            "Name": "\u003cSSH_PORT\u003e",
+            "kind": "argument",
+            "description": "SSH_PORT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSSH_PORT\u003e"
+        ]
+      },
+      "--stats-port": {
+        "Name": "--stats-port",
+        "kind": "option",
+        "description": "Stats port to listen on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSTATS_PORT\u003e": {
+            "Name": "\u003cSTATS_PORT\u003e",
+            "kind": "argument",
+            "description": "STATS_PORT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSTATS_PORT\u003e": {
+            "Name": "\u003cSTATS_PORT\u003e",
+            "kind": "argument",
+            "description": "STATS_PORT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSTATS_PORT\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--data-dir": {
+        "Name": "--data-dir",
+        "kind": "option",
+        "description": "Directory to store SQLite db, SSH keys and file data",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cDATA_DIR\u003e": {
+            "Name": "\u003cDATA_DIR\u003e",
+            "kind": "argument",
+            "description": "DATA_DIR",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cDATA_DIR\u003e": {
+            "Name": "\u003cDATA_DIR\u003e",
+            "kind": "argument",
+            "description": "DATA_DIR",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cDATA_DIR\u003e"
+        ]
+      },
+      "--health-port": {
+        "Name": "--health-port",
+        "kind": "option",
+        "description": "Health port to listen on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cHEALTH_PORT\u003e": {
+            "Name": "\u003cHEALTH_PORT\u003e",
+            "kind": "argument",
+            "description": "HEALTH_PORT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cHEALTH_PORT\u003e": {
+            "Name": "\u003cHEALTH_PORT\u003e",
+            "kind": "argument",
+            "description": "HEALTH_PORT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cHEALTH_PORT\u003e"
+        ]
+      },
+      "--http-port": {
+        "Name": "--http-port",
+        "kind": "option",
+        "description": "HTTP port to listen on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cHTTP_PORT\u003e": {
+            "Name": "\u003cHTTP_PORT\u003e",
+            "kind": "argument",
+            "description": "HTTP_PORT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cHTTP_PORT\u003e": {
+            "Name": "\u003cHTTP_PORT\u003e",
+            "kind": "argument",
+            "description": "HTTP_PORT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cHTTP_PORT\u003e"
+        ]
+      },
+      "--ssh-port": {
+        "Name": "--ssh-port",
+        "kind": "option",
+        "description": "SSH port to listen on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSSH_PORT\u003e": {
+            "Name": "\u003cSSH_PORT\u003e",
+            "kind": "argument",
+            "description": "SSH_PORT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSSH_PORT\u003e": {
+            "Name": "\u003cSSH_PORT\u003e",
+            "kind": "argument",
+            "description": "SSH_PORT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSSH_PORT\u003e"
+        ]
+      },
+      "--stats-port": {
+        "Name": "--stats-port",
+        "kind": "option",
+        "description": "Stats port to listen on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSTATS_PORT\u003e": {
+            "Name": "\u003cSTATS_PORT\u003e",
+            "kind": "argument",
+            "description": "STATS_PORT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSTATS_PORT\u003e": {
+            "Name": "\u003cSTATS_PORT\u003e",
+            "kind": "argument",
+            "description": "STATS_PORT",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSTATS_PORT\u003e"
+        ]
+      }
+    }
+  }
+}

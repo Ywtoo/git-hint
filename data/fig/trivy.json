@@ -1,0 +1,4070 @@
+{
+  "--cache-dir": {
+    "Name": "--cache-dir",
+    "kind": "option",
+    "description": "Cache directory [$TRIVY_CACHE_DIR]",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccache-dir\u003e": {
+        "Name": "\u003ccache-dir\u003e",
+        "kind": "argument",
+        "description": "cache-dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccache-dir\u003e": {
+        "Name": "\u003ccache-dir\u003e",
+        "kind": "argument",
+        "description": "cache-dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccache-dir\u003e"
+    ]
+  },
+  "--debug": {
+    "Name": "--debug",
+    "kind": "option",
+    "description": "Enable debug output [$TRIVY_DEBUG]",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--quiet": {
+    "Name": "--quiet",
+    "kind": "option",
+    "description": "Suppress progress bar and log output [$TRIVY_QUIET]",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Print the version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Enable debug output [$TRIVY_DEBUG]",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-q": {
+    "Name": "-q",
+    "kind": "option",
+    "description": "Suppress progress bar and log output [$TRIVY_QUIET]",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Print the version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "client": {
+    "Name": "client",
+    "kind": "subcommand",
+    "description": "Client mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--cache-backend": {
+        "Name": "--cache-backend",
+        "kind": "subcommand",
+        "description": "Cache backend (e.g. redis://localhost:6379) (default: \"fs\") [$TRIVY_CACHE_BACKEND]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccacheBackend\u003e": {
+            "Name": "\u003ccacheBackend\u003e",
+            "kind": "argument",
+            "description": "cacheBackend",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccacheBackend\u003e": {
+            "Name": "\u003ccacheBackend\u003e",
+            "kind": "argument",
+            "description": "cacheBackend",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccacheBackend\u003e"
+        ]
+      },
+      "--clear-cache": {
+        "Name": "--clear-cache",
+        "kind": "subcommand",
+        "description": "Clear image caches without scanning [$TRIVY_CLEAR_CACHE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--config-policy": {
+        "Name": "--config-policy",
+        "kind": "subcommand",
+        "description": "Specify paths to the Rego policy files directory, applying config files [$TRIVY_CONFIG_POLICY]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfigPolicy\u003e": {
+            "Name": "\u003cconfigPolicy\u003e",
+            "kind": "argument",
+            "description": "configPolicy",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfigPolicy\u003e": {
+            "Name": "\u003cconfigPolicy\u003e",
+            "kind": "argument",
+            "description": "configPolicy",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfigPolicy\u003e"
+        ]
+      },
+      "--custom-headers": {
+        "Name": "--custom-headers",
+        "kind": "subcommand",
+        "description": "Custom headers in client/server mode [$TRIVY_CUSTOM_HEADERS]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccustomHeaders\u003e": {
+            "Name": "\u003ccustomHeaders\u003e",
+            "kind": "argument",
+            "description": "customHeaders",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccustomHeaders\u003e": {
+            "Name": "\u003ccustomHeaders\u003e",
+            "kind": "argument",
+            "description": "customHeaders",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccustomHeaders\u003e"
+        ]
+      },
+      "--exit-code": {
+        "Name": "--exit-code",
+        "kind": "subcommand",
+        "description": "Exit code when vulnerabilities were found (default: 0) [$TRIVY_EXIT_CODE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cexitCode\u003e": {
+            "Name": "\u003cexitCode\u003e",
+            "kind": "argument",
+            "description": "exitCode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cexitCode\u003e": {
+            "Name": "\u003cexitCode\u003e",
+            "kind": "argument",
+            "description": "exitCode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cexitCode\u003e"
+        ]
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "subcommand",
+        "description": "Format (table, json, sarif, template) (default: \"table\") [$TRIVY_FORMAT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "--ignore-policy": {
+        "Name": "--ignore-policy",
+        "kind": "subcommand",
+        "description": "Specify the Rego file to evaluate each vulnerability [$TRIVY_IGNORE_POLICY]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cignorePolicy\u003e": {
+            "Name": "\u003cignorePolicy\u003e",
+            "kind": "argument",
+            "description": "ignorePolicy",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cignorePolicy\u003e": {
+            "Name": "\u003cignorePolicy\u003e",
+            "kind": "argument",
+            "description": "ignorePolicy",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cignorePolicy\u003e"
+        ]
+      },
+      "--ignore-unfixed": {
+        "Name": "--ignore-unfixed",
+        "kind": "subcommand",
+        "description": "Display only fixed vulnerabilities [$TRIVY_IGNORE_UNFIXED]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ignorefile": {
+        "Name": "--ignorefile",
+        "kind": "subcommand",
+        "description": "Specify .trivyignore file (default: \".trivyignore\") [$TRIVY_IGNOREFILE]]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cignorefile\u003e": {
+            "Name": "\u003cignorefile\u003e",
+            "kind": "argument",
+            "description": "ignorefile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cignorefile\u003e": {
+            "Name": "\u003cignorefile\u003e",
+            "kind": "argument",
+            "description": "ignorefile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cignorefile\u003e"
+        ]
+      },
+      "--input": {
+        "Name": "--input",
+        "kind": "subcommand",
+        "description": "Input file path instead of image name [$TRIVY_INPUT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cinput\u003e": {
+            "Name": "\u003cinput\u003e",
+            "kind": "argument",
+            "description": "input",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cinput\u003e": {
+            "Name": "\u003cinput\u003e",
+            "kind": "argument",
+            "description": "input",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cinput\u003e"
+        ]
+      },
+      "--insecure": {
+        "Name": "--insecure",
+        "kind": "subcommand",
+        "description": "Allow insecure server connections when using SSL [$TRIVY_INSECURE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--list-all-pkgs": {
+        "Name": "--list-all-pkgs",
+        "kind": "subcommand",
+        "description": "Enabling the option will output all packages regardless of vulnerability (default: false) [$TRIVY_LIST_ALL_PKGS]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-progress": {
+        "Name": "--no-progress",
+        "kind": "subcommand",
+        "description": "Suppress progress bar [$TRIVY_NO_PROGRESS]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--offline-scan": {
+        "Name": "--offline-scan",
+        "kind": "subcommand",
+        "description": "Do not issue API requests to identify dependencies [$TRIVY_OFFLINE_SCAN]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output": {
+        "Name": "--output",
+        "kind": "subcommand",
+        "description": "Output file name [$TRIVY_OUTPUT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cinput\u003e": {
+            "Name": "\u003cinput\u003e",
+            "kind": "argument",
+            "description": "input",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cinput\u003e": {
+            "Name": "\u003cinput\u003e",
+            "kind": "argument",
+            "description": "input",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cinput\u003e"
+        ]
+      },
+      "--remote": {
+        "Name": "--remote",
+        "kind": "subcommand",
+        "description": "Server address (default: \"http://localhost:4954\") [$TRIVY_REMOTE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cremote\u003e": {
+            "Name": "\u003cremote\u003e",
+            "kind": "argument",
+            "description": "remote",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cremote\u003e": {
+            "Name": "\u003cremote\u003e",
+            "kind": "argument",
+            "description": "remote",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cremote\u003e"
+        ]
+      },
+      "--removed-pkgs": {
+        "Name": "--removed-pkgs",
+        "kind": "subcommand",
+        "description": "Detect vulnerabilities of removed packages (default: false) [$TRIVY_REMOVED_PKGS]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--security-checks": {
+        "Name": "--security-checks",
+        "kind": "subcommand",
+        "description": "Comma-separated list of what security issues to detect (vuln,config) (default: \"vuln\") [$TRIVY_SECURITY_CHECKS]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csecurityChecks\u003e": {
+            "Name": "\u003csecurityChecks\u003e",
+            "kind": "argument",
+            "description": "securityChecks",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csecurityChecks\u003e": {
+            "Name": "\u003csecurityChecks\u003e",
+            "kind": "argument",
+            "description": "securityChecks",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csecurityChecks\u003e"
+        ]
+      },
+      "--severity": {
+        "Name": "--severity",
+        "kind": "subcommand",
+        "description": "Severities of vulnerabilities to be displayed (comma separated) (default: \"UNKNOWN,LOW,MEDIUM,HIGH,CRITICAL\") [$TRIVY_SEVERITY]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cseverity\u003e": {
+            "Name": "\u003cseverity\u003e",
+            "kind": "argument",
+            "description": "severity",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cseverity\u003e": {
+            "Name": "\u003cseverity\u003e",
+            "kind": "argument",
+            "description": "severity",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cseverity\u003e"
+        ]
+      },
+      "--skip-dirs": {
+        "Name": "--skip-dirs",
+        "kind": "subcommand",
+        "description": "Allow insecure server connections when using SSL [$TRIVY_INSECURE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cskipDirs\u003e": {
+            "Name": "\u003cskipDirs\u003e",
+            "kind": "argument",
+            "description": "skipDirs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cskipDirs\u003e": {
+            "Name": "\u003cskipDirs\u003e",
+            "kind": "argument",
+            "description": "skipDirs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cskipDirs\u003e"
+        ]
+      },
+      "--skip-files": {
+        "Name": "--skip-files",
+        "kind": "subcommand",
+        "description": "Specify the file paths to skip traversal [$TRIVY_SKIP_FILES]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cskipFiles\u003e": {
+            "Name": "\u003cskipFiles\u003e",
+            "kind": "argument",
+            "description": "skipFiles",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cskipFiles\u003e": {
+            "Name": "\u003cskipFiles\u003e",
+            "kind": "argument",
+            "description": "skipFiles",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cskipFiles\u003e"
+        ]
+      },
+      "--template": {
+        "Name": "--template",
+        "kind": "subcommand",
+        "description": "Output template [$TRIVY_TEMPLATE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput\u003e"
+        ]
+      },
+      "--timeout": {
+        "Name": "--timeout",
+        "kind": "subcommand",
+        "description": "Timeout (default: 5m0s) [$TRIVY_TIMEOUT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctimeout\u003e": {
+            "Name": "\u003ctimeout\u003e",
+            "kind": "argument",
+            "description": "timeout",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctimeout\u003e": {
+            "Name": "\u003ctimeout\u003e",
+            "kind": "argument",
+            "description": "timeout",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctimeout\u003e"
+        ]
+      },
+      "--token": {
+        "Name": "--token",
+        "kind": "subcommand",
+        "description": "For authentication in client/server mode [$TRIVY_TOKEN]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctoken\u003e"
+        ]
+      },
+      "--token-header": {
+        "Name": "--token-header",
+        "kind": "subcommand",
+        "description": "Specify a header name for token in client/server mode (default: \"Trivy-Token\") [$TRIVY_TOKEN_HEADER]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctokenHeader\u003e": {
+            "Name": "\u003ctokenHeader\u003e",
+            "kind": "argument",
+            "description": "tokenHeader",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctokenHeader\u003e": {
+            "Name": "\u003ctokenHeader\u003e",
+            "kind": "argument",
+            "description": "tokenHeader",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctokenHeader\u003e"
+        ]
+      },
+      "--vuln-type": {
+        "Name": "--vuln-type",
+        "kind": "subcommand",
+        "description": "Comma-separated list of vulnerability types (os,library) (default: \"os,library\") [$TRIVY_VULN_TYPE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cvulnType\u003e": {
+            "Name": "\u003cvulnType\u003e",
+            "kind": "argument",
+            "description": "vulnType",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cvulnType\u003e": {
+            "Name": "\u003cvulnType\u003e",
+            "kind": "argument",
+            "description": "vulnType",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cvulnType\u003e"
+        ]
+      }
+    }
+  },
+  "config": {
+    "Name": "config",
+    "kind": "subcommand",
+    "description": "Scan config files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--clear-cache": {
+        "Name": "--clear-cache",
+        "kind": "subcommand",
+        "description": "Clear image caches without scanning [$TRIVY_CLEAR_CACHE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--config-data": {
+        "Name": "--config-data",
+        "kind": "subcommand",
+        "description": "Specify paths from which data for the Rego policies will be recursively loaded [$TRIVY_CONFIG_DATA]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfigData\u003e": {
+            "Name": "\u003cconfigData\u003e",
+            "kind": "argument",
+            "description": "configData",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfigData\u003e": {
+            "Name": "\u003cconfigData\u003e",
+            "kind": "argument",
+            "description": "configData",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfigData\u003e"
+        ]
+      },
+      "--config-policy": {
+        "Name": "--config-policy",
+        "kind": "subcommand",
+        "description": "Specify paths to the Rego policy files directory, applying config files [$TRIVY_CONFIG_POLICY]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfigPolicy\u003e": {
+            "Name": "\u003cconfigPolicy\u003e",
+            "kind": "argument",
+            "description": "configPolicy",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfigPolicy\u003e": {
+            "Name": "\u003cconfigPolicy\u003e",
+            "kind": "argument",
+            "description": "configPolicy",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfigPolicy\u003e"
+        ]
+      },
+      "--exit-code": {
+        "Name": "--exit-code",
+        "kind": "subcommand",
+        "description": "Exit code when vulnerabilities were found (default: 0) [$TRIVY_EXIT_CODE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cexitCode\u003e": {
+            "Name": "\u003cexitCode\u003e",
+            "kind": "argument",
+            "description": "exitCode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cexitCode\u003e": {
+            "Name": "\u003cexitCode\u003e",
+            "kind": "argument",
+            "description": "exitCode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cexitCode\u003e"
+        ]
+      },
+      "--file-patterns": {
+        "Name": "--file-patterns",
+        "kind": "subcommand",
+        "description": "Specify file patterns [$TRIVY_FILE_PATTERNS",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cfilePatterns\u003e": {
+            "Name": "\u003cfilePatterns\u003e",
+            "kind": "argument",
+            "description": "filePatterns",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cfilePatterns\u003e": {
+            "Name": "\u003cfilePatterns\u003e",
+            "kind": "argument",
+            "description": "filePatterns",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cfilePatterns\u003e"
+        ]
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "subcommand",
+        "description": "Format (table, json, sarif, template) (default: \"table\") [$TRIVY_FORMAT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "--ignorefile": {
+        "Name": "--ignorefile",
+        "kind": "subcommand",
+        "description": "Specify .trivyignore file (default: \".trivyignore\") [$TRIVY_IGNOREFILE]]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cignorefile\u003e": {
+            "Name": "\u003cignorefile\u003e",
+            "kind": "argument",
+            "description": "ignorefile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cignorefile\u003e": {
+            "Name": "\u003cignorefile\u003e",
+            "kind": "argument",
+            "description": "ignorefile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cignorefile\u003e"
+        ]
+      },
+      "--include-non-failures": {
+        "Name": "--include-non-failures",
+        "kind": "subcommand",
+        "description": "Enable more verbose trace output for custom queries [$TRIVY_TRACE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output": {
+        "Name": "--output",
+        "kind": "subcommand",
+        "description": "Output file name [$TRIVY_OUTPUT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cinput\u003e": {
+            "Name": "\u003cinput\u003e",
+            "kind": "argument",
+            "description": "input",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cinput\u003e": {
+            "Name": "\u003cinput\u003e",
+            "kind": "argument",
+            "description": "input",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cinput\u003e"
+        ]
+      },
+      "--policy-namespaces": {
+        "Name": "--policy-namespaces",
+        "kind": "subcommand",
+        "description": "Rego namespaces (default: \"users\") [$TRIVY_POLICY_NAMESPACES]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpolicyNamespaces\u003e": {
+            "Name": "\u003cpolicyNamespaces\u003e",
+            "kind": "argument",
+            "description": "policyNamespaces",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpolicyNamespaces\u003e": {
+            "Name": "\u003cpolicyNamespaces\u003e",
+            "kind": "argument",
+            "description": "policyNamespaces",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpolicyNamespaces\u003e"
+        ]
+      },
+      "--reset": {
+        "Name": "--reset",
+        "kind": "subcommand",
+        "description": "Remove all caches and database [$TRIVY_RESET]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--severity": {
+        "Name": "--severity",
+        "kind": "subcommand",
+        "description": "Severities of vulnerabilities to be displayed (comma separated) (default: \"UNKNOWN,LOW,MEDIUM,HIGH,CRITICAL\") [$TRIVY_SEVERITY]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cseverity\u003e": {
+            "Name": "\u003cseverity\u003e",
+            "kind": "argument",
+            "description": "severity",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cseverity\u003e": {
+            "Name": "\u003cseverity\u003e",
+            "kind": "argument",
+            "description": "severity",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cseverity\u003e"
+        ]
+      },
+      "--skip-dirs": {
+        "Name": "--skip-dirs",
+        "kind": "subcommand",
+        "description": "Allow insecure server connections when using SSL [$TRIVY_INSECURE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cskipDirs\u003e": {
+            "Name": "\u003cskipDirs\u003e",
+            "kind": "argument",
+            "description": "skipDirs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cskipDirs\u003e": {
+            "Name": "\u003cskipDirs\u003e",
+            "kind": "argument",
+            "description": "skipDirs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cskipDirs\u003e"
+        ]
+      },
+      "--skip-files": {
+        "Name": "--skip-files",
+        "kind": "subcommand",
+        "description": "Specify the file paths to skip traversal [$TRIVY_SKIP_FILES]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cskipFiles\u003e": {
+            "Name": "\u003cskipFiles\u003e",
+            "kind": "argument",
+            "description": "skipFiles",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cskipFiles\u003e": {
+            "Name": "\u003cskipFiles\u003e",
+            "kind": "argument",
+            "description": "skipFiles",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cskipFiles\u003e"
+        ]
+      },
+      "--skip-policy-update": {
+        "Name": "--skip-policy-update",
+        "kind": "subcommand",
+        "description": "Skip updating built-in policies [$TRIVY_SKIP_POLICY_UPDATE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--template": {
+        "Name": "--template",
+        "kind": "subcommand",
+        "description": "Output template [$TRIVY_TEMPLATE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput\u003e"
+        ]
+      },
+      "--timeout": {
+        "Name": "--timeout",
+        "kind": "subcommand",
+        "description": "Timeout (default: 5m0s) [$TRIVY_TIMEOUT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctimeout\u003e": {
+            "Name": "\u003ctimeout\u003e",
+            "kind": "argument",
+            "description": "timeout",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctimeout\u003e": {
+            "Name": "\u003ctimeout\u003e",
+            "kind": "argument",
+            "description": "timeout",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctimeout\u003e"
+        ]
+      },
+      "--trace": {
+        "Name": "--trace",
+        "kind": "subcommand",
+        "description": "Enable more verbose trace output for custom queries [$TRIVY_TRACE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "filesystem": {
+    "Name": "filesystem",
+    "kind": "subcommand",
+    "description": "Scan local filesystem for language-specific dependencies and config files",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--cache-backend": {
+        "Name": "--cache-backend",
+        "kind": "subcommand",
+        "description": "Cache backend (e.g. redis://localhost:6379) (default: \"fs\") [$TRIVY_CACHE_BACKEND]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccacheBackend\u003e": {
+            "Name": "\u003ccacheBackend\u003e",
+            "kind": "argument",
+            "description": "cacheBackend",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccacheBackend\u003e": {
+            "Name": "\u003ccacheBackend\u003e",
+            "kind": "argument",
+            "description": "cacheBackend",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccacheBackend\u003e"
+        ]
+      },
+      "--clear-cache": {
+        "Name": "--clear-cache",
+        "kind": "subcommand",
+        "description": "Clear image caches without scanning [$TRIVY_CLEAR_CACHE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--config-data": {
+        "Name": "--config-data",
+        "kind": "subcommand",
+        "description": "Specify paths from which data for the Rego policies will be recursively loaded [$TRIVY_CONFIG_DATA]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfigData\u003e": {
+            "Name": "\u003cconfigData\u003e",
+            "kind": "argument",
+            "description": "configData",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfigData\u003e": {
+            "Name": "\u003cconfigData\u003e",
+            "kind": "argument",
+            "description": "configData",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfigData\u003e"
+        ]
+      },
+      "--config-policy": {
+        "Name": "--config-policy",
+        "kind": "subcommand",
+        "description": "Specify paths to the Rego policy files directory, applying config files [$TRIVY_CONFIG_POLICY]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfigPolicy\u003e": {
+            "Name": "\u003cconfigPolicy\u003e",
+            "kind": "argument",
+            "description": "configPolicy",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfigPolicy\u003e": {
+            "Name": "\u003cconfigPolicy\u003e",
+            "kind": "argument",
+            "description": "configPolicy",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfigPolicy\u003e"
+        ]
+      },
+      "--custom-headers": {
+        "Name": "--custom-headers",
+        "kind": "subcommand",
+        "description": "Custom headers in client/server mode [$TRIVY_CUSTOM_HEADERS]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccustomHeaders\u003e": {
+            "Name": "\u003ccustomHeaders\u003e",
+            "kind": "argument",
+            "description": "customHeaders",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccustomHeaders\u003e": {
+            "Name": "\u003ccustomHeaders\u003e",
+            "kind": "argument",
+            "description": "customHeaders",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccustomHeaders\u003e"
+        ]
+      },
+      "--exit-code": {
+        "Name": "--exit-code",
+        "kind": "subcommand",
+        "description": "Exit code when vulnerabilities were found (default: 0) [$TRIVY_EXIT_CODE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cexitCode\u003e": {
+            "Name": "\u003cexitCode\u003e",
+            "kind": "argument",
+            "description": "exitCode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cexitCode\u003e": {
+            "Name": "\u003cexitCode\u003e",
+            "kind": "argument",
+            "description": "exitCode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cexitCode\u003e"
+        ]
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "subcommand",
+        "description": "Format (table, json, sarif, template) (default: \"table\") [$TRIVY_FORMAT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "--ignore-policy": {
+        "Name": "--ignore-policy",
+        "kind": "subcommand",
+        "description": "Specify the Rego file to evaluate each vulnerability [$TRIVY_IGNORE_POLICY]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cignorePolicy\u003e": {
+            "Name": "\u003cignorePolicy\u003e",
+            "kind": "argument",
+            "description": "ignorePolicy",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cignorePolicy\u003e": {
+            "Name": "\u003cignorePolicy\u003e",
+            "kind": "argument",
+            "description": "ignorePolicy",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cignorePolicy\u003e"
+        ]
+      },
+      "--ignore-unfixed": {
+        "Name": "--ignore-unfixed",
+        "kind": "subcommand",
+        "description": "Display only fixed vulnerabilities [$TRIVY_IGNORE_UNFIXED]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ignorefile": {
+        "Name": "--ignorefile",
+        "kind": "subcommand",
+        "description": "Specify .trivyignore file (default: \".trivyignore\") [$TRIVY_IGNOREFILE]]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cignorefile\u003e": {
+            "Name": "\u003cignorefile\u003e",
+            "kind": "argument",
+            "description": "ignorefile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cignorefile\u003e": {
+            "Name": "\u003cignorefile\u003e",
+            "kind": "argument",
+            "description": "ignorefile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cignorefile\u003e"
+        ]
+      },
+      "--list-all-pkgs": {
+        "Name": "--list-all-pkgs",
+        "kind": "subcommand",
+        "description": "Enabling the option will output all packages regardless of vulnerability (default: false) [$TRIVY_LIST_ALL_PKGS]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-progress": {
+        "Name": "--no-progress",
+        "kind": "subcommand",
+        "description": "Suppress progress bar [$TRIVY_NO_PROGRESS]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--offline-scan": {
+        "Name": "--offline-scan",
+        "kind": "subcommand",
+        "description": "Do not issue API requests to identify dependencies [$TRIVY_OFFLINE_SCAN]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output": {
+        "Name": "--output",
+        "kind": "subcommand",
+        "description": "Output file name [$TRIVY_OUTPUT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cinput\u003e": {
+            "Name": "\u003cinput\u003e",
+            "kind": "argument",
+            "description": "input",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cinput\u003e": {
+            "Name": "\u003cinput\u003e",
+            "kind": "argument",
+            "description": "input",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cinput\u003e"
+        ]
+      },
+      "--policy-namespaces": {
+        "Name": "--policy-namespaces",
+        "kind": "subcommand",
+        "description": "Rego namespaces (default: \"users\") [$TRIVY_POLICY_NAMESPACES]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpolicyNamespaces\u003e": {
+            "Name": "\u003cpolicyNamespaces\u003e",
+            "kind": "argument",
+            "description": "policyNamespaces",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpolicyNamespaces\u003e": {
+            "Name": "\u003cpolicyNamespaces\u003e",
+            "kind": "argument",
+            "description": "policyNamespaces",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpolicyNamespaces\u003e"
+        ]
+      },
+      "--security-checks": {
+        "Name": "--security-checks",
+        "kind": "subcommand",
+        "description": "Comma-separated list of what security issues to detect (vuln,config) (default: \"vuln\") [$TRIVY_SECURITY_CHECKS]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csecurityChecks\u003e": {
+            "Name": "\u003csecurityChecks\u003e",
+            "kind": "argument",
+            "description": "securityChecks",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csecurityChecks\u003e": {
+            "Name": "\u003csecurityChecks\u003e",
+            "kind": "argument",
+            "description": "securityChecks",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csecurityChecks\u003e"
+        ]
+      },
+      "--server": {
+        "Name": "--server",
+        "kind": "subcommand",
+        "description": "Server address [$TRIVY_SERVER]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cserver\u003e": {
+            "Name": "\u003cserver\u003e",
+            "kind": "argument",
+            "description": "server",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cserver\u003e": {
+            "Name": "\u003cserver\u003e",
+            "kind": "argument",
+            "description": "server",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cserver\u003e"
+        ]
+      },
+      "--severity": {
+        "Name": "--severity",
+        "kind": "subcommand",
+        "description": "Severities of vulnerabilities to be displayed (comma separated) (default: \"UNKNOWN,LOW,MEDIUM,HIGH,CRITICAL\") [$TRIVY_SEVERITY]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cseverity\u003e": {
+            "Name": "\u003cseverity\u003e",
+            "kind": "argument",
+            "description": "severity",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cseverity\u003e": {
+            "Name": "\u003cseverity\u003e",
+            "kind": "argument",
+            "description": "severity",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cseverity\u003e"
+        ]
+      },
+      "--skip-db-update": {
+        "Name": "--skip-db-update",
+        "kind": "subcommand",
+        "description": "Skip updating vulnerability database [$TRIVY_SKIP_UPDATE, $TRIVY_SKIP_DB_UPDATE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--skip-dirs": {
+        "Name": "--skip-dirs",
+        "kind": "subcommand",
+        "description": "Allow insecure server connections when using SSL [$TRIVY_INSECURE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cskipDirs\u003e": {
+            "Name": "\u003cskipDirs\u003e",
+            "kind": "argument",
+            "description": "skipDirs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cskipDirs\u003e": {
+            "Name": "\u003cskipDirs\u003e",
+            "kind": "argument",
+            "description": "skipDirs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cskipDirs\u003e"
+        ]
+      },
+      "--skip-files": {
+        "Name": "--skip-files",
+        "kind": "subcommand",
+        "description": "Specify the file paths to skip traversal [$TRIVY_SKIP_FILES]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cskipFiles\u003e": {
+            "Name": "\u003cskipFiles\u003e",
+            "kind": "argument",
+            "description": "skipFiles",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cskipFiles\u003e": {
+            "Name": "\u003cskipFiles\u003e",
+            "kind": "argument",
+            "description": "skipFiles",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cskipFiles\u003e"
+        ]
+      },
+      "--skip-policy-update": {
+        "Name": "--skip-policy-update",
+        "kind": "subcommand",
+        "description": "Skip updating built-in policies [$TRIVY_SKIP_POLICY_UPDATE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--template": {
+        "Name": "--template",
+        "kind": "subcommand",
+        "description": "Output template [$TRIVY_TEMPLATE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput\u003e"
+        ]
+      },
+      "--timeout": {
+        "Name": "--timeout",
+        "kind": "subcommand",
+        "description": "Timeout (default: 5m0s) [$TRIVY_TIMEOUT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctimeout\u003e": {
+            "Name": "\u003ctimeout\u003e",
+            "kind": "argument",
+            "description": "timeout",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctimeout\u003e": {
+            "Name": "\u003ctimeout\u003e",
+            "kind": "argument",
+            "description": "timeout",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctimeout\u003e"
+        ]
+      },
+      "--token": {
+        "Name": "--token",
+        "kind": "subcommand",
+        "description": "For authentication in client/server mode [$TRIVY_TOKEN]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctoken\u003e"
+        ]
+      },
+      "--token-header": {
+        "Name": "--token-header",
+        "kind": "subcommand",
+        "description": "Specify a header name for token in client/server mode (default: \"Trivy-Token\") [$TRIVY_TOKEN_HEADER]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctokenHeader\u003e": {
+            "Name": "\u003ctokenHeader\u003e",
+            "kind": "argument",
+            "description": "tokenHeader",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctokenHeader\u003e": {
+            "Name": "\u003ctokenHeader\u003e",
+            "kind": "argument",
+            "description": "tokenHeader",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctokenHeader\u003e"
+        ]
+      },
+      "--vuln-type": {
+        "Name": "--vuln-type",
+        "kind": "subcommand",
+        "description": "Comma-separated list of vulnerability types (os,library) (default: \"os,library\") [$TRIVY_VULN_TYPE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cvulnType\u003e": {
+            "Name": "\u003cvulnType\u003e",
+            "kind": "argument",
+            "description": "vulnType",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cvulnType\u003e": {
+            "Name": "\u003cvulnType\u003e",
+            "kind": "argument",
+            "description": "vulnType",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cvulnType\u003e"
+        ]
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Shows a list of commands or help for one command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "image": {
+    "Name": "image",
+    "kind": "subcommand",
+    "description": "Scan an image",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--cache-backend": {
+        "Name": "--cache-backend",
+        "kind": "subcommand",
+        "description": "Cache backend (e.g. redis://localhost:6379) (default: \"fs\") [$TRIVY_CACHE_BACKEND]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccacheBackend\u003e": {
+            "Name": "\u003ccacheBackend\u003e",
+            "kind": "argument",
+            "description": "cacheBackend",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccacheBackend\u003e": {
+            "Name": "\u003ccacheBackend\u003e",
+            "kind": "argument",
+            "description": "cacheBackend",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccacheBackend\u003e"
+        ]
+      },
+      "--clear-cache": {
+        "Name": "--clear-cache",
+        "kind": "subcommand",
+        "description": "Clear image caches without scanning [$TRIVY_CLEAR_CACHE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--download-db-only": {
+        "Name": "--download-db-only",
+        "kind": "subcommand",
+        "description": "Download/update vulnerability database but don't run a scan [$TRIVY_DOWNLOAD_DB_ONLY]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exit-code": {
+        "Name": "--exit-code",
+        "kind": "subcommand",
+        "description": "Exit code when vulnerabilities were found (default: 0) [$TRIVY_EXIT_CODE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cexitCode\u003e": {
+            "Name": "\u003cexitCode\u003e",
+            "kind": "argument",
+            "description": "exitCode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cexitCode\u003e": {
+            "Name": "\u003cexitCode\u003e",
+            "kind": "argument",
+            "description": "exitCode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cexitCode\u003e"
+        ]
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "subcommand",
+        "description": "Format (table, json, sarif, template) (default: \"table\") [$TRIVY_FORMAT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "--ignore-policy": {
+        "Name": "--ignore-policy",
+        "kind": "subcommand",
+        "description": "Specify the Rego file to evaluate each vulnerability [$TRIVY_IGNORE_POLICY]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cignorePolicy\u003e": {
+            "Name": "\u003cignorePolicy\u003e",
+            "kind": "argument",
+            "description": "ignorePolicy",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cignorePolicy\u003e": {
+            "Name": "\u003cignorePolicy\u003e",
+            "kind": "argument",
+            "description": "ignorePolicy",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cignorePolicy\u003e"
+        ]
+      },
+      "--ignore-unfixed": {
+        "Name": "--ignore-unfixed",
+        "kind": "subcommand",
+        "description": "Display only fixed vulnerabilities [$TRIVY_IGNORE_UNFIXED]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ignorefile": {
+        "Name": "--ignorefile",
+        "kind": "subcommand",
+        "description": "Specify .trivyignore file (default: \".trivyignore\") [$TRIVY_IGNOREFILE]]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cignorefile\u003e": {
+            "Name": "\u003cignorefile\u003e",
+            "kind": "argument",
+            "description": "ignorefile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cignorefile\u003e": {
+            "Name": "\u003cignorefile\u003e",
+            "kind": "argument",
+            "description": "ignorefile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cignorefile\u003e"
+        ]
+      },
+      "--input": {
+        "Name": "--input",
+        "kind": "subcommand",
+        "description": "Input file path instead of image name [$TRIVY_INPUT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cinput\u003e": {
+            "Name": "\u003cinput\u003e",
+            "kind": "argument",
+            "description": "input",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cinput\u003e": {
+            "Name": "\u003cinput\u003e",
+            "kind": "argument",
+            "description": "input",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cinput\u003e"
+        ]
+      },
+      "--insecure": {
+        "Name": "--insecure",
+        "kind": "subcommand",
+        "description": "Allow insecure server connections when using SSL [$TRIVY_INSECURE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--light": {
+        "Name": "--light",
+        "kind": "subcommand",
+        "description": "Deprecated [$TRIVY_LIGHT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--list-all-pkgs": {
+        "Name": "--list-all-pkgs",
+        "kind": "subcommand",
+        "description": "Enabling the option will output all packages regardless of vulnerability (default: false) [$TRIVY_LIST_ALL_PKGS]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-progress": {
+        "Name": "--no-progress",
+        "kind": "subcommand",
+        "description": "Suppress progress bar [$TRIVY_NO_PROGRESS]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--offline-scan": {
+        "Name": "--offline-scan",
+        "kind": "subcommand",
+        "description": "Do not issue API requests to identify dependencies [$TRIVY_OFFLINE_SCAN]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output": {
+        "Name": "--output",
+        "kind": "subcommand",
+        "description": "Output file name [$TRIVY_OUTPUT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cinput\u003e": {
+            "Name": "\u003cinput\u003e",
+            "kind": "argument",
+            "description": "input",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cinput\u003e": {
+            "Name": "\u003cinput\u003e",
+            "kind": "argument",
+            "description": "input",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cinput\u003e"
+        ]
+      },
+      "--removed-pkgs": {
+        "Name": "--removed-pkgs",
+        "kind": "subcommand",
+        "description": "Detect vulnerabilities of removed packages (default: false) [$TRIVY_REMOVED_PKGS]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--reset": {
+        "Name": "--reset",
+        "kind": "subcommand",
+        "description": "Remove all caches and database [$TRIVY_RESET]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--security-checks": {
+        "Name": "--security-checks",
+        "kind": "subcommand",
+        "description": "Comma-separated list of what security issues to detect (vuln,config) (default: \"vuln\") [$TRIVY_SECURITY_CHECKS]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csecurityChecks\u003e": {
+            "Name": "\u003csecurityChecks\u003e",
+            "kind": "argument",
+            "description": "securityChecks",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csecurityChecks\u003e": {
+            "Name": "\u003csecurityChecks\u003e",
+            "kind": "argument",
+            "description": "securityChecks",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csecurityChecks\u003e"
+        ]
+      },
+      "--severity": {
+        "Name": "--severity",
+        "kind": "subcommand",
+        "description": "Severities of vulnerabilities to be displayed (comma separated) (default: \"UNKNOWN,LOW,MEDIUM,HIGH,CRITICAL\") [$TRIVY_SEVERITY]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cseverity\u003e": {
+            "Name": "\u003cseverity\u003e",
+            "kind": "argument",
+            "description": "severity",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cseverity\u003e": {
+            "Name": "\u003cseverity\u003e",
+            "kind": "argument",
+            "description": "severity",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cseverity\u003e"
+        ]
+      },
+      "--skip-db-update": {
+        "Name": "--skip-db-update",
+        "kind": "subcommand",
+        "description": "Skip updating vulnerability database [$TRIVY_SKIP_UPDATE, $TRIVY_SKIP_DB_UPDATE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--skip-dirs": {
+        "Name": "--skip-dirs",
+        "kind": "subcommand",
+        "description": "Allow insecure server connections when using SSL [$TRIVY_INSECURE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cskipDirs\u003e": {
+            "Name": "\u003cskipDirs\u003e",
+            "kind": "argument",
+            "description": "skipDirs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cskipDirs\u003e": {
+            "Name": "\u003cskipDirs\u003e",
+            "kind": "argument",
+            "description": "skipDirs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cskipDirs\u003e"
+        ]
+      },
+      "--skip-files": {
+        "Name": "--skip-files",
+        "kind": "subcommand",
+        "description": "Specify the file paths to skip traversal [$TRIVY_SKIP_FILES]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cskipFiles\u003e": {
+            "Name": "\u003cskipFiles\u003e",
+            "kind": "argument",
+            "description": "skipFiles",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cskipFiles\u003e": {
+            "Name": "\u003cskipFiles\u003e",
+            "kind": "argument",
+            "description": "skipFiles",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cskipFiles\u003e"
+        ]
+      },
+      "--template": {
+        "Name": "--template",
+        "kind": "subcommand",
+        "description": "Output template [$TRIVY_TEMPLATE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput\u003e"
+        ]
+      },
+      "--timeout": {
+        "Name": "--timeout",
+        "kind": "subcommand",
+        "description": "Timeout (default: 5m0s) [$TRIVY_TIMEOUT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctimeout\u003e": {
+            "Name": "\u003ctimeout\u003e",
+            "kind": "argument",
+            "description": "timeout",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctimeout\u003e": {
+            "Name": "\u003ctimeout\u003e",
+            "kind": "argument",
+            "description": "timeout",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctimeout\u003e"
+        ]
+      },
+      "--vuln-type": {
+        "Name": "--vuln-type",
+        "kind": "subcommand",
+        "description": "Comma-separated list of vulnerability types (os,library) (default: \"os,library\") [$TRIVY_VULN_TYPE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cvulnType\u003e": {
+            "Name": "\u003cvulnType\u003e",
+            "kind": "argument",
+            "description": "vulnType",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cvulnType\u003e": {
+            "Name": "\u003cvulnType\u003e",
+            "kind": "argument",
+            "description": "vulnType",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cvulnType\u003e"
+        ]
+      },
+      "\u003cimage_name\u003e": {
+        "Name": "\u003cimage_name\u003e",
+        "kind": "argument",
+        "description": "image_name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cimage_name\u003e": {
+        "Name": "\u003cimage_name\u003e",
+        "kind": "argument",
+        "description": "image_name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cimage_name\u003e"
+    ]
+  },
+  "plugin": {
+    "Name": "plugin",
+    "kind": "subcommand",
+    "description": "Manage plugins",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "help": {
+        "Name": "help",
+        "kind": "subcommand",
+        "description": "Shows a list of commands or help for one command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "info": {
+        "Name": "info",
+        "kind": "subcommand",
+        "description": "Information about a plugin",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cplugin\u003e": {
+            "Name": "\u003cplugin\u003e",
+            "kind": "argument",
+            "description": "plugin",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cplugin\u003e": {
+            "Name": "\u003cplugin\u003e",
+            "kind": "argument",
+            "description": "plugin",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cplugin\u003e"
+        ]
+      },
+      "install": {
+        "Name": "install",
+        "kind": "subcommand",
+        "description": "Install a plugin",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cplugin\u003e": {
+            "Name": "\u003cplugin\u003e",
+            "kind": "argument",
+            "description": "plugin",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cplugin\u003e": {
+            "Name": "\u003cplugin\u003e",
+            "kind": "argument",
+            "description": "plugin",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cplugin\u003e"
+        ]
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List installed plugin",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "run": {
+        "Name": "run",
+        "kind": "subcommand",
+        "description": "Run a plugin on the fly",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cplugin\u003e": {
+            "Name": "\u003cplugin\u003e",
+            "kind": "argument",
+            "description": "plugin",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cplugin\u003e": {
+            "Name": "\u003cplugin\u003e",
+            "kind": "argument",
+            "description": "plugin",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cplugin\u003e"
+        ]
+      },
+      "uninstall": {
+        "Name": "uninstall",
+        "kind": "subcommand",
+        "description": "Uninstall plugin",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cplugin\u003e": {
+            "Name": "\u003cplugin\u003e",
+            "kind": "argument",
+            "description": "plugin",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cplugin\u003e": {
+            "Name": "\u003cplugin\u003e",
+            "kind": "argument",
+            "description": "plugin",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cplugin\u003e"
+        ]
+      },
+      "update": {
+        "Name": "update",
+        "kind": "subcommand",
+        "description": "Update an existing plugin",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cplugin\u003e": {
+            "Name": "\u003cplugin\u003e",
+            "kind": "argument",
+            "description": "plugin",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cplugin\u003e": {
+            "Name": "\u003cplugin\u003e",
+            "kind": "argument",
+            "description": "plugin",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cplugin\u003e"
+        ]
+      }
+    }
+  },
+  "repository": {
+    "Name": "repository",
+    "kind": "subcommand",
+    "description": "Scan remote repository",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--cache-backend": {
+        "Name": "--cache-backend",
+        "kind": "subcommand",
+        "description": "Cache backend (e.g. redis://localhost:6379) (default: \"fs\") [$TRIVY_CACHE_BACKEND]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccacheBackend\u003e": {
+            "Name": "\u003ccacheBackend\u003e",
+            "kind": "argument",
+            "description": "cacheBackend",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccacheBackend\u003e": {
+            "Name": "\u003ccacheBackend\u003e",
+            "kind": "argument",
+            "description": "cacheBackend",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccacheBackend\u003e"
+        ]
+      },
+      "--clear-cache": {
+        "Name": "--clear-cache",
+        "kind": "subcommand",
+        "description": "Clear image caches without scanning [$TRIVY_CLEAR_CACHE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exit-code": {
+        "Name": "--exit-code",
+        "kind": "subcommand",
+        "description": "Exit code when vulnerabilities were found (default: 0) [$TRIVY_EXIT_CODE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cexitCode\u003e": {
+            "Name": "\u003cexitCode\u003e",
+            "kind": "argument",
+            "description": "exitCode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cexitCode\u003e": {
+            "Name": "\u003cexitCode\u003e",
+            "kind": "argument",
+            "description": "exitCode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cexitCode\u003e"
+        ]
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "subcommand",
+        "description": "Format (table, json, sarif, template) (default: \"table\") [$TRIVY_FORMAT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "--ignore-policy": {
+        "Name": "--ignore-policy",
+        "kind": "subcommand",
+        "description": "Specify the Rego file to evaluate each vulnerability [$TRIVY_IGNORE_POLICY]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cignorePolicy\u003e": {
+            "Name": "\u003cignorePolicy\u003e",
+            "kind": "argument",
+            "description": "ignorePolicy",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cignorePolicy\u003e": {
+            "Name": "\u003cignorePolicy\u003e",
+            "kind": "argument",
+            "description": "ignorePolicy",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cignorePolicy\u003e"
+        ]
+      },
+      "--ignore-unfixed": {
+        "Name": "--ignore-unfixed",
+        "kind": "subcommand",
+        "description": "Display only fixed vulnerabilities [$TRIVY_IGNORE_UNFIXED]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ignorefile": {
+        "Name": "--ignorefile",
+        "kind": "subcommand",
+        "description": "Specify .trivyignore file (default: \".trivyignore\") [$TRIVY_IGNOREFILE]]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cignorefile\u003e": {
+            "Name": "\u003cignorefile\u003e",
+            "kind": "argument",
+            "description": "ignorefile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cignorefile\u003e": {
+            "Name": "\u003cignorefile\u003e",
+            "kind": "argument",
+            "description": "ignorefile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cignorefile\u003e"
+        ]
+      },
+      "--input": {
+        "Name": "--input",
+        "kind": "subcommand",
+        "description": "Input file path instead of image name [$TRIVY_INPUT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cinput\u003e": {
+            "Name": "\u003cinput\u003e",
+            "kind": "argument",
+            "description": "input",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cinput\u003e": {
+            "Name": "\u003cinput\u003e",
+            "kind": "argument",
+            "description": "input",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cinput\u003e"
+        ]
+      },
+      "--insecure": {
+        "Name": "--insecure",
+        "kind": "subcommand",
+        "description": "Allow insecure server connections when using SSL [$TRIVY_INSECURE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--list-all-pkgs": {
+        "Name": "--list-all-pkgs",
+        "kind": "subcommand",
+        "description": "Enabling the option will output all packages regardless of vulnerability (default: false) [$TRIVY_LIST_ALL_PKGS]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-progress": {
+        "Name": "--no-progress",
+        "kind": "subcommand",
+        "description": "Suppress progress bar [$TRIVY_NO_PROGRESS]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--offline-scan": {
+        "Name": "--offline-scan",
+        "kind": "subcommand",
+        "description": "Do not issue API requests to identify dependencies [$TRIVY_OFFLINE_SCAN]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output": {
+        "Name": "--output",
+        "kind": "subcommand",
+        "description": "Output file name [$TRIVY_OUTPUT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cinput\u003e": {
+            "Name": "\u003cinput\u003e",
+            "kind": "argument",
+            "description": "input",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cinput\u003e": {
+            "Name": "\u003cinput\u003e",
+            "kind": "argument",
+            "description": "input",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cinput\u003e"
+        ]
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "subcommand",
+        "description": "Suppress progress bar and log output [$TRIVY_QUIET]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--removed-pkgs": {
+        "Name": "--removed-pkgs",
+        "kind": "subcommand",
+        "description": "Detect vulnerabilities of removed packages (default: false) [$TRIVY_REMOVED_PKGS]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--security-checks": {
+        "Name": "--security-checks",
+        "kind": "subcommand",
+        "description": "Comma-separated list of what security issues to detect (vuln,config) (default: \"vuln\") [$TRIVY_SECURITY_CHECKS]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csecurityChecks\u003e": {
+            "Name": "\u003csecurityChecks\u003e",
+            "kind": "argument",
+            "description": "securityChecks",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csecurityChecks\u003e": {
+            "Name": "\u003csecurityChecks\u003e",
+            "kind": "argument",
+            "description": "securityChecks",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csecurityChecks\u003e"
+        ]
+      },
+      "--severity": {
+        "Name": "--severity",
+        "kind": "subcommand",
+        "description": "Severities of vulnerabilities to be displayed (comma separated) (default: \"UNKNOWN,LOW,MEDIUM,HIGH,CRITICAL\") [$TRIVY_SEVERITY]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cseverity\u003e": {
+            "Name": "\u003cseverity\u003e",
+            "kind": "argument",
+            "description": "severity",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cseverity\u003e": {
+            "Name": "\u003cseverity\u003e",
+            "kind": "argument",
+            "description": "severity",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cseverity\u003e"
+        ]
+      },
+      "--skip-db-update": {
+        "Name": "--skip-db-update",
+        "kind": "subcommand",
+        "description": "Skip updating vulnerability database [$TRIVY_SKIP_UPDATE, $TRIVY_SKIP_DB_UPDATE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--skip-dirs": {
+        "Name": "--skip-dirs",
+        "kind": "subcommand",
+        "description": "Allow insecure server connections when using SSL [$TRIVY_INSECURE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cskipDirs\u003e": {
+            "Name": "\u003cskipDirs\u003e",
+            "kind": "argument",
+            "description": "skipDirs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cskipDirs\u003e": {
+            "Name": "\u003cskipDirs\u003e",
+            "kind": "argument",
+            "description": "skipDirs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cskipDirs\u003e"
+        ]
+      },
+      "--skip-files": {
+        "Name": "--skip-files",
+        "kind": "subcommand",
+        "description": "Specify the file paths to skip traversal [$TRIVY_SKIP_FILES]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cskipFiles\u003e": {
+            "Name": "\u003cskipFiles\u003e",
+            "kind": "argument",
+            "description": "skipFiles",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cskipFiles\u003e": {
+            "Name": "\u003cskipFiles\u003e",
+            "kind": "argument",
+            "description": "skipFiles",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cskipFiles\u003e"
+        ]
+      },
+      "--skip-policy-update": {
+        "Name": "--skip-policy-update",
+        "kind": "subcommand",
+        "description": "Skip updating built-in policies [$TRIVY_SKIP_POLICY_UPDATE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--template": {
+        "Name": "--template",
+        "kind": "subcommand",
+        "description": "Output template [$TRIVY_TEMPLATE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput\u003e"
+        ]
+      },
+      "--timeout": {
+        "Name": "--timeout",
+        "kind": "subcommand",
+        "description": "Timeout (default: 5m0s) [$TRIVY_TIMEOUT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctimeout\u003e": {
+            "Name": "\u003ctimeout\u003e",
+            "kind": "argument",
+            "description": "timeout",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctimeout\u003e": {
+            "Name": "\u003ctimeout\u003e",
+            "kind": "argument",
+            "description": "timeout",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctimeout\u003e"
+        ]
+      },
+      "--vuln-type": {
+        "Name": "--vuln-type",
+        "kind": "subcommand",
+        "description": "Comma-separated list of vulnerability types (os,library) (default: \"os,library\") [$TRIVY_VULN_TYPE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cvulnType\u003e": {
+            "Name": "\u003cvulnType\u003e",
+            "kind": "argument",
+            "description": "vulnType",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cvulnType\u003e": {
+            "Name": "\u003cvulnType\u003e",
+            "kind": "argument",
+            "description": "vulnType",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cvulnType\u003e"
+        ]
+      }
+    }
+  },
+  "rootfs": {
+    "Name": "rootfs",
+    "kind": "subcommand",
+    "description": "Scan rootfs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--cache-backend": {
+        "Name": "--cache-backend",
+        "kind": "subcommand",
+        "description": "Cache backend (e.g. redis://localhost:6379) (default: \"fs\") [$TRIVY_CACHE_BACKEND]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccacheBackend\u003e": {
+            "Name": "\u003ccacheBackend\u003e",
+            "kind": "argument",
+            "description": "cacheBackend",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccacheBackend\u003e": {
+            "Name": "\u003ccacheBackend\u003e",
+            "kind": "argument",
+            "description": "cacheBackend",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccacheBackend\u003e"
+        ]
+      },
+      "--clear-cache": {
+        "Name": "--clear-cache",
+        "kind": "subcommand",
+        "description": "Clear image caches without scanning [$TRIVY_CLEAR_CACHE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--config-data": {
+        "Name": "--config-data",
+        "kind": "subcommand",
+        "description": "Specify paths from which data for the Rego policies will be recursively loaded [$TRIVY_CONFIG_DATA]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfigData\u003e": {
+            "Name": "\u003cconfigData\u003e",
+            "kind": "argument",
+            "description": "configData",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfigData\u003e": {
+            "Name": "\u003cconfigData\u003e",
+            "kind": "argument",
+            "description": "configData",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfigData\u003e"
+        ]
+      },
+      "--config-policy": {
+        "Name": "--config-policy",
+        "kind": "subcommand",
+        "description": "Specify paths to the Rego policy files directory, applying config files [$TRIVY_CONFIG_POLICY]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cconfigPolicy\u003e": {
+            "Name": "\u003cconfigPolicy\u003e",
+            "kind": "argument",
+            "description": "configPolicy",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cconfigPolicy\u003e": {
+            "Name": "\u003cconfigPolicy\u003e",
+            "kind": "argument",
+            "description": "configPolicy",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cconfigPolicy\u003e"
+        ]
+      },
+      "--exit-code": {
+        "Name": "--exit-code",
+        "kind": "subcommand",
+        "description": "Exit code when vulnerabilities were found (default: 0) [$TRIVY_EXIT_CODE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cexitCode\u003e": {
+            "Name": "\u003cexitCode\u003e",
+            "kind": "argument",
+            "description": "exitCode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cexitCode\u003e": {
+            "Name": "\u003cexitCode\u003e",
+            "kind": "argument",
+            "description": "exitCode",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cexitCode\u003e"
+        ]
+      },
+      "--format": {
+        "Name": "--format",
+        "kind": "subcommand",
+        "description": "Format (table, json, sarif, template) (default: \"table\") [$TRIVY_FORMAT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "--ignore-policy": {
+        "Name": "--ignore-policy",
+        "kind": "subcommand",
+        "description": "Specify the Rego file to evaluate each vulnerability [$TRIVY_IGNORE_POLICY]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cignorePolicy\u003e": {
+            "Name": "\u003cignorePolicy\u003e",
+            "kind": "argument",
+            "description": "ignorePolicy",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cignorePolicy\u003e": {
+            "Name": "\u003cignorePolicy\u003e",
+            "kind": "argument",
+            "description": "ignorePolicy",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cignorePolicy\u003e"
+        ]
+      },
+      "--ignorefile": {
+        "Name": "--ignorefile",
+        "kind": "subcommand",
+        "description": "Specify .trivyignore file (default: \".trivyignore\") [$TRIVY_IGNOREFILE]]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cignorefile\u003e": {
+            "Name": "\u003cignorefile\u003e",
+            "kind": "argument",
+            "description": "ignorefile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cignorefile\u003e": {
+            "Name": "\u003cignorefile\u003e",
+            "kind": "argument",
+            "description": "ignorefile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cignorefile\u003e"
+        ]
+      },
+      "--list-all-pkgs": {
+        "Name": "--list-all-pkgs",
+        "kind": "subcommand",
+        "description": "Enabling the option will output all packages regardless of vulnerability (default: false) [$TRIVY_LIST_ALL_PKGS]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-progress": {
+        "Name": "--no-progress",
+        "kind": "subcommand",
+        "description": "Suppress progress bar [$TRIVY_NO_PROGRESS]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--offline-scan": {
+        "Name": "--offline-scan",
+        "kind": "subcommand",
+        "description": "Do not issue API requests to identify dependencies [$TRIVY_OFFLINE_SCAN]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output": {
+        "Name": "--output",
+        "kind": "subcommand",
+        "description": "Output file name [$TRIVY_OUTPUT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cinput\u003e": {
+            "Name": "\u003cinput\u003e",
+            "kind": "argument",
+            "description": "input",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cinput\u003e": {
+            "Name": "\u003cinput\u003e",
+            "kind": "argument",
+            "description": "input",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cinput\u003e"
+        ]
+      },
+      "--policy-namespaces": {
+        "Name": "--policy-namespaces",
+        "kind": "subcommand",
+        "description": "Rego namespaces (default: \"users\") [$TRIVY_POLICY_NAMESPACES]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpolicyNamespaces\u003e": {
+            "Name": "\u003cpolicyNamespaces\u003e",
+            "kind": "argument",
+            "description": "policyNamespaces",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpolicyNamespaces\u003e": {
+            "Name": "\u003cpolicyNamespaces\u003e",
+            "kind": "argument",
+            "description": "policyNamespaces",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpolicyNamespaces\u003e"
+        ]
+      },
+      "--security-checks": {
+        "Name": "--security-checks",
+        "kind": "subcommand",
+        "description": "Comma-separated list of what security issues to detect (vuln,config) (default: \"vuln\") [$TRIVY_SECURITY_CHECKS]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csecurityChecks\u003e": {
+            "Name": "\u003csecurityChecks\u003e",
+            "kind": "argument",
+            "description": "securityChecks",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csecurityChecks\u003e": {
+            "Name": "\u003csecurityChecks\u003e",
+            "kind": "argument",
+            "description": "securityChecks",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csecurityChecks\u003e"
+        ]
+      },
+      "--severity": {
+        "Name": "--severity",
+        "kind": "subcommand",
+        "description": "Severities of vulnerabilities to be displayed (comma separated) (default: \"UNKNOWN,LOW,MEDIUM,HIGH,CRITICAL\") [$TRIVY_SEVERITY]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cseverity\u003e": {
+            "Name": "\u003cseverity\u003e",
+            "kind": "argument",
+            "description": "severity",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cseverity\u003e": {
+            "Name": "\u003cseverity\u003e",
+            "kind": "argument",
+            "description": "severity",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cseverity\u003e"
+        ]
+      },
+      "--skip-db-update": {
+        "Name": "--skip-db-update",
+        "kind": "subcommand",
+        "description": "Skip updating vulnerability database [$TRIVY_SKIP_UPDATE, $TRIVY_SKIP_DB_UPDATE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--skip-dirs": {
+        "Name": "--skip-dirs",
+        "kind": "subcommand",
+        "description": "Allow insecure server connections when using SSL [$TRIVY_INSECURE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cskipDirs\u003e": {
+            "Name": "\u003cskipDirs\u003e",
+            "kind": "argument",
+            "description": "skipDirs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cskipDirs\u003e": {
+            "Name": "\u003cskipDirs\u003e",
+            "kind": "argument",
+            "description": "skipDirs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cskipDirs\u003e"
+        ]
+      },
+      "--skip-files": {
+        "Name": "--skip-files",
+        "kind": "subcommand",
+        "description": "Specify the file paths to skip traversal [$TRIVY_SKIP_FILES]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cskipFiles\u003e": {
+            "Name": "\u003cskipFiles\u003e",
+            "kind": "argument",
+            "description": "skipFiles",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cskipFiles\u003e": {
+            "Name": "\u003cskipFiles\u003e",
+            "kind": "argument",
+            "description": "skipFiles",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cskipFiles\u003e"
+        ]
+      },
+      "--skip-policy-update": {
+        "Name": "--skip-policy-update",
+        "kind": "subcommand",
+        "description": "Skip updating built-in policies [$TRIVY_SKIP_POLICY_UPDATE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--template": {
+        "Name": "--template",
+        "kind": "subcommand",
+        "description": "Output template [$TRIVY_TEMPLATE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003coutput\u003e": {
+            "Name": "\u003coutput\u003e",
+            "kind": "argument",
+            "description": "output",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003coutput\u003e"
+        ]
+      },
+      "--timeout": {
+        "Name": "--timeout",
+        "kind": "subcommand",
+        "description": "Timeout (default: 5m0s) [$TRIVY_TIMEOUT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctimeout\u003e": {
+            "Name": "\u003ctimeout\u003e",
+            "kind": "argument",
+            "description": "timeout",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctimeout\u003e": {
+            "Name": "\u003ctimeout\u003e",
+            "kind": "argument",
+            "description": "timeout",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctimeout\u003e"
+        ]
+      },
+      "--vuln-type": {
+        "Name": "--vuln-type",
+        "kind": "subcommand",
+        "description": "Comma-separated list of vulnerability types (os,library) (default: \"os,library\") [$TRIVY_VULN_TYPE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cvulnType\u003e": {
+            "Name": "\u003cvulnType\u003e",
+            "kind": "argument",
+            "description": "vulnType",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cvulnType\u003e": {
+            "Name": "\u003cvulnType\u003e",
+            "kind": "argument",
+            "description": "vulnType",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cvulnType\u003e"
+        ]
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "sbom": {
+    "Name": "sbom",
+    "kind": "subcommand",
+    "description": "Generate SBOM for an artifact",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--artifact-type": {
+        "Name": "--artifact-type",
+        "kind": "subcommand",
+        "description": "Input artifact type (image, fs, repo, archive) (default: \"image\") [$TRIVY_ARTIFACT_TYPE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cartifactType\u003e": {
+            "Name": "\u003cartifactType\u003e",
+            "kind": "argument",
+            "description": "artifactType",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cartifactType\u003e": {
+            "Name": "\u003cartifactType\u003e",
+            "kind": "argument",
+            "description": "artifactType",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cartifactType\u003e"
+        ]
+      },
+      "--clear-cache": {
+        "Name": "--clear-cache",
+        "kind": "subcommand",
+        "description": "Clear image caches without scanning [$TRIVY_CLEAR_CACHE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--ignorefile": {
+        "Name": "--ignorefile",
+        "kind": "subcommand",
+        "description": "Specify .trivyignore file (default: \".trivyignore\") [$TRIVY_IGNOREFILE]]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cignorefile\u003e": {
+            "Name": "\u003cignorefile\u003e",
+            "kind": "argument",
+            "description": "ignorefile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cignorefile\u003e": {
+            "Name": "\u003cignorefile\u003e",
+            "kind": "argument",
+            "description": "ignorefile",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cignorefile\u003e"
+        ]
+      },
+      "--offline-scan": {
+        "Name": "--offline-scan",
+        "kind": "subcommand",
+        "description": "Do not issue API requests to identify dependencies [$TRIVY_OFFLINE_SCAN]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--output": {
+        "Name": "--output",
+        "kind": "subcommand",
+        "description": "Output file name [$TRIVY_OUTPUT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cinput\u003e": {
+            "Name": "\u003cinput\u003e",
+            "kind": "argument",
+            "description": "input",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cinput\u003e": {
+            "Name": "\u003cinput\u003e",
+            "kind": "argument",
+            "description": "input",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cinput\u003e"
+        ]
+      },
+      "--sbom-format": {
+        "Name": "--sbom-format",
+        "kind": "subcommand",
+        "description": "SBOM format (cyclonedx) (default: \"cyclonedx\") [$TRIVY_SBOM_FORMAT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csbomFormat\u003e": {
+            "Name": "\u003csbomFormat\u003e",
+            "kind": "argument",
+            "description": "sbomFormat",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csbomFormat\u003e": {
+            "Name": "\u003csbomFormat\u003e",
+            "kind": "argument",
+            "description": "sbomFormat",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csbomFormat\u003e"
+        ]
+      },
+      "--severity": {
+        "Name": "--severity",
+        "kind": "subcommand",
+        "description": "Severities of vulnerabilities to be displayed (comma separated) (default: \"UNKNOWN,LOW,MEDIUM,HIGH,CRITICAL\") [$TRIVY_SEVERITY]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cseverity\u003e": {
+            "Name": "\u003cseverity\u003e",
+            "kind": "argument",
+            "description": "severity",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cseverity\u003e": {
+            "Name": "\u003cseverity\u003e",
+            "kind": "argument",
+            "description": "severity",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cseverity\u003e"
+        ]
+      },
+      "--skip-dirs": {
+        "Name": "--skip-dirs",
+        "kind": "subcommand",
+        "description": "Allow insecure server connections when using SSL [$TRIVY_INSECURE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cskipDirs\u003e": {
+            "Name": "\u003cskipDirs\u003e",
+            "kind": "argument",
+            "description": "skipDirs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cskipDirs\u003e": {
+            "Name": "\u003cskipDirs\u003e",
+            "kind": "argument",
+            "description": "skipDirs",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cskipDirs\u003e"
+        ]
+      },
+      "--skip-files": {
+        "Name": "--skip-files",
+        "kind": "subcommand",
+        "description": "Specify the file paths to skip traversal [$TRIVY_SKIP_FILES]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cskipFiles\u003e": {
+            "Name": "\u003cskipFiles\u003e",
+            "kind": "argument",
+            "description": "skipFiles",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cskipFiles\u003e": {
+            "Name": "\u003cskipFiles\u003e",
+            "kind": "argument",
+            "description": "skipFiles",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cskipFiles\u003e"
+        ]
+      },
+      "--timeout": {
+        "Name": "--timeout",
+        "kind": "subcommand",
+        "description": "Timeout (default: 5m0s) [$TRIVY_TIMEOUT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctimeout\u003e": {
+            "Name": "\u003ctimeout\u003e",
+            "kind": "argument",
+            "description": "timeout",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctimeout\u003e": {
+            "Name": "\u003ctimeout\u003e",
+            "kind": "argument",
+            "description": "timeout",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctimeout\u003e"
+        ]
+      }
+    }
+  },
+  "server": {
+    "Name": "server",
+    "kind": "subcommand",
+    "description": "Server mode",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--cache-backend": {
+        "Name": "--cache-backend",
+        "kind": "subcommand",
+        "description": "Cache backend (e.g. redis://localhost:6379) (default: \"fs\") [$TRIVY_CACHE_BACKEND]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccacheBackend\u003e": {
+            "Name": "\u003ccacheBackend\u003e",
+            "kind": "argument",
+            "description": "cacheBackend",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccacheBackend\u003e": {
+            "Name": "\u003ccacheBackend\u003e",
+            "kind": "argument",
+            "description": "cacheBackend",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccacheBackend\u003e"
+        ]
+      },
+      "--download-db-only": {
+        "Name": "--download-db-only",
+        "kind": "subcommand",
+        "description": "Download/update vulnerability database but don't run a scan [$TRIVY_DOWNLOAD_DB_ONLY]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--listen": {
+        "Name": "--listen",
+        "kind": "subcommand",
+        "description": "Listen address (default: \"localhost:4954\") [$TRIVY_LISTEN]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003clisten\u003e": {
+            "Name": "\u003clisten\u003e",
+            "kind": "argument",
+            "description": "listen",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003clisten\u003e": {
+            "Name": "\u003clisten\u003e",
+            "kind": "argument",
+            "description": "listen",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003clisten\u003e"
+        ]
+      },
+      "--reset": {
+        "Name": "--reset",
+        "kind": "subcommand",
+        "description": "Remove all caches and database [$TRIVY_RESET]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--skip-db-update": {
+        "Name": "--skip-db-update",
+        "kind": "subcommand",
+        "description": "Skip updating vulnerability database [$TRIVY_SKIP_UPDATE, $TRIVY_SKIP_DB_UPDATE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--token": {
+        "Name": "--token",
+        "kind": "subcommand",
+        "description": "For authentication in client/server mode [$TRIVY_TOKEN]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctoken\u003e"
+        ]
+      },
+      "--token-header": {
+        "Name": "--token-header",
+        "kind": "subcommand",
+        "description": "Specify a header name for token in client/server mode (default: \"Trivy-Token\") [$TRIVY_TOKEN_HEADER]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctokenHeader\u003e": {
+            "Name": "\u003ctokenHeader\u003e",
+            "kind": "argument",
+            "description": "tokenHeader",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctokenHeader\u003e": {
+            "Name": "\u003ctokenHeader\u003e",
+            "kind": "argument",
+            "description": "tokenHeader",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctokenHeader\u003e"
+        ]
+      }
+    }
+  },
+  "version": {
+    "Name": "version",
+    "kind": "subcommand",
+    "description": "Print the version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

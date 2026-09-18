@@ -1,0 +1,2802 @@
+{
+  "-H": {
+    "Name": "-H",
+    "kind": "option",
+    "description": "Name of adb server host [default=localhost]",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003chost name\u003e": {
+        "Name": "\u003chost name\u003e",
+        "kind": "argument",
+        "description": "host name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003chost name\u003e": {
+        "Name": "\u003chost name\u003e",
+        "kind": "argument",
+        "description": "host name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003chost name\u003e"
+    ]
+  },
+  "-L": {
+    "Name": "-L",
+    "kind": "option",
+    "description": "Listen on given socket for adb server [default=tcp:localhost:5037]",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csocket\u003e": {
+        "Name": "\u003csocket\u003e",
+        "kind": "argument",
+        "description": "socket",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csocket\u003e": {
+        "Name": "\u003csocket\u003e",
+        "kind": "argument",
+        "description": "socket",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csocket\u003e"
+    ]
+  },
+  "-P": {
+    "Name": "-P",
+    "kind": "option",
+    "description": "Port of adb server [default=5037]",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cport\u003e": {
+        "Name": "\u003cport\u003e",
+        "kind": "argument",
+        "description": "port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cport\u003e": {
+        "Name": "\u003cport\u003e",
+        "kind": "argument",
+        "description": "port",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cport\u003e"
+    ]
+  },
+  "-a": {
+    "Name": "-a",
+    "kind": "option",
+    "description": "Listen on all network interfaces, not just localhost",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Use USB device (error if multiple devices connected)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-e": {
+    "Name": "-e",
+    "kind": "option",
+    "description": "Use TCP/IP device (error if multiple TCP/IP devices available)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Use device with given serial (overrides $ANDROID_SERIAL)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cSERIAL\u003e": {
+        "Name": "\u003cSERIAL\u003e",
+        "kind": "argument",
+        "description": "SERIAL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cSERIAL\u003e": {
+        "Name": "\u003cSERIAL\u003e",
+        "kind": "argument",
+        "description": "SERIAL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSERIAL\u003e"
+    ]
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Use device with given transport id",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cID\u003e": {
+        "Name": "\u003cID\u003e",
+        "kind": "argument",
+        "description": "ID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cID\u003e": {
+        "Name": "\u003cID\u003e",
+        "kind": "argument",
+        "description": "ID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cID\u003e"
+    ]
+  },
+  "bugreport": {
+    "Name": "bugreport",
+    "kind": "subcommand",
+    "description": "Write bugreport to given PATH [default=bugreport.zip];",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPATH\u003e": {
+        "Name": "\u003cPATH\u003e",
+        "kind": "argument",
+        "description": "PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "connect": {
+    "Name": "connect",
+    "kind": "subcommand",
+    "description": "Connect to a device via TCP/IP [default port=5555]",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cHOST[:PORT]\u003e": {
+        "Name": "\u003cHOST[:PORT]\u003e",
+        "kind": "argument",
+        "description": "HOST[:PORT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cHOST[:PORT]\u003e": {
+        "Name": "\u003cHOST[:PORT]\u003e",
+        "kind": "argument",
+        "description": "HOST[:PORT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cHOST[:PORT]\u003e"
+    ]
+  },
+  "devices": {
+    "Name": "devices",
+    "kind": "subcommand",
+    "description": "List connected devices",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-l": {
+        "Name": "-l",
+        "kind": "option",
+        "description": "Long output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "-l": {
+        "Name": "-l",
+        "kind": "option",
+        "description": "Long output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "disable-verity": {
+    "Name": "disable-verity",
+    "kind": "subcommand",
+    "description": "Disable dm-verity checking on userdebug builds",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "disconnect": {
+    "Name": "disconnect",
+    "kind": "subcommand",
+    "description": "Disconnect from given TCP/IP device [default port=5555], or all",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cHOST[:PORT]\u003e": {
+        "Name": "\u003cHOST[:PORT]\u003e",
+        "kind": "argument",
+        "description": "HOST[:PORT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cHOST[:PORT]\u003e": {
+        "Name": "\u003cHOST[:PORT]\u003e",
+        "kind": "argument",
+        "description": "HOST[:PORT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "emu": {
+    "Name": "emu",
+    "kind": "subcommand",
+    "description": "Run emulator console command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cCOMMAND\u003e": {
+        "Name": "\u003cCOMMAND\u003e",
+        "kind": "argument",
+        "description": "COMMAND",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cCOMMAND\u003e": {
+        "Name": "\u003cCOMMAND\u003e",
+        "kind": "argument",
+        "description": "COMMAND",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cCOMMAND\u003e"
+    ]
+  },
+  "enable-verity": {
+    "Name": "enable-verity",
+    "kind": "subcommand",
+    "description": "Re-enable dm-verity checking on userdebug builds",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "forward": {
+    "Name": "forward",
+    "kind": "subcommand",
+    "description": "Forward connection",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--list": {
+        "Name": "--list",
+        "kind": "option",
+        "description": "List all forward socket connections",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-rebind": {
+        "Name": "--no-rebind",
+        "kind": "option",
+        "description": "Reversal fails if the specified socket is already bound through a previous reverse command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--remove": {
+        "Name": "--remove",
+        "kind": "option",
+        "description": "Remove specific forward socket connection",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cLOCAL\u003e": {
+            "Name": "\u003cLOCAL\u003e",
+            "kind": "argument",
+            "description": "LOCAL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cLOCAL\u003e": {
+            "Name": "\u003cLOCAL\u003e",
+            "kind": "argument",
+            "description": "LOCAL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cLOCAL\u003e"
+        ]
+      },
+      "--remove-all": {
+        "Name": "--remove-all",
+        "kind": "option",
+        "description": "Remove all forward socket connections",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cLOCAL -\u003e port|domain|device|pid\u003e": {
+        "Name": "\u003cLOCAL -\u003e port|domain|device|pid\u003e",
+        "kind": "argument",
+        "description": "LOCAL -\u003e port|domain|device|pid",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cREMOTE -\u003e port|domain|device|pid\u003e": {
+        "Name": "\u003cREMOTE -\u003e port|domain|device|pid\u003e",
+        "kind": "argument",
+        "description": "REMOTE -\u003e port|domain|device|pid",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--list": {
+        "Name": "--list",
+        "kind": "option",
+        "description": "List all forward socket connections",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-rebind": {
+        "Name": "--no-rebind",
+        "kind": "option",
+        "description": "Reversal fails if the specified socket is already bound through a previous reverse command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--remove": {
+        "Name": "--remove",
+        "kind": "option",
+        "description": "Remove specific forward socket connection",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cLOCAL\u003e": {
+            "Name": "\u003cLOCAL\u003e",
+            "kind": "argument",
+            "description": "LOCAL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cLOCAL\u003e": {
+            "Name": "\u003cLOCAL\u003e",
+            "kind": "argument",
+            "description": "LOCAL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cLOCAL\u003e"
+        ]
+      },
+      "--remove-all": {
+        "Name": "--remove-all",
+        "kind": "option",
+        "description": "Remove all forward socket connections",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cLOCAL -\u003e port|domain|device|pid\u003e": {
+        "Name": "\u003cLOCAL -\u003e port|domain|device|pid\u003e",
+        "kind": "argument",
+        "description": "LOCAL -\u003e port|domain|device|pid",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cREMOTE -\u003e port|domain|device|pid\u003e": {
+        "Name": "\u003cREMOTE -\u003e port|domain|device|pid\u003e",
+        "kind": "argument",
+        "description": "REMOTE -\u003e port|domain|device|pid",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cLOCAL -\u003e port|domain|device|pid\u003e",
+      "\u003cREMOTE -\u003e port|domain|device|pid\u003e"
+    ]
+  },
+  "get-devpath": {
+    "Name": "get-devpath",
+    "kind": "subcommand",
+    "description": "Print \u003cdevice-path\u003e",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "get-serialno": {
+    "Name": "get-serialno",
+    "kind": "subcommand",
+    "description": "Print \u003cserial-number\u003e",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "get-state": {
+    "Name": "get-state",
+    "kind": "subcommand",
+    "description": "Print offline | bootloader | device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Show this help message",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "install": {
+    "Name": "install",
+    "kind": "subcommand",
+    "description": "Push a single package to the device and install it",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--abi": {
+        "Name": "--abi",
+        "kind": "option",
+        "description": "Override platform's default ABI",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cABI\u003e": {
+            "Name": "\u003cABI\u003e",
+            "kind": "argument",
+            "description": "ABI",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cABI\u003e": {
+            "Name": "\u003cABI\u003e",
+            "kind": "argument",
+            "description": "ABI",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cABI\u003e"
+        ]
+      },
+      "--date-check-agent": {
+        "Name": "--date-check-agent",
+        "kind": "option",
+        "description": "Update deployment agent when local version is newer and using fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--fastdeploy": {
+        "Name": "--fastdeploy",
+        "kind": "option",
+        "description": "Use fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--force-agent": {
+        "Name": "--force-agent",
+        "kind": "option",
+        "description": "Force update of deployment agent when using fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--instant": {
+        "Name": "--instant",
+        "kind": "option",
+        "description": "Cause the app to be installed as an ephemeral install app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--local-agent": {
+        "Name": "--local-agent",
+        "kind": "option",
+        "description": "Locate agent files from local source build (instead of SDK location)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-fastdeploy": {
+        "Name": "--no-fastdeploy",
+        "kind": "option",
+        "description": "Prevent use of fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-streaming": {
+        "Name": "--no-streaming",
+        "kind": "option",
+        "description": "Always push APK to device and invoke Package Manager as separate steps",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--streaming": {
+        "Name": "--streaming",
+        "kind": "option",
+        "description": "Force streaming APK directly into Package Manager",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version-check-agent": {
+        "Name": "--version-check-agent",
+        "kind": "option",
+        "description": "Update deployment agent when local version has different version code and using fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Allow version code downgrade (debuggable packages only)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-g": {
+        "Name": "-g",
+        "kind": "option",
+        "description": "Grant all runtime permissions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-l": {
+        "Name": "-l",
+        "kind": "option",
+        "description": "Forward-lock the app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Replace existing application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Install on SD card instead of internal storage",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Allow test packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cPACKAGE\u003e": {
+        "Name": "\u003cPACKAGE\u003e",
+        "kind": "argument",
+        "description": "PACKAGE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--abi": {
+        "Name": "--abi",
+        "kind": "option",
+        "description": "Override platform's default ABI",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cABI\u003e": {
+            "Name": "\u003cABI\u003e",
+            "kind": "argument",
+            "description": "ABI",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cABI\u003e": {
+            "Name": "\u003cABI\u003e",
+            "kind": "argument",
+            "description": "ABI",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cABI\u003e"
+        ]
+      },
+      "--date-check-agent": {
+        "Name": "--date-check-agent",
+        "kind": "option",
+        "description": "Update deployment agent when local version is newer and using fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--fastdeploy": {
+        "Name": "--fastdeploy",
+        "kind": "option",
+        "description": "Use fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--force-agent": {
+        "Name": "--force-agent",
+        "kind": "option",
+        "description": "Force update of deployment agent when using fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--instant": {
+        "Name": "--instant",
+        "kind": "option",
+        "description": "Cause the app to be installed as an ephemeral install app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--local-agent": {
+        "Name": "--local-agent",
+        "kind": "option",
+        "description": "Locate agent files from local source build (instead of SDK location)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-fastdeploy": {
+        "Name": "--no-fastdeploy",
+        "kind": "option",
+        "description": "Prevent use of fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-streaming": {
+        "Name": "--no-streaming",
+        "kind": "option",
+        "description": "Always push APK to device and invoke Package Manager as separate steps",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--streaming": {
+        "Name": "--streaming",
+        "kind": "option",
+        "description": "Force streaming APK directly into Package Manager",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version-check-agent": {
+        "Name": "--version-check-agent",
+        "kind": "option",
+        "description": "Update deployment agent when local version has different version code and using fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Allow version code downgrade (debuggable packages only)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-g": {
+        "Name": "-g",
+        "kind": "option",
+        "description": "Grant all runtime permissions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-l": {
+        "Name": "-l",
+        "kind": "option",
+        "description": "Forward-lock the app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Replace existing application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Install on SD card instead of internal storage",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Allow test packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cPACKAGE\u003e": {
+        "Name": "\u003cPACKAGE\u003e",
+        "kind": "argument",
+        "description": "PACKAGE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPACKAGE\u003e"
+    ]
+  },
+  "install-multi-package": {
+    "Name": "install-multi-package",
+    "kind": "subcommand",
+    "description": "Push one or more packages to the device and install them atomically",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--abi": {
+        "Name": "--abi",
+        "kind": "option",
+        "description": "Override platform's default ABI",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cABI\u003e": {
+            "Name": "\u003cABI\u003e",
+            "kind": "argument",
+            "description": "ABI",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cABI\u003e": {
+            "Name": "\u003cABI\u003e",
+            "kind": "argument",
+            "description": "ABI",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cABI\u003e"
+        ]
+      },
+      "--date-check-agent": {
+        "Name": "--date-check-agent",
+        "kind": "option",
+        "description": "Update deployment agent when local version is newer and using fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--fastdeploy": {
+        "Name": "--fastdeploy",
+        "kind": "option",
+        "description": "Use fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--force-agent": {
+        "Name": "--force-agent",
+        "kind": "option",
+        "description": "Force update of deployment agent when using fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--instant": {
+        "Name": "--instant",
+        "kind": "option",
+        "description": "Cause the app to be installed as an ephemeral install app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--local-agent": {
+        "Name": "--local-agent",
+        "kind": "option",
+        "description": "Locate agent files from local source build (instead of SDK location)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-fastdeploy": {
+        "Name": "--no-fastdeploy",
+        "kind": "option",
+        "description": "Prevent use of fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-streaming": {
+        "Name": "--no-streaming",
+        "kind": "option",
+        "description": "Always push APK to device and invoke Package Manager as separate steps",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--streaming": {
+        "Name": "--streaming",
+        "kind": "option",
+        "description": "Force streaming APK directly into Package Manager",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version-check-agent": {
+        "Name": "--version-check-agent",
+        "kind": "option",
+        "description": "Update deployment agent when local version has different version code and using fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Allow version code downgrade (debuggable packages only)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-g": {
+        "Name": "-g",
+        "kind": "option",
+        "description": "Grant all runtime permissions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-l": {
+        "Name": "-l",
+        "kind": "option",
+        "description": "Forward-lock the app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Partial application install (install-multiple only)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Replace existing application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Install on SD card instead of internal storage",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Allow test packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cPACKAGE\u003e": {
+        "Name": "\u003cPACKAGE\u003e",
+        "kind": "argument",
+        "description": "PACKAGE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--abi": {
+        "Name": "--abi",
+        "kind": "option",
+        "description": "Override platform's default ABI",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cABI\u003e": {
+            "Name": "\u003cABI\u003e",
+            "kind": "argument",
+            "description": "ABI",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cABI\u003e": {
+            "Name": "\u003cABI\u003e",
+            "kind": "argument",
+            "description": "ABI",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cABI\u003e"
+        ]
+      },
+      "--date-check-agent": {
+        "Name": "--date-check-agent",
+        "kind": "option",
+        "description": "Update deployment agent when local version is newer and using fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--fastdeploy": {
+        "Name": "--fastdeploy",
+        "kind": "option",
+        "description": "Use fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--force-agent": {
+        "Name": "--force-agent",
+        "kind": "option",
+        "description": "Force update of deployment agent when using fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--instant": {
+        "Name": "--instant",
+        "kind": "option",
+        "description": "Cause the app to be installed as an ephemeral install app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--local-agent": {
+        "Name": "--local-agent",
+        "kind": "option",
+        "description": "Locate agent files from local source build (instead of SDK location)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-fastdeploy": {
+        "Name": "--no-fastdeploy",
+        "kind": "option",
+        "description": "Prevent use of fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-streaming": {
+        "Name": "--no-streaming",
+        "kind": "option",
+        "description": "Always push APK to device and invoke Package Manager as separate steps",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--streaming": {
+        "Name": "--streaming",
+        "kind": "option",
+        "description": "Force streaming APK directly into Package Manager",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version-check-agent": {
+        "Name": "--version-check-agent",
+        "kind": "option",
+        "description": "Update deployment agent when local version has different version code and using fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Allow version code downgrade (debuggable packages only)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-g": {
+        "Name": "-g",
+        "kind": "option",
+        "description": "Grant all runtime permissions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-l": {
+        "Name": "-l",
+        "kind": "option",
+        "description": "Forward-lock the app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Partial application install (install-multiple only)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Replace existing application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Install on SD card instead of internal storage",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Allow test packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cPACKAGE\u003e": {
+        "Name": "\u003cPACKAGE\u003e",
+        "kind": "argument",
+        "description": "PACKAGE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPACKAGE\u003e"
+    ]
+  },
+  "install-multiple": {
+    "Name": "install-multiple",
+    "kind": "subcommand",
+    "description": "Push multiple APKs to the device for a single package and install them",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--abi": {
+        "Name": "--abi",
+        "kind": "option",
+        "description": "Override platform's default ABI",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cABI\u003e": {
+            "Name": "\u003cABI\u003e",
+            "kind": "argument",
+            "description": "ABI",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cABI\u003e": {
+            "Name": "\u003cABI\u003e",
+            "kind": "argument",
+            "description": "ABI",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cABI\u003e"
+        ]
+      },
+      "--date-check-agent": {
+        "Name": "--date-check-agent",
+        "kind": "option",
+        "description": "Update deployment agent when local version is newer and using fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--fastdeploy": {
+        "Name": "--fastdeploy",
+        "kind": "option",
+        "description": "Use fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--force-agent": {
+        "Name": "--force-agent",
+        "kind": "option",
+        "description": "Force update of deployment agent when using fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--instant": {
+        "Name": "--instant",
+        "kind": "option",
+        "description": "Cause the app to be installed as an ephemeral install app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--local-agent": {
+        "Name": "--local-agent",
+        "kind": "option",
+        "description": "Locate agent files from local source build (instead of SDK location)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-fastdeploy": {
+        "Name": "--no-fastdeploy",
+        "kind": "option",
+        "description": "Prevent use of fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-streaming": {
+        "Name": "--no-streaming",
+        "kind": "option",
+        "description": "Always push APK to device and invoke Package Manager as separate steps",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--streaming": {
+        "Name": "--streaming",
+        "kind": "option",
+        "description": "Force streaming APK directly into Package Manager",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version-check-agent": {
+        "Name": "--version-check-agent",
+        "kind": "option",
+        "description": "Update deployment agent when local version has different version code and using fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Allow version code downgrade (debuggable packages only)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-g": {
+        "Name": "-g",
+        "kind": "option",
+        "description": "Grant all runtime permissions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-l": {
+        "Name": "-l",
+        "kind": "option",
+        "description": "Forward-lock the app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Partial application install (install-multiple only)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Replace existing application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Install on SD card instead of internal storage",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Allow test packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cPACKAGE\u003e": {
+        "Name": "\u003cPACKAGE\u003e",
+        "kind": "argument",
+        "description": "PACKAGE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--abi": {
+        "Name": "--abi",
+        "kind": "option",
+        "description": "Override platform's default ABI",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cABI\u003e": {
+            "Name": "\u003cABI\u003e",
+            "kind": "argument",
+            "description": "ABI",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cABI\u003e": {
+            "Name": "\u003cABI\u003e",
+            "kind": "argument",
+            "description": "ABI",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cABI\u003e"
+        ]
+      },
+      "--date-check-agent": {
+        "Name": "--date-check-agent",
+        "kind": "option",
+        "description": "Update deployment agent when local version is newer and using fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--fastdeploy": {
+        "Name": "--fastdeploy",
+        "kind": "option",
+        "description": "Use fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--force-agent": {
+        "Name": "--force-agent",
+        "kind": "option",
+        "description": "Force update of deployment agent when using fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--instant": {
+        "Name": "--instant",
+        "kind": "option",
+        "description": "Cause the app to be installed as an ephemeral install app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--local-agent": {
+        "Name": "--local-agent",
+        "kind": "option",
+        "description": "Locate agent files from local source build (instead of SDK location)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-fastdeploy": {
+        "Name": "--no-fastdeploy",
+        "kind": "option",
+        "description": "Prevent use of fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-streaming": {
+        "Name": "--no-streaming",
+        "kind": "option",
+        "description": "Always push APK to device and invoke Package Manager as separate steps",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--streaming": {
+        "Name": "--streaming",
+        "kind": "option",
+        "description": "Force streaming APK directly into Package Manager",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--version-check-agent": {
+        "Name": "--version-check-agent",
+        "kind": "option",
+        "description": "Update deployment agent when local version has different version code and using fast deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Allow version code downgrade (debuggable packages only)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-g": {
+        "Name": "-g",
+        "kind": "option",
+        "description": "Grant all runtime permissions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-l": {
+        "Name": "-l",
+        "kind": "option",
+        "description": "Forward-lock the app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Partial application install (install-multiple only)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Replace existing application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Install on SD card instead of internal storage",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Allow test packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cPACKAGE\u003e": {
+        "Name": "\u003cPACKAGE\u003e",
+        "kind": "argument",
+        "description": "PACKAGE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPACKAGE\u003e"
+    ]
+  },
+  "jdwp": {
+    "Name": "jdwp",
+    "kind": "subcommand",
+    "description": "List pids of processes hosting a JDWP transport",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "keygen": {
+    "Name": "keygen",
+    "kind": "subcommand",
+    "description": "Generate adb public/private key; private key stored in FILE",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cFILE\u003e": {
+        "Name": "\u003cFILE\u003e",
+        "kind": "argument",
+        "description": "FILE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cFILE\u003e"
+    ]
+  },
+  "kill-server": {
+    "Name": "kill-server",
+    "kind": "subcommand",
+    "description": "Kill the server if it is running",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "logcat": {
+    "Name": "logcat",
+    "kind": "subcommand",
+    "description": "Show device log (logcat --help for more)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "mdns": {
+    "Name": "mdns",
+    "kind": "subcommand",
+    "description": "Mdns utils",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "check": {
+        "Name": "check",
+        "kind": "subcommand",
+        "description": "Check if mdns discovery is available",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "services": {
+        "Name": "services",
+        "kind": "subcommand",
+        "description": "List all discovered services",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "pair": {
+    "Name": "pair",
+    "kind": "subcommand",
+    "description": "Pair with a device for secure TCP/IP communication",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cHOST[:PORT]\u003e": {
+        "Name": "\u003cHOST[:PORT]\u003e",
+        "kind": "argument",
+        "description": "HOST[:PORT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003c[PAIRING CODE]\u003e": {
+        "Name": "\u003c[PAIRING CODE]\u003e",
+        "kind": "argument",
+        "description": "[PAIRING CODE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cHOST[:PORT]\u003e": {
+        "Name": "\u003cHOST[:PORT]\u003e",
+        "kind": "argument",
+        "description": "HOST[:PORT]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003c[PAIRING CODE]\u003e": {
+        "Name": "\u003c[PAIRING CODE]\u003e",
+        "kind": "argument",
+        "description": "[PAIRING CODE]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cHOST[:PORT]\u003e"
+    ]
+  },
+  "ppp": {
+    "Name": "ppp",
+    "kind": "subcommand",
+    "description": "Run PPP over USB",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cTTY\u003e": {
+        "Name": "\u003cTTY\u003e",
+        "kind": "argument",
+        "description": "TTY",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003c[PARAMETER...]\u003e": {
+        "Name": "\u003c[PARAMETER...]\u003e",
+        "kind": "argument",
+        "description": "[PARAMETER...]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cTTY\u003e": {
+        "Name": "\u003cTTY\u003e",
+        "kind": "argument",
+        "description": "TTY",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003c[PARAMETER...]\u003e": {
+        "Name": "\u003c[PARAMETER...]\u003e",
+        "kind": "argument",
+        "description": "[PARAMETER...]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cTTY\u003e"
+    ]
+  },
+  "pull": {
+    "Name": "pull",
+    "kind": "subcommand",
+    "description": "Copy files/dirs from device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-Z": {
+        "Name": "-Z",
+        "kind": "option",
+        "description": "Disable compression",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-a": {
+        "Name": "-a",
+        "kind": "option",
+        "description": "Preserve file timestamp and mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-z": {
+        "Name": "-z",
+        "kind": "option",
+        "description": "Enable compression with a specified algorithm (any, none, brotli)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cALGORITHM\u003e": {
+            "Name": "\u003cALGORITHM\u003e",
+            "kind": "argument",
+            "description": "ALGORITHM",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cALGORITHM\u003e": {
+            "Name": "\u003cALGORITHM\u003e",
+            "kind": "argument",
+            "description": "ALGORITHM",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cALGORITHM\u003e"
+        ]
+      },
+      "\u003cLOCAL\u003e": {
+        "Name": "\u003cLOCAL\u003e",
+        "kind": "argument",
+        "description": "LOCAL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cREMOTE\u003e": {
+        "Name": "\u003cREMOTE\u003e",
+        "kind": "argument",
+        "description": "REMOTE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "-Z": {
+        "Name": "-Z",
+        "kind": "option",
+        "description": "Disable compression",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-a": {
+        "Name": "-a",
+        "kind": "option",
+        "description": "Preserve file timestamp and mode",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-z": {
+        "Name": "-z",
+        "kind": "option",
+        "description": "Enable compression with a specified algorithm (any, none, brotli)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cALGORITHM\u003e": {
+            "Name": "\u003cALGORITHM\u003e",
+            "kind": "argument",
+            "description": "ALGORITHM",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cALGORITHM\u003e": {
+            "Name": "\u003cALGORITHM\u003e",
+            "kind": "argument",
+            "description": "ALGORITHM",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cALGORITHM\u003e"
+        ]
+      },
+      "\u003cLOCAL\u003e": {
+        "Name": "\u003cLOCAL\u003e",
+        "kind": "argument",
+        "description": "LOCAL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cREMOTE\u003e": {
+        "Name": "\u003cREMOTE\u003e",
+        "kind": "argument",
+        "description": "REMOTE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cREMOTE\u003e",
+      "\u003cLOCAL\u003e"
+    ]
+  },
+  "push": {
+    "Name": "push",
+    "kind": "subcommand",
+    "description": "Copy local files/directories to device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--sync": {
+        "Name": "--sync",
+        "kind": "option",
+        "description": "Only push files that are newer on the host than the device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-Z": {
+        "Name": "-Z",
+        "kind": "option",
+        "description": "Disable compression",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "Dry run: push files to device without storing to the filesystem",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-z": {
+        "Name": "-z",
+        "kind": "option",
+        "description": "Enable compression with a specified algorithm (any, none, brotli)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cALGORITHM\u003e": {
+            "Name": "\u003cALGORITHM\u003e",
+            "kind": "argument",
+            "description": "ALGORITHM",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cALGORITHM\u003e": {
+            "Name": "\u003cALGORITHM\u003e",
+            "kind": "argument",
+            "description": "ALGORITHM",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cALGORITHM\u003e"
+        ]
+      },
+      "\u003cLOCAL\u003e": {
+        "Name": "\u003cLOCAL\u003e",
+        "kind": "argument",
+        "description": "LOCAL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cREMOTE\u003e": {
+        "Name": "\u003cREMOTE\u003e",
+        "kind": "argument",
+        "description": "REMOTE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--sync": {
+        "Name": "--sync",
+        "kind": "option",
+        "description": "Only push files that are newer on the host than the device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-Z": {
+        "Name": "-Z",
+        "kind": "option",
+        "description": "Disable compression",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "Dry run: push files to device without storing to the filesystem",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-z": {
+        "Name": "-z",
+        "kind": "option",
+        "description": "Enable compression with a specified algorithm (any, none, brotli)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cALGORITHM\u003e": {
+            "Name": "\u003cALGORITHM\u003e",
+            "kind": "argument",
+            "description": "ALGORITHM",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cALGORITHM\u003e": {
+            "Name": "\u003cALGORITHM\u003e",
+            "kind": "argument",
+            "description": "ALGORITHM",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cALGORITHM\u003e"
+        ]
+      },
+      "\u003cLOCAL\u003e": {
+        "Name": "\u003cLOCAL\u003e",
+        "kind": "argument",
+        "description": "LOCAL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cREMOTE\u003e": {
+        "Name": "\u003cREMOTE\u003e",
+        "kind": "argument",
+        "description": "REMOTE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cLOCAL\u003e",
+      "\u003cREMOTE\u003e"
+    ]
+  },
+  "reboot": {
+    "Name": "reboot",
+    "kind": "subcommand",
+    "description": "Reboot the device; defaults to booting system image but supports bootloader and recovery too. sideload reboots into recovery and automatically starts sideload mode, sideload-auto-reboot is the same but reboots after sideloading",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "reconnect": {
+    "Name": "reconnect",
+    "kind": "subcommand",
+    "description": "Kick connection from host side to force reconnect",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "device": {
+        "Name": "device",
+        "kind": "subcommand",
+        "description": "Kick connection from device side to force reconnect",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "offline": {
+        "Name": "offline",
+        "kind": "subcommand",
+        "description": "Reset offline/unauthorized devices to force reconnect`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "remount": {
+    "Name": "remount",
+    "kind": "subcommand",
+    "description": "Remount partitions read-write. if a reboot is required, -R will automatically reboot the device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-R": {
+        "Name": "-R",
+        "kind": "option",
+        "description": "Reboot device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "-R": {
+        "Name": "-R",
+        "kind": "option",
+        "description": "Reboot device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "reverse": {
+    "Name": "reverse",
+    "kind": "subcommand",
+    "description": "Reverse connection",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--list": {
+        "Name": "--list",
+        "kind": "option",
+        "description": "List all reverse socket connections from device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-rebind": {
+        "Name": "--no-rebind",
+        "kind": "option",
+        "description": "Reversal fails if the specified socket is already bound through a previous reverse command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--remove": {
+        "Name": "--remove",
+        "kind": "option",
+        "description": "Remove specific reverse socket connection",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cREMOTE\u003e": {
+            "Name": "\u003cREMOTE\u003e",
+            "kind": "argument",
+            "description": "REMOTE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cREMOTE\u003e": {
+            "Name": "\u003cREMOTE\u003e",
+            "kind": "argument",
+            "description": "REMOTE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cREMOTE\u003e"
+        ]
+      },
+      "--remove-all": {
+        "Name": "--remove-all",
+        "kind": "option",
+        "description": "Remove all reverse socket connections from device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cLOCAL -\u003e port|domain|device|pid\u003e": {
+        "Name": "\u003cLOCAL -\u003e port|domain|device|pid\u003e",
+        "kind": "argument",
+        "description": "LOCAL -\u003e port|domain|device|pid",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cREMOTE -\u003e port|domain|device|pid\u003e": {
+        "Name": "\u003cREMOTE -\u003e port|domain|device|pid\u003e",
+        "kind": "argument",
+        "description": "REMOTE -\u003e port|domain|device|pid",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--list": {
+        "Name": "--list",
+        "kind": "option",
+        "description": "List all reverse socket connections from device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-rebind": {
+        "Name": "--no-rebind",
+        "kind": "option",
+        "description": "Reversal fails if the specified socket is already bound through a previous reverse command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--remove": {
+        "Name": "--remove",
+        "kind": "option",
+        "description": "Remove specific reverse socket connection",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cREMOTE\u003e": {
+            "Name": "\u003cREMOTE\u003e",
+            "kind": "argument",
+            "description": "REMOTE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cREMOTE\u003e": {
+            "Name": "\u003cREMOTE\u003e",
+            "kind": "argument",
+            "description": "REMOTE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cREMOTE\u003e"
+        ]
+      },
+      "--remove-all": {
+        "Name": "--remove-all",
+        "kind": "option",
+        "description": "Remove all reverse socket connections from device",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cLOCAL -\u003e port|domain|device|pid\u003e": {
+        "Name": "\u003cLOCAL -\u003e port|domain|device|pid\u003e",
+        "kind": "argument",
+        "description": "LOCAL -\u003e port|domain|device|pid",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cREMOTE -\u003e port|domain|device|pid\u003e": {
+        "Name": "\u003cREMOTE -\u003e port|domain|device|pid\u003e",
+        "kind": "argument",
+        "description": "REMOTE -\u003e port|domain|device|pid",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cREMOTE -\u003e port|domain|device|pid\u003e",
+      "\u003cLOCAL -\u003e port|domain|device|pid\u003e"
+    ]
+  },
+  "root": {
+    "Name": "root",
+    "kind": "subcommand",
+    "description": "Restart adbd with root permissions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "shell": {
+    "Name": "shell",
+    "kind": "subcommand",
+    "description": "Run remote shell command (interactive shell if no command given)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-T": {
+        "Name": "-T",
+        "kind": "option",
+        "description": "Disable pty allocation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-e": {
+        "Name": "-e",
+        "kind": "option",
+        "description": "Choose escape character, or `none` default '~'",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "Don't read from stdin",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Allocate a pty if on a tty",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-tt": {
+        "Name": "-tt",
+        "kind": "option",
+        "description": "-tt: force pty allocation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-x": {
+        "Name": "-x",
+        "kind": "option",
+        "description": "Disable remote exit codes and stdout/stderr separation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cCOMMANDS ...\u003e": {
+        "Name": "\u003cCOMMANDS ...\u003e",
+        "kind": "argument",
+        "description": "COMMANDS ...",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "-T": {
+        "Name": "-T",
+        "kind": "option",
+        "description": "Disable pty allocation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-e": {
+        "Name": "-e",
+        "kind": "option",
+        "description": "Choose escape character, or `none` default '~'",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "Don't read from stdin",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Allocate a pty if on a tty",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-tt": {
+        "Name": "-tt",
+        "kind": "option",
+        "description": "-tt: force pty allocation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-x": {
+        "Name": "-x",
+        "kind": "option",
+        "description": "Disable remote exit codes and stdout/stderr separation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cCOMMANDS ...\u003e": {
+        "Name": "\u003cCOMMANDS ...\u003e",
+        "kind": "argument",
+        "description": "COMMANDS ...",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "sideload": {
+    "Name": "sideload",
+    "kind": "subcommand",
+    "description": "Sideload the given full OTA package",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cOTAPACKAGE\u003e": {
+        "Name": "\u003cOTAPACKAGE\u003e",
+        "kind": "argument",
+        "description": "OTAPACKAGE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cOTAPACKAGE\u003e": {
+        "Name": "\u003cOTAPACKAGE\u003e",
+        "kind": "argument",
+        "description": "OTAPACKAGE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cOTAPACKAGE\u003e"
+    ]
+  },
+  "start-server": {
+    "Name": "start-server",
+    "kind": "subcommand",
+    "description": "Ensure that there is a server running",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "sync": {
+    "Name": "sync",
+    "kind": "subcommand",
+    "description": "Sync a local build from $ANDROID_PRODUCT_OUT to the device (default all)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-Z": {
+        "Name": "-Z",
+        "kind": "option",
+        "description": "Disable compression",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-l": {
+        "Name": "-l",
+        "kind": "option",
+        "description": "List files that would be copied, but don't copy them",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "Dry run: push files to device without storing to the filesystem",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-z": {
+        "Name": "-z",
+        "kind": "option",
+        "description": "Enable compression with a specified algorithm (any, none, brotli)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cALGORITHM\u003e": {
+            "Name": "\u003cALGORITHM\u003e",
+            "kind": "argument",
+            "description": "ALGORITHM",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cALGORITHM\u003e": {
+            "Name": "\u003cALGORITHM\u003e",
+            "kind": "argument",
+            "description": "ALGORITHM",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cALGORITHM\u003e"
+        ]
+      }
+    },
+    "options": {
+      "-Z": {
+        "Name": "-Z",
+        "kind": "option",
+        "description": "Disable compression",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-l": {
+        "Name": "-l",
+        "kind": "option",
+        "description": "List files that would be copied, but don't copy them",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "Dry run: push files to device without storing to the filesystem",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-z": {
+        "Name": "-z",
+        "kind": "option",
+        "description": "Enable compression with a specified algorithm (any, none, brotli)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cALGORITHM\u003e": {
+            "Name": "\u003cALGORITHM\u003e",
+            "kind": "argument",
+            "description": "ALGORITHM",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cALGORITHM\u003e": {
+            "Name": "\u003cALGORITHM\u003e",
+            "kind": "argument",
+            "description": "ALGORITHM",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cALGORITHM\u003e"
+        ]
+      }
+    }
+  },
+  "tcpip": {
+    "Name": "tcpip",
+    "kind": "subcommand",
+    "description": "Restart adbd listening on TCP on PORT",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPORT\u003e": {
+        "Name": "\u003cPORT\u003e",
+        "kind": "argument",
+        "description": "PORT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPORT\u003e": {
+        "Name": "\u003cPORT\u003e",
+        "kind": "argument",
+        "description": "PORT",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPORT\u003e"
+    ]
+  },
+  "uninstall": {
+    "Name": "uninstall",
+    "kind": "subcommand",
+    "description": "Remove this app package from the device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-k": {
+        "Name": "-k",
+        "kind": "option",
+        "description": "Keep the data and cache directories",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "-k": {
+        "Name": "-k",
+        "kind": "option",
+        "description": "Keep the data and cache directories",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "unroot": {
+    "Name": "unroot",
+    "kind": "subcommand",
+    "description": "Restart adbd without root permissions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "usb": {
+    "Name": "usb",
+    "kind": "subcommand",
+    "description": "Restart adbd listening on USB",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "version": {
+    "Name": "version",
+    "kind": "subcommand",
+    "description": "Show version num",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "wait-for-any-bootloader": {
+    "Name": "wait-for-any-bootloader",
+    "kind": "subcommand",
+    "description": "Wait for any in state=bootloader",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "wait-for-any-device": {
+    "Name": "wait-for-any-device",
+    "kind": "subcommand",
+    "description": "Wait for any in state=device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "wait-for-any-disconnect": {
+    "Name": "wait-for-any-disconnect",
+    "kind": "subcommand",
+    "description": "Wait for any in state=disconnect",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "wait-for-any-recovery": {
+    "Name": "wait-for-any-recovery",
+    "kind": "subcommand",
+    "description": "Wait for any in state=recovery",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "wait-for-any-rescue": {
+    "Name": "wait-for-any-rescue",
+    "kind": "subcommand",
+    "description": "Wait for any in state=rescue",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "wait-for-any-sideload": {
+    "Name": "wait-for-any-sideload",
+    "kind": "subcommand",
+    "description": "Wait for any in state=sideload",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "wait-for-bootloader": {
+    "Name": "wait-for-bootloader",
+    "kind": "subcommand",
+    "description": "Wait for state=bootloader",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "wait-for-device": {
+    "Name": "wait-for-device",
+    "kind": "subcommand",
+    "description": "Wait for state=device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "wait-for-disconnect": {
+    "Name": "wait-for-disconnect",
+    "kind": "subcommand",
+    "description": "Wait for state=disconnect",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "wait-for-local-bootloader": {
+    "Name": "wait-for-local-bootloader",
+    "kind": "subcommand",
+    "description": "Wait for local in state=bootloader",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "wait-for-local-device": {
+    "Name": "wait-for-local-device",
+    "kind": "subcommand",
+    "description": "Wait for local in state=device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "wait-for-local-disconnect": {
+    "Name": "wait-for-local-disconnect",
+    "kind": "subcommand",
+    "description": "Wait for local in state=disconnect",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "wait-for-local-recovery": {
+    "Name": "wait-for-local-recovery",
+    "kind": "subcommand",
+    "description": "Wait for local in state=recovery",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "wait-for-local-rescue": {
+    "Name": "wait-for-local-rescue",
+    "kind": "subcommand",
+    "description": "Wait for local in state=rescue",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "wait-for-local-sideload": {
+    "Name": "wait-for-local-sideload",
+    "kind": "subcommand",
+    "description": "Wait for local in state=sideload",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "wait-for-recovery": {
+    "Name": "wait-for-recovery",
+    "kind": "subcommand",
+    "description": "Wait for state=recovery",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "wait-for-rescue": {
+    "Name": "wait-for-rescue",
+    "kind": "subcommand",
+    "description": "Wait for state=rescue",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "wait-for-sideload": {
+    "Name": "wait-for-sideload",
+    "kind": "subcommand",
+    "description": "Wait for state=sideload",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "wait-for-usb-bootloader": {
+    "Name": "wait-for-usb-bootloader",
+    "kind": "subcommand",
+    "description": "Wait for usb in state=bootloader",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "wait-for-usb-device": {
+    "Name": "wait-for-usb-device",
+    "kind": "subcommand",
+    "description": "Wait for usb in state=device",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "wait-for-usb-disconnect": {
+    "Name": "wait-for-usb-disconnect",
+    "kind": "subcommand",
+    "description": "Wait for usb in state=disconnect",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "wait-for-usb-recovery": {
+    "Name": "wait-for-usb-recovery",
+    "kind": "subcommand",
+    "description": "Wait for usb in state=recovery",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "wait-for-usb-rescue": {
+    "Name": "wait-for-usb-rescue",
+    "kind": "subcommand",
+    "description": "Wait for usb in state=rescue",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "wait-for-usb-sideload": {
+    "Name": "wait-for-usb-sideload",
+    "kind": "subcommand",
+    "description": "Wait for usb in state=sideload",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

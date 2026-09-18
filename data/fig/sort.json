@@ -1,0 +1,877 @@
+{
+  "--batch-size": {
+    "Name": "--batch-size",
+    "kind": "option",
+    "description": "Specify maximum number of files that can be opened by sort at once",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cnum\u003e": {
+        "Name": "\u003cnum\u003e",
+        "kind": "argument",
+        "description": "num",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cnum\u003e": {
+        "Name": "\u003cnum\u003e",
+        "kind": "argument",
+        "description": "num",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cnum\u003e"
+    ]
+  },
+  "--buffer-size": {
+    "Name": "--buffer-size",
+    "kind": "option",
+    "description": "Use size for the maximum size of the memory buffer",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csize\u003e": {
+        "Name": "\u003csize\u003e",
+        "kind": "argument",
+        "description": "size",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csize\u003e": {
+        "Name": "\u003csize\u003e",
+        "kind": "argument",
+        "description": "size",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csize\u003e"
+    ]
+  },
+  "--check": {
+    "Name": "--check",
+    "kind": "option",
+    "description": "Check that the single input file is sorted",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003coutput\u003e": {
+        "Name": "\u003coutput\u003e",
+        "kind": "argument",
+        "description": "output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003coutput\u003e": {
+        "Name": "\u003coutput\u003e",
+        "kind": "argument",
+        "description": "output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "--compress-program": {
+    "Name": "--compress-program",
+    "kind": "option",
+    "description": "Use PROGRAM to compress temporary files (eg. bzip2)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPROGRAM\u003e": {
+        "Name": "\u003cPROGRAM\u003e",
+        "kind": "argument",
+        "description": "PROGRAM",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPROGRAM\u003e": {
+        "Name": "\u003cPROGRAM\u003e",
+        "kind": "argument",
+        "description": "PROGRAM",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPROGRAM\u003e"
+    ]
+  },
+  "--debug": {
+    "Name": "--debug",
+    "kind": "option",
+    "description": "Print some extra information about the sorting process to the standard output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--dictionary-order": {
+    "Name": "--dictionary-order",
+    "kind": "option",
+    "description": "Consider only blank spaces and alphanumeric characters in comparisons",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--field-separator": {
+    "Name": "--field-separator",
+    "kind": "option",
+    "description": "Use char as a field separator character",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cchar\u003e": {
+        "Name": "\u003cchar\u003e",
+        "kind": "argument",
+        "description": "char",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cchar\u003e": {
+        "Name": "\u003cchar\u003e",
+        "kind": "argument",
+        "description": "char",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cchar\u003e"
+    ]
+  },
+  "--files0-from": {
+    "Name": "--files0-from",
+    "kind": "option",
+    "description": "Take the input file list from the file filename",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfilename\u003e": {
+        "Name": "\u003cfilename\u003e",
+        "kind": "argument",
+        "description": "filename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfilename\u003e": {
+        "Name": "\u003cfilename\u003e",
+        "kind": "argument",
+        "description": "filename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfilename\u003e"
+    ]
+  },
+  "--general-numeric-sort": {
+    "Name": "--general-numeric-sort",
+    "kind": "option",
+    "description": "Sort by general numerical value",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--heapsort": {
+    "Name": "--heapsort",
+    "kind": "option",
+    "description": "Try to use heap sort, if the sort specifications allow.  This sort algorithm cannot be used with -u and -s",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Shows help message",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--human-numeric-sort": {
+    "Name": "--human-numeric-sort",
+    "kind": "option",
+    "description": "Sort by numerical value, but take into account the SI suffix, if present",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--ignore-case": {
+    "Name": "--ignore-case",
+    "kind": "option",
+    "description": "Convert all lowercase characters to their upper case equivalent before comparison",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--ignore-leading-blanks": {
+    "Name": "--ignore-leading-blanks",
+    "kind": "option",
+    "description": "Ignore leading blank characters when comparing lines",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--ignore-nonprinting": {
+    "Name": "--ignore-nonprinting",
+    "kind": "option",
+    "description": "Ignore all non-printable characters",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--key": {
+    "Name": "--key",
+    "kind": "option",
+    "description": "Define a restricted sort key that has the starting position field1, and optional ending position field2",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfield1\u003e": {
+        "Name": "\u003cfield1\u003e",
+        "kind": "argument",
+        "description": "field1",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cfield2\u003e": {
+        "Name": "\u003cfield2\u003e",
+        "kind": "argument",
+        "description": "field2",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfield1\u003e": {
+        "Name": "\u003cfield1\u003e",
+        "kind": "argument",
+        "description": "field1",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cfield2\u003e": {
+        "Name": "\u003cfield2\u003e",
+        "kind": "argument",
+        "description": "field2",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfield1\u003e"
+    ]
+  },
+  "--merge": {
+    "Name": "--merge",
+    "kind": "option",
+    "description": "Merge only.  The input files are assumed to be pre-sorted.  If they are not sorted the output order is undefined",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--mergesort": {
+    "Name": "--mergesort",
+    "kind": "option",
+    "description": "Use mergesort.  This is a universal algorithm that can always be used, but it is not always the fastest",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--mmap": {
+    "Name": "--mmap",
+    "kind": "option",
+    "description": "Try to use file memory mapping system call.  It may increase speed in some cases",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--month-sort": {
+    "Name": "--month-sort",
+    "kind": "option",
+    "description": "Sort by month abbreviations.  Unknown strings are considered smaller than the month names",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--numeric-sort": {
+    "Name": "--numeric-sort",
+    "kind": "option",
+    "description": "Sort fields numerically by arithmetic value",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--output": {
+    "Name": "--output",
+    "kind": "option",
+    "description": "Print the output to the output file instead of the standard output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003coutput\u003e": {
+        "Name": "\u003coutput\u003e",
+        "kind": "argument",
+        "description": "output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003coutput\u003e": {
+        "Name": "\u003coutput\u003e",
+        "kind": "argument",
+        "description": "output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003coutput\u003e"
+    ]
+  },
+  "--parallel": {
+    "Name": "--parallel",
+    "kind": "option",
+    "description": "Set the maximum number of execution threads.  Default number equals to the number of CPUs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--qsort": {
+    "Name": "--qsort",
+    "kind": "option",
+    "description": "Try to use quick sort, if the sort specifications allow.  This sort algorithm cannot be used with -u and -s",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--radixsort": {
+    "Name": "--radixsort",
+    "kind": "option",
+    "description": "Try to use radix sort, if the sort specifications allow",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--random-sort": {
+    "Name": "--random-sort",
+    "kind": "option",
+    "description": "Sort by a random order",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--random-source": {
+    "Name": "--random-source",
+    "kind": "option",
+    "description": "In random sort, the file content is used as the source of the 'seed' data for the hash function choice",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfilename\u003e": {
+        "Name": "\u003cfilename\u003e",
+        "kind": "argument",
+        "description": "filename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfilename\u003e": {
+        "Name": "\u003cfilename\u003e",
+        "kind": "argument",
+        "description": "filename",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfilename\u003e"
+    ]
+  },
+  "--reverse": {
+    "Name": "--reverse",
+    "kind": "option",
+    "description": "Sort in reverse order",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--sort": {
+    "Name": "--sort",
+    "kind": "option",
+    "description": "Select how to sort values",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctype\u003e"
+    ]
+  },
+  "--temporary-directory": {
+    "Name": "--temporary-directory",
+    "kind": "option",
+    "description": "Store temporary files in the directory dir",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdir\u003e": {
+        "Name": "\u003cdir\u003e",
+        "kind": "argument",
+        "description": "dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdir\u003e": {
+        "Name": "\u003cdir\u003e",
+        "kind": "argument",
+        "description": "dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdir\u003e"
+    ]
+  },
+  "--unique": {
+    "Name": "--unique",
+    "kind": "option",
+    "description": "Unique keys. Suppress all lines that have a key that is equal to an already processed one",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Displays the current version of sort",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version-sort": {
+    "Name": "--version-sort",
+    "kind": "option",
+    "description": "Sort version numbers",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--zero-terminated": {
+    "Name": "--zero-terminated",
+    "kind": "option",
+    "description": "Use NUL as record separator",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-C": {
+    "Name": "-C",
+    "kind": "option",
+    "description": "Check that the single input file is sorted",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003coutput\u003e": {
+        "Name": "\u003coutput\u003e",
+        "kind": "argument",
+        "description": "output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003coutput\u003e": {
+        "Name": "\u003coutput\u003e",
+        "kind": "argument",
+        "description": "output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "-M": {
+    "Name": "-M",
+    "kind": "option",
+    "description": "Sort by month abbreviations.  Unknown strings are considered smaller than the month names",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-R": {
+    "Name": "-R",
+    "kind": "option",
+    "description": "Sort by a random order",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-S": {
+    "Name": "-S",
+    "kind": "option",
+    "description": "Use size for the maximum size of the memory buffer",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003csize\u003e": {
+        "Name": "\u003csize\u003e",
+        "kind": "argument",
+        "description": "size",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003csize\u003e": {
+        "Name": "\u003csize\u003e",
+        "kind": "argument",
+        "description": "size",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csize\u003e"
+    ]
+  },
+  "-T": {
+    "Name": "-T",
+    "kind": "option",
+    "description": "Store temporary files in the directory dir",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdir\u003e": {
+        "Name": "\u003cdir\u003e",
+        "kind": "argument",
+        "description": "dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdir\u003e": {
+        "Name": "\u003cdir\u003e",
+        "kind": "argument",
+        "description": "dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdir\u003e"
+    ]
+  },
+  "-V": {
+    "Name": "-V",
+    "kind": "option",
+    "description": "Sort version numbers",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-b": {
+    "Name": "-b",
+    "kind": "option",
+    "description": "Ignore leading blank characters when comparing lines",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Check that the single input file is sorted",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003coutput\u003e": {
+        "Name": "\u003coutput\u003e",
+        "kind": "argument",
+        "description": "output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003coutput\u003e": {
+        "Name": "\u003coutput\u003e",
+        "kind": "argument",
+        "description": "output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "-d": {
+    "Name": "-d",
+    "kind": "option",
+    "description": "Consider only blank spaces and alphanumeric characters in comparisons",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-f": {
+    "Name": "-f",
+    "kind": "option",
+    "description": "Convert all lowercase characters to their upper case equivalent before comparison",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-g": {
+    "Name": "-g",
+    "kind": "option",
+    "description": "Sort by general numerical value",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Sort by numerical value, but take into account the SI suffix, if present",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-i": {
+    "Name": "-i",
+    "kind": "option",
+    "description": "Ignore all non-printable characters",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-k": {
+    "Name": "-k",
+    "kind": "option",
+    "description": "Define a restricted sort key that has the starting position field1, and optional ending position field2",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cfield1\u003e": {
+        "Name": "\u003cfield1\u003e",
+        "kind": "argument",
+        "description": "field1",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cfield2\u003e": {
+        "Name": "\u003cfield2\u003e",
+        "kind": "argument",
+        "description": "field2",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cfield1\u003e": {
+        "Name": "\u003cfield1\u003e",
+        "kind": "argument",
+        "description": "field1",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cfield2\u003e": {
+        "Name": "\u003cfield2\u003e",
+        "kind": "argument",
+        "description": "field2",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cfield1\u003e"
+    ]
+  },
+  "-m": {
+    "Name": "-m",
+    "kind": "option",
+    "description": "Merge only.  The input files are assumed to be pre-sorted.  If they are not sorted the output order is undefined",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-n": {
+    "Name": "-n",
+    "kind": "option",
+    "description": "Sort fields numerically by arithmetic value",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-o": {
+    "Name": "-o",
+    "kind": "option",
+    "description": "Print the output to the output file instead of the standard output",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003coutput\u003e": {
+        "Name": "\u003coutput\u003e",
+        "kind": "argument",
+        "description": "output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003coutput\u003e": {
+        "Name": "\u003coutput\u003e",
+        "kind": "argument",
+        "description": "output",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003coutput\u003e"
+    ]
+  },
+  "-r": {
+    "Name": "-r",
+    "kind": "option",
+    "description": "Sort in reverse order",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-s": {
+    "Name": "-s",
+    "kind": "option",
+    "description": "Stable sort. This option maintains the original record order of records that have an equal key",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-t": {
+    "Name": "-t",
+    "kind": "option",
+    "description": "Use char as a field separator character",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cchar\u003e": {
+        "Name": "\u003cchar\u003e",
+        "kind": "argument",
+        "description": "char",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cchar\u003e": {
+        "Name": "\u003cchar\u003e",
+        "kind": "argument",
+        "description": "char",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cchar\u003e"
+    ]
+  },
+  "-u": {
+    "Name": "-u",
+    "kind": "option",
+    "description": "Unique keys. Suppress all lines that have a key that is equal to an already processed one",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-z": {
+    "Name": "-z",
+    "kind": "option",
+    "description": "Use NUL as record separator",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003cfile\u003e": {
+    "Name": "\u003cfile\u003e",
+    "kind": "argument",
+    "description": "file",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  }
+}

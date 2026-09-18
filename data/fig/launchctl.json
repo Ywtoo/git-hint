@@ -1,0 +1,2712 @@
+{
+  "asuser": {
+    "Name": "asuser",
+    "kind": "subcommand",
+    "description": "Execute a program in the bootstrap context of a given user",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cUID\u003e": {
+        "Name": "\u003cUID\u003e",
+        "kind": "argument",
+        "description": "UID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cargs\u003e": {
+        "Name": "\u003cargs\u003e",
+        "kind": "argument",
+        "description": "args",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cUID\u003e": {
+        "Name": "\u003cUID\u003e",
+        "kind": "argument",
+        "description": "UID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cargs\u003e": {
+        "Name": "\u003cargs\u003e",
+        "kind": "argument",
+        "description": "args",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cUID\u003e",
+      "\u003ccommand\u003e"
+    ]
+  },
+  "attach": {
+    "Name": "attach",
+    "kind": "subcommand",
+    "description": "Attach the system's debugger to a service",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-k": {
+        "Name": "-k",
+        "kind": "option",
+        "description": "Kill instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Force the service to start",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-x": {
+        "Name": "-x",
+        "kind": "option",
+        "description": "Attach xpcproxy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cservice\u003e": {
+        "Name": "\u003cservice\u003e",
+        "kind": "argument",
+        "description": "service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "-k": {
+        "Name": "-k",
+        "kind": "option",
+        "description": "Kill instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Force the service to start",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-x": {
+        "Name": "-x",
+        "kind": "option",
+        "description": "Attach xpcproxy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cservice\u003e": {
+        "Name": "\u003cservice\u003e",
+        "kind": "argument",
+        "description": "service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cservice\u003e"
+    ]
+  },
+  "blame": {
+    "Name": "blame",
+    "kind": "subcommand",
+    "description": "Prints the reason a service is running",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cservice\u003e": {
+        "Name": "\u003cservice\u003e",
+        "kind": "argument",
+        "description": "service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cservice\u003e": {
+        "Name": "\u003cservice\u003e",
+        "kind": "argument",
+        "description": "service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cservice\u003e"
+    ]
+  },
+  "bootout": {
+    "Name": "bootout",
+    "kind": "subcommand",
+    "description": "Tears down a domain or removes a service from a domain",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cservice-path\u003e": {
+        "Name": "\u003cservice-path\u003e",
+        "kind": "argument",
+        "description": "service-path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cservice\u003e": {
+        "Name": "\u003cservice\u003e",
+        "kind": "argument",
+        "description": "service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cservice-path\u003e": {
+        "Name": "\u003cservice-path\u003e",
+        "kind": "argument",
+        "description": "service-path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cservice\u003e": {
+        "Name": "\u003cservice\u003e",
+        "kind": "argument",
+        "description": "service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cservice\u003e",
+      "\u003cservice-path\u003e"
+    ]
+  },
+  "bootstrap": {
+    "Name": "bootstrap",
+    "kind": "subcommand",
+    "description": "Bootstraps a domain or a service into a domain",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cservice-path\u003e": {
+        "Name": "\u003cservice-path\u003e",
+        "kind": "argument",
+        "description": "service-path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cservice\u003e": {
+        "Name": "\u003cservice\u003e",
+        "kind": "argument",
+        "description": "service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cservice-path\u003e": {
+        "Name": "\u003cservice-path\u003e",
+        "kind": "argument",
+        "description": "service-path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cservice\u003e": {
+        "Name": "\u003cservice\u003e",
+        "kind": "argument",
+        "description": "service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cservice\u003e",
+      "\u003cservice-path\u003e"
+    ]
+  },
+  "bsexec": {
+    "Name": "bsexec",
+    "kind": "subcommand",
+    "description": "Execute a program in another process' bootstrap context",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cPID\u003e": {
+        "Name": "\u003cPID\u003e",
+        "kind": "argument",
+        "description": "PID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cargs\u003e": {
+        "Name": "\u003cargs\u003e",
+        "kind": "argument",
+        "description": "args",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cPID\u003e": {
+        "Name": "\u003cPID\u003e",
+        "kind": "argument",
+        "description": "PID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cargs\u003e": {
+        "Name": "\u003cargs\u003e",
+        "kind": "argument",
+        "description": "args",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cPID\u003e",
+      "\u003ccommand\u003e"
+    ]
+  },
+  "config": {
+    "Name": "config",
+    "kind": "subcommand",
+    "description": "Modifies persistent configuration parameters for launchd domains",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003c[system | user]\u003e": {
+        "Name": "\u003c[system | user]\u003e",
+        "kind": "argument",
+        "description": "[system | user]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cparam\u003e": {
+        "Name": "\u003cparam\u003e",
+        "kind": "argument",
+        "description": "param",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003c[system | user]\u003e": {
+        "Name": "\u003c[system | user]\u003e",
+        "kind": "argument",
+        "description": "[system | user]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cparam\u003e": {
+        "Name": "\u003cparam\u003e",
+        "kind": "argument",
+        "description": "param",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003c[system | user]\u003e",
+      "\u003cparam\u003e",
+      "\u003cvalue\u003e"
+    ]
+  },
+  "debug": {
+    "Name": "debug",
+    "kind": "subcommand",
+    "description": "Configures the next invocation of a service for debugging",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--32": {
+        "Name": "--32",
+        "kind": "option",
+        "description": "Runs service on appropriate 32-bit architecture",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--NSZombie": {
+        "Name": "--NSZombie",
+        "kind": "option",
+        "description": "Enables NSZombie",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--debug-libraries": {
+        "Name": "--debug-libraries",
+        "kind": "option",
+        "description": "Set the DYLD_IMAGE_SUFFIX",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--environment": {
+        "Name": "--environment",
+        "kind": "option",
+        "description": "Sets environment variables",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cenvironment-variables\u003e": {
+            "Name": "\u003cenvironment-variables\u003e",
+            "kind": "argument",
+            "description": "environment-variables",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cenvironment-variables\u003e": {
+            "Name": "\u003cenvironment-variables\u003e",
+            "kind": "argument",
+            "description": "environment-variables",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cenvironment-variables\u003e"
+        ]
+      },
+      "--guard-malloc": {
+        "Name": "--guard-malloc",
+        "kind": "option",
+        "description": "Turn on libgmalloc",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--introspection-libraries": {
+        "Name": "--introspection-libraries",
+        "kind": "option",
+        "description": "Add introspection libraries to the DYLD_IMAGE_PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--malloc-nano-allocator": {
+        "Name": "--malloc-nano-allocator",
+        "kind": "option",
+        "description": "Turn on malloc(3) nano allocator",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--malloc-stack-logging": {
+        "Name": "--malloc-stack-logging",
+        "kind": "option",
+        "description": "Turn on malloc(3) stack logging",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--program": {
+        "Name": "--program",
+        "kind": "option",
+        "description": "Use program path as executable",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprogram-path\u003e": {
+            "Name": "\u003cprogram-path\u003e",
+            "kind": "argument",
+            "description": "program-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprogram-path\u003e": {
+            "Name": "\u003cprogram-path\u003e",
+            "kind": "argument",
+            "description": "program-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprogram-path\u003e"
+        ]
+      },
+      "--stderr": {
+        "Name": "--stderr",
+        "kind": "option",
+        "description": "Sets the stderr path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstderr-path\u003e": {
+            "Name": "\u003cstderr-path\u003e",
+            "kind": "argument",
+            "description": "stderr-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstderr-path\u003e": {
+            "Name": "\u003cstderr-path\u003e",
+            "kind": "argument",
+            "description": "stderr-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstderr-path\u003e"
+        ]
+      },
+      "--stdin": {
+        "Name": "--stdin",
+        "kind": "option",
+        "description": "Sets the stdin path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstdin-path\u003e": {
+            "Name": "\u003cstdin-path\u003e",
+            "kind": "argument",
+            "description": "stdin-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstdin-path\u003e": {
+            "Name": "\u003cstdin-path\u003e",
+            "kind": "argument",
+            "description": "stdin-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstdin-path\u003e"
+        ]
+      },
+      "--stdout": {
+        "Name": "--stdout",
+        "kind": "option",
+        "description": "Sets the stdout path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstdout-path\u003e": {
+            "Name": "\u003cstdout-path\u003e",
+            "kind": "argument",
+            "description": "stdout-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstdout-path\u003e": {
+            "Name": "\u003cstdout-path\u003e",
+            "kind": "argument",
+            "description": "stdout-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstdout-path\u003e"
+        ]
+      },
+      "\u003cargv\u003e": {
+        "Name": "\u003cargv\u003e",
+        "kind": "argument",
+        "description": "argv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--32": {
+        "Name": "--32",
+        "kind": "option",
+        "description": "Runs service on appropriate 32-bit architecture",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--NSZombie": {
+        "Name": "--NSZombie",
+        "kind": "option",
+        "description": "Enables NSZombie",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--debug-libraries": {
+        "Name": "--debug-libraries",
+        "kind": "option",
+        "description": "Set the DYLD_IMAGE_SUFFIX",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--environment": {
+        "Name": "--environment",
+        "kind": "option",
+        "description": "Sets environment variables",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cenvironment-variables\u003e": {
+            "Name": "\u003cenvironment-variables\u003e",
+            "kind": "argument",
+            "description": "environment-variables",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cenvironment-variables\u003e": {
+            "Name": "\u003cenvironment-variables\u003e",
+            "kind": "argument",
+            "description": "environment-variables",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cenvironment-variables\u003e"
+        ]
+      },
+      "--guard-malloc": {
+        "Name": "--guard-malloc",
+        "kind": "option",
+        "description": "Turn on libgmalloc",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--introspection-libraries": {
+        "Name": "--introspection-libraries",
+        "kind": "option",
+        "description": "Add introspection libraries to the DYLD_IMAGE_PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--malloc-nano-allocator": {
+        "Name": "--malloc-nano-allocator",
+        "kind": "option",
+        "description": "Turn on malloc(3) nano allocator",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--malloc-stack-logging": {
+        "Name": "--malloc-stack-logging",
+        "kind": "option",
+        "description": "Turn on malloc(3) stack logging",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--program": {
+        "Name": "--program",
+        "kind": "option",
+        "description": "Use program path as executable",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cprogram-path\u003e": {
+            "Name": "\u003cprogram-path\u003e",
+            "kind": "argument",
+            "description": "program-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cprogram-path\u003e": {
+            "Name": "\u003cprogram-path\u003e",
+            "kind": "argument",
+            "description": "program-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cprogram-path\u003e"
+        ]
+      },
+      "--stderr": {
+        "Name": "--stderr",
+        "kind": "option",
+        "description": "Sets the stderr path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstderr-path\u003e": {
+            "Name": "\u003cstderr-path\u003e",
+            "kind": "argument",
+            "description": "stderr-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstderr-path\u003e": {
+            "Name": "\u003cstderr-path\u003e",
+            "kind": "argument",
+            "description": "stderr-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstderr-path\u003e"
+        ]
+      },
+      "--stdin": {
+        "Name": "--stdin",
+        "kind": "option",
+        "description": "Sets the stdin path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstdin-path\u003e": {
+            "Name": "\u003cstdin-path\u003e",
+            "kind": "argument",
+            "description": "stdin-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstdin-path\u003e": {
+            "Name": "\u003cstdin-path\u003e",
+            "kind": "argument",
+            "description": "stdin-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstdin-path\u003e"
+        ]
+      },
+      "--stdout": {
+        "Name": "--stdout",
+        "kind": "option",
+        "description": "Sets the stdout path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstdout-path\u003e": {
+            "Name": "\u003cstdout-path\u003e",
+            "kind": "argument",
+            "description": "stdout-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstdout-path\u003e": {
+            "Name": "\u003cstdout-path\u003e",
+            "kind": "argument",
+            "description": "stdout-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstdout-path\u003e"
+        ]
+      },
+      "\u003cargv\u003e": {
+        "Name": "\u003cargv\u003e",
+        "kind": "argument",
+        "description": "argv",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cargv\u003e"
+    ]
+  },
+  "disable": {
+    "Name": "disable",
+    "kind": "subcommand",
+    "description": "Disables an existing service",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cservice\u003e": {
+        "Name": "\u003cservice\u003e",
+        "kind": "argument",
+        "description": "service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cservice\u003e": {
+        "Name": "\u003cservice\u003e",
+        "kind": "argument",
+        "description": "service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cservice\u003e"
+    ]
+  },
+  "dumpjpcategory": {
+    "Name": "dumpjpcategory",
+    "kind": "subcommand",
+    "description": "Dumps the jetsam properties category for all services",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "dumpstate": {
+    "Name": "dumpstate",
+    "kind": "subcommand",
+    "description": "Dumps launchd state to stdout",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "enable": {
+    "Name": "enable",
+    "kind": "subcommand",
+    "description": "Enables an existing service",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cservice\u003e": {
+        "Name": "\u003cservice\u003e",
+        "kind": "argument",
+        "description": "service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cservice\u003e": {
+        "Name": "\u003cservice\u003e",
+        "kind": "argument",
+        "description": "service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cservice\u003e"
+    ]
+  },
+  "error": {
+    "Name": "error",
+    "kind": "subcommand",
+    "description": "Prints a description of an error",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccode\u003e": {
+        "Name": "\u003ccode\u003e",
+        "kind": "argument",
+        "description": "code",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccode\u003e": {
+        "Name": "\u003ccode\u003e",
+        "kind": "argument",
+        "description": "code",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ctype\u003e": {
+        "Name": "\u003ctype\u003e",
+        "kind": "argument",
+        "description": "type",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctype\u003e",
+      "\u003ccode\u003e"
+    ]
+  },
+  "examine": {
+    "Name": "examine",
+    "kind": "subcommand",
+    "description": "Runs the specified analysis tool against launchd in a non-re-entrant manner",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003c[args | @PID]\u003e": {
+        "Name": "\u003c[args | @PID]\u003e",
+        "kind": "argument",
+        "description": "[args | @PID]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ctool\u003e": {
+        "Name": "\u003ctool\u003e",
+        "kind": "argument",
+        "description": "tool",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003c[args | @PID]\u003e": {
+        "Name": "\u003c[args | @PID]\u003e",
+        "kind": "argument",
+        "description": "[args | @PID]",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ctool\u003e": {
+        "Name": "\u003ctool\u003e",
+        "kind": "argument",
+        "description": "tool",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctool\u003e",
+      "\u003c[args | @PID]\u003e"
+    ]
+  },
+  "getenv": {
+    "Name": "getenv",
+    "kind": "subcommand",
+    "description": "Gets the value of an environment variable from within launchd",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ckey\u003e"
+    ]
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Prints the usage for a given subcommand",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "hostinfo": {
+    "Name": "hostinfo",
+    "kind": "subcommand",
+    "description": "Prints port information about the host",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "kickstart": {
+    "Name": "kickstart",
+    "kind": "subcommand",
+    "description": "Forces an existing service to start",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-k": {
+        "Name": "-k",
+        "kind": "option",
+        "description": "Kill instance before restarting",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Print PID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cservice\u003e": {
+        "Name": "\u003cservice\u003e",
+        "kind": "argument",
+        "description": "service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "-k": {
+        "Name": "-k",
+        "kind": "option",
+        "description": "Kill instance before restarting",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Print PID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cservice\u003e": {
+        "Name": "\u003cservice\u003e",
+        "kind": "argument",
+        "description": "service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cservice\u003e"
+    ]
+  },
+  "kill": {
+    "Name": "kill",
+    "kind": "subcommand",
+    "description": "Sends a signal to the service instance",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cservice\u003e": {
+        "Name": "\u003cservice\u003e",
+        "kind": "argument",
+        "description": "service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003csignal\u003e": {
+        "Name": "\u003csignal\u003e",
+        "kind": "argument",
+        "description": "signal",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cservice\u003e": {
+        "Name": "\u003cservice\u003e",
+        "kind": "argument",
+        "description": "service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003csignal\u003e": {
+        "Name": "\u003csignal\u003e",
+        "kind": "argument",
+        "description": "signal",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csignal\u003e",
+      "\u003cservice\u003e"
+    ]
+  },
+  "limit": {
+    "Name": "limit",
+    "kind": "subcommand",
+    "description": "Reads or modifies launchd's resource limits",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "core": {
+        "Name": "core",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c[both]\u003e": {
+            "Name": "\u003c[both]\u003e",
+            "kind": "argument",
+            "description": "[both]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003c[soft | hard]\u003e": {
+            "Name": "\u003c[soft | hard]\u003e",
+            "kind": "argument",
+            "description": "[soft | hard]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c[both]\u003e": {
+            "Name": "\u003c[both]\u003e",
+            "kind": "argument",
+            "description": "[both]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003c[soft | hard]\u003e": {
+            "Name": "\u003c[soft | hard]\u003e",
+            "kind": "argument",
+            "description": "[soft | hard]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c[both]\u003e"
+        ]
+      },
+      "cpu": {
+        "Name": "cpu",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c[both]\u003e": {
+            "Name": "\u003c[both]\u003e",
+            "kind": "argument",
+            "description": "[both]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003c[soft | hard]\u003e": {
+            "Name": "\u003c[soft | hard]\u003e",
+            "kind": "argument",
+            "description": "[soft | hard]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c[both]\u003e": {
+            "Name": "\u003c[both]\u003e",
+            "kind": "argument",
+            "description": "[both]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003c[soft | hard]\u003e": {
+            "Name": "\u003c[soft | hard]\u003e",
+            "kind": "argument",
+            "description": "[soft | hard]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c[both]\u003e"
+        ]
+      },
+      "data": {
+        "Name": "data",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c[both]\u003e": {
+            "Name": "\u003c[both]\u003e",
+            "kind": "argument",
+            "description": "[both]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003c[soft | hard]\u003e": {
+            "Name": "\u003c[soft | hard]\u003e",
+            "kind": "argument",
+            "description": "[soft | hard]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c[both]\u003e": {
+            "Name": "\u003c[both]\u003e",
+            "kind": "argument",
+            "description": "[both]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003c[soft | hard]\u003e": {
+            "Name": "\u003c[soft | hard]\u003e",
+            "kind": "argument",
+            "description": "[soft | hard]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c[both]\u003e"
+        ]
+      },
+      "filesize": {
+        "Name": "filesize",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c[both]\u003e": {
+            "Name": "\u003c[both]\u003e",
+            "kind": "argument",
+            "description": "[both]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003c[soft | hard]\u003e": {
+            "Name": "\u003c[soft | hard]\u003e",
+            "kind": "argument",
+            "description": "[soft | hard]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c[both]\u003e": {
+            "Name": "\u003c[both]\u003e",
+            "kind": "argument",
+            "description": "[both]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003c[soft | hard]\u003e": {
+            "Name": "\u003c[soft | hard]\u003e",
+            "kind": "argument",
+            "description": "[soft | hard]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c[both]\u003e"
+        ]
+      },
+      "maxfiles": {
+        "Name": "maxfiles",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c[both]\u003e": {
+            "Name": "\u003c[both]\u003e",
+            "kind": "argument",
+            "description": "[both]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003c[soft | hard]\u003e": {
+            "Name": "\u003c[soft | hard]\u003e",
+            "kind": "argument",
+            "description": "[soft | hard]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c[both]\u003e": {
+            "Name": "\u003c[both]\u003e",
+            "kind": "argument",
+            "description": "[both]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003c[soft | hard]\u003e": {
+            "Name": "\u003c[soft | hard]\u003e",
+            "kind": "argument",
+            "description": "[soft | hard]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c[both]\u003e"
+        ]
+      },
+      "maxproc": {
+        "Name": "maxproc",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c[both]\u003e": {
+            "Name": "\u003c[both]\u003e",
+            "kind": "argument",
+            "description": "[both]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003c[soft | hard]\u003e": {
+            "Name": "\u003c[soft | hard]\u003e",
+            "kind": "argument",
+            "description": "[soft | hard]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c[both]\u003e": {
+            "Name": "\u003c[both]\u003e",
+            "kind": "argument",
+            "description": "[both]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003c[soft | hard]\u003e": {
+            "Name": "\u003c[soft | hard]\u003e",
+            "kind": "argument",
+            "description": "[soft | hard]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c[both]\u003e"
+        ]
+      },
+      "memlock": {
+        "Name": "memlock",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c[both]\u003e": {
+            "Name": "\u003c[both]\u003e",
+            "kind": "argument",
+            "description": "[both]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003c[soft | hard]\u003e": {
+            "Name": "\u003c[soft | hard]\u003e",
+            "kind": "argument",
+            "description": "[soft | hard]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c[both]\u003e": {
+            "Name": "\u003c[both]\u003e",
+            "kind": "argument",
+            "description": "[both]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003c[soft | hard]\u003e": {
+            "Name": "\u003c[soft | hard]\u003e",
+            "kind": "argument",
+            "description": "[soft | hard]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c[both]\u003e"
+        ]
+      },
+      "rss": {
+        "Name": "rss",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c[both]\u003e": {
+            "Name": "\u003c[both]\u003e",
+            "kind": "argument",
+            "description": "[both]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003c[soft | hard]\u003e": {
+            "Name": "\u003c[soft | hard]\u003e",
+            "kind": "argument",
+            "description": "[soft | hard]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c[both]\u003e": {
+            "Name": "\u003c[both]\u003e",
+            "kind": "argument",
+            "description": "[both]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003c[soft | hard]\u003e": {
+            "Name": "\u003c[soft | hard]\u003e",
+            "kind": "argument",
+            "description": "[soft | hard]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c[both]\u003e"
+        ]
+      },
+      "stack": {
+        "Name": "stack",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003c[both]\u003e": {
+            "Name": "\u003c[both]\u003e",
+            "kind": "argument",
+            "description": "[both]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003c[soft | hard]\u003e": {
+            "Name": "\u003c[soft | hard]\u003e",
+            "kind": "argument",
+            "description": "[soft | hard]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003c[both]\u003e": {
+            "Name": "\u003c[both]\u003e",
+            "kind": "argument",
+            "description": "[both]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003c[soft | hard]\u003e": {
+            "Name": "\u003c[soft | hard]\u003e",
+            "kind": "argument",
+            "description": "[soft | hard]",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003c[both]\u003e"
+        ]
+      }
+    }
+  },
+  "list": {
+    "Name": "list",
+    "kind": "subcommand",
+    "description": "Lists information about services",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clabel\u003e": {
+        "Name": "\u003clabel\u003e",
+        "kind": "argument",
+        "description": "label",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clabel\u003e": {
+        "Name": "\u003clabel\u003e",
+        "kind": "argument",
+        "description": "label",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "load": {
+    "Name": "load",
+    "kind": "subcommand",
+    "description": "Recommended alternatives: bootstrap | enable. Bootstraps a service or directory of services",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-D": {
+        "Name": "-D",
+        "kind": "option",
+        "description": "Load files from specified domain",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdomain\u003e": {
+            "Name": "\u003cdomain\u003e",
+            "kind": "argument",
+            "description": "domain",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdomain\u003e": {
+            "Name": "\u003cdomain\u003e",
+            "kind": "argument",
+            "description": "domain",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdomain\u003e"
+        ]
+      },
+      "-F": {
+        "Name": "-F",
+        "kind": "option",
+        "description": "Force load",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-S": {
+        "Name": "-S",
+        "kind": "option",
+        "description": "Session",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csession\u003e": {
+            "Name": "\u003csession\u003e",
+            "kind": "argument",
+            "description": "session",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csession\u003e": {
+            "Name": "\u003csession\u003e",
+            "kind": "argument",
+            "description": "session",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csession\u003e"
+        ]
+      },
+      "-w": {
+        "Name": "-w",
+        "kind": "option",
+        "description": "Enable if disabled",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "-D": {
+        "Name": "-D",
+        "kind": "option",
+        "description": "Load files from specified domain",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdomain\u003e": {
+            "Name": "\u003cdomain\u003e",
+            "kind": "argument",
+            "description": "domain",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdomain\u003e": {
+            "Name": "\u003cdomain\u003e",
+            "kind": "argument",
+            "description": "domain",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdomain\u003e"
+        ]
+      },
+      "-F": {
+        "Name": "-F",
+        "kind": "option",
+        "description": "Force load",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-S": {
+        "Name": "-S",
+        "kind": "option",
+        "description": "Session",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csession\u003e": {
+            "Name": "\u003csession\u003e",
+            "kind": "argument",
+            "description": "session",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csession\u003e": {
+            "Name": "\u003csession\u003e",
+            "kind": "argument",
+            "description": "session",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csession\u003e"
+        ]
+      },
+      "-w": {
+        "Name": "-w",
+        "kind": "option",
+        "description": "Enable if disabled",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "managername": {
+    "Name": "managername",
+    "kind": "subcommand",
+    "description": "Prints the name of the current launchd session",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "managerpid": {
+    "Name": "managerpid",
+    "kind": "subcommand",
+    "description": "Prints the PID of the launchd controlling the session",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "manageruid": {
+    "Name": "manageruid",
+    "kind": "subcommand",
+    "description": "Prints the UID of the current launchd session",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "plist": {
+    "Name": "plist",
+    "kind": "subcommand",
+    "description": "Prints a property list embedded in a binary (targets the Info.plist by default)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cMach-O\u003e": {
+        "Name": "\u003cMach-O\u003e",
+        "kind": "argument",
+        "description": "Mach-O",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003csegment\u003e": {
+        "Name": "\u003csegment\u003e",
+        "kind": "argument",
+        "description": "segment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cMach-O\u003e": {
+        "Name": "\u003cMach-O\u003e",
+        "kind": "argument",
+        "description": "Mach-O",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003csegment\u003e": {
+        "Name": "\u003csegment\u003e",
+        "kind": "argument",
+        "description": "segment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csegment\u003e"
+    ]
+  },
+  "print": {
+    "Name": "print",
+    "kind": "subcommand",
+    "description": "Prints a description of a domain or service",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cservice\u003e": {
+        "Name": "\u003cservice\u003e",
+        "kind": "argument",
+        "description": "service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cservice\u003e": {
+        "Name": "\u003cservice\u003e",
+        "kind": "argument",
+        "description": "service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cservice\u003e"
+    ]
+  },
+  "print-cache": {
+    "Name": "print-cache",
+    "kind": "subcommand",
+    "description": "Prints information about the service cache",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "print-disabled": {
+    "Name": "print-disabled",
+    "kind": "subcommand",
+    "description": "Prints which services are disabled",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdomain-target\u003e": {
+        "Name": "\u003cdomain-target\u003e",
+        "kind": "argument",
+        "description": "domain-target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdomain-target\u003e": {
+        "Name": "\u003cdomain-target\u003e",
+        "kind": "argument",
+        "description": "domain-target",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdomain-target\u003e"
+    ]
+  },
+  "procinfo": {
+    "Name": "procinfo",
+    "kind": "subcommand",
+    "description": "Prints port information about a process",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpid\u003e": {
+        "Name": "\u003cpid\u003e",
+        "kind": "argument",
+        "description": "pid",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpid\u003e": {
+        "Name": "\u003cpid\u003e",
+        "kind": "argument",
+        "description": "pid",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpid\u003e"
+    ]
+  },
+  "reboot": {
+    "Name": "reboot",
+    "kind": "subcommand",
+    "description": "Initiates a system reboot of the specified type",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "apps": {
+        "Name": "apps",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "halt": {
+        "Name": "halt",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "logout": {
+        "Name": "logout",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "system": {
+        "Name": "system",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "userspace": {
+        "Name": "userspace",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "remove": {
+    "Name": "remove",
+    "kind": "subcommand",
+    "description": "Unloads the specified service name",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clabel\u003e": {
+        "Name": "\u003clabel\u003e",
+        "kind": "argument",
+        "description": "label",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clabel\u003e": {
+        "Name": "\u003clabel\u003e",
+        "kind": "argument",
+        "description": "label",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clabel\u003e"
+    ]
+  },
+  "resolveport": {
+    "Name": "resolveport",
+    "kind": "subcommand",
+    "description": "Resolves a port name from a process to an endpoint in launchd",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cowner-pid\u003e": {
+        "Name": "\u003cowner-pid\u003e",
+        "kind": "argument",
+        "description": "owner-pid",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cport-name\u003e": {
+        "Name": "\u003cport-name\u003e",
+        "kind": "argument",
+        "description": "port-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cowner-pid\u003e": {
+        "Name": "\u003cowner-pid\u003e",
+        "kind": "argument",
+        "description": "owner-pid",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cport-name\u003e": {
+        "Name": "\u003cport-name\u003e",
+        "kind": "argument",
+        "description": "port-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cowner-pid\u003e",
+      "\u003cport-name\u003e"
+    ]
+  },
+  "runstats": {
+    "Name": "runstats",
+    "kind": "subcommand",
+    "description": "Prints performance statistics for a service",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cservice\u003e": {
+        "Name": "\u003cservice\u003e",
+        "kind": "argument",
+        "description": "service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cservice\u003e": {
+        "Name": "\u003cservice\u003e",
+        "kind": "argument",
+        "description": "service",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cservice\u003e"
+    ]
+  },
+  "setenv": {
+    "Name": "setenv",
+    "kind": "subcommand",
+    "description": "Sets the specified environment variables for all services within the domain",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvalue\u003e": {
+        "Name": "\u003cvalue\u003e",
+        "kind": "argument",
+        "description": "value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ckey\u003e",
+      "\u003cvalue\u003e"
+    ]
+  },
+  "start": {
+    "Name": "start",
+    "kind": "subcommand",
+    "description": "Starts the specified service",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clabel\u003e": {
+        "Name": "\u003clabel\u003e",
+        "kind": "argument",
+        "description": "label",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clabel\u003e": {
+        "Name": "\u003clabel\u003e",
+        "kind": "argument",
+        "description": "label",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clabel\u003e"
+    ]
+  },
+  "stop": {
+    "Name": "stop",
+    "kind": "subcommand",
+    "description": "Stops the specified service if it is running",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003clabel\u003e": {
+        "Name": "\u003clabel\u003e",
+        "kind": "argument",
+        "description": "label",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003clabel\u003e": {
+        "Name": "\u003clabel\u003e",
+        "kind": "argument",
+        "description": "label",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003clabel\u003e"
+    ]
+  },
+  "submit": {
+    "Name": "submit",
+    "kind": "subcommand",
+    "description": "Submit a basic job from the command line",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-e": {
+        "Name": "-e",
+        "kind": "option",
+        "description": "Std err path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstderr-path\u003e": {
+            "Name": "\u003cstderr-path\u003e",
+            "kind": "argument",
+            "description": "stderr-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstderr-path\u003e": {
+            "Name": "\u003cstderr-path\u003e",
+            "kind": "argument",
+            "description": "stderr-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstderr-path\u003e"
+        ]
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Std out path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstdout-path\u003e": {
+            "Name": "\u003cstdout-path\u003e",
+            "kind": "argument",
+            "description": "stdout-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstdout-path\u003e": {
+            "Name": "\u003cstdout-path\u003e",
+            "kind": "argument",
+            "description": "stdout-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstdout-path\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Program to execute",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cexecutable\u003e": {
+            "Name": "\u003cexecutable\u003e",
+            "kind": "argument",
+            "description": "executable",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cexecutable\u003e": {
+            "Name": "\u003cexecutable\u003e",
+            "kind": "argument",
+            "description": "executable",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cexecutable\u003e"
+        ]
+      },
+      "\u003c-l\u003e": {
+        "Name": "\u003c-l\u003e",
+        "kind": "argument",
+        "description": "-l",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003carg\u003e": {
+        "Name": "\u003carg\u003e",
+        "kind": "argument",
+        "description": "arg",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003clabel\u003e": {
+        "Name": "\u003clabel\u003e",
+        "kind": "argument",
+        "description": "label",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "-e": {
+        "Name": "-e",
+        "kind": "option",
+        "description": "Std err path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstderr-path\u003e": {
+            "Name": "\u003cstderr-path\u003e",
+            "kind": "argument",
+            "description": "stderr-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstderr-path\u003e": {
+            "Name": "\u003cstderr-path\u003e",
+            "kind": "argument",
+            "description": "stderr-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstderr-path\u003e"
+        ]
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Std out path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstdout-path\u003e": {
+            "Name": "\u003cstdout-path\u003e",
+            "kind": "argument",
+            "description": "stdout-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstdout-path\u003e": {
+            "Name": "\u003cstdout-path\u003e",
+            "kind": "argument",
+            "description": "stdout-path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstdout-path\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Program to execute",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cexecutable\u003e": {
+            "Name": "\u003cexecutable\u003e",
+            "kind": "argument",
+            "description": "executable",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cexecutable\u003e": {
+            "Name": "\u003cexecutable\u003e",
+            "kind": "argument",
+            "description": "executable",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cexecutable\u003e"
+        ]
+      },
+      "\u003c-l\u003e": {
+        "Name": "\u003c-l\u003e",
+        "kind": "argument",
+        "description": "-l",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003carg\u003e": {
+        "Name": "\u003carg\u003e",
+        "kind": "argument",
+        "description": "arg",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003clabel\u003e": {
+        "Name": "\u003clabel\u003e",
+        "kind": "argument",
+        "description": "label",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003c-l\u003e",
+      "\u003clabel\u003e",
+      "\u003ccommand\u003e"
+    ]
+  },
+  "unload": {
+    "Name": "unload",
+    "kind": "subcommand",
+    "description": "Recommended alternatives: bootout | disable. Unloads a service or directory of services",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-D": {
+        "Name": "-D",
+        "kind": "option",
+        "description": "Load files from specified domain",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdomain\u003e": {
+            "Name": "\u003cdomain\u003e",
+            "kind": "argument",
+            "description": "domain",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdomain\u003e": {
+            "Name": "\u003cdomain\u003e",
+            "kind": "argument",
+            "description": "domain",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdomain\u003e"
+        ]
+      },
+      "-F": {
+        "Name": "-F",
+        "kind": "option",
+        "description": "Force load",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-S": {
+        "Name": "-S",
+        "kind": "option",
+        "description": "Session",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csession\u003e": {
+            "Name": "\u003csession\u003e",
+            "kind": "argument",
+            "description": "session",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csession\u003e": {
+            "Name": "\u003csession\u003e",
+            "kind": "argument",
+            "description": "session",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csession\u003e"
+        ]
+      },
+      "-w": {
+        "Name": "-w",
+        "kind": "option",
+        "description": "Enable if disabled",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "-D": {
+        "Name": "-D",
+        "kind": "option",
+        "description": "Load files from specified domain",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdomain\u003e": {
+            "Name": "\u003cdomain\u003e",
+            "kind": "argument",
+            "description": "domain",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdomain\u003e": {
+            "Name": "\u003cdomain\u003e",
+            "kind": "argument",
+            "description": "domain",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdomain\u003e"
+        ]
+      },
+      "-F": {
+        "Name": "-F",
+        "kind": "option",
+        "description": "Force load",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-S": {
+        "Name": "-S",
+        "kind": "option",
+        "description": "Session",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csession\u003e": {
+            "Name": "\u003csession\u003e",
+            "kind": "argument",
+            "description": "session",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csession\u003e": {
+            "Name": "\u003csession\u003e",
+            "kind": "argument",
+            "description": "session",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csession\u003e"
+        ]
+      },
+      "-w": {
+        "Name": "-w",
+        "kind": "option",
+        "description": "Enable if disabled",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "unsetenv": {
+    "Name": "unsetenv",
+    "kind": "subcommand",
+    "description": "Unsets the specified environment variables for all services within the domain",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ckey\u003e": {
+        "Name": "\u003ckey\u003e",
+        "kind": "argument",
+        "description": "key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ckey\u003e"
+    ]
+  },
+  "variant": {
+    "Name": "variant",
+    "kind": "subcommand",
+    "description": "Prints the launchd variant",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "version": {
+    "Name": "version",
+    "kind": "subcommand",
+    "description": "Prints the launchd version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

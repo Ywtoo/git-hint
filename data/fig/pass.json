@@ -1,0 +1,987 @@
+{
+  "--clip": {
+    "Name": "--clip",
+    "kind": "option",
+    "description": "Copy the password to the clipboard",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for pass",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--qrcode": {
+    "Name": "--qrcode",
+    "kind": "option",
+    "description": "Display a QRcode of the password",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Copy the password to the clipboard",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-q": {
+    "Name": "-q",
+    "kind": "option",
+    "description": "Display a QRcode of the password",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "\u003cpass-name\u003e": {
+    "Name": "\u003cpass-name\u003e",
+    "kind": "argument",
+    "description": "pass-name",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": null
+  },
+  "cp": {
+    "Name": "cp",
+    "kind": "subcommand",
+    "description": "Copies the password or directory named old-path to new-path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Do not interactively prompt before moving",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Do not interactively prompt before moving",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cnew-path\u003e": {
+        "Name": "\u003cnew-path\u003e",
+        "kind": "argument",
+        "description": "new-path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cold-path\u003e": {
+        "Name": "\u003cold-path\u003e",
+        "kind": "argument",
+        "description": "old-path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Do not interactively prompt before moving",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Do not interactively prompt before moving",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cnew-path\u003e": {
+        "Name": "\u003cnew-path\u003e",
+        "kind": "argument",
+        "description": "new-path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cold-path\u003e": {
+        "Name": "\u003cold-path\u003e",
+        "kind": "argument",
+        "description": "old-path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cold-path\u003e",
+      "\u003cnew-path\u003e"
+    ]
+  },
+  "edit": {
+    "Name": "edit",
+    "kind": "subcommand",
+    "description": "Insert a new password or edit an existing password using the default text editor specified by the environment",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpass-name\u003e": {
+        "Name": "\u003cpass-name\u003e",
+        "kind": "argument",
+        "description": "pass-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpass-name\u003e": {
+        "Name": "\u003cpass-name\u003e",
+        "kind": "argument",
+        "description": "pass-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpass-name\u003e"
+    ]
+  },
+  "find": {
+    "Name": "find",
+    "kind": "subcommand",
+    "description": "List names of passwords inside the tree that match pass-names",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpass-name\u003e": {
+        "Name": "\u003cpass-name\u003e",
+        "kind": "argument",
+        "description": "pass-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpass-name\u003e": {
+        "Name": "\u003cpass-name\u003e",
+        "kind": "argument",
+        "description": "pass-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpass-name\u003e"
+    ]
+  },
+  "generate": {
+    "Name": "generate",
+    "kind": "subcommand",
+    "description": "Generate a new password of length pass-length and insert into pass-name",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--clip": {
+        "Name": "--clip",
+        "kind": "option",
+        "description": "Do not print the password but instead copy it to the clipboard",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Overwrite the existing password",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--in-place": {
+        "Name": "--in-place",
+        "kind": "option",
+        "description": "Do not interactively prompt, and only replace the first line of the password file with the new generated password, keeping the remainder of the file intact",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-symbols": {
+        "Name": "--no-symbols",
+        "kind": "option",
+        "description": "Do not use any non-alphanumeric characters in the generated password",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Do not print the password but instead copy it to the clipboard",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Overwrite the existing password",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-i": {
+        "Name": "-i",
+        "kind": "option",
+        "description": "Do not interactively prompt, and only replace the first line of the password file with the new generated password, keeping the remainder of the file intact",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "Do not use any non-alphanumeric characters in the generated password",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpass-length\u003e": {
+        "Name": "\u003cpass-length\u003e",
+        "kind": "argument",
+        "description": "pass-length",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpass-name\u003e": {
+        "Name": "\u003cpass-name\u003e",
+        "kind": "argument",
+        "description": "pass-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--clip": {
+        "Name": "--clip",
+        "kind": "option",
+        "description": "Do not print the password but instead copy it to the clipboard",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Overwrite the existing password",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--in-place": {
+        "Name": "--in-place",
+        "kind": "option",
+        "description": "Do not interactively prompt, and only replace the first line of the password file with the new generated password, keeping the remainder of the file intact",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-symbols": {
+        "Name": "--no-symbols",
+        "kind": "option",
+        "description": "Do not use any non-alphanumeric characters in the generated password",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Do not print the password but instead copy it to the clipboard",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Overwrite the existing password",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-i": {
+        "Name": "-i",
+        "kind": "option",
+        "description": "Do not interactively prompt, and only replace the first line of the password file with the new generated password, keeping the remainder of the file intact",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "Do not use any non-alphanumeric characters in the generated password",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpass-length\u003e": {
+        "Name": "\u003cpass-length\u003e",
+        "kind": "argument",
+        "description": "pass-length",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpass-name\u003e": {
+        "Name": "\u003cpass-name\u003e",
+        "kind": "argument",
+        "description": "pass-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpass-name\u003e"
+    ]
+  },
+  "git": {
+    "Name": "git",
+    "kind": "subcommand",
+    "description": "Password store git functions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "grep": {
+    "Name": "grep",
+    "kind": "subcommand",
+    "description": "Searches inside each decrypted password file for search-string. Grep options can be used",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpass-name\u003e": {
+        "Name": "\u003cpass-name\u003e",
+        "kind": "argument",
+        "description": "pass-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpass-name\u003e": {
+        "Name": "\u003cpass-name\u003e",
+        "kind": "argument",
+        "description": "pass-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpass-name\u003e"
+    ]
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Show usage message",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "init": {
+    "Name": "init",
+    "kind": "subcommand",
+    "description": "Initialize new password storage and use gpg-id for encryption",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--path": {
+        "Name": "--path",
+        "kind": "option",
+        "description": "A specific gpg-id or set of gpg-ids is assigned for that specific sub folder of the password store",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csub-folder\u003e": {
+            "Name": "\u003csub-folder\u003e",
+            "kind": "argument",
+            "description": "sub-folder",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csub-folder\u003e": {
+            "Name": "\u003csub-folder\u003e",
+            "kind": "argument",
+            "description": "sub-folder",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csub-folder\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "A specific gpg-id or set of gpg-ids is assigned for that specific sub folder of the password store",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csub-folder\u003e": {
+            "Name": "\u003csub-folder\u003e",
+            "kind": "argument",
+            "description": "sub-folder",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csub-folder\u003e": {
+            "Name": "\u003csub-folder\u003e",
+            "kind": "argument",
+            "description": "sub-folder",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csub-folder\u003e"
+        ]
+      },
+      "\u003cgpg-id\u003e": {
+        "Name": "\u003cgpg-id\u003e",
+        "kind": "argument",
+        "description": "gpg-id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--path": {
+        "Name": "--path",
+        "kind": "option",
+        "description": "A specific gpg-id or set of gpg-ids is assigned for that specific sub folder of the password store",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csub-folder\u003e": {
+            "Name": "\u003csub-folder\u003e",
+            "kind": "argument",
+            "description": "sub-folder",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csub-folder\u003e": {
+            "Name": "\u003csub-folder\u003e",
+            "kind": "argument",
+            "description": "sub-folder",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csub-folder\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "A specific gpg-id or set of gpg-ids is assigned for that specific sub folder of the password store",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003csub-folder\u003e": {
+            "Name": "\u003csub-folder\u003e",
+            "kind": "argument",
+            "description": "sub-folder",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003csub-folder\u003e": {
+            "Name": "\u003csub-folder\u003e",
+            "kind": "argument",
+            "description": "sub-folder",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003csub-folder\u003e"
+        ]
+      },
+      "\u003cgpg-id\u003e": {
+        "Name": "\u003cgpg-id\u003e",
+        "kind": "argument",
+        "description": "gpg-id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cgpg-id\u003e"
+    ]
+  },
+  "insert": {
+    "Name": "insert",
+    "kind": "subcommand",
+    "description": "Insert a new password into the password store called pass-name",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--echo": {
+        "Name": "--echo",
+        "kind": "option",
+        "description": "Disable keyboard echo when the password is entered and confirm the password by asking for it twice",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Don't prompt before overwriting an existing password",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--multi-line": {
+        "Name": "--multi-line",
+        "kind": "option",
+        "description": "Lines will be read until EOF or Ctrl+D is reached. Otherwise, only a single line from standard in is read",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-e": {
+        "Name": "-e",
+        "kind": "option",
+        "description": "Disable keyboard echo when the password is entered and confirm the password by asking for it twice",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Don't prompt before overwriting an existing password",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-m": {
+        "Name": "-m",
+        "kind": "option",
+        "description": "Lines will be read until EOF or Ctrl+D is reached. Otherwise, only a single line from standard in is read",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpass-name\u003e": {
+        "Name": "\u003cpass-name\u003e",
+        "kind": "argument",
+        "description": "pass-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--echo": {
+        "Name": "--echo",
+        "kind": "option",
+        "description": "Disable keyboard echo when the password is entered and confirm the password by asking for it twice",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Don't prompt before overwriting an existing password",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--multi-line": {
+        "Name": "--multi-line",
+        "kind": "option",
+        "description": "Lines will be read until EOF or Ctrl+D is reached. Otherwise, only a single line from standard in is read",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-e": {
+        "Name": "-e",
+        "kind": "option",
+        "description": "Disable keyboard echo when the password is entered and confirm the password by asking for it twice",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Don't prompt before overwriting an existing password",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-m": {
+        "Name": "-m",
+        "kind": "option",
+        "description": "Lines will be read until EOF or Ctrl+D is reached. Otherwise, only a single line from standard in is read",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpass-name\u003e": {
+        "Name": "\u003cpass-name\u003e",
+        "kind": "argument",
+        "description": "pass-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpass-name\u003e"
+    ]
+  },
+  "ls": {
+    "Name": "ls",
+    "kind": "subcommand",
+    "description": "List names of passwords inside the tree at subfolder by using the tree",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpassword sub-directory\u003e": {
+        "Name": "\u003cpassword sub-directory\u003e",
+        "kind": "argument",
+        "description": "password sub-directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpassword sub-directory\u003e": {
+        "Name": "\u003cpassword sub-directory\u003e",
+        "kind": "argument",
+        "description": "password sub-directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "mv": {
+    "Name": "mv",
+    "kind": "subcommand",
+    "description": "Renames the password or directory named old-path to new-path",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Do not interactively prompt before moving",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Do not interactively prompt before moving",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cnew-path\u003e": {
+        "Name": "\u003cnew-path\u003e",
+        "kind": "argument",
+        "description": "new-path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cold-path\u003e": {
+        "Name": "\u003cold-path\u003e",
+        "kind": "argument",
+        "description": "old-path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Do not interactively prompt before moving",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Do not interactively prompt before moving",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cnew-path\u003e": {
+        "Name": "\u003cnew-path\u003e",
+        "kind": "argument",
+        "description": "new-path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cold-path\u003e": {
+        "Name": "\u003cold-path\u003e",
+        "kind": "argument",
+        "description": "old-path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cold-path\u003e",
+      "\u003cnew-path\u003e"
+    ]
+  },
+  "rm": {
+    "Name": "rm",
+    "kind": "subcommand",
+    "description": "Remove the password named pass-name from the password store",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Do not interactively prompt before removal",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--recursive": {
+        "Name": "--recursive",
+        "kind": "option",
+        "description": "Delete pass-name recursively if it is a directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Do not interactively prompt before removal",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Delete pass-name recursively if it is a directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpass-name\u003e": {
+        "Name": "\u003cpass-name\u003e",
+        "kind": "argument",
+        "description": "pass-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Do not interactively prompt before removal",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--recursive": {
+        "Name": "--recursive",
+        "kind": "option",
+        "description": "Delete pass-name recursively if it is a directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Do not interactively prompt before removal",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Delete pass-name recursively if it is a directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpass-name\u003e": {
+        "Name": "\u003cpass-name\u003e",
+        "kind": "argument",
+        "description": "pass-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpass-name\u003e"
+    ]
+  },
+  "show": {
+    "Name": "show",
+    "kind": "subcommand",
+    "description": "Decrypt and print a password",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--clip": {
+        "Name": "--clip",
+        "kind": "option",
+        "description": "Copy the password to the clipboard",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--qrcode": {
+        "Name": "--qrcode",
+        "kind": "option",
+        "description": "Display a QRcode of the password",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Copy the password to the clipboard",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Display a QRcode of the password",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpass-name\u003e": {
+        "Name": "\u003cpass-name\u003e",
+        "kind": "argument",
+        "description": "pass-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--clip": {
+        "Name": "--clip",
+        "kind": "option",
+        "description": "Copy the password to the clipboard",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--qrcode": {
+        "Name": "--qrcode",
+        "kind": "option",
+        "description": "Display a QRcode of the password",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Copy the password to the clipboard",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Display a QRcode of the password",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cpass-name\u003e": {
+        "Name": "\u003cpass-name\u003e",
+        "kind": "argument",
+        "description": "pass-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpass-name\u003e"
+    ]
+  },
+  "version": {
+    "Name": "version",
+    "kind": "subcommand",
+    "description": "Show version information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

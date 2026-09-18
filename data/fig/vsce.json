@@ -1,0 +1,2464 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Display help for command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Output the version number",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-V": {
+    "Name": "-V",
+    "kind": "option",
+    "description": "Output the version number",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Display help for command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "delete-publisher": {
+    "Name": "delete-publisher",
+    "kind": "subcommand",
+    "description": "Deletes a publisher",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpublisher\u003e": {
+        "Name": "\u003cpublisher\u003e",
+        "kind": "argument",
+        "description": "publisher",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpublisher\u003e": {
+        "Name": "\u003cpublisher\u003e",
+        "kind": "argument",
+        "description": "publisher",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpublisher\u003e"
+    ]
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Display help for command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "login": {
+    "Name": "login",
+    "kind": "subcommand",
+    "description": "Add a publisher to the known publishers list",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpublisher\u003e": {
+        "Name": "\u003cpublisher\u003e",
+        "kind": "argument",
+        "description": "publisher",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpublisher\u003e": {
+        "Name": "\u003cpublisher\u003e",
+        "kind": "argument",
+        "description": "publisher",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpublisher\u003e"
+    ]
+  },
+  "logout": {
+    "Name": "logout",
+    "kind": "subcommand",
+    "description": "Remove a publisher from the known publishers list",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpublisher\u003e": {
+        "Name": "\u003cpublisher\u003e",
+        "kind": "argument",
+        "description": "publisher",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpublisher\u003e": {
+        "Name": "\u003cpublisher\u003e",
+        "kind": "argument",
+        "description": "publisher",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpublisher\u003e"
+    ]
+  },
+  "ls": {
+    "Name": "ls",
+    "kind": "subcommand",
+    "description": "Lists all the files that will be published",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--ignoreFile": {
+        "Name": "--ignoreFile",
+        "kind": "option",
+        "description": "Indicate alternative .vscodeignore",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--no-dependencies": {
+        "Name": "--no-dependencies",
+        "kind": "option",
+        "description": "Disable dependency detection via npm or yarn",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-yarn": {
+        "Name": "--no-yarn",
+        "kind": "option",
+        "description": "Use npm instead of yarn (default inferred from lack of yarn.lock or .yarnrc)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--packagedDependencies": {
+        "Name": "--packagedDependencies",
+        "kind": "option",
+        "description": "Select packages that should be published only (includes dependencies)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpaths\u003e": {
+            "Name": "\u003cpaths\u003e",
+            "kind": "argument",
+            "description": "paths",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpaths\u003e": {
+            "Name": "\u003cpaths\u003e",
+            "kind": "argument",
+            "description": "paths",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpaths\u003e"
+        ]
+      },
+      "--yarn": {
+        "Name": "--yarn",
+        "kind": "option",
+        "description": "Use yarn instead of npm (default inferred from presence of yarn.lock or .yarnrc)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--ignoreFile": {
+        "Name": "--ignoreFile",
+        "kind": "option",
+        "description": "Indicate alternative .vscodeignore",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--no-dependencies": {
+        "Name": "--no-dependencies",
+        "kind": "option",
+        "description": "Disable dependency detection via npm or yarn",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-yarn": {
+        "Name": "--no-yarn",
+        "kind": "option",
+        "description": "Use npm instead of yarn (default inferred from lack of yarn.lock or .yarnrc)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--packagedDependencies": {
+        "Name": "--packagedDependencies",
+        "kind": "option",
+        "description": "Select packages that should be published only (includes dependencies)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpaths\u003e": {
+            "Name": "\u003cpaths\u003e",
+            "kind": "argument",
+            "description": "paths",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpaths\u003e": {
+            "Name": "\u003cpaths\u003e",
+            "kind": "argument",
+            "description": "paths",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpaths\u003e"
+        ]
+      },
+      "--yarn": {
+        "Name": "--yarn",
+        "kind": "option",
+        "description": "Use yarn instead of npm (default inferred from presence of yarn.lock or .yarnrc)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "ls-publishers": {
+    "Name": "ls-publishers",
+    "kind": "subcommand",
+    "description": "List all known publishers",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "package": {
+    "Name": "package",
+    "kind": "subcommand",
+    "description": "Packages an extension",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--baseContentUrl": {
+        "Name": "--baseContentUrl",
+        "kind": "option",
+        "description": "Prepend all relative links in README.md with this url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003curl\u003e": {
+            "Name": "\u003curl\u003e",
+            "kind": "argument",
+            "description": "url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003curl\u003e": {
+            "Name": "\u003curl\u003e",
+            "kind": "argument",
+            "description": "url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003curl\u003e"
+        ]
+      },
+      "--baseImagesUrl": {
+        "Name": "--baseImagesUrl",
+        "kind": "option",
+        "description": "Prepend all relative image links in README.md with this url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003curl\u003e": {
+            "Name": "\u003curl\u003e",
+            "kind": "argument",
+            "description": "url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003curl\u003e": {
+            "Name": "\u003curl\u003e",
+            "kind": "argument",
+            "description": "url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003curl\u003e"
+        ]
+      },
+      "--githubBranch": {
+        "Name": "--githubBranch",
+        "kind": "option",
+        "description": "The GitHub branch used to infer relative links in README.md. Can be overridden by --baseContentUrl and --baseImagesUrl",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbranch\u003e": {
+            "Name": "\u003cbranch\u003e",
+            "kind": "argument",
+            "description": "branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cbranch\u003e": {
+            "Name": "\u003cbranch\u003e",
+            "kind": "argument",
+            "description": "branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cbranch\u003e"
+        ]
+      },
+      "--gitlabBranch": {
+        "Name": "--gitlabBranch",
+        "kind": "option",
+        "description": "The GitLab branch used to infer relative links in README.md. Can be overridden by --baseContentUrl and --baseImagesUrl",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbranch\u003e": {
+            "Name": "\u003cbranch\u003e",
+            "kind": "argument",
+            "description": "branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cbranch\u003e": {
+            "Name": "\u003cbranch\u003e",
+            "kind": "argument",
+            "description": "branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cbranch\u003e"
+        ]
+      },
+      "--ignoreFile": {
+        "Name": "--ignoreFile",
+        "kind": "option",
+        "description": "Indicate alternative .vscodeignore",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--message": {
+        "Name": "--message",
+        "kind": "option",
+        "description": "Commit message used when calling `npm version`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccommit message\u003e": {
+            "Name": "\u003ccommit message\u003e",
+            "kind": "argument",
+            "description": "commit message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccommit message\u003e": {
+            "Name": "\u003ccommit message\u003e",
+            "kind": "argument",
+            "description": "commit message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccommit message\u003e"
+        ]
+      },
+      "--no-dependencies": {
+        "Name": "--no-dependencies",
+        "kind": "option",
+        "description": "Disable dependency detection via npm or yarn",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-git-tag-version": {
+        "Name": "--no-git-tag-version",
+        "kind": "option",
+        "description": "Do not create a version commit and tag when calling `npm version`. Valid only when [version] is provided",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-gitHubIssueLinking": {
+        "Name": "--no-gitHubIssueLinking",
+        "kind": "option",
+        "description": "Disable automatic expansion of GitHub-style issue syntax into links",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-gitLabIssueLinking": {
+        "Name": "--no-gitLabIssueLinking",
+        "kind": "option",
+        "description": "Disable automatic expansion of GitLab-style issue syntax into links",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-rewrite-relative-links": {
+        "Name": "--no-rewrite-relative-links",
+        "kind": "option",
+        "description": "Skip rewriting relative links",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-update-package-json": {
+        "Name": "--no-update-package-json",
+        "kind": "option",
+        "description": "Do not update `package.json`. Valid only when [version] is provided",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-yarn": {
+        "Name": "--no-yarn",
+        "kind": "option",
+        "description": "Use npm instead of yarn (default inferred from lack of yarn.lock or .yarnrc)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--out": {
+        "Name": "--out",
+        "kind": "option",
+        "description": "Output .vsix extension file to \u003cpath\u003e location (defaults to \u003cname\u003e-\u003cversion\u003e.vsix)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--pre-release": {
+        "Name": "--pre-release",
+        "kind": "option",
+        "description": "Mark this package as a pre-release",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--target": {
+        "Name": "--target",
+        "kind": "option",
+        "description": "Target architecture",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctarget\u003e"
+        ]
+      },
+      "--yarn": {
+        "Name": "--yarn",
+        "kind": "option",
+        "description": "Use yarn instead of npm (default inferred from presence of yarn.lock or .yarnrc)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-m": {
+        "Name": "-m",
+        "kind": "option",
+        "description": "Commit message used when calling `npm version`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccommit message\u003e": {
+            "Name": "\u003ccommit message\u003e",
+            "kind": "argument",
+            "description": "commit message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccommit message\u003e": {
+            "Name": "\u003ccommit message\u003e",
+            "kind": "argument",
+            "description": "commit message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccommit message\u003e"
+        ]
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Output .vsix extension file to \u003cpath\u003e location (defaults to \u003cname\u003e-\u003cversion\u003e.vsix)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Target architecture",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctarget\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--baseContentUrl": {
+        "Name": "--baseContentUrl",
+        "kind": "option",
+        "description": "Prepend all relative links in README.md with this url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003curl\u003e": {
+            "Name": "\u003curl\u003e",
+            "kind": "argument",
+            "description": "url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003curl\u003e": {
+            "Name": "\u003curl\u003e",
+            "kind": "argument",
+            "description": "url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003curl\u003e"
+        ]
+      },
+      "--baseImagesUrl": {
+        "Name": "--baseImagesUrl",
+        "kind": "option",
+        "description": "Prepend all relative image links in README.md with this url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003curl\u003e": {
+            "Name": "\u003curl\u003e",
+            "kind": "argument",
+            "description": "url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003curl\u003e": {
+            "Name": "\u003curl\u003e",
+            "kind": "argument",
+            "description": "url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003curl\u003e"
+        ]
+      },
+      "--githubBranch": {
+        "Name": "--githubBranch",
+        "kind": "option",
+        "description": "The GitHub branch used to infer relative links in README.md. Can be overridden by --baseContentUrl and --baseImagesUrl",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbranch\u003e": {
+            "Name": "\u003cbranch\u003e",
+            "kind": "argument",
+            "description": "branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cbranch\u003e": {
+            "Name": "\u003cbranch\u003e",
+            "kind": "argument",
+            "description": "branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cbranch\u003e"
+        ]
+      },
+      "--gitlabBranch": {
+        "Name": "--gitlabBranch",
+        "kind": "option",
+        "description": "The GitLab branch used to infer relative links in README.md. Can be overridden by --baseContentUrl and --baseImagesUrl",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbranch\u003e": {
+            "Name": "\u003cbranch\u003e",
+            "kind": "argument",
+            "description": "branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cbranch\u003e": {
+            "Name": "\u003cbranch\u003e",
+            "kind": "argument",
+            "description": "branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cbranch\u003e"
+        ]
+      },
+      "--ignoreFile": {
+        "Name": "--ignoreFile",
+        "kind": "option",
+        "description": "Indicate alternative .vscodeignore",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--message": {
+        "Name": "--message",
+        "kind": "option",
+        "description": "Commit message used when calling `npm version`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccommit message\u003e": {
+            "Name": "\u003ccommit message\u003e",
+            "kind": "argument",
+            "description": "commit message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccommit message\u003e": {
+            "Name": "\u003ccommit message\u003e",
+            "kind": "argument",
+            "description": "commit message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccommit message\u003e"
+        ]
+      },
+      "--no-dependencies": {
+        "Name": "--no-dependencies",
+        "kind": "option",
+        "description": "Disable dependency detection via npm or yarn",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-git-tag-version": {
+        "Name": "--no-git-tag-version",
+        "kind": "option",
+        "description": "Do not create a version commit and tag when calling `npm version`. Valid only when [version] is provided",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-gitHubIssueLinking": {
+        "Name": "--no-gitHubIssueLinking",
+        "kind": "option",
+        "description": "Disable automatic expansion of GitHub-style issue syntax into links",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-gitLabIssueLinking": {
+        "Name": "--no-gitLabIssueLinking",
+        "kind": "option",
+        "description": "Disable automatic expansion of GitLab-style issue syntax into links",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-rewrite-relative-links": {
+        "Name": "--no-rewrite-relative-links",
+        "kind": "option",
+        "description": "Skip rewriting relative links",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-update-package-json": {
+        "Name": "--no-update-package-json",
+        "kind": "option",
+        "description": "Do not update `package.json`. Valid only when [version] is provided",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-yarn": {
+        "Name": "--no-yarn",
+        "kind": "option",
+        "description": "Use npm instead of yarn (default inferred from lack of yarn.lock or .yarnrc)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--out": {
+        "Name": "--out",
+        "kind": "option",
+        "description": "Output .vsix extension file to \u003cpath\u003e location (defaults to \u003cname\u003e-\u003cversion\u003e.vsix)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--pre-release": {
+        "Name": "--pre-release",
+        "kind": "option",
+        "description": "Mark this package as a pre-release",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--target": {
+        "Name": "--target",
+        "kind": "option",
+        "description": "Target architecture",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctarget\u003e"
+        ]
+      },
+      "--yarn": {
+        "Name": "--yarn",
+        "kind": "option",
+        "description": "Use yarn instead of npm (default inferred from presence of yarn.lock or .yarnrc)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-m": {
+        "Name": "-m",
+        "kind": "option",
+        "description": "Commit message used when calling `npm version`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccommit message\u003e": {
+            "Name": "\u003ccommit message\u003e",
+            "kind": "argument",
+            "description": "commit message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccommit message\u003e": {
+            "Name": "\u003ccommit message\u003e",
+            "kind": "argument",
+            "description": "commit message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccommit message\u003e"
+        ]
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Output .vsix extension file to \u003cpath\u003e location (defaults to \u003cname\u003e-\u003cversion\u003e.vsix)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Target architecture",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctarget\u003e"
+        ]
+      }
+    }
+  },
+  "publish": {
+    "Name": "publish",
+    "kind": "subcommand",
+    "description": "Publishes an extension",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--baseContentUrl": {
+        "Name": "--baseContentUrl",
+        "kind": "option",
+        "description": "Prepend all relative links in README.md with this url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003curl\u003e": {
+            "Name": "\u003curl\u003e",
+            "kind": "argument",
+            "description": "url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003curl\u003e": {
+            "Name": "\u003curl\u003e",
+            "kind": "argument",
+            "description": "url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003curl\u003e"
+        ]
+      },
+      "--baseImagesUrl": {
+        "Name": "--baseImagesUrl",
+        "kind": "option",
+        "description": "Prepend all relative image links in README.md with this url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003curl\u003e": {
+            "Name": "\u003curl\u003e",
+            "kind": "argument",
+            "description": "url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003curl\u003e": {
+            "Name": "\u003curl\u003e",
+            "kind": "argument",
+            "description": "url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003curl\u003e"
+        ]
+      },
+      "--githubBranch": {
+        "Name": "--githubBranch",
+        "kind": "option",
+        "description": "The GitHub branch used to infer relative links in README.md. Can be overridden by --baseContentUrl and --baseImagesUrl",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbranch\u003e": {
+            "Name": "\u003cbranch\u003e",
+            "kind": "argument",
+            "description": "branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cbranch\u003e": {
+            "Name": "\u003cbranch\u003e",
+            "kind": "argument",
+            "description": "branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cbranch\u003e"
+        ]
+      },
+      "--gitlabBranch": {
+        "Name": "--gitlabBranch",
+        "kind": "option",
+        "description": "The GitLab branch used to infer relative links in README.md. Can be overridden by --baseContentUrl and --baseImagesUrl",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbranch\u003e": {
+            "Name": "\u003cbranch\u003e",
+            "kind": "argument",
+            "description": "branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cbranch\u003e": {
+            "Name": "\u003cbranch\u003e",
+            "kind": "argument",
+            "description": "branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cbranch\u003e"
+        ]
+      },
+      "--ignoreFile": {
+        "Name": "--ignoreFile",
+        "kind": "option",
+        "description": "Indicate alternative .vscodeignore",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--message": {
+        "Name": "--message",
+        "kind": "option",
+        "description": "Commit message used when calling `npm version`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccommit message\u003e": {
+            "Name": "\u003ccommit message\u003e",
+            "kind": "argument",
+            "description": "commit message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccommit message\u003e": {
+            "Name": "\u003ccommit message\u003e",
+            "kind": "argument",
+            "description": "commit message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccommit message\u003e"
+        ]
+      },
+      "--no-dependencies": {
+        "Name": "--no-dependencies",
+        "kind": "option",
+        "description": "Disable dependency detection via npm or yarn",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-git-tag-version": {
+        "Name": "--no-git-tag-version",
+        "kind": "option",
+        "description": "Do not create a version commit and tag when calling `npm version`. Valid only when [version] is provided",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-update-package-json": {
+        "Name": "--no-update-package-json",
+        "kind": "option",
+        "description": "Do not update `package.json`. Valid only when [version] is provided",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-yarn": {
+        "Name": "--no-yarn",
+        "kind": "option",
+        "description": "Use npm instead of yarn (default inferred from lack of yarn.lock or .yarnrc)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--noVerify": {
+        "Name": "--noVerify",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--packagePath": {
+        "Name": "--packagePath",
+        "kind": "option",
+        "description": "Publish the provided VSIX packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpaths\u003e": {
+            "Name": "\u003cpaths\u003e",
+            "kind": "argument",
+            "description": "paths",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpaths\u003e": {
+            "Name": "\u003cpaths\u003e",
+            "kind": "argument",
+            "description": "paths",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpaths\u003e"
+        ]
+      },
+      "--pat": {
+        "Name": "--pat",
+        "kind": "option",
+        "description": "Personal Access Token (defaults to VSCE_PAT environment variable)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctoken\u003e"
+        ]
+      },
+      "--pre-release": {
+        "Name": "--pre-release",
+        "kind": "option",
+        "description": "Mark this package as a pre-release",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--target": {
+        "Name": "--target",
+        "kind": "option",
+        "description": "Target architecture",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctarget\u003e"
+        ]
+      },
+      "--yarn": {
+        "Name": "--yarn",
+        "kind": "option",
+        "description": "Use yarn instead of npm (default inferred from presence of yarn.lock or .yarnrc)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-i": {
+        "Name": "-i",
+        "kind": "option",
+        "description": "Publish the provided VSIX packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpaths\u003e": {
+            "Name": "\u003cpaths\u003e",
+            "kind": "argument",
+            "description": "paths",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpaths\u003e": {
+            "Name": "\u003cpaths\u003e",
+            "kind": "argument",
+            "description": "paths",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpaths\u003e"
+        ]
+      },
+      "-m": {
+        "Name": "-m",
+        "kind": "option",
+        "description": "Commit message used when calling `npm version`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccommit message\u003e": {
+            "Name": "\u003ccommit message\u003e",
+            "kind": "argument",
+            "description": "commit message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccommit message\u003e": {
+            "Name": "\u003ccommit message\u003e",
+            "kind": "argument",
+            "description": "commit message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccommit message\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Personal Access Token (defaults to VSCE_PAT environment variable)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctoken\u003e"
+        ]
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Target architecture",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctarget\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--baseContentUrl": {
+        "Name": "--baseContentUrl",
+        "kind": "option",
+        "description": "Prepend all relative links in README.md with this url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003curl\u003e": {
+            "Name": "\u003curl\u003e",
+            "kind": "argument",
+            "description": "url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003curl\u003e": {
+            "Name": "\u003curl\u003e",
+            "kind": "argument",
+            "description": "url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003curl\u003e"
+        ]
+      },
+      "--baseImagesUrl": {
+        "Name": "--baseImagesUrl",
+        "kind": "option",
+        "description": "Prepend all relative image links in README.md with this url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003curl\u003e": {
+            "Name": "\u003curl\u003e",
+            "kind": "argument",
+            "description": "url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003curl\u003e": {
+            "Name": "\u003curl\u003e",
+            "kind": "argument",
+            "description": "url",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003curl\u003e"
+        ]
+      },
+      "--githubBranch": {
+        "Name": "--githubBranch",
+        "kind": "option",
+        "description": "The GitHub branch used to infer relative links in README.md. Can be overridden by --baseContentUrl and --baseImagesUrl",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbranch\u003e": {
+            "Name": "\u003cbranch\u003e",
+            "kind": "argument",
+            "description": "branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cbranch\u003e": {
+            "Name": "\u003cbranch\u003e",
+            "kind": "argument",
+            "description": "branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cbranch\u003e"
+        ]
+      },
+      "--gitlabBranch": {
+        "Name": "--gitlabBranch",
+        "kind": "option",
+        "description": "The GitLab branch used to infer relative links in README.md. Can be overridden by --baseContentUrl and --baseImagesUrl",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbranch\u003e": {
+            "Name": "\u003cbranch\u003e",
+            "kind": "argument",
+            "description": "branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cbranch\u003e": {
+            "Name": "\u003cbranch\u003e",
+            "kind": "argument",
+            "description": "branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cbranch\u003e"
+        ]
+      },
+      "--ignoreFile": {
+        "Name": "--ignoreFile",
+        "kind": "option",
+        "description": "Indicate alternative .vscodeignore",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "--message": {
+        "Name": "--message",
+        "kind": "option",
+        "description": "Commit message used when calling `npm version`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccommit message\u003e": {
+            "Name": "\u003ccommit message\u003e",
+            "kind": "argument",
+            "description": "commit message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccommit message\u003e": {
+            "Name": "\u003ccommit message\u003e",
+            "kind": "argument",
+            "description": "commit message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccommit message\u003e"
+        ]
+      },
+      "--no-dependencies": {
+        "Name": "--no-dependencies",
+        "kind": "option",
+        "description": "Disable dependency detection via npm or yarn",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-git-tag-version": {
+        "Name": "--no-git-tag-version",
+        "kind": "option",
+        "description": "Do not create a version commit and tag when calling `npm version`. Valid only when [version] is provided",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-update-package-json": {
+        "Name": "--no-update-package-json",
+        "kind": "option",
+        "description": "Do not update `package.json`. Valid only when [version] is provided",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--no-yarn": {
+        "Name": "--no-yarn",
+        "kind": "option",
+        "description": "Use npm instead of yarn (default inferred from lack of yarn.lock or .yarnrc)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--noVerify": {
+        "Name": "--noVerify",
+        "kind": "option",
+        "description": "",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--packagePath": {
+        "Name": "--packagePath",
+        "kind": "option",
+        "description": "Publish the provided VSIX packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpaths\u003e": {
+            "Name": "\u003cpaths\u003e",
+            "kind": "argument",
+            "description": "paths",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpaths\u003e": {
+            "Name": "\u003cpaths\u003e",
+            "kind": "argument",
+            "description": "paths",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpaths\u003e"
+        ]
+      },
+      "--pat": {
+        "Name": "--pat",
+        "kind": "option",
+        "description": "Personal Access Token (defaults to VSCE_PAT environment variable)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctoken\u003e"
+        ]
+      },
+      "--pre-release": {
+        "Name": "--pre-release",
+        "kind": "option",
+        "description": "Mark this package as a pre-release",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--target": {
+        "Name": "--target",
+        "kind": "option",
+        "description": "Target architecture",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctarget\u003e"
+        ]
+      },
+      "--yarn": {
+        "Name": "--yarn",
+        "kind": "option",
+        "description": "Use yarn instead of npm (default inferred from presence of yarn.lock or .yarnrc)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-i": {
+        "Name": "-i",
+        "kind": "option",
+        "description": "Publish the provided VSIX packages",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpaths\u003e": {
+            "Name": "\u003cpaths\u003e",
+            "kind": "argument",
+            "description": "paths",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpaths\u003e": {
+            "Name": "\u003cpaths\u003e",
+            "kind": "argument",
+            "description": "paths",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpaths\u003e"
+        ]
+      },
+      "-m": {
+        "Name": "-m",
+        "kind": "option",
+        "description": "Commit message used when calling `npm version`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccommit message\u003e": {
+            "Name": "\u003ccommit message\u003e",
+            "kind": "argument",
+            "description": "commit message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccommit message\u003e": {
+            "Name": "\u003ccommit message\u003e",
+            "kind": "argument",
+            "description": "commit message",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccommit message\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Personal Access Token (defaults to VSCE_PAT environment variable)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctoken\u003e"
+        ]
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Target architecture",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctarget\u003e": {
+            "Name": "\u003ctarget\u003e",
+            "kind": "argument",
+            "description": "target",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctarget\u003e"
+        ]
+      }
+    }
+  },
+  "search": {
+    "Name": "search",
+    "kind": "subcommand",
+    "description": "Search extension gallery",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--json": {
+        "Name": "--json",
+        "kind": "option",
+        "description": "Output data in json format (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--json": {
+        "Name": "--json",
+        "kind": "option",
+        "description": "Output data in json format (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003ctext\u003e": {
+        "Name": "\u003ctext\u003e",
+        "kind": "argument",
+        "description": "text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ctext\u003e"
+    ]
+  },
+  "show": {
+    "Name": "show",
+    "kind": "subcommand",
+    "description": "Show extension metadata",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--json": {
+        "Name": "--json",
+        "kind": "option",
+        "description": "Output data in json format (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cextensionid\u003e": {
+        "Name": "\u003cextensionid\u003e",
+        "kind": "argument",
+        "description": "extensionid",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--json": {
+        "Name": "--json",
+        "kind": "option",
+        "description": "Output data in json format (default: false)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cextensionid\u003e": {
+        "Name": "\u003cextensionid\u003e",
+        "kind": "argument",
+        "description": "extensionid",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cextensionid\u003e"
+    ]
+  },
+  "unpublish": {
+    "Name": "unpublish",
+    "kind": "subcommand",
+    "description": "Unpublishes an extension. Example extension id: microsoft.csharp",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Forces Unpublished Extension",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pat": {
+        "Name": "--pat",
+        "kind": "option",
+        "description": "Personal Access Token",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctoken\u003e"
+        ]
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Forces Unpublished Extension",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Personal Access Token",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctoken\u003e"
+        ]
+      }
+    },
+    "options": {
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Forces Unpublished Extension",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--pat": {
+        "Name": "--pat",
+        "kind": "option",
+        "description": "Personal Access Token",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctoken\u003e"
+        ]
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Forces Unpublished Extension",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Personal Access Token",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctoken\u003e"
+        ]
+      }
+    }
+  },
+  "verify-pat": {
+    "Name": "verify-pat",
+    "kind": "subcommand",
+    "description": "Verify if the Personal Access Token has publish rights for the publisher",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--pat": {
+        "Name": "--pat",
+        "kind": "option",
+        "description": "Personal Access Token (defaults to VSCE_PAT environment variable)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctoken\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Personal Access Token (defaults to VSCE_PAT environment variable)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctoken\u003e"
+        ]
+      },
+      "\u003cpublisher\u003e": {
+        "Name": "\u003cpublisher\u003e",
+        "kind": "argument",
+        "description": "publisher",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--pat": {
+        "Name": "--pat",
+        "kind": "option",
+        "description": "Personal Access Token (defaults to VSCE_PAT environment variable)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctoken\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Personal Access Token (defaults to VSCE_PAT environment variable)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctoken\u003e": {
+            "Name": "\u003ctoken\u003e",
+            "kind": "argument",
+            "description": "token",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctoken\u003e"
+        ]
+      },
+      "\u003cpublisher\u003e": {
+        "Name": "\u003cpublisher\u003e",
+        "kind": "argument",
+        "description": "publisher",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpublisher\u003e"
+    ]
+  }
+}

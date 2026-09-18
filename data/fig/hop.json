@@ -1,0 +1,1248 @@
+{
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Prints help information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--project": {
+    "Name": "--project",
+    "kind": "option",
+    "description": "Namespace or ID of the project to use",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Prints version information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Prints help information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-p": {
+    "Name": "-p",
+    "kind": "option",
+    "description": "Namespace or ID of the project to use",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Prints version information",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "auth": {
+    "Name": "auth",
+    "kind": "subcommand",
+    "description": "Authenticate with Hop",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "help": {
+        "Name": "help",
+        "kind": "subcommand",
+        "description": "Prints this message or the help of the given subcommand(s)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "login": {
+        "Name": "login",
+        "kind": "subcommand",
+        "description": "Login to Hop",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "logout": {
+        "Name": "logout",
+        "kind": "subcommand",
+        "description": "Logout the current user",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "deploy": {
+    "Name": "deploy",
+    "kind": "subcommand",
+    "description": "Deploy a new container",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--containers": {
+        "Name": "--containers",
+        "kind": "option",
+        "description": "Number of containers to use, defaults to 1 if `scaling` is manual",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccontainer amount\u003e": {
+            "Name": "\u003ccontainer amount\u003e",
+            "kind": "argument",
+            "description": "container amount",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccontainer amount\u003e": {
+            "Name": "\u003ccontainer amount\u003e",
+            "kind": "argument",
+            "description": "container amount",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccontainer amount\u003e"
+        ]
+      },
+      "--cpu": {
+        "Name": "--cpu",
+        "kind": "option",
+        "description": "The number of CPUs to use, defaults to 1",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccpu amount\u003e": {
+            "Name": "\u003ccpu amount\u003e",
+            "kind": "argument",
+            "description": "cpu amount",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccpu amount\u003e": {
+            "Name": "\u003ccpu amount\u003e",
+            "kind": "argument",
+            "description": "cpu amount",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccpu amount\u003e"
+        ]
+      },
+      "--env": {
+        "Name": "--env",
+        "kind": "option",
+        "description": "Environment variables to set, in the form of KEY=VALUE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cenvironment variable\u003e": {
+            "Name": "\u003cenvironment variable\u003e",
+            "kind": "argument",
+            "description": "environment variable",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cenvironment variable\u003e": {
+            "Name": "\u003cenvironment variable\u003e",
+            "kind": "argument",
+            "description": "environment variable",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cenvironment variable\u003e"
+        ]
+      },
+      "--name": {
+        "Name": "--name",
+        "kind": "option",
+        "description": "Name of the deployment, defaults to the directory name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdeployment name\u003e": {
+            "Name": "\u003cdeployment name\u003e",
+            "kind": "argument",
+            "description": "deployment name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdeployment name\u003e": {
+            "Name": "\u003cdeployment name\u003e",
+            "kind": "argument",
+            "description": "deployment name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdeployment name\u003e"
+        ]
+      },
+      "--project": {
+        "Name": "--project",
+        "kind": "option",
+        "description": "Namespace or ID of the project to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cproject\u003e": {
+            "Name": "\u003cproject\u003e",
+            "kind": "argument",
+            "description": "project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cproject\u003e": {
+            "Name": "\u003cproject\u003e",
+            "kind": "argument",
+            "description": "project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--ram": {
+        "Name": "--ram",
+        "kind": "option",
+        "description": "Amount of RAM to use, defaults to 512MB",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cram amount\u003e": {
+            "Name": "\u003cram amount\u003e",
+            "kind": "argument",
+            "description": "ram amount",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cram amount\u003e": {
+            "Name": "\u003cram amount\u003e",
+            "kind": "argument",
+            "description": "ram amount",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cram amount\u003e"
+        ]
+      },
+      "--scaling": {
+        "Name": "--scaling",
+        "kind": "option",
+        "description": "Scaling strategy, defaults to `manual`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cscaling strategy\u003e": {
+            "Name": "\u003cscaling strategy\u003e",
+            "kind": "argument",
+            "description": "scaling strategy",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cscaling strategy\u003e": {
+            "Name": "\u003cscaling strategy\u003e",
+            "kind": "argument",
+            "description": "scaling strategy",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cscaling strategy\u003e"
+        ]
+      },
+      "--type": {
+        "Name": "--type",
+        "kind": "option",
+        "description": "Type of the container, defaults to `ephemeral`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccontainer type\u003e": {
+            "Name": "\u003ccontainer type\u003e",
+            "kind": "argument",
+            "description": "container type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccontainer type\u003e": {
+            "Name": "\u003ccontainer type\u003e",
+            "kind": "argument",
+            "description": "container type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccontainer type\u003e"
+        ]
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "The number of CPUs to use, defaults to 1",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccpu amount\u003e": {
+            "Name": "\u003ccpu amount\u003e",
+            "kind": "argument",
+            "description": "cpu amount",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccpu amount\u003e": {
+            "Name": "\u003ccpu amount\u003e",
+            "kind": "argument",
+            "description": "cpu amount",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccpu amount\u003e"
+        ]
+      },
+      "-e": {
+        "Name": "-e",
+        "kind": "option",
+        "description": "Environment variables to set, in the form of KEY=VALUE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cenvironment variable\u003e": {
+            "Name": "\u003cenvironment variable\u003e",
+            "kind": "argument",
+            "description": "environment variable",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cenvironment variable\u003e": {
+            "Name": "\u003cenvironment variable\u003e",
+            "kind": "argument",
+            "description": "environment variable",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cenvironment variable\u003e"
+        ]
+      },
+      "-i": {
+        "Name": "-i",
+        "kind": "option",
+        "description": "Number of containers to use, defaults to 1 if `scaling` is manual",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccontainer amount\u003e": {
+            "Name": "\u003ccontainer amount\u003e",
+            "kind": "argument",
+            "description": "container amount",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccontainer amount\u003e": {
+            "Name": "\u003ccontainer amount\u003e",
+            "kind": "argument",
+            "description": "container amount",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccontainer amount\u003e"
+        ]
+      },
+      "-m": {
+        "Name": "-m",
+        "kind": "option",
+        "description": "Amount of RAM to use, defaults to 512MB",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cram amount\u003e": {
+            "Name": "\u003cram amount\u003e",
+            "kind": "argument",
+            "description": "ram amount",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cram amount\u003e": {
+            "Name": "\u003cram amount\u003e",
+            "kind": "argument",
+            "description": "ram amount",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cram amount\u003e"
+        ]
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "Name of the deployment, defaults to the directory name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdeployment name\u003e": {
+            "Name": "\u003cdeployment name\u003e",
+            "kind": "argument",
+            "description": "deployment name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdeployment name\u003e": {
+            "Name": "\u003cdeployment name\u003e",
+            "kind": "argument",
+            "description": "deployment name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdeployment name\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Namespace or ID of the project to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cproject\u003e": {
+            "Name": "\u003cproject\u003e",
+            "kind": "argument",
+            "description": "project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cproject\u003e": {
+            "Name": "\u003cproject\u003e",
+            "kind": "argument",
+            "description": "project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Scaling strategy, defaults to `manual`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cscaling strategy\u003e": {
+            "Name": "\u003cscaling strategy\u003e",
+            "kind": "argument",
+            "description": "scaling strategy",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cscaling strategy\u003e": {
+            "Name": "\u003cscaling strategy\u003e",
+            "kind": "argument",
+            "description": "scaling strategy",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cscaling strategy\u003e"
+        ]
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Type of the container, defaults to `ephemeral`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccontainer type\u003e": {
+            "Name": "\u003ccontainer type\u003e",
+            "kind": "argument",
+            "description": "container type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccontainer type\u003e": {
+            "Name": "\u003ccontainer type\u003e",
+            "kind": "argument",
+            "description": "container type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccontainer type\u003e"
+        ]
+      },
+      "\u003cdir\u003e": {
+        "Name": "\u003cdir\u003e",
+        "kind": "argument",
+        "description": "dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--containers": {
+        "Name": "--containers",
+        "kind": "option",
+        "description": "Number of containers to use, defaults to 1 if `scaling` is manual",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccontainer amount\u003e": {
+            "Name": "\u003ccontainer amount\u003e",
+            "kind": "argument",
+            "description": "container amount",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccontainer amount\u003e": {
+            "Name": "\u003ccontainer amount\u003e",
+            "kind": "argument",
+            "description": "container amount",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccontainer amount\u003e"
+        ]
+      },
+      "--cpu": {
+        "Name": "--cpu",
+        "kind": "option",
+        "description": "The number of CPUs to use, defaults to 1",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccpu amount\u003e": {
+            "Name": "\u003ccpu amount\u003e",
+            "kind": "argument",
+            "description": "cpu amount",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccpu amount\u003e": {
+            "Name": "\u003ccpu amount\u003e",
+            "kind": "argument",
+            "description": "cpu amount",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccpu amount\u003e"
+        ]
+      },
+      "--env": {
+        "Name": "--env",
+        "kind": "option",
+        "description": "Environment variables to set, in the form of KEY=VALUE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cenvironment variable\u003e": {
+            "Name": "\u003cenvironment variable\u003e",
+            "kind": "argument",
+            "description": "environment variable",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cenvironment variable\u003e": {
+            "Name": "\u003cenvironment variable\u003e",
+            "kind": "argument",
+            "description": "environment variable",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cenvironment variable\u003e"
+        ]
+      },
+      "--name": {
+        "Name": "--name",
+        "kind": "option",
+        "description": "Name of the deployment, defaults to the directory name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdeployment name\u003e": {
+            "Name": "\u003cdeployment name\u003e",
+            "kind": "argument",
+            "description": "deployment name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdeployment name\u003e": {
+            "Name": "\u003cdeployment name\u003e",
+            "kind": "argument",
+            "description": "deployment name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdeployment name\u003e"
+        ]
+      },
+      "--project": {
+        "Name": "--project",
+        "kind": "option",
+        "description": "Namespace or ID of the project to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cproject\u003e": {
+            "Name": "\u003cproject\u003e",
+            "kind": "argument",
+            "description": "project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cproject\u003e": {
+            "Name": "\u003cproject\u003e",
+            "kind": "argument",
+            "description": "project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "--ram": {
+        "Name": "--ram",
+        "kind": "option",
+        "description": "Amount of RAM to use, defaults to 512MB",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cram amount\u003e": {
+            "Name": "\u003cram amount\u003e",
+            "kind": "argument",
+            "description": "ram amount",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cram amount\u003e": {
+            "Name": "\u003cram amount\u003e",
+            "kind": "argument",
+            "description": "ram amount",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cram amount\u003e"
+        ]
+      },
+      "--scaling": {
+        "Name": "--scaling",
+        "kind": "option",
+        "description": "Scaling strategy, defaults to `manual`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cscaling strategy\u003e": {
+            "Name": "\u003cscaling strategy\u003e",
+            "kind": "argument",
+            "description": "scaling strategy",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cscaling strategy\u003e": {
+            "Name": "\u003cscaling strategy\u003e",
+            "kind": "argument",
+            "description": "scaling strategy",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cscaling strategy\u003e"
+        ]
+      },
+      "--type": {
+        "Name": "--type",
+        "kind": "option",
+        "description": "Type of the container, defaults to `ephemeral`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccontainer type\u003e": {
+            "Name": "\u003ccontainer type\u003e",
+            "kind": "argument",
+            "description": "container type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccontainer type\u003e": {
+            "Name": "\u003ccontainer type\u003e",
+            "kind": "argument",
+            "description": "container type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccontainer type\u003e"
+        ]
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "The number of CPUs to use, defaults to 1",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccpu amount\u003e": {
+            "Name": "\u003ccpu amount\u003e",
+            "kind": "argument",
+            "description": "cpu amount",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccpu amount\u003e": {
+            "Name": "\u003ccpu amount\u003e",
+            "kind": "argument",
+            "description": "cpu amount",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccpu amount\u003e"
+        ]
+      },
+      "-e": {
+        "Name": "-e",
+        "kind": "option",
+        "description": "Environment variables to set, in the form of KEY=VALUE",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cenvironment variable\u003e": {
+            "Name": "\u003cenvironment variable\u003e",
+            "kind": "argument",
+            "description": "environment variable",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cenvironment variable\u003e": {
+            "Name": "\u003cenvironment variable\u003e",
+            "kind": "argument",
+            "description": "environment variable",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cenvironment variable\u003e"
+        ]
+      },
+      "-i": {
+        "Name": "-i",
+        "kind": "option",
+        "description": "Number of containers to use, defaults to 1 if `scaling` is manual",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccontainer amount\u003e": {
+            "Name": "\u003ccontainer amount\u003e",
+            "kind": "argument",
+            "description": "container amount",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccontainer amount\u003e": {
+            "Name": "\u003ccontainer amount\u003e",
+            "kind": "argument",
+            "description": "container amount",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccontainer amount\u003e"
+        ]
+      },
+      "-m": {
+        "Name": "-m",
+        "kind": "option",
+        "description": "Amount of RAM to use, defaults to 512MB",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cram amount\u003e": {
+            "Name": "\u003cram amount\u003e",
+            "kind": "argument",
+            "description": "ram amount",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cram amount\u003e": {
+            "Name": "\u003cram amount\u003e",
+            "kind": "argument",
+            "description": "ram amount",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cram amount\u003e"
+        ]
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "Name of the deployment, defaults to the directory name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdeployment name\u003e": {
+            "Name": "\u003cdeployment name\u003e",
+            "kind": "argument",
+            "description": "deployment name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdeployment name\u003e": {
+            "Name": "\u003cdeployment name\u003e",
+            "kind": "argument",
+            "description": "deployment name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdeployment name\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Namespace or ID of the project to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cproject\u003e": {
+            "Name": "\u003cproject\u003e",
+            "kind": "argument",
+            "description": "project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cproject\u003e": {
+            "Name": "\u003cproject\u003e",
+            "kind": "argument",
+            "description": "project",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        }
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Scaling strategy, defaults to `manual`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cscaling strategy\u003e": {
+            "Name": "\u003cscaling strategy\u003e",
+            "kind": "argument",
+            "description": "scaling strategy",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cscaling strategy\u003e": {
+            "Name": "\u003cscaling strategy\u003e",
+            "kind": "argument",
+            "description": "scaling strategy",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cscaling strategy\u003e"
+        ]
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Type of the container, defaults to `ephemeral`",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccontainer type\u003e": {
+            "Name": "\u003ccontainer type\u003e",
+            "kind": "argument",
+            "description": "container type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccontainer type\u003e": {
+            "Name": "\u003ccontainer type\u003e",
+            "kind": "argument",
+            "description": "container type",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccontainer type\u003e"
+        ]
+      },
+      "\u003cdir\u003e": {
+        "Name": "\u003cdir\u003e",
+        "kind": "argument",
+        "description": "dir",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Prints this message or the help of the given subcommand(s)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003ccommand\u003e": {
+        "Name": "\u003ccommand\u003e",
+        "kind": "argument",
+        "description": "command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003ccommand\u003e"
+    ]
+  },
+  "ignite": {
+    "Name": "ignite",
+    "kind": "subcommand",
+    "description": "Interact with Ignite containers",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "ls": {
+        "Name": "ls",
+        "kind": "subcommand",
+        "description": "List all deployments",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--project": {
+            "Name": "--project",
+            "kind": "option",
+            "description": "Namespace or ID of the project to use",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Namespace or ID of the project to use",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--project": {
+            "Name": "--project",
+            "kind": "option",
+            "description": "Namespace or ID of the project to use",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Namespace or ID of the project to use",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      },
+      "rm": {
+        "Name": "rm",
+        "kind": "subcommand",
+        "description": "Delete a deployment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--project": {
+            "Name": "--project",
+            "kind": "option",
+            "description": "Namespace or ID of the project to use",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Namespace or ID of the project to use",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--project": {
+            "Name": "--project",
+            "kind": "option",
+            "description": "Namespace or ID of the project to use",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "Namespace or ID of the project to use",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      }
+    }
+  },
+  "link": {
+    "Name": "link",
+    "kind": "subcommand",
+    "description": "Link an existing deployment to a hopfile",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "projects": {
+    "Name": "projects",
+    "kind": "subcommand",
+    "description": "Interact with projects",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "info": {
+        "Name": "info",
+        "kind": "subcommand",
+        "description": "Get information about a project",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "ls": {
+        "Name": "ls",
+        "kind": "subcommand",
+        "description": "List all projects that you're authorized to",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "new": {
+        "Name": "new",
+        "kind": "subcommand",
+        "description": "Create a new project",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "rm": {
+        "Name": "rm",
+        "kind": "subcommand",
+        "description": "Delete a project",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "switch": {
+        "Name": "switch",
+        "kind": "subcommand",
+        "description": "Switch to a different project",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "whoami": {
+    "Name": "whoami",
+    "kind": "subcommand",
+    "description": "Get information about the current user",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

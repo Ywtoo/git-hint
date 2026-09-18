@@ -6,7 +6,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"git-hint/core"
+	"git-hint/internal/core"
 )
 
 // ResetDataDir removes every file in DataDir. Rebuild calls this before

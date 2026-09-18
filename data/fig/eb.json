@@ -1,0 +1,2039 @@
+{
+  "abort": {
+    "Name": "abort",
+    "kind": "subcommand",
+    "description": "Abort the current running process",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "clone": {
+    "Name": "clone",
+    "kind": "subcommand",
+    "description": "Clones an environment to a new environment so that both have identical environment settings",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--clone_name": {
+        "Name": "--clone_name",
+        "kind": "option",
+        "description": "Desired name for the cloned environment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstring\u003e"
+        ]
+      },
+      "--cname": {
+        "Name": "--cname",
+        "kind": "option",
+        "description": "Desired CNAME prefix for the cloned environment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccname\u003e": {
+            "Name": "\u003ccname\u003e",
+            "kind": "argument",
+            "description": "cname",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccname\u003e": {
+            "Name": "\u003ccname\u003e",
+            "kind": "argument",
+            "description": "cname",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccname\u003e"
+        ]
+      },
+      "--envvars": {
+        "Name": "--envvars",
+        "kind": "option",
+        "description": "Environment properties in a comma-separated list with the format name=value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exact": {
+        "Name": "--exact",
+        "kind": "option",
+        "description": "Prevents Elastic Beanstalk from updating the solution stack version for the new clone environment to the most recent version available",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--scale": {
+        "Name": "--scale",
+        "kind": "option",
+        "description": "The number of instances to run in the clone environment when it is launched",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cnumber\u003e": {
+            "Name": "\u003cnumber\u003e",
+            "kind": "argument",
+            "description": "number",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cnumber\u003e": {
+            "Name": "\u003cnumber\u003e",
+            "kind": "argument",
+            "description": "number",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cnumber\u003e"
+        ]
+      },
+      "--tags": {
+        "Name": "--tags",
+        "kind": "option",
+        "description": "Tags for the resources in your environment in a comma-separated list with the format name=value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname=value\u003e": {
+            "Name": "\u003cname=value\u003e",
+            "kind": "argument",
+            "description": "name=value",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname=value\u003e": {
+            "Name": "\u003cname=value\u003e",
+            "kind": "argument",
+            "description": "name=value",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname=value\u003e"
+        ]
+      },
+      "--timeout": {
+        "Name": "--timeout",
+        "kind": "option",
+        "description": "The number of minutes before the command times out",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Desired CNAME prefix for the cloned environment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccname\u003e": {
+            "Name": "\u003ccname\u003e",
+            "kind": "argument",
+            "description": "cname",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccname\u003e": {
+            "Name": "\u003ccname\u003e",
+            "kind": "argument",
+            "description": "cname",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccname\u003e"
+        ]
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "Desired name for the cloned environment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstring\u003e"
+        ]
+      },
+      "\u003cenvironment-name\u003e": {
+        "Name": "\u003cenvironment-name\u003e",
+        "kind": "argument",
+        "description": "environment-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--clone_name": {
+        "Name": "--clone_name",
+        "kind": "option",
+        "description": "Desired name for the cloned environment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstring\u003e"
+        ]
+      },
+      "--cname": {
+        "Name": "--cname",
+        "kind": "option",
+        "description": "Desired CNAME prefix for the cloned environment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccname\u003e": {
+            "Name": "\u003ccname\u003e",
+            "kind": "argument",
+            "description": "cname",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccname\u003e": {
+            "Name": "\u003ccname\u003e",
+            "kind": "argument",
+            "description": "cname",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccname\u003e"
+        ]
+      },
+      "--envvars": {
+        "Name": "--envvars",
+        "kind": "option",
+        "description": "Environment properties in a comma-separated list with the format name=value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--exact": {
+        "Name": "--exact",
+        "kind": "option",
+        "description": "Prevents Elastic Beanstalk from updating the solution stack version for the new clone environment to the most recent version available",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--scale": {
+        "Name": "--scale",
+        "kind": "option",
+        "description": "The number of instances to run in the clone environment when it is launched",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cnumber\u003e": {
+            "Name": "\u003cnumber\u003e",
+            "kind": "argument",
+            "description": "number",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cnumber\u003e": {
+            "Name": "\u003cnumber\u003e",
+            "kind": "argument",
+            "description": "number",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cnumber\u003e"
+        ]
+      },
+      "--tags": {
+        "Name": "--tags",
+        "kind": "option",
+        "description": "Tags for the resources in your environment in a comma-separated list with the format name=value",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname=value\u003e": {
+            "Name": "\u003cname=value\u003e",
+            "kind": "argument",
+            "description": "name=value",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname=value\u003e": {
+            "Name": "\u003cname=value\u003e",
+            "kind": "argument",
+            "description": "name=value",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname=value\u003e"
+        ]
+      },
+      "--timeout": {
+        "Name": "--timeout",
+        "kind": "option",
+        "description": "The number of minutes before the command times out",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Desired CNAME prefix for the cloned environment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccname\u003e": {
+            "Name": "\u003ccname\u003e",
+            "kind": "argument",
+            "description": "cname",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccname\u003e": {
+            "Name": "\u003ccname\u003e",
+            "kind": "argument",
+            "description": "cname",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccname\u003e"
+        ]
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "Desired name for the cloned environment",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cstring\u003e": {
+            "Name": "\u003cstring\u003e",
+            "kind": "argument",
+            "description": "string",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cstring\u003e"
+        ]
+      },
+      "\u003cenvironment-name\u003e": {
+        "Name": "\u003cenvironment-name\u003e",
+        "kind": "argument",
+        "description": "environment-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cenvironment-name\u003e"
+    ]
+  },
+  "deploy": {
+    "Name": "deploy",
+    "kind": "subcommand",
+    "description": "Deploys the application source bundle from the initialized project directory to the running application",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--env-group-suffix": {
+        "Name": "--env-group-suffix",
+        "kind": "option",
+        "description": "Group name to append to the environment name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cgroupname\u003e": {
+            "Name": "\u003cgroupname\u003e",
+            "kind": "argument",
+            "description": "groupname",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cgroupname\u003e": {
+            "Name": "\u003cgroupname\u003e",
+            "kind": "argument",
+            "description": "groupname",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cgroupname\u003e"
+        ]
+      },
+      "--label": {
+        "Name": "--label",
+        "kind": "option",
+        "description": "Specify a label to use for the version that the EB CLI creates",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cversion-label\u003e": {
+            "Name": "\u003cversion-label\u003e",
+            "kind": "argument",
+            "description": "version-label",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cversion-label\u003e": {
+            "Name": "\u003cversion-label\u003e",
+            "kind": "argument",
+            "description": "version-label",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cversion-label\u003e"
+        ]
+      },
+      "--message": {
+        "Name": "--message",
+        "kind": "option",
+        "description": "The description for the application version, enclosed in double quotation marks",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cversion-description\u003e": {
+            "Name": "\u003cversion-description\u003e",
+            "kind": "argument",
+            "description": "version-description",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cversion-description\u003e": {
+            "Name": "\u003cversion-description\u003e",
+            "kind": "argument",
+            "description": "version-description",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cversion-description\u003e"
+        ]
+      },
+      "--modules": {
+        "Name": "--modules",
+        "kind": "option",
+        "description": "List of components to update. Only for Compose Environments",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccomponent\u003e": {
+            "Name": "\u003ccomponent\u003e",
+            "kind": "argument",
+            "description": "component",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccomponent\u003e": {
+            "Name": "\u003ccomponent\u003e",
+            "kind": "argument",
+            "description": "component",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccomponent\u003e"
+        ]
+      },
+      "--platform": {
+        "Name": "--platform",
+        "kind": "option",
+        "description": "Preprocess and validate the environment manifest and configuration files in the source bundle",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--source": {
+        "Name": "--source",
+        "kind": "option",
+        "description": "CodeCommit repository and branch",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003crepository-name/repository-branch\u003e": {
+            "Name": "\u003crepository-name/repository-branch\u003e",
+            "kind": "argument",
+            "description": "repository-name/repository-branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003crepository-name/repository-branch\u003e": {
+            "Name": "\u003crepository-name/repository-branch\u003e",
+            "kind": "argument",
+            "description": "repository-name/repository-branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003crepository-name/repository-branch\u003e"
+        ]
+      },
+      "--staged": {
+        "Name": "--staged",
+        "kind": "option",
+        "description": "Deploy files staged in the git index instead of the HEAD commit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--timeout": {
+        "Name": "--timeout",
+        "kind": "option",
+        "description": "The number of minutes before the command times out",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cminutes\u003e": {
+            "Name": "\u003cminutes\u003e",
+            "kind": "argument",
+            "description": "minutes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cminutes\u003e": {
+            "Name": "\u003cminutes\u003e",
+            "kind": "argument",
+            "description": "minutes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cminutes\u003e"
+        ]
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "An existing application version to deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cversion-label\u003e": {
+            "Name": "\u003cversion-label\u003e",
+            "kind": "argument",
+            "description": "version-label",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cversion-label\u003e": {
+            "Name": "\u003cversion-label\u003e",
+            "kind": "argument",
+            "description": "version-label",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cversion-label\u003e"
+        ]
+      },
+      "-l": {
+        "Name": "-l",
+        "kind": "option",
+        "description": "Specify a label to use for the version that the EB CLI creates",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cversion-label\u003e": {
+            "Name": "\u003cversion-label\u003e",
+            "kind": "argument",
+            "description": "version-label",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cversion-label\u003e": {
+            "Name": "\u003cversion-label\u003e",
+            "kind": "argument",
+            "description": "version-label",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cversion-label\u003e"
+        ]
+      },
+      "-m": {
+        "Name": "-m",
+        "kind": "option",
+        "description": "The description for the application version, enclosed in double quotation marks",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cversion-description\u003e": {
+            "Name": "\u003cversion-description\u003e",
+            "kind": "argument",
+            "description": "version-description",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cversion-description\u003e": {
+            "Name": "\u003cversion-description\u003e",
+            "kind": "argument",
+            "description": "version-description",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cversion-description\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Preprocess and validate the environment manifest and configuration files in the source bundle",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cenvironment-name\u003e": {
+        "Name": "\u003cenvironment-name\u003e",
+        "kind": "argument",
+        "description": "environment-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--env-group-suffix": {
+        "Name": "--env-group-suffix",
+        "kind": "option",
+        "description": "Group name to append to the environment name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cgroupname\u003e": {
+            "Name": "\u003cgroupname\u003e",
+            "kind": "argument",
+            "description": "groupname",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cgroupname\u003e": {
+            "Name": "\u003cgroupname\u003e",
+            "kind": "argument",
+            "description": "groupname",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cgroupname\u003e"
+        ]
+      },
+      "--label": {
+        "Name": "--label",
+        "kind": "option",
+        "description": "Specify a label to use for the version that the EB CLI creates",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cversion-label\u003e": {
+            "Name": "\u003cversion-label\u003e",
+            "kind": "argument",
+            "description": "version-label",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cversion-label\u003e": {
+            "Name": "\u003cversion-label\u003e",
+            "kind": "argument",
+            "description": "version-label",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cversion-label\u003e"
+        ]
+      },
+      "--message": {
+        "Name": "--message",
+        "kind": "option",
+        "description": "The description for the application version, enclosed in double quotation marks",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cversion-description\u003e": {
+            "Name": "\u003cversion-description\u003e",
+            "kind": "argument",
+            "description": "version-description",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cversion-description\u003e": {
+            "Name": "\u003cversion-description\u003e",
+            "kind": "argument",
+            "description": "version-description",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cversion-description\u003e"
+        ]
+      },
+      "--modules": {
+        "Name": "--modules",
+        "kind": "option",
+        "description": "List of components to update. Only for Compose Environments",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccomponent\u003e": {
+            "Name": "\u003ccomponent\u003e",
+            "kind": "argument",
+            "description": "component",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccomponent\u003e": {
+            "Name": "\u003ccomponent\u003e",
+            "kind": "argument",
+            "description": "component",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccomponent\u003e"
+        ]
+      },
+      "--platform": {
+        "Name": "--platform",
+        "kind": "option",
+        "description": "Preprocess and validate the environment manifest and configuration files in the source bundle",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--source": {
+        "Name": "--source",
+        "kind": "option",
+        "description": "CodeCommit repository and branch",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003crepository-name/repository-branch\u003e": {
+            "Name": "\u003crepository-name/repository-branch\u003e",
+            "kind": "argument",
+            "description": "repository-name/repository-branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003crepository-name/repository-branch\u003e": {
+            "Name": "\u003crepository-name/repository-branch\u003e",
+            "kind": "argument",
+            "description": "repository-name/repository-branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003crepository-name/repository-branch\u003e"
+        ]
+      },
+      "--staged": {
+        "Name": "--staged",
+        "kind": "option",
+        "description": "Deploy files staged in the git index instead of the HEAD commit",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--timeout": {
+        "Name": "--timeout",
+        "kind": "option",
+        "description": "The number of minutes before the command times out",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cminutes\u003e": {
+            "Name": "\u003cminutes\u003e",
+            "kind": "argument",
+            "description": "minutes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cminutes\u003e": {
+            "Name": "\u003cminutes\u003e",
+            "kind": "argument",
+            "description": "minutes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cminutes\u003e"
+        ]
+      },
+      "--version": {
+        "Name": "--version",
+        "kind": "option",
+        "description": "An existing application version to deploy",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cversion-label\u003e": {
+            "Name": "\u003cversion-label\u003e",
+            "kind": "argument",
+            "description": "version-label",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cversion-label\u003e": {
+            "Name": "\u003cversion-label\u003e",
+            "kind": "argument",
+            "description": "version-label",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cversion-label\u003e"
+        ]
+      },
+      "-l": {
+        "Name": "-l",
+        "kind": "option",
+        "description": "Specify a label to use for the version that the EB CLI creates",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cversion-label\u003e": {
+            "Name": "\u003cversion-label\u003e",
+            "kind": "argument",
+            "description": "version-label",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cversion-label\u003e": {
+            "Name": "\u003cversion-label\u003e",
+            "kind": "argument",
+            "description": "version-label",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cversion-label\u003e"
+        ]
+      },
+      "-m": {
+        "Name": "-m",
+        "kind": "option",
+        "description": "The description for the application version, enclosed in double quotation marks",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cversion-description\u003e": {
+            "Name": "\u003cversion-description\u003e",
+            "kind": "argument",
+            "description": "version-description",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cversion-description\u003e": {
+            "Name": "\u003cversion-description\u003e",
+            "kind": "argument",
+            "description": "version-description",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cversion-description\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Preprocess and validate the environment manifest and configuration files in the source bundle",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cenvironment-name\u003e": {
+        "Name": "\u003cenvironment-name\u003e",
+        "kind": "argument",
+        "description": "environment-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cenvironment-name\u003e"
+    ]
+  },
+  "init": {
+    "Name": "init",
+    "kind": "subcommand",
+    "description": "Initialize a new AWS Elastic Beanstalk application",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--interactive": {
+        "Name": "--interactive",
+        "kind": "option",
+        "description": "Forces EB CLI to prompt you to provide a value for every eb init command option",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--keyname": {
+        "Name": "--keyname",
+        "kind": "option",
+        "description": "The name of the AWS EC2 key pair",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ckeyname\u003e": {
+            "Name": "\u003ckeyname\u003e",
+            "kind": "argument",
+            "description": "keyname",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ckeyname\u003e": {
+            "Name": "\u003ckeyname\u003e",
+            "kind": "argument",
+            "description": "keyname",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ckeyname\u003e"
+        ]
+      },
+      "--modules": {
+        "Name": "--modules",
+        "kind": "option",
+        "description": "List of child directories to initialize",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--platform": {
+        "Name": "--platform",
+        "kind": "option",
+        "description": "The platform version to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cplataform-version\u003e": {
+            "Name": "\u003cplataform-version\u003e",
+            "kind": "argument",
+            "description": "plataform-version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cplataform-version\u003e": {
+            "Name": "\u003cplataform-version\u003e",
+            "kind": "argument",
+            "description": "plataform-version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cplataform-version\u003e"
+        ]
+      },
+      "--tags": {
+        "Name": "--tags",
+        "kind": "option",
+        "description": "List of tags to apply to the application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ckey=value\u003e": {
+            "Name": "\u003ckey=value\u003e",
+            "kind": "argument",
+            "description": "key=value",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ckey=value\u003e": {
+            "Name": "\u003ckey=value\u003e",
+            "kind": "argument",
+            "description": "key=value",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ckey=value\u003e"
+        ]
+      },
+      "-i": {
+        "Name": "-i",
+        "kind": "option",
+        "description": "Forces EB CLI to prompt you to provide a value for every eb init command option",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-k": {
+        "Name": "-k",
+        "kind": "option",
+        "description": "The name of the AWS EC2 key pair",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ckeyname\u003e": {
+            "Name": "\u003ckeyname\u003e",
+            "kind": "argument",
+            "description": "keyname",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ckeyname\u003e": {
+            "Name": "\u003ckeyname\u003e",
+            "kind": "argument",
+            "description": "keyname",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ckeyname\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "The platform version to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cplataform-version\u003e": {
+            "Name": "\u003cplataform-version\u003e",
+            "kind": "argument",
+            "description": "plataform-version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cplataform-version\u003e": {
+            "Name": "\u003cplataform-version\u003e",
+            "kind": "argument",
+            "description": "plataform-version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cplataform-version\u003e"
+        ]
+      },
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--interactive": {
+        "Name": "--interactive",
+        "kind": "option",
+        "description": "Forces EB CLI to prompt you to provide a value for every eb init command option",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--keyname": {
+        "Name": "--keyname",
+        "kind": "option",
+        "description": "The name of the AWS EC2 key pair",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ckeyname\u003e": {
+            "Name": "\u003ckeyname\u003e",
+            "kind": "argument",
+            "description": "keyname",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ckeyname\u003e": {
+            "Name": "\u003ckeyname\u003e",
+            "kind": "argument",
+            "description": "keyname",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ckeyname\u003e"
+        ]
+      },
+      "--modules": {
+        "Name": "--modules",
+        "kind": "option",
+        "description": "List of child directories to initialize",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--platform": {
+        "Name": "--platform",
+        "kind": "option",
+        "description": "The platform version to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cplataform-version\u003e": {
+            "Name": "\u003cplataform-version\u003e",
+            "kind": "argument",
+            "description": "plataform-version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cplataform-version\u003e": {
+            "Name": "\u003cplataform-version\u003e",
+            "kind": "argument",
+            "description": "plataform-version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cplataform-version\u003e"
+        ]
+      },
+      "--tags": {
+        "Name": "--tags",
+        "kind": "option",
+        "description": "List of tags to apply to the application",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ckey=value\u003e": {
+            "Name": "\u003ckey=value\u003e",
+            "kind": "argument",
+            "description": "key=value",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ckey=value\u003e": {
+            "Name": "\u003ckey=value\u003e",
+            "kind": "argument",
+            "description": "key=value",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ckey=value\u003e"
+        ]
+      },
+      "-i": {
+        "Name": "-i",
+        "kind": "option",
+        "description": "Forces EB CLI to prompt you to provide a value for every eb init command option",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-k": {
+        "Name": "-k",
+        "kind": "option",
+        "description": "The name of the AWS EC2 key pair",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ckeyname\u003e": {
+            "Name": "\u003ckeyname\u003e",
+            "kind": "argument",
+            "description": "keyname",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ckeyname\u003e": {
+            "Name": "\u003ckeyname\u003e",
+            "kind": "argument",
+            "description": "keyname",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ckeyname\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "The platform version to use",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cplataform-version\u003e": {
+            "Name": "\u003cplataform-version\u003e",
+            "kind": "argument",
+            "description": "plataform-version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cplataform-version\u003e": {
+            "Name": "\u003cplataform-version\u003e",
+            "kind": "argument",
+            "description": "plataform-version",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cplataform-version\u003e"
+        ]
+      },
+      "\u003cname\u003e": {
+        "Name": "\u003cname\u003e",
+        "kind": "argument",
+        "description": "name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cname\u003e"
+    ]
+  },
+  "list": {
+    "Name": "list",
+    "kind": "subcommand",
+    "description": "List environments",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "List all environments from all applications",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Provides more detailed information about all environments, including instances",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-a": {
+        "Name": "-a",
+        "kind": "option",
+        "description": "List all environments from all applications",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Provides more detailed information about all environments, including instances",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--all": {
+        "Name": "--all",
+        "kind": "option",
+        "description": "List all environments from all applications",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--verbose": {
+        "Name": "--verbose",
+        "kind": "option",
+        "description": "Provides more detailed information about all environments, including instances",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-a": {
+        "Name": "-a",
+        "kind": "option",
+        "description": "List all environments from all applications",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Provides more detailed information about all environments, including instances",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "open": {
+    "Name": "open",
+    "kind": "subcommand",
+    "description": "Opens the public URL of your website in the default browser",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cenvironment-name\u003e": {
+        "Name": "\u003cenvironment-name\u003e",
+        "kind": "argument",
+        "description": "environment-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cenvironment-name\u003e": {
+        "Name": "\u003cenvironment-name\u003e",
+        "kind": "argument",
+        "description": "environment-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cenvironment-name\u003e"
+    ]
+  },
+  "printenv": {
+    "Name": "printenv",
+    "kind": "subcommand",
+    "description": "Prints all the environment properties in the command window",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cenvironment-name\u003e": {
+        "Name": "\u003cenvironment-name\u003e",
+        "kind": "argument",
+        "description": "environment-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cenvironment-name\u003e": {
+        "Name": "\u003cenvironment-name\u003e",
+        "kind": "argument",
+        "description": "environment-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cenvironment-name\u003e"
+    ]
+  },
+  "ssh": {
+    "Name": "ssh",
+    "kind": "subcommand",
+    "description": "Connect to a Linux Amazon EC2 instance in your environment using Secure Shell",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--command": {
+        "Name": "--command",
+        "kind": "option",
+        "description": "Execute a shell command on the specified instance instead of starting an SSH session",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--custom": {
+        "Name": "--custom",
+        "kind": "option",
+        "description": "Specify an SSH command to use instead of 'ssh -i keyfile'. Do not include the remote user and hostname",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Open port 22 to incoming traffic from 0.0.0.0/0 in the environment's security group, even if the security group is already configured for SSH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--instance": {
+        "Name": "--instance",
+        "kind": "option",
+        "description": "The ID of the instance to connect to",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--keep_open": {
+        "Name": "--keep_open",
+        "kind": "option",
+        "description": "Leave port 22 open on the security group after the SSH session ends",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--number": {
+        "Name": "--number",
+        "kind": "option",
+        "description": "The number of the instance to connect to by number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--setup": {
+        "Name": "--setup",
+        "kind": "option",
+        "description": "Change the key pair assigned to the environment's instances",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--timeout": {
+        "Name": "--timeout",
+        "kind": "option",
+        "description": "Set number of minutes before the command times out",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cminutes\u003e": {
+            "Name": "\u003cminutes\u003e",
+            "kind": "argument",
+            "description": "minutes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cminutes\u003e": {
+            "Name": "\u003cminutes\u003e",
+            "kind": "argument",
+            "description": "minutes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cminutes\u003e"
+        ]
+      },
+      "-i": {
+        "Name": "-i",
+        "kind": "option",
+        "description": "The ID of the instance to connect to",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "The number of the instance to connect to by number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Leave port 22 open on the security group after the SSH session ends",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cenvironment-name\u003e": {
+        "Name": "\u003cenvironment-name\u003e",
+        "kind": "argument",
+        "description": "environment-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--command": {
+        "Name": "--command",
+        "kind": "option",
+        "description": "Execute a shell command on the specified instance instead of starting an SSH session",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--custom": {
+        "Name": "--custom",
+        "kind": "option",
+        "description": "Specify an SSH command to use instead of 'ssh -i keyfile'. Do not include the remote user and hostname",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--force": {
+        "Name": "--force",
+        "kind": "option",
+        "description": "Open port 22 to incoming traffic from 0.0.0.0/0 in the environment's security group, even if the security group is already configured for SSH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--instance": {
+        "Name": "--instance",
+        "kind": "option",
+        "description": "The ID of the instance to connect to",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--keep_open": {
+        "Name": "--keep_open",
+        "kind": "option",
+        "description": "Leave port 22 open on the security group after the SSH session ends",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--number": {
+        "Name": "--number",
+        "kind": "option",
+        "description": "The number of the instance to connect to by number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--setup": {
+        "Name": "--setup",
+        "kind": "option",
+        "description": "Change the key pair assigned to the environment's instances",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--timeout": {
+        "Name": "--timeout",
+        "kind": "option",
+        "description": "Set number of minutes before the command times out",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cminutes\u003e": {
+            "Name": "\u003cminutes\u003e",
+            "kind": "argument",
+            "description": "minutes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cminutes\u003e": {
+            "Name": "\u003cminutes\u003e",
+            "kind": "argument",
+            "description": "minutes",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cminutes\u003e"
+        ]
+      },
+      "-i": {
+        "Name": "-i",
+        "kind": "option",
+        "description": "The ID of the instance to connect to",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "The number of the instance to connect to by number",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Leave port 22 open on the security group after the SSH session ends",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cenvironment-name\u003e": {
+        "Name": "\u003cenvironment-name\u003e",
+        "kind": "argument",
+        "description": "environment-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cenvironment-name\u003e"
+    ]
+  },
+  "use": {
+    "Name": "use",
+    "kind": "subcommand",
+    "description": "Sets the specified environment as the default environment",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--region": {
+        "Name": "--region",
+        "kind": "option",
+        "description": "Change the region in which you create environments",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cregion\u003e"
+        ]
+      },
+      "--source": {
+        "Name": "--source",
+        "kind": "option",
+        "description": "CodeCommit repository and branch",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccodecommit/repository-name/repository-branch\u003e": {
+            "Name": "\u003ccodecommit/repository-name/repository-branch\u003e",
+            "kind": "argument",
+            "description": "codecommit/repository-name/repository-branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccodecommit/repository-name/repository-branch\u003e": {
+            "Name": "\u003ccodecommit/repository-name/repository-branch\u003e",
+            "kind": "argument",
+            "description": "codecommit/repository-name/repository-branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccodecommit/repository-name/repository-branch\u003e"
+        ]
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Change the region in which you create environments",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cregion\u003e"
+        ]
+      },
+      "\u003cenvironment-name\u003e": {
+        "Name": "\u003cenvironment-name\u003e",
+        "kind": "argument",
+        "description": "environment-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--region": {
+        "Name": "--region",
+        "kind": "option",
+        "description": "Change the region in which you create environments",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cregion\u003e"
+        ]
+      },
+      "--source": {
+        "Name": "--source",
+        "kind": "option",
+        "description": "CodeCommit repository and branch",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ccodecommit/repository-name/repository-branch\u003e": {
+            "Name": "\u003ccodecommit/repository-name/repository-branch\u003e",
+            "kind": "argument",
+            "description": "codecommit/repository-name/repository-branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ccodecommit/repository-name/repository-branch\u003e": {
+            "Name": "\u003ccodecommit/repository-name/repository-branch\u003e",
+            "kind": "argument",
+            "description": "codecommit/repository-name/repository-branch",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ccodecommit/repository-name/repository-branch\u003e"
+        ]
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Change the region in which you create environments",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cregion\u003e": {
+            "Name": "\u003cregion\u003e",
+            "kind": "argument",
+            "description": "region",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cregion\u003e"
+        ]
+      },
+      "\u003cenvironment-name\u003e": {
+        "Name": "\u003cenvironment-name\u003e",
+        "kind": "argument",
+        "description": "environment-name",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cenvironment-name\u003e"
+    ]
+  }
+}

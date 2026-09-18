@@ -1,0 +1,2101 @@
+{
+  "--config": {
+    "Name": "--config",
+    "kind": "option",
+    "description": "Path to rancher config (default: `$home/.rancher`) [$RANCHER_CONFIG_DIR]",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cRANCHER_CONFIG_PATH\u003e": {
+        "Name": "\u003cRANCHER_CONFIG_PATH\u003e",
+        "kind": "argument",
+        "description": "RANCHER_CONFIG_PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cRANCHER_CONFIG_PATH\u003e": {
+        "Name": "\u003cRANCHER_CONFIG_PATH\u003e",
+        "kind": "argument",
+        "description": "RANCHER_CONFIG_PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cRANCHER_CONFIG_PATH\u003e"
+    ]
+  },
+  "--debug": {
+    "Name": "--debug",
+    "kind": "option",
+    "description": "Debug logging",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--help": {
+    "Name": "--help",
+    "kind": "option",
+    "description": "Show help for rancher cli",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "--version": {
+    "Name": "--version",
+    "kind": "option",
+    "description": "Print the version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-c": {
+    "Name": "-c",
+    "kind": "option",
+    "description": "Path to rancher config (default: `$home/.rancher`) [$RANCHER_CONFIG_DIR]",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cRANCHER_CONFIG_PATH\u003e": {
+        "Name": "\u003cRANCHER_CONFIG_PATH\u003e",
+        "kind": "argument",
+        "description": "RANCHER_CONFIG_PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cRANCHER_CONFIG_PATH\u003e": {
+        "Name": "\u003cRANCHER_CONFIG_PATH\u003e",
+        "kind": "argument",
+        "description": "RANCHER_CONFIG_PATH",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cRANCHER_CONFIG_PATH\u003e"
+    ]
+  },
+  "-h": {
+    "Name": "-h",
+    "kind": "option",
+    "description": "Show help for rancher cli",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "-v": {
+    "Name": "-v",
+    "kind": "option",
+    "description": "Print the version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "apps": {
+    "Name": "apps",
+    "kind": "subcommand",
+    "description": "Operations with apps. Uses helm. Flags are prepended with 'helm' can also be accurately described by helm documentation",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Output format: 'json', 'yaml' or custom format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Only display IDs or suppress help text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Output format: 'json', 'yaml' or custom format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Only display IDs or suppress help text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "delete": {
+        "Name": "delete",
+        "kind": "subcommand",
+        "description": "Delete an app",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cAPP_NAME/APP_ID\u003e": {
+            "Name": "\u003cAPP_NAME/APP_ID\u003e",
+            "kind": "argument",
+            "description": "APP_NAME/APP_ID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cAPP_NAME/APP_ID\u003e": {
+            "Name": "\u003cAPP_NAME/APP_ID\u003e",
+            "kind": "argument",
+            "description": "APP_NAME/APP_ID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cAPP_NAME/APP_ID\u003e"
+        ]
+      },
+      "install": {
+        "Name": "install",
+        "kind": "subcommand",
+        "description": "Install an app template",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--answers": {
+            "Name": "--answers",
+            "kind": "option",
+            "description": "Path to an answers file, the format of the file is a map with key:value. This supports JSON and YAML",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003canswers-file-path\u003e": {
+                "Name": "\u003canswers-file-path\u003e",
+                "kind": "argument",
+                "description": "answers-file-path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003canswers-file-path\u003e": {
+                "Name": "\u003canswers-file-path\u003e",
+                "kind": "argument",
+                "description": "answers-file-path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003canswers-file-path\u003e"
+            ]
+          },
+          "--helm-timeout": {
+            "Name": "--helm-timeout",
+            "kind": "option",
+            "description": "Amount of time for helm to wait for k8s commands (default is 300 secs). Example: --helm-timeout 600 (default: 300)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cseconds\u003e": {
+                "Name": "\u003cseconds\u003e",
+                "kind": "argument",
+                "description": "seconds",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cseconds\u003e": {
+                "Name": "\u003cseconds\u003e",
+                "kind": "argument",
+                "description": "seconds",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cseconds\u003e"
+            ]
+          },
+          "--helm-wait": {
+            "Name": "--helm-wait",
+            "kind": "option",
+            "description": "Helm will wait for as long as timeout value, for installed resources to be ready (pods, PVCs, deployments, etc.). Example: --helm-wait",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--namespace": {
+            "Name": "--namespace",
+            "kind": "option",
+            "description": "Namespace to install the app into",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cnamespace\u003e": {
+                "Name": "\u003cnamespace\u003e",
+                "kind": "argument",
+                "description": "namespace",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cnamespace\u003e": {
+                "Name": "\u003cnamespace\u003e",
+                "kind": "argument",
+                "description": "namespace",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cnamespace\u003e"
+            ]
+          },
+          "--no-prompt": {
+            "Name": "--no-prompt",
+            "kind": "option",
+            "description": "Suppress asking questions and use the default values when required answers are not provided",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--set": {
+            "Name": "--set",
+            "kind": "option",
+            "description": "Set answers for the template, can be used multiple times. Example: --set foo=bar",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ckey=value\u003e": {
+                "Name": "\u003ckey=value\u003e",
+                "kind": "argument",
+                "description": "key=value",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ckey=value\u003e": {
+                "Name": "\u003ckey=value\u003e",
+                "kind": "argument",
+                "description": "key=value",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ckey=value\u003e"
+            ]
+          },
+          "--set-string": {
+            "Name": "--set-string",
+            "kind": "option",
+            "description": "Set string answers for the template (Skips Helm's type conversion), can be used multiple times. Example: --set-string foo=bar",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ckey=value\u003e": {
+                "Name": "\u003ckey=value\u003e",
+                "kind": "argument",
+                "description": "key=value",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ckey=value\u003e": {
+                "Name": "\u003ckey=value\u003e",
+                "kind": "argument",
+                "description": "key=value",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ckey=value\u003e"
+            ]
+          },
+          "--values": {
+            "Name": "--values",
+            "kind": "option",
+            "description": "Path to a helm values file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cvalues-file-path\u003e": {
+                "Name": "\u003cvalues-file-path\u003e",
+                "kind": "argument",
+                "description": "values-file-path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cvalues-file-path\u003e": {
+                "Name": "\u003cvalues-file-path\u003e",
+                "kind": "argument",
+                "description": "values-file-path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cvalues-file-path\u003e"
+            ]
+          },
+          "--version": {
+            "Name": "--version",
+            "kind": "option",
+            "description": "Version of the template to use",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cversion\u003e"
+            ]
+          },
+          "-a": {
+            "Name": "-a",
+            "kind": "option",
+            "description": "Path to an answers file, the format of the file is a map with key:value. This supports JSON and YAML",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003canswers-file-path\u003e": {
+                "Name": "\u003canswers-file-path\u003e",
+                "kind": "argument",
+                "description": "answers-file-path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003canswers-file-path\u003e": {
+                "Name": "\u003canswers-file-path\u003e",
+                "kind": "argument",
+                "description": "answers-file-path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003canswers-file-path\u003e"
+            ]
+          },
+          "-n": {
+            "Name": "-n",
+            "kind": "option",
+            "description": "Namespace to install the app into",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cnamespace\u003e": {
+                "Name": "\u003cnamespace\u003e",
+                "kind": "argument",
+                "description": "namespace",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cnamespace\u003e": {
+                "Name": "\u003cnamespace\u003e",
+                "kind": "argument",
+                "description": "namespace",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cnamespace\u003e"
+            ]
+          },
+          "-v": {
+            "Name": "-v",
+            "kind": "option",
+            "description": "Path to a helm values file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cvalues-file-path\u003e": {
+                "Name": "\u003cvalues-file-path\u003e",
+                "kind": "argument",
+                "description": "values-file-path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cvalues-file-path\u003e": {
+                "Name": "\u003cvalues-file-path\u003e",
+                "kind": "argument",
+                "description": "values-file-path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cvalues-file-path\u003e"
+            ]
+          },
+          "\u003cAPP_NAME\u003e": {
+            "Name": "\u003cAPP_NAME\u003e",
+            "kind": "argument",
+            "description": "APP_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cTEMPLATE_NAME/TEMPLATE_PATH\u003e": {
+            "Name": "\u003cTEMPLATE_NAME/TEMPLATE_PATH\u003e",
+            "kind": "argument",
+            "description": "TEMPLATE_NAME/TEMPLATE_PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--answers": {
+            "Name": "--answers",
+            "kind": "option",
+            "description": "Path to an answers file, the format of the file is a map with key:value. This supports JSON and YAML",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003canswers-file-path\u003e": {
+                "Name": "\u003canswers-file-path\u003e",
+                "kind": "argument",
+                "description": "answers-file-path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003canswers-file-path\u003e": {
+                "Name": "\u003canswers-file-path\u003e",
+                "kind": "argument",
+                "description": "answers-file-path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003canswers-file-path\u003e"
+            ]
+          },
+          "--helm-timeout": {
+            "Name": "--helm-timeout",
+            "kind": "option",
+            "description": "Amount of time for helm to wait for k8s commands (default is 300 secs). Example: --helm-timeout 600 (default: 300)",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cseconds\u003e": {
+                "Name": "\u003cseconds\u003e",
+                "kind": "argument",
+                "description": "seconds",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cseconds\u003e": {
+                "Name": "\u003cseconds\u003e",
+                "kind": "argument",
+                "description": "seconds",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cseconds\u003e"
+            ]
+          },
+          "--helm-wait": {
+            "Name": "--helm-wait",
+            "kind": "option",
+            "description": "Helm will wait for as long as timeout value, for installed resources to be ready (pods, PVCs, deployments, etc.). Example: --helm-wait",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--namespace": {
+            "Name": "--namespace",
+            "kind": "option",
+            "description": "Namespace to install the app into",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cnamespace\u003e": {
+                "Name": "\u003cnamespace\u003e",
+                "kind": "argument",
+                "description": "namespace",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cnamespace\u003e": {
+                "Name": "\u003cnamespace\u003e",
+                "kind": "argument",
+                "description": "namespace",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cnamespace\u003e"
+            ]
+          },
+          "--no-prompt": {
+            "Name": "--no-prompt",
+            "kind": "option",
+            "description": "Suppress asking questions and use the default values when required answers are not provided",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--set": {
+            "Name": "--set",
+            "kind": "option",
+            "description": "Set answers for the template, can be used multiple times. Example: --set foo=bar",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ckey=value\u003e": {
+                "Name": "\u003ckey=value\u003e",
+                "kind": "argument",
+                "description": "key=value",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ckey=value\u003e": {
+                "Name": "\u003ckey=value\u003e",
+                "kind": "argument",
+                "description": "key=value",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ckey=value\u003e"
+            ]
+          },
+          "--set-string": {
+            "Name": "--set-string",
+            "kind": "option",
+            "description": "Set string answers for the template (Skips Helm's type conversion), can be used multiple times. Example: --set-string foo=bar",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003ckey=value\u003e": {
+                "Name": "\u003ckey=value\u003e",
+                "kind": "argument",
+                "description": "key=value",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003ckey=value\u003e": {
+                "Name": "\u003ckey=value\u003e",
+                "kind": "argument",
+                "description": "key=value",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003ckey=value\u003e"
+            ]
+          },
+          "--values": {
+            "Name": "--values",
+            "kind": "option",
+            "description": "Path to a helm values file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cvalues-file-path\u003e": {
+                "Name": "\u003cvalues-file-path\u003e",
+                "kind": "argument",
+                "description": "values-file-path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cvalues-file-path\u003e": {
+                "Name": "\u003cvalues-file-path\u003e",
+                "kind": "argument",
+                "description": "values-file-path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cvalues-file-path\u003e"
+            ]
+          },
+          "--version": {
+            "Name": "--version",
+            "kind": "option",
+            "description": "Version of the template to use",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cversion\u003e"
+            ]
+          },
+          "-a": {
+            "Name": "-a",
+            "kind": "option",
+            "description": "Path to an answers file, the format of the file is a map with key:value. This supports JSON and YAML",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003canswers-file-path\u003e": {
+                "Name": "\u003canswers-file-path\u003e",
+                "kind": "argument",
+                "description": "answers-file-path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003canswers-file-path\u003e": {
+                "Name": "\u003canswers-file-path\u003e",
+                "kind": "argument",
+                "description": "answers-file-path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003canswers-file-path\u003e"
+            ]
+          },
+          "-n": {
+            "Name": "-n",
+            "kind": "option",
+            "description": "Namespace to install the app into",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cnamespace\u003e": {
+                "Name": "\u003cnamespace\u003e",
+                "kind": "argument",
+                "description": "namespace",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cnamespace\u003e": {
+                "Name": "\u003cnamespace\u003e",
+                "kind": "argument",
+                "description": "namespace",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cnamespace\u003e"
+            ]
+          },
+          "-v": {
+            "Name": "-v",
+            "kind": "option",
+            "description": "Path to a helm values file",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cvalues-file-path\u003e": {
+                "Name": "\u003cvalues-file-path\u003e",
+                "kind": "argument",
+                "description": "values-file-path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cvalues-file-path\u003e": {
+                "Name": "\u003cvalues-file-path\u003e",
+                "kind": "argument",
+                "description": "values-file-path",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cvalues-file-path\u003e"
+            ]
+          },
+          "\u003cAPP_NAME\u003e": {
+            "Name": "\u003cAPP_NAME\u003e",
+            "kind": "argument",
+            "description": "APP_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cTEMPLATE_NAME/TEMPLATE_PATH\u003e": {
+            "Name": "\u003cTEMPLATE_NAME/TEMPLATE_PATH\u003e",
+            "kind": "argument",
+            "description": "TEMPLATE_NAME/TEMPLATE_PATH",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cTEMPLATE_NAME/TEMPLATE_PATH\u003e",
+          "\u003cAPP_NAME\u003e"
+        ]
+      },
+      "list-templates": {
+        "Name": "list-templates",
+        "kind": "subcommand",
+        "description": "List templates available for installation",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "ls": {
+        "Name": "ls",
+        "kind": "subcommand",
+        "description": "List all apps in the current Rancher server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "rollback": {
+        "Name": "rollback",
+        "kind": "subcommand",
+        "description": "Rollback an app to a previous version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cAPP_NAME/APP_ID\u003e": {
+            "Name": "\u003cAPP_NAME/APP_ID\u003e",
+            "kind": "argument",
+            "description": "APP_NAME/APP_ID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cREVISION_ID/REVISION_NAME\u003e": {
+            "Name": "\u003cREVISION_ID/REVISION_NAME\u003e",
+            "kind": "argument",
+            "description": "REVISION_ID/REVISION_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cAPP_NAME/APP_ID\u003e": {
+            "Name": "\u003cAPP_NAME/APP_ID\u003e",
+            "kind": "argument",
+            "description": "APP_NAME/APP_ID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cREVISION_ID/REVISION_NAME\u003e": {
+            "Name": "\u003cREVISION_ID/REVISION_NAME\u003e",
+            "kind": "argument",
+            "description": "REVISION_ID/REVISION_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cAPP_NAME/APP_ID\u003e",
+          "\u003cREVISION_ID/REVISION_NAME\u003e"
+        ]
+      },
+      "show-app": {
+        "Name": "show-app",
+        "kind": "subcommand",
+        "description": "Show an app's available versions and revisions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "show-notes": {
+        "Name": "show-notes",
+        "kind": "subcommand",
+        "description": "Show contents of apps notes.txt",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "show-tempate": {
+        "Name": "show-tempate",
+        "kind": "subcommand",
+        "description": "Show versions available to install for an app template",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "upgrade": {
+        "Name": "upgrade",
+        "kind": "subcommand",
+        "description": "Upgrade an existing app to a newer version",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--format": {
+        "Name": "--format",
+        "kind": "option",
+        "description": "Output format: 'json', 'yaml' or custom format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "--help": {
+        "Name": "--help",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--quiet": {
+        "Name": "--quiet",
+        "kind": "option",
+        "description": "Only display IDs or suppress help text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Show help",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-o": {
+        "Name": "-o",
+        "kind": "option",
+        "description": "Output format: 'json', 'yaml' or custom format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cformat\u003e": {
+            "Name": "\u003cformat\u003e",
+            "kind": "argument",
+            "description": "format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cformat\u003e"
+        ]
+      },
+      "-q": {
+        "Name": "-q",
+        "kind": "option",
+        "description": "Only display IDs or suppress help text",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "catalog": {
+    "Name": "catalog",
+    "kind": "subcommand",
+    "description": "Operations with catalogs",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "add": {
+        "Name": "add",
+        "kind": "subcommand",
+        "description": "Add a catalog",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--branch": {
+            "Name": "--branch",
+            "kind": "option",
+            "description": "Branch from the url to use (default: 'master')",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cbranch name\u003e": {
+                "Name": "\u003cbranch name\u003e",
+                "kind": "argument",
+                "description": "branch name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cbranch name\u003e": {
+                "Name": "\u003cbranch name\u003e",
+                "kind": "argument",
+                "description": "branch name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cbranch name\u003e"
+            ]
+          },
+          "--helm-version": {
+            "Name": "--helm-version",
+            "kind": "option",
+            "description": "Version of helm the app(s) in your catalog will use for deployment. Use 'v2' for helm 2 or 'v3' for helm 3 (default: 'v2')",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cversion\u003e"
+            ]
+          },
+          "\u003cCATALOG_NAME\u003e": {
+            "Name": "\u003cCATALOG_NAME\u003e",
+            "kind": "argument",
+            "description": "CATALOG_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cCATALOG_URL\u003e": {
+            "Name": "\u003cCATALOG_URL\u003e",
+            "kind": "argument",
+            "description": "CATALOG_URL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--branch": {
+            "Name": "--branch",
+            "kind": "option",
+            "description": "Branch from the url to use (default: 'master')",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cbranch name\u003e": {
+                "Name": "\u003cbranch name\u003e",
+                "kind": "argument",
+                "description": "branch name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cbranch name\u003e": {
+                "Name": "\u003cbranch name\u003e",
+                "kind": "argument",
+                "description": "branch name",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cbranch name\u003e"
+            ]
+          },
+          "--helm-version": {
+            "Name": "--helm-version",
+            "kind": "option",
+            "description": "Version of helm the app(s) in your catalog will use for deployment. Use 'v2' for helm 2 or 'v3' for helm 3 (default: 'v2')",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cversion\u003e": {
+                "Name": "\u003cversion\u003e",
+                "kind": "argument",
+                "description": "version",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cversion\u003e"
+            ]
+          },
+          "\u003cCATALOG_NAME\u003e": {
+            "Name": "\u003cCATALOG_NAME\u003e",
+            "kind": "argument",
+            "description": "CATALOG_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cCATALOG_URL\u003e": {
+            "Name": "\u003cCATALOG_URL\u003e",
+            "kind": "argument",
+            "description": "CATALOG_URL",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cCATALOG_NAME\u003e",
+          "\u003cCATALOG_URL\u003e"
+        ]
+      },
+      "ls": {
+        "Name": "ls",
+        "kind": "subcommand",
+        "description": "List all catalogs in the current Rancher server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--format": {
+            "Name": "--format",
+            "kind": "option",
+            "description": "Output format: 'json', 'yaml' or custom format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cformat\u003e": {
+                "Name": "\u003cformat\u003e",
+                "kind": "argument",
+                "description": "format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cformat\u003e": {
+                "Name": "\u003cformat\u003e",
+                "kind": "argument",
+                "description": "format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cformat\u003e"
+            ]
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show help",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--quiet": {
+            "Name": "--quiet",
+            "kind": "option",
+            "description": "Only display IDs or suppress help text",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--verbose": {
+            "Name": "--verbose",
+            "kind": "option",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Show help",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-o": {
+            "Name": "-o",
+            "kind": "option",
+            "description": "Output format: 'json', 'yaml' or custom format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cformat\u003e": {
+                "Name": "\u003cformat\u003e",
+                "kind": "argument",
+                "description": "format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cformat\u003e": {
+                "Name": "\u003cformat\u003e",
+                "kind": "argument",
+                "description": "format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cformat\u003e"
+            ]
+          },
+          "-q": {
+            "Name": "-q",
+            "kind": "option",
+            "description": "Only display IDs or suppress help text",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-v": {
+            "Name": "-v",
+            "kind": "option",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        },
+        "options": {
+          "--format": {
+            "Name": "--format",
+            "kind": "option",
+            "description": "Output format: 'json', 'yaml' or custom format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cformat\u003e": {
+                "Name": "\u003cformat\u003e",
+                "kind": "argument",
+                "description": "format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cformat\u003e": {
+                "Name": "\u003cformat\u003e",
+                "kind": "argument",
+                "description": "format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cformat\u003e"
+            ]
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show help",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--quiet": {
+            "Name": "--quiet",
+            "kind": "option",
+            "description": "Only display IDs or suppress help text",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--verbose": {
+            "Name": "--verbose",
+            "kind": "option",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Show help",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-o": {
+            "Name": "-o",
+            "kind": "option",
+            "description": "Output format: 'json', 'yaml' or custom format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cformat\u003e": {
+                "Name": "\u003cformat\u003e",
+                "kind": "argument",
+                "description": "format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cformat\u003e": {
+                "Name": "\u003cformat\u003e",
+                "kind": "argument",
+                "description": "format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cformat\u003e"
+            ]
+          },
+          "-q": {
+            "Name": "-q",
+            "kind": "option",
+            "description": "Only display IDs or suppress help text",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-v": {
+            "Name": "-v",
+            "kind": "option",
+            "description": "",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          }
+        }
+      }
+    }
+  },
+  "clusters": {
+    "Name": "clusters",
+    "kind": "subcommand",
+    "description": "Operations on clusters",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "context": {
+    "Name": "context",
+    "kind": "subcommand",
+    "description": "Operations for the context",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "globaldns": {
+    "Name": "globaldns",
+    "kind": "subcommand",
+    "description": "Operations on global DNS providers and entries",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Shows a list of commands or help for one command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "inspect": {
+    "Name": "inspect",
+    "kind": "subcommand",
+    "description": "View details of resources",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "kubectl": {
+    "Name": "kubectl",
+    "kind": "subcommand",
+    "description": "Run kubectl commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "login": {
+    "Name": "login",
+    "kind": "subcommand",
+    "description": "Login to a Rancher server",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--token": {
+        "Name": "--token",
+        "kind": "option",
+        "description": "API Bearer Token to authenticate Rancher CLI to your Rancher server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cBEARER_TOKEN\u003e": {
+            "Name": "\u003cBEARER_TOKEN\u003e",
+            "kind": "argument",
+            "description": "BEARER_TOKEN",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cBEARER_TOKEN\u003e": {
+            "Name": "\u003cBEARER_TOKEN\u003e",
+            "kind": "argument",
+            "description": "BEARER_TOKEN",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cBEARER_TOKEN\u003e"
+        ]
+      },
+      "\u003cSERVER_URL\u003e": {
+        "Name": "\u003cSERVER_URL\u003e",
+        "kind": "argument",
+        "description": "SERVER_URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "--token": {
+        "Name": "--token",
+        "kind": "option",
+        "description": "API Bearer Token to authenticate Rancher CLI to your Rancher server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cBEARER_TOKEN\u003e": {
+            "Name": "\u003cBEARER_TOKEN\u003e",
+            "kind": "argument",
+            "description": "BEARER_TOKEN",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cBEARER_TOKEN\u003e": {
+            "Name": "\u003cBEARER_TOKEN\u003e",
+            "kind": "argument",
+            "description": "BEARER_TOKEN",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cBEARER_TOKEN\u003e"
+        ]
+      },
+      "\u003cSERVER_URL\u003e": {
+        "Name": "\u003cSERVER_URL\u003e",
+        "kind": "argument",
+        "description": "SERVER_URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cSERVER_URL\u003e"
+    ]
+  },
+  "machines": {
+    "Name": "machines",
+    "kind": "subcommand",
+    "description": "Operations on machines",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "multiclusterapps": {
+    "Name": "multiclusterapps",
+    "kind": "subcommand",
+    "description": "Operations with multi-cluster apps",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "namespaces": {
+    "Name": "namespaces",
+    "kind": "subcommand",
+    "description": "Operations on namespaces",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "nodes": {
+    "Name": "nodes",
+    "kind": "subcommand",
+    "description": "Operations on nodes",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "projects": {
+    "Name": "projects",
+    "kind": "subcommand",
+    "description": "Operations on projects",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "ps": {
+    "Name": "ps",
+    "kind": "subcommand",
+    "description": "Show workloads in a project",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "server": {
+    "Name": "server",
+    "kind": "subcommand",
+    "description": "Operations for the server",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "current": {
+        "Name": "current",
+        "kind": "subcommand",
+        "description": "Display the current server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "delete": {
+        "Name": "delete",
+        "kind": "subcommand",
+        "description": "⚠️ Delete a server from the local config",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSERVER_NAME\u003e": {
+            "Name": "\u003cSERVER_NAME\u003e",
+            "kind": "argument",
+            "description": "SERVER_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSERVER_NAME\u003e": {
+            "Name": "\u003cSERVER_NAME\u003e",
+            "kind": "argument",
+            "description": "SERVER_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSERVER_NAME\u003e"
+        ]
+      },
+      "ls": {
+        "Name": "ls",
+        "kind": "subcommand",
+        "description": "List all servers",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "switch": {
+        "Name": "switch",
+        "kind": "subcommand",
+        "description": "Switch to a new server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSERVER_NAME\u003e": {
+            "Name": "\u003cSERVER_NAME\u003e",
+            "kind": "argument",
+            "description": "SERVER_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSERVER_NAME\u003e": {
+            "Name": "\u003cSERVER_NAME\u003e",
+            "kind": "argument",
+            "description": "SERVER_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSERVER_NAME\u003e"
+        ]
+      }
+    }
+  },
+  "settings": {
+    "Name": "settings",
+    "kind": "subcommand",
+    "description": "Show settings for the current server",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "get": {
+        "Name": "get",
+        "kind": "subcommand",
+        "description": "Print a setting",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cSETTING_NAME\u003e": {
+            "Name": "\u003cSETTING_NAME\u003e",
+            "kind": "argument",
+            "description": "SETTING_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cSETTING_NAME\u003e": {
+            "Name": "\u003cSETTING_NAME\u003e",
+            "kind": "argument",
+            "description": "SETTING_NAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSETTING_NAME\u003e"
+        ]
+      },
+      "ls": {
+        "Name": "ls",
+        "kind": "subcommand",
+        "description": "List settings",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "set": {
+        "Name": "set",
+        "kind": "subcommand",
+        "description": "Set the value for a setting",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--default": {
+            "Name": "--default",
+            "kind": "option",
+            "description": "Reset the setting back to it's default value. If the default value is (blank) it will be set to that",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--format": {
+            "Name": "--format",
+            "kind": "option",
+            "description": "Output format: 'json', 'yaml' or custom format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cformat\u003e": {
+                "Name": "\u003cformat\u003e",
+                "kind": "argument",
+                "description": "format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cformat\u003e": {
+                "Name": "\u003cformat\u003e",
+                "kind": "argument",
+                "description": "format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cformat\u003e"
+            ]
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show help",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--quiet": {
+            "Name": "--quiet",
+            "kind": "option",
+            "description": "Only display IDs or suppress help text",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Show help",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-o": {
+            "Name": "-o",
+            "kind": "option",
+            "description": "Output format: 'json', 'yaml' or custom format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cformat\u003e": {
+                "Name": "\u003cformat\u003e",
+                "kind": "argument",
+                "description": "format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cformat\u003e": {
+                "Name": "\u003cformat\u003e",
+                "kind": "argument",
+                "description": "format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cformat\u003e"
+            ]
+          },
+          "-q": {
+            "Name": "-q",
+            "kind": "option",
+            "description": "Only display IDs or suppress help text",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cSETTINGNAME\u003e": {
+            "Name": "\u003cSETTINGNAME\u003e",
+            "kind": "argument",
+            "description": "SETTINGNAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cSETTING_VALUE\u003e": {
+            "Name": "\u003cSETTING_VALUE\u003e",
+            "kind": "argument",
+            "description": "SETTING_VALUE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "--default": {
+            "Name": "--default",
+            "kind": "option",
+            "description": "Reset the setting back to it's default value. If the default value is (blank) it will be set to that",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--format": {
+            "Name": "--format",
+            "kind": "option",
+            "description": "Output format: 'json', 'yaml' or custom format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cformat\u003e": {
+                "Name": "\u003cformat\u003e",
+                "kind": "argument",
+                "description": "format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cformat\u003e": {
+                "Name": "\u003cformat\u003e",
+                "kind": "argument",
+                "description": "format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cformat\u003e"
+            ]
+          },
+          "--help": {
+            "Name": "--help",
+            "kind": "option",
+            "description": "Show help",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "--quiet": {
+            "Name": "--quiet",
+            "kind": "option",
+            "description": "Only display IDs or suppress help text",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-h": {
+            "Name": "-h",
+            "kind": "option",
+            "description": "Show help",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "-o": {
+            "Name": "-o",
+            "kind": "option",
+            "description": "Output format: 'json', 'yaml' or custom format",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cformat\u003e": {
+                "Name": "\u003cformat\u003e",
+                "kind": "argument",
+                "description": "format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cformat\u003e": {
+                "Name": "\u003cformat\u003e",
+                "kind": "argument",
+                "description": "format",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cformat\u003e"
+            ]
+          },
+          "-q": {
+            "Name": "-q",
+            "kind": "option",
+            "description": "Only display IDs or suppress help text",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {}
+          },
+          "\u003cSETTINGNAME\u003e": {
+            "Name": "\u003cSETTINGNAME\u003e",
+            "kind": "argument",
+            "description": "SETTINGNAME",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          },
+          "\u003cSETTING_VALUE\u003e": {
+            "Name": "\u003cSETTING_VALUE\u003e",
+            "kind": "argument",
+            "description": "SETTING_VALUE",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cSETTINGNAME\u003e",
+          "\u003cSETTING_VALUE\u003e"
+        ]
+      }
+    }
+  },
+  "ssh": {
+    "Name": "ssh",
+    "kind": "subcommand",
+    "description": "SSH into a node",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "token": {
+    "Name": "token",
+    "kind": "subcommand",
+    "description": "Authenticate and generate new kubeconfig token",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "up": {
+    "Name": "up",
+    "kind": "subcommand",
+    "description": "Apply compose config",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "wait": {
+    "Name": "wait",
+    "kind": "subcommand",
+    "description": "Wait for resources cluster, app, project, multiClusterApp",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

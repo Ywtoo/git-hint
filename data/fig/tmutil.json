@@ -1,0 +1,1719 @@
+{
+  "addexclusion": {
+    "Name": "addexclusion",
+    "kind": "subcommand",
+    "description": "Configure an exclusion that tells Time Machine not to backup a file, directory, or volume during future backups",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Configure fixed-path exclusions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Configure volume exclusions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003citem\u003e": {
+        "Name": "\u003citem\u003e",
+        "kind": "argument",
+        "description": "item",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Configure fixed-path exclusions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Configure volume exclusions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003citem\u003e": {
+        "Name": "\u003citem\u003e",
+        "kind": "argument",
+        "description": "item",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003citem\u003e"
+    ]
+  },
+  "associatedisk": {
+    "Name": "associatedisk",
+    "kind": "subcommand",
+    "description": "Bind a volume store directory to the specified local disk, thereby reconfiguring the backup history (requires root + Full Disk Access)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-a": {
+        "Name": "-a",
+        "kind": "option",
+        "description": "Find all volume stores in the same machine directory that match the identity of the volume backup directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cmount point\u003e": {
+        "Name": "\u003cmount point\u003e",
+        "kind": "argument",
+        "description": "mount point",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvolume backup directory\u003e": {
+        "Name": "\u003cvolume backup directory\u003e",
+        "kind": "argument",
+        "description": "volume backup directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "-a": {
+        "Name": "-a",
+        "kind": "option",
+        "description": "Find all volume stores in the same machine directory that match the identity of the volume backup directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cmount point\u003e": {
+        "Name": "\u003cmount point\u003e",
+        "kind": "argument",
+        "description": "mount point",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cvolume backup directory\u003e": {
+        "Name": "\u003cvolume backup directory\u003e",
+        "kind": "argument",
+        "description": "volume backup directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmount point\u003e",
+      "\u003cvolume backup directory\u003e"
+    ]
+  },
+  "calculatedrift": {
+    "Name": "calculatedrift",
+    "kind": "subcommand",
+    "description": "Analyze the backups in an HFS machine directory and determine the amount of change between each",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmachine directory\u003e": {
+        "Name": "\u003cmachine directory\u003e",
+        "kind": "argument",
+        "description": "machine directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmachine directory\u003e": {
+        "Name": "\u003cmachine directory\u003e",
+        "kind": "argument",
+        "description": "machine directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmachine directory\u003e"
+    ]
+  },
+  "compare": {
+    "Name": "compare",
+    "kind": "subcommand",
+    "description": "Perform a backup diff",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-@": {
+        "Name": "-@",
+        "kind": "option",
+        "description": "Compare extended attributes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-D": {
+        "Name": "-D",
+        "kind": "option",
+        "description": "Limit traversal depth to depth levels from the beginning of iteration",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdepth\u003e": {
+            "Name": "\u003cdepth\u003e",
+            "kind": "argument",
+            "description": "depth",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdepth\u003e": {
+            "Name": "\u003cdepth\u003e",
+            "kind": "argument",
+            "description": "depth",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdepth\u003e"
+        ]
+      },
+      "-E": {
+        "Name": "-E",
+        "kind": "option",
+        "description": "Don't take exclusions into account when comparing items inside volumes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-I": {
+        "Name": "-I",
+        "kind": "option",
+        "description": "Ignore paths with a path component equal to name during iteration",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "-U": {
+        "Name": "-U",
+        "kind": "option",
+        "description": "Ignore logical volume identity (volume UUIDs) when directly comparing a local volume or volume store to a volume store",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-X": {
+        "Name": "-X",
+        "kind": "option",
+        "description": "Print output in XML property list format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-a": {
+        "Name": "-a",
+        "kind": "option",
+        "description": "Compare all supported metadata",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Compare creation times",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Compare file data forks",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-e": {
+        "Name": "-e",
+        "kind": "option",
+        "description": "Compare ACLs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Compare file flags",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-g": {
+        "Name": "-g",
+        "kind": "option",
+        "description": "Compare GIDs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Unknown",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-l": {
+        "Name": "-l",
+        "kind": "option",
+        "description": "Unknown",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-m": {
+        "Name": "-m",
+        "kind": "option",
+        "description": "Compare file modes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "No metadata comparison",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Compare sizes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Compare modification times",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-u": {
+        "Name": "-u",
+        "kind": "option",
+        "description": "Compare UIDs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cbackup or path\u003e": {
+        "Name": "\u003cbackup or path\u003e",
+        "kind": "argument",
+        "description": "backup or path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath (if not backup)\u003e": {
+        "Name": "\u003cpath (if not backup)\u003e",
+        "kind": "argument",
+        "description": "path (if not backup)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "-@": {
+        "Name": "-@",
+        "kind": "option",
+        "description": "Compare extended attributes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-D": {
+        "Name": "-D",
+        "kind": "option",
+        "description": "Limit traversal depth to depth levels from the beginning of iteration",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdepth\u003e": {
+            "Name": "\u003cdepth\u003e",
+            "kind": "argument",
+            "description": "depth",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdepth\u003e": {
+            "Name": "\u003cdepth\u003e",
+            "kind": "argument",
+            "description": "depth",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdepth\u003e"
+        ]
+      },
+      "-E": {
+        "Name": "-E",
+        "kind": "option",
+        "description": "Don't take exclusions into account when comparing items inside volumes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-I": {
+        "Name": "-I",
+        "kind": "option",
+        "description": "Ignore paths with a path component equal to name during iteration",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cname\u003e": {
+            "Name": "\u003cname\u003e",
+            "kind": "argument",
+            "description": "name",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cname\u003e"
+        ]
+      },
+      "-U": {
+        "Name": "-U",
+        "kind": "option",
+        "description": "Ignore logical volume identity (volume UUIDs) when directly comparing a local volume or volume store to a volume store",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-X": {
+        "Name": "-X",
+        "kind": "option",
+        "description": "Print output in XML property list format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-a": {
+        "Name": "-a",
+        "kind": "option",
+        "description": "Compare all supported metadata",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-c": {
+        "Name": "-c",
+        "kind": "option",
+        "description": "Compare creation times",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Compare file data forks",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-e": {
+        "Name": "-e",
+        "kind": "option",
+        "description": "Compare ACLs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-f": {
+        "Name": "-f",
+        "kind": "option",
+        "description": "Compare file flags",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-g": {
+        "Name": "-g",
+        "kind": "option",
+        "description": "Compare GIDs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-h": {
+        "Name": "-h",
+        "kind": "option",
+        "description": "Unknown",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-l": {
+        "Name": "-l",
+        "kind": "option",
+        "description": "Unknown",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-m": {
+        "Name": "-m",
+        "kind": "option",
+        "description": "Compare file modes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-n": {
+        "Name": "-n",
+        "kind": "option",
+        "description": "No metadata comparison",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-s": {
+        "Name": "-s",
+        "kind": "option",
+        "description": "Compare sizes",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Compare modification times",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-u": {
+        "Name": "-u",
+        "kind": "option",
+        "description": "Compare UIDs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cbackup or path\u003e": {
+        "Name": "\u003cbackup or path\u003e",
+        "kind": "argument",
+        "description": "backup or path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpath (if not backup)\u003e": {
+        "Name": "\u003cpath (if not backup)\u003e",
+        "kind": "argument",
+        "description": "path (if not backup)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cbackup or path\u003e"
+    ]
+  },
+  "delete": {
+    "Name": "delete",
+    "kind": "subcommand",
+    "description": "Deletes backups with the specified timestamp from the backup volume mounted at the given mountpoint",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Delete from the given mount point",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbackup mount point\u003e": {
+            "Name": "\u003cbackup mount point\u003e",
+            "kind": "argument",
+            "description": "backup mount point",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cbackup mount point\u003e": {
+            "Name": "\u003cbackup mount point\u003e",
+            "kind": "argument",
+            "description": "backup mount point",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cbackup mount point\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "A specific path to delete (HFS backup disk)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Delete backups with this timestamp",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctimestamp\u003e": {
+            "Name": "\u003ctimestamp\u003e",
+            "kind": "argument",
+            "description": "timestamp",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctimestamp\u003e": {
+            "Name": "\u003ctimestamp\u003e",
+            "kind": "argument",
+            "description": "timestamp",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctimestamp\u003e"
+        ]
+      }
+    },
+    "options": {
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Delete from the given mount point",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbackup mount point\u003e": {
+            "Name": "\u003cbackup mount point\u003e",
+            "kind": "argument",
+            "description": "backup mount point",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cbackup mount point\u003e": {
+            "Name": "\u003cbackup mount point\u003e",
+            "kind": "argument",
+            "description": "backup mount point",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cbackup mount point\u003e"
+        ]
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "A specific path to delete (HFS backup disk)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cpath\u003e": {
+            "Name": "\u003cpath\u003e",
+            "kind": "argument",
+            "description": "path",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cpath\u003e"
+        ]
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Delete backups with this timestamp",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003ctimestamp\u003e": {
+            "Name": "\u003ctimestamp\u003e",
+            "kind": "argument",
+            "description": "timestamp",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003ctimestamp\u003e": {
+            "Name": "\u003ctimestamp\u003e",
+            "kind": "argument",
+            "description": "timestamp",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003ctimestamp\u003e"
+        ]
+      }
+    }
+  },
+  "deleteinprogress": {
+    "Name": "deleteinprogress",
+    "kind": "subcommand",
+    "description": "Delete all in-progress backups for a machine directory",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmachine directory\u003e": {
+        "Name": "\u003cmachine directory\u003e",
+        "kind": "argument",
+        "description": "machine directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmachine directory\u003e": {
+        "Name": "\u003cmachine directory\u003e",
+        "kind": "argument",
+        "description": "machine directory",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmachine directory\u003e"
+    ]
+  },
+  "deletelocalsnapshots": {
+    "Name": "deletelocalsnapshots",
+    "kind": "subcommand",
+    "description": "Delete all local Time Machine snapshots on all mounted disks for the specified date or on the given disk",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmount point or snapshot date\u003e": {
+        "Name": "\u003cmount point or snapshot date\u003e",
+        "kind": "argument",
+        "description": "mount point or snapshot date",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmount point or snapshot date\u003e": {
+        "Name": "\u003cmount point or snapshot date\u003e",
+        "kind": "argument",
+        "description": "mount point or snapshot date",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "destinationinfo": {
+    "Name": "destinationinfo",
+    "kind": "subcommand",
+    "description": "Print information about destinations currently configured for use with Time Machine",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-X": {
+        "Name": "-X",
+        "kind": "option",
+        "description": "Print output in XML plist format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "-X": {
+        "Name": "-X",
+        "kind": "option",
+        "description": "Print output in XML plist format",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "disable": {
+    "Name": "disable",
+    "kind": "subcommand",
+    "description": "Turn off automatic backups (required root + full disk access)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "enable": {
+    "Name": "enable",
+    "kind": "subcommand",
+    "description": "Turn on automatic backups (required root + full disk access)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "inheritbackup": {
+    "Name": "inheritbackup",
+    "kind": "subcommand",
+    "description": "Claim a machine directory or sparsebundle for use by the current machine",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmachine directory or sparsebundle\u003e": {
+        "Name": "\u003cmachine directory or sparsebundle\u003e",
+        "kind": "argument",
+        "description": "machine directory or sparsebundle",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmachine directory or sparsebundle\u003e": {
+        "Name": "\u003cmachine directory or sparsebundle\u003e",
+        "kind": "argument",
+        "description": "machine directory or sparsebundle",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmachine directory or sparsebundle\u003e"
+    ]
+  },
+  "isexcluded": {
+    "Name": "isexcluded",
+    "kind": "subcommand",
+    "description": "Determine if a file, directory, or volume are excluded from Time Machine backups",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003citem\u003e": {
+        "Name": "\u003citem\u003e",
+        "kind": "argument",
+        "description": "item",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003citem\u003e": {
+        "Name": "\u003citem\u003e",
+        "kind": "argument",
+        "description": "item",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003citem\u003e"
+    ]
+  },
+  "latestbackup": {
+    "Name": "latestbackup",
+    "kind": "subcommand",
+    "description": "List this computer's latest completed backup",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Specify a destination volume to list backups from",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-m": {
+        "Name": "-m",
+        "kind": "option",
+        "description": "Attempt to mount the backups and list their mounted paths",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Only show the backup timestampt rather than the full name or path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Specify a destination volume to list backups from",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-m": {
+        "Name": "-m",
+        "kind": "option",
+        "description": "Attempt to mount the backups and list their mounted paths",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Only show the backup timestampt rather than the full name or path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "listbackups": {
+    "Name": "listbackups",
+    "kind": "subcommand",
+    "description": "List all of this computer's completed backups",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Specify a destination volume to list backups from",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-m": {
+        "Name": "-m",
+        "kind": "option",
+        "description": "Attempt to mount the backups and list their mounted paths",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Only show the backup timestampt rather than the full name or path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Specify a destination volume to list backups from",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-m": {
+        "Name": "-m",
+        "kind": "option",
+        "description": "Attempt to mount the backups and list their mounted paths",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-t": {
+        "Name": "-t",
+        "kind": "option",
+        "description": "Only show the backup timestampt rather than the full name or path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "listlocalsnapshotdates": {
+    "Name": "listlocalsnapshotdates",
+    "kind": "subcommand",
+    "description": "List the creation dates of all local Time Machine snapshots",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmount point\u003e": {
+        "Name": "\u003cmount point\u003e",
+        "kind": "argument",
+        "description": "mount point",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmount point\u003e": {
+        "Name": "\u003cmount point\u003e",
+        "kind": "argument",
+        "description": "mount point",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    }
+  },
+  "listlocalsnapshots": {
+    "Name": "listlocalsnapshots",
+    "kind": "subcommand",
+    "description": "List local Time Machine snapshots of the specified volume",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmount point\u003e": {
+        "Name": "\u003cmount point\u003e",
+        "kind": "argument",
+        "description": "mount point",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmount point\u003e": {
+        "Name": "\u003cmount point\u003e",
+        "kind": "argument",
+        "description": "mount point",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmount point\u003e"
+    ]
+  },
+  "localsnapshot": {
+    "Name": "localsnapshot",
+    "kind": "subcommand",
+    "description": "Create new local Time Machine snapshots of all APFS volumes included in the Time Machine backup",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "machinedirectory": {
+    "Name": "machinedirectory",
+    "kind": "subcommand",
+    "description": "Print the path to the current machine directory for this computer",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "removedestination": {
+    "Name": "removedestination",
+    "kind": "subcommand",
+    "description": "Remove the destination with the specified unique identifier from the Time Machine configuration (requires root + Full Disk Access)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cdestination id\u003e": {
+        "Name": "\u003cdestination id\u003e",
+        "kind": "argument",
+        "description": "destination id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cdestination id\u003e": {
+        "Name": "\u003cdestination id\u003e",
+        "kind": "argument",
+        "description": "destination id",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdestination id\u003e"
+    ]
+  },
+  "removeexclusion": {
+    "Name": "removeexclusion",
+    "kind": "subcommand",
+    "description": "Configure  Time Machine to backup a file, directory, or volume during future backups",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Configure fixed-path exclusions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Configure volume exclusions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003citem\u003e": {
+        "Name": "\u003citem\u003e",
+        "kind": "argument",
+        "description": "item",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Configure fixed-path exclusions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Configure volume exclusions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003citem\u003e": {
+        "Name": "\u003citem\u003e",
+        "kind": "argument",
+        "description": "item",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003citem\u003e"
+    ]
+  },
+  "restore": {
+    "Name": "restore",
+    "kind": "subcommand",
+    "description": "Restore the item `source`, which is inside a backup, to the location `destination`. Same semantics as `cp`",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Be verbose, showing files as they are copied",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cdestination\u003e": {
+        "Name": "\u003cdestination\u003e",
+        "kind": "argument",
+        "description": "destination",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003csource\u003e": {
+        "Name": "\u003csource\u003e",
+        "kind": "argument",
+        "description": "source",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "-v": {
+        "Name": "-v",
+        "kind": "option",
+        "description": "Be verbose, showing files as they are copied",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cdestination\u003e": {
+        "Name": "\u003cdestination\u003e",
+        "kind": "argument",
+        "description": "destination",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003csource\u003e": {
+        "Name": "\u003csource\u003e",
+        "kind": "argument",
+        "description": "source",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003csource\u003e",
+      "\u003cdestination\u003e"
+    ]
+  },
+  "setdestination": {
+    "Name": "setdestination",
+    "kind": "subcommand",
+    "description": "Configure a local HFS+ or APFS volume, AFP share, or SMB share as a backup destination (requires root + Full Disk Access)",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "-a": {
+        "Name": "-a",
+        "kind": "option",
+        "description": "Add the arg to the list of destinations, instead of replacing the list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Enter a password in a non-echoing interactive prompt",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cdestination\u003e": {
+        "Name": "\u003cdestination\u003e",
+        "kind": "argument",
+        "description": "destination",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "-a": {
+        "Name": "-a",
+        "kind": "option",
+        "description": "Add the arg to the list of destinations, instead of replacing the list",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-p": {
+        "Name": "-p",
+        "kind": "option",
+        "description": "Enter a password in a non-echoing interactive prompt",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "\u003cdestination\u003e": {
+        "Name": "\u003cdestination\u003e",
+        "kind": "argument",
+        "description": "destination",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cdestination\u003e"
+    ]
+  },
+  "startbackup": {
+    "Name": "startbackup",
+    "kind": "subcommand",
+    "description": "Begin a backup if one is not already running",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "--auto": {
+        "Name": "--auto",
+        "kind": "option",
+        "description": "Run the backup in a mode similar to system-scheduled backups",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--block": {
+        "Name": "--block",
+        "kind": "option",
+        "description": "Wait (block) until the backup is finished before exiting",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--destination": {
+        "Name": "--destination",
+        "kind": "option",
+        "description": "Perform the backup to the destination corresponding to the specified ID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdestination id\u003e": {
+            "Name": "\u003cdestination id\u003e",
+            "kind": "argument",
+            "description": "destination id",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdestination id\u003e": {
+            "Name": "\u003cdestination id\u003e",
+            "kind": "argument",
+            "description": "destination id",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdestination id\u003e"
+        ]
+      },
+      "--rotation": {
+        "Name": "--rotation",
+        "kind": "option",
+        "description": "Allow automatic destination rotation during backup",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-a": {
+        "Name": "-a",
+        "kind": "option",
+        "description": "Run the backup in a mode similar to system-scheduled backups",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-b": {
+        "Name": "-b",
+        "kind": "option",
+        "description": "Wait (block) until the backup is finished before exiting",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Perform the backup to the destination corresponding to the specified ID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdestination id\u003e": {
+            "Name": "\u003cdestination id\u003e",
+            "kind": "argument",
+            "description": "destination id",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdestination id\u003e": {
+            "Name": "\u003cdestination id\u003e",
+            "kind": "argument",
+            "description": "destination id",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdestination id\u003e"
+        ]
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Allow automatic destination rotation during backup",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    },
+    "options": {
+      "--auto": {
+        "Name": "--auto",
+        "kind": "option",
+        "description": "Run the backup in a mode similar to system-scheduled backups",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--block": {
+        "Name": "--block",
+        "kind": "option",
+        "description": "Wait (block) until the backup is finished before exiting",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "--destination": {
+        "Name": "--destination",
+        "kind": "option",
+        "description": "Perform the backup to the destination corresponding to the specified ID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdestination id\u003e": {
+            "Name": "\u003cdestination id\u003e",
+            "kind": "argument",
+            "description": "destination id",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdestination id\u003e": {
+            "Name": "\u003cdestination id\u003e",
+            "kind": "argument",
+            "description": "destination id",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdestination id\u003e"
+        ]
+      },
+      "--rotation": {
+        "Name": "--rotation",
+        "kind": "option",
+        "description": "Allow automatic destination rotation during backup",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-a": {
+        "Name": "-a",
+        "kind": "option",
+        "description": "Run the backup in a mode similar to system-scheduled backups",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-b": {
+        "Name": "-b",
+        "kind": "option",
+        "description": "Wait (block) until the backup is finished before exiting",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "-d": {
+        "Name": "-d",
+        "kind": "option",
+        "description": "Perform the backup to the destination corresponding to the specified ID",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cdestination id\u003e": {
+            "Name": "\u003cdestination id\u003e",
+            "kind": "argument",
+            "description": "destination id",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cdestination id\u003e": {
+            "Name": "\u003cdestination id\u003e",
+            "kind": "argument",
+            "description": "destination id",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cdestination id\u003e"
+        ]
+      },
+      "-r": {
+        "Name": "-r",
+        "kind": "option",
+        "description": "Allow automatic destination rotation during backup",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "stopbackup": {
+    "Name": "stopbackup",
+    "kind": "subcommand",
+    "description": "Cancel a backup currently in progress",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "thinlocalsnapshots": {
+    "Name": "thinlocalsnapshots",
+    "kind": "subcommand",
+    "description": "Think local Time Machine snapshots for the specified volume",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cmount point\u003e": {
+        "Name": "\u003cmount point\u003e",
+        "kind": "argument",
+        "description": "mount point",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpurge amount (bytes)\u003e": {
+        "Name": "\u003cpurge amount (bytes)\u003e",
+        "kind": "argument",
+        "description": "purge amount (bytes)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003curgency\u003e": {
+        "Name": "\u003curgency\u003e",
+        "kind": "argument",
+        "description": "urgency",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cmount point\u003e": {
+        "Name": "\u003cmount point\u003e",
+        "kind": "argument",
+        "description": "mount point",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003cpurge amount (bytes)\u003e": {
+        "Name": "\u003cpurge amount (bytes)\u003e",
+        "kind": "argument",
+        "description": "purge amount (bytes)",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      },
+      "\u003curgency\u003e": {
+        "Name": "\u003curgency\u003e",
+        "kind": "argument",
+        "description": "urgency",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cmount point\u003e"
+    ]
+  },
+  "uniquesize": {
+    "Name": "uniquesize",
+    "kind": "subcommand",
+    "description": "Analyze the specified path in an HFS+ backup or path to an APFS backup and determine its unique size",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "verifychecksums": {
+    "Name": "verifychecksums",
+    "kind": "subcommand",
+    "description": "Compute a checksum of data contained within a backup and verify the results against checksum information computed at the time of backup",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "options": {
+      "\u003cpath\u003e": {
+        "Name": "\u003cpath\u003e",
+        "kind": "argument",
+        "description": "path",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": null
+      }
+    },
+    "requires": [
+      "\u003cpath\u003e"
+    ]
+  },
+  "version": {
+    "Name": "version",
+    "kind": "subcommand",
+    "description": "Print the current version",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}

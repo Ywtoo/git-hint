@@ -1,0 +1,2696 @@
+{
+  "account": {
+    "Name": "account",
+    "kind": "subcommand",
+    "description": "Retrieve information about your account",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  },
+  "apps": {
+    "Name": "apps",
+    "kind": "subcommand",
+    "description": "Display all available applications",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List applications",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "backups": {
+    "Name": "backups",
+    "kind": "subcommand",
+    "description": "Display backups",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "get": {
+        "Name": "get",
+        "kind": "subcommand",
+        "description": "Get backup",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbackupId\u003e": {
+            "Name": "\u003cbackupId\u003e",
+            "kind": "argument",
+            "description": "backupId",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cbackupId\u003e": {
+            "Name": "\u003cbackupId\u003e",
+            "kind": "argument",
+            "description": "backupId",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cbackupId\u003e"
+        ]
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List backups",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "bare-metal": {
+    "Name": "bare-metal",
+    "kind": "subcommand",
+    "description": "Bare-metal is used to access bare metal server commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "app": {
+        "Name": "app",
+        "kind": "subcommand",
+        "description": "App is used to access bare metal server application commands",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "change": {
+            "Name": "change",
+            "kind": "subcommand",
+            "description": "Change a bare metal server's application",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cappID\u003e": {
+                "Name": "\u003cappID\u003e",
+                "kind": "argument",
+                "description": "appID",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              },
+              "\u003cbareMetalId\u003e": {
+                "Name": "\u003cbareMetalId\u003e",
+                "kind": "argument",
+                "description": "bareMetalId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cappID\u003e": {
+                "Name": "\u003cappID\u003e",
+                "kind": "argument",
+                "description": "appID",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              },
+              "\u003cbareMetalId\u003e": {
+                "Name": "\u003cbareMetalId\u003e",
+                "kind": "argument",
+                "description": "bareMetalId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cbareMetalId\u003e",
+              "\u003cappID\u003e"
+            ]
+          },
+          "list": {
+            "Name": "list",
+            "kind": "subcommand",
+            "description": "Available apps a bare metal server can change to",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cbareMetalId\u003e": {
+                "Name": "\u003cbareMetalId\u003e",
+                "kind": "argument",
+                "description": "bareMetalId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cbareMetalId\u003e": {
+                "Name": "\u003cbareMetalId\u003e",
+                "kind": "argument",
+                "description": "bareMetalId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cbareMetalId\u003e"
+            ]
+          }
+        }
+      },
+      "bandwidth": {
+        "Name": "bandwidth",
+        "kind": "subcommand",
+        "description": "Get a bare metal server's bandwidth usage",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbareMetalId\u003e": {
+            "Name": "\u003cbareMetalId\u003e",
+            "kind": "argument",
+            "description": "bareMetalId",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cbareMetalId\u003e": {
+            "Name": "\u003cbareMetalId\u003e",
+            "kind": "argument",
+            "description": "bareMetalId",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cbareMetalId\u003e"
+        ]
+      },
+      "create": {
+        "Name": "create",
+        "kind": "subcommand",
+        "description": "Create a bare metal server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--os": {
+            "Name": "--os",
+            "kind": "option",
+            "description": "ID of the operating system that will be installed on the server",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cosId\u003e": {
+                "Name": "\u003cosId\u003e",
+                "kind": "argument",
+                "description": "osId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cosId\u003e": {
+                "Name": "\u003cosId\u003e",
+                "kind": "argument",
+                "description": "osId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cosId\u003e"
+            ]
+          },
+          "--persistent_pxe": {
+            "Name": "--persistent_pxe",
+            "kind": "option",
+            "description": "Enable persistent_pxe",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpersistent\u003e": {
+                "Name": "\u003cpersistent\u003e",
+                "kind": "argument",
+                "description": "persistent",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpersistent\u003e": {
+                "Name": "\u003cpersistent\u003e",
+                "kind": "argument",
+                "description": "persistent",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpersistent\u003e"
+            ]
+          },
+          "--plan": {
+            "Name": "--plan",
+            "kind": "option",
+            "description": "ID of the plan that the server will subscribe to",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cplanId\u003e": {
+                "Name": "\u003cplanId\u003e",
+                "kind": "argument",
+                "description": "planId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cplanId\u003e": {
+                "Name": "\u003cplanId\u003e",
+                "kind": "argument",
+                "description": "planId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cplanId\u003e"
+            ]
+          },
+          "--region": {
+            "Name": "--region",
+            "kind": "option",
+            "description": "ID of the region where the server will be created",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cregionId\u003e": {
+                "Name": "\u003cregionId\u003e",
+                "kind": "argument",
+                "description": "regionId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cregionId\u003e": {
+                "Name": "\u003cregionId\u003e",
+                "kind": "argument",
+                "description": "regionId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cregionId\u003e"
+            ]
+          },
+          "-o": {
+            "Name": "-o",
+            "kind": "option",
+            "description": "ID of the operating system that will be installed on the server",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cosId\u003e": {
+                "Name": "\u003cosId\u003e",
+                "kind": "argument",
+                "description": "osId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cosId\u003e": {
+                "Name": "\u003cosId\u003e",
+                "kind": "argument",
+                "description": "osId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cosId\u003e"
+            ]
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "ID of the plan that the server will subscribe to",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cplanId\u003e": {
+                "Name": "\u003cplanId\u003e",
+                "kind": "argument",
+                "description": "planId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cplanId\u003e": {
+                "Name": "\u003cplanId\u003e",
+                "kind": "argument",
+                "description": "planId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cplanId\u003e"
+            ]
+          },
+          "-r": {
+            "Name": "-r",
+            "kind": "option",
+            "description": "ID of the region where the server will be created",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cregionId\u003e": {
+                "Name": "\u003cregionId\u003e",
+                "kind": "argument",
+                "description": "regionId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cregionId\u003e": {
+                "Name": "\u003cregionId\u003e",
+                "kind": "argument",
+                "description": "regionId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cregionId\u003e"
+            ]
+          },
+          "-x": {
+            "Name": "-x",
+            "kind": "option",
+            "description": "Enable persistent_pxe",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpersistent\u003e": {
+                "Name": "\u003cpersistent\u003e",
+                "kind": "argument",
+                "description": "persistent",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpersistent\u003e": {
+                "Name": "\u003cpersistent\u003e",
+                "kind": "argument",
+                "description": "persistent",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpersistent\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--os": {
+            "Name": "--os",
+            "kind": "option",
+            "description": "ID of the operating system that will be installed on the server",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cosId\u003e": {
+                "Name": "\u003cosId\u003e",
+                "kind": "argument",
+                "description": "osId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cosId\u003e": {
+                "Name": "\u003cosId\u003e",
+                "kind": "argument",
+                "description": "osId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cosId\u003e"
+            ]
+          },
+          "--persistent_pxe": {
+            "Name": "--persistent_pxe",
+            "kind": "option",
+            "description": "Enable persistent_pxe",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpersistent\u003e": {
+                "Name": "\u003cpersistent\u003e",
+                "kind": "argument",
+                "description": "persistent",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpersistent\u003e": {
+                "Name": "\u003cpersistent\u003e",
+                "kind": "argument",
+                "description": "persistent",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpersistent\u003e"
+            ]
+          },
+          "--plan": {
+            "Name": "--plan",
+            "kind": "option",
+            "description": "ID of the plan that the server will subscribe to",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cplanId\u003e": {
+                "Name": "\u003cplanId\u003e",
+                "kind": "argument",
+                "description": "planId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cplanId\u003e": {
+                "Name": "\u003cplanId\u003e",
+                "kind": "argument",
+                "description": "planId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cplanId\u003e"
+            ]
+          },
+          "--region": {
+            "Name": "--region",
+            "kind": "option",
+            "description": "ID of the region where the server will be created",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cregionId\u003e": {
+                "Name": "\u003cregionId\u003e",
+                "kind": "argument",
+                "description": "regionId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cregionId\u003e": {
+                "Name": "\u003cregionId\u003e",
+                "kind": "argument",
+                "description": "regionId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cregionId\u003e"
+            ]
+          },
+          "-o": {
+            "Name": "-o",
+            "kind": "option",
+            "description": "ID of the operating system that will be installed on the server",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cosId\u003e": {
+                "Name": "\u003cosId\u003e",
+                "kind": "argument",
+                "description": "osId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cosId\u003e": {
+                "Name": "\u003cosId\u003e",
+                "kind": "argument",
+                "description": "osId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cosId\u003e"
+            ]
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "ID of the plan that the server will subscribe to",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cplanId\u003e": {
+                "Name": "\u003cplanId\u003e",
+                "kind": "argument",
+                "description": "planId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cplanId\u003e": {
+                "Name": "\u003cplanId\u003e",
+                "kind": "argument",
+                "description": "planId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cplanId\u003e"
+            ]
+          },
+          "-r": {
+            "Name": "-r",
+            "kind": "option",
+            "description": "ID of the region where the server will be created",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cregionId\u003e": {
+                "Name": "\u003cregionId\u003e",
+                "kind": "argument",
+                "description": "regionId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cregionId\u003e": {
+                "Name": "\u003cregionId\u003e",
+                "kind": "argument",
+                "description": "regionId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cregionId\u003e"
+            ]
+          },
+          "-x": {
+            "Name": "-x",
+            "kind": "option",
+            "description": "Enable persistent_pxe",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpersistent\u003e": {
+                "Name": "\u003cpersistent\u003e",
+                "kind": "argument",
+                "description": "persistent",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpersistent\u003e": {
+                "Name": "\u003cpersistent\u003e",
+                "kind": "argument",
+                "description": "persistent",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpersistent\u003e"
+            ]
+          }
+        }
+      },
+      "delete": {
+        "Name": "delete",
+        "kind": "subcommand",
+        "description": "Delete a bare metal server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbareMetalId\u003e": {
+            "Name": "\u003cbareMetalId\u003e",
+            "kind": "argument",
+            "description": "bareMetalId",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cbareMetalId\u003e": {
+            "Name": "\u003cbareMetalId\u003e",
+            "kind": "argument",
+            "description": "bareMetalId",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cbareMetalId\u003e"
+        ]
+      },
+      "get": {
+        "Name": "get",
+        "kind": "subcommand",
+        "description": "Get a bare metal server by \u003cbareMetalID\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbareMetalId\u003e": {
+            "Name": "\u003cbareMetalId\u003e",
+            "kind": "argument",
+            "description": "bareMetalId",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cbareMetalId\u003e": {
+            "Name": "\u003cbareMetalId\u003e",
+            "kind": "argument",
+            "description": "bareMetalId",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cbareMetalId\u003e"
+        ]
+      },
+      "halt": {
+        "Name": "halt",
+        "kind": "subcommand",
+        "description": "Halt a bare metal server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbareMetalId\u003e": {
+            "Name": "\u003cbareMetalId\u003e",
+            "kind": "argument",
+            "description": "bareMetalId",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cbareMetalId\u003e": {
+            "Name": "\u003cbareMetalId\u003e",
+            "kind": "argument",
+            "description": "bareMetalId",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cbareMetalId\u003e"
+        ]
+      },
+      "image": {
+        "Name": "image",
+        "kind": "subcommand",
+        "description": "Image is used to access bare metal server image commands",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "change": {
+            "Name": "change",
+            "kind": "subcommand",
+            "description": "Change a bare metal server's image",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cbareMetalId\u003e": {
+                "Name": "\u003cbareMetalId\u003e",
+                "kind": "argument",
+                "description": "bareMetalId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              },
+              "\u003cimageID\u003e": {
+                "Name": "\u003cimageID\u003e",
+                "kind": "argument",
+                "description": "imageID",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cbareMetalId\u003e": {
+                "Name": "\u003cbareMetalId\u003e",
+                "kind": "argument",
+                "description": "bareMetalId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              },
+              "\u003cimageID\u003e": {
+                "Name": "\u003cimageID\u003e",
+                "kind": "argument",
+                "description": "imageID",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cbareMetalId\u003e",
+              "\u003cimageID\u003e"
+            ]
+          },
+          "list": {
+            "Name": "list",
+            "kind": "subcommand",
+            "description": "Available images a bare metal server can change to",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cbareMetalId\u003e": {
+                "Name": "\u003cbareMetalId\u003e",
+                "kind": "argument",
+                "description": "bareMetalId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cbareMetalId\u003e": {
+                "Name": "\u003cbareMetalId\u003e",
+                "kind": "argument",
+                "description": "bareMetalId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cbareMetalId\u003e"
+            ]
+          }
+        }
+      },
+      "ipv4": {
+        "Name": "ipv4",
+        "kind": "subcommand",
+        "description": "List the IPv4 information of a bare metal server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "ipv6": {
+        "Name": "ipv6",
+        "kind": "subcommand",
+        "description": "List the IPv6 information of a bare metal server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List all bare metal servers",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "os": {
+        "Name": "os",
+        "kind": "subcommand",
+        "description": "Os is used to access bare metal server operating system commands",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "reboot": {
+        "Name": "reboot",
+        "kind": "subcommand",
+        "description": "Reboot a bare metal server. This is a hard reboot, which means that the server is powered off, then back on",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "reinstall": {
+        "Name": "reinstall",
+        "kind": "subcommand",
+        "description": "Reinstall the operating system on a bare metal server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "start": {
+        "Name": "start",
+        "kind": "subcommand",
+        "description": "Start a bare metal server",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "user-data": {
+        "Name": "user-data",
+        "kind": "subcommand",
+        "description": "User-data is used to access bare metal server user-data commands",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "vnc": {
+        "Name": "vnc",
+        "kind": "subcommand",
+        "description": "Get a bare metal server's VNC url by \u003cbareMetalID\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cbareMetalId\u003e": {
+            "Name": "\u003cbareMetalId\u003e",
+            "kind": "argument",
+            "description": "bareMetalId",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cbareMetalId\u003e": {
+            "Name": "\u003cbareMetalId\u003e",
+            "kind": "argument",
+            "description": "bareMetalId",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cbareMetalId\u003e"
+        ]
+      }
+    }
+  },
+  "block-storage": {
+    "Name": "block-storage",
+    "kind": "subcommand",
+    "description": "Block storage commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "attach": {
+        "Name": "attach",
+        "kind": "subcommand",
+        "description": "Attaches a block storage to an instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "create": {
+        "Name": "create",
+        "kind": "subcommand",
+        "description": "Create a new block storage",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "delete": {
+        "Name": "delete",
+        "kind": "subcommand",
+        "description": "Delete a block storage",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "detach": {
+        "Name": "detach",
+        "kind": "subcommand",
+        "description": "Detaches a block storage from an instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "get": {
+        "Name": "get",
+        "kind": "subcommand",
+        "description": "Retrieves a block storage",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "label": {
+        "Name": "label",
+        "kind": "subcommand",
+        "description": "Sets a label for a block storage",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "Retrieves a list of active block storage",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "resize": {
+        "Name": "resize",
+        "kind": "subcommand",
+        "description": "Resize a block storage",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "completion": {
+    "Name": "completion",
+    "kind": "subcommand",
+    "description": "Generate the autocompletion script for the specified shell",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "bash": {
+        "Name": "bash",
+        "kind": "subcommand",
+        "description": "Generate the autocompletion script for bash",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "fish": {
+        "Name": "fish",
+        "kind": "subcommand",
+        "description": "Generate the autocompletion script for fish",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "powershell": {
+        "Name": "powershell",
+        "kind": "subcommand",
+        "description": "Generate the autocompletion script for powershell",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "zsh": {
+        "Name": "zsh",
+        "kind": "subcommand",
+        "description": "Generate the autocompletion script for zsh",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "dns": {
+    "Name": "dns",
+    "kind": "subcommand",
+    "description": "Dns is used to access dns commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "domain": {
+        "Name": "domain",
+        "kind": "subcommand",
+        "description": "Dns domain",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "record": {
+        "Name": "record",
+        "kind": "subcommand",
+        "description": "Dns record",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "firewall": {
+    "Name": "firewall",
+    "kind": "subcommand",
+    "description": "Firewall is used to access firewall commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "group": {
+        "Name": "group",
+        "kind": "subcommand",
+        "description": "Group is used to access firewall group commands",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "rule": {
+        "Name": "rule",
+        "kind": "subcommand",
+        "description": "Rule is used to access firewall rule commands",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "help": {
+    "Name": "help",
+    "kind": "subcommand",
+    "description": "Help about any command",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "account": {
+        "Name": "account",
+        "kind": "subcommand",
+        "description": "Retrieve information about your account",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "apps": {
+        "Name": "apps",
+        "kind": "subcommand",
+        "description": "Display all available applications",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "backups": {
+        "Name": "backups",
+        "kind": "subcommand",
+        "description": "Display backups",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "bare-metal": {
+        "Name": "bare-metal",
+        "kind": "subcommand",
+        "description": "Bare-metal is used to access bare metal server commands",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "block-storage": {
+        "Name": "block-storage",
+        "kind": "subcommand",
+        "description": "Block storage commands",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "completion": {
+        "Name": "completion",
+        "kind": "subcommand",
+        "description": "Generate the autocompletion script for the specified shell",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "dns": {
+        "Name": "dns",
+        "kind": "subcommand",
+        "description": "Dns is used to access dns commands",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "firewall": {
+        "Name": "firewall",
+        "kind": "subcommand",
+        "description": "Firewall is used to access firewall commands",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "help": {
+        "Name": "help",
+        "kind": "subcommand",
+        "description": "Help about any command",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "instance": {
+        "Name": "instance",
+        "kind": "subcommand",
+        "description": "Commands to interact with instances on vultr",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "iso": {
+        "Name": "iso",
+        "kind": "subcommand",
+        "description": "Iso is used to access iso commands",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "kubernetes": {
+        "Name": "kubernetes",
+        "kind": "subcommand",
+        "description": "Kubernetes is used to access kubernetes commands",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "load-balancer": {
+        "Name": "load-balancer",
+        "kind": "subcommand",
+        "description": "Load balancer commands",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "network": {
+        "Name": "network",
+        "kind": "subcommand",
+        "description": "Network interacts with network actions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "object-storage": {
+        "Name": "object-storage",
+        "kind": "subcommand",
+        "description": "Object storage commands",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "os": {
+        "Name": "os",
+        "kind": "subcommand",
+        "description": "Os is used to access os commands",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "plans": {
+        "Name": "plans",
+        "kind": "subcommand",
+        "description": "Get information about Vultr plans",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "regions": {
+        "Name": "regions",
+        "kind": "subcommand",
+        "description": "Get regions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "reserved-ip": {
+        "Name": "reserved-ip",
+        "kind": "subcommand",
+        "description": "Reserved-ip lets you interact with reserved-ip",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "script": {
+        "Name": "script",
+        "kind": "subcommand",
+        "description": "Startup script commands",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "snapshot": {
+        "Name": "snapshot",
+        "kind": "subcommand",
+        "description": "Snapshot commands",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "ssh-key": {
+        "Name": "ssh-key",
+        "kind": "subcommand",
+        "description": "Ssh-key commands",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "user": {
+        "Name": "user",
+        "kind": "subcommand",
+        "description": "User commands",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "version": {
+        "Name": "version",
+        "kind": "subcommand",
+        "description": "Display current version of Vultr-cli",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "instance": {
+    "Name": "instance",
+    "kind": "subcommand",
+    "description": "Commands to interact with instances on vultr",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "app": {
+        "Name": "app",
+        "kind": "subcommand",
+        "description": "Update application for an instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "backup": {
+        "Name": "backup",
+        "kind": "subcommand",
+        "description": "List and create backup schedules for an instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "bandwidth": {
+        "Name": "bandwidth",
+        "kind": "subcommand",
+        "description": "Bandwidth for instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "create": {
+        "Name": "create",
+        "kind": "subcommand",
+        "description": "Create an instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "--os": {
+            "Name": "--os",
+            "kind": "option",
+            "description": "ID of the operating system that will be installed on the server",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cosId\u003e": {
+                "Name": "\u003cosId\u003e",
+                "kind": "argument",
+                "description": "osId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cosId\u003e": {
+                "Name": "\u003cosId\u003e",
+                "kind": "argument",
+                "description": "osId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cosId\u003e"
+            ]
+          },
+          "--persistent_pxe": {
+            "Name": "--persistent_pxe",
+            "kind": "option",
+            "description": "Enable persistent_pxe",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpersistent\u003e": {
+                "Name": "\u003cpersistent\u003e",
+                "kind": "argument",
+                "description": "persistent",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpersistent\u003e": {
+                "Name": "\u003cpersistent\u003e",
+                "kind": "argument",
+                "description": "persistent",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpersistent\u003e"
+            ]
+          },
+          "--plan": {
+            "Name": "--plan",
+            "kind": "option",
+            "description": "ID of the plan that the server will subscribe to",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cplanId\u003e": {
+                "Name": "\u003cplanId\u003e",
+                "kind": "argument",
+                "description": "planId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cplanId\u003e": {
+                "Name": "\u003cplanId\u003e",
+                "kind": "argument",
+                "description": "planId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cplanId\u003e"
+            ]
+          },
+          "--region": {
+            "Name": "--region",
+            "kind": "option",
+            "description": "ID of the region where the server will be created",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cregionId\u003e": {
+                "Name": "\u003cregionId\u003e",
+                "kind": "argument",
+                "description": "regionId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cregionId\u003e": {
+                "Name": "\u003cregionId\u003e",
+                "kind": "argument",
+                "description": "regionId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cregionId\u003e"
+            ]
+          },
+          "-o": {
+            "Name": "-o",
+            "kind": "option",
+            "description": "ID of the operating system that will be installed on the server",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cosId\u003e": {
+                "Name": "\u003cosId\u003e",
+                "kind": "argument",
+                "description": "osId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cosId\u003e": {
+                "Name": "\u003cosId\u003e",
+                "kind": "argument",
+                "description": "osId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cosId\u003e"
+            ]
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "ID of the plan that the server will subscribe to",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cplanId\u003e": {
+                "Name": "\u003cplanId\u003e",
+                "kind": "argument",
+                "description": "planId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cplanId\u003e": {
+                "Name": "\u003cplanId\u003e",
+                "kind": "argument",
+                "description": "planId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cplanId\u003e"
+            ]
+          },
+          "-r": {
+            "Name": "-r",
+            "kind": "option",
+            "description": "ID of the region where the server will be created",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cregionId\u003e": {
+                "Name": "\u003cregionId\u003e",
+                "kind": "argument",
+                "description": "regionId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cregionId\u003e": {
+                "Name": "\u003cregionId\u003e",
+                "kind": "argument",
+                "description": "regionId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cregionId\u003e"
+            ]
+          },
+          "-x": {
+            "Name": "-x",
+            "kind": "option",
+            "description": "Enable persistent_pxe",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpersistent\u003e": {
+                "Name": "\u003cpersistent\u003e",
+                "kind": "argument",
+                "description": "persistent",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpersistent\u003e": {
+                "Name": "\u003cpersistent\u003e",
+                "kind": "argument",
+                "description": "persistent",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpersistent\u003e"
+            ]
+          }
+        },
+        "options": {
+          "--os": {
+            "Name": "--os",
+            "kind": "option",
+            "description": "ID of the operating system that will be installed on the server",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cosId\u003e": {
+                "Name": "\u003cosId\u003e",
+                "kind": "argument",
+                "description": "osId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cosId\u003e": {
+                "Name": "\u003cosId\u003e",
+                "kind": "argument",
+                "description": "osId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cosId\u003e"
+            ]
+          },
+          "--persistent_pxe": {
+            "Name": "--persistent_pxe",
+            "kind": "option",
+            "description": "Enable persistent_pxe",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpersistent\u003e": {
+                "Name": "\u003cpersistent\u003e",
+                "kind": "argument",
+                "description": "persistent",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpersistent\u003e": {
+                "Name": "\u003cpersistent\u003e",
+                "kind": "argument",
+                "description": "persistent",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpersistent\u003e"
+            ]
+          },
+          "--plan": {
+            "Name": "--plan",
+            "kind": "option",
+            "description": "ID of the plan that the server will subscribe to",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cplanId\u003e": {
+                "Name": "\u003cplanId\u003e",
+                "kind": "argument",
+                "description": "planId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cplanId\u003e": {
+                "Name": "\u003cplanId\u003e",
+                "kind": "argument",
+                "description": "planId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cplanId\u003e"
+            ]
+          },
+          "--region": {
+            "Name": "--region",
+            "kind": "option",
+            "description": "ID of the region where the server will be created",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cregionId\u003e": {
+                "Name": "\u003cregionId\u003e",
+                "kind": "argument",
+                "description": "regionId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cregionId\u003e": {
+                "Name": "\u003cregionId\u003e",
+                "kind": "argument",
+                "description": "regionId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cregionId\u003e"
+            ]
+          },
+          "-o": {
+            "Name": "-o",
+            "kind": "option",
+            "description": "ID of the operating system that will be installed on the server",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cosId\u003e": {
+                "Name": "\u003cosId\u003e",
+                "kind": "argument",
+                "description": "osId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cosId\u003e": {
+                "Name": "\u003cosId\u003e",
+                "kind": "argument",
+                "description": "osId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cosId\u003e"
+            ]
+          },
+          "-p": {
+            "Name": "-p",
+            "kind": "option",
+            "description": "ID of the plan that the server will subscribe to",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cplanId\u003e": {
+                "Name": "\u003cplanId\u003e",
+                "kind": "argument",
+                "description": "planId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cplanId\u003e": {
+                "Name": "\u003cplanId\u003e",
+                "kind": "argument",
+                "description": "planId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cplanId\u003e"
+            ]
+          },
+          "-r": {
+            "Name": "-r",
+            "kind": "option",
+            "description": "ID of the region where the server will be created",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cregionId\u003e": {
+                "Name": "\u003cregionId\u003e",
+                "kind": "argument",
+                "description": "regionId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cregionId\u003e": {
+                "Name": "\u003cregionId\u003e",
+                "kind": "argument",
+                "description": "regionId",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cregionId\u003e"
+            ]
+          },
+          "-x": {
+            "Name": "-x",
+            "kind": "option",
+            "description": "Enable persistent_pxe",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": {
+              "\u003cpersistent\u003e": {
+                "Name": "\u003cpersistent\u003e",
+                "kind": "argument",
+                "description": "persistent",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "options": {
+              "\u003cpersistent\u003e": {
+                "Name": "\u003cpersistent\u003e",
+                "kind": "argument",
+                "description": "persistent",
+                "completeDescription": "",
+                "nUsed": 0,
+                "subCommand": null
+              }
+            },
+            "requires": [
+              "\u003cpersistent\u003e"
+            ]
+          }
+        }
+      },
+      "delete": {
+        "Name": "delete",
+        "kind": "subcommand",
+        "description": "Delete/destroy an instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cinstanceID\u003e": {
+            "Name": "\u003cinstanceID\u003e",
+            "kind": "argument",
+            "description": "instanceID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cinstanceID\u003e": {
+            "Name": "\u003cinstanceID\u003e",
+            "kind": "argument",
+            "description": "instanceID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cinstanceID\u003e"
+        ]
+      },
+      "get": {
+        "Name": "get",
+        "kind": "subcommand",
+        "description": "Get info about a specific instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cinstanceID\u003e": {
+            "Name": "\u003cinstanceID\u003e",
+            "kind": "argument",
+            "description": "instanceID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cinstanceID\u003e": {
+            "Name": "\u003cinstanceID\u003e",
+            "kind": "argument",
+            "description": "instanceID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cinstanceID\u003e"
+        ]
+      },
+      "image": {
+        "Name": "image",
+        "kind": "subcommand",
+        "description": "Update image for an instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "ipv4": {
+        "Name": "ipv4",
+        "kind": "subcommand",
+        "description": "List/create/delete ipv4 on instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "ipv6": {
+        "Name": "ipv6",
+        "kind": "subcommand",
+        "description": "Commands for ipv6 on instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "iso": {
+        "Name": "iso",
+        "kind": "subcommand",
+        "description": "Attach/detach ISOs to a given instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "label": {
+        "Name": "label",
+        "kind": "subcommand",
+        "description": "Label an instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List all available instances",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "os": {
+        "Name": "os",
+        "kind": "subcommand",
+        "description": "Update operating system for an instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "plan": {
+        "Name": "plan",
+        "kind": "subcommand",
+        "description": "Update/list plans for an instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "reinstall": {
+        "Name": "reinstall",
+        "kind": "subcommand",
+        "description": "Reinstall an instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "restart": {
+        "Name": "restart",
+        "kind": "subcommand",
+        "description": "Restart an instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "restore": {
+        "Name": "restore",
+        "kind": "subcommand",
+        "description": "Restore instance from backup/snapshot",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "reverse-dns": {
+        "Name": "reverse-dns",
+        "kind": "subcommand",
+        "description": "Commands to handle reverse-dns on an instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "start": {
+        "Name": "start",
+        "kind": "subcommand",
+        "description": "Starts an instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "stop": {
+        "Name": "stop",
+        "kind": "subcommand",
+        "description": "Stops an instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "tag": {
+        "Name": "tag",
+        "kind": "subcommand",
+        "description": "Add/modify tag on instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "update-firewall-group": {
+        "Name": "update-firewall-group",
+        "kind": "subcommand",
+        "description": "Assign a firewall group to instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "user-data": {
+        "Name": "user-data",
+        "kind": "subcommand",
+        "description": "Commands to handle userdata on an instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "iso": {
+    "Name": "iso",
+    "kind": "subcommand",
+    "description": "Iso is used to access iso commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "create": {
+        "Name": "create",
+        "kind": "subcommand",
+        "description": "Create iso from url",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "delete": {
+        "Name": "delete",
+        "kind": "subcommand",
+        "description": "Delete a private iso",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "get": {
+        "Name": "get",
+        "kind": "subcommand",
+        "description": "Get private ISO \u003cisoID\u003e",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {
+          "\u003cisoID\u003e": {
+            "Name": "\u003cisoID\u003e",
+            "kind": "argument",
+            "description": "isoID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "options": {
+          "\u003cisoID\u003e": {
+            "Name": "\u003cisoID\u003e",
+            "kind": "argument",
+            "description": "isoID",
+            "completeDescription": "",
+            "nUsed": 0,
+            "subCommand": null
+          }
+        },
+        "requires": [
+          "\u003cisoID\u003e"
+        ]
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List all private ISOs available",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "public": {
+        "Name": "public",
+        "kind": "subcommand",
+        "description": "List all public ISOs available",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "kubernetes": {
+    "Name": "kubernetes",
+    "kind": "subcommand",
+    "description": "Kubernetes is used to access kubernetes commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "config": {
+        "Name": "config",
+        "kind": "subcommand",
+        "description": "Gets a kubernetes cluster's config",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "create": {
+        "Name": "create",
+        "kind": "subcommand",
+        "description": "Create kubernetes cluster",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "delete": {
+        "Name": "delete",
+        "kind": "subcommand",
+        "description": "Delete a kubernetes cluster",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "delete-with-resources": {
+        "Name": "delete-with-resources",
+        "kind": "subcommand",
+        "description": "Delete a kubernetes cluster and related resources",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "get": {
+        "Name": "get",
+        "kind": "subcommand",
+        "description": "Retrieves a kubernetes cluster",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List kubernetes clusters",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "node-pool": {
+        "Name": "node-pool",
+        "kind": "subcommand",
+        "description": "Node pools commands for a kubernetes cluster",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "update": {
+        "Name": "update",
+        "kind": "subcommand",
+        "description": "Updates a kubernetes cluster",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "versions": {
+        "Name": "versions",
+        "kind": "subcommand",
+        "description": "Gets supported kubernetes versions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "load-balancer": {
+    "Name": "load-balancer",
+    "kind": "subcommand",
+    "description": "Load balancer commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "create": {
+        "Name": "create",
+        "kind": "subcommand",
+        "description": "Create a load balancer",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "delete": {
+        "Name": "delete",
+        "kind": "subcommand",
+        "description": "Deletes a load balancer",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "firewall-rule": {
+        "Name": "firewall-rule",
+        "kind": "subcommand",
+        "description": "Get/list firewall rules for a load balancer",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "get": {
+        "Name": "get",
+        "kind": "subcommand",
+        "description": "Retrieves a load balancer",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "Retrieves a list of active load balancers",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "rule": {
+        "Name": "rule",
+        "kind": "subcommand",
+        "description": "Create/delete/list forwarding rules for a load balancer",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "update": {
+        "Name": "update",
+        "kind": "subcommand",
+        "description": "Updates a load balancer",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "network": {
+    "Name": "network",
+    "kind": "subcommand",
+    "description": "Network interacts with network actions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "create": {
+        "Name": "create",
+        "kind": "subcommand",
+        "description": "Create a private network",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "delete": {
+        "Name": "delete",
+        "kind": "subcommand",
+        "description": "Delete a private network",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "get": {
+        "Name": "get",
+        "kind": "subcommand",
+        "description": "Get a private network",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List all private networks",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "object-storage": {
+    "Name": "object-storage",
+    "kind": "subcommand",
+    "description": "Object storage commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "create": {
+        "Name": "create",
+        "kind": "subcommand",
+        "description": "Create a new object storage subscription",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "delete": {
+        "Name": "delete",
+        "kind": "subcommand",
+        "description": "Deletes an object storage subscription",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "get": {
+        "Name": "get",
+        "kind": "subcommand",
+        "description": "Retrieves a given object storage subscription",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "label": {
+        "Name": "label",
+        "kind": "subcommand",
+        "description": "Change the label for object storage subscription",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "Retrieves a list of active object storage subscriptions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "list-cluster": {
+        "Name": "list-cluster",
+        "kind": "subcommand",
+        "description": "Retrieves a list of object storage clusters",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "s3key-regenerate": {
+        "Name": "s3key-regenerate",
+        "kind": "subcommand",
+        "description": "Regenerate the S3 API keys of an object storage subscription",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "os": {
+    "Name": "os",
+    "kind": "subcommand",
+    "description": "Os is used to access os commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List all available operating systems",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "plans": {
+    "Name": "plans",
+    "kind": "subcommand",
+    "description": "Get information about Vultr plans",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List plans",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "regions": {
+    "Name": "regions",
+    "kind": "subcommand",
+    "description": "Get regions",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "availability": {
+        "Name": "availability",
+        "kind": "subcommand",
+        "description": "List availability in region",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List regions",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "reserved-ip": {
+    "Name": "reserved-ip",
+    "kind": "subcommand",
+    "description": "Reserved-ip lets you interact with reserved-ip",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "attach": {
+        "Name": "attach",
+        "kind": "subcommand",
+        "description": "Attach a reservedIP to an instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "convert": {
+        "Name": "convert",
+        "kind": "subcommand",
+        "description": "Convert IP address to reservedIP",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "create": {
+        "Name": "create",
+        "kind": "subcommand",
+        "description": "Create reservedIP",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "delete": {
+        "Name": "delete",
+        "kind": "subcommand",
+        "description": "Delete a reserved ip",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "detach": {
+        "Name": "detach",
+        "kind": "subcommand",
+        "description": "Detach a reservedIP to an instance",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "get": {
+        "Name": "get",
+        "kind": "subcommand",
+        "description": "Get a reserved IP",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List all reserved IPs",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "script": {
+    "Name": "script",
+    "kind": "subcommand",
+    "description": "Startup script commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "create": {
+        "Name": "create",
+        "kind": "subcommand",
+        "description": "Create a startup script",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "delete": {
+        "Name": "delete",
+        "kind": "subcommand",
+        "description": "Delete a startup script",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "get": {
+        "Name": "get",
+        "kind": "subcommand",
+        "description": "Displays the contents of specified script",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List all startup scripts",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "update": {
+        "Name": "update",
+        "kind": "subcommand",
+        "description": "Update startup script",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "snapshot": {
+    "Name": "snapshot",
+    "kind": "subcommand",
+    "description": "Snapshot commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "create": {
+        "Name": "create",
+        "kind": "subcommand",
+        "description": "Create a snapshot",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "create-url": {
+        "Name": "create-url",
+        "kind": "subcommand",
+        "description": "Create a snapshot from a URL",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "delete": {
+        "Name": "delete",
+        "kind": "subcommand",
+        "description": "Delete a snapshot",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "get": {
+        "Name": "get",
+        "kind": "subcommand",
+        "description": "Get a snapshot",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List all snapshots",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "ssh-key": {
+    "Name": "ssh-key",
+    "kind": "subcommand",
+    "description": "Ssh-key commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "create": {
+        "Name": "create",
+        "kind": "subcommand",
+        "description": "Create an SSH key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "delete": {
+        "Name": "delete",
+        "kind": "subcommand",
+        "description": "Delete an SSH key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "get": {
+        "Name": "get",
+        "kind": "subcommand",
+        "description": "Get an SSH key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List all SSH keys",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "update": {
+        "Name": "update",
+        "kind": "subcommand",
+        "description": "Update SSH key",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "user": {
+    "Name": "user",
+    "kind": "subcommand",
+    "description": "User commands",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {
+      "create": {
+        "Name": "create",
+        "kind": "subcommand",
+        "description": "Create a user",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "delete": {
+        "Name": "delete",
+        "kind": "subcommand",
+        "description": "Delete a user",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "get": {
+        "Name": "get",
+        "kind": "subcommand",
+        "description": "Get a user",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "list": {
+        "Name": "list",
+        "kind": "subcommand",
+        "description": "List all available users",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      },
+      "update": {
+        "Name": "update",
+        "kind": "subcommand",
+        "description": "Update User",
+        "completeDescription": "",
+        "nUsed": 0,
+        "subCommand": {}
+      }
+    }
+  },
+  "version": {
+    "Name": "version",
+    "kind": "subcommand",
+    "description": "Display current version of Vultr-cli",
+    "completeDescription": "",
+    "nUsed": 0,
+    "subCommand": {}
+  }
+}
