@@ -72,8 +72,8 @@ func TestCDFindsSymlinkedDirectory(t *testing.T) {
 	}
 }
 
-// A group must render exactly one header, always before its items — even
-// when usage ranking would rank an item above the header.
+// A lone placeholder group covering the whole list renders born-expanded:
+// items only, no header row, exactly one of each.
 func TestGroupRendersSingleHeaderBeforeItems(t *testing.T) {
 	setupCDTest(t)
 
@@ -91,21 +91,15 @@ func TestGroupRendersSingleHeaderBeforeItems(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	if len(list) < 3 {
-		t.Fatalf("expected header + 2 items, got %v", list)
+	// Born-expanded: header label on top (non-selectable), then the items.
+	if len(list) != 3 {
+		t.Fatalf("expected header label + 2 items, got %v", list)
 	}
-
 	if list[0].Name != "" {
-		t.Fatalf("first entry must be the group header, got name=%q", list[0].Name)
+		t.Errorf("first entry must be the header label, got name=%q", list[0].Name)
 	}
-	headerCount := 0
-	for _, m := range list {
-		if m.Name == "" {
-			headerCount++
-		}
-	}
-	if headerCount != 1 {
-		t.Errorf("expected exactly 1 header, got %d: %v", headerCount, list)
+	if list[1].Name != "alpha/" || list[2].Name != "beta/" {
+		t.Errorf("items must follow the header, got %v", list)
 	}
 }
 
@@ -126,10 +120,11 @@ func TestCDIntoTypedDirectoryListsNested(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	if len(list) != 1 {
-		t.Fatalf("expected single item without header for singleton group, got %v", list)
+	// Singleton group: header label on top (non-selectable) + item.
+	if len(list) != 2 {
+		t.Fatalf("expected header label + item, got %v", list)
 	}
-	if list[0].Name != "sub1/deep/" {
+	if list[0].Name != "" || list[1].Name != "sub1/deep/" {
 		t.Errorf("unexpected suggestions: %v", list)
 	}
 }

@@ -8,6 +8,7 @@ import (
 
 	"git-hint/internal/core"
 	"git-hint/internal/engine/provider"
+	"git-hint/internal/engine/provider/common"
 	"git-hint/internal/engine/ranking"
 	"git-hint/internal/engine/tokenizer"
 	"git-hint/internal/registry"
@@ -113,6 +114,16 @@ func Suggestions(input string) ([]core.CommandMatch, string, error) {
 	list, err = rankAndGroup(input, list, dynamicFlagSeen)
 	if err != nil {
 		return nil, "", err
+	}
+
+	// Open message quote: a bare `"` closes the message. Offered as the very
+	// last row (only when the quote is open) so it completes the buffer
+	// without competing with real suggestions.
+	if OpenQuoteToken(input) {
+		list = append(list, core.CommandMatch{
+			Name:        "\"",
+			Description: "fechar mensagem",
+		})
 	}
 
 	return list, currentToken, nil
@@ -293,6 +304,53 @@ func limitGroups(list []core.CommandMatch) []core.CommandMatch {
 		limit = 10
 	}
 
+	// Born-expanded: when the ENTIRE list is a single placeholder group
+	// (e.g. `cd` or `source ` where every suggestion comes from one
+	// provider), the group screen is pointless — show the items directly,
+	// no header row, no "sair". With more than one group (or static items
+	// mixed in) keep the normal header + selection flow.
+	onlyGroup := ""
+	multiGroup := false
+	hasStatic := false
+	groupItemCount := 0
+	for _, item := range list {
+		if item.Placeholder == "" {
+			hasStatic = true
+			continue
+		}
+		if onlyGroup == "" {
+			onlyGroup = item.Placeholder
+		} else if item.Placeholder != onlyGroup {
+			multiGroup = true
+		}
+		if item.Name != "" {
+			groupItemCount++
+		}
+	}
+	if onlyGroup != "" && !multiGroup && !hasStatic && groupItemCount > 0 {
+		out := make([]core.CommandMatch, 0, groupItemCount+1)
+		// Header stays visible as a label at the TOP, but NormalizeSelected
+		// keeps it unselectable — the cursor lands on the first real item.
+		var header *core.CommandMatch
+		for _, item := range list {
+			if item.Name == "" && header == nil {
+				h := item
+				header = &h
+				continue
+			}
+			if item.Name != "" {
+				out = append(out, item)
+			}
+		}
+		if len(out) > limit {
+			out = out[:limit]
+		}
+		if header != nil {
+			out = append([]core.CommandMatch{*header}, out...)
+		}
+		return out
+	}
+
 	// Buffer consecutive group members so each placeholder group can be
 	// emitted as a whole: header exactly once, then its items. Singleton
 	// groups drop the header entirely — one selectable row between the user
@@ -373,6 +431,101 @@ func expandedGroup(list []core.CommandMatch, group string) []core.CommandMatch {
 		ExpandedGroup: true,
 	})
 	return out
+}
+
+// NormalizeSelected moves the selection off group headers: headers are pure
+// visual labels, never selectable. An incoming index that points at a header
+// (the default 0, which is usually the first row) is advanced to the first
+// real item, or pulled back to the last one if only headers follow. -1 (no
+// selection) and empty lists pass through unchanged.
+func NormalizeSelected(matches []core.CommandMatch, selected int) int {
+	if len(matches) == 0 || selected < 0 {
+		return -1
+	}
+	if selected >= len(matches) {
+		selected = len(matches) - 1
+	}
+	if matches[selected].Name != "" {
+		return selected
+	}
+	for i := selected + 1; i < len(matches); i++ {
+		if matches[i].Name != "" {
+			return i
+		}
+	}
+	for i := selected - 1; i >= 0; i-- {
+		if matches[i].Name != "" {
+			return i
+		}
+	}
+	return -1
+}
+
+// BootstrapQuote standardizes quoting for message flags: with `git commit -m`
+// and an open message flag, TAB inserts the opening quote and leaves the user
+// typing inside it — quoting becomes the default shape without the user ever
+// typing a quote. Applied when nothing has been typed after the flag yet.
+func BootstrapQuote(buffer string) (string, bool) {
+	parts := tokenizer.TokenizeBuffer(buffer)
+	if len(parts) == 0 {
+		return buffer, false
+	}
+	// Nothing typed after the message flag means: the flag is either the last
+	// token itself (`-m`) or followed only by whitespace (`-m ` — the trailing
+	// space yields an empty token). Anything else being typed lets normal
+	// completion decide.
+	nothingTyped := false
+	if parts[len(parts)-1] == "" {
+		nothingTyped = true
+	} else if common.IsMsgFlag(parts[len(parts)-1]) {
+		nothingTyped = true
+	}
+	if !nothingTyped {
+		return buffer, false
+	}
+	// Find the last message flag, skipping empties.
+	for i := len(parts) - 1; i >= 0; i-- {
+		if parts[i] == "" {
+			continue
+		}
+		if common.IsMsgFlag(parts[i]) {
+			return buffer + " \"", true
+		}
+		if strings.HasPrefix(parts[i], "-") {
+			continue // unrelated flag, keep scanning left
+		}
+		return buffer, false
+	}
+	return buffer, false
+}
+
+// OpenQuoteToken reports whether the buffer ends inside an open double quote
+// (e.g. `git commit -m "feat`): the message context started but was never
+// closed. When open, a bare `"` closes the message and must be offered as the
+// LAST suggestion — it completes the buffer, it is not a value.
+func OpenQuoteToken(buffer string) bool {
+	parts := tokenizer.TokenizeBuffer(buffer)
+	for i := len(parts) - 1; i >= 0; i-- {
+		p := parts[i]
+		if p == "" {
+			continue
+		}
+		inMsg := false
+		// Is this token part of a message context? Scan left for a msg flag.
+		for j := i; j >= 0; j-- {
+			if common.IsMsgFlag(parts[j]) {
+				inMsg = true
+				break
+			}
+		}
+		if !inMsg {
+			return false
+		}
+		// Count unescaped double quotes in this token.
+		count := strings.Count(p, "\"")
+		return count%2 == 1
+	}
+	return false
 }
 
 // CompleteBuffer replaces the current token in buffer with the selected

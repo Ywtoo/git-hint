@@ -13,6 +13,7 @@ import (
 	"os"
 	"os/exec"
 	"os/signal"
+	"path/filepath"
 	"strconv"
 	"strings"
 	"syscall"
@@ -63,6 +64,33 @@ func Run() {
 	// Warm up data directory if first run (writes index.json and crawls top 10).
 	go func() {
 		_ = scraper.Warmup(scraper.Options{MaxDepth: 999})
+	}()
+
+	// Stale-binary watchdog: after `githint update` the on-disk binary is
+	// newer than the one loaded in memory, but a long-lived daemon keeps
+	// serving OLD behavior — the classic "regression" that is really just a
+	// stale process. Poll the executable's mtime and exit when it changes;
+	// the plugin's next request silently starts the fresh daemon.
+	go func() {
+		exe, err := os.Executable()
+		if err != nil {
+			return
+		}
+		if resolved, err := filepath.EvalSymlinks(exe); err == nil {
+			exe = resolved
+		}
+		if info, err := os.Stat(exe); err == nil {
+			buildTime := info.ModTime()
+			ticker := time.NewTicker(2 * time.Second)
+			defer ticker.Stop()
+			for range ticker.C {
+				if info, err := os.Stat(exe); err != nil || info.ModTime() != buildTime {
+					fmt.Fprintln(os.Stderr, "githint daemon: binary changed on disk, restarting")
+					listener.Close()
+					return
+				}
+			}
+		}
 	}()
 
 	// Idle shutdown: reset on every request. When it fires with no

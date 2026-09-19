@@ -25,6 +25,8 @@ var Providers = map[string]func() []core.CommandMatch{
 
 	"branch":     git.BranchProvider,
 	"old-branch": git.BranchProvider,
+	"base":       git.BranchProvider,
+	"new base":   git.BranchProvider,
 
 	"commit":     git.CommitProvider,
 	"commit-ish": git.CommitProvider,

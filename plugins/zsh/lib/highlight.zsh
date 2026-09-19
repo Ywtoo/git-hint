@@ -5,6 +5,11 @@ _githint_apply_highlight() {
     local raw="$1"
     local base=$2
 
+    # Defensive sweep before every redraw: leftovers from the previous render
+    # (or from another plugin rewriting region_highlight) would otherwise
+    # stack up and leak color into rows that no longer exist.
+    _githint_clear_own_highlights
+
     local clean=""
     local pos=$base
     local i=1
@@ -70,6 +75,7 @@ _githint_clear_own_highlights() {
     local entry
     local own_entry
     local found
+    local style
 
     for entry in "${region_highlight[@]}"; do
         found=0
@@ -80,6 +86,19 @@ _githint_clear_own_highlights() {
                 break
             fi
         done
+
+        if (( ! found )); then
+            # Extra sweep: an entry may survive an earlier clear when another
+            # plugin (zsh-syntax-highlighting, vi-mode) rewrote or reset the
+            # array between our calls, making exact-string matching miss it.
+            # Anything carrying one of OUR styles is ours — drop it so colors
+            # never leak into other plugins' regions or stale rows.
+            style="${entry#* }"
+            style="${style#* }"
+            if [[ "$style" == *"bg=#ffffff"* || "$style" == "fg=2"* || "$style" == *"fg=2"* || "$style" == "fg=8"* ]]; then
+                found=1
+            fi
+        fi
 
         (( ! found )) && kept+=("$entry")
     done

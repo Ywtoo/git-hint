@@ -40,5 +40,10 @@ func List(buffer string, selected int, promptCol int, renderMode string, working
 		return ""
 	}
 
+	// Headers are labels, never selectable: land the cursor on the first
+	// real item (e.g. `source ` with the <file-path> header on row 0 must
+	// highlight ~/.zshrc, not the label).
+	selected = engine.NormalizeSelected(matches, selected)
+
 	return render.FormatList(matches, selected, buffer, currentToken, promptCol, renderMode)
 }

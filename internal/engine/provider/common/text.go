@@ -33,6 +33,12 @@ func MsgProvider() []core.CommandMatch {
 		if msg == "" {
 			continue
 		}
+		// A message with an unbalanced quote (e.g. a history line broken
+		// mid-string: `commit -m "feat: add Open\`) would render a suggestion
+		// that itself opens a new quote context — corrupting every later list.
+		if strings.Count(msg, "\"")%2 != 0 {
+			continue
+		}
 		msgOnly := ensureQuoted(msg)
 		if seen[msgOnly] {
 			continue
@@ -75,6 +81,12 @@ func FreeTextProvider() []core.CommandMatch {
 		})
 	}
 	return matches
+}
+
+// IsMsgFlag reports whether a token introduces a message argument.
+// Exported for the engine's quote-bootstrap logic.
+func IsMsgFlag(flag string) bool {
+	return isMsgFlag(flag)
 }
 
 func isMsgFlag(flag string) bool {

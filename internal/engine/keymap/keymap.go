@@ -65,6 +65,14 @@ func KeyHandler(key string) (string, int) {
 		return "", selected
 
 	case "TAB":
+		// Quote bootstrap has top priority: TAB right after a message flag
+		// (`git commit -m ` with nothing typed yet) ALWAYS inserts the opening
+		// quote first — even when history suggestions are on the list. The
+		// user then types inside the quotes and keeps filtering.
+		if boot, ok := engine.BootstrapQuote(buffer); ok {
+			state.SetBuffer(boot)
+			return "", selected
+		}
 		if selected < 0 || listSize == 0 {
 			return "expand-or-complete", selected
 		}

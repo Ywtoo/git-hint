@@ -14,6 +14,10 @@ install() {
   (cd "$ROOT" && GOCACHE=/tmp/git-hint-gocache go build -ldflags "-X git-hint/internal/version.Value=$VERSION" -o "$BIN_DIR/githint" .)
   cp "$ROOT"/plugins/zsh/githint.zsh "$PLUGIN_DIR/"
   cp -R "$ROOT"/plugins/zsh/lib "$PLUGIN_DIR/"
+  # The daemon holds the old binary in memory: without a restart the shell
+  # keeps serving stale behavior after every update ("regression" that is
+  # just the previous build still running).
+  pkill -f 'githint daemon' 2>/dev/null || true
   if [[ -f "$ZSHRC" ]] && grep -Fq "$MARKER" "$ZSHRC"; then
     return
   fi
